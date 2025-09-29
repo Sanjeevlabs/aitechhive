@@ -40,9 +40,12 @@ export function Solution() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white/70 dark:bg-gray-800/70 p-8 rounded-xl border border-green-200 dark:border-green-800 shadow-lg"
+            className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-xl border border-green-200/50 dark:border-green-800/50 shadow-xl hover:shadow-2xl hover:bg-white/70 dark:hover:bg-gray-800/70 transition-all duration-500 relative overflow-hidden group"
           >
-            <p className="text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-200">
+            {/* Subtle shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-100/20 dark:via-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
+            
+            <p className="text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-200 relative z-10">
               Every week, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
               from foundational concepts to cutting-edge developments.
             </p>
