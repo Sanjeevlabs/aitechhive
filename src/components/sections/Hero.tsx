@@ -31,14 +31,17 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-theme">
-      {/* Animated background elements */}
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-primary-50/80 via-white to-accent-50/80 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-theme overflow-hidden">
+      {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
+        {/* Primary floating element */}
         <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-200/20 dark:bg-primary-800/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-primary-200/30 to-primary-300/20 dark:from-primary-800/30 dark:to-primary-900/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
+            opacity: [0.3, 0.6, 0.3],
+            x: [0, 20, 0],
+            y: [0, -20, 0],
           }}
           transition={{
             duration: 8,
@@ -46,17 +49,35 @@ export function Hero() {
             ease: "easeInOut"
           }}
         />
+        {/* Secondary floating element */}
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-200/20 dark:bg-accent-800/20 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-accent-200/30 to-accent-300/20 dark:from-accent-800/30 dark:to-accent-900/20 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2],
+            opacity: [0.2, 0.5, 0.2],
+            x: [0, -30, 0],
+            y: [0, 30, 0],
           }}
           transition={{
             duration: 10,
             repeat: Infinity,
             ease: "easeInOut",
             delay: 2
+          }}
+        />
+        {/* Additional subtle elements */}
+        <motion.div
+          className="absolute top-3/4 left-1/2 w-32 h-32 bg-gradient-to-br from-primary-100/40 to-accent-100/40 dark:from-primary-900/20 dark:to-accent-900/20 rounded-full blur-2xl"
+          animate={{
+            scale: [0.8, 1.3, 0.8],
+            opacity: [0.1, 0.3, 0.1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "linear",
+            delay: 5
           }}
         />
       </div>
@@ -76,11 +97,20 @@ export function Hero() {
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline with rotation */}
+          {/* Main headline with enhanced rotation animation */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+            className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600 bg-clip-text text-transparent"
             key={headlines[currentHeadline]}
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -30, scale: 1.05 }}
+            transition={{ 
+              duration: 0.8, 
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 100
+            }}
           >
             {headlines[currentHeadline]}
           </motion.h1>

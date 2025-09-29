@@ -53,9 +53,12 @@ export function WhatYouLearn() {
               viewport={{ once: true }}
               className="group relative"
             >
-              <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-[1.02] relative overflow-hidden">
-                {/* Animated background gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+              <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-2xl border border-white/20 dark:border-gray-700/30 shadow-xl hover:shadow-2xl hover:bg-white/70 dark:hover:bg-gray-800/70 transition-all duration-500 group-hover:scale-[1.02] relative overflow-hidden">
+                {/* Enhanced animated background gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-700`} />
+                
+                {/* Glass shimmer effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
                 
                 <div className="relative z-10">
                   <div className="flex items-start space-x-4">

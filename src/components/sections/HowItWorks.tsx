@@ -48,18 +48,21 @@ export function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="text-center p-8 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 group relative overflow-hidden"
+              className="text-center p-8 rounded-xl bg-white/60 dark:bg-gray-800/60 backdrop-blur-md border border-white/20 dark:border-gray-700/30 shadow-xl hover:shadow-2xl hover:bg-white/70 dark:hover:bg-gray-800/70 transition-all duration-500 group relative overflow-hidden"
             >
-              {/* Background gradient on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
+              {/* Enhanced background gradient on hover */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+              
+              {/* Glass shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
               
               <div className="relative z-10">
                 <motion.div 
                   className="text-6xl mb-4"
                   whileHover={{ 
-                    scale: 1.1,
-                    rotate: [0, -5, 5, 0],
-                    transition: { duration: 0.4 }
+                    scale: 1.15,
+                    rotate: [0, -8, 8, 0],
+                    transition: { duration: 0.6, type: "spring", stiffness: 200 }
                   }}
                 >
                   {item.icon}
@@ -67,8 +70,10 @@ export function HowItWorks() {
                 
                 <motion.div 
                   className={`text-3xl font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent mb-4`}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
+                  whileHover={{ 
+                    scale: 1.1,
+                    transition: { duration: 0.3, type: "spring", stiffness: 300 }
+                  }}
                 >
                   {item.step}
                 </motion.div>
