@@ -17,13 +17,13 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Logo size="sm" />
             <div className="text-sm text-gray-400">
-              <p>Transforming AI complexity into clarity</p>
+              <p>Decode AI Jargons, One Topic at a Time</p>
             </div>
           </div>
 
           <div className="text-center md:text-right">
             <p className="text-sm text-gray-400 mb-2">
-              © 2024 AI Tech Hive. All rights reserved.
+              @2025 AITECHHIVE
             </p>
             <p className="text-xs text-gray-500">
               Making AI accessible to everyone
