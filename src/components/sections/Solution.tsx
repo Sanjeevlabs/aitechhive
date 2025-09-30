@@ -14,8 +14,8 @@ export function Solution() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-accent-100 dark:bg-accent-900/20 rounded-lg mb-6">
-            <LightBulbIcon className="h-6 w-6 text-accent-600 dark:text-accent-400" />
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/10 dark:bg-accent/20 rounded-lg mb-6 shadow-glow-sm">
+            <LightBulbIcon className="h-6 w-6 text-accent dark:text-accent" />
           </div>
           
           <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-8">
@@ -40,7 +40,7 @@ export function Solution() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg border border-neutral-200 dark:border-neutral-700"
+            className="bg-gradient-to-br from-accent/5 to-accent-secondary/5 dark:from-accent/10 dark:to-accent-secondary/10 p-8 rounded-xl border border-accent/20 dark:border-accent/30 shadow-lg"
           >
             <p className="text-foreground font-medium">
               Every day, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 

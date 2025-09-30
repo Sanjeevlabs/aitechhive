@@ -5,7 +5,7 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function Problem() {
   return (
-    <section className="py-20 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme">
+    <section className="py-20 px-4 bg-secondary dark:bg-secondary transition-theme">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

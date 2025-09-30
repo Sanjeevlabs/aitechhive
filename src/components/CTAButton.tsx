@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 disabled:opacity-50 disabled:pointer-events-none',
+  'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50 disabled:pointer-events-none relative overflow-hidden',
   {
     variants: {
       variant: {
-        primary: 'bg-foreground hover:bg-neutral-800 dark:hover:bg-neutral-200 text-background shadow-sm hover:shadow-md',
-        secondary: 'bg-background hover:bg-neutral-50 dark:hover:bg-neutral-800 text-foreground border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-md',
-        ghost: 'bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 text-foreground',
-        accent: 'bg-accent-600 hover:bg-accent-700 text-white shadow-sm hover:shadow-md'
+        primary: 'bg-gradient-to-r from-accent via-accent-secondary to-accent-tertiary text-white shadow-md hover:shadow-glow transform hover:-translate-y-0.5',
+        secondary: 'bg-background hover:bg-secondary text-foreground border border-border shadow-sm hover:shadow-md',
+        ghost: 'bg-transparent hover:bg-secondary text-foreground',
+        accent: 'bg-accent hover:bg-accent-secondary text-white shadow-md hover:shadow-glow-sm'
       },
       size: {
         sm: 'px-4 py-2 text-sm',
