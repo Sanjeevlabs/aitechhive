@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
@@ -9,17 +11,33 @@ interface LogoProps {
 }
 
 export function Logo({ size = 'md', className }: LogoProps) {
-  const sizeClasses = {
-    sm: 'w-8 h-8 text-sm',
-    md: 'w-16 h-16 text-xl',
-    lg: 'w-20 h-20 text-2xl'
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    // Check initial theme
+    const checkTheme = () => {
+      setIsDark(document.documentElement.classList.contains('dark'))
+    }
+    
+    checkTheme()
+    
+    // Watch for theme changes
+    const observer = new MutationObserver(checkTheme)
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    })
+    
+    return () => observer.disconnect()
+  }, [])
+
+  const sizeMap = {
+    sm: { width: 40, height: 40, textSize: 'text-xs' },
+    md: { width: 80, height: 80, textSize: 'text-lg' },
+    lg: { width: 100, height: 100, textSize: 'text-xl' }
   }
 
-  const textSizeClasses = {
-    sm: 'text-sm',
-    md: 'text-xl',
-    lg: 'text-2xl'
-  }
+  const { width, height, textSize } = sizeMap[size]
 
   return (
     <motion.div
@@ -29,25 +47,27 @@ export function Logo({ size = 'md', className }: LogoProps) {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <motion.div
-        className={cn(
-          'bg-foreground rounded-lg flex items-center justify-center text-background font-semibold shadow-sm mb-3 relative',
-          sizeClasses[size]
-        )}
+        className="relative mb-3"
         whileHover={{ 
-          scale: 1.02,
+          scale: 1.05,
           transition: { duration: 0.2 }
         }}
         whileTap={{ scale: 0.98 }}
       >
-        <span className={cn('font-bold tracking-tight', textSizeClasses[size])}>
-          ATH
-        </span>
+        <Image
+          src={isDark ? '/logo-dark.svg' : '/logo-light.svg'}
+          alt="AI Tech Hive Logo"
+          width={width}
+          height={height}
+          priority
+          className="drop-shadow-lg"
+        />
       </motion.div>
       
       <motion.h3 
         className={cn(
-          'font-medium text-neutral-700 dark:text-neutral-300 tracking-wide',
-          size === 'sm' ? 'text-xs' : size === 'md' ? 'text-lg' : 'text-xl'
+          'font-semibold text-foreground tracking-tight',
+          textSize
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
