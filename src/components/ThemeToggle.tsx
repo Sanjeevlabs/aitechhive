@@ -19,7 +19,7 @@ export function ThemeToggle() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="flex items-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full border border-gray-200 dark:border-gray-700 p-1 shadow-lg"
+        className="flex items-center bg-background/90 dark:bg-background/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 p-1 shadow-sm"
       >
         {themes.map(({ value, icon: Icon, label }) => (
           <motion.button
@@ -28,8 +28,8 @@ export function ThemeToggle() {
             className={cn(
               'relative p-2 rounded-full transition-all duration-200',
               theme === value
-                ? 'bg-primary-500 text-white shadow-md'
-                : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                ? 'bg-foreground text-background shadow-sm'
+                : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700'
             )}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

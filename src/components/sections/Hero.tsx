@@ -31,57 +31,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-primary-50/80 via-white to-accent-50/80 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-theme overflow-hidden">
-      {/* Enhanced animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Primary floating element */}
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-primary-200/30 to-primary-300/20 dark:from-primary-800/30 dark:to-primary-900/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3],
-            x: [0, 20, 0],
-            y: [0, -20, 0],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        {/* Secondary floating element */}
-        <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-accent-200/30 to-accent-300/20 dark:from-accent-800/30 dark:to-accent-900/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.5, 0.2],
-            x: [0, -30, 0],
-            y: [0, 30, 0],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-        />
-        {/* Additional subtle elements */}
-        <motion.div
-          className="absolute top-3/4 left-1/2 w-32 h-32 bg-gradient-to-br from-primary-100/40 to-accent-100/40 dark:from-primary-900/20 dark:to-accent-900/20 rounded-full blur-2xl"
-          animate={{
-            scale: [0.8, 1.3, 0.8],
-            opacity: [0.1, 0.3, 0.1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear",
-            delay: 5
-          }}
-        />
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background transition-theme overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           variants={staggerContainer}
@@ -97,10 +47,10 @@ export function Hero() {
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline with enhanced rotation animation */}
+          {/* Main headline with clean typography */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600 bg-clip-text text-transparent"
+            className="text-5xl md:text-6xl font-semibold text-foreground mb-6"
             key={headlines[currentHeadline]}
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -124,10 +74,10 @@ export function Hero() {
               <button
                 key={index}
                 onClick={() => setCurrentHeadline(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                className={`w-2 h-2 rounded-full transition-colors duration-300 ${
                   index === currentHeadline 
-                    ? 'bg-primary-600 dark:bg-primary-400' 
-                    : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
+                    ? 'bg-neutral-800 dark:bg-neutral-200' 
+                    : 'bg-neutral-300 dark:bg-neutral-600 hover:bg-neutral-400 dark:hover:bg-neutral-500'
                 }`}
                 aria-label={`Switch to headline ${index + 1}`}
               />
@@ -136,7 +86,7 @@ export function Hero() {
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-3xl mx-auto leading-relaxed font-normal"
           >
             Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
           </motion.p>
@@ -147,16 +97,16 @@ export function Hero() {
           >
             <CTAButton
               href="https://aitechhive.beehiiv.com/"
-              variant="gradient"
+              variant="primary"
               size="lg"
               showArrow
               external
-              className="text-lg font-semibold"
+              className="text-lg font-medium"
             >
               Start Learning for Free
             </CTAButton>
 
-            <p className="text-gray-500 dark:text-gray-400 text-sm">
+            <p className="text-neutral-500 dark:text-neutral-500 text-sm font-normal">
               Join 500+ curious minds learning AI every week
             </p>
           </motion.div>

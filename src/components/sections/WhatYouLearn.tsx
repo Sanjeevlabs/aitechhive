@@ -31,14 +31,14 @@ const learningTopics = [
 
 export function WhatYouLearn() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 dark:from-gray-800 dark:via-purple-900/10 dark:to-pink-900/10 transition-theme">
+    <section className="py-20 px-4 bg-background transition-theme">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-16"
+          className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-16"
         >
           What You&apos;ll Learn
         </motion.h2>
