@@ -105,7 +105,7 @@ export function WhatYouLearn() {
               Ready to transform your AI understanding?
             </p>
             <p className="text-primary-600 dark:text-primary-400 font-semibold">
-              Start your journey with our weekly newsletter
+              Start your journey with our daily newsletter
             </p>
           </div>
         </motion.div>

@@ -43,7 +43,7 @@ export function Solution() {
             className="bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg border border-neutral-200 dark:border-neutral-700"
           >
             <p className="text-foreground font-medium">
-              Every week, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
+              Every day, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
               from foundational concepts to cutting-edge developments.
             </p>
           </motion.div>

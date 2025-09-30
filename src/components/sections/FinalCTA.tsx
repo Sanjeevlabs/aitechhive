@@ -77,7 +77,7 @@ export function FinalCTA() {
             </div>
             <div className="flex items-center space-x-2">
               <span>📚</span>
-              <span>Weekly Insights</span>
+              <span>Daily Insights</span>
             </div>
             <div className="flex items-center space-x-2">
               <span>🚀</span>

@@ -4,17 +4,18 @@ A high-converting landing page for aitechhive.com built with Next.js and Framer 
 
 ## Features
 
-- **Hero Section** - 5 rotating headline options with interactive switching
+- **Hero Section** - Single focused tagline: "Decode AI Jargons, One Topic at a Time"
 - **Problem/Solution Flow** - Addresses AI learning pain points and presents the solution
 - **3-Step Process** - Clear path from newsletter signup to knowledge building
 - **Benefits Showcase** - Tangible learning outcomes with icons and descriptions
+- **Daily Newsletter** - Daily AI insights delivered to subscribers
 - **Responsive Design** - Built with Tailwind CSS for all screen sizes
 - **Smooth Animations** - Framer Motion for subtle, professional animations
 - **Newsletter Integration** - Direct links to Beehiiv newsletter signup
 
 ## Tech Stack
 
-- **Next.js 15** with App Router
+- **Next.js 13** with App Router
 - **TypeScript** for type safety
 - **Tailwind CSS** for styling
 - **Framer Motion** for animations
