@@ -5,7 +5,9 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-20 px-4 bg-foreground text-background relative overflow-hidden">
+    <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary-800 to-primary-900 text-background relative overflow-hidden">
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent-secondary/10 to-accent-tertiary/10"></div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
