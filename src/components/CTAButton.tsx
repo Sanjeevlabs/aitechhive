@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:pointer-events-none',
+  'inline-flex items-center justify-center font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 disabled:opacity-50 disabled:pointer-events-none',
   {
     variants: {
       variant: {
-        primary: 'bg-primary-600 hover:bg-primary-700 text-white shadow-lg hover:shadow-xl',
-        secondary: 'bg-white hover:bg-gray-50 text-primary-600 border border-primary-200 shadow-md hover:shadow-lg',
-        ghost: 'bg-transparent hover:bg-primary-50 text-primary-600 dark:hover:bg-primary-900/20',
-        gradient: 'bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-600 hover:to-accent-600 text-white shadow-lg hover:shadow-xl'
+        primary: 'bg-foreground hover:bg-neutral-800 dark:hover:bg-neutral-200 text-background shadow-sm hover:shadow-md',
+        secondary: 'bg-background hover:bg-neutral-50 dark:hover:bg-neutral-800 text-foreground border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-md',
+        ghost: 'bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 text-foreground',
+        accent: 'bg-accent-600 hover:bg-accent-700 text-white shadow-sm hover:shadow-md'
       },
       size: {
         sm: 'px-4 py-2 text-sm',
@@ -65,12 +65,11 @@ export function CTAButton({
   return (
     <motion.div
       whileHover={{ 
-        scale: 1.02,
-        y: -2,
+        scale: 1.01,
         transition: { duration: 0.2 }
       }}
       whileTap={{ 
-        scale: 0.98,
+        scale: 0.99,
         transition: { duration: 0.1 }
       }}
       initial={{ opacity: 0, y: 20 }}
@@ -87,22 +86,13 @@ export function CTAButton({
           {showArrow && (
             <motion.div
               initial={{ x: 0 }}
-              whileHover={{ x: 4 }}
+              whileHover={{ x: 2 }}
               transition={{ duration: 0.2 }}
             >
               <ArrowRightIcon className="h-4 w-4" />
             </motion.div>
           )}
         </span>
-        
-        {/* Animated background for gradient variant */}
-        {variant === 'gradient' && (
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-primary-400 to-accent-400 rounded-lg opacity-0"
-            whileHover={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          />
-        )}
       </button>
     </motion.div>
   )
