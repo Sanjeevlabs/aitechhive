@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Logo size="sm" />
             <div className="text-sm text-gray-400">
-              <p>Decode AI Jargons, One Topic at a Time</p>
+              <p>Decode AI, One Topic at a Time</p>
             </div>
           </div>
 

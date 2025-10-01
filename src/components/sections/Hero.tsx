@@ -41,7 +41,7 @@ export function Hero() {
             variants={fadeInUp}
             className="text-5xl md:text-6xl font-semibold text-foreground mb-6"
           >
-            Decode AI Jargons, One Topic at a Time
+            Decode AI, One Topic at a Time
           </motion.h1>
 
           <motion.p 
