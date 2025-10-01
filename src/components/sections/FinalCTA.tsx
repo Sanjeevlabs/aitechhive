@@ -17,7 +17,7 @@ export function FinalCTA() {
           className="space-y-8"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-semibold mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -27,7 +27,7 @@ export function FinalCTA() {
           </motion.h2>
           
           <motion.p 
-            className="text-xl md:text-2xl mb-8 opacity-80 max-w-3xl mx-auto leading-relaxed font-normal"
+            className="text-xl md:text-2xl mb-8 opacity-80 max-w-3xl mx-auto leading-relaxed font-light"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 0.8, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}

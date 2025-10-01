@@ -74,11 +74,11 @@ export function WhatYouLearn() {
                     </motion.div>
                     
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors tracking-tight">
                         {item.title}
                       </h3>
                       
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg font-light">
                         {item.description}
                       </p>
                     </div>
