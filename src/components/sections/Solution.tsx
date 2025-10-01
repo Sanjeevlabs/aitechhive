@@ -5,8 +5,12 @@ import { LightBulbIcon } from '@heroicons/react/24/outline'
 
 export function Solution() {
   return (
-    <section className="py-24 px-4 bg-background transition-theme relative">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="py-24 px-4 bg-background transition-theme relative overflow-hidden">
+      {/* Floating decorative elements */}
+      <div className="absolute top-10 left-20 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-10 right-20 w-36 h-36 bg-accent-secondary/10 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,9 +18,13 @@ export function Solution() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 dark:bg-accent/20 rounded-xl mb-8 shadow-glow animate-float">
+          <motion.div 
+            className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 dark:bg-accent/20 rounded-xl mb-8 shadow-glow animate-float"
+            whileHover={{ scale: 1.2, rotate: [0, -10, 10, -10, 0] }}
+            transition={{ duration: 0.5 }}
+          >
             <LightBulbIcon className="h-8 w-8 text-accent dark:text-accent" />
-          </div>
+          </motion.div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground mb-8 tracking-tight">
             Clarity is Here

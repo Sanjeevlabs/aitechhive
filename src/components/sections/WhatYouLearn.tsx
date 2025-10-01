@@ -31,8 +31,12 @@ const learningTopics = [
 
 export function WhatYouLearn() {
   return (
-    <section className="py-24 px-4 bg-background transition-theme">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-4 bg-background transition-theme relative overflow-hidden">
+      {/* Floating decorative elements */}
+      <div className="absolute top-20 right-20 w-36 h-36 bg-accent/8 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-44 h-44 bg-accent-secondary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +57,7 @@ export function WhatYouLearn() {
               viewport={{ once: true }}
               className="group relative"
             >
-              <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.03] relative overflow-hidden">
+              <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.03] relative overflow-hidden shimmer">
                 {/* Enhanced animated background gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-700`} />
                 

@@ -21,8 +21,13 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background transition-theme overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-accent-secondary/5 dark:from-accent/10 dark:via-background dark:to-accent-secondary/10 animated-gradient-bg opacity-50" />
+      {/* Enhanced animated gradient background with parallax effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-accent-secondary/10 dark:from-accent/15 dark:via-background dark:to-accent-secondary/15 animated-gradient-bg opacity-60" />
+      
+      {/* Floating decorative elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent-secondary/5 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/2 right-20 w-24 h-24 bg-accent-tertiary/5 rounded-full blur-2xl animate-parallax-float" style={{ animationDelay: '4s' }} />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -31,18 +36,24 @@ export function Hero() {
           animate="animate"
           className="space-y-10"
         >
-          {/* Logo */}
+          {/* Logo with enhanced animation */}
           <motion.div
             variants={fadeInUp}
             className="mb-12"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           >
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline with single focused message */}
+          {/* Main headline with single focused message and gradient effect */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight bg-gradient-to-r from-foreground via-accent to-accent-secondary bg-clip-text text-transparent"
+            style={{
+              backgroundSize: '200% auto',
+              animation: 'gradientShift 8s ease infinite'
+            }}
           >
             Decode AI, One Topic at a Time
           </motion.h1>
@@ -59,7 +70,7 @@ export function Hero() {
             className="space-y-8"
           >
             <CTAButton
-              href="https://aitechhive.beehiiv.com/"
+              href="https://newsletter.aitechhive.com/"
               variant="primary"
               size="lg"
               showArrow

@@ -5,9 +5,13 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-primary via-primary-800 to-primary-900 dark:from-primary-900 dark:via-primary-800 dark:to-primary-700 text-background relative overflow-hidden">
+    <section className="py-24 px-4 bg-gradient-to-br from-accent via-accent-secondary to-primary text-white relative overflow-hidden">
       {/* Animated gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent-secondary/10 to-accent-tertiary/10 animated-gradient-bg"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-accent-tertiary/20 via-accent/20 to-accent-secondary/20 animated-gradient-bg"></div>
+      
+      {/* Floating decorative elements */}
+      <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
+      <div className="absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -45,7 +49,7 @@ export function FinalCTA() {
             className="space-y-8"
           >
             <CTAButton
-              href="https://aitechhive.beehiiv.com/"
+              href="https://newsletter.aitechhive.com/"
               variant="secondary"
               size="lg"
               showArrow
