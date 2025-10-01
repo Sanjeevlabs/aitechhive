@@ -5,8 +5,12 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function Problem() {
   return (
-    <section className="py-24 px-4 bg-secondary dark:bg-secondary transition-theme relative">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="py-24 px-4 bg-secondary dark:bg-secondary transition-theme relative overflow-hidden">
+      {/* Floating decorative elements */}
+      <div className="absolute top-20 right-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-10 w-40 h-40 bg-neutral-300/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,9 +18,13 @@ export function Problem() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-neutral-200 dark:bg-neutral-700 rounded-xl mb-8 shadow-lg">
+          <motion.div 
+            className="inline-flex items-center justify-center w-16 h-16 bg-neutral-200 dark:bg-neutral-700 rounded-xl mb-8 shadow-lg"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ duration: 0.3 }}
+          >
             <ExclamationTriangleIcon className="h-8 w-8 text-neutral-600 dark:text-neutral-300" />
-          </div>
+          </motion.div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground mb-8 tracking-tight">
             Tired of the Wall of Jargon?

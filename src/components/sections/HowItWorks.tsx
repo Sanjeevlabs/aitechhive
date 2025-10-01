@@ -25,8 +25,12 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme relative">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme relative overflow-hidden">
+      {/* Floating decorative elements */}
+      <div className="absolute top-1/4 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-accent-secondary/5 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '3s' }} />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +52,7 @@ export function HowItWorks() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="text-center group"
             >
-              <div className="glass-card p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+              <div className="glass-card p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden hover-lift">
                 {/* Background glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
