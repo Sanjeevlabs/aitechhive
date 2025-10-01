@@ -18,7 +18,7 @@ export function Problem() {
             <ExclamationTriangleIcon className="h-6 w-6 text-neutral-600 dark:text-neutral-400" />
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8 tracking-tight">
             Tired of the Wall of Jargon?
           </h2>
         </motion.div>
@@ -28,7 +28,7 @@ export function Problem() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 space-y-6 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 space-y-6 max-w-3xl mx-auto leading-relaxed font-light"
         >
           <p>
             You&apos;re excited about AI, but every article feels like it&apos;s written for PhD researchers. 

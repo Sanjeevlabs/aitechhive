@@ -4,7 +4,7 @@ A high-converting landing page for aitechhive.com built with Next.js and Framer 
 
 ## Features
 
-- **Hero Section** - Single focused tagline: "Decode AI Jargons, One Topic at a Time"
+- **Hero Section** - Single focused tagline: "Decode AI, One Topic at a Time"
 - **Problem/Solution Flow** - Addresses AI learning pain points and presents the solution
 - **3-Step Process** - Clear path from newsletter signup to knowledge building
 - **Benefits Showcase** - Tangible learning outcomes with icons and descriptions

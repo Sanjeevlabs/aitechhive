@@ -8,13 +8,13 @@ export function Hero() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
   }
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.15
       }
     }
   }
@@ -39,14 +39,14 @@ export function Hero() {
           {/* Main headline with single focused message */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-6xl font-semibold text-foreground mb-6"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight"
           >
-            Decode AI Jargons, One Topic at a Time
+            Decode AI, One Topic at a Time
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-3xl mx-auto leading-relaxed font-normal"
+            className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-3xl mx-auto leading-relaxed font-light"
           >
             Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
           </motion.p>

@@ -18,7 +18,7 @@ export function Solution() {
             <LightBulbIcon className="h-6 w-6 text-accent dark:text-accent" />
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8 tracking-tight">
             Clarity is Here
           </h2>
         </motion.div>
@@ -28,7 +28,7 @@ export function Solution() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 space-y-6 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 space-y-6 max-w-3xl mx-auto leading-relaxed font-light"
         >
           <p>
             AI Tech Hive translates complex AI concepts into clear, digestible insights. 
