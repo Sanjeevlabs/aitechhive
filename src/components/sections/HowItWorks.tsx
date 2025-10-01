@@ -25,19 +25,19 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-20 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme">
+    <section className="py-24 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme relative">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-16"
+          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-foreground mb-20"
         >
           How It Works
         </motion.h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10">
           {steps.map((item, index) => (
             <motion.div
               key={index}
@@ -48,20 +48,25 @@ export function HowItWorks() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="text-center group"
             >
-              <div className="bg-background p-8 rounded-xl border border-neutral-200 dark:border-neutral-700 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-accent/10 to-accent-secondary/10 dark:from-accent/20 dark:to-accent-secondary/20 rounded-lg mb-6 mx-auto">
-                  <span className="text-xl font-bold text-accent dark:text-accent">{item.step}</span>
+              <div className="glass-card p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+                {/* Background glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent/10 to-accent-secondary/10 dark:from-accent/20 dark:to-accent-secondary/20 rounded-xl mb-8 mx-auto shadow-glow-sm">
+                    <span className="text-2xl font-bold text-accent dark:text-accent">{item.step}</span>
+                  </div>
+                  
+                  <div className="text-5xl mb-8 transform group-hover:scale-110 transition-transform duration-300 animate-float">{item.icon}</div>
+                  
+                  <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-5">
+                    {item.title}
+                  </h3>
+                  
+                  <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed font-light">
+                    {item.description}
+                  </p>
                 </div>
-                
-                <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  {item.title}
-                </h3>
-                
-                <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed font-light">
-                  {item.description}
-                </p>
               </div>
             </motion.div>
           ))}

@@ -5,19 +5,20 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary-800 to-primary-900 text-background relative overflow-hidden">
-      {/* Gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent-secondary/10 to-accent-tertiary/10"></div>
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+    <section className="py-24 px-4 bg-gradient-to-br from-primary via-primary-800 to-primary-900 dark:from-primary-900 dark:via-primary-800 dark:to-primary-700 text-background relative overflow-hidden">
+      {/* Animated gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent-secondary/10 to-accent-tertiary/10 animated-gradient-bg"></div>
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="space-y-8"
+          className="space-y-10"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-white"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -27,9 +28,9 @@ export function FinalCTA() {
           </motion.h2>
           
           <motion.p 
-            className="text-xl md:text-2xl mb-8 opacity-80 max-w-3xl mx-auto leading-relaxed font-light"
+            className="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto leading-relaxed font-light text-white/90"
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 0.8, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
@@ -41,7 +42,7 @@ export function FinalCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-8"
           >
             <CTAButton
               href="https://aitechhive.beehiiv.com/"
@@ -49,15 +50,15 @@ export function FinalCTA() {
               size="lg"
               showArrow
               external
-              className="bg-background text-foreground hover:bg-neutral-100 dark:hover:bg-neutral-100 text-lg font-medium shadow-lg border-0"
+              className="bg-background text-foreground hover:bg-neutral-100 dark:hover:bg-neutral-100 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
               Start Learning for Free
             </CTAButton>
             
             <motion.p 
-              className="text-sm opacity-60 font-normal"
+              className="text-base opacity-70 font-normal text-white"
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.6 }}
+              whileInView={{ opacity: 0.7 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
             >
@@ -71,18 +72,18 @@ export function FinalCTA() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             viewport={{ once: true }}
-            className="flex justify-center items-center space-x-8 pt-8 text-sm opacity-60"
+            className="flex flex-wrap justify-center items-center gap-8 pt-12 text-base opacity-70 text-white"
           >
-            <div className="flex items-center space-x-2">
-              <span>✨</span>
+            <div className="flex items-center space-x-3">
+              <span className="text-xl">✨</span>
               <span>500+ Active Learners</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <span>📚</span>
+            <div className="flex items-center space-x-3">
+              <span className="text-xl">📚</span>
               <span>Daily Insights</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <span>🚀</span>
+            <div className="flex items-center space-x-3">
+              <span className="text-xl">🚀</span>
               <span>Career Growth</span>
             </div>
           </motion.div>

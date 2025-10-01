@@ -46,25 +46,25 @@
 }
 
 .dark {
-  /* Base colors */
-  --background: #020617;
-  --foreground: #f8fafc;
-  --card: #0f172a;
-  --card-foreground: #f8fafc;
+  /* Base colors - Improved contrast */
+  --background: #0a0f1e;
+  --foreground: #f1f5f9;
+  --card: #1e293b;
+  --card-foreground: #f1f5f9;
   
-  /* Primary colors - Light for dark mode */
+  /* Primary colors - Better visibility */
   --primary: #f8fafc;
   --primary-foreground: #0f172a;
   --primary-hover: #e2e8f0;
   
-  /* Secondary colors */
+  /* Secondary colors - Enhanced contrast */
   --secondary: #1e293b;
-  --secondary-foreground: #cbd5e1;
+  --secondary-foreground: #e2e8f0;
   --secondary-hover: #334155;
   
-  /* Accent colors - Brighter for dark mode */
+  /* Accent colors - More vibrant for dark mode */
   --accent: #38bdf8;
-  --accent-foreground: #020617;
+  --accent-foreground: #0a0f1e;
   --accent-secondary: #60a5fa;
   --accent-tertiary: #818cf8;
   
@@ -73,13 +73,13 @@
   --purple: #c084fc;
   --magenta: #f472b6;
   
-  /* Muted colors */
-  --muted: #0f172a;
-  --muted-foreground: #94a3b8;
+  /* Muted colors - Better readability */
+  --muted: #1e293b;
+  --muted-foreground: #cbd5e1;
   
-  /* Border and input */
-  --border: #334155;
-  --input: #334155;
+  /* Border and input - More visible */
+  --border: #475569;
+  --input: #475569;
   --ring: #38bdf8;
   
   /* Gradient backgrounds */
@@ -96,10 +96,11 @@ body {
   @apply bg-background text-foreground;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  line-height: 1.65;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.7;
   letter-spacing: -0.011em;
   font-weight: 400;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -112,31 +113,32 @@ body {
   }
   
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-5xl md:text-6xl lg:text-7xl;
     font-weight: 700;
     letter-spacing: -0.04em;
   }
   
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-4xl md:text-5xl lg:text-6xl;
     font-weight: 600;
     letter-spacing: -0.035em;
   }
   
   h3 {
-    @apply text-xl md:text-2xl lg:text-3xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
     font-weight: 600;
     letter-spacing: -0.03em;
   }
   
   h4 {
-    @apply text-lg md:text-xl;
+    @apply text-xl md:text-2xl lg:text-3xl;
     font-weight: 600;
     letter-spacing: -0.025em;
   }
   
   p {
-    line-height: 1.75;
+    @apply text-lg md:text-xl;
+    line-height: 1.8;
     letter-spacing: -0.011em;
     font-weight: 400;
   }
@@ -156,7 +158,9 @@ body {
   }
   
   .transition-theme {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .gradient-primary {
@@ -171,15 +175,42 @@ body {
   }
   
   .shadow-glow {
-    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(14, 165, 233, 0.1);
   }
   
   .shadow-glow-sm {
-    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2), 0 0 20px rgba(14, 165, 233, 0.08);
   }
   
   .backdrop-blur-custom {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+  }
+  
+  .animated-gradient-bg {
+    background: linear-gradient(135deg, 
+      var(--gradient-start) 0%, 
+      var(--gradient-mid) 50%, 
+      var(--gradient-end) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
