@@ -21,12 +21,15 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background transition-theme overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-accent-secondary/5 dark:from-accent/10 dark:via-background dark:to-accent-secondary/10 animated-gradient-bg opacity-50" />
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="initial"
           animate="animate"
-          className="space-y-8"
+          className="space-y-10"
         >
           {/* Logo */}
           <motion.div
@@ -39,21 +42,21 @@ export function Hero() {
           {/* Main headline with single focused message */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 tracking-tight"
           >
             Decode AI, One Topic at a Time
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-3xl mx-auto leading-relaxed font-light"
+            className="text-xl md:text-2xl lg:text-3xl text-neutral-600 dark:text-neutral-300 mb-10 max-w-4xl mx-auto leading-relaxed font-light"
           >
             Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
           </motion.p>
 
           <motion.div
             variants={fadeInUp}
-            className="space-y-6"
+            className="space-y-8"
           >
             <CTAButton
               href="https://aitechhive.beehiiv.com/"
@@ -61,12 +64,12 @@ export function Hero() {
               size="lg"
               showArrow
               external
-              className="text-lg font-medium"
+              className="text-xl font-medium px-10 py-5"
             >
               Start Learning for Free
             </CTAButton>
 
-            <p className="text-neutral-500 dark:text-neutral-500 text-sm font-normal">
+            <p className="text-neutral-500 dark:text-neutral-400 text-lg font-normal">
               Join 500+ curious minds learning AI daily
             </p>
           </motion.div>
