@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  /* Base colors - Lighter and more eye-friendly */
-  --background: #fafbfc;
+  /* Base colors - Lighter and more eye-friendly with pleasant blue tint */
+  --background: #f0f4ff;
   --foreground: #1a202c;
   --card: #ffffff;
   --card-foreground: #1a202c;
@@ -16,10 +16,10 @@
   --primary-800: #1e40af;
   --primary-900: #1e3a8a;
   
-  /* Secondary colors - Light, airy tones */
-  --secondary: #f0f9ff;
+  /* Secondary colors - Light, airy tones with complementary blue */
+  --secondary: #e8f0fe;
   --secondary-foreground: #0369a1;
-  --secondary-hover: #e0f2fe;
+  --secondary-hover: #dce7fd;
   
   /* Accent colors - Bright, energetic cyan/blue gradients */
   --accent: #06b6d4;
@@ -50,8 +50,8 @@
 }
 
 .dark {
-  /* Base colors - Softer dark mode */
-  --background: #0f172a;
+  /* Base colors - Softer dark mode with improved contrast */
+  --background: #1a2332;
   --foreground: #f1f5f9;
   --card: #1e293b;
   --card-foreground: #f1f5f9;
@@ -109,7 +109,7 @@ body {
   line-height: 1.7;
   letter-spacing: -0.011em;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 19px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -122,31 +122,31 @@ body {
   }
   
   h1 {
-    @apply text-5xl md:text-6xl lg:text-7xl;
+    @apply text-6xl md:text-7xl lg:text-8xl;
     font-weight: 700;
     letter-spacing: -0.04em;
   }
   
   h2 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-5xl md:text-6xl lg:text-7xl;
     font-weight: 600;
     letter-spacing: -0.035em;
   }
   
   h3 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply text-3xl md:text-4xl lg:text-5xl;
     font-weight: 600;
     letter-spacing: -0.03em;
   }
   
   h4 {
-    @apply text-xl md:text-2xl lg:text-3xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
     font-weight: 600;
     letter-spacing: -0.025em;
   }
   
   p {
-    @apply text-lg md:text-xl;
+    @apply text-xl md:text-2xl;
     line-height: 1.8;
     letter-spacing: -0.011em;
     font-weight: 400;
