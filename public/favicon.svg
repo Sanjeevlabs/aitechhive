@@ -6,9 +6,22 @@
       <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <!-- Simplified hexagon for favicon -->
+  <!-- Left Wing -->
+  <path d="M4 9 L2 11 L2 13.5 L2 16 L2 18.5 L2 21 L4 23 L4 16 Z" 
+        fill="url(#fav-gradient)" 
+        opacity="0.9"/>
+  <!-- Right Wing -->
+  <path d="M28 9 L30 11 L30 13.5 L30 16 L30 18.5 L30 21 L28 23 L28 16 Z" 
+        fill="url(#fav-gradient)" 
+        opacity="0.9"/>
+  <!-- Hexagon -->
   <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" 
         fill="url(#fav-gradient)"/>
-  <!-- Center dot -->
-  <circle cx="16" cy="16" r="4" fill="#fff"/>
+  <!-- WiFi signal simplified -->
+  <path d="M12 12 Q12 9 16 9 Q20 9 20 12" 
+        stroke="#fff" 
+        stroke-width="1.5" 
+        fill="none"
+        stroke-linecap="round"/>
+  <circle cx="16" cy="15" r="1.5" fill="#fff"/>
 </svg>
