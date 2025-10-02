@@ -5,11 +5,11 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-accent via-accent-secondary to-primary text-white relative overflow-hidden">
-      {/* Animated gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent-tertiary/20 via-accent/20 to-accent-secondary/20 animated-gradient-bg"></div>
+    <section className="py-24 px-4 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-700 dark:via-indigo-700 dark:to-purple-700 text-white relative overflow-hidden">
+      {/* Subtle overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       
-      {/* Floating decorative elements */}
+      {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
       
