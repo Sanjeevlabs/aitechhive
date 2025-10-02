@@ -31,10 +31,10 @@ const learningTopics = [
 
 export function WhatYouLearn() {
   return (
-    <section className="py-24 px-4 bg-background transition-theme relative overflow-hidden">
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 right-20 w-36 h-36 bg-accent/8 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-44 h-44 bg-accent-secondary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="py-24 px-4 bg-white dark:bg-slate-900 transition-theme relative overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute top-20 right-20 w-36 h-36 bg-indigo-50/50 dark:bg-indigo-900/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-44 h-44 bg-pink-50/50 dark:bg-pink-900/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 

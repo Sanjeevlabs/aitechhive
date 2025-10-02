@@ -20,14 +20,9 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background transition-theme overflow-hidden">
-      {/* Enhanced animated gradient background with parallax effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-accent-secondary/10 dark:from-accent/15 dark:via-background dark:to-accent-secondary/15 animated-gradient-bg opacity-60" />
-      
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent-secondary/5 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/2 right-20 w-24 h-24 bg-accent-tertiary/5 rounded-full blur-2xl animate-parallax-float" style={{ animationDelay: '4s' }} />
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 transition-theme overflow-hidden">
+      {/* Subtle decorative gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-900/10 dark:via-transparent dark:to-purple-900/10" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div

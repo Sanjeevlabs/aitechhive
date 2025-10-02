@@ -5,10 +5,10 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function Problem() {
   return (
-    <section className="py-24 px-4 bg-secondary dark:bg-secondary transition-theme relative overflow-hidden">
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-10 w-40 h-40 bg-neutral-300/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+    <section className="py-24 px-4 bg-white dark:bg-slate-900 transition-theme relative overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute top-20 right-10 w-32 h-32 bg-red-50/50 dark:bg-red-900/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-10 w-40 h-40 bg-amber-50/50 dark:bg-amber-900/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -19,11 +19,11 @@ export function Problem() {
           className="mb-16"
         >
           <motion.div 
-            className="inline-flex items-center justify-center w-16 h-16 bg-neutral-200 dark:bg-neutral-700 rounded-xl mb-8 shadow-lg"
+            className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-xl mb-8 shadow-lg border border-amber-200 dark:border-amber-800"
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ duration: 0.3 }}
           >
-            <ExclamationTriangleIcon className="h-8 w-8 text-neutral-600 dark:text-neutral-300" />
+            <ExclamationTriangleIcon className="h-8 w-8 text-amber-600 dark:text-amber-400" />
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground mb-8 tracking-tight">

@@ -56,7 +56,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
       >
         <Image
           src={isDark ? '/logo-dark.svg' : '/logo-light.svg'}
-          alt="AI Tech Hive Logo"
+          alt="AITECHHIVE Logo"
           width={width}
           height={height}
           priority
@@ -73,7 +73,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
-        AI TechHive
+        AITECHHIVE
       </motion.h3>
     </motion.div>
   )
