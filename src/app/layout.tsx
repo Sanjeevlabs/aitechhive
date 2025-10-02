@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AI Tech Hive - Decode AI, One Topic at a Time',
+  title: 'AITECHHIVE - Decode AI, One Topic at a Time',
   description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
   metadataBase: new URL('https://aitechhive.com'),
   keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'AI Education', 'Tech Learning', 'AI Newsletter'],
-  authors: [{ name: 'AI Tech Hive' }],
-  creator: 'AI Tech Hive',
-  publisher: 'AI Tech Hive',
+  authors: [{ name: 'AITECHHIVE' }],
+  creator: 'AITECHHIVE',
+  publisher: 'AITECHHIVE',
   icons: {
     icon: [
       { url: '/icons/favicon-16.png', sizes: '16x16', type: 'image/png' },
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'AI Tech Hive - Decode AI, One Topic at a Time',
+    title: 'AITECHHIVE - Decode AI, One Topic at a Time',
     description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
     url: 'https://aitechhive.com',
-    siteName: 'AI Tech Hive',
+    siteName: 'AITECHHIVE',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Tech Hive - Decode AI, One Topic at a Time',
+    title: 'AITECHHIVE - Decode AI, One Topic at a Time',
     description: 'Get simple explanations and in-depth AI topics delivered daily.',
   },
   robots: {

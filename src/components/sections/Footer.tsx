@@ -5,7 +5,7 @@ import { Logo } from '@/components/Logo'
 
 export function Footer() {
   return (
-    <footer className="py-16 px-4 bg-gray-900 dark:bg-black text-white transition-theme">
+    <footer className="py-16 px-4 text-white transition-theme" style={{ backgroundColor: '#1E88E5' }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -39,7 +39,7 @@ export function Solution() {
           className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 space-y-8 max-w-4xl mx-auto leading-relaxed font-light"
         >
           <p>
-            AI Tech Hive translates complex AI concepts into clear, digestible insights. 
+            AITECHHIVE translates complex AI concepts into clear, digestible insights. 
             We start with simple breakdowns that anyone can understand, then offer deep dives for those ready to go further.
           </p>
           

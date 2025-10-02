@@ -25,10 +25,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 px-4 bg-neutral-50 dark:bg-neutral-900 transition-theme relative overflow-hidden">
+    <section className="py-24 px-4 transition-theme relative overflow-hidden" style={{ backgroundColor: '#E0F4FF' }}>
       {/* Floating decorative elements */}
-      <div className="absolute top-1/4 left-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-accent-secondary/5 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/4 left-10 w-32 h-32 rounded-full blur-3xl animate-parallax-float" style={{ backgroundColor: 'rgba(135, 206, 235, 0.3)' }} />
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 rounded-full blur-3xl animate-parallax-float" style={{ backgroundColor: 'rgba(135, 206, 235, 0.2)', animationDelay: '3s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
