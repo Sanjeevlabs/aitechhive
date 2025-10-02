@@ -16,16 +16,16 @@ export function Footer() {
         >
           <div className="flex items-center space-x-4">
             <Logo size="sm" />
-            <div className="text-base text-gray-400">
+            <div className="text-base text-gray-300 dark:text-gray-400">
               <p>Decode AI, One Topic at a Time</p>
             </div>
           </div>
 
           <div className="text-center md:text-right">
-            <p className="text-base text-gray-400 mb-2">
+            <p className="text-base text-gray-300 dark:text-gray-400 mb-2">
               @2025 AITECHHIVE
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-400 dark:text-gray-500">
               Making AI accessible to everyone
             </p>
           </div>
