@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AITECHHIVE - Decode AI, One Topic at a Time',
+  title: 'AITECHHIVE - Hive of AI Learners — Humans, Learning Together',
   description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
   metadataBase: new URL('https://aitechhive.com'),
   keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'AI Education', 'Tech Learning', 'AI Newsletter'],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'AITECHHIVE - Decode AI, One Topic at a Time',
+    title: 'AITECHHIVE - Hive of AI Learners — Humans, Learning Together',
     description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
     url: 'https://aitechhive.com',
     siteName: 'AITECHHIVE',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AITECHHIVE - Decode AI, One Topic at a Time',
+    title: 'AITECHHIVE - Hive of AI Learners — Humans, Learning Together',
     description: 'Get simple explanations and in-depth AI topics delivered daily.',
   },
   robots: {

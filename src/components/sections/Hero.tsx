@@ -50,7 +50,7 @@ export function Hero() {
               animation: 'gradientShift 8s ease infinite'
             }}
           >
-            Decode AI, One Topic at a Time
+            Hive of AI Learners — Humans, Learning Together
           </motion.h1>
 
           <motion.p 
