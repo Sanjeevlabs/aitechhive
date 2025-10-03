@@ -3,62 +3,62 @@
 @tailwind utilities;
 
 :root {
-  /* Base colors - Clean, professional Adobe Express-inspired whites */
-  --background: #ffffff;
+  /* Base colors - Adobe Express light blue background style */
+  --background: #a8d5f2;
   --foreground: #1f1f1f;
   --card: #ffffff;
   --card-foreground: #1f1f1f;
   
-  /* Primary colors - Adobe Express blue for trust and professionalism */
+  /* Primary colors - Adobe Express blue */
   --primary: #1473e6;
   --primary-foreground: #ffffff;
   --primary-hover: #0d66d0;
   --primary-800: #095aba;
   --primary-900: #054ea3;
   
-  /* Secondary colors - Soft, complementary tones */
-  --secondary: #f5f5f5;
-  --secondary-foreground: #505050;
-  --secondary-hover: #e8e8e8;
+  /* Secondary colors - Light blue tones */
+  --secondary: #d4eaf7;
+  --secondary-foreground: #1f1f1f;
+  --secondary-hover: #c0e0f0;
   
-  /* Accent colors - Vibrant purple/pink Adobe Express signature gradients */
-  --accent: #7c3aed;
+  /* Accent colors - Purple accent from Adobe Express */
+  --accent: #8b5cf6;
   --accent-foreground: #ffffff;
-  --accent-secondary: #a855f7;
-  --accent-tertiary: #ec4899;
+  --accent-secondary: #a78bfa;
+  --accent-tertiary: #c4b5fd;
   
-  /* Additional accent variations - Modern, professional palette */
+  /* Additional accent variations */
   --teal: #06b6d4;
-  --purple: #7c3aed;
+  --purple: #8b5cf6;
   --magenta: #ec4899;
   --yellow: #fbbf24;
   --orange: #fb923c;
   
-  /* Muted colors - Subtle grays for hierarchy */
-  --muted: #fafafa;
+  /* Muted colors */
+  --muted: #e8f4fb;
   --muted-foreground: #6b7280;
   
-  /* Border and input - Clean, minimal */
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #7c3aed;
+  /* Border and input */
+  --border: #d4eaf7;
+  --input: #d4eaf7;
+  --ring: #8b5cf6;
   
-  /* Gradient backgrounds - Adobe Express signature purple-to-pink */
-  --gradient-start: #7c3aed;
-  --gradient-mid: #a855f7;
-  --gradient-end: #ec4899;
+  /* Gradient backgrounds - Soft blue gradients */
+  --gradient-start: #a8d5f2;
+  --gradient-mid: #8ec5e8;
+  --gradient-end: #6eb5de;
   
   /* Additional gradients for variety */
-  --gradient-blue-start: #1473e6;
-  --gradient-blue-mid: #0d66d0;
-  --gradient-blue-end: #7c3aed;
+  --gradient-blue-start: #a8d5f2;
+  --gradient-blue-mid: #8ec5e8;
+  --gradient-blue-end: #8b5cf6;
 }
 
 .dark {
-  /* Base colors - Rich, deep Adobe Express-inspired dark mode */
-  --background: #1a1a1a;
+  /* Base colors - Dark mode with deep blue-gray */
+  --background: #0f1729;
   --foreground: #f5f5f5;
-  --card: #2a2a2a;
+  --card: #1a2332;
   --card-foreground: #f5f5f5;
   
   /* Primary colors - Vibrant blue for dark mode */
@@ -69,41 +69,41 @@
   --primary-800: #0d66d0;
   --primary-900: #095aba;
   
-  /* Secondary colors - Subtle contrast */
-  --secondary: #2a2a2a;
+  /* Secondary colors - Dark blue tones */
+  --secondary: #1a2332;
   --secondary-foreground: #e5e5e5;
-  --secondary-hover: #3a3a3a;
+  --secondary-hover: #2a3645;
   
-  /* Accent colors - Vibrant purple/pink for dark mode */
+  /* Accent colors - Purple accent */
   --accent: #8b5cf6;
   --accent-foreground: #ffffff;
   --accent-secondary: #a78bfa;
-  --accent-tertiary: #f472b6;
+  --accent-tertiary: #c4b5fd;
   
-  /* Additional accent variations - Enhanced for dark mode */
+  /* Additional accent variations */
   --teal: #06b6d4;
   --purple: #8b5cf6;
   --magenta: #f472b6;
   --yellow: #fbbf24;
   --orange: #fb923c;
   
-  /* Muted colors - Improved readability */
-  --muted: #2a2a2a;
+  /* Muted colors */
+  --muted: #1a2332;
   --muted-foreground: #a3a3a3;
   
-  /* Border and input - Subtle but visible */
-  --border: #3f3f3f;
-  --input: #3f3f3f;
+  /* Border and input */
+  --border: #2a3645;
+  --input: #2a3645;
   --ring: #8b5cf6;
   
-  /* Gradient backgrounds - Purple-to-pink signature */
-  --gradient-start: #7c3aed;
-  --gradient-mid: #a855f7;
-  --gradient-end: #ec4899;
+  /* Gradient backgrounds - Dark blue gradients */
+  --gradient-start: #1a3a52;
+  --gradient-mid: #2a4a62;
+  --gradient-end: #3a5a72;
   
   /* Additional gradients for variety */
-  --gradient-blue-start: #1473e6;
-  --gradient-blue-mid: #378ef0;
+  --gradient-blue-start: #1a3a52;
+  --gradient-blue-mid: #2a4a62;
   --gradient-blue-end: #8b5cf6;
 }
 

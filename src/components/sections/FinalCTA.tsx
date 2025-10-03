@@ -5,8 +5,8 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-500 to-pink-500 dark:from-purple-700 dark:via-purple-600 dark:to-pink-600 text-white relative overflow-hidden">
-      {/* Subtle overlay for depth - Adobe Express style */}
+    <section className="py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-600 dark:from-purple-700 dark:via-purple-600 dark:to-purple-700 text-white relative overflow-hidden">
+      {/* Subtle overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
       
       {/* Subtle decorative elements */}

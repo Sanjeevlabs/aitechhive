@@ -25,10 +25,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-[#1a1a1a] dark:to-[#2a2a2a] transition-theme relative overflow-hidden">
-      {/* Subtle decorative elements - Adobe Express inspired */}
-      <div className="absolute top-1/4 left-10 w-32 h-32 bg-blue-100/50 dark:bg-blue-900/20 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-purple-100/50 dark:bg-purple-900/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '3s' }} />
+    <section className="py-24 px-4 bg-white dark:bg-card transition-theme relative overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute top-1/4 left-10 w-32 h-32 bg-blue-200/40 dark:bg-blue-900/20 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-purple-200/40 dark:bg-purple-900/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '3s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 

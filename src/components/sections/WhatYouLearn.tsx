@@ -7,34 +7,34 @@ const learningTopics = [
     title: "Master the Basics",
     description: "Understand fundamental AI concepts like machine learning, neural networks, and algorithms without the complexity.",
     icon: "🎯",
-    gradient: "from-blue-600 to-purple-600"
+    gradient: "from-blue-500 to-blue-600"
   },
   {
     title: "See Real-World Impact", 
     description: "Discover how AI is transforming industries from healthcare to finance, with concrete examples and case studies.",
     icon: "🌍",
-    gradient: "from-purple-600 to-pink-600"
+    gradient: "from-purple-500 to-purple-600"
   },
   {
     title: "Stay Current",
     description: "Keep up with the latest AI developments, tools, and breakthroughs that matter to your career and interests.",
     icon: "⚡",
-    gradient: "from-pink-600 to-purple-600"
+    gradient: "from-cyan-500 to-cyan-600"
   },
   {
     title: "Build Career Confidence",
     description: "Gain the knowledge to speak intelligently about AI in professional settings and identify opportunities.",
     icon: "💼",
-    gradient: "from-purple-600 to-blue-600"
+    gradient: "from-indigo-500 to-indigo-600"
   }
 ]
 
 export function WhatYouLearn() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white to-gray-50/50 dark:from-[#1a1a1a] dark:to-[#2a2a2a]/50 transition-theme relative overflow-hidden">
-      {/* Subtle decorative elements - Adobe Express inspired */}
-      <div className="absolute top-20 right-20 w-36 h-36 bg-purple-100/60 dark:bg-purple-900/15 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-44 h-44 bg-pink-100/60 dark:bg-pink-900/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="py-24 px-4 bg-white dark:bg-card transition-theme relative overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute top-20 right-20 w-36 h-36 bg-blue-200/40 dark:bg-blue-900/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-44 h-44 bg-purple-200/40 dark:bg-purple-900/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
