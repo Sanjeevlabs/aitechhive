@@ -5,10 +5,10 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export function Problem() {
   return (
-    <section className="py-24 px-4 bg-white dark:bg-slate-900 transition-theme relative overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-red-50/50 dark:bg-red-900/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-10 w-40 h-40 bg-amber-50/50 dark:bg-amber-900/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+    <section className="py-24 px-4 bg-white dark:bg-[#1a1a1a] transition-theme relative overflow-hidden">
+      {/* Subtle decorative elements - Adobe Express inspired */}
+      <div className="absolute top-20 right-10 w-32 h-32 bg-amber-100/50 dark:bg-amber-900/15 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-10 w-40 h-40 bg-purple-100/50 dark:bg-purple-900/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
