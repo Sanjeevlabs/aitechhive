@@ -5,10 +5,10 @@ import { LightBulbIcon } from '@heroicons/react/24/outline'
 
 export function Solution() {
   return (
-    <section className="py-24 px-4 bg-secondary dark:bg-secondary transition-theme relative overflow-hidden">
+    <section className="py-24 px-4 bg-slate-50 dark:bg-slate-800/50 transition-theme relative overflow-hidden">
       {/* Subtle decorative elements */}
-      <div className="absolute top-10 left-20 w-40 h-40 bg-purple-200/40 dark:bg-purple-900/20 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-10 right-20 w-36 h-36 bg-blue-200/40 dark:bg-blue-900/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-10 left-20 w-40 h-40 bg-green-100/40 dark:bg-green-900/20 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-10 right-20 w-36 h-36 bg-blue-100/40 dark:bg-blue-900/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div

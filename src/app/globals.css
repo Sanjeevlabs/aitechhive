@@ -3,108 +3,98 @@
 @tailwind utilities;
 
 :root {
-  /* Base colors - Adobe Express light blue background style */
-  --background: #a8d5f2;
-  --foreground: #1f1f1f;
+  /* Base colors - Lighter and more eye-friendly with pleasant blue tint */
+  --background: #f0f4ff;
+  --foreground: #1a202c;
   --card: #ffffff;
-  --card-foreground: #1f1f1f;
+  --card-foreground: #1a202c;
   
-  /* Primary colors - Adobe Express blue */
-  --primary: #1473e6;
+  /* Primary colors - Softer blues for daylight freshness */
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --primary-hover: #0d66d0;
-  --primary-800: #095aba;
-  --primary-900: #054ea3;
+  --primary-hover: #2563eb;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
   
-  /* Secondary colors - Light blue tones */
-  --secondary: #d4eaf7;
-  --secondary-foreground: #1f1f1f;
-  --secondary-hover: #c0e0f0;
+  /* Secondary colors - Light, airy tones with complementary blue */
+  --secondary: #e8f0fe;
+  --secondary-foreground: #0369a1;
+  --secondary-hover: #dce7fd;
   
-  /* Accent colors - Purple accent from Adobe Express */
-  --accent: #8b5cf6;
+  /* Accent colors - Bright, energetic cyan/blue gradients */
+  --accent: #06b6d4;
   --accent-foreground: #ffffff;
-  --accent-secondary: #a78bfa;
-  --accent-tertiary: #c4b5fd;
+  --accent-secondary: #0ea5e9;
+  --accent-tertiary: #38bdf8;
   
-  /* Additional accent variations */
-  --teal: #06b6d4;
-  --purple: #8b5cf6;
+  /* Additional accent variations - Vibrant and curious */
+  --teal: #14b8a6;
+  --purple: #a78bfa;
   --magenta: #ec4899;
   --yellow: #fbbf24;
   --orange: #fb923c;
   
   /* Muted colors */
-  --muted: #e8f4fb;
-  --muted-foreground: #6b7280;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
   
   /* Border and input */
-  --border: #d4eaf7;
-  --input: #d4eaf7;
-  --ring: #8b5cf6;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #06b6d4;
   
-  /* Gradient backgrounds - Soft blue gradients */
-  --gradient-start: #a8d5f2;
-  --gradient-mid: #8ec5e8;
-  --gradient-end: #6eb5de;
-  
-  /* Additional gradients for variety */
-  --gradient-blue-start: #a8d5f2;
-  --gradient-blue-mid: #8ec5e8;
-  --gradient-blue-end: #8b5cf6;
+  /* Gradient backgrounds - Lighter and more vibrant */
+  --gradient-start: #06b6d4;
+  --gradient-mid: #0ea5e9;
+  --gradient-end: #3b82f6;
 }
 
 .dark {
-  /* Base colors - Dark mode with deep blue-gray */
-  --background: #0f1729;
-  --foreground: #f5f5f5;
-  --card: #1a2332;
-  --card-foreground: #f5f5f5;
+  /* Base colors - Softer dark mode with improved contrast */
+  --background: #1a2332;
+  --foreground: #f1f5f9;
+  --card: #1e293b;
+  --card-foreground: #f1f5f9;
   
-  /* Primary colors - Vibrant blue for dark mode */
-  --primary: #378ef0;
+  /* Primary colors - Brighter for dark mode */
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --primary-hover: #2680eb;
-  --primary-700: #1473e6;
-  --primary-800: #0d66d0;
-  --primary-900: #095aba;
+  --primary-hover: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
   
-  /* Secondary colors - Dark blue tones */
-  --secondary: #1a2332;
-  --secondary-foreground: #e5e5e5;
-  --secondary-hover: #2a3645;
+  /* Secondary colors - Enhanced contrast */
+  --secondary: #1e293b;
+  --secondary-foreground: #e2e8f0;
+  --secondary-hover: #334155;
   
-  /* Accent colors - Purple accent */
-  --accent: #8b5cf6;
+  /* Accent colors - More vibrant for dark mode */
+  --accent: #06b6d4;
   --accent-foreground: #ffffff;
-  --accent-secondary: #a78bfa;
-  --accent-tertiary: #c4b5fd;
+  --accent-secondary: #0ea5e9;
+  --accent-tertiary: #38bdf8;
   
   /* Additional accent variations */
-  --teal: #06b6d4;
-  --purple: #8b5cf6;
+  --teal: #2dd4bf;
+  --purple: #a78bfa;
   --magenta: #f472b6;
   --yellow: #fbbf24;
   --orange: #fb923c;
   
-  /* Muted colors */
-  --muted: #1a2332;
-  --muted-foreground: #a3a3a3;
+  /* Muted colors - Better readability */
+  --muted: #1e293b;
+  --muted-foreground: #cbd5e1;
   
-  /* Border and input */
-  --border: #2a3645;
-  --input: #2a3645;
-  --ring: #8b5cf6;
+  /* Border and input - More visible */
+  --border: #334155;
+  --input: #334155;
+  --ring: #06b6d4;
   
-  /* Gradient backgrounds - Dark blue gradients */
-  --gradient-start: #1a3a52;
-  --gradient-mid: #2a4a62;
-  --gradient-end: #3a5a72;
-  
-  /* Additional gradients for variety */
-  --gradient-blue-start: #1a3a52;
-  --gradient-blue-mid: #2a4a62;
-  --gradient-blue-end: #8b5cf6;
+  /* Gradient backgrounds */
+  --gradient-start: #06b6d4;
+  --gradient-mid: #0ea5e9;
+  --gradient-end: #3b82f6;
 }
 
 * {
@@ -186,18 +176,6 @@ body {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
   }
   
-  .gradient-blue {
-    background: linear-gradient(135deg, var(--gradient-blue-start) 0%, var(--gradient-blue-mid) 50%, var(--gradient-blue-end) 100%);
-  }
-  
-  .gradient-purple-pink {
-    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #ec4899 100%);
-  }
-  
-  .gradient-blue-purple {
-    background: linear-gradient(135deg, #1473e6 0%, #378ef0 50%, #8b5cf6 100%);
-  }
-  
   .gradient-text {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
     -webkit-background-clip: text;
@@ -205,23 +183,12 @@ body {
     background-clip: text;
   }
   
-  .gradient-text-blue {
-    background: linear-gradient(135deg, var(--gradient-blue-start) 0%, var(--gradient-blue-mid) 50%, var(--gradient-blue-end) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
   .shadow-glow {
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3), 0 0 40px rgba(168, 85, 247, 0.1);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(14, 165, 233, 0.1);
   }
   
   .shadow-glow-sm {
-    box-shadow: 0 0 10px rgba(124, 58, 237, 0.2), 0 0 20px rgba(168, 85, 247, 0.08);
-  }
-  
-  .shadow-glow-pink {
-    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3), 0 0 40px rgba(236, 72, 153, 0.1);
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2), 0 0 20px rgba(14, 165, 233, 0.08);
   }
   
   .backdrop-blur-custom {
@@ -230,17 +197,15 @@ body {
   }
   
   .glass-card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(229, 231, 235, 0.8);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
   .dark .glass-card {
-    background: rgba(42, 42, 42, 0.8);
-    border: 1px solid rgba(63, 63, 63, 0.8);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(71, 85, 105, 0.3);
   }
   
   .animated-gradient-bg {
