@@ -20,9 +20,9 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background transition-theme overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute inset-0 opacity-30"></div>
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 transition-theme overflow-hidden">
+      {/* Subtle decorative gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-900/10 dark:via-transparent dark:to-purple-900/10" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
