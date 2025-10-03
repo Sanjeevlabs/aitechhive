@@ -7,34 +7,34 @@ const learningTopics = [
     title: "Master the Basics",
     description: "Understand fundamental AI concepts like machine learning, neural networks, and algorithms without the complexity.",
     icon: "🎯",
-    gradient: "from-blue-500 to-indigo-500"
+    gradient: "from-blue-500 to-blue-600"
   },
   {
     title: "See Real-World Impact", 
     description: "Discover how AI is transforming industries from healthcare to finance, with concrete examples and case studies.",
     icon: "🌍",
-    gradient: "from-green-500 to-teal-500"
+    gradient: "from-purple-500 to-purple-600"
   },
   {
     title: "Stay Current",
     description: "Keep up with the latest AI developments, tools, and breakthroughs that matter to your career and interests.",
     icon: "⚡",
-    gradient: "from-yellow-500 to-orange-500"
+    gradient: "from-cyan-500 to-cyan-600"
   },
   {
     title: "Build Career Confidence",
     description: "Gain the knowledge to speak intelligently about AI in professional settings and identify opportunities.",
     icon: "💼",
-    gradient: "from-purple-500 to-pink-500"
+    gradient: "from-indigo-500 to-indigo-600"
   }
 ]
 
 export function WhatYouLearn() {
   return (
-    <section className="py-24 px-4 bg-white dark:bg-slate-900 transition-theme relative overflow-hidden">
+    <section className="py-24 px-4 bg-white dark:bg-card transition-theme relative overflow-hidden">
       {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-20 w-36 h-36 bg-indigo-50/50 dark:bg-indigo-900/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-44 h-44 bg-pink-50/50 dark:bg-pink-900/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-20 right-20 w-36 h-36 bg-blue-200/40 dark:bg-blue-900/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-44 h-44 bg-purple-200/40 dark:bg-purple-900/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 

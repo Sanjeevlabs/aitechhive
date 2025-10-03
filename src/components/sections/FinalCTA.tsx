@@ -5,9 +5,9 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-700 dark:via-indigo-700 dark:to-purple-700 text-white relative overflow-hidden">
+    <section className="py-24 px-4 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-600 dark:from-purple-700 dark:via-purple-600 dark:to-purple-700 text-white relative overflow-hidden">
       {/* Subtle overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
       
       {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
