@@ -21,11 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%)'
+      background: 'linear-gradient(135deg, #FFF5EB 0%, #FFEDD5 25%, #FFF9F0 50%, #FFFFFF 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-transparent to-blue-400/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-purple-300/10 via-transparent to-orange-200/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-orange-50/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-orange-50/15 via-transparent to-white/10" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -47,14 +47,14 @@ export function Hero() {
           {/* Main headline with Adobe Express-style gradient */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-white drop-shadow-lg"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-slate-900 drop-shadow-sm"
           >
             The Hive of AI Learners
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 max-w-4xl mx-auto leading-relaxed font-light"
+            className="text-xl md:text-2xl lg:text-3xl text-slate-700 mb-10 max-w-4xl mx-auto leading-relaxed font-light"
           >
             Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
           </motion.p>
@@ -69,13 +69,13 @@ export function Hero() {
               size="lg"
               showArrow
               external
-              className="text-xl font-medium px-10 py-5 bg-white text-[#4F88FF] hover:bg-white/95 shadow-2xl"
+              className="text-xl font-medium px-10 py-5 bg-slate-900 text-white hover:bg-slate-800 shadow-2xl"
             >
               Start Learning for Free
             </CTAButton>
 
-            <p className="text-white/80 text-lg font-normal">
-              Join 500+ curious minds learning AI daily
+            <p className="text-slate-600 text-lg font-normal">
+              Join a hive of curious minds learning AI daily
             </p>
           </motion.div>
         </motion.div>
