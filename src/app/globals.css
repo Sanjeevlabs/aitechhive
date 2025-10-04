@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 :root {
-  /* Base colors - Lighter and more eye-friendly with pleasant blue tint */
-  --background: #f0f4ff;
+  /* Adobe Express-inspired single theme */
+  /* Base colors */
+  --background: #ffffff;
   --foreground: #1a202c;
   --card: #ffffff;
   --card-foreground: #1a202c;
   
-  /* Primary colors - Softer blues for daylight freshness */
-  --primary: #3b82f6;
+  /* Adobe Express gradient colors */
+  --primary: #4F88FF;
   --primary-foreground: #ffffff;
-  --primary-hover: #2563eb;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
+  --primary-hover: #3b6fd9;
+  --primary-light: #76B3FF;
   
-  /* Secondary colors - Light, airy tones with complementary blue */
-  --secondary: #e8f0fe;
-  --secondary-foreground: #0369a1;
-  --secondary-hover: #dce7fd;
+  /* Secondary colors */
+  --secondary: #f0f7ff;
+  --secondary-foreground: #1a202c;
+  --secondary-hover: #e0efff;
   
-  /* Accent colors - Bright, energetic cyan/blue gradients */
-  --accent: #06b6d4;
+  /* Accent colors - Adobe Express style */
+  --accent: #4F88FF;
   --accent-foreground: #ffffff;
-  --accent-secondary: #0ea5e9;
-  --accent-tertiary: #38bdf8;
+  --accent-secondary: #76B3FF;
+  --accent-tertiary: #9ec5ff;
   
-  /* Additional accent variations - Vibrant and curious */
+  /* Additional accent variations */
   --teal: #14b8a6;
   --purple: #a78bfa;
   --magenta: #ec4899;
@@ -41,60 +41,11 @@
   /* Border and input */
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #06b6d4;
+  --ring: #4F88FF;
   
-  /* Gradient backgrounds - Lighter and more vibrant */
-  --gradient-start: #06b6d4;
-  --gradient-mid: #0ea5e9;
-  --gradient-end: #3b82f6;
-}
-
-.dark {
-  /* Base colors - Softer dark mode with improved contrast */
-  --background: #1a2332;
-  --foreground: #f1f5f9;
-  --card: #1e293b;
-  --card-foreground: #f1f5f9;
-  
-  /* Primary colors - Brighter for dark mode */
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-  --primary-hover: #2563eb;
-  --primary-700: #1d4ed8;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
-  
-  /* Secondary colors - Enhanced contrast */
-  --secondary: #1e293b;
-  --secondary-foreground: #e2e8f0;
-  --secondary-hover: #334155;
-  
-  /* Accent colors - More vibrant for dark mode */
-  --accent: #06b6d4;
-  --accent-foreground: #ffffff;
-  --accent-secondary: #0ea5e9;
-  --accent-tertiary: #38bdf8;
-  
-  /* Additional accent variations */
-  --teal: #2dd4bf;
-  --purple: #a78bfa;
-  --magenta: #f472b6;
-  --yellow: #fbbf24;
-  --orange: #fb923c;
-  
-  /* Muted colors - Better readability */
-  --muted: #1e293b;
-  --muted-foreground: #cbd5e1;
-  
-  /* Border and input - More visible */
-  --border: #334155;
-  --input: #334155;
-  --ring: #06b6d4;
-  
-  /* Gradient backgrounds */
-  --gradient-start: #06b6d4;
-  --gradient-mid: #0ea5e9;
-  --gradient-end: #3b82f6;
+  /* Adobe Express gradients */
+  --gradient-start: #4F88FF;
+  --gradient-end: #76B3FF;
 }
 
 * {
@@ -105,7 +56,6 @@ body {
   @apply bg-background text-foreground;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
-  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.7;
   letter-spacing: -0.011em;
   font-weight: 400;
@@ -166,55 +116,58 @@ body {
     text-wrap: balance;
   }
   
-  .transition-theme {
-    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Adobe Express-style gradients */
+  .gradient-primary {
+    background: linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%);
   }
   
-  .gradient-primary {
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+  .gradient-overlay {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.05));
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+    background: linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
+  /* Shadow and glow effects */
   .shadow-glow {
-    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(14, 165, 233, 0.1);
+    box-shadow: 0 8px 32px rgba(79, 136, 255, 0.25), 0 4px 16px rgba(79, 136, 255, 0.15);
   }
   
   .shadow-glow-sm {
-    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2), 0 0 20px rgba(14, 165, 233, 0.08);
+    box-shadow: 0 4px 16px rgba(79, 136, 255, 0.2);
   }
   
-  .backdrop-blur-custom {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-  }
-  
+  /* Glass card effect */
   .glass-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
   
-  .dark .glass-card {
-    background: rgba(30, 41, 59, 0.6);
-    border: 1px solid rgba(71, 85, 105, 0.3);
+  /* Adobe Express-style animations */
+  @keyframes slideUpFade {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
   }
-  
-  .animated-gradient-bg {
-    background: linear-gradient(135deg, 
-      var(--gradient-start) 0%, 
-      var(--gradient-mid) 50%, 
-      var(--gradient-end) 100%);
-    background-size: 200% 200%;
-    animation: gradientShift 10s ease infinite;
+
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(-8px); 
+    }
+    50% { 
+      transform: translateY(0); 
+    }
   }
   
   @keyframes gradientShift {
@@ -223,25 +176,9 @@ body {
     100% { background-position: 0% 50%; }
   }
   
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-  
   @keyframes pulse-glow {
     0%, 100% { opacity: 0.5; }
     50% { opacity: 1; }
-  }
-  
-  @keyframes slide-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
   
   @keyframes parallax-float {
@@ -249,6 +186,23 @@ body {
     25% { transform: translateY(-10px) translateX(5px); }
     50% { transform: translateY(-20px) translateX(-5px); }
     75% { transform: translateY(-10px) translateX(5px); }
+  }
+  
+  @keyframes shimmer {
+    to { left: 100%; }
+  }
+  
+  /* Animation classes */
+  .hero-enter {
+    animation: slideUpFade 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  .scroll-reveal {
+    animation: slideUpFade 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  .float-animation {
+    animation: float 4s ease-in-out infinite;
   }
   
   .animate-float {
@@ -259,23 +213,21 @@ body {
     animation: pulse-glow 2s ease-in-out infinite;
   }
   
-  .animate-slide-in-up {
-    animation: slide-in-up 0.8s ease-out;
-  }
-  
   .animate-parallax-float {
     animation: parallax-float 10s ease-in-out infinite;
   }
   
+  /* Hover effects */
   .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(79, 136, 255, 0.2);
   }
   
+  /* Shimmer effect */
   .shimmer {
     position: relative;
     overflow: hidden;
@@ -288,13 +240,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 2s infinite;
-  }
-  
-  @keyframes shimmer {
-    to {
-      left: 100%;
-    }
   }
 }

@@ -31,10 +31,10 @@ const learningTopics = [
 
 export function WhatYouLearn() {
   return (
-    <section className="py-24 px-4 bg-white dark:bg-slate-900 transition-theme relative overflow-hidden">
+    <section className="py-24 px-4 bg-slate-50 relative overflow-hidden">
       {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-20 w-36 h-36 bg-indigo-50/50 dark:bg-indigo-900/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-44 h-44 bg-pink-50/50 dark:bg-pink-900/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-20 right-20 w-36 h-36 bg-indigo-50/50 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-44 h-44 bg-pink-50/50 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
@@ -78,11 +78,11 @@ export function WhatYouLearn() {
                     </motion.div>
                     
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-5 group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors tracking-tight">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5 group-hover:text-gray-700 transition-colors tracking-tight">
                         {item.title}
                       </h3>
                       
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg md:text-xl font-light">
+                      <p className="text-gray-600 leading-relaxed text-lg md:text-xl font-light">
                         {item.description}
                       </p>
                     </div>
@@ -104,11 +104,11 @@ export function WhatYouLearn() {
           viewport={{ once: true }}
           className="text-center mt-20"
         >
-          <div className="glass-card p-10 rounded-3xl inline-block shadow-lg">
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-3">
+          <div className="glass-card p-10 rounded-3xl inline-block shadow-lg hover-lift">
+            <p className="text-xl md:text-2xl text-gray-700 mb-3">
               Ready to transform your AI understanding?
             </p>
-            <p className="text-accent dark:text-accent text-lg md:text-xl font-semibold">
+            <p className="text-accent text-lg md:text-xl font-semibold">
               Start your journey with our daily newsletter
             </p>
           </div>

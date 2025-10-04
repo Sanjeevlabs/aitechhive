@@ -5,7 +5,7 @@ import { Logo } from '@/components/Logo'
 
 export function Footer() {
   return (
-    <footer className="py-16 px-4 bg-slate-900 dark:bg-slate-950 text-slate-100 transition-theme border-t border-slate-800 dark:border-slate-700">
+    <footer className="py-16 px-4 bg-slate-900 text-slate-100 border-t border-slate-800">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,16 +16,16 @@ export function Footer() {
         >
           <div className="flex items-center space-x-4">
             <Logo size="sm" />
-            <div className="text-base text-slate-200 dark:text-slate-300">
+            <div className="text-base text-slate-200">
               <p>Hive of AI Learners — Humans, Learning Together</p>
             </div>
           </div>
 
           <div className="text-center md:text-right">
-            <p className="text-base text-slate-200 dark:text-slate-300 mb-2">
+            <p className="text-base text-slate-200 mb-2">
               @2025 AITECHHIVE
             </p>
-            <p className="text-sm text-slate-300 dark:text-slate-400">
+            <p className="text-sm text-slate-300">
               Making AI accessible to everyone
             </p>
           </div>

@@ -52,23 +52,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/icons/mask-icon.svg" color="#7adbe6" />
-        <meta name="theme-color" content="#ffffff" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
-                } else {
-                  document.documentElement.classList.remove('dark')
-                }
-              } catch (_) {}
-            `,
-          }}
-        />
+        <link rel="mask-icon" href="/icons/mask-icon.svg" color="#4F88FF" />
+        <meta name="theme-color" content="#4F88FF" />
       </head>
-      <body className="font-sans transition-theme">{children}</body>
+      <body className="font-sans">{children}</body>
     </html>
   )
 }

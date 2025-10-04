@@ -10,10 +10,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-gradient-to-r from-accent via-accent-secondary to-accent-tertiary text-white shadow-md hover:shadow-glow transform hover:-translate-y-0.5',
-        secondary: 'bg-background hover:bg-secondary text-foreground border border-border shadow-sm hover:shadow-md',
+        primary: 'bg-gradient-to-r from-[#4F88FF] to-[#76B3FF] text-white shadow-lg hover:shadow-glow',
+        secondary: 'bg-background hover:bg-secondary text-foreground border border-border shadow-md hover:shadow-lg',
         ghost: 'bg-transparent hover:bg-secondary text-foreground',
-        accent: 'bg-accent hover:bg-accent-secondary text-white shadow-md hover:shadow-glow-sm'
+        accent: 'bg-[#4F88FF] hover:bg-[#3b6fd9] text-white shadow-md hover:shadow-glow-sm'
       },
       size: {
         sm: 'px-4 py-2 text-sm',
@@ -65,11 +65,11 @@ export function CTAButton({
   return (
     <motion.div
       whileHover={{ 
-        scale: 1.01,
+        scale: 1.05,
         transition: { duration: 0.2 }
       }}
       whileTap={{ 
-        scale: 0.99,
+        scale: 0.98,
         transition: { duration: 0.1 }
       }}
       initial={{ opacity: 0, y: 20 }}

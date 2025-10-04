@@ -1,6 +1,5 @@
 'use client'
 
-import { ThemeToggle } from '@/components/ThemeToggle'
 import { Hero } from '@/components/sections/Hero'
 import { Problem } from '@/components/sections/Problem'
 import { Solution } from '@/components/sections/Solution'
@@ -11,17 +10,14 @@ import { Footer } from '@/components/sections/Footer'
 
 export default function Home() {
   return (
-    <>
-      <ThemeToggle />
-      <main className="min-h-screen relative z-10">
-        <Hero />
-        <Problem />
-        <Solution />
-        <HowItWorks />
-        <WhatYouLearn />
-        <FinalCTA />
-        <Footer />
-      </main>
-    </>
+    <main className="min-h-screen relative z-10">
+      <Hero />
+      <Problem />
+      <Solution />
+      <HowItWorks />
+      <WhatYouLearn />
+      <FinalCTA />
+      <Footer />
+    </main>
   )
 }
