@@ -6,10 +6,11 @@ import { CTAButton } from '@/components/CTAButton'
 export function FinalCTA() {
   return (
     <section className="py-24 px-4 text-white relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%)'
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%)'
     }}>
-      {/* Adobe Express-style overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5"></div>
+      {/* Adobe Express-style multi-layered gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-transparent to-blue-400/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-purple-300/10 via-transparent to-orange-200/10" />
       
       {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />

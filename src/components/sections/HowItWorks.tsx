@@ -52,16 +52,16 @@ export function HowItWorks() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="text-center group"
             >
-              <div className="glass-card p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden hover-lift">
+              <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 relative overflow-hidden group-hover:scale-[1.05]">
                 {/* Background glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10">
-                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent/10 to-accent-secondary/10 rounded-xl mb-8 mx-auto shadow-glow-sm">
-                    <span className="text-2xl font-bold text-accent">{item.step}</span>
+                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl mb-8 mx-auto shadow-lg animate-soft-bounce">
+                    <span className="text-2xl font-bold bg-gradient-to-br from-blue-600 to-purple-600 bg-clip-text text-transparent">{item.step}</span>
                   </div>
                   
-                  <div className="text-5xl mb-8 transform group-hover:scale-110 transition-transform duration-300 float-animation">{item.icon}</div>
+                  <div className="text-6xl mb-8 transform group-hover:scale-125 transition-all duration-500 animate-soft-bounce" style={{ animationDelay: `${0.2}s` }}>{item.icon}</div>
                   
                   <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-5">
                     {item.title}

@@ -192,6 +192,27 @@ body {
     to { left: 100%; }
   }
   
+  @keyframes softBounce {
+    0%, 100% { 
+      transform: translateY(0) scale(1);
+    }
+    50% { 
+      transform: translateY(-10px) scale(1.02);
+    }
+  }
+  
+  @keyframes gradientFlow {
+    0% { 
+      background-position: 0% 50%;
+    }
+    50% { 
+      background-position: 100% 50%;
+    }
+    100% { 
+      background-position: 0% 50%;
+    }
+  }
+  
   /* Animation classes */
   .hero-enter {
     animation: slideUpFade 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
@@ -202,7 +223,7 @@ body {
   }
   
   .float-animation {
-    animation: float 4s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
   }
   
   .animate-float {
@@ -210,11 +231,20 @@ body {
   }
   
   .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+    animation: pulse-glow 3s ease-in-out infinite;
   }
   
   .animate-parallax-float {
-    animation: parallax-float 10s ease-in-out infinite;
+    animation: parallax-float 12s ease-in-out infinite;
+  }
+  
+  .animate-soft-bounce {
+    animation: softBounce 3s ease-in-out infinite;
+  }
+  
+  .animate-gradient-flow {
+    background-size: 200% 200%;
+    animation: gradientFlow 15s ease infinite;
   }
   
   /* Hover effects */

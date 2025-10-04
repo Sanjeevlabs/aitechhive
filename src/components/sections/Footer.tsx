@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Logo size="sm" />
             <div className="text-base text-slate-200">
-              <p>Hive of AI Learners — Humans, Learning Together</p>
+              <p>The Hive of AI Learners</p>
             </div>
           </div>
 

@@ -57,7 +57,7 @@ export function WhatYouLearn() {
               viewport={{ once: true }}
               className="group relative"
             >
-              <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.03] relative overflow-hidden shimmer">
+              <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 group-hover:scale-[1.05] relative overflow-hidden">
                 {/* Enhanced animated background gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-700`} />
                 
