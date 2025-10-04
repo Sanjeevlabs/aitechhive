@@ -44,16 +44,22 @@ export function Solution() {
           </p>
           
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
-            className="glass-card p-10 rounded-2xl border-accent/20 shadow-glow hover-lift"
+            className="group relative"
           >
-            <p className="text-xl md:text-2xl text-foreground font-medium">
-              Every day, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
-              from foundational concepts to cutting-edge developments.
-            </p>
+            <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(52,211,153,0.15)] transition-all duration-500 group-hover:scale-[1.02] relative overflow-hidden">
+              {/* Adobe Express-style gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-100/30 via-emerald-100/20 to-teal-100/30 opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-tl from-green-200/10 via-transparent to-blue-100/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              
+              <p className="relative z-10 text-xl md:text-2xl text-foreground font-medium">
+                Every day, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
+                from foundational concepts to cutting-edge developments.
+              </p>
+            </div>
           </motion.div>
         </motion.div>
       </div>

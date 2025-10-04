@@ -43,15 +43,23 @@ export function Problem() {
             Dense technical papers, confusing acronyms, and explanations that assume you already know everything.
           </p>
           
-          <motion.blockquote 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.4, 0, 0.2, 1] }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-medium text-foreground italic glass-card p-10 rounded-2xl shadow-xl hover-lift"
+            className="group relative"
           >
-            &quot;The frustration is real: you want to understand AI&apos;s potential, but the learning curve feels impossibly steep.&quot;
-          </motion.blockquote>
+            <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(255,159,64,0.15)] transition-all duration-500 group-hover:scale-[1.02] relative overflow-hidden">
+              {/* Adobe Express-style gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-100/30 via-orange-100/20 to-red-100/30 opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-tl from-amber-200/10 via-transparent to-orange-100/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              
+              <blockquote className="relative z-10 text-2xl md:text-3xl font-medium text-foreground italic">
+                &quot;The frustration is real: you want to understand AI&apos;s potential, but the learning curve feels impossibly steep.&quot;
+              </blockquote>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

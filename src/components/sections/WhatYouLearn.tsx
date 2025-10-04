@@ -51,18 +51,22 @@ export function WhatYouLearn() {
           {learningTopics.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: 60, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.7, delay: index * 0.15, ease: [0.4, 0, 0.2, 1] }}
               viewport={{ once: true }}
               className="group relative"
             >
-              <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 group-hover:scale-[1.05] relative overflow-hidden">
-                {/* Enhanced animated background gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-700`} />
+              <div className="glass-card p-10 rounded-[2rem] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 group-hover:scale-[1.03] relative overflow-hidden">
+                {/* Adobe Express-style gradient backgrounds */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-20`} />
+                <div className="absolute inset-0 bg-gradient-to-tl from-white/40 via-white/10 to-transparent opacity-90" />
                 
-                {/* Glass shimmer effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
+                {/* Enhanced animated gradient on hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-30 transition-opacity duration-700`} />
+                
+                {/* Subtle shimmer effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
                 
                 <div className="relative z-10">
                   <div className="flex items-start space-x-5">
