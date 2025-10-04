@@ -6,11 +6,11 @@ import { CTAButton } from '@/components/CTAButton'
 export function FinalCTA() {
   return (
     <section className="py-24 px-4 text-white relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%)'
+      background: 'linear-gradient(135deg, #FFB366 0%, #FF9A4D 25%, #FFA366 50%, #FFF8F0 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-transparent to-blue-400/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-purple-300/10 via-transparent to-orange-200/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-300/20 via-transparent to-orange-100/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-orange-200/10 via-transparent to-white/10" />
       
       {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
@@ -83,7 +83,7 @@ export function FinalCTA() {
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">✨</span>
-              <span>500+ Active Learners</span>
+              <span>Active Learning Community</span>
             </div>
             <div className="flex items-center space-x-3">
               <span className="text-xl">📚</span>

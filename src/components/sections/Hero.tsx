@@ -21,11 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%)'
+      background: 'linear-gradient(135deg, #FFB366 0%, #FF9A4D 25%, #FFA366 50%, #FFF8F0 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-transparent to-blue-400/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-purple-300/10 via-transparent to-orange-200/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-300/20 via-transparent to-orange-100/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-orange-200/10 via-transparent to-white/10" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -75,7 +75,7 @@ export function Hero() {
             </CTAButton>
 
             <p className="text-white/80 text-lg font-normal">
-              Join 500+ curious minds learning AI daily
+              Join a hive of curious minds learning AI daily
             </p>
           </motion.div>
         </motion.div>

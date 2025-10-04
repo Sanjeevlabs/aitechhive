@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'AITECHHIVE - The Hive of AI Learners',
-  description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
+  description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
   metadataBase: new URL('https://aitechhive.com'),
   keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'AI Education', 'Tech Learning', 'AI Newsletter'],
   authors: [{ name: 'AITECHHIVE' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'AITECHHIVE - The Hive of AI Learners',
-    description: 'Get simple explanations and in-depth AI topics delivered daily. Join 500+ curious minds transforming complex AI concepts into clear, actionable knowledge.',
+    description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
     url: 'https://aitechhive.com',
     siteName: 'AITECHHIVE',
     locale: 'en_US',

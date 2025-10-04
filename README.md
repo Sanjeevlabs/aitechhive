@@ -46,3 +46,32 @@ This project is optimized for deployment on Vercel and can be deployed as the ro
 ## Newsletter Integration
 
 The landing page includes calls-to-action that link to `newsletter.aitechhive.com` for Beehiiv newsletter signup.
+
+## Social Media Configuration
+
+The footer includes social media buttons for the following platforms:
+- **LinkedIn**: Connect with us professionally
+- **X (Twitter)**: Follow for updates and insights
+- **Instagram**: Visual content and behind-the-scenes
+- **Discord**: Join our community discussions
+- **WhatsApp**: Direct communication channel
+
+### Updating Social Media Links
+
+To update social media links, modify the `socialLinks` array in `src/components/sections/Footer.tsx`:
+
+```typescript
+const socialLinks = [
+  { name: 'LinkedIn', url: 'YOUR_LINKEDIN_URL', icon: {...} },
+  { name: 'X', url: 'YOUR_X_URL', icon: {...} },
+  { name: 'Instagram', url: 'YOUR_INSTAGRAM_URL', icon: {...} },
+  { name: 'Discord', url: 'YOUR_DISCORD_URL', icon: {...} },
+  { name: 'WhatsApp', url: 'YOUR_WHATSAPP_URL', icon: {...} }
+]
+```
+
+The social media buttons feature:
+- Smooth hover animations
+- Responsive design
+- Accessible with proper ARIA labels
+- Modern SVG icons that adapt to the page style
