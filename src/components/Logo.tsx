@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
@@ -11,26 +10,6 @@ interface LogoProps {
 }
 
 export function Logo({ size = 'md', className }: LogoProps) {
-  const [isDark, setIsDark] = useState(false)
-
-  useEffect(() => {
-    // Check initial theme
-    const checkTheme = () => {
-      setIsDark(document.documentElement.classList.contains('dark'))
-    }
-    
-    checkTheme()
-    
-    // Watch for theme changes
-    const observer = new MutationObserver(checkTheme)
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class']
-    })
-    
-    return () => observer.disconnect()
-  }, [])
-
   const sizeMap = {
     sm: { width: 40, height: 40, textSize: 'text-xs' },
     md: { width: 80, height: 80, textSize: 'text-lg' },
@@ -55,7 +34,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
         whileTap={{ scale: 0.98 }}
       >
         <Image
-          src={isDark ? '/logo-dark.svg' : '/logo-light.svg'}
+          src="/logo-light.svg"
           alt="AITECHHIVE Logo"
           width={width}
           height={height}
@@ -66,8 +45,9 @@ export function Logo({ size = 'md', className }: LogoProps) {
       
       <motion.h3 
         className={cn(
-          'font-semibold text-foreground tracking-tight',
-          textSize
+          'font-semibold tracking-tight',
+          textSize,
+          size === 'lg' ? 'text-white' : 'text-foreground'
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
