@@ -5,12 +5,12 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 text-white relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #FFB366 0%, #FF9A4D 25%, #FFA366 50%, #FFF8F0 100%)'
+    <section className="py-24 px-4 relative overflow-hidden" style={{
+      background: 'linear-gradient(135deg, #FFF5EB 0%, #FFEDD5 25%, #FFF9F0 50%, #FFFFFF 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-300/20 via-transparent to-orange-100/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-orange-200/10 via-transparent to-white/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-orange-50/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-orange-50/15 via-transparent to-white/10" />
       
       {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
@@ -25,7 +25,7 @@ export function FinalCTA() {
           className="space-y-10"
         >
           <motion.h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-white"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-slate-900"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -35,7 +35,7 @@ export function FinalCTA() {
           </motion.h2>
           
           <motion.p 
-            className="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto leading-relaxed font-light text-white/90"
+            className="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto leading-relaxed font-light text-slate-700"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -57,13 +57,13 @@ export function FinalCTA() {
               size="lg"
               showArrow
               external
-              className="bg-white text-[#4F88FF] hover:bg-white/95 hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
+              className="bg-slate-900 text-white hover:bg-slate-800 hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
               Start Learning for Free
             </CTAButton>
             
             <motion.p 
-              className="text-base opacity-70 font-normal text-white"
+              className="text-base opacity-70 font-normal text-slate-600"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 0.7 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -79,7 +79,7 @@ export function FinalCTA() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center items-center gap-8 pt-12 text-base opacity-70 text-white"
+            className="flex flex-wrap justify-center items-center gap-8 pt-12 text-base opacity-70 text-slate-600"
           >
             <div className="flex items-center space-x-3">
               <span className="text-xl">✨</span>
