@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </motion.div>
 
-        {/* Privacy Link */}
+        {/* Privacy and Terms Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,12 +89,21 @@ export function Footer() {
           viewport={{ once: true }}
           className="mt-8 text-center"
         >
-          <Link
-            href="/privacy"
-            className="text-sm text-slate-400 hover:text-white transition-colors duration-300 underline underline-offset-2"
-          >
-            Privacy Policy
-          </Link>
+          <div className="flex justify-center items-center gap-4">
+            <Link
+              href="/privacy"
+              className="text-sm text-slate-400 hover:text-white transition-colors duration-300 underline underline-offset-2"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-slate-600">•</span>
+            <Link
+              href="/terms"
+              className="text-sm text-slate-400 hover:text-white transition-colors duration-300 underline underline-offset-2"
+            >
+              Terms of Service
+            </Link>
+          </div>
         </motion.div>
 
         {/* Social Media Links */}
