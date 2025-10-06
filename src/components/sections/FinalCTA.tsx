@@ -6,11 +6,11 @@ import { CTAButton } from '@/components/CTAButton'
 export function FinalCTA() {
   return (
     <section className="py-24 px-4 relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #FFF5EB 0%, #FFEDD5 25%, #FFF9F0 50%, #FFFFFF 100%)'
+      background: 'linear-gradient(135deg, #EFF6FF 0%, #F3E8FF 25%, #FCE7F3 50%, #FFFFFF 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-orange-50/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-orange-50/15 via-transparent to-white/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-purple-50/30 to-pink-50/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-purple-50/20 via-transparent to-blue-50/10" />
       
       {/* Subtle decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
@@ -57,7 +57,7 @@ export function FinalCTA() {
               size="lg"
               showArrow
               external
-              className="bg-slate-900 text-white hover:bg-slate-800 hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
+              className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
               Start Learning for Free
             </CTAButton>

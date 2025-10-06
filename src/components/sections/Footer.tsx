@@ -54,7 +54,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="py-16 px-4 bg-slate-900 text-slate-100 border-t border-slate-800">
+    <footer className="py-16 px-4 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-slate-100 border-t border-slate-800/50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

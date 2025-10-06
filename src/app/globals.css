@@ -43,9 +43,11 @@
   --input: #e2e8f0;
   --ring: #4F88FF;
   
-  /* Adobe Express gradients */
+  /* Adobe Express gradients - Updated to match newsletter */
   --gradient-start: #4F88FF;
   --gradient-end: #76B3FF;
+  --gradient-accent: #a78bfa;
+  --gradient-pink: #ec4899;
 }
 
 * {
@@ -116,7 +118,7 @@ body {
     text-wrap: balance;
   }
   
-  /* Adobe Express-style gradients */
+  /* Adobe Express-style gradients - Enhanced with purple/pink tones */
   .gradient-primary {
     background: linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%);
   }
@@ -126,10 +128,14 @@ body {
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%);
+    background: linear-gradient(135deg, #4F88FF 0%, #a78bfa 50%, #ec4899 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, #4F88FF 0%, #a78bfa 50%, #ec4899 100%);
   }
   
   /* Shadow and glow effects */

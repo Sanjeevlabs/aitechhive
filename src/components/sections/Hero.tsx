@@ -21,11 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #FFF5EB 0%, #FFEDD5 25%, #FFF9F0 50%, #FFFFFF 100%)'
+      background: 'linear-gradient(135deg, #EFF6FF 0%, #F3E8FF 25%, #FCE7F3 50%, #FFFFFF 100%)'
     }}>
       {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-orange-50/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-orange-50/15 via-transparent to-white/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-purple-50/30 to-pink-50/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-purple-50/20 via-transparent to-blue-50/10" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -69,7 +69,7 @@ export function Hero() {
               size="lg"
               showArrow
               external
-              className="text-xl font-medium px-10 py-5 bg-slate-900 text-white hover:bg-slate-800 shadow-2xl"
+              className="text-xl font-medium px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 shadow-2xl"
             >
               Start Learning for Free
             </CTAButton>
