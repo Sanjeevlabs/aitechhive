@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export function Team() {
   return (
@@ -54,12 +55,17 @@ export function Team() {
 
             {/* Right Column: Profile picture, name, and LinkedIn link */}
             <div className="flex flex-col items-center space-y-6">
-              {/* Profile Image - Replace /public/sanjeev-profile.jpg with actual photo */}
-              <img 
-                src="/sanjeev-profile.jpg" 
-                alt="Sanjeev Kumar Singh"
-                className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-glow"
-              />
+              {/* Profile Image */}
+              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-glow ring-4 ring-white/50">
+                <Image 
+                  src="/sanjeev-profile.svg" 
+                  alt="Sanjeev Kumar Singh"
+                  width={256}
+                  height={256}
+                  className="object-cover"
+                  priority
+                />
+              </div>
               
               <div className="text-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
