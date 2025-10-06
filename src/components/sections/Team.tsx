@@ -33,46 +33,39 @@ export function Team() {
           className="glass-card p-8 md:p-12 rounded-3xl shadow-xl"
         >
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            {/* Left Column: Profile content and text */}
-            <div className="space-y-6">
-              <div>
+            {/* Left Column: Text content */}
+            <div className="space-y-4 text-slate-700">
+              <p className="text-lg md:text-xl leading-relaxed">
+                Hey, I'm Sanjeev Kumar Singh — a techie who spent over a decade keeping global banking systems alive, from London to Bangalore. My world was production servers, SQLs, logs, and endless alerts… until I asked:
+              </p>
+              
+              <p className="text-lg md:text-xl leading-relaxed font-semibold text-slate-900">
+                What will be the new roles in IT if AI does all the monitoring, fixes, and automation?
+              </p>
+              
+              <p className="text-lg md:text-xl leading-relaxed">
+                That question changed everything. AI is reshaping how we work, learn, and build. To stay relevant, we must become future-ready learners.
+              </p>
+              
+              <p className="text-lg md:text-xl leading-relaxed">
+                That's why I started Aitechhive — to self-learn, share discoveries, and grow with others who are equally curious. Here, I break down AI concepts in simple, practical ways so anyone in tech can adapt. This is a hive for thinkers, doers, and explorers learning to evolve with AI.
+              </p>
+            </div>
+
+            {/* Right Column: Profile picture, name, and LinkedIn link */}
+            <div className="flex flex-col items-center space-y-6">
+              {/* Profile Image - Replace /public/sanjeev-profile.jpg with actual photo */}
+              <img 
+                src="/sanjeev-profile.jpg" 
+                alt="Sanjeev Kumar Singh"
+                className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-glow"
+              />
+              
+              <div className="text-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
                   Sanjeev Kumar Singh
                 </h3>
                 <p className="text-lg text-slate-600 mb-4">Founder, Aitechhive</p>
-              </div>
-              
-              <div className="space-y-4 text-slate-700">
-                <p className="text-lg md:text-xl leading-relaxed">
-                  Hey, I'm Sanjeev Kumar Singh — a techie who spent over a decade keeping global banking systems alive and humming, from London to Bangalore. My world was production servers, writing SQLs, reading logs, and endless alerts… until I started asking:
-                </p>
-                
-                <p className="text-lg md:text-xl leading-relaxed font-semibold text-slate-900">
-                  What will be the new roles in the future of IT if AI is going to do all the monitoring, fixes, and automation?
-                </p>
-                
-                <p className="text-lg md:text-xl leading-relaxed">
-                  That question changed everything. AI isn't just another wave of technology — it's reshaping how we work, learn, and build. To stay relevant, we all need to become future-ready learners.
-                </p>
-                
-                <p className="text-lg md:text-xl leading-relaxed">
-                  That's why I started Aitechhive — a space to self-learn, share my discoveries, and grow together with others who are equally curious.
-                </p>
-                
-                <p className="text-lg md:text-xl leading-relaxed">
-                  Here, I write, experiment, and break down AI concepts in simple, practical ways — so anyone in tech can understand what's changing and how to adapt.
-                </p>
-                
-                <p className="text-lg md:text-xl leading-relaxed">
-                  This isn't just a newsletter or a course. It's a hive — for thinkers, doers, and explorers learning to evolve with AI.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: Profile picture and LinkedIn link */}
-            <div className="flex flex-col items-center space-y-6">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-blue-500 via-purple-600 to-pink-500 flex items-center justify-center text-white text-6xl md:text-7xl font-bold shadow-glow animate-gradient-flow">
-                SK
               </div>
               
               <a 
