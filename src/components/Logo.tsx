@@ -47,7 +47,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
         className={cn(
           'font-semibold tracking-tight',
           textSize,
-          size === 'lg' ? 'text-white' : 'text-foreground'
+          'text-slate-900'
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
