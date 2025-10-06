@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Logo } from '@/components/Logo'
+import Link from 'next/link'
 
 // Social media links configuration
 const socialLinks = [
@@ -77,6 +78,31 @@ export function Footer() {
             <p className="text-sm text-slate-300">
               Making AI accessible to everyone
             </p>
+          </div>
+        </motion.div>
+
+        {/* Privacy and Terms Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          viewport={{ once: true }}
+          className="mt-8 text-center"
+        >
+          <div className="flex justify-center items-center gap-4">
+            <Link
+              href="/privacy"
+              className="text-sm text-slate-400 hover:text-white transition-colors duration-300 underline underline-offset-2"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-slate-600">•</span>
+            <Link
+              href="/terms"
+              className="text-sm text-slate-400 hover:text-white transition-colors duration-300 underline underline-offset-2"
+            >
+              Terms of Service
+            </Link>
           </div>
         </motion.div>
 
