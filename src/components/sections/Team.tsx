@@ -58,7 +58,7 @@ export function Team() {
               {/* Profile Image */}
               <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-glow ring-4 ring-white/50">
                 <Image 
-                  src="/sanjeev-profile.svg" 
+                  src="/sanjeev-profile.png" 
                   alt="Sanjeev Kumar Singh"
                   width={256}
                   height={256}

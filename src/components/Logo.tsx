@@ -7,9 +7,10 @@ import Image from 'next/image'
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
   className?: string
+  textColor?: string
 }
 
-export function Logo({ size = 'md', className }: LogoProps) {
+export function Logo({ size = 'md', className, textColor }: LogoProps) {
   const sizeMap = {
     sm: { width: 40, height: 40, textSize: 'text-xs' },
     md: { width: 80, height: 80, textSize: 'text-lg' },
@@ -47,7 +48,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
         className={cn(
           'font-semibold tracking-tight',
           textSize,
-          size === 'lg' ? 'text-white' : 'text-foreground'
+          textColor || 'text-slate-900'
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
