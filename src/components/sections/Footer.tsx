@@ -65,7 +65,7 @@ export function Footer() {
           className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0"
         >
           <div className="flex items-center space-x-4">
-            <Logo size="sm" />
+            <Logo size="sm" textColor="text-white" />
             <div className="text-base text-slate-200">
               <p>The Hive of AI Learners</p>
             </div>
