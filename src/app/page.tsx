@@ -6,6 +6,7 @@ import { Solution } from '@/components/sections/Solution'
 import { HowItWorks } from '@/components/sections/HowItWorks'
 import { WhatYouLearn } from '@/components/sections/WhatYouLearn'
 import { FinalCTA } from '@/components/sections/FinalCTA'
+import { Team } from '@/components/sections/Team'
 import { Footer } from '@/components/sections/Footer'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <HowItWorks />
       <WhatYouLearn />
       <FinalCTA />
+      <Team />
       <Footer />
     </main>
   )
