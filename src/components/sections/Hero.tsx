@@ -21,11 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #EFF6FF 0%, #F3E8FF 25%, #FCE7F3 50%, #FFFFFF 100%)'
+      background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
     }}>
-      {/* Adobe Express-style multi-layered gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-purple-50/30 to-pink-50/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-purple-50/20 via-transparent to-blue-50/10" />
+      {/* Google One-style clean, subtle gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/20" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-blue-50/10 via-transparent to-transparent" />
       
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
@@ -44,17 +44,17 @@ export function Hero() {
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline with Adobe Express-style gradient */}
+          {/* Main headline with Google One-style clean typography */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-slate-900 drop-shadow-sm"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
           >
-            The Hive of AI Learners
+            Finally Understand AI.
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl lg:text-3xl text-slate-700 mb-10 max-w-4xl mx-auto leading-relaxed font-light"
+            className="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed font-normal"
           >
             Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
           </motion.p>
@@ -69,12 +69,12 @@ export function Hero() {
               size="lg"
               showArrow
               external
-              className="text-xl font-medium px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 shadow-2xl"
+              className="text-xl font-medium px-10 py-5 bg-gradient-to-r from-[#1a73e8] to-[#4285f4] text-white hover:from-[#1557b0] hover:to-[#1a73e8] shadow-2xl"
             >
-              Start Learning for Free
+              Start Learning Now
             </CTAButton>
 
-            <p className="text-slate-600 text-lg font-normal">
+            <p className="text-gray-600 text-lg font-normal">
               Join a hive of curious minds learning AI daily
             </p>
           </motion.div>
