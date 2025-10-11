@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50 disabled:pointer-events-none relative overflow-hidden',
+  'inline-flex items-center justify-center font-medium rounded-[6px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50 disabled:pointer-events-none relative overflow-hidden',
   {
     variants: {
       variant: {
-        primary: 'bg-gradient-to-r from-[#4F88FF] to-[#76B3FF] text-white shadow-lg hover:shadow-glow',
-        secondary: 'bg-background hover:bg-secondary text-foreground border border-border shadow-md hover:shadow-lg',
+        primary: 'bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-glow',
+        secondary: 'bg-secondary text-primary hover:bg-secondary/90 shadow-md hover:shadow-lg',
         ghost: 'bg-transparent hover:bg-secondary text-foreground',
-        accent: 'bg-[#4F88FF] hover:bg-[#3b6fd9] text-white shadow-md hover:shadow-glow-sm'
+        accent: 'bg-accent text-white hover:bg-accent/90 shadow-md hover:shadow-glow-sm'
       },
       size: {
         sm: 'px-4 py-2 text-sm',
