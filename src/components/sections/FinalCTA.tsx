@@ -53,11 +53,11 @@ export function FinalCTA() {
           >
             <CTAButton
               href="https://newsletter.aitechhive.com/"
-              variant="secondary"
+              variant="accent"
               size="lg"
               showArrow
               external
-              className="bg-gradient-to-r from-[#1a73e8] to-[#4285f4] text-white hover:from-[#1557b0] hover:to-[#1a73e8] hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
+              className="hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
               Start Learning Now
             </CTAButton>

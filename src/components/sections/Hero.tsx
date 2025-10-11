@@ -65,11 +65,11 @@ export function Hero() {
           >
             <CTAButton
               href="https://newsletter.aitechhive.com/"
-              variant="primary"
+              variant="accent"
               size="lg"
               showArrow
               external
-              className="text-xl font-medium px-10 py-5 bg-gradient-to-r from-[#1a73e8] to-[#4285f4] text-white hover:from-[#1557b0] hover:to-[#1a73e8] shadow-2xl"
+              className="text-xl font-medium px-10 py-5 shadow-2xl"
             >
               Start Learning Now
             </CTAButton>
