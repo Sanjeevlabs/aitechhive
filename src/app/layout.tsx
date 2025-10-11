@@ -3,7 +3,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: 'AITECHHIVE - The Hive of AI Learners',
+  title: 'AITECHHIVE - Finally Understand AI.',
   description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
   metadataBase: new URL('https://aitechhive.com'),
   keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'AI Education', 'Tech Learning', 'AI Newsletter'],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'AITECHHIVE - The Hive of AI Learners',
+    title: 'AITECHHIVE - Finally Understand AI.',
     description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
     url: 'https://aitechhive.com',
     siteName: 'AITECHHIVE',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AITECHHIVE - The Hive of AI Learners',
+    title: 'AITECHHIVE - Finally Understand AI.',
     description: 'Get simple explanations and in-depth AI topics delivered daily.',
   },
   robots: {

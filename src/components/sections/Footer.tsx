@@ -67,7 +67,7 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Logo size="sm" textColor="text-white" />
             <div className="text-base text-slate-200">
-              <p>The Hive of AI Learners</p>
+              <p>Finally Understand AI.</p>
             </div>
           </div>
 

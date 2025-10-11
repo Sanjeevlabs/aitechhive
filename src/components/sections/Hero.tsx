@@ -49,7 +49,7 @@ export function Hero() {
             variants={fadeInUp}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
           >
-            The Hive of AI Learners
+            Finally Understand AI.
           </motion.h1>
 
           <motion.p 
@@ -71,7 +71,7 @@ export function Hero() {
               external
               className="text-xl font-medium px-10 py-5 bg-gradient-to-r from-[#1a73e8] to-[#4285f4] text-white hover:from-[#1557b0] hover:to-[#1a73e8] shadow-2xl"
             >
-              Start Learning for Free
+              Start Learning Now
             </CTAButton>
 
             <p className="text-gray-600 text-lg font-normal">

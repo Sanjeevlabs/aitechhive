@@ -59,7 +59,7 @@ export function FinalCTA() {
               external
               className="bg-gradient-to-r from-[#1a73e8] to-[#4285f4] text-white hover:from-[#1557b0] hover:to-[#1a73e8] hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
-              Start Learning for Free
+              Start Learning Now
             </CTAButton>
             
             <motion.p 
