@@ -20,6 +20,33 @@ A high-converting landing page for aitechhive.com built with Next.js and Framer 
 - **Tailwind CSS** for styling
 - **Framer Motion** for animations
 - **ESLint** for code quality
+- **Vercel Analytics** for tracking and insights
+
+## Design Philosophy
+
+The landing page design is inspired by Google One's clean, modern aesthetic:
+
+### Font Choice
+- **Primary Font**: Inter
+  - Clean, highly readable sans-serif font
+  - Excellent for digital interfaces with superior legibility
+  - Supports wide range of weights (400-900) for flexible typography hierarchy
+  - Matches Google One's professional, modern look
+
+### Color Palette
+The color scheme follows Google One's distinctive blue-based gradients:
+
+- **Primary Blue**: `#1a73e8` - Google's signature blue
+- **Light Blue**: `#4285f4` - Complementary accent
+- **Purple Accent**: `#9334e6` - For visual interest
+- **Red Accent**: `#ea4335` - Google's brand red
+
+### Visual Styling
+- **Clean Gradients**: Subtle, professional gradients using `#E8F0FE` to white
+- **Modern Typography**: Large, bold headlines with excellent contrast
+- **Minimalist Overlays**: Light gradient overlays (opacity 10-30%) for depth
+- **Smooth Animations**: Subtle motion with Framer Motion for engaging UX
+- **Google-style Shadows**: Soft, blue-tinted shadows for depth perception
 
 ## Getting Started
 

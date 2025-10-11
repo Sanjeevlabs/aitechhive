@@ -10,29 +10,29 @@
   --card: #ffffff;
   --card-foreground: #1a202c;
   
-  /* Adobe Express gradient colors */
-  --primary: #4F88FF;
+  /* Google One-inspired gradient colors */
+  --primary: #1a73e8;
   --primary-foreground: #ffffff;
-  --primary-hover: #3b6fd9;
-  --primary-light: #76B3FF;
+  --primary-hover: #1557b0;
+  --primary-light: #4285f4;
   
   /* Secondary colors */
   --secondary: #f0f7ff;
   --secondary-foreground: #1a202c;
   --secondary-hover: #e0efff;
   
-  /* Accent colors - Adobe Express style */
-  --accent: #4F88FF;
+  /* Accent colors - Google One style */
+  --accent: #1a73e8;
   --accent-foreground: #ffffff;
-  --accent-secondary: #76B3FF;
-  --accent-tertiary: #9ec5ff;
+  --accent-secondary: #4285f4;
+  --accent-tertiary: #669df6;
   
-  /* Additional accent variations */
-  --teal: #14b8a6;
-  --purple: #a78bfa;
-  --magenta: #ec4899;
-  --yellow: #fbbf24;
-  --orange: #fb923c;
+  /* Additional accent variations - Google palette */
+  --teal: #00bfa5;
+  --purple: #9334e6;
+  --magenta: #ea4335;
+  --yellow: #fbbc04;
+  --orange: #f29900;
   
   /* Muted colors */
   --muted: #f8fafc;
@@ -41,13 +41,13 @@
   /* Border and input */
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #4F88FF;
+  --ring: #1a73e8;
   
-  /* Adobe Express gradients - Updated to match newsletter */
-  --gradient-start: #4F88FF;
-  --gradient-end: #76B3FF;
-  --gradient-accent: #a78bfa;
-  --gradient-pink: #ec4899;
+  /* Google One gradients - Clean and modern */
+  --gradient-start: #1a73e8;
+  --gradient-end: #4285f4;
+  --gradient-accent: #9334e6;
+  --gradient-pink: #ea4335;
 }
 
 * {
@@ -118,9 +118,9 @@ body {
     text-wrap: balance;
   }
   
-  /* Adobe Express-style gradients - Enhanced with purple/pink tones */
+  /* Google One-style gradients - Clean and modern */
   .gradient-primary {
-    background: linear-gradient(135deg, #4F88FF 0%, #76B3FF 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
   }
   
   .gradient-overlay {
@@ -128,23 +128,23 @@ body {
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #4F88FF 0%, #a78bfa 50%, #ec4899 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 50%, #9334e6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .gradient-accent {
-    background: linear-gradient(135deg, #4F88FF 0%, #a78bfa 50%, #ec4899 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 50%, #9334e6 100%);
   }
   
-  /* Shadow and glow effects */
+  /* Shadow and glow effects - Google One style */
   .shadow-glow {
-    box-shadow: 0 8px 32px rgba(79, 136, 255, 0.25), 0 4px 16px rgba(79, 136, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(26, 115, 232, 0.25), 0 4px 16px rgba(26, 115, 232, 0.15);
   }
   
   .shadow-glow-sm {
-    box-shadow: 0 4px 16px rgba(79, 136, 255, 0.2);
+    box-shadow: 0 4px 16px rgba(26, 115, 232, 0.2);
   }
   
   /* Glass card effect */
@@ -271,7 +271,7 @@ body {
   
   .hover-lift:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(79, 136, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(26, 115, 232, 0.2);
   }
   
   /* Shimmer effect */

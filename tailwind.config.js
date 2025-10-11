@@ -82,8 +82,8 @@ module.exports = {
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
         glow: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(14, 165, 233, 0.1)' },
-          '50%': { boxShadow: '0 0 30px rgba(14, 165, 233, 0.5), 0 0 60px rgba(14, 165, 233, 0.2)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(26, 115, 232, 0.3), 0 0 40px rgba(26, 115, 232, 0.1)' },
+          '50%': { boxShadow: '0 0 30px rgba(26, 115, 232, 0.5), 0 0 60px rgba(26, 115, 232, 0.2)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
@@ -96,9 +96,9 @@ module.exports = {
         },
       },
       boxShadow: {
-        'glow-sm': '0 0 10px rgba(14, 165, 233, 0.2)',
-        'glow': '0 0 20px rgba(14, 165, 233, 0.3)',
-        'glow-lg': '0 0 30px rgba(14, 165, 233, 0.4)',
+        'glow-sm': '0 0 10px rgba(26, 115, 232, 0.2)',
+        'glow': '0 0 20px rgba(26, 115, 232, 0.3)',
+        'glow-lg': '0 0 30px rgba(26, 115, 232, 0.4)',
       },
     },
   },
