@@ -75,7 +75,7 @@ export function Hero() {
             </CTAButton>
 
             <p className="text-gray-600 text-lg font-normal">
-              Join a hive of curious minds learning AI daily
+              Join a hive of curious minds learning AI twice weekly
             </p>
           </motion.div>
         </motion.div>

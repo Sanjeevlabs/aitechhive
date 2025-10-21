@@ -113,7 +113,7 @@ export function WhatYouLearn() {
               Ready to transform your AI understanding?
             </p>
             <p className="text-accent text-lg md:text-xl font-semibold">
-              Start your journey with our daily newsletter
+              Start your journey with our bi-weekly newsletter
             </p>
           </div>
         </motion.div>
