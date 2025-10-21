@@ -56,8 +56,8 @@ export function Solution() {
               <div className="absolute inset-0 bg-gradient-to-tl from-green-200/10 via-transparent to-blue-100/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               
               <p className="relative z-10 text-xl md:text-2xl text-foreground font-medium">
-                Every day, you&apos;ll receive one focused topic that builds your AI knowledge systematically, 
-                from foundational concepts to cutting-edge developments.
+                Twice weekly, you&apos;ll receive focused topics that build your AI knowledge systematically. 
+                Wednesdays cover essential tools and skills, while Sundays dive into core concepts and cutting-edge developments.
               </p>
             </div>
           </motion.div>

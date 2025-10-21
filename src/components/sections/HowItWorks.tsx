@@ -6,13 +6,13 @@ const steps = [
   {
     step: "1",
     title: "Subscribe to Our Newsletter",
-    description: "Join our community via our Beehiiv newsletter for daily AI insights delivered straight to your inbox.",
+    description: "Join our community via our Beehiiv newsletter for bi-weekly AI insights delivered straight to your inbox.",
     icon: "📧"
   },
   {
     step: "2", 
-    title: "Receive Daily AI Topics",
-    description: "Get one focused, easy-to-understand AI topic each day, designed to build your knowledge progressively.",
+    title: "Receive Bi-Weekly AI Topics",
+    description: "Get focused AI topics twice a week: Wednesdays for tools & skills, Sundays for core concepts, building your knowledge progressively.",
     icon: "🧠"
   },
   {
