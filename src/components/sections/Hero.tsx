@@ -45,12 +45,12 @@ export function Hero() {
           </motion.div>
 
           {/* Main headline with Google One-style clean typography */}
-          <motion.h1 
+          <motion.h2 
             variants={fadeInUp}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
           >
             Understand AI&apos;s timeless concepts. Clearly. Fully. Forever.
-          </motion.h1>
+          </motion.h2>
 
           <motion.p 
             variants={fadeInUp}

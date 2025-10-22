@@ -71,19 +71,19 @@ export function Team() {
             {/* Right Column: Text content */}
             <div className="space-y-4 text-slate-700">
               <p className="text-base md:text-lg leading-relaxed">
-                Hey, I'm Sanjeev Kumar Singh — a techie who spent over a decade keeping global banking systems alive, from London to Bangalore. My world was production servers, SQLs, logs, and endless alerts… until I asked:
+                I'm Sanjeev Kumar Singh — once the go-to tech guy who kept banks' systems running seamlessly across London and Bangalore. Production servers, SQLs, logs, alerts — that was my world. Then a single question changed the narrative:
               </p>
               
               <p className="text-base md:text-lg leading-relaxed font-semibold text-slate-900">
-                What will be the new roles in IT if AI does all the monitoring, fixes, and automation?
+                &quot;If AI handles the monitoring &amp; fixes, what role remains for us in tech?&quot;
               </p>
               
               <p className="text-base md:text-lg leading-relaxed">
-                That question changed everything. AI is reshaping how we work, learn, and build. To stay relevant, we must become future-ready learners.
+                That question unlocked this truth: AI isn&apos;t just a tool — it&apos;s a shift in how we work, learn and build relevance.
               </p>
               
               <p className="text-base md:text-lg leading-relaxed">
-                That's why I started Aitechhive — to self-learn, share discoveries, and grow with others who are equally curious. Here, I break down AI concepts in simple, practical ways so anyone in tech can adapt. This is a hive for thinkers, doers, and explorers learning to evolve with AI.
+                So I founded AITechHive. Here, I learn out loud, share discoveries and build clarity around AI&apos;s real impact. I simplify complex AI concepts into practical insight so tech professionals like you can stay ahead. Welcome to the hive of curious minds adapting and evolving.
               </p>
             </div>
           </div>
