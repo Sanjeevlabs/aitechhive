@@ -9,6 +9,7 @@ import { Timeline } from '@/components/sections/Timeline'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 import { Team } from '@/components/sections/Team'
 import { Footer } from '@/components/sections/Footer'
+import { ScrollToTop } from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <FinalCTA />
       <Team />
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }

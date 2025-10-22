@@ -64,10 +64,10 @@ export function Footer() {
 
           <div className="text-center md:text-right">
             <p className="text-base text-white font-semibold mb-2">
-              @2025 AITECHHIVE
+              © 2025 AITECHHIVE
             </p>
             <p className="text-sm text-slate-300">
-              Making AI accessible to everyone
+              Making AI intelligible.
             </p>
           </div>
         </motion.div>
