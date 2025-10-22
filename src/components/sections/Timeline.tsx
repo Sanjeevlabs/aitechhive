@@ -43,7 +43,7 @@ export function Timeline() {
             viewport={{ once: true }}
             className="text-xl md:text-2xl text-neutral-600 max-w-3xl mx-auto"
           >
-            17 weeks of structured learning, twice a week
+            30 weeks of structured learning, twice a week
           </motion.p>
         </motion.div>
 

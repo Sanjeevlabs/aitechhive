@@ -39,8 +39,7 @@ export function Solution() {
           className="text-xl md:text-2xl text-neutral-600 space-y-8 max-w-4xl mx-auto leading-relaxed font-light"
         >
           <p>
-            AITECHHIVE translates complex AI concepts into clear, digestible insights. 
-            We start with simple breakdowns that anyone can understand, then offer deep dives for those ready to go further.
+            AITECHHIVE translates complex AI concepts into clear, digestible insights. We start with simple breakdowns that anyone can understand, then offer deep dives for those ready to go further.
           </p>
           
           <motion.div
@@ -56,8 +55,7 @@ export function Solution() {
               <div className="absolute inset-0 bg-gradient-to-tl from-green-200/10 via-transparent to-blue-100/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               
               <p className="relative z-10 text-xl md:text-2xl text-foreground font-medium">
-                Twice weekly, you&apos;ll receive focused topics that build your AI knowledge systematically. 
-                Wednesdays cover essential tools and skills, while Sundays dive into core concepts and cutting-edge developments.
+                Twice weekly, you&apos;ll receive focused topics that build your AI knowledge systematically. Wednesdays cover essential tools and skills, while Sundays dive into core concepts and cutting-edge developments.
               </p>
             </div>
           </motion.div>
