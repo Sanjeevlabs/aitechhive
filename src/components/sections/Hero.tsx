@@ -49,14 +49,14 @@ export function Hero() {
             variants={fadeInUp}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
           >
-            Finally Understand AI.
+            Understand AI&apos;s timeless concepts. Clearly. Fully. Forever.
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
             className="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed font-normal"
           >
-            Get simple explanations and in-depth topics that transform complex AI concepts into clear, actionable knowledge.
+            From jargon-dense to crystal-clear: we break down AI concepts into actionable insight you can use.
           </motion.p>
 
           <motion.div
@@ -75,7 +75,7 @@ export function Hero() {
             </CTAButton>
 
             <p className="text-gray-600 text-lg font-normal">
-              Join a hive of curious minds learning AI twice weekly
+              Join a hive of learners — two curated insights every week
             </p>
           </motion.div>
         </motion.div>

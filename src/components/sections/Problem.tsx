@@ -27,7 +27,7 @@ export function Problem() {
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground mb-8 tracking-tight">
-            Tired of the Wall of Jargon?
+            Tired of being locked out by jargon?
           </h2>
         </motion.div>
         
@@ -39,8 +39,7 @@ export function Problem() {
           className="text-xl md:text-2xl text-neutral-600 space-y-8 max-w-4xl mx-auto leading-relaxed font-light"
         >
           <p>
-            You&apos;re excited about AI, but every article feels like it&apos;s written for PhD researchers. 
-            Dense technical papers, confusing acronyms, and explanations that assume you already know everything.
+            You&apos;re interested in AI — but most articles assume you&apos;re already an expert. We start where you are.
           </p>
           
           <motion.div
