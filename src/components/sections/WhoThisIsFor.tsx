@@ -11,7 +11,7 @@ export function WhoThisIsFor() {
   ]
 
   return (
-    <section className="py-20 px-6 bg-slate-50 relative overflow-hidden">
+    <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Subtle decorative elements */}
       <div className="absolute top-20 left-20 w-32 h-32 bg-purple-50/40 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 right-20 w-32 h-32 bg-indigo-50/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
@@ -32,7 +32,7 @@ export function WhoThisIsFor() {
             <UserGroupIcon className="h-7 w-7 text-purple-600" />
           </motion.div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
             Who This Is For
           </h2>
         </motion.div>
