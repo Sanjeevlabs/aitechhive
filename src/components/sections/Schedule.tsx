@@ -13,7 +13,7 @@ export function Schedule() {
   const [scheduleData, setScheduleData] = useState<ScheduleItem[]>([])
 
   useEffect(() => {
-    // Parse the markdown content
+    // Hardcoded schedule data from 24-week-plan.md content
     const scheduleItems: ScheduleItem[] = [
       { week: 1, sunday: 'AI Governance Frameworks in Banking', wednesday: 'Setting Up Development Environment' },
       { week: 2, sunday: 'Model Risk Management Fundamentals', wednesday: 'Version Control for ML Models' },
@@ -104,7 +104,7 @@ export function Schedule() {
               <motion.div
                 className="flex gap-4 pb-4"
                 animate={{
-                  x: [0, -100 * scheduleData.length],
+                  x: [0, -(scheduleData.length * 320)],
                 }}
                 transition={{
                   x: {
@@ -147,7 +147,7 @@ export function Schedule() {
               <motion.div
                 className="flex gap-4 pb-4"
                 animate={{
-                  x: [-100 * scheduleData.length, 0],
+                  x: [-(scheduleData.length * 320), 0],
                 }}
                 transition={{
                   x: {
