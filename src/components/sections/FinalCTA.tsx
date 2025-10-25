@@ -36,7 +36,7 @@ export function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Calm, structured insights for professionals in regulated AI
+            Wednesdays for tools &amp; workflows; Sundays for governance &amp; systems thinking. For professionals in banking, insurance and AI governance roles.
           </motion.p>
           
           <motion.div
