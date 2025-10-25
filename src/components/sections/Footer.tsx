@@ -58,16 +58,13 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Logo size="sm" textColor="text-white" />
             <div className="text-base text-slate-200">
-              <p>Finally Understand AI.</p>
+              <p>Making Enterprise AI Deployable.</p>
             </div>
           </div>
 
           <div className="text-center md:text-right">
             <p className="text-base text-white font-semibold mb-2">
               © 2025 AITECHHIVE
-            </p>
-            <p className="text-sm text-slate-300">
-              Making AI intelligible.
             </p>
           </div>
         </motion.div>
