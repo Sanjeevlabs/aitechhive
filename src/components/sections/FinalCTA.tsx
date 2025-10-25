@@ -5,51 +5,46 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 relative overflow-hidden" style={{
+    <section className="py-20 px-6 relative overflow-hidden" style={{
       background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
     }}>
-      {/* Google One-style clean, subtle gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-blue-50/10 via-transparent to-transparent" />
+      {/* Subtle gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/10" />
       
-      {/* Subtle decorative elements */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
-      
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="space-y-10"
+          className="space-y-6"
         >
           <motion.h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-gray-900"
-            initial={{ opacity: 0, scale: 0.9 }}
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-gray-900"
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Ready to Decode AI?
+            Subscribe to Working Notes
           </motion.h2>
           
           <motion.p 
-            className="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto leading-relaxed font-normal text-gray-700"
+            className="text-base md:text-lg mb-6 leading-relaxed text-gray-600"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            Calm, structured insights for professionals in regulated AI
+          </motion.p>
+          
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-          >
-            Join thousands of learners who&apos;ve transformed their understanding of AI
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-4"
           >
             <CTAButton
               href="https://newsletter.aitechhive.com/"
@@ -57,19 +52,19 @@ export function FinalCTA() {
               size="lg"
               showArrow
               external
-              className="hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
+              className="text-lg font-medium shadow-lg px-8 py-4"
             >
-              Start Learning Now
+              Join the working notes
             </CTAButton>
             
             <motion.p 
-              className="text-base opacity-70 font-normal text-gray-600"
+              className="text-sm text-gray-500"
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.7 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
+              whileInView={{ opacity: 0.8 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              No spam, ever. Just pure knowledge.
+              Sunday (theory) + Wednesday (tooling)
             </motion.p>
           </motion.div>
 
@@ -77,21 +72,21 @@ export function FinalCTA() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center items-center gap-8 pt-12 text-base opacity-70 text-gray-600"
+            className="flex flex-wrap justify-center items-center gap-6 pt-8 text-sm text-gray-500"
           >
-            <div className="flex items-center space-x-3">
-              <span className="text-xl">✨</span>
-              <span>Active Learning Community</span>
+            <div className="flex items-center space-x-2">
+              <span className="text-lg">🏦</span>
+              <span>UK/EU BFSI</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <span className="text-xl">📚</span>
-              <span>Daily Insights</span>
+            <div className="flex items-center space-x-2">
+              <span className="text-lg">📊</span>
+              <span>Enterprise Focus</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <span className="text-xl">🚀</span>
-              <span>Career Growth</span>
+            <div className="flex items-center space-x-2">
+              <span className="text-lg">🔒</span>
+              <span>Governance</span>
             </div>
           </motion.div>
         </motion.div>

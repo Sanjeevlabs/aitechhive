@@ -3,12 +3,19 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: 'AITECHHIVE - Finally Understand AI.',
-  description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
+  title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
+  description: 'Working notes on AI governance and deployment in regulated financial institutions. Learn how banks structure AI systems, risk controls, and compliance frameworks.',
   metadataBase: new URL('https://aitechhive.com'),
-  keywords: ['AI', 'Artificial Intelligence', 'Machine Learning', 'AI Education', 'Tech Learning', 'AI Newsletter'],
-  authors: [{ name: 'AITECHHIVE' }],
-  creator: 'AITECHHIVE',
+  keywords: [
+    'AI governance financial services UK',
+    'model risk management AI banking',
+    'enterprise AI deployment regulated industries',
+    'AI compliance banking',
+    'regulated AI BFSI',
+    'AI risk controls'
+  ],
+  authors: [{ name: 'Sanjeev Kumar Singh' }],
+  creator: 'Sanjeev Kumar Singh',
   publisher: 'AITECHHIVE',
   icons: {
     icon: [
@@ -20,8 +27,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'AITECHHIVE - Finally Understand AI.',
-    description: 'Get simple explanations and in-depth AI topics delivered daily. Join a hive of curious minds transforming complex AI concepts into clear, actionable knowledge.',
+    title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
+    description: 'Working notes on AI governance and deployment in regulated financial institutions. Learn how banks structure AI systems, risk controls, and compliance frameworks.',
     url: 'https://aitechhive.com',
     siteName: 'AITECHHIVE',
     locale: 'en_US',
@@ -29,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AITECHHIVE - Finally Understand AI.',
-    description: 'Get simple explanations and in-depth AI topics delivered daily.',
+    title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
+    description: 'Working notes on AI governance and deployment in regulated financial institutions.',
   },
   robots: {
     index: true,
@@ -48,7 +55,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

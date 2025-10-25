@@ -20,48 +20,45 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden" style={{
       background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
     }}>
-      {/* Google One-style clean, subtle gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/20" />
-      <div className="absolute inset-0 bg-gradient-to-tl from-blue-50/10 via-transparent to-transparent" />
+      {/* Subtle gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/10" />
       
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="initial"
           animate="animate"
-          className="space-y-10"
+          className="space-y-8"
         >
-          {/* Logo with float animation */}
+          {/* Logo */}
           <motion.div
             variants={fadeInUp}
-            className="mb-12 float-animation"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            className="mb-8"
           >
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline with Google One-style clean typography */}
-          <motion.h2 
+          {/* Main headline - shorter and punchier */}
+          <motion.h1 
             variants={fadeInUp}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-gray-900"
           >
-            Understand AI&apos;s timeless concepts. Clearly. Fully. Forever.
-          </motion.h2>
+            AI Deployment in Regulated Finance
+          </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed font-normal"
+            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-normal"
           >
-            From jargon-dense to crystal-clear: we break down AI concepts into actionable insight you can use.
+            Working notes on how AI systems move from prototype to production inside banks and insurers — shared publicly, grounded in enterprise reality
           </motion.p>
 
           <motion.div
             variants={fadeInUp}
-            className="space-y-8"
+            className="space-y-4"
           >
             <CTAButton
               href="https://newsletter.aitechhive.com/"
@@ -69,13 +66,13 @@ export function Hero() {
               size="lg"
               showArrow
               external
-              className="text-xl font-medium px-10 py-5 shadow-2xl"
+              className="text-lg font-medium px-8 py-4 shadow-lg"
             >
-              Start Learning Now
+              Join the working notes
             </CTAButton>
 
-            <p className="text-gray-600 text-lg font-normal">
-              Join a hive of learners — two curated insights every week
+            <p className="text-gray-500 text-sm font-normal">
+              Sunday (theory) + Wednesday (tooling)
             </p>
           </motion.div>
         </motion.div>
