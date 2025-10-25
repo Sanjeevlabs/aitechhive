@@ -68,7 +68,7 @@ export function Schedule() {
           viewport={{ once: true }}
           className="mb-16 max-w-4xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#D4AF37' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
             24-Week Learning Schedule
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -86,16 +86,16 @@ export function Schedule() {
           className="flex flex-col md:flex-row gap-6 mb-12 max-w-2xl"
         >
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
+            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-yellow-600 to-orange-600"></div>
             <div>
-              <div className="font-semibold" style={{ color: '#D4AF37' }}>Sunday</div>
+              <div className="font-semibold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">Sunday</div>
               <div className="text-sm text-gray-600">Concepts Clarity</div>
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
+            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-500"></div>
             <div>
-              <div className="font-semibold" style={{ color: '#c49f27' }}>Wednesday</div>
+              <div className="font-semibold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Wednesday</div>
               <div className="text-sm text-gray-600">Tools Kit</div>
             </div>
           </div>
@@ -127,8 +127,8 @@ export function Schedule() {
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-3">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
-              <h3 className="text-xl font-bold" style={{ color: '#D4AF37' }}>Sunday: Concepts Clarity</h3>
+              <div className="w-4 h-4 rounded-full bg-gradient-to-r from-yellow-600 to-orange-600"></div>
+              <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">Sunday: Concepts Clarity</h3>
             </div>
             <div 
               ref={sundayScrollRef}
@@ -143,13 +143,12 @@ export function Schedule() {
                 {scheduleData.map((item) => (
                   <div
                     key={`sunday-${item.week}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2 border-orange-400"
                     style={{ 
-                      borderColor: '#D4AF37',
                       scrollSnapAlign: 'start'
                     }}
                   >
-                    <div className="text-sm font-semibold mb-2" style={{ color: '#D4AF37' }}>
+                    <div className="text-sm font-semibold mb-2 text-orange-600">
                       Week {item.week}
                     </div>
                     <div className="text-gray-900 font-medium">
@@ -169,8 +168,8 @@ export function Schedule() {
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-3">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
-              <h3 className="text-xl font-bold" style={{ color: '#c49f27' }}>Wednesday: Tools Kit</h3>
+              <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-500"></div>
+              <h3 className="text-xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">Wednesday: Tools Kit</h3>
             </div>
             <div 
               ref={wednesdayScrollRef}
@@ -185,13 +184,12 @@ export function Schedule() {
                 {scheduleData.map((item) => (
                   <div
                     key={`wednesday-${item.week}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2 border-amber-400"
                     style={{ 
-                      borderColor: '#c49f27',
                       scrollSnapAlign: 'start'
                     }}
                   >
-                    <div className="text-sm font-semibold mb-2" style={{ color: '#c49f27' }}>
+                    <div className="text-sm font-semibold mb-2 text-amber-600">
                       Week {item.week}
                     </div>
                     <div className="text-gray-900 font-medium">

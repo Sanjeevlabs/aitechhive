@@ -26,7 +26,7 @@ export function Problem() {
             <DocumentTextIcon className="h-7 w-7 text-blue-600" />
           </motion.div>
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight" style={{ color: '#D4AF37' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
             Why This Exists
           </h2>
         </motion.div>

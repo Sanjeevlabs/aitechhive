@@ -44,9 +44,8 @@ export function Hero() {
           {/* Main headline - center aligned */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-center mx-auto max-w-4xl"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-center mx-auto max-w-4xl bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent"
             style={{ 
-              color: '#D4AF37',
               lineHeight: '1.3'
             }}
           >

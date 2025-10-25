@@ -17,8 +17,7 @@ export function FinalCTA() {
           className="space-y-6"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight"
-            style={{ color: '#D4AF37' }}
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
