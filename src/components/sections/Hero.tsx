@@ -20,11 +20,11 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden bg-white" style={{
+      paddingTop: '100px'
     }}>
       {/* Subtle gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/10" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, rgba(255, 255, 255, 1) 50%, rgba(212, 175, 55, 0.03) 100%)' }} />
       
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <motion.div

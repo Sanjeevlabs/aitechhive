@@ -33,8 +33,8 @@ export function WhatYouLearn() {
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-indigo-50/40 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-32 h-32 bg-pink-50/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-20 right-20 w-32 h-32 blur-3xl animate-float" style={{ backgroundColor: '#D4AF37', opacity: 0.1 }} />
+      <div className="absolute bottom-20 left-20 w-32 h-32 blur-3xl animate-float" style={{ backgroundColor: '#D4AF37', opacity: 0.1, animationDelay: '2s' }} />
       
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.h2 
@@ -42,7 +42,8 @@ export function WhatYouLearn() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12"
+          className="text-3xl md:text-4xl font-bold text-center mb-12"
+          style={{ color: '#D4AF37' }}
         >
           What You&apos;ll Find
         </motion.h2>

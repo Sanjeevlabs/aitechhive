@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 interface ScheduleItem {
   week: number
@@ -11,6 +12,10 @@ interface ScheduleItem {
 
 export function Schedule() {
   const [scheduleData, setScheduleData] = useState<ScheduleItem[]>([])
+  const [showLeftIndicator, setShowLeftIndicator] = useState(false)
+  const [showRightIndicator, setShowRightIndicator] = useState(true)
+  const sundayScrollRef = useRef<HTMLDivElement>(null)
+  const wednesdayScrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // Hardcoded schedule data from 24-week-plan.md content
@@ -43,8 +48,43 @@ export function Schedule() {
     setScheduleData(scheduleItems)
   }, [])
 
+  const handleScroll = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (!ref.current) return
+    
+    const { scrollLeft, scrollWidth, clientWidth } = ref.current
+    setShowLeftIndicator(scrollLeft > 0)
+    setShowRightIndicator(scrollLeft < scrollWidth - clientWidth - 10)
+  }
+
+  const scroll = (direction: 'left' | 'right') => {
+    const scrollAmount = 400
+    const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount
+    
+    if (sundayScrollRef.current) {
+      sundayScrollRef.current.scrollBy({ left: scrollValue, behavior: 'smooth' })
+    }
+    if (wednesdayScrollRef.current) {
+      wednesdayScrollRef.current.scrollBy({ left: scrollValue, behavior: 'smooth' })
+    }
+  }
+
+  // Synchronized scrolling
+  const handleSundayScroll = () => {
+    if (sundayScrollRef.current && wednesdayScrollRef.current) {
+      wednesdayScrollRef.current.scrollLeft = sundayScrollRef.current.scrollLeft
+      handleScroll(sundayScrollRef)
+    }
+  }
+
+  const handleWednesdayScroll = () => {
+    if (sundayScrollRef.current && wednesdayScrollRef.current) {
+      sundayScrollRef.current.scrollLeft = wednesdayScrollRef.current.scrollLeft
+      handleScroll(wednesdayScrollRef)
+    }
+  }
+
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50">
+    <section id="schedule" className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Introduction */}
         <motion.div
@@ -54,11 +94,11 @@ export function Schedule() {
           viewport={{ once: true }}
           className="mb-12 max-w-4xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900" style={{ color: '#D4AF37' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#D4AF37' }}>
             24-Week Learning Schedule
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            This schedule is a long-form exploration of how AI is deployed inside regulated financial institutions. 
+            This schedule is a long-form exploration of how AI is deployed inside regulated financial institutions across the UK and EU. 
             These are working notes — evolving, iterative, and documented publicly as I learn.
           </p>
         </motion.div>
@@ -87,6 +127,34 @@ export function Schedule() {
           </div>
         </motion.div>
 
+        {/* Scroll Navigation */}
+        <div className="flex justify-center gap-4 mb-8">
+          <button
+            onClick={() => scroll('left')}
+            disabled={!showLeftIndicator}
+            className="p-2 rounded-full transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{ 
+              backgroundColor: showLeftIndicator ? '#D4AF37' : '#e0e0e0',
+              color: '#FFFFFF'
+            }}
+            aria-label="Scroll left"
+          >
+            <ChevronLeftIcon className="w-6 h-6" />
+          </button>
+          <button
+            onClick={() => scroll('right')}
+            disabled={!showRightIndicator}
+            className="p-2 rounded-full transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{ 
+              backgroundColor: showRightIndicator ? '#D4AF37' : '#e0e0e0',
+              color: '#FFFFFF'
+            }}
+            aria-label="Scroll right"
+          >
+            <ChevronRightIcon className="w-6 h-6" />
+          </button>
+        </div>
+
         {/* Schedule Grid */}
         <div className="space-y-8">
           {/* Sunday Row */}
@@ -100,22 +168,17 @@ export function Schedule() {
               <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
               <h3 className="text-xl font-bold" style={{ color: '#D4AF37' }}>Sunday: Concepts Clarity</h3>
             </div>
-            <div className="relative overflow-hidden">
-              <motion.div
-                className="flex gap-4 pb-4"
-                animate={{
-                  x: [0, -(scheduleData.length * 320)],
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 60,
-                    ease: "linear",
-                  },
+            <div className="relative">
+              <div
+                ref={sundayScrollRef}
+                onScroll={handleSundayScroll}
+                className="flex gap-4 pb-4 overflow-x-auto scrollbar-thin scrollbar-thumb-rounded"
+                style={{
+                  scrollbarWidth: 'thin',
+                  scrollbarColor: '#D4AF37 #e0e0e0'
                 }}
               >
-                {[...scheduleData, ...scheduleData].map((item, index) => (
+                {scheduleData.map((item, index) => (
                   <div
                     key={`sunday-${index}`}
                     className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
@@ -129,7 +192,7 @@ export function Schedule() {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </motion.div>
 
@@ -144,22 +207,17 @@ export function Schedule() {
               <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
               <h3 className="text-xl font-bold" style={{ color: '#c49f27' }}>Wednesday: Tools Kit</h3>
             </div>
-            <div className="relative overflow-hidden">
-              <motion.div
-                className="flex gap-4 pb-4"
-                animate={{
-                  x: [-(scheduleData.length * 320), 0],
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 60,
-                    ease: "linear",
-                  },
+            <div className="relative">
+              <div
+                ref={wednesdayScrollRef}
+                onScroll={handleWednesdayScroll}
+                className="flex gap-4 pb-4 overflow-x-auto scrollbar-thin scrollbar-thumb-rounded"
+                style={{
+                  scrollbarWidth: 'thin',
+                  scrollbarColor: '#c49f27 #e0e0e0'
                 }}
               >
-                {[...scheduleData, ...scheduleData].map((item, index) => (
+                {scheduleData.map((item, index) => (
                   <div
                     key={`wednesday-${index}`}
                     className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
@@ -173,7 +231,7 @@ export function Schedule() {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>

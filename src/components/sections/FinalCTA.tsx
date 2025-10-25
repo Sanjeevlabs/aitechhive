@@ -5,11 +5,9 @@ import { CTAButton } from '@/components/CTAButton'
 
 export function FinalCTA() {
   return (
-    <section className="py-20 px-6 relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
-    }}>
+    <section className="py-20 px-6 relative overflow-hidden bg-white">
       {/* Subtle gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/10" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(255, 255, 255, 1) 50%, rgba(212, 175, 55, 0.05) 100%)' }} />
       
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.div
@@ -20,7 +18,8 @@ export function FinalCTA() {
           className="space-y-6"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-gray-900"
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight"
+            style={{ color: '#D4AF37' }}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
