@@ -19,10 +19,10 @@ export function Team() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            Meet the Founder
+            About the Founder
           </h2>
           <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-            Learning in Public, Together
+            Mapping the gap between AI models and enterprise reality
           </p>
         </motion.div>
 
@@ -71,19 +71,15 @@ export function Team() {
             {/* Right Column: Text content */}
             <div className="space-y-4 text-slate-700">
               <p className="text-base md:text-lg leading-relaxed">
-                I'm Sanjeev Kumar Singh — once the go-to tech guy who kept banks' systems running seamlessly across London and Bangalore. Production servers, SQLs, logs, alerts — that was my world. Then a single question changed the narrative:
-              </p>
-              
-              <p className="text-base md:text-lg leading-relaxed font-semibold text-slate-900">
-                &quot;If AI handles the monitoring &amp; fixes, what role remains for us in tech?&quot;
+                I&apos;m Sanjeev Kumar Singh. I spent over a decade keeping global banking systems alive — from London to Bengaluru. My question shifted: what happens when AI starts to do the monitoring, the alerts, the automation?
               </p>
               
               <p className="text-base md:text-lg leading-relaxed">
-                That question unlocked this truth: AI isn&apos;t just a tool — it&apos;s a shift in how we work, learn and build relevance.
+                I realised the gap isn&apos;t algorithms—it&apos;s controls, governance, explainability.
               </p>
               
               <p className="text-base md:text-lg leading-relaxed">
-                So I founded AITechHive. Here, I learn out loud, share discoveries and build clarity around AI&apos;s real impact. I simplify complex AI concepts into practical insight so tech professionals like you can stay ahead. Welcome to the hive of curious minds adapting and evolving.
+                AITECHHIVE exists because I&apos;m mapping that gap publicly. I write working-notes, I build prototype stacks, I surface what actually matters for regulated AI delivery.
               </p>
             </div>
           </div>

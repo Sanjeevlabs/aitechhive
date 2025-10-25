@@ -31,7 +31,7 @@ export function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Ready to Decode AI?
+            Subscribe to Working Notes
           </motion.h2>
           
           <motion.p 
@@ -41,7 +41,7 @@ export function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Join thousands of learners who&apos;ve transformed their understanding of AI
+            Calm, structured insights for professionals in regulated AI.
           </motion.p>
           
           <motion.div
@@ -59,7 +59,7 @@ export function FinalCTA() {
               external
               className="hover:scale-105 text-xl font-medium shadow-2xl border-0 px-10 py-5"
             >
-              Start Learning Now
+              Join the working notes
             </CTAButton>
             
             <motion.p 
@@ -69,7 +69,7 @@ export function FinalCTA() {
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
             >
-              No spam, ever. Just pure knowledge.
+              Every Sunday (theory) + Wednesday (tools & implementation)
             </motion.p>
           </motion.div>
 
@@ -82,16 +82,16 @@ export function FinalCTA() {
             className="flex flex-wrap justify-center items-center gap-8 pt-12 text-base opacity-70 text-gray-600"
           >
             <div className="flex items-center space-x-3">
-              <span className="text-xl">✨</span>
-              <span>Active Learning Community</span>
+              <span className="text-xl">🏦</span>
+              <span>UK/EU BFSI Focus</span>
             </div>
             <div className="flex items-center space-x-3">
-              <span className="text-xl">📚</span>
-              <span>Daily Insights</span>
+              <span className="text-xl">📊</span>
+              <span>Enterprise Reality</span>
             </div>
             <div className="flex items-center space-x-3">
-              <span className="text-xl">🚀</span>
-              <span>Career Growth</span>
+              <span className="text-xl">🔒</span>
+              <span>Governance Insights</span>
             </div>
           </motion.div>
         </motion.div>

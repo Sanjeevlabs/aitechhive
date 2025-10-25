@@ -2,30 +2,30 @@
 
 import { motion } from 'framer-motion'
 
-const learningTopics = [
+const offerings = [
   {
-    title: "Master the Basics",
-    description: "Understand fundamental AI concepts like machine learning, neural networks, and algorithms without the complexity.",
+    title: "Clear Mental Models",
+    description: "Clear mental models for AI governance and deployment in regulated environments",
     icon: "🎯",
     gradient: "from-blue-500 to-indigo-500"
   },
   {
-    title: "See Real-World Impact", 
-    description: "Discover how AI is transforming industries from healthcare to finance, with concrete examples and case studies.",
-    icon: "🌍",
+    title: "Real System Case Studies", 
+    description: "Case studies and working-notes on how real systems get approved and scaled",
+    icon: "📊",
     gradient: "from-green-500 to-teal-500"
   },
   {
-    title: "Stay Current",
-    description: "Keep up with the latest AI developments, tools, and breakthroughs that matter to your career and interests.",
-    icon: "⚡",
-    gradient: "from-yellow-500 to-orange-500"
+    title: "Enterprise Tool Deep Dives",
+    description: "Tool-and-workflow deep dives built for enterprise AI—not hobby labs",
+    icon: "⚙️",
+    gradient: "from-purple-500 to-pink-500"
   },
   {
-    title: "Build Career Confidence",
-    description: "Gain the knowledge to speak intelligently about AI in professional settings and identify opportunities.",
-    icon: "💼",
-    gradient: "from-purple-500 to-pink-500"
+    title: "Honest Reflections",
+    description: "Honest reflections on what works, what fails, and what matters for UK/EU BFSI",
+    icon: "💡",
+    gradient: "from-yellow-500 to-orange-500"
   }
 ]
 
@@ -44,11 +44,11 @@ export function WhatYouLearn() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-foreground mb-20"
         >
-          What You&apos;ll Learn
+          What You&apos;ll Find
         </motion.h2>
         
         <div className="grid md:grid-cols-2 gap-10">
-          {learningTopics.map((item, index) => (
+          {offerings.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 60, scale: 0.95 }}
@@ -99,24 +99,6 @@ export function WhatYouLearn() {
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom CTA section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-20"
-        >
-          <div className="glass-card p-10 rounded-3xl inline-block shadow-lg hover-lift">
-            <p className="text-xl md:text-2xl text-gray-700 mb-3">
-              Ready to transform your AI understanding?
-            </p>
-            <p className="text-accent text-lg md:text-xl font-semibold">
-              Start your journey with our bi-weekly newsletter
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

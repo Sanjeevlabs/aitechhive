@@ -49,14 +49,14 @@ export function Hero() {
             variants={fadeInUp}
             className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight text-gray-900 drop-shadow-sm"
           >
-            Understand AI&apos;s timeless concepts. Clearly. Fully. Forever.
+            Understanding How AI Actually Gets Deployed in Financial Institutions
           </motion.h2>
 
           <motion.p 
             variants={fadeInUp}
             className="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed font-normal"
           >
-            From jargon-dense to crystal-clear: we break down AI concepts into actionable insight you can use.
+            I study how AI systems move from prototype to production inside regulated banks and insurers. These are my working notes — shared publicly, in progress, and grounded in enterprise reality
           </motion.p>
 
           <motion.div
@@ -71,11 +71,11 @@ export function Hero() {
               external
               className="text-xl font-medium px-10 py-5 shadow-2xl"
             >
-              Start Learning Now
+              Join the working notes
             </CTAButton>
 
             <p className="text-gray-600 text-lg font-normal">
-              Join a hive of learners — two curated insights every week
+              Every Sunday (theory) + Wednesday (tools & implementation)
             </p>
           </motion.div>
         </motion.div>

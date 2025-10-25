@@ -2,10 +2,8 @@
 
 import { Hero } from '@/components/sections/Hero'
 import { Problem } from '@/components/sections/Problem'
-import { Solution } from '@/components/sections/Solution'
-import { HowItWorks } from '@/components/sections/HowItWorks'
+import { WhoThisIsFor } from '@/components/sections/WhoThisIsFor'
 import { WhatYouLearn } from '@/components/sections/WhatYouLearn'
-import { Timeline } from '@/components/sections/Timeline'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 import { Team } from '@/components/sections/Team'
 import { Footer } from '@/components/sections/Footer'
@@ -16,10 +14,8 @@ export default function Home() {
     <main className="min-h-screen relative z-10">
       <Hero />
       <Problem />
-      <Solution />
-      <HowItWorks />
+      <WhoThisIsFor />
       <WhatYouLearn />
-      <Timeline />
       <FinalCTA />
       <Team />
       <Footer />
