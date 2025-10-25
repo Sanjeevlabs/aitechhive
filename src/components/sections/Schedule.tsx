@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from 'react'
 
 interface ScheduleItem {
   week: number
+  phase: string
   sunday: string
   wednesday: string
 }
@@ -15,32 +16,38 @@ export function Schedule() {
   const wednesdayScrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Hardcoded schedule data from 24-week-plan.md content
+    // Schedule data from 24-week-plan.md with phase groupings
     const scheduleItems: ScheduleItem[] = [
-      { week: 1, sunday: 'AI Governance Frameworks in Banking', wednesday: 'Setting Up Development Environment' },
-      { week: 2, sunday: 'Model Risk Management Fundamentals', wednesday: 'Version Control for ML Models' },
-      { week: 3, sunday: 'Regulatory Landscape (UK/EU)', wednesday: 'Documentation Standards' },
-      { week: 4, sunday: 'Enterprise AI Architecture Patterns', wednesday: 'Compliance Tracking Tools' },
-      { week: 5, sunday: 'Data Governance in Regulated Environments', wednesday: 'Data Quality Assessment Tools' },
-      { week: 6, sunday: 'Privacy-Preserving AI Techniques', wednesday: 'Privacy Tools and Libraries' },
-      { week: 7, sunday: 'Data Lineage and Audit Trails', wednesday: 'Lineage Tracking Implementation' },
-      { week: 8, sunday: 'Infrastructure Security Standards', wednesday: 'Security Scanning for AI Systems' },
-      { week: 9, sunday: 'Model Development Lifecycle', wednesday: 'MLOps Pipeline Setup' },
-      { week: 10, sunday: 'Testing and Validation Frameworks', wednesday: 'Automated Testing Frameworks' },
-      { week: 11, sunday: 'Bias Detection and Mitigation', wednesday: 'Fairness Testing Tools' },
-      { week: 12, sunday: 'Explainability Requirements', wednesday: 'Explainability Libraries' },
-      { week: 13, sunday: 'Model Risk Assessment', wednesday: 'Risk Assessment Frameworks' },
-      { week: 14, sunday: 'Monitoring and Alerting Strategies', wednesday: 'Monitoring Dashboard Setup' },
-      { week: 15, sunday: 'Incident Response Planning', wednesday: 'Alert Management Tools' },
-      { week: 16, sunday: 'Third-Party AI Risk', wednesday: 'Vendor Assessment Templates' },
-      { week: 17, sunday: 'Production Deployment Standards', wednesday: 'CI/CD for ML Models' },
-      { week: 18, sunday: 'Change Management Processes', wednesday: 'Configuration Management' },
-      { week: 19, sunday: 'Performance Monitoring', wednesday: 'Performance Tracking Tools' },
-      { week: 20, sunday: 'Operational Resilience', wednesday: 'Business Continuity Planning' },
-      { week: 21, sunday: 'AI Ethics and Responsible AI', wednesday: 'Ethics Assessment Frameworks' },
-      { week: 22, sunday: 'Stakeholder Communication', wednesday: 'Reporting Templates' },
-      { week: 23, sunday: 'Regulatory Reporting', wednesday: 'Compliance Documentation' },
-      { week: 24, sunday: 'Future Trends and Adaptations', wednesday: 'Emerging Technology Assessment' },
+      // Week 1-4: Foundations
+      { week: 1, phase: 'Foundations', sunday: 'AI Governance Frameworks in Banking', wednesday: 'Setting Up Development Environment' },
+      { week: 2, phase: 'Foundations', sunday: 'Model Risk Management Fundamentals', wednesday: 'Version Control for ML Models' },
+      { week: 3, phase: 'Foundations', sunday: 'Regulatory Landscape (UK/EU)', wednesday: 'Documentation Standards' },
+      { week: 4, phase: 'Foundations', sunday: 'Enterprise AI Architecture Patterns', wednesday: 'Compliance Tracking Tools' },
+      // Week 5-8: Data & Infrastructure
+      { week: 5, phase: 'Data & Infrastructure', sunday: 'Data Governance in Regulated Environments', wednesday: 'Data Quality Assessment Tools' },
+      { week: 6, phase: 'Data & Infrastructure', sunday: 'Privacy-Preserving AI Techniques', wednesday: 'Privacy Tools and Libraries' },
+      { week: 7, phase: 'Data & Infrastructure', sunday: 'Data Lineage and Audit Trails', wednesday: 'Lineage Tracking Implementation' },
+      { week: 8, phase: 'Data & Infrastructure', sunday: 'Infrastructure Security Standards', wednesday: 'Security Scanning for AI Systems' },
+      // Week 9-12: Model Development
+      { week: 9, phase: 'Model Development', sunday: 'Model Development Lifecycle', wednesday: 'MLOps Pipeline Setup' },
+      { week: 10, phase: 'Model Development', sunday: 'Testing and Validation Frameworks', wednesday: 'Automated Testing Frameworks' },
+      { week: 11, phase: 'Model Development', sunday: 'Bias Detection and Mitigation', wednesday: 'Fairness Testing Tools' },
+      { week: 12, phase: 'Model Development', sunday: 'Explainability Requirements', wednesday: 'Explainability Libraries' },
+      // Week 13-16: Risk Management
+      { week: 13, phase: 'Risk Management', sunday: 'Model Risk Assessment', wednesday: 'Risk Assessment Frameworks' },
+      { week: 14, phase: 'Risk Management', sunday: 'Monitoring and Alerting Strategies', wednesday: 'Monitoring Dashboard Setup' },
+      { week: 15, phase: 'Risk Management', sunday: 'Incident Response Planning', wednesday: 'Alert Management Tools' },
+      { week: 16, phase: 'Risk Management', sunday: 'Third-Party AI Risk', wednesday: 'Vendor Assessment Templates' },
+      // Week 17-20: Deployment & Operations
+      { week: 17, phase: 'Deployment & Operations', sunday: 'Production Deployment Standards', wednesday: 'CI/CD for ML Models' },
+      { week: 18, phase: 'Deployment & Operations', sunday: 'Change Management Processes', wednesday: 'Configuration Management' },
+      { week: 19, phase: 'Deployment & Operations', sunday: 'Performance Monitoring', wednesday: 'Performance Tracking Tools' },
+      { week: 20, phase: 'Deployment & Operations', sunday: 'Operational Resilience', wednesday: 'Business Continuity Planning' },
+      // Week 21-24: Governance & Future
+      { week: 21, phase: 'Governance & Future', sunday: 'AI Ethics and Responsible AI', wednesday: 'Ethics Assessment Frameworks' },
+      { week: 22, phase: 'Governance & Future', sunday: 'Stakeholder Communication', wednesday: 'Reporting Templates' },
+      { week: 23, phase: 'Governance & Future', sunday: 'Regulatory Reporting', wednesday: 'Compliance Documentation' },
+      { week: 24, phase: 'Governance & Future', sunday: 'Future Trends and Adaptations', wednesday: 'Emerging Technology Assessment' },
     ]
     setScheduleData(scheduleItems)
   }, [])
@@ -69,7 +76,7 @@ export function Schedule() {
           className="mb-16 max-w-4xl"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
-            24-Week Learning Schedule
+            24-Week AI Deployment Learning Plan
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             This schedule is a long-form exploration of how AI is deployed inside regulated financial institutions. 
@@ -148,6 +155,9 @@ export function Schedule() {
                       scrollSnapAlign: 'start'
                     }}
                   >
+                    <div className="text-xs font-semibold mb-1 text-orange-500 uppercase tracking-wide">
+                      {item.phase}
+                    </div>
                     <div className="text-sm font-semibold mb-2 text-orange-600">
                       Week {item.week}
                     </div>
@@ -189,6 +199,9 @@ export function Schedule() {
                       scrollSnapAlign: 'start'
                     }}
                   >
+                    <div className="text-xs font-semibold mb-1 text-amber-500 uppercase tracking-wide">
+                      {item.phase}
+                    </div>
                     <div className="text-sm font-semibold mb-2 text-amber-600">
                       Week {item.week}
                     </div>
