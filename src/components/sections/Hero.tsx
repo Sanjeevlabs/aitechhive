@@ -20,7 +20,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 py-20 overflow-hidden" style={{
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden" style={{
       background: 'linear-gradient(135deg, #E8F0FE 0%, #F1F3F4 50%, #FFFFFF 100%)'
     }}>
       {/* Subtle gradient overlays */}
@@ -41,24 +41,24 @@ export function Hero() {
             <Logo size="lg" />
           </motion.div>
 
-          {/* Main headline - aligned to left */}
+          {/* Main headline - center aligned */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-gray-900 max-w-4xl"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-gray-900 text-center mx-auto max-w-4xl"
           >
             Understanding How AI Actually Gets Deployed in Regulated Financial Institutions
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl leading-relaxed font-normal"
+            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-normal text-center"
           >
             Working notes on how AI systems move from prototype to production inside banks and insurers — shared publicly, grounded in enterprise reality
           </motion.p>
 
           <motion.div
             variants={fadeInUp}
-            className="space-y-4"
+            className="space-y-4 flex flex-col items-center"
           >
             <CTAButton
               href="https://newsletter.aitechhive.com/"

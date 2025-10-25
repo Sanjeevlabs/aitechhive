@@ -54,7 +54,7 @@ export function Schedule() {
           viewport={{ once: true }}
           className="mb-12 max-w-4xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900" style={{ color: '#D4AF37' }}>
             24-Week Learning Schedule
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -72,16 +72,16 @@ export function Schedule() {
           className="flex flex-col md:flex-row gap-6 mb-12 max-w-2xl"
         >
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+            <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
             <div>
-              <div className="font-semibold text-gray-900">Sunday</div>
+              <div className="font-semibold" style={{ color: '#D4AF37' }}>Sunday</div>
               <div className="text-sm text-gray-600">Concepts Clarity</div>
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
+            <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
             <div>
-              <div className="font-semibold text-gray-900">Wednesday</div>
+              <div className="font-semibold" style={{ color: '#c49f27' }}>Wednesday</div>
               <div className="text-sm text-gray-600">Tools Kit</div>
             </div>
           </div>
@@ -97,8 +97,8 @@ export function Schedule() {
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-3">
-              <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
-              <h3 className="text-xl font-bold text-gray-900">Sunday: Concepts Clarity</h3>
+              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
+              <h3 className="text-xl font-bold" style={{ color: '#D4AF37' }}>Sunday: Concepts Clarity</h3>
             </div>
             <div className="relative overflow-hidden">
               <motion.div
@@ -118,9 +118,10 @@ export function Schedule() {
                 {[...scheduleData, ...scheduleData].map((item, index) => (
                   <div
                     key={`sunday-${index}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border border-purple-100"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
+                    style={{ borderColor: '#D4AF37' }}
                   >
-                    <div className="text-sm font-semibold text-purple-600 mb-2">
+                    <div className="text-sm font-semibold mb-2" style={{ color: '#D4AF37' }}>
                       Week {item.week}
                     </div>
                     <div className="text-gray-900 font-medium">
@@ -140,8 +141,8 @@ export function Schedule() {
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-3">
-              <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-              <h3 className="text-xl font-bold text-gray-900">Wednesday: Tools Kit</h3>
+              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
+              <h3 className="text-xl font-bold" style={{ color: '#c49f27' }}>Wednesday: Tools Kit</h3>
             </div>
             <div className="relative overflow-hidden">
               <motion.div
@@ -161,9 +162,10 @@ export function Schedule() {
                 {[...scheduleData, ...scheduleData].map((item, index) => (
                   <div
                     key={`wednesday-${index}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border border-blue-100"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
+                    style={{ borderColor: '#c49f27' }}
                   >
-                    <div className="text-sm font-semibold text-blue-600 mb-2">
+                    <div className="text-sm font-semibold mb-2" style={{ color: '#c49f27' }}>
                       Week {item.week}
                     </div>
                     <div className="text-gray-900 font-medium">
