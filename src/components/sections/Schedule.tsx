@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 interface ScheduleItem {
   week: number
@@ -11,6 +11,8 @@ interface ScheduleItem {
 
 export function Schedule() {
   const [scheduleData, setScheduleData] = useState<ScheduleItem[]>([])
+  const sundayScrollRef = useRef<HTMLDivElement>(null)
+  const wednesdayScrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // Hardcoded schedule data from 24-week-plan.md content
@@ -43,8 +45,20 @@ export function Schedule() {
     setScheduleData(scheduleItems)
   }, [])
 
+  // Synchronized scroll handler
+  const handleScroll = (source: 'sunday' | 'wednesday') => {
+    return (e: React.UIEvent<HTMLDivElement>) => {
+      const scrollLeft = e.currentTarget.scrollLeft
+      if (source === 'sunday' && wednesdayScrollRef.current) {
+        wednesdayScrollRef.current.scrollLeft = scrollLeft
+      } else if (source === 'wednesday' && sundayScrollRef.current) {
+        sundayScrollRef.current.scrollLeft = scrollLeft
+      }
+    }
+  }
+
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50">
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Introduction */}
         <motion.div
@@ -52,9 +66,9 @@ export function Schedule() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-12 max-w-4xl"
+          className="mb-16 max-w-4xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900" style={{ color: '#D4AF37' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#D4AF37' }}>
             24-Week Learning Schedule
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -87,8 +101,24 @@ export function Schedule() {
           </div>
         </motion.div>
 
+        {/* Scroll instruction */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mb-8 text-center"
+        >
+          <p className="text-sm text-gray-500 flex items-center justify-center gap-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+            Scroll horizontally to explore all 24 weeks
+          </p>
+        </motion.div>
+
         {/* Schedule Grid */}
-        <div className="space-y-8">
+        <div className="space-y-10">
           {/* Sunday Row */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -100,26 +130,24 @@ export function Schedule() {
               <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#D4AF37' }}></div>
               <h3 className="text-xl font-bold" style={{ color: '#D4AF37' }}>Sunday: Concepts Clarity</h3>
             </div>
-            <div className="relative overflow-hidden">
-              <motion.div
-                className="flex gap-4 pb-4"
-                animate={{
-                  x: [0, -(scheduleData.length * 320)],
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 60,
-                    ease: "linear",
-                  },
-                }}
-              >
-                {[...scheduleData, ...scheduleData].map((item, index) => (
+            <div 
+              ref={sundayScrollRef}
+              onScroll={handleScroll('sunday')}
+              className="relative overflow-x-auto scrollbar-custom pb-4"
+              style={{
+                scrollSnapType: 'x mandatory',
+                scrollBehavior: 'smooth',
+              }}
+            >
+              <div className="flex gap-4 min-w-max">
+                {scheduleData.map((item) => (
                   <div
-                    key={`sunday-${index}`}
+                    key={`sunday-${item.week}`}
                     className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
-                    style={{ borderColor: '#D4AF37' }}
+                    style={{ 
+                      borderColor: '#D4AF37',
+                      scrollSnapAlign: 'start'
+                    }}
                   >
                     <div className="text-sm font-semibold mb-2" style={{ color: '#D4AF37' }}>
                       Week {item.week}
@@ -129,7 +157,7 @@ export function Schedule() {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </motion.div>
 
@@ -144,26 +172,24 @@ export function Schedule() {
               <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#c49f27' }}></div>
               <h3 className="text-xl font-bold" style={{ color: '#c49f27' }}>Wednesday: Tools Kit</h3>
             </div>
-            <div className="relative overflow-hidden">
-              <motion.div
-                className="flex gap-4 pb-4"
-                animate={{
-                  x: [-(scheduleData.length * 320), 0],
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 60,
-                    ease: "linear",
-                  },
-                }}
-              >
-                {[...scheduleData, ...scheduleData].map((item, index) => (
+            <div 
+              ref={wednesdayScrollRef}
+              onScroll={handleScroll('wednesday')}
+              className="relative overflow-x-auto scrollbar-custom pb-4"
+              style={{
+                scrollSnapType: 'x mandatory',
+                scrollBehavior: 'smooth',
+              }}
+            >
+              <div className="flex gap-4 min-w-max">
+                {scheduleData.map((item) => (
                   <div
-                    key={`wednesday-${index}`}
+                    key={`wednesday-${item.week}`}
                     className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2"
-                    style={{ borderColor: '#c49f27' }}
+                    style={{ 
+                      borderColor: '#c49f27',
+                      scrollSnapAlign: 'start'
+                    }}
                   >
                     <div className="text-sm font-semibold mb-2" style={{ color: '#c49f27' }}>
                       Week {item.week}
@@ -173,7 +199,7 @@ export function Schedule() {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>

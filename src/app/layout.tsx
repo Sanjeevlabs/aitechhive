@@ -4,15 +4,24 @@ import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
-  description: 'Working notes on AI governance and deployment in regulated financial institutions. Learn how banks structure AI systems, risk controls, and compliance frameworks.',
+  description: 'Practical guidance on AI deployment in UK and EU banks. Learn regulatory compliance frameworks, model risk management, and AI governance for financial institutions.',
   metadataBase: new URL('https://aitechhive.com'),
   keywords: [
     'AI governance financial services UK',
-    'model risk management AI banking',
-    'enterprise AI deployment regulated industries',
-    'AI compliance banking',
-    'regulated AI BFSI',
-    'AI risk controls'
+    'AI deployment banking UK',
+    'EU AI regulation banking',
+    'model risk management banking',
+    'AI compliance financial institutions',
+    'regulatory AI banking UK',
+    'AI risk management BFSI',
+    'FCA AI regulation',
+    'PRA AI guidelines',
+    'EBA AI framework',
+    'AI audit financial services',
+    'explainable AI banking',
+    'AI model validation UK',
+    'financial services AI governance',
+    'banking AI deployment framework'
   ],
   authors: [{ name: 'Sanjeev Kumar Singh' }],
   creator: 'Sanjeev Kumar Singh',
@@ -28,16 +37,16 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
-    description: 'Working notes on AI governance and deployment in regulated financial institutions. Learn how banks structure AI systems, risk controls, and compliance frameworks.',
+    description: 'Practical guidance on AI deployment in UK and EU banks. Learn regulatory compliance frameworks, model risk management, and AI governance for financial institutions.',
     url: 'https://aitechhive.com',
     siteName: 'AITECHHIVE',
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AITECHHIVE - AI Governance & Deployment in Regulated Financial Services',
-    description: 'Working notes on AI governance and deployment in regulated financial institutions.',
+    description: 'Practical guidance on AI deployment in UK and EU banks. Regulatory compliance, model risk management, and AI governance for financial institutions.',
   },
   robots: {
     index: true,

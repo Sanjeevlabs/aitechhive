@@ -294,4 +294,28 @@ body {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 2s infinite;
   }
+  
+  /* Custom scrollbar for horizontal scroll */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #D4AF37 #f1f1f1;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 4px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #c49f27;
+  }
 }

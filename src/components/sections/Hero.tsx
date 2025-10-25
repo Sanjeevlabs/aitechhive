@@ -44,14 +44,18 @@ export function Hero() {
           {/* Main headline - center aligned */}
           <motion.h1 
             variants={fadeInUp}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-gray-900 text-center mx-auto max-w-4xl"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-center mx-auto max-w-4xl"
+            style={{ 
+              color: '#D4AF37',
+              lineHeight: '1.3'
+            }}
           >
             Understanding How AI Actually Gets Deployed in Regulated Financial Institutions
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
-            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-normal text-center"
+            className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-normal text-center"
           >
             Working notes on how AI systems move from prototype to production inside banks and insurers — shared publicly, grounded in enterprise reality
           </motion.p>
