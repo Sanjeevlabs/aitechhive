@@ -44,9 +44,7 @@ export function Navbar() {
             </div>
             <span 
               className="text-xl font-bold tracking-tight transition-colors duration-300"
-              style={{ 
-                color: isScrolled ? '#2B2B2B' : '#2B2B2B'
-              }}
+              style={{ color: '#2B2B2B' }}
             >
               AITECHHIVE
             </span>
@@ -57,22 +55,18 @@ export function Navbar() {
             <a
               href="#schedule"
               className="text-sm font-medium transition-all duration-300 hover:scale-105"
-              style={{ 
-                color: isScrolled ? '#2B2B2B' : '#2B2B2B'
-              }}
+              style={{ color: '#2B2B2B' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#D4AF37'}
-              onMouseLeave={(e) => e.currentTarget.style.color = isScrolled ? '#2B2B2B' : '#2B2B2B'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#2B2B2B'}
             >
               Schedule
             </a>
             <a
               href="#team"
               className="text-sm font-medium transition-all duration-300 hover:scale-105"
-              style={{ 
-                color: isScrolled ? '#2B2B2B' : '#2B2B2B'
-              }}
+              style={{ color: '#2B2B2B' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#D4AF37'}
-              onMouseLeave={(e) => e.currentTarget.style.color = isScrolled ? '#2B2B2B' : '#2B2B2B'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#2B2B2B'}
             >
               Team
             </a>
@@ -95,9 +89,9 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-lg transition-colors duration-300"
-            style={{ color: isScrolled ? '#2B2B2B' : '#2B2B2B' }}
+            style={{ color: '#2B2B2B' }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#D4AF37'}
-            onMouseLeave={(e) => e.currentTarget.style.color = isScrolled ? '#2B2B2B' : '#2B2B2B'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#2B2B2B'}
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

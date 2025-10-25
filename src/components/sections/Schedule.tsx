@@ -172,7 +172,7 @@ export function Schedule() {
               <div
                 ref={sundayScrollRef}
                 onScroll={handleSundayScroll}
-                className="flex gap-4 pb-4 overflow-x-auto scrollbar-thin scrollbar-thumb-rounded"
+                className="flex gap-4 pb-4 overflow-x-auto"
                 style={{
                   scrollbarWidth: 'thin',
                   scrollbarColor: '#D4AF37 #e0e0e0'
@@ -211,7 +211,7 @@ export function Schedule() {
               <div
                 ref={wednesdayScrollRef}
                 onScroll={handleWednesdayScroll}
-                className="flex gap-4 pb-4 overflow-x-auto scrollbar-thin scrollbar-thumb-rounded"
+                className="flex gap-4 pb-4 overflow-x-auto"
                 style={{
                   scrollbarWidth: 'thin',
                   scrollbarColor: '#c49f27 #e0e0e0'
