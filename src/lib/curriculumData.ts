@@ -1,6 +1,7 @@
-// Curriculum data for 24-week AI Deployment Learning Plan (FINAL)
-// Wednesday: Tools & Workflows (hands-on, enterprise-grade)
-// Sunday: Theory & Governance (regulated BFSI fluency)
+// curriculumData.ts
+// 24-week plan for AITECHHIVE
+// Wednesday = Tools & Workflows (tool-first, hands-on)
+// Sunday = Theory & Governance (calm, structured, BFSI-focused)
 
 export interface CurriculumTopic {
   week: number
@@ -13,41 +14,41 @@ export interface CurriculumTopic {
    WEDNESDAY — Tools & Workflows
    ------------------------------ */
 export const wednesdayTopics: CurriculumTopic[] = [
-  // Phase 1 — Foundations of Enterprise AI Deployment (Weeks 1–4)
-  { week: 1, phase: 'Phase 1 — Foundations of Enterprise AI Deployment', topic: 'Model Monitoring and Audit Dashboards', description: 'Implement model metrics and evidence logs for operational oversight.' },
-  { week: 2, phase: 'Phase 1 — Foundations of Enterprise AI Deployment', topic: 'Retrieval Pipelines for Regulated Workflows', description: 'Build retrieval workflows with traceability controls for financial processes.' },
-  { week: 3, phase: 'Phase 1 — Foundations of Enterprise AI Deployment', topic: 'Vector Search with Privacy Filtering', description: 'Enable semantic search while preventing exposure of sensitive records.' },
-  { week: 4, phase: 'Phase 1 — Foundations of Enterprise AI Deployment', topic: 'Explainability Reports for Model Oversight', description: 'Generate structured rationales required for audit and committee review.' },
+  // Phase 1 — Enterprise AI Deployment Toolkit (Weeks 1–4)
+  { week: 1, phase: 'Phase 1 — Enterprise AI Deployment Toolkit', topic: 'Prometheus + Loki + Grafana Monitoring Stack', description: 'Monitor model performance with evidence logs and audit-ready dashboards.' },
+  { week: 2, phase: 'Phase 1 — Enterprise AI Deployment Toolkit', topic: 'LangChain + Postgres Vector Retrieval Pipeline', description: 'Build compliant retrieval workflows for KYC and claims processing.' },
+  { week: 3, phase: 'Phase 1 — Enterprise AI Deployment Toolkit', topic: 'Qdrant / Weaviate Vector Indexing with PII Controls', description: 'Enable semantic search while filtering regulated or sensitive attributes.' },
+  { week: 4, phase: 'Phase 1 — Enterprise AI Deployment Toolkit', topic: 'SHAP + LIME Explainability Dashboard Toolkit', description: 'Generate visual feature attributions suitable for audit and review.' },
 
-  // Phase 2 — Data Governance & Security Controls (Weeks 5–8)
-  { week: 5, phase: 'Phase 2 — Data Governance & Security Controls', topic: 'Data Redaction and Classification Controls', description: 'Mask sensitive attributes while preserving operational decision usefulness.' },
-  { week: 6, phase: 'Phase 2 — Data Governance & Security Controls', topic: 'Zero-Trust AI Access Gateways', description: 'Restrict model access and prevent unapproved data or output usage.' },
-  { week: 7, phase: 'Phase 2 — Data Governance & Security Controls', topic: 'Drift Detection and Output Stability Alerts', description: 'Monitor model shifts and trigger review when behavior changes.' },
-  { week: 8, phase: 'Phase 2 — Data Governance & Security Controls', topic: 'Role-Based Access and Secret Management', description: 'Enforce identity controls and secure credential distribution.' },
+  // Phase 2 — Data Controls & Security Enforcement (Weeks 5–8)
+  { week: 5, phase: 'Phase 2 — Data Controls & Security Enforcement', topic: 'Presidio + spaCy Data Redaction Pipeline', description: 'Remove sensitive fields while preserving operational data usefulness.' },
+  { week: 6, phase: 'Phase 2 — Data Controls & Security Enforcement', topic: 'Reverse-Proxy Zero-Trust AI Gateway', description: 'Enforce no-store, no-train boundaries for internal and external models.' },
+  { week: 7, phase: 'Phase 2 — Data Controls & Security Enforcement', topic: 'Drift Detection with Evidently AI', description: 'Detect behavior changes across time windows and trigger review.' },
+  { week: 8, phase: 'Phase 2 — Data Controls & Security Enforcement', topic: 'HashiCorp Vault RBAC + Secrets Rotation', description: 'Manage identities, permissions, and credential lifecycle across pipelines.' },
 
-  // Phase 3 — Model Lifecycle & Operational Oversight (Weeks 9–12)
-  { week: 9, phase: 'Phase 3 — Model Lifecycle & Operational Oversight', topic: 'Model Versioning and Rollback Workflows', description: 'Track model versions and revert deployments safely when required.' },
-  { week: 10, phase: 'Phase 3 — Model Lifecycle & Operational Oversight', topic: 'Document Intelligence and Claims Automation', description: 'Extract structured meaning from documents to support case operations.' },
-  { week: 11, phase: 'Phase 3 — Model Lifecycle & Operational Oversight', topic: 'Chain-of-Custody Audit Logging', description: 'Maintain tamper-evident logs of model decisions and inputs.' },
-  { week: 12, phase: 'Phase 3 — Model Lifecycle & Operational Oversight', topic: 'Validation and Challenger Model Evaluation', description: 'Compare candidate models under consistent evaluation criteria.' },
+  // Phase 3 — Model Lifecycle & Operational Reliability (Weeks 9–12)
+  { week: 9, phase: 'Phase 3 — Model Lifecycle & Operational Reliability', topic: 'MLflow Model Versioning + Deployment Rollback', description: 'Promote and revert models with traceable governance checkpoints.' },
+  { week: 10, phase: 'Phase 3 — Model Lifecycle & Operational Reliability', topic: 'Tesseract OCR + NER + RAG Claims Automation', description: 'Extract structured meaning from documents for adjudication workflows.' },
+  { week: 11, phase: 'Phase 3 — Model Lifecycle & Operational Reliability', topic: 'SHA-256 Chain-Linked Evidence Logging', description: 'Maintain tamper-evident records of model actions and inputs.' },
+  { week: 12, phase: 'Phase 3 — Model Lifecycle & Operational Reliability', topic: 'Challenger Model Harness & Comparison Bench', description: 'Evaluate candidate models under stable, repeatable conditions.' },
 
-  // Phase 4 — Safe Retrieval, Guardrails & Internal AI Interfaces (Weeks 13–16)
-  { week: 13, phase: 'Phase 4 — Safe Retrieval, Guardrails & Internal AI Interfaces', topic: 'Enterprise Embedding and Retrieval Workflow', description: 'Index and retrieve enterprise knowledge while maintaining access boundaries.' },
-  { week: 14, phase: 'Phase 4 — Safe Retrieval, Guardrails & Internal AI Interfaces', topic: 'Guardrails and Output Moderation Policies', description: 'Control generated responses to align with compliance requirements.' },
-  { week: 15, phase: 'Phase 4 — Safe Retrieval, Guardrails & Internal AI Interfaces', topic: 'Internal Search and Knowledge Assistant Console', description: 'Provide controlled internal access to organizational information repositories.' },
-  { week: 16, phase: 'Phase 4 — Safe Retrieval, Guardrails & Internal AI Interfaces', topic: 'Incident Response Playbooks for AI Systems', description: 'Define operational steps when model behavior needs intervention.' },
+  // Phase 4 — Safe Internal AI Interfaces (Weeks 13–16)
+  { week: 13, phase: 'Phase 4 — Safe Internal AI Interfaces', topic: 'Enterprise Embedding Pipeline (BGE / Instructor)', description: 'Encode organization knowledge with controlled semantic indexing boundaries.' },
+  { week: 14, phase: 'Phase 4 — Safe Internal AI Interfaces', topic: 'Guardrails + Regex + Policy-Filter Stack', description: 'Prevent unsafe or non-compliant outputs at runtime.' },
+  { week: 15, phase: 'Phase 4 — Safe Internal AI Interfaces', topic: 'Internal RAG Search Console UI', description: 'Provide safe internal search and decision-support for teams.' },
+  { week: 16, phase: 'Phase 4 — Safe Internal AI Interfaces', topic: 'AI Incident Response Runbook + Escalation Matrix', description: 'Define override workflows when AI outputs need intervention.' },
 
-  // Phase 5 — Deployment Governance & Fairness Oversight (Weeks 17–20)
-  { week: 17, phase: 'Phase 5 — Deployment Governance & Fairness Oversight', topic: 'Deployment Approval and Evidence Packs', description: 'Compile documentation required for governance and production release.' },
-  { week: 18, phase: 'Phase 5 — Deployment Governance & Fairness Oversight', topic: 'Fairness and Bias Monitoring Dashboards', description: 'Track performance differences across groups to ensure equity.' },
-  { week: 19, phase: 'Phase 5 — Deployment Governance & Fairness Oversight', topic: 'Secure and Isolated Inference Execution', description: 'Execute models in controlled environments with restricted network access.' },
-  { week: 20, phase: 'Phase 5 — Deployment Governance & Fairness Oversight', topic: 'Regulatory QA and Document Review Bots', description: 'Use retrieval systems to analyze compliance and regulatory text.' },
+  // Phase 5 — Governance, Fairness & Deployment Controls (Weeks 17–20)
+  { week: 17, phase: 'Phase 5 — Governance, Fairness & Deployment Controls', topic: 'Deployment Gate Pack Generator (Evidence Templates)', description: 'Assemble documentation required for governed production release.' },
+  { week: 18, phase: 'Phase 5 — Governance, Fairness & Deployment Controls', topic: 'Fairness & Demographic Slice Monitoring (AIF360 / Giskard)', description: 'Track outcome differences across groups to ensure equity.' },
+  { week: 19, phase: 'Phase 5 — Governance, Fairness & Deployment Controls', topic: 'VPC-Isolated Inference Gateway (Nginx / Envoy)', description: 'Execute inference inside controlled perimeter with minimal exposure.' },
+  { week: 20, phase: 'Phase 5 — Governance, Fairness & Deployment Controls', topic: 'Regulatory Document QA Bot (RAG + Citation Mode)', description: 'Analyze policies and guidance with verifiable references.' },
 
-  // Phase 6 — Audit, Risk Transparency & Enterprise AI Strategy (Weeks 21–24)
-  { week: 21, phase: 'Phase 6 — Audit, Risk Transparency & Enterprise AI Strategy', topic: 'Model Performance and Audit Analytics', description: 'Present trends and exceptions for oversight and supervisory review.' },
-  { week: 22, phase: 'Phase 6 — Audit, Risk Transparency & Enterprise AI Strategy', topic: 'Multi-Model Selection and Routing Policies', description: 'Choose model paths based on confidence and business risk.' },
-  { week: 23, phase: 'Phase 6 — Audit, Risk Transparency & Enterprise AI Strategy', topic: 'Data Lineage and Provenance Mapping', description: 'Trace how data sources influence model outputs and decisions.' },
-  { week: 24, phase: 'Phase 6 — Audit, Risk Transparency & Enterprise AI Strategy', topic: 'On-Prem and Sovereign AI Deployment Models', description: 'Operate AI systems within geographic and regulatory boundaries.' },
+  // Phase 6 — Audit Transparency & Strategic Control (Weeks 21–24)
+  { week: 21, phase: 'Phase 6 — Audit Transparency & Strategic Control', topic: 'Grafana + SQL Evidence Dashboarding', description: 'Present performance, drift and exceptions for oversight review.' },
+  { week: 22, phase: 'Phase 6 — Audit Transparency & Strategic Control', topic: 'Multi-Model Router (Confidence + Cost Policies)', description: 'Route queries based on trust levels and risk tolerance.' },
+  { week: 23, phase: 'Phase 6 — Audit Transparency & Strategic Control', topic: 'OpenLineage Data Provenance Mapping', description: 'Visualize data movement and downstream decision influence.' },
+  { week: 24, phase: 'Phase 6 — Audit Transparency & Strategic Control', topic: 'Local LLM / On-Prem Compute Deployment Playbook', description: 'Run inference environments fully under organizational control.' },
 ]
 
 /* ------------------------------
