@@ -14,6 +14,8 @@ export function Schedule() {
   const [scheduleData, setScheduleData] = useState<ScheduleItem[]>([])
   const sundayScrollRef = useRef<HTMLDivElement>(null)
   const wednesdayScrollRef = useRef<HTMLDivElement>(null)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
 
   useEffect(() => {
     // Schedule data from 24-week-plan.md with phase groupings
@@ -52,6 +54,13 @@ export function Schedule() {
     setScheduleData(scheduleItems)
   }, [])
 
+  // Check scroll position to update arrow visibility
+  const updateScrollButtons = (element: HTMLDivElement) => {
+    const { scrollLeft, scrollWidth, clientWidth } = element
+    setCanScrollLeft(scrollLeft > 0)
+    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
+  }
+
   // Synchronized scroll handler
   const handleScroll = (source: 'sunday' | 'wednesday') => {
     return (e: React.UIEvent<HTMLDivElement>) => {
@@ -61,12 +70,28 @@ export function Schedule() {
       } else if (source === 'wednesday' && sundayScrollRef.current) {
         sundayScrollRef.current.scrollLeft = scrollLeft
       }
+      updateScrollButtons(e.currentTarget)
+    }
+  }
+
+  // Scroll left/right by 400px
+  const scroll = (direction: 'left' | 'right') => {
+    const scrollAmount = direction === 'left' ? -400 : 400
+    if (sundayScrollRef.current) {
+      sundayScrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    }
+    if (wednesdayScrollRef.current) {
+      wednesdayScrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
     }
   }
 
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 px-6 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-10 right-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-10 left-10 w-40 h-40 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Introduction */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -108,20 +133,50 @@ export function Schedule() {
           </div>
         </motion.div>
 
-        {/* Scroll instruction */}
+        {/* Scroll instruction and navigation arrows */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mb-8 text-center"
+          className="mb-8 flex items-center justify-center gap-4"
         >
-          <p className="text-sm text-gray-500 flex items-center justify-center gap-2">
+          <button
+            onClick={() => scroll('left')}
+            disabled={!canScrollLeft}
+            className={`p-2 rounded-full transition-all duration-300 ${
+              canScrollLeft
+                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+            aria-label="Scroll left"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <p className="text-sm text-gray-500 flex items-center gap-2">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
             Scroll horizontally to explore all 24 weeks
           </p>
+          
+          <button
+            onClick={() => scroll('right')}
+            disabled={!canScrollRight}
+            className={`p-2 rounded-full transition-all duration-300 ${
+              canScrollRight
+                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+            aria-label="Scroll right"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </motion.div>
 
         {/* Schedule Grid */}
@@ -140,7 +195,7 @@ export function Schedule() {
             <div 
               ref={sundayScrollRef}
               onScroll={handleScroll('sunday')}
-              className="relative overflow-x-auto scrollbar-custom pb-4"
+              className="relative overflow-x-auto pb-4 scrollbar-hide"
               style={{
                 scrollSnapType: 'x mandatory',
                 scrollBehavior: 'smooth',
@@ -184,7 +239,7 @@ export function Schedule() {
             <div 
               ref={wednesdayScrollRef}
               onScroll={handleScroll('wednesday')}
-              className="relative overflow-x-auto scrollbar-custom pb-4"
+              className="relative overflow-x-auto pb-4 scrollbar-hide"
               style={{
                 scrollSnapType: 'x mandatory',
                 scrollBehavior: 'smooth',

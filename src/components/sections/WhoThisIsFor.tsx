@@ -11,10 +11,10 @@ export function WhoThisIsFor() {
   ]
 
   return (
-    <section className="py-20 px-6 bg-white relative overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-purple-50/40 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-20 w-32 h-32 bg-indigo-50/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="py-20 px-6 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
