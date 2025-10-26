@@ -20,7 +20,7 @@ export function Team() {
           className="text-center mb-12"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent"
+            className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 bg-clip-text text-transparent"
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.5 }}
