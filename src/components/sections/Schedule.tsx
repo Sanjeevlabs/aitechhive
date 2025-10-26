@@ -54,6 +54,18 @@ export function Schedule() {
     setScheduleData(scheduleItems)
   }, [])
 
+  // Initialize scroll button states after content loads
+  useEffect(() => {
+    const initializeScrollButtons = () => {
+      if (sundayScrollRef.current) {
+        updateScrollButtons(sundayScrollRef.current)
+      }
+    }
+    
+    // Wait for next frame to ensure content is rendered
+    requestAnimationFrame(initializeScrollButtons)
+  }, [scheduleData])
+
   // Check scroll position to update arrow visibility
   const updateScrollButtons = (element: HTMLDivElement) => {
     const { scrollLeft, scrollWidth, clientWidth } = element
@@ -83,6 +95,13 @@ export function Schedule() {
     if (wednesdayScrollRef.current) {
       wednesdayScrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
     }
+    
+    // Update button states after scroll completes (smooth scroll takes ~300ms)
+    setTimeout(() => {
+      if (sundayScrollRef.current) {
+        updateScrollButtons(sundayScrollRef.current)
+      }
+    }, 350)
   }
 
   return (
