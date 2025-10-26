@@ -1,7 +1,7 @@
 'use client'
 
 import { Hero } from '@/components/sections/Hero'
-import { Schedule } from '@/components/sections/Schedule'
+import { Timeline } from '@/components/sections/Timeline'
 import { Problem } from '@/components/sections/Problem'
 import { WhoThisIsFor } from '@/components/sections/WhoThisIsFor'
 import { WhatYouLearn } from '@/components/sections/WhatYouLearn'
@@ -14,12 +14,12 @@ export default function Home() {
   return (
     <main className="min-h-screen relative z-10">
       <Hero />
-      <Schedule />
+      <Timeline />
       <Problem />
       <WhoThisIsFor />
       <WhatYouLearn />
-      <FinalCTA />
       <Team />
+      <FinalCTA />
       <Footer />
       <ScrollToTop />
     </main>

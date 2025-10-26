@@ -17,10 +17,10 @@ export function Timeline() {
   const y = useTransform(scrollYProgress, [0, 0.2], [50, 0])
 
   return (
-    <section ref={containerRef} className="py-24 px-4 bg-white relative overflow-hidden">
+    <section ref={containerRef} className="py-24 px-4 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-purple-100/30 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-blue-100/30 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -32,18 +32,28 @@ export function Timeline() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-foreground mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent"
           >
-            Your Learning Journey
+            24-Week AI Deployment Learning Plan
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-xl md:text-2xl text-neutral-600 max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           >
-            30 weeks of structured learning, twice a week
+            A structured, long-form learning-in-public approach for deploying AI in regulated financial institutions
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-base text-gray-500 max-w-2xl mx-auto mt-4"
+          >
+            <strong>Wednesday:</strong> Tools & hands-on enterprise workflows (3000–5000 words)<br />
+            <strong>Sunday:</strong> Deep theory and reasoning relevant to regulated BFSI environments (3000–5000 words)
           </motion.p>
         </motion.div>
 
@@ -56,12 +66,12 @@ export function Timeline() {
           className="flex flex-wrap justify-center gap-8 mb-12"
         >
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500" />
-            <span className="text-lg font-medium text-gray-700">Wednesday - Tools & Skills</span>
+            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-500" />
+            <span className="text-lg font-medium text-gray-700">Wednesday - Tools Kit</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500" />
-            <span className="text-lg font-medium text-gray-700">Sunday - Core Concepts</span>
+            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-yellow-600 to-orange-600" />
+            <span className="text-lg font-medium text-gray-700">Sunday - Concepts Clarity</span>
           </div>
         </motion.div>
 
@@ -72,7 +82,7 @@ export function Timeline() {
               {/* Parallel Tracks Container */}
               <div className="relative" style={{ minWidth: `${wednesdayTopics.length * 280}px` }}>
                 {/* Center connecting line */}
-                <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 -translate-y-1/2 z-0" />
+                <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-200 -translate-y-1/2 z-0" />
                 
                 {/* Wednesday Track (Top) */}
                 <div className="mb-32">
@@ -92,32 +102,32 @@ export function Timeline() {
                         onMouseEnter={() => setActiveWeek(topic.week)}
                       >
                         {/* Vertical connector to center line */}
-                        <div className="absolute left-1/2 -translate-x-1/2 top-full h-12 w-0.5 bg-gradient-to-b from-blue-400 to-gray-300 z-0" />
+                        <div className="absolute left-1/2 -translate-x-1/2 top-full h-12 w-0.5 bg-gradient-to-b from-amber-400 to-amber-300 z-0" />
                         
                         {/* Topic Card */}
                         <div className={`glass-card p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer ${
-                          activeWeek === topic.week ? 'scale-105 ring-2 ring-blue-400' : 'hover:scale-105'
+                          activeWeek === topic.week ? 'scale-105 ring-2 ring-amber-400' : 'hover:scale-105'
                         }`}>
                           {/* Gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-100/40 via-indigo-100/30 to-cyan-100/40 opacity-80" />
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-amber-100/40 via-orange-100/30 to-yellow-100/40 opacity-80" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
                           
                           <div className="relative z-10">
                             {/* Week badge */}
-                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl mb-3 shadow-md">
+                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl mb-3 shadow-md">
                               <span className="text-white text-sm font-bold">W{topic.week}</span>
                             </div>
                             
-                            {/* Date */}
-                            <div className="text-sm text-blue-600 font-semibold mb-2">{topic.date}</div>
+                            {/* Phase */}
+                            <div className="text-xs text-amber-600 font-semibold mb-2 uppercase tracking-wide">{topic.phase}</div>
                             
                             {/* Topic */}
-                            <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-700 transition-colors">
+                            <h3 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-amber-700 transition-colors">
                               {topic.topic}
                             </h3>
                             
                             {/* Description */}
-                            <p className="text-sm text-gray-600 line-clamp-2">
+                            <p className="text-sm text-gray-600 line-clamp-3">
                               {topic.description}
                             </p>
                           </div>
@@ -145,32 +155,32 @@ export function Timeline() {
                         onMouseEnter={() => setActiveWeek(topic.week)}
                       >
                         {/* Vertical connector to center line */}
-                        <div className="absolute left-1/2 -translate-x-1/2 bottom-full h-12 w-0.5 bg-gradient-to-t from-purple-400 to-gray-300 z-0" />
+                        <div className="absolute left-1/2 -translate-x-1/2 bottom-full h-12 w-0.5 bg-gradient-to-t from-yellow-400 to-amber-300 z-0" />
                         
                         {/* Topic Card */}
                         <div className={`glass-card p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer ${
-                          activeWeek === topic.week ? 'scale-105 ring-2 ring-purple-400' : 'hover:scale-105'
+                          activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400' : 'hover:scale-105'
                         }`}>
                           {/* Gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-purple-100/40 via-pink-100/30 to-red-100/40 opacity-80" />
-                          <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-100/40 via-amber-100/30 to-orange-100/40 opacity-80" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
                           
                           <div className="relative z-10">
                             {/* Week badge */}
-                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-3 shadow-md">
+                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl mb-3 shadow-md">
                               <span className="text-white text-sm font-bold">W{topic.week}</span>
                             </div>
                             
-                            {/* Date */}
-                            <div className="text-sm text-purple-600 font-semibold mb-2">{topic.date}</div>
+                            {/* Phase */}
+                            <div className="text-xs text-yellow-600 font-semibold mb-2 uppercase tracking-wide">{topic.phase}</div>
                             
                             {/* Topic */}
-                            <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-purple-700 transition-colors">
+                            <h3 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-yellow-700 transition-colors">
                               {topic.topic}
                             </h3>
                             
                             {/* Description */}
-                            <p className="text-sm text-gray-600 line-clamp-2">
+                            <p className="text-sm text-gray-600 line-clamp-3">
                               {topic.description}
                             </p>
                           </div>
@@ -188,9 +198,15 @@ export function Timeline() {
             <motion.div
               animate={{ x: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="text-gray-400"
+              className="text-gray-400 flex items-center gap-2"
             >
-              ← Scroll to explore →
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Scroll to explore all 24 weeks
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </motion.div>
           </div>
         </div>
@@ -205,11 +221,11 @@ export function Timeline() {
           border-radius: 10px;
         }
         .timeline-scroll::-webkit-scrollbar-thumb {
-          background: linear-gradient(to right, #3b82f6, #8b5cf6);
+          background: linear-gradient(to right, #f59e0b, #f97316);
           border-radius: 10px;
         }
         .timeline-scroll::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(to right, #2563eb, #7c3aed);
+          background: linear-gradient(to right, #d97706, #ea580c);
         }
       `}</style>
     </section>
