@@ -152,51 +152,7 @@ export function Schedule() {
           </div>
         </motion.div>
 
-        {/* Scroll instruction and navigation arrows */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mb-8 flex items-center justify-center gap-4"
-        >
-          <button
-            onClick={() => scroll('left')}
-            disabled={!canScrollLeft}
-            className={`p-2 rounded-full transition-all duration-300 ${
-              canScrollLeft
-                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
-                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            }`}
-            aria-label="Scroll left"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <p className="text-sm text-gray-500 flex items-center gap-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-            Scroll horizontally to explore all 24 weeks
-          </p>
-          
-          <button
-            onClick={() => scroll('right')}
-            disabled={!canScrollRight}
-            className={`p-2 rounded-full transition-all duration-300 ${
-              canScrollRight
-                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
-                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            }`}
-            aria-label="Scroll right"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </motion.div>
+
 
         {/* Schedule Grid */}
         <div className="space-y-10">
@@ -214,7 +170,7 @@ export function Schedule() {
             <div 
               ref={sundayScrollRef}
               onScroll={handleScroll('sunday')}
-              className="relative overflow-x-auto pb-4 scrollbar-hide"
+              className="relative overflow-x-auto pb-4 scrollbar-custom"
               style={{
                 scrollSnapType: 'x mandatory',
                 scrollBehavior: 'smooth',
@@ -224,7 +180,7 @@ export function Schedule() {
                 {scheduleData.map((item) => (
                   <div
                     key={`sunday-${item.week}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2 border-orange-400"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
                     style={{ 
                       scrollSnapAlign: 'start'
                     }}
@@ -258,7 +214,7 @@ export function Schedule() {
             <div 
               ref={wednesdayScrollRef}
               onScroll={handleScroll('wednesday')}
-              className="relative overflow-x-auto pb-4 scrollbar-hide"
+              className="relative overflow-x-auto pb-4 scrollbar-custom"
               style={{
                 scrollSnapType: 'x mandatory',
                 scrollBehavior: 'smooth',
@@ -268,7 +224,7 @@ export function Schedule() {
                 {scheduleData.map((item) => (
                   <div
                     key={`wednesday-${item.week}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-2 border-amber-400"
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
                     style={{ 
                       scrollSnapAlign: 'start'
                     }}
@@ -288,6 +244,45 @@ export function Schedule() {
             </div>
           </motion.div>
         </div>
+
+        {/* Centered navigation arrows below both sections */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="mt-8 flex items-center justify-center gap-4"
+        >
+          <button
+            onClick={() => scroll('left')}
+            disabled={!canScrollLeft}
+            className={`p-2 rounded-full transition-all duration-300 ${
+              canScrollLeft
+                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+            aria-label="Scroll left"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button
+            onClick={() => scroll('right')}
+            disabled={!canScrollRight}
+            className={`p-2 rounded-full transition-all duration-300 ${
+              canScrollRight
+                ? 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 hover:scale-110 shadow-md'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+            aria-label="Scroll right"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </motion.div>
       </div>
     </section>
   )
