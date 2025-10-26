@@ -52,13 +52,13 @@ export const wednesdayTopics: CurriculumTopic[] = [
 export const sundayTopics: CurriculumTopic[] = [
   // Week 1-4: Foundations
   { week: 1, phase: 'Foundations', topic: 'AI Governance Frameworks in Banking', description: 'Understanding regulatory frameworks for AI in financial services' },
-  { week: 2, phase: 'Foundations', topic: 'Model Risk Management Fundamentals', description: 'Core principles of managing AI model risks' },
-  { week: 3, phase: 'Foundations', topic: 'Regulatory Landscape (UK/EU)', description: 'Navigating UK and EU AI regulations' },
-  { week: 4, phase: 'Foundations', topic: 'Enterprise AI Architecture Patterns', description: 'Designing scalable AI systems for enterprises' },
+  { week: 2, phase: 'Foundations', topic: 'Model Risk Management Fundamentals', description: 'Core principles of managing AI model risks                       ' },
+  { week: 3, phase: 'Foundations', topic: 'Regulatory Landscape (UK/EU)', description: 'Navigating UK and EU AI regulations                                    ' },
+  { week: 4, phase: 'Foundations', topic: 'Enterprise AI Architecture Patterns', description: 'Designing scalable AI systems for enterprises                   ' },
   
   // Week 5-8: Data & Infrastructure
-  { week: 5, phase: 'Data & Infrastructure', topic: 'Data Governance in Regulated Environments', description: 'Managing data in compliance with regulations' },
-  { week: 6, phase: 'Data & Infrastructure', topic: 'Privacy-Preserving AI Techniques', description: 'Protecting privacy while leveraging AI' },
+  { week: 5, phase: 'Data & Infrastructure', topic: 'Data Governance in Regulated Environments', description: 'Managing data in compliance with regulations    ' },
+  { week: 6, phase: 'Data & Infrastructure', topic: 'Privacy-Preserving AI Techniques', description: 'Protecting privacy while leveraging AI                   ' },
   { week: 7, phase: 'Data & Infrastructure', topic: 'Data Lineage and Audit Trails', description: 'Tracking data provenance and usage' },
   { week: 8, phase: 'Data & Infrastructure', topic: 'Infrastructure Security Standards', description: 'Securing AI infrastructure in financial services' },
   
