@@ -2,19 +2,12 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { wednesdayTopics, sundayTopics } from '@/lib/curriculumData'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 
 export function Timeline() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [activeWeek, setActiveWeek] = useState(1)
-  const [isLoading, setIsLoading] = useState(true)
-  
-  useEffect(() => {
-    // Simulate data loading and ensure component is ready
-    const timer = setTimeout(() => setIsLoading(false), 100)
-    return () => clearTimeout(timer)
-  }, [])
   
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -24,25 +17,8 @@ export function Timeline() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
   const y = useTransform(scrollYProgress, [0, 0.2], [50, 0])
 
-  if (isLoading) {
-    return (
-      <section className="py-12 md:py-24 px-4 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="animate-pulse">
-            <div className="h-12 bg-amber-200/50 rounded-lg max-w-2xl mx-auto mb-4"></div>
-            <div className="h-6 bg-amber-100/50 rounded-lg max-w-xl mx-auto mb-8"></div>
-            <div className="flex justify-center gap-4 mb-8">
-              <div className="h-8 w-48 bg-amber-100/50 rounded-lg"></div>
-              <div className="h-8 w-48 bg-amber-100/50 rounded-lg"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-
   return (
-    <ErrorBoundary>
+    <ErrorBoundary componentName="Timeline">
     <section ref={containerRef} className="py-12 md:py-24 px-4 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-parallax-float" />

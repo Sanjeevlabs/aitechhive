@@ -5,6 +5,7 @@ import React, { Component, ReactNode } from 'react'
 interface Props {
   children: ReactNode
   fallback?: ReactNode
+  componentName?: string
 }
 
 interface State {
@@ -23,7 +24,8 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Timeline Error:', error, errorInfo)
+    const componentName = this.props.componentName || 'Component'
+    console.error(`${componentName} Error:`, error, errorInfo)
   }
 
   render() {
@@ -31,6 +33,8 @@ export class ErrorBoundary extends Component<Props, State> {
       if (this.props.fallback) {
         return this.props.fallback
       }
+
+      const componentName = this.props.componentName || 'Content'
 
       return (
         <div className="py-24 px-4 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20">
@@ -40,16 +44,16 @@ export class ErrorBoundary extends Component<Props, State> {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
               </svg>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Unable to Load Timeline
+                Unable to Load {componentName}
               </h2>
               <p className="text-gray-600 mb-4">
-                Something went wrong while loading the curriculum timeline.
+                Something went wrong. Please try refreshing the page.
               </p>
               <button
-                onClick={() => window.location.reload()}
+                onClick={() => this.setState({ hasError: false })}
                 className="px-6 py-2 bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-lg hover:shadow-lg transition-all"
               >
-                Reload Page
+                Try Again
               </button>
             </div>
           </div>
