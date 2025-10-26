@@ -45,16 +45,6 @@ export function Timeline() {
           >
             A structured, long-form learning-in-public approach for deploying AI in regulated financial institutions
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-base text-gray-500 max-w-2xl mx-auto mt-4"
-          >
-            <strong>Wednesday:</strong> Tools & hands-on enterprise workflows (3000–5000 words)<br />
-            <strong>Sunday:</strong> Deep theory and reasoning relevant to regulated BFSI environments (3000–5000 words)
-          </motion.p>
         </motion.div>
 
         {/* Timeline Legend */}
@@ -66,11 +56,20 @@ export function Timeline() {
           className="flex flex-wrap justify-center gap-8 mb-12"
         >
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-600 to-orange-500" />
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-amber-600 to-orange-500 flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
             <span className="text-lg font-medium text-gray-700">Wednesday - Tools Kit</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-4 h-4 rounded-full bg-gradient-to-r from-yellow-600 to-orange-600" />
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-yellow-600 to-orange-600 flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
             <span className="text-lg font-medium text-gray-700">Sunday - Concepts Clarity</span>
           </div>
         </motion.div>
@@ -105,17 +104,19 @@ export function Timeline() {
                         <div className="absolute left-1/2 -translate-x-1/2 top-full h-12 w-0.5 bg-gradient-to-b from-amber-400 to-amber-300 z-0" />
                         
                         {/* Topic Card */}
-                        <div className={`glass-card p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer ${
+                        <div className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
                           activeWeek === topic.week ? 'scale-105 ring-2 ring-amber-400' : 'hover:scale-105'
                         }`}>
-                          {/* Gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-amber-100/40 via-orange-100/30 to-yellow-100/40 opacity-80" />
-                          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                          {/* Hover gradient background */}
+                          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
                           
                           <div className="relative z-10">
-                            {/* Week badge */}
+                            {/* Week badge with wrench icon for Wednesday */}
                             <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl mb-3 shadow-md">
-                              <span className="text-white text-sm font-bold">W{topic.week}</span>
+                              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                              </svg>
                             </div>
                             
                             {/* Phase */}
@@ -158,17 +159,18 @@ export function Timeline() {
                         <div className="absolute left-1/2 -translate-x-1/2 bottom-full h-12 w-0.5 bg-gradient-to-t from-yellow-400 to-amber-300 z-0" />
                         
                         {/* Topic Card */}
-                        <div className={`glass-card p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer ${
+                        <div className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
                           activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400' : 'hover:scale-105'
                         }`}>
-                          {/* Gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-100/40 via-amber-100/30 to-orange-100/40 opacity-80" />
-                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                          {/* Hover gradient background */}
+                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
                           
                           <div className="relative z-10">
-                            {/* Week badge */}
+                            {/* Week badge with book icon for Sunday */}
                             <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl mb-3 shadow-md">
-                              <span className="text-white text-sm font-bold">W{topic.week}</span>
+                              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                              </svg>
                             </div>
                             
                             {/* Phase */}
