@@ -83,10 +83,10 @@ export function Timeline() {
                 {/* Center connecting line */}
                 <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-200 -translate-y-1/2 z-0" />
                 
-                {/* Wednesday Track (Top) */}
+                {/* Sunday Track (Top) */}
                 <div className="mb-32">
                   <div className="flex gap-6 relative">
-                    {wednesdayTopics.map((topic, index) => (
+                    {sundayTopics.map((topic, index) => (
                       <motion.div
                         key={topic.week}
                         initial={{ opacity: 0, y: -30 }}
@@ -101,7 +101,61 @@ export function Timeline() {
                         onMouseEnter={() => setActiveWeek(topic.week)}
                       >
                         {/* Vertical connector to center line */}
-                        <div className="absolute left-1/2 -translate-x-1/2 top-full h-12 w-0.5 bg-gradient-to-b from-amber-400 to-amber-300 z-0" />
+                        <div className="absolute left-1/2 -translate-x-1/2 top-full h-12 w-0.5 bg-gradient-to-b from-yellow-400 to-amber-300 z-0" />
+                        
+                        {/* Topic Card */}
+                        <div className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
+                          activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400' : 'hover:scale-105'
+                        }`}>
+                          {/* Hover gradient background */}
+                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                          
+                          <div className="relative z-10">
+                            {/* Week badge with book icon for Sunday */}
+                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl mb-3 shadow-md">
+                              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                              </svg>
+                            </div>
+                            
+                            {/* Phase */}
+                            <div className="text-xs text-yellow-600 font-semibold mb-2 uppercase tracking-wide">{topic.phase}</div>
+                            
+                            {/* Topic */}
+                            <h3 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-yellow-700 transition-colors">
+                              {topic.topic}
+                            </h3>
+                            
+                            {/* Description */}
+                            <p className="text-sm text-gray-600 line-clamp-3">
+                              {topic.description}
+                            </p>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Wednesday Track (Bottom) */}
+                <div className="mt-12">
+                  <div className="flex gap-6 relative">
+                    {wednesdayTopics.map((topic, index) => (
+                      <motion.div
+                        key={topic.week}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ 
+                          duration: 0.5, 
+                          delay: index * 0.05,
+                          ease: [0.4, 0, 0.2, 1]
+                        }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        className="flex-shrink-0 w-64 relative"
+                        onMouseEnter={() => setActiveWeek(topic.week)}
+                      >
+                        {/* Vertical connector to center line */}
+                        <div className="absolute left-1/2 -translate-x-1/2 bottom-full h-12 w-0.5 bg-gradient-to-t from-amber-400 to-amber-300 z-0" />
                         
                         {/* Topic Card */}
                         <div className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
@@ -124,60 +178,6 @@ export function Timeline() {
                             
                             {/* Topic */}
                             <h3 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-amber-700 transition-colors">
-                              {topic.topic}
-                            </h3>
-                            
-                            {/* Description */}
-                            <p className="text-sm text-gray-600 line-clamp-3">
-                              {topic.description}
-                            </p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Sunday Track (Bottom) */}
-                <div className="mt-12">
-                  <div className="flex gap-6 relative">
-                    {sundayTopics.map((topic, index) => (
-                      <motion.div
-                        key={topic.week}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ 
-                          duration: 0.5, 
-                          delay: index * 0.05,
-                          ease: [0.4, 0, 0.2, 1]
-                        }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        className="flex-shrink-0 w-64 relative"
-                        onMouseEnter={() => setActiveWeek(topic.week)}
-                      >
-                        {/* Vertical connector to center line */}
-                        <div className="absolute left-1/2 -translate-x-1/2 bottom-full h-12 w-0.5 bg-gradient-to-t from-yellow-400 to-amber-300 z-0" />
-                        
-                        {/* Topic Card */}
-                        <div className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
-                          activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400' : 'hover:scale-105'
-                        }`}>
-                          {/* Hover gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
-                          
-                          <div className="relative z-10">
-                            {/* Week badge with book icon for Sunday */}
-                            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl mb-3 shadow-md">
-                              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                              </svg>
-                            </div>
-                            
-                            {/* Phase */}
-                            <div className="text-xs text-yellow-600 font-semibold mb-2 uppercase tracking-wide">{topic.phase}</div>
-                            
-                            {/* Topic */}
-                            <h3 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-yellow-700 transition-colors">
                               {topic.topic}
                             </h3>
                             
