@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 export function Team() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 relative overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-blue-100/30 to-indigo-100/30 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-purple-100/30 to-blue-100/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-gradient-to-br from-indigo-100/20 to-blue-100/20 rounded-full blur-2xl animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }} />
+    <section className="py-20 px-6 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
+      {/* Energetic decorative elements */}
+      <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-gradient-to-br from-amber-200/20 to-yellow-200/20 rounded-full blur-2xl animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }} />
       
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
@@ -20,7 +20,7 @@ export function Team() {
           className="text-center mb-12"
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 bg-clip-text text-transparent"
+            className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent"
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -38,14 +38,14 @@ export function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="glass-card p-8 md:p-10 rounded-2xl shadow-xl border-2 border-indigo-200/50 bg-white/80 backdrop-blur-sm"
+          className="glass-card p-8 md:p-10 rounded-2xl shadow-xl border-2 border-amber-200/50 bg-white/80 backdrop-blur-sm"
         >
           <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
             {/* Left Column: Profile picture, name, and LinkedIn link */}
             <div className="flex flex-col items-center space-y-5">
               {/* Profile Image with energetic border */}
               <motion.div 
-                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-indigo-300/50"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-amber-400/50"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
               >
@@ -63,7 +63,7 @@ export function Team() {
                 <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1">
                   Sanjeev Kumar Singh
                 </h3>
-                <p className="text-sm font-semibold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-3">
+                <p className="text-sm font-semibold bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3">
                   Founder & Chief Explorer
                 </p>
               </div>
@@ -72,7 +72,7 @@ export function Team() {
                 href="https://www.linkedin.com/in/sanjeevlaughs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-blue-500 text-white hover:from-indigo-600 hover:to-blue-600 transition-all text-sm font-medium shadow-md hover:shadow-lg"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-500 to-amber-500 text-white hover:from-yellow-600 hover:to-amber-600 transition-all text-sm font-medium shadow-md hover:shadow-lg"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -102,7 +102,7 @@ export function Team() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                🎯 <strong>The Mission:</strong> The real challenge isn&apos;t building smarter algorithms—it&apos;s mastering <span className="font-semibold text-indigo-700">controls, governance, and explainability</span>. That&apos;s where the magic (and the struggle) happens!
+                🎯 <strong>The Mission:</strong> The real challenge isn&apos;t building smarter algorithms—it&apos;s mastering <span className="font-semibold text-amber-700">controls, governance, and explainability</span>. That&apos;s where the magic (and the struggle) happens!
               </motion.p>
               
               <motion.p 
@@ -112,11 +112,11 @@ export function Team() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                🚀 <strong>The Journey:</strong> AITECHHIVE is my public lab—documenting every insight, every prototype, every &quot;aha!&quot; moment in deploying AI within regulated environments. It&apos;s raw, real, and built for people who understand that <span className="font-semibold text-indigo-700">implementation beats theory</span> every single time.
+                🚀 <strong>The Journey:</strong> AITECHHIVE is my public lab—documenting every insight, every prototype, every &quot;aha!&quot; moment in deploying AI within regulated environments. It&apos;s raw, real, and built for people who understand that <span className="font-semibold text-amber-700">implementation beats theory</span> every single time.
               </motion.p>
 
               <motion.div
-                className="pt-4 border-t border-indigo-200/50"
+                className="pt-4 border-t border-amber-200/50"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
