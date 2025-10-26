@@ -1,63 +1,88 @@
-// Curriculum data for bi-weekly newsletter
-// Wednesday: Tools and Skills
-// Sunday: Core Topics
+// Curriculum data for 24-week AI Deployment Learning Plan
+// Wednesday: Tools Kit - hands-on enterprise workflows
+// Sunday: Concepts Clarity - deep theory and reasoning for regulated BFSI environments
 
 export interface CurriculumTopic {
   week: number
-  date: string
+  phase: string
   topic: string
   description: string
 }
 
+// Wednesday Topics - Tools Kit
 export const wednesdayTopics: CurriculumTopic[] = [
-  { week: 1, date: 'Oct 23', topic: 'MLOps Principles, Governance Frameworks, Introduction to the MLOps Toolchain', description: 'Foundation of MLOps practices and governance' },
-  { week: 2, date: 'Oct 30', topic: 'Docker, Kubernetes', description: 'Containerization and orchestration tools' },
-  { week: 3, date: 'Nov 6', topic: 'Terraform, CI/CD Pipeline Design', description: 'Infrastructure as code and deployment automation' },
-  { week: 4, date: 'Nov 13', topic: 'MLflow', description: 'ML lifecycle management platform' },
-  { week: 5, date: 'Nov 20', topic: 'Prometheus, Grafana', description: 'Monitoring and visualization tools' },
-  { week: 6, date: 'Nov 27', topic: 'Advanced Prompt Engineering Techniques', description: 'Mastering AI prompt strategies' },
-  { week: 7, date: 'Dec 4', topic: 'Retrieval-Augmented Generation (RAG) Architecture', description: 'Building RAG systems' },
-  { week: 8, date: 'Dec 11', topic: 'Vector Databases (e.g., Pinecone, Milvus)', description: 'Managing embeddings and similarity search' },
-  { week: 9, date: 'Dec 18', topic: 'LangChain', description: 'Framework for LLM applications' },
-  { week: 10, date: 'Dec 25', topic: 'Quantitative Modeling, C++, Advanced Python', description: 'Programming for quantitative analysis' },
-  { week: 11, date: 'Jan 1', topic: 'AWS SageMaker, Azure ML (incl. Azure OpenAI), Google Vertex AI', description: 'Cloud ML platforms' },
-  { week: 12, date: 'Jan 8', topic: 'SHAP, LIME', description: 'Model explainability tools' },
-  { week: 13, date: 'Jan 15', topic: 'Federated Learning Principles, TensorFlow Federated', description: 'Distributed learning approaches' },
-  { week: 14, date: 'Jan 22', topic: 'Apache Spark', description: 'Large-scale data processing' },
-  { week: 15, date: 'Jan 29', topic: 'Apache Kafka', description: 'Real-time data streaming' },
-  { week: 16, date: 'Feb 5', topic: 'GPU Cluster Architecture & Management', description: 'High-performance computing infrastructure' },
-  { week: 17, date: 'Feb 12', topic: 'Feature Stores (e.g., Feast, Tecton)', description: 'Managing ML features' },
-  { week: 18, date: 'Feb 19', topic: 'Python for Backtesting, Algorithmic Strategy', description: 'Quantitative trading systems' },
-  { week: 19, date: 'Feb 26', topic: 'Algorithmic Fairness, Bias Detection Tools (AIF360)', description: 'Building fair AI systems' },
-  { week: 20, date: 'Mar 5', topic: 'Real-Time Anomaly Detection', description: 'Detecting unusual patterns in real-time' },
-  { week: 21, date: 'Mar 12', topic: 'Robo-Advisory Model Design', description: 'Automated investment advisory' },
-  { week: 22, date: 'Mar 19', topic: 'NLP for Document Processing, Computer Vision for Claims', description: 'AI for insurance and finance' },
-  { week: 23, date: 'Mar 26', topic: 'Multimodal Models (GPT-4o, Gemini)', description: 'Understanding multimodal AI' },
-  { week: 24, date: 'Apr 2', topic: 'Agentic AI Frameworks (AutoGen, CrewAI)', description: 'Building autonomous AI agents' },
-  { week: 25, date: 'Apr 9', topic: 'Quantum Machine Learning Concepts', description: 'Quantum computing meets ML' },
-  { week: 26, date: 'Apr 16', topic: 'AI Coding Assistants (GitHub Copilot)', description: 'AI-powered development tools' },
-  { week: 27, date: 'Apr 23', topic: 'Career Strategy, AWS/Azure/GCP Certification Paths', description: 'Building your AI career' },
-  { week: 28, date: 'Apr 30', topic: 'Portfolio Development, GitHub, Kaggle', description: 'Showcasing your AI skills' },
-  { week: 29, date: 'May 7', topic: 'Resume Building, Interview Preparation', description: 'Landing your AI role' },
-  { week: 30, date: 'May 14', topic: 'Strategic Communication, "T-Shaped" Skill Development', description: 'Professional growth strategies' },
+  // Week 1-4: Foundations
+  { week: 1, phase: 'Foundations', topic: 'Setting Up Development Environment', description: 'Establishing the foundation for AI development in regulated environments' },
+  { week: 2, phase: 'Foundations', topic: 'Version Control for ML Models', description: 'Managing ML model versions and tracking changes' },
+  { week: 3, phase: 'Foundations', topic: 'Documentation Standards', description: 'Creating comprehensive documentation for compliance' },
+  { week: 4, phase: 'Foundations', topic: 'Compliance Tracking Tools', description: 'Tools for monitoring and ensuring regulatory compliance' },
+  
+  // Week 5-8: Data & Infrastructure
+  { week: 5, phase: 'Data & Infrastructure', topic: 'Data Quality Assessment Tools', description: 'Ensuring data quality in AI systems' },
+  { week: 6, phase: 'Data & Infrastructure', topic: 'Privacy Tools and Libraries', description: 'Implementing privacy-preserving techniques' },
+  { week: 7, phase: 'Data & Infrastructure', topic: 'Lineage Tracking Implementation', description: 'Tracking data flow and transformations' },
+  { week: 8, phase: 'Data & Infrastructure', topic: 'Security Scanning for AI Systems', description: 'Securing AI infrastructure and deployments' },
+  
+  // Week 9-12: Model Development
+  { week: 9, phase: 'Model Development', topic: 'MLOps Pipeline Setup', description: 'Building automated ML pipelines' },
+  { week: 10, phase: 'Model Development', topic: 'Automated Testing Frameworks', description: 'Testing ML models systematically' },
+  { week: 11, phase: 'Model Development', topic: 'Fairness Testing Tools', description: 'Detecting and mitigating bias in models' },
+  { week: 12, phase: 'Model Development', topic: 'Explainability Libraries', description: 'Making AI decisions interpretable' },
+  
+  // Week 13-16: Risk Management
+  { week: 13, phase: 'Risk Management', topic: 'Risk Assessment Frameworks', description: 'Evaluating and managing model risks' },
+  { week: 14, phase: 'Risk Management', topic: 'Monitoring Dashboard Setup', description: 'Real-time monitoring of AI systems' },
+  { week: 15, phase: 'Risk Management', topic: 'Alert Management Tools', description: 'Managing incidents and responses' },
+  { week: 16, phase: 'Risk Management', topic: 'Vendor Assessment Templates', description: 'Evaluating third-party AI solutions' },
+  
+  // Week 17-20: Deployment & Operations
+  { week: 17, phase: 'Deployment & Operations', topic: 'CI/CD for ML Models', description: 'Continuous integration and deployment for ML' },
+  { week: 18, phase: 'Deployment & Operations', topic: 'Configuration Management', description: 'Managing configurations across environments' },
+  { week: 19, phase: 'Deployment & Operations', topic: 'Performance Tracking Tools', description: 'Monitoring model performance in production' },
+  { week: 20, phase: 'Deployment & Operations', topic: 'Business Continuity Planning', description: 'Ensuring operational resilience' },
+  
+  // Week 21-24: Governance & Future
+  { week: 21, phase: 'Governance & Future', topic: 'Ethics Assessment Frameworks', description: 'Implementing responsible AI practices' },
+  { week: 22, phase: 'Governance & Future', topic: 'Reporting Templates', description: 'Communicating with stakeholders' },
+  { week: 23, phase: 'Governance & Future', topic: 'Compliance Documentation', description: 'Meeting regulatory reporting requirements' },
+  { week: 24, phase: 'Governance & Future', topic: 'Emerging Technology Assessment', description: 'Staying ahead of AI developments' },
 ]
 
+// Sunday Topics - Concepts Clarity
 export const sundayTopics: CurriculumTopic[] = [
-  { week: 1, date: 'Oct 27', topic: 'Linear Algebra for AI', description: 'Mathematical foundations for AI' },
-  { week: 2, date: 'Nov 3', topic: 'Probability for AI', description: 'Statistical reasoning in AI' },
-  { week: 3, date: 'Nov 10', topic: 'Calculus for AI: Gradient Descent', description: 'Optimization fundamentals' },
-  { week: 4, date: 'Nov 17', topic: 'Supervised Learning', description: 'Learning from labeled data' },
-  { week: 5, date: 'Nov 24', topic: 'Unsupervised Learning', description: 'Discovering patterns in data' },
-  { week: 6, date: 'Dec 1', topic: 'Reinforcement Learning', description: 'Learning through trial and error' },
-  { week: 7, date: 'Dec 8', topic: 'Neural Networks & Backpropagation', description: 'Training deep learning models' },
-  { week: 8, date: 'Dec 15', topic: 'Convolutional Neural Networks (CNNs)', description: 'Deep learning for computer vision' },
-  { week: 9, date: 'Dec 22', topic: 'Recurrent Neural Networks (LSTMs)', description: 'Sequential data processing' },
-  { week: 10, date: 'Dec 29', topic: 'The Transformer Architecture', description: 'Modern NLP foundation' },
-  { week: 11, date: 'Jan 5', topic: 'Embeddings & Vector Space', description: 'Representing data in vector space' },
-  { week: 12, date: 'Jan 12', topic: 'Vector Databases', description: 'Storing and querying embeddings' },
-  { week: 13, date: 'Jan 19', topic: 'Retrieval-Augmented Generation (RAG)', description: 'Combining retrieval with generation' },
-  { week: 14, date: 'Jan 26', topic: 'Diffusion Models', description: 'Generative models for image synthesis' },
-  { week: 15, date: 'Feb 2', topic: 'Multimodal AI (GPT-4o, Gemini)', description: 'AI that processes multiple modalities' },
-  { week: 16, date: 'Feb 9', topic: 'AI Agents & The ReAct Framework', description: 'Building reasoning and acting agents' },
-  { week: 17, date: 'Feb 16', topic: 'The Alignment Problem', description: 'Ensuring AI aligns with human values' },
+  // Week 1-4: Foundations
+  { week: 1, phase: 'Foundations', topic: 'AI Governance Frameworks in Banking', description: 'Understanding regulatory frameworks for AI in financial services' },
+  { week: 2, phase: 'Foundations', topic: 'Model Risk Management Fundamentals', description: 'Core principles of managing AI model risks' },
+  { week: 3, phase: 'Foundations', topic: 'Regulatory Landscape (UK/EU)', description: 'Navigating UK and EU AI regulations' },
+  { week: 4, phase: 'Foundations', topic: 'Enterprise AI Architecture Patterns', description: 'Designing scalable AI systems for enterprises' },
+  
+  // Week 5-8: Data & Infrastructure
+  { week: 5, phase: 'Data & Infrastructure', topic: 'Data Governance in Regulated Environments', description: 'Managing data in compliance with regulations' },
+  { week: 6, phase: 'Data & Infrastructure', topic: 'Privacy-Preserving AI Techniques', description: 'Protecting privacy while leveraging AI' },
+  { week: 7, phase: 'Data & Infrastructure', topic: 'Data Lineage and Audit Trails', description: 'Tracking data provenance and usage' },
+  { week: 8, phase: 'Data & Infrastructure', topic: 'Infrastructure Security Standards', description: 'Securing AI infrastructure in financial services' },
+  
+  // Week 9-12: Model Development
+  { week: 9, phase: 'Model Development', topic: 'Model Development Lifecycle', description: 'End-to-end ML model development process' },
+  { week: 10, phase: 'Model Development', topic: 'Testing and Validation Frameworks', description: 'Rigorous testing and validation approaches' },
+  { week: 11, phase: 'Model Development', topic: 'Bias Detection and Mitigation', description: 'Identifying and addressing algorithmic bias' },
+  { week: 12, phase: 'Model Development', topic: 'Explainability Requirements', description: 'Meeting explainability standards in BFSI' },
+  
+  // Week 13-16: Risk Management
+  { week: 13, phase: 'Risk Management', topic: 'Model Risk Assessment', description: 'Comprehensive model risk evaluation' },
+  { week: 14, phase: 'Risk Management', topic: 'Monitoring and Alerting Strategies', description: 'Proactive monitoring and incident detection' },
+  { week: 15, phase: 'Risk Management', topic: 'Incident Response Planning', description: 'Preparing for and responding to AI incidents' },
+  { week: 16, phase: 'Risk Management', topic: 'Third-Party AI Risk', description: 'Managing risks from external AI providers' },
+  
+  // Week 17-20: Deployment & Operations
+  { week: 17, phase: 'Deployment & Operations', topic: 'Production Deployment Standards', description: 'Best practices for deploying AI in production' },
+  { week: 18, phase: 'Deployment & Operations', topic: 'Change Management Processes', description: 'Managing changes to AI systems safely' },
+  { week: 19, phase: 'Deployment & Operations', topic: 'Performance Monitoring', description: 'Continuous performance assessment' },
+  { week: 20, phase: 'Deployment & Operations', topic: 'Operational Resilience', description: 'Building resilient AI operations' },
+  
+  // Week 21-24: Governance & Future
+  { week: 21, phase: 'Governance & Future', topic: 'AI Ethics and Responsible AI', description: 'Ethical considerations in AI deployment' },
+  { week: 22, phase: 'Governance & Future', topic: 'Stakeholder Communication', description: 'Effective communication about AI systems' },
+  { week: 23, phase: 'Governance & Future', topic: 'Regulatory Reporting', description: 'Meeting regulatory reporting obligations' },
+  { week: 24, phase: 'Governance & Future', topic: 'Future Trends and Adaptations', description: 'Preparing for future AI developments' },
 ]
