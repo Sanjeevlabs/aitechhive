@@ -12,10 +12,10 @@ export interface CurriculumTopic {
 // Wednesday Topics - Tools Kit
 export const wednesdayTopics: CurriculumTopic[] = [
   // Week 1-4: Foundations
-  { week: 1, phase: 'Foundations', topic: 'Setting Up Development Environment', description: 'Establishing the foundation for AI development in regulated environments' },
-  { week: 2, phase: 'Foundations', topic: 'Version Control for ML Models', description: 'Managing ML model versions and tracking changes' },
-  { week: 3, phase: 'Foundations', topic: 'Documentation Standards', description: 'Creating comprehensive documentation for compliance' },
-  { week: 4, phase: 'Foundations', topic: 'Compliance Tracking Tools', description: 'Tools for monitoring and ensuring regulatory compliance' },
+  { week: 1, phase: 'Foundations', topic: 'Prometheus + Loki + Grafana for Model Monitoring & Audit Trails', description:'' },
+  { week: 2, phase: 'Foundations', topic: 'LangChain Retrieval Pipeline for KYC/Claims', description:'' },
+  { week: 3, phase: 'Foundations', topic: 'Vector DB Setup (Qdrant / Weaviate) + PII Filtering', description:'' },
+  { week: 4, phase: 'Foundations', topic: 'SHAP + LIME Explainability Reports for Audit Committees', description:'' },
   
   // Week 5-8: Data & Infrastructure
   { week: 5, phase: 'Data & Infrastructure', topic: 'Data Quality Assessment Tools', description: 'Ensuring data quality in AI systems' },
