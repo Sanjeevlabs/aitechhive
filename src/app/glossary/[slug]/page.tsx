@@ -61,30 +61,30 @@ export default function GlossaryTermPage({ params }: Props) {
   const category = categories.find(c => c.name === term.category)
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#F9F7F4' }}>
       {/* Header */}
-      <header className="bg-white border-b border-slate-200">
+      <header className="bg-white border-b" style={{ borderColor: '#EDEAE6' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Breadcrumb */}
           <nav className="flex mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-sm">
               <li>
-                <Link href="/" className="text-slate-500 hover:text-slate-700">
+                <Link href="/" className="transition-colors" style={{ color: '#6B6B6B' }}>
                   Home
                 </Link>
               </li>
               <li>
-                <span className="text-slate-400 mx-2">/</span>
+                <span style={{ color: '#EDEAE6' }} className="mx-2">/</span>
               </li>
               <li>
-                <Link href="/glossary" className="text-slate-500 hover:text-slate-700">
+                <Link href="/glossary" className="transition-colors" style={{ color: '#6B6B6B' }}>
                   Glossary
                 </Link>
               </li>
               <li>
-                <span className="text-slate-400 mx-2">/</span>
+                <span style={{ color: '#EDEAE6' }} className="mx-2">/</span>
               </li>
-              <li className="text-slate-900 font-medium" aria-current="page">
+              <li className="font-medium" style={{ color: '#2B2B2B' }} aria-current="page">
                 {term.title}
               </li>
             </ol>
@@ -92,13 +92,13 @@ export default function GlossaryTermPage({ params }: Props) {
           
           {/* Category Badge */}
           <div className="mb-3">
-            <span className="inline-block px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 rounded-full">
+            <span className="inline-block px-3 py-1 text-sm font-medium rounded-full" style={{ backgroundColor: '#EDEAE6', color: '#2B2B2B' }}>
               {term.category}
             </span>
           </div>
           
           {/* Title */}
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
             {term.title}
           </h1>
         </div>
@@ -108,19 +108,20 @@ export default function GlossaryTermPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg border border-slate-200 p-8">
+            <div className="bg-white rounded-lg border p-8" style={{ borderColor: '#EDEAE6' }}>
               <div className="prose prose-slate max-w-none">
-                <h2 className="text-2xl font-semibold text-slate-900 mb-4">Definition</h2>
-                <p className="text-lg text-slate-700 leading-relaxed">
+                <h2 className="text-2xl font-semibold mb-4" style={{ color: '#2B2B2B' }}>Definition</h2>
+                <p className="text-lg leading-relaxed" style={{ color: '#6B6B6B' }}>
                   {term.description}
                 </p>
               </div>
               
               {/* Navigation Links */}
-              <div className="mt-8 pt-6 border-t border-slate-200">
+              <div className="mt-8 pt-6 border-t" style={{ borderColor: '#EDEAE6' }}>
                 <Link
                   href="/glossary"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                  className="inline-flex items-center font-medium transition-colors"
+                  style={{ color: '#D4AF37' }}
                 >
                   <svg
                     className="w-5 h-5 mr-2"
@@ -145,8 +146,8 @@ export default function GlossaryTermPage({ params }: Props) {
           <div className="lg:col-span-1">
             {/* Related Terms in Same Category */}
             {categoryTerms.length > 0 && (
-              <div className="bg-white rounded-lg border border-slate-200 p-6 mb-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-4">
+              <div className="bg-white rounded-lg border p-6 mb-6" style={{ borderColor: '#EDEAE6' }}>
+                <h3 className="text-lg font-semibold mb-4" style={{ color: '#2B2B2B' }}>
                   More in {term.category}
                 </h3>
                 <ul className="space-y-3">
@@ -154,7 +155,8 @@ export default function GlossaryTermPage({ params }: Props) {
                     <li key={relatedTerm.slug}>
                       <Link
                         href={`/glossary/${relatedTerm.slug}`}
-                        className="text-blue-600 hover:text-blue-700 hover:underline"
+                        className="hover:underline transition-colors"
+                        style={{ color: '#D4AF37' }}
                       >
                         {relatedTerm.title}
                       </Link>
@@ -164,7 +166,8 @@ export default function GlossaryTermPage({ params }: Props) {
                 {category && category.terms.length > 6 && (
                   <Link
                     href="/glossary"
-                    className="inline-block mt-4 text-sm text-slate-600 hover:text-slate-900"
+                    className="inline-block mt-4 text-sm transition-colors"
+                    style={{ color: '#6B6B6B' }}
                   >
                     View all {category.terms.length} terms →
                   </Link>
@@ -173,8 +176,8 @@ export default function GlossaryTermPage({ params }: Props) {
             )}
             
             {/* All Categories */}
-            <div className="bg-white rounded-lg border border-slate-200 p-6">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">
+            <div className="bg-white rounded-lg border p-6" style={{ borderColor: '#EDEAE6' }}>
+              <h3 className="text-lg font-semibold mb-4" style={{ color: '#2B2B2B' }}>
                 All Categories
               </h3>
               <ul className="space-y-2">
@@ -182,11 +185,11 @@ export default function GlossaryTermPage({ params }: Props) {
                   <li key={cat.slug}>
                     <Link
                       href="/glossary"
-                      className={`block text-sm ${
-                        cat.name === term.category
-                          ? 'text-blue-600 font-medium'
-                          : 'text-slate-600 hover:text-slate-900'
-                      }`}
+                      className="block text-sm transition-colors"
+                      style={cat.name === term.category
+                        ? { color: '#D4AF37', fontWeight: 500 }
+                        : { color: '#6B6B6B' }
+                      }
                     >
                       {cat.name} ({cat.terms.length})
                     </Link>

@@ -97,15 +97,15 @@ export default function GlossaryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#F9F7F4' }}>
       {/* Header */}
-      <header className="bg-white border-b border-slate-200">
+      <header className="bg-white border-b" style={{ borderColor: '#EDEAE6' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">
-              AI & Banking Glossary
+            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
+              Jargon Buster
             </h1>
-            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+            <p className="text-lg max-w-3xl mx-auto" style={{ color: '#6B6B6B' }}>
               Essential terms and definitions for AI governance, deployment, and regulation in financial services
             </p>
           </div>
@@ -117,14 +117,19 @@ export default function GlossaryPage() {
         <div className="mb-8">
           <div className="relative max-w-2xl mx-auto">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <MagnifyingGlassIcon className="h-5 w-5 text-slate-400" />
+              <MagnifyingGlassIcon className="h-5 w-5" style={{ color: '#6B6B6B' }} />
             </div>
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search terms, descriptions, or categories..."
-              className="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900"
+              className="block w-full pl-10 pr-3 py-3 border rounded-lg leading-5 bg-white focus:outline-none focus:ring-2 focus:border-transparent"
+              style={{ 
+                borderColor: '#EDEAE6',
+                color: '#2B2B2B',
+                '--tw-ring-color': '#D4AF37'
+              } as React.CSSProperties}
             />
           </div>
         </div>
@@ -134,11 +139,11 @@ export default function GlossaryPage() {
           <div className="flex flex-wrap gap-2 justify-center">
             <button
               onClick={() => setSelectedCategory('all')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                selectedCategory === 'all'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
+              className="px-4 py-2 rounded-full text-sm font-medium transition-colors"
+              style={selectedCategory === 'all' 
+                ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
+                : { backgroundColor: '#EDEAE6', color: '#2B2B2B' }
+              }
             >
               All Categories
             </button>
@@ -146,11 +151,11 @@ export default function GlossaryPage() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  selectedCategory === category
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                }`}
+                className="px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                style={selectedCategory === category
+                  ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
+                  : { backgroundColor: '#EDEAE6', color: '#2B2B2B' }
+                }
               >
                 {category}
               </button>
@@ -159,15 +164,15 @@ export default function GlossaryPage() {
         </div>
 
         {/* A-Z Navigation */}
-        <div className="mb-8 border-t border-b border-slate-200 py-4">
+        <div className="mb-8 border-t border-b py-4" style={{ borderColor: '#EDEAE6' }}>
           <div className="flex flex-wrap gap-1 justify-center">
             <button
               onClick={() => setSelectedLetter('all')}
-              className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                selectedLetter === 'all'
-                  ? 'bg-slate-900 text-white'
-                  : 'text-slate-600 hover:bg-slate-100'
-              }`}
+              className="px-3 py-1 text-sm font-medium rounded transition-colors"
+              style={selectedLetter === 'all'
+                ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
+                : { color: '#6B6B6B' }
+              }
             >
               All
             </button>
@@ -175,11 +180,11 @@ export default function GlossaryPage() {
               <button
                 key={letter}
                 onClick={() => setSelectedLetter(letter)}
-                className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                  selectedLetter === letter
-                    ? 'bg-slate-900 text-white'
-                    : 'text-slate-600 hover:bg-slate-100'
-                }`}
+                className="px-3 py-1 text-sm font-medium rounded transition-colors"
+                style={selectedLetter === letter
+                  ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
+                  : { color: '#6B6B6B' }
+                }
               >
                 {letter}
               </button>
@@ -188,14 +193,14 @@ export default function GlossaryPage() {
         </div>
 
         {/* Results Count */}
-        <div className="mb-6 text-center text-slate-600">
+        <div className="mb-6 text-center" style={{ color: '#6B6B6B' }}>
           {filteredTerms.length} {filteredTerms.length === 1 ? 'term' : 'terms'} found
         </div>
 
         {/* Terms List */}
         {Object.keys(groupedTerms).length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-slate-500 text-lg">No terms found matching your criteria.</p>
+            <p className="text-lg" style={{ color: '#6B6B6B' }}>No terms found matching your criteria.</p>
           </div>
         ) : (
           <div className="space-y-8">
@@ -203,7 +208,7 @@ export default function GlossaryPage() {
               .sort(([a], [b]) => a.localeCompare(b))
               .map(([letter, letterTerms]) => (
                 <div key={letter} id={`letter-${letter}`}>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+                  <h2 className="text-2xl font-bold mb-4 pb-2 border-b" style={{ color: '#2B2B2B', borderColor: '#EDEAE6' }}>
                     {letter}
                   </h2>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -211,15 +216,16 @@ export default function GlossaryPage() {
                       <Link
                         key={term.slug}
                         href={`/glossary/${term.slug}`}
-                        className="block p-6 bg-white rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all"
+                        className="block p-6 bg-white rounded-lg border transition-all hover:shadow-lg"
+                        style={{ borderColor: '#EDEAE6' }}
                       >
-                        <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                        <h3 className="text-lg font-semibold mb-2" style={{ color: '#2B2B2B' }}>
                           {term.title}
                         </h3>
-                        <p className="text-sm text-slate-600 mb-3 line-clamp-3">
+                        <p className="text-sm mb-3 line-clamp-3" style={{ color: '#6B6B6B' }}>
                           {term.description}
                         </p>
-                        <span className="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">
+                        <span className="inline-block px-3 py-1 text-xs font-medium rounded-full" style={{ backgroundColor: '#EDEAE6', color: '#2B2B2B' }}>
                           {term.category}
                         </span>
                       </Link>
@@ -234,7 +240,8 @@ export default function GlossaryPage() {
         <div className="mt-12 text-center">
           <Link
             href="/"
-            className="inline-block px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
+            className="inline-block px-6 py-3 font-medium rounded-lg transition-colors"
+            style={{ backgroundColor: '#2B2B2B', color: '#F9F7F4' }}
           >
             ← Back to Home
           </Link>
