@@ -18,13 +18,13 @@ This glossary provides definitions for key terms in AI governance, deployment, a
 **Description:** A structured approach to managing AI systems throughout their lifecycle, ensuring compliance, ethical use, and effective risk management.
 **URL:** /glossary/ai-governance-framework
 
-### Explainable AI (XAI)
-**Description:** AI systems designed to provide transparent, interpretable explanations for their decisions and predictions, crucial for regulatory compliance and trust.
-**URL:** /glossary/explainable-ai
-
 ---
 
 ## Category: Regulation & Compliance
+
+### Explainable AI (XAI)
+**Description:** AI systems designed to provide transparent, interpretable explanations for their decisions and predictions, crucial for regulatory compliance and trust.
+**URL:** /glossary/explainable-ai
 
 ### FCA (Financial Conduct Authority)
 **Description:** The UK regulatory body overseeing financial markets and firms, responsible for AI governance standards in UK financial institutions.
@@ -61,10 +61,6 @@ This glossary provides definitions for key terms in AI governance, deployment, a
 ### Stress Testing
 **Description:** Evaluating model performance under extreme or adverse conditions to ensure resilience and identify potential failure points.
 **URL:** /glossary/stress-testing
-
-### Model Monitoring
-**Description:** Ongoing surveillance of deployed models to detect performance degradation, data drift, and ensure continued effectiveness.
-**URL:** /glossary/model-monitoring
 
 ---
 
@@ -145,6 +141,10 @@ This glossary provides definitions for key terms in AI governance, deployment, a
 ### Model Registry
 **Description:** Central repository for storing, versioning, and managing ML models throughout their lifecycle.
 **URL:** /glossary/model-registry
+
+### Model Monitoring
+**Description:** Ongoing surveillance of deployed models to detect performance degradation, data drift, and ensure continued effectiveness.
+**URL:** /glossary/model-monitoring
 
 ### A/B Testing
 **Description:** Experimental method comparing two versions of a model or system to determine which performs better.

@@ -111,13 +111,22 @@ export function parseGlossary(content: string): GlossaryData {
   return { terms, categories }
 }
 
+// Cache for glossary data to avoid redundant parsing during build
+let glossaryCache: GlossaryData | null = null
+
 /**
  * Load and parse the glossary from the markdown file
+ * Uses caching to improve build performance
  */
 export function loadGlossary(): GlossaryData {
+  if (glossaryCache) {
+    return glossaryCache
+  }
+  
   const glossaryPath = path.join(process.cwd(), 'content', 'glossary', 'glossary.md')
   const content = fs.readFileSync(glossaryPath, 'utf-8')
-  return parseGlossary(content)
+  glossaryCache = parseGlossary(content)
+  return glossaryCache
 }
 
 /**
@@ -125,17 +134,17 @@ export function loadGlossary(): GlossaryData {
  */
 export function validateUniqueSlugs(terms: GlossaryTerm[]): void {
   const slugs = new Set<string>()
-  const duplicates: string[] = []
+  const duplicates = new Set<string>()
   
   for (const term of terms) {
     if (slugs.has(term.slug)) {
-      duplicates.push(term.slug)
+      duplicates.add(term.slug)
     }
     slugs.add(term.slug)
   }
   
-  if (duplicates.length > 0) {
-    throw new Error(`Duplicate slugs found: ${duplicates.join(', ')}`)
+  if (duplicates.size > 0) {
+    throw new Error(`Duplicate slugs found: ${Array.from(duplicates).join(', ')}`)
   }
 }
 
