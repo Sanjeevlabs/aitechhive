@@ -1,11 +1,13 @@
 'use client'
 
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, AnimatePresence } from 'framer-motion'
 import { Logo } from '@/components/Logo'
 import { useState, useEffect } from 'react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { scrollY } = useScroll()
 
   useEffect(() => {
@@ -13,6 +15,17 @@ export function Header() {
       setScrolled(latest > 50)
     })
   }, [scrollY])
+
+  // Close mobile menu when a link is clicked
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false)
+  }
+
+  // Navigation links data
+  const navLinks = [
+    { href: 'https://newsletter.aitechhive.com', label: 'Newsletter', external: true },
+    { href: '/glossary', label: 'Jargon Buster', external: false },
+  ]
 
   return (
     <header 
@@ -32,34 +45,75 @@ export function Header() {
             <Logo size="sm" />
           </motion.div>
           
-          {/* Navigation Links */}
+          {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center space-x-6">
-            <motion.a
-              href="https://newsletter.aitechhive.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Newsletter
-            </motion.a>
-            <motion.a
-              href="/glossary"
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Jargon Buster
-            </motion.a>
+            {navLinks.map((link, index) => (
+              <motion.a
+                key={link.href}
+                href={link.href}
+                {...(link.external && { target: '_blank', rel: 'noopener noreferrer' })}
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {link.label}
+              </motion.a>
+            ))}
           </nav>
+
+          {/* Mobile Menu Button */}
+          <motion.button
+            className="md:hidden p-2 text-foreground hover:text-accent transition-colors duration-200"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            aria-label="Toggle mobile menu"
+          >
+            {mobileMenuOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3Icon className="h-6 w-6" />
+            )}
+          </motion.button>
         </div>
+
+        {/* Mobile Navigation Dropdown */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className="md:hidden overflow-hidden"
+            >
+              <div className="pt-4 pb-2 space-y-2">
+                {navLinks.map((link, index) => (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    {...(link.external && { target: '_blank', rel: 'noopener noreferrer' })}
+                    className="block px-4 py-3 text-sm font-medium text-foreground hover:text-accent hover:bg-secondary/50 rounded-lg transition-all duration-200"
+                    onClick={closeMobileMenu}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 + index * 0.1 }}
+                    whileHover={{ x: 4 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    {link.label}
+                  </motion.a>
+                ))}
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   )
