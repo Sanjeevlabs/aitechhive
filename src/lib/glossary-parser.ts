@@ -8,6 +8,7 @@ export interface GlossaryTerm {
   description: string
   category: string
   url: string
+  officialUrl?: string
 }
 
 export interface GlossaryCategory {
@@ -33,6 +34,7 @@ export function parseGlossary(content: string): GlossaryData {
   let currentTerm = ''
   let currentDescription = ''
   let currentUrl = ''
+  let currentOfficialUrl = ''
   
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim()
@@ -61,7 +63,8 @@ export function parseGlossary(content: string): GlossaryData {
           slug: termSlug,
           description: currentDescription.trim(),
           category: currentCategory,
-          url: currentUrl || `/glossary/${termSlug}`
+          url: currentUrl || `/glossary/${termSlug}`,
+          ...(currentOfficialUrl && { officialUrl: currentOfficialUrl })
         }
         terms.push(term)
         categoriesMap.get(currentCategory)?.push(term)
@@ -71,6 +74,7 @@ export function parseGlossary(content: string): GlossaryData {
       currentTerm = line.replace('###', '').trim()
       currentDescription = ''
       currentUrl = ''
+      currentOfficialUrl = ''
       continue
     }
     
@@ -85,6 +89,12 @@ export function parseGlossary(content: string): GlossaryData {
       currentUrl = line.replace('**URL:**', '').trim()
       continue
     }
+    
+    // Official URL or Website line
+    if (line.startsWith('**Official URL:**') || line.startsWith('**Website:**')) {
+      currentOfficialUrl = line.replace('**Official URL:**', '').replace('**Website:**', '').trim()
+      continue
+    }
   }
   
   // Save last term
@@ -95,7 +105,8 @@ export function parseGlossary(content: string): GlossaryData {
       slug: termSlug,
       description: currentDescription.trim(),
       category: currentCategory,
-      url: currentUrl || `/glossary/${termSlug}`
+      url: currentUrl || `/glossary/${termSlug}`,
+      ...(currentOfficialUrl && { officialUrl: currentOfficialUrl })
     }
     terms.push(term)
     categoriesMap.get(currentCategory)?.push(term)

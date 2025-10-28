@@ -114,6 +114,37 @@ export default function GlossaryTermPage({ params }: Props) {
                 <p className="text-lg leading-relaxed" style={{ color: '#6B6B6B' }}>
                   {term.description}
                 </p>
+                
+                {/* Official URL */}
+                {term.officialUrl && (
+                  <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#F9F7F4' }}>
+                    <h3 className="text-sm font-semibold mb-2" style={{ color: '#2B2B2B' }}>
+                      Official Resource
+                    </h3>
+                    <a
+                      href={term.officialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 transition-colors hover:underline"
+                      style={{ color: '#D4AF37' }}
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                      Learn more on external site
+                    </a>
+                  </div>
+                )}
               </div>
               
               {/* Navigation Links */}
