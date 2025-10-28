@@ -27,7 +27,7 @@ export function Logo({ size = 'md', className, textColor }: LogoProps) {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <motion.div
-        className="relative mb-3"
+        className="relative"
         whileHover={{ 
           scale: 1.05,
           transition: { duration: 0.2 }
@@ -43,19 +43,6 @@ export function Logo({ size = 'md', className, textColor }: LogoProps) {
           className="drop-shadow-lg"
         />
       </motion.div>
-      
-      <motion.h3 
-        className={cn(
-          'font-semibold tracking-tight',
-          textSize,
-          textColor || 'text-slate-900'
-        )}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.4 }}
-      >
-        AITECHHIVE
-      </motion.h3>
     </motion.div>
   )
 }

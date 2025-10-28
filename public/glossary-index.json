@@ -220,7 +220,3318 @@
     "title": "Model Versioning",
     "slug": "model-versioning",
     "description": "Practice of tracking and managing different iterations of AI models to enable rollback and audit trails.",
-    "category": "Deployment & Operations",
+    "category": "Neural Networks & Deep Learning",
     "url": "/glossary/model-versioning"
+  },
+  {
+    "title": "Convolutional Neural Network (CNN)",
+    "slug": "convolutional-neural-network-cnn",
+    "description": "Deep learning architecture specialized for processing grid-like data such as images, using convolutional layers to detect patterns.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/convolutional-neural-network"
+  },
+  {
+    "title": "Recurrent Neural Network (RNN)",
+    "slug": "recurrent-neural-network-rnn",
+    "description": "Neural network architecture designed for sequential data processing, maintaining internal state to process sequences of inputs.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/recurrent-neural-network"
+  },
+  {
+    "title": "Long Short-Term Memory (LSTM)",
+    "slug": "long-short-term-memory-lstm",
+    "description": "Special type of RNN capable of learning long-term dependencies, addressing the vanishing gradient problem.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/long-short-term-memory"
+  },
+  {
+    "title": "Generative Adversarial Network (GAN)",
+    "slug": "generative-adversarial-network-gan",
+    "description": "Deep learning framework where two neural networks compete: a generator creates synthetic data and a discriminator evaluates authenticity.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/generative-adversarial-network"
+  },
+  {
+    "title": "Transformer",
+    "slug": "transformer",
+    "description": "Neural network architecture using self-attention mechanisms, foundational for modern language models like GPT and BERT.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/transformer"
+  },
+  {
+    "title": "Attention Mechanism",
+    "slug": "attention-mechanism",
+    "description": "Technique allowing models to focus on specific parts of input when producing output, crucial for sequence-to-sequence tasks.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/attention-mechanism"
+  },
+  {
+    "title": "Residual Network (ResNet)",
+    "slug": "residual-network-resnet",
+    "description": "Deep neural network architecture using skip connections to enable training of very deep networks without degradation.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/residual-network"
+  },
+  {
+    "title": "Autoencoder",
+    "slug": "autoencoder",
+    "description": "Neural network trained to compress data into a lower-dimensional representation and reconstruct it, useful for dimensionality reduction.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/autoencoder"
+  },
+  {
+    "title": "Variational Autoencoder (VAE)",
+    "slug": "variational-autoencoder-vae",
+    "description": "Generative model that learns a probabilistic latent representation of data, enabling generation of new similar samples.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/variational-autoencoder"
+  },
+  {
+    "title": "Graph Neural Network (GNN)",
+    "slug": "graph-neural-network-gnn",
+    "description": "Neural network architecture designed to process graph-structured data, learning from node features and graph topology.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/graph-neural-network"
+  },
+  {
+    "title": "Capsule Network",
+    "slug": "capsule-network",
+    "description": "Neural network architecture using capsules to better capture hierarchical relationships and spatial information in data.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/capsule-network"
+  },
+  {
+    "title": "Siamese Network",
+    "slug": "siamese-network",
+    "description": "Neural network architecture with twin networks sharing weights, used for learning similarity metrics between inputs.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/siamese-network"
+  },
+  {
+    "title": "U-Net",
+    "slug": "u-net",
+    "description": "CNN architecture for image segmentation with encoder-decoder structure and skip connections, widely used in medical imaging.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/u-net"
+  },
+  {
+    "title": "Inception Network",
+    "slug": "inception-network",
+    "description": "Deep learning architecture using inception modules with multiple filter sizes to capture features at different scales.",
+    "category": "Neural Networks & Deep Learning",
+    "url": "/glossary/inception-network"
+  },
+  {
+    "title": "MobileNet",
+    "slug": "mobilenet",
+    "description": "Efficient neural network architecture optimized for mobile and embedded vision applications using depthwise separable convolutions.",
+    "category": "Large Language Models",
+    "url": "/glossary/mobilenet"
+  },
+  {
+    "title": "GPT (Generative Pre-trained Transformer)",
+    "slug": "gpt-generative-pre-trained-transformer",
+    "description": "Family of large language models developed by OpenAI using transformer architecture for text generation and understanding.",
+    "category": "Large Language Models",
+    "url": "/glossary/gpt"
+  },
+  {
+    "title": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "slug": "bert-bidirectional-encoder-representations-from-transformers",
+    "description": "Pre-trained language model by Google using bidirectional context to understand word meanings and relationships.",
+    "category": "Large Language Models",
+    "url": "/glossary/bert"
+  },
+  {
+    "title": "LLaMA (Large Language Model Meta AI)",
+    "slug": "llama-large-language-model-meta-ai",
+    "description": "Open-source large language model family by Meta designed for research and commercial applications.",
+    "category": "Large Language Models",
+    "url": "/glossary/llama"
+  },
+  {
+    "title": "Claude",
+    "slug": "claude",
+    "description": "Large language model developed by Anthropic focusing on safety, helpfulness, and harmlessness in AI interactions.",
+    "category": "Large Language Models",
+    "url": "/glossary/claude"
+  },
+  {
+    "title": "PaLM (Pathways Language Model)",
+    "slug": "palm-pathways-language-model",
+    "description": "Large language model by Google demonstrating breakthrough performance on reasoning and multilingual tasks.",
+    "category": "Large Language Models",
+    "url": "/glossary/palm"
+  },
+  {
+    "title": "T5 (Text-to-Text Transfer Transformer)",
+    "slug": "t5-text-to-text-transfer-transformer",
+    "description": "Google's unified framework treating all NLP tasks as text-to-text problems for consistent model architecture.",
+    "category": "Large Language Models",
+    "url": "/glossary/t5"
+  },
+  {
+    "title": "RoBERTa",
+    "slug": "roberta",
+    "description": "Robustly optimized BERT approach with improved training methodology for enhanced language understanding.",
+    "category": "Large Language Models",
+    "url": "/glossary/roberta"
+  },
+  {
+    "title": "ELECTRA",
+    "slug": "electra",
+    "description": "Efficient pre-training method for language models using replaced token detection instead of masked language modeling.",
+    "category": "Large Language Models",
+    "url": "/glossary/electra"
+  },
+  {
+    "title": "GPT-Neo",
+    "slug": "gpt-neo",
+    "description": "Open-source alternative to GPT models developed by EleutherAI for accessible large-scale language modeling.",
+    "category": "Large Language Models",
+    "url": "/glossary/gpt-neo"
+  },
+  {
+    "title": "Gemini",
+    "slug": "gemini",
+    "description": "Google's multimodal AI model capable of understanding and generating text, images, audio, and video.",
+    "category": "Large Language Models",
+    "url": "/glossary/gemini"
+  },
+  {
+    "title": "InstructGPT",
+    "slug": "instructgpt",
+    "description": "GPT model fine-tuned using reinforcement learning from human feedback to better follow user instructions.",
+    "category": "Large Language Models",
+    "url": "/glossary/instructgpt"
+  },
+  {
+    "title": "ChatGPT",
+    "slug": "chatgpt",
+    "description": "Conversational AI model by OpenAI optimized for dialogue and interactive assistance using GPT architecture.",
+    "category": "Large Language Models",
+    "url": "/glossary/chatgpt"
+  },
+  {
+    "title": "Mistral",
+    "slug": "mistral",
+    "description": "High-performance open-source language model optimized for efficiency and reasoning capabilities.",
+    "category": "Large Language Models",
+    "url": "/glossary/mistral"
+  },
+  {
+    "title": "Falcon",
+    "slug": "falcon",
+    "description": "Open-source large language model developed by Technology Innovation Institute with strong multilingual capabilities.",
+    "category": "Large Language Models",
+    "url": "/glossary/falcon"
+  },
+  {
+    "title": "MPT (MosaicML Pretrained Transformer)",
+    "slug": "mpt-mosaicml-pretrained-transformer",
+    "description": "Open-source commercially-usable language models optimized for long context and efficient training.",
+    "category": "Computer Vision",
+    "url": "/glossary/mpt"
+  },
+  {
+    "title": "Object Detection",
+    "slug": "object-detection",
+    "description": "Computer vision task of identifying and locating objects within images or video streams.",
+    "category": "Computer Vision",
+    "url": "/glossary/object-detection"
+  },
+  {
+    "title": "YOLO (You Only Look Once)",
+    "slug": "yolo-you-only-look-once",
+    "description": "Real-time object detection system that frames detection as a regression problem for fast inference.",
+    "category": "Computer Vision",
+    "url": "/glossary/yolo"
+  },
+  {
+    "title": "R-CNN (Region-based CNN)",
+    "slug": "r-cnn-region-based-cnn",
+    "description": "Object detection approach using region proposals and CNNs for accurate object localization and classification.",
+    "category": "Computer Vision",
+    "url": "/glossary/r-cnn"
+  },
+  {
+    "title": "Semantic Segmentation",
+    "slug": "semantic-segmentation",
+    "description": "Computer vision task of classifying each pixel in an image into predefined categories.",
+    "category": "Computer Vision",
+    "url": "/glossary/semantic-segmentation"
+  },
+  {
+    "title": "Instance Segmentation",
+    "slug": "instance-segmentation",
+    "description": "Computer vision task combining object detection and semantic segmentation to identify individual object instances.",
+    "category": "Computer Vision",
+    "url": "/glossary/instance-segmentation"
+  },
+  {
+    "title": "Image Classification",
+    "slug": "image-classification",
+    "description": "Task of assigning predefined labels to images based on their visual content.",
+    "category": "Computer Vision",
+    "url": "/glossary/image-classification"
+  },
+  {
+    "title": "Face Recognition",
+    "slug": "face-recognition",
+    "description": "Technology identifying or verifying individuals from digital images or video frames using facial features.",
+    "category": "Computer Vision",
+    "url": "/glossary/face-recognition"
+  },
+  {
+    "title": "Optical Character Recognition (OCR)",
+    "slug": "optical-character-recognition-ocr",
+    "description": "Technology converting images of text into machine-encoded text for digital processing.",
+    "category": "Computer Vision",
+    "url": "/glossary/optical-character-recognition"
+  },
+  {
+    "title": "Image Generation",
+    "slug": "image-generation",
+    "description": "AI task of creating new images from textual descriptions, random noise, or other images.",
+    "category": "Computer Vision",
+    "url": "/glossary/image-generation"
+  },
+  {
+    "title": "Style Transfer",
+    "slug": "style-transfer",
+    "description": "Technique applying artistic style of one image to the content of another using neural networks.",
+    "category": "Computer Vision",
+    "url": "/glossary/style-transfer"
+  },
+  {
+    "title": "Image Super-Resolution",
+    "slug": "image-super-resolution",
+    "description": "Enhancing image resolution and quality using deep learning to generate high-resolution images from low-resolution inputs.",
+    "category": "Computer Vision",
+    "url": "/glossary/image-super-resolution"
+  },
+  {
+    "title": "Pose Estimation",
+    "slug": "pose-estimation",
+    "description": "Computer vision technique detecting human body positions and joint locations in images or videos.",
+    "category": "Computer Vision",
+    "url": "/glossary/pose-estimation"
+  },
+  {
+    "title": "Video Analysis",
+    "slug": "video-analysis",
+    "description": "Automated processing and understanding of video content including action recognition and tracking.",
+    "category": "Computer Vision",
+    "url": "/glossary/video-analysis"
+  },
+  {
+    "title": "3D Reconstruction",
+    "slug": "3d-reconstruction",
+    "description": "Process of creating 3D models from 2D images or video using computer vision techniques.",
+    "category": "Computer Vision",
+    "url": "/glossary/3d-reconstruction"
+  },
+  {
+    "title": "Depth Estimation",
+    "slug": "depth-estimation",
+    "description": "Computer vision task of predicting distance of objects from camera using monocular or stereo images.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/depth-estimation"
+  },
+  {
+    "title": "Q-Learning",
+    "slug": "q-learning",
+    "description": "Model-free reinforcement learning algorithm learning optimal action-value function to maximize cumulative reward.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/q-learning"
+  },
+  {
+    "title": "Deep Q-Network (DQN)",
+    "slug": "deep-q-network-dqn",
+    "description": "Reinforcement learning combining Q-learning with deep neural networks for high-dimensional state spaces.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/deep-q-network"
+  },
+  {
+    "title": "Policy Gradient",
+    "slug": "policy-gradient",
+    "description": "RL method directly optimizing policy parameters to maximize expected cumulative reward.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/policy-gradient"
+  },
+  {
+    "title": "Actor-Critic",
+    "slug": "actor-critic",
+    "description": "RL architecture combining value-based and policy-based methods for stable and efficient learning.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/actor-critic"
+  },
+  {
+    "title": "Proximal Policy Optimization (PPO)",
+    "slug": "proximal-policy-optimization-ppo",
+    "description": "Policy gradient method with clipped objective for stable and sample-efficient reinforcement learning.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/proximal-policy-optimization"
+  },
+  {
+    "title": "SARSA (State-Action-Reward-State-Action)",
+    "slug": "sarsa-state-action-reward-state-action",
+    "description": "On-policy reinforcement learning algorithm for learning action-value function from experience.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/sarsa"
+  },
+  {
+    "title": "Monte Carlo Methods",
+    "slug": "monte-carlo-methods",
+    "description": "RL techniques using complete episode samples to estimate value functions and improve policies.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/monte-carlo-methods"
+  },
+  {
+    "title": "Temporal Difference Learning",
+    "slug": "temporal-difference-learning",
+    "description": "RL approach combining ideas from Monte Carlo and dynamic programming for online learning.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/temporal-difference-learning"
+  },
+  {
+    "title": "Multi-Armed Bandit",
+    "slug": "multi-armed-bandit",
+    "description": "Sequential decision problem balancing exploration and exploitation with multiple action choices.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/multi-armed-bandit"
+  },
+  {
+    "title": "Markov Decision Process (MDP)",
+    "slug": "markov-decision-process-mdp",
+    "description": "Mathematical framework for modeling decision-making where outcomes are partly random and partly controllable.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/markov-decision-process"
+  },
+  {
+    "title": "Reward Shaping",
+    "slug": "reward-shaping",
+    "description": "Technique of modifying reward signal to accelerate learning and guide agent toward desired behavior.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/reward-shaping"
+  },
+  {
+    "title": "Exploration vs Exploitation",
+    "slug": "exploration-vs-exploitation",
+    "description": "Fundamental tradeoff in RL between trying new actions and using known rewarding actions.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/exploration-vs-exploitation"
+  },
+  {
+    "title": "Model-Based RL",
+    "slug": "model-based-rl",
+    "description": "Reinforcement learning approach learning environment model to plan and predict future states.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/model-based-rl"
+  },
+  {
+    "title": "Imitation Learning",
+    "slug": "imitation-learning",
+    "description": "Learning policies by observing and mimicking expert demonstrations rather than trial and error.",
+    "category": "Reinforcement Learning",
+    "url": "/glossary/imitation-learning"
+  },
+  {
+    "title": "Inverse Reinforcement Learning",
+    "slug": "inverse-reinforcement-learning",
+    "description": "Learning reward function from observed expert behavior to understand underlying objectives.",
+    "category": "Training Techniques",
+    "url": "/glossary/inverse-reinforcement-learning"
+  },
+  {
+    "title": "Transfer Learning",
+    "slug": "transfer-learning",
+    "description": "Technique of using pre-trained model knowledge from one task to improve learning on related tasks.",
+    "category": "Training Techniques",
+    "url": "/glossary/transfer-learning"
+  },
+  {
+    "title": "Fine-Tuning",
+    "slug": "fine-tuning",
+    "description": "Adapting pre-trained models to specific tasks by continuing training on task-specific data.",
+    "category": "Training Techniques",
+    "url": "/glossary/fine-tuning"
+  },
+  {
+    "title": "Data Augmentation",
+    "slug": "data-augmentation",
+    "description": "Artificially expanding training dataset through transformations to improve model generalization.",
+    "category": "Training Techniques",
+    "url": "/glossary/data-augmentation"
+  },
+  {
+    "title": "Regularization",
+    "slug": "regularization",
+    "description": "Techniques preventing overfitting by constraining model complexity or adding penalties to loss function.",
+    "category": "Training Techniques",
+    "url": "/glossary/regularization"
+  },
+  {
+    "title": "Dropout",
+    "slug": "dropout",
+    "description": "Regularization technique randomly dropping units during training to prevent overfitting and improve generalization.",
+    "category": "Training Techniques",
+    "url": "/glossary/dropout"
+  },
+  {
+    "title": "Batch Normalization",
+    "slug": "batch-normalization",
+    "description": "Technique normalizing layer inputs to stabilize and accelerate neural network training.",
+    "category": "Training Techniques",
+    "url": "/glossary/batch-normalization"
+  },
+  {
+    "title": "Early Stopping",
+    "slug": "early-stopping",
+    "description": "Regularization method halting training when validation performance stops improving to prevent overfitting.",
+    "category": "Training Techniques",
+    "url": "/glossary/early-stopping"
+  },
+  {
+    "title": "Learning Rate Scheduling",
+    "slug": "learning-rate-scheduling",
+    "description": "Adjusting learning rate during training to improve convergence and final model performance.",
+    "category": "Training Techniques",
+    "url": "/glossary/learning-rate-scheduling"
+  },
+  {
+    "title": "Gradient Clipping",
+    "slug": "gradient-clipping",
+    "description": "Technique limiting gradient magnitude to prevent exploding gradients during training.",
+    "category": "Training Techniques",
+    "url": "/glossary/gradient-clipping"
+  },
+  {
+    "title": "Weight Initialization",
+    "slug": "weight-initialization",
+    "description": "Methods for setting initial neural network weights to facilitate effective training.",
+    "category": "Training Techniques",
+    "url": "/glossary/weight-initialization"
+  },
+  {
+    "title": "Curriculum Learning",
+    "slug": "curriculum-learning",
+    "description": "Training strategy presenting examples in meaningful order from simple to complex.",
+    "category": "Training Techniques",
+    "url": "/glossary/curriculum-learning"
+  },
+  {
+    "title": "Meta-Learning",
+    "slug": "meta-learning",
+    "description": "Learning to learn approach where models adapt quickly to new tasks with minimal data.",
+    "category": "Training Techniques",
+    "url": "/glossary/meta-learning"
+  },
+  {
+    "title": "Few-Shot Learning",
+    "slug": "few-shot-learning",
+    "description": "Machine learning approach enabling models to learn from very limited labeled examples.",
+    "category": "Training Techniques",
+    "url": "/glossary/few-shot-learning"
+  },
+  {
+    "title": "Zero-Shot Learning",
+    "slug": "zero-shot-learning",
+    "description": "Ability to recognize or perform tasks without any training examples through knowledge transfer.",
+    "category": "Training Techniques",
+    "url": "/glossary/zero-shot-learning"
+  },
+  {
+    "title": "Self-Supervised Learning",
+    "slug": "self-supervised-learning",
+    "description": "Learning representations from unlabeled data by creating pretext tasks from data itself.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/self-supervised-learning"
+  },
+  {
+    "title": "Stochastic Gradient Descent (SGD)",
+    "slug": "stochastic-gradient-descent-sgd",
+    "description": "Optimization algorithm updating model parameters using gradients from random data samples.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/stochastic-gradient-descent"
+  },
+  {
+    "title": "Adam Optimizer",
+    "slug": "adam-optimizer",
+    "description": "Adaptive learning rate optimization algorithm combining momentum and RMSprop for efficient training.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/adam-optimizer"
+  },
+  {
+    "title": "RMSprop",
+    "slug": "rmsprop",
+    "description": "Optimization algorithm using adaptive learning rates based on recent gradient magnitudes.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/rmsprop"
+  },
+  {
+    "title": "AdaGrad",
+    "slug": "adagrad",
+    "description": "Adaptive gradient algorithm adjusting learning rate based on historical gradient information.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/adagrad"
+  },
+  {
+    "title": "Momentum",
+    "slug": "momentum",
+    "description": "Optimization technique accelerating gradient descent by accumulating velocity in consistent directions.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/momentum"
+  },
+  {
+    "title": "Nesterov Momentum",
+    "slug": "nesterov-momentum",
+    "description": "Improved momentum method using look-ahead gradient for faster convergence.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/nesterov-momentum"
+  },
+  {
+    "title": "AdamW",
+    "slug": "adamw",
+    "description": "Adam variant with decoupled weight decay for improved regularization and generalization.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/adamw"
+  },
+  {
+    "title": "LAMB Optimizer",
+    "slug": "lamb-optimizer",
+    "description": "Layer-wise adaptive learning rate optimizer for large batch training of deep neural networks.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/lamb-optimizer"
+  },
+  {
+    "title": "RAdam",
+    "slug": "radam",
+    "description": "Rectified Adam optimizer with variance warmup for stable early training.",
+    "category": "Optimization Algorithms",
+    "url": "/glossary/radam"
+  },
+  {
+    "title": "Lookahead Optimizer",
+    "slug": "lookahead-optimizer",
+    "description": "Wrapper optimizer maintaining slow and fast weights for improved training stability.",
+    "category": "Model Evaluation",
+    "url": "/glossary/lookahead-optimizer"
+  },
+  {
+    "title": "Cross-Validation",
+    "slug": "cross-validation",
+    "description": "Statistical method assessing model generalization by partitioning data and rotating training and test sets.",
+    "category": "Model Evaluation",
+    "url": "/glossary/cross-validation"
+  },
+  {
+    "title": "Confusion Matrix",
+    "slug": "confusion-matrix",
+    "description": "Table visualizing classification model performance showing true and false predictions for each class.",
+    "category": "Model Evaluation",
+    "url": "/glossary/confusion-matrix"
+  },
+  {
+    "title": "Precision",
+    "slug": "precision",
+    "description": "Metric measuring proportion of true positive predictions among all positive predictions.",
+    "category": "Model Evaluation",
+    "url": "/glossary/precision"
+  },
+  {
+    "title": "Recall",
+    "slug": "recall",
+    "description": "Metric measuring proportion of true positives correctly identified among all actual positives.",
+    "category": "Model Evaluation",
+    "url": "/glossary/recall"
+  },
+  {
+    "title": "F1 Score",
+    "slug": "f1-score",
+    "description": "Harmonic mean of precision and recall providing balanced measure of model performance.",
+    "category": "Model Evaluation",
+    "url": "/glossary/f1-score"
+  },
+  {
+    "title": "ROC Curve",
+    "slug": "roc-curve",
+    "description": "Receiver Operating Characteristic curve plotting true positive rate vs false positive rate.",
+    "category": "Model Evaluation",
+    "url": "/glossary/roc-curve"
+  },
+  {
+    "title": "AUC (Area Under Curve)",
+    "slug": "auc-area-under-curve",
+    "description": "Metric measuring area under ROC curve indicating classifier's ability to distinguish classes.",
+    "category": "Model Evaluation",
+    "url": "/glossary/auc"
+  },
+  {
+    "title": "Mean Absolute Error (MAE)",
+    "slug": "mean-absolute-error-mae",
+    "description": "Average absolute difference between predicted and actual values in regression tasks.",
+    "category": "Model Evaluation",
+    "url": "/glossary/mean-absolute-error"
+  },
+  {
+    "title": "Mean Squared Error (MSE)",
+    "slug": "mean-squared-error-mse",
+    "description": "Average squared difference between predicted and actual values, penalizing larger errors more heavily.",
+    "category": "Model Evaluation",
+    "url": "/glossary/mean-squared-error"
+  },
+  {
+    "title": "R-Squared",
+    "slug": "r-squared",
+    "description": "Statistical measure indicating proportion of variance in dependent variable explained by model.",
+    "category": "Model Evaluation",
+    "url": "/glossary/r-squared"
+  },
+  {
+    "title": "Perplexity",
+    "slug": "perplexity",
+    "description": "Metric evaluating language model performance based on how well it predicts sample text.",
+    "category": "Model Evaluation",
+    "url": "/glossary/perplexity"
+  },
+  {
+    "title": "BLEU Score",
+    "slug": "bleu-score",
+    "description": "Metric for evaluating machine translation quality by comparing to reference translations.",
+    "category": "Model Evaluation",
+    "url": "/glossary/bleu-score"
+  },
+  {
+    "title": "Intersection over Union (IoU)",
+    "slug": "intersection-over-union-iou",
+    "description": "Metric measuring overlap between predicted and ground truth regions in object detection.",
+    "category": "Model Evaluation",
+    "url": "/glossary/intersection-over-union"
+  },
+  {
+    "title": "Log Loss",
+    "slug": "log-loss",
+    "description": "Loss function measuring performance of classification model outputting probability values.",
+    "category": "Model Evaluation",
+    "url": "/glossary/log-loss"
+  },
+  {
+    "title": "Accuracy",
+    "slug": "accuracy",
+    "description": "Proportion of correct predictions among total predictions made by classifier.",
+    "category": "Feature Engineering",
+    "url": "/glossary/accuracy"
+  },
+  {
+    "title": "Feature Selection",
+    "slug": "feature-selection",
+    "description": "Process of identifying and selecting most relevant features for model training.",
+    "category": "Feature Engineering",
+    "url": "/glossary/feature-selection"
+  },
+  {
+    "title": "Feature Extraction",
+    "slug": "feature-extraction",
+    "description": "Creating new features from raw data to improve model performance and interpretability.",
+    "category": "Feature Engineering",
+    "url": "/glossary/feature-extraction"
+  },
+  {
+    "title": "Dimensionality Reduction",
+    "slug": "dimensionality-reduction",
+    "description": "Reducing number of features while retaining important information using techniques like PCA.",
+    "category": "Feature Engineering",
+    "url": "/glossary/dimensionality-reduction"
+  },
+  {
+    "title": "Principal Component Analysis (PCA)",
+    "slug": "principal-component-analysis-pca",
+    "description": "Technique transforming correlated features into uncorrelated principal components.",
+    "category": "Feature Engineering",
+    "url": "/glossary/principal-component-analysis"
+  },
+  {
+    "title": "t-SNE",
+    "slug": "t-sne",
+    "description": "Dimensionality reduction technique for visualizing high-dimensional data in 2D or 3D space.",
+    "category": "Feature Engineering",
+    "url": "/glossary/t-sne"
+  },
+  {
+    "title": "UMAP",
+    "slug": "umap",
+    "description": "Uniform Manifold Approximation and Projection for dimensionality reduction and visualization.",
+    "category": "Feature Engineering",
+    "url": "/glossary/umap"
+  },
+  {
+    "title": "One-Hot Encoding",
+    "slug": "one-hot-encoding",
+    "description": "Converting categorical variables into binary vector representation for machine learning.",
+    "category": "Feature Engineering",
+    "url": "/glossary/one-hot-encoding"
+  },
+  {
+    "title": "Label Encoding",
+    "slug": "label-encoding",
+    "description": "Converting categorical labels into numerical format for algorithm processing.",
+    "category": "Feature Engineering",
+    "url": "/glossary/label-encoding"
+  },
+  {
+    "title": "Normalization",
+    "slug": "normalization",
+    "description": "Scaling features to standard range to improve model training and convergence.",
+    "category": "Feature Engineering",
+    "url": "/glossary/normalization"
+  },
+  {
+    "title": "Standardization",
+    "slug": "standardization",
+    "description": "Transforming features to have zero mean and unit variance for better model performance.",
+    "category": "Feature Engineering",
+    "url": "/glossary/standardization"
+  },
+  {
+    "title": "Binning",
+    "slug": "binning",
+    "description": "Grouping continuous values into discrete bins or categories for simplified modeling.",
+    "category": "Feature Engineering",
+    "url": "/glossary/binning"
+  },
+  {
+    "title": "Feature Hashing",
+    "slug": "feature-hashing",
+    "description": "Encoding categorical features using hash function for memory-efficient representation.",
+    "category": "Feature Engineering",
+    "url": "/glossary/feature-hashing"
+  },
+  {
+    "title": "Polynomial Features",
+    "slug": "polynomial-features",
+    "description": "Creating interaction and polynomial terms from existing features for non-linear modeling.",
+    "category": "Feature Engineering",
+    "url": "/glossary/polynomial-features"
+  },
+  {
+    "title": "Embedding",
+    "slug": "embedding",
+    "description": "Dense vector representation of discrete variables capturing semantic relationships.",
+    "category": "Feature Engineering",
+    "url": "/glossary/embedding"
+  },
+  {
+    "title": "TF-IDF",
+    "slug": "tf-idf",
+    "description": "Term Frequency-Inverse Document Frequency for representing text importance in documents.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/tf-idf"
+  },
+  {
+    "title": "Decision Tree",
+    "slug": "decision-tree",
+    "description": "Tree-structured model making predictions through hierarchical decision rules.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/decision-tree"
+  },
+  {
+    "title": "Random Forest",
+    "slug": "random-forest",
+    "description": "Ensemble method combining multiple decision trees for improved accuracy and robustness.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/random-forest"
+  },
+  {
+    "title": "Support Vector Machine (SVM)",
+    "slug": "support-vector-machine-svm",
+    "description": "Supervised learning algorithm finding optimal hyperplane for classification or regression.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/support-vector-machine"
+  },
+  {
+    "title": "K-Nearest Neighbors (KNN)",
+    "slug": "k-nearest-neighbors-knn",
+    "description": "Instance-based learning algorithm classifying based on majority vote of k nearest examples.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/k-nearest-neighbors"
+  },
+  {
+    "title": "Naive Bayes",
+    "slug": "naive-bayes",
+    "description": "Probabilistic classifier based on Bayes' theorem with independence assumptions.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/naive-bayes"
+  },
+  {
+    "title": "Logistic Regression",
+    "slug": "logistic-regression",
+    "description": "Statistical model for binary classification using logistic function.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/logistic-regression"
+  },
+  {
+    "title": "Linear Regression",
+    "slug": "linear-regression",
+    "description": "Statistical method modeling relationship between dependent and independent variables.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/linear-regression"
+  },
+  {
+    "title": "Gradient Boosting",
+    "slug": "gradient-boosting",
+    "description": "Ensemble technique building models sequentially to correct predecessor errors.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/gradient-boosting"
+  },
+  {
+    "title": "XGBoost",
+    "slug": "xgboost",
+    "description": "Optimized gradient boosting library with regularization for high performance.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/xgboost"
+  },
+  {
+    "title": "LightGBM",
+    "slug": "lightgbm",
+    "description": "Gradient boosting framework using tree-based learning for efficiency and speed.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/lightgbm"
+  },
+  {
+    "title": "CatBoost",
+    "slug": "catboost",
+    "description": "Gradient boosting library handling categorical features automatically.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/catboost"
+  },
+  {
+    "title": "AdaBoost",
+    "slug": "adaboost",
+    "description": "Adaptive boosting algorithm combining weak learners into strong classifier.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/adaboost"
+  },
+  {
+    "title": "K-Means Clustering",
+    "slug": "k-means-clustering",
+    "description": "Unsupervised algorithm partitioning data into k clusters based on similarity.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/k-means-clustering"
+  },
+  {
+    "title": "DBSCAN",
+    "slug": "dbscan",
+    "description": "Density-based clustering algorithm identifying clusters of arbitrary shape.",
+    "category": "Classical Machine Learning",
+    "url": "/glossary/dbscan"
+  },
+  {
+    "title": "Hierarchical Clustering",
+    "slug": "hierarchical-clustering",
+    "description": "Clustering method building tree of clusters through agglomerative or divisive approach.",
+    "category": "Generative AI",
+    "url": "/glossary/hierarchical-clustering"
+  },
+  {
+    "title": "Diffusion Model",
+    "slug": "diffusion-model",
+    "description": "Generative model learning to reverse gradual noise addition process for image and data generation.",
+    "category": "Generative AI",
+    "url": "/glossary/diffusion-model"
+  },
+  {
+    "title": "Stable Diffusion",
+    "slug": "stable-diffusion",
+    "description": "Latent diffusion model for text-to-image generation with high quality and efficiency.",
+    "category": "Generative AI",
+    "url": "/glossary/stable-diffusion"
+  },
+  {
+    "title": "DALL-E",
+    "slug": "dall-e",
+    "description": "OpenAI's text-to-image generation model creating images from textual descriptions.",
+    "category": "Generative AI",
+    "url": "/glossary/dall-e"
+  },
+  {
+    "title": "Midjourney",
+    "slug": "midjourney",
+    "description": "AI image generation service creating artistic images from text prompts.",
+    "category": "Generative AI",
+    "url": "/glossary/midjourney"
+  },
+  {
+    "title": "Text-to-Image Generation",
+    "slug": "text-to-image-generation",
+    "description": "AI task creating visual content from natural language descriptions.",
+    "category": "Generative AI",
+    "url": "/glossary/text-to-image-generation"
+  },
+  {
+    "title": "Text-to-Video Generation",
+    "slug": "text-to-video-generation",
+    "description": "AI capability generating video content from textual descriptions or scripts.",
+    "category": "Generative AI",
+    "url": "/glossary/text-to-video-generation"
+  },
+  {
+    "title": "ControlNet",
+    "slug": "controlnet",
+    "description": "Neural network architecture adding spatial conditioning to diffusion models for controlled generation.",
+    "category": "Generative AI",
+    "url": "/glossary/controlnet"
+  },
+  {
+    "title": "LoRA (Low-Rank Adaptation)",
+    "slug": "lora-low-rank-adaptation",
+    "description": "Efficient fine-tuning technique adapting large models with minimal additional parameters.",
+    "category": "Generative AI",
+    "url": "/glossary/lora"
+  },
+  {
+    "title": "Prompt Engineering",
+    "slug": "prompt-engineering",
+    "description": "Crafting effective input prompts to guide AI models toward desired outputs.",
+    "category": "Generative AI",
+    "url": "/glossary/prompt-engineering"
+  },
+  {
+    "title": "Chain-of-Thought Prompting",
+    "slug": "chain-of-thought-prompting",
+    "description": "Prompting technique encouraging models to show reasoning steps for complex problems.",
+    "category": "Generative AI",
+    "url": "/glossary/chain-of-thought-prompting"
+  },
+  {
+    "title": "In-Context Learning",
+    "slug": "in-context-learning",
+    "description": "Large language model capability to learn from examples provided in prompt without parameter updates.",
+    "category": "Generative AI",
+    "url": "/glossary/in-context-learning"
+  },
+  {
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "slug": "retrieval-augmented-generation-rag",
+    "description": "Technique enhancing LLM responses by retrieving relevant information from external knowledge bases.",
+    "category": "Generative AI",
+    "url": "/glossary/retrieval-augmented-generation"
+  },
+  {
+    "title": "Vector Database",
+    "slug": "vector-database",
+    "description": "Specialized database storing and querying high-dimensional vector embeddings for similarity search.",
+    "category": "Generative AI",
+    "url": "/glossary/vector-database"
+  },
+  {
+    "title": "Hallucination",
+    "slug": "hallucination",
+    "description": "Phenomenon where AI models generate plausible but factually incorrect information.",
+    "category": "Generative AI",
+    "url": "/glossary/hallucination"
+  },
+  {
+    "title": "Temperature Sampling",
+    "slug": "temperature-sampling",
+    "description": "Controlling randomness in model outputs by adjusting probability distribution temperature.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/temperature-sampling"
+  },
+  {
+    "title": "TensorFlow",
+    "slug": "tensorflow",
+    "description": "Open-source machine learning framework by Google for building and deploying ML models.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/tensorflow"
+  },
+  {
+    "title": "PyTorch",
+    "slug": "pytorch",
+    "description": "Open-source machine learning library by Meta for deep learning research and production.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/pytorch"
+  },
+  {
+    "title": "Keras",
+    "slug": "keras",
+    "description": "High-level neural networks API running on top of TensorFlow for rapid prototyping.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/keras"
+  },
+  {
+    "title": "Scikit-learn",
+    "slug": "scikit-learn",
+    "description": "Python library for classical machine learning algorithms and data preprocessing.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/scikit-learn"
+  },
+  {
+    "title": "Hugging Face",
+    "slug": "hugging-face",
+    "description": "Platform and library for state-of-the-art NLP models and pre-trained transformers.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/hugging-face"
+  },
+  {
+    "title": "LangChain",
+    "slug": "langchain",
+    "description": "Framework for developing applications powered by language models with composable components.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/langchain"
+  },
+  {
+    "title": "JAX",
+    "slug": "jax",
+    "description": "Google's library for high-performance numerical computing and machine learning research.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/jax"
+  },
+  {
+    "title": "Apache Spark",
+    "slug": "apache-spark",
+    "description": "Unified analytics engine for large-scale data processing and machine learning.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/apache-spark"
+  },
+  {
+    "title": "MLflow",
+    "slug": "mlflow",
+    "description": "Open-source platform for managing ML lifecycle including experimentation and deployment.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/mlflow"
+  },
+  {
+    "title": "Weights & Biases",
+    "slug": "weights-and-biases",
+    "description": "Platform for experiment tracking, model visualization, and collaboration in ML projects.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/weights-and-biases"
+  },
+  {
+    "title": "TensorBoard",
+    "slug": "tensorboard",
+    "description": "Visualization toolkit for TensorFlow providing metrics, graphs, and model debugging.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/tensorboard"
+  },
+  {
+    "title": "ONNX",
+    "slug": "onnx",
+    "description": "Open Neural Network Exchange format for model interoperability across frameworks.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/onnx"
+  },
+  {
+    "title": "Docker",
+    "slug": "docker",
+    "description": "Platform for containerizing applications ensuring consistent deployment across environments.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/docker"
+  },
+  {
+    "title": "Kubernetes",
+    "slug": "kubernetes",
+    "description": "Container orchestration platform for automating deployment and scaling of applications.",
+    "category": "AI Frameworks & Tools",
+    "url": "/glossary/kubernetes"
+  },
+  {
+    "title": "Ray",
+    "slug": "ray",
+    "description": "Framework for scaling Python and ML applications from laptop to cluster.",
+    "category": "Data Processing",
+    "url": "/glossary/ray"
+  },
+  {
+    "title": "ETL (Extract, Transform, Load)",
+    "slug": "etl-extract-transform-load",
+    "description": "Data pipeline process extracting data from sources, transforming it, and loading into destination.",
+    "category": "Data Processing",
+    "url": "/glossary/etl"
+  },
+  {
+    "title": "Data Pipeline",
+    "slug": "data-pipeline",
+    "description": "Automated workflow moving data from source to destination with transformations.",
+    "category": "Data Processing",
+    "url": "/glossary/data-pipeline"
+  },
+  {
+    "title": "Data Lake",
+    "slug": "data-lake",
+    "description": "Centralized repository storing structured and unstructured data at any scale.",
+    "category": "Data Processing",
+    "url": "/glossary/data-lake"
+  },
+  {
+    "title": "Data Warehouse",
+    "slug": "data-warehouse",
+    "description": "Central repository of integrated data from multiple sources for analysis and reporting.",
+    "category": "Data Processing",
+    "url": "/glossary/data-warehouse"
+  },
+  {
+    "title": "Apache Kafka",
+    "slug": "apache-kafka",
+    "description": "Distributed event streaming platform for high-throughput real-time data pipelines.",
+    "category": "Data Processing",
+    "url": "/glossary/apache-kafka"
+  },
+  {
+    "title": "Apache Airflow",
+    "slug": "apache-airflow",
+    "description": "Platform for programmatically authoring, scheduling, and monitoring workflows.",
+    "category": "Data Processing",
+    "url": "/glossary/apache-airflow"
+  },
+  {
+    "title": "Pandas",
+    "slug": "pandas",
+    "description": "Python library providing data structures and analysis tools for structured data.",
+    "category": "Data Processing",
+    "url": "/glossary/pandas"
+  },
+  {
+    "title": "NumPy",
+    "slug": "numpy",
+    "description": "Fundamental package for numerical computing in Python with array operations.",
+    "category": "Data Processing",
+    "url": "/glossary/numpy"
+  },
+  {
+    "title": "Dask",
+    "slug": "dask",
+    "description": "Parallel computing library scaling Python workflows to multi-core machines and clusters.",
+    "category": "Data Processing",
+    "url": "/glossary/dask"
+  },
+  {
+    "title": "Apache Hadoop",
+    "slug": "apache-hadoop",
+    "description": "Framework for distributed storage and processing of large datasets.",
+    "category": "Data Processing",
+    "url": "/glossary/apache-hadoop"
+  },
+  {
+    "title": "Data Cleaning",
+    "slug": "data-cleaning",
+    "description": "Process of detecting and correcting inaccuracies and inconsistencies in datasets.",
+    "category": "Data Processing",
+    "url": "/glossary/data-cleaning"
+  },
+  {
+    "title": "Missing Data Imputation",
+    "slug": "missing-data-imputation",
+    "description": "Techniques for filling in missing values in datasets using statistical methods.",
+    "category": "Data Processing",
+    "url": "/glossary/missing-data-imputation"
+  },
+  {
+    "title": "Outlier Detection",
+    "slug": "outlier-detection",
+    "description": "Identifying data points significantly different from other observations.",
+    "category": "Data Processing",
+    "url": "/glossary/outlier-detection"
+  },
+  {
+    "title": "Data Versioning",
+    "slug": "data-versioning",
+    "description": "Tracking changes to datasets over time for reproducibility and collaboration.",
+    "category": "Data Processing",
+    "url": "/glossary/data-versioning"
+  },
+  {
+    "title": "Synthetic Data Generation",
+    "slug": "synthetic-data-generation",
+    "description": "Creating artificial data that mimics real data characteristics for training and testing.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/synthetic-data-generation"
+  },
+  {
+    "title": "Edge Computing",
+    "slug": "edge-computing",
+    "description": "Processing data near source rather than centralized cloud for reduced latency.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/edge-computing"
+  },
+  {
+    "title": "TensorFlow Lite",
+    "slug": "tensorflow-lite",
+    "description": "Lightweight solution for deploying ML models on mobile and embedded devices.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/tensorflow-lite"
+  },
+  {
+    "title": "Core ML",
+    "slug": "core-ml",
+    "description": "Apple's framework for integrating machine learning models into iOS applications.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/core-ml"
+  },
+  {
+    "title": "ONNX Runtime",
+    "slug": "onnx-runtime",
+    "description": "Cross-platform engine for running ONNX models with optimized performance.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/onnx-runtime"
+  },
+  {
+    "title": "Model Quantization",
+    "slug": "model-quantization",
+    "description": "Reducing model size and inference time by using lower precision representations.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/model-quantization"
+  },
+  {
+    "title": "Model Pruning",
+    "slug": "model-pruning",
+    "description": "Removing unnecessary weights and connections from neural networks to reduce size.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/model-pruning"
+  },
+  {
+    "title": "Knowledge Distillation",
+    "slug": "knowledge-distillation",
+    "description": "Training smaller student model to mimic larger teacher model's behavior.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/knowledge-distillation"
+  },
+  {
+    "title": "Neural Architecture Search (NAS)",
+    "slug": "neural-architecture-search-nas",
+    "description": "Automated process of finding optimal neural network architecture for specific tasks.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/neural-architecture-search"
+  },
+  {
+    "title": "Federated Learning",
+    "slug": "federated-learning",
+    "description": "Training models across decentralized devices without exchanging raw data.",
+    "category": "Edge AI & Mobile",
+    "url": "/glossary/federated-learning"
+  },
+  {
+    "title": "On-Device AI",
+    "slug": "on-device-ai",
+    "description": "Running machine learning inference directly on edge devices without cloud connectivity.",
+    "category": "Speech & Audio",
+    "url": "/glossary/on-device-ai"
+  },
+  {
+    "title": "Automatic Speech Recognition (ASR)",
+    "slug": "automatic-speech-recognition-asr",
+    "description": "Converting spoken language into text using machine learning models.",
+    "category": "Speech & Audio",
+    "url": "/glossary/automatic-speech-recognition"
+  },
+  {
+    "title": "Text-to-Speech (TTS)",
+    "slug": "text-to-speech-tts",
+    "description": "Synthesizing natural-sounding speech from written text.",
+    "category": "Speech & Audio",
+    "url": "/glossary/text-to-speech"
+  },
+  {
+    "title": "Whisper",
+    "slug": "whisper",
+    "description": "OpenAI's robust speech recognition model trained on diverse audio data.",
+    "category": "Speech & Audio",
+    "url": "/glossary/whisper"
+  },
+  {
+    "title": "Speaker Recognition",
+    "slug": "speaker-recognition",
+    "description": "Identifying or verifying individuals based on voice characteristics.",
+    "category": "Speech & Audio",
+    "url": "/glossary/speaker-recognition"
+  },
+  {
+    "title": "Audio Classification",
+    "slug": "audio-classification",
+    "description": "Categorizing audio signals into predefined classes or categories.",
+    "category": "Speech & Audio",
+    "url": "/glossary/audio-classification"
+  },
+  {
+    "title": "Music Generation",
+    "slug": "music-generation",
+    "description": "Creating original musical compositions using AI models.",
+    "category": "Speech & Audio",
+    "url": "/glossary/music-generation"
+  },
+  {
+    "title": "Sound Event Detection",
+    "slug": "sound-event-detection",
+    "description": "Identifying and classifying sound events in audio recordings.",
+    "category": "Speech & Audio",
+    "url": "/glossary/sound-event-detection"
+  },
+  {
+    "title": "Voice Cloning",
+    "slug": "voice-cloning",
+    "description": "Replicating person's voice characteristics using small audio samples.",
+    "category": "Speech & Audio",
+    "url": "/glossary/voice-cloning"
+  },
+  {
+    "title": "Mel Spectrogram",
+    "slug": "mel-spectrogram",
+    "description": "Visual representation of audio spectrum on mel scale for audio processing.",
+    "category": "Speech & Audio",
+    "url": "/glossary/mel-spectrogram"
+  },
+  {
+    "title": "WaveNet",
+    "slug": "wavenet",
+    "description": "DeepMind's generative model for raw audio waveform synthesis.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/wavenet"
+  },
+  {
+    "title": "SLAM (Simultaneous Localization and Mapping)",
+    "slug": "slam-simultaneous-localization-and-mapping",
+    "description": "Building map of environment while tracking robot's location within it.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/slam"
+  },
+  {
+    "title": "Motion Planning",
+    "slug": "motion-planning",
+    "description": "Computing path for robot to move from start to goal avoiding obstacles.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/motion-planning"
+  },
+  {
+    "title": "ROS (Robot Operating System)",
+    "slug": "ros-robot-operating-system",
+    "description": "Flexible framework for writing robot software with libraries and tools.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/ros"
+  },
+  {
+    "title": "Computer Vision for Robotics",
+    "slug": "computer-vision-for-robotics",
+    "description": "Enabling robots to interpret and understand visual world for navigation and manipulation.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/computer-vision-for-robotics"
+  },
+  {
+    "title": "Autonomous Navigation",
+    "slug": "autonomous-navigation",
+    "description": "Self-directed movement of robots through environment without human intervention.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/autonomous-navigation"
+  },
+  {
+    "title": "Object Manipulation",
+    "slug": "object-manipulation",
+    "description": "Robotic grasping, picking, and placing objects using vision and planning.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/object-manipulation"
+  },
+  {
+    "title": "Sensor Fusion",
+    "slug": "sensor-fusion",
+    "description": "Combining data from multiple sensors for more accurate perception.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/sensor-fusion"
+  },
+  {
+    "title": "Path Planning",
+    "slug": "path-planning",
+    "description": "Finding optimal route between positions considering constraints and objectives.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/path-planning"
+  },
+  {
+    "title": "Swarm Intelligence",
+    "slug": "swarm-intelligence",
+    "description": "Collective behavior of decentralized systems inspired by nature.",
+    "category": "Robotics & Autonomous Systems",
+    "url": "/glossary/swarm-intelligence"
+  },
+  {
+    "title": "Digital Twin",
+    "slug": "digital-twin",
+    "description": "Virtual replica of physical system for simulation, monitoring, and optimization.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/digital-twin"
+  },
+  {
+    "title": "SHAP (SHapley Additive exPlanations)",
+    "slug": "shap-shapley-additive-explanations",
+    "description": "Game-theoretic approach explaining model predictions by computing feature contributions.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/shap"
+  },
+  {
+    "title": "LIME (Local Interpretable Model-agnostic Explanations)",
+    "slug": "lime-local-interpretable-model-agnostic-explanations",
+    "description": "Explaining individual predictions by approximating model locally with interpretable model.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/lime"
+  },
+  {
+    "title": "Feature Importance",
+    "slug": "feature-importance",
+    "description": "Quantifying contribution of each feature to model's predictions.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/feature-importance"
+  },
+  {
+    "title": "Attention Visualization",
+    "slug": "attention-visualization",
+    "description": "Displaying which input parts model focuses on when making predictions.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/attention-visualization"
+  },
+  {
+    "title": "Saliency Maps",
+    "slug": "saliency-maps",
+    "description": "Highlighting image regions most influential for neural network's decision.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/saliency-maps"
+  },
+  {
+    "title": "Grad-CAM",
+    "slug": "grad-cam",
+    "description": "Gradient-weighted Class Activation Mapping for visualizing CNN decisions.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/grad-cam"
+  },
+  {
+    "title": "Counterfactual Explanations",
+    "slug": "counterfactual-explanations",
+    "description": "Explaining predictions by identifying minimal changes for different outcome.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/counterfactual-explanations"
+  },
+  {
+    "title": "Model Cards",
+    "slug": "model-cards",
+    "description": "Documentation providing transparency about ML model characteristics and limitations.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/model-cards"
+  },
+  {
+    "title": "Anchors",
+    "slug": "anchors",
+    "description": "Explanation method finding sufficient conditions for predictions to hold.",
+    "category": "Explainability & Interpretability",
+    "url": "/glossary/anchors"
+  },
+  {
+    "title": "Partial Dependence Plots",
+    "slug": "partial-dependence-plots",
+    "description": "Visualizing marginal effect of features on predicted outcome.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/partial-dependence-plots"
+  },
+  {
+    "title": "AI Alignment",
+    "slug": "ai-alignment",
+    "description": "Ensuring AI systems pursue intended goals and values aligned with human interests.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/ai-alignment"
+  },
+  {
+    "title": "Constitutional AI",
+    "slug": "constitutional-ai",
+    "description": "Training AI to be helpful, harmless, and honest through constitutional principles.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/constitutional-ai"
+  },
+  {
+    "title": "RLHF (Reinforcement Learning from Human Feedback)",
+    "slug": "rlhf-reinforcement-learning-from-human-feedback",
+    "description": "Fine-tuning models using human preferences to improve alignment and helpfulness.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/rlhf"
+  },
+  {
+    "title": "Red Teaming",
+    "slug": "red-teaming",
+    "description": "Testing AI systems by simulating adversarial attacks to identify vulnerabilities.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/red-teaming"
+  },
+  {
+    "title": "Adversarial Examples",
+    "slug": "adversarial-examples",
+    "description": "Inputs deliberately designed to cause model to make mistakes.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/adversarial-examples"
+  },
+  {
+    "title": "Model Robustness",
+    "slug": "model-robustness",
+    "description": "AI system's ability to maintain performance under distributional shifts and attacks.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/model-robustness"
+  },
+  {
+    "title": "Safety Constraints",
+    "slug": "safety-constraints",
+    "description": "Rules and limitations ensuring AI systems operate within acceptable boundaries.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/safety-constraints"
+  },
+  {
+    "title": "Value Learning",
+    "slug": "value-learning",
+    "description": "AI systems learning human values and preferences from observations and feedback.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/value-learning"
+  },
+  {
+    "title": "AI Sandboxing",
+    "slug": "ai-sandboxing",
+    "description": "Isolating AI systems in controlled environments to prevent unintended consequences.",
+    "category": "AI Safety & Alignment",
+    "url": "/glossary/ai-sandboxing"
+  },
+  {
+    "title": "Mechanistic Interpretability",
+    "slug": "mechanistic-interpretability",
+    "description": "Understanding internal mechanisms of neural networks at computational level.",
+    "category": "Multimodal AI",
+    "url": "/glossary/mechanistic-interpretability"
+  },
+  {
+    "title": "Multimodal Learning",
+    "slug": "multimodal-learning",
+    "description": "Training models to process and relate information from multiple data modalities.",
+    "category": "Multimodal AI",
+    "url": "/glossary/multimodal-learning"
+  },
+  {
+    "title": "CLIP (Contrastive Language-Image Pre-training)",
+    "slug": "clip-contrastive-language-image-pre-training",
+    "description": "OpenAI model learning visual concepts from natural language descriptions.",
+    "category": "Multimodal AI",
+    "url": "/glossary/clip"
+  },
+  {
+    "title": "Vision-Language Models",
+    "slug": "vision-language-models",
+    "description": "AI systems understanding relationships between visual and textual information.",
+    "category": "Multimodal AI",
+    "url": "/glossary/vision-language-models"
+  },
+  {
+    "title": "Cross-Modal Retrieval",
+    "slug": "cross-modal-retrieval",
+    "description": "Searching across different modalities using query from another modality.",
+    "category": "Multimodal AI",
+    "url": "/glossary/cross-modal-retrieval"
+  },
+  {
+    "title": "Image Captioning",
+    "slug": "image-captioning",
+    "description": "Automatically generating textual descriptions for images.",
+    "category": "Multimodal AI",
+    "url": "/glossary/image-captioning"
+  },
+  {
+    "title": "Visual Question Answering (VQA)",
+    "slug": "visual-question-answering-vqa",
+    "description": "Answering questions about image content using vision and language understanding.",
+    "category": "Multimodal AI",
+    "url": "/glossary/visual-question-answering"
+  },
+  {
+    "title": "Audio-Visual Learning",
+    "slug": "audio-visual-learning",
+    "description": "Learning from synchronized audio and visual inputs for enhanced understanding.",
+    "category": "Multimodal AI",
+    "url": "/glossary/audio-visual-learning"
+  },
+  {
+    "title": "Video Understanding",
+    "slug": "video-understanding",
+    "description": "Analyzing and interpreting video content including actions, events, and temporal relationships.",
+    "category": "Multimodal AI",
+    "url": "/glossary/video-understanding"
+  },
+  {
+    "title": "Embodied AI",
+    "slug": "embodied-ai",
+    "description": "AI agents that learn through interaction with physical or simulated environments.",
+    "category": "Multimodal AI",
+    "url": "/glossary/embodied-ai"
+  },
+  {
+    "title": "Scene Understanding",
+    "slug": "scene-understanding",
+    "description": "Comprehensive interpretation of visual scenes including objects, relationships, and context.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/scene-understanding"
+  },
+  {
+    "title": "Time Series Forecasting",
+    "slug": "time-series-forecasting",
+    "description": "Predicting future values based on historical temporal data patterns.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/time-series-forecasting"
+  },
+  {
+    "title": "ARIMA",
+    "slug": "arima",
+    "description": "AutoRegressive Integrated Moving Average model for time series analysis.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/arima"
+  },
+  {
+    "title": "Prophet",
+    "slug": "prophet",
+    "description": "Facebook's forecasting tool for time series with strong seasonal patterns.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/prophet"
+  },
+  {
+    "title": "Temporal Convolutional Network (TCN)",
+    "slug": "temporal-convolutional-network-tcn",
+    "description": "CNN architecture for sequence modeling with causal convolutions.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/temporal-convolutional-network"
+  },
+  {
+    "title": "Anomaly Detection",
+    "slug": "anomaly-detection",
+    "description": "Identifying unusual patterns or outliers in data that deviate from normal behavior.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/anomaly-detection"
+  },
+  {
+    "title": "Seasonal Decomposition",
+    "slug": "seasonal-decomposition",
+    "description": "Separating time series into trend, seasonal, and residual components.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/seasonal-decomposition"
+  },
+  {
+    "title": "Autocorrelation",
+    "slug": "autocorrelation",
+    "description": "Correlation of time series with lagged version of itself.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/autocorrelation"
+  },
+  {
+    "title": "Stationarity",
+    "slug": "stationarity",
+    "description": "Time series property where statistical properties remain constant over time.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/stationarity"
+  },
+  {
+    "title": "Exponential Smoothing",
+    "slug": "exponential-smoothing",
+    "description": "Forecasting method using weighted averages of past observations with exponentially decreasing weights.",
+    "category": "Time Series & Forecasting",
+    "url": "/glossary/exponential-smoothing"
+  },
+  {
+    "title": "Wavelet Transform",
+    "slug": "wavelet-transform",
+    "description": "Mathematical technique for analyzing signals at different frequencies and time scales.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/wavelet-transform"
+  },
+  {
+    "title": "Collaborative Filtering",
+    "slug": "collaborative-filtering",
+    "description": "Recommending items based on similar users' preferences and behaviors.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/collaborative-filtering"
+  },
+  {
+    "title": "Content-Based Filtering",
+    "slug": "content-based-filtering",
+    "description": "Recommending items similar to those user previously liked based on features.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/content-based-filtering"
+  },
+  {
+    "title": "Matrix Factorization",
+    "slug": "matrix-factorization",
+    "description": "Decomposing user-item interaction matrix for latent feature discovery.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/matrix-factorization"
+  },
+  {
+    "title": "Neural Collaborative Filtering",
+    "slug": "neural-collaborative-filtering",
+    "description": "Using deep learning for collaborative filtering in recommendation systems.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/neural-collaborative-filtering"
+  },
+  {
+    "title": "Hybrid Recommender Systems",
+    "slug": "hybrid-recommender-systems",
+    "description": "Combining multiple recommendation techniques for improved performance.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/hybrid-recommender-systems"
+  },
+  {
+    "title": "Cold Start Problem",
+    "slug": "cold-start-problem",
+    "description": "Challenge of recommending to new users or items with insufficient interaction data.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/cold-start-problem"
+  },
+  {
+    "title": "Implicit Feedback",
+    "slug": "implicit-feedback",
+    "description": "Inferring user preferences from indirect signals like clicks and views.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/implicit-feedback"
+  },
+  {
+    "title": "Click-Through Rate (CTR) Prediction",
+    "slug": "click-through-rate-ctr-prediction",
+    "description": "Estimating probability of user clicking on recommended item or ad.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/click-through-rate-prediction"
+  },
+  {
+    "title": "Session-Based Recommendations",
+    "slug": "session-based-recommendations",
+    "description": "Making recommendations based on current user session without historical data.",
+    "category": "Recommendation Systems",
+    "url": "/glossary/session-based-recommendations"
+  },
+  {
+    "title": "Diversity in Recommendations",
+    "slug": "diversity-in-recommendations",
+    "description": "Ensuring variety in recommended items to avoid filter bubbles.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/diversity-in-recommendations"
+  },
+  {
+    "title": "Knowledge Graph",
+    "slug": "knowledge-graph",
+    "description": "Structured representation of entities and relationships enabling semantic reasoning.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/knowledge-graph"
+  },
+  {
+    "title": "Ontology",
+    "slug": "ontology",
+    "description": "Formal representation of knowledge domain including concepts and relationships.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/ontology"
+  },
+  {
+    "title": "Semantic Web",
+    "slug": "semantic-web",
+    "description": "Extension of web enabling machines to understand and process content meaningfully.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/semantic-web"
+  },
+  {
+    "title": "Entity Recognition",
+    "slug": "entity-recognition",
+    "description": "Identifying and classifying named entities in text into predefined categories.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/entity-recognition"
+  },
+  {
+    "title": "Relation Extraction",
+    "slug": "relation-extraction",
+    "description": "Identifying semantic relationships between entities in text.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/relation-extraction"
+  },
+  {
+    "title": "Triple Store",
+    "slug": "triple-store",
+    "description": "Database optimized for storing and querying RDF triples in knowledge graphs.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/triple-store"
+  },
+  {
+    "title": "SPARQL",
+    "slug": "sparql",
+    "description": "Query language for retrieving and manipulating data stored in RDF format.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/sparql"
+  },
+  {
+    "title": "Schema Mapping",
+    "slug": "schema-mapping",
+    "description": "Defining correspondences between different data schemas for integration.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/schema-mapping"
+  },
+  {
+    "title": "Semantic Similarity",
+    "slug": "semantic-similarity",
+    "description": "Measuring relatedness between concepts based on meaning rather than syntax.",
+    "category": "Knowledge Representation",
+    "url": "/glossary/semantic-similarity"
+  },
+  {
+    "title": "Knowledge Base",
+    "slug": "knowledge-base",
+    "description": "Centralized repository storing structured and unstructured information.",
+    "category": "AutoML",
+    "url": "/glossary/knowledge-base"
+  },
+  {
+    "title": "AutoML (Automated Machine Learning)",
+    "slug": "automl-automated-machine-learning",
+    "description": "Automating end-to-end machine learning pipeline from data to deployed model.",
+    "category": "AutoML",
+    "url": "/glossary/automl"
+  },
+  {
+    "title": "H2O AutoML",
+    "slug": "h2o-automl",
+    "description": "Automated machine learning platform for scalable model training and tuning.",
+    "category": "AutoML",
+    "url": "/glossary/h2o-automl"
+  },
+  {
+    "title": "AutoKeras",
+    "slug": "autokeras",
+    "description": "AutoML library based on Keras for automated neural architecture search.",
+    "category": "AutoML",
+    "url": "/glossary/autokeras"
+  },
+  {
+    "title": "TPOT",
+    "slug": "tpot",
+    "description": "Tree-based Pipeline Optimization Tool using genetic programming for AutoML.",
+    "category": "AutoML",
+    "url": "/glossary/tpot"
+  },
+  {
+    "title": "Hyperparameter Optimization",
+    "slug": "hyperparameter-optimization",
+    "description": "Systematically searching for optimal hyperparameter configurations.",
+    "category": "AutoML",
+    "url": "/glossary/hyperparameter-optimization"
+  },
+  {
+    "title": "Grid Search",
+    "slug": "grid-search",
+    "description": "Exhaustively searching through manually specified hyperparameter combinations.",
+    "category": "AutoML",
+    "url": "/glossary/grid-search"
+  },
+  {
+    "title": "Random Search",
+    "slug": "random-search",
+    "description": "Randomly sampling hyperparameter combinations from specified distributions.",
+    "category": "AutoML",
+    "url": "/glossary/random-search"
+  },
+  {
+    "title": "Bayesian Optimization",
+    "slug": "bayesian-optimization",
+    "description": "Probabilistic approach to hyperparameter tuning using surrogate models.",
+    "category": "AutoML",
+    "url": "/glossary/bayesian-optimization"
+  },
+  {
+    "title": "Optuna",
+    "slug": "optuna",
+    "description": "Hyperparameter optimization framework with automatic search algorithm selection.",
+    "category": "AutoML",
+    "url": "/glossary/optuna"
+  },
+  {
+    "title": "Ray Tune",
+    "slug": "ray-tune",
+    "description": "Scalable hyperparameter tuning library with advanced search algorithms.",
+    "category": "Privacy & Security",
+    "url": "/glossary/ray-tune"
+  },
+  {
+    "title": "Differential Privacy",
+    "slug": "differential-privacy",
+    "description": "Mathematical framework ensuring individual data privacy in aggregate statistics.",
+    "category": "Privacy & Security",
+    "url": "/glossary/differential-privacy"
+  },
+  {
+    "title": "Homomorphic Encryption",
+    "slug": "homomorphic-encryption",
+    "description": "Encryption allowing computations on encrypted data without decryption.",
+    "category": "Privacy & Security",
+    "url": "/glossary/homomorphic-encryption"
+  },
+  {
+    "title": "Secure Multi-Party Computation",
+    "slug": "secure-multi-party-computation",
+    "description": "Cryptographic protocols enabling joint computation without revealing private inputs.",
+    "category": "Privacy & Security",
+    "url": "/glossary/secure-multi-party-computation"
+  },
+  {
+    "title": "Privacy-Preserving ML",
+    "slug": "privacy-preserving-ml",
+    "description": "Machine learning techniques protecting sensitive data during training and inference.",
+    "category": "Privacy & Security",
+    "url": "/glossary/privacy-preserving-ml"
+  },
+  {
+    "title": "Data Anonymization",
+    "slug": "data-anonymization",
+    "description": "Removing or modifying personally identifiable information from datasets.",
+    "category": "Privacy & Security",
+    "url": "/glossary/data-anonymization"
+  },
+  {
+    "title": "Model Inversion Attack",
+    "slug": "model-inversion-attack",
+    "description": "Reconstructing training data from model predictions and parameters.",
+    "category": "Privacy & Security",
+    "url": "/glossary/model-inversion-attack"
+  },
+  {
+    "title": "Membership Inference Attack",
+    "slug": "membership-inference-attack",
+    "description": "Determining whether specific data point was in model's training dataset.",
+    "category": "Privacy & Security",
+    "url": "/glossary/membership-inference-attack"
+  },
+  {
+    "title": "Adversarial Training",
+    "slug": "adversarial-training",
+    "description": "Training models on adversarial examples to improve robustness.",
+    "category": "Privacy & Security",
+    "url": "/glossary/adversarial-training"
+  },
+  {
+    "title": "Backdoor Attack",
+    "slug": "backdoor-attack",
+    "description": "Malicious manipulation causing model to misbehave on specific trigger inputs.",
+    "category": "Privacy & Security",
+    "url": "/glossary/backdoor-attack"
+  },
+  {
+    "title": "Model Watermarking",
+    "slug": "model-watermarking",
+    "description": "Embedding identifiable signatures in ML models for ownership verification.",
+    "category": "Healthcare AI",
+    "url": "/glossary/model-watermarking"
+  },
+  {
+    "title": "Medical Image Analysis",
+    "slug": "medical-image-analysis",
+    "description": "Using AI to analyze medical images for diagnosis and treatment planning.",
+    "category": "Healthcare AI",
+    "url": "/glossary/medical-image-analysis"
+  },
+  {
+    "title": "Drug Discovery",
+    "slug": "drug-discovery",
+    "description": "Using AI to identify and develop new pharmaceutical compounds.",
+    "category": "Healthcare AI",
+    "url": "/glossary/drug-discovery"
+  },
+  {
+    "title": "Clinical Decision Support",
+    "slug": "clinical-decision-support",
+    "description": "AI systems assisting healthcare professionals in diagnostic and treatment decisions.",
+    "category": "Healthcare AI",
+    "url": "/glossary/clinical-decision-support"
+  },
+  {
+    "title": "Precision Medicine",
+    "slug": "precision-medicine",
+    "description": "Tailoring medical treatment to individual patient characteristics using data and AI.",
+    "category": "Healthcare AI",
+    "url": "/glossary/precision-medicine"
+  },
+  {
+    "title": "EHR (Electronic Health Records)",
+    "slug": "ehr-electronic-health-records",
+    "description": "Digital version of patient medical history enabling AI-powered analytics.",
+    "category": "Healthcare AI",
+    "url": "/glossary/ehr"
+  },
+  {
+    "title": "Radiomics",
+    "slug": "radiomics",
+    "description": "Extracting quantitative features from medical images for analysis.",
+    "category": "Healthcare AI",
+    "url": "/glossary/radiomics"
+  },
+  {
+    "title": "Genomic Sequencing",
+    "slug": "genomic-sequencing",
+    "description": "Determining DNA sequence order enabling personalized medicine applications.",
+    "category": "Healthcare AI",
+    "url": "/glossary/genomic-sequencing"
+  },
+  {
+    "title": "Clinical Trial Optimization",
+    "slug": "clinical-trial-optimization",
+    "description": "Using AI to improve clinical trial design, recruitment, and analysis.",
+    "category": "Healthcare AI",
+    "url": "/glossary/clinical-trial-optimization"
+  },
+  {
+    "title": "Remote Patient Monitoring",
+    "slug": "remote-patient-monitoring",
+    "description": "Using IoT and AI to track patient health data outside clinical settings.",
+    "category": "Healthcare AI",
+    "url": "/glossary/remote-patient-monitoring"
+  },
+  {
+    "title": "Medical Chatbots",
+    "slug": "medical-chatbots",
+    "description": "Conversational AI providing health information and triage assistance.",
+    "category": "Financial AI",
+    "url": "/glossary/medical-chatbots"
+  },
+  {
+    "title": "Algorithmic Trading",
+    "slug": "algorithmic-trading",
+    "description": "Using automated systems to execute trades based on predefined strategies.",
+    "category": "Financial AI",
+    "url": "/glossary/algorithmic-trading"
+  },
+  {
+    "title": "Credit Scoring",
+    "slug": "credit-scoring",
+    "description": "Assessing borrower creditworthiness using machine learning models.",
+    "category": "Financial AI",
+    "url": "/glossary/credit-scoring"
+  },
+  {
+    "title": "Fraud Detection",
+    "slug": "fraud-detection",
+    "description": "Identifying fraudulent transactions and activities using AI pattern recognition.",
+    "category": "Financial AI",
+    "url": "/glossary/fraud-detection"
+  },
+  {
+    "title": "Anti-Money Laundering (AML)",
+    "slug": "anti-money-laundering-aml",
+    "description": "Using AI to detect and prevent money laundering activities.",
+    "category": "Financial AI",
+    "url": "/glossary/anti-money-laundering"
+  },
+  {
+    "title": "Risk Assessment",
+    "slug": "risk-assessment",
+    "description": "Evaluating potential risks using predictive models and data analysis.",
+    "category": "Financial AI",
+    "url": "/glossary/risk-assessment"
+  },
+  {
+    "title": "Portfolio Optimization",
+    "slug": "portfolio-optimization",
+    "description": "Using AI to construct optimal investment portfolios maximizing risk-adjusted returns.",
+    "category": "Financial AI",
+    "url": "/glossary/portfolio-optimization"
+  },
+  {
+    "title": "Robo-Advisors",
+    "slug": "robo-advisors",
+    "description": "Automated investment platforms providing algorithm-driven financial planning.",
+    "category": "Financial AI",
+    "url": "/glossary/robo-advisors"
+  },
+  {
+    "title": "Market Sentiment Analysis",
+    "slug": "market-sentiment-analysis",
+    "description": "Analyzing news, social media, and reports to gauge market sentiment.",
+    "category": "Financial AI",
+    "url": "/glossary/market-sentiment-analysis"
+  },
+  {
+    "title": "High-Frequency Trading",
+    "slug": "high-frequency-trading",
+    "description": "Executing large numbers of orders at extremely high speeds using algorithms.",
+    "category": "Financial AI",
+    "url": "/glossary/high-frequency-trading"
+  },
+  {
+    "title": "RegTech",
+    "slug": "regtech",
+    "description": "Technology solutions helping financial institutions comply with regulations.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/regtech"
+  },
+  {
+    "title": "Named Entity Recognition (NER)",
+    "slug": "named-entity-recognition-ner",
+    "description": "Identifying and categorizing named entities in text such as persons and locations.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/named-entity-recognition"
+  },
+  {
+    "title": "Part-of-Speech Tagging",
+    "slug": "part-of-speech-tagging",
+    "description": "Labeling words in text with their grammatical categories.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/part-of-speech-tagging"
+  },
+  {
+    "title": "Dependency Parsing",
+    "slug": "dependency-parsing",
+    "description": "Analyzing grammatical structure of sentences to identify dependencies.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/dependency-parsing"
+  },
+  {
+    "title": "Sentiment Analysis",
+    "slug": "sentiment-analysis",
+    "description": "Determining emotional tone and polarity in text using NLP.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/sentiment-analysis"
+  },
+  {
+    "title": "Intent Classification",
+    "slug": "intent-classification",
+    "description": "Identifying user's intention or purpose behind textual input.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/intent-classification"
+  },
+  {
+    "title": "Coreference Resolution",
+    "slug": "coreference-resolution",
+    "description": "Identifying all expressions referring to same entity in text.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/coreference-resolution"
+  },
+  {
+    "title": "Word Embeddings",
+    "slug": "word-embeddings",
+    "description": "Dense vector representations of words capturing semantic relationships.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/word-embeddings"
+  },
+  {
+    "title": "Word2Vec",
+    "slug": "word2vec",
+    "description": "Neural network model creating word embeddings from large text corpora.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/word2vec"
+  },
+  {
+    "title": "GloVe",
+    "slug": "glove",
+    "description": "Global Vectors for word representation using co-occurrence statistics.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/glove"
+  },
+  {
+    "title": "FastText",
+    "slug": "fasttext",
+    "description": "Word embedding model considering subword information for better representations.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/fasttext"
+  },
+  {
+    "title": "Topic Modeling",
+    "slug": "topic-modeling",
+    "description": "Discovering abstract topics occurring in collection of documents.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/topic-modeling"
+  },
+  {
+    "title": "Latent Dirichlet Allocation (LDA)",
+    "slug": "latent-dirichlet-allocation-lda",
+    "description": "Generative probabilistic model for topic modeling in text corpora.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/latent-dirichlet-allocation"
+  },
+  {
+    "title": "Text Summarization",
+    "slug": "text-summarization",
+    "description": "Automatically generating concise summaries of longer documents.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/text-summarization"
+  },
+  {
+    "title": "Machine Translation",
+    "slug": "machine-translation",
+    "description": "Automatically translating text from one language to another using AI.",
+    "category": "Natural Language Understanding",
+    "url": "/glossary/machine-translation"
+  },
+  {
+    "title": "Question Answering",
+    "slug": "question-answering",
+    "description": "Automatically answering questions posed in natural language.",
+    "category": "Industry Applications",
+    "url": "/glossary/question-answering"
+  },
+  {
+    "title": "Predictive Maintenance",
+    "slug": "predictive-maintenance",
+    "description": "Using AI to predict equipment failures before they occur.",
+    "category": "Industry Applications",
+    "url": "/glossary/predictive-maintenance"
+  },
+  {
+    "title": "Quality Control",
+    "slug": "quality-control",
+    "description": "Automated inspection and defect detection using computer vision.",
+    "category": "Industry Applications",
+    "url": "/glossary/quality-control"
+  },
+  {
+    "title": "Supply Chain Optimization",
+    "slug": "supply-chain-optimization",
+    "description": "Using AI to improve efficiency in supply chain operations.",
+    "category": "Industry Applications",
+    "url": "/glossary/supply-chain-optimization"
+  },
+  {
+    "title": "Demand Forecasting",
+    "slug": "demand-forecasting",
+    "description": "Predicting future customer demand using historical data and ML.",
+    "category": "Industry Applications",
+    "url": "/glossary/demand-forecasting"
+  },
+  {
+    "title": "Churn Prediction",
+    "slug": "churn-prediction",
+    "description": "Identifying customers likely to stop using product or service.",
+    "category": "Industry Applications",
+    "url": "/glossary/churn-prediction"
+  },
+  {
+    "title": "Customer Segmentation",
+    "slug": "customer-segmentation",
+    "description": "Dividing customers into groups based on characteristics and behaviors.",
+    "category": "Industry Applications",
+    "url": "/glossary/customer-segmentation"
+  },
+  {
+    "title": "Price Optimization",
+    "slug": "price-optimization",
+    "description": "Using AI to determine optimal pricing strategies maximizing revenue.",
+    "category": "Industry Applications",
+    "url": "/glossary/price-optimization"
+  },
+  {
+    "title": "Inventory Management",
+    "slug": "inventory-management",
+    "description": "AI-driven optimization of stock levels and reordering processes.",
+    "category": "Industry Applications",
+    "url": "/glossary/inventory-management"
+  },
+  {
+    "title": "Energy Management",
+    "slug": "energy-management",
+    "description": "Using AI to optimize energy consumption and distribution.",
+    "category": "Industry Applications",
+    "url": "/glossary/energy-management"
+  },
+  {
+    "title": "Smart Manufacturing",
+    "slug": "smart-manufacturing",
+    "description": "Integration of AI, IoT, and automation in manufacturing processes.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/smart-manufacturing"
+  },
+  {
+    "title": "AI as a Service (AIaaS)",
+    "slug": "ai-as-a-service-aiaas",
+    "description": "Cloud-based platforms providing AI capabilities via APIs and services.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/ai-as-a-service"
+  },
+  {
+    "title": "Google Cloud AI",
+    "slug": "google-cloud-ai",
+    "description": "Suite of machine learning services and APIs by Google Cloud.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/google-cloud-ai"
+  },
+  {
+    "title": "AWS AI Services",
+    "slug": "aws-ai-services",
+    "description": "Amazon Web Services machine learning and AI service offerings.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/aws-ai-services"
+  },
+  {
+    "title": "Azure AI",
+    "slug": "azure-ai",
+    "description": "Microsoft's cloud-based AI and machine learning services.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/azure-ai"
+  },
+  {
+    "title": "GPU Computing",
+    "slug": "gpu-computing",
+    "description": "Using graphics processing units for parallel processing in AI workloads.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/gpu-computing"
+  },
+  {
+    "title": "TPU (Tensor Processing Unit)",
+    "slug": "tpu-tensor-processing-unit",
+    "description": "Google's custom-built AI accelerator chips for machine learning.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/tpu"
+  },
+  {
+    "title": "CUDA",
+    "slug": "cuda",
+    "description": "Parallel computing platform enabling GPU acceleration for deep learning.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/cuda"
+  },
+  {
+    "title": "Distributed Training",
+    "slug": "distributed-training",
+    "description": "Training ML models across multiple devices or machines for scalability.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/distributed-training"
+  },
+  {
+    "title": "Model Serving",
+    "slug": "model-serving",
+    "description": "Deploying trained models for inference in production environments.",
+    "category": "Cloud & Infrastructure",
+    "url": "/glossary/model-serving"
+  },
+  {
+    "title": "Serverless ML",
+    "slug": "serverless-ml",
+    "description": "Running machine learning workloads without managing server infrastructure.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/serverless-ml"
+  },
+  {
+    "title": "Quantum Machine Learning",
+    "slug": "quantum-machine-learning",
+    "description": "Applying quantum computing to machine learning algorithms for enhanced capabilities.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/quantum-machine-learning"
+  },
+  {
+    "title": "Neuromorphic Computing",
+    "slug": "neuromorphic-computing",
+    "description": "Hardware architectures mimicking biological neural systems for efficient AI.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/neuromorphic-computing"
+  },
+  {
+    "title": "Brain-Computer Interface",
+    "slug": "brain-computer-interface",
+    "description": "Direct communication pathways between brain and external devices.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/brain-computer-interface"
+  },
+  {
+    "title": "Augmented Reality AI",
+    "slug": "augmented-reality-ai",
+    "description": "Integrating AI with AR for enhanced interactive experiences.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/augmented-reality-ai"
+  },
+  {
+    "title": "Virtual Reality AI",
+    "slug": "virtual-reality-ai",
+    "description": "Using AI to create intelligent virtual environments and agents.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/virtual-reality-ai"
+  },
+  {
+    "title": "Edge AI Chips",
+    "slug": "edge-ai-chips",
+    "description": "Specialized processors designed for AI inference on edge devices.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/edge-ai-chips"
+  },
+  {
+    "title": "AI Accelerators",
+    "slug": "ai-accelerators",
+    "description": "Specialized hardware optimized for machine learning computations.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/ai-accelerators"
+  },
+  {
+    "title": "5G and AI",
+    "slug": "5g-and-ai",
+    "description": "Leveraging 5G networks for distributed AI applications and edge computing.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/5g-and-ai"
+  },
+  {
+    "title": "IoT and AI",
+    "slug": "iot-and-ai",
+    "description": "Integration of Internet of Things devices with AI for intelligent automation.",
+    "category": "Emerging Technologies",
+    "url": "/glossary/iot-and-ai"
+  },
+  {
+    "title": "Blockchain and AI",
+    "slug": "blockchain-and-ai",
+    "description": "Combining blockchain technology with AI for secure and transparent systems.",
+    "category": "Research & Development",
+    "url": "/glossary/blockchain-and-ai"
+  },
+  {
+    "title": "Benchmark Dataset",
+    "slug": "benchmark-dataset",
+    "description": "Standardized dataset for evaluating and comparing ML models.",
+    "category": "Research & Development",
+    "url": "/glossary/benchmark-dataset"
+  },
+  {
+    "title": "ImageNet",
+    "slug": "imagenet",
+    "description": "Large-scale image database for visual object recognition research.",
+    "category": "Research & Development",
+    "url": "/glossary/imagenet"
+  },
+  {
+    "title": "COCO Dataset",
+    "slug": "coco-dataset",
+    "description": "Common Objects in Context dataset for object detection and segmentation.",
+    "category": "Research & Development",
+    "url": "/glossary/coco-dataset"
+  },
+  {
+    "title": "MNIST",
+    "slug": "mnist",
+    "description": "Dataset of handwritten digits widely used for image classification benchmarks.",
+    "category": "Research & Development",
+    "url": "/glossary/mnist"
+  },
+  {
+    "title": "CIFAR",
+    "slug": "cifar",
+    "description": "Dataset of small images for object recognition research and education.",
+    "category": "Research & Development",
+    "url": "/glossary/cifar"
+  },
+  {
+    "title": "GLUE Benchmark",
+    "slug": "glue-benchmark",
+    "description": "General Language Understanding Evaluation for NLP model assessment.",
+    "category": "Research & Development",
+    "url": "/glossary/glue-benchmark"
+  },
+  {
+    "title": "SuperGLUE",
+    "slug": "superglue",
+    "description": "More challenging language understanding benchmark succeeding GLUE.",
+    "category": "Research & Development",
+    "url": "/glossary/superglue"
+  },
+  {
+    "title": "Open Source AI",
+    "slug": "open-source-ai",
+    "description": "Publicly available AI models, datasets, and tools for community use.",
+    "category": "Research & Development",
+    "url": "/glossary/open-source-ai"
+  },
+  {
+    "title": "Reproducibility",
+    "slug": "reproducibility",
+    "description": "Ability to replicate research results using same methods and data.",
+    "category": "Research & Development",
+    "url": "/glossary/reproducibility"
+  },
+  {
+    "title": "AI Research Papers",
+    "slug": "ai-research-papers",
+    "description": "Academic publications documenting AI research findings and methodologies.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-research-papers"
+  },
+  {
+    "title": "AI Strategy",
+    "slug": "ai-strategy",
+    "description": "Organizational approach to adopting and leveraging AI for business value.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-strategy"
+  },
+  {
+    "title": "AI Maturity Model",
+    "slug": "ai-maturity-model",
+    "description": "Framework assessing organization's AI capabilities and readiness.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-maturity-model"
+  },
+  {
+    "title": "Digital Transformation",
+    "slug": "digital-transformation",
+    "description": "Integration of digital technology including AI into business operations.",
+    "category": "Business & Strategy",
+    "url": "/glossary/digital-transformation"
+  },
+  {
+    "title": "AI Center of Excellence",
+    "slug": "ai-center-of-excellence",
+    "description": "Centralized team driving AI adoption and best practices across organization.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-center-of-excellence"
+  },
+  {
+    "title": "Return on AI Investment",
+    "slug": "return-on-ai-investment",
+    "description": "Measuring business value and financial returns from AI initiatives.",
+    "category": "Business & Strategy",
+    "url": "/glossary/return-on-ai-investment"
+  },
+  {
+    "title": "AI Governance Committee",
+    "slug": "ai-governance-committee",
+    "description": "Cross-functional group overseeing AI strategy, ethics, and risk management.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-governance-committee"
+  },
+  {
+    "title": "AI Talent Development",
+    "slug": "ai-talent-development",
+    "description": "Building internal capabilities through training and recruitment.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-talent-development"
+  },
+  {
+    "title": "AI Pilot Project",
+    "slug": "ai-pilot-project",
+    "description": "Small-scale AI implementation testing feasibility before full deployment.",
+    "category": "Business & Strategy",
+    "url": "/glossary/ai-pilot-project"
+  },
+  {
+    "title": "Change Management for AI",
+    "slug": "change-management-for-ai",
+    "description": "Strategies managing organizational transitions when implementing AI systems.",
+    "category": "Business & Strategy",
+    "url": "/glossary/change-management-for-ai"
+  },
+  {
+    "title": "AI Vendor Selection",
+    "slug": "ai-vendor-selection",
+    "description": "Process of evaluating and choosing AI technology providers.",
+    "category": "Performance Optimization",
+    "url": "/glossary/ai-vendor-selection"
+  },
+  {
+    "title": "Model Compression",
+    "slug": "model-compression",
+    "description": "Reducing model size while maintaining performance through various techniques.",
+    "category": "Performance Optimization",
+    "url": "/glossary/model-compression"
+  },
+  {
+    "title": "Inference Optimization",
+    "slug": "inference-optimization",
+    "description": "Improving model prediction speed and efficiency in production.",
+    "category": "Performance Optimization",
+    "url": "/glossary/inference-optimization"
+  },
+  {
+    "title": "Batch Inference",
+    "slug": "batch-inference",
+    "description": "Processing multiple predictions simultaneously for efficiency.",
+    "category": "Performance Optimization",
+    "url": "/glossary/batch-inference"
+  },
+  {
+    "title": "Mixed Precision Training",
+    "slug": "mixed-precision-training",
+    "description": "Using lower precision arithmetic to accelerate training without sacrificing accuracy.",
+    "category": "Performance Optimization",
+    "url": "/glossary/mixed-precision-training"
+  },
+  {
+    "title": "Gradient Accumulation",
+    "slug": "gradient-accumulation",
+    "description": "Simulating larger batch sizes by accumulating gradients over multiple steps.",
+    "category": "Performance Optimization",
+    "url": "/glossary/gradient-accumulation"
+  },
+  {
+    "title": "Layer Fusion",
+    "slug": "layer-fusion",
+    "description": "Combining multiple neural network layers for reduced computation.",
+    "category": "Performance Optimization",
+    "url": "/glossary/layer-fusion"
+  },
+  {
+    "title": "Dynamic Batching",
+    "slug": "dynamic-batching",
+    "description": "Automatically grouping inference requests for optimal throughput.",
+    "category": "Performance Optimization",
+    "url": "/glossary/dynamic-batching"
+  },
+  {
+    "title": "Caching Strategies",
+    "slug": "caching-strategies",
+    "description": "Storing frequently used predictions or intermediate results for faster access.",
+    "category": "Performance Optimization",
+    "url": "/glossary/caching-strategies"
+  },
+  {
+    "title": "Load Balancing",
+    "slug": "load-balancing",
+    "description": "Distributing inference requests across multiple servers for optimal performance.",
+    "category": "Performance Optimization",
+    "url": "/glossary/load-balancing"
+  },
+  {
+    "title": "Auto-Scaling",
+    "slug": "auto-scaling",
+    "description": "Automatically adjusting computational resources based on demand.",
+    "category": "Specialized Domains",
+    "url": "/glossary/auto-scaling"
+  },
+  {
+    "title": "Conversational AI",
+    "slug": "conversational-ai",
+    "description": "AI systems enabling natural dialogue between humans and machines.",
+    "category": "Specialized Domains",
+    "url": "/glossary/conversational-ai"
+  },
+  {
+    "title": "Chatbot Development",
+    "slug": "chatbot-development",
+    "description": "Creating automated conversational agents for customer interaction.",
+    "category": "Specialized Domains",
+    "url": "/glossary/chatbot-development"
+  },
+  {
+    "title": "Virtual Assistants",
+    "slug": "virtual-assistants",
+    "description": "AI-powered digital assistants performing tasks through voice or text interaction.",
+    "category": "Specialized Domains",
+    "url": "/glossary/virtual-assistants"
+  },
+  {
+    "title": "Document AI",
+    "slug": "document-ai",
+    "description": "Extracting, classifying, and processing information from documents.",
+    "category": "Specialized Domains",
+    "url": "/glossary/document-ai"
+  },
+  {
+    "title": "Legal AI",
+    "slug": "legal-ai",
+    "description": "Application of AI to legal research, contract analysis, and compliance.",
+    "category": "Specialized Domains",
+    "url": "/glossary/legal-ai"
+  },
+  {
+    "title": "Agricultural AI",
+    "slug": "agricultural-ai",
+    "description": "Using AI for crop monitoring, yield prediction, and farming optimization.",
+    "category": "Specialized Domains",
+    "url": "/glossary/agricultural-ai"
+  },
+  {
+    "title": "Retail AI",
+    "slug": "retail-ai",
+    "description": "AI applications in retail including personalization and inventory management.",
+    "category": "Specialized Domains",
+    "url": "/glossary/retail-ai"
+  },
+  {
+    "title": "Marketing AI",
+    "slug": "marketing-ai",
+    "description": "Using AI for customer insights, campaign optimization, and content creation.",
+    "category": "Specialized Domains",
+    "url": "/glossary/marketing-ai"
+  },
+  {
+    "title": "HR AI",
+    "slug": "hr-ai",
+    "description": "AI applications in recruitment, employee engagement, and workforce analytics.",
+    "category": "Specialized Domains",
+    "url": "/glossary/hr-ai"
+  },
+  {
+    "title": "Education AI",
+    "slug": "education-ai",
+    "description": "AI-powered personalized learning, assessment, and educational content.",
+    "category": "Specialized Domains",
+    "url": "/glossary/education-ai"
+  },
+  {
+    "title": "Gaming AI",
+    "slug": "gaming-ai",
+    "description": "AI techniques for game playing, NPC behavior, and procedural content generation.",
+    "category": "Specialized Domains",
+    "url": "/glossary/gaming-ai"
+  },
+  {
+    "title": "Climate AI",
+    "slug": "climate-ai",
+    "description": "Using AI to model climate patterns, predict impacts, and optimize sustainability.",
+    "category": "Specialized Domains",
+    "url": "/glossary/climate-ai"
+  },
+  {
+    "title": "Autonomous Vehicles",
+    "slug": "autonomous-vehicles",
+    "description": "Self-driving cars using AI for perception, planning, and control.",
+    "category": "Specialized Domains",
+    "url": "/glossary/autonomous-vehicles"
+  },
+  {
+    "title": "Drone AI",
+    "slug": "drone-ai",
+    "description": "AI-powered autonomous flight, navigation, and mission execution for drones.",
+    "category": "Specialized Domains",
+    "url": "/glossary/drone-ai"
+  },
+  {
+    "title": "Space AI",
+    "slug": "space-ai",
+    "description": "AI applications in satellite imagery analysis, mission planning, and exploration.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/space-ai"
+  },
+  {
+    "title": "Active Learning",
+    "slug": "active-learning",
+    "description": "ML paradigm where algorithm selectively queries human to label new data points.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/active-learning"
+  },
+  {
+    "title": "Semi-Supervised Learning",
+    "slug": "semi-supervised-learning",
+    "description": "Learning from combination of labeled and unlabeled data.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/semi-supervised-learning"
+  },
+  {
+    "title": "Continual Learning",
+    "slug": "continual-learning",
+    "description": "Learning from continuous stream of data without forgetting previous knowledge.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/continual-learning"
+  },
+  {
+    "title": "Multi-Task Learning",
+    "slug": "multi-task-learning",
+    "description": "Training single model on multiple related tasks simultaneously.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/multi-task-learning"
+  },
+  {
+    "title": "Domain Adaptation",
+    "slug": "domain-adaptation",
+    "description": "Adapting model trained on source domain to perform well on target domain.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/domain-adaptation"
+  },
+  {
+    "title": "Online Learning",
+    "slug": "online-learning",
+    "description": "Learning incrementally from streaming data in real-time.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/online-learning"
+  },
+  {
+    "title": "Ensemble Learning",
+    "slug": "ensemble-learning",
+    "description": "Combining multiple models to improve prediction accuracy and robustness.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/ensemble-learning"
+  },
+  {
+    "title": "Bagging",
+    "slug": "bagging",
+    "description": "Bootstrap Aggregating technique training models on random data subsets.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/bagging"
+  },
+  {
+    "title": "Stacking",
+    "slug": "stacking",
+    "description": "Ensemble method combining predictions from multiple models using meta-learner.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/stacking"
+  },
+  {
+    "title": "Boosting",
+    "slug": "boosting",
+    "description": "Sequentially training weak learners to create strong predictive model.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/boosting"
+  },
+  {
+    "title": "Distillation",
+    "slug": "distillation",
+    "description": "Transferring knowledge from complex model to simpler one.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/distillation"
+  },
+  {
+    "title": "Mixup",
+    "slug": "mixup",
+    "description": "Data augmentation technique creating virtual training examples by mixing inputs.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/mixup"
+  },
+  {
+    "title": "Contrastive Learning",
+    "slug": "contrastive-learning",
+    "description": "Learning representations by contrasting similar and dissimilar examples.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/contrastive-learning"
+  },
+  {
+    "title": "Metric Learning",
+    "slug": "metric-learning",
+    "description": "Learning distance metrics for similarity measurement between data points.",
+    "category": "Advanced ML Techniques",
+    "url": "/glossary/metric-learning"
+  },
+  {
+    "title": "Class Imbalance",
+    "slug": "class-imbalance",
+    "description": "Problem when training data has unequal distribution across classes.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/class-imbalance"
+  },
+  {
+    "title": "AB Testing for ML",
+    "slug": "ab-testing-for-ml",
+    "description": "Comparing model versions in production using controlled experiments.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/ab-testing-for-ml"
+  },
+  {
+    "title": "Canary Deployment",
+    "slug": "canary-deployment",
+    "description": "Gradually rolling out model updates to subset of users before full release.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/canary-deployment"
+  },
+  {
+    "title": "Blue-Green Deployment",
+    "slug": "blue-green-deployment",
+    "description": "Maintaining two identical environments for zero-downtime model updates.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/blue-green-deployment"
+  },
+  {
+    "title": "Shadow Mode",
+    "slug": "shadow-mode",
+    "description": "Running new model alongside production model without affecting outputs.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/shadow-mode"
+  },
+  {
+    "title": "Model Decay",
+    "slug": "model-decay",
+    "description": "Gradual degradation in model performance over time due to changing data patterns.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/model-decay"
+  },
+  {
+    "title": "Concept Drift",
+    "slug": "concept-drift",
+    "description": "Change in statistical properties of target variable over time.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/concept-drift"
+  },
+  {
+    "title": "Data Drift",
+    "slug": "data-drift",
+    "description": "Changes in input data distribution affecting model performance.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/data-drift"
+  },
+  {
+    "title": "Feature Store",
+    "slug": "feature-store",
+    "description": "Centralized repository for storing, managing, and serving ML features.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/feature-store"
+  },
+  {
+    "title": "Model Lineage",
+    "slug": "model-lineage",
+    "description": "Tracking origin, dependencies, and evolution of ML models.",
+    "category": "ML Operations Best Practices",
+    "url": "/glossary/model-lineage"
+  },
+  {
+    "title": "Experiment Tracking",
+    "slug": "experiment-tracking",
+    "description": "Recording and comparing ML experiments for reproducibility.",
+    "category": "Data Science Tools",
+    "url": "/glossary/experiment-tracking"
+  },
+  {
+    "title": "Jupyter Notebook",
+    "slug": "jupyter-notebook",
+    "description": "Interactive computational environment for data science and ML development.",
+    "category": "Data Science Tools",
+    "url": "/glossary/jupyter-notebook"
+  },
+  {
+    "title": "R Programming",
+    "slug": "r-programming",
+    "description": "Statistical computing language widely used for data analysis.",
+    "category": "Data Science Tools",
+    "url": "/glossary/r-programming"
+  },
+  {
+    "title": "SAS",
+    "slug": "sas",
+    "description": "Statistical software suite for advanced analytics and business intelligence.",
+    "category": "Data Science Tools",
+    "url": "/glossary/sas"
+  },
+  {
+    "title": "Matplotlib",
+    "slug": "matplotlib",
+    "description": "Python plotting library for creating static, animated, and interactive visualizations.",
+    "category": "Data Science Tools",
+    "url": "/glossary/matplotlib"
+  },
+  {
+    "title": "Seaborn",
+    "slug": "seaborn",
+    "description": "Python visualization library based on matplotlib for statistical graphics.",
+    "category": "Data Science Tools",
+    "url": "/glossary/seaborn"
+  },
+  {
+    "title": "Plotly",
+    "slug": "plotly",
+    "description": "Interactive graphing library for creating web-based visualizations.",
+    "category": "Data Science Tools",
+    "url": "/glossary/plotly"
+  },
+  {
+    "title": "Tableau",
+    "slug": "tableau",
+    "description": "Business intelligence platform for visual analytics and dashboards.",
+    "category": "Data Science Tools",
+    "url": "/glossary/tableau"
+  },
+  {
+    "title": "Power BI",
+    "slug": "power-bi",
+    "description": "Microsoft's business analytics service for interactive visualizations.",
+    "category": "Data Science Tools",
+    "url": "/glossary/power-bi"
+  },
+  {
+    "title": "Apache Zeppelin",
+    "slug": "apache-zeppelin",
+    "description": "Web-based notebook for data analytics and collaborative documents.",
+    "category": "Data Science Tools",
+    "url": "/glossary/apache-zeppelin"
+  },
+  {
+    "title": "DVC (Data Version Control)",
+    "slug": "dvc-data-version-control",
+    "description": "Version control system for machine learning projects and datasets.",
+    "category": "Statistical Methods",
+    "url": "/glossary/dvc"
+  },
+  {
+    "title": "Hypothesis Testing",
+    "slug": "hypothesis-testing",
+    "description": "Statistical method for making inferences about population parameters.",
+    "category": "Statistical Methods",
+    "url": "/glossary/hypothesis-testing"
+  },
+  {
+    "title": "P-Value",
+    "slug": "p-value",
+    "description": "Probability of obtaining test results at least as extreme as observed.",
+    "category": "Statistical Methods",
+    "url": "/glossary/p-value"
+  },
+  {
+    "title": "Confidence Interval",
+    "slug": "confidence-interval",
+    "description": "Range of values likely to contain population parameter with certain probability.",
+    "category": "Statistical Methods",
+    "url": "/glossary/confidence-interval"
+  },
+  {
+    "title": "Regression Analysis",
+    "slug": "regression-analysis",
+    "description": "Statistical method modeling relationships between variables.",
+    "category": "Statistical Methods",
+    "url": "/glossary/regression-analysis"
+  },
+  {
+    "title": "ANOVA",
+    "slug": "anova",
+    "description": "Analysis of Variance comparing means across multiple groups.",
+    "category": "Statistical Methods",
+    "url": "/glossary/anova"
+  },
+  {
+    "title": "Correlation",
+    "slug": "correlation",
+    "description": "Statistical measure of relationship strength between variables.",
+    "category": "Statistical Methods",
+    "url": "/glossary/correlation"
+  },
+  {
+    "title": "Causation",
+    "slug": "causation",
+    "description": "Relationship where one event directly causes another to occur.",
+    "category": "Statistical Methods",
+    "url": "/glossary/causation"
+  },
+  {
+    "title": "Causal Inference",
+    "slug": "causal-inference",
+    "description": "Methods for determining cause-and-effect relationships from data.",
+    "category": "Statistical Methods",
+    "url": "/glossary/causal-inference"
+  },
+  {
+    "title": "Bootstrapping",
+    "slug": "bootstrapping",
+    "description": "Resampling technique for estimating statistics on population.",
+    "category": "Statistical Methods",
+    "url": "/glossary/bootstrapping"
+  },
+  {
+    "title": "Monte Carlo Simulation",
+    "slug": "monte-carlo-simulation",
+    "description": "Computational algorithm using repeated random sampling for numerical results.",
+    "category": "Explainable AI Techniques",
+    "url": "/glossary/monte-carlo-simulation"
+  },
+  {
+    "title": "Integrated Gradients",
+    "slug": "integrated-gradients",
+    "description": "Attribution method explaining predictions by integrating gradients along path.",
+    "category": "Explainable AI Techniques",
+    "url": "/glossary/integrated-gradients"
+  },
+  {
+    "title": "DeepLIFT",
+    "slug": "deeplift",
+    "description": "Method attributing prediction to input features by comparing to reference.",
+    "category": "Explainable AI Techniques",
+    "url": "/glossary/deeplift"
+  },
+  {
+    "title": "Layer-wise Relevance Propagation",
+    "slug": "layer-wise-relevance-propagation",
+    "description": "Technique decomposing neural network predictions into input contributions.",
+    "category": "Explainable AI Techniques",
+    "url": "/glossary/layer-wise-relevance-propagation"
+  },
+  {
+    "title": "Influence Functions",
+    "slug": "influence-functions",
+    "description": "Estimating effect of training points on model predictions.",
+    "category": "Explainable AI Techniques",
+    "url": "/glossary/influence-functions"
+  },
+  {
+    "title": "Concept Activation Vectors",
+    "slug": "concept-activation-vectors",
+    "description": "Interpreting neural networks through human-friendly concepts.",
+    "category": "Advanced NLP",
+    "url": "/glossary/concept-activation-vectors"
+  },
+  {
+    "title": "Prompt Tuning",
+    "slug": "prompt-tuning",
+    "description": "Optimizing soft prompts while keeping model parameters frozen.",
+    "category": "Advanced NLP",
+    "url": "/glossary/prompt-tuning"
+  },
+  {
+    "title": "Prefix Tuning",
+    "slug": "prefix-tuning",
+    "description": "Adding trainable prefix tokens to frozen language model.",
+    "category": "Advanced NLP",
+    "url": "/glossary/prefix-tuning"
+  },
+  {
+    "title": "Adapter Layers",
+    "slug": "adapter-layers",
+    "description": "Small trainable modules inserted into frozen pretrained models.",
+    "category": "Advanced NLP",
+    "url": "/glossary/adapter-layers"
+  },
+  {
+    "title": "Instruction Tuning",
+    "slug": "instruction-tuning",
+    "description": "Fine-tuning language models on diverse instruction-following tasks.",
+    "category": "Advanced NLP",
+    "url": "/glossary/instruction-tuning"
+  },
+  {
+    "title": "Constitutional AI Principles",
+    "slug": "constitutional-ai-principles",
+    "description": "Training AI using set of principles for ethical behavior.",
+    "category": "Advanced NLP",
+    "url": "/glossary/constitutional-ai-principles"
+  },
+  {
+    "title": "Toxicity Detection",
+    "slug": "toxicity-detection",
+    "description": "Identifying harmful, offensive, or inappropriate content in text.",
+    "category": "Advanced NLP",
+    "url": "/glossary/toxicity-detection"
+  },
+  {
+    "title": "Bias Detection",
+    "slug": "bias-detection",
+    "description": "Identifying unfair biases in model predictions and training data.",
+    "category": "Advanced NLP",
+    "url": "/glossary/bias-detection"
+  },
+  {
+    "title": "Debiasing Techniques",
+    "slug": "debiasing-techniques",
+    "description": "Methods for reducing algorithmic bias in ML models.",
+    "category": "Advanced NLP",
+    "url": "/glossary/debiasing-techniques"
+  },
+  {
+    "title": "Fairness Metrics",
+    "slug": "fairness-metrics",
+    "description": "Quantitative measures for assessing model fairness across groups.",
+    "category": "Advanced NLP",
+    "url": "/glossary/fairness-metrics"
+  },
+  {
+    "title": "Cross-Lingual Transfer",
+    "slug": "cross-lingual-transfer",
+    "description": "Transferring knowledge from high-resource to low-resource languages.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/cross-lingual-transfer"
+  },
+  {
+    "title": "Cold Start",
+    "slug": "cold-start",
+    "description": "Challenge of making predictions for new users or items without history.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/cold-start"
+  },
+  {
+    "title": "Catastrophic Forgetting",
+    "slug": "catastrophic-forgetting",
+    "description": "Neural network losing previously learned information when learning new tasks.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/catastrophic-forgetting"
+  },
+  {
+    "title": "Mode Collapse",
+    "slug": "mode-collapse",
+    "description": "GAN failure where generator produces limited variety of samples.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/mode-collapse"
+  },
+  {
+    "title": "Vanishing Gradient",
+    "slug": "vanishing-gradient",
+    "description": "Problem where gradients become extremely small during backpropagation.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/vanishing-gradient"
+  },
+  {
+    "title": "Exploding Gradient",
+    "slug": "exploding-gradient",
+    "description": "Problem where gradients become extremely large during training.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/exploding-gradient"
+  },
+  {
+    "title": "Overfitting",
+    "slug": "overfitting",
+    "description": "Model learning training data too well, failing to generalize to new data.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/overfitting"
+  },
+  {
+    "title": "Underfitting",
+    "slug": "underfitting",
+    "description": "Model too simple to capture underlying patterns in data.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/underfitting"
+  },
+  {
+    "title": "Label Noise",
+    "slug": "label-noise",
+    "description": "Incorrect or inconsistent labels in training data affecting model quality.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/label-noise"
+  },
+  {
+    "title": "Data Poisoning",
+    "slug": "data-poisoning",
+    "description": "Malicious corruption of training data to degrade model performance.",
+    "category": "Production ML Challenges",
+    "url": "/glossary/data-poisoning"
+  },
+  {
+    "title": "Model Staleness",
+    "slug": "model-staleness",
+    "description": "Deployed model becoming outdated as real-world conditions change.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/model-staleness"
+  },
+  {
+    "title": "Foundation Models",
+    "slug": "foundation-models",
+    "description": "Large-scale models trained on broad data adaptable to many downstream tasks.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/foundation-models"
+  },
+  {
+    "title": "Multimodal Foundation Models",
+    "slug": "multimodal-foundation-models",
+    "description": "Models trained on multiple data types like text, images, and audio.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/multimodal-foundation-models"
+  },
+  {
+    "title": "Mixture of Experts",
+    "slug": "mixture-of-experts",
+    "description": "Model architecture with specialized sub-models activated conditionally.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/mixture-of-experts"
+  },
+  {
+    "title": "Sparse Models",
+    "slug": "sparse-models",
+    "description": "Neural networks with many zero-valued parameters for efficiency.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/sparse-models"
+  },
+  {
+    "title": "Neural Ordinary Differential Equations",
+    "slug": "neural-ordinary-differential-equations",
+    "description": "Using ODE solvers as neural network layers for continuous depth.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/neural-ordinary-differential-equations"
+  },
+  {
+    "title": "Equivariant Neural Networks",
+    "slug": "equivariant-neural-networks",
+    "description": "Networks preserving symmetries in data for improved generalization.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/equivariant-neural-networks"
+  },
+  {
+    "title": "Graph Transformers",
+    "slug": "graph-transformers",
+    "description": "Transformer architectures adapted for graph-structured data.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/graph-transformers"
+  },
+  {
+    "title": "Kolmogorov-Arnold Networks",
+    "slug": "kolmogorov-arnold-networks",
+    "description": "Alternative neural network architecture based on Kolmogorov-Arnold theorem.",
+    "category": "Emerging AI Paradigms",
+    "url": "/glossary/kolmogorov-arnold-networks"
   }
 ]
