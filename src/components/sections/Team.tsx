@@ -2,14 +2,18 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { memo } from 'react'
 
-export function Team() {
+export const Team = memo(function Team() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
-      {/* Energetic decorative elements */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-gradient-to-br from-amber-200/20 to-yellow-200/20 rounded-full blur-2xl animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }} />
+    <section className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-3 opacity-50" />
+      
+      {/* Energetic decorative gradient orbs */}
+      <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/40 via-amber-200/30 to-orange-200/35 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-br from-orange-200/35 via-yellow-200/30 to-amber-200/40 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 right-1/4 w-48 h-48 bg-gradient-to-br from-amber-200/30 to-yellow-200/25 rounded-full blur-2xl animate-float" style={{ animationDelay: '0.5s' }} />
       
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
@@ -38,9 +42,15 @@ export function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="glass-card p-8 md:p-10 rounded-2xl shadow-xl border-2 border-amber-200/50 bg-white/80 backdrop-blur-sm"
+          className="glass-card p-8 md:p-10 rounded-3xl shadow-xl hover-glass-lift border border-white/50 relative overflow-hidden"
         >
-          <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
+          {/* Subtle gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50/30 via-yellow-50/20 to-orange-50/30 opacity-60" />
+          
+          {/* Glass reflection */}
+          <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/60 to-transparent" />
+          
+          <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start relative z-10">
             {/* Left Column: Profile picture, name, and LinkedIn link */}
             <div className="flex flex-col items-center space-y-5">
               {/* Profile Image with energetic border */}
@@ -132,4 +142,4 @@ export function Team() {
       </div>
     </section>
   )
-}
+})

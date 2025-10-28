@@ -2,13 +2,17 @@
 
 import { motion } from 'framer-motion'
 import { CTAButton } from '@/components/CTAButton'
+import { memo } from 'react'
 
-export function FinalCTA() {
+export const FinalCTA = memo(function FinalCTA() {
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-animated opacity-70" />
+      
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/40 via-amber-200/30 to-orange-200/35 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-br from-orange-200/35 via-yellow-200/30 to-amber-200/40 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
       
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.div
@@ -92,4 +96,4 @@ export function FinalCTA() {
       </div>
     </section>
   )
-}
+})

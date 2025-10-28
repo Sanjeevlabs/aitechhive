@@ -19,10 +19,13 @@ export function Timeline() {
 
   return (
     <ErrorBoundary componentName="Timeline">
-    <section ref={containerRef} className="py-12 md:py-24 px-4 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-parallax-float" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
+    <section ref={containerRef} className="py-12 md:py-24 px-4 bg-white relative overflow-hidden">
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-3 opacity-60" />
+      
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/40 via-amber-200/30 to-orange-200/35 rounded-full blur-3xl animate-parallax-float" />
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-br from-orange-200/35 via-yellow-200/30 to-amber-200/40 rounded-full blur-3xl animate-parallax-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -107,13 +110,16 @@ export function Timeline() {
                         
                         {/* Topic Card */}
                         <div 
-                          className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
-                            activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400' : 'hover:scale-105'
+                          className={`glass-card p-5 rounded-2xl shadow-lg hover-glass-lift group relative overflow-hidden cursor-pointer ${
+                            activeWeek === topic.week ? 'scale-105 ring-2 ring-yellow-400/50 shadow-xl' : ''
                           }`}
                           style={{ willChange: 'transform' }}
                         >
                           {/* Hover gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                          
+                          {/* Glass reflection */}
+                          <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent opacity-70" />
                           
                           <div className="relative z-10">
                             {/* Week badge with book icon for Sunday */}
@@ -164,13 +170,16 @@ export function Timeline() {
                         
                         {/* Topic Card */}
                         <div 
-                          className={`p-5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group relative overflow-hidden cursor-pointer bg-white ${
-                            activeWeek === topic.week ? 'scale-105 ring-2 ring-amber-400' : 'hover:scale-105'
+                          className={`glass-card p-5 rounded-2xl shadow-lg hover-glass-lift group relative overflow-hidden cursor-pointer ${
+                            activeWeek === topic.week ? 'scale-105 ring-2 ring-amber-400/50 shadow-xl' : ''
                           }`}
                           style={{ willChange: 'transform' }}
                         >
                           {/* Hover gradient background */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                          
+                          {/* Glass reflection */}
+                          <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent opacity-70" />
                           
                           <div className="relative z-10">
                             {/* Week badge with wrench icon for Wednesday */}
