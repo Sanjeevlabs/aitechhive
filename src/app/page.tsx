@@ -1,5 +1,6 @@
 'use client'
 
+import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
 import { Timeline } from '@/components/sections/Timeline'
 import { Problem } from '@/components/sections/Problem'
@@ -13,6 +14,7 @@ import { ScrollToTop } from '@/components/ScrollToTop'
 export default function Home() {
   return (
     <main className="min-h-screen relative z-10">
+      <Header />
       <Hero />
       <Timeline />
       <Problem />

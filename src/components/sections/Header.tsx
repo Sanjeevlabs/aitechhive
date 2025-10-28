@@ -33,12 +33,33 @@ export function Header() {
             <Logo size="sm" />
           </motion.div>
           
-          {/* Navigation items could go here in the future */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {/* Future navigation items */}
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center space-x-6">
+            <motion.a
+              href="https://newsletter.aitechhive.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Newsletter
+            </motion.a>
+            <motion.a
+              href="https://aitechhive.com/glossary"
+              className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Jargon Buster
+            </motion.a>
           </nav>
-          
-          <ThemeToggle />
         </div>
       </div>
     </header>
