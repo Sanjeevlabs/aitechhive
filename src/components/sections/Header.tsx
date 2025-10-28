@@ -32,8 +32,8 @@ export function Header() {
             <Logo size="sm" />
           </motion.div>
           
-          {/* Navigation Links - with right padding to avoid overlap with theme toggle */}
-          <nav className="hidden md:flex items-center space-x-6 pr-48">
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center space-x-6">
             <motion.a
               href="https://newsletter.aitechhive.com"
               target="_blank"
