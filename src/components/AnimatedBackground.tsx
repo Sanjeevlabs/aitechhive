@@ -18,12 +18,19 @@ export function AnimatedBackground() {
       canvas.height = window.innerHeight
     }
     resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
+    
+    // Throttle resize events for better performance
+    let resizeTimeout: NodeJS.Timeout
+    const throttledResize = () => {
+      clearTimeout(resizeTimeout)
+      resizeTimeout = setTimeout(resizeCanvas, 150)
+    }
+    window.addEventListener('resize', throttledResize)
 
-    // Particle system - Enhanced with more particles and larger connection distance
+    // Particle system - Optimized for better performance
     const particles: Particle[] = []
-    const particleCount = 80
-    const connectionDistance = 200
+    const particleCount = 50 // Reduced from 80 for better performance
+    const connectionDistance = 150 // Reduced from 200 for fewer calculations
 
     class Particle {
       x: number
@@ -35,9 +42,9 @@ export function AnimatedBackground() {
       constructor() {
         this.x = Math.random() * (canvas?.width || window.innerWidth)
         this.y = Math.random() * (canvas?.height || window.innerHeight)
-        this.vx = (Math.random() - 0.5) * 0.8
-        this.vy = (Math.random() - 0.5) * 0.8
-        this.size = Math.random() * 3 + 1
+        this.vx = (Math.random() - 0.5) * 0.5 // Reduced speed for smoother animation
+        this.vy = (Math.random() - 0.5) * 0.5
+        this.size = Math.random() * 2 + 1 // Smaller particles
       }
 
       update() {
@@ -70,10 +77,21 @@ export function AnimatedBackground() {
       particles.push(new Particle())
     }
 
-    // Animation loop
+    // Animation loop with frame rate limiting for better performance
     let animationFrameId: number
-    const animate = () => {
+    let lastFrameTime = 0
+    const targetFPS = 30 // Limit to 30 FPS for better battery life
+    const frameInterval = 1000 / targetFPS
+    
+    const animate = (currentTime: number) => {
       if (!ctx || !canvas) return
+      
+      // Throttle animation to target FPS
+      if (currentTime - lastFrameTime < frameInterval) {
+        animationFrameId = requestAnimationFrame(animate)
+        return
+      }
+      lastFrameTime = currentTime
       
       // Clear canvas with semi-transparent background for trail effect
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'
@@ -85,36 +103,35 @@ export function AnimatedBackground() {
         particle.draw()
       })
 
-      // Draw connections
-      particles.forEach((particle, i) => {
-        particles.slice(i + 1).forEach((otherParticle) => {
+      // Draw connections - optimized loop
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const particle = particles[i]
+          const otherParticle = particles[j]
           const dx = particle.x - otherParticle.x
           const dy = particle.y - otherParticle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < connectionDistance && ctx) {
+          if (distance < connectionDistance) {
             ctx.beginPath()
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)
-            const opacity = (1 - distance / connectionDistance) * 0.3
-            const gradient = ctx.createLinearGradient(particle.x, particle.y, otherParticle.x, otherParticle.y)
-            gradient.addColorStop(0, `rgba(6, 182, 212, ${opacity})`)
-            gradient.addColorStop(0.5, `rgba(14, 165, 233, ${opacity})`)
-            gradient.addColorStop(1, `rgba(59, 130, 246, ${opacity})`)
-            ctx.strokeStyle = gradient
-            ctx.lineWidth = 1.5
+            const opacity = (1 - distance / connectionDistance) * 0.25
+            ctx.strokeStyle = `rgba(14, 165, 233, ${opacity})`
+            ctx.lineWidth = 1
             ctx.stroke()
           }
-        })
-      })
+        }
+      }
 
       animationFrameId = requestAnimationFrame(animate)
     }
 
-    animate()
+    animate(0)
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas)
+      window.removeEventListener('resize', throttledResize)
+      clearTimeout(resizeTimeout)
       cancelAnimationFrame(animationFrameId)
     }
   }, [])
