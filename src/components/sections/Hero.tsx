@@ -21,7 +21,12 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden bg-white">
-      {/* Background is now white for consistency */}
+      {/* Animated mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-animated opacity-60" />
+      
+      {/* Subtle gradient orbs for depth */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-amber-200/30 via-yellow-200/20 to-orange-200/30 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-200/20 via-indigo-200/15 to-purple-200/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <motion.div

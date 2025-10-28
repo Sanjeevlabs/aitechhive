@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { memo } from 'react'
 
 const offerings = [
   {
@@ -29,12 +30,15 @@ const offerings = [
   }
 ]
 
-export function WhatYouLearn() {
+export const WhatYouLearn = memo(function WhatYouLearn() {
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-indigo-50/40 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-32 h-32 bg-pink-50/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-2 opacity-50" />
+      
+      {/* Subtle decorative gradient orbs */}
+      <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-indigo-200/40 via-purple-200/30 to-pink-200/40 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-br from-pink-200/30 via-rose-200/25 to-orange-200/35 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.h2 
@@ -57,10 +61,13 @@ export function WhatYouLearn() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="glass-card p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-[1.02] relative overflow-hidden">
+              <div className="glass-card p-6 rounded-2xl shadow-lg hover-glass-lift relative overflow-hidden h-full">
                 {/* Gradient backgrounds */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-10`} />
-                <div className="absolute inset-0 bg-gradient-to-tl from-white/40 via-white/10 to-transparent opacity-90" />
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-[0.08]`} />
+                <div className="absolute inset-0 bg-gradient-to-tl from-white/60 via-white/20 to-transparent opacity-90" />
+                
+                {/* Glass reflection effect */}
+                <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10">
                   <div className="flex items-start space-x-4">
@@ -86,4 +93,4 @@ export function WhatYouLearn() {
       </div>
     </section>
   )
-}
+})

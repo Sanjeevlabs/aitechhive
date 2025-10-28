@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Logo } from '@/components/Logo'
 import Link from 'next/link'
+import { memo } from 'react'
 
 // Social media links configuration
 const socialLinks = [
@@ -44,10 +45,15 @@ const socialLinks = [
   }
 ]
 
-export function Footer() {
+export const Footer = memo(function Footer() {
   return (
-    <footer className="py-16 px-4 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-slate-100 border-t border-slate-800/50">
-      <div className="max-w-6xl mx-auto">
+    <footer className="relative py-16 px-4 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-slate-100 border-t border-slate-800/50 overflow-hidden">
+      {/* Subtle mesh gradient overlay */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10" />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -131,4 +137,4 @@ export function Footer() {
       </div>
     </footer>
   )
-}
+})

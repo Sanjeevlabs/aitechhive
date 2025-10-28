@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { UserGroupIcon } from '@heroicons/react/24/outline'
+import { memo } from 'react'
 
-export function WhoThisIsFor() {
+export const WhoThisIsFor = memo(function WhoThisIsFor() {
   const targetAudience = [
     "BFSI professionals adopting AI responsibly",
     "Engineers moving into model-risk & governance",
@@ -11,10 +12,13 @@ export function WhoThisIsFor() {
   ]
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-yellow-50/40 via-amber-50/30 to-orange-50/20 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-yellow-300/20 to-amber-300/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-orange-300/20 to-yellow-300/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-1 opacity-50" />
+      
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-yellow-200/40 via-amber-200/30 to-orange-200/35 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-br from-orange-200/35 via-yellow-200/30 to-purple-200/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
@@ -53,9 +57,12 @@ export function WhoThisIsFor() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="glass-card p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-[1.02] relative overflow-hidden h-full">
+              <div className="glass-card p-6 rounded-2xl shadow-lg hover-glass-lift relative overflow-hidden h-full">
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/30 via-indigo-50/20 to-purple-50/30 opacity-50" />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/20 via-indigo-50/15 to-purple-50/20 opacity-60" />
+                
+                {/* Glass reflection effect */}
+                <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10 text-center">
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
@@ -69,4 +76,4 @@ export function WhoThisIsFor() {
       </div>
     </section>
   )
-}
+})

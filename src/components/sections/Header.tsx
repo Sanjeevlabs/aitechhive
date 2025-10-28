@@ -2,36 +2,46 @@
 
 import { motion, useScroll, AnimatePresence } from 'framer-motion'
 import { Logo } from '@/components/Logo'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, memo } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-export function Header() {
+// Memoize navigation links to prevent recreation
+const navLinks = [
+  { href: 'https://newsletter.aitechhive.com', label: 'Newsletter', external: true },
+  { href: '/glossary', label: 'Jargon Buster', external: false },
+]
+
+export const Header = memo(function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { scrollY } = useScroll()
 
   useEffect(() => {
+    // Throttle scroll events for better performance
+    let timeoutId: NodeJS.Timeout
     return scrollY.on('change', (latest) => {
-      setScrolled(latest > 50)
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(() => {
+        setScrolled(latest > 50)
+      }, 10)
     })
   }, [scrollY])
 
-  // Close mobile menu when a link is clicked
-  const closeMobileMenu = () => {
+  // Close mobile menu when a link is clicked - memoized
+  const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false)
-  }
+  }, [])
 
-  // Navigation links data
-  const navLinks = [
-    { href: 'https://newsletter.aitechhive.com', label: 'Newsletter', external: true },
-    { href: '/glossary', label: 'Jargon Buster', external: false },
-  ]
+  // Toggle mobile menu - memoized
+  const toggleMobileMenu = useCallback(() => {
+    setMobileMenuOpen(prev => !prev)
+  }, [])
 
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50 shadow-sm' 
+          ? 'glass-header shadow-lg' 
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -67,7 +77,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <motion.button
             className="md:hidden p-2 text-foreground hover:text-accent transition-colors duration-200"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={toggleMobileMenu}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -117,4 +127,4 @@ export function Header() {
       </div>
     </header>
   )
-}
+})

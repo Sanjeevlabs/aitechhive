@@ -2,13 +2,17 @@
 
 import { motion } from 'framer-motion'
 import { DocumentTextIcon } from '@heroicons/react/24/outline'
+import { memo } from 'react'
 
-export function Problem() {
+export const Problem = memo(function Problem() {
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
-      {/* Subtle decorative elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-blue-50/40 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-10 w-32 h-32 bg-indigo-50/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 mesh-gradient-1 opacity-40" />
+      
+      {/* Subtle decorative gradient orbs */}
+      <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-to-br from-blue-200/40 via-cyan-200/30 to-teal-200/35 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-br from-indigo-200/35 via-purple-200/30 to-blue-200/40 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
@@ -49,8 +53,11 @@ export function Problem() {
             viewport={{ once: true }}
             className="mt-8"
           >
-            <div className="glass-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-indigo-50/10 to-blue-50/20" />
+            <div className="glass-card p-8 rounded-3xl shadow-xl hover-glass-lift relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-indigo-50/20 to-blue-50/30" />
+              
+              {/* Glass reflection */}
+              <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent" />
               
               <ul className="relative z-10 text-left space-y-3 max-w-2xl mx-auto">
                 <li className="flex items-start text-sm md:text-base text-gray-700">
@@ -72,4 +79,4 @@ export function Problem() {
       </div>
     </section>
   )
-}
+})
