@@ -2,7 +2,6 @@
 
 import { motion, useScroll } from 'framer-motion'
 import { Logo } from '@/components/Logo'
-import { ThemeToggle } from '@/components/ThemeToggle'
 import { useState, useEffect } from 'react'
 
 export function Header() {
@@ -33,8 +32,8 @@ export function Header() {
             <Logo size="sm" />
           </motion.div>
           
-          {/* Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-6">
+          {/* Navigation Links - with right padding to avoid overlap with theme toggle */}
+          <nav className="hidden md:flex items-center space-x-6 pr-48">
             <motion.a
               href="https://newsletter.aitechhive.com"
               target="_blank"
@@ -49,7 +48,7 @@ export function Header() {
               Newsletter
             </motion.a>
             <motion.a
-              href="https://aitechhive.com/glossary"
+              href="/glossary"
               className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-200"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
