@@ -64,7 +64,7 @@ export function parseGlossary(content: string): GlossaryData {
           description: currentDescription.trim(),
           category: currentCategory,
           url: currentUrl || `/glossary/${termSlug}`,
-          ...(currentOfficialUrl && { officialUrl: currentOfficialUrl })
+          ...(currentOfficialUrl ? { officialUrl: currentOfficialUrl } : {})
         }
         terms.push(term)
         categoriesMap.get(currentCategory)?.push(term)
@@ -91,8 +91,13 @@ export function parseGlossary(content: string): GlossaryData {
     }
     
     // Official URL or Website line
-    if (line.startsWith('**Official URL:**') || line.startsWith('**Website:**')) {
-      currentOfficialUrl = line.replace('**Official URL:**', '').replace('**Website:**', '').trim()
+    if (line.startsWith('**Official URL:**')) {
+      currentOfficialUrl = line.replace('**Official URL:**', '').trim()
+      continue
+    }
+    
+    if (line.startsWith('**Website:**')) {
+      currentOfficialUrl = line.replace('**Website:**', '').trim()
       continue
     }
   }
@@ -106,7 +111,7 @@ export function parseGlossary(content: string): GlossaryData {
       description: currentDescription.trim(),
       category: currentCategory,
       url: currentUrl || `/glossary/${termSlug}`,
-      ...(currentOfficialUrl && { officialUrl: currentOfficialUrl })
+      ...(currentOfficialUrl ? { officialUrl: currentOfficialUrl } : {})
     }
     terms.push(term)
     categoriesMap.get(currentCategory)?.push(term)
