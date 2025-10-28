@@ -68,6 +68,21 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+* {
+  will-change: auto;
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer base {
@@ -437,5 +452,60 @@ body {
   
   .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Chrome, Safari and Opera */
+  }
+
+  /* Depth perception effects */
+  .depth-1 {
+    transform: translateZ(10px);
+  }
+
+  .depth-2 {
+    transform: translateZ(20px);
+  }
+
+  .depth-3 {
+    transform: translateZ(30px);
+  }
+
+  /* Glassmorphism glow effects */
+  .glass-glow {
+    box-shadow: 
+      0 8px 32px rgba(255, 255, 255, 0.1),
+      0 4px 16px rgba(0, 0, 0, 0.1),
+      inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  }
+
+  .glass-glow-strong {
+    box-shadow: 
+      0 12px 48px rgba(255, 255, 255, 0.15),
+      0 8px 24px rgba(0, 0, 0, 0.15),
+      inset 0 2px 4px rgba(255, 255, 255, 0.8);
+  }
+
+  /* Frosted glass dividers */
+  .glass-divider {
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      transparent 100%
+    );
+    height: 1px;
+  }
+
+  /* Glass panel with strong depth */
+  .glass-panel {
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 
+      0 16px 64px rgba(0, 0, 0, 0.12),
+      0 8px 32px rgba(0, 0, 0, 0.08),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.05);
   }
 }
