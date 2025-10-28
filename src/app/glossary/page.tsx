@@ -34,9 +34,72 @@ export default function GlossaryPage() {
       })
   }, [])
 
-  // Extract unique categories
+  // Category mapping to consolidate into broader categories
+  const categoryMapping: Record<string, string> = {
+    'AI Governance': 'Governance & Compliance',
+    'Regulation & Compliance': 'Governance & Compliance',
+    'AI Ethics': 'Governance & Compliance',
+    'Model Validation': 'Governance & Compliance',
+    'Risk Management': 'Governance & Compliance',
+    
+    'Technical Concepts': 'Core AI & ML',
+    'Neural Networks & Deep Learning': 'Core AI & ML',
+    'Machine Learning': 'Core AI & ML',
+    'Classical Machine Learning': 'Core AI & ML',
+    'Training Techniques': 'Core AI & ML',
+    'Optimization Algorithms': 'Core AI & ML',
+    'Advanced ML Techniques': 'Core AI & ML',
+    
+    'Large Language Models': 'Generative AI & NLP',
+    'Generative AI': 'Generative AI & NLP',
+    'Natural Language Understanding': 'Generative AI & NLP',
+    'Advanced NLP': 'Generative AI & NLP',
+    
+    'Computer Vision': 'Computer Vision & Multimodal',
+    'Multimodal AI': 'Computer Vision & Multimodal',
+    'Speech & Audio': 'Computer Vision & Multimodal',
+    
+    'Reinforcement Learning': 'Specialized ML',
+    'Time Series & Forecasting': 'Specialized ML',
+    'Recommendation Systems': 'Specialized ML',
+    'Feature Engineering': 'Specialized ML',
+    'Model Evaluation': 'Specialized ML',
+    
+    'Deployment & Operations': 'MLOps & Infrastructure',
+    'ML Operations Best Practices': 'MLOps & Infrastructure',
+    'Cloud & Infrastructure': 'MLOps & Infrastructure',
+    'Edge AI & Mobile': 'MLOps & Infrastructure',
+    'Performance Optimization': 'MLOps & Infrastructure',
+    'Production ML Challenges': 'MLOps & Infrastructure',
+    
+    'AI Frameworks & Tools': 'Tools & Platforms',
+    'Data Processing': 'Tools & Platforms',
+    'Data Science Tools': 'Tools & Platforms',
+    'AutoML': 'Tools & Platforms',
+    
+    'Privacy & Security': 'Security & Safety',
+    'AI Safety & Alignment': 'Security & Safety',
+    'Explainability & Interpretability': 'Security & Safety',
+    'Explainable AI Techniques': 'Security & Safety',
+    
+    'Healthcare AI': 'Industry Applications',
+    'Financial AI': 'Industry Applications',
+    'Industry Applications': 'Industry Applications',
+    'Specialized Domains': 'Industry Applications',
+    'Business & Strategy': 'Industry Applications',
+    
+    'Robotics & Autonomous Systems': 'Emerging Technologies',
+    'Emerging Technologies': 'Emerging Technologies',
+    'Emerging AI Paradigms': 'Emerging Technologies',
+    'Research & Development': 'Emerging Technologies',
+    'Knowledge Representation': 'Emerging Technologies',
+    'Statistical Methods': 'Emerging Technologies',
+  }
+
+  // Extract unique categories with mapping applied
   const categories = useMemo(() => {
-    const uniqueCategories = Array.from(new Set(terms.map(t => t.category)))
+    const mappedCategories = terms.map(t => categoryMapping[t.category] || t.category)
+    const uniqueCategories = Array.from(new Set(mappedCategories))
     return uniqueCategories.sort()
   }, [terms])
 
@@ -61,9 +124,12 @@ export default function GlossaryPage() {
       result = fuse.search(searchQuery).map(r => r.item)
     }
 
-    // Apply category filter
+    // Apply category filter with mapping
     if (selectedCategory !== 'all') {
-      result = result.filter(t => t.category === selectedCategory)
+      result = result.filter(t => {
+        const mappedCategory = categoryMapping[t.category] || t.category
+        return mappedCategory === selectedCategory
+      })
     }
 
     // Apply letter filter
@@ -135,11 +201,11 @@ export default function GlossaryPage() {
         </div>
 
         {/* Category Filter Chips */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2 justify-center">
+        <div className="mb-8 overflow-x-hidden">
+          <div className="flex flex-wrap gap-2 justify-center max-w-full">
             <button
               onClick={() => setSelectedCategory('all')}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-colors"
+              className="px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap"
               style={selectedCategory === 'all' 
                 ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
                 : { backgroundColor: '#EDEAE6', color: '#2B2B2B' }
@@ -151,7 +217,7 @@ export default function GlossaryPage() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className="px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                className="px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap"
                 style={selectedCategory === category
                   ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
                   : { backgroundColor: '#EDEAE6', color: '#2B2B2B' }
@@ -164,11 +230,11 @@ export default function GlossaryPage() {
         </div>
 
         {/* A-Z Navigation */}
-        <div className="mb-8 border-t border-b py-4" style={{ borderColor: '#EDEAE6' }}>
-          <div className="flex flex-wrap gap-1 justify-center">
+        <div className="mb-8 border-t border-b py-4 overflow-x-hidden" style={{ borderColor: '#EDEAE6' }}>
+          <div className="flex flex-wrap gap-1 justify-center max-w-full">
             <button
               onClick={() => setSelectedLetter('all')}
-              className="px-3 py-1 text-sm font-medium rounded transition-colors"
+              className="px-3 py-1 text-sm font-medium rounded transition-colors whitespace-nowrap"
               style={selectedLetter === 'all'
                 ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
                 : { color: '#6B6B6B' }
@@ -180,7 +246,7 @@ export default function GlossaryPage() {
               <button
                 key={letter}
                 onClick={() => setSelectedLetter(letter)}
-                className="px-3 py-1 text-sm font-medium rounded transition-colors"
+                className="px-3 py-1 text-sm font-medium rounded transition-colors whitespace-nowrap"
                 style={selectedLetter === letter
                   ? { backgroundColor: '#2B2B2B', color: '#F9F7F4' }
                   : { color: '#6B6B6B' }
@@ -226,7 +292,7 @@ export default function GlossaryPage() {
                           {term.description}
                         </p>
                         <span className="inline-block px-3 py-1 text-xs font-medium rounded-full" style={{ backgroundColor: '#EDEAE6', color: '#2B2B2B' }}>
-                          {term.category}
+                          {categoryMapping[term.category] || term.category}
                         </span>
                       </Link>
                     ))}
