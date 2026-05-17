@@ -1,0 +1,33 @@
+{
+  "name": "aitechhive",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "fetch": "node scripts/fetch-feeds.mjs",
+    "enrich": "node scripts/enrich.mjs",
+    "refresh": "npm run fetch && npm run enrich && node scripts/gen-sitemap.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@supabase/ssr": "^0.5.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "framer-motion": "^11.11.0",
+    "html-to-image": "^1.11.11",
+    "lucide-react": "^0.450.0",
+    "next": "^15.0.0",
+    "openai": "^4.70.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14"
+  }
+}
