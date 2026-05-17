@@ -1,22 +1,11 @@
-import fs from "node:fs/promises";
-import path from "node:path";
+import cardsData from "../../../data/cards.json";
 import { notFound } from "next/navigation";
 
-export const revalidate = 240;
-
-async function loadCards() {
-  try {
-    const filePath = path.join(process.cwd(), "data", "cards.json");
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw);
-  } catch {
-    return [];
-  }
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  const cards = await loadCards();
+  const cards = Array.isArray(cardsData) ? cardsData : [];
   const card = cards.find((c) => c.id === id);
   if (!card) return { title: "Card not found — AITechHive" };
   return {
@@ -32,7 +21,7 @@ export async function generateMetadata({ params }) {
 
 export default async function CardPage({ params }) {
   const { id } = await params;
-  const cards = await loadCards();
+  const cards = Array.isArray(cardsData) ? cardsData : [];
   const card = cards.find((c) => c.id === id);
   if (!card) notFound();
 
