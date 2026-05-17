@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import {
   AnimatePresence, motion,
   useMotionValue, useTransform, animate,
@@ -56,11 +56,13 @@ const SHARE_HEX = {
 
 /* ─────────────────────────────────────────────────────────────────
    DECK ORDERING
+   deckActed = cards you've saved OR skipped this session (+ DB dismissed).
+   Always show deck[0] — no deckPos index needed.
 ───────────────────────────────────────────────────────────────── */
-function orderDeck(cards, dismissedIds = new Set(), catFilter = "all") {
+function orderDeck(cards, deckActed = new Set(), catFilter = "all") {
   const now = Date.now();
   return cards
-    .filter((c) => !dismissedIds.has(c.id))
+    .filter((c) => !deckActed.has(c.id))
     .filter((c) => catFilter === "all" || c.category === catFilter)
     .map((c) => {
       const ageH = (now - new Date(c.published_at || c.source?.date || 0).getTime()) / 3600000;
@@ -184,7 +186,7 @@ function StoryCard({ card, onDecode, expanded }) {
             <Icon size={18} color="white" strokeWidth={2.5} />
           </div>
           <div>
-            <div style={{ fontSize: 14, fontWeight: 800, color: "white", lineHeight: 1.1 }}>{meta.label}</div>
+            <div style={{ fontSize: 13, fontWeight: 600, color: "white", lineHeight: 1.1, letterSpacing: "0.01em" }}>{meta.label}</div>
             {card.jurisdiction && (
               <div style={{ fontSize: 11, color: "rgba(255,255,255,0.72)", marginTop: 2, fontWeight: 500 }}>{card.jurisdiction}</div>
             )}
@@ -194,9 +196,9 @@ function StoryCard({ card, onDecode, expanded }) {
         <div style={{ display: "flex", alignItems: "center", gap: 8, zIndex: 1 }}>
           {card.severity === "high" && (
             <span style={{
-              fontSize: 9, fontWeight: 900, color: "white",
-              background: "rgba(255,255,255,0.25)", padding: "3px 8px",
-              borderRadius: 100, letterSpacing: "0.08em", textTransform: "uppercase",
+              fontSize: 9, fontWeight: 700, color: "white",
+              background: "rgba(255,255,255,0.22)", padding: "3px 8px",
+              borderRadius: 100, letterSpacing: "0.07em", textTransform: "uppercase",
             }}>HIGH</span>
           )}
           <div style={{
@@ -210,8 +212,8 @@ function StoryCard({ card, onDecode, expanded }) {
       {/* ── Scrollable body ─────────────────────────── */}
       <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "18px 18px 4px", WebkitOverflowScrolling: "touch" }}>
         <h2 style={{
-          margin: 0, fontSize: 21, fontWeight: 700, lineHeight: 1.3,
-          letterSpacing: "-0.016em", color: "var(--text-primary)",
+          margin: 0, fontSize: 20, fontWeight: 600, lineHeight: 1.32,
+          letterSpacing: "-0.012em", color: "var(--text-primary)",
           fontFamily: "var(--font-serif)",
         }}>
           {card.headline}
@@ -229,8 +231,8 @@ function StoryCard({ card, onDecode, expanded }) {
           borderLeft: `3px solid ${meta.color}`,
         }}>
           <div style={{
-            fontSize: 10, fontWeight: 800, color: meta.color,
-            textTransform: "uppercase", letterSpacing: "0.1em",
+            fontSize: 10, fontWeight: 700, color: meta.color,
+            textTransform: "uppercase", letterSpacing: "0.09em",
             marginBottom: 5, display: "flex", alignItems: "center", gap: 4,
           }}>
             <Zap size={9} />Why it matters
@@ -248,10 +250,10 @@ function StoryCard({ card, onDecode, expanded }) {
               style={{ overflow: "hidden" }}
             >
               <div style={{ margin: "12px 0 4px", padding: "14px", borderRadius: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
-                <div style={{ fontSize: 10, fontWeight: 800, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 12 }}>Jargon Decoded</div>
+                <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 12 }}>Jargon Decoded</div>
                 {card.jargon.map((j, i) => (
                   <div key={i} style={{ marginBottom: i < card.jargon.length - 1 ? 12 : 0 }}>
-                    <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-primary)" }}>{j.term}</div>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text-primary)" }}>{j.term}</div>
                     <div style={{ fontSize: 13, lineHeight: 1.45, color: "var(--text-secondary)", marginTop: 2 }}>{j.def}</div>
                   </div>
                 ))}
@@ -610,7 +612,6 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
    SHARE MODAL
 ───────────────────────────────────────────────────────────────── */
 function ShareModal({ open, onClose, card }) {
-  const captureRef = useRef(null);
   const [generating, setGenerating] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -619,11 +620,45 @@ function ShareModal({ open, onClose, card }) {
   const hex = SHARE_HEX[card.category] || "#8E8E93";
 
   const handleShare = async () => {
-    if (!captureRef.current) return;
     setGenerating(true);
     try {
       const { toPng } = await import("html-to-image");
-      const dataUrl = await toPng(captureRef.current, { pixelRatio: 2, cacheBust: true });
+
+      // Build the share card as a real DOM node appended to body so browser paints it
+      const el = document.createElement("div");
+      Object.assign(el.style, {
+        position: "fixed", top: "0", left: "0",
+        width: "540px", height: "540px",
+        zIndex: "-9999", opacity: "0.001", pointerEvents: "none",
+        background: "white", fontFamily: "-apple-system,BlinkMacSystemFont,system-ui,sans-serif",
+        overflow: "hidden",
+      });
+      el.innerHTML = `
+        <div style="height:140px;background:linear-gradient(135deg,${hex} 0%,${hex}BB 100%);padding:28px 32px 20px;display:flex;flex-direction:column;justify-content:flex-end;">
+          <div style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:100px;background:rgba(255,255,255,0.25);align-self:flex-start;margin-bottom:10px;">
+            <span style="font-size:12px;font-weight:600;color:white;">${meta.label}${card.jurisdiction ? ` · ${card.jurisdiction}` : ""}</span>
+          </div>
+        </div>
+        <div style="padding:20px 32px 16px;">
+          <h2 style="margin:0 0 11px;font-size:22px;font-weight:600;line-height:1.28;letter-spacing:-0.018em;color:#000;">${(card.headline || "").replace(/</g, "&lt;")}</h2>
+          <p style="margin:0 0 14px;font-size:13px;line-height:1.62;color:#3C3C43;">${((card.plain_english || "").slice(0, 180) + ((card.plain_english || "").length > 180 ? "…" : "")).replace(/</g, "&lt;")}</p>
+          <div style="padding:11px 13px;border-radius:10px;background:${hex}18;border-left:3px solid ${hex};">
+            <div style="font-size:9px;font-weight:700;color:${hex};text-transform:uppercase;letter-spacing:0.09em;margin-bottom:4px;">Why it matters</div>
+            <p style="margin:0;font-size:12px;line-height:1.52;color:#000;">${((card.why_it_matters || "").slice(0, 140) + ((card.why_it_matters || "").length > 140 ? "…" : "")).replace(/</g, "&lt;")}</p>
+          </div>
+        </div>
+        <div style="position:absolute;bottom:18px;left:32px;right:32px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:13px;font-weight:700;color:#000;">AITechHive</span>
+          <span style="font-size:11px;color:#8E8E93;">aitechhive.com</span>
+        </div>
+      `;
+      document.body.appendChild(el);
+      // Give browser one frame to paint
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      const dataUrl = await toPng(el, { pixelRatio: 2, cacheBust: true, width: 540, height: 540 });
+      document.body.removeChild(el);
+
       const blob = await (await fetch(dataUrl)).blob();
       const file = new File([blob], `aitechhive-${card.id}.png`, { type: "image/png" });
       if (navigator.canShare?.({ files: [file] })) {
@@ -645,30 +680,6 @@ function ShareModal({ open, onClose, card }) {
 
   return (
     <>
-      {/* Off-screen 540×540 capture → 1080×1080 @2x */}
-      <div ref={captureRef} style={{
-        position: "fixed", left: -9999, top: 0, width: 540, height: 540,
-        background: "white", fontFamily: "-apple-system,system-ui,sans-serif",
-        overflow: "hidden",
-      }}>
-        <div style={{ height: 140, background: `linear-gradient(135deg, ${hex} 0%, ${hex}BB 100%)`, padding: "32px 32px 20px", display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "5px 12px", borderRadius: 100, background: "rgba(255,255,255,0.25)", alignSelf: "flex-start", marginBottom: 10 }}>
-            <span style={{ fontSize: 12, fontWeight: 800, color: "white" }}>{meta.label}{card.jurisdiction ? ` · ${card.jurisdiction}` : ""}</span>
-          </div>
-        </div>
-        <div style={{ padding: "20px 32px" }}>
-          <h2 style={{ margin: "0 0 12px", fontSize: 24, fontWeight: 800, lineHeight: 1.25, letterSpacing: "-0.02em", color: "#000" }}>{card.headline}</h2>
-          <p style={{ margin: "0 0 16px", fontSize: 14, lineHeight: 1.6, color: "#3C3C43" }}>{(card.plain_english || "").slice(0, 180)}{(card.plain_english || "").length > 180 ? "…" : ""}</p>
-          <div style={{ padding: "12px 14px", borderRadius: 12, background: `${hex}14`, borderLeft: `3px solid ${hex}` }}>
-            <div style={{ fontSize: 10, fontWeight: 800, color: hex, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4 }}>Why it matters</div>
-            <p style={{ margin: 0, fontSize: 13, lineHeight: 1.5, color: "#000" }}>{(card.why_it_matters || "").slice(0, 140)}{(card.why_it_matters || "").length > 140 ? "…" : ""}</p>
-          </div>
-        </div>
-        <div style={{ position: "absolute", bottom: 20, left: 32, right: 32, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ fontSize: 14, fontWeight: 800, color: "#000" }}>AITechHive</span>
-          <span style={{ fontSize: 12, color: "#8E8E93" }}>aitechhive.com</span>
-        </div>
-      </div>
 
       <AnimatePresence>
         {open && (
@@ -806,9 +817,12 @@ export default function PageClient({ initialCards }) {
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
   const [savedIds, setSavedIds] = useState(new Set());
-  const [dismissedIds, setDismissedIds] = useState(new Set());
+  // deckActed: every card you've saved or skipped (removes it from deck[0] view)
+  // Separate from savedIds — saves are bookmarks, deckActed is navigation
+  const [deckActed, setDeckActed] = useState(new Set());
   const [savedCards, setSavedCards] = useState([]);
-  const [deckPos, setDeckPos] = useState(0);
+  // progressCount: how many acted on in the CURRENT catFilter (resets on tab switch)
+  const [progressCount, setProgressCount] = useState(0);
   const [stats, setStats] = useState({ saved: 0, next: 0, shared: 0 });
   const [expandedId, setExpandedId] = useState(null);
   const [savedOpen, setSavedOpen] = useState(false);
@@ -824,27 +838,33 @@ export default function PageClient({ initialCards }) {
     return () => sub.subscription.unsubscribe();
   }, [supabase]);
 
-  // Sync saves/dismissed from Supabase
+  // Sync saves + dismissed from Supabase on login
   useEffect(() => {
-    if (!user) { setSavedIds(new Set()); setDismissedIds(new Set()); setSavedCards([]); return; }
+    if (!user) { setSavedIds(new Set()); setSavedCards([]); return; }
     supabase.from("saves").select("card_id").then(({ data }) => {
       const ids = new Set((data || []).map((r) => r.card_id));
       setSavedIds(ids);
       setSavedCards(allCards.filter((c) => ids.has(c.id)));
     });
+    // Pre-load previously dismissed cards into deckActed so they don't resurface
     supabase.from("dismissed").select("card_id").then(({ data }) => {
-      setDismissedIds(new Set((data || []).map((r) => r.card_id)));
+      const ids = new Set((data || []).map((r) => r.card_id));
+      setDeckActed((prev) => new Set([...prev, ...ids]));
     });
   }, [user, supabase, allCards]);
 
-  const deck = useMemo(() => orderDeck(allCards, dismissedIds, catFilter), [allCards, dismissedIds, catFilter]);
-  const topCard = deck[deckPos] ?? null;
+  const deck = useMemo(() => orderDeck(allCards, deckActed, catFilter), [allCards, deckActed, catFilter]);
+  // Always show deck[0] — deckActed removal makes next card bubble up automatically
+  const topCard = deck[0] ?? null;
   const isEmpty = !topCard;
 
-  // Gate fires once after card 3
+  // Total cards for this filter = acted + remaining
+  const progressTotal = progressCount + deck.length;
+
+  // Gate fires once after 3 cards acted on
   useEffect(() => {
-    if (deckPos >= 3 && !user && !gateSkipped && !showGate) setShowGate(true);
-  }, [deckPos, user, gateSkipped, showGate]);
+    if (progressCount >= 3 && !user && !gateSkipped && !showGate) setShowGate(true);
+  }, [progressCount, user, gateSkipped, showGate]);
 
   const doAction = useCallback(async (action) => {
     if (!topCard && action !== "share") return;
@@ -860,18 +880,20 @@ export default function PageClient({ initialCards }) {
       return;
     }
 
+    // Both save + skip: mark card as acted on so deck[0] advances to next card
+    setDeckActed((prev) => new Set([...prev, topCard.id]));
+    setProgressCount((p) => p + 1);
     setExpandedId(null);
+
     if (action === "save") {
-      setSavedIds((s) => new Set([...s, topCard.id]));
-      setSavedCards((s) => [topCard, ...s.filter((c) => c.id !== topCard.id)]);
+      setSavedIds((prev) => new Set([...prev, topCard.id]));
+      setSavedCards((prev) => [topCard, ...prev.filter((c) => c.id !== topCard.id)]);
       setStats((s) => ({ ...s, saved: s.saved + 1 }));
       if (user) supabase.from("saves").upsert({ user_id: user.id, card_id: topCard.id });
     } else {
-      setDismissedIds((s) => new Set([...s, topCard.id]));
       setStats((s) => ({ ...s, next: s.next + 1 }));
       if (user) supabase.from("dismissed").upsert({ user_id: user.id, card_id: topCard.id });
     }
-    setDeckPos((p) => p + 1);
   }, [topCard, user, supabase]);
 
   // Keyboard shortcuts
@@ -896,7 +918,7 @@ export default function PageClient({ initialCards }) {
       {/* ── Masthead ──────────────────────────────────────────── */}
       <header style={{ flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
-          <div style={{ fontSize: 20, fontWeight: 900, color: "var(--text-primary)", letterSpacing: "-0.025em", lineHeight: 1 }}>AITechHive</div>
+          <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", letterSpacing: "-0.02em", lineHeight: 1 }}>AITechHive</div>
           <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.07em" }}>BFSI · Enterprise AI · {fmtDate()}</div>
         </div>
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
@@ -917,12 +939,12 @@ export default function PageClient({ initialCards }) {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
           return (
-            <button key={key} onClick={() => { setCatFilter(key); setDeckPos(0); }}
+            <button key={key} onClick={() => { setCatFilter(key); setProgressCount(0); setExpandedId(null); }}
               style={{
                 flexShrink: 0, padding: "7px 14px", borderRadius: 100, fontSize: 13, fontWeight: 700, cursor: "pointer", border: "none",
                 background: active ? (meta?.hex || "var(--text-primary)") : "var(--card)",
-                color: active ? "white" : "var(--text-secondary)",
-                boxShadow: active ? `0 3px 10px ${meta ? meta.hex + "50" : "rgba(0,0,0,0.25)"}` : "0 1px 3px rgba(0,0,0,0.06)",
+                color: active ? "white" : "var(--text-secondary)", fontWeight: active ? 600 : 500,
+                boxShadow: active ? `0 2px 8px ${meta ? meta.hex + "45" : "rgba(0,0,0,0.22)"}` : "0 1px 2px rgba(0,0,0,0.05)",
                 transition: "all 0.15s ease",
               }}>
               {key === "all" ? "All" : meta.label}
@@ -932,14 +954,14 @@ export default function PageClient({ initialCards }) {
       </div>
 
       {/* ── Progress strip ─────────────────────────────────────── */}
-      {deck.length > 0 && !isEmpty && (
+      {progressTotal > 0 && !isEmpty && (
         <div style={{ flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
-          {deck.slice(0, Math.min(deck.length, 14)).map((_, i) => (
-            <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < deckPos ? "var(--blue)" : "var(--separator)" }} />
+          {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
+            <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
           ))}
-          {deck.length > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
-          <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 800, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
-            {deckPos + 1}/{deck.length}
+          {progressTotal > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
+          <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
+            {progressCount + 1}/{progressTotal}
           </span>
         </div>
       )}
@@ -988,7 +1010,7 @@ export default function PageClient({ initialCards }) {
                     style={{ position: "absolute", inset: 0 }}>
                     <EmptyState
                       stats={stats}
-                      onReshuffle={() => { setDeckPos(0); setStats({ saved: 0, next: 0, shared: 0 }); }}
+                      onReshuffle={() => { setDeckActed(new Set()); setProgressCount(0); setStats({ saved: 0, next: 0, shared: 0 }); }}
                       onOpenArchive={() => setArchiveOpen(true)}
                     />
                   </motion.div>

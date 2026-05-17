@@ -100,7 +100,7 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
   const client = new Anthropic({ apiKey: API_KEY });
   const params = {
     model: MODEL,
-    max_tokens: 8000,
+    max_tokens: 16000,
     system: [{ type: "text", text: systemPrompt, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: userContent }],
   };
@@ -135,7 +135,7 @@ async function callOpenAICompatible({ systemPrompt, userContent, doWebSearch }) 
       { role: "user", content: userContent + webContext },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 8000,
+    max_tokens: 16000,
   });
   const text = resp.choices?.[0]?.message?.content || "";
   return { text, usage: resp.usage };
