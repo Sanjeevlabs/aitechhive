@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import PageClient from "./page-client";
 
-export const revalidate = 240;
+export const dynamic = "force-dynamic";
 
 async function loadCards() {
   try {
