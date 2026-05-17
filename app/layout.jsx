@@ -39,7 +39,9 @@ export const viewport = {
 export default function RootLayout({ children }) {
   const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`} suppressHydrationWarning>
+      {/* Prevent flash of wrong theme — runs before paint */}
+      <script dangerouslySetInnerHTML={{ __html: `try{var t=localStorage.getItem('theme'),d=t?t==='dark':window.matchMedia('(prefers-color-scheme:dark)').matches;if(d)document.documentElement.dataset.theme='dark';}catch(e){}` }} />
       <body>{children}</body>
       {plausibleDomain && (
         <Script strategy="afterInteractive" data-domain={plausibleDomain} src="https://plausible.io/js/script.js" />
