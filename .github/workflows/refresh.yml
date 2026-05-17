@@ -2,7 +2,9 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    - cron: '30 0,4,8,12,16,20 * * *'   # 6x/day, every 4h. 00:30 UTC = 06:00 IST.
+    # 8x per day — every 3h at :15, starting 01:15 UTC (06:45 IST)
+    # Gemini free: 1500 req/day, 250k tokens/day. One refresh ≈ 3 req + ~8k tokens. Very safe.
+    - cron: '15 1,4,7,10,13,16,19,22 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -14,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -22,10 +24,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install
+      - name: Install pipeline deps
         run: npm install rss-parser @anthropic-ai/sdk openai
 
-      - name: Fetch feeds + ATS
+      - name: Fetch RSS feeds
         run: node scripts/fetch-feeds.mjs
 
       - name: Enrich with LLM
@@ -41,13 +43,13 @@ jobs:
         env:
           NEXT_PUBLIC_APP_URL: https://aitechhive.com
 
-      - name: Commit
+      - name: Commit & push if changed
         run: |
           git config user.name "aitechhive-bot"
           git config user.email "bot@aitechhive.com"
           git add data/cards.json public/sitemap.xml
           if git diff --staged --quiet; then
-            echo "No changes."
+            echo "No new content."
           else
             git commit -m "chore: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
