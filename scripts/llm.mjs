@@ -21,7 +21,7 @@ const PROVIDERS = {
   },
   gemini: {
     label: "Google Gemini",
-    defaultModel: "gemini-2.0-flash",
+    defaultModel: "gemini-2.5-flash",
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
     webSearch: false,
     rates: { in: 0.075, out: 0.3 },
