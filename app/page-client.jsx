@@ -732,14 +732,24 @@ function IconBtn({ children, onClick, label, badge }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   ACTION BAR BUTTONS
+   ACTION BAR BUTTONS — neutral, matches header IconBtn chrome
 ───────────────────────────────────────────────────────────────── */
-function BigActionBtn({ label, onClick, bg, color, border, children }) {
+function BigActionBtn({ label, onClick, children, active }) {
   return (
     <button
       onClick={onClick} aria-label={label}
-      style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 5, padding: "12px 6px", borderRadius: 18, background: bg, color, border: border ? "1.5px solid var(--separator)" : "none", cursor: "pointer", fontSize: 10, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", userSelect: "none" }}
-      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.93)"; e.currentTarget.style.opacity = "0.85"; }}
+      style={{
+        flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+        gap: 5, padding: "12px 6px", borderRadius: 14,
+        background: "var(--card)",
+        color: "var(--text-primary)",
+        border: "1px solid var(--separator)",
+        cursor: "pointer", fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
+        userSelect: "none",
+        transition: "transform 0.12s ease, opacity 0.12s ease",
+        opacity: active ? 1 : 0.95,
+      }}
+      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.96)"; e.currentTarget.style.opacity = "0.85"; }}
       onPointerUp={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
       onPointerLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
     >
@@ -814,6 +824,13 @@ export default function PageClient({ initialCards }) {
 
   const doAction = useCallback(async (action) => {
     if (!topCard && action !== "share") return;
+
+    // Save requires a session — capture email + sync across devices.
+    // Open the gate, hold the save, and let the auth flow resume the action.
+    if (action === "save" && !user) {
+      setShowGate(true);
+      return;
+    }
 
     if (action === "share") {
       setShareCard(topCard);
@@ -973,16 +990,16 @@ export default function PageClient({ initialCards }) {
       {!isEmpty && (
         <div style={{ flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
           <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 10, alignItems: "stretch" }}>
-            <BigActionBtn label="Skip" onClick={() => doAction("next")} bg="var(--card)" color="var(--red)" border>
-              <X size={22} strokeWidth={2.5} />
+            <BigActionBtn label="Skip" onClick={() => doAction("next")}>
+              <X size={20} strokeWidth={2.25} />
             </BigActionBtn>
 
-            <BigActionBtn label="Share" onClick={() => doAction("share")} bg="var(--card)" color="var(--blue)" border>
-              <Share2 size={20} strokeWidth={2.5} />
+            <BigActionBtn label="Share" onClick={() => doAction("share")}>
+              <Share2 size={18} strokeWidth={2.25} />
             </BigActionBtn>
 
-            <BigActionBtn label="Save" onClick={() => doAction("save")} bg="var(--green)" color="white">
-              <Bookmark size={22} strokeWidth={2.5} fill={savedIds.has(topCard?.id) ? "white" : "none"} />
+            <BigActionBtn label={user ? "Save" : "Sign in to save"} onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
+              <Bookmark size={20} strokeWidth={2.25} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
             </BigActionBtn>
           </div>
         </div>
