@@ -390,88 +390,161 @@ function DraggableCard({ card, onSwipe }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
+   DESKTOP BACKGROUND  —  geometric glow fills empty sides on laptop
+───────────────────────────────────────────────────────────────── */
+function DesktopBackground({ dark }) {
+  return (
+    <div style={{ position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none", overflow: "hidden" }} aria-hidden="true">
+      {/* Dot grid */}
+      <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+        <defs>
+          <pattern id="bg-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill={dark ? "rgba(255,255,255,0.055)" : "rgba(0,0,0,0.04)"} />
+          </pattern>
+          <linearGradient id="gL" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#7C3AED" stopOpacity={dark ? "0.55" : "0.2"} />
+            <stop offset="100%" stopColor="#2563EB" stopOpacity={dark ? "0.35" : "0.12"} />
+          </linearGradient>
+          <linearGradient id="gR" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#0EA5E9" stopOpacity={dark ? "0.5" : "0.18"} />
+            <stop offset="100%" stopColor="#7C3AED" stopOpacity={dark ? "0.35" : "0.12"} />
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#bg-dots)" />
+        {/* Left concentric rings */}
+        <circle cx="13%" cy="50%" r="80"  fill="none" stroke="url(#gL)" strokeWidth="0.75" />
+        <circle cx="13%" cy="50%" r="150" fill="none" stroke="url(#gL)" strokeWidth="0.5"  />
+        <circle cx="13%" cy="50%" r="220" fill="none" stroke="url(#gL)" strokeWidth="0.4" opacity="0.5" />
+        {/* Left crosshair */}
+        <line x1="13%" y1="14%" x2="13%" y2="86%" stroke="url(#gL)" strokeWidth="0.4" opacity="0.35" />
+        <line x1="1%"  y1="50%" x2="25%" y2="50%" stroke="url(#gL)" strokeWidth="0.4" opacity="0.35" />
+        {/* Right concentric rings */}
+        <circle cx="87%" cy="50%" r="80"  fill="none" stroke="url(#gR)" strokeWidth="0.75" />
+        <circle cx="87%" cy="50%" r="150" fill="none" stroke="url(#gR)" strokeWidth="0.5"  />
+        <circle cx="87%" cy="50%" r="220" fill="none" stroke="url(#gR)" strokeWidth="0.4" opacity="0.5" />
+        {/* Right crosshair */}
+        <line x1="87%" y1="14%" x2="87%" y2="86%" stroke="url(#gR)" strokeWidth="0.4" opacity="0.35" />
+        <line x1="75%" y1="50%" x2="99%" y2="50%" stroke="url(#gR)" strokeWidth="0.4" opacity="0.35" />
+      </svg>
+
+      {/* Glow blobs — left */}
+      <div style={{ position: "absolute", top: "22%", left: "4%", width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(120,60,255,0.18) 0%, transparent 70%)", filter: "blur(64px)" }} />
+      <div style={{ position: "absolute", bottom: "8%", left: "12%", width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(0,200,190,0.10) 0%, transparent 70%)", filter: "blur(48px)" }} />
+      {/* Glow blobs — right */}
+      <div style={{ position: "absolute", top: "48%", right: "4%", width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(0,130,255,0.16) 0%, transparent 70%)", filter: "blur(56px)", transform: "translateY(-50%)" }} />
+      <div style={{ position: "absolute", top: "15%", right: "14%", width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(120,60,255,0.10) 0%, transparent 70%)", filter: "blur(40px)" }} />
+
+      {/* Glowing accent dots (dark mode only) */}
+      {dark && (
+        <>
+          <div style={{ position: "absolute", top: "22%", left: "17%", width: 5, height: 5, borderRadius: "50%", background: "rgba(139,92,246,0.95)", boxShadow: "0 0 14px 5px rgba(139,92,246,0.55)" }} />
+          <div style={{ position: "absolute", top: "68%", left: "7%",  width: 4, height: 4, borderRadius: "50%", background: "rgba(59,130,246,0.95)", boxShadow: "0 0 10px 4px rgba(59,130,246,0.5)" }} />
+          <div style={{ position: "absolute", top: "33%", right: "11%", width: 5, height: 5, borderRadius: "50%", background: "rgba(14,165,233,0.95)", boxShadow: "0 0 14px 5px rgba(14,165,233,0.5)" }} />
+          <div style={{ position: "absolute", bottom: "22%", right: "17%", width: 4, height: 4, borderRadius: "50%", background: "rgba(139,92,246,0.95)", boxShadow: "0 0 10px 4px rgba(139,92,246,0.5)" }} />
+        </>
+      )}
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
    WELCOME CARD  —  shown once on first visit
 ───────────────────────────────────────────────────────────────── */
 function WelcomeCard({ onDismiss }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.96 }}
+      transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
       style={{
         position: "absolute", inset: 0, zIndex: 10,
-        background: "#0C0C0E", borderRadius: 24, overflow: "hidden",
+        background: "linear-gradient(160deg, #0E0E1C 0%, #08080F 55%, #0C0C1A 100%)",
+        borderRadius: 24, overflow: "hidden",
         display: "flex", flexDirection: "column",
-        boxShadow: "0 4px 24px rgba(0,0,0,0.22), 0 24px 64px rgba(0,0,0,0.18)",
+        boxShadow: "0 0 0 1px rgba(120,80,255,0.28), 0 8px 48px rgba(0,0,0,0.65), 0 0 80px rgba(80,40,200,0.15)",
         userSelect: "none",
       }}
     >
-      {/* Top bar */}
-      <div style={{ flexShrink: 0, padding: "20px 22px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-          <div style={{ width: 30, height: 30, borderRadius: 8, background: "white", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "#0C0C0E" }}>ath</div>
-          <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.45)", letterSpacing: "0.04em", textTransform: "uppercase" }}>AITechHive</span>
-        </div>
-        <span style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
-      </div>
+      {/* Background glow orbs inside card */}
+      <div style={{ position: "absolute", top: -90, left: "50%", transform: "translateX(-50%)", width: 400, height: 340, background: "radial-gradient(ellipse, rgba(100,55,255,0.24) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
+      <div style={{ position: "absolute", bottom: -60, right: -50, width: 280, height: 280, background: "radial-gradient(circle, rgba(0,120,255,0.18) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
 
-      {/* Editorial headline */}
-      <div style={{ flex: 1, minHeight: 0, padding: "22px 22px 0", overflowY: "auto" }}>
-        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.10)", paddingBottom: 18, marginBottom: 18 }}>
-          <p style={{ margin: "0 0 10px", fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
-            BFSI · Enterprise AI · Daily Intelligence
-          </p>
-          <h2 style={{ margin: 0, fontSize: 26, fontWeight: 700, lineHeight: 1.18, color: "white", fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
-            The briefing that senior bankers read before the market opens.
-          </h2>
-        </div>
-
-        {/* Stats row */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 18, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
-          {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
-            <div key={lbl} style={{ padding: "13px 10px", background: "rgba(255,255,255,0.04)", textAlign: "center" }}>
-              <div style={{ fontSize: 22, fontWeight: 800, color: "white", fontFamily: "var(--font-mono)", lineHeight: 1 }}>{val}</div>
-              <div style={{ fontSize: 9.5, fontWeight: 600, color: "rgba(255,255,255,0.35)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* What's covered */}
-        <div style={{ marginBottom: 18 }}>
-          <p style={{ margin: "0 0 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.1em", textTransform: "uppercase" }}>What we track</p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
-            {["Regulation & enforcement", "Bank AI deployments", "Fintech funding", "Research & models", "Career & comp", "Market signals"].map((t) => (
-              <span key={t} style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.55)", padding: "4px 10px", borderRadius: 100, border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)" }}>{t}</span>
-            ))}
+      {/* All content sits above orbs */}
+      <div style={{ position: "relative", zIndex: 1, flex: 1, display: "flex", flexDirection: "column" }}>
+        {/* Top bar */}
+        <div style={{ flexShrink: 0, padding: "20px 22px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+            <div style={{ width: 30, height: 30, borderRadius: 8, background: "linear-gradient(135deg,#7B5CF6,#3B82F6)", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", boxShadow: "0 0 14px rgba(123,92,246,0.55)" }}>ath</div>
+            <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.48)", letterSpacing: "0.04em", textTransform: "uppercase" }}>AITechHive</span>
           </div>
+          <span style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.22)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
         </div>
 
-        {/* How to use — minimal, text-only */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 14, marginBottom: 6 }}>
-          <p style={{ margin: "0 0 8px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.1em", textTransform: "uppercase" }}>How it works</p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-            {[["Swipe right or tap Save", "Bookmark to your reading list, synced across devices"], ["Swipe left or tap Skip", "Advance to the next story"], ["Tap Share", "Generate a social card to send to your team"]].map(([act, desc]) => (
-              <div key={act} style={{ display: "flex", gap: 10, alignItems: "baseline" }}>
-                <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.7)", flexShrink: 0, minWidth: 140 }}>{act}</span>
-                <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.4 }}>{desc}</span>
+        {/* Editorial headline */}
+        <div style={{ flex: 1, minHeight: 0, padding: "22px 22px 0", overflowY: "auto" }}>
+          <div style={{ borderBottom: "1px solid rgba(255,255,255,0.07)", paddingBottom: 18, marginBottom: 18 }}>
+            <p style={{ margin: "0 0 10px", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", background: "linear-gradient(90deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+              BFSI · Enterprise AI · Daily Intelligence
+            </p>
+            <h2 style={{ margin: 0, fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: "white", letterSpacing: "-0.02em" }}>
+              The briefing senior bankers read{" "}
+              <span style={{ background: "linear-gradient(90deg,#A78BFA 0%,#60A5FA 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                before the market opens.
+              </span>
+            </h2>
+          </div>
+
+          {/* Stats row */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 18, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+            {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
+              <div key={lbl} style={{ padding: "13px 10px", background: "rgba(255,255,255,0.03)", textAlign: "center" }}>
+                <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1, background: "linear-gradient(135deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{val}</div>
+                <div style={{ fontSize: 9.5, fontWeight: 600, color: "rgba(255,255,255,0.28)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* CTA */}
-      <div style={{ flexShrink: 0, padding: "16px 22px max(18px, env(safe-area-inset-bottom))", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-        <button
-          onClick={onDismiss}
-          style={{ width: "100%", padding: "14px", borderRadius: 13, background: "white", color: "#0C0C0E", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em" }}
-        >
-          Start reading
-        </button>
-        <p style={{ margin: "10px 0 0", fontSize: 10.5, color: "rgba(255,255,255,0.25)", textAlign: "center", lineHeight: 1.4 }}>
-          Free. No newsletters. Saves sync across devices.
-        </p>
+          {/* What we track */}
+          <div style={{ marginBottom: 18 }}>
+            <p style={{ margin: "0 0 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.28)", letterSpacing: "0.1em", textTransform: "uppercase" }}>What we track</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+              {["Regulation & enforcement", "Bank AI deployments", "Fintech funding", "Research & models", "Career & comp", "Market signals"].map((t) => (
+                <span key={t} style={{ fontSize: 11, fontWeight: 600, color: "rgba(200,180,255,0.75)", padding: "4px 10px", borderRadius: 100, border: "1px solid rgba(120,80,255,0.28)", background: "rgba(120,80,255,0.09)" }}>{t}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* How it works */}
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 14, marginBottom: 6 }}>
+            <p style={{ margin: "0 0 8px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.28)", letterSpacing: "0.1em", textTransform: "uppercase" }}>How it works</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+              {[
+                ["Swipe right or tap Save", "Bookmark to your reading list"],
+                ["Swipe left or tap Skip", "Advance to the next story"],
+                ["Tap Share", "Generate a social card for your team"],
+              ].map(([act, desc]) => (
+                <div key={act} style={{ display: "flex", gap: 10, alignItems: "baseline" }}>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.78)", flexShrink: 0, minWidth: 140 }}>{act}</span>
+                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.32)", lineHeight: 1.4 }}>{desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div style={{ flexShrink: 0, padding: "16px 22px max(18px, env(safe-area-inset-bottom))", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+          <button
+            onClick={onDismiss}
+            style={{ width: "100%", padding: "14px", borderRadius: 13, background: "linear-gradient(135deg,#7B5CF6 0%,#3B82F6 100%)", color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em", boxShadow: "0 4px 22px rgba(123,92,246,0.5)" }}
+          >
+            Start reading
+          </button>
+          <p style={{ margin: "10px 0 0", fontSize: 10.5, color: "rgba(255,255,255,0.2)", textAlign: "center", lineHeight: 1.4 }}>
+            Free. No newsletters. Saves sync across devices.
+          </p>
+        </div>
       </div>
     </motion.div>
   );
@@ -1523,6 +1596,9 @@ export default function PageClient({ initialCards }) {
         position: "relative",
       }}
     >
+      {/* ── Desktop geometric background — fills empty sides on laptop/wide screens */}
+      <DesktopBackground dark={dark} />
+
       {/* ── Pull-to-refresh indicator ─────────────────────────── */}
       <div
         aria-hidden="true"
