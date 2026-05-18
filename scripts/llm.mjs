@@ -21,7 +21,7 @@ const PROVIDERS = {
   },
   gemini: {
     label: "Google Gemini",
-    defaultModel: "gemini-2.5-flash",
+    defaultModel: "gemini-2.0-flash",   // 2.5-flash has extended thinking (~14min); 2.0-flash is fast
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
     webSearch: false,
     rates: { in: 0.075, out: 0.3 },
@@ -118,7 +118,8 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
 
 async function callOpenAICompatible({ systemPrompt, userContent, doWebSearch }) {
   const cfg = PROVIDERS[PROVIDER];
-  const client = new OpenAI({ apiKey: API_KEY, baseURL: cfg.baseURL });
+  // 5-minute hard timeout — Gemini 2.5-flash thinking mode can hang for 14+ minutes
+  const client = new OpenAI({ apiKey: API_KEY, baseURL: cfg.baseURL, timeout: 300_000, maxRetries: 0 });
 
   let webContext = "";
   if (doWebSearch && !cfg.webSearch) {

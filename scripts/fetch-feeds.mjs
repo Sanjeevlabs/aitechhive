@@ -39,6 +39,11 @@ const RSS_SOURCES = [
   { name: "Fintech M&A", url: "https://news.google.com/rss/search?q=when:1d+(%22fintech+acquires%22+OR+%22fintech+acquisition%22+OR+%22bank+acquires+AI%22+OR+%22bank+buys+AI%22)&hl=en-US&gl=US&ceid=US:en" },
   { name: "Bank-AI Deployments", url: "https://news.google.com/rss/search?q=when:2d+(%22deploys+AI%22+OR+%22rolls+out+AI%22+OR+%22launches+AI%22)+(bank+OR+insurer+OR+payments)&hl=en-US&gl=US&ceid=US:en" },
 
+  // ── Frontier AI / enterprise tech ────────────────────────────────────────
+  { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
+  { name: "VentureBeat AI", url: "https://venturebeat.com/category/ai/feed/" },
+  { name: "Wired AI", url: "https://www.wired.com/feed/tag/ai/latest/rss" },
+
   // ── Top financial firm research / insights (Google News passthroughs) ────
   { name: "Goldman Insights", url: "https://news.google.com/rss/search?q=when:3d+(site:goldmansachs.com+OR+%22Goldman+Sachs+Research%22)&hl=en-US&gl=US&ceid=US:en" },
   { name: "JPMorgan Research", url: "https://news.google.com/rss/search?q=when:3d+(%22JPMorgan+Research%22+OR+%22JPMorgan+Insights%22+OR+site:jpmorgan.com)&hl=en-US&gl=US&ceid=US:en" },
@@ -61,7 +66,6 @@ const RSS_SOURCES = [
   { name: "Google Research", url: "https://research.google/blog/rss/" },
   { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
   { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
-  { name: "Meta AI", url: "https://ai.meta.com/blog/rss/" },
   { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/" },
   { name: "MIT Tech Review", url: "https://www.technologyreview.com/feed/" },
 
