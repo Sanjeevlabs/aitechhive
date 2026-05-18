@@ -461,90 +461,66 @@ function WelcomeCard({ onDismiss }) {
         position: "absolute", inset: 0, zIndex: 10,
         background: "linear-gradient(160deg, #0E0E1C 0%, #08080F 55%, #0C0C1A 100%)",
         borderRadius: 24, overflow: "hidden",
-        display: "flex", flexDirection: "column",
+        display: "flex", flexDirection: "column", justifyContent: "space-between",
+        padding: "24px 22px 20px",
         boxShadow: "0 0 0 1px rgba(120,80,255,0.28), 0 8px 48px rgba(0,0,0,0.65), 0 0 80px rgba(80,40,200,0.15)",
         userSelect: "none",
       }}
     >
-      {/* Background glow orbs inside card */}
-      <div style={{ position: "absolute", top: -90, left: "50%", transform: "translateX(-50%)", width: 400, height: 340, background: "radial-gradient(ellipse, rgba(100,55,255,0.24) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
-      <div style={{ position: "absolute", bottom: -60, right: -50, width: 280, height: 280, background: "radial-gradient(circle, rgba(0,120,255,0.18) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
+      {/* Glow orbs — purely decorative, behind all content */}
+      <div style={{ position: "absolute", top: -80, left: "50%", transform: "translateX(-50%)", width: 380, height: 300, background: "radial-gradient(ellipse, rgba(100,55,255,0.22) 0%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", bottom: -50, right: -40, width: 260, height: 260, background: "radial-gradient(circle, rgba(0,120,255,0.16) 0%, transparent 70%)", pointerEvents: "none" }} />
 
-      {/* All content sits above orbs */}
-      <div style={{ position: "relative", zIndex: 1, flex: 1, display: "flex", flexDirection: "column" }}>
-        {/* Top bar */}
-        <div style={{ flexShrink: 0, padding: "20px 22px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-            <div style={{ width: 30, height: 30, borderRadius: 8, background: "linear-gradient(135deg,#7B5CF6,#3B82F6)", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", boxShadow: "0 0 14px rgba(123,92,246,0.55)" }}>ath</div>
-            <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.48)", letterSpacing: "0.04em", textTransform: "uppercase" }}>AITechHive</span>
-          </div>
-          <span style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.22)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
+      {/* ── Top: logo + tagline ── */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+          <div style={{ width: 30, height: 30, borderRadius: 8, background: "linear-gradient(135deg,#7B5CF6,#3B82F6)", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", boxShadow: "0 0 14px rgba(123,92,246,0.55)" }}>ath</div>
+          <span style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.45)", letterSpacing: "0.05em", textTransform: "uppercase" }}>AITechHive</span>
         </div>
+        <span style={{ fontSize: 10, fontWeight: 600, color: "rgba(255,255,255,0.2)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
+      </div>
 
-        {/* Editorial headline */}
-        <div style={{ flex: 1, minHeight: 0, padding: "22px 22px 0", overflowY: "auto" }}>
-          <div style={{ borderBottom: "1px solid rgba(255,255,255,0.07)", paddingBottom: 18, marginBottom: 18 }}>
-            <p style={{ margin: "0 0 10px", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", background: "linear-gradient(90deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              BFSI · Enterprise AI · Daily Intelligence
-            </p>
-            <h2 style={{ margin: 0, fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: "white", letterSpacing: "-0.02em" }}>
-              The briefing senior bankers read{" "}
-              <span style={{ background: "linear-gradient(90deg,#A78BFA 0%,#60A5FA 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                before the market opens.
-              </span>
-            </h2>
-          </div>
+      {/* ── Middle: headline + stats + topics ── */}
+      <div>
+        <p style={{ margin: "0 0 8px", fontSize: 10.5, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", background: "linear-gradient(90deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+          BFSI · Enterprise AI · Daily Intelligence
+        </p>
+        <h2 style={{ margin: "0 0 20px", fontSize: 22, fontWeight: 800, lineHeight: 1.22, color: "white", letterSpacing: "-0.02em" }}>
+          The briefing senior bankers read{" "}
+          <span style={{ background: "linear-gradient(90deg,#A78BFA 0%,#60A5FA 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+            before the market opens.
+          </span>
+        </h2>
 
-          {/* Stats row */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 18, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
-            {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
-              <div key={lbl} style={{ padding: "13px 10px", background: "rgba(255,255,255,0.03)", textAlign: "center" }}>
-                <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1, background: "linear-gradient(135deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{val}</div>
-                <div style={{ fontSize: 9.5, fontWeight: 600, color: "rgba(255,255,255,0.28)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* What we track */}
-          <div style={{ marginBottom: 18 }}>
-            <p style={{ margin: "0 0 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.28)", letterSpacing: "0.1em", textTransform: "uppercase" }}>What we track</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
-              {["Regulation & enforcement", "Bank AI deployments", "Fintech funding", "Research & models", "Career & comp", "Market signals"].map((t) => (
-                <span key={t} style={{ fontSize: 11, fontWeight: 600, color: "rgba(200,180,255,0.75)", padding: "4px 10px", borderRadius: 100, border: "1px solid rgba(120,80,255,0.28)", background: "rgba(120,80,255,0.09)" }}>{t}</span>
-              ))}
+        {/* Stats row */}
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 16, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+          {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
+            <div key={lbl} style={{ padding: "11px 8px", background: "rgba(255,255,255,0.03)", textAlign: "center" }}>
+              <div style={{ fontSize: 20, fontWeight: 800, lineHeight: 1, background: "linear-gradient(135deg,#A78BFA,#60A5FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{val}</div>
+              <div style={{ fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.28)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
             </div>
-          </div>
-
-          {/* How it works */}
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 14, marginBottom: 6 }}>
-            <p style={{ margin: "0 0 8px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.28)", letterSpacing: "0.1em", textTransform: "uppercase" }}>How it works</p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-              {[
-                ["Swipe right or tap Save", "Bookmark to your reading list"],
-                ["Swipe left or tap Skip", "Advance to the next story"],
-                ["Tap Share", "Generate a social card for your team"],
-              ].map(([act, desc]) => (
-                <div key={act} style={{ display: "flex", gap: 10, alignItems: "baseline" }}>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.78)", flexShrink: 0, minWidth: 140 }}>{act}</span>
-                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.32)", lineHeight: 1.4 }}>{desc}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* CTA */}
-        <div style={{ flexShrink: 0, padding: "16px 22px max(18px, env(safe-area-inset-bottom))", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-          <button
-            onClick={onDismiss}
-            style={{ width: "100%", padding: "14px", borderRadius: 13, background: "linear-gradient(135deg,#7B5CF6 0%,#3B82F6 100%)", color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em", boxShadow: "0 4px 22px rgba(123,92,246,0.5)" }}
-          >
-            Start reading
-          </button>
-          <p style={{ margin: "10px 0 0", fontSize: 10.5, color: "rgba(255,255,255,0.2)", textAlign: "center", lineHeight: 1.4 }}>
-            Free. No newsletters. Saves sync across devices.
-          </p>
+        {/* Topics */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+          {["Regulation", "Bank AI", "Fintech funding", "Research", "Career & comp", "Markets"].map((t) => (
+            <span key={t} style={{ fontSize: 11, fontWeight: 600, color: "rgba(200,180,255,0.7)", padding: "3px 9px", borderRadius: 100, border: "1px solid rgba(120,80,255,0.25)", background: "rgba(120,80,255,0.08)" }}>{t}</span>
+          ))}
         </div>
+      </div>
+
+      {/* ── Bottom: CTA — always visible, no flex nesting ── */}
+      <div>
+        <button
+          onClick={onDismiss}
+          style={{ width: "100%", padding: "13px", borderRadius: 13, background: "linear-gradient(135deg,#7B5CF6 0%,#3B82F6 100%)", color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em", boxShadow: "0 4px 22px rgba(123,92,246,0.5)" }}
+        >
+          Start reading
+        </button>
+        <p style={{ margin: "8px 0 0", fontSize: 10, color: "rgba(255,255,255,0.2)", textAlign: "center" }}>
+          Free · No newsletters · Saves sync across devices
+        </p>
       </div>
     </motion.div>
   );
@@ -1337,7 +1313,7 @@ function Wordmark() {
         ath
       </div>
       <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.09em" }}>
-        BFSI · Enterprise AI<br />8× daily
+        BFSI · Enterprise AI
       </div>
     </div>
   );
