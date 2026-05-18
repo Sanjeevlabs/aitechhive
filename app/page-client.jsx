@@ -715,42 +715,27 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   WORDMARK — "[ath]  ai.tech.hive"
-   Lowercase. Dots accented in brand blue for web-native rhythm.
+   WORDMARK — "ath" chip only. Compact, monogrammatic.
 ───────────────────────────────────────────────────────────────── */
 function Wordmark() {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
       <div
-        aria-hidden="true"
+        aria-label="ath — ai tech hive"
         style={{
-          width: 30, height: 30, borderRadius: 8,
+          width: 38, height: 38, borderRadius: 10,
           background: "var(--text-primary)",
           color: "var(--bg)",
           display: "grid", placeItems: "center",
           fontFamily: "var(--font-mono)",
-          fontSize: 12, fontWeight: 700, letterSpacing: "-0.02em",
+          fontSize: 14, fontWeight: 700, letterSpacing: "-0.03em",
           lineHeight: 1,
         }}
       >
         ath
       </div>
-      <div>
-        <div
-          style={{
-            fontSize: 19, fontWeight: 600,
-            color: "var(--text-primary)",
-            letterSpacing: "-0.02em", lineHeight: 1,
-            fontFamily: "var(--font-sans)",
-          }}
-        >
-          ai<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
-          tech<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
-          hive
-        </div>
-        <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.09em" }}>
-          BFSI · Enterprise AI · 8× daily
-        </div>
+      <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.09em" }}>
+        BFSI · Enterprise AI<br />8× daily
       </div>
     </div>
   );
