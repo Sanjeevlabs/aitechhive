@@ -978,7 +978,7 @@ export default function PageClient({ initialCards }) {
           <div style={{ position: "relative", width: "100%", maxWidth: 520 }}>
 
             {/* Stack layer 2 — farthest back */}
-            {!isEmpty && deck[deckPos + 2] && (
+            {!isEmpty && deck[2] && (
               <div style={{
                 position: "absolute", left: 18, right: 18, top: 0, bottom: 0,
                 background: "var(--card-secondary)", borderRadius: 24,
@@ -990,7 +990,7 @@ export default function PageClient({ initialCards }) {
             )}
 
             {/* Stack layer 1 — behind current */}
-            {!isEmpty && deck[deckPos + 1] && (
+            {!isEmpty && deck[1] && (
               <div style={{
                 position: "absolute", left: 9, right: 9, top: 0, bottom: 0,
                 background: "var(--card)", borderRadius: 24,
