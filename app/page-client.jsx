@@ -392,10 +392,10 @@ function DraggableCard({ card, onSwipe }) {
 /* ─────────────────────────────────────────────────────────────────
    SIGNUP GATE
 ───────────────────────────────────────────────────────────────── */
-function SignupGate({ supabase, onClose }) {
+function SignupGate({ supabase, onClose, initialError }) {
   const [email, setEmail] = useState("");
-  const [phase, setPhase] = useState("idle");
-  const [error, setError] = useState("");
+  const [phase, setPhase] = useState(initialError ? "error" : "idle");
+  const [error, setError] = useState(initialError || "");
 
   const signInEmail = async () => {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("Enter a valid email."); return; }
@@ -989,6 +989,7 @@ export default function PageClient({ initialCards }) {
   const [allCards] = useState(initialCards || []);
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
+  const [authError, setAuthError] = useState("");
   const [savedIds, setSavedIds] = useState(new Set());
   // deckActed: every card you've saved or skipped (removes it from deck[0] view)
   // Separate from savedIds — saves are bookmarks, deckActed is navigation
@@ -1003,12 +1004,30 @@ export default function PageClient({ initialCards }) {
   const [showGate, setShowGate] = useState(false);
   const [gateSkipped, setGateSkipped] = useState(false);
 
-  // Auth
+  // Auth — validate session server-side and subscribe to all future auth events
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => setUser(data.user));
-    const { data: sub } = supabase.auth.onAuthStateChange((_, s) => setUser(s?.user || null));
-    return () => sub.subscription.unsubscribe();
+    supabase.auth.getUser().then(({ data: { user } }) => setUser(user ?? null));
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null);
+      // Auto-close the sign-in gate when the magic link callback sets the session
+      if (event === "SIGNED_IN") {
+        setShowGate(false);
+        setAuthError("");
+      }
+    });
+    return () => subscription.unsubscribe();
   }, [supabase]);
+
+  // Surface auth callback errors (e.g. expired or already-used magic link)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("auth_error")) {
+      window.history.replaceState({}, "", window.location.pathname);
+      setAuthError("The magic link expired or was already used. Request a new one.");
+      setShowGate(true);
+    }
+  }, []);
 
   // Sync saves + dismissed from Supabase on login
   useEffect(() => {
@@ -1319,7 +1338,11 @@ export default function PageClient({ initialCards }) {
               style={{ position: "fixed", inset: 0, zIndex: 61, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
             >
               <div style={{ width: "100%", maxWidth: 400, background: "var(--card)", borderRadius: 26, overflowY: "auto", maxHeight: "90vh" }}>
-                <SignupGate supabase={supabase} onClose={() => { setShowGate(false); setGateSkipped(true); }} />
+                <SignupGate
+                  supabase={supabase}
+                  initialError={authError}
+                  onClose={() => { setShowGate(false); setGateSkipped(true); setAuthError(""); }}
+                />
               </div>
             </motion.div>
           </>
