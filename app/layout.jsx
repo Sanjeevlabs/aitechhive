@@ -12,7 +12,6 @@ export const metadata = {
   metadataBase: new URL(APP_URL),
   title: "AITechHive — Daily BFSI & Enterprise AI",
   description: "The live web alternative to AI newsletters. Six refreshes a day. Swipe-format. Free, no inbox required.",
-  themeColor: "#0E0D0C",
   openGraph: {
     title: "AITechHive — Daily BFSI & Enterprise AI",
     description: "Six refreshes a day. Live. No inbox required.",
@@ -34,6 +33,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
   viewportFit: "cover",
+  themeColor: "#0E0D0C",
 };
 
 export default function RootLayout({ children }) {
