@@ -48,15 +48,15 @@ const CATS = {
   career:     { label: "Career",     Icon: Briefcase,     color: "var(--purple)", soft: "var(--purple-soft)", hex: "#AF52DE" },
   tool:       { label: "Tool",       Icon: Terminal,      color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
   research:   { label: "Research",   Icon: FlaskConical,  color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
-  insight:    { label: "Insight",    Icon: BookOpen,      color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
+  insight:    { label: "Insight",    Icon: BookOpen,      color: "var(--brown)",  soft: "var(--brown-soft)",  hex: "#A2845E" },
   frontier:   { label: "Frontier AI", Icon: Globe,        color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
 };
 
-// Hardcoded for html-to-image (CSS vars not resolved in off-screen capture)
+// Hardcoded for the Canvas share renderer (CSS vars don't resolve in Canvas)
 const SHARE_HEX = {
   trending: "#FF3B30", learner: "#FFCC00",
   regulation: "#007AFF", deployment: "#34C759", vendor: "#FF9500",
-  career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#8E8E93", frontier: "#00C7BE",
+  career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#A2845E", frontier: "#00C7BE",
 };
 
 /* ─────────────────────────────────────────────────────────────────
@@ -634,55 +634,140 @@ function ShareModal({ open, onClose, card }) {
   const handleShare = async () => {
     setGenerating(true);
     try {
-      const { toPng } = await import("html-to-image");
+      // Direct Canvas 2D render — bulletproof vs. html-to-image's off-screen DOM
+      // capture, which returned blank PNGs on iOS Safari. 1200×675 = Twitter/X
+      // optimal social card; LinkedIn renders this size cleanly too.
+      const W = 1200, H = 675;
+      const canvas = document.createElement("canvas");
+      canvas.width = W;
+      canvas.height = H;
+      const ctx = canvas.getContext("2d");
 
-      // Build the share card as a real DOM node appended to body so browser paints it
-      const el = document.createElement("div");
-      // Position off-screen left — opacity MUST be 1 or html-to-image captures a transparent image
-      Object.assign(el.style, {
-        position: "fixed", top: "0", left: "-10000px",
-        width: "540px", height: "540px",
-        zIndex: "1", opacity: "1", pointerEvents: "none",
-        background: "white", fontFamily: "-apple-system,BlinkMacSystemFont,system-ui,sans-serif",
-        overflow: "hidden",
-      });
-      const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-      el.innerHTML = `
-        <div style="height:190px;background:linear-gradient(150deg,${hex} 0%,${hex}DD 55%,${hex}99 100%);padding:22px 28px 22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 1px 0 rgba(255,255,255,0.28),inset 0 -1px 0 rgba(0,0,0,0.12);">
-          <div style="display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.30);align-self:flex-start;">
-            <span style="font-size:11px;font-weight:600;color:white;">${esc(meta.label)}${card.jurisdiction ? ` · ${esc(card.jurisdiction)}` : ""}</span>
-          </div>
-          <h2 style="margin:0;font-size:20px;font-weight:600;line-height:1.28;letter-spacing:-0.015em;color:white;text-shadow:0 1px 6px rgba(0,0,0,0.22);">${esc(card.headline)}</h2>
-        </div>
-        <div style="padding:18px 28px 14px;">
-          <p style="margin:0 0 13px;font-size:13px;line-height:1.62;color:#3C3C43;">${esc((card.plain_english || "").slice(0, 160))}${(card.plain_english || "").length > 160 ? "…" : ""}</p>
-          <div style="padding:11px 13px;border-radius:10px;background:${hex}18;border-left:3px solid ${hex};">
-            <div style="font-size:9px;font-weight:700;color:${hex};text-transform:uppercase;letter-spacing:0.09em;margin-bottom:4px;">Why it matters</div>
-            <p style="margin:0;font-size:12px;line-height:1.52;color:#1C1C1E;">${esc((card.why_it_matters || "").slice(0, 130))}${(card.why_it_matters || "").length > 130 ? "…" : ""}</p>
-          </div>
-        </div>
-        <div style="position:absolute;bottom:16px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:13px;font-weight:600;color:#000;letter-spacing:-0.01em;">ai<span style="color:${hex};font-weight:700;">.</span>tech<span style="color:${hex};font-weight:700;">.</span>hive</span>
-          <span style="font-size:11px;color:#8E8E93;">aitechhive.com</span>
-        </div>
-      `;
-      document.body.appendChild(el);
-      // Give browser one frame to paint
-      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+      // ── Background
+      ctx.fillStyle = "#FFFFFF";
+      ctx.fillRect(0, 0, W, H);
 
-      const dataUrl = await toPng(el, { pixelRatio: 2, cacheBust: true, width: 540, height: 540 });
-      document.body.removeChild(el);
+      // ── Hero gradient (top 50%)
+      const heroH = 340;
+      const grad = ctx.createLinearGradient(0, 0, W, heroH);
+      grad.addColorStop(0, hex);
+      grad.addColorStop(0.55, hex + "DD");
+      grad.addColorStop(1, hex + "99");
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, W, heroH);
+      // Inset highlight + shadow lines
+      ctx.fillStyle = "rgba(255,255,255,0.28)";
+      ctx.fillRect(0, 0, W, 2);
+      ctx.fillStyle = "rgba(0,0,0,0.15)";
+      ctx.fillRect(0, heroH - 2, W, 2);
 
-      const blob = await (await fetch(dataUrl)).blob();
-      const file = new File([blob], `aitechhive-${card.id}.png`, { type: "image/png" });
-      if (navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], title: card.headline, url: `${window.location.origin}/c/${card.id}` });
-      } else {
-        const a = document.createElement("a");
-        a.href = dataUrl; a.download = `aitechhive-${card.id}.png`; a.click();
+      // ── Category chip
+      const SANS = '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif';
+      const SERIF = 'Georgia, "Times New Roman", serif';
+      const MONO = 'ui-monospace, "SF Mono", Menlo, Consolas, monospace';
+
+      const chipText = `${meta.label}${card.jurisdiction ? ` · ${card.jurisdiction}` : ""}`;
+      ctx.font = `600 22px ${SANS}`;
+      const chipTextW = ctx.measureText(chipText).width;
+      const chipPadX = 22, chipH = 44, chipX = 60, chipY = 50;
+      const chipW = chipTextW + chipPadX * 2;
+      roundRect(ctx, chipX, chipY, chipW, chipH, chipH / 2);
+      ctx.fillStyle = "rgba(255,255,255,0.22)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.32)";
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.fillStyle = "#FFFFFF";
+      ctx.textBaseline = "middle";
+      ctx.fillText(chipText, chipX + chipPadX, chipY + chipH / 2 + 1);
+
+      // ── Headline (serif, word-wrapped, with soft shadow)
+      ctx.font = `600 48px ${SERIF}`;
+      ctx.fillStyle = "#FFFFFF";
+      ctx.shadowColor = "rgba(0,0,0,0.25)";
+      ctx.shadowBlur = 8;
+      ctx.shadowOffsetY = 2;
+      ctx.textBaseline = "top";
+      const headlineY = chipY + chipH + 36;
+      wrapText(ctx, card.headline || "", 60, headlineY, W - 120, 58, 3);
+      ctx.shadowColor = "transparent";
+      ctx.shadowBlur = 0;
+      ctx.shadowOffsetY = 0;
+
+      // ── Plain English
+      ctx.font = `400 22px ${SANS}`;
+      ctx.fillStyle = "#3C3C43";
+      ctx.textBaseline = "top";
+      const peText = (card.plain_english || "").slice(0, 240);
+      const peEnd = wrapText(
+        ctx,
+        peText + (card.plain_english && card.plain_english.length > 240 ? "…" : ""),
+        60, heroH + 36, W - 120, 32, 3,
+      );
+
+      // ── Why it matters
+      if (card.why_it_matters) {
+        const wimY = peEnd + 24;
+        const wimH = 116;
+        roundRect(ctx, 60, wimY, W - 120, wimH, 14);
+        ctx.fillStyle = hexAlpha(hex, 0.10);
+        ctx.fill();
+        ctx.fillStyle = hex;
+        ctx.fillRect(60, wimY, 4, wimH);
+
+        ctx.font = `700 14px ${SANS}`;
+        ctx.fillStyle = hex;
+        ctx.textBaseline = "top";
+        ctx.fillText("WHY IT MATTERS", 84, wimY + 16);
+
+        ctx.font = `500 19px ${SANS}`;
+        ctx.fillStyle = "#1C1C1E";
+        wrapText(ctx, (card.why_it_matters || "").slice(0, 200), 84, wimY + 44, W - 168, 28, 2);
       }
-    } catch (e) { console.error(e); }
-    finally { setGenerating(false); }
+
+      // ── Footer: ath chip + URL
+      const footY = H - 50;
+      const athW = 60, athH = 42;
+      roundRect(ctx, 60, footY - athH / 2, athW, athH, 10);
+      ctx.fillStyle = "#0E0D0C";
+      ctx.fill();
+      ctx.font = `700 22px ${MONO}`;
+      ctx.fillStyle = "#FFFFFF";
+      ctx.textBaseline = "middle";
+      ctx.textAlign = "center";
+      ctx.fillText("ath", 60 + athW / 2, footY + 1);
+
+      ctx.textAlign = "left";
+      ctx.font = `500 16px ${SANS}`;
+      ctx.fillStyle = "#8E8E93";
+      ctx.textBaseline = "middle";
+      ctx.fillText("BFSI · ENTERPRISE AI · LIVE", 60 + athW + 14, footY);
+
+      ctx.textAlign = "right";
+      ctx.font = `600 18px ${SANS}`;
+      ctx.fillStyle = "#0E0D0C";
+      ctx.fillText("aitechhive.com", W - 60, footY);
+      ctx.textAlign = "left";
+
+      // ── Export
+      const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png", 1.0));
+      if (!blob) throw new Error("Canvas toBlob returned null");
+
+      const file = new File([blob], `aitechhive-${card.id}.png`, { type: "image/png" });
+      const shareUrl = `${window.location.origin}/c/${card.id}`;
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], title: card.headline, text: card.headline, url: shareUrl });
+      } else {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url; a.download = `aitechhive-${card.id}.png`; a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+    } catch (e) {
+      console.error("share failed:", e);
+    } finally {
+      setGenerating(false);
+    }
   };
 
   const handleCopyLink = async () => {
@@ -765,6 +850,57 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
       </div>
     </div>
   );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   CANVAS HELPERS (used by share-image renderer)
+───────────────────────────────────────────────────────────────── */
+function roundRect(ctx, x, y, w, h, r) {
+  const rr = Math.max(0, Math.min(r, w / 2, h / 2));
+  ctx.beginPath();
+  ctx.moveTo(x + rr, y);
+  ctx.lineTo(x + w - rr, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + rr);
+  ctx.lineTo(x + w, y + h - rr);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - rr, y + h);
+  ctx.lineTo(x + rr, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - rr);
+  ctx.lineTo(x, y + rr);
+  ctx.quadraticCurveTo(x, y, x + rr, y);
+  ctx.closePath();
+}
+
+function wrapText(ctx, text, x, y, maxWidth, lineHeight, maxLines = Infinity) {
+  const words = String(text || "").split(/\s+/).filter(Boolean);
+  if (!words.length) return y;
+  let line = "";
+  let yy = y;
+  let lines = 0;
+  for (let i = 0; i < words.length; i++) {
+    const test = line ? line + " " + words[i] : words[i];
+    if (ctx.measureText(test).width > maxWidth && line) {
+      ctx.fillText(line, x, yy);
+      lines++;
+      yy += lineHeight;
+      if (lines >= maxLines - 1) {
+        // last allowed line — pack the rest and truncate with ellipsis
+        let rest = words.slice(i).join(" ");
+        while (rest.length && ctx.measureText(rest + "…").width > maxWidth) rest = rest.slice(0, -1);
+        ctx.fillText(rest + (rest.length < words.slice(i).join(" ").length ? "…" : ""), x, yy);
+        return yy + lineHeight;
+      }
+      line = words[i];
+    } else {
+      line = test;
+    }
+  }
+  if (line) { ctx.fillText(line, x, yy); yy += lineHeight; }
+  return yy;
+}
+
+function hexAlpha(hex, alpha) {
+  const a = Math.round(Math.max(0, Math.min(1, alpha)) * 255).toString(16).padStart(2, "0");
+  return hex + a;
 }
 
 /* ─────────────────────────────────────────────────────────────────
