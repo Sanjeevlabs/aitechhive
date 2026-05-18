@@ -7,9 +7,9 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const cards = Array.isArray(cardsData) ? cardsData : [];
   const card = cards.find((c) => c.id === id);
-  if (!card) return { title: "Card not found — AITechHive" };
+  if (!card) return { title: "Card not found — ath" };
   return {
-    title: `${card.headline} — AITechHive`,
+    title: `${card.headline} — ath`,
     description: card.plain_english,
     openGraph: {
       title: card.headline,
@@ -28,7 +28,7 @@ export default async function CardPage({ params }) {
   return (
     <main style={{ background: "#F5F1E8", color: "#1A1614", minHeight: "100vh", padding: "40px 24px" }}>
       <article style={{ maxWidth: 640, margin: "0 auto", fontFamily: "var(--font-serif)" }}>
-        <a href="/" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "#6B645B" }}>← AITECHHIVE</a>
+        <a href="/" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "#6B645B" }}>← ATH</a>
         <p style={{ marginTop: 24, fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "#8E4A2A" }}>
           {card.category.toUpperCase()} · {card.jurisdiction?.toUpperCase()}
         </p>
