@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import {
   AnimatePresence, motion,
   useMotionValue, useTransform, animate,
@@ -9,6 +9,7 @@ import {
   Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon, Globe,
+  GraduationCap, Flame, RefreshCw,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -39,18 +40,21 @@ function useTheme() {
    CATEGORY CONFIG
 ───────────────────────────────────────────────────────────────── */
 const CATS = {
-  regulation: { label: "Regulation", Icon: Scale,        color: "var(--blue)",   soft: "var(--blue-soft)",   hex: "#007AFF" },
-  deployment: { label: "Deployment", Icon: Building2,    color: "var(--green)",  soft: "var(--green-soft)",  hex: "#34C759" },
-  vendor:     { label: "Vendor",     Icon: Coins,        color: "var(--orange)", soft: "var(--orange-soft)", hex: "#FF9500" },
-  career:     { label: "Career",     Icon: Briefcase,    color: "var(--purple)", soft: "var(--purple-soft)", hex: "#AF52DE" },
-  tool:       { label: "Tool",       Icon: Terminal,     color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
-  research:   { label: "Research",   Icon: FlaskConical, color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
-  insight:    { label: "Insight",    Icon: BookOpen,     color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
-  frontier:   { label: "Frontier AI", Icon: Globe,       color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
+  trending:   { label: "Trending",   Icon: Flame,         color: "var(--red)",    soft: "var(--red-soft)",    hex: "#FF3B30" },
+  learner:    { label: "Learner",    Icon: GraduationCap, color: "var(--yellow)", soft: "var(--yellow-soft)", hex: "#FFCC00" },
+  regulation: { label: "Regulation", Icon: Scale,         color: "var(--blue)",   soft: "var(--blue-soft)",   hex: "#007AFF" },
+  deployment: { label: "Deployment", Icon: Building2,     color: "var(--green)",  soft: "var(--green-soft)",  hex: "#34C759" },
+  vendor:     { label: "Vendor",     Icon: Coins,         color: "var(--orange)", soft: "var(--orange-soft)", hex: "#FF9500" },
+  career:     { label: "Career",     Icon: Briefcase,     color: "var(--purple)", soft: "var(--purple-soft)", hex: "#AF52DE" },
+  tool:       { label: "Tool",       Icon: Terminal,      color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
+  research:   { label: "Research",   Icon: FlaskConical,  color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
+  insight:    { label: "Insight",    Icon: BookOpen,      color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
+  frontier:   { label: "Frontier AI", Icon: Globe,        color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
 };
 
 // Hardcoded for html-to-image (CSS vars not resolved in off-screen capture)
 const SHARE_HEX = {
+  trending: "#FF3B30", learner: "#FFCC00",
   regulation: "#007AFF", deployment: "#34C759", vendor: "#FF9500",
   career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#8E8E93", frontier: "#00C7BE",
 };
@@ -605,7 +609,7 @@ function ShareModal({ open, onClose, card }) {
           </div>
         </div>
         <div style="position:absolute;bottom:16px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:13px;font-weight:700;color:#000;">AITechHive</span>
+          <span style="font-size:13px;font-weight:600;color:#000;letter-spacing:-0.01em;">ai<span style="color:${hex};font-weight:700;">.</span>tech<span style="color:${hex};font-weight:700;">.</span>hive</span>
           <span style="font-size:11px;color:#8E8E93;">aitechhive.com</span>
         </div>
       `;
@@ -711,6 +715,48 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
+   WORDMARK — "[ath]  ai.tech.hive"
+   Lowercase. Dots accented in brand blue for web-native rhythm.
+───────────────────────────────────────────────────────────────── */
+function Wordmark() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+      <div
+        aria-hidden="true"
+        style={{
+          width: 30, height: 30, borderRadius: 8,
+          background: "var(--text-primary)",
+          color: "var(--bg)",
+          display: "grid", placeItems: "center",
+          fontFamily: "var(--font-mono)",
+          fontSize: 12, fontWeight: 700, letterSpacing: "-0.02em",
+          lineHeight: 1,
+        }}
+      >
+        ath
+      </div>
+      <div>
+        <div
+          style={{
+            fontSize: 19, fontWeight: 600,
+            color: "var(--text-primary)",
+            letterSpacing: "-0.02em", lineHeight: 1,
+            fontFamily: "var(--font-sans)",
+          }}
+        >
+          ai<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
+          tech<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
+          hive
+        </div>
+        <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.09em" }}>
+          BFSI · Enterprise AI · 8× daily
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
    ICON BUTTON
 ───────────────────────────────────────────────────────────────── */
 function IconBtn({ children, onClick, label, badge }) {
@@ -728,14 +774,24 @@ function IconBtn({ children, onClick, label, badge }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   ACTION BAR BUTTONS
+   ACTION BAR BUTTONS — neutral, matches header IconBtn chrome
 ───────────────────────────────────────────────────────────────── */
-function BigActionBtn({ label, onClick, bg, color, border, children }) {
+function BigActionBtn({ label, onClick, children, active }) {
   return (
     <button
       onClick={onClick} aria-label={label}
-      style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 5, padding: "12px 6px", borderRadius: 18, background: bg, color, border: border ? "1.5px solid var(--separator)" : "none", cursor: "pointer", fontSize: 10, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", userSelect: "none" }}
-      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.93)"; e.currentTarget.style.opacity = "0.85"; }}
+      style={{
+        flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+        gap: 5, padding: "12px 6px", borderRadius: 14,
+        background: "var(--card)",
+        color: "var(--text-primary)",
+        border: "1px solid var(--separator)",
+        cursor: "pointer", fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
+        userSelect: "none",
+        transition: "transform 0.12s ease, opacity 0.12s ease",
+        opacity: active ? 1 : 0.95,
+      }}
+      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.96)"; e.currentTarget.style.opacity = "0.85"; }}
       onPointerUp={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
       onPointerLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
     >
@@ -811,6 +867,13 @@ export default function PageClient({ initialCards }) {
   const doAction = useCallback(async (action) => {
     if (!topCard && action !== "share") return;
 
+    // Save requires a session — capture email + sync across devices.
+    // Open the gate, hold the save, and let the auth flow resume the action.
+    if (action === "save" && !user) {
+      setShowGate(true);
+      return;
+    }
+
     if (action === "share") {
       setShareCard(topCard);
       setStats((s) => ({ ...s, shared: s.shared + 1 }));
@@ -844,20 +907,106 @@ export default function PageClient({ initialCards }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [doAction, savedOpen, archiveOpen, shareCard, showGate]);
 
+  /* ─── Pull-to-refresh ─────────────────────────────────────────
+     Engages only on dominant vertical-down drags. Horizontal
+     drags bail immediately so the card's swipe gesture is intact.
+  ─────────────────────────────────────────────────────────────── */
+  const PULL_THRESHOLD = 64;
+  const PULL_MAX = 120;
+  const pullRef = useRef({ startY: null, startX: null, current: 0, engaged: false });
+  const [pullY, setPullY] = useState(0);
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onPullStart = useCallback((e) => {
+    if (refreshing || savedOpen || archiveOpen || shareCard || showGate) return;
+    const t = e.touches?.[0];
+    if (!t) return;
+    pullRef.current = { startY: t.clientY, startX: t.clientX, current: 0, engaged: false };
+  }, [refreshing, savedOpen, archiveOpen, shareCard, showGate]);
+
+  const onPullMove = useCallback((e) => {
+    const r = pullRef.current;
+    if (refreshing || r.startY == null) return;
+    const t = e.touches?.[0];
+    if (!t) return;
+    const dy = t.clientY - r.startY;
+    const dx = t.clientX - r.startX;
+    if (!r.engaged) {
+      if (dy > 8 && Math.abs(dy) > Math.abs(dx) * 1.5) {
+        r.engaged = true;
+      } else if (Math.abs(dx) > 8 || dy < -8) {
+        r.startY = null;
+        return;
+      } else {
+        return;
+      }
+    }
+    // Rubber-band easing — sqrt damping past the threshold
+    const eased = Math.min(PULL_MAX, Math.sqrt(Math.max(0, dy)) * 11);
+    r.current = eased;
+    setPullY(eased);
+  }, [refreshing]);
+
+  const onPullEnd = useCallback(() => {
+    const r = pullRef.current;
+    if (refreshing) return;
+    if (r.engaged && r.current >= PULL_THRESHOLD) {
+      setRefreshing(true);
+      setPullY(56);
+      setTimeout(() => window.location.reload(), 220);
+    } else {
+      setPullY(0);
+    }
+    pullRef.current = { startY: null, startX: null, current: 0, engaged: false };
+  }, [refreshing]);
+
   return (
-    <main style={{
-      height: "100svh", display: "flex", flexDirection: "column",
-      background: "var(--bg)", color: "var(--text-primary)",
-      paddingTop: "env(safe-area-inset-top)",
-      overflow: "hidden", fontFamily: "var(--font-sans)",
-    }}>
+    <main
+      onTouchStart={onPullStart}
+      onTouchMove={onPullMove}
+      onTouchEnd={onPullEnd}
+      onTouchCancel={onPullEnd}
+      style={{
+        height: "100svh", display: "flex", flexDirection: "column",
+        background: "var(--bg)", color: "var(--text-primary)",
+        paddingTop: "env(safe-area-inset-top)",
+        overflow: "hidden", fontFamily: "var(--font-sans)",
+        position: "relative",
+      }}
+    >
+      {/* ── Pull-to-refresh indicator ─────────────────────────── */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: "env(safe-area-inset-top)",
+          left: "50%",
+          width: 36, height: 36, borderRadius: 18,
+          background: "var(--card)",
+          border: "1px solid var(--separator)",
+          display: "grid", placeItems: "center",
+          color: "var(--text-primary)",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+          zIndex: 30,
+          pointerEvents: "none",
+          transform: `translate(-50%, ${Math.max(0, pullY - 18)}px)`,
+          opacity: pullY > 4 || refreshing ? Math.min(1, pullY / PULL_THRESHOLD) : 0,
+          transition: pullRef.current.engaged && !refreshing ? "none" : "transform 0.28s ease, opacity 0.28s ease",
+        }}
+      >
+        <RefreshCw
+          size={16}
+          strokeWidth={2.4}
+          style={{
+            transform: `rotate(${refreshing ? 0 : Math.min(360, pullY * 4)}deg)`,
+            animation: refreshing ? "spin 0.7s linear infinite" : "none",
+          }}
+        />
+      </div>
 
       {/* ── Masthead ──────────────────────────────────────────── */}
       <header style={{ flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <div>
-          <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", letterSpacing: "-0.02em", lineHeight: 1 }}>AITechHive</div>
-          <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.07em" }}>BFSI · Enterprise AI · 8× daily</div>
-        </div>
+        <Wordmark />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
@@ -969,16 +1118,16 @@ export default function PageClient({ initialCards }) {
       {!isEmpty && (
         <div style={{ flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
           <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 10, alignItems: "stretch" }}>
-            <BigActionBtn label="Skip" onClick={() => doAction("next")} bg="var(--card)" color="var(--red)" border>
-              <X size={22} strokeWidth={2.5} />
+            <BigActionBtn label="Skip" onClick={() => doAction("next")}>
+              <X size={20} strokeWidth={2.25} />
             </BigActionBtn>
 
-            <BigActionBtn label="Share" onClick={() => doAction("share")} bg="var(--card)" color="var(--blue)" border>
-              <Share2 size={20} strokeWidth={2.5} />
+            <BigActionBtn label="Share" onClick={() => doAction("share")}>
+              <Share2 size={18} strokeWidth={2.25} />
             </BigActionBtn>
 
-            <BigActionBtn label="Save" onClick={() => doAction("save")} bg="var(--green)" color="white">
-              <Bookmark size={22} strokeWidth={2.5} fill={savedIds.has(topCard?.id) ? "white" : "none"} />
+            <BigActionBtn label={user ? "Save" : "Sign in to save"} onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
+              <Bookmark size={20} strokeWidth={2.25} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
             </BigActionBtn>
           </div>
         </div>

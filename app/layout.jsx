@@ -10,20 +10,20 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aitechhive.com";
 
 export const metadata = {
   metadataBase: new URL(APP_URL),
-  title: "AITechHive — Daily BFSI & Enterprise AI",
-  description: "The live web alternative to AI newsletters. Six refreshes a day. Swipe-format. Free, no inbox required.",
+  title: "ai.tech.hive — Daily BFSI & Enterprise AI",
+  description: "The live web alternative to AI newsletters. Eight refreshes a day. Swipe-format. Free, no inbox required.",
   openGraph: {
-    title: "AITechHive — Daily BFSI & Enterprise AI",
-    description: "Six refreshes a day. Live. No inbox required.",
+    title: "ai.tech.hive — Daily BFSI & Enterprise AI",
+    description: "Eight refreshes a day. Live. No inbox required.",
     url: APP_URL,
-    siteName: "AITechHive",
+    siteName: "ai.tech.hive",
     images: ["/og-default.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AITechHive — Daily BFSI & Enterprise AI",
-    description: "Six refreshes a day. Live. No inbox required.",
+    title: "ai.tech.hive — Daily BFSI & Enterprise AI",
+    description: "Eight refreshes a day. Live. No inbox required.",
     images: ["/og-default.png"],
   },
 };

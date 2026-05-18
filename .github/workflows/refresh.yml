@@ -30,12 +30,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: pipeline-deps-v2-${{ hashFiles('package.json') }}
-          restore-keys: pipeline-deps-v2-
+          key: pipeline-deps-v3-${{ hashFiles('package-lock.json') }}
+          restore-keys: pipeline-deps-v3-
 
       - name: Install pipeline deps
         if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: npm install rss-parser @anthropic-ai/sdk openai
+        run: npm ci --no-audit --no-fund --ignore-scripts
 
       - name: Fetch RSS feeds
         run: node scripts/fetch-feeds.mjs
