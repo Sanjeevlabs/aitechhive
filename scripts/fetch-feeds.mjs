@@ -17,9 +17,11 @@ const RSS_SOURCES = [
   { name: "Bank Automation News", url: "https://bankautomationnews.com/feed/" },
   { name: "American Banker", url: "https://www.americanbanker.com/feed" },
   { name: "PYMNTS", url: "https://www.pymnts.com/feed/" },
-  // Major wire services / press
-  { name: "Reuters Technology", url: "https://feeds.reuters.com/reuters/technologyNews" },
-  { name: "Reuters Finance", url: "https://feeds.reuters.com/reuters/businessNews" },
+  // Major wire services / press — Reuters discontinued its public RSS in 2020;
+  // use Google News passthroughs (Reuters/Bloomberg/FT-tagged) and CNBC's working feed instead.
+  { name: "Reuters via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:reuters.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:bloomberg.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "FT via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:ft.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
   { name: "CNBC Technology", url: "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
   // Frontier AI / enterprise tech — high-credibility only
   { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },

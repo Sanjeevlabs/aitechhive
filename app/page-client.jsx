@@ -9,6 +9,7 @@ import {
   Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon, Globe,
+  GraduationCap, Flame,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -39,18 +40,21 @@ function useTheme() {
    CATEGORY CONFIG
 ───────────────────────────────────────────────────────────────── */
 const CATS = {
-  regulation: { label: "Regulation", Icon: Scale,        color: "var(--blue)",   soft: "var(--blue-soft)",   hex: "#007AFF" },
-  deployment: { label: "Deployment", Icon: Building2,    color: "var(--green)",  soft: "var(--green-soft)",  hex: "#34C759" },
-  vendor:     { label: "Vendor",     Icon: Coins,        color: "var(--orange)", soft: "var(--orange-soft)", hex: "#FF9500" },
-  career:     { label: "Career",     Icon: Briefcase,    color: "var(--purple)", soft: "var(--purple-soft)", hex: "#AF52DE" },
-  tool:       { label: "Tool",       Icon: Terminal,     color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
-  research:   { label: "Research",   Icon: FlaskConical, color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
-  insight:    { label: "Insight",    Icon: BookOpen,     color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
-  frontier:   { label: "Frontier AI", Icon: Globe,       color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
+  trending:   { label: "Trending",   Icon: Flame,         color: "var(--red)",    soft: "var(--red-soft)",    hex: "#FF3B30" },
+  learner:    { label: "Learner",    Icon: GraduationCap, color: "var(--yellow)", soft: "var(--yellow-soft)", hex: "#FFCC00" },
+  regulation: { label: "Regulation", Icon: Scale,         color: "var(--blue)",   soft: "var(--blue-soft)",   hex: "#007AFF" },
+  deployment: { label: "Deployment", Icon: Building2,     color: "var(--green)",  soft: "var(--green-soft)",  hex: "#34C759" },
+  vendor:     { label: "Vendor",     Icon: Coins,         color: "var(--orange)", soft: "var(--orange-soft)", hex: "#FF9500" },
+  career:     { label: "Career",     Icon: Briefcase,     color: "var(--purple)", soft: "var(--purple-soft)", hex: "#AF52DE" },
+  tool:       { label: "Tool",       Icon: Terminal,      color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
+  research:   { label: "Research",   Icon: FlaskConical,  color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
+  insight:    { label: "Insight",    Icon: BookOpen,      color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
+  frontier:   { label: "Frontier AI", Icon: Globe,        color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
 };
 
 // Hardcoded for html-to-image (CSS vars not resolved in off-screen capture)
 const SHARE_HEX = {
+  trending: "#FF3B30", learner: "#FFCC00",
   regulation: "#007AFF", deployment: "#34C759", vendor: "#FF9500",
   career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#8E8E93", frontier: "#00C7BE",
 };

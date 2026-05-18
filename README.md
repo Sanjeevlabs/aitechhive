@@ -59,6 +59,8 @@ Done. Next cron run uses the new provider. See `.env.local.example` for defaults
 
 | Category | What it covers |
 |---|---|
+| **Trending** | The single most-discussed AI story of the last 24h (Reuters/Bloomberg/FT signal) |
+| **Learner** | Plain-English explainer of one foundational concept (RAG, embeddings, agents, MCP) for newcomers |
 | **Regulation** | EU AI Act, RBI FREE-AI, FCA, OCC, Fed SR letters |
 | **Deployment** | Named bank/insurer ships AI in production |
 | **Vendor** | Funding, M&A, BFSI-AI vendor launches |
@@ -66,6 +68,7 @@ Done. Next cron run uses the new provider. See `.env.local.example` for defaults
 | **Tool** | Open-source repos, eval suites, libraries |
 | **Research** | HuggingFace papers, arXiv, Google/DeepMind/Anthropic/OpenAI/Meta releases |
 | **Insight** | Production reality nuggets, jargon explainers |
+| **Frontier AI** | General AI breakthroughs and major lab news beyond BFSI |
 
 ---
 
