@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import {
   AnimatePresence, motion,
   useMotionValue, useTransform, animate,
@@ -9,7 +9,7 @@ import {
   Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon, Globe,
-  GraduationCap, Flame,
+  GraduationCap, Flame, RefreshCw,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -609,7 +609,7 @@ function ShareModal({ open, onClose, card }) {
           </div>
         </div>
         <div style="position:absolute;bottom:16px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:13px;font-weight:700;color:#000;">AITechHive</span>
+          <span style="font-size:13px;font-weight:600;color:#000;letter-spacing:-0.01em;">ai<span style="color:${hex};font-weight:700;">.</span>tech<span style="color:${hex};font-weight:700;">.</span>hive</span>
           <span style="font-size:11px;color:#8E8E93;">aitechhive.com</span>
         </div>
       `;
@@ -709,6 +709,48 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
       <div style={{ marginTop: "auto", paddingTop: 20, display: "flex", flexDirection: "column", gap: 10 }}>
         <button onClick={onOpenArchive} style={{ width: "100%", padding: "14px", borderRadius: 14, background: "var(--blue)", color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer" }}>Open Archive</button>
         <button onClick={onReshuffle} style={{ width: "100%", padding: "13px", borderRadius: 14, background: "var(--card-secondary)", color: "var(--text-secondary)", fontSize: 15, fontWeight: 600, border: "1.5px solid var(--separator)", cursor: "pointer" }}>Replay Deck</button>
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   WORDMARK — "[ath]  ai.tech.hive"
+   Lowercase. Dots accented in brand blue for web-native rhythm.
+───────────────────────────────────────────────────────────────── */
+function Wordmark() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+      <div
+        aria-hidden="true"
+        style={{
+          width: 30, height: 30, borderRadius: 8,
+          background: "var(--text-primary)",
+          color: "var(--bg)",
+          display: "grid", placeItems: "center",
+          fontFamily: "var(--font-mono)",
+          fontSize: 12, fontWeight: 700, letterSpacing: "-0.02em",
+          lineHeight: 1,
+        }}
+      >
+        ath
+      </div>
+      <div>
+        <div
+          style={{
+            fontSize: 19, fontWeight: 600,
+            color: "var(--text-primary)",
+            letterSpacing: "-0.02em", lineHeight: 1,
+            fontFamily: "var(--font-sans)",
+          }}
+        >
+          ai<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
+          tech<span style={{ color: "var(--blue)", fontWeight: 700 }}>.</span>
+          hive
+        </div>
+        <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.09em" }}>
+          BFSI · Enterprise AI · 8× daily
+        </div>
       </div>
     </div>
   );
@@ -865,20 +907,106 @@ export default function PageClient({ initialCards }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [doAction, savedOpen, archiveOpen, shareCard, showGate]);
 
+  /* ─── Pull-to-refresh ─────────────────────────────────────────
+     Engages only on dominant vertical-down drags. Horizontal
+     drags bail immediately so the card's swipe gesture is intact.
+  ─────────────────────────────────────────────────────────────── */
+  const PULL_THRESHOLD = 64;
+  const PULL_MAX = 120;
+  const pullRef = useRef({ startY: null, startX: null, current: 0, engaged: false });
+  const [pullY, setPullY] = useState(0);
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onPullStart = useCallback((e) => {
+    if (refreshing || savedOpen || archiveOpen || shareCard || showGate) return;
+    const t = e.touches?.[0];
+    if (!t) return;
+    pullRef.current = { startY: t.clientY, startX: t.clientX, current: 0, engaged: false };
+  }, [refreshing, savedOpen, archiveOpen, shareCard, showGate]);
+
+  const onPullMove = useCallback((e) => {
+    const r = pullRef.current;
+    if (refreshing || r.startY == null) return;
+    const t = e.touches?.[0];
+    if (!t) return;
+    const dy = t.clientY - r.startY;
+    const dx = t.clientX - r.startX;
+    if (!r.engaged) {
+      if (dy > 8 && Math.abs(dy) > Math.abs(dx) * 1.5) {
+        r.engaged = true;
+      } else if (Math.abs(dx) > 8 || dy < -8) {
+        r.startY = null;
+        return;
+      } else {
+        return;
+      }
+    }
+    // Rubber-band easing — sqrt damping past the threshold
+    const eased = Math.min(PULL_MAX, Math.sqrt(Math.max(0, dy)) * 11);
+    r.current = eased;
+    setPullY(eased);
+  }, [refreshing]);
+
+  const onPullEnd = useCallback(() => {
+    const r = pullRef.current;
+    if (refreshing) return;
+    if (r.engaged && r.current >= PULL_THRESHOLD) {
+      setRefreshing(true);
+      setPullY(56);
+      setTimeout(() => window.location.reload(), 220);
+    } else {
+      setPullY(0);
+    }
+    pullRef.current = { startY: null, startX: null, current: 0, engaged: false };
+  }, [refreshing]);
+
   return (
-    <main style={{
-      height: "100svh", display: "flex", flexDirection: "column",
-      background: "var(--bg)", color: "var(--text-primary)",
-      paddingTop: "env(safe-area-inset-top)",
-      overflow: "hidden", fontFamily: "var(--font-sans)",
-    }}>
+    <main
+      onTouchStart={onPullStart}
+      onTouchMove={onPullMove}
+      onTouchEnd={onPullEnd}
+      onTouchCancel={onPullEnd}
+      style={{
+        height: "100svh", display: "flex", flexDirection: "column",
+        background: "var(--bg)", color: "var(--text-primary)",
+        paddingTop: "env(safe-area-inset-top)",
+        overflow: "hidden", fontFamily: "var(--font-sans)",
+        position: "relative",
+      }}
+    >
+      {/* ── Pull-to-refresh indicator ─────────────────────────── */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: "env(safe-area-inset-top)",
+          left: "50%",
+          width: 36, height: 36, borderRadius: 18,
+          background: "var(--card)",
+          border: "1px solid var(--separator)",
+          display: "grid", placeItems: "center",
+          color: "var(--text-primary)",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+          zIndex: 30,
+          pointerEvents: "none",
+          transform: `translate(-50%, ${Math.max(0, pullY - 18)}px)`,
+          opacity: pullY > 4 || refreshing ? Math.min(1, pullY / PULL_THRESHOLD) : 0,
+          transition: pullRef.current.engaged && !refreshing ? "none" : "transform 0.28s ease, opacity 0.28s ease",
+        }}
+      >
+        <RefreshCw
+          size={16}
+          strokeWidth={2.4}
+          style={{
+            transform: `rotate(${refreshing ? 0 : Math.min(360, pullY * 4)}deg)`,
+            animation: refreshing ? "spin 0.7s linear infinite" : "none",
+          }}
+        />
+      </div>
 
       {/* ── Masthead ──────────────────────────────────────────── */}
       <header style={{ flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <div>
-          <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", letterSpacing: "-0.02em", lineHeight: 1 }}>AITechHive</div>
-          <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.07em" }}>BFSI · Enterprise AI · 8× daily</div>
-        </div>
+        <Wordmark />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
