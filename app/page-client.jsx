@@ -1660,7 +1660,7 @@ export default function PageClient({ initialCards }) {
       {catFilter === "all" ? (
         <div style={{ flexShrink: 0, padding: "0 16px 8px" }}>
           <span style={{ fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", letterSpacing: "0.01em" }}>
-            {allCards.length} live stories · endless scroll
+            {allCards.length} live stories · stay sharp, stay ahead
           </span>
         </div>
       ) : (
