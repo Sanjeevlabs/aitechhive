@@ -100,10 +100,28 @@ async function main() {
     process.exit(1);
   }
 
-  const valid = newCards.filter(
+  // Normalize headline for similarity matching
+  function normalizeHeadline(h) {
+    return (h || "").toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim().slice(0, 70);
+  }
+
+  const schemaValid = newCards.filter(
     (c) => c.id && c.category && c.headline && c.plain_english && c.source?.url
   );
-  console.log(`✓ ${valid.length} valid cards from LLM (of ${newCards.length} returned)\n`);
+
+  // Deduplicate LLM output by source URL and by normalized headline
+  const seenNewUrls = new Set();
+  const seenNewHeadlines = new Set();
+  const valid = schemaValid.filter((c) => {
+    const url = c.source?.url;
+    if (url && seenNewUrls.has(url)) return false;
+    if (url) seenNewUrls.add(url);
+    const nh = normalizeHeadline(c.headline);
+    if (nh.length > 12 && seenNewHeadlines.has(nh)) return false;
+    if (nh) seenNewHeadlines.add(nh);
+    return true;
+  });
+  console.log(`✓ ${valid.length} valid cards from LLM (of ${newCards.length} returned, ${schemaValid.length - valid.length} dupes removed)\n`);
 
   let archive = [];
   try {
@@ -127,19 +145,30 @@ async function main() {
   const archiveByCat = bucket(archive);
 
   const deck = [];
-  const seen = new Set();
+  const seen = new Set();         // by card id
+  const seenHeadlines = new Set(); // by normalised headline — blocks same-story re-generates
 
   for (const cat of CATEGORIES) {
     for (const c of [...newByCat[cat], ...archiveByCat[cat]]) {
-      if (!seen.has(c.id) && deck.filter((x) => x.category === cat).length < PER_CAT) {
+      const nh = normalizeHeadline(c.headline);
+      const headlineDupe = nh.length > 12 && seenHeadlines.has(nh);
+      if (!seen.has(c.id) && !headlineDupe && deck.filter((x) => x.category === cat).length < PER_CAT) {
         seen.add(c.id);
+        if (nh) seenHeadlines.add(nh);
         deck.push(c);
       }
     }
   }
 
   // Append remaining archive for historical access (archive sheet, saved items)
-  const overflow = archive.filter((c) => !seen.has(c.id));
+  const seenOverflow = new Set(seenHeadlines);
+  const overflow = archive.filter((c) => {
+    if (seen.has(c.id)) return false;
+    const nh = normalizeHeadline(c.headline);
+    if (nh.length > 12 && seenOverflow.has(nh)) return false;
+    if (nh) seenOverflow.add(nh);
+    return true;
+  });
   const capped = [...deck, ...overflow].slice(0, 600);
 
   await fs.mkdir("data", { recursive: true });

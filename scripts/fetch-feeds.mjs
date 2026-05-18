@@ -247,10 +247,21 @@ const fresh = all.filter((i) => {
   return !isNaN(t) && t >= cutoff;
 });
 
+// Normalize title for similarity dedup: strips punctuation, lowercases, collapses whitespace.
+// Catches the same story scraped from multiple RSS sources or Google News search queries.
+function normalizeTitle(t) {
+  return (t || "").toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim().slice(0, 80);
+}
+
 const seen = new Set();
+const seenTitles = new Set();
 const unique = fresh.filter((i) => {
   if (!i.link || seen.has(i.link)) return false;
   seen.add(i.link);
+  const nt = normalizeTitle(i.title);
+  // Only block on title similarity if the title is meaningfully long (>12 chars)
+  if (nt.length > 12 && seenTitles.has(nt)) return false;
+  if (nt) seenTitles.add(nt);
   return true;
 });
 

@@ -1368,6 +1368,23 @@ function BigActionBtn({ label, onClick, children, active }) {
 /* ─────────────────────────────────────────────────────────────────
    ROOT
 ───────────────────────────────────────────────────────────────── */
+function dedupCards(cards) {
+  const seenIds = new Set();
+  const seenHeadlines = new Set();
+  const seenUrls = new Set();
+  return (cards || []).filter((c) => {
+    if (!c.id || seenIds.has(c.id)) return false;
+    seenIds.add(c.id);
+    const nh = (c.headline || "").toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim().slice(0, 70);
+    if (nh.length > 12 && seenHeadlines.has(nh)) return false;
+    if (nh) seenHeadlines.add(nh);
+    const url = c.source?.url;
+    if (url && seenUrls.has(url)) return false;
+    if (url) seenUrls.add(url);
+    return true;
+  });
+}
+
 export default function PageClient({ initialCards }) {
   const { dark, toggle: toggleTheme } = useTheme();
   const supabase = useMemo(() => createBrowserClient(
@@ -1375,7 +1392,7 @@ export default function PageClient({ initialCards }) {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   ), []);
 
-  const [allCards] = useState(initialCards || []);
+  const [allCards] = useState(() => dedupCards(initialCards));
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
   const [authError, setAuthError] = useState("");
