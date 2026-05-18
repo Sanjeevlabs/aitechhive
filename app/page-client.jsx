@@ -261,6 +261,31 @@ function StoryCard({ card }) {
           </div>
         )}
 
+        {/* Jargon decoder — every acronym + term defined inline */}
+        {Array.isArray(card.jargon) && card.jargon.length > 0 && (
+          <div style={{ margin: "14px 0 0" }}>
+            <div style={{
+              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
+              textTransform: "uppercase", letterSpacing: "0.09em",
+              marginBottom: 8, display: "flex", alignItems: "center", gap: 5,
+            }}>
+              <BookOpen size={10} /> Decode the jargon
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+              {card.jargon.map((j, i) => (
+                <div key={i} style={{
+                  padding: "10px 12px", borderRadius: 11,
+                  background: "var(--card-secondary)",
+                  border: "1px solid var(--separator)",
+                }}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text-primary)", marginBottom: 2 }}>{j.term}</div>
+                  <div style={{ fontSize: 12.5, lineHeight: 1.45, color: "var(--text-secondary)" }}>{j.def}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div style={{ height: 14 }} />
       </div>
 
@@ -467,14 +492,28 @@ function Sheet({ open, onClose, children }) {
 function SavedSheet({ open, onClose, items, onClear }) {
   return (
     <Sheet open={open} onClose={onClose}>
-      <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-        <div>
+      <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)", display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 10 }}>
+        <div style={{ minWidth: 0 }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-secondary)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Saved · {items.length}</div>
           <h3 style={{ margin: "4px 0 0", fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Reading list</h3>
         </div>
-        {items.length > 0 && (
-          <button onClick={onClear} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14, fontWeight: 700, color: "var(--red)", padding: 0 }}>Clear</button>
-        )}
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          {items.length > 0 && (
+            <button onClick={onClear} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700, color: "var(--red)", padding: 0 }}>Clear</button>
+          )}
+          <button
+            onClick={onClose}
+            aria-label="Close saved"
+            style={{
+              width: 34, height: 34, borderRadius: 10,
+              background: "var(--card-secondary)", border: "1px solid var(--separator)",
+              cursor: "pointer", display: "grid", placeItems: "center",
+              color: "var(--text-primary)",
+            }}
+          >
+            <X size={15} strokeWidth={2.4} />
+          </button>
+        </div>
       </div>
       <div style={{ flex: 1, overflowY: "auto", padding: "10px 20px", display: "flex", flexDirection: "column", gap: 8 }}>
         {items.length === 0 && (
@@ -523,7 +562,21 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
   return (
     <Sheet open={open} onClose={onClose}>
       <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)" }}>
-        <h3 style={{ margin: "0 0 12px", fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Archive · {allCards.length}</h3>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+          <h3 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Archive · {allCards.length}</h3>
+          <button
+            onClick={onClose}
+            aria-label="Close archive"
+            style={{
+              width: 34, height: 34, borderRadius: 10,
+              background: "var(--card-secondary)", border: "1px solid var(--separator)",
+              cursor: "pointer", display: "grid", placeItems: "center",
+              color: "var(--text-primary)",
+            }}
+          >
+            <X size={15} strokeWidth={2.4} />
+          </button>
+        </div>
         <input
           value={search} onChange={(e) => setSearch(e.target.value)}
           placeholder="Search headlines…"
