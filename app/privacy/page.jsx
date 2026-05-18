@@ -1,4 +1,4 @@
-export const metadata = { title: "Privacy — AITechHive" };
+export const metadata = { title: "Privacy — ath" };
 
 export default function PrivacyPage() {
   return (

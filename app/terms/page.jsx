@@ -1,4 +1,4 @@
-export const metadata = { title: "Terms — AITechHive" };
+export const metadata = { title: "Terms — ath" };
 
 export default function TermsPage() {
   return (
