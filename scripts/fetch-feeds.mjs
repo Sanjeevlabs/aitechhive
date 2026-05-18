@@ -9,27 +9,37 @@ const parser = new Parser({
   headers: { "User-Agent": "AITechHive/2.0 (+https://aitechhive.com)" },
 });
 
+// Only established, credible publishers — no personal blogs, no unverified outlets
 const RSS_SOURCES = [
-  // BFSI / fintech
+  // BFSI / fintech — trusted trade press
   { name: "Finextra", url: "https://www.finextra.com/rss/headlines.aspx" },
-  { name: "PYMNTS", url: "https://www.pymnts.com/feed/" },
   { name: "Tearsheet", url: "https://tearsheet.co/feed/" },
   { name: "Bank Automation News", url: "https://bankautomationnews.com/feed/" },
   { name: "American Banker", url: "https://www.americanbanker.com/feed" },
-  // AI / enterprise
+  { name: "PYMNTS", url: "https://www.pymnts.com/feed/" },
+  // Major wire services / press
+  { name: "Reuters Technology", url: "https://feeds.reuters.com/reuters/technologyNews" },
+  { name: "Reuters Finance", url: "https://feeds.reuters.com/reuters/businessNews" },
+  { name: "CNBC Technology", url: "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
+  // Frontier AI / enterprise tech — high-credibility only
   { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
   { name: "VentureBeat AI", url: "https://venturebeat.com/category/ai/feed/" },
-  // Research labs
+  { name: "MIT Tech Review AI", url: "https://www.technologyreview.com/feed/" },
+  { name: "The Verge AI", url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml" },
+  { name: "Wired AI", url: "https://www.wired.com/feed/tag/ai/latest/rss" },
+  // Official research lab blogs
   { name: "Google Research", url: "https://research.google/blog/rss/" },
-  { name: "DeepMind", url: "https://deepmind.google/blog/rss.xml" },
+  { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
   { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
   { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
   { name: "Meta AI", url: "https://ai.meta.com/blog/rss/" },
-  // arXiv
+  { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/" },
+  // Preprints / academic
   { name: "arXiv cs.AI", url: "http://export.arxiv.org/rss/cs.AI" },
   { name: "arXiv q-fin", url: "http://export.arxiv.org/rss/q-fin" },
-  // Curated
+  // Curated signals
   { name: "HN BFSI/AI", url: "https://hnrss.org/newest?q=bank+OR+insurer+OR+finance+AI&points=20" },
+  { name: "HN Frontier AI", url: "https://hnrss.org/newest?q=LLM+OR+GPT+OR+Claude+OR+Gemini+OR+frontier+model&points=30" },
 ];
 
 const FRESHNESS_HOURS = 48;
@@ -42,10 +52,10 @@ async function fetchHuggingFace() {
     const data = await r.json();
     return (data || []).slice(0, 10).map((p) => ({
       source: "HuggingFace Papers",
-      title: p.paper?.title || p.title,
+      title: sanitize(p.paper?.title || p.title || "", 200),
       link: `https://huggingface.co/papers/${p.paper?.id || p.id}`,
       pub: p.publishedAt || p.paper?.publishedAt,
-      summary: (p.paper?.summary || p.summary || "").slice(0, 700),
+      summary: sanitize(p.paper?.summary || p.summary || ""),
     }));
   } catch (e) {
     console.log(`✗ HuggingFace: ${e.message}`);
@@ -123,6 +133,21 @@ async function fetchOneATS({ name, ats, slug }) {
 }
 
 // ============================================================
+// Input sanitization — strip prompt-injection patterns from
+// untrusted external content before it reaches the LLM
+// ============================================================
+const INJECTION_RE = /\b(ignore|disregard|forget)\s+(previous|above|all|prior)\s+(instructions?|prompts?|context)\b|\bsystem\s+prompt\b|\bact\s+as\b.{0,40}\b(AI|GPT|Claude|assistant)\b|\byou\s+are\s+now\b/gi;
+
+function sanitize(str, max = 700) {
+  if (!str) return "";
+  return str
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "") // control chars
+    .replace(INJECTION_RE, "[…]")
+    .slice(0, max)
+    .trim();
+}
+
+// ============================================================
 // Main
 // ============================================================
 const all = [];
@@ -133,13 +158,10 @@ await Promise.all(
       const feed = await parser.parseURL(src.url);
       const items = (feed.items || []).slice(0, 15).map((i) => ({
         source: src.name,
-        title: (i.title || "").trim(),
+        title: sanitize((i.title || "").replace(/\s+/g, " "), 200),
         link: i.link,
         pub: i.isoDate || i.pubDate,
-        summary: (i.contentSnippet || i.summary || "")
-          .replace(/\s+/g, " ")
-          .trim()
-          .slice(0, 700),
+        summary: sanitize((i.contentSnippet || i.summary || "").replace(/\s+/g, " ")),
       }));
       all.push(...items);
       console.log(`✓ ${src.name}: ${items.length}`);

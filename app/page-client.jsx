@@ -8,7 +8,7 @@ import {
 import {
   Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
-  Loader2, Check, X, Archive, Sun, Moon,
+  Loader2, Check, X, Archive, Sun, Moon, Globe,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -46,12 +46,13 @@ const CATS = {
   tool:       { label: "Tool",       Icon: Terminal,     color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5856D6" },
   research:   { label: "Research",   Icon: FlaskConical, color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#32ADE6" },
   insight:    { label: "Insight",    Icon: BookOpen,     color: "var(--gray)",   soft: "var(--gray-soft)",   hex: "#8E8E93" },
+  frontier:   { label: "Frontier AI", Icon: Globe,       color: "var(--mint)",   soft: "var(--mint-soft)",   hex: "#00C7BE" },
 };
 
 // Hardcoded for html-to-image (CSS vars not resolved in off-screen capture)
 const SHARE_HEX = {
   regulation: "#007AFF", deployment: "#34C759", vendor: "#FF9500",
-  career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#8E8E93",
+  career: "#AF52DE", tool: "#5856D6", research: "#32ADE6", insight: "#8E8E93", frontier: "#00C7BE",
 };
 
 /* ─────────────────────────────────────────────────────────────────
@@ -580,28 +581,30 @@ function ShareModal({ open, onClose, card }) {
 
       // Build the share card as a real DOM node appended to body so browser paints it
       const el = document.createElement("div");
+      // Position off-screen left — opacity MUST be 1 or html-to-image captures a transparent image
       Object.assign(el.style, {
-        position: "fixed", top: "0", left: "0",
+        position: "fixed", top: "0", left: "-10000px",
         width: "540px", height: "540px",
-        zIndex: "-9999", opacity: "0.001", pointerEvents: "none",
+        zIndex: "1", opacity: "1", pointerEvents: "none",
         background: "white", fontFamily: "-apple-system,BlinkMacSystemFont,system-ui,sans-serif",
         overflow: "hidden",
       });
+      const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
       el.innerHTML = `
-        <div style="height:140px;background:linear-gradient(135deg,${hex} 0%,${hex}BB 100%);padding:28px 32px 20px;display:flex;flex-direction:column;justify-content:flex-end;">
-          <div style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:100px;background:rgba(255,255,255,0.25);align-self:flex-start;margin-bottom:10px;">
-            <span style="font-size:12px;font-weight:600;color:white;">${meta.label}${card.jurisdiction ? ` · ${card.jurisdiction}` : ""}</span>
+        <div style="height:190px;background:linear-gradient(150deg,${hex} 0%,${hex}DD 55%,${hex}99 100%);padding:22px 28px 22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 1px 0 rgba(255,255,255,0.28),inset 0 -1px 0 rgba(0,0,0,0.12);">
+          <div style="display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.30);align-self:flex-start;">
+            <span style="font-size:11px;font-weight:600;color:white;">${esc(meta.label)}${card.jurisdiction ? ` · ${esc(card.jurisdiction)}` : ""}</span>
           </div>
+          <h2 style="margin:0;font-size:20px;font-weight:600;line-height:1.28;letter-spacing:-0.015em;color:white;text-shadow:0 1px 6px rgba(0,0,0,0.22);">${esc(card.headline)}</h2>
         </div>
-        <div style="padding:20px 32px 16px;">
-          <h2 style="margin:0 0 11px;font-size:22px;font-weight:600;line-height:1.28;letter-spacing:-0.018em;color:#000;">${(card.headline || "").replace(/</g, "&lt;")}</h2>
-          <p style="margin:0 0 14px;font-size:13px;line-height:1.62;color:#3C3C43;">${((card.plain_english || "").slice(0, 180) + ((card.plain_english || "").length > 180 ? "…" : "")).replace(/</g, "&lt;")}</p>
+        <div style="padding:18px 28px 14px;">
+          <p style="margin:0 0 13px;font-size:13px;line-height:1.62;color:#3C3C43;">${esc((card.plain_english || "").slice(0, 160))}${(card.plain_english || "").length > 160 ? "…" : ""}</p>
           <div style="padding:11px 13px;border-radius:10px;background:${hex}18;border-left:3px solid ${hex};">
             <div style="font-size:9px;font-weight:700;color:${hex};text-transform:uppercase;letter-spacing:0.09em;margin-bottom:4px;">Why it matters</div>
-            <p style="margin:0;font-size:12px;line-height:1.52;color:#000;">${((card.why_it_matters || "").slice(0, 140) + ((card.why_it_matters || "").length > 140 ? "…" : "")).replace(/</g, "&lt;")}</p>
+            <p style="margin:0;font-size:12px;line-height:1.52;color:#1C1C1E;">${esc((card.why_it_matters || "").slice(0, 130))}${(card.why_it_matters || "").length > 130 ? "…" : ""}</p>
           </div>
         </div>
-        <div style="position:absolute;bottom:18px;left:32px;right:32px;display:flex;justify-content:space-between;align-items:center;">
+        <div style="position:absolute;bottom:16px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;">
           <span style="font-size:13px;font-weight:700;color:#000;">AITechHive</span>
           <span style="font-size:11px;color:#8E8E93;">aitechhive.com</span>
         </div>
