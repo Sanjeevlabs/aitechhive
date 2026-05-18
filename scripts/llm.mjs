@@ -135,10 +135,46 @@ async function callOpenAICompatible({ systemPrompt, userContent, doWebSearch }) 
       { role: "user", content: userContent + webContext },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 16000,
+    max_tokens: 32768,
   });
   const text = resp.choices?.[0]?.message?.content || "";
   return { text, usage: resp.usage };
+}
+
+// ============================================================
+// Truncation recovery — extract every complete {...} object
+// from the "cards" array even when the JSON is cut off mid-string
+// ============================================================
+function recoverTruncatedCards(text) {
+  const cards = [];
+  const m = text.match(/"cards"\s*:\s*\[/);
+  if (!m) return cards;
+
+  let i = m.index + m[0].length;
+  while (i < text.length) {
+    while (i < text.length && /[\s,]/.test(text[i])) i++;
+    if (text[i] !== "{") break;
+
+    let depth = 0, inStr = false, esc = false, start = i;
+    for (; i < text.length; i++) {
+      const c = text[i];
+      if (esc) { esc = false; continue; }
+      if (c === "\\" && inStr) { esc = true; continue; }
+      if (c === '"') { inStr = !inStr; continue; }
+      if (inStr) continue;
+      if (c === "{") depth++;
+      else if (c === "}") {
+        depth--;
+        if (depth === 0) { i++; break; }
+      }
+    }
+    if (depth === 0) {
+      try { cards.push(JSON.parse(text.slice(start, i))); } catch { /* skip malformed */ }
+    } else {
+      break; // incomplete — stop here
+    }
+  }
+  return cards;
 }
 
 // ============================================================
@@ -163,8 +199,16 @@ export async function generateCards({ systemPrompt, items, doWebSearch = false }
   try {
     parsed = JSON.parse(cleaned);
   } catch (e) {
-    console.error(`[${PROVIDER}] Parse failed. Raw:`, cleaned.slice(0, 400));
-    throw new Error(`LLM returned invalid JSON: ${e.message}`);
+    // Gemini (and others) sometimes truncate mid-string when near the token limit.
+    // Walk through character-by-character and salvage every complete card object.
+    const recovered = recoverTruncatedCards(cleaned);
+    if (recovered.length) {
+      console.warn(`[${PROVIDER}] JSON truncated — recovered ${recovered.length} complete cards from partial output`);
+      parsed = { cards: recovered };
+    } else {
+      console.error(`[${PROVIDER}] Parse failed, no recovery possible. Raw:`, cleaned.slice(0, 400));
+      throw new Error(`LLM returned invalid JSON: ${e.message}`);
+    }
   }
 
   const cards = Array.isArray(parsed) ? parsed : parsed.cards || [];

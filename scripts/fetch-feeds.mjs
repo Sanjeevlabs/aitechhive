@@ -64,17 +64,34 @@ async function fetchHuggingFace() {
 }
 
 const ATS_KEYWORDS = /\b(AI|ML|machine learning|LLM|GenAI|risk|compliance|fraud|model risk|quant|agentic|data scien|MLOps)\b/i;
+const ATS_TIMEOUT_MS = 8000;
+
+function withTimeout(promise, ms, label) {
+  const t = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms)
+  );
+  return Promise.race([promise, t]);
+}
 
 async function fetchATS(companies) {
+  // Run all ATS fetches in parallel — sequential was causing 4+ minute waits
+  const results = await Promise.allSettled(
+    companies.map((c) =>
+      withTimeout(fetchOneATS(c), ATS_TIMEOUT_MS, c.name)
+        .then((items) => {
+          const matching = items.filter((j) => ATS_KEYWORDS.test(j.title)).slice(0, 3);
+          console.log(`✓ ${c.name} (${c.ats}): ${matching.length}/${items.length} matching`);
+          return matching;
+        })
+    )
+  );
+
   const all = [];
-  for (const c of companies) {
-    try {
-      const items = await fetchOneATS(c);
-      const matching = items.filter((j) => ATS_KEYWORDS.test(j.title));
-      all.push(...matching.slice(0, 3));
-      console.log(`✓ ${c.name} (${c.ats}): ${matching.length}/${items.length} matching`);
-    } catch (e) {
-      console.log(`✗ ${c.name}: ${e.message}`);
+  for (let i = 0; i < results.length; i++) {
+    if (results[i].status === "fulfilled") {
+      all.push(...results[i].value);
+    } else {
+      console.log(`✗ ${companies[i].name}: ${results[i].reason.message}`);
     }
   }
   return all;

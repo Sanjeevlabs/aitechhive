@@ -3,7 +3,8 @@ name: Refresh AITechHive cards
 on:
   schedule:
     # 8x per day — every 3h at :15, starting 01:15 UTC (06:45 IST)
-    # Gemini free: 1500 req/day, 250k tokens/day. One refresh ≈ 3 req + ~8k tokens. Very safe.
+    # Gemini 2.5 Flash free tier: 1500 req/day, 250k tokens/day.
+    # Each run: 2-3 cards × 8 categories = ~20 new cards ≈ 25k tokens. Total: ~200k/day. Safe.
     - cron: '15 1,4,7,10,13,16,19,22 * * *'
   workflow_dispatch:
 
@@ -16,15 +17,24 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: pipeline-deps-v2-${{ hashFiles('package.json') }}
+          restore-keys: pipeline-deps-v2-
 
       - name: Install pipeline deps
+        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm install rss-parser @anthropic-ai/sdk openai
 
       - name: Fetch RSS feeds
