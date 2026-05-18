@@ -9,7 +9,7 @@ import {
   Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon, Globe,
-  GraduationCap, Flame, RefreshCw,
+  GraduationCap, Flame, RefreshCw, LogOut, Trash2, Clock, TrendingUp,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
 
@@ -390,6 +390,92 @@ function DraggableCard({ card, onSwipe }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
+   WELCOME CARD  —  shown once on first visit
+───────────────────────────────────────────────────────────────── */
+function WelcomeCard({ onDismiss }) {
+  const gestures = [
+    { icon: "→", label: "Swipe right", desc: "Save to your reading list" },
+    { icon: "←", label: "Swipe left", desc: "Skip to the next story" },
+    { icon: "↑", label: "Tap Share", desc: "Send the card to your team" },
+  ];
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95, y: 16 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.98, y: -10 }}
+      transition={{ type: "spring", stiffness: 360, damping: 34 }}
+      style={{
+        position: "absolute", inset: 0, zIndex: 10,
+        background: "var(--card)", borderRadius: 24, overflow: "hidden",
+        display: "flex", flexDirection: "column",
+        boxShadow: "0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.08), 0 20px 52px rgba(0,0,0,0.13)",
+        userSelect: "none",
+      }}
+    >
+      {/* Hero */}
+      <div style={{
+        flexShrink: 0,
+        background: "linear-gradient(150deg, #0A0A0A 0%, #1C1C1E 60%, #2C2C2E 100%)",
+        padding: "20px 20px 24px",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -1px 0 rgba(0,0,0,0.30)",
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
+          <div style={{ width: 38, height: 38, borderRadius: 10, background: "white", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 700, color: "#0A0A0A", flexShrink: 0 }}>ath</div>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "white" }}>AITechHive</div>
+            <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginTop: 1 }}>BFSI · Enterprise AI</div>
+          </div>
+          <div style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)", padding: "4px 11px", borderRadius: 100, fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.8)", letterSpacing: "0.06em", flexShrink: 0 }}>8× DAILY</div>
+        </div>
+        <div style={{ fontSize: 24, fontWeight: 700, lineHeight: 1.22, color: "white", fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
+          Every senior banker's<br />secret AI briefing.
+        </div>
+        <div style={{ fontSize: 13.5, color: "rgba(255,255,255,0.55)", marginTop: 9, lineHeight: 1.5 }}>
+          Signal over noise. 100 curated cards daily across 10 categories — regulation, funding, deployments, research and more.
+        </div>
+      </div>
+
+      {/* Body */}
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 20px 0" }}>
+        {/* Category chips */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginBottom: 16 }}>
+          {Object.entries(CATS).map(([key, cat]) => (
+            <div key={key} style={{ display: "flex", alignItems: "center", gap: 5, padding: "4px 10px", borderRadius: 100, background: cat.soft, border: `1px solid ${cat.hex}30` }}>
+              <cat.Icon size={9} style={{ color: cat.color }} strokeWidth={2.5} />
+              <span style={{ fontSize: 10.5, fontWeight: 700, color: cat.color }}>{cat.label}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Gesture guide */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {gestures.map(({ icon, label, desc }) => (
+            <div key={label} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 13px", borderRadius: 13, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
+              <div style={{ width: 34, height: 34, borderRadius: 9, background: "var(--text-primary)", color: "var(--bg)", display: "grid", placeItems: "center", fontSize: 15, fontWeight: 700, flexShrink: 0 }}>{icon}</div>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-primary)" }}>{label}</div>
+                <div style={{ fontSize: 12, color: "var(--text-secondary)", marginTop: 1 }}>{desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div style={{ height: 12 }} />
+      </div>
+
+      {/* CTA */}
+      <div style={{ flexShrink: 0, padding: "14px 20px max(16px, env(safe-area-inset-bottom))" }}>
+        <button
+          onClick={onDismiss}
+          style={{ width: "100%", padding: "15px", borderRadius: 16, background: "var(--text-primary)", color: "var(--bg)", fontSize: 16, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em" }}
+        >
+          Start reading →
+        </button>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
    SIGNUP GATE
 ───────────────────────────────────────────────────────────────── */
 function SignupGate({ supabase, onClose, initialError }) {
@@ -489,49 +575,87 @@ function Sheet({ open, onClose, children }) {
 /* ─────────────────────────────────────────────────────────────────
    SAVED SHEET
 ───────────────────────────────────────────────────────────────── */
-function SavedSheet({ open, onClose, items, onClear }) {
+function SavedSheet({ open, onClose, items, onClear, onRemove }) {
   return (
     <Sheet open={open} onClose={onClose}>
-      <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)", display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 10 }}>
-        <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-secondary)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Saved · {items.length}</div>
-          <h3 style={{ margin: "4px 0 0", fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Reading list</h3>
+      {/* Header */}
+      <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 10, marginBottom: 8 }}>
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-secondary)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Reading list · {items.length}</div>
+            <h3 style={{ margin: "4px 0 0", fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Saved stories</h3>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
+            {items.length > 0 && (
+              <button onClick={onClear} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700, color: "var(--red)", padding: 0 }}>Clear all</button>
+            )}
+            <button onClick={onClose} aria-label="Close saved"
+              style={{ width: 34, height: 34, borderRadius: 10, background: "var(--card-secondary)", border: "1px solid var(--separator)", cursor: "pointer", display: "grid", placeItems: "center", color: "var(--text-primary)" }}>
+              <X size={15} strokeWidth={2.4} />
+            </button>
+          </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          {items.length > 0 && (
-            <button onClick={onClear} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700, color: "var(--red)", padding: 0 }}>Clear</button>
-          )}
-          <button
-            onClick={onClose}
-            aria-label="Close saved"
-            style={{
-              width: 34, height: 34, borderRadius: 10,
-              background: "var(--card-secondary)", border: "1px solid var(--separator)",
-              cursor: "pointer", display: "grid", placeItems: "center",
-              color: "var(--text-primary)",
-            }}
-          >
-            <X size={15} strokeWidth={2.4} />
-          </button>
+        {/* What does Save do? */}
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 9, padding: "9px 12px", borderRadius: 12, background: "var(--blue-soft)", border: "1px solid var(--blue)22" }}>
+          <Bookmark size={13} style={{ color: "var(--blue)", marginTop: 1, flexShrink: 0 }} />
+          <p style={{ margin: 0, fontSize: 12, lineHeight: 1.5, color: "var(--blue)" }}>
+            Saved stories sync across all your devices. Tap any card to read the full article from source.
+          </p>
         </div>
       </div>
+
+      {/* List */}
       <div style={{ flex: 1, overflowY: "auto", padding: "10px 20px", display: "flex", flexDirection: "column", gap: 8 }}>
         {items.length === 0 && (
-          <p style={{ textAlign: "center", padding: "40px 0", fontSize: 15, color: "var(--text-secondary)" }}>Tap Save to bookmark stories.</p>
+          <div style={{ textAlign: "center", padding: "48px 20px 0" }}>
+            <div style={{ width: 52, height: 52, borderRadius: 16, background: "var(--card-secondary)", display: "grid", placeItems: "center", margin: "0 auto 14px" }}>
+              <Bookmark size={22} style={{ color: "var(--text-tertiary)" }} />
+            </div>
+            <p style={{ margin: "0 0 6px", fontSize: 16, fontWeight: 700, color: "var(--text-primary)" }}>Nothing saved yet</p>
+            <p style={{ margin: 0, fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.5 }}>Swipe right on any card or tap Save to build your reading list.</p>
+          </div>
         )}
         {items.map((c) => {
           const meta = CATS[c.category] || CATS.insight;
+          const kv = cardKeyVal(c);
           return (
-            <a key={c.id} href={c.source?.url} target="_blank" rel="noreferrer"
-              style={{ display: "block", padding: "13px 15px", borderRadius: 16, background: "var(--card-secondary)", border: "1px solid var(--separator)", textDecoration: "none" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 5 }}>
-                <div style={{ width: 22, height: 22, borderRadius: 6, background: meta.soft, display: "grid", placeItems: "center" }}>
-                  <meta.Icon size={11} style={{ color: meta.color }} strokeWidth={2.5} />
+            <div key={c.id} style={{ borderRadius: 16, background: "var(--card-secondary)", border: "1px solid var(--separator)", overflow: "hidden" }}>
+              {/* Category + date + remove */}
+              <div style={{ display: "flex", alignItems: "center", gap: 6, padding: "10px 12px 0" }}>
+                <div style={{ width: 22, height: 22, borderRadius: 6, background: meta.soft, display: "grid", placeItems: "center", flexShrink: 0 }}>
+                  <meta.Icon size={10} style={{ color: meta.color }} strokeWidth={2.5} />
                 </div>
                 <span style={{ fontSize: 11, fontWeight: 700, color: meta.color }}>{meta.label}</span>
+                {c.jurisdiction && <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>· {c.jurisdiction}</span>}
+                <span style={{ flex: 1 }} />
+                <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>{relDate(c.published_at)}</span>
+                <button onClick={() => onRemove?.(c.id)} aria-label="Remove"
+                  style={{ width: 22, height: 22, borderRadius: 6, background: "var(--red-soft)", border: "none", cursor: "pointer", display: "grid", placeItems: "center", color: "var(--red)", flexShrink: 0 }}>
+                  <X size={10} strokeWidth={2.8} />
+                </button>
               </div>
-              <p style={{ margin: 0, fontSize: 14, fontWeight: 600, lineHeight: 1.35, color: "var(--text-primary)" }}>{c.headline}</p>
-            </a>
+              {/* Headline */}
+              <a href={c.source?.url} target="_blank" rel="noreferrer" style={{ display: "block", padding: "6px 12px 4px", textDecoration: "none" }}>
+                <p style={{ margin: 0, fontSize: 14, fontWeight: 700, lineHeight: 1.35, color: "var(--text-primary)" }}>{c.headline}</p>
+              </a>
+              {/* Plain English preview */}
+              {c.plain_english && (
+                <p style={{ margin: "0 12px", fontSize: 12.5, lineHeight: 1.5, color: "var(--text-secondary)", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                  {c.plain_english}
+                </p>
+              )}
+              {/* Footer: key value + source */}
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "7px 12px 10px" }}>
+                {kv ? (
+                  <span style={{ fontSize: 11, fontWeight: 800, color: meta.color, fontFamily: "var(--font-mono)" }}>{kv}</span>
+                ) : <span />}
+                <a href={c.source?.url} target="_blank" rel="noreferrer"
+                  style={{ fontSize: 10.5, fontWeight: 600, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 3, textDecoration: "none" }}>
+                  {c.source?.name?.split(" · ")[0]}
+                  <ExternalLink size={9} />
+                </a>
+              </div>
+            </div>
           );
         })}
       </div>
@@ -545,6 +669,12 @@ function SavedSheet({ open, onClose, items, onClear }) {
 function ArchiveSheet({ open, onClose, allCards, savedIds }) {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
+
+  const catCounts = useMemo(() => {
+    const m = {};
+    for (const c of allCards) m[c.category] = (m[c.category] || 0) + 1;
+    return m;
+  }, [allCards]);
 
   const filtered = useMemo(() => {
     let xs = allCards;
@@ -562,25 +692,37 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
   return (
     <Sheet open={open} onClose={onClose}>
       <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-          <h3 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Archive · {allCards.length}</h3>
-          <button
-            onClick={onClose}
-            aria-label="Close archive"
-            style={{
-              width: 34, height: 34, borderRadius: 10,
-              background: "var(--card-secondary)", border: "1px solid var(--separator)",
-              cursor: "pointer", display: "grid", placeItems: "center",
-              color: "var(--text-primary)",
-            }}
-          >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+          <div>
+            <h3 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Archive</h3>
+            <div style={{ fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 2 }}>
+              {allCards.length} stories · refreshed 8× daily
+            </div>
+          </div>
+          <button onClick={onClose} aria-label="Close archive"
+            style={{ width: 34, height: 34, borderRadius: 10, background: "var(--card-secondary)", border: "1px solid var(--separator)", cursor: "pointer", display: "grid", placeItems: "center", color: "var(--text-primary)" }}>
             <X size={15} strokeWidth={2.4} />
           </button>
         </div>
+
+        {/* Category breakdown (only in "all" view) */}
+        {filter === "all" && !search.trim() && (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 5, marginBottom: 10 }}>
+            {Object.entries(CATS).map(([key, cat]) => (
+              <button key={key} onClick={() => setFilter(key)}
+                style={{ padding: "6px 4px", borderRadius: 10, background: cat.soft, border: `1px solid ${cat.hex}28`, cursor: "pointer", textAlign: "center" }}>
+                <cat.Icon size={12} style={{ color: cat.color, display: "block", margin: "0 auto 3px" }} strokeWidth={2.5} />
+                <div style={{ fontSize: 9, fontWeight: 700, color: cat.color, lineHeight: 1.2 }}>{cat.label}</div>
+                <div style={{ fontSize: 10, fontWeight: 800, color: cat.color, fontFamily: "var(--font-mono)", marginTop: 1 }}>{catCounts[key] || 0}</div>
+              </button>
+            ))}
+          </div>
+        )}
+
         <input
           value={search} onChange={(e) => setSearch(e.target.value)}
           placeholder="Search headlines…"
-          style={{ width: "100%", padding: "10px 14px", borderRadius: 12, fontSize: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)", color: "var(--text-primary)", outline: "none" }}
+          style={{ width: "100%", padding: "10px 14px", borderRadius: 12, fontSize: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)", color: "var(--text-primary)", outline: "none", boxSizing: "border-box" }}
         />
         <div style={{ display: "flex", gap: 6, overflowX: "auto", marginTop: 10, scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
           {["all", ...Object.keys(CATS)].map((k) => {
@@ -589,28 +731,45 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
             return (
               <button key={k} onClick={() => setFilter(k)}
                 style={{ flexShrink: 0, padding: "6px 13px", borderRadius: 100, fontSize: 12, fontWeight: 700, cursor: "pointer", border: "none", background: active ? (meta?.color || "var(--text-primary)") : "var(--card-secondary)", color: active ? "white" : "var(--text-secondary)" }}>
-                {k === "all" ? "All" : meta.label}
+                {k === "all" ? `All (${allCards.length})` : `${meta.label} ${catCounts[k] ? `· ${catCounts[k]}` : ""}`}
               </button>
             );
           })}
         </div>
       </div>
+
       <div style={{ flex: 1, overflowY: "auto", padding: "10px 20px", display: "flex", flexDirection: "column", gap: 7 }}>
         {filtered.length === 0 && <p style={{ textAlign: "center", padding: "40px 0", fontSize: 15, color: "var(--text-secondary)" }}>No matches.</p>}
         {filtered.map((c) => {
           const meta = CATS[c.category] || CATS.insight;
+          const kv = cardKeyVal(c);
+          const isSaved = savedIds.has(c.id);
           return (
             <a key={c.id} href={c.source?.url} target="_blank" rel="noreferrer"
-              style={{ display: "flex", gap: 12, padding: "12px 14px", borderRadius: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)", textDecoration: "none", alignItems: "flex-start" }}>
-              <div style={{ width: 28, height: 28, borderRadius: 8, background: meta.soft, display: "grid", placeItems: "center", flexShrink: 0 }}>
-                <meta.Icon size={13} style={{ color: meta.color }} strokeWidth={2.5} />
+              style={{ display: "flex", gap: 10, padding: "11px 13px", borderRadius: 14, background: isSaved ? meta.soft : "var(--card-secondary)", border: `1px solid ${isSaved ? meta.hex + "30" : "var(--separator)"}`, textDecoration: "none", alignItems: "flex-start" }}>
+              <div style={{ flexShrink: 0, paddingTop: 1 }}>
+                <div style={{ width: 26, height: 26, borderRadius: 7, background: isSaved ? meta.color : meta.soft, display: "grid", placeItems: "center" }}>
+                  <meta.Icon size={12} color={isSaved ? "white" : meta.color} strokeWidth={2.5} />
+                </div>
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 3 }}>
-                  <span style={{ fontSize: 11, fontWeight: 700, color: meta.color }}>{meta.label}</span>
-                  {savedIds.has(c.id) && <Bookmark size={10} fill={meta.hex} strokeWidth={0} />}
+                {/* Row 1: category + jurisdiction + date */}
+                <div style={{ display: "flex", alignItems: "center", gap: 5, marginBottom: 3 }}>
+                  <span style={{ fontSize: 10.5, fontWeight: 700, color: meta.color }}>{meta.label}</span>
+                  {c.jurisdiction && <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>· {c.jurisdiction}</span>}
+                  <span style={{ flex: 1 }} />
+                  {isSaved && <Bookmark size={9} fill={meta.hex} strokeWidth={0} style={{ flexShrink: 0 }} />}
+                  <span style={{ fontSize: 10, color: "var(--text-tertiary)", flexShrink: 0 }}>{relDate(c.published_at)}</span>
                 </div>
-                <p style={{ margin: 0, fontSize: 14, fontWeight: 600, lineHeight: 1.35, color: "var(--text-primary)" }}>{c.headline}</p>
+                {/* Headline */}
+                <p style={{ margin: "0 0 4px", fontSize: 13.5, fontWeight: 600, lineHeight: 1.35, color: "var(--text-primary)" }}>{c.headline}</p>
+                {/* Row 3: key value + source */}
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                  {kv ? (
+                    <span style={{ fontSize: 11, fontWeight: 800, color: meta.color, fontFamily: "var(--font-mono)" }}>{kv}</span>
+                  ) : <span />}
+                  <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>{c.source?.name?.split(" · ")[0]}</span>
+                </div>
               </div>
             </a>
           );
@@ -903,6 +1062,35 @@ function hexAlpha(hex, alpha) {
   return hex + a;
 }
 
+function relDate(dateStr) {
+  if (!dateStr) return "";
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const h = Math.floor(diff / 3600000);
+  if (h < 1) return "just now";
+  if (h < 24) return `${h}h ago`;
+  const d = Math.floor(h / 24);
+  if (d === 1) return "yesterday";
+  if (d < 7) return `${d}d ago`;
+  return new Date(dateStr).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+function cardKeyVal(c) {
+  if (c.category === "vendor" && c.amount) return `${c.amount}${c.round ? ` · ${c.round}` : ""}`;
+  if (c.category === "career" && c.comp_low && c.comp_high) {
+    const sym = { USD: "$", GBP: "£", EUR: "€" }[c.currency] || "";
+    const f = (n) => `${sym}${n >= 1000 ? Math.round(n / 1000) + "K" : n}`;
+    return `${f(c.comp_low)}–${f(c.comp_high)}`;
+  }
+  if (c.category === "regulation" && c.effective_date) {
+    const days = Math.round((new Date(c.effective_date) - Date.now()) / 86400000);
+    return days < 0 ? "In force" : `${days}d to effective`;
+  }
+  if (c.category === "tool" && c.stars) return `${c.stars >= 1000 ? (c.stars / 1000).toFixed(1) + "K" : c.stars} ★`;
+  if (c.category === "research" && c.delta_pts != null) return `${c.delta_pts > 0 ? "+" : ""}${c.delta_pts} pts`;
+  if (c.category === "insight" && c.stat_value) return c.stat_value;
+  return null;
+}
+
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip only. Compact, monogrammatic.
 ───────────────────────────────────────────────────────────────── */
@@ -1003,6 +1191,7 @@ export default function PageClient({ initialCards }) {
   const [shareCard, setShareCard] = useState(null);
   const [showGate, setShowGate] = useState(false);
   const [gateSkipped, setGateSkipped] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
 
   // Auth — validate session server-side and subscribe to all future auth events
   useEffect(() => {
@@ -1027,6 +1216,11 @@ export default function PageClient({ initialCards }) {
       setAuthError("The magic link expired or was already used. Request a new one.");
       setShowGate(true);
     }
+  }, []);
+
+  // Welcome screen — show once per device
+  useEffect(() => {
+    if (!localStorage.getItem("ath_welcomed")) setShowWelcome(true);
   }, []);
 
   // Sync saves + dismissed from Supabase on login
@@ -1088,6 +1282,12 @@ export default function PageClient({ initialCards }) {
       if (user) supabase.from("dismissed").upsert({ user_id: user.id, card_id: topCard.id });
     }
   }, [topCard, user, supabase]);
+
+  const doUnsave = useCallback(async (cardId) => {
+    setSavedIds((prev) => { const n = new Set(prev); n.delete(cardId); return n; });
+    setSavedCards((prev) => prev.filter((c) => c.id !== cardId));
+    if (user) await supabase.from("saves").delete().eq("user_id", user.id).eq("card_id", cardId);
+  }, [user, supabase]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -1204,7 +1404,23 @@ export default function PageClient({ initialCards }) {
           <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
           <IconBtn onClick={() => setSavedOpen(true)} label="Saved" badge={savedIds.size}><Bookmark size={15} /></IconBtn>
-          {!user && (
+          {user ? (
+            <button
+              onClick={() => supabase.auth.signOut()}
+              title={`${user.email} · Sign out`}
+              style={{
+                width: 36, height: 36, borderRadius: 10,
+                background: "var(--blue)", border: "none",
+                display: "grid", placeItems: "center",
+                cursor: "pointer", color: "white",
+                fontSize: 13, fontWeight: 800,
+                fontFamily: "var(--font-mono)",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              {user.email?.[0]?.toUpperCase() || "?"}
+            </button>
+          ) : (
             <IconBtn onClick={() => setShowGate(true)} label="Sign in">
               <Mail size={15} />
             </IconBtn>
@@ -1232,17 +1448,25 @@ export default function PageClient({ initialCards }) {
         })}
       </div>
 
-      {/* ── Progress strip ─────────────────────────────────────── */}
-      {progressTotal > 0 && !isEmpty && (
-        <div style={{ flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
-          {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
-            <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
-          ))}
-          {progressTotal > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
-          <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
-            {progressCount + 1}/{progressTotal}
+      {/* ── Progress strip / count ─────────────────────────────── */}
+      {catFilter === "all" ? (
+        <div style={{ flexShrink: 0, padding: "0 16px 8px" }}>
+          <span style={{ fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", letterSpacing: "0.01em" }}>
+            {allCards.length} live stories · endless scroll
           </span>
         </div>
+      ) : (
+        progressTotal > 0 && !isEmpty && (
+          <div style={{ flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
+            {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
+              <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
+            ))}
+            {progressTotal > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
+            <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
+              {progressCount + 1}/{progressTotal}
+            </span>
+          </div>
+        )
       )}
 
       {/* ── Card area  ─────────────────────────────────────────────
@@ -1302,6 +1526,18 @@ export default function PageClient({ initialCards }) {
                   />
                 )}
               </AnimatePresence>
+
+              {/* Welcome overlay — shown once on first visit, sits above the card */}
+              <AnimatePresence>
+                {showWelcome && (
+                  <WelcomeCard
+                    onDismiss={() => {
+                      localStorage.setItem("ath_welcomed", "1");
+                      setShowWelcome(false);
+                    }}
+                  />
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </div>
@@ -1349,11 +1585,16 @@ export default function PageClient({ initialCards }) {
         )}
       </AnimatePresence>
 
-      <SavedSheet open={savedOpen} onClose={() => setSavedOpen(false)} items={savedCards}
+      <SavedSheet
+        open={savedOpen}
+        onClose={() => setSavedOpen(false)}
+        items={savedCards}
+        onRemove={doUnsave}
         onClear={async () => {
           if (user) await supabase.from("saves").delete().eq("user_id", user.id);
           setSavedIds(new Set()); setSavedCards([]);
-        }} />
+        }}
+      />
       <ArchiveSheet open={archiveOpen} onClose={() => setArchiveOpen(false)} allCards={allCards} savedIds={savedIds} />
       <ShareModal open={!!shareCard} onClose={() => setShareCard(null)} card={shareCard} />
     </main>
