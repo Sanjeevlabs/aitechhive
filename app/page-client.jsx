@@ -393,83 +393,85 @@ function DraggableCard({ card, onSwipe }) {
    WELCOME CARD  —  shown once on first visit
 ───────────────────────────────────────────────────────────────── */
 function WelcomeCard({ onDismiss }) {
-  const gestures = [
-    { icon: "→", label: "Swipe right", desc: "Save to your reading list" },
-    { icon: "←", label: "Swipe left", desc: "Skip to the next story" },
-    { icon: "↑", label: "Tap Share", desc: "Send the card to your team" },
-  ];
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95, y: 16 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.98, y: -10 }}
-      transition={{ type: "spring", stiffness: 360, damping: 34 }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
       style={{
         position: "absolute", inset: 0, zIndex: 10,
-        background: "var(--card)", borderRadius: 24, overflow: "hidden",
+        background: "#0C0C0E", borderRadius: 24, overflow: "hidden",
         display: "flex", flexDirection: "column",
-        boxShadow: "0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.08), 0 20px 52px rgba(0,0,0,0.13)",
+        boxShadow: "0 4px 24px rgba(0,0,0,0.22), 0 24px 64px rgba(0,0,0,0.18)",
         userSelect: "none",
       }}
     >
-      {/* Hero */}
-      <div style={{
-        flexShrink: 0,
-        background: "linear-gradient(150deg, #0A0A0A 0%, #1C1C1E 60%, #2C2C2E 100%)",
-        padding: "20px 20px 24px",
-        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -1px 0 rgba(0,0,0,0.30)",
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
-          <div style={{ width: 38, height: 38, borderRadius: 10, background: "white", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 700, color: "#0A0A0A", flexShrink: 0 }}>ath</div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: "white" }}>AITechHive</div>
-            <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginTop: 1 }}>BFSI · Enterprise AI</div>
-          </div>
-          <div style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)", padding: "4px 11px", borderRadius: 100, fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.8)", letterSpacing: "0.06em", flexShrink: 0 }}>8× DAILY</div>
+      {/* Top bar */}
+      <div style={{ flexShrink: 0, padding: "20px 22px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+          <div style={{ width: 30, height: 30, borderRadius: 8, background: "white", display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "#0C0C0E" }}>ath</div>
+          <span style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.45)", letterSpacing: "0.04em", textTransform: "uppercase" }}>AITechHive</span>
         </div>
-        <div style={{ fontSize: 24, fontWeight: 700, lineHeight: 1.22, color: "white", fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
-          Every senior banker's<br />secret AI briefing.
-        </div>
-        <div style={{ fontSize: 13.5, color: "rgba(255,255,255,0.55)", marginTop: 9, lineHeight: 1.5 }}>
-          Signal over noise. 100 curated cards daily across 10 categories — regulation, funding, deployments, research and more.
-        </div>
+        <span style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
       </div>
 
-      {/* Body */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 20px 0" }}>
-        {/* Category chips */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginBottom: 16 }}>
-          {Object.entries(CATS).map(([key, cat]) => (
-            <div key={key} style={{ display: "flex", alignItems: "center", gap: 5, padding: "4px 10px", borderRadius: 100, background: cat.soft, border: `1px solid ${cat.hex}30` }}>
-              <cat.Icon size={9} style={{ color: cat.color }} strokeWidth={2.5} />
-              <span style={{ fontSize: 10.5, fontWeight: 700, color: cat.color }}>{cat.label}</span>
+      {/* Editorial headline */}
+      <div style={{ flex: 1, minHeight: 0, padding: "22px 22px 0", overflowY: "auto" }}>
+        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.10)", paddingBottom: 18, marginBottom: 18 }}>
+          <p style={{ margin: "0 0 10px", fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+            BFSI · Enterprise AI · Daily Intelligence
+          </p>
+          <h2 style={{ margin: 0, fontSize: 26, fontWeight: 700, lineHeight: 1.18, color: "white", fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
+            The briefing that senior bankers read before the market opens.
+          </h2>
+        </div>
+
+        {/* Stats row */}
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 18, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+          {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
+            <div key={lbl} style={{ padding: "13px 10px", background: "rgba(255,255,255,0.04)", textAlign: "center" }}>
+              <div style={{ fontSize: 22, fontWeight: 800, color: "white", fontFamily: "var(--font-mono)", lineHeight: 1 }}>{val}</div>
+              <div style={{ fontSize: 9.5, fontWeight: 600, color: "rgba(255,255,255,0.35)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
             </div>
           ))}
         </div>
 
-        {/* Gesture guide */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-          {gestures.map(({ icon, label, desc }) => (
-            <div key={label} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 13px", borderRadius: 13, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
-              <div style={{ width: 34, height: 34, borderRadius: 9, background: "var(--text-primary)", color: "var(--bg)", display: "grid", placeItems: "center", fontSize: 15, fontWeight: 700, flexShrink: 0 }}>{icon}</div>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-primary)" }}>{label}</div>
-                <div style={{ fontSize: 12, color: "var(--text-secondary)", marginTop: 1 }}>{desc}</div>
-              </div>
-            </div>
-          ))}
+        {/* What's covered */}
+        <div style={{ marginBottom: 18 }}>
+          <p style={{ margin: "0 0 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.1em", textTransform: "uppercase" }}>What we track</p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+            {["Regulation & enforcement", "Bank AI deployments", "Fintech funding", "Research & models", "Career & comp", "Market signals"].map((t) => (
+              <span key={t} style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.55)", padding: "4px 10px", borderRadius: 100, border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)" }}>{t}</span>
+            ))}
+          </div>
         </div>
-        <div style={{ height: 12 }} />
+
+        {/* How to use — minimal, text-only */}
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 14, marginBottom: 6 }}>
+          <p style={{ margin: "0 0 8px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: "0.1em", textTransform: "uppercase" }}>How it works</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+            {[["Swipe right or tap Save", "Bookmark to your reading list, synced across devices"], ["Swipe left or tap Skip", "Advance to the next story"], ["Tap Share", "Generate a social card to send to your team"]].map(([act, desc]) => (
+              <div key={act} style={{ display: "flex", gap: 10, alignItems: "baseline" }}>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.7)", flexShrink: 0, minWidth: 140 }}>{act}</span>
+                <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.4 }}>{desc}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* CTA */}
-      <div style={{ flexShrink: 0, padding: "14px 20px max(16px, env(safe-area-inset-bottom))" }}>
+      <div style={{ flexShrink: 0, padding: "16px 22px max(18px, env(safe-area-inset-bottom))", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <button
           onClick={onDismiss}
-          style={{ width: "100%", padding: "15px", borderRadius: 16, background: "var(--text-primary)", color: "var(--bg)", fontSize: 16, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em" }}
+          style={{ width: "100%", padding: "14px", borderRadius: 13, background: "white", color: "#0C0C0E", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em" }}
         >
-          Start reading →
+          Start reading
         </button>
+        <p style={{ margin: "10px 0 0", fontSize: 10.5, color: "rgba(255,255,255,0.25)", textAlign: "center", lineHeight: 1.4 }}>
+          Free. No newsletters. Saves sync across devices.
+        </p>
       </div>
     </motion.div>
   );
@@ -662,6 +664,11 @@ function Sheet({ open, onClose, children }) {
    SAVED SHEET
 ───────────────────────────────────────────────────────────────── */
 function SavedSheet({ open, onClose, items, onClear, onRemove }) {
+  const [confirmClear, setConfirmClear] = useState(false);
+
+  // Reset confirm state when sheet closes
+  useEffect(() => { if (!open) setConfirmClear(false); }, [open]);
+
   return (
     <Sheet open={open} onClose={onClose}>
       {/* Header */}
@@ -673,7 +680,24 @@ function SavedSheet({ open, onClose, items, onClear, onRemove }) {
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
             {items.length > 0 && (
-              <button onClick={onClear} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700, color: "var(--red)", padding: 0 }}>Clear all</button>
+              confirmClear ? (
+                <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                  <button
+                    onClick={() => { onClear(); setConfirmClear(false); }}
+                    style={{ background: "var(--red)", color: "white", border: "none", borderRadius: 8, padding: "5px 10px", fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
+                    Clear all
+                  </button>
+                  <button onClick={() => setConfirmClear(false)}
+                    style={{ background: "none", border: "none", fontSize: 12, fontWeight: 600, color: "var(--text-secondary)", cursor: "pointer", padding: 0 }}>
+                    Cancel
+                  </button>
+                </div>
+              ) : (
+                <button onClick={() => setConfirmClear(true)}
+                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 600, color: "var(--text-tertiary)", padding: 0 }}>
+                  Clear all
+                </button>
+              )
             )}
             <button onClick={onClose} aria-label="Close saved"
               style={{ width: 34, height: 34, borderRadius: 10, background: "var(--card-secondary)", border: "1px solid var(--separator)", cursor: "pointer", display: "grid", placeItems: "center", color: "var(--text-primary)" }}>
@@ -715,7 +739,9 @@ function SavedSheet({ open, onClose, items, onClear, onRemove }) {
                 {c.jurisdiction && <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>· {c.jurisdiction}</span>}
                 <span style={{ flex: 1 }} />
                 <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>{relDate(c.published_at)}</span>
-                <button onClick={() => onRemove?.(c.id)} aria-label="Remove"
+                <button
+                  onClick={(e) => { e.stopPropagation(); if (c.id) onRemove?.(c.id); }}
+                  aria-label="Remove"
                   style={{ width: 22, height: 22, borderRadius: 6, background: "var(--red-soft)", border: "none", cursor: "pointer", display: "grid", placeItems: "center", color: "var(--red)", flexShrink: 0 }}>
                   <X size={10} strokeWidth={2.8} />
                 </button>
@@ -752,9 +778,23 @@ function SavedSheet({ open, onClose, items, onClear, onRemove }) {
 /* ─────────────────────────────────────────────────────────────────
    ARCHIVE SHEET
 ───────────────────────────────────────────────────────────────── */
+const DATE_RANGES = [
+  { key: "today", label: "Today",  ms: 24 * 3600_000 },
+  { key: "week",  label: "7 days", ms: 7 * 24 * 3600_000 },
+  { key: "all",   label: "All",    ms: Infinity },
+];
+const PAGE_SIZE = 30;
+
 function ArchiveSheet({ open, onClose, allCards, savedIds }) {
-  const [filter, setFilter] = useState("all");
-  const [search, setSearch] = useState("");
+  const [filter,    setFilter]    = useState("all");
+  const [dateRange, setDateRange] = useState("week");
+  const [search,    setSearch]    = useState("");
+  const [page,      setPage]      = useState(1);
+
+  // Reset pagination whenever any filter changes
+  useEffect(() => { setPage(1); }, [filter, dateRange, search]);
+  // Reset all state when sheet closes
+  useEffect(() => { if (!open) { setFilter("all"); setDateRange("week"); setSearch(""); setPage(1); } }, [open]);
 
   const catCounts = useMemo(() => {
     const m = {};
@@ -763,7 +803,11 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
   }, [allCards]);
 
   const filtered = useMemo(() => {
-    let xs = allCards;
+    const cutoff = Date.now() - (DATE_RANGES.find(r => r.key === dateRange)?.ms ?? Infinity);
+    let xs = allCards.filter((c) => {
+      const t = new Date(c.published_at || 0).getTime();
+      return dateRange === "all" || t >= cutoff;
+    });
     if (filter !== "all") xs = xs.filter((c) => c.category === filter);
     if (search.trim()) {
       const q = search.toLowerCase();
@@ -773,16 +817,20 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
       const s = (savedIds.has(b.id) ? 1 : 0) - (savedIds.has(a.id) ? 1 : 0);
       return s !== 0 ? s : new Date(b.published_at || 0) - new Date(a.published_at || 0);
     });
-  }, [allCards, filter, search, savedIds]);
+  }, [allCards, filter, dateRange, search, savedIds]);
+
+  const visible = filtered.slice(0, page * PAGE_SIZE);
+  const hasMore = visible.length < filtered.length;
 
   return (
     <Sheet open={open} onClose={onClose}>
       <div style={{ flexShrink: 0, padding: "14px 20px 12px", borderBottom: "1px solid var(--separator)" }}>
+        {/* Title row */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
           <div>
             <h3 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.015em" }}>Archive</h3>
             <div style={{ fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 2 }}>
-              {allCards.length} stories · refreshed 8× daily
+              {filtered.length} of {allCards.length} stories
             </div>
           </div>
           <button onClick={onClose} aria-label="Close archive"
@@ -791,7 +839,17 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
           </button>
         </div>
 
-        {/* Category breakdown (only in "all" view) */}
+        {/* Date range pills */}
+        <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
+          {DATE_RANGES.map((r) => (
+            <button key={r.key} onClick={() => setDateRange(r.key)}
+              style={{ padding: "5px 13px", borderRadius: 100, fontSize: 12, fontWeight: 700, cursor: "pointer", border: "none", background: dateRange === r.key ? "var(--text-primary)" : "var(--card-secondary)", color: dateRange === r.key ? "var(--bg)" : "var(--text-secondary)" }}>
+              {r.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Category breakdown grid */}
         {filter === "all" && !search.trim() && (
           <div style={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 5, marginBottom: 10 }}>
             {Object.entries(CATS).map(([key, cat]) => (
@@ -805,11 +863,14 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
           </div>
         )}
 
+        {/* Search */}
         <input
           value={search} onChange={(e) => setSearch(e.target.value)}
           placeholder="Search headlines…"
           style={{ width: "100%", padding: "10px 14px", borderRadius: 12, fontSize: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)", color: "var(--text-primary)", outline: "none", boxSizing: "border-box" }}
         />
+
+        {/* Category filter pills */}
         <div style={{ display: "flex", gap: 6, overflowX: "auto", marginTop: 10, scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
           {["all", ...Object.keys(CATS)].map((k) => {
             const active = filter === k;
@@ -817,7 +878,7 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
             return (
               <button key={k} onClick={() => setFilter(k)}
                 style={{ flexShrink: 0, padding: "6px 13px", borderRadius: 100, fontSize: 12, fontWeight: 700, cursor: "pointer", border: "none", background: active ? (meta?.color || "var(--text-primary)") : "var(--card-secondary)", color: active ? "white" : "var(--text-secondary)" }}>
-                {k === "all" ? `All (${allCards.length})` : `${meta.label} ${catCounts[k] ? `· ${catCounts[k]}` : ""}`}
+                {k === "all" ? "All" : `${meta.label}${catCounts[k] ? ` · ${catCounts[k]}` : ""}`}
               </button>
             );
           })}
@@ -825,8 +886,12 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
       </div>
 
       <div style={{ flex: 1, overflowY: "auto", padding: "10px 20px", display: "flex", flexDirection: "column", gap: 7 }}>
-        {filtered.length === 0 && <p style={{ textAlign: "center", padding: "40px 0", fontSize: 15, color: "var(--text-secondary)" }}>No matches.</p>}
-        {filtered.map((c) => {
+        {filtered.length === 0 && (
+          <p style={{ textAlign: "center", padding: "40px 0", fontSize: 15, color: "var(--text-secondary)" }}>
+            No stories in this range. Try "7 days" or "All".
+          </p>
+        )}
+        {visible.map((c) => {
           const meta = CATS[c.category] || CATS.insight;
           const kv = cardKeyVal(c);
           const isSaved = savedIds.has(c.id);
@@ -839,7 +904,6 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
                 </div>
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
-                {/* Row 1: category + jurisdiction + date */}
                 <div style={{ display: "flex", alignItems: "center", gap: 5, marginBottom: 3 }}>
                   <span style={{ fontSize: 10.5, fontWeight: 700, color: meta.color }}>{meta.label}</span>
                   {c.jurisdiction && <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>· {c.jurisdiction}</span>}
@@ -847,19 +911,21 @@ function ArchiveSheet({ open, onClose, allCards, savedIds }) {
                   {isSaved && <Bookmark size={9} fill={meta.hex} strokeWidth={0} style={{ flexShrink: 0 }} />}
                   <span style={{ fontSize: 10, color: "var(--text-tertiary)", flexShrink: 0 }}>{relDate(c.published_at)}</span>
                 </div>
-                {/* Headline */}
                 <p style={{ margin: "0 0 4px", fontSize: 13.5, fontWeight: 600, lineHeight: 1.35, color: "var(--text-primary)" }}>{c.headline}</p>
-                {/* Row 3: key value + source */}
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  {kv ? (
-                    <span style={{ fontSize: 11, fontWeight: 800, color: meta.color, fontFamily: "var(--font-mono)" }}>{kv}</span>
-                  ) : <span />}
+                  {kv ? <span style={{ fontSize: 11, fontWeight: 800, color: meta.color, fontFamily: "var(--font-mono)" }}>{kv}</span> : <span />}
                   <span style={{ fontSize: 10, color: "var(--text-tertiary)" }}>{c.source?.name?.split(" · ")[0]}</span>
                 </div>
               </div>
             </a>
           );
         })}
+        {hasMore && (
+          <button onClick={() => setPage((p) => p + 1)}
+            style={{ width: "100%", padding: "12px", borderRadius: 14, background: "var(--card-secondary)", border: "1.5px solid var(--separator)", color: "var(--text-secondary)", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 4 }}>
+            Load {Math.min(PAGE_SIZE, filtered.length - visible.length)} more
+          </button>
+        )}
       </div>
     </Sheet>
   );
@@ -1285,10 +1351,14 @@ export default function PageClient({ initialCards }) {
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
-      // Auto-close the sign-in gate when the magic link callback sets the session
       if (event === "SIGNED_IN") {
         setShowGate(false);
         setAuthError("");
+      }
+      if (event === "SIGNED_OUT") {
+        // Don't re-trigger the gate after logout — user intentionally signed out
+        setGateSkipped(true);
+        setShowGate(false);
       }
     });
     return () => subscription.unsubscribe();
@@ -1641,7 +1711,7 @@ export default function PageClient({ initialCards }) {
               <Share2 size={18} strokeWidth={2.25} />
             </BigActionBtn>
 
-            <BigActionBtn label={user ? "Save" : "Sign in to save"} onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
+            <BigActionBtn label="Save" onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
               <Bookmark size={20} strokeWidth={2.25} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
             </BigActionBtn>
           </div>
