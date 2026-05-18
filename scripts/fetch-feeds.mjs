@@ -9,39 +9,70 @@ const parser = new Parser({
   headers: { "User-Agent": "AITechHive/2.0 (+https://aitechhive.com)" },
 });
 
-// Only established, credible publishers — no personal blogs, no unverified outlets
+// Curated tier-1 sources only. No vendor PR, no consumer-tech, no personal blogs.
+// Focus: BFSI trade press, Fortune-1000 wire (Reuters/Bloomberg/FT/WSJ/Economist),
+// fintech investment signal, top financial firm research, regulator official feeds,
+// and frontier AI lab blogs.
 const RSS_SOURCES = [
-  // BFSI / fintech — trusted trade press
+  // ── Tier 1 wire & financial press (Google News site-scoped, fresh window) ─
+  { name: "Reuters Finance/AI", url: "https://news.google.com/rss/search?q=when:1d+site:reuters.com+(bank+OR+fintech+OR+%22artificial+intelligence%22+OR+regulation)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Bloomberg Finance/AI", url: "https://news.google.com/rss/search?q=when:1d+site:bloomberg.com+(bank+OR+fintech+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "FT Banking/AI", url: "https://news.google.com/rss/search?q=when:1d+site:ft.com+(bank+OR+fintech+OR+%22artificial+intelligence%22+OR+regulation)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "WSJ Finance/AI", url: "https://news.google.com/rss/search?q=when:1d+site:wsj.com+(bank+OR+fintech+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Economist Finance", url: "https://news.google.com/rss/search?q=when:2d+site:economist.com+(bank+OR+fintech+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "CNBC Tech/Finance", url: "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
+  { name: "Forbes Fintech", url: "https://news.google.com/rss/search?q=when:1d+site:forbes.com+(fintech+OR+%22AI+banking%22+OR+%22AI+insurance%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Fortune Tech/AI", url: "https://news.google.com/rss/search?q=when:1d+site:fortune.com+(%22artificial+intelligence%22+OR+fintech+OR+bank)&hl=en-US&gl=US&ceid=US:en" },
+
+  // ── BFSI trade press (native, high-signal-to-noise) ──────────────────────
   { name: "Finextra", url: "https://www.finextra.com/rss/headlines.aspx" },
-  { name: "Tearsheet", url: "https://tearsheet.co/feed/" },
-  { name: "Bank Automation News", url: "https://bankautomationnews.com/feed/" },
   { name: "American Banker", url: "https://www.americanbanker.com/feed" },
+  { name: "Bank Automation News", url: "https://bankautomationnews.com/feed/" },
+  { name: "Banking Dive", url: "https://www.bankingdive.com/feeds/news/" },
   { name: "PYMNTS", url: "https://www.pymnts.com/feed/" },
-  // Major wire services / press — Reuters discontinued its public RSS in 2020;
-  // use Google News passthroughs (Reuters/Bloomberg/FT-tagged) and CNBC's working feed instead.
-  { name: "Reuters via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:reuters.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:bloomberg.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "FT via Google News", url: "https://news.google.com/rss/search?q=when:1d+site:ft.com+(AI+OR+bank+OR+finance)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "CNBC Technology", url: "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
-  // Frontier AI / enterprise tech — high-credibility only
-  { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
-  { name: "VentureBeat AI", url: "https://venturebeat.com/category/ai/feed/" },
-  { name: "MIT Tech Review AI", url: "https://www.technologyreview.com/feed/" },
-  { name: "The Verge AI", url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml" },
-  { name: "Wired AI", url: "https://www.wired.com/feed/tag/ai/latest/rss" },
-  // Official research lab blogs
-  { name: "Google Research", url: "https://research.google/blog/rss/" },
+  { name: "Tearsheet", url: "https://tearsheet.co/feed/" },
+  { name: "The Financial Brand", url: "https://thefinancialbrand.com/feed/" },
+  { name: "Sifted (EU fintech)", url: "https://sifted.eu/feed" },
+
+  // ── Fintech investment / funding signal ──────────────────────────────────
+  { name: "Fintech Funding", url: "https://news.google.com/rss/search?q=when:1d+(%22fintech+raises%22+OR+%22fintech+funding%22+OR+%22Series+A+fintech%22+OR+%22Series+B+fintech%22+OR+%22Series+C+fintech%22+OR+%22fintech+IPO%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Fintech M&A", url: "https://news.google.com/rss/search?q=when:1d+(%22fintech+acquires%22+OR+%22fintech+acquisition%22+OR+%22bank+acquires+AI%22+OR+%22bank+buys+AI%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Bank-AI Deployments", url: "https://news.google.com/rss/search?q=when:2d+(%22deploys+AI%22+OR+%22rolls+out+AI%22+OR+%22launches+AI%22)+(bank+OR+insurer+OR+payments)&hl=en-US&gl=US&ceid=US:en" },
+
+  // ── Top financial firm research / insights (Google News passthroughs) ────
+  { name: "Goldman Insights", url: "https://news.google.com/rss/search?q=when:3d+(site:goldmansachs.com+OR+%22Goldman+Sachs+Research%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "JPMorgan Research", url: "https://news.google.com/rss/search?q=when:3d+(%22JPMorgan+Research%22+OR+%22JPMorgan+Insights%22+OR+site:jpmorgan.com)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "McKinsey Financial", url: "https://news.google.com/rss/search?q=when:3d+site:mckinsey.com+(%22financial+services%22+OR+banking+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "BCG Financial", url: "https://news.google.com/rss/search?q=when:3d+site:bcg.com+(%22financial+institutions%22+OR+%22artificial+intelligence%22+OR+banking)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "BlackRock Insights", url: "https://news.google.com/rss/search?q=when:3d+(site:blackrock.com+%22insights%22+OR+%22BlackRock+Investment+Institute%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Citi GPS / Research", url: "https://news.google.com/rss/search?q=when:7d+(%22Citi+GPS%22+OR+%22Citi+Research%22)&hl=en-US&gl=US&ceid=US:en" },
+
+  // ── Regulator official channels (canonical for the Regulation category) ──
+  { name: "FCA UK", url: "https://news.google.com/rss/search?q=when:3d+site:fca.org.uk&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Bank of England", url: "https://news.google.com/rss/search?q=when:3d+site:bankofengland.co.uk+(AI+OR+%22artificial+intelligence%22+OR+supervisory)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "ECB Supervision", url: "https://news.google.com/rss/search?q=when:3d+(site:bankingsupervision.europa.eu+OR+site:ecb.europa.eu)+(AI+OR+banking)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "OCC US", url: "https://news.google.com/rss/search?q=when:3d+site:occ.gov&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Federal Reserve", url: "https://news.google.com/rss/search?q=when:3d+site:federalreserve.gov+(AI+OR+%22artificial+intelligence%22+OR+%22SR+letter%22)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "RBI India", url: "https://news.google.com/rss/search?q=when:3d+site:rbi.org.in+(AI+OR+%22artificial+intelligence%22+OR+technology)&hl=en-US&gl=US&ceid=US:en" },
+  { name: "MAS Singapore", url: "https://news.google.com/rss/search?q=when:3d+site:mas.gov.sg+(AI+OR+fintech)&hl=en-US&gl=US&ceid=US:en" },
+
+  // ── Frontier AI labs (official channels — golden source for Research) ────
   { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
+  { name: "Google Research", url: "https://research.google/blog/rss/" },
   { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
   { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
   { name: "Meta AI", url: "https://ai.meta.com/blog/rss/" },
   { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/" },
-  // Preprints / academic
+  { name: "MIT Tech Review", url: "https://www.technologyreview.com/feed/" },
+
+  // ── Preprints / academic ─────────────────────────────────────────────────
   { name: "arXiv cs.AI", url: "http://export.arxiv.org/rss/cs.AI" },
   { name: "arXiv q-fin", url: "http://export.arxiv.org/rss/q-fin" },
-  // Curated signals
-  { name: "HN BFSI/AI", url: "https://hnrss.org/newest?q=bank+OR+insurer+OR+finance+AI&points=20" },
-  { name: "HN Frontier AI", url: "https://hnrss.org/newest?q=LLM+OR+GPT+OR+Claude+OR+Gemini+OR+frontier+model&points=30" },
+
+  // ── Trending signal proxy (no free X/Twitter API; Google News most-cited) ─
+  // Real-time Twitter/X trends require the paid X API. Closest free proxy:
+  // Google News "trending" queries, which surface stories with high outlet density.
+  { name: "AI Trending Now", url: "https://news.google.com/rss/search?q=when:6h+(%22artificial+intelligence%22)+(viral+OR+%22most+discussed%22+OR+%22goes+viral%22+OR+breaking)&hl=en-US&gl=US&ceid=US:en" },
 ];
 
 const FRESHNESS_HOURS = 48;
