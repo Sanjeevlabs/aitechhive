@@ -478,20 +478,49 @@ function WelcomeCard({ onDismiss }) {
 /* ─────────────────────────────────────────────────────────────────
    SIGNUP GATE
 ───────────────────────────────────────────────────────────────── */
+// Map raw Supabase auth error messages to user-friendly copy
+function friendlyAuthError(msg = "") {
+  const m = msg.toLowerCase();
+  if (m.includes("rate limit") || m.includes("too many") || m.includes("429"))
+    return "Too many requests. Please wait a few minutes before trying again.";
+  if (m.includes("invalid email") || m.includes("unable to validate"))
+    return "That doesn't look like a valid email address.";
+  if (m.includes("signups not allowed") || m.includes("signup"))
+    return "Sign-ups are temporarily paused. Try again shortly.";
+  if (m.includes("network") || m.includes("fetch"))
+    return "Network error. Check your connection and try again.";
+  return "Something went wrong. Please try again.";
+}
+
+const RESEND_COOLDOWN = 60; // seconds
+
 function SignupGate({ supabase, onClose, initialError }) {
   const [email, setEmail] = useState("");
   const [phase, setPhase] = useState(initialError ? "error" : "idle");
   const [error, setError] = useState(initialError || "");
+  const [cooldown, setCooldown] = useState(0); // seconds remaining before resend allowed
+
+  // Countdown ticker
+  useEffect(() => {
+    if (cooldown <= 0) return;
+    const t = setTimeout(() => setCooldown((s) => s - 1), 1000);
+    return () => clearTimeout(t);
+  }, [cooldown]);
 
   const signInEmail = async () => {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("Enter a valid email."); return; }
     setPhase("loading"); setError("");
-    const { error } = await supabase.auth.signInWithOtp({
+    const { error: authErr } = await supabase.auth.signInWithOtp({
       email,
       options: { emailRedirectTo: `${window.location.origin}/api/auth/callback` },
     });
-    if (error) { setError(error.message); setPhase("error"); }
-    else setPhase("sent");
+    if (authErr) {
+      setError(friendlyAuthError(authErr.message));
+      setPhase("error");
+    } else {
+      setPhase("sent");
+      setCooldown(RESEND_COOLDOWN);
+    }
   };
 
   return (
@@ -503,28 +532,49 @@ function SignupGate({ supabase, onClose, initialError }) {
       <p style={{ margin: "0 0 22px", fontSize: 14, lineHeight: 1.6, color: "var(--text-secondary)" }}>Free. No newsletters. Saves sync across devices.</p>
 
       {phase === "sent" ? (
-        <div style={{ padding: "18px", borderRadius: 16, background: "var(--green-soft)", border: "1px solid var(--green)", display: "flex", alignItems: "flex-start", gap: 12 }}>
-          <div style={{ width: 28, height: 28, borderRadius: "50%", background: "var(--green)", display: "grid", placeItems: "center", flexShrink: 0 }}>
-            <Check size={15} color="white" strokeWidth={3} />
+        <div>
+          <div style={{ padding: "18px", borderRadius: 16, background: "var(--green-soft)", border: "1px solid var(--green)", display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 12 }}>
+            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "var(--green)", display: "grid", placeItems: "center", flexShrink: 0 }}>
+              <Check size={15} color="white" strokeWidth={3} />
+            </div>
+            <div>
+              <p style={{ margin: "0 0 3px", fontSize: 15, fontWeight: 600, color: "var(--text-primary)", lineHeight: 1.4 }}>Check your inbox</p>
+              <p style={{ margin: 0, fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.4 }}>Magic link sent to {email}. Click it to sign in — no password needed.</p>
+            </div>
           </div>
-          <p style={{ margin: 0, fontSize: 15, color: "var(--text-primary)", lineHeight: 1.5 }}>Check your inbox — magic link sent.</p>
+          {cooldown > 0 ? (
+            <p style={{ margin: 0, fontSize: 13, color: "var(--text-tertiary)", textAlign: "center" }}>
+              Resend available in {cooldown}s
+            </p>
+          ) : (
+            <button onClick={() => setPhase("idle")} style={{ width: "100%", padding: "11px", borderRadius: 12, background: "none", border: "1.5px solid var(--separator)", color: "var(--text-secondary)", fontSize: 14, fontWeight: 600, cursor: "pointer" }}>
+              Resend or use a different email
+            </button>
+          )}
         </div>
       ) : (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           <input
             type="email" inputMode="email" autoComplete="email" value={email}
             onChange={(e) => { setEmail(e.target.value); setError(""); }}
+            onKeyDown={(e) => e.key === "Enter" && signInEmail()}
             placeholder="you@company.com"
-            style={{ width: "100%", padding: "14px", borderRadius: 14, fontSize: 15, background: "var(--card-secondary)", border: `1.5px solid ${error ? "var(--red)" : "var(--separator)"}`, color: "var(--text-primary)", outline: "none" }}
+            style={{ width: "100%", padding: "14px", borderRadius: 14, fontSize: 15, background: "var(--card-secondary)", border: `1.5px solid ${error ? "var(--red)" : "var(--separator)"}`, color: "var(--text-primary)", outline: "none", boxSizing: "border-box" }}
           />
           <button
-            onClick={signInEmail} disabled={phase === "loading"}
-            style={{ width: "100%", padding: "14px", borderRadius: 14, background: "var(--blue)", color: "white", fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}
+            onClick={signInEmail}
+            disabled={phase === "loading" || cooldown > 0}
+            style={{ width: "100%", padding: "14px", borderRadius: 14, background: cooldown > 0 ? "var(--separator)" : "var(--blue)", color: cooldown > 0 ? "var(--text-tertiary)" : "white", fontSize: 15, fontWeight: 600, border: "none", cursor: cooldown > 0 ? "default" : "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, transition: "background 0.2s" }}
           >
             {phase === "loading" ? <Loader2 size={15} className="animate-spin" /> : <Mail size={15} />}
-            Send Magic Link
+            {cooldown > 0 ? `Resend in ${cooldown}s` : "Send Magic Link"}
           </button>
-          {error && <p style={{ margin: 0, fontSize: 13, color: "var(--red)" }}>{error}</p>}
+          {error && (
+            <div style={{ display: "flex", gap: 8, padding: "10px 12px", borderRadius: 12, background: "var(--red-soft)", border: "1px solid var(--red)33" }}>
+              <X size={13} style={{ color: "var(--red)", flexShrink: 0, marginTop: 1 }} strokeWidth={2.5} />
+              <p style={{ margin: 0, fontSize: 13, color: "var(--red)", lineHeight: 1.45 }}>{error}</p>
+            </div>
+          )}
         </div>
       )}
 
