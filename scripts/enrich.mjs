@@ -6,7 +6,7 @@ import { generateCards, getProviderInfo } from "./llm.mjs";
 
 const SYSTEM_PROMPT = `You are AITechHive's editor. Audience: mid-senior BFSI engineers, risk officers, compliance pros, fintech operators, investors. They want quick scannable signal.
 
-For each batch of raw items, select the 8-12 most consequential ones across these 7 categories:
+For each batch of raw items, select the 3-4 most consequential items PER CATEGORY (21-28 cards total, covering all 7 categories). Ensure every category gets at least 2 cards.
 - regulation  : new rules, deadlines, enforcement (EU AI Act, RBI, FCA, OCC, Fed)
 - deployment  : named bank/insurer ships AI capability in production
 - vendor      : funding, acquisition, product launch from BFSI-AI vendor
@@ -46,7 +46,7 @@ CRITICAL RULES:
 - Skip vendor PR fluff. Skip consumer fintech drama. Skip listicles.
 - Never invent dates, names, money, comp numbers. Omit fields if source lacks data.
 - Define every acronym used in the card itself.
-- Mix categories. Don't return 8 regulation cards in one batch.
+- Return 3-4 cards per category. Never cluster more than 4 cards in any single category.
 - Order newest first.`;
 
 async function main() {
@@ -64,7 +64,7 @@ async function main() {
   try {
     newCards = await generateCards({
       systemPrompt: SYSTEM_PROMPT,
-      items: raw.slice(0, 70),
+      items: raw.slice(0, 100),
       doWebSearch,
     });
   } catch (e) {

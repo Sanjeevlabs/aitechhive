@@ -6,7 +6,7 @@ import {
   useMotionValue, useTransform, animate,
 } from "framer-motion";
 import {
-  Bookmark, ChevronDown, Share2, Scale, Building2, Coins, Briefcase,
+  Bookmark, Share2, Scale, Building2, Coins, Briefcase,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon,
 } from "lucide-react";
@@ -74,9 +74,6 @@ function orderDeck(cards, deckActed = new Set(), catFilter = "all") {
     .slice(0, 20);
 }
 
-function fmtDate() {
-  return new Date().toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-}
 
 /* ─────────────────────────────────────────────────────────────────
    MICRO-VIZ
@@ -149,9 +146,13 @@ function MicroViz({ card }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   STORY CARD
+   STORY CARD  —  AIDA layout
+   A: Attention  = Category hero + Headline (in gradient)
+   I: Interest   = Plain-English summary + MicroViz
+   D: Desire     = Why it matters
+   A: Action     = Source link footer (tap actions are in the bar below)
 ───────────────────────────────────────────────────────────────── */
-function StoryCard({ card, onDecode, expanded }) {
+function StoryCard({ card }) {
   const meta = CATS[card.category] || CATS.insight;
   const { Icon, hex } = meta;
 
@@ -159,113 +160,106 @@ function StoryCard({ card, onDecode, expanded }) {
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
       background: "var(--card)", borderRadius: 24,
-      border: "1px solid var(--separator)",
-      boxShadow: "0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06)",
+      border: "1px solid rgba(0,0,0,0.07)",
+      boxShadow: [
+        "0 1px 2px rgba(0,0,0,0.04)",
+        "0 4px 14px rgba(0,0,0,0.08)",
+        "0 20px 52px rgba(0,0,0,0.13)",
+        "0 40px 80px rgba(0,0,0,0.08)",
+      ].join(", "),
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
-      {/* ── Category hero ──────────────────────────── */}
+
+      {/* ── A — ATTENTION: Hero + Headline ─────────── */}
       <div style={{
-        flexShrink: 0, height: 80,
-        background: `linear-gradient(135deg, ${hex} 0%, ${hex}BB 100%)`,
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        padding: "0 18px", position: "relative", overflow: "hidden",
+        flexShrink: 0,
+        background: `linear-gradient(150deg, ${hex} 0%, ${hex}DD 55%, ${hex}99 100%)`,
+        padding: "16px 18px 20px",
+        position: "relative", overflow: "hidden",
+        minHeight: 148,
+        display: "flex", flexDirection: "column", justifyContent: "space-between",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.28), inset 0 -1px 0 rgba(0,0,0,0.12)",
       }}>
-        {/* Decorative ghost icon */}
-        <div style={{ position: "absolute", right: -8, top: -16, opacity: 0.15, pointerEvents: "none" }}>
-          <Icon size={100} strokeWidth={1.2} color="white" />
+        {/* Ghost icon — decorative depth */}
+        <div style={{ position: "absolute", right: -28, top: -28, opacity: 0.11, pointerEvents: "none" }}>
+          <Icon size={168} strokeWidth={0.8} color="white" />
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 10, zIndex: 1 }}>
-          <div style={{
-            width: 36, height: 36, borderRadius: 10,
-            background: "rgba(255,255,255,0.22)",
-            display: "grid", placeItems: "center",
-            backdropFilter: "blur(8px)",
-          }}>
-            <Icon size={18} color="white" strokeWidth={2.5} />
+        {/* Top row: category pill + severity badge */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", zIndex: 1 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{
+              width: 30, height: 30, borderRadius: 8,
+              background: "rgba(255,255,255,0.22)",
+              border: "1px solid rgba(255,255,255,0.30)",
+              display: "grid", placeItems: "center",
+              backdropFilter: "blur(8px)",
+            }}>
+              <Icon size={15} color="white" strokeWidth={2.5} />
+            </div>
+            <div>
+              <span style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.95)", letterSpacing: "0.005em" }}>{meta.label}</span>
+              {card.jurisdiction && (
+                <span style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginLeft: 7 }}>· {card.jurisdiction}</span>
+              )}
+            </div>
           </div>
-          <div>
-            <div style={{ fontSize: 13, fontWeight: 600, color: "white", lineHeight: 1.1, letterSpacing: "0.01em" }}>{meta.label}</div>
-            {card.jurisdiction && (
-              <div style={{ fontSize: 11, color: "rgba(255,255,255,0.72)", marginTop: 2, fontWeight: 500 }}>{card.jurisdiction}</div>
-            )}
-          </div>
-        </div>
-
-        <div style={{ display: "flex", alignItems: "center", gap: 8, zIndex: 1 }}>
           {card.severity === "high" && (
             <span style={{
               fontSize: 9, fontWeight: 700, color: "white",
-              background: "rgba(255,255,255,0.22)", padding: "3px 8px",
-              borderRadius: 100, letterSpacing: "0.07em", textTransform: "uppercase",
+              background: "rgba(255,255,255,0.22)",
+              border: "1px solid rgba(255,255,255,0.32)",
+              padding: "3px 9px", borderRadius: 100,
+              letterSpacing: "0.08em", textTransform: "uppercase",
             }}>HIGH</span>
           )}
-          <div style={{
-            width: 10, height: 10, borderRadius: "50%",
-            background: card.severity === "high" ? "rgba(255,255,255,0.9)" : "rgba(255,255,255,0.45)",
-            boxShadow: card.severity === "high" ? "0 0 8px rgba(255,255,255,0.8)" : "none",
-          }} />
         </div>
-      </div>
 
-      {/* ── Scrollable body ─────────────────────────── */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "18px 18px 4px", WebkitOverflowScrolling: "touch" }}>
+        {/* Headline — the attention hook */}
         <h2 style={{
-          margin: 0, fontSize: 20, fontWeight: 600, lineHeight: 1.32,
-          letterSpacing: "-0.012em", color: "var(--text-primary)",
+          margin: "14px 0 0", zIndex: 1, position: "relative",
+          fontSize: 21, fontWeight: 600, lineHeight: 1.28,
+          letterSpacing: "-0.015em",
+          color: "white",
           fontFamily: "var(--font-serif)",
+          textShadow: "0 1px 6px rgba(0,0,0,0.22)",
         }}>
           {card.headline}
         </h2>
+      </div>
 
-        <p style={{ margin: "11px 0 0", fontSize: 15, lineHeight: 1.65, color: "var(--text-secondary)" }}>
+      {/* ── I — INTEREST + D — DESIRE: Scrollable body ─ */}
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 18px 8px", WebkitOverflowScrolling: "touch" }}>
+        <p style={{ margin: 0, fontSize: 15, lineHeight: 1.68, color: "var(--text-secondary)" }}>
           {card.plain_english}
         </p>
 
         <MicroViz card={card} />
 
-        <div style={{
-          margin: "14px 0 0", padding: "13px 14px",
-          borderRadius: 14, background: meta.soft,
-          borderLeft: `3px solid ${meta.color}`,
-        }}>
+        {/* Desire: why it matters */}
+        {card.why_it_matters && (
           <div style={{
-            fontSize: 10, fontWeight: 700, color: meta.color,
-            textTransform: "uppercase", letterSpacing: "0.09em",
-            marginBottom: 5, display: "flex", alignItems: "center", gap: 4,
+            margin: "14px 0 0", padding: "13px 14px",
+            borderRadius: 14,
+            background: meta.soft,
+            borderLeft: `3px solid ${meta.color}`,
           }}>
-            <Zap size={9} />Why it matters
+            <div style={{
+              fontSize: 10, fontWeight: 700, color: meta.color,
+              textTransform: "uppercase", letterSpacing: "0.09em",
+              marginBottom: 5, display: "flex", alignItems: "center", gap: 4,
+            }}>
+              <Zap size={9} />Why it matters
+            </div>
+            <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: "var(--text-primary)" }}>{card.why_it_matters}</p>
           </div>
-          <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: "var(--text-primary)" }}>{card.why_it_matters}</p>
-        </div>
+        )}
 
-        <AnimatePresence>
-          {expanded && card.jargon?.length > 0 && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-              style={{ overflow: "hidden" }}
-            >
-              <div style={{ margin: "12px 0 4px", padding: "14px", borderRadius: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
-                <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 12 }}>Jargon Decoded</div>
-                {card.jargon.map((j, i) => (
-                  <div key={i} style={{ marginBottom: i < card.jargon.length - 1 ? 12 : 0 }}>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text-primary)" }}>{j.term}</div>
-                    <div style={{ fontSize: 13, lineHeight: 1.45, color: "var(--text-secondary)", marginTop: 2 }}>{j.def}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <div style={{ height: 16 }} />
+        <div style={{ height: 14 }} />
       </div>
 
-      {/* ── Footer ──────────────────────────────────── */}
+      {/* ── A — ACTION: Source footer ─────────────────── */}
       <div style={{
         flexShrink: 0, padding: "10px 18px 14px",
         borderTop: "1px solid var(--separator)",
@@ -274,21 +268,12 @@ function StoryCard({ card, onDecode, expanded }) {
         <a
           href={card.source?.url} target="_blank" rel="noreferrer"
           onClick={(e) => e.stopPropagation()}
-          style={{ fontSize: 12, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}
+          style={{ fontSize: 12, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}
         >
           {card.source?.name}
-          {card.source?.date && ` · ${new Date(card.source.date).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`}
           <ExternalLink size={10} />
         </a>
-        {card.jargon?.length > 0 && (
-          <button
-            onClick={onDecode}
-            style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 4, fontSize: 12, fontWeight: 700, color: meta.color, padding: 0, flexShrink: 0 }}
-          >
-            {expanded ? "Hide" : "Jargon"}
-            <ChevronDown size={12} style={{ transition: "transform 0.2s", transform: expanded ? "rotate(180deg)" : "none" }} />
-          </button>
-        )}
+        <span style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.6 }}>aitechhive.com</span>
       </div>
     </div>
   );
@@ -300,7 +285,7 @@ function StoryCard({ card, onDecode, expanded }) {
    composes its own transforms and will overwrite a plain CSS one.
    Centering is handled by the flex parent outside.
 ───────────────────────────────────────────────────────────────── */
-function DraggableCard({ card, onSwipe, onDecode, expanded }) {
+function DraggableCard({ card, onSwipe }) {
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-280, 280], [-10, 10]);
   const skipOpacity = useTransform(x, [-110, -20], [1, 0]);
@@ -369,7 +354,7 @@ function DraggableCard({ card, onSwipe, onDecode, expanded }) {
         }}>SAVE</div>
       </motion.div>
 
-      <StoryCard card={card} onDecode={onDecode} expanded={expanded} />
+      <StoryCard card={card} />
     </motion.div>
   );
 }
@@ -705,7 +690,7 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
         <Inbox size={26} style={{ color: "var(--blue)" }} />
       </div>
       <h3 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em" }}>That's today's signal.</h3>
-      <p style={{ margin: "10px 0 0", fontSize: 15, lineHeight: 1.55, color: "var(--text-secondary)" }}>Six refreshes daily. Full archive below.</p>
+      <p style={{ margin: "10px 0 0", fontSize: 15, lineHeight: 1.55, color: "var(--text-secondary)" }}>Top 20 live stories, refreshed 8× daily. Full archive below.</p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 22 }}>
         {[["Saved", stats.saved, "var(--green)"], ["Skipped", stats.next, "var(--text-tertiary)"], ["Shared", stats.shared, "var(--blue)"]].map(([l, v, c]) => (
           <div key={l} style={{ textAlign: "center", padding: "14px 6px", borderRadius: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
@@ -757,20 +742,6 @@ function BigActionBtn({ label, onClick, bg, color, border, children }) {
   );
 }
 
-function SmallActionBtn({ label, onClick, active, children }) {
-  return (
-    <button
-      onClick={onClick} aria-label={label}
-      style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 4, padding: "12px 14px", borderRadius: 18, background: active ? "var(--blue-soft)" : "var(--card)", color: active ? "var(--blue)" : "var(--text-secondary)", border: "1.5px solid var(--separator)", cursor: "pointer", fontSize: 10, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", userSelect: "none" }}
-      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.93)"; }}
-      onPointerUp={(e) => { e.currentTarget.style.transform = ""; }}
-      onPointerLeave={(e) => { e.currentTarget.style.transform = ""; }}
-    >
-      {children}
-      {label}
-    </button>
-  );
-}
 
 /* ─────────────────────────────────────────────────────────────────
    ROOT
@@ -793,7 +764,6 @@ export default function PageClient({ initialCards }) {
   // progressCount: how many acted on in the CURRENT catFilter (resets on tab switch)
   const [progressCount, setProgressCount] = useState(0);
   const [stats, setStats] = useState({ saved: 0, next: 0, shared: 0 });
-  const [expandedId, setExpandedId] = useState(null);
   const [savedOpen, setSavedOpen] = useState(false);
   const [archiveOpen, setArchiveOpen] = useState(false);
   const [shareCard, setShareCard] = useState(null);
@@ -838,10 +808,6 @@ export default function PageClient({ initialCards }) {
   const doAction = useCallback(async (action) => {
     if (!topCard && action !== "share") return;
 
-    if (action === "decode") {
-      setExpandedId((id) => id === topCard.id ? null : topCard.id);
-      return;
-    }
     if (action === "share") {
       setShareCard(topCard);
       setStats((s) => ({ ...s, shared: s.shared + 1 }));
@@ -852,7 +818,6 @@ export default function PageClient({ initialCards }) {
     // Both save + skip: mark card as acted on so deck[0] advances to next card
     setDeckActed((prev) => new Set([...prev, topCard.id]));
     setProgressCount((p) => p + 1);
-    setExpandedId(null);
 
     if (action === "save") {
       setSavedIds((prev) => new Set([...prev, topCard.id]));
@@ -867,7 +832,7 @@ export default function PageClient({ initialCards }) {
 
   // Keyboard shortcuts
   useEffect(() => {
-    const map = { ArrowRight: "save", ArrowLeft: "next", ArrowUp: "share", ArrowDown: "decode" };
+    const map = { ArrowRight: "save", ArrowLeft: "next", ArrowUp: "share" };
     const onKey = (e) => {
       if (savedOpen || archiveOpen || shareCard || showGate || e.target.tagName === "INPUT") return;
       if (map[e.key]) { e.preventDefault(); doAction(map[e.key]); }
@@ -888,7 +853,7 @@ export default function PageClient({ initialCards }) {
       <header style={{ flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
           <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", letterSpacing: "-0.02em", lineHeight: 1 }}>AITechHive</div>
-          <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.07em" }}>BFSI · Enterprise AI · {fmtDate()}</div>
+          <div style={{ fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)", marginTop: 3, textTransform: "uppercase", letterSpacing: "0.07em" }}>BFSI · Enterprise AI · 8× daily</div>
         </div>
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
@@ -908,7 +873,7 @@ export default function PageClient({ initialCards }) {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
           return (
-            <button key={key} onClick={() => { setCatFilter(key); setProgressCount(0); setExpandedId(null); }}
+            <button key={key} onClick={() => { setCatFilter(key); setProgressCount(0); }}
               style={{
                 flexShrink: 0, padding: "7px 14px", borderRadius: 100, fontSize: 13, fontWeight: 700, cursor: "pointer", border: "none",
                 background: active ? (meta?.hex || "var(--text-primary)") : "var(--card)",
@@ -949,25 +914,26 @@ export default function PageClient({ initialCards }) {
             {/* Stack layer 2 — farthest back */}
             {!isEmpty && deck[2] && (
               <div style={{
-                position: "absolute", left: 18, right: 18, top: 0, bottom: 0,
+                position: "absolute", left: 20, right: 20, top: 0, bottom: 0,
                 background: "var(--card-secondary)", borderRadius: 24,
-                border: "1px solid var(--separator)",
-                transform: "scale(0.91) translateY(18px)",
+                border: "1px solid rgba(0,0,0,0.05)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                transform: "scale(0.90) translateY(20px)",
                 transformOrigin: "bottom center",
-                opacity: 0.45, zIndex: 0,
+                opacity: 0.5, zIndex: 0,
               }} />
             )}
 
             {/* Stack layer 1 — behind current */}
             {!isEmpty && deck[1] && (
               <div style={{
-                position: "absolute", left: 9, right: 9, top: 0, bottom: 0,
+                position: "absolute", left: 10, right: 10, top: 0, bottom: 0,
                 background: "var(--card)", borderRadius: 24,
-                border: "1px solid var(--separator)",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.07)",
-                transform: "scale(0.96) translateY(9px)",
+                border: "1px solid rgba(0,0,0,0.06)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.09)",
+                transform: "scale(0.955) translateY(10px)",
                 transformOrigin: "bottom center",
-                opacity: 0.75, zIndex: 1,
+                opacity: 0.8, zIndex: 1,
               }} />
             )}
 
@@ -988,8 +954,6 @@ export default function PageClient({ initialCards }) {
                     key={topCard.id}
                     card={topCard}
                     onSwipe={doAction}
-                    onDecode={() => doAction("decode")}
-                    expanded={expandedId === topCard.id}
                   />
                 )}
               </AnimatePresence>
@@ -1001,18 +965,14 @@ export default function PageClient({ initialCards }) {
       {/* ── Action bar ─────────────────────────────────────────── */}
       {!isEmpty && (
         <div style={{ flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
-          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 8, alignItems: "stretch" }}>
+          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 10, alignItems: "stretch" }}>
             <BigActionBtn label="Skip" onClick={() => doAction("next")} bg="var(--card)" color="var(--red)" border>
               <X size={22} strokeWidth={2.5} />
             </BigActionBtn>
 
-            <SmallActionBtn label="Decode" onClick={() => doAction("decode")} active={expandedId === topCard?.id}>
-              <ChevronDown size={18} strokeWidth={2.5} style={{ transition: "transform 0.2s", transform: expandedId === topCard?.id ? "rotate(180deg)" : "none" }} />
-            </SmallActionBtn>
-
-            <SmallActionBtn label="Share" onClick={() => doAction("share")}>
-              <Share2 size={18} strokeWidth={2.5} />
-            </SmallActionBtn>
+            <BigActionBtn label="Share" onClick={() => doAction("share")} bg="var(--card)" color="var(--blue)" border>
+              <Share2 size={20} strokeWidth={2.5} />
+            </BigActionBtn>
 
             <BigActionBtn label="Save" onClick={() => doAction("save")} bg="var(--green)" color="white">
               <Bookmark size={22} strokeWidth={2.5} fill={savedIds.has(topCard?.id) ? "white" : "none"} />
