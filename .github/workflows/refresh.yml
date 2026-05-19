@@ -41,6 +41,9 @@ jobs:
         run: node scripts/fetch-feeds.mjs
 
       - name: Enrich with LLM
+        # Soft-fail: a flaky LLM call should NOT fail the whole workflow
+        # (and email the maintainer). Existing cards.json keeps serving.
+        continue-on-error: true
         run: node scripts/enrich.mjs
         env:
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}

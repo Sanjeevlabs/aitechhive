@@ -136,7 +136,8 @@ async function callOpenAICompatible({ systemPrompt, userContent, doWebSearch }) 
       { role: "user", content: userContent + webContext },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 65536,
+    // 32k is plenty for 30-40 cards × ~400 tokens. Cuts tail latency vs 64k.
+    max_tokens: 32768,
   });
   const text = resp.choices?.[0]?.message?.content || "";
   return { text, usage: resp.usage };

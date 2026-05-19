@@ -294,7 +294,7 @@ function StoryCard({ card }) {
         flexShrink: 0, padding: "8px 18px 14px",
         borderTop: "1px solid var(--separator)",
       }}>
-        <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6, opacity: 0.7 }}>
+        <div style={{ fontSize: 8.5, fontWeight: 500, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 4, opacity: 0.45 }}>
           Editorial summary · read original ↗
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -1416,6 +1416,12 @@ export default function PageClient({ initialCards }) {
     }
     return s.size;
   }, [allCards]);
+  // Per-category counts for the filter chip ticker
+  const categoryCounts = useMemo(() => {
+    const m = {};
+    for (const c of allCards) m[c.category] = (m[c.category] || 0) + 1;
+    return m;
+  }, [allCards]);
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
   const [authError, setAuthError] = useState("");
@@ -1682,16 +1688,30 @@ export default function PageClient({ initialCards }) {
         {["all", ...Object.keys(CATS)].map((key) => {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
+          const count = key === "all" ? allCards.length : (categoryCounts[key] || 0);
           return (
             <button key={key} onClick={() => { setCatFilter(key); setProgressCount(0); }}
               style={{
-                flexShrink: 0, padding: "7px 14px", borderRadius: 100, fontSize: 13, fontWeight: 700, cursor: "pointer", border: "none",
+                flexShrink: 0, padding: "7px 12px", borderRadius: 100, fontSize: 13, cursor: "pointer", border: "none",
                 background: active ? (meta?.hex || "var(--text-primary)") : "var(--card)",
                 color: active ? "white" : "var(--text-secondary)", fontWeight: active ? 600 : 500,
                 boxShadow: active ? `0 2px 8px ${meta ? meta.hex + "45" : "rgba(0,0,0,0.22)"}` : "0 1px 2px rgba(0,0,0,0.05)",
                 transition: "all 0.15s ease",
+                display: "inline-flex", alignItems: "center", gap: 6,
               }}>
-              {key === "all" ? "All" : meta.label}
+              <span>{key === "all" ? "All" : meta.label}</span>
+              <span
+                style={{
+                  fontSize: 11, fontWeight: 600, lineHeight: 1,
+                  padding: "2px 6px", borderRadius: 100,
+                  background: active ? "rgba(255,255,255,0.22)" : "var(--card-secondary)",
+                  color: active ? "rgba(255,255,255,0.95)" : "var(--text-tertiary)",
+                  fontVariantNumeric: "tabular-nums",
+                  minWidth: 14, textAlign: "center",
+                }}
+              >
+                {count}
+              </span>
             </button>
           );
         })}
