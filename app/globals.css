@@ -33,6 +33,12 @@
   --yellow-soft:     rgba(255,204,0,0.12);
   --brown:           #A2845E;
   --brown-soft:      rgba(162,132,94,0.12);
+  /* Background decor — soft blue isometric shapes layered under everything */
+  --decor-stroke:    rgba(0,122,255,0.16);
+  --decor-fill:      rgba(0,122,255,0.05);
+  --decor-grad-a:    rgba(0,122,255,0.10);
+  --decor-grad-b:    rgba(88,86,214,0.04);
+  --live-dot:        #34C759;
 }
 
 [data-theme="dark"] {
@@ -65,6 +71,11 @@
   --yellow-soft:     rgba(255,214,10,0.18);
   --brown:           #AC8E68;
   --brown-soft:      rgba(172,142,104,0.18);
+  --decor-stroke:    rgba(100,150,255,0.14);
+  --decor-fill:      rgba(100,150,255,0.04);
+  --decor-grad-a:    rgba(100,150,255,0.10);
+  --decor-grad-b:    rgba(94,92,230,0.04);
+  --live-dot:        #30D158;
 }
 
 html, body {
@@ -80,3 +91,12 @@ html, body {
 * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+@keyframes livePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(52,199,89,0.55); transform: scale(1); }
+  70%  { box-shadow: 0 0 0 7px rgba(52,199,89,0);  transform: scale(1); }
+  100% { box-shadow: 0 0 0 0 rgba(52,199,89,0);    transform: scale(1); }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-8px) rotate(1.5deg); }
+}

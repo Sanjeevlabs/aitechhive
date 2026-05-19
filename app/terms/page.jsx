@@ -7,20 +7,34 @@ export default function TermsPage() {
         <a href="/" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "#6B645B" }}>← BACK</a>
         <h1 style={{ fontSize: 36, fontWeight: 500, letterSpacing: "-0.02em", marginTop: 24 }}>Terms</h1>
         <p style={{ marginTop: 24, fontSize: 16, lineHeight: 1.6, color: "#3D3833" }}>
-          By using AITechHive you agree to these short, plain-English terms.
+          By using ath you agree to these short, plain-English terms.
         </p>
-        <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>What this is</h2>
+
+        <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>What ath is</h2>
         <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
-          A free reading product. Cards summarise publicly-available news, papers, regulations, and job postings, with attribution to the original source on every card. Always read the original for binding details — our summaries are editorial.
+          ath is a discovery aggregator for BFSI and enterprise-AI news. Cards are independently authored editorial summaries of publicly-available headlines, papers, regulations, and job postings. We never republish source content verbatim. Every card carries clear attribution and a direct link to the original publisher.
         </p>
+
+        <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>How content is sourced</h2>
+        <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
+          We read RSS feeds and public APIs that the publisher has explicitly published for syndication. We do not scrape behind paywalls, do not bypass authentication, and do not store the publisher's full article text. Summaries are LLM-generated and human-curated; always read the original for binding details.
+        </p>
+
         <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>No professional advice</h2>
         <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
-          Nothing on this site is legal, regulatory, investment, or financial advice.
+          Nothing on this site is legal, regulatory, investment, or financial advice. Cards may contain summarisation errors. Decisions should always be verified against the linked primary source.
         </p>
+
         <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>Acceptable use</h2>
         <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
           Don't scrape, don't resell, don't bot. We rate-limit aggressive usage.
         </p>
+
+        <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>Rights holders</h2>
+        <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
+          If you are the rights holder of content referenced on a card and want it removed, see our <a href="/dmca" style={{ color: "#8E4A2A" }}>Notice &amp; Takedown</a> page. We action valid requests within 48 hours.
+        </p>
+
         <h2 style={{ fontSize: 22, fontWeight: 500, marginTop: 36 }}>Contact</h2>
         <p style={{ marginTop: 12, fontSize: 15, lineHeight: 1.7, color: "#3D3833" }}>
           Questions, takedowns, partnerships — <a href="mailto:hello@aitechhive.com" style={{ color: "#8E4A2A" }}>hello@aitechhive.com</a>.
