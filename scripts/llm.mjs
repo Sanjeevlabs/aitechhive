@@ -218,6 +218,54 @@ export async function generateCards({ systemPrompt, items, doWebSearch = false }
   return cards;
 }
 
+// ============================================================
+// Groq fallback — direct, decoupled from PROVIDER env var.
+// Triggered by enrich.mjs after the primary provider exhausts
+// its retries. Uses GROQ_API_KEY (separate from LLM_API_KEY) so
+// users can swap LLM providers without losing the fallback.
+// ============================================================
+export async function generateCardsViaGroq({ systemPrompt, items, apiKey }) {
+  if (!apiKey) throw new Error("GROQ_API_KEY missing — Groq fallback unavailable");
+  const cfg = PROVIDERS.groq;
+  const model = process.env.GROQ_MODEL || cfg.defaultModel;
+  const client = new OpenAI({ apiKey, baseURL: cfg.baseURL, timeout: 240_000, maxRetries: 0 });
+
+  const userContent = `Raw items (newest first):\n\n${JSON.stringify(items, null, 2)}\n\nReturn a JSON object with key "cards" containing the array.`;
+
+  const resp = await client.chat.completions.create({
+    model,
+    messages: [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: userContent },
+    ],
+    response_format: { type: "json_object" },
+    max_tokens: 32768,
+  });
+  const text = resp.choices?.[0]?.message?.content || "";
+
+  const cleaned = text
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/```\s*$/i, "")
+    .trim();
+
+  let parsed;
+  try {
+    parsed = JSON.parse(cleaned);
+  } catch (e) {
+    const recovered = recoverTruncatedCards(cleaned);
+    if (recovered.length) {
+      console.warn(`[groq-fallback] JSON truncated — recovered ${recovered.length} cards`);
+      parsed = { cards: recovered };
+    } else {
+      throw new Error(`Groq fallback returned invalid JSON: ${e.message}`);
+    }
+  }
+
+  const cards = Array.isArray(parsed) ? parsed : parsed.cards || [];
+  console.log(`[groq-fallback] ${model} returned ${cards.length} cards`);
+  return cards;
+}
+
 function logCost(usage) {
   if (!usage) return;
   const cfg = PROVIDERS[PROVIDER];

@@ -2,7 +2,7 @@
 // Loads raw-feed.json → LLM (via adapter) → merges into data/cards.json.
 
 import fs from "node:fs/promises";
-import { generateCards, getProviderInfo } from "./llm.mjs";
+import { generateCards, generateCardsViaGroq, getProviderInfo } from "./llm.mjs";
 
 const SYSTEM_PROMPT = `You are AITechHive's editor. Audience: mid-senior BFSI engineers, risk officers, compliance pros, fintech operators, investors. They want quick scannable signal.
 
@@ -89,9 +89,9 @@ async function main() {
   const isMorning = HOUR_UTC === 0 || HOUR_UTC === 1;
   const doWebSearch = isMorning;
 
-  // Try the LLM call twice — first try, then one 10s-delayed retry — before
-  // soft-failing. Catches transient provider timeouts / rate-limit blips that
-  // would otherwise burn a whole 3-hour cycle.
+  // Resilience chain: primary provider × 2 attempts → Groq fallback × 1 → soft-fail.
+  // Catches transient provider timeouts, rate-limit blips, AND provider-wide outages
+  // (which a same-provider retry can't help with).
   let newCards = [];
   let lastErr = null;
   for (let attempt = 1; attempt <= 2; attempt++) {
@@ -105,16 +105,37 @@ async function main() {
       break;
     } catch (e) {
       lastErr = e;
-      console.error(`LLM call attempt ${attempt} failed: ${e.message}`);
+      console.error(`Primary (${provider.provider}) attempt ${attempt} failed: ${e.message}`);
       if (attempt < 2) await new Promise((r) => setTimeout(r, 10_000));
     }
   }
+
+  // Groq fallback — only if primary exhausted AND GROQ_API_KEY is set.
+  // Different provider, different infrastructure, faster inference (LPU),
+  // so it side-steps whatever broke on the primary path.
+  if (lastErr && process.env.GROQ_API_KEY && provider.provider !== "groq") {
+    console.log(`Primary exhausted. Falling back to Groq…`);
+    try {
+      newCards = await generateCardsViaGroq({
+        systemPrompt: SYSTEM_PROMPT,
+        items: raw.slice(0, 100),
+        apiKey: process.env.GROQ_API_KEY,
+      });
+      lastErr = null;
+      console.log("✓ Groq fallback succeeded.");
+    } catch (e) {
+      console.error(`Groq fallback also failed: ${e.message}`);
+    }
+  } else if (lastErr && !process.env.GROQ_API_KEY) {
+    console.warn("Primary exhausted and GROQ_API_KEY not set — no fallback available.");
+  }
+
   if (lastErr) {
-    // Both attempts failed. Soft-fail: keep the existing cards.json untouched.
+    // Everything failed. Soft-fail: keep the existing cards.json untouched.
     // The workflow's git-diff guard means nothing is committed, no failure
     // email is sent, and the deck continues serving the previous refresh
     // until the next cron cycle.
-    console.error(`LLM call failed after 2 attempts (soft-fail, no commit).`);
+    console.error(`All LLM attempts failed (soft-fail, no commit).`);
     return;
   }
 
