@@ -57,6 +57,11 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          # Groq fallback — kicks in only after primary provider exhausts retries.
+          # Free tier: 30 req/min, ~5s inference on LPU hardware.
+          # Set this in repo secrets to enable; the pipeline gracefully skips if absent.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
 
       - name: Generate sitemap
         run: node scripts/gen-sitemap.mjs
