@@ -289,21 +289,25 @@ function StoryCard({ card }) {
         <div style={{ height: 14 }} />
       </div>
 
-      {/* ── A — ACTION: Source footer ─────────────────── */}
+      {/* ── A — ACTION: Source footer + editorial disclosure ─── */}
       <div style={{
-        flexShrink: 0, padding: "10px 18px 14px",
+        flexShrink: 0, padding: "8px 18px 14px",
         borderTop: "1px solid var(--separator)",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
-        <a
-          href={card.source?.url} target="_blank" rel="noreferrer"
-          onClick={(e) => e.stopPropagation()}
-          style={{ fontSize: 12, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}
-        >
-          {card.source?.name}
-          <ExternalLink size={10} />
-        </a>
-        <span style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.6 }}>aitechhive.com</span>
+        <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6, opacity: 0.7 }}>
+          Editorial summary · read original ↗
+        </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <a
+            href={card.source?.url} target="_blank" rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            style={{ fontSize: 12, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}
+          >
+            {card.source?.name}
+            <ExternalLink size={10} />
+          </a>
+          <span style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.6 }}>aitechhive.com</span>
+        </div>
       </div>
     </div>
   );
@@ -904,14 +908,91 @@ function hexAlpha(hex, alpha) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   WORDMARK — "ath" chip only. Compact, monogrammatic.
+   BACKGROUND DECOR — soft geometric 3D layer behind the deck.
+   Hexagons + circles + isometric lines, gradient-fill, low-opacity.
+   Echoes the favicon (hexagon = subtle hive callback).
 ───────────────────────────────────────────────────────────────── */
-function Wordmark() {
+function BackgroundDecor() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 800 1200"
+      preserveAspectRatio="xMidYMid slice"
+      style={{
+        position: "absolute", inset: 0,
+        width: "100%", height: "100%",
+        pointerEvents: "none",
+        zIndex: 0,
+      }}
+    >
+      <defs>
+        <linearGradient id="decor-grad-a" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"  stopColor="var(--decor-grad-a)" />
+          <stop offset="100%" stopColor="var(--decor-grad-b)" />
+        </linearGradient>
+        <linearGradient id="decor-grad-b" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stopColor="var(--decor-grad-a)" />
+          <stop offset="100%" stopColor="var(--decor-grad-b)" />
+        </linearGradient>
+      </defs>
+
+      {/* Top-left hex (large, gradient-filled — 3D-ish via gradient + stroke) */}
+      <g style={{ animation: "floaty 14s ease-in-out infinite" }}>
+        <polygon points="80,60 175,115 175,225 80,280 -15,225 -15,115"
+                 fill="url(#decor-grad-a)" stroke="var(--decor-stroke)" strokeWidth="1.5" />
+      </g>
+
+      {/* Top-right ring */}
+      <circle cx="730" cy="140" r="78" fill="none" stroke="var(--decor-stroke)" strokeWidth="1.5" />
+      <circle cx="730" cy="140" r="44" fill="url(#decor-grad-b)" />
+
+      {/* Middle isometric grid lines (very soft) */}
+      <g stroke="var(--decor-stroke)" strokeWidth="1" fill="none" opacity="0.55">
+        <line x1="0"   y1="400" x2="320" y2="240" />
+        <line x1="480" y1="240" x2="800" y2="400" />
+        <line x1="0"   y1="560" x2="320" y2="720" />
+        <line x1="480" y1="720" x2="800" y2="560" />
+      </g>
+
+      {/* Middle-right hex outline */}
+      <g style={{ animation: "floaty 18s ease-in-out infinite reverse" }}>
+        <polygon points="700,520 770,560 770,640 700,680 630,640 630,560"
+                 fill="none" stroke="var(--decor-stroke)" strokeWidth="1.5" />
+      </g>
+
+      {/* Lower-left triangle */}
+      <polygon points="60,860 180,720 300,860"
+               fill="url(#decor-grad-a)" stroke="var(--decor-stroke)" strokeWidth="1.3" />
+
+      {/* Lower-center small hex (filled) */}
+      <g style={{ animation: "floaty 12s ease-in-out infinite" }}>
+        <polygon points="430,940 490,975 490,1045 430,1080 370,1045 370,975"
+                 fill="url(#decor-grad-b)" stroke="var(--decor-stroke)" strokeWidth="1.2" />
+      </g>
+
+      {/* Lower-right ring + dot */}
+      <circle cx="690" cy="980" r="62" fill="none" stroke="var(--decor-stroke)" strokeWidth="1.4" />
+      <circle cx="690" cy="980" r="6"  fill="var(--decor-stroke)" />
+
+      {/* Bottom isometric corner */}
+      <g stroke="var(--decor-stroke)" strokeWidth="1" fill="none" opacity="0.5">
+        <line x1="0" y1="1120" x2="240" y2="1000" />
+        <line x1="560" y1="1000" x2="800" y2="1120" />
+      </g>
+    </svg>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   WORDMARK — "ath" chip + live indicator + density signal
+───────────────────────────────────────────────────────────────── */
+function Wordmark({ sourceCount, cardCount }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
       <div
-        aria-label="ath — ai tech hive"
+        aria-label="ath — live"
         style={{
+          position: "relative",
           width: 38, height: 38, borderRadius: 10,
           background: "var(--text-primary)",
           color: "var(--bg)",
@@ -922,9 +1003,20 @@ function Wordmark() {
         }}
       >
         ath
+        <span
+          aria-hidden="true"
+          style={{
+            position: "absolute", top: -3, right: -3,
+            width: 9, height: 9, borderRadius: "50%",
+            background: "var(--live-dot)",
+            boxShadow: "0 0 0 2px var(--bg)",
+            animation: "livePulse 2.2s ease-out infinite",
+          }}
+        />
       </div>
       <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.09em" }}>
-        BFSI · Enterprise AI<br />8× daily
+        BFSI · Enterprise AI<br />
+        {sourceCount > 0 ? `${sourceCount} sources · 8× daily` : "8× daily"}
       </div>
     </div>
   );
@@ -987,6 +1079,14 @@ export default function PageClient({ initialCards }) {
   ), []);
 
   const [allCards] = useState(initialCards || []);
+  const sourceCount = useMemo(() => {
+    const s = new Set();
+    for (const c of allCards) {
+      const n = c?.source?.name;
+      if (n) s.add(String(n).split(" · ")[0].trim());
+    }
+    return s.size;
+  }, [allCards]);
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
   const [savedIds, setSavedIds] = useState(new Set());
@@ -1178,9 +1278,12 @@ export default function PageClient({ initialCards }) {
         />
       </div>
 
+      {/* ── Geometric backdrop (sits behind everything in main) ── */}
+      <BackgroundDecor />
+
       {/* ── Masthead ──────────────────────────────────────────── */}
-      <header style={{ flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <Wordmark />
+      <header style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <Wordmark sourceCount={sourceCount} />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
@@ -1194,7 +1297,7 @@ export default function PageClient({ initialCards }) {
       </header>
 
       {/* ── Category filter tabs ───────────────────────────────── */}
-      <div style={{ flexShrink: 0, padding: "0 12px 10px", display: "flex", gap: 6, overflowX: "auto", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
+      <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "0 12px 10px", display: "flex", gap: 6, overflowX: "auto", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
         {["all", ...Object.keys(CATS)].map((key) => {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
@@ -1215,7 +1318,7 @@ export default function PageClient({ initialCards }) {
 
       {/* ── Progress strip ─────────────────────────────────────── */}
       {progressTotal > 0 && !isEmpty && (
-        <div style={{ flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
+        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
           {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
             <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
           ))}
@@ -1231,7 +1334,7 @@ export default function PageClient({ initialCards }) {
           DO NOT use transform:translateX(-50%) on the motion.div —
           Framer Motion composes its own transforms and will wipe it.
       ─────────────────────────────────────────────────────────── */}
-      <div style={{ flex: 1, minHeight: 0, position: "relative" }}>
+      <div style={{ flex: 1, minHeight: 0, position: "relative", zIndex: 1 }}>
         {/* Full-bleed centering wrapper */}
         <div style={{ position: "absolute", inset: "0 12px 6px", display: "flex", justifyContent: "center" }}>
           {/* Max-width container with card stack */}
@@ -1290,7 +1393,7 @@ export default function PageClient({ initialCards }) {
 
       {/* ── Action bar ─────────────────────────────────────────── */}
       {!isEmpty && (
-        <div style={{ flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
+        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
           <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 10, alignItems: "stretch" }}>
             <BigActionBtn label="Skip" onClick={() => doAction("next")}>
               <X size={20} strokeWidth={2.25} />

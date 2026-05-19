@@ -39,13 +39,14 @@ const RSS_SOURCES = [
   { name: "Fintech M&A", url: "https://news.google.com/rss/search?q=when:1d+(%22fintech+acquires%22+OR+%22fintech+acquisition%22+OR+%22bank+acquires+AI%22+OR+%22bank+buys+AI%22)&hl=en-US&gl=US&ceid=US:en" },
   { name: "Bank-AI Deployments", url: "https://news.google.com/rss/search?q=when:2d+(%22deploys+AI%22+OR+%22rolls+out+AI%22+OR+%22launches+AI%22)+(bank+OR+insurer+OR+payments)&hl=en-US&gl=US&ceid=US:en" },
 
-  // ── Top financial firm research / insights (Google News passthroughs) ────
-  { name: "Goldman Insights", url: "https://news.google.com/rss/search?q=when:3d+(site:goldmansachs.com+OR+%22Goldman+Sachs+Research%22)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "JPMorgan Research", url: "https://news.google.com/rss/search?q=when:3d+(%22JPMorgan+Research%22+OR+%22JPMorgan+Insights%22+OR+site:jpmorgan.com)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "McKinsey Financial", url: "https://news.google.com/rss/search?q=when:3d+site:mckinsey.com+(%22financial+services%22+OR+banking+OR+%22artificial+intelligence%22)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "BCG Financial", url: "https://news.google.com/rss/search?q=when:3d+site:bcg.com+(%22financial+institutions%22+OR+%22artificial+intelligence%22+OR+banking)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "BlackRock Insights", url: "https://news.google.com/rss/search?q=when:3d+(site:blackrock.com+%22insights%22+OR+%22BlackRock+Investment+Institute%22)&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Citi GPS / Research", url: "https://news.google.com/rss/search?q=when:7d+(%22Citi+GPS%22+OR+%22Citi+Research%22)&hl=en-US&gl=US&ceid=US:en" },
+  // ── Top financial firm AI moves — news ABOUT them (wire-service-sourced;
+  //    we never scrape proprietary research/insights pages directly).
+  { name: "Goldman AI Moves", url: "https://news.google.com/rss/search?q=when:3d+%22Goldman+Sachs%22+(AI+OR+%22artificial+intelligence%22+OR+%22GS+AI+Assistant%22)+-site:goldmansachs.com&hl=en-US&gl=US&ceid=US:en" },
+  { name: "JPMorgan AI Moves", url: "https://news.google.com/rss/search?q=when:3d+%22JPMorgan%22+(AI+OR+%22artificial+intelligence%22+OR+LLM+OR+%22IndexGPT%22)+-site:jpmorgan.com&hl=en-US&gl=US&ceid=US:en" },
+  { name: "McKinsey Cited", url: "https://news.google.com/rss/search?q=when:3d+%22McKinsey%22+(report+OR+study+OR+survey)+(AI+OR+banking+OR+fintech)+-site:mckinsey.com&hl=en-US&gl=US&ceid=US:en" },
+  { name: "BCG Cited", url: "https://news.google.com/rss/search?q=when:3d+(%22BCG%22+OR+%22Boston+Consulting%22)+(report+OR+study)+(AI+OR+banking+OR+fintech)+-site:bcg.com&hl=en-US&gl=US&ceid=US:en" },
+  { name: "BlackRock AI Moves", url: "https://news.google.com/rss/search?q=when:3d+%22BlackRock%22+(AI+OR+%22artificial+intelligence%22+OR+fintech+OR+%22Aladdin%22)+-site:blackrock.com&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Citi AI Moves", url: "https://news.google.com/rss/search?q=when:3d+(%22Citi%22+OR+%22Citigroup%22)+(AI+OR+%22artificial+intelligence%22+OR+agentic+OR+%22Citi+GPS%22)&hl=en-US&gl=US&ceid=US:en" },
 
   // ── Regulator official channels (canonical for the Regulation category) ──
   { name: "FCA UK", url: "https://news.google.com/rss/search?q=when:3d+site:fca.org.uk&hl=en-US&gl=US&ceid=US:en" },
