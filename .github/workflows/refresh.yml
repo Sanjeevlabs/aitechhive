@@ -3,10 +3,17 @@ name: Refresh AITechHive cards
 on:
   schedule:
     # 8x per day — every 3h at :15, starting 01:15 UTC (06:45 IST)
-    # Gemini 2.5 Flash free tier: 1500 req/day, 250k tokens/day.
-    # Each run: 2-3 cards × 8 categories = ~20 new cards ≈ 25k tokens. Total: ~200k/day. Safe.
     - cron: '15 1,4,7,10,13,16,19,22 * * *'
   workflow_dispatch:
+  # Auto-trigger one fresh run when the pipeline itself changes. The
+  # paths-ignore on data/** + sitemap prevents the bot's own commits from
+  # retriggering this (which would be a feedback loop).
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/refresh.yml'
+      - 'package-lock.json'
 
 concurrency:
   group: refresh-${{ github.ref }}
