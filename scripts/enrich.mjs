@@ -89,19 +89,32 @@ async function main() {
   const isMorning = HOUR_UTC === 0 || HOUR_UTC === 1;
   const doWebSearch = isMorning;
 
+  // Try the LLM call twice — first try, then one 10s-delayed retry — before
+  // soft-failing. Catches transient provider timeouts / rate-limit blips that
+  // would otherwise burn a whole 3-hour cycle.
   let newCards = [];
-  try {
-    newCards = await generateCards({
-      systemPrompt: SYSTEM_PROMPT,
-      items: raw.slice(0, 100),
-      doWebSearch,
-    });
-  } catch (e) {
-    // Soft-fail: keep the existing cards.json untouched. The workflow's
-    // git-diff guard means nothing is committed, no failure email is sent,
-    // and the deck continues serving the previous refresh until the next
-    // cron cycle. Repeated failures are visible in workflow logs.
-    console.error(`LLM call failed (soft-fail, no commit): ${e.message}`);
+  let lastErr = null;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      newCards = await generateCards({
+        systemPrompt: SYSTEM_PROMPT,
+        items: raw.slice(0, 100),
+        doWebSearch,
+      });
+      lastErr = null;
+      break;
+    } catch (e) {
+      lastErr = e;
+      console.error(`LLM call attempt ${attempt} failed: ${e.message}`);
+      if (attempt < 2) await new Promise((r) => setTimeout(r, 10_000));
+    }
+  }
+  if (lastErr) {
+    // Both attempts failed. Soft-fail: keep the existing cards.json untouched.
+    // The workflow's git-diff guard means nothing is committed, no failure
+    // email is sent, and the deck continues serving the previous refresh
+    // until the next cron cycle.
+    console.error(`LLM call failed after 2 attempts (soft-fail, no commit).`);
     return;
   }
 
