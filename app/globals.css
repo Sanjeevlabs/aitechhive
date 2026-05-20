@@ -2,43 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Apple-system color tokens ──────────────────────────────── */
+/* ── Quiet premium palette ───────────────────────────────────
+   Each category keeps its hue family but desaturated and darkened
+   so white text on the band has AA contrast and the deck reads
+   like an editorial publication, not a system-UI demo.
+─────────────────────────────────────────────────────────────── */
 :root {
-  --bg:              #F2F2F7;
+  --bg:              #F6F4F0;
   --card:            #FFFFFF;
-  --card-secondary:  #F2F2F7;
-  --text-primary:    #000000;
-  --text-secondary:  #6E6E73;
-  --text-tertiary:   #AEAEB2;
-  --separator:       rgba(60,60,67,0.18);
-  --blue:            #007AFF;
-  --blue-soft:       rgba(0,122,255,0.10);
-  --green:           #34C759;
-  --green-soft:      rgba(52,199,89,0.10);
-  --red:             #FF3B30;
-  --red-soft:        rgba(255,59,48,0.10);
-  --orange:          #FF9500;
-  --orange-soft:     rgba(255,149,0,0.10);
-  --purple:          #AF52DE;
-  --purple-soft:     rgba(175,82,222,0.10);
-  --indigo:          #5856D6;
-  --indigo-soft:     rgba(88,86,214,0.10);
-  --teal:            #32ADE6;
-  --teal-soft:       rgba(50,173,230,0.10);
-  --gray:            #8E8E93;
-  --gray-soft:       rgba(142,142,147,0.10);
-  --mint:            #00C7BE;
-  --mint-soft:       rgba(0,199,190,0.10);
-  --yellow:          #FFCC00;
-  --yellow-soft:     rgba(255,204,0,0.12);
-  --brown:           #A2845E;
-  --brown-soft:      rgba(162,132,94,0.12);
-  /* Background decor — soft blue isometric shapes layered under everything */
-  --decor-stroke:    rgba(0,122,255,0.16);
-  --decor-fill:      rgba(0,122,255,0.05);
-  --decor-grad-a:    rgba(0,122,255,0.10);
-  --decor-grad-b:    rgba(88,86,214,0.04);
-  --live-dot:        #34C759;
+  --card-secondary:  #F4F1EC;
+  --text-primary:    #1A1A1F;
+  --text-secondary:  #5C5A60;
+  --text-tertiary:   #9C9AA1;
+  --separator:       rgba(28,28,33,0.14);
+  --blue:            #3D6FA8;
+  --blue-soft:       rgba(61,111,168,0.08);
+  --green:           #5E8F6E;
+  --green-soft:      rgba(94,143,110,0.10);
+  --red:             #A8423D;
+  --red-soft:        rgba(168,66,61,0.09);
+  --orange:          #B5703D;
+  --orange-soft:     rgba(181,112,61,0.09);
+  --purple:          #8867AD;
+  --purple-soft:     rgba(136,103,173,0.09);
+  --indigo:          #5A5894;
+  --indigo-soft:     rgba(90,88,148,0.09);
+  --teal:            #5A8AAA;
+  --teal-soft:       rgba(90,138,170,0.09);
+  --gray:            #8A8890;
+  --gray-soft:       rgba(138,136,144,0.10);
+  --mint:            #5C9E97;
+  --mint-soft:       rgba(92,158,151,0.09);
+  --yellow:          #B89043;
+  --yellow-soft:     rgba(184,144,67,0.10);
+  --brown:           #86694B;
+  --brown-soft:      rgba(134,105,75,0.10);
+  /* Background decor — soft warm shapes layered under everything */
+  --decor-stroke:    rgba(61,111,168,0.12);
+  --decor-fill:      rgba(61,111,168,0.04);
+  --decor-grad-a:    rgba(61,111,168,0.08);
+  --decor-grad-b:    rgba(90,88,148,0.03);
+  --live-dot:        #5E8F6E;
 }
 
 [data-theme="dark"] {
