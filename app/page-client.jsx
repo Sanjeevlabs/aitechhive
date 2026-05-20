@@ -65,17 +65,23 @@ const SHARE_HEX = {
    Always show deck[0] — no deckPos index needed.
 ───────────────────────────────────────────────────────────────── */
 function orderDeck(cards, deckActed = new Set(), catFilter = "all") {
-  const now = Date.now();
-  return cards
+  const dayAgo = Date.now() - 24 * 3600 * 1000;
+  const base = cards
     .filter((c) => !deckActed.has(c.id))
-    .filter((c) => catFilter === "all" || c.category === catFilter)
-    .map((c) => {
-      const ageH = (now - new Date(c.published_at || c.source?.date || 0).getTime()) / 3600000;
-      const freshW = ageH < 12 ? 1.0 : ageH < 24 ? 0.7 : ageH < 48 ? 0.4 : 0.2;
-      const sevW = c.severity === "high" ? 3 : c.severity === "med" ? 2 : 1;
-      return { ...c, _score: sevW + freshW };
-    })
-    .sort((a, b) => b._score - a._score)
+    .filter((c) => catFilter === "all" || c.category === catFilter);
+
+  // Strict freshness: newest first, last 24h only.
+  // The reader should feel "caught up" after working through the deck.
+  const fresh = base
+    .filter((c) => new Date(c.published_at || c.source?.date || 0).getTime() >= dayAgo)
+    .sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0));
+
+  if (fresh.length > 0) return fresh.slice(0, 20);
+
+  // Safety net: if the refresh pipeline is wedged and nothing is <24h old,
+  // show the most-recent cards we have instead of an empty deck.
+  return base
+    .sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0))
     .slice(0, 20);
 }
 
@@ -1438,7 +1444,8 @@ export default function PageClient({ initialCards }) {
   const [shareCard, setShareCard] = useState(null);
   const [showGate, setShowGate] = useState(false);
   const [gateSkipped, setGateSkipped] = useState(false);
-  const [showWelcome, setShowWelcome] = useState(false);
+  // Welcome card is the first page every visit (not a one-time onboarding).
+  const [showWelcome, setShowWelcome] = useState(true);
 
   // Auth — validate session server-side and subscribe to all future auth events
   useEffect(() => {
@@ -1469,10 +1476,7 @@ export default function PageClient({ initialCards }) {
     }
   }, []);
 
-  // Welcome screen — show once per device
-  useEffect(() => {
-    if (!localStorage.getItem("ath_welcomed")) setShowWelcome(true);
-  }, []);
+  // Welcome card always shows on mount — handled via useState default above.
 
   // Sync saves + dismissed from Supabase on login
   useEffect(() => {
@@ -1796,15 +1800,10 @@ export default function PageClient({ initialCards }) {
                 )}
               </AnimatePresence>
 
-              {/* Welcome overlay — shown once on first visit, sits above the card */}
+              {/* Welcome overlay — always the first page on every visit, sits above the deck */}
               <AnimatePresence>
                 {showWelcome && (
-                  <WelcomeCard
-                    onDismiss={() => {
-                      localStorage.setItem("ath_welcomed", "1");
-                      setShowWelcome(false);
-                    }}
-                  />
+                  <WelcomeCard onDismiss={() => setShowWelcome(false)} />
                 )}
               </AnimatePresence>
             </div>
