@@ -6,7 +6,7 @@ import {
   useMotionValue, useTransform, animate,
 } from "framer-motion";
 import {
-  Bookmark, Share2, Scale, Building2, Coins, Briefcase,
+  Bookmark, Share2, Scale, Building2, Coins, Compass,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
   Loader2, Check, X, Archive, Sun, Moon, Globe,
   GraduationCap, Flame, RefreshCw, LogOut, Trash2, Clock, TrendingUp,
@@ -45,7 +45,7 @@ const CATS = {
   regulation: { label: "Regulation", Icon: Scale,         color: "var(--blue)",   soft: "var(--blue-soft)",   hex: "#3D6FA8" },
   deployment: { label: "Deployment", Icon: Building2,     color: "var(--green)",  soft: "var(--green-soft)",  hex: "#5E8F6E" },
   vendor:     { label: "Vendor",     Icon: Coins,         color: "var(--orange)", soft: "var(--orange-soft)", hex: "#B5703D" },
-  career:     { label: "Career",     Icon: Briefcase,     color: "var(--purple)", soft: "var(--purple-soft)", hex: "#8867AD" },
+  shift:      { label: "Shift",      Icon: Compass,       color: "var(--purple)", soft: "var(--purple-soft)", hex: "#8867AD" },
   tool:       { label: "Tool",       Icon: Terminal,      color: "var(--indigo)", soft: "var(--indigo-soft)", hex: "#5A5894" },
   research:   { label: "Research",   Icon: FlaskConical,  color: "var(--teal)",   soft: "var(--teal-soft)",   hex: "#5A8AAA" },
   insight:    { label: "Insight",    Icon: BookOpen,      color: "var(--brown)",  soft: "var(--brown-soft)",  hex: "#86694B" },
@@ -57,7 +57,7 @@ const CATS = {
 const SHARE_HEX = {
   trending: "#A8423D", learner: "#B89043",
   regulation: "#3D6FA8", deployment: "#5E8F6E", vendor: "#B5703D",
-  career: "#8867AD", tool: "#5A5894", research: "#5A8AAA", insight: "#86694B", frontier: "#5C9E97",
+  shift: "#8867AD", tool: "#5A5894", research: "#5A8AAA", insight: "#86694B", frontier: "#5C9E97",
 };
 
 /* ─────────────────────────────────────────────────────────────────
@@ -118,16 +118,6 @@ function MicroViz({ card }) {
     </div>
   );
 
-  if (card.category === "career" && card.comp_low && card.comp_high) {
-    const cur = { USD: "$", GBP: "£", EUR: "€" }[card.currency] || "";
-    const fmt = (n) => n >= 1000 ? `${cur}${Math.round(n / 1000)}K` : `${cur}${n}`;
-    return (
-      <div style={{ margin: "14px 0" }}>
-        <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 4 }}>Total Comp</div>
-        <div style={{ fontSize: 26, fontWeight: 900, color, fontFamily: "var(--font-mono)" }}>{fmt(card.comp_low)} – {fmt(card.comp_high)}</div>
-      </div>
-    );
-  }
 
   if (card.category === "tool" && card.stars) {
     const d = card.stars_delta_7d;
@@ -1281,11 +1271,6 @@ function relDate(dateStr) {
 
 function cardKeyVal(c) {
   if (c.category === "vendor" && c.amount) return `${c.amount}${c.round ? ` · ${c.round}` : ""}`;
-  if (c.category === "career" && c.comp_low && c.comp_high) {
-    const sym = { USD: "$", GBP: "£", EUR: "€" }[c.currency] || "";
-    const f = (n) => `${sym}${n >= 1000 ? Math.round(n / 1000) + "K" : n}`;
-    return `${f(c.comp_low)}–${f(c.comp_high)}`;
-  }
   if (c.category === "regulation" && c.effective_date) {
     const days = Math.round((new Date(c.effective_date) - Date.now()) / 86400000);
     return days < 0 ? "In force" : `${days}d to effective`;
