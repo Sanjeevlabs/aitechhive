@@ -2,7 +2,13 @@
 // Loads raw-feed.json → LLM (via adapter) → merges into data/cards.json.
 
 import fs from "node:fs/promises";
-import { generateCards, generateCardsViaGroq, getProviderInfo } from "./llm.mjs";
+import { generateCards, generateCardsViaGroq, getProviderInfo, isNonRetriableError } from "./llm.mjs";
+
+// Spend guardrail: don't burn an LLM call when the feed is too thin
+// to produce a meaningful refresh. Sub-threshold runs are typically
+// caused by RSS sources rate-limiting / 403'ing en masse, and the
+// resulting deck would barely differ from the existing one anyway.
+const MIN_FEED_ITEMS = 10;
 
 const SYSTEM_PROMPT = `You are AITechHive's editor. Audience: mid-senior BFSI engineers, risk officers, compliance pros, fintech operators, investors. They want quick scannable signal.
 
@@ -85,6 +91,14 @@ async function main() {
   const raw = JSON.parse(await fs.readFile("scripts/raw-feed.json", "utf-8"));
   console.log(`Loaded ${raw.length} raw items.\n`);
 
+  // Min-feed guardrail. Spending API budget on a near-empty feed produces
+  // a deck nearly identical to the existing one — skip and wait for the
+  // next cron, which will retry the RSS fetch.
+  if (raw.length < MIN_FEED_ITEMS) {
+    console.warn(`⚠ Only ${raw.length} raw items (< ${MIN_FEED_ITEMS}). Skipping LLM call to save budget.`);
+    return;
+  }
+
   const HOUR_UTC = new Date().getUTCHours();
   const isMorning = HOUR_UTC === 0 || HOUR_UTC === 1;
   const doWebSearch = isMorning;
@@ -106,6 +120,12 @@ async function main() {
     } catch (e) {
       lastErr = e;
       console.error(`Primary (${provider.provider}) attempt ${attempt} failed: ${e.message}`);
+      // Cost guardrail: never retry on auth/billing/bad-request errors.
+      // The second attempt would bill and fail identically.
+      if (isNonRetriableError(e)) {
+        console.error(`Non-retriable error (status ${e.status || e.response?.status}). Skipping further attempts on primary.`);
+        break;
+      }
       if (attempt < 2) await new Promise((r) => setTimeout(r, 10_000));
     }
   }
