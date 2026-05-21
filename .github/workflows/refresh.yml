@@ -57,6 +57,10 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          # Anthropic Claude — used when LLM_PROVIDER=anthropic OR when
+          # LLM_PROVIDER is unset (anthropic is the default in llm.mjs).
+          # llm.mjs also falls back to ANTHROPIC_API_KEY if LLM_API_KEY is empty.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Groq fallback — kicks in only after primary provider exhausts retries.
           # Free tier: 30 req/min, ~5s inference on LPU hardware.
           # Set this in repo secrets to enable; the pipeline gracefully skips if absent.
