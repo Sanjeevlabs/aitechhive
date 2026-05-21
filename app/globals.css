@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Quiet premium palette ───────────────────────────────────
-   Each category keeps its hue family but desaturated and darkened
-   so white text on the band has AA contrast and the deck reads
-   like an editorial publication, not a system-UI demo.
+/* ── Quiet premium palette — light-only ──────────────────────
+   Pure-white page surface. Each category keeps its hue family
+   but desaturated and darkened so white text on the band has
+   AA contrast and the deck reads like an editorial publication.
 ─────────────────────────────────────────────────────────────── */
 :root {
-  --bg:              #F6F4F0;
+  --bg:              #FFFFFF;
   --card:            #FFFFFF;
-  --card-secondary:  #F4F1EC;
+  --card-secondary:  #F6F4F0;
   --text-primary:    #1A1A1F;
   --text-secondary:  #5C5A60;
   --text-tertiary:   #9C9AA1;
-  --separator:       rgba(28,28,33,0.14);
+  --separator:       rgba(28,28,33,0.12);
   --blue:            #3D6FA8;
   --blue-soft:       rgba(61,111,168,0.08);
   --green:           #5E8F6E;
@@ -43,43 +43,6 @@
   --decor-grad-a:    rgba(61,111,168,0.08);
   --decor-grad-b:    rgba(90,88,148,0.03);
   --live-dot:        #5E8F6E;
-}
-
-[data-theme="dark"] {
-  --bg:              #000000;
-  --card:            #1C1C1E;
-  --card-secondary:  #2C2C2E;
-  --text-primary:    #FFFFFF;
-  --text-secondary:  rgba(235,235,245,0.60);
-  --text-tertiary:   rgba(235,235,245,0.30);
-  --separator:       rgba(84,84,88,0.36);
-  --blue:            #0A84FF;
-  --blue-soft:       rgba(10,132,255,0.16);
-  --green:           #30D158;
-  --green-soft:      rgba(48,209,88,0.16);
-  --red:             #FF453A;
-  --red-soft:        rgba(255,69,58,0.16);
-  --orange:          #FF9F0A;
-  --orange-soft:     rgba(255,159,10,0.16);
-  --purple:          #BF5AF2;
-  --purple-soft:     rgba(191,90,242,0.16);
-  --indigo:          #5E5CE6;
-  --indigo-soft:     rgba(94,92,230,0.16);
-  --teal:            #64D2FF;
-  --teal-soft:       rgba(100,210,255,0.16);
-  --gray:            #8E8E93;
-  --gray-soft:       rgba(142,142,147,0.16);
-  --mint:            #00C7BE;
-  --mint-soft:       rgba(0,199,190,0.15);
-  --yellow:          #FFD60A;
-  --yellow-soft:     rgba(255,214,10,0.18);
-  --brown:           #AC8E68;
-  --brown-soft:      rgba(172,142,104,0.18);
-  --decor-stroke:    rgba(100,150,255,0.14);
-  --decor-fill:      rgba(100,150,255,0.04);
-  --decor-grad-a:    rgba(100,150,255,0.10);
-  --decor-grad-b:    rgba(94,92,230,0.04);
-  --live-dot:        #30D158;
 }
 
 html, body {
