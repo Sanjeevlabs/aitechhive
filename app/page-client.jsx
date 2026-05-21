@@ -8,33 +8,10 @@ import {
 import {
   Bookmark, Share2, Scale, Building2, Coins, Compass,
   Terminal, BookOpen, FlaskConical, ExternalLink, Zap, Inbox, Mail,
-  Loader2, Check, X, Archive, Sun, Moon, Globe,
+  Loader2, Check, X, Archive, Globe,
   GraduationCap, Flame, RefreshCw, LogOut, Trash2, Clock, TrendingUp,
 } from "lucide-react";
 import { createBrowserClient } from "@supabase/ssr";
-
-/* ─────────────────────────────────────────────────────────────────
-   THEME
-───────────────────────────────────────────────────────────────── */
-function useTheme() {
-  const [dark, setDark] = useState(false);
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const sys = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = stored ? stored === "dark" : sys;
-    setDark(isDark);
-    document.documentElement.dataset.theme = isDark ? "dark" : "";
-  }, []);
-  const toggle = useCallback(() => {
-    setDark((d) => {
-      const next = !d;
-      localStorage.setItem("theme", next ? "dark" : "light");
-      document.documentElement.dataset.theme = next ? "dark" : "";
-      return next;
-    });
-  }, []);
-  return { dark, toggle };
-}
 
 /* ─────────────────────────────────────────────────────────────────
    CATEGORY CONFIG
@@ -390,22 +367,22 @@ function DraggableCard({ card, onSwipe }) {
 /* ─────────────────────────────────────────────────────────────────
    DESKTOP BACKGROUND  —  geometric glow fills empty sides on laptop
 ───────────────────────────────────────────────────────────────── */
-function DesktopBackground({ dark }) {
+function DesktopBackground() {
   return (
     <div style={{ position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none", overflow: "hidden" }} aria-hidden="true">
       {/* Dot grid */}
       <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
         <defs>
           <pattern id="bg-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r="1" fill={dark ? "rgba(255,255,255,0.055)" : "rgba(0,0,0,0.04)"} />
+            <circle cx="1" cy="1" r="1" fill="rgba(0,0,0,0.04)" />
           </pattern>
           <linearGradient id="gL" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#7C3AED" stopOpacity={dark ? "0.55" : "0.2"} />
-            <stop offset="100%" stopColor="#2563EB" stopOpacity={dark ? "0.35" : "0.12"} />
+            <stop offset="0%" stopColor="#7C3AED" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#2563EB" stopOpacity="0.12" />
           </linearGradient>
           <linearGradient id="gR" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#0EA5E9" stopOpacity={dark ? "0.5" : "0.18"} />
-            <stop offset="100%" stopColor="#7C3AED" stopOpacity={dark ? "0.35" : "0.12"} />
+            <stop offset="0%" stopColor="#0EA5E9" stopOpacity="0.18" />
+            <stop offset="100%" stopColor="#7C3AED" stopOpacity="0.12" />
           </linearGradient>
         </defs>
         <rect width="100%" height="100%" fill="url(#bg-dots)" />
@@ -432,15 +409,6 @@ function DesktopBackground({ dark }) {
       <div style={{ position: "absolute", top: "48%", right: "4%", width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(0,130,255,0.16) 0%, transparent 70%)", filter: "blur(56px)", transform: "translateY(-50%)" }} />
       <div style={{ position: "absolute", top: "15%", right: "14%", width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(120,60,255,0.10) 0%, transparent 70%)", filter: "blur(40px)" }} />
 
-      {/* Glowing accent dots (dark mode only) */}
-      {dark && (
-        <>
-          <div style={{ position: "absolute", top: "22%", left: "17%", width: 5, height: 5, borderRadius: "50%", background: "rgba(139,92,246,0.95)", boxShadow: "0 0 14px 5px rgba(139,92,246,0.55)" }} />
-          <div style={{ position: "absolute", top: "68%", left: "7%",  width: 4, height: 4, borderRadius: "50%", background: "rgba(59,130,246,0.95)", boxShadow: "0 0 10px 4px rgba(59,130,246,0.5)" }} />
-          <div style={{ position: "absolute", top: "33%", right: "11%", width: 5, height: 5, borderRadius: "50%", background: "rgba(14,165,233,0.95)", boxShadow: "0 0 14px 5px rgba(14,165,233,0.5)" }} />
-          <div style={{ position: "absolute", bottom: "22%", right: "17%", width: 4, height: 4, borderRadius: "50%", background: "rgba(139,92,246,0.95)", boxShadow: "0 0 10px 4px rgba(139,92,246,0.5)" }} />
-        </>
-      )}
     </div>
   );
 }
@@ -1387,7 +1355,6 @@ function dedupCards(cards) {
 }
 
 export default function PageClient({ initialCards }) {
-  const { dark, toggle: toggleTheme } = useTheme();
   const supabase = useMemo(() => createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
@@ -1609,7 +1576,7 @@ export default function PageClient({ initialCards }) {
       }}
     >
       {/* ── Desktop geometric background — fills empty sides on laptop/wide screens */}
-      <DesktopBackground dark={dark} />
+      <DesktopBackground />
 
       {/* ── Pull-to-refresh indicator ─────────────────────────── */}
       <div
@@ -1646,7 +1613,6 @@ export default function PageClient({ initialCards }) {
       <header style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Wordmark sourceCount={sourceCount} />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
-          <IconBtn onClick={toggleTheme} label="Toggle theme">{dark ? <Sun size={15} /> : <Moon size={15} />}</IconBtn>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
           <IconBtn onClick={() => setSavedOpen(true)} label="Saved" badge={savedIds.size}><Bookmark size={15} /></IconBtn>
           {user ? (
