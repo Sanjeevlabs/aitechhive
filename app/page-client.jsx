@@ -296,25 +296,22 @@ function StoryCard({ card }) {
         <div style={{ height: 14 }} />
       </div>
 
-      {/* ── A — ACTION: Source footer + editorial disclosure ─── */}
+      {/* ── A — ACTION: Source footer (single row, tight padding) ─── */}
       <div style={{
-        flexShrink: 0, padding: "8px 18px 14px",
+        flexShrink: 0, padding: "7px 18px 9px",
         borderTop: "1px solid var(--separator)",
+        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
       }}>
-        <div style={{ fontSize: 8.5, fontWeight: 500, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 4, opacity: 0.45 }}>
-          Editorial summary · read original ↗
-        </div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <a
-            href={card.source?.url} target="_blank" rel="noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            style={{ fontSize: 12, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}
-          >
-            {card.source?.name}
-            <ExternalLink size={10} />
-          </a>
-          <span style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.6 }}>aitechhive.com</span>
-        </div>
+        <a
+          href={card.source?.url} target="_blank" rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 6, textDecoration: "none", minWidth: 0, overflow: "hidden" }}
+        >
+          <span style={{ fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.55, flexShrink: 0 }}>Source</span>
+          <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{card.source?.name}</span>
+          <ExternalLink size={9} style={{ flexShrink: 0 }} />
+        </a>
+        <span style={{ fontSize: 10, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.4, flexShrink: 0 }}>aitechhive.com</span>
       </div>
     </div>
   );
@@ -1561,10 +1558,12 @@ export default function PageClient({ initialCards }) {
   }, [doAction, savedOpen, archiveOpen, shareCard, showGate]);
 
   /* ─── Pull-to-refresh ─────────────────────────────────────────
-     Engages only on dominant vertical-down drags. Horizontal
-     drags bail immediately so the card's swipe gesture is intact.
+     Only engages when the gesture STARTS in the top edge zone
+     (iOS-style). Anywhere else, downward drags are treated as
+     content scroll / card interaction — no accidental reloads.
   ─────────────────────────────────────────────────────────────── */
-  const PULL_THRESHOLD = 64;
+  const PULL_EDGE_ZONE = 80;   // gesture must start within this many px of viewport top
+  const PULL_THRESHOLD = 96;   // damped px required to commit a refresh
   const PULL_MAX = 120;
   const pullRef = useRef({ startY: null, startX: null, current: 0, engaged: false });
   const [pullY, setPullY] = useState(0);
@@ -1574,6 +1573,10 @@ export default function PageClient({ initialCards }) {
     if (refreshing || savedOpen || archiveOpen || shareCard || showGate) return;
     const t = e.touches?.[0];
     if (!t) return;
+    // Edge gate: gesture must start near the top of the viewport.
+    // Kills the dominant false-positive (downward drag mid-card, or
+    // card-body scroll bubbling up to the pull-to-refresh handler).
+    if (t.clientY > PULL_EDGE_ZONE) return;
     pullRef.current = { startY: t.clientY, startX: t.clientX, current: 0, engaged: false };
   }, [refreshing, savedOpen, archiveOpen, shareCard, showGate]);
 
