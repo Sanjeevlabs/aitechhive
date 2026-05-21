@@ -9,7 +9,10 @@ const PROVIDERS = {
   anthropic: {
     label: "Anthropic",
     defaultModel: "claude-haiku-4-5",
-    webSearch: true,
+    // Web search is a paid tool-use call on top of normal token cost.
+    // RSS feeds already cover the news flow — disable by default to keep
+    // each call to a single billable API request.
+    webSearch: false,
     rates: { in: 1.0, out: 5.0 },
   },
   openai: {
@@ -286,5 +289,20 @@ function logCost(usage) {
       outTok * cfg.rates.out) /
     1_000_000;
 
-  console.log(`[${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)}`);
+  // Prominent banner so cost shows up loud in Actions logs.
+  // Daily projection assumes the 8x/day cron cadence in refresh.yml.
+  const dailyEst = (cost * 8).toFixed(2);
+  const monthlyEst = (cost * 8 * 30).toFixed(2);
+  console.log(`💰 [${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)} this call · ~$${dailyEst}/day · ~$${monthlyEst}/mo at 8 runs/day`);
+}
+
+// Errors that should never trigger a retry — the second attempt will fail
+// the same way and just double the billable cost / latency.
+// 401/403: auth (bad/expired/revoked key). 400: malformed request.
+// 402: payment required. 404: model not found / wrong endpoint.
+// 429 IS retriable (rate limit) — caller's retry loop handles backoff.
+export function isNonRetriableError(err) {
+  const status = err?.status || err?.response?.status;
+  if (!status) return false;
+  return status === 400 || status === 401 || status === 402 || status === 403 || status === 404;
 }
