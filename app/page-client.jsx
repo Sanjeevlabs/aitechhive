@@ -1253,7 +1253,7 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
-function Wordmark({ sourceCount, cardCount }) {
+function Wordmark({ cardCount }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
       <div
@@ -1282,7 +1282,7 @@ function Wordmark({ sourceCount, cardCount }) {
         />
       </div>
       <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.09em" }}>
-        BFSI · Enterprise AI{sourceCount > 0 ? <><br />{sourceCount} sources</> : null}
+        BFSI · Enterprise AI
       </div>
     </div>
   );
@@ -1361,14 +1361,6 @@ export default function PageClient({ initialCards }) {
   ), []);
 
   const [allCards] = useState(() => dedupCards(initialCards));
-  const sourceCount = useMemo(() => {
-    const s = new Set();
-    for (const c of allCards) {
-      const n = c?.source?.name;
-      if (n) s.add(String(n).split(" · ")[0].trim());
-    }
-    return s.size;
-  }, [allCards]);
   // Per-category counts for the filter chip ticker
   const categoryCounts = useMemo(() => {
     const m = {};
@@ -1611,7 +1603,7 @@ export default function PageClient({ initialCards }) {
 
       {/* ── Masthead ──────────────────────────────────────────── */}
       <header style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <Wordmark sourceCount={sourceCount} />
+        <Wordmark />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
           <IconBtn onClick={() => setSavedOpen(true)} label="Saved" badge={savedIds.size}><Bookmark size={15} /></IconBtn>
