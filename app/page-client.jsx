@@ -448,7 +448,7 @@ function DesktopBackground({ dark }) {
 /* ─────────────────────────────────────────────────────────────────
    WELCOME CARD  —  shown as the first page on every visit
 ───────────────────────────────────────────────────────────────── */
-function WelcomeCard({ onDismiss }) {
+function WelcomeCard({ onDismiss, totalStories }) {
   // Quiet premium palette — single solid cherry-blossom surface, no gradients.
   const surface = "#FFF1F1";       // soft cherry background
   const accent  = "#A23E47";       // muted cherry red (logo, button, eyebrow)
@@ -493,9 +493,10 @@ function WelcomeCard({ onDismiss }) {
           Banking, AI, and the regulators between them.
         </p>
 
-        {/* Stats row — quiet, no gradient */}
+        {/* Stats row — quiet, no gradient. Story count reads live
+            from cards.json so it stays in sync forever. */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
-          {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
+          {[[String(totalStories ?? 0), "Stories"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
             <div key={lbl} style={{ padding: "10px 8px", background: "rgba(255,255,255,0.6)", textAlign: "center" }}>
               <div style={{ fontSize: 19, fontWeight: 800, lineHeight: 1, color: accent, fontFamily: "var(--font-mono)" }}>{val}</div>
               <div style={{ fontSize: 9, fontWeight: 700, color: inkMute, marginTop: 3, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
@@ -1788,7 +1789,7 @@ export default function PageClient({ initialCards }) {
               {/* Welcome overlay — always the first page on every visit, sits above the deck */}
               <AnimatePresence>
                 {showWelcome && (
-                  <WelcomeCard onDismiss={() => setShowWelcome(false)} />
+                  <WelcomeCard onDismiss={() => setShowWelcome(false)} totalStories={allCards.length} />
                 )}
               </AnimatePresence>
             </div>
