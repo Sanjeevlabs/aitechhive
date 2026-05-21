@@ -187,9 +187,9 @@ function StoryCard({ card }) {
       <div style={{
         flexShrink: 0,
         background: `linear-gradient(150deg, ${hex} 0%, ${hex}DD 55%, ${hex}99 100%)`,
-        padding: "16px 18px 20px",
+        padding: "12px 18px 14px",
         position: "relative", overflow: "hidden",
-        minHeight: 148,
+        minHeight: 116,
         display: "flex", flexDirection: "column", justifyContent: "space-between",
         boxShadow: "inset 0 1px 0 rgba(255,255,255,0.28), inset 0 -1px 0 rgba(0,0,0,0.12)",
       }}>
@@ -230,8 +230,8 @@ function StoryCard({ card }) {
 
         {/* Headline — the attention hook */}
         <h2 style={{
-          margin: "14px 0 0", zIndex: 1, position: "relative",
-          fontSize: 21, fontWeight: 600, lineHeight: 1.28,
+          margin: "10px 0 0", zIndex: 1, position: "relative",
+          fontSize: 19, fontWeight: 600, lineHeight: 1.26,
           letterSpacing: "-0.015em",
           color: "white",
           fontFamily: "var(--font-serif)",
@@ -462,7 +462,6 @@ function WelcomeCard({ onDismiss }) {
   // Quiet premium palette — single solid cherry-blossom surface, no gradients.
   const surface = "#FFF1F1";       // soft cherry background
   const accent  = "#A23E47";       // muted cherry red (logo, button, eyebrow)
-  const accentDeep = "#7A2C33";    // deeper cherry for hover-state shadows
   const ink     = "#1F1416";       // near-black with a warm cherry undertone
   const inkMute = "#6B5A5C";       // secondary text
   const inkSoft = "#A39093";       // tertiary text
@@ -478,13 +477,13 @@ function WelcomeCard({ onDismiss }) {
         background: surface,
         borderRadius: 24, overflow: "hidden",
         display: "flex", flexDirection: "column", justifyContent: "space-between",
-        padding: "26px 22px 20px",
+        padding: "22px 20px 18px",
         boxShadow: `0 0 0 1px rgba(162,62,71,0.14), 0 12px 36px rgba(122,44,51,0.10), 0 2px 6px rgba(0,0,0,0.04)`,
         userSelect: "none",
       }}
     >
       {/* ── Top: logo + meta ── */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
           <div style={{ width: 30, height: 30, borderRadius: 8, background: accent, display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white" }}>ath</div>
           <span style={{ fontSize: 11, fontWeight: 700, color: inkMute, letterSpacing: "0.05em", textTransform: "uppercase" }}>AITechHive</span>
@@ -492,38 +491,31 @@ function WelcomeCard({ onDismiss }) {
         <span style={{ fontSize: 10, fontWeight: 600, color: inkSoft, letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
       </div>
 
-      {/* ── Middle: greeting + headline + stats + topics ── */}
-      <div>
-        <p style={{ margin: "0 0 12px", fontSize: 10.5, fontWeight: 800, letterSpacing: "0.22em", textTransform: "uppercase", color: accent }}>
+      {/* ── Middle: greeting + headline + sub + stats ── */}
+      <div style={{ flexShrink: 1, minHeight: 0 }}>
+        <p style={{ margin: "0 0 10px", fontSize: 10.5, fontWeight: 800, letterSpacing: "0.22em", textTransform: "uppercase", color: accent }}>
           Welcome
         </p>
-        <h2 style={{ margin: "0 0 10px", fontSize: 25, fontWeight: 700, lineHeight: 1.18, color: ink, letterSpacing: "-0.022em", fontFamily: "var(--font-serif)" }}>
+        <h2 style={{ margin: "0 0 8px", fontSize: 26, fontWeight: 700, lineHeight: 1.15, color: ink, letterSpacing: "-0.022em", fontFamily: "var(--font-serif)" }}>
           The morning brief, distilled.
         </h2>
-        <p style={{ margin: "0 0 20px", fontSize: 13.5, lineHeight: 1.5, color: inkMute }}>
-          Banking, AI, and the regulators between them. Today's signal — written to be read in minutes, not hours.
+        <p style={{ margin: "0 0 16px", fontSize: 13, lineHeight: 1.5, color: inkMute }}>
+          Banking, AI, and the regulators between them.
         </p>
 
         {/* Stats row — quiet, no gradient */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, marginBottom: 16, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
           {[["100", "Stories daily"], ["8×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
-            <div key={lbl} style={{ padding: "11px 8px", background: "rgba(255,255,255,0.6)", textAlign: "center" }}>
-              <div style={{ fontSize: 20, fontWeight: 800, lineHeight: 1, color: accent, fontFamily: "var(--font-mono)" }}>{val}</div>
+            <div key={lbl} style={{ padding: "10px 8px", background: "rgba(255,255,255,0.6)", textAlign: "center" }}>
+              <div style={{ fontSize: 19, fontWeight: 800, lineHeight: 1, color: accent, fontFamily: "var(--font-mono)" }}>{val}</div>
               <div style={{ fontSize: 9, fontWeight: 700, color: inkMute, marginTop: 3, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
             </div>
-          ))}
-        </div>
-
-        {/* Topics */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
-          {["Regulation", "Bank AI", "Fintech funding", "Research", "Career & comp", "Markets"].map((t) => (
-            <span key={t} style={{ fontSize: 11, fontWeight: 600, color: accentDeep, padding: "3px 9px", borderRadius: 100, border: "1px solid rgba(162,62,71,0.22)", background: "rgba(162,62,71,0.05)" }}>{t}</span>
           ))}
         </div>
       </div>
 
       {/* ── Bottom: CTA ── */}
-      <div>
+      <div style={{ flexShrink: 0 }}>
         <button
           onClick={onDismiss}
           style={{ width: "100%", padding: "13px", borderRadius: 13, background: accent, color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em", boxShadow: `0 4px 14px rgba(162,62,71,0.25)` }}
