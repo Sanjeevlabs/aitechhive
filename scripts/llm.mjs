@@ -97,10 +97,15 @@ async function braveSearch(query, count = 5) {
 // Provider-specific call
 // ============================================================
 async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
-  const client = new Anthropic({ apiKey: API_KEY });
+  // Hard 2-min per-call timeout. SDK default is ~10min, which combined with
+  // enrich.mjs's retry-twice loop would eat the full 20-min workflow budget
+  // before the Groq fallback ever gets a turn.
+  const client = new Anthropic({ apiKey: API_KEY, timeout: 120_000, maxRetries: 0 });
   const params = {
     model: MODEL,
-    max_tokens: 32000,
+    // 8192 is plenty for ~30-40 card payloads; bigger values let the model
+    // wander and cost more wall-time per call.
+    max_tokens: 8192,
     system: [{ type: "text", text: systemPrompt, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: userContent }],
   };
