@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-05-21-regulation-bank-of-england-insurance-branches",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-05-21T09:38:32.000Z",
+    "headline": "Bank of England updates insurance third-country branch policy and implementation",
+    "plain_english": "PRA released PS13/26, clarifying regulatory approach to third-country insurance branches operating in UK. Routine supervisory update on branch authorization, capital, and governance.",
+    "why_it_matters": "Maintains clarity on cross-border insurance ops for global BFSI firms. No material AI angle but relevant to branch-level compliance and reporting infrastructure.",
+    "source": {
+      "name": "Bank of England · 2026-05-21",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR2xVc0lsZjl2b2dRZ3d6TGJ4dE95"
+    }
+  },
+  {
+    "id": "2026-05-21-regulation-fca-authorisations-q4-metrics",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-05-21T09:33:56.000Z",
+    "headline": "FCA publishes Q4 2025/26 authorisation service performance metrics",
+    "plain_english": "FCA released routine operational metrics on firm application processing times and authorisation volumes for the final quarter. Standard transparency report with no material policy changes.",
+    "why_it_matters": "Benchmark for fintech applicants on FCA approval velocity. Useful for AI-first startups planning UK entry timing; no regulatory tightening evident.",
+    "source": {
+      "name": "Financial Conduct Authority · 2026-05-21",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQelVKZkdpM1o3Qk1lVU1iMWxCTXg"
+    }
+  },
+  {
     "id": "2026-05-21-regulation-ecb-algo-arch",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -118,31 +146,17 @@
     }
   },
   {
-    "id": "2026-05-21-fed-limited-payment-account-proposal",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-05-20T22:31:38.000Z",
-    "headline": "Federal Reserve proposes limited payment accounts for fintechs, non-banks",
-    "plain_english": "The Federal Reserve issued a proposal to create a new 'limited payment account' framework for fintech and non-bank payment providers. The move aims to expand access to Fed services while containing systemic risk.",
-    "why_it_matters": "New regulatory pathway could accelerate AI-driven fintech adoption of core banking rails; banks will face increased competition from non-banks with lower compliance burden and faster product iteration cycles.",
-    "source": {
-      "name": "Reuters · 2026-05-20",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWXZQNVE2ajYwU183UXVqd0FOajdnUnBudHUxTThJbUEtR0l5YVhTcm5KRU9DSnctYWUzWm11djdpdVFfX1lmME5feFlSaWppc2E5S0kxV2dnTzdFYkotZWROWS00cE5KS0JoM2lYbkI3a0FoOUo2R3hGajlDVi1aM28zUGdSUm9jOFFZbTVwaDJ1Tk1rOHlsZWNkX0NNRDFiZUE?oc=5"
-    }
-  },
-  {
-    "id": "2026-05-21-regulation-fintech-yotta-fdic",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-05-21T00:01:00Z",
-    "headline": "Fintech Yotta fined $1M for Synapse fraud; false FDIC insurance claims",
-    "plain_english": "Fintech Yotta was fined $1M for parking customer funds with failed BaaS vendor Synapse while falsely claiming accounts were FDIC-insured. Regulators determined Yotta misrepresented insurance coverage, exposing customers to uninsured deposits.",
-    "why_it_matters": "Synapse collapse continues to generate enforcement actions. Regulators (CFPB, state AGs) now scrutinize deposit-guarantee claims across fintech stack. BFSI vendors integrating fintech partners must audit insurance disclosures and demand strict custodial oversight—regulatory risk is non-negotiable.",
+    "id": "2026-05-21-deployment-klarna-chatgpt",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T11:01:00.000Z",
+    "headline": "Klarna embeds shopping search directly into ChatGPT",
+    "plain_english": "Klarna, a buy-now-pay-later fintech, has launched a shopping app inside OpenAI's ChatGPT, letting users discover and compare products without leaving the chat interface. This marks a shift toward conversational commerce as a mainstream BFSI-adjacent channel.",
+    "why_it_matters": "Signals fintech integrating deeper into frontier AI UX; merchant networks becoming distribution edges. Traditional e-commerce and payment flows may rewire through LLM interfaces, pressuring incumbents to embed or compete.",
     "source": {
       "name": "Finextra · 2026-05-21",
-      "url": "https://www.finextra.com/newsarticle/47786/fintech-yotta-fined-1-million-for-synapse-deception"
+      "url": "https://www.finextra.com/newsarticle/47794/klarna-plugs-merchant-network-into-chatgpt"
     }
   },
   {
@@ -332,31 +346,64 @@
     }
   },
   {
-    "id": "2026-05-18-derivative-path-ai-hedging-platform",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-05-21-vendor-sbs-digital-branch",
+    "category": "vendor",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-05-18T12:57:11.000Z",
-    "headline": "Derivative Path launches AI-driven hedging platform for banks.",
-    "plain_english": "Derivative Path has introduced an AI-driven platform tailored for banks and credit unions to manage hedging strategies. This aims to automate and optimize risk management processes for derivatives.",
-    "why_it_matters": "Provides financial institutions with advanced tools to manage complex financial risks more efficiently, potentially improving capital allocation and regulatory compliance.",
-    "jargon": [
-      {
-        "term": "AI-driven",
-        "def": "Powered or enabled by Artificial Intelligence."
-      },
-      {
-        "term": "Hedging Platform",
-        "def": "A software system used to manage financial risks through various hedging instruments."
-      },
-      {
-        "term": "Derivatives",
-        "def": "Financial contracts whose value is derived from an underlying asset, rate, or index."
-      }
-    ],
+    "published_at": "2026-05-21T09:41:00.000Z",
+    "headline": "SBS launches cloud-native tablet branch platform to replace legacy teller systems",
+    "plain_english": "SBS, a fintech serving 1,500+ institutions, shipped 'Digital Branch'—a cloud-native platform that replaces traditional teller systems with tablet-based servicing for UK banks and building societies. Modernization play targeting branch ops automation.",
+    "why_it_matters": "Signals vendor-led branch digitization at scale; 1,500-institution installed base makes SBS a key backstop for legacy ops modernization. Reduces manual teller workload, lower compliance surface.",
+    "scale": {
+      "metric": "customers",
+      "value": "1500+"
+    },
     "source": {
-      "name": "Bank-AI Deployments · 2026-05-18",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYVhjbmoyLTZnSUdYeUQySFhKdmJFYmpGMjBYdjc4VlhGb2lBMkNPVHp3VlVPejFYTlhadGpYb0ZQcEVlRWg4aktqTlFHLS13djgtTV8xRG9tTUo3dTJHVEhsSTUzWDBkRlN1Z2pDbnBvX2F1amZGbzh0clFtcDVKY2RsRXlBb3pjOVA0QjhCWWNoWUZHVFFURS1tZlRadzI3WFBJY0labW0?oc=5"
+      "name": "Finextra · 2026-05-21",
+      "url": "https://www.finextra.com/pressarticle/109920/sbs-bids-to-replace-teller-systems-with-tablet-based-branch-banking-platform"
+    }
+  },
+  {
+    "id": "2026-05-21-vendor-sumsub-marketplace-ai",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T10:12:51.000Z",
+    "headline": "Sumsub launches AI-powered platform for marketplace KYC and compliance",
+    "plain_english": "Sumsub, a fintech compliance vendor, released an AI-driven platform designed for marketplace operators to automate identity verification, KYC screening, and ongoing risk monitoring. Targets gig-economy and e-commerce ecosystems.",
+    "why_it_matters": "Consolidation of KYC and sanctions screening into AI-native pipeline. Reduces manual review costs and accelerates onboarding; likely to reshape compliance labor demand in payments and marketplace segments.",
+    "source": {
+      "name": "FX News Group · 2026-05-21",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbFZkV2JoR1U0Zlh0RGZEWW1ndXBtbklvdTNvOE9QR0ZpNEFZNnRGWXFnWTdaNE9FUFd3YjNxb1BKOGtRU2pZTVJsQy1XNEN1Mmx4XzFRQ1ZtVnFXQ0NzeDhQMi1zc1VkWjNNdWh6b2ctV2FyZlNUaVh1bmhr"
+    }
+  },
+  {
+    "id": "2026-05-21-vendor-state-street-getquin",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-05-21T09:29:00.000Z",
+    "headline": "State Street Investment Management takes minority stake in German wealth platform getquin",
+    "plain_english": "State Street, a major custody and asset servicing firm, made a strategic minority investment in getquin, a German digital wealth management platform for retail investors. Signals tier-1 asset managers backing fintech wealth distribution.",
+    "why_it_matters": "Incumbent capital flowing to fintech wealth channels. Validates direct-to-consumer wealth platforms as strategic arms for asset managers; may accelerate API integrations and white-label partnerships.",
+    "source": {
+      "name": "Finextra · 2026-05-21",
+      "url": "https://www.finextra.com/pressarticle/109918/state-street-investment-management-takes-minority-stake-in-german-wealth-platform-getquin"
+    }
+  },
+  {
+    "id": "2026-05-21-vendor-scapia-general-catalyst",
+    "category": "vendor",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-05-21T07:06:30.000Z",
+    "headline": "Travel fintech Scapia raises $63M from General Catalyst for India payments expansion",
+    "plain_english": "Scapia, an India-focused travel payments fintech, closed a $63M Series round led by General Catalyst. Funds will drive expansion in travel-linked payment and settlement services across South Asia.",
+    "why_it_matters": "Validates travel fintech vertical in emerging markets; follows trend of global VCs backing vertical payments plays in India. Travel is high-margin, sticky vertical for BFSI infrastructure.",
+    "amount": "$63M",
+    "source": {
+      "name": "TechCrunch · 2026-05-21",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd3FUVV9YV0NiZVFRQWJSVXJiUG5JaXM1OVJXVDU4UHB4YnRtREZSUTVzYUR4ZGlWNm9TSV9ibXpVM3Jkb01peUFSdnBSeEhZOE9iVE54UXBlM2lwelhtejUyWXVpZWQtVWNOM3JTLWJvd3pwMHVwWWpiUUlwb0NvOGcxRFpmYVFEZkdPNTN4Z2RyMVJNa1RoMDNDaXlaeklpWkhYay1FbVZtU2d1WlhCaDV0T3Y"
     }
   },
   {
@@ -451,98 +498,24 @@
     }
   },
   {
-    "id": "2026-05-21-xai-compute-anthropic-1-25b",
-    "category": "vendor",
+    "id": "2026-05-21-shift-jpmorgan-ai-hiring",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-05-20T21:29:22.000Z",
-    "headline": "Anthropic commits $1.25B/month to xAI for compute capacity",
-    "plain_english": "Elon Musk's xAI will supply compute to Anthropic under a deal worth $1.25 billion per month. This reveals the first dollar figure on a compute-supply pact between two major AI players and signals xAI's emergence as a compute vendor.",
-    "why_it_matters": "Frontier lab compute dependencies create vendor lock-in and margin pressure; regulators may scrutinize whether xAI's SpaceX funding creates conflicts of interest in AI infrastructure allocation.",
+    "published_at": "2026-05-21T04:19:00.000Z",
+    "headline": "JPMorgan CEO signals hiring more AI staff, fewer traditional bankers",
+    "plain_english": "Jamie Dimon confirmed JPMorgan will expand AI engineering and infrastructure roles while reducing headcount in legacy banking positions. Reflects large-cap bank structural shift toward algorithmic execution and away from manual processing.",
+    "why_it_matters": "Industry-wide signal: tier-1 banks now explicitly trading bankers for engineers. Workforce rebalancing will cascade through recruitment, training, compliance hiring (for AI governance). Sets template other megabanks will follow.",
     "jargon": [
       {
-        "term": "Compute capacity",
-        "def": "Rented GPU/AI accelerator hours for training or inference; the critical bottleneck in scaling LLM workloads."
+        "term": "Legacy banking positions",
+        "def": "Traditional roles (traders, analysts, ops staff) performing tasks now automatable by AI—e.g., trade settlement, KYC screening."
       }
     ],
     "source": {
-      "name": "TechCrunch · 2026-05-20",
-      "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/"
-    },
-    "amount": "$1.25B/month"
-  },
-  {
-    "id": "2026-05-21-xai-anthropic-compute-1-25b-month",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-05-20T21:29:22Z",
-    "headline": "xAI to supply Anthropic with $1.25B/month in compute capacity",
-    "plain_english": "Elon Musk's xAI will provide Anthropic with inference compute at $1.25B per month under a multi-year deal, revealed in SpaceX's IPO filing. Anthropic will rely partly on xAI-run Grok infrastructure.",
-    "why_it_matters": "Locks in Anthropic's growth at external compute cost; shifts risk to xAI (execution, uptime). Signals frontier labs now vertically integrate infrastructure as a moat and revenue stream.",
-    "amount": "$1.25B/month",
-    "source": {
-      "name": "TechCrunch · 2026-05-20",
-      "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/"
+      "name": "Bloomberg · 2026-05-21",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZXBYYlJJZXBJeldTcjdZTUk5b3M"
     }
-  },
-  {
-    "id": "2026-05-18-tether-invests-lemfi",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-18T16:09:00.000Z",
-    "headline": "Tether invests in fintech remittance platform LemFi.",
-    "plain_english": "Tether, issuer of the USD₮ stablecoin, announced an investment in LemFi, a fintech platform focused on remittances for immigrant communities. This signals growing overlap between traditional fintech and digital assets.",
-    "why_it_matters": "Highlights ongoing investment in cross-border payments innovation, potentially leveraging stablecoins for faster, cheaper global transactions in the future.",
-    "jargon": [
-      {
-        "term": "Stablecoin",
-        "def": "A cryptocurrency designed to maintain a stable value, often pegged to a fiat currency like the US dollar."
-      },
-      {
-        "term": "Fintech",
-        "def": "Financial Technology: Companies using technology to improve or automate financial services."
-      },
-      {
-        "term": "Remittances",
-        "def": "Money sent by a person in one country to support family or friends in another country."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-05-18",
-      "url": "https://www.finextra.com/pressarticle/109870/tether-invests-in-lemfi?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-05-18-sequoia-backs-dust-40m-seriesb",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-05-18T14:57:22.000Z",
-    "headline": "Sequoia backs AI agent scaleup Dust with $40M Series B.",
-    "plain_english": "Dust, an AI agent platform focused on automating complex tasks, secured $40 million in Series B funding led by Sequoia. This investment signals strong confidence in the operational efficiency gains offered by AI agents for enterprises.",
-    "why_it_matters": "Increased investment in AI agent platforms will accelerate adoption of automated, intelligent workflows within BFSI, improving efficiency and customer service.",
-    "jargon": [
-      {
-        "term": "AI Agents",
-        "def": "Autonomous AI programs designed to perform tasks or achieve goals with minimal human intervention."
-      },
-      {
-        "term": "Series B Funding",
-        "def": "The second round of financing for a startup, typically used for scaling operations and market expansion."
-      },
-      {
-        "term": "BFSI",
-        "def": "Banking, Financial Services, and Insurance: A sector of the economy."
-      }
-    ],
-    "source": {
-      "name": "Sifted (EU fintech) · 2026-05-18",
-      "url": "https://sifted.eu/articles/dust-series-b-40m/"
-    },
-    "amount": "$40M",
-    "round": "Series B"
   },
   {
     "id": "2026-05-21-shift-spacex-xai-data-centers",
@@ -634,6 +607,48 @@
     "source": {
       "name": "CNBC · 2026-05-20",
       "url": "https://www.cnbc.com/2026/05/20/intuit-intu-q3-earnings-report-2026-company-cutting-17percent-of-staff.html"
+    }
+  },
+  {
+    "id": "2026-05-21-tool-docai-microservices",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Operationalizing document AI—microservice architecture for OCR and LLM pipelines",
+    "plain_english": "Open-source reference architecture for running OCR + LLM pipelines in production at scale (thousands of multi-page docs/hour). Separates GPU inference from CPU orchestration, uses async processing, and addresses hybrid classification workflows.",
+    "why_it_matters": "Practical blueprint for BFSI deploying document automation (loan applications, regulatory filings, contract review). Highlights infrastructure decisions (async, GPU isolation, microservices) necessary for reliable, cost-effective document processing at scale.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.18818"
+    }
+  },
+  {
+    "id": "2026-05-21-tool-agentnlq-nl2sql",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: AgentNLQ—multi-agent framework for natural-language-to-SQL conversion",
+    "plain_english": "Open research framework using multiple specialized LLM agents to convert natural-language queries into SQL. Achieves 78.1% semantic accuracy on the BIRD benchmark by enriching schema representation and using semantic agents.",
+    "why_it_matters": "Enables non-technical staff (compliance, risk, operations) to query databases using plain English. Reduces dependency on SQL engineers; accelerates analytics velocity. Fintech and banking ops teams should trial on internal schema.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19010"
+    }
+  },
+  {
+    "id": "2026-05-21-tool-atlas-trading-agent",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: ATLAS—multi-agent framework for LLM-based autonomous trading",
+    "plain_english": "Research framework (ATLAS) integrating market data, news, and fundamentals into coordinated LLM agents for trading decisions. Uses dynamic prompt optimization and multi-agent coordination to bridge feedback delays and market noise.",
+    "why_it_matters": "Demonstrates end-to-end agent architecture for quantitative trading. Asset managers should review for risk governance patterns: how to audit agent reasoning, set hard limits (max position, trade size), and detect adversarial data or model drift.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2510.15949"
     }
   },
   {
@@ -737,47 +752,85 @@
     }
   },
   {
-    "id": "2026-05-21-arXiv-document-ai-microservices",
-    "category": "tool",
+    "id": "2026-05-21-research-economics-model-collapse",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: microservice architecture for production OCR + LLM document processing at scale",
-    "plain_english": "Technical paper describes hybrid classification, asynchronous processing, and GPU/CPU separation in a production document AI pipeline handling thousands of multi-page documents per hour for field extraction.",
-    "why_it_matters": "Blueprint for banks building document automation: separates concerns (classification, OCR, extraction), decouples GPUs from orchestration, and provides observability—critical for regulatory audit trails.",
+    "severity": "high",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Economics of model collapse in synthetic data markets",
+    "plain_english": "Researchers published unified microeconomic theory of synthetic data markets under 'model collapse'—where recursive training on AI-generated content degrades distributional fidelity. Introduces Synthetic Data Contamination Equilibrium (SDCE) model and welfare analysis.",
+    "why_it_matters": "Formalizes long-tail risk in training-data sourcing for BFSI models. If financial institutions rely heavily on synthetic data for fraud or risk models, collapse could trigger correlated failures. Regulators should demand data provenance audits.",
+    "jargon": [
+      {
+        "term": "Model collapse",
+        "def": "Measurable degradation of statistical properties when generative models train recursively on synthetic (AI-generated) data rather than real data."
+      }
+    ],
     "source": {
       "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.18818"
+      "url": "https://arxiv.org/abs/2605.20279"
     }
   },
   {
-    "id": "2026-05-21-arXiv-nls-agent",
-    "category": "tool",
+    "id": "2026-05-21-research-inference-cost-phillips-curve",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: AgentNLQ achieves 78.1% accuracy on natural language to SQL benchmarks",
-    "plain_english": "Multi-agent NL2SQL system achieves 78.1% semantic accuracy on BIRD benchmark by leveraging semantically enriched schema representation and business rule context, addressing common LLM SQL generation failures.",
-    "why_it_matters": "SQL generation accuracy matters for bank data access layers: enables analyst self-service queries over regulatory datasets and customer data without hand-coding. Reduces query latency in compliance workflows.",
-    "benchmark_name": "BIRD",
-    "delta_pts": 78.1,
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: AI inference costs as driver of inflation and monetary policy",
+    "plain_english": "Researchers develop monetary theory incorporating AI inference costs into firm marginal-cost models, deriving an 'Inference-Cost Phillips Curve' that links AI compute pricing to inflation pass-through and optimal policy.",
+    "why_it_matters": "Opens avenue for central banks to model AI cost inflation separately from traditional labor/commodity shocks. BFSI ops costs tied to LLM inference; regulators need frameworks to track this second-order effect on financial stability.",
+    "jargon": [
+      {
+        "term": "Phillips Curve",
+        "def": "Economic relationship between unemployment (slack) and inflation; augmented versions include additional cost drivers beyond labor."
+      }
+    ],
     "source": {
       "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19010"
+      "url": "https://arxiv.org/abs/2605.20281"
     }
   },
   {
-    "id": "2026-05-21-arXiv-lbw-guard-training-stability",
-    "category": "tool",
+    "id": "2026-05-21-research-drl-optimal-execution",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: Learn-by-Wire Guard stabilizes large model training under stress conditions",
-    "plain_english": "LBW-Guard is a governance layer above AdamW that monitors training telemetry and applies bounded control to optimizer execution to prevent instability, degraded runs, and wasted compute under aggressive learning-rate schedules.",
-    "why_it_matters": "Banks fine-tuning proprietary models on sensitive financial data need stable, reproducible training. Reduces compute waste and makes large-model training more accessible to institutions with constrained infrastructure budgets.",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Deep RL agents achieve supra-competitive outcomes in trade execution",
+    "plain_english": "Study examines whether deep reinforcement-learning agents in shared liquidation environments can coordinate to achieve better execution (lower implementation shortfall) than game-theoretic competitive benchmarks. Finds learned memory structures sustain collusion-like outcomes.",
+    "why_it_matters": "Signals risk of emergent agent coordination in execution systems. If BFSI deploying multi-agent systems for trade/settlement, supervisors must monitor for unintended collusion. Custody and execution desks must audit RL agent interaction logs.",
     "source": {
       "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19008"
+      "url": "https://arxiv.org/abs/2605.20348"
+    }
+  },
+  {
+    "id": "2026-05-21-research-llm-financial-analysis",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Bridging language models and financial analysis—multimodal data integration",
+    "plain_english": "Survey and framework for deploying LLMs on heterogeneous financial data (text, tables, charts). Addresses integration gaps between traditional NLP and financial document analysis (earnings calls, MD&A, regulatory filings).",
+    "why_it_matters": "Practical guide for BFSI deploying LLMs to equity research, credit analysis, compliance document review. Highlights data-type challenges (tables, visual) that standard LLMs struggle with; informs RFP criteria for financial AI vendors.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2503.22693"
+    }
+  },
+  {
+    "id": "2026-05-21-research-graph-neural-networks-volatility",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Graph neural networks improve volatility forecasts but portfolio gains are mixed",
+    "plain_english": "Empirical study on 465 S&P 500 equities comparing GraphSAGE (graph NN) to LSTM/AR baselines for realized volatility. Finds lowest forecast error does not yield highest portfolio Sharpe ratio—suggesting model selection for portfolio construction differs from forecast accuracy.",
+    "why_it_matters": "Caution against AI model selection bias in portfolio ops. Asset managers must validate end-to-end (forecast → portfolio → returns) rather than optimizing forecast metrics alone. Relevant for risk quant teams building ML pipelines.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19278"
     }
   },
   {
@@ -871,73 +924,48 @@
     }
   },
   {
-    "id": "2026-05-21-arxiv-trustworthy-agent-network",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: Trustworthy Agent Network paper formalizes alignment in multi-agent LLM systems",
-    "plain_english": "Researchers argue that trust in agent-to-agent networks must be built into system design from the start, not bolted on post-hoc. They identify adversarial composition, semantic misalignment, and cascading failures as key vulnerabilities.",
-    "why_it_matters": "BFSI multi-agent workflows (e.g., risk + compliance + audit agents sharing context) face composability risks. This paper formalizes the alignment requirements—relevant to federated AI deployments.",
+    "id": "2026-05-21-insight-ai-automation-financial-services",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-05-21T00:02:00.000Z",
+    "headline": "UK government report: AI could automate 50% of financial services tasks",
+    "plain_english": "A UK government-commissioned analysis found AI could automate up to half of all tasks across most financial services roles. Authors warn major job losses unless tech drives growth, not just efficiency cuts.",
+    "why_it_matters": "Official regulatory acknowledgment of AI displacement risk in BFSI. Signals regulators expect industry restructuring and may pressure banks to invest automation savings into growth, client services, or upskilling—not just margin capture.",
+    "stat_value": "50%",
+    "stat_label": "of financial services tasks potentially automatable by AI",
     "source": {
-      "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19035"
+      "name": "Finextra · 2026-05-21",
+      "url": "https://www.finextra.com/newsarticle/47792/ai-set-to-automate-up-to-50-of-tasks-in-most-financial-services-roles"
     }
   },
   {
-    "id": "2026-05-21-arxiv-progressive-autonomy-tool-use",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-05-21-insight-amd-taiwan-investment",
+    "category": "insight",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: Progressive autonomy formalizes trust calibration for agentic tool use",
-    "plain_english": "Researchers formalize trust calibration (when to let an AI agent auto-approve an action vs. escalate to human) as preference learning over a latent human risk-tolerance function using Bayesian optimization.",
-    "why_it_matters": "BFSI agents making financial commitments (e.g., trade execution, loan approval) need principled escalation policies. This paper provides a Bayesian framework for dynamic threshold calibration.",
+    "published_at": "2026-05-21T08:12:07.000Z",
+    "headline": "AMD to invest $10B in Taiwan for advanced AI chip packaging and manufacturing",
+    "plain_english": "AMD announced a $10B investment in Taiwan focused on chip packaging, interconnect, and next-gen AI infrastructure manufacturing. Signals semiconductor fragmentation: US (design), Taiwan (packaging, advanced node), geopolitical hedging.",
+    "why_it_matters": "BFSI infrastructure (data center, trading, settlement) will depend on Taiwan-Taiwan supply chain for advanced inference hardware. Geopolitical risk: tariffs, export controls, or cross-strait tensions could constrain AI capex. Procurement teams should diversify suppliers.",
+    "amount": "$10B",
     "source": {
-      "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19151"
+      "name": "CNBC · 2026-05-21",
+      "url": "https://www.cnbc.com/2026/05/21/amd-taiwan-ai-chips-sector-10-billion.html"
     }
   },
   {
-    "id": "2026-05-21-arxiv-gnn-volatility-forecast",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-05-21-insight-starling-bank-margin-pressure",
+    "category": "insight",
+    "jurisdiction": "UK",
     "severity": "low",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: Graph neural networks improve volatility forecasts but not portfolio Sharpe ratio",
-    "plain_english": "Researchers find that GNNs trained on correlation and sector graphs beat LSTM baselines at realized volatility forecasting (lower MSE, higher ranking accuracy) but those better forecasts do *not* translate to higher portfolio Sharpe ratios.",
-    "why_it_matters": "Warns against assuming better forecasts → better portfolio performance. BFSI risk teams should validate end-to-end P&L impact, not just model metrics.",
+    "published_at": "2026-05-21T09:56:00.000Z",
+    "headline": "UK fintech Starling Bank reports revenue and profit decline amid falling interest rates",
+    "plain_english": "Starling Bank, a UK digital bank, saw revenue and profit slip during the year as interest rate environment softened. Reflects fintech deposit-taking models dependent on rate-driven NII (net interest income).",
+    "why_it_matters": "Signals margin compression for fintech retail banks in falling-rate environment. Starling and peers must shift revenue mix toward fees (advisory, FX, lending) or seek alternative funding. Relevant for BFSI evaluating fintech partnerships or M&A.",
     "source": {
-      "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19278"
-    }
-  },
-  {
-    "id": "2026-05-21-model-collapse-synthetic-data-economics",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-21T04:00:00.000Z",
-    "headline": "arXiv: Economics of model collapse in synthetic data markets",
-    "plain_english": "Researchers developed the first microeconomic theory of synthetic data markets under model collapse—the degradation that occurs when LLMs train recursively on AI-generated data instead of human-authored content. Model introduces Synthetic Data Contamination Equilibrium (SDCE) framework.",
-    "why_it_matters": "As banks and fintechs use AI to generate synthetic training data (e.g., for fraud models), this framework predicts performance decay over time; BFSI data scientists must plan for periodic retraining on fresh human-labeled data to avoid drift.",
-    "source": {
-      "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.20279"
-    }
-  },
-  {
-    "id": "2026-05-21-inference-cost-phillips-curve",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-21T04:00:00.000Z",
-    "headline": "arXiv: Inference-Cost Phillips Curve—AI costs driving inflation dynamics",
-    "plain_english": "Economists introduce the Inference-Cost Phillips Curve (ICPC), extending monetary theory to account for AI inference costs as a driver of firm-level inflation. Proves how falling GPU costs pass through to lower product prices and inflation.",
-    "why_it_matters": "Central banks (Fed, ECB, RBI) must factor AI inference cost deflation into monetary policy; BFSI risk models should incorporate AI-driven margin compression into inflation forecasts and pricing strategies for loans, deposits, advisory fees.",
-    "source": {
-      "name": "arXiv · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.20281"
+      "name": "Finextra · 2026-05-21",
+      "url": "https://www.finextra.com/newsarticle/47793/revenue-and-profits-slip-at-starling"
     }
   },
   {
@@ -1101,76 +1129,45 @@
     }
   },
   {
-    "id": "2026-05-18-nationwide-abuse-payment-blocks",
-    "category": "insight",
-    "jurisdiction": "UK",
+    "id": "2026-05-21-frontier-anthropic-profitability",
+    "category": "frontier",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-05-18T09:31:00.000Z",
-    "headline": "Nationwide enables abuse survivors to block harmful payment messages.",
-    "plain_english": "Nationwide Building Society has launched a new in-app feature allowing abuse survivors to block harmful or harassing messages sent via payment references. This aims to protect vulnerable customers from financial abuse.",
-    "why_it_matters": "Demonstrates proactive social responsibility by a financial institution, using technology to protect vulnerable customers and combat a form of financial abuse prevalent in digital payments.",
-    "jargon": [
-      {
-        "term": "Nationwide Building Society",
-        "def": "A major building society in the United Kingdom, offering banking and financial services."
-      },
-      {
-        "term": "Payment References",
-        "def": "Short messages or notes included with electronic payments."
-      },
-      {
-        "term": "Financial Abuse",
-        "def": "A form of abuse where one person controls another's access to financial resources."
-      }
-    ],
+    "published_at": "2026-05-21T00:21:21.000Z",
+    "headline": "Anthropic projects first profitable quarter with revenue doubling to $10.9B",
+    "plain_english": "Anthropic, a frontier AI lab backed by Google and others, told investors it will reach profitability in Q2 2026 with annualized revenue near $11B—more than doubling from prior quarter. Signals AI inference and service infrastructure reaching commercial scale.",
+    "why_it_matters": "Frontier lab profitability validates enterprise AI service economics and API monetization. Early signal that LLM-as-a-service can sustain capex-heavy operations. BFSI will track Anthropic's margin and feature roadmap closely.",
     "source": {
-      "name": "Finextra · 2026-05-18",
-      "url": "https://www.finextra.com/newsarticle/47766/nationwide-gives-abuse-survivors-the-power-to-block-harmful-payment-messages?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "TechCrunch · 2026-05-21",
+      "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/"
     }
   },
   {
-    "id": "2026-05-18-bank-ai-pilot-failure-rate",
-    "category": "insight",
+    "id": "2026-05-21-frontier-nvidia-ai-agent-cpu",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-05-21T00:28:31.000Z",
+    "headline": "Nvidia CEO identifies $200B opportunity in AI agent CPUs",
+    "plain_english": "Jensen Huang announced Nvidia sees a new $200B market opportunity in CPUs optimized for AI agent workloads—distinct from current GPU-dominated training and inference. Suggests next growth vector beyond GPUs.",
+    "why_it_matters": "Signals architectural shift: AI agents will run on heterogeneous hardware (CPUs + specialized silicon), not just GPUs. BFSI ops infrastructure (routing, decision-making, settlement) will demand new chip designs; vendors must track this transition.",
+    "source": {
+      "name": "TechCrunch · 2026-05-21",
+      "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/"
+    }
+  },
+  {
+    "id": "2026-05-21-frontier-nvidia-china-concession",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-05-18T12:30:00.000Z",
-    "headline": "Industry report highlights high failure rate for bank AI pilots.",
-    "plain_english": "A recent industry report indicates that a significant percentage of AI pilot projects within banking fail to move beyond the experimental phase, often due to data quality issues, integration complexities, or a lack of clear business objectives.",
-    "why_it_matters": "Reveals the gap between AI aspiration and execution in BFSI, urging more rigorous planning and data strategy for successful AI adoption.",
-    "jargon": [
-      {
-        "term": "AI Pilot Projects",
-        "def": "Small-scale, experimental implementations of Artificial Intelligence technologies to test feasibility."
-      },
-      {
-        "term": "Data Quality Issues",
-        "def": "Problems with the accuracy, completeness, or consistency of data, hindering AI model performance."
-      },
-      {
-        "term": "BFSI",
-        "def": "Banking, Financial Services, and Insurance: A sector of the economy."
-      }
-    ],
-    "stat_value": "73%",
-    "stat_label": "of bank AI pilots stall",
+    "published_at": "2026-05-21T05:03:10.000Z",
+    "headline": "Nvidia CEO says company has 'largely conceded' China AI chip market to Huawei",
+    "plain_english": "Jensen Huang stated Nvidia has effectively ceded China's advanced AI chip market to Huawei due to US export controls. Acknowledges geopolitical fragmentation of AI infrastructure competition.",
+    "why_it_matters": "Confirms bifurcated global AI infrastructure. BFSI firms with China ops must plan for Huawei-based inference; regulatory arbitrage in AI services will increase. Implications for cross-border fintech data residency and model deployment.",
     "source": {
-      "name": "McKinsey Financial Services · 2026-05-18",
-      "url": "https://www.mckinsey.com/financial-services/ai-pilot-report"
-    }
-  },
-  {
-    "id": "2026-05-18-europe-ai-race-energy-prices",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-05-18T05:00:01.000Z",
-    "headline": "High Energy Prices Could Derail Europe’s AI Race",
-    "plain_english": "Europe's aspirations in the global artificial intelligence (AI) race are threatened by high and varied energy prices across the continent. These costs impact the viability of operating power-intensive data centers, potentially hindering the region's ability to attract AI investment and compete with the US and China.",
-    "why_it_matters": "Elevated energy costs in Europe could force AI companies to relocate data centers, impacting regional technological leadership and diverting investment from European BFSI AI innovation.",
-    "jargon": [],
-    "source": {
-      "name": "CNBC Technology · 2026-05-18",
-      "url": "https://www.cnbc.com/2026/05/18/europe-ai-energy-electricity-costs-data-centers-china-us.html"
+      "name": "CNBC · 2026-05-21",
+      "url": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html"
     }
   },
   {
@@ -1288,56 +1285,31 @@
     }
   },
   {
-    "id": "2026-05-21-frontier-anthropic-profitable",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-05-20T21:29:22Z",
-    "headline": "Anthropic targets $10.9B Q2 revenue, poised for first profitable quarter",
-    "plain_english": "Anthropic told investors it will more than double Q2 revenue to ~$10.9B and achieve profitability. The AI lab also signed a $1.25B/month compute deal with Elon Musk's xAI, signaling major production-scale deployment of frontier models.",
-    "why_it_matters": "First major frontier AI lab to hit sustained profitability destroys \"AI labs as money-losing research shops\" narrative. Signals consumer/enterprise adoption at scale justifies $15B+ valuation multiples across sector.",
-    "jargon": [
-      {
-        "term": "Frontier AI lab",
-        "def": "Independent research org (not big-tech subsidiary) building state-of-the-art LLMs. Anthropic, OpenAI, xAI compete here."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-05-20",
-      "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/"
-    },
-    "amount": "$10.9B",
-    "scale": {
-      "metric": "quarterly revenue",
-      "value": "10.9B USD"
-    }
-  },
-  {
-    "id": "2026-05-21-frontier-nvidia-agent-cpus",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-21T00:28:31Z",
-    "headline": "Nvidia CEO: AI agents create $200B new CPU market; focus shifts from GPUs",
-    "plain_english": "Jensen Huang (Nvidia CEO) told analysts that the next major growth vector for Nvidia is CPUs optimized for AI agent execution—a market he estimates at $200B. Signals strategic shift from GPU training/inference to specialized edge compute for autonomous agent orchestration.",
-    "why_it_matters": "Signals Nvidia sees commodity GPU market saturating; betting heavily on agent-CPU stack. BFSI infrastructure teams should anticipate specialized CPU requirements for agent workloads (local orchestration, latency-critical decision-making). Chip architecture wars shift from training → inference → autonomous execution.",
-    "source": {
-      "name": "TechCrunch · 2026-05-20",
-      "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/"
-    }
-  },
-  {
-    "id": "2026-05-21-frontier-openai-math-conjecture",
-    "category": "frontier",
+    "id": "2026-05-21-learner-rag-prompt-caching",
+    "category": "learner",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-05-20T20:28:27Z",
-    "headline": "OpenAI reasoning model disproves 80-year-old geometry conjecture; mathematicians validate claim",
-    "plain_english": "OpenAI's reasoning model (o1/o3 class) claimed to disprove a geometry conjecture unsolved since 1946. Unlike prior false claims, leading mathematicians have now independently verified the disproof—marking first frontier AI discovery accepted by peer review.",
-    "why_it_matters": "Frontier models are now producing novel mathematical insights. Raises bar for AI-generated regulatory analysis, risk models, and compliance reasoning—BFSI teams must demand human expert validation of AI outputs in high-consequence domains.",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "What is prompt caching and how it cuts LLM inference costs in BFSI workflows",
+    "plain_english": "Prompt caching: Storing the 'system instructions' and common reference data (e.g., regulatory rules, product docs) in a cache so the LLM doesn't re-process them on every query. Think of it like a sticky note you keep in front of the AI—it remembers context without burning through expensive tokens. Cuts inference cost by 50–90% when queries repeat on cached context.",
+    "why_it_matters": "Direct cost lever for BFSI deploying LLMs at scale (customer service, compliance Q&A, trade review). Even modest latency improvements (via caching) translate to lower per-query cost, enabling wider adoption. Compliance teams should audit cached rules for staleness.",
     "source": {
-      "name": "TechCrunch · 2026-05-20",
-      "url": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/"
+      "name": "Anthropic · 2026-05-21",
+      "url": "https://www.anthropic.com/"
+    }
+  },
+  {
+    "id": "2026-05-21-learner-agent-loops",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "What are agent loops and how they enable autonomous financial workflows",
+    "plain_english": "Agent loop: An AI reads a task, decides what action to take (call an API, run a query), observes the result, and repeats until it solves the problem—all without human intervention. Example: an AI agent receives a trade request, checks market data, screens counterparties, executes, and confirms settlement. No human approval needed between steps.",
+    "why_it_matters": "Enables end-to-end autonomous workflows in settlement, KYC, trade execution. But introduces new operational risk: if agent hallucinates or misinterprets data, no human circuit-breaker stops it. BFSI must implement watchdog systems (anomaly detection, undo logs) to govern agent loops.",
+    "source": {
+      "name": "OpenAI · 2026-05-21",
+      "url": "https://openai.com/"
     }
   },
   {
@@ -1551,54 +1523,6 @@
     }
   },
   {
-    "id": "2026-05-18-learner-ai-agents-sygnum",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-18T08:55:00.000Z",
-    "headline": "Learner: What are AI Agents? Explained via Sygnum's Digital Asset Deployment",
-    "plain_english": "An AI agent is an artificial intelligence system that can perceive its environment, make decisions, and take actions to achieve specific goals, often autonomously. Sygnum, a digital asset bank, is deploying AI agents to test live on-chain transactions, using a 'human-in-the-loop' design where clients still approve actions, showcasing how agents can automate complex tasks in finance with human oversight.",
-    "why_it_matters": "Understanding AI agents is key for BFSI engineers as these systems automate complex financial processes like trading, compliance, and fraud detection, driving operational efficiency.",
-    "jargon": [
-      {
-        "term": "AI Agent",
-        "def": "An artificial intelligence system capable of autonomous action, decision-making, and interaction with an environment."
-      },
-      {
-        "term": "Human-in-the-loop",
-        "def": "A model where a human must verify or approve actions taken by an automated system, like an AI agent."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-05-18",
-      "url": "https://www.finextra.com/newsarticle/47765/sygnum-delivers-ai-agent-driven-digital-asset-transactions?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-05-18-learner-agent-loops-baidu",
-    "category": "learner",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-05-18T09:15:06.000Z",
-    "headline": "Learner: What are Agent Loops? Explained via Baidu’s Agentic AI Pivot",
-    "plain_english": "An 'agent loop' refers to the iterative process where an artificial intelligence (AI) agent plans, acts, observes the results of its actions, and then revises its plan. Baidu's pivot to 'agentic AI' emphasizes systems that continuously perform these loops to autonomously achieve complex objectives, showcasing a more dynamic and adaptive form of AI.",
-    "why_it_matters": "Agent loops enable more autonomous and sophisticated AI systems, allowing BFSI engineers to design AI that can self-correct and perform complex tasks, like risk modeling or portfolio optimization.",
-    "jargon": [
-      {
-        "term": "Agent Loop",
-        "def": "The continuous cycle of plan, act, observe, and revise performed by an autonomous AI agent."
-      },
-      {
-        "term": "Agentic AI",
-        "def": "AI systems capable of autonomous planning, execution, and problem-solving through a series of actions."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-05-18",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzdMTk00NDk4X3B0RVczRWFMOEJuWHRLODVuQW1pTEZtMmNzWXVjM3hxUFdDR0Z1N0xoMGdYM1hHS3d1YkVoUVhUNDU5MV91bU1OQl9oY2NNa1pRR2wtZllIbEgzbmF6VmdDUUZHNHY5aUdWNUpJSi1rd0xQYndWaExaQmhjTU9keFN1ZmE2NUZWMW1GUDBVNmM3a3FuaWJsRVFNa0lpeHp2Q1dLSjNkSVZn?oc=5"
-    }
-  },
-  {
     "id": "2026-05-21-trending-spacex-ipo",
     "category": "trending",
     "jurisdiction": "US",
@@ -1760,19 +1684,413 @@
     }
   },
   {
-    "id": "2026-05-21-regulation-ai-automation-bfsi",
+    "id": "2026-05-21-fed-limited-payment-account-proposal",
     "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-05-20T22:31:38.000Z",
+    "headline": "Federal Reserve proposes limited payment accounts for fintechs, non-banks",
+    "plain_english": "The Federal Reserve issued a proposal to create a new 'limited payment account' framework for fintech and non-bank payment providers. The move aims to expand access to Fed services while containing systemic risk.",
+    "why_it_matters": "New regulatory pathway could accelerate AI-driven fintech adoption of core banking rails; banks will face increased competition from non-banks with lower compliance burden and faster product iteration cycles.",
+    "source": {
+      "name": "Reuters · 2026-05-20",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWXZQNVE2ajYwU183UXVqd0FOajdnUnBudHUxTThJbUEtR0l5YVhTcm5KRU9DSnctYWUzWm11djdpdVFfX1lmME5feFlSaWppc2E5S0kxV2dnTzdFYkotZWROWS00cE5KS0JoM2lYbkI3a0FoOUo2R3hGajlDVi1aM28zUGdSUm9jOFFZbTVwaDJ1Tk1rOHlsZWNkX0NNRDFiZUE?oc=5"
+    }
+  },
+  {
+    "id": "2026-05-21-regulation-fintech-yotta-fdic",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
     "published_at": "2026-05-21T00:01:00Z",
-    "headline": "UK government report: AI could automate 50% of financial services tasks",
-    "plain_english": "A UK government-commissioned study warns AI may automate up to half of tasks in most financial services roles. Report emphasizes that unless automation drives growth (not just cost-cutting), BFSI sector faces major employment consequences.",
-    "why_it_matters": "Regulatory acknowledgment that AI displacement is real and imminent. FCA and regulators now monitoring for 'automation without growth'—signaling supervisory focus on upskilling, operational resilience, and systemic employment risk. HR planning for BFSI roles must prioritize reskilling now.",
-    "stat_value": "50%",
-    "stat_label": "of BFSI tasks could be automated",
+    "headline": "Fintech Yotta fined $1M for Synapse fraud; false FDIC insurance claims",
+    "plain_english": "Fintech Yotta was fined $1M for parking customer funds with failed BaaS vendor Synapse while falsely claiming accounts were FDIC-insured. Regulators determined Yotta misrepresented insurance coverage, exposing customers to uninsured deposits.",
+    "why_it_matters": "Synapse collapse continues to generate enforcement actions. Regulators (CFPB, state AGs) now scrutinize deposit-guarantee claims across fintech stack. BFSI vendors integrating fintech partners must audit insurance disclosures and demand strict custodial oversight—regulatory risk is non-negotiable.",
     "source": {
       "name": "Finextra · 2026-05-21",
-      "url": "https://www.finextra.com/newsarticle/47792/ai-set-to-automate-up-to-50-of-tasks-in-most-financial-services-roles"
+      "url": "https://www.finextra.com/newsarticle/47786/fintech-yotta-fined-1-million-for-synapse-deception"
+    }
+  },
+  {
+    "id": "2026-05-18-derivative-path-ai-hedging-platform",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-05-18T12:57:11.000Z",
+    "headline": "Derivative Path launches AI-driven hedging platform for banks.",
+    "plain_english": "Derivative Path has introduced an AI-driven platform tailored for banks and credit unions to manage hedging strategies. This aims to automate and optimize risk management processes for derivatives.",
+    "why_it_matters": "Provides financial institutions with advanced tools to manage complex financial risks more efficiently, potentially improving capital allocation and regulatory compliance.",
+    "jargon": [
+      {
+        "term": "AI-driven",
+        "def": "Powered or enabled by Artificial Intelligence."
+      },
+      {
+        "term": "Hedging Platform",
+        "def": "A software system used to manage financial risks through various hedging instruments."
+      },
+      {
+        "term": "Derivatives",
+        "def": "Financial contracts whose value is derived from an underlying asset, rate, or index."
+      }
+    ],
+    "source": {
+      "name": "Bank-AI Deployments · 2026-05-18",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYVhjbmoyLTZnSUdYeUQySFhKdmJFYmpGMjBYdjc4VlhGb2lBMkNPVHp3VlVPejFYTlhadGpYb0ZQcEVlRWg4aktqTlFHLS13djgtTV8xRG9tTUo3dTJHVEhsSTUzWDBkRlN1Z2pDbnBvX2F1amZGbzh0clFtcDVKY2RsRXlBb3pjOVA0QjhCWWNoWUZHVFFURS1tZlRadzI3WFBJY0labW0?oc=5"
+    }
+  },
+  {
+    "id": "2026-05-21-xai-compute-anthropic-1-25b",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-05-20T21:29:22.000Z",
+    "headline": "Anthropic commits $1.25B/month to xAI for compute capacity",
+    "plain_english": "Elon Musk's xAI will supply compute to Anthropic under a deal worth $1.25 billion per month. This reveals the first dollar figure on a compute-supply pact between two major AI players and signals xAI's emergence as a compute vendor.",
+    "why_it_matters": "Frontier lab compute dependencies create vendor lock-in and margin pressure; regulators may scrutinize whether xAI's SpaceX funding creates conflicts of interest in AI infrastructure allocation.",
+    "jargon": [
+      {
+        "term": "Compute capacity",
+        "def": "Rented GPU/AI accelerator hours for training or inference; the critical bottleneck in scaling LLM workloads."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-05-20",
+      "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/"
+    },
+    "amount": "$1.25B/month"
+  },
+  {
+    "id": "2026-05-21-xai-anthropic-compute-1-25b-month",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-05-20T21:29:22Z",
+    "headline": "xAI to supply Anthropic with $1.25B/month in compute capacity",
+    "plain_english": "Elon Musk's xAI will provide Anthropic with inference compute at $1.25B per month under a multi-year deal, revealed in SpaceX's IPO filing. Anthropic will rely partly on xAI-run Grok infrastructure.",
+    "why_it_matters": "Locks in Anthropic's growth at external compute cost; shifts risk to xAI (execution, uptime). Signals frontier labs now vertically integrate infrastructure as a moat and revenue stream.",
+    "amount": "$1.25B/month",
+    "source": {
+      "name": "TechCrunch · 2026-05-20",
+      "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/"
+    }
+  },
+  {
+    "id": "2026-05-18-tether-invests-lemfi",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-18T16:09:00.000Z",
+    "headline": "Tether invests in fintech remittance platform LemFi.",
+    "plain_english": "Tether, issuer of the USD₮ stablecoin, announced an investment in LemFi, a fintech platform focused on remittances for immigrant communities. This signals growing overlap between traditional fintech and digital assets.",
+    "why_it_matters": "Highlights ongoing investment in cross-border payments innovation, potentially leveraging stablecoins for faster, cheaper global transactions in the future.",
+    "jargon": [
+      {
+        "term": "Stablecoin",
+        "def": "A cryptocurrency designed to maintain a stable value, often pegged to a fiat currency like the US dollar."
+      },
+      {
+        "term": "Fintech",
+        "def": "Financial Technology: Companies using technology to improve or automate financial services."
+      },
+      {
+        "term": "Remittances",
+        "def": "Money sent by a person in one country to support family or friends in another country."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-05-18",
+      "url": "https://www.finextra.com/pressarticle/109870/tether-invests-in-lemfi?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-05-18-sequoia-backs-dust-40m-seriesb",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-05-18T14:57:22.000Z",
+    "headline": "Sequoia backs AI agent scaleup Dust with $40M Series B.",
+    "plain_english": "Dust, an AI agent platform focused on automating complex tasks, secured $40 million in Series B funding led by Sequoia. This investment signals strong confidence in the operational efficiency gains offered by AI agents for enterprises.",
+    "why_it_matters": "Increased investment in AI agent platforms will accelerate adoption of automated, intelligent workflows within BFSI, improving efficiency and customer service.",
+    "jargon": [
+      {
+        "term": "AI Agents",
+        "def": "Autonomous AI programs designed to perform tasks or achieve goals with minimal human intervention."
+      },
+      {
+        "term": "Series B Funding",
+        "def": "The second round of financing for a startup, typically used for scaling operations and market expansion."
+      },
+      {
+        "term": "BFSI",
+        "def": "Banking, Financial Services, and Insurance: A sector of the economy."
+      }
+    ],
+    "source": {
+      "name": "Sifted (EU fintech) · 2026-05-18",
+      "url": "https://sifted.eu/articles/dust-series-b-40m/"
+    },
+    "amount": "$40M",
+    "round": "Series B"
+  },
+  {
+    "id": "2026-05-21-arXiv-document-ai-microservices",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-21T04:00:00Z",
+    "headline": "arXiv: microservice architecture for production OCR + LLM document processing at scale",
+    "plain_english": "Technical paper describes hybrid classification, asynchronous processing, and GPU/CPU separation in a production document AI pipeline handling thousands of multi-page documents per hour for field extraction.",
+    "why_it_matters": "Blueprint for banks building document automation: separates concerns (classification, OCR, extraction), decouples GPUs from orchestration, and provides observability—critical for regulatory audit trails.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.18818"
+    }
+  },
+  {
+    "id": "2026-05-21-arXiv-nls-agent",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-21T04:00:00Z",
+    "headline": "arXiv: AgentNLQ achieves 78.1% accuracy on natural language to SQL benchmarks",
+    "plain_english": "Multi-agent NL2SQL system achieves 78.1% semantic accuracy on BIRD benchmark by leveraging semantically enriched schema representation and business rule context, addressing common LLM SQL generation failures.",
+    "why_it_matters": "SQL generation accuracy matters for bank data access layers: enables analyst self-service queries over regulatory datasets and customer data without hand-coding. Reduces query latency in compliance workflows.",
+    "benchmark_name": "BIRD",
+    "delta_pts": 78.1,
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19010"
+    }
+  },
+  {
+    "id": "2026-05-21-arXiv-lbw-guard-training-stability",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-21T04:00:00Z",
+    "headline": "arXiv: Learn-by-Wire Guard stabilizes large model training under stress conditions",
+    "plain_english": "LBW-Guard is a governance layer above AdamW that monitors training telemetry and applies bounded control to optimizer execution to prevent instability, degraded runs, and wasted compute under aggressive learning-rate schedules.",
+    "why_it_matters": "Banks fine-tuning proprietary models on sensitive financial data need stable, reproducible training. Reduces compute waste and makes large-model training more accessible to institutions with constrained infrastructure budgets.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19008"
+    }
+  },
+  {
+    "id": "2026-05-21-arxiv-trustworthy-agent-network",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00Z",
+    "headline": "arXiv: Trustworthy Agent Network paper formalizes alignment in multi-agent LLM systems",
+    "plain_english": "Researchers argue that trust in agent-to-agent networks must be built into system design from the start, not bolted on post-hoc. They identify adversarial composition, semantic misalignment, and cascading failures as key vulnerabilities.",
+    "why_it_matters": "BFSI multi-agent workflows (e.g., risk + compliance + audit agents sharing context) face composability risks. This paper formalizes the alignment requirements—relevant to federated AI deployments.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19035"
+    }
+  },
+  {
+    "id": "2026-05-21-arxiv-progressive-autonomy-tool-use",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00Z",
+    "headline": "arXiv: Progressive autonomy formalizes trust calibration for agentic tool use",
+    "plain_english": "Researchers formalize trust calibration (when to let an AI agent auto-approve an action vs. escalate to human) as preference learning over a latent human risk-tolerance function using Bayesian optimization.",
+    "why_it_matters": "BFSI agents making financial commitments (e.g., trade execution, loan approval) need principled escalation policies. This paper provides a Bayesian framework for dynamic threshold calibration.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.19151"
+    }
+  },
+  {
+    "id": "2026-05-21-inference-cost-phillips-curve",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T04:00:00.000Z",
+    "headline": "arXiv: Inference-Cost Phillips Curve—AI costs driving inflation dynamics",
+    "plain_english": "Economists introduce the Inference-Cost Phillips Curve (ICPC), extending monetary theory to account for AI inference costs as a driver of firm-level inflation. Proves how falling GPU costs pass through to lower product prices and inflation.",
+    "why_it_matters": "Central banks (Fed, ECB, RBI) must factor AI inference cost deflation into monetary policy; BFSI risk models should incorporate AI-driven margin compression into inflation forecasts and pricing strategies for loans, deposits, advisory fees.",
+    "source": {
+      "name": "arXiv · 2026-05-21",
+      "url": "https://arxiv.org/abs/2605.20281"
+    }
+  },
+  {
+    "id": "2026-05-18-nationwide-abuse-payment-blocks",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-05-18T09:31:00.000Z",
+    "headline": "Nationwide enables abuse survivors to block harmful payment messages.",
+    "plain_english": "Nationwide Building Society has launched a new in-app feature allowing abuse survivors to block harmful or harassing messages sent via payment references. This aims to protect vulnerable customers from financial abuse.",
+    "why_it_matters": "Demonstrates proactive social responsibility by a financial institution, using technology to protect vulnerable customers and combat a form of financial abuse prevalent in digital payments.",
+    "jargon": [
+      {
+        "term": "Nationwide Building Society",
+        "def": "A major building society in the United Kingdom, offering banking and financial services."
+      },
+      {
+        "term": "Payment References",
+        "def": "Short messages or notes included with electronic payments."
+      },
+      {
+        "term": "Financial Abuse",
+        "def": "A form of abuse where one person controls another's access to financial resources."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-05-18",
+      "url": "https://www.finextra.com/newsarticle/47766/nationwide-gives-abuse-survivors-the-power-to-block-harmful-payment-messages?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-05-18-bank-ai-pilot-failure-rate",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-18T12:30:00.000Z",
+    "headline": "Industry report highlights high failure rate for bank AI pilots.",
+    "plain_english": "A recent industry report indicates that a significant percentage of AI pilot projects within banking fail to move beyond the experimental phase, often due to data quality issues, integration complexities, or a lack of clear business objectives.",
+    "why_it_matters": "Reveals the gap between AI aspiration and execution in BFSI, urging more rigorous planning and data strategy for successful AI adoption.",
+    "jargon": [
+      {
+        "term": "AI Pilot Projects",
+        "def": "Small-scale, experimental implementations of Artificial Intelligence technologies to test feasibility."
+      },
+      {
+        "term": "Data Quality Issues",
+        "def": "Problems with the accuracy, completeness, or consistency of data, hindering AI model performance."
+      },
+      {
+        "term": "BFSI",
+        "def": "Banking, Financial Services, and Insurance: A sector of the economy."
+      }
+    ],
+    "stat_value": "73%",
+    "stat_label": "of bank AI pilots stall",
+    "source": {
+      "name": "McKinsey Financial Services · 2026-05-18",
+      "url": "https://www.mckinsey.com/financial-services/ai-pilot-report"
+    }
+  },
+  {
+    "id": "2026-05-18-europe-ai-race-energy-prices",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-05-18T05:00:01.000Z",
+    "headline": "High Energy Prices Could Derail Europe’s AI Race",
+    "plain_english": "Europe's aspirations in the global artificial intelligence (AI) race are threatened by high and varied energy prices across the continent. These costs impact the viability of operating power-intensive data centers, potentially hindering the region's ability to attract AI investment and compete with the US and China.",
+    "why_it_matters": "Elevated energy costs in Europe could force AI companies to relocate data centers, impacting regional technological leadership and diverting investment from European BFSI AI innovation.",
+    "jargon": [],
+    "source": {
+      "name": "CNBC Technology · 2026-05-18",
+      "url": "https://www.cnbc.com/2026/05/18/europe-ai-energy-electricity-costs-data-centers-china-us.html"
+    }
+  },
+  {
+    "id": "2026-05-21-frontier-anthropic-profitable",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-05-20T21:29:22Z",
+    "headline": "Anthropic targets $10.9B Q2 revenue, poised for first profitable quarter",
+    "plain_english": "Anthropic told investors it will more than double Q2 revenue to ~$10.9B and achieve profitability. The AI lab also signed a $1.25B/month compute deal with Elon Musk's xAI, signaling major production-scale deployment of frontier models.",
+    "why_it_matters": "First major frontier AI lab to hit sustained profitability destroys \"AI labs as money-losing research shops\" narrative. Signals consumer/enterprise adoption at scale justifies $15B+ valuation multiples across sector.",
+    "jargon": [
+      {
+        "term": "Frontier AI lab",
+        "def": "Independent research org (not big-tech subsidiary) building state-of-the-art LLMs. Anthropic, OpenAI, xAI compete here."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-05-20",
+      "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/"
+    },
+    "amount": "$10.9B",
+    "scale": {
+      "metric": "quarterly revenue",
+      "value": "10.9B USD"
+    }
+  },
+  {
+    "id": "2026-05-21-frontier-nvidia-agent-cpus",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-21T00:28:31Z",
+    "headline": "Nvidia CEO: AI agents create $200B new CPU market; focus shifts from GPUs",
+    "plain_english": "Jensen Huang (Nvidia CEO) told analysts that the next major growth vector for Nvidia is CPUs optimized for AI agent execution—a market he estimates at $200B. Signals strategic shift from GPU training/inference to specialized edge compute for autonomous agent orchestration.",
+    "why_it_matters": "Signals Nvidia sees commodity GPU market saturating; betting heavily on agent-CPU stack. BFSI infrastructure teams should anticipate specialized CPU requirements for agent workloads (local orchestration, latency-critical decision-making). Chip architecture wars shift from training → inference → autonomous execution.",
+    "source": {
+      "name": "TechCrunch · 2026-05-20",
+      "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/"
+    }
+  },
+  {
+    "id": "2026-05-21-frontier-openai-math-conjecture",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-20T20:28:27Z",
+    "headline": "OpenAI reasoning model disproves 80-year-old geometry conjecture; mathematicians validate claim",
+    "plain_english": "OpenAI's reasoning model (o1/o3 class) claimed to disprove a geometry conjecture unsolved since 1946. Unlike prior false claims, leading mathematicians have now independently verified the disproof—marking first frontier AI discovery accepted by peer review.",
+    "why_it_matters": "Frontier models are now producing novel mathematical insights. Raises bar for AI-generated regulatory analysis, risk models, and compliance reasoning—BFSI teams must demand human expert validation of AI outputs in high-consequence domains.",
+    "source": {
+      "name": "TechCrunch · 2026-05-20",
+      "url": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/"
+    }
+  },
+  {
+    "id": "2026-05-18-learner-ai-agents-sygnum",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-05-18T08:55:00.000Z",
+    "headline": "Learner: What are AI Agents? Explained via Sygnum's Digital Asset Deployment",
+    "plain_english": "An AI agent is an artificial intelligence system that can perceive its environment, make decisions, and take actions to achieve specific goals, often autonomously. Sygnum, a digital asset bank, is deploying AI agents to test live on-chain transactions, using a 'human-in-the-loop' design where clients still approve actions, showcasing how agents can automate complex tasks in finance with human oversight.",
+    "why_it_matters": "Understanding AI agents is key for BFSI engineers as these systems automate complex financial processes like trading, compliance, and fraud detection, driving operational efficiency.",
+    "jargon": [
+      {
+        "term": "AI Agent",
+        "def": "An artificial intelligence system capable of autonomous action, decision-making, and interaction with an environment."
+      },
+      {
+        "term": "Human-in-the-loop",
+        "def": "A model where a human must verify or approve actions taken by an automated system, like an AI agent."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-05-18",
+      "url": "https://www.finextra.com/newsarticle/47765/sygnum-delivers-ai-agent-driven-digital-asset-transactions?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-05-18-learner-agent-loops-baidu",
+    "category": "learner",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-05-18T09:15:06.000Z",
+    "headline": "Learner: What are Agent Loops? Explained via Baidu’s Agentic AI Pivot",
+    "plain_english": "An 'agent loop' refers to the iterative process where an artificial intelligence (AI) agent plans, acts, observes the results of its actions, and then revises its plan. Baidu's pivot to 'agentic AI' emphasizes systems that continuously perform these loops to autonomously achieve complex objectives, showcasing a more dynamic and adaptive form of AI.",
+    "why_it_matters": "Agent loops enable more autonomous and sophisticated AI systems, allowing BFSI engineers to design AI that can self-correct and perform complex tasks, like risk modeling or portfolio optimization.",
+    "jargon": [
+      {
+        "term": "Agent Loop",
+        "def": "The continuous cycle of plan, act, observe, and revise performed by an autonomous AI agent."
+      },
+      {
+        "term": "Agentic AI",
+        "def": "AI systems capable of autonomous planning, execution, and problem-solving through a series of actions."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-05-18",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzdMTk00NDk4X3B0RVczRWFMOEJuWHRLODVuQW1pTEZtMmNzWXVjM3hxUFdDR0Z1N0xoMGdYM1hHS3d1YkVoUVhUNDU5MV91bU1OQl9oY2NNa1pRR2wtZllIbEgzbmF6VmdDUUZHNHY5aUdWNUpJSi1rd0xQYndWaExaQmhjTU9keFN1ZmE2NUZWMW1GUDBVNmM3a3FuaWJsRVFNa0lpeHp2Q1dLSjNkSVZn?oc=5"
     }
   },
   {
@@ -2797,36 +3115,6 @@
     "source": {
       "name": "arXiv q-fin · 2026-05-21",
       "url": "https://arxiv.org/abs/2503.22693"
-    }
-  },
-  {
-    "id": "2026-05-21-research-doc-ai-ocr-llm",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: Operationalizing document AI—microservice architecture for OCR + LLM pipelines at scale",
-    "plain_english": "Paper describes production microservice architecture for document understanding (OCR + LLM field extraction) running at thousands of pages/hour. Shares design decisions: GPU/CPU separation, asynchronous orchestration, hybrid classification. Directly addresses gap between research models and deployed systems.",
-    "why_it_matters": "Blueprint for BFSI to operationalize document AI (mortgage processing, KYC, compliance reviews). Microservice pattern enables isolation of model failures, scaling, and easy swapping of underlying models. Directly relevant to mortgage/underwriting automation.",
-    "source": {
-      "name": "arXiv cs.AI · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.18818"
-    }
-  },
-  {
-    "id": "2026-05-21-research-agentNLQ",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-05-21T04:00:00Z",
-    "headline": "arXiv: AgentNLQ—multi-agent framework for natural language to SQL; 78% semantic accuracy on BIRD",
-    "plain_english": "AgentNLQ is a multi-agent method for translating natural language queries to SQL. Uses semantically enriched schema representation and achieves 78.1% semantic accuracy on the BIRD benchmark (large-scale DB evaluation). Addresses persistent NL2SQL accuracy bottleneck.",
-    "why_it_matters": "NL2SQL is foundational for BFSI analytics and regulatory reporting automation. 78% semantic accuracy is production-viable for read-only queries (regulatory dashboards, audit trails). Enables business users to query data warehouses without SQL expertise.",
-    "benchmark_name": "BIRD",
-    "delta_pts": 78,
-    "source": {
-      "name": "arXiv cs.AI · 2026-05-21",
-      "url": "https://arxiv.org/abs/2605.19010"
     }
   },
   {
