@@ -160,16 +160,38 @@ async function main() {
     return;
   }
 
-  // Tightened similarity matching. Drops stopwords and sorts the first
-  // 8 significant tokens — so "FCA fines Bank X" and "Bank X fined by
-  // FCA" hash to the same key. Catches near-duplicate cards that the
-  // older first-70-chars match used to let through.
-  const STOP = new Set(["the","a","an","of","in","to","for","on","and","or","by","with","from","at","as","is","are","be","was","were","this","that","its","it","new","has","have"]);
+  // ── Dedup helpers ──────────────────────────────────────────
+  // Two layers of matching:
+  //   1. normalizeHeadline → exact hash collision on stopword-filtered
+  //      sorted tokens. Cheap; catches "FCA fines Bank X" vs
+  //      "Bank X fined by FCA".
+  //   2. jaccardSim on headline+plain_english tokens. Catches the
+  //      LLM-generated paraphrase case where the same underlying
+  //      story is told with totally different verbs/nouns
+  //      ("Zoom's Anthropic investment reaches $1B" vs "Zoom's
+  //      Anthropic stake now worth $1B after funding round").
+  const STOP = new Set(["the","a","an","of","in","to","for","on","and","or","by","with","from","at","as","is","are","be","was","were","this","that","its","it","new","has","have","also","but","not","will","can","more","most","than","over","into","such"]);
   function normalizeHeadline(h) {
     let s = (h || "").toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim();
     const tokens = s.split(" ").filter((t) => t.length > 1 && !STOP.has(t));
     return tokens.slice(0, 8).sort().join(" ");
   }
+  function dedupTokens(c) {
+    // Combine headline + plain_english head (200 chars) for a richer
+    // token set — 6-10 tokens isn't enough to reliably catch paraphrase
+    // duplicates, but 25-40 from the lead paragraph is.
+    const text = ((c.headline || "") + " " + (c.plain_english || "").slice(0, 200)).toLowerCase();
+    return new Set(
+      text.replace(/[^\w\s]/g, " ").split(/\s+/).filter((t) => t.length > 3 && !STOP.has(t))
+    );
+  }
+  function jaccardSim(a, b) {
+    if (!a.size || !b.size) return 0;
+    let inter = 0;
+    for (const x of a) if (b.has(x)) inter++;
+    return inter / (a.size + b.size - inter);
+  }
+  const JACCARD_DUP = 0.5; // ≥50% token overlap on headline+lead = same story
 
   const schemaValid = newCards
     .filter((c) => c.id && c.category && c.headline && c.plain_english && c.source?.url)
@@ -181,16 +203,21 @@ async function main() {
       return c;
     });
 
-  // Deduplicate LLM output by source URL and by normalized headline
+  // Deduplicate LLM output by source URL, normalized headline, and
+  // Jaccard token similarity on headline+lead.
   const seenNewUrls = new Set();
   const seenNewHeadlines = new Set();
+  const seenNewTokens = [];
   const valid = schemaValid.filter((c) => {
     const url = c.source?.url;
     if (url && seenNewUrls.has(url)) return false;
-    if (url) seenNewUrls.add(url);
     const nh = normalizeHeadline(c.headline);
     if (nh.length > 12 && seenNewHeadlines.has(nh)) return false;
+    const tokens = dedupTokens(c);
+    if (seenNewTokens.some((t) => jaccardSim(tokens, t) >= JACCARD_DUP)) return false;
+    if (url) seenNewUrls.add(url);
     if (nh) seenNewHeadlines.add(nh);
+    seenNewTokens.push(tokens);
     return true;
   });
   console.log(`✓ ${valid.length} valid cards from LLM (of ${newCards.length} returned, ${schemaValid.length - valid.length} dupes removed)\n`);
@@ -201,6 +228,14 @@ async function main() {
     if (!Array.isArray(archive)) archive = [];
   } catch {
     archive = [];
+  }
+
+  // Drop legacy "career" cards on every run. Category was retired
+  // (replaced with "shift"); these are dead weight in the archive.
+  const archiveBefore = archive.length;
+  archive = archive.filter((c) => c.category !== "career");
+  if (archive.length !== archiveBefore) {
+    console.log(`Purged ${archiveBefore - archive.length} legacy career-category cards from archive.\n`);
   }
 
   // Maintain exactly 10 per category — new cards first, backfill from archive
@@ -217,28 +252,36 @@ async function main() {
   const archiveByCat = bucket(archive);
 
   const deck = [];
-  const seen = new Set();         // by card id
-  const seenHeadlines = new Set(); // by normalised headline — blocks same-story re-generates
+  const seen = new Set();          // by card id
+  const seenHeadlines = new Set(); // by normalised headline
+  const seenTokens = [];           // for Jaccard
 
   for (const cat of CATEGORIES) {
     for (const c of [...newByCat[cat], ...archiveByCat[cat]]) {
+      if (seen.has(c.id)) continue;
       const nh = normalizeHeadline(c.headline);
-      const headlineDupe = nh.length > 12 && seenHeadlines.has(nh);
-      if (!seen.has(c.id) && !headlineDupe && deck.filter((x) => x.category === cat).length < PER_CAT) {
-        seen.add(c.id);
-        if (nh) seenHeadlines.add(nh);
-        deck.push(c);
-      }
+      if (nh.length > 12 && seenHeadlines.has(nh)) continue;
+      const tokens = dedupTokens(c);
+      if (seenTokens.some((t) => jaccardSim(tokens, t) >= JACCARD_DUP)) continue;
+      if (deck.filter((x) => x.category === cat).length >= PER_CAT) continue;
+      seen.add(c.id);
+      if (nh) seenHeadlines.add(nh);
+      seenTokens.push(tokens);
+      deck.push(c);
     }
   }
 
-  // Append remaining archive for historical access (archive sheet, saved items)
-  const seenOverflow = new Set(seenHeadlines);
+  // Append remaining archive for historical access (archive sheet, saved items).
+  // Same triple-dedup applies so the overflow never silently re-introduces
+  // a story that was already represented in the active deck.
   const overflow = archive.filter((c) => {
     if (seen.has(c.id)) return false;
     const nh = normalizeHeadline(c.headline);
-    if (nh.length > 12 && seenOverflow.has(nh)) return false;
-    if (nh) seenOverflow.add(nh);
+    if (nh.length > 12 && seenHeadlines.has(nh)) return false;
+    const tokens = dedupTokens(c);
+    if (seenTokens.some((t) => jaccardSim(tokens, t) >= JACCARD_DUP)) return false;
+    if (nh) seenHeadlines.add(nh);
+    seenTokens.push(tokens);
     return true;
   });
   const capped = [...deck, ...overflow].slice(0, 600);
