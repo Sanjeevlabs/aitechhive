@@ -290,7 +290,7 @@ async function main() {
   // by their actual publication date. Safety: if the filter would leave
   // fewer than MIN_AFTER_AGE cards, skip pruning this run (defensive
   // against a one-off run that returned only stale items).
-  const MAX_CARD_AGE_DAYS = 14;
+  const MAX_CARD_AGE_DAYS = 3;
   const MIN_AFTER_AGE = 20;
   const ageCutoff = Date.now() - MAX_CARD_AGE_DAYS * 24 * 3600 * 1000;
   const merged = [...deck, ...overflow];
