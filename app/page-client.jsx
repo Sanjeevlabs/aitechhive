@@ -1337,19 +1337,16 @@ function BigActionBtn({ label, onClick, children, active }) {
 /* ─────────────────────────────────────────────────────────────────
    ROOT
 ───────────────────────────────────────────────────────────────── */
+// Light client-side dedup — server (enrich.mjs) already runs the
+// three-layer dedup (URL + sorted-token hash + Jaccard). All this
+// does is defend against the same id appearing twice if cards.json
+// is ever malformed. No more headline/url heuristics that double-
+// prune and make the welcome-stat count diverge from cards.json.
 function dedupCards(cards) {
-  const seenIds = new Set();
-  const seenHeadlines = new Set();
-  const seenUrls = new Set();
+  const seen = new Set();
   return (cards || []).filter((c) => {
-    if (!c.id || seenIds.has(c.id)) return false;
-    seenIds.add(c.id);
-    const nh = (c.headline || "").toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim().slice(0, 70);
-    if (nh.length > 12 && seenHeadlines.has(nh)) return false;
-    if (nh) seenHeadlines.add(nh);
-    const url = c.source?.url;
-    if (url && seenUrls.has(url)) return false;
-    if (url) seenUrls.add(url);
+    if (!c.id || seen.has(c.id)) return false;
+    seen.add(c.id);
     return true;
   });
 }
