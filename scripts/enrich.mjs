@@ -284,7 +284,30 @@ async function main() {
     seenTokens.push(tokens);
     return true;
   });
-  const capped = [...deck, ...overflow].slice(0, 600);
+  // Age-based archive: drop anything older than MAX_CARD_AGE_DAYS so
+  // the deck stays current and the file doesn't accumulate stale weight.
+  // Applied after dedup so cards that survived dedup still get aged out
+  // by their actual publication date. Safety: if the filter would leave
+  // fewer than MIN_AFTER_AGE cards, skip pruning this run (defensive
+  // against a one-off run that returned only stale items).
+  const MAX_CARD_AGE_DAYS = 14;
+  const MIN_AFTER_AGE = 20;
+  const ageCutoff = Date.now() - MAX_CARD_AGE_DAYS * 24 * 3600 * 1000;
+  const merged = [...deck, ...overflow];
+  const ageFiltered = merged.filter((c) => {
+    const t = new Date(c.published_at || c.source?.date || 0).getTime();
+    return !isNaN(t) && t >= ageCutoff;
+  });
+  let final;
+  if (ageFiltered.length >= MIN_AFTER_AGE) {
+    final = ageFiltered;
+    const dropped = merged.length - ageFiltered.length;
+    if (dropped > 0) console.log(`Aged out ${dropped} cards older than ${MAX_CARD_AGE_DAYS} days.`);
+  } else {
+    final = merged;
+    console.warn(`⚠ Age filter would leave only ${ageFiltered.length} cards (<${MIN_AFTER_AGE} floor). Skipping age prune this run.`);
+  }
+  const capped = final.slice(0, 600);
 
   await fs.mkdir("data", { recursive: true });
   await fs.writeFile("data/cards.json", JSON.stringify(capped, null, 2));
