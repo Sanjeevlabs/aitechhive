@@ -2,8 +2,8 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    # 8x per day — every 3h at :15, starting 01:15 UTC (06:45 IST)
-    - cron: '15 1,4,7,10,13,16,19,22 * * *'
+    # 6x per day — every 4h at :15, starting 01:15 UTC (06:45 IST)
+    - cron: '15 1,5,9,13,17,21 * * *'
   workflow_dispatch:
   # Auto-trigger one fresh run when the pipeline itself changes. The
   # paths-ignore on data/** + sitemap prevents the bot's own commits from
