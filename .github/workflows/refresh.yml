@@ -2,18 +2,16 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    # 6x per day — every 4h at :15, starting 01:15 UTC (06:45 IST)
-    - cron: '15 07,11,17,21 * * *'
+    # 4x per day — 07:15, 11:15, 17:15, 21:15 UTC (12:45, 16:45, 22:45, 02:45 IST)
+    - cron: '15 7,11,17,21 * * *'
   workflow_dispatch:
-  # Auto-trigger one fresh run when the pipeline itself changes. The
-  # paths-ignore on data/** + sitemap prevents the bot's own commits from
-  # retriggering this (which would be a feedback loop).
+  # Auto-trigger on workflow-file edits only. Script tweaks no longer
+  # auto-refresh — saves CI minutes during heavy iteration. Force a run
+  # manually via workflow_dispatch when you want fresh cards immediately.
   push:
     branches: [main]
     paths:
-      - 'scripts/**'
       - '.github/workflows/refresh.yml'
-      - 'package-lock.json'
 
 concurrency:
   group: refresh-${{ github.ref }}
@@ -24,7 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 20
+    # 10min is plenty given Anthropic 2-min per-call timeout + Groq fallback
+    # (PR #65). A run that exceeds this is definitely stuck — bail and free
+    # the runner instead of burning CI minutes.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
