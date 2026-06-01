@@ -1,5 +1,67 @@
 [
   {
+    "id": "2026-06-01-anthropic-eu-mythos-access",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-01T18:05:20.000Z",
+    "headline": "Anthropic grants EU access to advanced Mythos model after bloc sought security approval",
+    "plain_english": "Anthropic is providing EU regulators and institutions access to its most advanced AI model, Mythos, following EU cybersecurity concerns. This move signals compliance with emerging EU AI governance while maintaining model availability for supervised testing.",
+    "why_it_matters": "Regulators now expect frontier labs to share advanced models for scrutiny. BFSI firms deploying EU-based AI services need assured access to models that meet both performance and compliance requirements—setting a precedent for model-licensing arrangements.",
+    "jargon": [
+      {
+        "term": "Frontier AI model",
+        "def": "State-of-the-art large language model (e.g. Claude, GPT-4) developed by specialized labs; powers complex reasoning and fine-grained tasks."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access.html"
+    }
+  },
+  {
+    "id": "2026-06-01-florida-openai-lawsuit",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-01T17:32:50.000Z",
+    "headline": "Florida Attorney General sues OpenAI and CEO Sam Altman, seeks personal liability",
+    "plain_english": "Florida's AG filed suit against OpenAI and Altman personally, alleging the company's 'insatiable quest to win the AI arms race' caused harm—including connection to a violent incident. The complaint seeks to hold Altman personally liable.",
+    "why_it_matters": "State-level AI liability litigation is escalating. BFSI firms deploying OpenAI's models in customer-facing roles (chatbots, advice engines) face emerging tort and negligence exposure. D&O insurance and model monitoring frameworks are now essential risk controls.",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html"
+    }
+  },
+  {
+    "id": "2026-06-01-wise-belgian-investigation",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-01T17:20:52.000Z",
+    "headline": "Fintech Wise shares fall on Belgian money-laundering investigation report",
+    "plain_english": "Belgian authorities are investigating Wise, the cross-border payments fintech, for potential money-laundering compliance failures. Stock fell on the news, signaling investor concern over AML control gaps at a major BFSI-adjacent vendor.",
+    "why_it_matters": "Regulatory scrutiny of fintech AML/KYC is intensifying. Banks partnering with Wise or similar vendors must conduct independent AML due diligence; vendor failures expose acquiring banks to compliance risk, reputational damage, and potential enforcement action.",
+    "source": {
+      "name": "Reuters · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa3Q1MjZiVGkyQ09pcjIyVlJzZ3Ryb1k0blNDbHQwbHpvN2J0MlgwYl9mM1VWTUlRc1NyOVViNDQtd2VDbnJaNEVPWnIwY3ZoTVcyVzZfSzFEZGZJQVF6M2lZRGZjY05UcURZdXJjdzV0RzJBZ1AtRTVwYThoNUxDckpWOHdfRnRaU2gtMlFIS0RFRWFYUlBoLW1aUWRnckxGbGRpYVdQeVZ6My1mMnB1LTZMYk5TTWx1MkxwUG1Sdk1LUQ"
+    }
+  },
+  {
+    "id": "2026-06-01-halo-financial-administration",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-06-01T16:08:53.000Z",
+    "headline": "UK FCA notifies market of Halo Financial Limited entering administration",
+    "plain_english": "The Financial Conduct Authority announced that Halo Financial Limited, a UK-authorized financial services firm, has entered administration (insolvency proceedings). Customers may lose access to services and face delays in fund recovery.",
+    "why_it_matters": "Firm failures signal potential contagion in fintech supply chains. Banks using Halo as a counterparty or service provider should verify exposure and contingency plans. FCA enforcement frequency on smaller firms is rising; robust due diligence on vendors' capital adequacy is essential.",
+    "source": {
+      "name": "FCA · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUVhzSzNrQlZManVyeHNCUlNIVmJEV3pRQUtfZjR4X1lveE03M0hHVlJWcm1RY3BKSVZiYWhlMlBSWGZOQmRzeE5xTmFmYktwMzJsSGhjYVZDZ0w0MTRGU1ktdXcyeGp6b3ZuVlQwbmtBcko5WW1vM0ZyMG8tQ2hnb09EOEdFaC02M2pVeDVn"
+    }
+  },
+  {
     "id": "2026-05-26-mas-market-conduct-controls",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -92,72 +154,43 @@
     }
   },
   {
-    "id": "2026-05-25-fca-motor-finance",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-05-25T10:31:42Z",
-    "headline": "FCA publishes motor finance market update and regulatory framework",
-    "plain_english": "UK Financial Conduct Authority issued guidance on motor finance sector operations. Addresses affordability, affordability, and consumer credit practices in auto lending.",
-    "why_it_matters": "Motor finance remains high-risk for affordability breaches. FCA direction signals continued scrutiny of underwriting automation and AI-driven credit decisioning in auto sector.",
-    "source": {
-      "name": "FCA · 2026-05-25",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLWFGbDRuVjd4Qlp0VkYyS3QwZDEwdWQ0ajlXUjlUYzdxVjlqLTlyMlllUnl2SGI4bDBDUDZMNlRsTTZFQ3JLZHFGU05xZHdoRnk2YkJHdmhBWS1xcXV3TklaSDJIa0xmUFNTRXlyYjBKWVVIa3dUZWJhMS1HVlpCTU56VTdmUVBaZkllcGVTQWdpZlFYbkdIVHJoZ0RvSXdjZHNjVw"
-    }
-  },
-  {
-    "id": "2026-05-25-pope-ai-regulation",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-05-25T09:30:05Z",
-    "headline": "Pope Leo urges robust AI regulation, warns of concentration of power and systemic risks",
-    "plain_english": "First encyclical from Pope Leo XIV calls for binding international AI regulation to prevent tech oligopoly control, autonomous weapons, and societal harm. Endorses external governance outside Big Tech.",
-    "why_it_matters": "Vatican soft power amplifies calls for AI governance among faith leaders globally. Positions independent oversight as moral imperative, lending legitimacy to regulators pushing industry guardrails.",
-    "jargon": [
-      {
-        "term": "Encyclical",
-        "def": "Official papal letter addressing moral or doctrinal issues to the entire Catholic Church and world."
-      }
-    ],
-    "source": {
-      "name": "FT Banking/AI · 2026-05-25",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaVVoOXZMYUNaQ2VKQ09aejhobThyQ3huSFQyVUExdE1WeFVjaE1kMzFRSUU3SlNzU0d2ZmpJbkQ2MEhtMk1mMUN1RlpuUC1RNTZpYVRyU1RhOHF3anhLMlJqVkJ4WGZuSXhxTlAwMHl3S3JRd3dNVThUcmVTNWZPNC0zUE0"
-    }
-  },
-  {
-    "id": "2026-05-25-ecb-mythos-risks-banks",
-    "category": "regulation",
+    "id": "2026-06-01-mastercard-tips-cross-currency",
+    "category": "deployment",
     "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-05-25T15:03:00Z",
-    "headline": "ECB calls emergency meeting with banks on Mythos AI model risks",
-    "plain_english": "The European Central Bank has urgently summoned banks to address IT vulnerabilities exposed by new AI models. The ECB is pressing institutions to accelerate remediation of legacy infrastructure gaps that AI-driven testing has revealed.",
-    "why_it_matters": "Banks racing to adopt AI for compliance and risk oversight are discovering their IT stacks aren't ready; regulators now treating this as a supervisory urgency rather than a competitive advantage.",
-    "source": {
-      "name": "Finextra · 2026-05-25",
-      "url": "https://www.finextra.com/newsarticle/47804/the-clock-is-ticking---ecb-calls-in-banks-over-mythos-risks?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    "effective_date": "2026-05-25"
-  },
-  {
-    "id": "2026-05-25-mas-aml-penalty-padang",
-    "category": "regulation",
-    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-05-25T08:08:58Z",
-    "headline": "MAS fines Singapore trust company $300k for AML/CFT compliance gaps",
-    "plain_english": "Singapore's Monetary Authority imposed a $300,000 composition penalty on Padang Trust Singapore for breaches of anti-money laundering and countering financing of terrorism (AML/CFT) requirements.",
-    "why_it_matters": "Signal that MAS is actively enforcing AML/CFT standards; relevant for regional fintechs and asset managers scaling KYC and transaction monitoring infrastructure.",
+    "published_at": "2026-06-01T18:10:00.000Z",
+    "headline": "Mastercard joins Denmark and Sweden's central banks in instant cross-currency payment pilot",
+    "plain_english": "Mastercard is collaborating with Danmarks Nationalbank and Riksbank to test real-time cross-currency settlement on the Eurosystem's Target Instant Payment Settlement (TIPS) platform. The pilot explores instant currency conversion without intermediary delays.",
+    "why_it_matters": "Cross-border instant payments reduce FX settlement risk and operational friction. BFSI firms—especially smaller banks—can offer faster international transfers, disrupting correspondent banking. Success pressures US and APAC regulators to accelerate real-time rails.",
     "jargon": [
       {
-        "term": "AML/CFT",
-        "def": "Anti-money laundering and countering financing of terrorism rules; mandatory compliance for all regulated financial firms."
+        "term": "TIPS (Target Instant Payment Settlement)",
+        "def": "Eurosystem's near-real-time payment infrastructure operated by ECB; enables instant euro transfers 24/7."
       }
     ],
     "source": {
-      "name": "MAS Singapore · 2026-05-25",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQR2xyNUxVQWNoUGpfSmw3SDMwVUk2bmllS2dDM09tZTFhZ0hsanFtTUR5QXhabGpWZkRySTJlMm9jRGwtTlF5NUpqM2tFdE4xMVFFUXFROThEeXJOOC1vV2ctTHhYc29aSEpNdFgydmlxa0FidWFfSFQ0QjlPSzZlSGNLdktmZF8tQ3EtV2N5cVJORTdUUTY3SUFJUjhoSk5hMVV4X1Mwel9xaWRXNlZJR2ZjOE9UM29BQThNNmJPSDB0U05adnVpN2laVHNoMkdRaG9ETVZQQ25BTVdha1VUY0tBNUt1cmRsd2ZfUEtyWDRfelY1Zld1Sg?oc=5"
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/newsarticle/47839/mastercard-joins-tips-cross-currency-pilot"
+    }
+  },
+  {
+    "id": "2026-06-01-nvidia-ai-pcs",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T16:24:00.000Z",
+    "headline": "Nvidia introduces first personal computers designed specifically for AI agents",
+    "plain_english": "Nvidia announced its first consumer and enterprise PCs optimized for running AI agents locally—models that can reason, plan, and take actions autonomously. These devices embed specialized chips for on-device LLM inference and agentic workflows.",
+    "why_it_matters": "On-device AI agents reduce latency and data exposure for BFSI use cases (e.g., fraud detection, client service bots). Banks and wealth managers can deploy agents locally without cloud API calls, lowering operational risk and compliance overhead for sensitive workflows.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous AI system that perceives its environment, makes decisions, and executes actions iteratively without human intervention between steps."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9MU0Y0VFlScVBDdDFaUXIxc1hvNlBZRnZ6NElFUHgtckZENHVMVmpvM241YjU1RnN2ejdlWEV6OFBfbldXZkItckJzOVZURWNUWmhaMUJ3SHhYd2xHWHF3VGwzeUlGTkNlc0h2UWhYbm03TXItXzEyNm1UeVk"
     }
   },
   {
@@ -289,37 +322,35 @@
     }
   },
   {
-    "id": "2026-05-24-deployment-bofa-ai-productivity",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-05-24T11:30:00.000Z",
-    "headline": "Bank of America claims 10x productivity gains from AI but reports only 0.1% measured improvement",
-    "plain_english": "Bank of America announced it expects AI to deliver 10x productivity gains. However, the bank has measured only 0.1% actual productivity improvement so far, highlighting the gap between AI hype and production results in banking.",
-    "why_it_matters": "BofA's gap between expectation and delivery is a cautionary signal: AI pilots in banking often stall due to data quality, integration friction, and employee adoption barriers. Investors and regulators should scrutinize vendors claiming outsized returns.",
-    "jargon": [
-      {
-        "term": "productivity pilot",
-        "def": "Small-scale AI deployment test with limited scope, used to measure real-world gains before enterprise rollout."
-      }
-    ],
+    "id": "2026-06-01-gradient-labs-series-a-expansion",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-01T16:14:08.000Z",
+    "headline": "AI-powered finance startup Gradient Labs doubles Series A funding to $26 million",
+    "plain_english": "Gradient Labs, a European fintech applying AI to financial operations, has expanded its Series A round, doubling its funding commitment to $26 million total. The capital will support product expansion and enterprise customer acquisition.",
+    "why_it_matters": "European fintech AI vendors are closing larger rounds, signaling investor confidence in non-US alternatives to OpenAI/Anthropic. BFSI firms should track EU-based AI vendors for GDPR compliance and lower latency in regulated markets.",
+    "amount": "$26M",
+    "round": "Series A (expanded)",
     "source": {
-      "name": "Fortune · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON0F2Y254WW1WUk1WbWJtZ2xvXzNoYjFsQzlBdUdzVlozY3hDMVF0OTNVUWNHaTYxMXhnbnItUHUyelAyQW5mbzFaLWJWQVQxVHcxb0tmd1NxZF9wVzRUOXlVaGRoa0tlOXJDWW11b0hUamJZczZmaERhNFNOY0FzNXV0dlFtTm9tMTUxb2NmVkViTUU3R1FmeHhWQ29SZw"
+      "name": "Sifted · 2026-06-01",
+      "url": "https://sifted.eu/articles/gradient-labs-doubles-series-a/"
     }
   },
   {
-    "id": "2026-05-24-deployment-dhaka-ai-traffic",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-05-24T13:31:42.000Z",
-    "headline": "Dhaka deploys AI-powered traffic enforcement cameras across city",
-    "plain_english": "Dhaka police launched AI cameras to detect traffic violations and enforce compliance. Early results show measurable improvements in traffic flow and enforcement consistency.",
-    "why_it_matters": "City-scale AI surveillance (computer vision, license plate reading) raises privacy and due-process concerns. Governments testing these systems should establish audit trails and appeals mechanisms; BFSI firms providing infrastructure must verify compliance frameworks.",
+    "id": "2026-06-01-openpayd-spac-nasdaq",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T15:13:00.000Z",
+    "headline": "Financial infrastructure provider OpenPayd goes public via SPAC merger at $1.145 billion valuation",
+    "plain_english": "OpenPayd, a UK fintech offering payment and money-movement infrastructure APIs, announced a SPAC merger to list on Nasdaq at a $1.145 billion valuation. The deal provides capital for product development and geographic expansion.",
+    "why_it_matters": "Fintech infrastructure plays are reaching public markets. BFSI CROs and CFOs integrating OpenPayd or competitors must assess post-IPO earnings pressure, API pricing changes, and M&A risk. Public fintech vendors often cut margins or push volume-based models.",
+    "amount": "$1.145B",
+    "round": "SPAC (Public)",
     "source": {
-      "name": "Let's Data Science · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcWw2VzQzZkp2Ymdpa3BNZUNZcXhnNVltX3B0X3IzVzhKb1ZyaGlDTlloMGNhVXBXdVBzeVZxRF9RWDlKYmxqNVluajd4b3Z3RktrRFo5Q2xxMGxZRk8tZUYyS1dsWjltZEsxSXc2WjU2QS1BOV83NWNaakpSeURWb2dheU1iWTk0NjZHQmpB"
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/newsarticle/47837/openpayd-inks-spac-deal-for-nasdaq-listing"
     }
   },
   {
@@ -429,6 +460,48 @@
     }
   },
   {
+    "id": "2026-06-01-hpe-cloud-ai-earnings",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T21:00:34.000Z",
+    "headline": "HPE soars 30% on Q2 earnings beat driven by Cloud & AI server revenue surge",
+    "plain_english": "Hewlett Packard Enterprise reported second-quarter results that beat expectations, with strong growth in its Cloud & AI segment, driving server shipments. The stock jumped 30%, the largest single-day gain since 2018.",
+    "why_it_matters": "Massive capex on AI data centers is moving from cloud giants to enterprise infrastructure vendors. Banks and insurers expanding on-premises or hybrid AI clusters will face supplier constraints and pricing power shifts; HPE's momentum signals continued margin expansion in infrastructure, not software.",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/hpe-stock-earnings-q2.html"
+    }
+  },
+  {
+    "id": "2026-06-01-bis-project-aperta",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-01T15:46:00.000Z",
+    "headline": "BIS releases prototype for cross-border open finance interoperability via Project Aperta",
+    "plain_english": "The Bank for International Settlements (BIS) has developed and tested a prototype 'network of networks' that connects domestic open finance ecosystems via neutral APIs, enabling cross-border data and fund flows without a single central hub.",
+    "why_it_matters": "BIS-endorsed interoperability standards shape how banks integrate fintech APIs globally. A neutral cross-border layer reduces switching costs and lock-in, pressuring payment fintechs and API aggregators to commoditize. Expect faster adoption of open banking in emerging markets.",
+    "source": {
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/pressarticle/109987/bis-reports-back-on-open-finance-project-aperta"
+    }
+  },
+  {
+    "id": "2026-06-01-goldman-ai-data-centers",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T18:48:07.000Z",
+    "headline": "Goldman Sachs bankers focus intensely on AI data center deals and infrastructure investment",
+    "plain_english": "Goldman Sachs' top investment bankers are prioritizing AI data center transactions, M&A, and infrastructure financing. The shift reflects massive capital reallocation toward AI compute rather than traditional fintech or software deals.",
+    "why_it_matters": "BFSI M&A advisors now chase data center deals over software. Banks considering build-vs.-buy for AI infrastructure should expect Goldman to advise on partnering with or acquiring specialized data center operators (CoreWeave, Lambda Labs, etc.). Expect valuation inflation and reduced availability.",
+    "source": {
+      "name": "Bloomberg · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMmxkSFprMFpqRjRlWGdpeUFPc2JuY19Td0JjRGE1bUxVSE5zQVNPU3VpQVc4QXJYY1dxS1FNQ0NES0NGY2Q1RHMyTGk0dzA4bWhIaE40VFdhVC16UUlrRnFnTE4wNzg5WVlVU25YZHNENjlqZ3dTcm1seWdsMlM3Rld5Y1YwR3B3MkJpRWJGUDFZbmN0OVlZNmxzRElFcEdtYnhqcDhlTGNveWJ6VnBkaEpzbWk"
+    }
+  },
+  {
     "id": "2026-05-26-australian-banker-job-cuts-ai",
     "category": "shift",
     "jurisdiction": "APAC",
@@ -528,45 +601,17 @@
     }
   },
   {
-    "id": "2026-05-25-singapore-account-opening-speed",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-05-25T05:56:04Z",
-    "headline": "Singapore MAS directs banks to accelerate account opening for high-net-worth clients",
-    "plain_english": "Monetary Authority of Singapore issued guidance directing banks to reduce friction in account-opening workflows for wealthy clients, signaling that onboarding speed is now a competitive and regulatory expectation. Implicit pressure to automate and AI-augment KYC.",
-    "why_it_matters": "When regulators explicitly call for faster onboarding, they're implicitly validating AI-driven KYC and due diligence as compliant. Banks that automate this will gain market share; those that don't risk losing high-value customer acquisition to competitors. Expect a wave of APAC fintech-bank partnerships in wealth onboarding AI.",
+    "id": "2026-06-01-finastra-data-insights-mortgage",
+    "category": "tool",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-01T14:14:00.000Z",
+    "headline": "Finastra launches Data Insights 2.0 analytics tool to improve mortgage application conversion",
+    "plain_english": "Finastra released Data Insights 2.0, an analytics platform that transforms mortgage lending data into decision-ready insights, helping lenders convert more applications into funded loans by automating underwriting analysis.",
+    "why_it_matters": "Mortgage lenders are adopting AI-driven analytics to boost conversion rates under rate pressure. Risk officers should track whether such tools introduce model bias or adversarial selection; regulators (OCC, CFPB) will likely scrutinize lending AI fairness in 2026–2027.",
     "source": {
-      "name": "Financial Times · 2026-05-25",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZXhfa0VDYTZ0Z1VLMGpwT0FiUmFJZS1adDNmT0pZb3R6UzZiSlJkdU94Tkx0NXFDNnNoRmlNT05iWmVObDFVNVgyWC1BOHY1WUFWSkhGRGt5amI4MU9CWHQ0eTlTaHBzdlI3aWZZSHR3RkFYcHhRYUlWV3JnZ1NjTGgyUWo"
-    }
-  },
-  {
-    "id": "2026-05-24-shift-mckinsey-ai-interview-prep",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-24T09:52:00.000Z",
-    "headline": "McKinsey pivots hiring process to use AI chatbots instead of pricey interview coaches",
-    "plain_english": "McKinsey is deploying AI to conduct mock job interviews with candidates, replacing human coaches and expensive prep services. The shift democratizes interview practice and reduces hiring costs while increasing standardization.",
-    "why_it_matters": "Consultant firms using AI for talent evaluation signals broader industry shift toward algorithm-driven hiring. BFSI firms face same pressure to automate recruitment; regulatory scrutiny on bias and fairness in AI hiring tools is rising.",
-    "source": {
-      "name": "Business Insider · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVQxXzRKaWNjbzJLU1BWbFdmZkZ1Q1ZGNDZRWTNqN1FBZnNITENFNjNfdnNUUzd6UXhRVXBmQ21PeE1abElqY1NYMDlqX3phaHB1akNDdUVkU0owb19kSGNNYURQOTFDM2NYZHhQZWE2aGJhcTMzMUJqMkZkXzdCRXNqZUhFaWxDSFJMMmtVaDMtX2x5eUxDa3NGTkQ5el95YTJMeXVzRU9QTWx1bzU1dF93"
-    }
-  },
-  {
-    "id": "2026-05-24-shift-mckinsey-ai-interview-coaching-model",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-24T09:52:18Z",
-    "headline": "McKinsey deploys AI interview coaching; shifts hiring economics away from external coaches",
-    "plain_english": "McKinsey launched an AI-powered system guiding job candidates through practice interviews, reducing reliance on paid external coaches. Move signals consulting firms are automating labor-intensive talent-acquisition processes.",
-    "why_it_matters": "If successful, McKinsey's model cascades: other big consulting shops and investment banks will adopt similar AI coaches, eroding market for executive recruiters and interview prep vendors; also signals internal talent ops automation in BFSI is accelerating.",
-    "source": {
-      "name": "Business Insider · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVQxXzRKaWNjbzJLU1BWbFdmZkZ1Q1ZGNDZRWTNqN1FBZnNITENFNjNfdnNUUzd6UXhRVXBmQ21PeE1abElqY1NYMDlqX3phaHB1akNDdUVkU0owb19kSGNNYURQOTFDM2NYZHhQZWE2aGJhcTMzMUJqMkZkXzdCRXNqZUhFaWxDSFJMMmtVaDMtX2x5eUxDa3NGTkQ5el95YTJMeXVzRU9QTWx1bzU1dF93"
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/pressarticle/109986/finastra-helps-lenders-turn-more-applications-into-loans-with-new-analytics-tool"
     }
   },
   {
@@ -766,6 +811,22 @@
     }
   },
   {
+    "id": "2026-06-01-citi-tokenization-forecast",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-01T20:15:15.000Z",
+    "headline": "Citi predicts tokenized securities market will reach $5.5 trillion by 2030",
+    "plain_english": "Citi's research forecasts that blockchain-based tokenization of traditional securities (stocks, bonds, commodities) will grow to $5.5 trillion in assets under management within four years, up from minimal adoption today.",
+    "why_it_matters": "Tokenization enables fractional ownership, 24/7 settlement, and reduced custody costs. Banks and wealth managers must prepare infrastructure and compliance frameworks now; early movers will capture fee pools from issuance and trading of tokenized instruments.",
+    "stat_value": "$5.5T",
+    "stat_label": "Forecast tokenized securities AUM by 2030",
+    "source": {
+      "name": "Intellectia AI (via Citi research) · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRkE3eWpCVU9wY2dSMDBrbVJ2M3NrOE1iZFBNUzFWQmhUb0VoaVo4THRGdXd2QkEwMElNUXg3T2tlYVA5Rll3aEtyTGlMTjBYN2VCUVNSbmFyV2RiRWRmeU51RzRnSENabWloQlJUWmNCUW1mckFRV3BxZmFhMmFVdFh5dkFwWmhLZ1hCdklGNm9WRHBLcklpZ0VJSmJ6SWs"
+    }
+  },
+  {
     "id": "2026-05-26-goldman-ai-automation-25pct",
     "category": "insight",
     "jurisdiction": "US",
@@ -889,6 +950,35 @@
     "source": {
       "name": "MSN (Meta story) · 2026-05-25",
       "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxQbjgxVlBSTFZFOEl5YVJoeGtzaFFlazBHcTlvMnFRSVA4YlFSLXZSV3JmTnU3LTVjdURDc2VoRUhXUXZ4V2NhM0dHZWxHYXA3RF9QS0xZdHFFbVVobmJPbnk4QVhtOHJUOHBFN3RhN3M3S2dycmZnT2Z0LTRUY1BPVXhFVFJvZHpsRWstb0RGSUNkckJLUDNRMVBUdG9pQmNYWlZFZWF6ZG5lYnFfV21SQUJlTXM5NGdyNjgxMHNXYndJUTZUNnpDS2tsOWZhUzVkTDRCOUQzX04tLUp2aG55OUF3b01IdDIzQWtfa3dVTnVsdTA5dDl6VUF2TF82ZEFEYWk1bG82T2pmQ1lmUGNzQnItbTE4RXhYeDRPNTlPSzM5TDZwVFhKX05hek0yd3V2aTJicXFfQzJCTFFtemwxTTBSQkhWbVBudWhoU0pYZEdNX01ha3p3VGc4ZWR6S1VuaUdyOGNUYXFicHhaTk1ZZWI5WEhpMnhqUXBYZXUxcFVfUW8zUks4RjBlYmxqQQ"
+    }
+  },
+  {
+    "id": "2026-06-01-microsoft-google-coding-ai",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T20:18:21.000Z",
+    "headline": "Microsoft and Google intensify AI coding tools race against Anthropic and OpenAI",
+    "plain_english": "Microsoft and Google are investing heavily in proprietary AI code-generation models to compete with Anthropic and OpenAI in the lucrative enterprise developer tools market. Industry observers say coding AI is 'absolutely critical' for sustained growth.",
+    "why_it_matters": "Coding AI adoption accelerates software delivery in BFSI. Banks deploying GitHub Copilot (Microsoft) or Google's Duet AI may see 20–40% gains in developer productivity. However, proprietary models and vendor lock-in raise long-term costs; BFSI tech leaders should evaluate open-source alternatives (Meta Llama, Mistral).",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html"
+    }
+  },
+  {
+    "id": "2026-06-01-berkshire-alphabet-investment",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T20:57:10.000Z",
+    "headline": "Berkshire Hathaway invests additional $10 billion in Alphabet, deepening AI bet",
+    "plain_english": "Berkshire Hathaway announced a new $10 billion investment in Alphabet (Google's parent), expanding its existing position. The move signals high conviction in Alphabet's AI strategy and competitive moat, despite regulatory pressures.",
+    "why_it_matters": "Warren Buffett's endorsement of Alphabet's AI efforts validates Google Cloud's BFSI AI roadmap. Banks evaluating Google Cloud vs. AWS vs. Azure should note that Berkshire's capital vote increases Alphabet's resources for AI R&D and infrastructure, likely benefiting enterprise customers.",
+    "amount": "$10B",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxMQjEzNGZ1yUQNMzVDSWpzMkEyS2VWQlIxMGdyM1JiYWFNSWdaOEhxY3laYjNBVGc2VUtXVWg0QkMzSVYtdHo1eUJUYzFkOVl2YlhFSW02b01ySVU1YWhMVjIyUjAwMkFINUt4SGxSWVl3Wk5WVWJ1ZGpWV2RqaDFibVJLVkdneFdsQk9NMVkyVFRObmIxOVhPWEJsUm1OWldUSmtiME54YlhoWGJGUlhXR2hWZVUxRVNYaFpiazFZWVUxSmQyRkVRakJ1YWtJelpESmFaRWR1UWxSVA"
     }
   },
   {
@@ -1024,41 +1114,17 @@
     }
   },
   {
-    "id": "2026-05-24-frontier-google-search-agents",
-    "category": "frontier",
+    "id": "2026-06-01-learner-agentic-ai",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-05-24T13:00:54.000Z",
-    "headline": "Google launches search agents and personal intelligence features at I/O 2026",
-    "plain_english": "Google revealed AI-powered search agents and personal intelligence capabilities at its developer conference. Search agents automate multi-step queries; personal intelligence personalizes results. Both embed LLM reasoning into Google's core product.",
-    "why_it_matters": "Agents represent the shift from retrieval to autonomous task execution. If search becomes agentic, financial institutions must rethink how compliance, data governance, and user transparency apply to AI-driven workflows touching sensitive queries.",
-    "jargon": [
-      {
-        "term": "search agent",
-        "def": "AI system that breaks down a user's request into steps, executes queries, and synthesizes results without constant human input."
-      },
-      {
-        "term": "personal intelligence",
-        "def": "System that learns individual user preferences, history, and context to tailor search results and recommendations."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-06-01T16:24:00.000Z",
+    "headline": "What is an AI agent? A plain-English primer for BFSI leaders",
+    "plain_english": "An AI agent is a software system that perceives its environment (reads data, receives user input), makes decisions autonomously (using reasoning or reinforcement learning), and takes actions (calls APIs, executes trades, updates records)—all without waiting for human approval at each step. Unlike chatbots, which respond to queries, agents plan multi-step workflows and adapt in real time.",
+    "why_it_matters": "Agents unlock new BFSI use cases: autonomous fraud detection (blocks suspicious transactions instantly), portfolio rebalancing (adjusts allocations without trader sign-off), and RPA-plus (processes loan applications end-to-end). Risk teams must audit agent decision logs and establish 'human-in-the-loop' thresholds for high-value actions.",
     "source": {
-      "name": "MSN · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPTjNSQTdkQml3QkFRQi1IcUlNWG1ld010SklfUFpGcG5iWm1Kd0x3TU5udkJjQ1ZmX2NpdjZGVXd4WHJuZF94c21NeEN4RE5YMEwwaGNiYnFSNW1LMzN2V3QyNWt6RmIxSWRNckhBS2c3UnZTYVpOcUxFNUtkbnlnRnNkMGhoczJCRHBRRW43aVRyV1VzZVQwd3hBWjVYLXBwdXNlRXBkVDFVQ2VXRGxsYVdKdHNDSExYWnVGbmgzRjQzajFnSlppSlJfRENGUF9jb3lRSnNTQ0paam5mdWhfZ2J5bHREQURvYnh0X3JXOF9VOUNtN2FNRkdCelJ5Wm0ydS1kT1lIQW5HVlZXeGROci1uM2UzdmtoaTdxanctd3lqTDFaVmhYcVdLRjlTX2dfcjhjMGpudFpwTUVHWC1wS0NES3NDNC1FWEhIZUtJTl93cTFaNHNZWXhFa1JiNlVrLUtBX1FUdm5qcms"
-    }
-  },
-  {
-    "id": "2026-05-24-frontier-google-io-gmail-voice",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-05-24T13:53:46.000Z",
-    "headline": "Gmail adds voice interface allowing conversational inbox queries",
-    "plain_english": "Google revealed a voice-enabled interface for Gmail at I/O 2026, letting users converse with their inbox. Users can ask questions about emails, search, and interact with messages using natural speech.",
-    "why_it_matters": "Voice access to email lowers friction for busy professionals but raises compliance risk: voice logs, intent inference, and automated actions on financial/legal messages require audit trails and consent frameworks that many enterprises lack.",
-    "source": {
-      "name": "MSN · 2026-05-24",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcG1CczF3c0JjNXBXOUQxREpUUHdNQU0tSXRETUtabjBXdlpKbS1MU29fN2tobThNSmNYLWhDMjN5LVJwbkJycU5DNFF6ZFRzRmFBX2xDdDRIX1JtV0J0QXlwLWZwbWd1WUUwekt0ZDZPZUdkVUo4amU1RkhmLU1lRWM3ejVkRFFQeEQ1bG9TYThvZmhiOEZRQjV2OF91REtfVDlEbGFQdHBGQVNyLVFPSUhYVkNhUnQ0UWtVdHhDaTJ1UFhMN3c"
+      "name": "WSJ + industry context · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9MU0Y0VFlScVBDdDFaUXIxc1hvNlBZRnZ6NElFUHgtckZENHVMVmpvM241YjU1RnN2ejdlWEV6OFBfbldXZkItckJzOVZURWNUWmhaMUJ3SHhYd2xHWXF3VGwzeUlGTkNlc0h2UWhYbm03TXItXzEyNm1UeVk"
     }
   },
   {
@@ -1127,6 +1193,203 @@
     "source": {
       "name": "AITechHive Editorial · 2026-05-23",
       "url": "https://www.aitechhive.com"
+    }
+  },
+  {
+    "id": "2026-06-01-anthropic-ipo-filing",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-01T18:33:49.000Z",
+    "headline": "Anthropic files confidential IPO prospectus with SEC, advancing race with OpenAI",
+    "plain_english": "Anthropic submitted confidential IPO paperwork to the SEC on Monday, moving toward a potential public listing. The filing could unlock one of the largest AI company debuts ever, intensifying competition with OpenAI for capital and market legitimacy.",
+    "why_it_matters": "Frontier AI labs going public changes the dynamics of BFSI AI adoption: public companies face earnings pressure to monetize enterprise AI, spurring faster product launches and potential price wars that reshape bank LLM economics.",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+    }
+  },
+  {
+    "id": "2026-05-25-fca-motor-finance",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-05-25T10:31:42Z",
+    "headline": "FCA publishes motor finance market update and regulatory framework",
+    "plain_english": "UK Financial Conduct Authority issued guidance on motor finance sector operations. Addresses affordability, affordability, and consumer credit practices in auto lending.",
+    "why_it_matters": "Motor finance remains high-risk for affordability breaches. FCA direction signals continued scrutiny of underwriting automation and AI-driven credit decisioning in auto sector.",
+    "source": {
+      "name": "FCA · 2026-05-25",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLWFGbDRuVjd4Qlp0VkYyS3QwZDEwdWQ0ajlXUjlUYzdxVjlqLTlyMlllUnl2SGI4bDBDUDZMNlRsTTZFQ3JLZHFGU05xZHdoRnk2YkJHdmhBWS1xcXV3TklaSDJIa0xmUFNTRXlyYjBKWVVIa3dUZWJhMS1HVlpCTU56VTdmUVBaZkllcGVTQWdpZlFYbkdIVHJoZ0RvSXdjZHNjVw"
+    }
+  },
+  {
+    "id": "2026-05-25-pope-ai-regulation",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-05-25T09:30:05Z",
+    "headline": "Pope Leo urges robust AI regulation, warns of concentration of power and systemic risks",
+    "plain_english": "First encyclical from Pope Leo XIV calls for binding international AI regulation to prevent tech oligopoly control, autonomous weapons, and societal harm. Endorses external governance outside Big Tech.",
+    "why_it_matters": "Vatican soft power amplifies calls for AI governance among faith leaders globally. Positions independent oversight as moral imperative, lending legitimacy to regulators pushing industry guardrails.",
+    "jargon": [
+      {
+        "term": "Encyclical",
+        "def": "Official papal letter addressing moral or doctrinal issues to the entire Catholic Church and world."
+      }
+    ],
+    "source": {
+      "name": "FT Banking/AI · 2026-05-25",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaVVoOXZMYUNaQ2VKQ09aejhobThyQ3huSFQyVUExdE1WeFVjaE1kMzFRSUU3SlNzU0d2ZmpJbkQ2MEhtMk1mMUN1RlpuUC1RNTZpYVRyU1RhOHF3anhLMlJqVkJ4WGZuSXhxTlAwMHl3S3JRd3dNVThUcmVTNWZPNC0zUE0"
+    }
+  },
+  {
+    "id": "2026-05-25-ecb-mythos-risks-banks",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-05-25T15:03:00Z",
+    "headline": "ECB calls emergency meeting with banks on Mythos AI model risks",
+    "plain_english": "The European Central Bank has urgently summoned banks to address IT vulnerabilities exposed by new AI models. The ECB is pressing institutions to accelerate remediation of legacy infrastructure gaps that AI-driven testing has revealed.",
+    "why_it_matters": "Banks racing to adopt AI for compliance and risk oversight are discovering their IT stacks aren't ready; regulators now treating this as a supervisory urgency rather than a competitive advantage.",
+    "source": {
+      "name": "Finextra · 2026-05-25",
+      "url": "https://www.finextra.com/newsarticle/47804/the-clock-is-ticking---ecb-calls-in-banks-over-mythos-risks?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "effective_date": "2026-05-25"
+  },
+  {
+    "id": "2026-05-25-mas-aml-penalty-padang",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-05-25T08:08:58Z",
+    "headline": "MAS fines Singapore trust company $300k for AML/CFT compliance gaps",
+    "plain_english": "Singapore's Monetary Authority imposed a $300,000 composition penalty on Padang Trust Singapore for breaches of anti-money laundering and countering financing of terrorism (AML/CFT) requirements.",
+    "why_it_matters": "Signal that MAS is actively enforcing AML/CFT standards; relevant for regional fintechs and asset managers scaling KYC and transaction monitoring infrastructure.",
+    "jargon": [
+      {
+        "term": "AML/CFT",
+        "def": "Anti-money laundering and countering financing of terrorism rules; mandatory compliance for all regulated financial firms."
+      }
+    ],
+    "source": {
+      "name": "MAS Singapore · 2026-05-25",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQR2xyNUxVQWNoUGpfSmw3SDMwVUk2bmllS2dDM09tZTFhZ0hsanFtTUR5QXhabGpWZkRySTJlMm9jRGwtTlF5NUpqM2tFdE4xMVFFUXFROThEeXJOOC1vV2ctTHhYc29aSEpNdFgydmlxa0FidWFfSFQ0QjlPSzZlSGNLdktmZF8tQ3EtV2N5cVJORTdUUTY3SUFJUjhoSk5hMVV4X1Mwel9xaWRXNlZJR2ZjOE9UM29BQThNNmJPSDB0U05adnVpN2laVHNoMkdRaG9ETVZQQ25BTVdha1VUY0tBNUt1cmRsd2ZfUEtyWDRfelY1Zld1Sg?oc=5"
+    }
+  },
+  {
+    "id": "2026-05-24-deployment-bofa-ai-productivity",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-05-24T11:30:00.000Z",
+    "headline": "Bank of America claims 10x productivity gains from AI but reports only 0.1% measured improvement",
+    "plain_english": "Bank of America announced it expects AI to deliver 10x productivity gains. However, the bank has measured only 0.1% actual productivity improvement so far, highlighting the gap between AI hype and production results in banking.",
+    "why_it_matters": "BofA's gap between expectation and delivery is a cautionary signal: AI pilots in banking often stall due to data quality, integration friction, and employee adoption barriers. Investors and regulators should scrutinize vendors claiming outsized returns.",
+    "jargon": [
+      {
+        "term": "productivity pilot",
+        "def": "Small-scale AI deployment test with limited scope, used to measure real-world gains before enterprise rollout."
+      }
+    ],
+    "source": {
+      "name": "Fortune · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON0F2Y254WW1WUk1WbWJtZ2xvXzNoYjFsQzlBdUdzVlozY3hDMVF0OTNVUWNHaTYxMXhnbnItUHUyelAyQW5mbzFaLWJWQVQxVHcxb0tmd1NxZF9wVzRUOXlVaGRoa0tlOXJDWW11b0hUamJZczZmaERhNFNOY0FzNXV0dlFtTm9tMTUxb2NmVkViTUU3R1FmeHhWQ29SZw"
+    }
+  },
+  {
+    "id": "2026-05-24-deployment-dhaka-ai-traffic",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-05-24T13:31:42.000Z",
+    "headline": "Dhaka deploys AI-powered traffic enforcement cameras across city",
+    "plain_english": "Dhaka police launched AI cameras to detect traffic violations and enforce compliance. Early results show measurable improvements in traffic flow and enforcement consistency.",
+    "why_it_matters": "City-scale AI surveillance (computer vision, license plate reading) raises privacy and due-process concerns. Governments testing these systems should establish audit trails and appeals mechanisms; BFSI firms providing infrastructure must verify compliance frameworks.",
+    "source": {
+      "name": "Let's Data Science · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcWw2VzQzZkp2Ymdpa3BNZUNZcXhnNVltX3B0X3IzVzhKb1ZyaGlDTlloMGNhVXBXdVBzeVZxRF9RWDlKYmxqNVluajd4b3Z3RktrRFo5Q2xxMGxZRk8tZUYyS1dsWjltZEsxSXc2WjU2QS1BOV83NWNaakpSeURWb2dheU1iWTk0NjZHQmpB"
+    }
+  },
+  {
+    "id": "2026-05-25-singapore-account-opening-speed",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-05-25T05:56:04Z",
+    "headline": "Singapore MAS directs banks to accelerate account opening for high-net-worth clients",
+    "plain_english": "Monetary Authority of Singapore issued guidance directing banks to reduce friction in account-opening workflows for wealthy clients, signaling that onboarding speed is now a competitive and regulatory expectation. Implicit pressure to automate and AI-augment KYC.",
+    "why_it_matters": "When regulators explicitly call for faster onboarding, they're implicitly validating AI-driven KYC and due diligence as compliant. Banks that automate this will gain market share; those that don't risk losing high-value customer acquisition to competitors. Expect a wave of APAC fintech-bank partnerships in wealth onboarding AI.",
+    "source": {
+      "name": "Financial Times · 2026-05-25",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZXhfa0VDYTZ0Z1VLMGpwT0FiUmFJZS1adDNmT0pZb3R6UzZiSlJkdU94Tkx0NXFDNnNoRmlNT05iWmVObDFVNVgyWC1BOHY1WUFWSkhGRGt5amI4MU9CWHQ0eTlTaHBzdlI3aWZZSHR3RkFYcHhRYUlWV3JnZ1NjTGgyUWo"
+    }
+  },
+  {
+    "id": "2026-05-24-shift-mckinsey-ai-interview-prep",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-24T09:52:00.000Z",
+    "headline": "McKinsey pivots hiring process to use AI chatbots instead of pricey interview coaches",
+    "plain_english": "McKinsey is deploying AI to conduct mock job interviews with candidates, replacing human coaches and expensive prep services. The shift democratizes interview practice and reduces hiring costs while increasing standardization.",
+    "why_it_matters": "Consultant firms using AI for talent evaluation signals broader industry shift toward algorithm-driven hiring. BFSI firms face same pressure to automate recruitment; regulatory scrutiny on bias and fairness in AI hiring tools is rising.",
+    "source": {
+      "name": "Business Insider · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVQxXzRKaWNjbzJLU1BWbFdmZkZ1Q1ZGNDZRWTNqN1FBZnNITENFNjNfdnNUUzd6UXhRVXBmQ21PeE1abElqY1NYMDlqX3phaHB1akNDdUVkU0owb19kSGNNYURQOTFDM2NYZHhQZWE2aGJhcTMzMUJqMkZkXzdCRXNqZUhFaWxDSFJMMmtVaDMtX2x5eUxDa3NGTkQ5el95YTJMeXVzRU9QTWx1bzU1dF93"
+    }
+  },
+  {
+    "id": "2026-05-24-shift-mckinsey-ai-interview-coaching-model",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-24T09:52:18Z",
+    "headline": "McKinsey deploys AI interview coaching; shifts hiring economics away from external coaches",
+    "plain_english": "McKinsey launched an AI-powered system guiding job candidates through practice interviews, reducing reliance on paid external coaches. Move signals consulting firms are automating labor-intensive talent-acquisition processes.",
+    "why_it_matters": "If successful, McKinsey's model cascades: other big consulting shops and investment banks will adopt similar AI coaches, eroding market for executive recruiters and interview prep vendors; also signals internal talent ops automation in BFSI is accelerating.",
+    "source": {
+      "name": "Business Insider · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVQxXzRKaWNjbzJLU1BWbFdmZkZ1Q1ZGNDZRWTNqN1FBZnNITENFNjNfdnNUUzd6UXhRVXBmQ21PeE1abElqY1NYMDlqX3phaHB1akNDdUVkU0owb19kSGNNYURQOTFDM2NYZHhQZWE2aGJhcTMzMUJqMkZkXzdCRXNqZUhFaWxDSFJMMmtVaDMtX2x5eUxDa3NGTkQ5el95YTJMeXVzRU9QTWx1bzU1dF93"
+    }
+  },
+  {
+    "id": "2026-05-24-frontier-google-search-agents",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-05-24T13:00:54.000Z",
+    "headline": "Google launches search agents and personal intelligence features at I/O 2026",
+    "plain_english": "Google revealed AI-powered search agents and personal intelligence capabilities at its developer conference. Search agents automate multi-step queries; personal intelligence personalizes results. Both embed LLM reasoning into Google's core product.",
+    "why_it_matters": "Agents represent the shift from retrieval to autonomous task execution. If search becomes agentic, financial institutions must rethink how compliance, data governance, and user transparency apply to AI-driven workflows touching sensitive queries.",
+    "jargon": [
+      {
+        "term": "search agent",
+        "def": "AI system that breaks down a user's request into steps, executes queries, and synthesizes results without constant human input."
+      },
+      {
+        "term": "personal intelligence",
+        "def": "System that learns individual user preferences, history, and context to tailor search results and recommendations."
+      }
+    ],
+    "source": {
+      "name": "MSN · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPTjNSQTdkQml3QkFRQi1IcUlNWG1ld010SklfUFpGcG5iWm1Kd0x3TU5udkJjQ1ZmX2NpdjZGVXd4WHJuZF94c21NeEN4RE5YMEwwaGNiYnFSNW1LMzN2V3QyNWt6RmIxSWRNckhBS2c3UnZTYVpOcUxFNUtkbnlnRnNkMGhoczJCRHBRRW43aVRyV1VzZVQwd3hBWjVYLXBwdXNlRXBkVDFVQ2VXRGxsYVdKdHNDSExYWnVGbmgzRjQzajFnSlppSlJfRENGUF9jb3lRSnNTQ0paam5mdWhfZ2J5bHREQURvYnh0X3JXOF9VOUNtN2FNRkdCelJ5Wm0ydS1kT1lIQW5HVlZXeGROci1uM2UzdmtoaTdxanctd3lqTDFaVmhYcVdLRjlTX2dfcjhjMGpudFpwTUVHWC1wS0NES3NDNC1FWEhIZUtJTl93cTFaNHNZWXhFa1JiNlVrLUtBX1FUdm5qcms"
+    }
+  },
+  {
+    "id": "2026-05-24-frontier-google-io-gmail-voice",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-05-24T13:53:46.000Z",
+    "headline": "Gmail adds voice interface allowing conversational inbox queries",
+    "plain_english": "Google revealed a voice-enabled interface for Gmail at I/O 2026, letting users converse with their inbox. Users can ask questions about emails, search, and interact with messages using natural speech.",
+    "why_it_matters": "Voice access to email lowers friction for busy professionals but raises compliance risk: voice logs, intent inference, and automated actions on financial/legal messages require audit trails and consent frameworks that many enterprises lack.",
+    "source": {
+      "name": "MSN · 2026-05-24",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcG1CczF3c0JjNXBXOUQxREpUUHdNQU0tSXRETUtabjBXdlpKbS1MU29fN2tobThNSmNYLWhDMjN5LVJwbkJycU5DNFF6ZFRzRmFBX2xDdDRIX1JtV0J0QXlwLWZwbWd1WUUwekt0ZDZPZUdkVUo4amU1RkhmLU1lRWM3ejVkRFFQeEQ1bG9TYThvZmhiOEZRQjV2OF91REtfVDlEbGFQdHBGQVNyLVFPSUhYVkNhUnQ0UWtVdHhDaTJ1UFhMN3c"
     }
   },
   {
