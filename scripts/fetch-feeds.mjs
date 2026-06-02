@@ -4,6 +4,16 @@
 import Parser from "rss-parser";
 import fs from "node:fs/promises";
 
+// Hard ceiling — backstop in case any single fetch slips past its
+// per-call timeout (DNS / TCP-half-open situations). The workflow's
+// timeout-minutes is 10; bailing here at 5 leaves room for enrich.
+const HARD_DEADLINE_MS = 5 * 60 * 1000;
+const deadline = setTimeout(() => {
+  console.error(`✗ fetch-feeds exceeded ${HARD_DEADLINE_MS / 1000}s — forcing exit`);
+  process.exit(2);
+}, HARD_DEADLINE_MS);
+deadline.unref();
+
 const parser = new Parser({
   timeout: 15000,
   headers: { "User-Agent": "AITechHive/2.0 (+https://aitechhive.com)" },
@@ -85,7 +95,11 @@ const cutoff = Date.now() - FRESHNESS_HOURS * 3600 * 1000;
 
 async function fetchHuggingFace() {
   try {
-    const r = await fetch("https://huggingface.co/api/daily_papers");
+    const r = await withTimeout(
+      fetch("https://huggingface.co/api/daily_papers", { signal: AbortSignal.timeout(8000) }),
+      8000,
+      "HuggingFace"
+    );
     if (!r.ok) return [];
     const data = await r.json();
     return (data || []).slice(0, 10).map((p) => ({
@@ -136,8 +150,11 @@ async function fetchATS(companies) {
 }
 
 async function fetchOneATS({ name, ats, slug }) {
+  // AbortSignal.timeout actually kills the underlying socket — withTimeout
+  // alone leaks the connection. Belt-and-suspenders together.
+  const sig = AbortSignal.timeout(ATS_TIMEOUT_MS);
   if (ats === "greenhouse") {
-    const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${slug}/jobs`);
+    const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${slug}/jobs`, { signal: sig });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
     return (data.jobs || []).map((j) => ({
@@ -149,7 +166,7 @@ async function fetchOneATS({ name, ats, slug }) {
     }));
   }
   if (ats === "lever") {
-    const r = await fetch(`https://api.lever.co/v0/postings/${slug}?mode=json&limit=30`);
+    const r = await fetch(`https://api.lever.co/v0/postings/${slug}?mode=json&limit=30`, { signal: sig });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
     return (data || []).map((j) => ({
@@ -161,7 +178,7 @@ async function fetchOneATS({ name, ats, slug }) {
     }));
   }
   if (ats === "ashby") {
-    const r = await fetch(`https://api.ashbyhq.com/posting-api/job-board/${slug}?includeCompensation=true`);
+    const r = await fetch(`https://api.ashbyhq.com/posting-api/job-board/${slug}?includeCompensation=true`, { signal: sig });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
     return (data.jobs || []).map((j) => ({
@@ -173,7 +190,7 @@ async function fetchOneATS({ name, ats, slug }) {
     }));
   }
   if (ats === "workable") {
-    const r = await fetch(`https://${slug}.workable.com/spi/v3/jobs`);
+    const r = await fetch(`https://${slug}.workable.com/spi/v3/jobs`, { signal: sig });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
     return (data.results || []).map((j) => ({
@@ -207,10 +224,14 @@ function sanitize(str, max = 700) {
 // ============================================================
 const all = [];
 
+// Belt-and-suspenders: rss-parser's internal `timeout` doesn't always
+// fire (DNS / TCP-handshake hangs slip past it). Wrap each feed with
+// withTimeout so a single hung server can't stall the whole Promise.all.
+const RSS_TIMEOUT_MS = 15000;
 await Promise.all(
   RSS_SOURCES.map(async (src) => {
     try {
-      const feed = await parser.parseURL(src.url);
+      const feed = await withTimeout(parser.parseURL(src.url), RSS_TIMEOUT_MS, src.name);
       const items = (feed.items || []).slice(0, 15).map((i) => ({
         source: src.name,
         title: sanitize((i.title || "").replace(/\s+/g, " "), 200),
