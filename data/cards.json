@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-06-02-trump-ai-regulation-reversal",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-02T09:30:00Z",
+    "headline": "Trump administration kills AI regulation executive order; conflicting officials attempt reconciliation",
+    "plain_english": "The Trump administration has rescinded a Biden-era executive order aimed at regulating AI. Within the administration, some officials and AI executives are trying to salvage specific guardrails on safety and alignment, but no coherent policy has emerged.",
+    "why_it_matters": "Regulatory vacuum on frontier AI safety, bias, and disclosure now lasts until 2027 at earliest. Financial institutions relying on AI for credit, trading, or compliance face heightened reputational and operational risk if models fail without guardrails. Expect state-level intervention (NY, CA).",
+    "source": {
+      "name": "Wired · 2026-06-02",
+      "url": "https://www.wired.com/story/the-white-house-is-at-war-with-itself-over-ai-regulation/"
+    }
+  },
+  {
+    "id": "2026-06-02-eurozone-inflation-3pct",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-02T09:00:53Z",
+    "headline": "Eurozone inflation rises to 3.2% in May; ECB signaling June rate hike despite economic headwinds",
+    "plain_english": "Eurozone inflation jumped above 3% in May 2026, the first time since early 2023. The ECB is preparing to raise rates in June, signaling the end of the easing cycle. AI capex, energy, and wage pressures are cited.",
+    "why_it_matters": "Higher rates compress valuations for unprofitable AI startups and cap fundraising. Larger banks and insurers benefit from net interest margin expansion, but credit losses may rise in consumer and SME portfolios if economic growth stalls.",
+    "source": {
+      "name": "Financial Times · 2026-06-02",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KRFk4cmVJckRINmlGaTc1a3d2QkM2RjExZE5vWHJ1MGl6bFdjRFduTE9WSVFnZzJMYnRReHh4N0ktQUNvcG9Sd0hFTXBmZnZHRTh1SEptTTV5b1hteUVaSGlvanhjcEVzaW1sWFdoQ2M"
+    }
+  },
+  {
     "id": "2026-06-01-regulation-anthropic-eu-mythos-access",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -124,17 +152,43 @@
     }
   },
   {
-    "id": "2026-06-01-halo-financial-administration",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-06-01T16:08:53.000Z",
-    "headline": "UK FCA notifies market of Halo Financial Limited entering administration",
-    "plain_english": "The Financial Conduct Authority announced that Halo Financial Limited, a UK-authorized financial services firm, has entered administration (insolvency proceedings). Customers may lose access to services and face delays in fund recovery.",
-    "why_it_matters": "Firm failures signal potential contagion in fintech supply chains. Banks using Halo as a counterparty or service provider should verify exposure and contingency plans. FCA enforcement frequency on smaller firms is rising; robust due diligence on vendors' capital adequacy is essential.",
+    "id": "2026-06-02-tencent-wechat-ai-agent",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-06-02T02:00:01Z",
+    "headline": "Tencent launches AI agent on WeChat, China's dominant messaging platform",
+    "plain_english": "Tencent is rolling out an AI-powered agent integrated into WeChat, reaching over 1B users. This is a material shift: conversational AI moves from standalone apps into the operating system of Chinese digital life, with immediate implications for fintech (payments, lending, wealth) and enterprise workflow.",
+    "why_it_matters": "WeChat already hosts payment, lending, and wealth-management services. An AI agent embedded in the same surface radically lowers friction for financial transactions and advice. Competitors (Alibaba, ByteDance) will follow; this sets the template for super-app AI integration globally.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous software that perceives context, makes decisions, and takes actions without explicit user commands at each step."
+      }
+    ],
     "source": {
-      "name": "FCA · 2026-06-01",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUVhzSzNrQlZManVyeHNCUlNIVmJEV3pRQUtfZjR4X1lveE03M0hHVlJWcm1RY3BKSVZiYWhlMlBSWGZOQmRzeE5xTmFmYktwMzJsSGhjYVZDZ0w0MTRGU1ktdXcyeGp6b3ZuVlQwbmtBcko5WW1vM0ZyMG8tQ2hnb09EOEdFaC02M2pVeDVn"
+      "name": "Financial Times · 2026-06-02",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdWpQdDEyUk45SnVqaGNVZ2lwdlpfWTRTaDBEQVk4b1hsaEdHbEFFMEE4V3pkVlcwSWJPZmVCM3pVY2pvbjZNTHJ5OXpHR1BYRHFlUlIyN2VSMGdZMlVLNTBoQThqVUNVZThYN0pSUGRtZnpRclUyTmpaZ0ZKeU1ZdHJHNHY"
+    }
+  },
+  {
+    "id": "2026-06-02-kbank-ant-blockchain-usd",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-06-02T09:23:00Z",
+    "headline": "Kasikornbank and Ant International deploy JPMorgan's Kinexys blockchain for real-time USD cross-border payments",
+    "plain_english": "Thai bank Kasikornbank and Alibaba's Ant International have signed an MoU to use JPMorgan's Kinexys blockchain rails for instant USD transfers. This operationalizes corporate cross-border rails in APAC, reducing settlement friction and FX risk.",
+    "why_it_matters": "Public blockchains remain unproven for high-value FX. JPMorgan's enterprise permissioned network signals institutional confidence in blockchain-based settlement. Expect regulatory scrutiny on stablecoin bridging and market concentration risk.",
+    "jargon": [
+      {
+        "term": "blockchain rails",
+        "def": "Distributed ledger infrastructure for settling and recording transactions, bypassing traditional correspondent banking."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-06-02",
+      "url": "https://www.finextra.com/newsarticle/47841/kbank-and-ant-international-turn-to-jpmorgans-kinexys-for-real-time-cross-border-usd?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -240,6 +294,34 @@
     }
   },
   {
+    "id": "2026-06-02-thinkmarkets-chelseaai",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T12:17:00Z",
+    "headline": "ThinkMarkets launches ChelseaAI, an AI assistant for CFD trading account holders",
+    "plain_english": "Retail CFD broker ThinkMarkets has released ChelseaAI, an LLM-backed assistant that connects to live trading accounts, allowing voice/text queries for trade execution, market research, and account management. This is consumer fintech, not enterprise deployment.",
+    "why_it_matters": "Retail trading platforms are adding conversational AI to lower friction for execution. Compliance and liability risk (erroneous trades, misadvice) remains underpriced in many retail-facing implementations. Regulators (FCA, ASIC) should scrutinize guardrails.",
+    "source": {
+      "name": "Finextra · 2026-06-02",
+      "url": "https://www.finextra.com/pressarticle/110001/thinkmarkets-launches-ai-assistant-for-cfd-trading?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-06-02-eventus-leadership-expansion",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-02T12:00:00Z",
+    "headline": "Eventus announces CTO and Chief Customer Officer appointments to expand trade surveillance platform",
+    "plain_english": "Eventus, a trade surveillance and financial risk vendor, has appointed Eric Litz as CTO and Sarah-Jane McColl as CCO. This signals scaling of go-to-market and engineering for compliance automation.",
+    "why_it_matters": "Trade surveillance platforms are core to regulatory compliance (market abuse, spoofing). Leadership expansion suggests Eventus is raising capital or pursuing acquisition. Banks evaluating surveillance tech should monitor for shifts in product roadmap.",
+    "source": {
+      "name": "Finextra · 2026-06-02",
+      "url": "https://www.finextra.com/pressarticle/110000/eventus-names-eric-litz-as-cto-and-sarah-jane-mccoll-as-chief-customer-officer?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
     "id": "2026-06-02-vendor-gradient-labs-series-a",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -337,6 +419,40 @@
     }
   },
   {
+    "id": "2026-06-02-uk-payments-initiative",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-06-02T10:50:00Z",
+    "headline": "UK banks launch independent payments company to challenge Visa and Mastercard dominance",
+    "plain_english": "Major UK banks have formed a new company (UK Payments Initiative) to build and operate domestic card rails, bypassing reliance on US-controlled networks. This is a structural sovereignty play that signals institutional appetite for alternative payment infrastructure.",
+    "why_it_matters": "If operational, this removes Visa/Mastercard settlement risk and creates a domestic clearing layer. Fintech and banks embedded in UK payments can renegotiate economics; regulators gain more direct control over systemic flow. Regulatory precedent may spread to EU, Asia.",
+    "source": {
+      "name": "Finextra · 2026-06-02",
+      "url": "https://www.finextra.com/newsarticle/47842/uk-payments-initiative-launches-to-challenge-visa-and-mastercard-stranglehold?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-06-02-us-convertible-bonds-ai-boom",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-02T04:00:04Z",
+    "headline": "US convertible bond issuance reaches record levels as tech companies and AI investors harness equity upside",
+    "plain_english": "US convertible bond markets are experiencing historic issuance volume, driven by tech and AI-related firms seeking cheap funding while preserving equity upside in a bull market. This is a core funding engine for AI startups and established tech's capital allocation.",
+    "why_it_matters": "Convertible bond holders assume hidden leverage: if AI-driven valuations collapse, conversion risk materializes into equity dilution and credit losses. Banks, hedge funds, and pension funds holding convertible exposure face asymmetric tail risk if tech valuations normalize.",
+    "jargon": [
+      {
+        "term": "convertible bond",
+        "def": "Debt that converts to issuer's stock at a preset price, allowing issuers to raise capital below equity issuance cost if stock rises."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-06-02",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQX2VIS2ZQS3FZcXJlSENtZWVoRjA4OHRmTkNzUmg2RF94VHdwOXBKcnRnWjJBcXV6NmZzZTJ6TFNHeEVUVWhROW9BZ3ZRWjNjdERYaUFOend2RE5STEtvV0NYSVV2ejNYWG5YVU1SRVNyeVNRNk1rQlJad0NPWXd2RkVrdEM"
+    }
+  },
+  {
     "id": "2026-06-01-shift-anthropic-ipo-filing-race",
     "category": "shift",
     "jurisdiction": "US",
@@ -399,6 +515,26 @@
     }
   },
   {
+    "id": "2026-06-02-arxiv-lean-math-finance",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Comprehensive formally verified mathematical finance library in Lean 4 covers stochastic calculus, pricing, risk",
+    "plain_english": "Researchers release a 200+-theorem open-source library in Lean 4 (proof assistant) covering continuous-time stochastic calculus, option pricing, portfolio theory, and risk management. Every theorem is machine-verified; no gaps or hand-waving.",
+    "why_it_matters": "Compliance and risk teams can cite formally verified proofs when validating pricing models for regulatory filings. Reduces reliance on informal derivations that may hide errors. Auditors can use the library to spot-check model logic.",
+    "jargon": [
+      {
+        "term": "proof assistant",
+        "def": "Software tool that enforces mathematical rigor by requiring explicit justification for every logical step; guarantees correctness."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01356"
+    }
+  },
+  {
     "id": "2026-06-01-tool-bis-project-aperta-open-finance",
     "category": "tool",
     "jurisdiction": "Global",
@@ -427,33 +563,175 @@
     }
   },
   {
-    "id": "2026-06-01-research-citi-tokenized-securities-forecast",
+    "id": "2026-06-02-top-ai-labs-machine-consciousness",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:04Z",
+    "headline": "Frontier AI labs (DeepMind, OpenAI, Anthropic) expand research into machine consciousness and subjective experience",
+    "plain_english": "Top AI research teams are now formally investigating whether large language and multimodal models exhibit properties analogous to consciousness—self-awareness, subjective experience, moral status. This is speculative but signals a shift in AI governance and safety research priorities.",
+    "why_it_matters": "If a major lab claims evidence of machine consciousness, it triggers immediate regulatory and ethical questions about model rights, liability, and deployment. Financial institutions and insurance firms may face unanticipated legal exposure if they use 'conscious' AI systems.",
+    "source": {
+      "name": "Financial Times · 2026-06-02",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNT1lNOWphWDE5VlN3YlJXZVhnSnBVZFhPcVFBN1F5RTB4elJDUUEwZ2otdmtPV09FWGhMQkh4cnZYbjM2Q2NyM3BoRVprVlVsTDRYc1NhVWVGUHFPbklsWjh3UUkyR3NZTGJ5MHVOTzd2YWs5WlRjTWpKUHBfSjdnUDNlQTE"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-bitcoin-prediction-survey",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "arXiv survey finds no peer-reviewed ML model beats naive baseline for medium-term Bitcoin price prediction",
+    "plain_english": "A new academic survey of Bitcoin price prediction literature (1–6 month horizons) shows that no published machine learning model consistently outperforms simply assuming 'today's price = tomorrow's price'. This applies sobering scrutiny to fintech ML claims.",
+    "why_it_matters": "Risk officers and compliance teams should be skeptical of proprietary ML forecasting claims in crypto and FX trading. If academia cannot find predictive edge after decades of effort, internal models claiming alpha likely suffer from overfitting or p-hacking.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00071"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-regime-adaptive-portfolio",
     "category": "research",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-06-01T20:15:15Z",
-    "headline": "Citi forecasts tokenized securities market to reach $5.5 trillion by 2030",
-    "plain_english": "Citi's research team projects that blockchain-based tokenized securities (digital asset representations of stocks, bonds, and derivatives) will reach a $5.5 trillion market value by 2030, assuming regulatory clarity and institutional adoption accelerate.",
-    "why_it_matters": "Signals Citi's institutional conviction in blockchain-native securities infrastructure; $5.5T valuation implies massive disintermediation risk for traditional clearance and custody; BFSI must plan tokenization integration within 3–4 years.",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Regime-Adaptive Continual Learning for Portfolio Management addresses market non-stationarity via online knowledge transfer",
+    "plain_english": "New arXiv paper proposes a continual learning framework for portfolio optimization that adapts to regime shifts (bull/bear, high-vol/low-vol) by accumulating and transferring knowledge across sequential market environments, avoiding costly retraining.",
+    "why_it_matters": "Portfolio managers and quant teams can use this method to reduce lag in adapting to market structure changes. Overcomes the cold-start problem in new market regimes, critical for tail-risk hedging and factor rebalancing.",
+    "jargon": [
+      {
+        "term": "continual learning",
+        "def": "Training paradigm where models learn sequentially from new data without forgetting prior knowledge, mimicking how humans adapt."
+      }
+    ],
     "source": {
-      "name": "Citi (Intellectia AI cite) · 2026-06-01",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRkE3eWpCVU9wY2dSMDBrbVJ2M3NrOE1iZFBNUzFWQmhUb0VoaVo4THRGdXd2QkEwMElNUXg3T2tlYVA5Rll3aEtyTGlMTjBYN2VCUVNSbmFyV2RiRWRmeU51RzRnSENabWloQlJUWmNCUW1mckFRV3BxZmFhMmFVdFh5dkFwWmhLZ1hCdklGNm9WRHBLcklpZ0VJSmJ6SWs"
-    },
-    "benchmark_name": "tokenized securities market size 2030",
-    "delta_pts": 5500
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00143"
+    }
   },
   {
-    "id": "2026-06-01-research-s-p-500-ai-adoption-study",
+    "id": "2026-06-02-arxiv-macro-aware-time-series",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "HANET: Hierarchical Attention Network integrates macroeconomic context into high-frequency financial forecasting",
+    "plain_english": "Researchers introduce HANET, an LSTM-based hybrid model that explicitly incorporates macroeconomic regime information (inflation, rate, unemployment) as an attention layer alongside high-frequency market data. Outperforms market-only baselines on generalization.",
+    "why_it_matters": "Traders and risk teams can use macro-aware architectures to reduce overfitting to recent market noise. Central bank rate paths and employment data become integral to model, not afterthoughts, improving robustness across regimes.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00624"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-recession-detection-gdp",
     "category": "research",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-06-01T17:58:25Z",
-    "headline": "Nvidia, Meta, Walmart lead S&P 500 in AI adoption and deployment, new study shows",
-    "plain_english": "The AI-Driven Enterprise Institute released research ranking S&P 500 companies by degree of AI adoption. Nvidia, Meta, and Walmart rank highest in meaningful production AI use; study quantifies performance delta between early adopters and laggards.",
-    "why_it_matters": "Establishes public benchmark for enterprise AI maturity; validates that AI adoption is now a material competitive and valuation differentiator; pressure on laggards to accelerate adoption or face investor scrutiny.",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Real-time GDP data can reliably identify business-cycle turning points with sub-3-month detection lag",
+    "plain_english": "Academic study of US real-time GDP vintages (1947–2021) demonstrates that recession indicators derived from initial GDP releases can identify all 12 historical recessions without false positives, with detection lag under 3 months.",
+    "why_it_matters": "Credit risk officers and asset allocators can use early GDP signals for portfolio tilting. Regulatory stress-testing frameworks can incorporate faster nowcasting, reducing reliance on backward-looking unemployment or yield-curve indicators.",
     "source": {
-      "name": "CNBC · 2026-06-01",
-      "url": "https://www.cnbc.com/2026/06/01/nvidia-meta-walmart-among-top-companies-adopting-ai.html"
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00989"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-firms-creation-real-time",
+    "category": "research",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Real-time UK firm creation data leads traditional business demography, offering nowcast of employment and output growth",
+    "plain_english": "UK-based researchers introduce Companies House Real-Time (CHRT), a daily dataset of firm incorporation and dissolution. The data leads official business birth statistics by months and correlates with future employment and output, enabling faster economic nowcasting.",
+    "why_it_matters": "Central banks and regulators can use firm-creation signals to front-run economic cycles without waiting for quarterly GDP revisions. Fintech and alternative data vendors should integrate CHRT-like feeds into risk dashboards.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01307"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-qvar-volatility-langevin",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Q-Variance regularities in asset returns can be exactly replicated by multiplicative Langevin process on volatility",
+    "plain_english": "Theoretical paper shows that the empirically observed relationship between an asset's volatility and its return (called Q-variance) is mathematically equivalent to assuming volatility follows an Inverse Gamma distribution, which arises naturally from a multiplicative Langevin stochastic process.",
+    "why_it_matters": "Quants pricing volatility derivatives and constructing variance swaps can use this result to calibrate volatility models more precisely. Reduces need for ad-hoc functional forms; theory-grounded parametrization may improve hedging accuracy.",
+    "jargon": [
+      {
+        "term": "Langevin process",
+        "def": "Stochastic differential equation modeling a particle's motion under random thermal fluctuations; used to model time-evolving uncertainties."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00800"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-avellaneda-stoikov-inventory",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Fundamental axioms on inventory market making force Avellaneda-Stoikov and Cartea-Jaimungal frameworks into equivalence",
+    "plain_english": "Theoretical paper proves that two widely-used market-making frameworks (Avellaneda-Stoikov for risk-aversion, Cartea-Jaimungal for running penalty) are mathematically equivalent under minimal rationality axioms, parametrized by a single entropic risk coefficient.",
+    "why_it_matters": "Market makers and venues designing algorithmic liquidity provision can simplify model calibration by unifying the two approaches. Reduces degrees of freedom, improving robustness and interpretability of market-making parameters.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01477"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-blockchain-priority-queue",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Blockchain transaction fees modeled as priority queue game; reveals fee dynamics across Bitcoin, Dogecoin, Litecoin",
+    "plain_english": "Researchers model blockchain mempool and mining as a priority queue where users bid fees strategically. Using M/G^K/1 queuing theory, they derive closed-form fee expressions and validate across three major chains, revealing normalized cost structures.",
+    "why_it_matters": "Crypto treasurers and trading desks can predict transaction costs more reliably. Regulators designing fee-cap policies now have theoretical foundation for unintended consequences (queue collapse, miner behavior).",
+    "jargon": [
+      {
+        "term": "mempool",
+        "def": "Pool of unconfirmed transactions awaiting inclusion in a blockchain block; users compete via fee bidding."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01274"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-xlm-bitcoin-trading",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "XGBoost, LSTM, and iTransformer show positive gross returns on Bitcoin but fail after transaction costs above 10bps",
+    "plain_english": "Walk-forward study (2018–2026, 70K hourly BTC-USDT observations) evaluates three ML models (XGBoost, LSTM, iTransformer). All generate positive trading PnL before costs; once transaction costs exceed 10 basis points, naive strategies fail. A cost-aware filter helps.",
+    "why_it_matters": "Crypto trading teams relying on ML should model realistic execution friction. The paper's cost-aware filter (skipping low-conviction trades) offers a practical guardrail against overtrading and whipsaw losses.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00060"
+    }
+  },
+  {
+    "id": "2026-06-02-boom-bubble-buildout-ai",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Hybrid analysis suggests AI asset valuations may reflect both durable GPT promise and speculative bubble mechanics",
+    "plain_english": "An arXiv paper evaluates whether AI is in a financial bubble as of May 2026, using state-price foundations, rational-bubble models, and econometric detection methods. Conclusion: evidence is mixed; valuations reflect both real productivity gains and mania.",
+    "why_it_matters": "Asset managers, derivatives traders, and corporate treasurers need to price tail-risk hedges assuming AI valuations can correct 30–60% without causing a systemic meltdown. Banks should stress portfolios under \"AI mania unwind\" scenarios.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01575"
     }
   },
   {
@@ -505,6 +783,34 @@
     }
   },
   {
+    "id": "2026-06-02-alphabet-80b-ai-capex",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-02T11:38:51Z",
+    "headline": "Alphabet commits $80 billion to AI infrastructure, including $10B from Berkshire Hathaway",
+    "plain_english": "Google parent Alphabet is raising $80B via stock sales and strategic partnerships (Berkshire Hathaway investing $10B) to fund AI compute buildout. This signals sustained, massive capex commitment beyond 2026, validating the financial case for frontier AI training and inference.",
+    "why_it_matters": "Frontier AI capex is now a multi-trillion-dollar class asset. Financial institutions financing, insuring, or trading AI-related infrastructure assets need to recalibrate duration and capex-cycle assumptions. This sets a new floor for competitor spending.",
+    "source": {
+      "name": "CNBC · 2026-06-02",
+      "url": "https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html"
+    }
+  },
+  {
+    "id": "2026-06-02-openai-codex-knowledge-work",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T02:00:00Z",
+    "headline": "OpenAI reports Codex evolution into productivity tool for research, analysis, and workflow automation",
+    "plain_english": "OpenAI released findings on how Codex (a code-generation model) is now being used broadly for data analysis, research synthesis, and workflow automation in non-coding roles. This signals AI's expansion from coding into general knowledge work.",
+    "why_it_matters": "Financial analysts, compliance teams, and risk officers can use LLM-powered tools to accelerate report generation, regulatory filing analysis, and scenario modeling. Expect faster M&A due diligence cycles and earlier market-moving insights from institutional research.",
+    "source": {
+      "name": "OpenAI · 2026-06-02",
+      "url": "https://openai.com/index/codex-for-knowledge-work"
+    }
+  },
+  {
     "id": "2026-06-01-frontier-alphabet-80b-capital-raise",
     "category": "frontier",
     "jurisdiction": "US",
@@ -546,6 +852,20 @@
     "source": {
       "name": "CNBC · 2026-06-01",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxMQjEzNGZ1yUQNMzVDSWpzMkEyS2VWQlIxMGdyM1JiYWFNSWdaOEhxY3laYjNBVGc2VUtXVWg0QkMzSVYtdHo1eUJUYzFkOVl2YlhFSW02b01ySVU1YWhMVjIyUjAwMkFINUt4SGxSWVl3Wk5WVWJ1ZGpWV2RqaDFibVJLVkdneFdsQk9NMVkyVFRObmIxOVhPWEJsUm1OWldUSmtiME54YlhoWGJGUlhXR2hWZVUxRVNYaFpiazFZWVUxSmQyRkVRakJ1YWtJelpESmFaRWR1UWxSVA"
+    }
+  },
+  {
+    "id": "2026-06-02-learner-rag",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "What is RAG? Retrieval-Augmented Generation lets AI look up fresh information instead of relying only on training data",
+    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI model pauses before answering, searches a database or web for relevant documents, reads them, then generates a response informed by what it found. Think: a chatbot that fact-checks itself mid-answer using a library. Financial example: a risk assistant that retrieves the latest SEC filings before summarizing a company's leverage. Without RAG, the model would only know facts from its training data, which gets stale. With RAG, it stays current and can cite sources.",
+    "why_it_matters": "For compliance, audit, and risk teams, RAG-enabled systems can provide auditable, up-to-date answers because they show which documents were retrieved. No 'black box' hallucination.",
+    "source": {
+      "name": "Illustrative · 2026-06-02",
+      "url": "#"
     }
   },
   {
@@ -598,6 +918,50 @@
     "source": {
       "name": "CNBC · 2026-06-01",
       "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+    }
+  },
+  {
+    "id": "2026-06-01-halo-financial-administration",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-06-01T16:08:53.000Z",
+    "headline": "UK FCA notifies market of Halo Financial Limited entering administration",
+    "plain_english": "The Financial Conduct Authority announced that Halo Financial Limited, a UK-authorized financial services firm, has entered administration (insolvency proceedings). Customers may lose access to services and face delays in fund recovery.",
+    "why_it_matters": "Firm failures signal potential contagion in fintech supply chains. Banks using Halo as a counterparty or service provider should verify exposure and contingency plans. FCA enforcement frequency on smaller firms is rising; robust due diligence on vendors' capital adequacy is essential.",
+    "source": {
+      "name": "FCA · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUVhzSzNrQlZManVyeHNCUlNIVmJEV3pRQUtfZjR4X1lveE03M0hHVlJWcm1RY3BKSVZiYWhlMlBSWGZOQmRzeE5xTmFmYktwMzJsSGhjYVZDZ0w0MTRGU1ktdXcyeGp6b3ZuVlQwbmtBcko5WW1vM0ZyMG8tQ2hnb09EOEdFaC02M2pVeDVn"
+    }
+  },
+  {
+    "id": "2026-06-01-research-citi-tokenized-securities-forecast",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-01T20:15:15Z",
+    "headline": "Citi forecasts tokenized securities market to reach $5.5 trillion by 2030",
+    "plain_english": "Citi's research team projects that blockchain-based tokenized securities (digital asset representations of stocks, bonds, and derivatives) will reach a $5.5 trillion market value by 2030, assuming regulatory clarity and institutional adoption accelerate.",
+    "why_it_matters": "Signals Citi's institutional conviction in blockchain-native securities infrastructure; $5.5T valuation implies massive disintermediation risk for traditional clearance and custody; BFSI must plan tokenization integration within 3–4 years.",
+    "source": {
+      "name": "Citi (Intellectia AI cite) · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRkE3eWpCVU9wY2dSMDBrbVJ2M3NrOE1iZFBNUzFWQmhUb0VoaVo4THRGdXd2QkEwMElNUXg3T2tlYVA5Rll3aEtyTGlMTjBYN2VCUVNSbmFyV2RiRWRmeU51RzRnSENabWloQlJUWmNCUW1mckFRV3BxZmFhMmFVdFh5dkFwWmhLZ1hCdklGNm9WRHBLcklpZ0VJSmJ6SWs"
+    },
+    "benchmark_name": "tokenized securities market size 2030",
+    "delta_pts": 5500
+  },
+  {
+    "id": "2026-06-01-research-s-p-500-ai-adoption-study",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T17:58:25Z",
+    "headline": "Nvidia, Meta, Walmart lead S&P 500 in AI adoption and deployment, new study shows",
+    "plain_english": "The AI-Driven Enterprise Institute released research ranking S&P 500 companies by degree of AI adoption. Nvidia, Meta, and Walmart rank highest in meaningful production AI use; study quantifies performance delta between early adopters and laggards.",
+    "why_it_matters": "Establishes public benchmark for enterprise AI maturity; validates that AI adoption is now a material competitive and valuation differentiator; pressure on laggards to accelerate adoption or face investor scrutiny.",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/nvidia-meta-walmart-among-top-companies-adopting-ai.html"
     }
   }
 ]
