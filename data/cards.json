@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-06-03-fix-algo-testing-cert",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-03T12:31:00Z",
+    "headline": "FIX Trading Community releases algorithm testing and certification guidelines",
+    "plain_english": "The FIX Trading Community published new Recommended Practices for Algorithm Testing and Certification, establishing industry standards for validating algorithmic trading systems before deployment. Covers stress testing, latency audits, and fallback mechanisms.",
+    "why_it_matters": "Formalized algo governance reduces regulatory divergence across venues; banks deploying ML-driven trading will face pressure to adopt these standards or justify deviations to compliance teams.",
+    "source": {
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/pressarticle/110029/fix-releases-new-guidelines-on-algo-testing-and-certification"
+    }
+  },
+  {
+    "id": "2026-06-03-ecb-operational-resilience-ai",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-06-03T10:18:45Z",
+    "headline": "ECB publishes guidance on operational resilience in the age of AI",
+    "plain_english": "European Central Bank issued supervisory guidance on how banks must strengthen operational resilience as they adopt AI systems. Covers AI system lifecycle governance, testing, fallback protocols, and third-party AI vendor risk management.",
+    "why_it_matters": "ECB's AI-specific operational resilience framework signals that banks cannot treat LLM and agentic AI deployments as business-as-usual software; expect formal regulatory questionnaires on AI governance in 2026 stress tests and inspections.",
+    "source": {
+      "name": "European Central Bank · 2026-06-03",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSWRMT0lLNkZjay14X2MtOXJTa1REZ3BseWpLeWtBZ1ZBc1NNeXE2TmxsdnVQZ1F1eDFUN3ZIeVdqVTNsU1JhM1JRenFTWEVDOHVNU2ZWTkV4R19oUUxjbTN5aE5vM29kX1lIYWRLTElVeTdDQzhaUjM2Umo0YWQ3eXFhanJ5YlBTUkE"
+    }
+  },
+  {
+    "id": "2026-06-03-uk-google-publisher-ai-scraping",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-06-03T10:11:24Z",
+    "headline": "UK regulator orders Google to allow publishers opt-out of AI content scraping for search summaries",
+    "plain_english": "The UK's regulator mandated that Google provide publishers with granular controls to prevent their content being used in AI-powered search summaries. Reflects growing regulatory tension around generative AI training data and fair compensation.",
+    "why_it_matters": "Precedent for data governance in AI systems; BFSI firms publishing proprietary research or compliance guidance should expect similar opt-out demands, complicating RAG and fine-tuning pipelines.",
+    "source": {
+      "name": "WSJ · 2026-06-03",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaF9Yall0WVVyYktXZk1ISHU5Sm9BMGNMZG1vdmxLSUlhRlRReEpTdTVlbXIwVnpMM1lOUi1pZl9yRkJVd1YtOEI2b2xHSVhUMjFIeG5HUHZwZEVtR2ZweFJEdkgxeGNLcVMxY1cxbEswU1E5S2lRamVRdzZuWWxPemVZd25FalB4ZVdtRHBXa0c0SXhXVE9iRW1VeVpldWlTQWhfcGU2a18xWm02"
+    }
+  },
+  {
     "id": "2026-06-02-trump-ai-regulation-reversal",
     "category": "regulation",
     "jurisdiction": "US",
@@ -104,51 +146,55 @@
     }
   },
   {
-    "id": "2026-06-01-anthropic-eu-mythos-access",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-01T18:05:20.000Z",
-    "headline": "Anthropic grants EU access to advanced Mythos model after bloc sought security approval",
-    "plain_english": "Anthropic is providing EU regulators and institutions access to its most advanced AI model, Mythos, following EU cybersecurity concerns. This move signals compliance with emerging EU AI governance while maintaining model availability for supervised testing.",
-    "why_it_matters": "Regulators now expect frontier labs to share advanced models for scrutiny. BFSI firms deploying EU-based AI services need assured access to models that meet both performance and compliance requirements—setting a precedent for model-licensing arrangements.",
+    "id": "2026-06-03-experian-agent-os",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-03T12:29:00Z",
+    "headline": "Experian launches Agent Operating System for AI-driven credit and identity decisions",
+    "plain_english": "Experian unveiled a production agentic AI layer integrated into its Ascend Platform, enabling autonomous decision-making for credit underwriting, identity verification, and compliance workflows at scale. Agents can reason over complex financial and fraud data without human intervention at each step.",
+    "why_it_matters": "First major credit bureau deploying autonomous agents for decisioning signals regulatory acceptance of delegated AI in lending; competitors will pressure banks to adopt similar automation to reduce manual review bottlenecks.",
     "jargon": [
       {
-        "term": "Frontier AI model",
-        "def": "State-of-the-art large language model (e.g. Claude, GPT-4) developed by specialized labs; powers complex reasoning and fine-grained tasks."
+        "term": "Agentic AI",
+        "def": "AI system that autonomously plans, retrieves data, calls tools, and acts to reach a goal—vs. passive classifiers that need human approval between steps."
+      },
+      {
+        "term": "Ascend Platform",
+        "def": "Experian's cloud ecosystem for credit decisioning, KYC, and compliance workflows."
       }
     ],
     "source": {
-      "name": "CNBC · 2026-06-01",
-      "url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access.html"
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/pressarticle/110028/experian-unveils-agent-operating-system"
     }
   },
   {
-    "id": "2026-06-01-florida-openai-lawsuit",
-    "category": "regulation",
+    "id": "2026-06-03-mastercard-stablecoin-settlement",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-01T17:32:50.000Z",
-    "headline": "Florida Attorney General sues OpenAI and CEO Sam Altman, seeks personal liability",
-    "plain_english": "Florida's AG filed suit against OpenAI and Altman personally, alleging the company's 'insatiable quest to win the AI arms race' caused harm—including connection to a violent incident. The complaint seeks to hold Altman personally liable.",
-    "why_it_matters": "State-level AI liability litigation is escalating. BFSI firms deploying OpenAI's models in customer-facing roles (chatbots, advice engines) face emerging tort and negligence exposure. D&O insurance and model monitoring frameworks are now essential risk controls.",
+    "severity": "med",
+    "published_at": "2026-06-03T10:33:00Z",
+    "headline": "Mastercard enables settlement via U.S. stablecoins across multiple blockchains",
+    "plain_english": "Mastercard rolled out support for settlement using U.S. stablecoins (USDC, USDT, and others) across major blockchain networks, allowing institutional clients to settle transactions in real time. First major card network to offer multi-chain stablecoin settlement.",
+    "why_it_matters": "Signals card networks are moving beyond payments into settlement infrastructure; banks testing tokenized deposits and CBDC pilots now have a production-grade interledger layer for cross-chain transactions.",
     "source": {
-      "name": "CNBC · 2026-06-01",
-      "url": "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html"
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/newsarticle/47851/mastercard-rolls-out-support-for-stablecoin-settlement"
     }
   },
   {
-    "id": "2026-06-01-wise-belgian-investigation",
-    "category": "regulation",
+    "id": "2026-06-03-ing-wero-germany-online",
+    "category": "deployment",
     "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-01T17:20:52.000Z",
-    "headline": "Fintech Wise shares fall on Belgian money-laundering investigation report",
-    "plain_english": "Belgian authorities are investigating Wise, the cross-border payments fintech, for potential money-laundering compliance failures. Stock fell on the news, signaling investor concern over AML control gaps at a major BFSI-adjacent vendor.",
-    "why_it_matters": "Regulatory scrutiny of fintech AML/KYC is intensifying. Banks partnering with Wise or similar vendors must conduct independent AML due diligence; vendor failures expose acquiring banks to compliance risk, reputational damage, and potential enforcement action.",
+    "severity": "low",
+    "published_at": "2026-06-03T11:51:00Z",
+    "headline": "ING expands Wero instant payments to online shopping in Germany",
+    "plain_english": "ING expanded support for the Wero pan-European instant payments scheme to include e-commerce use cases for its 10 million German customers. Part of EU initiative to build unified open payments rail.",
+    "why_it_matters": "Real-time payments infrastructure gaining scale in consumer use cases; banks should monitor Wero adoption to calibrate payment processing roadmaps and competitive positioning vs. card networks.",
     "source": {
-      "name": "Reuters · 2026-06-01",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa3Q1MjZiVGkyQ09pcjIyVlJzZ3Ryb1k0blNDbHQwbHpvN2J0MlgwYl9mM1VWTUlRc1NyOVViNDQtd2VDbnJaNEVPWnIwY3ZoTVcyVzZfSzFEZGZJQVF6M2lZRGZjY05UcURZdXJjdzV0RzJBZ1AtRTVwYThoNUxDckpWOHdfRnRaU2gtMlFIS0RFRWFYUlBoLW1aUWRnckxGbGRpYVdQeVZ6My1mMnB1LTZMYk5TTWx1MkxwUG1Sdk1LUQ"
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/newsarticle/47852/ing-expands-wero-payments-to-online-shopping-in-germany"
     }
   },
   {
@@ -294,6 +340,96 @@
     }
   },
   {
+    "id": "2026-06-03-microsoft-ai-models-openai-costs",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-03T05:47:51Z",
+    "headline": "Microsoft unveils proprietary AI models to reduce OpenAI reliance and developer costs",
+    "plain_english": "Microsoft announced a suite of generative AI models at its Build conference, including smaller, cheaper alternatives to GPT-4. Aim is to lower API costs and reduce lock-in for enterprise developers relying on OpenAI.",
+    "why_it_matters": "First credible challenger to OpenAI's API monopoly in enterprise; banks running high-volume inference (fraud scoring, KYC) can now negotiate on price and model switching; reduces risk of OpenAI supply shocks.",
+    "source": {
+      "name": "CNBC · 2026-06-03",
+      "url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
+    }
+  },
+  {
+    "id": "2026-06-03-factorial-series-d-150m",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-03T10:55:11Z",
+    "headline": "Factorial raises $150 million Series D from General Catalyst and Atomico",
+    "plain_english": "Factorial, a European HR and payroll platform, closed a $150M Series D funding round to scale AI-driven workforce management and compliance automation. Backed by Silicon Valley and European VCs.",
+    "why_it_matters": "HR automation is a beachhead for agentic AI in enterprise; Factorial's ability to raise at scale shows investor confidence in autonomous decision-making in HR. Banks deploying workforce-facing AI governance should watch this space.",
+    "amount": "$150M",
+    "round": "Series D",
+    "source": {
+      "name": "Sifted · 2026-06-03",
+      "url": "https://sifted.eu/articles/factorial-raise-general-catalyst-atomico-series-d/"
+    }
+  },
+  {
+    "id": "2026-06-03-apoha-series-a-36m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-03T07:00:00Z",
+    "headline": "Apoha raises $36 million Series A for AI based on novel liquid wave-form data",
+    "plain_english": "Startup Apoha closed a $36M Series A for a proprietary AI architecture using liquid 'wave form' data structures instead of traditional neural networks. Targets financial forecasting and pattern recognition.",
+    "why_it_matters": "Nascent category of alternative AI architectures; if Apoha's approach proves faster and more interpretable than transformers, could shift how banks approach model risk governance and validation.",
+    "amount": "$36M",
+    "round": "Series A",
+    "source": {
+      "name": "Fortune · 2026-06-03",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU0JBTF94ZFEyUnh4S0drRFZieWNrT0tpSTdtR0Ewdy1uc3drZE1maGlCSmN2RFZOZnhYa0ZSb2JMUVdsN00yQ2dWQTEza29LaDcyU2kxTmFhQ1VLQU1rc3RaanlGeHNjT0tZNk4xN2hoZmI0WVdzaHFVWktsa3ExbHM4VVZZTzVKQnR0cTA3ZFRPQWN6TENOZHdLay1EY1RiS0FGaEhVUEJQV0g1UTRFWm5SV0k2bmh6"
+    }
+  },
+  {
+    "id": "2026-06-03-plural-gigaton-26m",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-03T05:00:17Z",
+    "headline": "Plural leads $26 million round for industrial AI startup Gigaton",
+    "plain_english": "Plural closed a $26M funding round for Gigaton, an industrial AI startup applying computer vision and reinforcement learning to manufacturing. Part of broader European push in physical AI.",
+    "amount": "$26M",
+    "source": {
+      "name": "Sifted · 2026-06-03",
+      "url": "https://sifted.eu/articles/plural-26m-gigaton-physical-ai/"
+    }
+  },
+  {
+    "id": "2026-06-03-paypercut-seed-eur5m",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-03T09:00:00Z",
+    "headline": "Paypercut raises EUR5 million seed for Central and Eastern European payments",
+    "plain_english": "Bulgaria-based payments platform Paypercut raised EUR5M in a seed round led by Concentric, Passion Capital, and Araya Ventures to scale its regional instant payments and settlement infrastructure.",
+    "amount": "EUR5M",
+    "round": "Seed",
+    "source": {
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/newsarticle/47845/paypercut-raises-eur5m-for--central-and-eastern-european-payments-platform"
+    }
+  },
+  {
+    "id": "2026-06-03-quobly-quantum-115m",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-03T06:00:21Z",
+    "headline": "Quantum startup Quobly raises €115 million backed by STMicroelectronics",
+    "plain_english": "Quobly, a quantum computing startup, closed a Series A of €115M with backing from semiconductor giant STMicroelectronics, targeting cryptography and optimization problems relevant to finance.",
+    "amount": "€115M",
+    "round": "Series A",
+    "source": {
+      "name": "Sifted · 2026-06-03",
+      "url": "https://sifted.eu/articles/quobly-series-a-115m/"
+    }
+  },
+  {
     "id": "2026-06-02-thinkmarkets-chelseaai",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -359,63 +495,59 @@
     "amount": "$1.145B"
   },
   {
-    "id": "2026-06-01-vendor-nvidia-pc-agents-dell-hp-microsoft",
-    "category": "vendor",
+    "id": "2026-06-03-taktile-ai-operating-system",
+    "category": "shift",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-01T21:35:00Z",
-    "headline": "Nvidia launches AI agent PC reference designs with Microsoft, Dell, and HP",
-    "plain_english": "Nvidia announced its first PC architectures optimized for running AI agents locally. Major OEMs—Microsoft, Dell, and HP—are shipping these agent-capable PCs, targeting the estimated $200 billion CPU market and enabling on-device AI reasoning without cloud dependency.",
-    "why_it_matters": "Shifts AI deployment from cloud-centric to edge; reduces latency and privacy risk for enterprise workflows; positions Nvidia as essential to PC-as-platform-for-AI transition; threatens cloud data-center moat if adoption scales.",
+    "severity": "high",
+    "published_at": "2026-06-03T11:45:00Z",
+    "headline": "Taktile builds operating system for AI-driven decisioning in financial services",
+    "plain_english": "Taktile is building a purpose-built OS for banks and lenders to deploy autonomous AI agents for credit decisions, AML reviews, and KYC. Abstracts away the complexity of chaining LLMs, RAG, compliance rules, and human oversight.",
+    "why_it_matters": "First dedicated platform for safe, auditable agentic AI in lending signals a new category: banks will no longer hand-roll agent orchestration, but instead procure turnkey agent OS from vendors. Regulatory model cards and decision logging baked into the platform.",
     "source": {
-      "name": "TechCrunch · 2026-06-01",
-      "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/"
+      "name": "Tearsheet · 2026-06-03",
+      "url": "https://tearsheet.co/4dfi/how-taktile-is-building-the-operating-system-for-ai-driven-decisions-in-financial-services/"
     }
   },
   {
-    "id": "2026-06-01-vendor-equals-money-railsr-rebrand",
-    "category": "vendor",
+    "id": "2026-06-03-softbank-france-ai-datacenters",
+    "category": "shift",
     "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-01T15:49:00Z",
-    "headline": "Equals Money and Railsr rebrand as unified 'Equals' global money-movement platform",
-    "plain_english": "Equals Money and Railsr, two fintech infrastructure firms, merged and rebranded as Equals, positioning themselves as a next-generation cross-border payments and money-movement platform serving enterprise and SME segments.",
-    "why_it_matters": "Consolidation of mid-market payments infrastructure; combined entity competes with larger incumbents and open finance players; signals continued M&A in cross-border fintech.",
-    "source": {
-      "name": "Finextra · 2026-06-01",
-      "url": "https://www.finextra.com/pressarticle/109988/equals-money-and-railsr-rebrand-as-equals"
-    }
-  },
-  {
-    "id": "2026-06-01-gradient-labs-series-a-expansion",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-01T16:14:08.000Z",
-    "headline": "AI-powered finance startup Gradient Labs doubles Series A funding to $26 million",
-    "plain_english": "Gradient Labs, a European fintech applying AI to financial operations, has expanded its Series A round, doubling its funding commitment to $26 million total. The capital will support product expansion and enterprise customer acquisition.",
-    "why_it_matters": "European fintech AI vendors are closing larger rounds, signaling investor confidence in non-US alternatives to OpenAI/Anthropic. BFSI firms should track EU-based AI vendors for GDPR compliance and lower latency in regulated markets.",
-    "amount": "$26M",
-    "round": "Series A (expanded)",
-    "source": {
-      "name": "Sifted · 2026-06-01",
-      "url": "https://sifted.eu/articles/gradient-labs-doubles-series-a/"
-    }
-  },
-  {
-    "id": "2026-06-01-openpayd-spac-nasdaq",
-    "category": "vendor",
-    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-06-01T15:13:00.000Z",
-    "headline": "Financial infrastructure provider OpenPayd goes public via SPAC merger at $1.145 billion valuation",
-    "plain_english": "OpenPayd, a UK fintech offering payment and money-movement infrastructure APIs, announced a SPAC merger to list on Nasdaq at a $1.145 billion valuation. The deal provides capital for product development and geographic expansion.",
-    "why_it_matters": "Fintech infrastructure plays are reaching public markets. BFSI CROs and CFOs integrating OpenPayd or competitors must assess post-IPO earnings pressure, API pricing changes, and M&A risk. Public fintech vendors often cut margins or push volume-based models.",
-    "amount": "$1.145B",
-    "round": "SPAC (Public)",
+    "published_at": "2026-06-03T05:03:01Z",
+    "headline": "SoftBank to build 3.1 GW of AI data centers in France by 2031",
+    "plain_english": "Japan's SoftBank announced a plan to construct 3.1 gigawatts of AI-optimized data center capacity in northern France over the next five years, responding to EU digital sovereignty demands and high energy costs in the region.",
+    "why_it_matters": "Major offshore AI infrastructure play in Europe signals confidence in EU AI Act compliance; European banks can now partner with in-region inference providers, reducing US data residency friction and regulatory uncertainty.",
     "source": {
-      "name": "Finextra · 2026-06-01",
-      "url": "https://www.finextra.com/newsarticle/47837/openpayd-inks-spac-deal-for-nasdaq-listing"
+      "name": "CNBC · 2026-06-03",
+      "url": "https://www.cnbc.com/2026/06/03/big-techs-ai-power-test-europe-softbank-france.html"
+    }
+  },
+  {
+    "id": "2026-06-03-openfx-embed-acquisition",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-03T10:10:00Z",
+    "headline": "OpenFX acquires Embed to gain regulated EU payments footprint",
+    "plain_english": "FX infrastructure firm OpenFX acquired Dutch payment processor Embed to establish its first regulated presence in the European Economic Area and UK. Signals consolidation in regional payments infrastructure.",
+    "why_it_matters": "Banks and fintechs building cross-border rails now have more choices beyond Swift and traditional intermediaries; expect more point-solution M&A as regional players build pan-EU coverage.",
+    "source": {
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/newsarticle/47850/openfx-to-acquire-amsterdam-based-payments-house-embed"
+    }
+  },
+  {
+    "id": "2026-06-03-marechale-capital-digital-bank",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-06-03T09:38:00Z",
+    "headline": "Marechale Capital acquires multiple firms to create UK's first digital merchant bank",
+    "plain_english": "London-based corporate advisory firm Marechale Capital announced three acquisitions to transform into one of the UK's first fully integrated, digital-native merchant banks. Consolidating advisory, capital markets, and fintech capabilities.",
+    "why_it_matters": "Traditional advisory firms are now competing with fintechs and tech-enabled banks by building integrated stacks; signals a shift from consulting-as-service to banking-as-platform.",
+    "source": {
+      "name": "Finextra · 2026-06-03",
+      "url": "https://www.finextra.com/newsarticle/47849/marechale-capital-makes-series-of-acquisitions-to-create-digital-merchant-bank"
     }
   },
   {
@@ -515,6 +647,40 @@
     }
   },
   {
+    "id": "2026-06-03-finstreasts-synthetic-benchmark",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "FinStressTS: parametric synthetic benchmark for financial time-series forecasting",
+    "plain_english": "Researchers released FinStressTS, a mechanism-aware synthetic benchmark for time-series forecasting in finance with 30 diagnostic environments covering volatility clustering, regime shifts, and heavy tails. Enables isolated testing of model robustness.",
+    "why_it_matters": "Banks evaluating ML models for interest-rate or volatility forecasting can use FinStressTS to stress-test without real financial data leakage risk. Faster eval cycles reduce model risk sign-off delays.",
+    "jargon": [
+      {
+        "term": "Regime shift",
+        "def": "Sudden structural change in market behavior (e.g., calm to crisis), not captured by single statistical distribution."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03184"
+    }
+  },
+  {
+    "id": "2026-06-03-hybrid-news-sentiment-engine",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "Hybrid News Sentiment Engine: real-time market analysis via ensemble learning",
+    "plain_english": "Researchers published a three-way ensemble sentiment model combining financial lexicons, adaptive TF-IDF clustering, and auto-calibrated weighting to ingest news headlines and price pairs without neural net training. Runs on CPU.",
+    "why_it_matters": "Lightweight alternative to fine-tuned NLP models for market sentiment; trading desks can deploy without GPU infrastructure or retraining workflows, lowering ops burden and inference latency.",
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03457"
+    }
+  },
+  {
     "id": "2026-06-02-arxiv-lean-math-finance",
     "category": "tool",
     "jurisdiction": "Global",
@@ -560,6 +726,88 @@
     "source": {
       "name": "Finextra · 2026-06-01",
       "url": "https://www.finextra.com/pressarticle/109986/finastra-helps-lenders-turn-more-applications-into-loans-with-new-analytics-tool"
+    }
+  },
+  {
+    "id": "2026-06-03-visual-graph-scaffolds-llm",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "Visual graph scaffolds improve LLM reasoning on multi-hop question answering",
+    "plain_english": "Researchers showed that organizing LLM reasoning traces as graph-structured mind maps and using them to guide student models improves performance on multi-hop QA. Graphs organize reasoning, not just supply facts.",
+    "why_it_matters": "Technique directly applicable to compliance and regulatory Q&A in banking; structuring internal knowledge graphs for AML risk assessment or regulatory guidance improves interpretability and accuracy.",
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.02673"
+    }
+  },
+  {
+    "id": "2026-06-03-ai-mediated-losses-cer-framework",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "CER framework reconstructs AI-mediated losses for insurance claim recovery",
+    "plain_english": "Researchers published framework for reconstructing losses caused by agentic AI systems (RAG poisoning, prompt injection, tool misuse) through state reconstruction, not event reconstruction. Enables insurance claim determination.",
+    "why_it_matters": "First formalized method for AI loss attribution; banks deploying autonomous agents must adopt this framework to satisfy insurance carriers and risk committees that AI failures are insurable and auditable.",
+    "jargon": [
+      {
+        "term": "RAG poisoning",
+        "def": "Attacker inserts false or malicious data into the knowledge base (retrieval index) that an AI agent queries, causing wrong decisions."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03777"
+    }
+  },
+  {
+    "id": "2026-06-03-aura-memory-robot-policies",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "AURA: action-gated memory for robot policies at constant VRAM",
+    "plain_english": "Researchers published AURA-Mem, a recurrent memory mechanism that runs long episodes on edge hardware (robots, IoT) with constant memory use, replacing the KV-cache. Uses learned gates to decide when to write memory.",
+    "why_it_matters": "Technique applicable to edge inference in fintech devices (ATMs, kiosks); reduces memory footprint so banks can run local AI models without offloading to cloud, improving latency and privacy.",
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.02775"
+    }
+  },
+  {
+    "id": "2026-06-03-matching-mechanisms-llm-agents",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "Do matching mechanisms work with LLM agents as delegated decision-makers?",
+    "plain_english": "Researchers tested whether standard matching mechanisms (auction, two-sided markets) function correctly when LLM agents replace humans. Found agents report preferences truthfully at higher rates than human subjects.",
+    "why_it_matters": "Credit assignment, counterparty matching, and market-making in B2B fintech can now delegate to AI agents with higher compliance rates than human operators; unlocks automation of wholesale markets.",
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03030"
+    }
+  },
+  {
+    "id": "2026-06-03-cost-manipulation-amm-oracles",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "Cost of Manipulation in AMM-Based Oracles: closed-form attack formulas",
+    "plain_english": "Researchers derived closed-form formulas for the cost of manipulating decentralized exchange (AMM) price oracles. Shows how constant-product market makers' design makes them vulnerable to flash loan attacks.",
+    "why_it_matters": "Banks and stablecoin issuers relying on AMM oracles for collateral valuation now have quantified attack costs; informs risk models and required backstop capital for oracle failure scenarios.",
+    "jargon": [
+      {
+        "term": "AMM oracle",
+        "def": "On-chain price feed derived from automated market maker (decentralized exchange) trading activity, used as a price source for lending and derivatives."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03548"
     }
   },
   {
@@ -639,85 +887,49 @@
     }
   },
   {
-    "id": "2026-06-02-arxiv-firms-creation-real-time",
-    "category": "research",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-06-02T04:00:00Z",
-    "headline": "Real-time UK firm creation data leads traditional business demography, offering nowcast of employment and output growth",
-    "plain_english": "UK-based researchers introduce Companies House Real-Time (CHRT), a daily dataset of firm incorporation and dissolution. The data leads official business birth statistics by months and correlates with future employment and output, enabling faster economic nowcasting.",
-    "why_it_matters": "Central banks and regulators can use firm-creation signals to front-run economic cycles without waiting for quarterly GDP revisions. Fintech and alternative data vendors should integrate CHRT-like feeds into risk dashboards.",
-    "source": {
-      "name": "arXiv · 2026-06-02",
-      "url": "https://arxiv.org/abs/2606.01307"
-    }
-  },
-  {
-    "id": "2026-06-02-arxiv-qvar-volatility-langevin",
-    "category": "research",
+    "id": "2026-06-03-merit-networks-research-publication",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-06-02T04:00:00Z",
-    "headline": "Q-Variance regularities in asset returns can be exactly replicated by multiplicative Langevin process on volatility",
-    "plain_english": "Theoretical paper shows that the empirically observed relationship between an asset's volatility and its return (called Q-variance) is mathematically equivalent to assuming volatility follows an Inverse Gamma distribution, which arises naturally from a multiplicative Langevin stochastic process.",
-    "why_it_matters": "Quants pricing volatility derivatives and constructing variance swaps can use this result to calibrate volatility models more precisely. Reduces need for ad-hoc functional forms; theory-grounded parametrization may improve hedging accuracy.",
-    "jargon": [
-      {
-        "term": "Langevin process",
-        "def": "Stochastic differential equation modeling a particle's motion under random thermal fluctuations; used to model time-evolving uncertainties."
-      }
-    ],
+    "published_at": "2026-06-03T04:00:00Z",
+    "headline": "LLM text analysis shows research publication merit vs. author connections matter equally",
+    "plain_english": "Using a domain-trained LLM to score paper quality from text before publication, economists found that merit and author networks explain publication fate equally. Connections do not fully trump ideas.",
+    "why_it_matters": "Validates using AI for blind peer review and hiring; BFSI firms can use similar LLM-based evaluation to reduce name-bias in vendor selection and internal promotions, improving fairness in compliance and risk hiring.",
+    "stat_value": "50/50",
+    "stat_label": "merit vs. networks in publication fate",
     "source": {
-      "name": "arXiv · 2026-06-02",
-      "url": "https://arxiv.org/abs/2606.00800"
+      "name": "arXiv · 2026-06-03",
+      "url": "https://arxiv.org/abs/2606.03763"
     }
   },
   {
-    "id": "2026-06-02-arxiv-avellaneda-stoikov-inventory",
-    "category": "research",
+    "id": "2026-06-03-ai-employee-time-savings",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-06-02T04:00:00Z",
-    "headline": "Fundamental axioms on inventory market making force Avellaneda-Stoikov and Cartea-Jaimungal frameworks into equivalence",
-    "plain_english": "Theoretical paper proves that two widely-used market-making frameworks (Avellaneda-Stoikov for risk-aversion, Cartea-Jaimungal for running penalty) are mathematically equivalent under minimal rationality axioms, parametrized by a single entropic risk coefficient.",
-    "why_it_matters": "Market makers and venues designing algorithmic liquidity provision can simplify model calibration by unifying the two approaches. Reduces degrees of freedom, improving robustness and interpretability of market-making parameters.",
+    "published_at": "2026-06-03T09:00:12Z",
+    "headline": "42% of frontline workers report AI saves full day of work weekly; reallocation unclear",
+    "plain_english": "BCG survey found that 42% of frontline white-collar workers using AI regularly report saving one full workday per week. Unclear whether time is redirected to higher-value work or absorbed by workload expansion.",
+    "why_it_matters": "Productivity gains from AI adoption are real but risk being squandered if management doesn't explicitly redesign workflows; banks should model cost-saving scenarios and define new job specs before rolling out bank-wide AI tools.",
+    "stat_value": "42%",
+    "stat_label": "frontline employees reporting AI saves 1 full workday/week",
     "source": {
-      "name": "arXiv · 2026-06-02",
-      "url": "https://arxiv.org/abs/2606.01477"
+      "name": "BCG · 2026-06-03",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVVN2bldodzdueW81dVFYV3ZlMFY0OVhnblFSM3VDNGlnRmxBeFE5Y0VwdkxtUGsxSzA0dWpHcW5GeUZmdldqaV9HQ1ZFb2pXSWhwV2VqT1V6RERoT0I5Qm5xUEtDcmRna2tjbV9UVDdrS0Y3U0pUMDlNc00tb3ZKUDRxTWxQZ1F4Z29EaFphOENLRlEyeGM3U2wtRzVVanE4RzRTUVZQNXJVS3B0ck53cGY2U3hnZXFsaEVuYllud3lHTE1tUG5R"
     }
   },
   {
-    "id": "2026-06-02-arxiv-blockchain-priority-queue",
-    "category": "research",
+    "id": "2026-06-03-insurers-ai-tools-confidence",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-02T04:00:00Z",
-    "headline": "Blockchain transaction fees modeled as priority queue game; reveals fee dynamics across Bitcoin, Dogecoin, Litecoin",
-    "plain_english": "Researchers model blockchain mempool and mining as a priority queue where users bid fees strategically. Using M/G^K/1 queuing theory, they derive closed-form fee expressions and validate across three major chains, revealing normalized cost structures.",
-    "why_it_matters": "Crypto treasurers and trading desks can predict transaction costs more reliably. Regulators designing fee-cap policies now have theoretical foundation for unintended consequences (queue collapse, miner behavior).",
-    "jargon": [
-      {
-        "term": "mempool",
-        "def": "Pool of unconfirmed transactions awaiting inclusion in a blockchain block; users compete via fee bidding."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-06-03T09:23:08Z",
+    "headline": "Insurers have AI tools but lack confidence to deploy them in production",
+    "plain_english": "Insurance Business survey found that many insurers have acquired or built AI tools for underwriting and claims, but are hesitant to deploy them at scale due to model validation, regulatory, and liability concerns.",
+    "why_it_matters": "Tool-deployment gap is not technical but organizational; vendors and regulators should focus on providing audit trails, explainability, and liability frameworks rather than more sophisticated models.",
     "source": {
-      "name": "arXiv · 2026-06-02",
-      "url": "https://arxiv.org/abs/2606.01274"
-    }
-  },
-  {
-    "id": "2026-06-02-arxiv-xlm-bitcoin-trading",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-02T04:00:00Z",
-    "headline": "XGBoost, LSTM, and iTransformer show positive gross returns on Bitcoin but fail after transaction costs above 10bps",
-    "plain_english": "Walk-forward study (2018–2026, 70K hourly BTC-USDT observations) evaluates three ML models (XGBoost, LSTM, iTransformer). All generate positive trading PnL before costs; once transaction costs exceed 10 basis points, naive strategies fail. A cost-aware filter helps.",
-    "why_it_matters": "Crypto trading teams relying on ML should model realistic execution friction. The paper's cost-aware filter (skipping low-conviction trades) offers a practical guardrail against overtrading and whipsaw losses.",
-    "source": {
-      "name": "arXiv · 2026-06-02",
-      "url": "https://arxiv.org/abs/2606.00060"
+      "name": "Insurance Business · 2026-06-03",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPM1VJdXBrQXl2cHItVVFyeHB3MnloUnl2YVlCZ3g3Yms3UEdmbllTOUhqS2hvYUN6TktlaHFVOFdZYXVXb29YRnY0YVpUN1Uxay14RE9iSzVZcldFMWhWay0tbzN4ZmZDSVhmTmxMWFN2cnprcFVnZWlFdlBPX3UtSjB2dEVoenhKdXRqYnBWNUlkUVVtaDJ3SmJiZ2NUYVhfN1JxY2VFYjdVb0kzd1VDdkRWWGQxUHh6LW1OTk1KSy14b3ltUnBsUTZXZDM"
     }
   },
   {
@@ -918,6 +1130,196 @@
     "source": {
       "name": "CNBC · 2026-06-01",
       "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+    }
+  },
+  {
+    "id": "2026-06-01-anthropic-eu-mythos-access",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-01T18:05:20.000Z",
+    "headline": "Anthropic grants EU access to advanced Mythos model after bloc sought security approval",
+    "plain_english": "Anthropic is providing EU regulators and institutions access to its most advanced AI model, Mythos, following EU cybersecurity concerns. This move signals compliance with emerging EU AI governance while maintaining model availability for supervised testing.",
+    "why_it_matters": "Regulators now expect frontier labs to share advanced models for scrutiny. BFSI firms deploying EU-based AI services need assured access to models that meet both performance and compliance requirements—setting a precedent for model-licensing arrangements.",
+    "jargon": [
+      {
+        "term": "Frontier AI model",
+        "def": "State-of-the-art large language model (e.g. Claude, GPT-4) developed by specialized labs; powers complex reasoning and fine-grained tasks."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access.html"
+    }
+  },
+  {
+    "id": "2026-06-01-florida-openai-lawsuit",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-01T17:32:50.000Z",
+    "headline": "Florida Attorney General sues OpenAI and CEO Sam Altman, seeks personal liability",
+    "plain_english": "Florida's AG filed suit against OpenAI and Altman personally, alleging the company's 'insatiable quest to win the AI arms race' caused harm—including connection to a violent incident. The complaint seeks to hold Altman personally liable.",
+    "why_it_matters": "State-level AI liability litigation is escalating. BFSI firms deploying OpenAI's models in customer-facing roles (chatbots, advice engines) face emerging tort and negligence exposure. D&O insurance and model monitoring frameworks are now essential risk controls.",
+    "source": {
+      "name": "CNBC · 2026-06-01",
+      "url": "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html"
+    }
+  },
+  {
+    "id": "2026-06-01-wise-belgian-investigation",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-01T17:20:52.000Z",
+    "headline": "Fintech Wise shares fall on Belgian money-laundering investigation report",
+    "plain_english": "Belgian authorities are investigating Wise, the cross-border payments fintech, for potential money-laundering compliance failures. Stock fell on the news, signaling investor concern over AML control gaps at a major BFSI-adjacent vendor.",
+    "why_it_matters": "Regulatory scrutiny of fintech AML/KYC is intensifying. Banks partnering with Wise or similar vendors must conduct independent AML due diligence; vendor failures expose acquiring banks to compliance risk, reputational damage, and potential enforcement action.",
+    "source": {
+      "name": "Reuters · 2026-06-01",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa3Q1MjZiVGkyQ09pcjIyVlJzZ3Ryb1k0blNDbHQwbHpvN2J0MlgwYl9mM1VWTUlRc1NyOVViNDQtd2VDbnJaNEVPWnIwY3ZoTVcyVzZfSzFEZGZJQVF6M2lZRGZjY05UcURZdXJjdzV0RzJBZ1AtRTVwYThoNUxDckpWOHdfRnRaU2gtMlFIS0RFRWFYUlBoLW1aUWRnckxGbGRpYVdQeVZ6My1mMnB1LTZMYk5TTWx1MkxwUG1Sdk1LUQ"
+    }
+  },
+  {
+    "id": "2026-06-01-vendor-nvidia-pc-agents-dell-hp-microsoft",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-01T21:35:00Z",
+    "headline": "Nvidia launches AI agent PC reference designs with Microsoft, Dell, and HP",
+    "plain_english": "Nvidia announced its first PC architectures optimized for running AI agents locally. Major OEMs—Microsoft, Dell, and HP—are shipping these agent-capable PCs, targeting the estimated $200 billion CPU market and enabling on-device AI reasoning without cloud dependency.",
+    "why_it_matters": "Shifts AI deployment from cloud-centric to edge; reduces latency and privacy risk for enterprise workflows; positions Nvidia as essential to PC-as-platform-for-AI transition; threatens cloud data-center moat if adoption scales.",
+    "source": {
+      "name": "TechCrunch · 2026-06-01",
+      "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/"
+    }
+  },
+  {
+    "id": "2026-06-01-vendor-equals-money-railsr-rebrand",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-01T15:49:00Z",
+    "headline": "Equals Money and Railsr rebrand as unified 'Equals' global money-movement platform",
+    "plain_english": "Equals Money and Railsr, two fintech infrastructure firms, merged and rebranded as Equals, positioning themselves as a next-generation cross-border payments and money-movement platform serving enterprise and SME segments.",
+    "why_it_matters": "Consolidation of mid-market payments infrastructure; combined entity competes with larger incumbents and open finance players; signals continued M&A in cross-border fintech.",
+    "source": {
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/pressarticle/109988/equals-money-and-railsr-rebrand-as-equals"
+    }
+  },
+  {
+    "id": "2026-06-01-gradient-labs-series-a-expansion",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-01T16:14:08.000Z",
+    "headline": "AI-powered finance startup Gradient Labs doubles Series A funding to $26 million",
+    "plain_english": "Gradient Labs, a European fintech applying AI to financial operations, has expanded its Series A round, doubling its funding commitment to $26 million total. The capital will support product expansion and enterprise customer acquisition.",
+    "why_it_matters": "European fintech AI vendors are closing larger rounds, signaling investor confidence in non-US alternatives to OpenAI/Anthropic. BFSI firms should track EU-based AI vendors for GDPR compliance and lower latency in regulated markets.",
+    "amount": "$26M",
+    "round": "Series A (expanded)",
+    "source": {
+      "name": "Sifted · 2026-06-01",
+      "url": "https://sifted.eu/articles/gradient-labs-doubles-series-a/"
+    }
+  },
+  {
+    "id": "2026-06-01-openpayd-spac-nasdaq",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-01T15:13:00.000Z",
+    "headline": "Financial infrastructure provider OpenPayd goes public via SPAC merger at $1.145 billion valuation",
+    "plain_english": "OpenPayd, a UK fintech offering payment and money-movement infrastructure APIs, announced a SPAC merger to list on Nasdaq at a $1.145 billion valuation. The deal provides capital for product development and geographic expansion.",
+    "why_it_matters": "Fintech infrastructure plays are reaching public markets. BFSI CROs and CFOs integrating OpenPayd or competitors must assess post-IPO earnings pressure, API pricing changes, and M&A risk. Public fintech vendors often cut margins or push volume-based models.",
+    "amount": "$1.145B",
+    "round": "SPAC (Public)",
+    "source": {
+      "name": "Finextra · 2026-06-01",
+      "url": "https://www.finextra.com/newsarticle/47837/openpayd-inks-spac-deal-for-nasdaq-listing"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-firms-creation-real-time",
+    "category": "research",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Real-time UK firm creation data leads traditional business demography, offering nowcast of employment and output growth",
+    "plain_english": "UK-based researchers introduce Companies House Real-Time (CHRT), a daily dataset of firm incorporation and dissolution. The data leads official business birth statistics by months and correlates with future employment and output, enabling faster economic nowcasting.",
+    "why_it_matters": "Central banks and regulators can use firm-creation signals to front-run economic cycles without waiting for quarterly GDP revisions. Fintech and alternative data vendors should integrate CHRT-like feeds into risk dashboards.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01307"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-qvar-volatility-langevin",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Q-Variance regularities in asset returns can be exactly replicated by multiplicative Langevin process on volatility",
+    "plain_english": "Theoretical paper shows that the empirically observed relationship between an asset's volatility and its return (called Q-variance) is mathematically equivalent to assuming volatility follows an Inverse Gamma distribution, which arises naturally from a multiplicative Langevin stochastic process.",
+    "why_it_matters": "Quants pricing volatility derivatives and constructing variance swaps can use this result to calibrate volatility models more precisely. Reduces need for ad-hoc functional forms; theory-grounded parametrization may improve hedging accuracy.",
+    "jargon": [
+      {
+        "term": "Langevin process",
+        "def": "Stochastic differential equation modeling a particle's motion under random thermal fluctuations; used to model time-evolving uncertainties."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00800"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-avellaneda-stoikov-inventory",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Fundamental axioms on inventory market making force Avellaneda-Stoikov and Cartea-Jaimungal frameworks into equivalence",
+    "plain_english": "Theoretical paper proves that two widely-used market-making frameworks (Avellaneda-Stoikov for risk-aversion, Cartea-Jaimungal for running penalty) are mathematically equivalent under minimal rationality axioms, parametrized by a single entropic risk coefficient.",
+    "why_it_matters": "Market makers and venues designing algorithmic liquidity provision can simplify model calibration by unifying the two approaches. Reduces degrees of freedom, improving robustness and interpretability of market-making parameters.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01477"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-blockchain-priority-queue",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "Blockchain transaction fees modeled as priority queue game; reveals fee dynamics across Bitcoin, Dogecoin, Litecoin",
+    "plain_english": "Researchers model blockchain mempool and mining as a priority queue where users bid fees strategically. Using M/G^K/1 queuing theory, they derive closed-form fee expressions and validate across three major chains, revealing normalized cost structures.",
+    "why_it_matters": "Crypto treasurers and trading desks can predict transaction costs more reliably. Regulators designing fee-cap policies now have theoretical foundation for unintended consequences (queue collapse, miner behavior).",
+    "jargon": [
+      {
+        "term": "mempool",
+        "def": "Pool of unconfirmed transactions awaiting inclusion in a blockchain block; users compete via fee bidding."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.01274"
+    }
+  },
+  {
+    "id": "2026-06-02-arxiv-xlm-bitcoin-trading",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-02T04:00:00Z",
+    "headline": "XGBoost, LSTM, and iTransformer show positive gross returns on Bitcoin but fail after transaction costs above 10bps",
+    "plain_english": "Walk-forward study (2018–2026, 70K hourly BTC-USDT observations) evaluates three ML models (XGBoost, LSTM, iTransformer). All generate positive trading PnL before costs; once transaction costs exceed 10 basis points, naive strategies fail. A cost-aware filter helps.",
+    "why_it_matters": "Crypto trading teams relying on ML should model realistic execution friction. The paper's cost-aware filter (skipping low-conviction trades) offers a practical guardrail against overtrading and whipsaw losses.",
+    "source": {
+      "name": "arXiv · 2026-06-02",
+      "url": "https://arxiv.org/abs/2606.00060"
     }
   },
   {
