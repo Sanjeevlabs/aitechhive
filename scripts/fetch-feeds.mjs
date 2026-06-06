@@ -293,3 +293,10 @@ const trimmed = unique.slice(0, 100);
 await fs.mkdir("scripts", { recursive: true });
 await fs.writeFile("scripts/raw-feed.json", JSON.stringify(trimmed, null, 2));
 console.log(`\n→ ${trimmed.length} items to scripts/raw-feed.json (from ${all.length} total, ${fresh.length} fresh)`);
+
+// Force a clean exit. Node's native fetch (undici) keeps HTTP keep-alive
+// sockets in its agent pool, which keeps the event loop alive for the
+// agent's keepAliveTimeout (~4s) or longer if a server stalls. Without
+// this, the script can hang past the hard deadline and exit with code 2
+// even though every fetch already succeeded.
+process.exit(0);
