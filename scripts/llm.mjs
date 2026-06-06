@@ -290,10 +290,9 @@ function logCost(usage) {
     1_000_000;
 
   // Prominent banner so cost shows up loud in Actions logs.
-  // Daily projection assumes the 4x/day cron cadence in refresh.yml.
-  const dailyEst = (cost * 4).toFixed(2);
-  const monthlyEst = (cost * 4 * 30).toFixed(2);
-  console.log(`💰 [${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)} this call · ~$${dailyEst}/day · ~$${monthlyEst}/mo at 4 runs/day`);
+  // Cron is once-daily, so per-call cost ≈ daily ≈ 1/30 of monthly.
+  const monthlyEst = (cost * 30).toFixed(2);
+  console.log(`💰 [${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)} this call · ~$${monthlyEst}/mo at 1 run/day`);
 }
 
 // Errors that should never trigger a retry — the second attempt will fail

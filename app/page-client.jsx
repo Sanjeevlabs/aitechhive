@@ -458,13 +458,13 @@ function WelcomeCard({ onDismiss, totalStories }) {
           The morning brief, distilled.
         </h2>
         <p style={{ margin: "0 0 16px", fontSize: 13, lineHeight: 1.5, color: inkMute }}>
-          Banking, AI, and the regulators between them.
+          AI updates from enterprises.
         </p>
 
         {/* Stats row — quiet, no gradient. Story count reads live
             from cards.json so it stays in sync forever. */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
-          {[[String(totalStories ?? 0), "Stories"], ["4×", "Refreshed"], ["10", "Categories"]].map(([val, lbl]) => (
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
+          {[[String(totalStories ?? 0), "Stories"], ["10", "Categories"]].map(([val, lbl]) => (
             <div key={lbl} style={{ padding: "10px 8px", background: "rgba(255,255,255,0.6)", textAlign: "center" }}>
               <div style={{ fontSize: 19, fontWeight: 800, lineHeight: 1, color: accent, fontFamily: "var(--font-mono)" }}>{val}</div>
               <div style={{ fontSize: 9, fontWeight: 700, color: inkMute, marginTop: 3, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
@@ -1158,7 +1158,7 @@ function EmptyState({ stats, onReshuffle, onOpenArchive }) {
         <Inbox size={26} style={{ color: "var(--blue)" }} />
       </div>
       <h3 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em" }}>That's today's signal.</h3>
-      <p style={{ margin: "10px 0 0", fontSize: 15, lineHeight: 1.55, color: "var(--text-secondary)" }}>Top 20 live stories, refreshed 4× daily. Full archive below.</p>
+      <p style={{ margin: "10px 0 0", fontSize: 15, lineHeight: 1.55, color: "var(--text-secondary)" }}>Top 20 live stories. Full archive below.</p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 22 }}>
         {[["Saved", stats.saved, "var(--green)"], ["Skipped", stats.next, "var(--text-tertiary)"], ["Shared", stats.shared, "var(--blue)"]].map(([l, v, c]) => (
           <div key={l} style={{ textAlign: "center", padding: "14px 6px", borderRadius: 14, background: "var(--card-secondary)", border: "1px solid var(--separator)" }}>
