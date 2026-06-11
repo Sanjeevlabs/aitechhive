@@ -5,26 +5,60 @@
     "jurisdiction": "Global",
     "severity": "med",
     "published_at": "2026-06-11T00:01:00Z",
-    "headline": "Financial Stability Board invites feedback on responsible AI adoption for banks",
-    "plain_english": "The FSB launched a consultation on sound practices for AI adoption in the financial sector, seeking industry and regulator input on governance, risk, and compliance frameworks.",
-    "why_it_matters": "Global prudential body is codifying AI governance baseline. Final guidance will likely inform national regulators (FCA, OCC, ECB, RBI) and set expectations for bank AI governance standards, affecting internal control requirements.",
+    "headline": "FSB invites feedback on sound practices for AI adoption in financial sector",
+    "plain_english": "The Financial Stability Board is consulting on best practices for how banks and financial firms should responsibly adopt AI. Feedback period now open.",
+    "why_it_matters": "FSB guidance shapes global regulatory approach; will likely influence national regulators' AI risk frameworks and supervisory expectations within 12 months.",
     "source": {
       "name": "Finextra · 2026-06-11",
-      "url": "https://www.finextra.com/newsarticle/47895/fsb-guides-banks-on-resposible-adoption-of-ai?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "url": "https://www.finextra.com/newsarticle/47895/fsb-guides-banks-on-resposible-adoption-of-ai"
     }
   },
   {
-    "id": "2026-06-11-trump-cfpb-director",
+    "id": "2026-06-11-us-cyber-fix-window",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-10T21:48:50Z",
+    "headline": "US cuts software vulnerability patch window to three days amid AI-driven threats",
+    "plain_english": "US federal government shortened the mandatory timeline for fixing critical software vulnerabilities from 15 days to 3 days, citing rising AI-powered exploitation risks.",
+    "why_it_matters": "BFSI firms must dramatically accelerate patch cycles; operational risk increases if systems cannot be validated and deployed in 72 hours.",
+    "jargon": [
+      {
+        "term": "Zero-day",
+        "def": "Security flaw unknown to vendor; adversaries can exploit before patch exists."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYUJ0Y3ZPOE9IbWdjS0xqd20zczBOanREM3JhNmk5bVpDYlhkbFlhMTBwTWkxZ080TTEwcHJKVnhocTU3UTdBTGVmQUhrUDhqbE40bGpqS0tpQWI1RmNUMVhNTF9Kb09OYkZIanduaEN5ek1PUkdyZVRJOWxORW9fWFI4Q1Y0OWxYMk9XelRpWmJDVURweXBLT19ORl9RaWh2eWcyVkhmcGNqZ0tn"
+    }
+  },
+  {
+    "id": "2026-06-11-cfpb-director-nomination",
     "category": "regulation",
     "jurisdiction": "US",
     "severity": "med",
     "published_at": "2026-06-10T21:02:52Z",
-    "headline": "Trump nominates former CFPB deputy to lead agency",
-    "plain_english": "President Trump nominated Brian Johnson, who served as CFPB Deputy Director, to be the next CFPB Director. Johnson would replace acting director Russ Vought if confirmed by the Senate.",
-    "why_it_matters": "CFPB leadership change may signal shift in AI fintech oversight approach. Johnson's track record on fintech and responsible innovation will set tone for CFPB's AI governance, lending, and algorithmic bias stance.",
+    "headline": "Trump nominates CFPB's former deputy director to head consumer finance bureau",
+    "plain_english": "Brian Johnson, CFPB's former No. 2, nominated to lead the agency. He replaces acting director Russ Vought. Senate confirmation pending.",
+    "why_it_matters": "New leadership direction could reshape fintech oversight, consumer data rules, and buy-now-pay-later regulation critical to BFSI partnerships.",
     "source": {
       "name": "Banking Dive · 2026-06-10",
       "url": "https://www.bankingdive.com/news/trump-nominates-cfpbs-former-number-2-director/822574/"
+    }
+  },
+  {
+    "id": "2026-06-11-justice-debanking-subpoena",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-10T23:34:46Z",
+    "headline": "US Justice Department subpoenas major banks over alleged 'debanking' practices",
+    "plain_english": "DOJ investigating whether large banks have improperly terminated accounts or services to customers without transparent justification. Named banks under scrutiny.",
+    "why_it_matters": "Enforcement risk for compliance gaps; compliance teams must audit account termination rationale and documentation to withstand DOJ discovery.",
+    "source": {
+      "name": "Reuters · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNc3hhLVA2Mm1UWWtNelpHTE1yK0trN2t4UTk5UXVFNnRLLXhWaXl5VXMtVDRYNmdGcV9IVHNFeEVfNk56SDJPNXN0QVg5R1JKYTlQZm1Vcm1pcmM5NTBSYVFoTk9RUGxxaDZocDZ2Q3hrMzM5R1FxMXo1SE9MeTRLLVFHaWduMWE1ZmpEREJ6akhRZVY3MmtpQnRzd1FCOVpxZkVFRGpuWlA4aW5TbmtteW52c3J2YmVURFVtcWJUM0tmRmc5Qm8rajJ2RQ"
     }
   },
   {
@@ -124,31 +158,69 @@
     }
   },
   {
-    "id": "2026-06-08-fincen-suspicious-immigrant-activity",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-08T15:51:55Z",
-    "headline": "FinCEN advisory instructs banks to flag suspicious immigrant activity and undocumented employment",
-    "plain_english": "FinCEN issued guidance Friday urging banks to detect and report activity linked to employment of immigrants lacking permanent legal status, expanding AML/CFT compliance scope into immigration enforcement.",
-    "why_it_matters": "Banks face new compliance complexity and reputational risk; SAR filing volume and false-positive litigation risk will rise. Tech vendors must retrain models to detect novel suspicious patterns; compliance costs increase materially.",
+    "id": "2026-06-11-woori-bank-debt-diagnosis",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-06-11T05:11:09Z",
+    "headline": "Woori Bank launches AI-powered inclusive debt diagnosis service for retail customers",
+    "plain_english": "South Korea's Woori Bank deployed an AI service to help borrowers assess debt levels and financial health, improving loan decisioning for underserved segments.",
+    "why_it_matters": "Demonstrates mainstream APAC adoption of consumer-facing AI risk assessment; shows shift toward transparent, explainable lending for inclusion goals.",
+    "scale": {
+      "metric": "customers",
+      "value": "Not disclosed in source"
+    },
     "source": {
-      "name": "Banking Dive · 2026-06-08",
-      "url": "https://www.bankingdive.com/news/fincen-cfpb-banks-suspicious-activity-immigration-status/822246/"
+      "name": "Bank-AI Deployments · 2026-06-11",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNclUzdVFnbUw0VUNFMl9kY3JiT2FDcGVZZ1oydmdhY051dVJCd1hUS1F6eDA2S2tDLTR1Z1dwZFllSkRYX1c4U3FjcFJwVi1JYjdObTFUckNreURBSlltTFpRU3h1T2RfSnRCNEtvMThwWTc1eEhOM1kxVlBXYmU2SlNkQUhkanBrLUFDV2QwQVMyZG1CTF9JVFVBOEducGJONS1fbVJDdTNoZw"
     }
   },
   {
-    "id": "2026-06-08-italy-meta-whatsapp-ai-investigation-closed",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-08T16:26:58Z",
-    "headline": "Italian regulator drops investigation into Meta's WhatsApp AI bot",
-    "plain_english": "Italy's data protection authority closed its investigation into Meta's AI-powered WhatsApp chatbot, clearing the way for broader deployment without regulatory intervention.",
-    "why_it_matters": "Precedent suggests EU regulators are becoming pragmatic on AI assistant deployment; BFSI can more confidently invest in customer-facing AI chatbots without facing immediate enforcement risk in major markets.",
+    "id": "2026-06-11-visa-openai-agent-pay",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-11T01:38:10Z",
+    "headline": "Visa launches Agent Pay for Machines to enable AI agents to transact autonomously across networks",
+    "plain_english": "Visa and OpenAI rolled out agent-based payment infrastructure letting autonomous AI systems initiate transactions. Partners include major e-commerce and fintech players.",
+    "why_it_matters": "Marks shift from human-initiated to AI-native payment flows; creates new fraud, KYC, and regulatory perimeter challenges for acquirers and issuers.",
+    "jargon": [
+      {
+        "term": "Agentic commerce",
+        "def": "Autonomous AI systems making purchasing and payment decisions without explicit human approval at transaction time."
+      }
+    ],
     "source": {
-      "name": "Reuters · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd0o0dHFsb25vMllYMW1HMGs2WHg3eFE1NUtyVFE5TC02SHZVUUpsQ29JQnVWNmV3Y1VqeDVaMjRBMmlmMXhXTDF5SGNRZ0V5R0R0TXlFM1R3cTdQbmU1VzdSbTZOYkNpR1ZYaVE1Qzd4VVY2dTE1NXUxMkxHQzdfRmtuQV9qcURuaXJZUHVBcTFndUZHUlhhZTJwZWZOVFp5bjM5S1FJWUR6T1E"
+      "name": "Finextra · 2026-06-11",
+      "url": "https://www.finextra.com/newsarticle/47897/mastercard-launches-agent-pay-for-machines"
+    }
+  },
+  {
+    "id": "2026-06-11-citi-ai-wealth-singapore",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-06-10T21:00:00Z",
+    "headline": "Citi Singapore expands AI-powered wealth advisory tools to compete in high-touch market",
+    "plain_english": "Citi rolled out enhanced AI capabilities for Singapore wealth clients, automating advisory workflows and personalization amid heightened regional fintech competition.",
+    "why_it_matters": "Shows incumbent bank AI integration in Asia-Pacific wealth; signals arms race in client experience automation; compliance burden on cross-border data handling.",
+    "source": {
+      "name": "Citi AI Moves · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMEtWSExuYWVaU251Q3VJb2d2WE9NaEdnMUdZSkQwNnhsTE42YTYyVTN5UDhGSE90UGg1anJHR2tGaEdQazdwZ1dkMG1pSXJNVC1zLXg5X0JYbXI2VTM3dXc2eG5FVHNDS1c2SmN2QXBjY1VwdDhIbXl3ZEJRdHBkZHNHWlZSaGlSVl9rMFUyZ1NUVFdsU0FRRWIwRG5GRHN4VnhrekhmOWxXMmJ0V3YtbE1iSVhmTG5XclBLVWFrUQ"
+    }
+  },
+  {
+    "id": "2026-06-11-oracle-openai-cloud",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-10T20:00:00Z",
+    "headline": "OpenAI models now available through Oracle Cloud with existing customer commitments",
+    "plain_english": "Oracle and OpenAI announced integration: enterprises can access OpenAI models and Codex via Oracle Cloud using existing infrastructure contracts and governance.",
+    "why_it_matters": "Reduces friction for enterprise AI adoption; Oracle customers can pilot LLMs in compliance environments. Cloud vendor lock-in intensifies.",
+    "source": {
+      "name": "OpenAI · 2026-06-10",
+      "url": "https://openai.com/index/openai-on-oracle-cloud"
     }
   },
   {
@@ -252,59 +324,19 @@
     }
   },
   {
-    "id": "2026-06-10-santander-getnet-agent-payments",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-09T18:14:00Z",
-    "headline": "Santander's Getnet enables merchants to accept AI agent-initiated payments",
-    "plain_english": "Getnet, Santander's global merchant payments platform, launched AI-powered capabilities allowing merchants to securely accept payments initiated by autonomous AI agents. Extends agentic commerce infrastructure to enterprise merchants worldwide.",
-    "why_it_matters": "Major payments processor adding agent-payment rails signals industry shift toward payment infrastructure as enabler of autonomous commerce; consolidates Santander's payments advantage.",
-    "source": {
-      "name": "Finextra · 2026-06-09",
-      "url": "https://www.finextra.com/pressarticle/110084/santanders-getnet-helps-businesses-accept-agent-initiated-payments"
-    }
-  },
-  {
-    "id": "2026-06-09-klarna-savings-account-us",
-    "category": "deployment",
+    "id": "2026-06-11-ramp-series-f",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-09T18:18:00Z",
-    "headline": "Klarna launches FDIC-insured savings account in US with >3% APY",
-    "plain_english": "Swedish fintech Klarna rolled out FDIC-insured savings accounts in the US via WebBank partnership, offering no minimums, no fees, and rates above 3% APY directly in-app. Extends Klarna's BNPL empire into deposit banking.",
-    "why_it_matters": "Klarna's deposit expansion signals fintech push into sticky savings products to drive stickiness; validates in-app banking as higher-margin complement to BNPL.",
-    "source": {
-      "name": "Finextra · 2026-06-09",
-      "url": "https://www.finextra.com/pressarticle/110085/klarna-launches-savings-account-in-us"
-    }
-  },
-  {
-    "id": "2026-06-08-ab-bank-ai-eloan-launch",
-    "category": "deployment",
-    "jurisdiction": "IN",
     "severity": "low",
-    "published_at": "2026-06-08T21:17:22Z",
-    "headline": "AB Bank launches AI-powered digital loan product 'AB e-loan'",
-    "plain_english": "AB Bank in Bangladesh has deployed an AI-powered digital lending platform called 'AB e-loan' to automate loan origination and expand digital lending reach. Part of broader emerging-market fintech adoption trend.",
-    "why_it_matters": "AI-driven lending in emerging markets is reducing friction and cost-per-acquisition, forcing BFSI incumbents globally to accelerate digital transformation or lose margin to AI-native competitors.",
+    "published_at": "2026-06-10T20:22:43Z",
+    "headline": "Ramp closes $750M Series F at higher valuation amid corporate spend automation boom",
+    "plain_english": "Ramp, a spend management platform, raised $750M in Series F, valuing the fintech unicorn higher. Investors bet on acceleration of enterprise spend automation.",
+    "why_it_matters": "Validates market demand for embedded finance and spend controls; banks partnering with Ramp face competitive threat from purpose-built fintech platforms.",
+    "amount": "$750M",
+    "round": "Series F",
     "source": {
-      "name": "The Financial Express · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdGtYSWJHUzBaZ3F4MUc5am5ZWG1oOURrQ0NkQXVCU1BwWDJ4YUZIVmdFZlpoSzB0NlExYzFXYXEybjFxLV81UFgtdC1BNm1HcVRObW1DNk9tbjI5T2Z3QzU5ZnlxSkhNQlJYZGdjaE1UYzNJVEpnQmtwWVkxaGRULXNubkhpOTBtVUl2ZWsyZDFzTS0taVE"
-    }
-  },
-  {
-    "id": "2026-06-08-arnifi-corporate-banking-platform",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-08T16:18:45Z",
-    "headline": "Arnifi launches AI-powered banking and payments platform for corporate customers",
-    "plain_english": "Arnifi unveiled an AI-powered banking and payments platform designed specifically for corporate treasury and payments workflows, competing directly with incumbent bank infrastructure for middle-market corporates.",
-    "why_it_matters": "Fintech disruption of corporate banking is accelerating; banks risk losing high-margin transaction revenue if they don't match embedded AI automation. Legacy core systems are increasingly insufficient.",
-    "source": {
-      "name": "BusinessLine · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUDY4aDhuOGE2UmgzZnI4ekhWbEgwYnEzQWNBNFNJQ1Nza3lrRnlHazBLcVlKcndGWXUtZHZfMUlrZGhpMmtVcHlOalpkTTBnWU5OZWNBcVNmYVpNY20xaXd1bmhrajJDeFpJeXRWbm1xY0RYVGFWQUo4QU9lUlVyRnVBNmpXU0thYUl1X0FLNzVDamp5NXZJZ0lJOXY2Z0UzM21BSTdnbWpEZ1h3NlBuZVFBZVJlNG14TmFLMHFJeHg4SHk4Y19lQlFjcDJnSmtRVGJ1X2JpeGk0UdIB4AFBVV95cUxPV0pGNUUtdHB3bVo1VDM0MnkxLTF5dlREdEtrNWdTZWY3NFFPS0VVUlBTTWV6SG0yeGg0MnNTZnUwNXR1eUwzeVJJNXVydHF2NUdqeXdMZTNXNmYzY19EUjVxWDNONHRIdEdQbGtsZVB5THBQY3FSQ20za3VOMURpMEVlbEFXVnF0WGtaeEVKeF83SXhlVFBwZjlIb18xMXlWZ0NhdW13cl9ZcHd1UE5qWWk1bVM5M1ZZR1FZVDVtazhhQk9iSGRTTFhLakZoSF9RRUMzZzVTaWN0blMzZUw0NA"
+      "name": "Fintech Funding · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ01EcWlxYlBqYU1SMUQwdG90LW0teUkyZ0R2RWtQX0M3YUZxQ2ptWXNHZlMxNDhNVG9LXzNzVFhWWUJoTXpVOE51bWoxU183UWI1UG8zTVB6bDBKUm5rWW43VmVHX19xZVpSNllsS1ZZR18yb3RyZTcxSWNsUlREWUhWMlc4UQ"
     }
   },
   {
@@ -313,58 +345,28 @@
     "jurisdiction": "US",
     "severity": "med",
     "published_at": "2026-06-11T00:01:00Z",
-    "headline": "Capsa AI raises $18M Series A for private capital data intelligence",
-    "plain_english": "Capsa AI, building an AI OS for private capital (PE, VC, hedge funds), closed $18M Series A to unify fragmented deal sourcing, diligence, and portfolio data workflows.",
-    "why_it_matters": "Targets high-friction manual workflows in alternative asset management. Success signals that AI-native data infrastructure for private markets is fundable; expect consolidation of legacy due-diligence and data aggregation vendors.",
+    "headline": "Capsa AI raises $18M Series A to tackle private capital data fragmentation with AI OS",
+    "plain_english": "Capsa AI, building an AI operating system for private capital workflows, closed $18M Series A. Solves data integration and deal sourcing for PE/VC.",
+    "why_it_matters": "Signals strong institutional interest in AI-driven deal operations; banks underwriting private credit and asset managers will adopt or face efficiency gap.",
     "amount": "$18M",
     "round": "Series A",
     "source": {
       "name": "Finextra · 2026-06-11",
-      "url": "https://www.finextra.com/newsarticle/47898/capsa-ai-raises-18m-to-solve-private-capitals-data-problem?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-06-11-ramp-series-f",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-10T20:22:43Z",
-    "headline": "Ramp raises $750M Series F at growth valuation",
-    "plain_english": "Ramp, an AI-powered spend management and embedded fintech platform for enterprises, closed $750M Series F. The round reflects strong adoption of its API-first expense and payment infrastructure.",
-    "why_it_matters": "Late-stage fintech AI vendor reaching >$10B valuation signals sustained enterprise appetite for AI-native spend automation. Sets bar for series-F comps in embedded finance category.",
-    "amount": "$750M",
-    "round": "Series F",
-    "source": {
-      "name": "FinAi News · 2026-06-10",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ01EcWlxYlBqYU1SMUQwdG90LW0teUkyZ0R2RWtQX0M3YUZxQ2ptWXNHZlMxNDhNVG9LXzNzVFhWWUJoTXpVOE51bWoxU183UWI1UG8zTVB6bDBKUm5rWW43VmVHX19xZVpSNllsS1ZZR18yb3RyZTcxSWNsUlREWUhWMlc4UQ"
-    }
-  },
-  {
-    "id": "2026-06-11-openai-oracle-cloud",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-10T20:00:00Z",
-    "headline": "OpenAI models now available on Oracle Cloud with existing customer commitments",
-    "plain_english": "OpenAI and Oracle announced integration allowing enterprises to run OpenAI models (including Codex) on Oracle Cloud infrastructure, with consumption counted against existing cloud commitments.",
-    "why_it_matters": "Enterprise model access via existing vendor relationships lowers friction for BFSI to adopt OpenAI. Competitors (Anthropic, Google) will need similar partnerships to maintain parity in enterprise cloud ecosystems.",
-    "source": {
-      "name": "OpenAI · 2026-06-10",
-      "url": "https://openai.com/index/openai-on-oracle-cloud"
+      "url": "https://www.finextra.com/newsarticle/47898/capsa-ai-raises-18m-to-solve-private-capitals-data-problem"
     }
   },
   {
     "id": "2026-06-11-presidio-ai-governance",
     "category": "vendor",
     "jurisdiction": "US",
-    "severity": "low",
+    "severity": "med",
     "published_at": "2026-06-10T19:14:00Z",
-    "headline": "Presidio launches AI governance platform for financial services",
-    "plain_english": "Presidio introduced an AI governance and compliance platform designed to help financial institutions audit, monitor, and control AI systems in production (model drift, bias, explainability, audit trails).",
-    "why_it_matters": "Compliance automation vendor addressing regulatory demand for AI observability. Success signals market appetite for purpose-built AI governance tools; expect consolidation of model monitoring, explainability, audit logging into unified platforms.",
+    "headline": "Presidio launches AI governance platform purpose-built for financial services compliance",
+    "plain_english": "Presidio released a governance platform for banks to manage AI model risk, audit trails, and regulatory reporting. Targets BFSI-specific compliance needs.",
+    "why_it_matters": "Emerging category of vendor tooling; BFSI risk and compliance teams evaluating AI governance suites face vendor selection burden. Early movers gain market share.",
     "source": {
       "name": "Finextra · 2026-06-10",
-      "url": "https://www.finextra.com/pressarticle/110103/presidio-launches-ai-governance-platform-for-financial-services?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "url": "https://www.finextra.com/pressarticle/110103/presidio-launches-ai-governance-platform-for-financial-services"
     }
   },
   {
@@ -457,6 +459,76 @@
     }
   },
   {
+    "id": "2026-06-11-oracle-capex-70bn",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-10T20:46:13Z",
+    "headline": "Oracle commits $70B data center spending in next year as AI cloud arms race intensifies",
+    "plain_english": "Oracle pledged $70B capex for data center expansion over 12 months to compete with AWS, Azure, and GCP in AI inference and foundation model hosting.",
+    "why_it_matters": "Massive capex commitment signals sustained cloud pricing pressure; AI workload costs will remain elevated; banks must lock in long-term cloud contracts now to hedge inflation.",
+    "source": {
+      "name": "Financial Times · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUkwSHdBR2I0djNKalhWZXVqMWpJVDhBYkFsaHFOdHFGbDZJTEhFS1A2THJnclh4WFRPeHQ0TGQ3NkxLTzVIaVNOZVd0M2JBNmFqbXdGQkpsOHp1UEoxamE3SEo4dEFfX1JOZm9TV2VaVWlnUGlUN2h2Q05wVU5DWnNHcEs"
+    }
+  },
+  {
+    "id": "2026-06-11-amazon-ai-debt",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-10T20:19:31Z",
+    "headline": "Amazon borrows $17.5B from banks for AI infrastructure weeks after record bond sale",
+    "plain_english": "Amazon tapped credit lines for $17.5B to fund ongoing AI capex, signaling continued aggressive data center build-out even as debt climbs.",
+    "why_it_matters": "Tech giants' unsustainable debt growth will squeeze credit markets; banks underwriting AI capex face concentration risk; capital adequacy pressures loom.",
+    "source": {
+      "name": "TechCrunch · 2026-06-10",
+      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5b-from-banks-as-ai-spending-continues/"
+    }
+  },
+  {
+    "id": "2026-06-11-openai-price-cuts",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-11T03:24:56Z",
+    "headline": "OpenAI weighs significant price cuts to compete with Anthropic for enterprise customers",
+    "plain_english": "OpenAI exploring aggressive pricing reductions to fend off Anthropic's market share gains. WSJ reported talks about slashing API and product costs.",
+    "why_it_matters": "Price wars reduce supplier revenue; BFSI AI development budgets stretch further, enabling faster internal LLM adoption; vendor margin compression ahead.",
+    "source": {
+      "name": "CNBC · 2026-06-11",
+      "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html"
+    }
+  },
+  {
+    "id": "2026-06-11-anthropic-claude-policy-backtrack",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-11T03:11:22Z",
+    "headline": "Anthropic reverses AI research restriction after researcher backlash over covert safeguards",
+    "plain_english": "Anthropic walked back a policy that would have secretly limited Claude's ability to help researchers build competing AI models, following public outcry.",
+    "why_it_matters": "Shows frontline AI labs vulnerable to governance pressure; signals importance of transparency in AI safety rules; impacts downstream trust in vendor platforms.",
+    "source": {
+      "name": "Wired · 2026-06-11",
+      "url": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/"
+    }
+  },
+  {
+    "id": "2026-06-11-xai-safety-lawsuit",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-10T22:31:19Z",
+    "headline": "xAI engineer sues company for wrongful termination after raising Grok safety concerns",
+    "plain_english": "Former xAI engineer alleges he was fired for flagging AI safety risks in Grok just before SpaceX IPO, citing retaliation and suppressed due diligence.",
+    "why_it_matters": "Highlights tension between safety review and commercial timelines; raises risk for banks relying on vendor safety claims; governance liability exposure.",
+    "source": {
+      "name": "TechCrunch · 2026-06-10",
+      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/"
+    }
+  },
+  {
     "id": "2026-06-11-visa-openai-agentic-commerce",
     "category": "shift",
     "jurisdiction": "Global",
@@ -539,31 +611,106 @@
     }
   },
   {
-    "id": "2026-06-08-meta-workforce-academy-datacenters",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-08T21:15:00Z",
-    "headline": "Meta launches 'Workforce Academy' to train workers for AI data center construction and operation",
-    "plain_english": "Meta is creating a structured training program to upskill workers for building and operating AI data centers, signaling an industry-wide shortage of specialized labor and Meta's confidence in long-term AI infrastructure investment.",
-    "why_it_matters": "BFSI cloud infrastructure costs will remain elevated as talent competition intensifies. Banks planning AI workload migration should budget for higher capex and longer timelines as vendor capacity constraints ease only gradually.",
+    "id": "2026-06-11-ai-ship-finance-paper",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "arXiv paper surveys AI and LLM applications in ship finance loan origination and underwriting",
+    "plain_english": "Researchers published case study on AI-augmented loan origination in ship finance, reviewing LLM use for processing heterogeneous financial and technical documents.",
+    "why_it_matters": "Demonstrates AI maturity in specialized asset-based lending; templates for BFSI document automation and unstructured data integration.",
     "source": {
-      "name": "WSJ · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSEtMMlBHT09QWkZrRldsMmw0X0dMeTdRX0E3VjZMdnlZeEhtZnY0N3hGaUhRUHhBX1NVbURqNW1QSW0tUTcxd2lZMVdpQzE5UzM1Wk5DdVF4bmJKeGZodWt5ZlpZZHJDaGNQUkNjc0ozRFBmbVBmc1dqZU10cEM4bVZiS1RQbUpxWmFzRTRrSG00MmJ4Y1l5N3M5R1RURlBETjU5RURKTWVWR2s"
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11238"
     }
   },
   {
-    "id": "2026-06-08-italy-monte-paschi-bidding-war",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-08T16:27:51Z",
-    "headline": "Intesa Sanpaolo launches $35.3bn unsolicited bid for Monte dei Paschi di Siena",
-    "plain_english": "Italy's largest bank Intesa Sanpaolo launched a hostile $35.3 billion bid to acquire the world's oldest bank, Monte dei Paschi, one day after rival Banco BPM proposed a merger of equals. Bidding war underway.",
-    "why_it_matters": "Consolidation in European retail banking accelerates; larger combined entities will invest heavily in digital and AI to achieve scale. Smaller mid-tier banks face existential pressure, spurring M&A activity and reshaping BFSI competitive landscape.",
+    "id": "2026-06-11-scenario-constraints-quantitative-finance",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "Automata-based framework enables exhaustive scenario analysis for exotic derivatives and structured products",
+    "plain_english": "New quantitative method uses finite-state automata to identify worst- and best-case outcomes under complex market constraints. Targets path-dependent instruments.",
+    "why_it_matters": "Improved risk verification for exotic options and structured products; helps risk teams validate pricing models and identify hidden tail risks.",
+    "jargon": [
+      {
+        "term": "Exotic option",
+        "def": "Non-standard derivative with payoff depending on asset price path, not just final spot; harder to price and hedge."
+      }
+    ],
     "source": {
-      "name": "Banking Dive · 2026-06-08",
-      "url": "https://www.bankingdive.com/news/monte-paschi-siena-intesa-sanpaolo-banco-bpm-35-billion-acquisition-merger-offer-messina-italy/822253/"
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11223"
+    }
+  },
+  {
+    "id": "2026-06-11-bermudan-option-pricing-gdmr",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "Hybrid LSMC-PDE method prices Bermudan options under stochastic volatility with mean reversion",
+    "plain_english": "Researchers developed efficient numerical method combining Monte Carlo and PDE solving for early-exercise option pricing under realistic volatility models.",
+    "why_it_matters": "Faster, more accurate pricing for complex derivatives; reduces computational cost in risk engines and trade valuation systems.",
+    "jargon": [
+      {
+        "term": "Bermudan option",
+        "def": "Derivative exercise-able on multiple predetermined dates, between American (any time) and European (expiry only) variants."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11237"
+    }
+  },
+  {
+    "id": "2026-06-11-mocha-agent-financial-reasoning",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "Market-of-claims code agent improves financial reasoning accuracy through claim-level verification",
+    "plain_english": "Researchers introduced MOCA-Agent: multi-agent system that decomposes financial questions into atomic claims, verifies each via specialist agents, then synthesizes executable code.",
+    "why_it_matters": "Addresses silent numerical errors in LLM financial reasoning; template for auditable AI in trading, risk modeling, and compliance workflows.",
+    "jargon": [
+      {
+        "term": "Atomic claim",
+        "def": "Single factual statement (e.g., 'Revenue > $1M') that can be verified independently before multi-step reasoning."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11537"
+    }
+  },
+  {
+    "id": "2026-06-11-credit-capacity-funding-shocks",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "Study reveals credit capacity disparity explains why funding shocks hit US and Brazilian banks differently",
+    "plain_english": "Using 2002–2025 supervisory data, researchers quantified institution-level credit capacity (ability to absorb shocks) and found US intermediaries 3–6x larger than Brazil's.",
+    "why_it_matters": "Informs stress testing frameworks; banks modeling contagion risk must account for regional credit capacity constraints and persistence across crises.",
+    "source": {
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11566"
+    }
+  },
+  {
+    "id": "2026-06-11-sci-con-bench-ai-agents",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-11T04:00:00Z",
+    "headline": "SciConBench evaluates AI agent ability to synthesize scientific conclusions from systematic reviews",
+    "plain_english": "Researchers released 9.1K-question benchmark with expert-validated conclusions to test whether AI agents can reliably synthesize evidence across multiple sources.",
+    "why_it_matters": "Establishes evaluation standard for high-stakes AI agent use in compliance, research synthesis, and regulatory analysis where accuracy is non-negotiable.",
+    "benchmark_name": "SciConBench",
+    "source": {
+      "name": "arXiv · 2026-06-11",
+      "url": "https://arxiv.org/abs/2606.11337"
     }
   },
   {
@@ -626,6 +773,36 @@
     "source": {
       "name": "Google DeepMind · 2026-06-09",
       "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/"
+    }
+  },
+  {
+    "id": "2026-06-11-opendoor-india-outsourcing",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-06-11T04:02:19Z",
+    "headline": "Opendoor's India exit fuels debate over AI, outsourcing, and labor displacement in financial services",
+    "plain_english": "Real estate fintech Opendoor exited India, sparking broader conversation about whether AI adoption reduces need for offshore GCC (global capability center) workers.",
+    "why_it_matters": "BFSI GCC strategy faces headwinds: AI automation can displace lower-cost offshore labor. Banks must rethink nearshore/hybrid models or face high turnover.",
+    "stat_value": "India is world's largest GCC market",
+    "stat_label": "Global Capability Centers workforce concentration",
+    "source": {
+      "name": "TechCrunch · 2026-06-11",
+      "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/"
+    }
+  },
+  {
+    "id": "2026-06-11-data-center-financing-maturity",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-10T22:31:16Z",
+    "headline": "AI data center financing market matures: investors shift focus from volume to project-level risk assessment",
+    "plain_english": "Citi report: AI data center bond market entering mature phase. Investors now scrutinizing offtake agreements, power supply stability, and sponsor credit quality per deal.",
+    "why_it_matters": "Financing AI infrastructure becomes harder and more costly; tech companies face higher borrowing spreads; banks' infrastructure lending margin pressure rises.",
+    "source": {
+      "name": "Citi AI Moves · 2026-06-10",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRWFLeG1TeVVwcDZ4NlNLQWh2dV84SVh5c2liZmxieHozNzl1eVcxaWJxeDFxZWtqTUdnMTBmR0Zsbk1FVDZaNVBhRWdwTDNuNHUyc1lQRy15WXNYc2Jiak9TYTRsODBTVXl0UnRvOW5vWThzMzRoYWlmTngtVzQ3UG1hUmZvUm9Ua0FsaGl4bGlBb3hRbU56RDBwckI"
     }
   },
   {
@@ -750,36 +927,6 @@
     "source": {
       "name": "TechCrunch · 2026-06-09",
       "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/"
-    }
-  },
-  {
-    "id": "2026-06-08-goldman-ai-warning-market-conditions",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-08T19:53:47Z",
-    "headline": "Goldman Sachs issues blunt warning on AI-driven market conditions and frothy valuations",
-    "plain_english": "Goldman Sachs warned that AI-driven enthusiasm is creating unsustainable market conditions and inflated valuations, signaling caution among top-tier research desks about near-term correction risk and earnings disappointment.",
-    "why_it_matters": "BFSI risk officers should stress-test AI-heavy portfolios for drawdown scenarios. Bank trading desks face whipsaw volatility; models trained on bull-market data will undershoot downside risk in correction.",
-    "stat_value": "Frothy valuations",
-    "stat_label": "Goldman Sachs view on AI-driven market",
-    "source": {
-      "name": "Yahoo Finance · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVnFpbjlaN1Nmb3hQcmdDaUZFdnloTVZvdHpBMnNvbWNCc2NqY1RJczJhNG9qWlFXeENZOGNqaUoxcjRjSzZNSFRtY0NFN1BpZzFYSkJjemxhbnNad0VFNlI2c01jMGV6UGl4dDVYU2hGQVJ4MVZwSi1VS09lSzk2dDV4ZHR3Tk95QnJUTnYxeFhyLTNQTXVMRmRTTW9fMnJX"
-    }
-  },
-  {
-    "id": "2026-06-08-citi-bofa-market-outlook-divergence",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-08T19:14:15Z",
-    "headline": "Goldman and Citi split on AI-fueled stock rally outlook; BofA warns to take profits",
-    "plain_english": "Major banks diverge sharply on market direction: Citi lifted S&P 500 target to 8,100 on AI earnings optimism, while BofA warned investors to lock in gains as red flags multiply. Consensus breaking down.",
-    "why_it_matters": "Lack of consensus among top BFSI research desks signals genuine uncertainty. Institutional investors are rotating to defensive positioning; expect volatility in equity and credit derivatives markets.",
-    "source": {
-      "name": "MSN · 2026-06-08",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTFFuLUVXMmdNdFJRLU02aHUxOFdQTXJtbHhtU2hDbnpmdDltZi0yQ3pYRmFic3Jzd1VneE9jdFV6elV4Zk1HYUtHZ1JmZTNqWlVDcFFxRWw1dUw0bzZhWnZpTW9XTFFWVThMMHl0a1k1NUc1cG0wWnQwVVc1VGJjRjRtZm9yenlURTJtRDlfTjNZM2NmSjZ4aXVudXliWW4wcUgteWJnQzFfUGhOQnA0c0xCZWNPWFRqVGVHY1BHRWREMzRpZDZ4RWs3c2hLM0dx"
     }
   },
   {
@@ -932,6 +1079,148 @@
     "source": {
       "name": "TechCrunch · 2026-06-08",
       "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
+    }
+  },
+  {
+    "id": "2026-06-08-fincen-suspicious-immigrant-activity",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-08T15:51:55Z",
+    "headline": "FinCEN advisory instructs banks to flag suspicious immigrant activity and undocumented employment",
+    "plain_english": "FinCEN issued guidance Friday urging banks to detect and report activity linked to employment of immigrants lacking permanent legal status, expanding AML/CFT compliance scope into immigration enforcement.",
+    "why_it_matters": "Banks face new compliance complexity and reputational risk; SAR filing volume and false-positive litigation risk will rise. Tech vendors must retrain models to detect novel suspicious patterns; compliance costs increase materially.",
+    "source": {
+      "name": "Banking Dive · 2026-06-08",
+      "url": "https://www.bankingdive.com/news/fincen-cfpb-banks-suspicious-activity-immigration-status/822246/"
+    }
+  },
+  {
+    "id": "2026-06-08-italy-meta-whatsapp-ai-investigation-closed",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-08T16:26:58Z",
+    "headline": "Italian regulator drops investigation into Meta's WhatsApp AI bot",
+    "plain_english": "Italy's data protection authority closed its investigation into Meta's AI-powered WhatsApp chatbot, clearing the way for broader deployment without regulatory intervention.",
+    "why_it_matters": "Precedent suggests EU regulators are becoming pragmatic on AI assistant deployment; BFSI can more confidently invest in customer-facing AI chatbots without facing immediate enforcement risk in major markets.",
+    "source": {
+      "name": "Reuters · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd0o0dHFsb25vMllYMW1HMGs2WHg3eFE1NUtyVFE5TC02SHZVUUpsQ29JQnVWNmV3Y1VqeDVaMjRBMmlmMXhXTDF5SGNRZ0V5R0R0TXlFM1R3cTdQbmU1VzdSbTZOYkNpR1ZYaVE1Qzd4VVY2dTE1NXUxMkxHQzdfRmtuQV9qcURuaXJZUHVBcTFndUZHUlhhZTJwZWZOVFp5bjM5S1FJWUR6T1E"
+    }
+  },
+  {
+    "id": "2026-06-10-santander-getnet-agent-payments",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-09T18:14:00Z",
+    "headline": "Santander's Getnet enables merchants to accept AI agent-initiated payments",
+    "plain_english": "Getnet, Santander's global merchant payments platform, launched AI-powered capabilities allowing merchants to securely accept payments initiated by autonomous AI agents. Extends agentic commerce infrastructure to enterprise merchants worldwide.",
+    "why_it_matters": "Major payments processor adding agent-payment rails signals industry shift toward payment infrastructure as enabler of autonomous commerce; consolidates Santander's payments advantage.",
+    "source": {
+      "name": "Finextra · 2026-06-09",
+      "url": "https://www.finextra.com/pressarticle/110084/santanders-getnet-helps-businesses-accept-agent-initiated-payments"
+    }
+  },
+  {
+    "id": "2026-06-09-klarna-savings-account-us",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-09T18:18:00Z",
+    "headline": "Klarna launches FDIC-insured savings account in US with >3% APY",
+    "plain_english": "Swedish fintech Klarna rolled out FDIC-insured savings accounts in the US via WebBank partnership, offering no minimums, no fees, and rates above 3% APY directly in-app. Extends Klarna's BNPL empire into deposit banking.",
+    "why_it_matters": "Klarna's deposit expansion signals fintech push into sticky savings products to drive stickiness; validates in-app banking as higher-margin complement to BNPL.",
+    "source": {
+      "name": "Finextra · 2026-06-09",
+      "url": "https://www.finextra.com/pressarticle/110085/klarna-launches-savings-account-in-us"
+    }
+  },
+  {
+    "id": "2026-06-08-ab-bank-ai-eloan-launch",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-06-08T21:17:22Z",
+    "headline": "AB Bank launches AI-powered digital loan product 'AB e-loan'",
+    "plain_english": "AB Bank in Bangladesh has deployed an AI-powered digital lending platform called 'AB e-loan' to automate loan origination and expand digital lending reach. Part of broader emerging-market fintech adoption trend.",
+    "why_it_matters": "AI-driven lending in emerging markets is reducing friction and cost-per-acquisition, forcing BFSI incumbents globally to accelerate digital transformation or lose margin to AI-native competitors.",
+    "source": {
+      "name": "The Financial Express · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdGtYSWJHUzBaZ3F4MUc5am5ZWG1oOURrQ0NkQXVCU1BwWDJ4YUZIVmdFZlpoSzB0NlExYzFXYXEybjFxLV81UFgtdC1BNm1HcVRObW1DNk9tbjI5T2Z3QzU5ZnlxSkhNQlJYZGdjaE1UYzNJVEpnQmtwWVkxaGRULXNubkhpOTBtVUl2ZWsyZDFzTS0taVE"
+    }
+  },
+  {
+    "id": "2026-06-08-arnifi-corporate-banking-platform",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-08T16:18:45Z",
+    "headline": "Arnifi launches AI-powered banking and payments platform for corporate customers",
+    "plain_english": "Arnifi unveiled an AI-powered banking and payments platform designed specifically for corporate treasury and payments workflows, competing directly with incumbent bank infrastructure for middle-market corporates.",
+    "why_it_matters": "Fintech disruption of corporate banking is accelerating; banks risk losing high-margin transaction revenue if they don't match embedded AI automation. Legacy core systems are increasingly insufficient.",
+    "source": {
+      "name": "BusinessLine · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUDY4aDhuOGE2UmgzZnI4ekhWbEgwYnEzQWNBNFNJQ1Nza3lrRnlHazBLcVlKcndGWXUtZHZfMUlrZGhpMmtVcHlOalpkTTBnWU5OZWNBcVNmYVpNY20xaXd1bmhrajJDeFpJeXRWbm1xY0RYVGFWQUo4QU9lUlVyRnVBNmpXU0thYUl1X0FLNzVDamp5NXZJZ0lJOXY2Z0UzM21BSTdnbWpEZ1h3NlBuZVFBZVJlNG14TmFLMHFJeHg4SHk4Y19lQlFjcDJnSmtRVGJ1X2JpeGk0UdIB4AFBVV95cUxPV0pGNUUtdHB3bVo1VDM0MnkxLTF5dlREdEtrNWdTZWY3NFFPS0VVUlBTTWV6SG0yeGg0MnNTZnUwNXR1eUwzeVJJNXVydHF2NUdqeXdMZTNXNmYzY19EUjVxWDNONHRIdEdQbGtsZVB5THBQY3FSQ20za3VOMURpMEVlbEFXVnF0WGtaeEVKeF83SXhlVFBwZjlIb18xMXlWZ0NhdW13cl9ZcHd1UE5qWWk1bVM5M1ZZR1FZVDVtazhhQk9iSGRTTFhLakZoSF9RRUMzZzVTaWN0blMzZUw0NA"
+    }
+  },
+  {
+    "id": "2026-06-08-meta-workforce-academy-datacenters",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-08T21:15:00Z",
+    "headline": "Meta launches 'Workforce Academy' to train workers for AI data center construction and operation",
+    "plain_english": "Meta is creating a structured training program to upskill workers for building and operating AI data centers, signaling an industry-wide shortage of specialized labor and Meta's confidence in long-term AI infrastructure investment.",
+    "why_it_matters": "BFSI cloud infrastructure costs will remain elevated as talent competition intensifies. Banks planning AI workload migration should budget for higher capex and longer timelines as vendor capacity constraints ease only gradually.",
+    "source": {
+      "name": "WSJ · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSEtMMlBHT09QWkZrRldsMmw0X0dMeTdRX0E3VjZMdnlZeEhtZnY0N3hGaUhRUHhBX1NVbURqNW1QSW0tUTcxd2lZMVdpQzE5UzM1Wk5DdVF4bmJKeGZodWt5ZlpZZHJDaGNQUkNjc0ozRFBmbVBmc1dqZU10cEM4bVZiS1RQbUpxWmFzRTRrSG00MmJ4Y1l5N3M5R1RURlBETjU5RURKTWVWR2s"
+    }
+  },
+  {
+    "id": "2026-06-08-italy-monte-paschi-bidding-war",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-08T16:27:51Z",
+    "headline": "Intesa Sanpaolo launches $35.3bn unsolicited bid for Monte dei Paschi di Siena",
+    "plain_english": "Italy's largest bank Intesa Sanpaolo launched a hostile $35.3 billion bid to acquire the world's oldest bank, Monte dei Paschi, one day after rival Banco BPM proposed a merger of equals. Bidding war underway.",
+    "why_it_matters": "Consolidation in European retail banking accelerates; larger combined entities will invest heavily in digital and AI to achieve scale. Smaller mid-tier banks face existential pressure, spurring M&A activity and reshaping BFSI competitive landscape.",
+    "source": {
+      "name": "Banking Dive · 2026-06-08",
+      "url": "https://www.bankingdive.com/news/monte-paschi-siena-intesa-sanpaolo-banco-bpm-35-billion-acquisition-merger-offer-messina-italy/822253/"
+    }
+  },
+  {
+    "id": "2026-06-08-goldman-ai-warning-market-conditions",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-08T19:53:47Z",
+    "headline": "Goldman Sachs issues blunt warning on AI-driven market conditions and frothy valuations",
+    "plain_english": "Goldman Sachs warned that AI-driven enthusiasm is creating unsustainable market conditions and inflated valuations, signaling caution among top-tier research desks about near-term correction risk and earnings disappointment.",
+    "why_it_matters": "BFSI risk officers should stress-test AI-heavy portfolios for drawdown scenarios. Bank trading desks face whipsaw volatility; models trained on bull-market data will undershoot downside risk in correction.",
+    "stat_value": "Frothy valuations",
+    "stat_label": "Goldman Sachs view on AI-driven market",
+    "source": {
+      "name": "Yahoo Finance · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVnFpbjlaN1Nmb3hQcmdDaUZFdnloTVZvdHpBMnNvbWNCc2NqY1RJczJhNG9qWlFXeENZOGNqaUoxcjRjSzZNSFRtY0NFN1BpZzFYSkJjemxhbnNad0VFNlI2c01jMGV6UGl4dDVYU2hGQVJ4MVZwSi1VS09lSzk2dDV4ZHR3Tk95QnJUTnYxeFhyLTNQTXVMRmRTTW9fMnJX"
+    }
+  },
+  {
+    "id": "2026-06-08-citi-bofa-market-outlook-divergence",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-08T19:14:15Z",
+    "headline": "Goldman and Citi split on AI-fueled stock rally outlook; BofA warns to take profits",
+    "plain_english": "Major banks diverge sharply on market direction: Citi lifted S&P 500 target to 8,100 on AI earnings optimism, while BofA warned investors to lock in gains as red flags multiply. Consensus breaking down.",
+    "why_it_matters": "Lack of consensus among top BFSI research desks signals genuine uncertainty. Institutional investors are rotating to defensive positioning; expect volatility in equity and credit derivatives markets.",
+    "source": {
+      "name": "MSN · 2026-06-08",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTFFuLUVXMmdNdFJRLU02aHUxOFdQTXJtbHhtU2hDbnpmdDltZi0yQ3pYRmFic3Jzd1VneE9jdFV6elV4Zk1HYUtHZ1JmZTNqWlVDcFFxRWw1dUw0bzZhWnZpTW9XTFFWVThMMHl0a1k1NUc1cG0wWnQwVVc1VGJjRjRtZm9yenlURTJtRDlfTjNZM2NmSjZ4aXVudXliWW4wcUgteWJnQzFfUGhOQnA0c0xCZWNPWFRqVGVHY1BHRWREMzRpZDZ4RWs3c2hLM0dx"
     }
   },
   {
