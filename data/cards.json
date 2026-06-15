@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-06-15-anthropic-mythos-export-control",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-15T18:15:13.000Z",
+    "headline": "US Commerce Department restricts foreign access to Anthropic's Mythos model via export control order",
+    "plain_english": "The US Commerce Department issued an export control directive forcing Anthropic to block foreign nationals from accessing its latest AI models (Fable and Mythos). Move impacts multinational BFSI operations and cybersecurity partnerships.",
+    "why_it_matters": "First AI model export control; signals US willingness to weaponize frontier AI access. Multinational banks and fintechs with distributed teams will face compliance friction. Cybersecurity capabilities become geofenced.",
+    "jargon": [
+      {
+        "term": "Export control directive",
+        "def": "US Commerce Department order restricting foreign access to controlled AI models as national security measure."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-06-15",
+      "url": "https://www.cnbc.com/2026/06/15/anthropic-mythos-trump-ai.html"
+    }
+  },
+  {
     "id": "2026-06-14-regulation-anthropic-export-freeze",
     "category": "regulation",
     "jurisdiction": "US",
@@ -156,20 +176,6 @@
     }
   },
   {
-    "id": "2026-06-13-regulation-kpmg-hallucination-report",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-13T20:42:31.000Z",
-    "headline": "KPMG withdraws AI usage report after discovering apparent LLM hallucinations in findings",
-    "plain_english": "KPMG pulled a published report on AI adoption after discovering the research itself was compromised by AI hallucinations—false data points and fabricated statistics. The irony underscores risks of using LLMs for high-stakes analysis without robust fact-checking.",
-    "why_it_matters": "Red flag for BFSI governance. If Big Four audit/consulting firms can ship hallucinated reports, third-party AI assessments are unreliable. Compliance teams relying on vendor AI reports for due diligence, risk assessment, or regulatory filings now face credibility risk. Demand manual verification and chain-of-custody for AI-generated analysis.",
-    "source": {
-      "name": "TechCrunch · 2026-06-13",
-      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
-    }
-  },
-  {
     "id": "2026-06-14-deployment-coinbase-ai-trading",
     "category": "deployment",
     "jurisdiction": "US",
@@ -244,31 +250,102 @@
     }
   },
   {
-    "id": "2026-06-12-sixfold-ai-underwriting-agent",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-12T17:23:04.000Z",
-    "headline": "Sixfold launches AI underwriting agent with straight-through quote and bind capability",
-    "plain_english": "InsurTech vendor Sixfold deployed an agentic AI system capable of end-to-end underwriting (quote generation and policy binding) without human approval, targeting commercial insurance.",
-    "why_it_matters": "First production agentic underwriting system; demonstrates viability of AI agents in regulated finance. Other insurers will race to copy; expect regulatory scrutiny on delegated authority and claims payout liability.",
+    "id": "2026-06-15-salesforce-fin-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-15T18:06:01.000Z",
+    "headline": "Salesforce acquires AI customer service platform Fin for $3.6 billion",
+    "plain_english": "Salesforce bought Fin, an AI-powered customer service automation platform, for $3.6B to expand Agentforce, its enterprise agent platform. The deal signals accelerating agentic AI adoption in customer-facing operations.",
+    "why_it_matters": "Validates enterprise willingness to pay billions for agent-based automation; signals Salesforce's pivot from traditional CRM to autonomous task execution—a paradigm other cloud vendors will pursue.",
+    "amount": "$3.6B",
+    "jargon": [
+      {
+        "term": "Agentforce",
+        "def": "Salesforce's platform for building and deploying AI agents that automate business tasks without human intervention."
+      }
+    ],
     "source": {
-      "name": "theinsurer.com · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQampMVGd3RmNLa0ppNkxTWFMtNE1IaWNEcGZDMDZ6bEJwSXptLXRGMXZuendfR1FKX0tpeUR0LUEwZG1PRzNuTTRwcl9aVXhQTEQ3MExTQU93UHpxYXhtc0lLQ21tTXg5ZTFXMkN4dHRYTTRIUlNDVTlNb1hzODBTSFZkTjdmNk5BX19uYmJ3OWpGUV9mUkpHQWg3NWR0Sm9MRmR0OHVtVlpsckM4S0lhQk9UNkk5RmdTQTZIUW1NYlBPYktTanc"
+      "name": "CNBC · 2026-06-15",
+      "url": "https://www.cnbc.com/2026/06/15/salesforce-ai-customer-service-fin-acquistion.html"
     }
   },
   {
-    "id": "2026-06-12-coinbase-ai-agents",
-    "category": "deployment",
+    "id": "2026-06-15-nvidia-debt-sale-25b",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-12T15:04:53.000Z",
-    "headline": "Coinbase launches AI agents capable of autonomous crypto trading and payments",
-    "plain_english": "Coinbase released AI agents that can autonomously execute crypto trades and make payments on behalf of users, operating within a permissioned account model.",
-    "why_it_matters": "Demonstrates agentic AI moving beyond text into financial execution. Raises custody, segregation, and anti-fraud questions; regulators will scrutinize agent authorization frameworks.",
+    "severity": "med",
+    "published_at": "2026-06-15T20:07:27.000Z",
+    "headline": "Nvidia plans $25 billion debt sale, first since 2021",
+    "plain_english": "Nvidia is raising ~$25B in corporate bonds—its first debt issuance since the AI boom started. The chipmaker, now a core infrastructure provider for LLM and AI model training, is using capital markets to fund growth without equity dilution.",
+    "why_it_matters": "Shows AI infrastructure vendors now commanding balance-sheet heft to borrow at scale. Capital deployment signals confidence in sustained AI spend by enterprises and cloud providers.",
+    "amount": "$25B",
     "source": {
-      "name": "International Business Times · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbnhZZU9Id3AxUUhwcjhHQndQWTRYQXhxVzlFY1BlbUdfNkpSczlrZnp5OV9mbHRySGY0N08xTE1tTnVoeTg5TExZcWR2MGlLYlkyRUZoS2xrQ191alFORGhmRVlXNHd4VTg3V1k3NnJfcERMMEcyOFVlRU5KZkpuaGd4THVVd0tCWW84TGowaWM1azJpWEVtYU1pdHJ6YXNmMkZR"
+      "name": "Reuters · 2026-06-15",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOb3J6OUR4dG9YbWJEWmwzYkQ1SVpMOHFiQU9PMmYweDJ6N0R0dUhmNmt6THBkdlFxMHhUcDA1OFFwSktsNUQ4c3N2WW9ZU0J1YTZHYk95RVc0c25mV3Bqd0kyVEJNMUQ1U2FvSUt4Z1N2a1BMTXJJRHRyWnJRV2J4cGY4NktrTVgzdHVQWXBGZ3hDSnAzb3RJR0FWUXRjUEdkejJXMTh3dWhINWFrQ3RtMmxINTVrOERqVGctZXJCVF9RRDd2OEtWdg?oc=5"
+    }
+  },
+  {
+    "id": "2026-06-15-nuvei-payoneer-2p75b",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-15T18:22:00.000Z",
+    "headline": "Nuvei acquires Payoneer for $2.75 billion in cross-border payments push",
+    "plain_english": "Canadian payment processor Nuvei is buying Payoneer (NYC-based fintech) for $2.75B to create a larger cross-border payments player. Consolidation in the fintech-payments layer as scale becomes critical.",
+    "why_it_matters": "Reflects fintech M&A convergence: smaller pure-play moats are eroding; players need multi-geography, multi-rail capabilities to compete. BFSI will benefit from consolidated, deeper payment infrastructure.",
+    "amount": "$2.75B",
+    "source": {
+      "name": "Finextra · 2026-06-15",
+      "url": "https://www.finextra.com/pressarticle/110139/nuvei-confirms-275bn-payoneer-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-06-15-sarvam-ai-unicorn-234m",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-06-15T13:46:08.000Z",
+    "headline": "Indian AI startup Sarvam achieves unicorn status with $234 million Series B led by HCLTech",
+    "plain_english": "Sarvam AI, a Bengaluru-based AI company, raised $234M (HCLTech leading with $150M) to become India's newest AI unicorn. Reflects India's strategic push into AI infrastructure and LLM development.",
+    "why_it_matters": "India is building indigenous AI capacity. HCLTech's $150M anchor signals enterprise IT services players betting on AI-first models. Watch for BFSI regulatory preference for India-trained models.",
+    "amount": "$234M",
+    "round": "Series B",
+    "source": {
+      "name": "TechCrunch · 2026-06-15",
+      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/"
+    }
+  },
+  {
+    "id": "2026-06-15-newcore-ai-agents-66m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-15T13:00:00.000Z",
+    "headline": "NewCore raises $66 million to manage AI agents as enterprise workforce",
+    "plain_english": "NewCore secured $66M Series A funding to provide identity and governance infrastructure for AI agents deployed as enterprise employees. Positions governance as the next critical layer above agent platforms.",
+    "why_it_matters": "As banks and fintechs deploy autonomous AI agents at scale, compliance and audit trails become existential. NewCore signals a new security/governance layer. Regulators will require similar controls.",
+    "amount": "$66M",
+    "round": "Series A",
+    "source": {
+      "name": "TechCrunch · 2026-06-15",
+      "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/"
+    }
+  },
+  {
+    "id": "2026-06-15-waniwani-ai-fintech-8m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-15T13:00:00.000Z",
+    "headline": "Waniwani, AI-powered fintech vendor platform, raises $8 million seed",
+    "plain_english": "Waniwani, a fintech startup using AI to help vendors surface their solutions to financial institutions, closed an $8M seed round. Focuses on improving fintech-to-bank discovery and integration.",
+    "why_it_matters": "Signals demand for AI-driven vendor management and tech scouting; banks and insurers overwhelmed by fintech fragmentation will adopt layer above app stores.",
+    "amount": "$8M",
+    "round": "Seed",
+    "source": {
+      "name": "Finextra · 2026-06-15",
+      "url": "https://www.finextra.com/newsarticle/47916/ai-fintech-startup-waniwani-raises-8-million?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -329,36 +406,6 @@
     "source": {
       "name": "CNBC · 2026-06-13",
       "url": "https://www.cnbc.com/2026/06/13/from-10percent-chance-of-success-to-2-trillion-spacexs-historic-ipo.html"
-    }
-  },
-  {
-    "id": "2026-06-12-mistral-3b-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-12T17:38:11.000Z",
-    "headline": "Mistral AI rumored to be raising €3B at €20B valuation",
-    "plain_english": "European frontier AI startup Mistral is in talks to raise €3 billion at a ~€20 billion valuation (roughly $23 billion USD), nearly double its Series C valuation of €11.7 billion.",
-    "why_it_matters": "EU AI champion is now valued close to OpenAI's Series E; demonstrates investor appetite for non-U.S. alternatives and open-source model strategy.",
-    "amount": "€3B",
-    "round": "Series D (rumored)",
-    "source": {
-      "name": "TechCrunch · 2026-06-12",
-      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/"
-    }
-  },
-  {
-    "id": "2026-06-12-fraudio-fraud-detection-funding",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-12T15:27:00.000Z",
-    "headline": "Fraudio raises funds for real-time AI fraud detection in payments",
-    "plain_english": "Fraudio, a fintech specializing in real-time fraud prevention for payments, closed a funding round led by Alea Capital Partners to expand internationally and enhance AI-powered detection.",
-    "why_it_matters": "BFSI-focused AI fraud vendor gaining traction; banks should evaluate against in-house and incumbent vendors (ACI, Feedzai, Socure) for payments compliance workflows.",
-    "source": {
-      "name": "Finextra · 2026-06-12",
-      "url": "https://www.finextra.com/pressarticle/110126/fraudio-raises-funds-for-ai-fraud-detection?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -527,20 +574,6 @@
     }
   },
   {
-    "id": "2026-06-12-google-skin-condition-ai",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-12T17:52:00.000Z",
-    "headline": "Google Research explores AI-assisted diagnosis of skin conditions",
-    "plain_english": "Google Research published findings on how AI models can help users self-assess and understand skin health conditions, with implications for scalable telehealth and remote diagnostics.",
-    "why_it_matters": "Demonstrates frontier lab investment in healthcare AI; insurance companies and digital health platforms will integrate similar models, raising data privacy and FDA classification questions.",
-    "source": {
-      "name": "Google Research · 2026-06-12",
-      "url": "https://research.google/blog/research-into-how-ai-can-help-users-understand-skin-conditions/"
-    }
-  },
-  {
     "id": "2026-06-14-insight-ai-cost-curtailment-squeeze",
     "category": "insight",
     "jurisdiction": "Global",
@@ -573,97 +606,17 @@
     }
   },
   {
-    "id": "2026-06-13-ai-agent-economics",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-12T16:49:16.000Z",
-    "headline": "After AI spending binge, firms pivot to caps, dashboards, and ROI discipline",
-    "plain_english": "McKinsey and enterprise CFOs are now enforcing GenAI budget caps, building cost-allocation dashboards, and requiring measurable returns on AI pilots—signaling end of unconstrained AI investment phase.",
-    "stat_value": "~60%",
-    "stat_label": "of enterprise AI pilots stalled or failed to scale beyond pilot phase",
-    "why_it_matters": "BFSI CIOs must prepare for tighter budgets, more rigorous proof-of-concept requirements, and CFO pushback on 'AI for AI's sake' projects; focus shifts to measurable ROI in ops efficiency, risk reduction, and revenue.",
-    "source": {
-      "name": "McKinsey via Quartz · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tSGZsbHhSMzBVVFloTGRPRmZ4anhlQmZaZEF3aVkxMkZhVVpUMFNFWnZpeFZsTDE0SUhOc0RGbHUyYlBfNGc2NHZNcWVBV2p0VWVIeExwbDkxSWhwM0hKX2ptSkdBRC13OWMweDRwaUtydw"
-    }
-  },
-  {
-    "id": "2026-06-12-bcg-ai-productivity-management",
-    "category": "insight",
+    "id": "2026-06-13-regulation-kpmg-hallucination-report",
+    "category": "regulation",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-06-12T17:52:09.000Z",
-    "headline": "AI productivity gains are real but leadership struggles to articulate AI vision and strategy",
-    "plain_english": "BCG analysis shows enterprise productivity gains from AI are measurable, but C-suite and board-level strategy communication is weak; leaders lack clear narratives on AI's role in competitive differentiation.",
-    "stat_value": "40–60%",
-    "stat_label": "of CFOs report difficulty translating AI productivity gains into shareholder value",
-    "why_it_matters": "BFSI boards are skeptical of AI ROI despite evidence. CIOs must package AI initiatives in business terms (risk reduction, cost per basis point, customer lifetime value) rather than tech specs to secure buy-in.",
+    "published_at": "2026-06-13T20:42:31.000Z",
+    "headline": "KPMG withdraws AI usage report after discovering apparent LLM hallucinations in findings",
+    "plain_english": "KPMG pulled a published report on AI adoption after discovering the research itself was compromised by AI hallucinations—false data points and fabricated statistics. The irony underscores risks of using LLMs for high-stakes analysis without robust fact-checking.",
+    "why_it_matters": "Red flag for BFSI governance. If Big Four audit/consulting firms can ship hallucinated reports, third-party AI assessments are unreliable. Compliance teams relying on vendor AI reports for due diligence, risk assessment, or regulatory filings now face credibility risk. Demand manual verification and chain-of-custody for AI-generated analysis.",
     "source": {
-      "name": "BCG via Fortune · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYXRPV0VCQlllUk9UaGpIMWR4Q29RcUx3WTFxVnZpWnhaYWVCUVlGZDU0Z293S3lOMUY3YjF5S2FqelV2VjE4X2lYT3pkN0ljU1ZxdVhORkJudHUxVWZkQlNXQjdwdVZLOFpudEhMYzdyQlFBcHVSU1RqaDBQV0Nna1RaTDMxb0dHZnNOSW52SW9JaWJtRUozVjhtZk80Rl9sM0c0cHdWbWdMNk13cElkd2o0Q3BBMUtBRGFRRWRTYkdMV2hnbE1ocA"
-    }
-  },
-  {
-    "id": "2026-06-12-banking-ops-ai-hiring",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-12T16:21:14.000Z",
-    "headline": "Regulators push banks to staff AI governance; hiring pressure on compliance and risk roles",
-    "plain_english": "Following Fed and OCC guidance on AI governance, major banks are posting dozens of Chief Compliance Officer, AI Risk, and Regulatory Affairs roles. Talent shortage in specialized AI-risk expertise is acute.",
-    "why_it_matters": "BFSI hiring for AI governance roles will accelerate. Risk officers with AI model validation and fairness audit experience command premium salaries; expect external hiring from fintech and tech.",
-    "source": {
-      "name": "Banking Dive · 2026-06-12",
-      "url": "https://www.bankingdive.com/news/senators-press-trump-fill-vacant-fdic-sec-board-seats/822820/"
-    }
-  },
-  {
-    "id": "2026-06-13-spacex-ipo-frontier-ai",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-12T20:42:19.000Z",
-    "headline": "SpaceX IPO opens at $2 trillion valuation; Elon Musk becomes world's first trillionaire",
-    "plain_english": "SpaceX launched its IPO on the Nasdaq at $135/share, raising $75 billion and valuing the company at ~$2 trillion. Stock surged 19% on first day. Musk's combined SpaceX and Tesla holdings now exceed $1 trillion.",
-    "why_it_matters": "Historic liquidity event will redirect venture capital away from early-stage AI startups toward space tech and energy infrastructure. BFSI dealmakers and wealth managers will compete for newly minted SpaceX millionaires' assets.",
-    "source": {
-      "name": "CNBC · 2026-06-12",
-      "url": "https://www.cnbc.com/2026/06/12/elon-musk-trillionaire-spacex.html"
-    }
-  },
-  {
-    "id": "2026-06-12-chinese-ai-scam-google-lawsuit",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-12T20:38:09.000Z",
-    "headline": "Google sues Chinese cybercrime group 'Outsider Enterprise' for AI-powered mass text scams",
-    "plain_english": "Google filed a lawsuit against a Chinese-based criminal operation called 'Outsider Enterprise' that weaponized AI to send 2.5 million phishing text messages, defrauding hundreds of thousands of victims.",
-    "why_it_matters": "Proves AI-driven social engineering at scale is operationalized by nation-state-adjacent actors. Banks must harden SMS-based authentication and add multi-factor verification to all customer-facing interactions.",
-    "jargon": [
-      {
-        "term": "Phishing at scale",
-        "def": "Mass AI-generated impersonation attacks using synthetic voices, text, or images to trick users into disclosing credentials or funds."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-06-12",
-      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/"
-    }
-  },
-  {
-    "id": "2026-06-12-us-china-ai-compute-battle",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-12T16:09:51.000Z",
-    "headline": "U.S.–China AI arms race pivots to compute; Beijing ramping up spending on GPUs and data centers",
-    "plain_english": "Bloomberg reports China is massively accelerating GPU and compute infrastructure investments to overcome U.S. export controls on AI chips, intensifying strategic competition over frontier AI capability.",
-    "why_it_matters": "U.S. regulators and BFSI leaders should expect China to leapfrog with alternative chips and homegrown models within 18 months; U.S. financial institutions may face dual-vendor risk or geopolitical AI fragmentation.",
-    "source": {
-      "name": "Bloomberg · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVDRYTnJzWFZEOXJMS3E0Ykxhd1czbm5NWlEzb3ZyTHFPckRrXzJ6M3JTdHhLRXN4OWpESzVEYUN0dFpqQWoxRXpHSHdIbEJEVXNuQ0ZMQTZ0eTA2ZjVNd2dMX2RvYmxCTExYTFUwUFVleFpFSEdySHlCdm5wU28zWFpPX0MxTERTWHQ3Sm9EbkFDcXdUaEY5V0plSmpEdHNIZS11UzQwT1dxaEV0MS0tdUxXRHJ1VGVsbXVHbA"
+      "name": "TechCrunch · 2026-06-13",
+      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
     }
   },
   {
@@ -698,74 +651,6 @@
     "source": {
       "name": "WSJ · 2026-06-12",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOczJveU92ekJOZXdhUktDVEd2SU1iR0lFT3FlNjhCYndBZ1dBTzdOLWZlT0p5SFZUV3l3SFBKZ21kSVJhenBVMVpBZURVTlMtZTl4cU53d3NVVzBvZ0k3RF9NSUlvWGFBVXhUenNvVG04RGs3X3pnWmIzcTJ6djVySmotMU0zNnJnLXpYelhrV2tDT2JuWXQ3dw"
-    }
-  },
-  {
-    "id": "2026-06-12-us-bank-regulators-ai-scrutiny",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-12T16:53:19.000Z",
-    "headline": "U.S. bank regulators ramp up scrutiny of AI use at financial firms",
-    "plain_english": "Federal banking agencies (OCC, Fed, FDIC) are intensifying oversight of how banks deploy AI in lending, trading, and operations—moving from advisory guidance to active enforcement posture.",
-    "why_it_matters": "Banks must now formally document AI governance, model validation, and bias testing; non-compliance could trigger enforcement actions and capital penalties.",
-    "jargon": [
-      {
-        "term": "Model governance",
-        "def": "Framework for validating, monitoring, and auditing AI models in production to prevent unfair lending or trading outcomes."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR3pVUi0zQTJkVzRYRlFXY2tjdTExalR4UGxNZ2ZBOVRrYkg4eGdDajZmTzdLdUdNRHpKSDhmOUUtcTVrMjBSZGN4OUdSLUpiT0lnLWY3QWNsWmNkdWJ6bWtEcTNOX2dRNXdWM3BfblEyQlgxTUJsUURPaHRBeWFrTk02eDVGVzJuZTNFVUJDR0pycVgzbGpiLUpaMk1DR200Z2N3WGVYZHVxU0tKX2ttUlRVZERJdw"
-    }
-  },
-  {
-    "id": "2026-06-12-g7-quantum-tech-report",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-12T18:42:00.000Z",
-    "headline": "G7 central banks publish quantum technology readiness guidance for financial sector",
-    "plain_english": "The G7 Central Bank Quantum Technologies Working Group released its first public report, 'Preparing for Quantum Technologies,' outlining risk and policy considerations for banks preparing for post-quantum cryptography transition.",
-    "why_it_matters": "Banks must begin quantum-safe migration plans now; regulatory expectation is set that crypto agility and lattice-based schemes should be tested by 2027.",
-    "jargon": [
-      {
-        "term": "Post-quantum cryptography",
-        "def": "Encryption methods resistant to attacks by quantum computers; NIST-standardized alternatives to RSA that banks must migrate to."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-06-12",
-      "url": "https://www.finextra.com/pressarticle/110127/g7-central-banks-publish-report-on-quantum-tech?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-06-12-canada-ai-chatbot-regulation",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-06-12T16:55:09.000Z",
-    "headline": "Canada proposes AI chatbot guardrails post-school-shooting, but enforcement holes remain",
-    "plain_english": "Canada is moving to restrict AI chatbot use in harmful contexts (following a school shooting linked to an AI-generated threat), but regulatory loopholes around jurisdictional boundaries and provider accountability limit practical effect.",
-    "why_it_matters": "Sets precedent for crisis-driven AI regulation; banks in Canada must prepare for content moderation liability if chatbots are deployed for customer service.",
-    "source": {
-      "name": "Reuters · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSVgxb25iX3BXNXFIR09OWkdwY09FNEIxSFZWbnk3UU9GTTBZVEdJMkp1OFNnd2lJcVEyamE0RmVkZlA4TXhMNHd4bTBhd3BLczBlN3dWeE9OMWJOT1JUcTM5OVdwOC1FSWEwMzFOdl80bExNTE5vRXlLNGU0WWpJY0l3ZnItcE1oTTR3cHA0VDB5UWg0RnRYdDkwT05zbGlLWHdLUm5CcGo0eHY0eGNaV0ZiSVNmdTJ5djZtS1JJNkFDNWhVdUE"
-    }
-  },
-  {
-    "id": "2026-06-12-google-german-ai-liability",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-12T18:30:15.000Z",
-    "headline": "Google to challenge German court ruling holding it liable for AI-generated false claims",
-    "plain_english": "A German court found Google liable for false information generated by its AI search summaries. Google is appealing, arguing AI outputs should not trigger publisher liability.",
-    "why_it_matters": "Sets EU precedent: if upheld, establishes publisher-like liability for AI-generated content, forcing all BFSI firms using GenAI customer-facing tools to implement verification and disclaimers.",
-    "source": {
-      "name": "Reuters · 2026-06-12",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeS04R0h5dWx5VEZadTdlRWZiT01JUlZJMXRqalFLX25PLS1UYXg1RVRWbXJESEtCZnZjUTVJYW9zMDZWTHJHbWgzRTJxOTlRUzk2TVE1UU5MWGVRZ0FTSkdSMUJQd3FvTmdlUzRHTmZjT3N6dEstNXBZU0E2SGdjT3VKUVd3UXlwa2xhbGRoUlo0WHNvd0szdjlpdmdQM3BVdWdqdURCTm5hTUF6Y05MZk1QRlZ6VklRbTNGMmVB"
     }
   }
 ]
