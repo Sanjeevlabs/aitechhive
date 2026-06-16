@@ -161,23 +161,93 @@
     }
   },
   {
-    "id": "2026-06-13-regulation-anthropic-export-control",
-    "category": "regulation",
+    "id": "2026-06-16-deployment-pennymac-aws",
+    "category": "deployment",
     "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-16T14:35:00Z",
+    "headline": "PennyMac expands AWS partnership to accelerate AI-driven mortgage platform",
+    "plain_english": "PennyMac Financial Services (NYSE: PFSI), a major US mortgage lender and servicer, expanded its strategic agreement with Amazon Web Services to become an AI-driven mortgage technology leader. The expansion deepens cloud infrastructure and AI workload deployment.",
+    "why_it_matters": "Signals how tier-1 financial services firms are locking in public-cloud hyperscaler partnerships for production AI—raising switching costs and consolidating AWS's position in BFSI.",
+    "source": {
+      "name": "Finextra · 2026-06-16",
+      "url": "https://www.finextra.com/pressarticle/110156/pennymac-names-aws-as-preferred-cloud-provider"
+    }
+  },
+  {
+    "id": "2026-06-16-deployment-nationwide-aveni",
+    "category": "deployment",
+    "jurisdiction": "UK",
     "severity": "high",
-    "published_at": "2026-06-13T04:34:00.000Z",
-    "headline": "US bans foreign access to Anthropic's Fable 5, Mythos 5 models via emergency export control",
-    "plain_english": "The US government issued an emergency export control order blocking international users from accessing Anthropic's most advanced AI models (Fable 5 and Mythos 5). Anthropic immediately halted worldwide access to comply. The move suggests AI model capability is now treated as strategic technology subject to national security controls.",
-    "why_it_matters": "Sets precedent for treating frontier AI models like weapons-grade tech. BFSI firms relying on Anthropic now face geographic fragmentation of AI tools; compliance teams must map which models/jurisdictions can access what. Expect regulators globally to follow.",
+    "published_at": "2026-06-16T09:08:00Z",
+    "headline": "Nationwide deploys Aveni's FinLLM in live production environment",
+    "plain_english": "Nationwide has gone live with FinLLM, Aveni's large language model purpose-built for UK financial services. Production deployment signals maturity of domain-specific generative AI for BFSI compliance and customer interactions.",
+    "why_it_matters": "First major UK mutual to move bespoke BFSI LLM into production shows the segment is moving from pilots to scaled operations—validates the FinLLM model architecture.",
+    "source": {
+      "name": "Finextra · 2026-06-16",
+      "url": "https://www.finextra.com/newsarticle/47923/nationwide-deploys-avenis-finllm-in-live-production-environemnt"
+    }
+  },
+  {
+    "id": "2026-06-16-deployment-tradeweb-ai-research",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-16T09:53:26Z",
+    "headline": "Tradeweb rolls out AI-powered research assistant for institutional credit trading",
+    "plain_english": "Tradeweb, a leading institutional trading platform, launched an AI research assistant to help credit traders analyze data and generate insights. Deployed to support institutional workflows at scale.",
+    "why_it_matters": "Signals shift from general LLMs to vertical AI agents in capital markets—institutional trading workflows now embed AI-native research tooling, raising bar for competitors.",
+    "source": {
+      "name": "The TRADE · 2026-06-16",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSllSUHRFSlNCVGJMUklVMjN5NzdYVWlPeDNOZVNyV3E5aFd6RDM5WDlJbmV2QUlaTHpXUDhIV3VXcWJaWnRyS2xwMHM1NDMxVUZWS1NnYzNNWUREa25paEM2SUJCd05MSmZtcXRFdVppcXdXZThaTDdUdUVRaUNrYUZFRk5sNlNGTllIUFhfZWZwVXhiZjVtSG5vQ1BLcEdIUHBtQXVVTGl6TmlMRE9VVlJiTkhJME5xTEE"
+    }
+  },
+  {
+    "id": "2026-06-16-deployment-alipay-ai",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-06-16T07:21:00Z",
+    "headline": "Alipay launches AI-powered version to reinvent China's dominant super app",
+    "plain_english": "Alipay released an AI-native version of its super app, the digital financial platform used by hundreds of millions of Chinese consumers. Signals shift toward agentic interfaces in consumer fintech.",
+    "why_it_matters": "Largest payments platform in APAC pivoting to AI agents changes UX paradigm globally—consumer fintech follows, and BFSI incumbents must rearchitect integration layers.",
+    "source": {
+      "name": "China Daily · 2026-06-16",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9aUWpad2o2RHlzclY1UEVPWFQwZ0NIUEJYb2tOdVpEYXhOUXV1cmd6MmJ1R0xvLUZfVXNUOW1faE94dHc5Y3RYQkFfOEdIVGNIckVMVHpiSXNHd1piS1JyY293eE5GVDdhQUpfbnlUNVJ3RVhGNy04OXFVbWVtUQ"
+    }
+  },
+  {
+    "id": "2026-06-16-deployment-shield-copilot",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-16T14:33:00Z",
+    "headline": "Shield extends surveillance platform to cover Microsoft 365 Copilot interactions",
+    "plain_english": "Shield, a global communications surveillance vendor for financial services, extended its monitoring platform to capture Microsoft 365 Copilot and image-based content interactions. Addresses emerging compliance blind spots in LLM-mediated workflows.",
+    "why_it_matters": "Regulatory risk surface for Copilot/LLM adoption in BFSI just widened—firms now need purpose-built surveillance tooling or face conduct/market abuse exposure in AI-native workflows.",
+    "source": {
+      "name": "Finextra · 2026-06-16",
+      "url": "https://www.finextra.com/pressarticle/110155/shield-surveilles-microsoft-copilot-interactions"
+    }
+  },
+  {
+    "id": "2026-06-16-deployment-moody-amazon-quick-mcp",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-16T14:31:00Z",
+    "headline": "Moody's integrates analytics into Amazon Quick via Model Context Protocol",
+    "plain_english": "Moody's Corporation made its connected intelligence available within Amazon Quick, Amazon's proactive AI assistant, via a dedicated Model Context Protocol (MCP) server. Enables LLM agents to directly access rating and risk data.",
+    "why_it_matters": "Shows frontier AI infra (MCP) reaching production in enterprise risk workflows—Moody's data becomes agentic, and AI assistant adoption accelerates if it can natively fetch real-time credit intelligence.",
     "jargon": [
       {
-        "term": "Export control order",
-        "def": "Government restriction on cross-border transfer of goods/tech deemed strategically sensitive; typically requires licensing for foreign distribution."
+        "term": "Model Context Protocol (MCP)",
+        "def": "Standard for LLM agents to securely query external data sources (APIs, databases) without embedding credentials; enables plug-and-play integration of enterprise data into AI assistants."
       }
     ],
     "source": {
-      "name": "Wall Street Journal · 2026-06-13",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVTZaMEVPXzdZczdjYm92RU9RR2Y0WmpvNXd3RGk3ZnV2bXJyaU9JRlJteFRnQjlrcVp2dDV5TkpXVXF0dWhKQ0ttVjlESWU4N0l5UXNfeVpUZWd1ZmY1REQ5emNCVGZOVFZvZG4waG1WTUhlOVVRYW4taWxVWTF1QU5QVnJnX280aDhmWC05N1Utc3g1OTZHUUJFbVdMN2tINTVDQ2oyNE8"
+      "name": "Finextra · 2026-06-16",
+      "url": "https://www.finextra.com/pressarticle/110154/moodys-connects-intelligence-to-amazon-quick"
     }
   },
   {
@@ -234,94 +304,6 @@
     "source": {
       "name": "The Times of India · 2026-06-15",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVTVzNC1yM0NZUmdTdXJWdnF5NVNjaW81RmtmSHRXT0tTcGhFLUw5MEVvUjE2ajd4bEN6N0R4MjY1elRDTkZvaWZYcU8xYlVQOEc1UlVlSGRfRFZzNkhMaGtJakZRRWZjOUxnYmFEWThlem5TTUNmZHBUUksyQzlhWmxaRXl1Vk5YQXZtaklROHNwSkRPeVlQaGRRejdHX19ZTEhFb0liVjYzV0IyYU91RVE1NNIBuAFBVV95cUxQTWxudVVpakJJUDlWLVNoa083RUZDb1pZS1MzNkVuN1VRNUpjWVpWYkFIU2YyTFJKWTd4NzFQaWJBanVMQ0ZZemtFMlBuR3lUaU5yZUM2bUVBWlhwZkpZNEtUSU5LNTVjS1ZMYUQtTkc0WEo4ekVVSDdnR0M5cmpkQzlVWVBJT3ZyV05fMDNEdjc4ZGhFTGk0YjF0MGVSUU1IekhrTWViRmdOMnhUYndjMENVdmZxVWhY"
-    }
-  },
-  {
-    "id": "2026-06-15-workiva-agentic-esg-reporting",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-15T15:29:17Z",
-    "headline": "Workiva launches agentic AI for ESG compliance and sustainability reporting",
-    "plain_english": "Workiva, cloud-based compliance platform, released an AI agent that automates ESG data collection, validation, and disclosure generation. Agent iteratively queries business systems and corrects missing data.",
-    "why_it_matters": "AI agents now deployed for regulatory reporting; reduces manual compliance labor, but raises audit risk if agent hallucinations slip into disclosures filed with SEC/EU.",
-    "source": {
-      "name": "ESG Today · 2026-06-15",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaE81WUJRZC1KWE52cmUwQmZKano1ZXhkOUpYb3E2cU16Qk1qMV9aUEd2SHVnQUk2YXktS3lfaTRnLVY5T1RxZWVTa21qZnJBSlpCYVhyajJhTTZoMGYxTjZfXzAtNXA2SlJXWndiZzRYSHF6U1N0QjlyMkZuU25WTlpTRndiUFRwSk10cnBQRks"
-    }
-  },
-  {
-    "id": "2026-06-14-deployment-coinbase-ai-trading",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-14T13:34:43.000Z",
-    "headline": "Coinbase launches AI-powered trading tool on retail crypto platform",
-    "plain_english": "Coinbase rolled out AI-driven trading assistant for retail users on its exchange. Tool leverages machine learning to analyze market signals and suggest trades. Part of broader fintech push to embed AI into consumer investment workflows.",
-    "why_it_matters": "Signals mainstreaming of AI for retail trade execution; raises compliance and fiduciary duty questions for BFSI firms offering algo-assisted retail investment; competitive pressure on traditional brokers to add similar features.",
-    "scale": {
-      "metric": "customers",
-      "value": "Millions (Coinbase retail base)"
-    },
-    "source": {
-      "name": "MSN · 2026-06-14",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOWc5LUl0VlR1OGl6bEF3TUhJNXM2eVF1Z1AxWGlRMHdPOHh6YVRad2ZWZVY5OUdJQVp4RG9RQU1kQUdLai1Ecy14QzBtNlhpWG1sQmJHVFBES3I0RXQwRmNkcXpkS3E5bmotRUlZYkJTZ0RPczJ5ZDZaOVk2dTh4UHhYSlhTRDkzQ2lSMXZxLTZLZVFLVnNTN0NFQTVpZGl1UWw0Rng5ZnBpZm1mSGNEbE4wRGxtUEFudHZ0cHRZLW84dFExbGoxNA"
-    }
-  },
-  {
-    "id": "2026-06-14-deployment-amazon-india-sellers-ai",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-06-14T18:36:00.000Z",
-    "headline": "Amazon rolls out AI tools for India's small sellers ahead of Prime Day event",
-    "plain_english": "Amazon India launched AI-powered seller assistance tools (product listing optimization, demand forecasting, inventory management) for SME merchants on platform ahead of Prime Day. Targets 1M+ small sellers in India market.",
-    "why_it_matters": "Demonstrates fintech/commerce convergence: AI lending, payment, and working capital products for SME merchants now embedded in marketplace platforms; competitor banks must develop similar SME AI ecosystems or lose lending volume.",
-    "scale": {
-      "metric": "customers",
-      "value": "1M+ small sellers"
-    },
-    "source": {
-      "name": "Business Standard · 2026-06-14",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSVNoZV9iQjc2M2VPLWtCZWFfcEE2dXBkQkplaWdoa05jUVhnbE1DX2prLVdLWDNmSHdaTVN0WGV6dGQ2UE9VdlYtZXNfZE1MMzVuUldJdU1rQzVuWDNLSzVrdjJvTTBtUi10Smc1RjlmMHl0OWhBNHEzdmpuRElSWDlQQlBFcUZVQmhtOW5EbHpGVDVUMzZVQUdsWDROOWtMeXQtVkNEYWJQRWR2MVQwQkJGWWU4VDY0QzQ0ZWY5cGtwUVJXWkkwRWZOUVhhcGx6SFRFZlNR0gHbAUFVX3lxTE1Jc0lQUFdWSllOSUE3bXlBVnp5QUZjWWlpNWxJa0dNdUZ3OGkyUGVFVmZKLXdGLU5YajFYTkliZXMwcUZpTVczSnUtbHV1eUloUHNMY00tdFVpT2U1eHlySE1CWnVWUG5Id1BmZ0RfVDdCRVNGaDRKMllLbzB2SFVkeENrM2hSSXNKeHdCanE5UC10a2xkQmNDam84aTBjYjNndTBON0JSQ25JdFN3X3J3N193aGQ5bk1fSkU5bzNzeFVuUjAzYUJTNktTaWlxbUI4dl9OR2FPOUc3T1k"
-    }
-  },
-  {
-    "id": "2026-06-13-deployment-cbn-fraud-detection",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-06-13T13:51:47.000Z",
-    "headline": "Central Bank of Nigeria deploys AI and machine learning to cut financial fraud losses by 70% by 2028",
-    "plain_english": "Nigeria's central bank has launched an AI and ML initiative targeting a 70% reduction in fraud losses over two years. The project uses pattern detection and behavioral analytics across the payment and settlement system.",
-    "why_it_matters": "Emerging market central bank now sees AI as core anti-fraud tool. If CBN hits its target, other African central banks will follow, creating demand for fraud-detection AI vendors. RBI, BIS member banks should benchmark against CBN's roadmap. Shows AI ROI in payments fraud is credible and measurable.",
-    "scale": {
-      "metric": "markets",
-      "value": "Nigeria payment system (35M+ digital accounts)"
-    },
-    "source": {
-      "name": "iAfrica.com · 2026-06-13",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNN0IyTXlTMlJzOFNyOGNLMV9rcVhQNzhMdmNIX2ZYY2ZDTFRPdHphZW9KaVluRmhvenZmVmZGcjRIZU1ONGMwcnE4aF9uRy12TlFKM29HRl83Nm16dFFJWEJUX1BsVmlPaUs3aFpNS204cVIycFc2cng0YV9QRDdDODhUZC1tZWs3NFhTdlpkdmhROFU2b1o4RkEzc2xxMFlfYzRONk1MeVhrWTZfSGRpZU5vNk5uX3BYX09jYw"
-    }
-  },
-  {
-    "id": "2026-06-13-deployment-ixopay-ai-orchestration",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-13T13:05:15.000Z",
-    "headline": "Payment orchestration vendor IXOPAY launches AI assistant IXONav to unify multi-PSP management",
-    "plain_english": "IXOPAY, a payment service provider (PSP) orchestration platform, has released IXONav, an AI assistant designed to simplify multi-provider payment routing and monitoring. The tool aggregates data across multiple payment processors for unified visibility.",
-    "why_it_matters": "AI now moving into payment operations and vendor management layers. BFSI treasury and payments teams can reduce manual routing decisions and incident triage. Adoption signal: consolidation of fintech payment tools around AI-augmented platforms is accelerating.",
-    "jargon": [
-      {
-        "term": "PSP orchestration",
-        "def": "Software that routes transactions across multiple payment processors, monitors health, and switches providers based on rules or performance."
-      }
-    ],
-    "source": {
-      "name": "The Fintech Times · 2026-06-13",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZEtKVVRvUzVvVU1ySmk3LWJQbGplUWc2R3F5cGU0S2JSVzVXZ1R2RUJGMEJlUmpvNUk5TlQ4SlBqZXRpZ1czeXBDSHg3T1N4TGtXR0pCVnppZWV2OXN1UTFuaXdzYlZ3emQtaXUwMDlaSFRVNjcxRGJfWlZPMGZaQWluaHAxeFhfeXp2X2gwTnlHWVQ0MTFsUzM2NDRBb1FKOEVzbWFaTlJlYjZBaWt1UGNMMmpFUnBfbTgyLVppOUREZw"
     }
   },
   {
@@ -671,22 +653,6 @@
     }
   },
   {
-    "id": "2026-06-13-research-ai-water-consumption",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-13T13:17:00.000Z",
-    "headline": "Research shows ChatGPT email generation consumes far more water than typical users realize, raising sustainability concerns",
-    "plain_english": "Recent research cited by McKinsey shows that a single ChatGPT email (one prompt-response cycle) requires significant water for data center cooling. Extrapolated across billions of daily queries, LLM usage has material environmental footprint.",
-    "why_it_matters": "BFSI firms deploying AI at scale must factor water/carbon costs into TCO. ESG mandates and shareholder scrutiny will push banks to disclose AI energy/water use. Regulatory bodies (EU taxonomy, SEC climate rules) may soon require Scope 3 reporting on AI vendor emissions.",
-    "stat_value": "Unknown per prompt",
-    "stat_label": "water consumption (ChatGPT email)",
-    "source": {
-      "name": "BGR.com (citing McKinsey) · 2026-06-13",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fa3ZpOXRRTnFBeGEzRjJ6QnBlazlrTlpLcDMwdkJCQmtlRnlsZ0dEd3pCTFptOVRyY0oxQ19tZlFxOFYtSU9BYmJGdXFwRl8zdGZPc2tyUnVCUWhJcTMyTEdtWWVwY2Z5WnpkemZrNWRhZG8"
-    }
-  },
-  {
     "id": "2026-06-15-bcg-ai-automation-bias",
     "category": "insight",
     "jurisdiction": "Global",
@@ -777,6 +743,56 @@
     }
   },
   {
+    "id": "2026-06-15-workiva-agentic-esg-reporting",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-15T15:29:17Z",
+    "headline": "Workiva launches agentic AI for ESG compliance and sustainability reporting",
+    "plain_english": "Workiva, cloud-based compliance platform, released an AI agent that automates ESG data collection, validation, and disclosure generation. Agent iteratively queries business systems and corrects missing data.",
+    "why_it_matters": "AI agents now deployed for regulatory reporting; reduces manual compliance labor, but raises audit risk if agent hallucinations slip into disclosures filed with SEC/EU.",
+    "source": {
+      "name": "ESG Today · 2026-06-15",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaE81WUJRZC1KWE52cmUwQmZKano1ZXhkOUpYb3E2cU16Qk1qMV9aUEd2SHVnQUk2YXktS3lfaTRnLVY5T1RxZWVTa21qZnJBSlpCYVhyajJhTTZoMGYxTjZfXzAtNXA2SlJXWndiZzRYSHF6U1N0QjlyMkZuU25WTlpTRndiUFRwSk10cnBQRks"
+    }
+  },
+  {
+    "id": "2026-06-14-deployment-coinbase-ai-trading",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-14T13:34:43.000Z",
+    "headline": "Coinbase launches AI-powered trading tool on retail crypto platform",
+    "plain_english": "Coinbase rolled out AI-driven trading assistant for retail users on its exchange. Tool leverages machine learning to analyze market signals and suggest trades. Part of broader fintech push to embed AI into consumer investment workflows.",
+    "why_it_matters": "Signals mainstreaming of AI for retail trade execution; raises compliance and fiduciary duty questions for BFSI firms offering algo-assisted retail investment; competitive pressure on traditional brokers to add similar features.",
+    "scale": {
+      "metric": "customers",
+      "value": "Millions (Coinbase retail base)"
+    },
+    "source": {
+      "name": "MSN · 2026-06-14",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOWc5LUl0VlR1OGl6bEF3TUhJNXM2eVF1Z1AxWGlRMHdPOHh6YVRad2ZWZVY5OUdJQVp4RG9RQU1kQUdLai1Ecy14QzBtNlhpWG1sQmJHVFBES3I0RXQwRmNkcXpkS3E5bmotRUlZYkJTZ0RPczJ5ZDZaOVk2dTh4UHhYSlhTRDkzQ2lSMXZxLTZLZVFLVnNTN0NFQTVpZGl1UWw0Rng5ZnBpZm1mSGNEbE4wRGxtUEFudHZ0cHRZLW84dFExbGoxNA"
+    }
+  },
+  {
+    "id": "2026-06-14-deployment-amazon-india-sellers-ai",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-06-14T18:36:00.000Z",
+    "headline": "Amazon rolls out AI tools for India's small sellers ahead of Prime Day event",
+    "plain_english": "Amazon India launched AI-powered seller assistance tools (product listing optimization, demand forecasting, inventory management) for SME merchants on platform ahead of Prime Day. Targets 1M+ small sellers in India market.",
+    "why_it_matters": "Demonstrates fintech/commerce convergence: AI lending, payment, and working capital products for SME merchants now embedded in marketplace platforms; competitor banks must develop similar SME AI ecosystems or lose lending volume.",
+    "scale": {
+      "metric": "customers",
+      "value": "1M+ small sellers"
+    },
+    "source": {
+      "name": "Business Standard · 2026-06-14",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSVNoZV9iQjc2M2VPLWtCZWFfcEE2dXBkQkplaWdoa05jUVhnbE1DX2prLVdLWDNmSHdaTVN0WGV6dGQ2UE9VdlYtZXNfZE1MMzVuUldJdU1rQzVuWDNLSzVrdjJvTTBtUi10Smc1RjlmMHl0OWhBNHEzdmpuRElSWDlQQlBFcUZVQmhtOW5EbHpGVDVUMzZVQUdsWDROOWtMeXQtVkNEYWJQRWR2MVQwQkJGWWU4VDY0QzQ0ZWY5cGtwUVJXWkkwRWZOUVhhcGx6SFRFZlNR0gHbAUFVX3lxTE1Jc0lQUFdWSllOSUE3bXlBVnp5QUZjWWlpNWxJa0dNdUZ3OGkyUGVFVmZKLXdGLU5YajFYTkliZXMwcUZpTVczSnUtbHV1eUloUHNMY00tdFVpT2U1eHlySE1CWnVWUG5Id1BmZ0RfVDdCRVNGaDRKMllLbzB2SFVkeENrM2hSSXNKeHdCanE5UC10a2xkQmNDam84aTBjYjNndTBON0JSQ25JdFN3X3J3N193aGQ5bk1fSkU5bzNzeFVuUjAzYUJTNktTaWlxbUI4dl9OR2FPOUc3T1k"
+    }
+  },
+  {
     "id": "2026-06-13-regulation-openai-multistate-investigation",
     "category": "regulation",
     "jurisdiction": "US",
@@ -805,26 +821,6 @@
     }
   },
   {
-    "id": "2026-06-13-regulation-google-ai-liability",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-13T09:00:00.000Z",
-    "headline": "Court rules Google liable for false statements generated by AI Overviews search feature",
-    "plain_english": "A US court has held that Google, as the designer, trainer, operator, and manager of its AI Overviews system, bears legal liability for damages caused by false or misleading AI-generated search summaries. The ruling expands product liability doctrine to generative AI.",
-    "why_it_matters": "First major precedent making AI builder/operator liable for AI output errors, not just platform host immunity. BFSI firms deploying internal or customer-facing LLMs now face tort exposure. Insurance coverage unclear. Expect prompt rush to audit AI decision logs and add disclaimers.",
-    "jargon": [
-      {
-        "term": "AI Overviews",
-        "def": "Google's generative AI feature that synthesizes search results into summary paragraphs; often contains hallucinated facts or outdated info."
-      }
-    ],
-    "source": {
-      "name": "Wired · 2026-06-13",
-      "url": "https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/"
-    }
-  },
-  {
     "id": "2026-06-13-regulation-ferc-ai-datacenter-power",
     "category": "regulation",
     "jurisdiction": "US",
@@ -842,20 +838,6 @@
     "source": {
       "name": "Newsmax · 2026-06-13",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaG1sb2ZpeFFLQmx5b2pUcEJwWEVLWEN1czc2ZjZBem9FNnVwWkk1UlBJYlZLb3dkWkpLczZrWlV6R3ZQeVZ5c2xLbVEzcEhLUWp6bENmVUFXUUFicjItMWE1dWxxcWprWW5xckl0NDNHNTNocmtzTGZ6WjVGbklCVTVOcUxiQTZVTXdRMA"
-    }
-  },
-  {
-    "id": "2026-06-13-vendor-anthropic-model-release",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-13T08:45:41.000Z",
-    "headline": "Anthropic releases Fable, Mythos models; new export restrictions immediately limit foreign access",
-    "plain_english": "Anthropic released Fable and Mythos model tiers, positioned as next-generation capabilities. Within hours of US export control announcement, international access was blocked, making these models de facto US-only for now.",
-    "why_it_matters": "BFSI teams evaluating Anthropic Claude for cross-border ops now cannot rely on newest models globally. Vendor roadmap reliability is compromised by geopolitical intervention. Expect tenders to shift to models with less geopolitical risk (e.g., open-source, EU-based vendors).",
-    "source": {
-      "name": "McKinsey (cited) · 2026-06-13",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeTdDVE8xY2pSdjczNVBJcV9GS1NnV0FpNGR2Z01XMExQMS11ZVpzSmQ2NUNFY2NVd3ZMRjR0Qjh5R2JzWW5rRDdtMXFJelRDREQ3V3Fsam9vSmZhSkJicEZyMTFvUWdqQWRNY1o0NDZtVEYzTlhpeEtlWFQ2Sk1OblRGWHg"
     }
   },
   {
