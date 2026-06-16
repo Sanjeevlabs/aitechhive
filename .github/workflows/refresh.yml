@@ -2,7 +2,7 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    # Once daily at 23:30 UTC (05:00 AM IST sharp).
+    # Once daily at 23:30 UTC — 05:00 AM IST sharp.
     - cron: '30 23 * * *'
   workflow_dispatch:
   # Auto-trigger on workflow-file edits only. Script tweaks no longer
