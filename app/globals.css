@@ -45,8 +45,16 @@
   --live-dot:        #5E8F6E;
 }
 
+/* Very pale blue wash behind the (translucent glass) cards.
+   Low-saturation, single hue — picks up behind the cards so the
+   glass effect reads, doesn't fight the content. Fixed so it
+   doesn't scroll away when content overflows. */
 html, body {
-  background: var(--bg);
+  background:
+    radial-gradient(at 30% 20%, rgba(196,218,238,0.55) 0%, transparent 60%),
+    radial-gradient(at 78% 82%, rgba(214,228,242,0.45) 0%, transparent 60%),
+    linear-gradient(180deg, #F2F6FA 0%, #E8EFF6 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

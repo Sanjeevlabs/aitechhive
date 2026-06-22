@@ -1784,18 +1784,6 @@ export default function PageClient({ initialCards }) {
         })}
       </div>
 
-      {/* ── Progress strip (per-category view only) ─────────────── */}
-      {catFilter !== "all" && progressTotal > 0 && !isEmpty && (
-        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
-          {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
-            <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
-          ))}
-          {progressTotal > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
-          <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
-            {progressCount + 1}/{progressTotal}
-          </span>
-        </div>
-      )}
 
       {/* ── Timeline ribbon (All view only) ─────────────────────────
           Where this story sits in the 24h news cycle. Anchors the reader
