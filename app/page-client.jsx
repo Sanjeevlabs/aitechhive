@@ -217,125 +217,113 @@ function StoryCard({ card }) {
   return (
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
-      background: "var(--card)", borderRadius: 16,
-      border: "1px solid var(--separator)",
-      boxShadow: "0 1px 3px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.06), 0 32px 64px rgba(0,0,0,0.05)",
+      background: "var(--card)", borderRadius: 20,
+      // Apple-like: barely-there border, lighter shadow. The card is the page,
+      // not a card-in-a-card.
+      border: "1px solid rgba(0,0,0,0.05)",
+      boxShadow: "0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(0,0,0,0.04)",
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
-      {/* Thin colored stripe — only chromatic element on the card.
-          Tags the category without flooding the surface with color. */}
-      <div style={{ height: 3, background: hex, flexShrink: 0 }} />
-
-      {/* Meta row: category eyebrow + jurisdiction + date (top-right) */}
+      {/* Meta row: just category eyebrow + jurisdiction + date.
+          No "Today's Lead" label — lead status is communicated by size alone. */}
       <div style={{
         flexShrink: 0,
-        padding: "16px 22px 0",
-        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12,
+        padding: "22px 26px 0",
+        display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12,
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", minWidth: 0 }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap", minWidth: 0 }}>
           <span style={{
-            fontSize: 9.5, fontWeight: 800, letterSpacing: "0.18em",
+            fontSize: 10, fontWeight: 700, letterSpacing: "0.2em",
             textTransform: "uppercase", color: hex,
           }}>{meta.label}</span>
           {card.jurisdiction && (
             <span style={{
-              fontSize: 9.5, fontWeight: 700, letterSpacing: "0.12em",
+              fontSize: 10, fontWeight: 600, letterSpacing: "0.14em",
               textTransform: "uppercase", color: "var(--text-tertiary)",
             }}>{card.jurisdiction}</span>
           )}
           {card.severity === "high" && (
-            <span style={{
-              fontSize: 9, fontWeight: 800, letterSpacing: "0.14em",
+            <span aria-label="high importance" style={{
+              fontSize: 10, fontWeight: 700, letterSpacing: "0.14em",
               textTransform: "uppercase", color: "var(--red)",
-            }}>● High</span>
-          )}
-          {isLead && (
-            <span style={{
-              fontSize: 9, fontWeight: 800, letterSpacing: "0.14em",
-              textTransform: "uppercase", color: "var(--text-secondary)",
-              padding: "2px 7px", borderRadius: 4,
-              background: `${hex}14`,
-              display: "inline-flex", alignItems: "center", gap: 5,
-            }}>
-              <span style={{ width: 5, height: 5, borderRadius: "50%", background: hex }} />
-              Today's Lead
-            </span>
+            }}>●</span>
           )}
         </div>
         <span style={{
-          fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)",
+          fontSize: 10.5, fontWeight: 500, color: "var(--text-tertiary)",
           letterSpacing: "0.02em", flexShrink: 0, fontVariantNumeric: "tabular-nums",
         }}>{relDate(card.published_at)}</span>
       </div>
 
-      {/* Hero: mega-stat or serif headline. Black on white. */}
-      <div style={{ flexShrink: 0, padding: "12px 22px 0" }}>
+      {/* Hero: mega-stat or serif headline. Pure black on white.
+          Apple News-scale type — the headline is the room. */}
+      <div style={{ flexShrink: 0, padding: isLead ? "20px 26px 0" : "16px 26px 0" }}>
         {stat && (
-          <div style={{ marginBottom: 14 }}>
+          <div style={{ marginBottom: 18 }}>
             <div style={{
-              fontSize: 60, fontWeight: 800, lineHeight: 1, color: hex,
+              fontSize: 64, fontWeight: 700, lineHeight: 0.96, color: "var(--text-primary)",
               fontFamily: "var(--font-serif)", letterSpacing: "-0.04em",
             }}>{stat.value}</div>
             <div style={{
-              fontSize: 9.5, fontWeight: 700, color: "var(--text-tertiary)",
-              letterSpacing: "0.14em", textTransform: "uppercase", marginTop: 8,
+              fontSize: 10, fontWeight: 700, color: hex,
+              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 10,
             }}>{stat.label}</div>
           </div>
         )}
         <h2 style={{
           margin: 0,
-          fontSize: isLead ? 30 : (stat ? 20 : 25),
-          fontWeight: isLead ? 600 : 500, lineHeight: 1.18,
-          letterSpacing: "-0.022em",
+          fontSize: isLead ? 38 : (stat ? 22 : 30),
+          fontWeight: 600, lineHeight: isLead ? 1.08 : 1.14,
+          letterSpacing: "-0.028em",
           color: "var(--text-primary)",
           fontFamily: "var(--font-serif)",
         }}>{card.headline}</h2>
       </div>
 
       {/* Body: plain_english, viz, why-it-matters, jargon */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 22px 8px", WebkitOverflowScrolling: "touch" }}>
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "20px 26px 10px", WebkitOverflowScrolling: "touch" }}>
         <p style={{
           margin: 0,
-          fontSize: 15, lineHeight: 1.62,
+          fontSize: 15.5, lineHeight: 1.6,
           color: "var(--text-secondary)",
           fontFamily: "var(--font-sans)",
         }}>{card.plain_english}</p>
 
         {!stat && <MicroViz card={card} />}
 
-        {/* Why it matters — pull-quote style (no background), serif italic */}
+        {/* Why it matters — pull-quote, serif italic, color only on the label */}
         {card.why_it_matters && (
           <div style={{
-            margin: "22px 0 0",
-            padding: "2px 0 2px 16px",
+            margin: "24px 0 0",
+            padding: "0 0 0 18px",
             borderLeft: `2px solid ${hex}`,
           }}>
             <div style={{
-              fontSize: 9.5, fontWeight: 800, color: hex,
-              letterSpacing: "0.16em", textTransform: "uppercase",
-              marginBottom: 6,
+              fontSize: 10, fontWeight: 700, color: hex,
+              letterSpacing: "0.18em", textTransform: "uppercase",
+              marginBottom: 8,
             }}>Why it matters</div>
             <p style={{
-              margin: 0, fontSize: 14.5, lineHeight: 1.55,
+              margin: 0, fontSize: 15, lineHeight: 1.5,
               color: "var(--text-primary)",
               fontFamily: "var(--font-serif)", fontStyle: "italic",
-              letterSpacing: "-0.005em",
+              letterSpacing: "-0.008em",
             }}>{card.why_it_matters}</p>
           </div>
         )}
 
         {/* Jargon — inline term + def, no boxes */}
         {Array.isArray(card.jargon) && card.jargon.length > 0 && (
-          <div style={{ margin: "22px 0 0" }}>
+          <div style={{ margin: "24px 0 0" }}>
             <div style={{
-              fontSize: 9.5, fontWeight: 800, color: "var(--text-tertiary)",
-              letterSpacing: "0.16em", textTransform: "uppercase",
+              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
+              letterSpacing: "0.18em", textTransform: "uppercase",
               marginBottom: 10,
             }}>Decode</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {card.jargon.map((j, i) => (
-                <p key={i} style={{ margin: 0, fontSize: 13.5, lineHeight: 1.5 }}>
+                <p key={i} style={{ margin: 0, fontSize: 14, lineHeight: 1.5 }}>
                   <span style={{ fontWeight: 700, color: "var(--text-primary)" }}>{j.term}</span>
                   <span style={{ color: "var(--text-secondary)" }}> — {j.def}</span>
                 </p>
@@ -347,22 +335,21 @@ function StoryCard({ card }) {
         <div style={{ height: 16 }} />
       </div>
 
-      {/* Source footer */}
+      {/* Source footer — quiet, no labels */}
       <div style={{
-        flexShrink: 0, padding: "10px 22px 12px",
-        borderTop: "1px solid var(--separator)",
+        flexShrink: 0, padding: "14px 26px 16px",
+        borderTop: "1px solid rgba(0,0,0,0.05)",
         display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
       }}>
         <a
           href={card.source?.url} target="_blank" rel="noreferrer"
           onClick={(e) => e.stopPropagation()}
-          style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 6, textDecoration: "none", minWidth: 0, overflow: "hidden" }}
+          style={{ fontSize: 11.5, fontWeight: 500, color: "var(--text-tertiary)", display: "inline-flex", alignItems: "center", gap: 5, textDecoration: "none", minWidth: 0, overflow: "hidden" }}
         >
-          <span style={{ fontSize: 8.5, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.6, flexShrink: 0 }}>Source</span>
           <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{card.source?.name}</span>
-          <ExternalLink size={9} style={{ flexShrink: 0 }} />
+          <ExternalLink size={10} style={{ flexShrink: 0, opacity: 0.7 }} />
         </a>
-        <span style={{ fontSize: 9.5, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.45, flexShrink: 0 }}>aitechhive.com</span>
+        <span style={{ fontSize: 10, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.45, flexShrink: 0, letterSpacing: "0.02em" }}>aitechhive.com</span>
       </div>
     </div>
   );
@@ -500,90 +487,83 @@ function DesktopBackground() {
 /* ─────────────────────────────────────────────────────────────────
    WELCOME CARD  —  shown as the first page on every visit
 ───────────────────────────────────────────────────────────────── */
-function WelcomeCard({ onDismiss, totalStories, briefCards }) {
+function WelcomeCard({ onDismiss, briefCards }) {
   // Quiet premium palette — single solid cherry-blossom surface, no gradients.
   const surface = "#FFF1F1";       // soft cherry background
-  const accent  = "#A23E47";       // muted cherry red (logo, button, eyebrow)
+  const accent  = "#A23E47";       // muted cherry red (button + accent only)
   const ink     = "#1F1416";       // near-black with a warm cherry undertone
   const inkMute = "#6B5A5C";       // secondary text
   const inkSoft = "#A39093";       // tertiary text
 
+  const today = new Date();
+  const dateLabel = today.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.96 }}
+      initial={{ opacity: 0, scale: 0.97 }}
       animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.96 }}
+      exit={{ opacity: 0, scale: 0.97 }}
       transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
       style={{
         position: "absolute", inset: 0, zIndex: 10,
         background: surface,
-        borderRadius: 24, overflow: "hidden",
+        borderRadius: 20, overflow: "hidden",
         display: "flex", flexDirection: "column", justifyContent: "space-between",
-        padding: "22px 20px 18px",
-        boxShadow: `0 0 0 1px rgba(162,62,71,0.14), 0 12px 36px rgba(122,44,51,0.10), 0 2px 6px rgba(0,0,0,0.04)`,
+        padding: "24px 26px 22px",
+        boxShadow: `0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(122,44,51,0.08)`,
         userSelect: "none",
       }}
     >
-      {/* ── Top: logo + meta ── */}
+      {/* Top: tiny ath mark on left, date on right. No other chrome. */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-          <div style={{ width: 30, height: 30, borderRadius: 8, background: accent, display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white" }}>ath</div>
-          <span style={{ fontSize: 11, fontWeight: 700, color: inkMute, letterSpacing: "0.05em", textTransform: "uppercase" }}>AITechHive</span>
-        </div>
-        <span style={{ fontSize: 10, fontWeight: 600, color: inkSoft, letterSpacing: "0.08em", textTransform: "uppercase" }}>Est. 2025</span>
+        <div style={{ width: 30, height: 30, borderRadius: 8, background: accent, display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", lineHeight: 1 }}>ath</div>
+        <span style={{ fontSize: 11, fontWeight: 500, color: inkMute, letterSpacing: "0.02em", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
       </div>
 
-      {/* ── Middle: greeting + headline + sub + stats ── */}
+      {/* Middle: "Today." monumental serif, then three italic-serif headlines */}
       <div style={{ flexShrink: 1, minHeight: 0 }}>
-        <p style={{ margin: "0 0 10px", fontSize: 10.5, fontWeight: 800, letterSpacing: "0.22em", textTransform: "uppercase", color: accent }}>
-          Welcome
-        </p>
-        <h2 style={{ margin: "0 0 8px", fontSize: 26, fontWeight: 700, lineHeight: 1.15, color: ink, letterSpacing: "-0.022em", fontFamily: "var(--font-serif)" }}>
-          The morning brief, distilled.
-        </h2>
-        <p style={{ margin: "0 0 18px", fontSize: 13, lineHeight: 1.5, color: inkMute }}>
-          AI updates from enterprises.
-        </p>
+        <h1 style={{
+          margin: 0,
+          fontSize: 72, fontWeight: 600, lineHeight: 0.95,
+          color: ink, letterSpacing: "-0.04em",
+          fontFamily: "var(--font-serif)",
+        }}>Today.</h1>
 
-        {/* "Today in 30 seconds" — the day's three biggest stories as a
-            morning brief. Reads like opening a newspaper, not Instagram. */}
         {Array.isArray(briefCards) && briefCards.length > 0 && (
-          <div>
-            <p style={{ margin: "0 0 10px", fontSize: 9.5, fontWeight: 800, letterSpacing: "0.22em", textTransform: "uppercase", color: accent }}>
-              Today in 30 seconds
-            </p>
-            <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
-              {briefCards.slice(0, 3).map((c, i) => (
-                <li key={c.id} style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
-                  <span style={{
-                    fontSize: 11, fontWeight: 800, color: accent,
-                    fontFamily: "var(--font-mono)", fontVariantNumeric: "tabular-nums",
-                    flexShrink: 0, lineHeight: 1.35, opacity: 0.7,
-                  }}>0{i + 1}</span>
-                  <span style={{
-                    fontSize: 13, lineHeight: 1.35, color: ink,
-                    fontFamily: "var(--font-serif)", letterSpacing: "-0.005em",
-                  }}>{c.headline}</span>
-                </li>
-              ))}
-            </ol>
-            <p style={{ margin: "14px 0 0", fontSize: 10, color: inkSoft, textAlign: "left" }}>
-              {totalStories ?? 0} stories · 10 categories
-            </p>
-          </div>
+          <ol style={{
+            margin: "30px 0 0", padding: 0, listStyle: "none",
+            display: "flex", flexDirection: "column", gap: 14,
+            borderTop: `1px solid rgba(162,62,71,0.16)`, paddingTop: 18,
+          }}>
+            {briefCards.slice(0, 3).map((c) => (
+              <li key={c.id} style={{
+                fontSize: 15, lineHeight: 1.32, color: ink,
+                fontFamily: "var(--font-serif)", fontStyle: "italic",
+                letterSpacing: "-0.012em",
+              }}>{c.headline}</li>
+            ))}
+          </ol>
         )}
       </div>
 
-      {/* ── Bottom: CTA ── */}
+      {/* Bottom: a single restrained "Begin" button. No supporting copy. */}
       <div style={{ flexShrink: 0 }}>
         <button
           onClick={onDismiss}
-          style={{ width: "100%", padding: "13px", borderRadius: 13, background: accent, color: "white", fontSize: 15, fontWeight: 700, border: "none", cursor: "pointer", letterSpacing: "-0.01em", boxShadow: `0 4px 14px rgba(162,62,71,0.25)` }}
+          style={{
+            width: "100%", padding: "14px",
+            borderRadius: 12,
+            background: ink,
+            color: surface,
+            fontSize: 15, fontWeight: 600,
+            letterSpacing: "0.04em", textTransform: "uppercase",
+            border: "none", cursor: "pointer",
+          }}
         >
-          Start reading
+          Begin
         </button>
-        <p style={{ margin: "8px 0 0", fontSize: 10, color: inkSoft, textAlign: "center" }}>
-          Free · No newsletters · Saves sync across devices
+        <p style={{ margin: "10px 0 0", fontSize: 10, color: inkSoft, textAlign: "center", letterSpacing: "0.04em" }}>
+          Free. No newsletters. Saves sync across devices.
         </p>
       </div>
     </motion.div>
@@ -1409,22 +1389,21 @@ function BigActionBtn({ label, onClick, children, active }) {
     <button
       onClick={onClick} aria-label={label} title={label}
       style={{
-        flex: 1, display: "inline-flex", alignItems: "center", justifyContent: "center",
-        gap: 6, padding: "8px 4px", borderRadius: 10,
+        flex: "0 0 auto",
+        display: "inline-grid", placeItems: "center",
+        width: 36, height: 36, borderRadius: 18,
         background: "transparent",
         color: active ? "var(--text-primary)" : "var(--text-tertiary)",
         border: "none",
         cursor: "pointer",
-        fontSize: 11, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase",
         userSelect: "none",
-        transition: "color 0.12s ease, transform 0.12s ease",
+        transition: "color 0.12s ease, transform 0.12s ease, background 0.12s ease",
       }}
-      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.94)"; }}
-      onPointerUp={(e) => { e.currentTarget.style.transform = ""; }}
-      onPointerLeave={(e) => { e.currentTarget.style.transform = ""; }}
+      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.9)"; e.currentTarget.style.background = "rgba(0,0,0,0.04)"; }}
+      onPointerUp={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.background = ""; }}
+      onPointerLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.background = ""; }}
     >
       {children}
-      <span>{label}</span>
     </button>
   );
 }
@@ -1547,21 +1526,45 @@ export default function PageClient({ initialCards }) {
   const doAction = useCallback(async (action) => {
     if (!topCard && action !== "share") return;
 
+    // Apple-style: short haptic on every swipe/tap action.
+    // Android supports navigator.vibrate; iOS Safari ignores it gracefully.
+    if (typeof navigator !== "undefined" && navigator.vibrate) {
+      navigator.vibrate(action === "save" ? [6, 30, 6] : 6);
+    }
+
     // Save requires a session — capture email + sync across devices.
-    // Open the gate, hold the save, and let the auth flow resume the action.
     if (action === "save" && !user) {
       setShowGate(true);
       return;
     }
 
     if (action === "share") {
+      // Prefer the native OS share sheet on supported platforms (iOS, Android,
+      // recent Safari/Chrome). Falls back to the in-app ShareModal otherwise.
+      const shareUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/c/${topCard.id}`;
+      const sharePayload = {
+        title: topCard.headline,
+        text: topCard.plain_english?.slice(0, 220),
+        url: shareUrl,
+      };
+      if (typeof navigator !== "undefined" && navigator.share) {
+        try {
+          await navigator.share(sharePayload);
+          setStats((s) => ({ ...s, shared: s.shared + 1 }));
+          if (user) supabase.from("shares").insert({ user_id: user.id, card_id: topCard.id });
+          return;
+        } catch (e) {
+          // User dismissed the share sheet — fall through to the in-app modal
+          // only if it wasn't a deliberate cancel.
+          if (e?.name === "AbortError") return;
+        }
+      }
       setShareCard(topCard);
       setStats((s) => ({ ...s, shared: s.shared + 1 }));
       if (user) supabase.from("shares").insert({ user_id: user.id, card_id: topCard.id });
       return;
     }
 
-    // Both save + skip: mark card as acted on so deck[0] advances to next card
     setDeckActed((prev) => new Set([...prev, topCard.id]));
     setProgressCount((p) => p + 1);
 
@@ -1730,34 +1733,40 @@ export default function PageClient({ initialCards }) {
         </div>
       </header>
 
-      {/* ── Category filter tabs (minimal, text-only with subtle underline) ── */}
+      {/* ── Category filter — Apple News-style: tiny caps, dot separators ── */}
       <div style={{
         position: "relative", zIndex: 1, flexShrink: 0,
-        padding: "0 16px 8px",
-        display: "flex", gap: 18,
+        padding: "2px 16px 12px",
+        display: "flex", gap: 0, alignItems: "baseline",
         overflowX: "auto",
         scrollbarWidth: "none", WebkitOverflowScrolling: "touch",
       }}>
-        {["all", ...Object.keys(CATS)].map((key) => {
+        {["all", ...Object.keys(CATS)].map((key, i, arr) => {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
           return (
-            <button
-              key={key}
-              onClick={() => { setCatFilter(key); setProgressCount(0); }}
-              style={{
-                flexShrink: 0, padding: "6px 0 7px",
-                border: "none", background: "transparent",
-                fontSize: 12.5, cursor: "pointer",
-                fontWeight: active ? 700 : 500,
-                color: active ? "var(--text-primary)" : "var(--text-tertiary)",
-                letterSpacing: "-0.005em",
-                borderBottom: active ? `2px solid ${meta?.hex || "var(--text-primary)"}` : "2px solid transparent",
-                transition: "color 0.15s ease, border-color 0.15s ease",
-              }}
-            >
-              {key === "all" ? "All" : meta.label}
-            </button>
+            <span key={key} style={{ display: "inline-flex", alignItems: "baseline", flexShrink: 0 }}>
+              <button
+                onClick={() => { setCatFilter(key); setProgressCount(0); }}
+                style={{
+                  padding: "4px 0",
+                  border: "none", background: "transparent",
+                  fontSize: 10.5, cursor: "pointer",
+                  fontWeight: active ? 700 : 500,
+                  letterSpacing: "0.14em", textTransform: "uppercase",
+                  color: active ? (meta?.hex || "var(--text-primary)") : "var(--text-tertiary)",
+                  transition: "color 0.15s ease",
+                }}
+              >
+                {key === "all" ? "All" : meta.label}
+              </button>
+              {i < arr.length - 1 && (
+                <span aria-hidden="true" style={{
+                  padding: "0 10px", color: "var(--text-tertiary)",
+                  opacity: 0.4, fontSize: 9, transform: "translateY(-1px)",
+                }}>·</span>
+              )}
+            </span>
           );
         })}
       </div>
@@ -1847,7 +1856,7 @@ export default function PageClient({ initialCards }) {
               {/* Welcome overlay — always the first page on every visit, sits above the deck */}
               <AnimatePresence>
                 {showWelcome && (
-                  <WelcomeCard onDismiss={() => setShowWelcome(false)} totalStories={allCards.length} briefCards={briefCards} />
+                  <WelcomeCard onDismiss={() => setShowWelcome(false)} briefCards={briefCards} />
                 )}
               </AnimatePresence>
             </div>
@@ -1855,18 +1864,19 @@ export default function PageClient({ initialCards }) {
         </div>
       </div>
 
-      {/* ── Action bar (minimal — icons + small labels, no boxes) ─── */}
+      {/* ── Action bar — Apple-style: tiny icon-only buttons, centered, no labels.
+          Hierarchy: swipe is the primary action; these are tertiary. */}
       {!isEmpty && (
-        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "4px 16px max(10px, env(safe-area-inset-bottom))" }}>
-          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 2, alignItems: "stretch" }}>
+        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "2px 16px max(10px, env(safe-area-inset-bottom))" }}>
+          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 18, alignItems: "center", justifyContent: "center" }}>
             <BigActionBtn label="Skip" onClick={() => doAction("next")}>
-              <X size={16} strokeWidth={2} />
+              <X size={18} strokeWidth={1.75} />
             </BigActionBtn>
             <BigActionBtn label="Share" onClick={() => doAction("share")}>
-              <Share2 size={15} strokeWidth={2} />
+              <Share2 size={16} strokeWidth={1.75} />
             </BigActionBtn>
             <BigActionBtn label="Save" onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
-              <Bookmark size={16} strokeWidth={2} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
+              <Bookmark size={17} strokeWidth={1.75} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
             </BigActionBtn>
           </div>
         </div>
