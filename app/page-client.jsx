@@ -516,7 +516,7 @@ function WelcomeCard({ onDismiss, briefCards }) {
     >
       {/* Top: tiny ath mark on left, date on right. No other chrome. */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
-        <div style={{ width: 30, height: 30, borderRadius: 8, background: accent, display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", lineHeight: 1 }}>ath</div>
+        <BeeMark size={32} />
         <span style={{ fontSize: 11, fontWeight: 500, color: inkMute, letterSpacing: "0.02em", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
       </div>
 
@@ -1334,32 +1334,38 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
+function BeeMark({ size = 36, color = "currentColor" }) {
+  // Monochrome geometric mark — single hexagon outline + a centered
+  // node/kernel. Same geometry as /icon.svg + /apple-icon.svg so the
+  // favicon and the in-app logo are visually identical.
+  // Keeping the export name as BeeMark for now (existing call site
+  // in WelcomeCard still uses it); the shape is no longer a bee.
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+      width={size} height={size}
+      shapeRendering="geometricPrecision"
+      aria-hidden="true"
+      style={{ display: "block", color }}
+    >
+      <path
+        d="M 32 8 L 55 20 L 55 44 L 32 56 L 9 44 L 9 20 Z"
+        fill="none" stroke="currentColor" strokeWidth="5"
+        strokeLinejoin="round" strokeLinecap="round"
+      />
+      <circle cx="32" cy="32" r="5.5" fill="currentColor" />
+    </svg>
+  );
+}
+
 function Wordmark() {
   return (
     <div
-      aria-label="aitechhive — live"
-      style={{
-        position: "relative",
-        display: "inline-grid", placeItems: "center",
-        width: 36, height: 36, borderRadius: 10,
-        background: "var(--text-primary)",
-        color: "var(--bg)",
-        fontFamily: "var(--font-mono)",
-        fontSize: 13, fontWeight: 700, letterSpacing: "-0.03em",
-        lineHeight: 1,
-      }}
+      aria-label="AITechHive"
+      style={{ display: "inline-flex", alignItems: "center", color: "var(--text-primary)" }}
     >
-      ath
-      <span
-        aria-hidden="true"
-        style={{
-          position: "absolute", top: -2, right: -2,
-          width: 8, height: 8, borderRadius: "50%",
-          background: "var(--live-dot)",
-          boxShadow: "0 0 0 2px var(--bg)",
-          animation: "livePulse 2.2s ease-out infinite",
-        }}
-      />
+      <BeeMark size={32} />
     </div>
   );
 }
@@ -1427,10 +1433,16 @@ function dedupCards(cards) {
 }
 
 export default function PageClient({ initialCards }) {
-  const supabase = useMemo(() => createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-  ), []);
+  // Defensive: if Supabase env vars are missing, return null instead of
+  // constructing a client that throws on instantiation. All callers below
+  // check `if (supabase)` before using it. Site renders unauthenticated;
+  // saves/sign-in become no-ops but the deck works.
+  const supabase = useMemo(() => {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!url || !key) return null;
+    return createBrowserClient(url, key);
+  }, []);
 
   const [allCards] = useState(() => dedupCards(initialCards));
   // Per-category counts for the filter chip ticker
@@ -1466,6 +1478,7 @@ export default function PageClient({ initialCards }) {
 
   // Auth — validate session server-side and subscribe to all future auth events
   useEffect(() => {
+    if (!supabase) return; // Supabase not configured — render as unauthenticated
     supabase.auth.getUser().then(({ data: { user } }) => setUser(user ?? null));
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
@@ -1771,18 +1784,6 @@ export default function PageClient({ initialCards }) {
         })}
       </div>
 
-      {/* ── Progress strip (per-category view only) ─────────────── */}
-      {catFilter !== "all" && progressTotal > 0 && !isEmpty && (
-        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "0 16px 8px", display: "flex", alignItems: "center", gap: 3 }}>
-          {Array.from({ length: Math.min(progressTotal, 14) }).map((_, i) => (
-            <div key={i} style={{ flex: 1, height: 3, borderRadius: 2, transition: "background 0.3s", background: i < progressCount ? "var(--blue)" : "var(--separator)" }} />
-          ))}
-          {progressTotal > 14 && <div style={{ width: 3, height: 3, borderRadius: "50%", background: "var(--separator)", flexShrink: 0 }} />}
-          <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 600, color: "var(--text-tertiary)", fontVariantNumeric: "tabular-nums", flexShrink: 0 }}>
-            {progressCount + 1}/{progressTotal}
-          </span>
-        </div>
-      )}
 
       {/* ── Timeline ribbon (All view only) ─────────────────────────
           Where this story sits in the 24h news cycle. Anchors the reader
