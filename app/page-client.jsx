@@ -164,49 +164,6 @@ function megaStatValue(card) {
   return null;
 }
 
-/* ─────────────────────────────────────────────────────────────────
-   TIMELINE RIBBON — 24h timeline of fresh cards
-   Anchors the reader: shows where each story sits in today's cycle.
-───────────────────────────────────────────────────────────────── */
-function TimelineRibbon({ cards, currentId, color }) {
-  if (!cards || cards.length === 0) return null;
-  const now = Date.now();
-  const day = 24 * 3600 * 1000;
-  return (
-    <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "2px 16px 10px" }}>
-      <div style={{ position: "relative", height: 18 }}>
-        {/* Track */}
-        <div style={{ position: "absolute", left: 0, right: 0, top: 11, height: 2, background: "var(--separator)", borderRadius: 1 }} />
-        {/* Endpoint labels */}
-        <span style={{ position: "absolute", left: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>24h ago</span>
-        <span style={{ position: "absolute", right: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>now</span>
-        {/* Dots */}
-        {cards.map((c) => {
-          const t = new Date(c.published_at || c.source?.date || 0).getTime();
-          if (!t) return null;
-          const age = (now - t) / day;
-          if (age < 0 || age > 1.05) return null;
-          const pos = Math.max(0, Math.min(1, 1 - age));
-          const isCurrent = c.id === currentId;
-          return (
-            <div key={c.id} style={{
-              position: "absolute", top: isCurrent ? 7 : 9,
-              left: `${pos * 100}%`,
-              width: isCurrent ? 10 : 5, height: isCurrent ? 10 : 5,
-              borderRadius: "50%",
-              background: isCurrent ? color : "var(--text-tertiary)",
-              transform: "translate(-50%, 0)",
-              boxShadow: isCurrent ? `0 0 0 3px ${color}25` : "none",
-              transition: "all 0.3s ease",
-              opacity: isCurrent ? 1 : 0.55,
-            }} />
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 function StoryCard({ card }) {
   const meta = CATS[card.category] || CATS.insight;
   const { hex } = meta;
@@ -217,11 +174,15 @@ function StoryCard({ card }) {
   return (
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
-      background: "var(--card)", borderRadius: 20,
-      // Apple-like: barely-there border, lighter shadow. The card is the page,
-      // not a card-in-a-card.
-      border: "1px solid rgba(0,0,0,0.05)",
-      boxShadow: "0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(0,0,0,0.04)",
+      // Glass: translucent white + backdrop blur. Picks up the tinted
+      // gradient behind the page and reads as frosted glass on a
+      // muted-color wash. Safari + Chromium both support.
+      background: "rgba(255,255,255,0.72)",
+      backdropFilter: "blur(28px) saturate(180%)",
+      WebkitBackdropFilter: "blur(28px) saturate(180%)",
+      borderRadius: 22,
+      border: "1px solid rgba(255,255,255,0.55)",
+      boxShadow: "0 1px 2px rgba(0,0,0,0.04), 0 24px 56px rgba(40,30,60,0.10), inset 0 1px 0 rgba(255,255,255,0.6)",
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
@@ -256,62 +217,53 @@ function StoryCard({ card }) {
         }}>{relDate(card.published_at)}</span>
       </div>
 
-      {/* Hero: mega-stat or serif headline. Pure black on white.
-          Apple News-scale type — the headline is the room. */}
-      <div style={{ flexShrink: 0, padding: isLead ? "20px 26px 0" : "16px 26px 0" }}>
+      {/* Hero: mega-stat or serif headline */}
+      <div style={{ flexShrink: 0, padding: isLead ? "16px 26px 0" : "12px 26px 0" }}>
         {stat && (
-          <div style={{ marginBottom: 18 }}>
+          <div style={{ marginBottom: 12 }}>
             <div style={{
-              fontSize: 64, fontWeight: 700, lineHeight: 0.96, color: "var(--text-primary)",
-              fontFamily: "var(--font-serif)", letterSpacing: "-0.04em",
+              fontSize: 48, fontWeight: 700, lineHeight: 0.96, color: "var(--text-primary)",
+              fontFamily: "var(--font-serif)", letterSpacing: "-0.035em",
             }}>{stat.value}</div>
             <div style={{
               fontSize: 10, fontWeight: 700, color: hex,
-              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 10,
+              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 8,
             }}>{stat.label}</div>
           </div>
         )}
         <h2 style={{
           margin: 0,
-          fontSize: isLead ? 38 : (stat ? 22 : 30),
-          fontWeight: 600, lineHeight: isLead ? 1.08 : 1.14,
-          letterSpacing: "-0.028em",
+          fontSize: isLead ? 26 : (stat ? 18 : 22),
+          fontWeight: 600, lineHeight: 1.2,
+          letterSpacing: "-0.022em",
           color: "var(--text-primary)",
           fontFamily: "var(--font-serif)",
         }}>{card.headline}</h2>
+
+        {/* Dek — the "why it matters" insight as a subhead under the
+            headline, newspaper-style. No label, no box, no separate
+            section. The italic + slightly muted ink does the framing. */}
+        {card.why_it_matters && (
+          <p style={{
+            margin: "8px 0 0",
+            fontSize: 14.5, lineHeight: 1.4,
+            color: "var(--text-secondary)",
+            fontFamily: "var(--font-serif)", fontStyle: "italic",
+            letterSpacing: "-0.005em",
+          }}>{card.why_it_matters}</p>
+        )}
       </div>
 
-      {/* Body: plain_english, viz, why-it-matters, jargon */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "20px 26px 10px", WebkitOverflowScrolling: "touch" }}>
+      {/* Body: plain_english, viz, jargon */}
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 26px 10px", WebkitOverflowScrolling: "touch" }}>
         <p style={{
           margin: 0,
-          fontSize: 15.5, lineHeight: 1.6,
+          fontSize: 15, lineHeight: 1.6,
           color: "var(--text-secondary)",
           fontFamily: "var(--font-sans)",
         }}>{card.plain_english}</p>
 
         {!stat && <MicroViz card={card} />}
-
-        {/* Why it matters — pull-quote, serif italic, color only on the label */}
-        {card.why_it_matters && (
-          <div style={{
-            margin: "24px 0 0",
-            padding: "0 0 0 18px",
-            borderLeft: `2px solid ${hex}`,
-          }}>
-            <div style={{
-              fontSize: 10, fontWeight: 700, color: hex,
-              letterSpacing: "0.18em", textTransform: "uppercase",
-              marginBottom: 8,
-            }}>Why it matters</div>
-            <p style={{
-              margin: 0, fontSize: 15, lineHeight: 1.5,
-              color: "var(--text-primary)",
-              fontFamily: "var(--font-serif)", fontStyle: "italic",
-              letterSpacing: "-0.008em",
-            }}>{card.why_it_matters}</p>
-          </div>
-        )}
 
         {/* Jargon — inline term + def, no boxes */}
         {Array.isArray(card.jargon) && card.jargon.length > 0 && (
@@ -1784,16 +1736,6 @@ export default function PageClient({ initialCards }) {
         </div>
       )}
 
-      {/* ── Timeline ribbon (All view only) ─────────────────────────
-          Where this story sits in the 24h news cycle. Anchors the reader
-          across the deck so freshness is visible at a glance. */}
-      {catFilter === "all" && topCard && !isEmpty && (
-        <TimelineRibbon
-          cards={deck}
-          currentId={topCard.id}
-          color={CATS[topCard.category]?.hex || "var(--text-primary)"}
-        />
-      )}
 
       {/* ── Card area  ─────────────────────────────────────────────
           IMPORTANT: Centering is done with flex on this wrapper.
