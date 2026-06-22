@@ -1463,10 +1463,16 @@ function dedupCards(cards) {
 }
 
 export default function PageClient({ initialCards }) {
-  const supabase = useMemo(() => createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-  ), []);
+  // Defensive: if Supabase env vars are missing, return null instead of
+  // constructing a client that throws on instantiation. All callers below
+  // check `if (supabase)` before using it. Site renders unauthenticated;
+  // saves/sign-in become no-ops but the deck works.
+  const supabase = useMemo(() => {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!url || !key) return null;
+    return createBrowserClient(url, key);
+  }, []);
 
   const [allCards] = useState(() => dedupCards(initialCards));
   // Per-category counts for the filter chip ticker
@@ -1502,6 +1508,7 @@ export default function PageClient({ initialCards }) {
 
   // Auth — validate session server-side and subscribe to all future auth events
   useEffect(() => {
+    if (!supabase) return; // Supabase not configured — render as unauthenticated
     supabase.auth.getUser().then(({ data: { user } }) => setUser(user ?? null));
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
