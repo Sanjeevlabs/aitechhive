@@ -2,34 +2,61 @@ import "./globals.css";
 import { Source_Serif_4, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 
-const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap", weight: ["400", "500", "600"] });
+const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap", weight: ["400", "500", "600", "700"] });
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap", weight: ["400", "500", "600"] });
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aitechhive.com";
 
+// Single source of truth for search + social. Mirrors are in JSON-LD below.
+const TITLE = "AITechHive — Daily AI brief from enterprises and the markets that move them";
+const DESCRIPTION =
+  "AI updates from enterprises — banks, insurers, fintechs and the regulators between them. Curated daily from Reuters, Bloomberg, FT, the FCA, OCC, RBI, frontier labs, and arXiv. Free, no inbox.";
+
 export const metadata = {
   metadataBase: new URL(APP_URL),
-  title: "ath — BFSI & Enterprise AI, live",
-  description: "The live web alternative to AI newsletters. Eight refreshes a day. Swipe-format. Free, no inbox required.",
-  applicationName: "ath",
+  title: { default: TITLE, template: "%s — AITechHive" },
+  description: DESCRIPTION,
+  applicationName: "AITechHive",
+  // Keywords matter less for Google but help AEO engines + LinkedIn previews.
+  keywords: [
+    "BFSI AI", "enterprise AI", "AI news", "banking AI", "fintech AI",
+    "AI regulation", "FCA AI", "OCC AI", "RBI AI", "frontier AI labs",
+    "AI funding", "AI deployment", "AI in banking", "daily AI brief",
+  ],
+  authors: [{ name: "AITechHive" }],
+  creator: "AITechHive",
+  publisher: "AITechHive",
+  alternates: { canonical: "/" },
+  category: "news",
+  robots: {
+    index: true, follow: true,
+    googleBot: {
+      index: true, follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: "/icon.svg",
     apple: "/apple-icon.svg",
     shortcut: "/icon.svg",
   },
   openGraph: {
-    title: "ath — BFSI & Enterprise AI, live",
-    description: "Eight refreshes a day. Live. No inbox required.",
-    url: APP_URL,
-    siteName: "ath",
     type: "website",
+    siteName: "AITechHive",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: APP_URL,
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ath — BFSI & Enterprise AI, live",
-    description: "Eight refreshes a day. Live. No inbox required.",
+    title: TITLE,
+    description: DESCRIPTION,
   },
+  formatDetection: { telephone: false },
 };
 
 export const viewport = {
@@ -40,10 +67,53 @@ export const viewport = {
   themeColor: "#FFFFFF",
 };
 
+// JSON-LD: gives both Google and LLM crawlers (ChatGPT search, Perplexity, etc.)
+// a structured understanding of what this site is. AEO foundation.
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${APP_URL}#site`,
+      url: APP_URL,
+      name: "AITechHive",
+      description: DESCRIPTION,
+      publisher: { "@id": `${APP_URL}#org` },
+      inLanguage: "en",
+    },
+    {
+      "@type": "Organization",
+      "@id": `${APP_URL}#org`,
+      name: "AITechHive",
+      url: APP_URL,
+      logo: `${APP_URL}/icon.svg`,
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      name: "AITechHive",
+      url: APP_URL,
+      description: DESCRIPTION,
+      knowsAbout: [
+        "BFSI", "Enterprise AI", "Banking AI", "Fintech",
+        "AI regulation", "Frontier AI", "Capital markets", "Risk and compliance",
+      ],
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+      <head>
+        <link rel="canonical" href={APP_URL} />
+        <Script
+          id="ld-json"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+        />
+      </head>
       <body>{children}</body>
       {plausibleDomain && (
         <Script strategy="afterInteractive" data-domain={plausibleDomain} src="https://plausible.io/js/script.js" />
