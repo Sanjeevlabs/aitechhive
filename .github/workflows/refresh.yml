@@ -2,8 +2,9 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    # Every 2 hours at :00 UTC (12 runs/day). Unlimited Actions minutes
-    # on public repos so cadence no longer needs to optimize for budget.
+    # Every 2 hours at :00 UTC (12 runs/day). Sized for Groq free-tier
+    # token budget — ~33K tokens/call × 12 = ~400K/day, well under
+    # free-tier daily TPM.
     - cron: '0 */2 * * *'
   workflow_dispatch:
   # Auto-trigger on workflow-file edits only. Script tweaks no longer

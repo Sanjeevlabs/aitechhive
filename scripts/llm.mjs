@@ -52,9 +52,37 @@ const PROVIDERS = {
   },
 };
 
-const PROVIDER = process.env.LLM_PROVIDER || "anthropic";
-const API_KEY = process.env.LLM_API_KEY || process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.LLM_MODEL || PROVIDERS[PROVIDER]?.defaultModel;
+const PROVIDER = process.env.LLM_PROVIDER || "groq";
+
+// Per-provider key env vars. Resolved before the generic LLM_API_KEY
+// fallback so swapping LLM_PROVIDER doesn't require re-pasting the key.
+// Each provider's dedicated env var also matches what the workflow YAML
+// already exposes (GROQ_API_KEY, ANTHROPIC_API_KEY).
+const PROVIDER_KEYS = {
+  anthropic: process.env.ANTHROPIC_API_KEY,
+  groq:      process.env.GROQ_API_KEY,
+  openai:    process.env.OPENAI_API_KEY,
+  gemini:    process.env.GEMINI_API_KEY,
+  deepseek:  process.env.DEEPSEEK_API_KEY,
+  openrouter: process.env.OPENROUTER_API_KEY,
+};
+const API_KEY = PROVIDER_KEYS[PROVIDER] || process.env.LLM_API_KEY;
+
+// LLM_MODEL is provider-specific. If the configured model doesn't even
+// loosely match the active provider, fall back to that provider's default
+// instead of sending a nonsense model name (e.g. claude-* to Groq).
+function looksValidForProvider(model, provider) {
+  if (!model) return false;
+  const m = model.toLowerCase();
+  if (provider === "anthropic") return m.includes("claude");
+  if (provider === "groq")      return m.includes("llama") || m.includes("mixtral") || m.includes("gemma");
+  if (provider === "openai")    return m.startsWith("gpt") || m.startsWith("o");
+  if (provider === "gemini")    return m.includes("gemini");
+  if (provider === "deepseek")  return m.includes("deepseek");
+  return true; // openrouter accepts any
+}
+const userModel = process.env.LLM_MODEL;
+const MODEL = looksValidForProvider(userModel, PROVIDER) ? userModel : PROVIDERS[PROVIDER]?.defaultModel;
 
 if (!PROVIDERS[PROVIDER]) {
   throw new Error(`Unknown LLM_PROVIDER "${PROVIDER}". Valid: ${Object.keys(PROVIDERS).join(", ")}`);
