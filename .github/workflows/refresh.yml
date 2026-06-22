@@ -2,8 +2,9 @@ name: Refresh AITechHive cards
 
 on:
   schedule:
-    # Once daily at 23:30 UTC (05:00 AM IST sharp).
-    - cron: '30 23 * * *'
+    # Every 2 hours at :00 UTC (12 runs/day). Unlimited Actions minutes
+    # on public repos so cadence no longer needs to optimize for budget.
+    - cron: '0 */2 * * *'
   workflow_dispatch:
   # Auto-trigger on workflow-file edits only. Script tweaks no longer
   # auto-refresh — saves CI minutes during heavy iteration. Force a run
