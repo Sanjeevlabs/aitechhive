@@ -1334,10 +1334,12 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
-function BeeMark({ size = 40 }) {
-  // Inline so it renders without a network request. Same geometry as
-  // /icon.svg + /apple-icon.svg — keeps the favicon and the in-app
-  // logo visually identical.
+function BeeMark({ size = 36, color = "currentColor" }) {
+  // Monochrome geometric mark — single hexagon outline + a centered
+  // node/kernel. Same geometry as /icon.svg + /apple-icon.svg so the
+  // favicon and the in-app logo are visually identical.
+  // Keeping the export name as BeeMark for now (existing call site
+  // in WelcomeCard still uses it); the shape is no longer a bee.
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1345,36 +1347,14 @@ function BeeMark({ size = 40 }) {
       width={size} height={size}
       shapeRendering="geometricPrecision"
       aria-hidden="true"
-      style={{ display: "block" }}
+      style={{ display: "block", color }}
     >
-      <defs>
-        <linearGradient id="beeBody" x1="0.2" y1="0.1" x2="0.85" y2="0.95">
-          <stop offset="0%" stopColor="#FFE07A" />
-          <stop offset="45%" stopColor="#F0AB22" />
-          <stop offset="100%" stopColor="#8E5808" />
-        </linearGradient>
-        <linearGradient id="beeWing" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="#A8C5E0" stopOpacity="0.3" />
-        </linearGradient>
-      </defs>
-      <g opacity="0.95">
-        <path d="M22 22 L6 14 Q2 24 10 30 L22 30 Z" fill="url(#beeWing)" stroke="rgba(35,25,55,0.22)" strokeWidth="0.6" strokeLinejoin="round"/>
-        <path d="M42 22 L58 14 Q62 24 54 30 L42 30 Z" fill="url(#beeWing)" stroke="rgba(35,25,55,0.22)" strokeWidth="0.6" strokeLinejoin="round"/>
-      </g>
-      <path d="M32 18 L46 26 L46 42 L32 50 L18 42 L18 26 Z" fill="url(#beeBody)" stroke="#3A2400" strokeWidth="0.7" strokeLinejoin="round"/>
-      <path d="M32 18 L46 26 L32 30 L18 26 Z" fill="rgba(255,255,255,0.22)"/>
-      <path d="M19 31 L45 31 L46 35 L18 35 Z" fill="#1A1A1F"/>
-      <path d="M20 41 L44 41 L43 45 L21 45 Z" fill="#1A1A1F"/>
-      <circle cx="32" cy="14" r="6.4" fill="url(#beeBody)" stroke="#3A2400" strokeWidth="0.6"/>
-      <circle cx="32" cy="12" r="2.2" fill="rgba(255,255,255,0.25)"/>
-      <circle cx="29.4" cy="13.4" r="1.4" fill="#1A1A1F"/>
-      <circle cx="34.6" cy="13.4" r="1.4" fill="#1A1A1F"/>
-      <path d="M30 9 Q28 5 26.5 3.5" stroke="#1A1A1F" strokeWidth="1" strokeLinecap="round" fill="none"/>
-      <path d="M34 9 Q36 5 37.5 3.5" stroke="#1A1A1F" strokeWidth="1" strokeLinecap="round" fill="none"/>
-      <circle cx="26.5" cy="3.5" r="1.1" fill="#1A1A1F"/>
-      <circle cx="37.5" cy="3.5" r="1.1" fill="#1A1A1F"/>
-      <path d="M32 50 L31.4 53 L32.6 53 Z" fill="#3A2400"/>
+      <path
+        d="M 32 8 L 55 20 L 55 44 L 32 56 L 9 44 L 9 20 Z"
+        fill="none" stroke="currentColor" strokeWidth="5"
+        strokeLinejoin="round" strokeLinecap="round"
+      />
+      <circle cx="32" cy="32" r="5.5" fill="currentColor" />
     </svg>
   );
 }
@@ -1382,20 +1362,10 @@ function BeeMark({ size = 40 }) {
 function Wordmark() {
   return (
     <div
-      aria-label="AITechHive — live"
-      style={{ position: "relative", display: "inline-flex", alignItems: "center", lineHeight: 0 }}
+      aria-label="AITechHive"
+      style={{ display: "inline-flex", alignItems: "center", color: "var(--text-primary)" }}
     >
-      <BeeMark size={40} />
-      <span
-        aria-hidden="true"
-        style={{
-          position: "absolute", top: 1, right: -2,
-          width: 8, height: 8, borderRadius: "50%",
-          background: "var(--live-dot)",
-          boxShadow: "0 0 0 2px var(--bg)",
-          animation: "livePulse 2.2s ease-out infinite",
-        }}
-      />
+      <BeeMark size={32} />
     </div>
   );
 }
