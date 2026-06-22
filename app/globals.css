@@ -45,8 +45,17 @@
   --live-dot:        #5E8F6E;
 }
 
+/* Soft tinted gradient — the chromatic wash that makes the glass
+   cards on top read as "glass" instead of just translucent white.
+   Apple-Sequoia palette: warm cream → blush → lavender → mint.
+   Fixed so it doesn't scroll away when content overflows. */
 html, body {
-  background: var(--bg);
+  background:
+    radial-gradient(at 12% 18%, rgba(255,228,210,0.55) 0%, transparent 55%),
+    radial-gradient(at 88% 12%, rgba(228,212,255,0.50) 0%, transparent 55%),
+    radial-gradient(at 50% 92%, rgba(208,232,236,0.55) 0%, transparent 60%),
+    linear-gradient(160deg, #FBF8F4 0%, #F4F1FA 50%, #EEF4F4 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
