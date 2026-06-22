@@ -1,5 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" shape-rendering="geometricPrecision">
-  <rect width="180" height="180" rx="40" fill="#0E0D0C"/>
-  <polygon points="90,36 135,62 135,118 90,144 45,118 45,62" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round"/>
-  <circle cx="90" cy="90" r="15.5" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" shape-rendering="geometricPrecision" role="img" aria-label="AITechHive — honey bee">
+  <defs>
+    <linearGradient id="body" x1="0.2" y1="0.1" x2="0.85" y2="0.95">
+      <stop offset="0%" stop-color="#FFE07A"/>
+      <stop offset="45%" stop-color="#F0AB22"/>
+      <stop offset="100%" stop-color="#8E5808"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#A8C5E0" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF6E6"/>
+      <stop offset="100%" stop-color="#FBE6DA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- iOS home-screen tile background (Apple rounds the corners automatically) -->
+  <rect width="180" height="180" fill="url(#bg)"/>
+
+  <!-- Wings -->
+  <g opacity="0.95">
+    <path d="M61 62 L16 38 Q8 66 30 84 L61 84 Z" fill="url(#wing)" stroke="rgba(35,25,55,0.22)" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M119 62 L164 38 Q172 66 150 84 L119 84 Z" fill="url(#wing)" stroke="rgba(35,25,55,0.22)" stroke-width="1.6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Hexagonal body -->
+  <path d="M90 50 L130 73 L130 119 L90 142 L50 119 L50 73 Z" fill="url(#body)" stroke="#3A2400" stroke-width="1.9" stroke-linejoin="round"/>
+
+  <!-- Top facet highlight -->
+  <path d="M90 50 L130 73 L90 84 L50 73 Z" fill="rgba(255,255,255,0.22)"/>
+
+  <!-- Stripes -->
+  <path d="M53 87 L127 87 L130 99 L50 99 Z" fill="#1A1A1F"/>
+  <path d="M56 116 L124 116 L121 128 L59 128 Z" fill="#1A1A1F"/>
+
+  <!-- Head -->
+  <circle cx="90" cy="39" r="18" fill="url(#body)" stroke="#3A2400" stroke-width="1.7"/>
+  <circle cx="90" cy="33" r="6.4" fill="rgba(255,255,255,0.25)"/>
+
+  <!-- Eyes -->
+  <circle cx="83" cy="37" r="4" fill="#1A1A1F"/>
+  <circle cx="97" cy="37" r="4" fill="#1A1A1F"/>
+
+  <!-- Antennae -->
+  <path d="M85 25 Q79 13 75 8" stroke="#1A1A1F" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M95 25 Q101 13 105 8" stroke="#1A1A1F" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <circle cx="75" cy="8" r="3.1" fill="#1A1A1F"/>
+  <circle cx="105" cy="8" r="3.1" fill="#1A1A1F"/>
+
+  <!-- Stinger -->
+  <path d="M90 142 L88 150 L92 150 Z" fill="#3A2400"/>
 </svg>

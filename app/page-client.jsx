@@ -516,7 +516,7 @@ function WelcomeCard({ onDismiss, briefCards }) {
     >
       {/* Top: tiny ath mark on left, date on right. No other chrome. */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
-        <div style={{ width: 30, height: 30, borderRadius: 8, background: accent, display: "grid", placeItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, color: "white", lineHeight: 1 }}>ath</div>
+        <BeeMark size={32} />
         <span style={{ fontSize: 11, fontWeight: 500, color: inkMute, letterSpacing: "0.02em", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
       </div>
 
@@ -1334,26 +1334,62 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
+function BeeMark({ size = 40 }) {
+  // Inline so it renders without a network request. Same geometry as
+  // /icon.svg + /apple-icon.svg — keeps the favicon and the in-app
+  // logo visually identical.
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+      width={size} height={size}
+      shapeRendering="geometricPrecision"
+      aria-hidden="true"
+      style={{ display: "block" }}
+    >
+      <defs>
+        <linearGradient id="beeBody" x1="0.2" y1="0.1" x2="0.85" y2="0.95">
+          <stop offset="0%" stopColor="#FFE07A" />
+          <stop offset="45%" stopColor="#F0AB22" />
+          <stop offset="100%" stopColor="#8E5808" />
+        </linearGradient>
+        <linearGradient id="beeWing" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#A8C5E0" stopOpacity="0.3" />
+        </linearGradient>
+      </defs>
+      <g opacity="0.95">
+        <path d="M22 22 L6 14 Q2 24 10 30 L22 30 Z" fill="url(#beeWing)" stroke="rgba(35,25,55,0.22)" strokeWidth="0.6" strokeLinejoin="round"/>
+        <path d="M42 22 L58 14 Q62 24 54 30 L42 30 Z" fill="url(#beeWing)" stroke="rgba(35,25,55,0.22)" strokeWidth="0.6" strokeLinejoin="round"/>
+      </g>
+      <path d="M32 18 L46 26 L46 42 L32 50 L18 42 L18 26 Z" fill="url(#beeBody)" stroke="#3A2400" strokeWidth="0.7" strokeLinejoin="round"/>
+      <path d="M32 18 L46 26 L32 30 L18 26 Z" fill="rgba(255,255,255,0.22)"/>
+      <path d="M19 31 L45 31 L46 35 L18 35 Z" fill="#1A1A1F"/>
+      <path d="M20 41 L44 41 L43 45 L21 45 Z" fill="#1A1A1F"/>
+      <circle cx="32" cy="14" r="6.4" fill="url(#beeBody)" stroke="#3A2400" strokeWidth="0.6"/>
+      <circle cx="32" cy="12" r="2.2" fill="rgba(255,255,255,0.25)"/>
+      <circle cx="29.4" cy="13.4" r="1.4" fill="#1A1A1F"/>
+      <circle cx="34.6" cy="13.4" r="1.4" fill="#1A1A1F"/>
+      <path d="M30 9 Q28 5 26.5 3.5" stroke="#1A1A1F" strokeWidth="1" strokeLinecap="round" fill="none"/>
+      <path d="M34 9 Q36 5 37.5 3.5" stroke="#1A1A1F" strokeWidth="1" strokeLinecap="round" fill="none"/>
+      <circle cx="26.5" cy="3.5" r="1.1" fill="#1A1A1F"/>
+      <circle cx="37.5" cy="3.5" r="1.1" fill="#1A1A1F"/>
+      <path d="M32 50 L31.4 53 L32.6 53 Z" fill="#3A2400"/>
+    </svg>
+  );
+}
+
 function Wordmark() {
   return (
     <div
-      aria-label="aitechhive — live"
-      style={{
-        position: "relative",
-        display: "inline-grid", placeItems: "center",
-        width: 36, height: 36, borderRadius: 10,
-        background: "var(--text-primary)",
-        color: "var(--bg)",
-        fontFamily: "var(--font-mono)",
-        fontSize: 13, fontWeight: 700, letterSpacing: "-0.03em",
-        lineHeight: 1,
-      }}
+      aria-label="AITechHive — live"
+      style={{ position: "relative", display: "inline-flex", alignItems: "center", lineHeight: 0 }}
     >
-      ath
+      <BeeMark size={40} />
       <span
         aria-hidden="true"
         style={{
-          position: "absolute", top: -2, right: -2,
+          position: "absolute", top: 1, right: -2,
           width: 8, height: 8, borderRadius: "50%",
           background: "var(--live-dot)",
           boxShadow: "0 0 0 2px var(--bg)",
