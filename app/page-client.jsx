@@ -54,13 +54,19 @@ function orderDeck(cards, deckActed = new Set(), catFilter = "all") {
     .filter((c) => new Date(c.published_at || c.source?.date || 0).getTime() >= dayAgo)
     .sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0));
 
-  if (fresh.length > 0) return fresh.slice(0, 20);
-
   // Safety net: if the refresh pipeline is wedged and nothing is <24h old,
   // show the most-recent cards we have instead of an empty deck.
-  return base
-    .sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0))
-    .slice(0, 20);
+  const list = fresh.length > 0
+    ? fresh
+    : [...base].sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0));
+
+  // Annotate each card with its variant. "lead" only on the All view, position 0
+  // — picking it inside a single category felt jarring (every category gets one).
+  return list.slice(0, 20).map((c, i) => {
+    const annotated = { ...c, _isLead: catFilter === "all" && i === 0 };
+    annotated._variant = chooseVariant(annotated);
+    return annotated;
+  });
 }
 
 
@@ -131,9 +137,86 @@ function MicroViz({ card }) {
    D: Desire     = Why it matters
    A: Action     = Source link footer (tap actions are in the bar below)
 ───────────────────────────────────────────────────────────────── */
+/* ─────────────────────────────────────────────────────────────────
+   CARD VARIANT ROUTING — editorial hierarchy v1
+   - "lead"      : today's #1 story, taller hero band, eyebrow
+   - "mega-stat" : cards with a strong number (deal size, %, benchmark)
+   - "standard"  : everything else, current design
+───────────────────────────────────────────────────────────────── */
+function chooseVariant(card) {
+  if (card._isLead) return "lead";
+  if (card.category === "vendor" && card.amount) return "mega-stat";
+  if (card.category === "research" && card.delta_pts != null) return "mega-stat";
+  if (card.category === "insight" && card.stat_value) return "mega-stat";
+  return "standard";
+}
+function megaStatValue(card) {
+  if (card.amount) {
+    return { value: card.amount, label: card.round || "Deal size" };
+  }
+  if (card.delta_pts != null) {
+    const sign = card.delta_pts > 0 ? "+" : "";
+    return { value: `${sign}${card.delta_pts} pts`, label: card.benchmark_name || "Benchmark delta" };
+  }
+  if (card.stat_value) {
+    return { value: card.stat_value, label: card.stat_label || "Production reality" };
+  }
+  return null;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   TIMELINE RIBBON — 24h timeline of fresh cards
+   Anchors the reader: shows where each story sits in today's cycle.
+───────────────────────────────────────────────────────────────── */
+function TimelineRibbon({ cards, currentId, color }) {
+  if (!cards || cards.length === 0) return null;
+  const now = Date.now();
+  const day = 24 * 3600 * 1000;
+  return (
+    <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "2px 16px 10px" }}>
+      <div style={{ position: "relative", height: 18 }}>
+        {/* Track */}
+        <div style={{ position: "absolute", left: 0, right: 0, top: 11, height: 2, background: "var(--separator)", borderRadius: 1 }} />
+        {/* Endpoint labels */}
+        <span style={{ position: "absolute", left: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>24h ago</span>
+        <span style={{ position: "absolute", right: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>now</span>
+        {/* Dots */}
+        {cards.map((c) => {
+          const t = new Date(c.published_at || c.source?.date || 0).getTime();
+          if (!t) return null;
+          const age = (now - t) / day;
+          if (age < 0 || age > 1.05) return null;
+          const pos = Math.max(0, Math.min(1, 1 - age));
+          const isCurrent = c.id === currentId;
+          return (
+            <div key={c.id} style={{
+              position: "absolute", top: isCurrent ? 7 : 9,
+              left: `${pos * 100}%`,
+              width: isCurrent ? 10 : 5, height: isCurrent ? 10 : 5,
+              borderRadius: "50%",
+              background: isCurrent ? color : "var(--text-tertiary)",
+              transform: "translate(-50%, 0)",
+              boxShadow: isCurrent ? `0 0 0 3px ${color}25` : "none",
+              transition: "all 0.3s ease",
+              opacity: isCurrent ? 1 : 0.55,
+            }} />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function StoryCard({ card }) {
   const meta = CATS[card.category] || CATS.insight;
   const { Icon, hex } = meta;
+  const variant = card._variant || "standard";
+  const isLead = variant === "lead";
+  const stat = variant === "mega-stat" ? megaStatValue(card) : null;
+  // Mega-stat suppresses headline in the band (headline appears below the stat)
+  const bandHasHeadline = !stat;
+  const bandMinHeight = isLead ? 168 : (stat ? 76 : 116);
+  const headlineSize = isLead ? 26 : 19;
 
   return (
     <div style={{
@@ -150,71 +233,108 @@ function StoryCard({ card }) {
       userSelect: "none", WebkitUserSelect: "none",
     }}>
 
-      {/* ── A — ATTENTION: Hero + Headline ─────────── */}
+      {/* ── A — ATTENTION: Hero band (size varies by variant) ─────── */}
       <div style={{
         flexShrink: 0,
         background: `linear-gradient(150deg, ${hex} 0%, ${hex}DD 55%, ${hex}99 100%)`,
-        padding: "12px 18px 14px",
+        padding: isLead ? "14px 18px 18px" : "12px 18px 14px",
         position: "relative", overflow: "hidden",
-        minHeight: 116,
+        minHeight: bandMinHeight,
         display: "flex", flexDirection: "column", justifyContent: "space-between",
         boxShadow: "inset 0 1px 0 rgba(255,255,255,0.28), inset 0 -1px 0 rgba(0,0,0,0.12)",
       }}>
         {/* Ghost icon — decorative depth */}
         <div style={{ position: "absolute", right: -28, top: -28, opacity: 0.11, pointerEvents: "none" }}>
-          <Icon size={168} strokeWidth={0.8} color="white" />
+          <Icon size={isLead ? 200 : 168} strokeWidth={0.8} color="white" />
         </div>
 
-        {/* Top row: category pill + severity badge */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", zIndex: 1 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        {/* Top: optional Lead eyebrow + category pill + severity badge */}
+        <div style={{ zIndex: 1, position: "relative" }}>
+          {isLead && (
             <div style={{
-              width: 30, height: 30, borderRadius: 8,
-              background: "rgba(255,255,255,0.22)",
-              border: "1px solid rgba(255,255,255,0.30)",
-              display: "grid", placeItems: "center",
-              backdropFilter: "blur(8px)",
+              fontSize: 10, fontWeight: 800, color: "rgba(255,255,255,0.9)",
+              letterSpacing: "0.22em", textTransform: "uppercase",
+              marginBottom: 8, display: "flex", alignItems: "center", gap: 6,
             }}>
-              <Icon size={15} color="white" strokeWidth={2.5} />
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "rgba(255,255,255,0.95)", boxShadow: "0 0 8px rgba(255,255,255,0.6)" }} />
+              Today's Lead
             </div>
-            <div>
-              <span style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.95)", letterSpacing: "0.005em" }}>{meta.label}</span>
-              {card.jurisdiction && (
-                <span style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginLeft: 7 }}>· {card.jurisdiction}</span>
-              )}
-            </div>
-          </div>
-          {card.severity === "high" && (
-            <span style={{
-              fontSize: 9, fontWeight: 700, color: "white",
-              background: "rgba(255,255,255,0.22)",
-              border: "1px solid rgba(255,255,255,0.32)",
-              padding: "3px 9px", borderRadius: 100,
-              letterSpacing: "0.08em", textTransform: "uppercase",
-            }}>HIGH</span>
           )}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{
+                width: 30, height: 30, borderRadius: 8,
+                background: "rgba(255,255,255,0.22)",
+                border: "1px solid rgba(255,255,255,0.30)",
+                display: "grid", placeItems: "center",
+                backdropFilter: "blur(8px)",
+              }}>
+                <Icon size={15} color="white" strokeWidth={2.5} />
+              </div>
+              <div>
+                <span style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.95)", letterSpacing: "0.005em" }}>{meta.label}</span>
+                {card.jurisdiction && (
+                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginLeft: 7 }}>· {card.jurisdiction}</span>
+                )}
+              </div>
+            </div>
+            {card.severity === "high" && (
+              <span style={{
+                fontSize: 9, fontWeight: 700, color: "white",
+                background: "rgba(255,255,255,0.22)",
+                border: "1px solid rgba(255,255,255,0.32)",
+                padding: "3px 9px", borderRadius: 100,
+                letterSpacing: "0.08em", textTransform: "uppercase",
+              }}>HIGH</span>
+            )}
+          </div>
         </div>
 
-        {/* Headline — the attention hook */}
-        <h2 style={{
-          margin: "10px 0 0", zIndex: 1, position: "relative",
-          fontSize: 19, fontWeight: 600, lineHeight: 1.26,
-          letterSpacing: "-0.015em",
-          color: "white",
-          fontFamily: "var(--font-serif)",
-          textShadow: "0 1px 6px rgba(0,0,0,0.22)",
-        }}>
-          {card.headline}
-        </h2>
+        {/* Headline — suppressed for mega-stat (headline moves below the stat) */}
+        {bandHasHeadline && (
+          <h2 style={{
+            margin: isLead ? "12px 0 0" : "10px 0 0", zIndex: 1, position: "relative",
+            fontSize: headlineSize, fontWeight: isLead ? 700 : 600, lineHeight: 1.22,
+            letterSpacing: "-0.018em",
+            color: "white",
+            fontFamily: "var(--font-serif)",
+            textShadow: "0 1px 6px rgba(0,0,0,0.22)",
+          }}>
+            {card.headline}
+          </h2>
+        )}
       </div>
 
       {/* ── I — INTEREST + D — DESIRE: Scrollable body ─ */}
       <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 18px 8px", WebkitOverflowScrolling: "touch" }}>
+        {/* Mega-stat: the number becomes the hero. Headline moves here, smaller. */}
+        {stat && (
+          <div style={{ marginBottom: 16 }}>
+            <div style={{
+              fontSize: 64, fontWeight: 800, lineHeight: 1,
+              color: meta.color, fontFamily: "var(--font-serif)",
+              letterSpacing: "-0.04em",
+            }}>{stat.value}</div>
+            <div style={{
+              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
+              letterSpacing: "0.1em", textTransform: "uppercase",
+              marginTop: 6,
+            }}>{stat.label}</div>
+            <h3 style={{
+              margin: "12px 0 0",
+              fontSize: 17, fontWeight: 700, lineHeight: 1.32,
+              color: "var(--text-primary)", fontFamily: "var(--font-serif)",
+              letterSpacing: "-0.012em",
+            }}>{card.headline}</h3>
+          </div>
+        )}
+
         <p style={{ margin: 0, fontSize: 15, lineHeight: 1.68, color: "var(--text-secondary)" }}>
           {card.plain_english}
         </p>
 
-        <MicroViz card={card} />
+        {/* Skip MicroViz for mega-stat — we already showed the headline number */}
+        {!stat && <MicroViz card={card} />}
 
         {/* Desire: why it matters */}
         {card.why_it_matters && (
@@ -416,7 +536,7 @@ function DesktopBackground() {
 /* ─────────────────────────────────────────────────────────────────
    WELCOME CARD  —  shown as the first page on every visit
 ───────────────────────────────────────────────────────────────── */
-function WelcomeCard({ onDismiss, totalStories }) {
+function WelcomeCard({ onDismiss, totalStories, briefCards }) {
   // Quiet premium palette — single solid cherry-blossom surface, no gradients.
   const surface = "#FFF1F1";       // soft cherry background
   const accent  = "#A23E47";       // muted cherry red (logo, button, eyebrow)
@@ -457,20 +577,37 @@ function WelcomeCard({ onDismiss, totalStories }) {
         <h2 style={{ margin: "0 0 8px", fontSize: 26, fontWeight: 700, lineHeight: 1.15, color: ink, letterSpacing: "-0.022em", fontFamily: "var(--font-serif)" }}>
           The morning brief, distilled.
         </h2>
-        <p style={{ margin: "0 0 16px", fontSize: 13, lineHeight: 1.5, color: inkMute }}>
+        <p style={{ margin: "0 0 18px", fontSize: 13, lineHeight: 1.5, color: inkMute }}>
           AI updates from enterprises.
         </p>
 
-        {/* Stats row — quiet, no gradient. Story count reads live
-            from cards.json so it stays in sync forever. */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1, borderRadius: 12, overflow: "hidden", border: "1px solid rgba(162,62,71,0.18)" }}>
-          {[[String(totalStories ?? 0), "Stories"], ["10", "Categories"]].map(([val, lbl]) => (
-            <div key={lbl} style={{ padding: "10px 8px", background: "rgba(255,255,255,0.6)", textAlign: "center" }}>
-              <div style={{ fontSize: 19, fontWeight: 800, lineHeight: 1, color: accent, fontFamily: "var(--font-mono)" }}>{val}</div>
-              <div style={{ fontSize: 9, fontWeight: 700, color: inkMute, marginTop: 3, textTransform: "uppercase", letterSpacing: "0.06em" }}>{lbl}</div>
-            </div>
-          ))}
-        </div>
+        {/* "Today in 30 seconds" — the day's three biggest stories as a
+            morning brief. Reads like opening a newspaper, not Instagram. */}
+        {Array.isArray(briefCards) && briefCards.length > 0 && (
+          <div>
+            <p style={{ margin: "0 0 10px", fontSize: 9.5, fontWeight: 800, letterSpacing: "0.22em", textTransform: "uppercase", color: accent }}>
+              Today in 30 seconds
+            </p>
+            <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
+              {briefCards.slice(0, 3).map((c, i) => (
+                <li key={c.id} style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
+                  <span style={{
+                    fontSize: 11, fontWeight: 800, color: accent,
+                    fontFamily: "var(--font-mono)", fontVariantNumeric: "tabular-nums",
+                    flexShrink: 0, lineHeight: 1.35, opacity: 0.7,
+                  }}>0{i + 1}</span>
+                  <span style={{
+                    fontSize: 13, lineHeight: 1.35, color: ink,
+                    fontFamily: "var(--font-serif)", letterSpacing: "-0.005em",
+                  }}>{c.headline}</span>
+                </li>
+              ))}
+            </ol>
+            <p style={{ margin: "14px 0 0", fontSize: 10, color: inkSoft, textAlign: "left" }}>
+              {totalStories ?? 0} stories · 10 categories
+            </p>
+          </div>
+        )}
       </div>
 
       {/* ── Bottom: CTA ── */}
@@ -1364,6 +1501,12 @@ export default function PageClient({ initialCards }) {
     for (const c of allCards) m[c.category] = (m[c.category] || 0) + 1;
     return m;
   }, [allCards]);
+  // Top 3 newest cards feed the "Today in 30s" brief on the welcome card.
+  const briefCards = useMemo(() => {
+    return [...allCards]
+      .sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0))
+      .slice(0, 3);
+  }, [allCards]);
   const [catFilter, setCatFilter] = useState("all");
   const [user, setUser] = useState(null);
   const [authError, setAuthError] = useState("");
@@ -1675,6 +1818,17 @@ export default function PageClient({ initialCards }) {
         </div>
       )}
 
+      {/* ── Timeline ribbon (All view only) ─────────────────────────
+          Where this story sits in the 24h news cycle. Anchors the reader
+          across the deck so freshness is visible at a glance. */}
+      {catFilter === "all" && topCard && !isEmpty && (
+        <TimelineRibbon
+          cards={deck}
+          currentId={topCard.id}
+          color={CATS[topCard.category]?.hex || "var(--text-primary)"}
+        />
+      )}
+
       {/* ── Card area  ─────────────────────────────────────────────
           IMPORTANT: Centering is done with flex on this wrapper.
           DO NOT use transform:translateX(-50%) on the motion.div —
@@ -1736,7 +1890,7 @@ export default function PageClient({ initialCards }) {
               {/* Welcome overlay — always the first page on every visit, sits above the deck */}
               <AnimatePresence>
                 {showWelcome && (
-                  <WelcomeCard onDismiss={() => setShowWelcome(false)} totalStories={allCards.length} />
+                  <WelcomeCard onDismiss={() => setShowWelcome(false)} totalStories={allCards.length} briefCards={briefCards} />
                 )}
               </AnimatePresence>
             </div>
