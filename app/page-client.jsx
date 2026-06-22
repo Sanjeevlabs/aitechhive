@@ -209,183 +209,147 @@ function TimelineRibbon({ cards, currentId, color }) {
 
 function StoryCard({ card }) {
   const meta = CATS[card.category] || CATS.insight;
-  const { Icon, hex } = meta;
+  const { hex } = meta;
   const variant = card._variant || "standard";
   const isLead = variant === "lead";
   const stat = variant === "mega-stat" ? megaStatValue(card) : null;
-  // Mega-stat suppresses headline in the band (headline appears below the stat)
-  const bandHasHeadline = !stat;
-  const bandMinHeight = isLead ? 168 : (stat ? 76 : 116);
-  const headlineSize = isLead ? 26 : 19;
 
   return (
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
-      background: "var(--card)", borderRadius: 24,
-      border: "1px solid rgba(0,0,0,0.07)",
-      boxShadow: [
-        "0 1px 2px rgba(0,0,0,0.04)",
-        "0 4px 14px rgba(0,0,0,0.08)",
-        "0 20px 52px rgba(0,0,0,0.13)",
-        "0 40px 80px rgba(0,0,0,0.08)",
-      ].join(", "),
+      background: "var(--card)", borderRadius: 16,
+      border: "1px solid var(--separator)",
+      boxShadow: "0 1px 3px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.06), 0 32px 64px rgba(0,0,0,0.05)",
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
+      {/* Thin colored stripe — only chromatic element on the card.
+          Tags the category without flooding the surface with color. */}
+      <div style={{ height: 3, background: hex, flexShrink: 0 }} />
 
-      {/* ── A — ATTENTION: Hero band (size varies by variant) ─────── */}
+      {/* Meta row: category eyebrow + jurisdiction + date (top-right) */}
       <div style={{
         flexShrink: 0,
-        background: `linear-gradient(150deg, ${hex} 0%, ${hex}DD 55%, ${hex}99 100%)`,
-        padding: isLead ? "14px 18px 18px" : "12px 18px 14px",
-        position: "relative", overflow: "hidden",
-        minHeight: bandMinHeight,
-        display: "flex", flexDirection: "column", justifyContent: "space-between",
-        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.28), inset 0 -1px 0 rgba(0,0,0,0.12)",
+        padding: "16px 22px 0",
+        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12,
       }}>
-        {/* Ghost icon — decorative depth */}
-        <div style={{ position: "absolute", right: -28, top: -28, opacity: 0.11, pointerEvents: "none" }}>
-          <Icon size={isLead ? 200 : 168} strokeWidth={0.8} color="white" />
-        </div>
-
-        {/* Top: optional Lead eyebrow + category pill + severity badge */}
-        <div style={{ zIndex: 1, position: "relative" }}>
-          {isLead && (
-            <div style={{
-              fontSize: 10, fontWeight: 800, color: "rgba(255,255,255,0.9)",
-              letterSpacing: "0.22em", textTransform: "uppercase",
-              marginBottom: 8, display: "flex", alignItems: "center", gap: 6,
-            }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "rgba(255,255,255,0.95)", boxShadow: "0 0 8px rgba(255,255,255,0.6)" }} />
-              Today's Lead
-            </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", minWidth: 0 }}>
+          <span style={{
+            fontSize: 9.5, fontWeight: 800, letterSpacing: "0.18em",
+            textTransform: "uppercase", color: hex,
+          }}>{meta.label}</span>
+          {card.jurisdiction && (
+            <span style={{
+              fontSize: 9.5, fontWeight: 700, letterSpacing: "0.12em",
+              textTransform: "uppercase", color: "var(--text-tertiary)",
+            }}>{card.jurisdiction}</span>
           )}
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <div style={{
-                width: 30, height: 30, borderRadius: 8,
-                background: "rgba(255,255,255,0.22)",
-                border: "1px solid rgba(255,255,255,0.30)",
-                display: "grid", placeItems: "center",
-                backdropFilter: "blur(8px)",
-              }}>
-                <Icon size={15} color="white" strokeWidth={2.5} />
-              </div>
-              <div>
-                <span style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.95)", letterSpacing: "0.005em" }}>{meta.label}</span>
-                {card.jurisdiction && (
-                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginLeft: 7 }}>· {card.jurisdiction}</span>
-                )}
-              </div>
-            </div>
-            {card.severity === "high" && (
-              <span style={{
-                fontSize: 9, fontWeight: 700, color: "white",
-                background: "rgba(255,255,255,0.22)",
-                border: "1px solid rgba(255,255,255,0.32)",
-                padding: "3px 9px", borderRadius: 100,
-                letterSpacing: "0.08em", textTransform: "uppercase",
-              }}>HIGH</span>
-            )}
-          </div>
+          {card.severity === "high" && (
+            <span style={{
+              fontSize: 9, fontWeight: 800, letterSpacing: "0.14em",
+              textTransform: "uppercase", color: "var(--red)",
+            }}>● High</span>
+          )}
+          {isLead && (
+            <span style={{
+              fontSize: 9, fontWeight: 800, letterSpacing: "0.14em",
+              textTransform: "uppercase", color: "var(--text-secondary)",
+              padding: "2px 7px", borderRadius: 4,
+              background: `${hex}14`,
+              display: "inline-flex", alignItems: "center", gap: 5,
+            }}>
+              <span style={{ width: 5, height: 5, borderRadius: "50%", background: hex }} />
+              Today's Lead
+            </span>
+          )}
         </div>
-
-        {/* Headline — suppressed for mega-stat (headline moves below the stat) */}
-        {bandHasHeadline && (
-          <h2 style={{
-            margin: isLead ? "12px 0 0" : "10px 0 0", zIndex: 1, position: "relative",
-            fontSize: headlineSize, fontWeight: isLead ? 700 : 600, lineHeight: 1.22,
-            letterSpacing: "-0.018em",
-            color: "white",
-            fontFamily: "var(--font-serif)",
-            textShadow: "0 1px 6px rgba(0,0,0,0.22)",
-          }}>
-            {card.headline}
-          </h2>
-        )}
+        <span style={{
+          fontSize: 10, fontWeight: 600, color: "var(--text-tertiary)",
+          letterSpacing: "0.02em", flexShrink: 0, fontVariantNumeric: "tabular-nums",
+        }}>{relDate(card.published_at)}</span>
       </div>
 
-      {/* ── I — INTEREST + D — DESIRE: Scrollable body ─ */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 18px 8px", WebkitOverflowScrolling: "touch" }}>
-        {/* Mega-stat: the number becomes the hero. Headline moves here, smaller. */}
+      {/* Hero: mega-stat or serif headline. Black on white. */}
+      <div style={{ flexShrink: 0, padding: "12px 22px 0" }}>
         {stat && (
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 14 }}>
             <div style={{
-              fontSize: 64, fontWeight: 800, lineHeight: 1,
-              color: meta.color, fontFamily: "var(--font-serif)",
-              letterSpacing: "-0.04em",
+              fontSize: 60, fontWeight: 800, lineHeight: 1, color: hex,
+              fontFamily: "var(--font-serif)", letterSpacing: "-0.04em",
             }}>{stat.value}</div>
             <div style={{
-              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
-              letterSpacing: "0.1em", textTransform: "uppercase",
-              marginTop: 6,
+              fontSize: 9.5, fontWeight: 700, color: "var(--text-tertiary)",
+              letterSpacing: "0.14em", textTransform: "uppercase", marginTop: 8,
             }}>{stat.label}</div>
-            <h3 style={{
-              margin: "12px 0 0",
-              fontSize: 17, fontWeight: 700, lineHeight: 1.32,
-              color: "var(--text-primary)", fontFamily: "var(--font-serif)",
-              letterSpacing: "-0.012em",
-            }}>{card.headline}</h3>
           </div>
         )}
+        <h2 style={{
+          margin: 0,
+          fontSize: isLead ? 30 : (stat ? 20 : 25),
+          fontWeight: isLead ? 600 : 500, lineHeight: 1.18,
+          letterSpacing: "-0.022em",
+          color: "var(--text-primary)",
+          fontFamily: "var(--font-serif)",
+        }}>{card.headline}</h2>
+      </div>
 
-        <p style={{ margin: 0, fontSize: 15, lineHeight: 1.68, color: "var(--text-secondary)" }}>
-          {card.plain_english}
-        </p>
+      {/* Body: plain_english, viz, why-it-matters, jargon */}
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 22px 8px", WebkitOverflowScrolling: "touch" }}>
+        <p style={{
+          margin: 0,
+          fontSize: 15, lineHeight: 1.62,
+          color: "var(--text-secondary)",
+          fontFamily: "var(--font-sans)",
+        }}>{card.plain_english}</p>
 
-        {/* Skip MicroViz for mega-stat — we already showed the headline number */}
         {!stat && <MicroViz card={card} />}
 
-        {/* Desire: why it matters */}
+        {/* Why it matters — pull-quote style (no background), serif italic */}
         {card.why_it_matters && (
           <div style={{
-            margin: "14px 0 0", padding: "13px 14px",
-            borderRadius: 14,
-            background: meta.soft,
-            borderLeft: `3px solid ${meta.color}`,
+            margin: "22px 0 0",
+            padding: "2px 0 2px 16px",
+            borderLeft: `2px solid ${hex}`,
           }}>
             <div style={{
-              fontSize: 10, fontWeight: 700, color: meta.color,
-              textTransform: "uppercase", letterSpacing: "0.09em",
-              marginBottom: 5, display: "flex", alignItems: "center", gap: 4,
-            }}>
-              <Zap size={9} />Why it matters
-            </div>
-            <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: "var(--text-primary)" }}>{card.why_it_matters}</p>
+              fontSize: 9.5, fontWeight: 800, color: hex,
+              letterSpacing: "0.16em", textTransform: "uppercase",
+              marginBottom: 6,
+            }}>Why it matters</div>
+            <p style={{
+              margin: 0, fontSize: 14.5, lineHeight: 1.55,
+              color: "var(--text-primary)",
+              fontFamily: "var(--font-serif)", fontStyle: "italic",
+              letterSpacing: "-0.005em",
+            }}>{card.why_it_matters}</p>
           </div>
         )}
 
-        {/* Jargon decoder — every acronym + term defined inline */}
+        {/* Jargon — inline term + def, no boxes */}
         {Array.isArray(card.jargon) && card.jargon.length > 0 && (
-          <div style={{ margin: "14px 0 0" }}>
+          <div style={{ margin: "22px 0 0" }}>
             <div style={{
-              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
-              textTransform: "uppercase", letterSpacing: "0.09em",
-              marginBottom: 8, display: "flex", alignItems: "center", gap: 5,
-            }}>
-              <BookOpen size={10} /> Decode the jargon
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+              fontSize: 9.5, fontWeight: 800, color: "var(--text-tertiary)",
+              letterSpacing: "0.16em", textTransform: "uppercase",
+              marginBottom: 10,
+            }}>Decode</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {card.jargon.map((j, i) => (
-                <div key={i} style={{
-                  padding: "10px 12px", borderRadius: 11,
-                  background: "var(--card-secondary)",
-                  border: "1px solid var(--separator)",
-                }}>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text-primary)", marginBottom: 2 }}>{j.term}</div>
-                  <div style={{ fontSize: 12.5, lineHeight: 1.45, color: "var(--text-secondary)" }}>{j.def}</div>
-                </div>
+                <p key={i} style={{ margin: 0, fontSize: 13.5, lineHeight: 1.5 }}>
+                  <span style={{ fontWeight: 700, color: "var(--text-primary)" }}>{j.term}</span>
+                  <span style={{ color: "var(--text-secondary)" }}> — {j.def}</span>
+                </p>
               ))}
             </div>
           </div>
         )}
 
-        <div style={{ height: 14 }} />
+        <div style={{ height: 16 }} />
       </div>
 
-      {/* ── A — ACTION: Source footer (single row, tight padding) ─── */}
+      {/* Source footer */}
       <div style={{
-        flexShrink: 0, padding: "7px 18px 9px",
+        flexShrink: 0, padding: "10px 22px 12px",
         borderTop: "1px solid var(--separator)",
         display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
       }}>
@@ -394,11 +358,11 @@ function StoryCard({ card }) {
           onClick={(e) => e.stopPropagation()}
           style={{ fontSize: 11, fontWeight: 500, color: "var(--text-tertiary)", display: "flex", alignItems: "center", gap: 6, textDecoration: "none", minWidth: 0, overflow: "hidden" }}
         >
-          <span style={{ fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.55, flexShrink: 0 }}>Source</span>
+          <span style={{ fontSize: 8.5, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.6, flexShrink: 0 }}>Source</span>
           <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{card.source?.name}</span>
           <ExternalLink size={9} style={{ flexShrink: 0 }} />
         </a>
-        <span style={{ fontSize: 10, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.4, flexShrink: 0 }}>aitechhive.com</span>
+        <span style={{ fontSize: 9.5, fontWeight: 500, color: "var(--text-tertiary)", opacity: 0.45, flexShrink: 0 }}>aitechhive.com</span>
       </div>
     </div>
   );
@@ -1390,37 +1354,32 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
-function Wordmark({ cardCount }) {
+function Wordmark() {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-      <div
-        aria-label="ath — live"
+    <div
+      aria-label="aitechhive — live"
+      style={{
+        position: "relative",
+        display: "inline-grid", placeItems: "center",
+        width: 36, height: 36, borderRadius: 10,
+        background: "var(--text-primary)",
+        color: "var(--bg)",
+        fontFamily: "var(--font-mono)",
+        fontSize: 13, fontWeight: 700, letterSpacing: "-0.03em",
+        lineHeight: 1,
+      }}
+    >
+      ath
+      <span
+        aria-hidden="true"
         style={{
-          position: "relative",
-          width: 38, height: 38, borderRadius: 10,
-          background: "var(--text-primary)",
-          color: "var(--bg)",
-          display: "grid", placeItems: "center",
-          fontFamily: "var(--font-mono)",
-          fontSize: 14, fontWeight: 700, letterSpacing: "-0.03em",
-          lineHeight: 1,
+          position: "absolute", top: -2, right: -2,
+          width: 8, height: 8, borderRadius: "50%",
+          background: "var(--live-dot)",
+          boxShadow: "0 0 0 2px var(--bg)",
+          animation: "livePulse 2.2s ease-out infinite",
         }}
-      >
-        ath
-        <span
-          aria-hidden="true"
-          style={{
-            position: "absolute", top: -3, right: -3,
-            width: 9, height: 9, borderRadius: "50%",
-            background: "var(--live-dot)",
-            boxShadow: "0 0 0 2px var(--bg)",
-            animation: "livePulse 2.2s ease-out infinite",
-          }}
-        />
-      </div>
-      <div style={{ fontSize: 9.5, fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.09em" }}>
-        BFSI · Enterprise AI
-      </div>
+      />
     </div>
   );
 }
@@ -1448,24 +1407,24 @@ function IconBtn({ children, onClick, label, badge }) {
 function BigActionBtn({ label, onClick, children, active }) {
   return (
     <button
-      onClick={onClick} aria-label={label}
+      onClick={onClick} aria-label={label} title={label}
       style={{
-        flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-        gap: 5, padding: "12px 6px", borderRadius: 14,
-        background: "var(--card)",
-        color: "var(--text-primary)",
-        border: "1px solid var(--separator)",
-        cursor: "pointer", fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
+        flex: 1, display: "inline-flex", alignItems: "center", justifyContent: "center",
+        gap: 6, padding: "8px 4px", borderRadius: 10,
+        background: "transparent",
+        color: active ? "var(--text-primary)" : "var(--text-tertiary)",
+        border: "none",
+        cursor: "pointer",
+        fontSize: 11, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase",
         userSelect: "none",
-        transition: "transform 0.12s ease, opacity 0.12s ease",
-        opacity: active ? 1 : 0.95,
+        transition: "color 0.12s ease, transform 0.12s ease",
       }}
-      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.96)"; e.currentTarget.style.opacity = "0.85"; }}
-      onPointerUp={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
-      onPointerLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.opacity = ""; }}
+      onPointerDown={(e) => { e.currentTarget.style.transform = "scale(0.94)"; }}
+      onPointerUp={(e) => { e.currentTarget.style.transform = ""; }}
+      onPointerLeave={(e) => { e.currentTarget.style.transform = ""; }}
     >
       {children}
-      {label}
+      <span>{label}</span>
     </button>
   );
 }
@@ -1771,35 +1730,33 @@ export default function PageClient({ initialCards }) {
         </div>
       </header>
 
-      {/* ── Category filter tabs ───────────────────────────────── */}
-      <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "0 12px 10px", display: "flex", gap: 6, overflowX: "auto", scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
+      {/* ── Category filter tabs (minimal, text-only with subtle underline) ── */}
+      <div style={{
+        position: "relative", zIndex: 1, flexShrink: 0,
+        padding: "0 16px 8px",
+        display: "flex", gap: 18,
+        overflowX: "auto",
+        scrollbarWidth: "none", WebkitOverflowScrolling: "touch",
+      }}>
         {["all", ...Object.keys(CATS)].map((key) => {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
-          const count = key === "all" ? allCards.length : (categoryCounts[key] || 0);
           return (
-            <button key={key} onClick={() => { setCatFilter(key); setProgressCount(0); }}
+            <button
+              key={key}
+              onClick={() => { setCatFilter(key); setProgressCount(0); }}
               style={{
-                flexShrink: 0, padding: "7px 12px", borderRadius: 100, fontSize: 13, cursor: "pointer", border: "none",
-                background: active ? (meta?.hex || "var(--text-primary)") : "var(--card)",
-                color: active ? "white" : "var(--text-secondary)", fontWeight: active ? 600 : 500,
-                boxShadow: active ? `0 2px 8px ${meta ? meta.hex + "45" : "rgba(0,0,0,0.22)"}` : "0 1px 2px rgba(0,0,0,0.05)",
-                transition: "all 0.15s ease",
-                display: "inline-flex", alignItems: "center", gap: 6,
-              }}>
-              <span>{key === "all" ? "All" : meta.label}</span>
-              <span
-                style={{
-                  fontSize: 11, fontWeight: 600, lineHeight: 1,
-                  padding: "2px 6px", borderRadius: 100,
-                  background: active ? "rgba(255,255,255,0.22)" : "var(--card-secondary)",
-                  color: active ? "rgba(255,255,255,0.95)" : "var(--text-tertiary)",
-                  fontVariantNumeric: "tabular-nums",
-                  minWidth: 14, textAlign: "center",
-                }}
-              >
-                {count}
-              </span>
+                flexShrink: 0, padding: "6px 0 7px",
+                border: "none", background: "transparent",
+                fontSize: 12.5, cursor: "pointer",
+                fontWeight: active ? 700 : 500,
+                color: active ? "var(--text-primary)" : "var(--text-tertiary)",
+                letterSpacing: "-0.005em",
+                borderBottom: active ? `2px solid ${meta?.hex || "var(--text-primary)"}` : "2px solid transparent",
+                transition: "color 0.15s ease, border-color 0.15s ease",
+              }}
+            >
+              {key === "all" ? "All" : meta.label}
             </button>
           );
         })}
@@ -1898,20 +1855,18 @@ export default function PageClient({ initialCards }) {
         </div>
       </div>
 
-      {/* ── Action bar ─────────────────────────────────────────── */}
+      {/* ── Action bar (minimal — icons + small labels, no boxes) ─── */}
       {!isEmpty && (
-        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "8px 16px max(14px, env(safe-area-inset-bottom))" }}>
-          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 10, alignItems: "stretch" }}>
+        <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "4px 16px max(10px, env(safe-area-inset-bottom))" }}>
+          <div style={{ maxWidth: 520, margin: "0 auto", display: "flex", gap: 2, alignItems: "stretch" }}>
             <BigActionBtn label="Skip" onClick={() => doAction("next")}>
-              <X size={20} strokeWidth={2.25} />
+              <X size={16} strokeWidth={2} />
             </BigActionBtn>
-
             <BigActionBtn label="Share" onClick={() => doAction("share")}>
-              <Share2 size={18} strokeWidth={2.25} />
+              <Share2 size={15} strokeWidth={2} />
             </BigActionBtn>
-
             <BigActionBtn label="Save" onClick={() => doAction("save")} active={savedIds.has(topCard?.id)}>
-              <Bookmark size={20} strokeWidth={2.25} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
+              <Bookmark size={16} strokeWidth={2} fill={savedIds.has(topCard?.id) ? "currentColor" : "none"} />
             </BigActionBtn>
           </div>
         </div>
