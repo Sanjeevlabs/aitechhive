@@ -38,10 +38,18 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
+  // Version-suffix the icon URLs so browsers re-fetch when the mark changes.
+  // Safari is particularly aggressive about caching favicons; without a
+  // version string it'll keep showing the old logo for weeks after a deploy.
+  // Bump ICON_V whenever icon.svg / apple-icon.svg change visually.
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg",
-    shortcut: "/icon.svg",
+    icon: [
+      { url: "/icon.svg?v=4", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg?v=4", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg?v=4",
   },
   openGraph: {
     type: "website",
