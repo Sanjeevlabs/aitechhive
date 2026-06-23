@@ -1,9 +1,14 @@
 import "./globals.css";
-import { Source_Serif_4, Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, DM_Serif_Display, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 
-const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap", weight: ["400", "500", "600", "700"] });
-const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+// Databricks-inspired type stack:
+// - DM Sans for UI + body (Databricks uses it across their product surfaces).
+// - DM Serif Display held in the --font-serif slot for the rare hero moment
+//   (welcome card's "Today.") — used sparingly so the look stays DB-like.
+// - Geist Mono kept for numeric tabular display (dates, stat values).
+const sans = DM_Sans({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
+const serif = DM_Serif_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap", weight: ["400"] });
 const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap", weight: ["400", "500", "600"] });
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aitechhive.com";
@@ -44,12 +49,12 @@ export const metadata = {
   // Bump ICON_V whenever icon.svg / apple-icon.svg change visually.
   icons: {
     icon: [
-      { url: "/icon.svg?v=4", type: "image/svg+xml" },
+      { url: "/icon.svg?v=5", type: "image/svg+xml" },
     ],
     apple: [
-      { url: "/apple-icon.svg?v=4", type: "image/svg+xml" },
+      { url: "/apple-icon.svg?v=5", type: "image/svg+xml" },
     ],
-    shortcut: "/icon.svg?v=4",
+    shortcut: "/icon.svg?v=5",
   },
   openGraph: {
     type: "website",

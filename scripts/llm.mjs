@@ -52,7 +52,7 @@ const PROVIDERS = {
   },
 };
 
-const PROVIDER = process.env.LLM_PROVIDER || "groq";
+const PROVIDER = process.env.LLM_PROVIDER || "anthropic";
 
 // Per-provider key env vars. Resolved before the generic LLM_API_KEY
 // fallback so swapping LLM_PROVIDER doesn't require re-pasting the key.
@@ -318,9 +318,9 @@ function logCost(usage) {
     1_000_000;
 
   // Prominent banner so cost shows up loud in Actions logs.
-  // Cron is once-daily, so per-call cost ≈ daily ≈ 1/30 of monthly.
-  const monthlyEst = (cost * 30).toFixed(2);
-  console.log(`💰 [${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)} this call · ~$${monthlyEst}/mo at 1 run/day`);
+  // Cron is twice-daily, so monthly ≈ per-call × 60.
+  const monthlyEst = (cost * 60).toFixed(2);
+  console.log(`💰 [${cfg.label}] ${inTok} in (${cacheRead} cached) + ${outTok} out → $${cost.toFixed(4)} this call · ~$${monthlyEst}/mo at 2 runs/day`);
 }
 
 // Errors that should never trigger a retry — the second attempt will fail
