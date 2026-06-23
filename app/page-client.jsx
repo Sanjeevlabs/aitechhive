@@ -1291,12 +1291,9 @@ function cardKeyVal(c) {
 /* ─────────────────────────────────────────────────────────────────
    WORDMARK — "ath" chip + live indicator + density signal
 ───────────────────────────────────────────────────────────────── */
-function BeeMark({ size = 36, color = "currentColor" }) {
-  // Monochrome geometric mark — single hexagon outline + a centered
-  // node/kernel. Same geometry as /icon.svg + /apple-icon.svg so the
-  // favicon and the in-app logo are visually identical.
-  // Keeping the export name as BeeMark for now (existing call site
-  // in WelcomeCard still uses it); the shape is no longer a bee.
+function BeeMark({ size = 36 }) {
+  // 2D honey bee — flat fill, no gradient/shading. Same geometry as
+  // /icon.svg + /apple-icon.svg so favicon and in-app logo match.
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1304,14 +1301,21 @@ function BeeMark({ size = 36, color = "currentColor" }) {
       width={size} height={size}
       shapeRendering="geometricPrecision"
       aria-hidden="true"
-      style={{ display: "block", color }}
+      style={{ display: "block" }}
     >
-      <path
-        d="M 32 8 L 55 20 L 55 44 L 32 56 L 9 44 L 9 20 Z"
-        fill="none" stroke="currentColor" strokeWidth="5"
-        strokeLinejoin="round" strokeLinecap="round"
-      />
-      <circle cx="32" cy="32" r="5.5" fill="currentColor" />
+      <ellipse cx="20" cy="20" rx="12" ry="8" fill="#FFFFFF" stroke="#1A1A1F" strokeWidth="1.6" transform="rotate(-22 20 20)"/>
+      <ellipse cx="44" cy="20" rx="12" ry="8" fill="#FFFFFF" stroke="#1A1A1F" strokeWidth="1.6" transform="rotate(22 44 20)"/>
+      <ellipse cx="32" cy="38" rx="16" ry="18" fill="#F5C518" stroke="#1A1A1F" strokeWidth="2"/>
+      <rect x="16" y="32" width="32" height="5" fill="#1A1A1F"/>
+      <rect x="17" y="44" width="30" height="5" fill="#1A1A1F"/>
+      <circle cx="32" cy="20" r="8" fill="#1A1A1F"/>
+      <circle cx="28.5" cy="19" r="1.8" fill="#FFFFFF"/>
+      <circle cx="35.5" cy="19" r="1.8" fill="#FFFFFF"/>
+      <path d="M28 13 Q26 8 24 6" stroke="#1A1A1F" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
+      <path d="M36 13 Q38 8 40 6" stroke="#1A1A1F" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
+      <circle cx="24" cy="6" r="1.6" fill="#1A1A1F"/>
+      <circle cx="40" cy="6" r="1.6" fill="#1A1A1F"/>
+      <path d="M32 56 L29.5 60 L34.5 60 Z" fill="#1A1A1F"/>
     </svg>
   );
 }
