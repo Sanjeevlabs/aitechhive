@@ -174,9 +174,9 @@ function StoryCard({ card }) {
   return (
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
-      background: "var(--card)", borderRadius: 20,
-      border: "1px solid rgba(0,0,0,0.05)",
-      boxShadow: "0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(0,0,0,0.04)",
+      background: "var(--card)", borderRadius: 12,
+      border: "1px solid var(--separator)",
+      boxShadow: "0 1px 2px rgba(17,24,28,0.04), 0 12px 32px rgba(17,24,28,0.06)",
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
@@ -221,13 +221,13 @@ function StoryCard({ card }) {
         display: "flex", flexDirection: "column", justifyContent: "center",
         gap: 16,
       }}>
-        {/* Headline + optional mega-stat */}
+        {/* Headline + optional mega-stat — DM Sans bold, Databricks voice */}
         <div style={{ flexShrink: 0 }}>
           {stat && (
             <div style={{ marginBottom: 12 }}>
               <div style={{
                 fontSize: 48, fontWeight: 700, lineHeight: 0.95, color: "var(--text-primary)",
-                fontFamily: "var(--font-serif)", letterSpacing: "-0.035em",
+                letterSpacing: "-0.035em",
               }}>{stat.value}</div>
               <div style={{
                 fontSize: 10, fontWeight: 700, color: hex,
@@ -237,11 +237,10 @@ function StoryCard({ card }) {
           )}
           <h2 style={{
             margin: 0,
-            fontSize: isLead ? 24 : (stat ? 17 : 21),
-            fontWeight: 600, lineHeight: 1.22,
+            fontSize: isLead ? 24 : (stat ? 17 : 22),
+            fontWeight: 700, lineHeight: 1.22,
             letterSpacing: "-0.022em",
             color: "var(--text-primary)",
-            fontFamily: "var(--font-serif)",
             display: "-webkit-box",
             WebkitLineClamp: 4,
             WebkitBoxOrient: "vertical",
@@ -423,12 +422,14 @@ function DesktopBackground() {
    WELCOME CARD  —  shown as the first page on every visit
 ───────────────────────────────────────────────────────────────── */
 function WelcomeCard({ onDismiss, briefCards }) {
-  // Quiet premium palette — single solid cherry-blossom surface, no gradients.
-  const surface = "#FFF1F1";       // soft cherry background
-  const accent  = "#A23E47";       // muted cherry red (button + accent only)
-  const ink     = "#1F1416";       // near-black with a warm cherry undertone
-  const inkMute = "#6B5A5C";       // secondary text
-  const inkSoft = "#A39093";       // tertiary text
+  // Databricks-style: pure white surface, ink-black text, single red
+  // accent line + red CTA. DM Sans throughout (serif kept only for
+  // the monumental "Today." moment).
+  const surface = "#FFFFFF";
+  const brand   = "#FF3621";  // Databricks red
+  const ink     = "#11181C";
+  const inkMute = "#5A6168";
+  const inkSoft = "#9CA3AF";
 
   const today = new Date();
   const dateLabel = today.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
@@ -442,55 +443,58 @@ function WelcomeCard({ onDismiss, briefCards }) {
       style={{
         position: "absolute", inset: 0, zIndex: 10,
         background: surface,
-        borderRadius: 20, overflow: "hidden",
+        borderRadius: 12, overflow: "hidden",
         display: "flex", flexDirection: "column", justifyContent: "space-between",
         padding: "24px 26px 22px",
-        boxShadow: `0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(122,44,51,0.08)`,
+        border: `1px solid ${inkSoft}25`,
+        boxShadow: "0 1px 2px rgba(17,24,28,0.04), 0 24px 48px rgba(17,24,28,0.08)",
         userSelect: "none",
       }}
     >
-      {/* Top: tiny ath mark on left, date on right. No other chrome. */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
+      {/* Thin red accent stripe — Databricks signature */}
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: brand }} />
+
+      {/* Top: ath mark + date */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0, paddingTop: 6 }}>
         <BeeMark size={32} />
         <span style={{ fontSize: 11, fontWeight: 500, color: inkMute, letterSpacing: "0.02em", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
       </div>
 
-      {/* Middle: "Today." monumental serif, then three italic-serif headlines */}
+      {/* Middle: huge serif "Today." then italic-serif headlines */}
       <div style={{ flexShrink: 1, minHeight: 0 }}>
         <h1 style={{
           margin: 0,
-          fontSize: 72, fontWeight: 600, lineHeight: 0.95,
-          color: ink, letterSpacing: "-0.04em",
+          fontSize: 72, fontWeight: 400, lineHeight: 0.95,
+          color: ink, letterSpacing: "-0.035em",
           fontFamily: "var(--font-serif)",
         }}>Today.</h1>
 
         {Array.isArray(briefCards) && briefCards.length > 0 && (
           <ol style={{
-            margin: "30px 0 0", padding: 0, listStyle: "none",
-            display: "flex", flexDirection: "column", gap: 14,
-            borderTop: `1px solid rgba(162,62,71,0.16)`, paddingTop: 18,
+            margin: "28px 0 0", padding: 0, listStyle: "none",
+            display: "flex", flexDirection: "column", gap: 12,
+            borderTop: `1px solid ${inkSoft}30`, paddingTop: 18,
           }}>
             {briefCards.slice(0, 3).map((c) => (
               <li key={c.id} style={{
-                fontSize: 15, lineHeight: 1.32, color: ink,
-                fontFamily: "var(--font-serif)", fontStyle: "italic",
-                letterSpacing: "-0.012em",
+                fontSize: 15, lineHeight: 1.35, color: ink,
+                fontWeight: 500, letterSpacing: "-0.005em",
               }}>{c.headline}</li>
             ))}
           </ol>
         )}
       </div>
 
-      {/* Bottom: a single restrained "Begin" button. No supporting copy. */}
+      {/* Bottom: red Databricks CTA */}
       <div style={{ flexShrink: 0 }}>
         <button
           onClick={onDismiss}
           style={{
             width: "100%", padding: "14px",
-            borderRadius: 12,
-            background: ink,
-            color: surface,
-            fontSize: 15, fontWeight: 600,
+            borderRadius: 6,
+            background: brand,
+            color: "#FFFFFF",
+            fontSize: 14, fontWeight: 700,
             letterSpacing: "0.04em", textTransform: "uppercase",
             border: "none", cursor: "pointer",
           }}
