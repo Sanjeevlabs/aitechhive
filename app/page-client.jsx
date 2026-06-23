@@ -164,48 +164,6 @@ function megaStatValue(card) {
   return null;
 }
 
-/* ─────────────────────────────────────────────────────────────────
-   TIMELINE RIBBON — 24h timeline of fresh cards
-   Anchors the reader: shows where each story sits in today's cycle.
-───────────────────────────────────────────────────────────────── */
-function TimelineRibbon({ cards, currentId, color }) {
-  if (!cards || cards.length === 0) return null;
-  const now = Date.now();
-  const day = 24 * 3600 * 1000;
-  return (
-    <div style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "2px 16px 10px" }}>
-      <div style={{ position: "relative", height: 18 }}>
-        {/* Track */}
-        <div style={{ position: "absolute", left: 0, right: 0, top: 11, height: 2, background: "var(--separator)", borderRadius: 1 }} />
-        {/* Endpoint labels */}
-        <span style={{ position: "absolute", left: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>24h ago</span>
-        <span style={{ position: "absolute", right: 0, top: -2, fontSize: 8.5, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--text-tertiary)" }}>now</span>
-        {/* Dots */}
-        {cards.map((c) => {
-          const t = new Date(c.published_at || c.source?.date || 0).getTime();
-          if (!t) return null;
-          const age = (now - t) / day;
-          if (age < 0 || age > 1.05) return null;
-          const pos = Math.max(0, Math.min(1, 1 - age));
-          const isCurrent = c.id === currentId;
-          return (
-            <div key={c.id} style={{
-              position: "absolute", top: isCurrent ? 7 : 9,
-              left: `${pos * 100}%`,
-              width: isCurrent ? 10 : 5, height: isCurrent ? 10 : 5,
-              borderRadius: "50%",
-              background: isCurrent ? color : "var(--text-tertiary)",
-              transform: "translate(-50%, 0)",
-              boxShadow: isCurrent ? `0 0 0 3px ${color}25` : "none",
-              transition: "all 0.3s ease",
-              opacity: isCurrent ? 1 : 0.55,
-            }} />
-          );
-        })}
-      </div>
-    </div>
-  );
-}
 
 function StoryCard({ card }) {
   const meta = CATS[card.category] || CATS.insight;
@@ -1746,55 +1704,37 @@ export default function PageClient({ initialCards }) {
         </div>
       </header>
 
-      {/* ── Category filter — Apple News-style: tiny caps, dot separators ── */}
+      {/* ── Category filter — minimal caps, spacing only (no separators) ── */}
       <div style={{
         position: "relative", zIndex: 1, flexShrink: 0,
         padding: "2px 16px 12px",
-        display: "flex", gap: 0, alignItems: "baseline",
+        display: "flex", gap: 20, alignItems: "baseline",
         overflowX: "auto",
         scrollbarWidth: "none", WebkitOverflowScrolling: "touch",
       }}>
-        {["all", ...Object.keys(CATS)].map((key, i, arr) => {
+        {["all", ...Object.keys(CATS)].map((key) => {
           const active = catFilter === key;
           const meta = key !== "all" ? CATS[key] : null;
           return (
-            <span key={key} style={{ display: "inline-flex", alignItems: "baseline", flexShrink: 0 }}>
-              <button
-                onClick={() => { setCatFilter(key); setProgressCount(0); }}
-                style={{
-                  padding: "4px 0",
-                  border: "none", background: "transparent",
-                  fontSize: 10.5, cursor: "pointer",
-                  fontWeight: active ? 700 : 500,
-                  letterSpacing: "0.14em", textTransform: "uppercase",
-                  color: active ? (meta?.hex || "var(--text-primary)") : "var(--text-tertiary)",
-                  transition: "color 0.15s ease",
-                }}
-              >
-                {key === "all" ? "All" : meta.label}
-              </button>
-              {i < arr.length - 1 && (
-                <span aria-hidden="true" style={{
-                  padding: "0 10px", color: "var(--text-tertiary)",
-                  opacity: 0.4, fontSize: 9, transform: "translateY(-1px)",
-                }}>·</span>
-              )}
-            </span>
+            <button
+              key={key}
+              onClick={() => { setCatFilter(key); setProgressCount(0); }}
+              style={{
+                flexShrink: 0,
+                padding: "4px 0",
+                border: "none", background: "transparent",
+                fontSize: 10.5, cursor: "pointer",
+                fontWeight: active ? 700 : 500,
+                letterSpacing: "0.14em", textTransform: "uppercase",
+                color: active ? (meta?.hex || "var(--text-primary)") : "var(--text-tertiary)",
+                transition: "color 0.15s ease",
+              }}
+            >
+              {key === "all" ? "All" : meta.label}
+            </button>
           );
         })}
       </div>
-
-
-      {/* ── Timeline ribbon (All view only) ─────────────────────────
-          Where this story sits in the 24h news cycle. Anchors the reader
-          across the deck so freshness is visible at a glance. */}
-      {catFilter === "all" && topCard && !isEmpty && (
-        <TimelineRibbon
-          cards={deck}
-          currentId={topCard.id}
-          color={CATS[topCard.category]?.hex || "var(--text-primary)"}
-        />
-      )}
 
       {/* ── Card area  ─────────────────────────────────────────────
           IMPORTANT: Centering is done with flex on this wrapper.
