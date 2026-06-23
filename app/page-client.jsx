@@ -175,18 +175,15 @@ function StoryCard({ card }) {
     <div style={{
       height: "100%", display: "flex", flexDirection: "column",
       background: "var(--card)", borderRadius: 20,
-      // Apple-like: barely-there border, lighter shadow. The card is the page,
-      // not a card-in-a-card.
       border: "1px solid rgba(0,0,0,0.05)",
       boxShadow: "0 1px 2px rgba(0,0,0,0.03), 0 24px 48px rgba(0,0,0,0.04)",
       overflow: "hidden",
       userSelect: "none", WebkitUserSelect: "none",
     }}>
-      {/* Meta row: just category eyebrow + jurisdiction + date.
-          No "Today's Lead" label — lead status is communicated by size alone. */}
+      {/* Meta row — small, fixed height */}
       <div style={{
         flexShrink: 0,
-        padding: "22px 26px 0",
+        padding: "18px 24px 0",
         display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12,
       }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap", minWidth: 0 }}>
@@ -213,88 +210,55 @@ function StoryCard({ card }) {
         }}>{relDate(card.published_at)}</span>
       </div>
 
-      {/* Hero: mega-stat or serif headline. Pure black on white.
-          Apple News-scale type — the headline is the room. */}
-      <div style={{ flexShrink: 0, padding: isLead ? "20px 26px 0" : "16px 26px 0" }}>
+      {/* Headline zone — capped to ~3 lines via line-clamp so it can never
+          eat the whole card. flex 4 = ~40% of available middle space. */}
+      <div style={{ flex: "4 1 0", minHeight: 0, padding: "12px 24px 0", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
         {stat && (
-          <div style={{ marginBottom: 18 }}>
+          <div style={{ marginBottom: 10, flexShrink: 0 }}>
             <div style={{
-              fontSize: 64, fontWeight: 700, lineHeight: 0.96, color: "var(--text-primary)",
-              fontFamily: "var(--font-serif)", letterSpacing: "-0.04em",
+              fontSize: 48, fontWeight: 700, lineHeight: 0.95, color: "var(--text-primary)",
+              fontFamily: "var(--font-serif)", letterSpacing: "-0.035em",
             }}>{stat.value}</div>
             <div style={{
               fontSize: 10, fontWeight: 700, color: hex,
-              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 10,
+              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 6,
             }}>{stat.label}</div>
           </div>
         )}
         <h2 style={{
           margin: 0,
-          fontSize: isLead ? 38 : (stat ? 22 : 30),
-          fontWeight: 600, lineHeight: isLead ? 1.08 : 1.14,
-          letterSpacing: "-0.028em",
+          fontSize: isLead ? 22 : (stat ? 16 : 19),
+          fontWeight: 600, lineHeight: 1.2,
+          letterSpacing: "-0.02em",
           color: "var(--text-primary)",
           fontFamily: "var(--font-serif)",
+          display: "-webkit-box",
+          WebkitLineClamp: stat ? 2 : (isLead ? 4 : 4),
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
         }}>{card.headline}</h2>
       </div>
 
-      {/* Body: plain_english, viz, why-it-matters, jargon */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "20px 26px 10px", WebkitOverflowScrolling: "touch" }}>
+      {/* Body zone — plain_english only, line-clamped to fit without
+          scrolling. flex 6 = ~60% of available middle space.
+          why_it_matters + jargon dropped per design ask: card should be
+          one-glance, no interactions inside. */}
+      <div style={{ flex: "6 1 0", minHeight: 0, padding: "12px 24px 0", overflow: "hidden", display: "flex", flexDirection: "column" }}>
         <p style={{
           margin: 0,
-          fontSize: 15.5, lineHeight: 1.6,
+          fontSize: 14.5, lineHeight: 1.55,
           color: "var(--text-secondary)",
           fontFamily: "var(--font-sans)",
+          display: "-webkit-box",
+          WebkitLineClamp: 10,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
         }}>{card.plain_english}</p>
-
-        {!stat && <MicroViz card={card} />}
-
-        {/* Why it matters — pull-quote, serif italic, color only on the label */}
-        {card.why_it_matters && (
-          <div style={{
-            margin: "24px 0 0",
-            padding: "0 0 0 18px",
-            borderLeft: `2px solid ${hex}`,
-          }}>
-            <div style={{
-              fontSize: 10, fontWeight: 700, color: hex,
-              letterSpacing: "0.18em", textTransform: "uppercase",
-              marginBottom: 8,
-            }}>Why it matters</div>
-            <p style={{
-              margin: 0, fontSize: 15, lineHeight: 1.5,
-              color: "var(--text-primary)",
-              fontFamily: "var(--font-serif)", fontStyle: "italic",
-              letterSpacing: "-0.008em",
-            }}>{card.why_it_matters}</p>
-          </div>
-        )}
-
-        {/* Jargon — inline term + def, no boxes */}
-        {Array.isArray(card.jargon) && card.jargon.length > 0 && (
-          <div style={{ margin: "24px 0 0" }}>
-            <div style={{
-              fontSize: 10, fontWeight: 700, color: "var(--text-tertiary)",
-              letterSpacing: "0.18em", textTransform: "uppercase",
-              marginBottom: 10,
-            }}>Decode</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {card.jargon.map((j, i) => (
-                <p key={i} style={{ margin: 0, fontSize: 14, lineHeight: 1.5 }}>
-                  <span style={{ fontWeight: 700, color: "var(--text-primary)" }}>{j.term}</span>
-                  <span style={{ color: "var(--text-secondary)" }}> — {j.def}</span>
-                </p>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div style={{ height: 16 }} />
       </div>
 
       {/* Source footer — quiet, no labels */}
       <div style={{
-        flexShrink: 0, padding: "14px 26px 16px",
+        flexShrink: 0, padding: "12px 24px 14px", marginTop: 8,
         borderTop: "1px solid rgba(0,0,0,0.05)",
         display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
       }}>
