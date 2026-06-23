@@ -1,31 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" shape-rendering="geometricPrecision" role="img" aria-label="AITechHive — honey bee">
-  <!-- iOS home-screen tile — soft cream so the yellow bee reads against it -->
-  <rect width="180" height="180" fill="#FFF6E0"/>
-
-  <!-- Wings -->
-  <ellipse cx="56" cy="56" rx="34" ry="22" fill="#FFFFFF" stroke="#1A1A1F" stroke-width="4.5" transform="rotate(-22 56 56)"/>
-  <ellipse cx="124" cy="56" rx="34" ry="22" fill="#FFFFFF" stroke="#1A1A1F" stroke-width="4.5" transform="rotate(22 124 56)"/>
-
-  <!-- Body -->
-  <ellipse cx="90" cy="107" rx="46" ry="51" fill="#F5C518" stroke="#1A1A1F" stroke-width="5.5"/>
-
-  <!-- Stripes -->
-  <rect x="44" y="90" width="92" height="14" fill="#1A1A1F"/>
-  <rect x="46" y="125" width="88" height="14" fill="#1A1A1F"/>
-
-  <!-- Head -->
-  <circle cx="90" cy="56" r="22" fill="#1A1A1F"/>
-
-  <!-- Eyes -->
-  <circle cx="80.5" cy="53" r="5" fill="#FFFFFF"/>
-  <circle cx="99.5" cy="53" r="5" fill="#FFFFFF"/>
-
-  <!-- Antennae -->
-  <path d="M79 37 Q72 19 67 14" stroke="#1A1A1F" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-  <path d="M101 37 Q108 19 113 14" stroke="#1A1A1F" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-  <circle cx="67" cy="14" r="4.5" fill="#1A1A1F"/>
-  <circle cx="113" cy="14" r="4.5" fill="#1A1A1F"/>
-
-  <!-- Stinger -->
-  <path d="M90 158 L83 170 L97 170 Z" fill="#1A1A1F"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" shape-rendering="geometricPrecision" role="img" aria-label="AITechHive">
+  <!-- Full-bleed black tile (iOS auto-rounds the corners) -->
+  <rect width="180" height="180" fill="#0E0D0C"/>
+  <g fill="#FFFFFF">
+    <!-- Four wing-petals meeting at the body, forming an X silhouette -->
+    <path d="M90 84 Q 62 40 28 62 Q 45 80 84 90 Z"/>
+    <path d="M90 84 Q 118 40 152 62 Q 135 80 96 90 Z"/>
+    <path d="M90 96 Q 62 140 28 118 Q 45 100 84 90 Z"/>
+    <path d="M90 96 Q 118 140 152 118 Q 135 100 96 90 Z"/>
+    <!-- Body: vertical oval centered -->
+    <ellipse cx="90" cy="93" rx="7.5" ry="28"/>
+    <!-- Head -->
+    <circle cx="90" cy="56" r="7.5"/>
+  </g>
+  <!-- Negative-space stripes through the body -->
+  <rect x="82" y="90" width="16" height="5" fill="#0E0D0C"/>
+  <rect x="83" y="102" width="14" height="4.5" fill="#0E0D0C"/>
 </svg>
