@@ -210,50 +210,64 @@ function StoryCard({ card }) {
         }}>{relDate(card.published_at)}</span>
       </div>
 
-      {/* Headline zone — capped to ~3 lines via line-clamp so it can never
-          eat the whole card. flex 4 = ~40% of available middle space. */}
-      <div style={{ flex: "4 1 0", minHeight: 0, padding: "12px 24px 0", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-        {stat && (
-          <div style={{ marginBottom: 10, flexShrink: 0 }}>
-            <div style={{
-              fontSize: 48, fontWeight: 700, lineHeight: 0.95, color: "var(--text-primary)",
-              fontFamily: "var(--font-serif)", letterSpacing: "-0.035em",
-            }}>{stat.value}</div>
-            <div style={{
-              fontSize: 10, fontWeight: 700, color: hex,
-              letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 6,
-            }}>{stat.label}</div>
-          </div>
-        )}
-        <h2 style={{
-          margin: 0,
-          fontSize: isLead ? 22 : (stat ? 16 : 19),
-          fontWeight: 600, lineHeight: 1.2,
-          letterSpacing: "-0.02em",
-          color: "var(--text-primary)",
-          fontFamily: "var(--font-serif)",
-          display: "-webkit-box",
-          WebkitLineClamp: stat ? 2 : (isLead ? 4 : 4),
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-        }}>{card.headline}</h2>
-      </div>
+      {/* Content zone — fills the middle, content centered vertically so
+          short cards don't show as a top-anchored block + empty void.
+          Headline + body live in the same flex column with their natural
+          sizes; the wrapper centers them. */}
+      <div style={{
+        flex: 1, minHeight: 0,
+        padding: "16px 24px",
+        overflow: "hidden",
+        display: "flex", flexDirection: "column", justifyContent: "center",
+        gap: 16,
+      }}>
+        {/* Headline + optional mega-stat */}
+        <div style={{ flexShrink: 0 }}>
+          {stat && (
+            <div style={{ marginBottom: 12 }}>
+              <div style={{
+                fontSize: 48, fontWeight: 700, lineHeight: 0.95, color: "var(--text-primary)",
+                fontFamily: "var(--font-serif)", letterSpacing: "-0.035em",
+              }}>{stat.value}</div>
+              <div style={{
+                fontSize: 10, fontWeight: 700, color: hex,
+                letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 6,
+              }}>{stat.label}</div>
+            </div>
+          )}
+          <h2 style={{
+            margin: 0,
+            fontSize: isLead ? 24 : (stat ? 17 : 21),
+            fontWeight: 600, lineHeight: 1.22,
+            letterSpacing: "-0.022em",
+            color: "var(--text-primary)",
+            fontFamily: "var(--font-serif)",
+            display: "-webkit-box",
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}>{card.headline}</h2>
+        </div>
 
-      {/* Body zone — plain_english only, line-clamped to fit without
-          scrolling. flex 6 = ~60% of available middle space.
-          why_it_matters + jargon dropped per design ask: card should be
-          one-glance, no interactions inside. */}
-      <div style={{ flex: "6 1 0", minHeight: 0, padding: "12px 24px 0", overflow: "hidden", display: "flex", flexDirection: "column" }}>
-        <p style={{
-          margin: 0,
-          fontSize: 14.5, lineHeight: 1.55,
-          color: "var(--text-secondary)",
-          fontFamily: "var(--font-sans)",
-          display: "-webkit-box",
-          WebkitLineClamp: 10,
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-        }}>{card.plain_english}</p>
+        {/* Body — plain_english + why_it_matters as a second paragraph
+            (no label, no special styling). Together they fill the body
+            zone density-wise; line-clamp caps long copy without scroll. */}
+        <div style={{ flexShrink: 0 }}>
+          <p style={{
+            margin: 0,
+            fontSize: 16, lineHeight: 1.6,
+            color: "var(--text-secondary)",
+            fontFamily: "var(--font-sans)",
+          }}>{card.plain_english}</p>
+          {card.why_it_matters && (
+            <p style={{
+              margin: "12px 0 0",
+              fontSize: 16, lineHeight: 1.6,
+              color: "var(--text-secondary)",
+              fontFamily: "var(--font-sans)",
+            }}>{card.why_it_matters}</p>
+          )}
+        </div>
       </div>
 
       {/* Source footer — quiet, no labels */}
