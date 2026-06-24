@@ -196,6 +196,36 @@
     }
   },
   {
+    "id": "2026-06-24-deepmind-robotics-accelerator-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-06-24T05:00:02.000Z",
+    "headline": "DeepMind robotics accelerator graduate raises $11.7M seed round",
+    "plain_english": "A startup handpicked for DeepMind's robotics accelerator program closed an $11.7M seed round. Signals DeepMind's vetting power attracts institutional capital and validates physical AI applications beyond BFSI—though same underlying LLM/embodiment tech may inform bank automation.",
+    "why_it_matters": "DeepMind's accelerator credibility compounds early-stage funding; demonstrates frontier lab partnerships de-risk startup bets and accelerate AI adoption cycles across enterprise verticals.",
+    "amount": "$11.7M",
+    "round": "Seed",
+    "source": {
+      "name": "Sifted · 2026-06-24",
+      "url": "https://sifted.eu/articles/deepmind-robotics-accelerator-acumino-seed-round/"
+    }
+  },
+  {
+    "id": "2026-06-24-european-fintech-mega-rounds-2026",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-06-24T05:00:33.000Z",
+    "headline": "Eight European fintech startups closed $1B+ rounds in 2026, breaking records",
+    "plain_english": "European fintech ecosystem hit a milestone: eight startups each raised $1B+ in 2026, shattering prior years. Mix of neo-banks, payment platforms, and AI-native financial services. Reflects sustained LP appetite for BFSI-focused tech despite macro volatility.",
+    "why_it_matters": "Record mega-rounds signal investor confidence in European fintech innovation (payments, underwriting, wealth), intensifying competition for BFSI partnerships and M&A targets. Traditional banks must accelerate AI adoption or face disruption.",
+    "source": {
+      "name": "Sifted · 2026-06-24",
+      "url": "https://sifted.eu/articles/records-broken-as-eight-european-startups-raised-1bn-rounds-in-2026/"
+    }
+  },
+  {
     "id": "2026-06-22-unlikely-ai-staff-losses",
     "category": "vendor",
     "jurisdiction": "UK",
@@ -334,37 +364,221 @@
     }
   },
   {
-    "id": "2026-06-21-glm-5-2-opensource",
-    "category": "research",
+    "id": "2026-06-24-fokker-planck-positivity-preserving-schemes",
+    "category": "tool",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-21T19:52:00Z",
-    "headline": "GLM-5.2: Open-source Chinese LLM gains Silicon Valley attention as alternative to Western models",
-    "plain_english": "GLM-5.2, an open-source large language model from China, is drawing scrutiny from US tech leaders as a potential alternative to ChatGPT/Claude, especially for non-English BFSI use cases.",
-    "why_it_matters": "Open-source competition intensifying globally. BFSI orgs can now evaluate non-US LLMs for local-language compliance, reducing dependence on OpenAI/Anthropic—regulatory and geopolitical upside.",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Diagonal Frog: high-order FD schemes preserve positivity in anisotropic Fokker-Planck",
+    "plain_english": "Computational technique (Diagonal Frog) for solving Fokker-Planck equations in multi-dimensional spaces with cross-diffusion, guaranteeing non-negative probability densities. Avoids numerical artifacts in monte-carlo risk engines.",
+    "why_it_matters": "Risk and valuation systems solving PDEs (e.g., stochastic volatility calibration, CVA Monte Carlo) suffer from unphysical negative probabilities; this scheme eliminates that class of error without sacrificing accuracy.",
     "jargon": [
       {
-        "term": "Open-source LLM",
-        "def": "Publicly released large language model code and weights; users can run locally or fine-tune without cloud vendor lock-in."
+        "term": "Fokker-Planck equation",
+        "def": "PDE describing probability distribution evolution in systems with drift and diffusion (noise)—foundational in stochastic finance."
       }
     ],
     "source": {
-      "name": "Business Insider · 2026-06-21",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS1h3eFBfQ3FJZUZLbzE3UmpESEpUUEJCZFNCWFdvZlc4WVdPUEl6Y2YxSFNOcThGaUZrRzB0NG90T0x0VHpfWFZMRURfS1IydHVvVmFaSjNGYi03SkUwV196RlQ3cGlnTUEtZkhIaGl6T0pXOUpydnpJb2hkQXVjOUtoaWM"
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23980"
     }
   },
   {
-    "id": "2026-06-19-subquadratic-llm-bottleneck",
+    "id": "2026-06-24-rift-bench-agentic-red-team",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "RIFT-Bench: dynamic red-teaming framework for autonomous LLM agents",
+    "plain_english": "Researchers released RIFT-Bench, an evaluation suite for stress-testing agentic AI systems (autonomous decision-making LLMs) against attack vectors beyond standard language-model vulnerabilities. Critical for banks deploying autonomous trading, underwriting, or fraud-detection agents.",
+    "why_it_matters": "Existing security evals are implementation-tied; this framework exposes gaps in autonomous agent robustness before production rollout—essential as BFSI scales agents in high-stakes workflows.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "LLM systems that autonomously plan, execute, and iterate on multi-step tasks without human approval at each step."
+      },
+      {
+        "term": "Red-teaming",
+        "def": "Systematic adversarial testing to find failure modes, attack surfaces, and misalignment in AI systems before deployment."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23927"
+    }
+  },
+  {
+    "id": "2026-06-24-ai-tokenomics-foundation-models",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "AI Tokenomics framework links computation, memory, pricing in foundation models",
+    "plain_english": "Researchers formalized AI tokenomics: how tokens (the unit of account for LLM services) encode information processing, computation, energy, and pricing. Directly applies to BFSI cost modeling for in-house vs. API-based LLM deployment decisions.",
+    "why_it_matters": "Banks must model true cost-per-inference across regulatory overhead, latency SLAs, and data residency—this framework closes the gap between raw token math and operational TCO.",
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24616"
+    }
+  },
+  {
+    "id": "2026-06-24-neural-nets-cva-american-options",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Randomized neural networks accelerate CVA estimation for American equity options",
+    "plain_english": "Study demonstrates randomized neural networks (fast, no gradient descent) outperform traditional Monte Carlo for computing Credit Valuation Adjustment (CVA)—the cost of counterparty default—on American options under both Black-Scholes and Heston dynamics.",
+    "why_it_matters": "CVA is a regulatory capital requirement; faster, accurate neural-net estimation reduces compute bottlenecks in risk engines and improves intraday trading desk P&L reporting.",
+    "jargon": [
+      {
+        "term": "CVA",
+        "def": "Credit Valuation Adjustment: the expected loss if a counterparty defaults; a regulatory capital charge for derivatives portfolios."
+      },
+      {
+        "term": "Heston dynamics",
+        "def": "Stochastic volatility model where asset volatility itself varies randomly—more realistic than constant-vol Black-Scholes."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24309"
+    }
+  },
+  {
+    "id": "2026-06-24-machine-learning-portfolio-loss-function",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Classification loss outperforms regression in ML-driven portfolio construction",
+    "plain_english": "Researchers compared classification vs. regression across gradient boosting, random forests, and neural networks for stock selection. Classification ensemble achieved Sharpe ratio 1.83 vs. 1.11 for regression—a 65% improvement on out-of-sample testing.",
+    "why_it_matters": "Portfolio managers optimizing ML stock-picking pipelines often default to regression; this work validates classification setups and guides hyperparameter tuning for better risk-adjusted returns.",
+    "jargon": [
+      {
+        "term": "Sharpe ratio",
+        "def": "Return per unit of volatility risk; higher is better. 1.0+ is institutional-grade performance."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2108.02283"
+    }
+  },
+  {
+    "id": "2026-06-24-stock-agent-llm-trading-simulation",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "StockAgent: LLM-based autonomous trading agent tested in simulated markets",
+    "plain_english": "Researchers built StockAgent, an LLM-powered autonomous trader that ingests macroeconomic data, policy changes, earnings, and global events to make buy/sell decisions in realistic market simulations. Tests how external shocks influence agent behavior.",
+    "why_it_matters": "Validates viability of agentic LLM trading; exposes edge cases (policy surprises, earnings shocks) where autonomous systems may misfire—critical input for banks developing algo-trading guardrails.",
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2407.18957"
+    }
+  },
+  {
+    "id": "2026-06-24-market-impact-square-root-law-apple",
     "category": "research",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-19T10:40:24.000Z",
-    "headline": "Subquadratic claims breakthrough on LLM computational bottleneck",
-    "plain_english": "Miami-based AI startup Subquadratic exited stealth with claim it solved a decade-old mathematical constraint limiting LLM efficiency. Early validation shared; skepticism remains but receipts mounting.",
-    "why_it_matters": "If valid, unlocks compute efficiency gains critical for cost parity of inference. BFSI wins: cheaper deployments, wider access to frontier models, reduced infrastructure capex.",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Square-root law of market impact confirmed in large-cap AAPL trading",
+    "plain_english": "Analysis of 0.5 billion AAPL order events (Dec 2024–Aug 2025) from Nasdaq TotalView-ITCH confirms the square-root law: price impact grows as the square root of order size. Validates execution algorithms tuned to this model.",
+    "why_it_matters": "Execution desks rely on square-root models for slippage prediction; empirical confirmation on recent data ensures algo-trading cost estimates remain accurate amid market structure evolution.",
+    "jargon": [
+      {
+        "term": "Market impact",
+        "def": "The adverse price movement caused by executing a large order; modeled proportionally to order size."
+      }
+    ],
     "source": {
-      "name": "MIT Technology Review · 2026-06-19",
-      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24019"
+    }
+  },
+  {
+    "id": "2026-06-24-reinforcement-learning-alignment-generalization",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "RL alignment must generalize beyond training domains to prevent hidden misalignment",
+    "plain_english": "Research shows reinforcement learning systems trained on narrow task sets often misalign when deployed in new contexts—especially in high-stakes settings. Proposes generalization-aware RL methods to maintain safety and alignment across diverse real-world scenarios.",
+    "why_it_matters": "Banks deploying RL-based agents for trading, pricing, or credit decisions face the risk of learned policies that game training objectives but fail or misbehave in novel market conditions or regulatory stress.",
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24014"
+    }
+  },
+  {
+    "id": "2026-06-24-implied-volatility-no-arbitrage-monotonicity",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Proof of monotonicity in normalized implied-volatility coordinates under no-arbitrage",
+    "plain_english": "Theoretical result: for a fixed option maturity, arbitrage-free option smiles induce natural normalized strike coordinates with proven monotonicity properties. Supports calibration of option-pricing models without edge-case violations.",
+    "why_it_matters": "Options traders and risk managers calibrating stochastic volatility models now have a pure-math guarantee that normalized coords respect no-arbitrage—simplifies model fitting and reduces exotic smile artefacts.",
+    "jargon": [
+      {
+        "term": "Option smile",
+        "def": "The empirical pattern where implied volatility varies non-monotonically across strike prices for the same maturity."
+      },
+      {
+        "term": "No-arbitrage",
+        "def": "Mathematical constraint ensuring prices preclude risk-free profit opportunities; fundamental to derivative pricing."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23883"
+    }
+  },
+  {
+    "id": "2026-06-24-tsallis-entropy-financial-market-relaxation",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Tsallis entropy framework estimates relaxation time in nonextensive financial systems",
+    "plain_english": "Method using Euclidean gradient flow on Tsallis entropy to estimate the time required for a nonextensive (power-law, heavy-tailed) financial market to reach equilibrium. Applies to fat-tail regime common in equities and FX.",
+    "why_it_matters": "Understanding market relaxation dynamics post-shock (crash, liquidity event) improves VaR backtesting and stress-scenario calibration in risk models that assume non-Gaussian returns.",
+    "jargon": [
+      {
+        "term": "Tsallis entropy",
+        "def": "Generalization of Shannon entropy for systems with long-range correlations and power-law distributions."
+      },
+      {
+        "term": "Nonextensive",
+        "def": "Systems where entropy does not scale linearly with system size; typical of complex financial markets."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23873"
+    }
+  },
+  {
+    "id": "2026-06-24-multi-agent-rl-safety-constraints",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Constraint manifold control enables safe multi-agent RL in safety-critical systems",
+    "plain_english": "Framework for training hierarchical multi-agent RL systems (e.g., coordinated algo trading, distributed portfolio rebalancing) that provably satisfy hard safety constraints while maintaining learning efficiency.",
+    "why_it_matters": "Banks deploying distributed autonomous agents (inter-desk coordination, cross-asset hedging) now have a theoretical guarantee of safety compliance without sacrificing RL training speed—critical for regulatory sign-off.",
+    "jargon": [
+      {
+        "term": "Constraint manifold",
+        "def": "Mathematical surface of states and actions that satisfy hard safety constraints; keeps agents confined to safe operating regions."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24010"
     }
   },
   {
@@ -471,6 +685,20 @@
     }
   },
   {
+    "id": "2026-06-24-agentic-ai-definition-critique",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "What defines an agentic AI system? Conceptual critique clarifies scope and risk",
+    "plain_english": "Paper examines the definition of 'agent' in AI: what separates a coding co-pilot from a true agentic system? Explores the conceptual and ethical boundaries as LLM systems marketed as autonomous agents proliferate. Clarifies that agency implies autonomous decision-making loops without human approval.",
+    "why_it_matters": "BFSI regulators (FCA, OCC) are scrutinizing 'autonomous' agents in trading, underwriting, and lending; clarity on what constitutes true agency vs. supervised automation helps banks design compliant disclosure and governance frameworks.",
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23991"
+    }
+  },
+  {
     "id": "2026-06-21-rag-explainer",
     "category": "learner",
     "jurisdiction": "Global",
@@ -492,6 +720,40 @@
     "source": {
       "name": "TechCrunch · 2026-06-21",
       "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
+    }
+  },
+  {
+    "id": "2026-06-21-glm-5-2-opensource",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-21T19:52:00Z",
+    "headline": "GLM-5.2: Open-source Chinese LLM gains Silicon Valley attention as alternative to Western models",
+    "plain_english": "GLM-5.2, an open-source large language model from China, is drawing scrutiny from US tech leaders as a potential alternative to ChatGPT/Claude, especially for non-English BFSI use cases.",
+    "why_it_matters": "Open-source competition intensifying globally. BFSI orgs can now evaluate non-US LLMs for local-language compliance, reducing dependence on OpenAI/Anthropic—regulatory and geopolitical upside.",
+    "jargon": [
+      {
+        "term": "Open-source LLM",
+        "def": "Publicly released large language model code and weights; users can run locally or fine-tune without cloud vendor lock-in."
+      }
+    ],
+    "source": {
+      "name": "Business Insider · 2026-06-21",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS1h3eFBfQ3FJZUZLbzE3UmpESEpUUEJCZFNCWFdvZlc4WVdPUEl6Y2YxSFNOcThGaUZrRzB0NG90T0x0VHpfWFZMRURfS1IydHVvVmFaSjNGYi03SkUwV196RlQ3cGlnTUEtZkhIaGl6T0pXOUpydnpJb2hkQXVjOUtoaWM"
+    }
+  },
+  {
+    "id": "2026-06-19-subquadratic-llm-bottleneck",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-19T10:40:24.000Z",
+    "headline": "Subquadratic claims breakthrough on LLM computational bottleneck",
+    "plain_english": "Miami-based AI startup Subquadratic exited stealth with claim it solved a decade-old mathematical constraint limiting LLM efficiency. Early validation shared; skepticism remains but receipts mounting.",
+    "why_it_matters": "If valid, unlocks compute efficiency gains critical for cost parity of inference. BFSI wins: cheaper deployments, wider access to frontier models, reduced infrastructure capex.",
+    "source": {
+      "name": "MIT Technology Review · 2026-06-19",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
     }
   }
 ]
