@@ -287,10 +287,12 @@ export async function generateCardsViaGroq({ systemPrompt, items, apiKey }) {
     ],
     response_format: { type: "json_object" },
     // Groq's 12K TPM ceiling counts max_tokens against the limit.
-    // Input is ~5K (system prompt + 25 trimmed items), leaving
-    // ~7K of headroom. 5000 keeps us safely under at the cost of
-    // a truncated response — recoverTruncatedCards handles that.
-    max_tokens: 5000,
+    // Input runs ~7.6K (system prompt is longer than estimated +
+    // 25 trimmed items + JSON wrapper). 5000 was 603 tokens over
+    // at runtime (Requested 12603, Limit 12000 — PR #106 log).
+    // 4000 lands at ~11.6K total, comfortable headroom under TPM.
+    // recoverTruncatedCards handles the truncated JSON tail.
+    max_tokens: 4000,
   });
   const text = resp.choices?.[0]?.message?.content || "";
 
