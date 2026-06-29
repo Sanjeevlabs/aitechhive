@@ -36,7 +36,12 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          # Pinned to 20 LTS. Node 22.23.x (current latest 22.x on
+          # the runner) regressed undici's long fetch streams — both
+          # Anthropic (SSE) and Groq (chunked JSON) reproducibly
+          # throw "Premature close" mid-response (see PR #107 logs).
+          # Node 20 LTS uses the older undici 6.x and works.
+          node-version: '20'
 
       - name: Cache node_modules
         id: cache-npm
