@@ -134,9 +134,15 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
   const client = new Anthropic({ apiKey: API_KEY, timeout: 180_000, maxRetries: 0 });
   const params = {
     model: MODEL,
-    // Haiku 4.5 supports up to 64K output. 24K covers 50-70 cards × ~300
-    // tokens with headroom; bumping further only inflates worst-case spend.
-    max_tokens: 24000,
+    // Cap output so generation completes in <30s. Past runs hit
+    // "Premature close" at 45-75s — the underlying TCP connection
+    // from the GitHub Actions runner to api.anthropic.com gets
+    // dropped somewhere in the path on long responses. Forcing
+    // Haiku to stop early sidesteps the issue: ~6K output tokens
+    // generate in ~15-20s, comfortably under the failure window.
+    // recoverTruncatedCards in generateCards() salvages every
+    // complete card object if Haiku trails off mid-array.
+    max_tokens: 6000,
     system: [{ type: "text", text: systemPrompt, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: userContent }],
   };
@@ -280,7 +286,11 @@ export async function generateCardsViaGroq({ systemPrompt, items, apiKey }) {
       { role: "user", content: userContent },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 32768,
+    // Groq's 12K TPM ceiling counts max_tokens against the limit.
+    // Input is ~5K (system prompt + 25 trimmed items), leaving
+    // ~7K of headroom. 5000 keeps us safely under at the cost of
+    // a truncated response — recoverTruncatedCards handles that.
+    max_tokens: 5000,
   });
   const text = resp.choices?.[0]?.message?.content || "";
 
