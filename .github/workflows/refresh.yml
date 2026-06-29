@@ -7,13 +7,16 @@ on:
     # Anthropic Haiku (~$0.06/call × 2 × 30 ≈ $4/month).
     - cron: '30 23,11 * * *'
   workflow_dispatch:
-  # Auto-trigger on workflow-file edits only. Script tweaks no longer
-  # auto-refresh — saves CI minutes during heavy iteration. Force a run
-  # manually via workflow_dispatch when you want fresh cards immediately.
+  # Auto-trigger on workflow OR pipeline-script edits. Repo is public
+  # (unlimited Actions minutes), so a merge that touches the pipeline
+  # should immediately re-run it and surface any breakage instead of
+  # waiting for the next cron tick.
   push:
     branches: [main]
     paths:
       - '.github/workflows/refresh.yml'
+      - 'scripts/**'
+      - 'package-lock.json'
 
 concurrency:
   group: refresh-${{ github.ref }}
