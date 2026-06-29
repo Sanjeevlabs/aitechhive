@@ -131,15 +131,11 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
   // Hard 2-min per-call timeout. SDK default is ~10min, which combined with
   // enrich.mjs's retry-twice loop would eat the full 20-min workflow budget
   // before the Groq fallback ever gets a turn.
-  const client = new Anthropic({ apiKey: API_KEY, timeout: 120_000, maxRetries: 0 });
+  const client = new Anthropic({ apiKey: API_KEY, timeout: 180_000, maxRetries: 0 });
   const params = {
     model: MODEL,
-    // 8192 was hitting "Premature close" — the prompt asks for 50-70 cards
-    // × ~300 tokens ≈ 15-21K out. Below the budget, Haiku truncates the
-    // response mid-stream and the SDK throws.
-    // Haiku 4.5 supports up to 64K output. 24K gives comfortable headroom
-    // for the full payload + slack for verbose cards, without paying for
-    // unnecessary output.
+    // Haiku 4.5 supports up to 64K output. 24K covers 50-70 cards × ~300
+    // tokens with headroom; bumping further only inflates worst-case spend.
     max_tokens: 24000,
     system: [{ type: "text", text: systemPrompt, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: userContent }],
@@ -147,7 +143,12 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
   if (doWebSearch && PROVIDERS.anthropic.webSearch) {
     params.tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 5 }];
   }
-  const resp = await client.messages.create(params);
+  // Stream the response. Non-streaming POST holds the connection idle
+  // while Haiku generates; Anthropic's gateway drops it after ~60s with
+  // "Premature close" once the response budget is large. Streaming sends
+  // SSE keep-alive events, so the same long generation completes cleanly.
+  const stream = client.messages.stream(params);
+  const resp = await stream.finalMessage();
   const text = (resp.content || [])
     .filter((b) => b.type === "text")
     .map((b) => b.text)
