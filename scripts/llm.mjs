@@ -134,9 +134,13 @@ async function callAnthropic({ systemPrompt, userContent, doWebSearch }) {
   const client = new Anthropic({ apiKey: API_KEY, timeout: 120_000, maxRetries: 0 });
   const params = {
     model: MODEL,
-    // 8192 is plenty for ~30-40 card payloads; bigger values let the model
-    // wander and cost more wall-time per call.
-    max_tokens: 8192,
+    // 8192 was hitting "Premature close" — the prompt asks for 50-70 cards
+    // × ~300 tokens ≈ 15-21K out. Below the budget, Haiku truncates the
+    // response mid-stream and the SDK throws.
+    // Haiku 4.5 supports up to 64K output. 24K gives comfortable headroom
+    // for the full payload + slack for verbose cards, without paying for
+    // unnecessary output.
+    max_tokens: 24000,
     system: [{ type: "text", text: systemPrompt, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: userContent }],
   };
