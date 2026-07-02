@@ -152,6 +152,46 @@
     }
   },
   {
+    "id": "2026-07-02-wealthai-flanks-partnership",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-02T13:17:00.000Z",
+    "headline": "WealthAi integrates Flanks data layer for 650+ institution portfolios",
+    "plain_english": "WealthAi, an AI operating system for wealth managers, partnered with Flanks (an AI wealth data infrastructure firm) to ingest standardized portfolio data from 650+ institutions directly into its platform. Solves manual data aggregation bottleneck.",
+    "why_it_matters": "Wealth managers can now reduce reconciliation overhead and feed richer data into AI recommendation engines. This architecture—data standardization layer + AI orchestration—will become table-stakes for enterprise asset managers.",
+    "jargon": [
+      {
+        "term": "Data aggregation",
+        "def": "Collecting portfolio holdings from multiple sources into one system; traditionally manual and error-prone."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/pressarticle/110330/wealthai-and-flanks-team-up-to-solve-wealth-managements-costly-data-problem"
+    }
+  },
+  {
+    "id": "2026-07-02-oman-arab-bank-visa-tokenization",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-02T13:20:00.000Z",
+    "headline": "Oman Arab Bank completes Visa tokenization rollout after decade-long modernization",
+    "plain_english": "Oman Arab Bank and payment solutions firm BPC marked 10 years of partnership by completing a full tokenization of Visa card issuance and acquiring. Replaces legacy magnetic stripe and static card data with dynamic, cryptographically signed tokens.",
+    "why_it_matters": "Tokenization reduces fraud surface and enables frictionless e-commerce and digital wallet integration. Regional bank adoption signals momentum toward payment credential modernization across emerging APAC markets.",
+    "jargon": [
+      {
+        "term": "Tokenization",
+        "def": "Replacing sensitive card data (PAN) with unique, non-reusable tokens; limits exposure if a token is compromised."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/pressarticle/110331/oman-arab-bank-completes-visa-tokenisation-rollout"
+    }
+  },
+  {
     "id": "2026-07-02-ocbc-ai-avatars",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -272,37 +312,17 @@
     }
   },
   {
-    "id": "2026-06-30-mastercard-africa-cybersecurity-center",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-07-02-payward-reap-acquisition",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-06-30T00:01:00.000Z",
-    "headline": "Mastercard Launches Pan-African Cybersecurity Centre of Excellence",
-    "plain_english": "Mastercard announced a multiyear initiative to strengthen cyber resilience across Africa, establishing a dedicated centre to address continent-wide payment security gaps.",
-    "why_it_matters": "Major payment network signaling long-term commitment to APAC infrastructure. Likely includes AI-driven fraud detection, real-time risk monitoring, and capacity building.",
+    "published_at": "2026-07-02T14:09:00.000Z",
+    "headline": "Payward completes acquisition of Reap stablecoin payments infrastructure",
+    "plain_english": "Payward, a financial infrastructure platform, has completed its acquisition of Reap Technologies, a stablecoin-native card issuing and payments infrastructure company. Reap enables global money movement via digital assets on blockchain.",
+    "why_it_matters": "Consolidation in stablecoin payments infrastructure signals institutional confidence in blockchain-based settlement. Banks exploring tokenized settlement will now evaluate Payward as a unified pipeline from crypto rails to card networks.",
     "source": {
-      "name": "Finextra · 2026-06-30",
-      "url": "https://www.finextra.com/newsarticle/48010/mastercard-launches-africa-cybersecurity-centre-of-excellence"
-    }
-  },
-  {
-    "id": "2026-06-29-credit-agricole-agentic-payment",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-06-29T15:28:00.000Z",
-    "headline": "Crédit Agricole completes first agentic payment transaction in production",
-    "plain_english": "Crédit Agricole, Mastercard, and Worldline executed the first production agentic payment transaction in France. Agentic AI systems autonomously execute multi-step financial transactions without human intervention per transaction.",
-    "why_it_matters": "Demonstrates autonomous AI agents moving from pilot to live payment flows. If scaled, shifts settlement risk models and real-time compliance monitoring at the core of payment rails.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that acts autonomously, making decisions and taking actions toward goals without human approval per action."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48008/crdit-agricole-completes-agentic-payment-transaction"
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/pressarticle/110332/payward-completes-reap-acquistion"
     }
   },
   {
@@ -434,17 +454,31 @@
     }
   },
   {
-    "id": "2026-06-24-centsight-smb-finance",
-    "category": "vendor",
+    "id": "2026-07-02-microsoft-ai-implementation",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-24T12:36:00.000Z",
-    "headline": "CentSight launches AI-native financial intelligence platform for SMB finance",
-    "plain_english": "Financial intelligence startup CentSight released an AI-native accounting and analytics platform targeting small-business owners, aiming to deliver CFO-grade financial clarity without CFO salary costs.",
-    "why_it_matters": "SMB finance automation removes friction in month-close and cash flow forecasting; lowers barrier to financial sophistication and can improve access to credit by enabling cleaner reporting.",
+    "severity": "high",
+    "published_at": "2026-07-02T13:00:02.000Z",
+    "headline": "Microsoft commits $2.5B and 6,000 staff to dedicated AI implementation business unit",
+    "plain_english": "Microsoft is launching a new business unit with $2.5 billion in funding and 6,000 employees focused on helping enterprise customers adopt and operationalize AI. This signals a major shift from vendor-as-product to vendor-as-implementation-partner, potentially reshaping how banks and insurers will consume AI infrastructure.",
+    "why_it_matters": "BFSI firms now face a choice: build internal AI implementation expertise or outsource to tech giants. Microsoft's scale play will accelerate adoption timelines but concentrate vendor lock-in risk across the sector.",
     "source": {
-      "name": "PR Newswire · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPcVFuYnhucWhuS1REQ21tdll3d0FFMnJWWFN0a0JyeldLdjJHOFdCQlNMVlhRRWVIaVBidnNnanRHemtqSXVUVFpkOGlaRWM4eEhQalQ3Tkp5NUs2emJlMy1WZUtQRFVhTHNNOVl5OHczR2FwYldUclZVcEpLSGdRYTF4LTVZUmVnekZrVVNhdE90OUZKYm1fYjRYeGZMZlhaRHBwSmk5dDFwbkFJbEFWeWFQcUJUbUdjSTZTWXFseFhaYnhOYjVqZXhoaW9aY2FBaF9FMjJBTmpFaEhVLUFqNFhGRDJfR1hVRVZkc3g5RWx6Rk10N2VBVTVjZUM0STNIMWZHcg?oc=5"
+      "name": "CNBC · 2026-07-02",
+      "url": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html"
+    }
+  },
+  {
+    "id": "2026-07-02-jp-morgan-heitsenrether-departure",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-02T11:37:00.000Z",
+    "headline": "JPMorgan's chief data and analytics officer Teresa Heitsenrether departs after 40 years",
+    "plain_english": "Teresa Heitsenrether, who led JPMorgan's data and analytics function for years and shepherded the bank's AI transition, is leaving after a four-decade career. Her departure signals a generational shift in how legacy BFSI handles data governance and ML ops leadership.",
+    "why_it_matters": "Loss of institutional knowledge at a systemically important bank during peak AI investment could fragment data strategy or slow model governance maturity. Watch for successor's org structure—indicates whether JPM sees AI/data as core ops or a business unit.",
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/newsarticle/48028/jp-morgans-ai-head-to-depart-after-4-decades"
     }
   },
   {
@@ -577,40 +611,6 @@
     }
   },
   {
-    "id": "2026-06-29-citigroup-ai-efficiency",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-29T14:12:13.000Z",
-    "headline": "Citigroup bets AI as central lever for efficiency and long-term growth strategy",
-    "plain_english": "Citigroup is positioning AI as a core driver of operational efficiency and revenue growth, signaling a strategic pivot toward AI-first operations across the enterprise. Complements earlier signals of AI-driven cost reduction and client-facing automation.",
-    "why_it_matters": "Mega-bank systematic AI bet signals confidence in ROI. Other money-center banks likely to follow similar org restructuring and capital allocation toward AI ops.",
-    "source": {
-      "name": "Zacks Investment Research · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObWI1eHRrVUJmS0pvenNmSnhJR2tGR29oT0NoRlNvTGVtclg4RS1VV0VuSW5qaDBvMVZrOFRhNE1JYk1LSjNaaE9GY1pHamltYlJWUUpuOFVHN2twZGEwMGozM1lVeFJCM3NzcXU4VUpSNnk2NUFsdHJkcjI5LUllbXdQQjFmWTl0aEEtVVJfemNRdUFSdHVzalNmSjFuLWh4U1NrTQ"
-    }
-  },
-  {
-    "id": "2026-06-29-citi-open-source-ai",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T13:58:00.000Z",
-    "headline": "Citi flags open-source AI as emerging strategy as proprietary model access tightens",
-    "plain_english": "Citi sees open-source AI models as a strategic hedge as access to cutting-edge proprietary models (from OpenAI, Anthropic, Google) becomes more restricted. Banks may shift workloads to permissively-licensed models like Meta's Llama.",
-    "why_it_matters": "Signals industry-wide shift toward open-source models for cost and autonomy. Pressure on frontier labs to monetize or risk losing BFSI customers to cheaper, privacy-preserving alternatives.",
-    "jargon": [
-      {
-        "term": "open-source AI models",
-        "def": "AI models published freely with transparent weights and code, usable without vendor contracts or usage restrictions."
-      }
-    ],
-    "source": {
-      "name": "Yahoo Finance UK · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMjc4Z2ozZ0h1ZkFGNm9wVGNlNmhURnhIZVZJdHZ3ZjZXbmd5UVRwdHhpNFFKV2NNRHVQYXI3d043cEVIR2EzTXlfVHZ3Y2FUNGdhNTBlaGZEclNwRUE5NzBvTWphR0pwY3RXVUFlSGlEWFF3TmNzLWxrb1hsQVNCTlFUVlA"
-    }
-  },
-  {
     "id": "2026-06-24-fokker-planck-positivity-preserving-schemes",
     "category": "tool",
     "jurisdiction": "Global",
@@ -628,6 +628,26 @@
     "source": {
       "name": "arXiv · 2026-06-24",
       "url": "https://arxiv.org/abs/2606.23980"
+    }
+  },
+  {
+    "id": "2026-07-02-llm-groupthink-startup",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-02T12:10:00.000Z",
+    "headline": "Startup addresses LLM groupthink problem with diversity mechanism",
+    "plain_english": "MIT Technology Review reports a startup is tackling a fundamental LLM failure: all major models (Claude, ChatGPT, Gemini) tend to converge on similar, 'grouped' outputs for the same prompt, limiting useful diversity in responses and reducing hallucination detection.",
+    "why_it_matters": "For BFSI risk modeling, compliance screening, and fraud detection, LLM convergence creates correlated false negatives across systems. Better diversity in model families will improve ensemble robustness and regulatory defensibility of AI decisions.",
+    "jargon": [
+      {
+        "term": "Groupthink (LLMs)",
+        "def": "Tendency of large language models to produce statistically similar outputs for identical prompts, reducing solution diversity and insight generation."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-07-02",
+      "url": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/"
     }
   },
   {
@@ -795,23 +815,43 @@
     }
   },
   {
-    "id": "2026-06-24-market-impact-square-root-law-apple",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Square-root law of market impact confirmed in large-cap AAPL trading",
-    "plain_english": "Analysis of 0.5 billion AAPL order events (Dec 2024–Aug 2025) from Nasdaq TotalView-ITCH confirms the square-root law: price impact grows as the square root of order size. Validates execution algorithms tuned to this model.",
-    "why_it_matters": "Execution desks rely on square-root models for slippage prediction; empirical confirmation on recent data ensures algo-trading cost estimates remain accurate amid market structure evolution.",
+    "id": "2026-07-02-tearsheet-kya-bnpl-agents",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-02T11:30:00.000Z",
+    "headline": "BNPL infrastructure faces mismatch as AI agents replace human purchasers",
+    "plain_english": "BNPL platforms were designed to verify human intent at purchase time. As AI agents begin autonomous buying and financing transactions on behalf of consumers, BNPL networks must shift from 'Know Your Customer' (KYC) to 'Know Your Agent' (KYA)—verifying agent authority, budget, and risk profile instead.",
+    "why_it_matters": "BNPL lenders unprepared for agentic commerce will face fraud spikes, misclassified risk, and regulatory ambiguity around agent liability. Early winners will build agent-aware credit decisioning; stragglers face portfolio deterioration.",
     "jargon": [
       {
-        "term": "Market impact",
-        "def": "The adverse price movement caused by executing a large order; modeled proportionally to order size."
+        "term": "Agentic commerce",
+        "def": "Autonomous software making purchasing and payment decisions on behalf of users without explicit human approval per transaction."
+      },
+      {
+        "term": "KYA (Know Your Agent)",
+        "def": "Risk framework for verifying an AI agent's identity, spending authority, and financial capacity—replacing traditional KYC."
       }
     ],
     "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24019"
+      "name": "Tearsheet · 2026-07-02",
+      "url": "https://tearsheet.co/bnpl/why-bnpl-infrastructure-needs-to-learn-a-new-acronym-kya-know-your-agent/"
+    }
+  },
+  {
+    "id": "2026-07-02-bfsi-fraud-awareness",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-02T12:21:00.000Z",
+    "headline": "One in four UK adults have lost money to online financial scams",
+    "plain_english": "A quarter of British adults have been defrauded by online financial scams and reduced their digital spending as a result. Retail fraud and social engineering remain dominant vectors despite mature payment infrastructure.",
+    "why_it_matters": "High victim rates and behavior change signal that transaction-layer controls (tokenization, 3DS) are insufficient; cognitive and social controls matter. Banks investing only in tech defense will fall short against evolving social engineering.",
+    "stat_value": "25%",
+    "stat_label": "of UK adults fallen for online financial scams",
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/newsarticle/48029/one-in-four-brits-have-fallen-for-online-financial-scams"
     }
   },
   {
@@ -948,38 +988,6 @@
     "source": {
       "name": "PYMNTS · 2026-06-29",
       "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/world-cup-gives-cross-border-payments-their-super-bowl-moment/"
-    }
-  },
-  {
-    "id": "2026-06-29-lse-us-listing-migration",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-06-29T12:52:00.000Z",
-    "headline": "London Stock Exchange warns up to 200 listed companies could migrate to US; capital flight risk",
-    "plain_english": "In a worst-case scenario analysis, the LSE warned that up to 200 companies could delist and relist on US exchanges (Nasdaq, NYSE) due to regulatory burden, lower trading volumes, or competitive disadvantage. The shift would drain London's position as a global financial hub.",
-    "why_it_matters": "If material UK/EU corporates flee to US listings, London-based investment banks lose advisory fees and trading revenue. Regulators may be forced to relax listing rules or capital requirements, creating competitive pressure on others.",
-    "stat_value": "200",
-    "stat_label": "companies at risk of migrating to US listings (LSE worst-case scenario)",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48006/lse-warns-of-listed-companies-moving-to-us"
-    }
-  },
-  {
-    "id": "2026-06-24-wealth-banking-tech-scale-gap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T12:46:38.000Z",
-    "headline": "Only 25% of wealth and banking firms achieve true scale despite €243B tech investment",
-    "plain_english": "Analysis shows that despite €243B in technology spending, only a quarter of wealth and banking firms have scaled AI and digital capabilities meaningfully, signaling implementation and organizational velocity gaps.",
-    "why_it_matters": "Highlights persistent gap between tech budget and business impact; suggests most BFSI orgs lack operational discipline or talent to translate AI investments into revenue or cost wins.",
-    "stat_value": "25%",
-    "stat_label": "of wealth and banking firms achieving true AI/digital scale",
-    "source": {
-      "name": "FF News · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSzhXYVV0QnRLbG1Gd1JRak5fUDk5WmhhbjFrSS1YWDF0RnphYmRSX3gwbzFNM2NNazBlQ1dYV2Rqc2huMWhNc2xlZmNJUlk3SzRtMXlfV2RpcmQ5ZS1ZWVIyZ3VZSjVQM29Yc2p6RFZGTkRQMDMyTmZsN28zdkMydEJCTzFBYTkwNlN5U3hSN2lqM1RyODZFcjVNd2R5aGRPcEFnSkh3NA?oc=5"
     }
   },
   {
@@ -1229,6 +1237,20 @@
     }
   },
   {
+    "id": "2026-07-02-trending-meta-cloud-ai",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-02T12:22:51.000Z",
+    "headline": "Meta enters cloud computing to monetize AI infrastructure; Wall Street expects margin compression",
+    "plain_english": "Meta is moving to offer cloud computing services to monetize its massive in-house AI infrastructure investments. Analysts signal that Meta's cloud venture will carry lower margins than ad tech, requiring scale to offset.",
+    "why_it_matters": "Meta's cloud entry will intensify competition with AWS, Azure, and GCP for enterprise AI workloads. Banks evaluating inference partners will face a new competitor with vertically integrated silicon and model assets—but unproven BFSI compliance/governance experience.",
+    "source": {
+      "name": "CNBC · 2026-07-02",
+      "url": "https://www.cnbc.com/2026/07/02/metas-push-into-cloud-excites-wall-street-despite-lower-margins.html"
+    }
+  },
+  {
     "id": "2026-07-01-trending-meta-cloud-ai",
     "category": "trending",
     "jurisdiction": "US",
@@ -1240,6 +1262,140 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-06-30-mastercard-africa-cybersecurity-center",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-06-30T00:01:00.000Z",
+    "headline": "Mastercard Launches Pan-African Cybersecurity Centre of Excellence",
+    "plain_english": "Mastercard announced a multiyear initiative to strengthen cyber resilience across Africa, establishing a dedicated centre to address continent-wide payment security gaps.",
+    "why_it_matters": "Major payment network signaling long-term commitment to APAC infrastructure. Likely includes AI-driven fraud detection, real-time risk monitoring, and capacity building.",
+    "source": {
+      "name": "Finextra · 2026-06-30",
+      "url": "https://www.finextra.com/newsarticle/48010/mastercard-launches-africa-cybersecurity-centre-of-excellence"
+    }
+  },
+  {
+    "id": "2026-06-29-credit-agricole-agentic-payment",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-06-29T15:28:00.000Z",
+    "headline": "Crédit Agricole completes first agentic payment transaction in production",
+    "plain_english": "Crédit Agricole, Mastercard, and Worldline executed the first production agentic payment transaction in France. Agentic AI systems autonomously execute multi-step financial transactions without human intervention per transaction.",
+    "why_it_matters": "Demonstrates autonomous AI agents moving from pilot to live payment flows. If scaled, shifts settlement risk models and real-time compliance monitoring at the core of payment rails.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "AI system that acts autonomously, making decisions and taking actions toward goals without human approval per action."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-06-29",
+      "url": "https://www.finextra.com/newsarticle/48008/crdit-agricole-completes-agentic-payment-transaction"
+    }
+  },
+  {
+    "id": "2026-06-24-centsight-smb-finance",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-24T12:36:00.000Z",
+    "headline": "CentSight launches AI-native financial intelligence platform for SMB finance",
+    "plain_english": "Financial intelligence startup CentSight released an AI-native accounting and analytics platform targeting small-business owners, aiming to deliver CFO-grade financial clarity without CFO salary costs.",
+    "why_it_matters": "SMB finance automation removes friction in month-close and cash flow forecasting; lowers barrier to financial sophistication and can improve access to credit by enabling cleaner reporting.",
+    "source": {
+      "name": "PR Newswire · 2026-06-24",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPcVFuYnhucWhuS1REQ21tdll3d0FFMnJWWFN0a0JyeldLdjJHOFdCQlNMVlhRRWVIaVBidnNnanRHemtqSXVUVFpkOGlaRWM4eEhQalQ3Tkp5NUs2emJlMy1WZUtQRFVhTHNNOVl5OHczR2FwYldUclZVcEpLSGdRYTF4LTVZUmVnekZrVVNhdE90OUZKYm1fYjRYeGZMZlhaRHBwSmk5dDFwbkFJbEFWeWFQcUJUbUdjSTZTWXFseFhaYnhOYjVqZXhoaW9aY2FBaF9FMjJBTmpFaEhVLUFqNFhGRDJfR1hVRVZkc3g5RWx6Rk10N2VBVTVjZUM0STNIMWZHcg?oc=5"
+    }
+  },
+  {
+    "id": "2026-06-29-citigroup-ai-efficiency",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-06-29T14:12:13.000Z",
+    "headline": "Citigroup bets AI as central lever for efficiency and long-term growth strategy",
+    "plain_english": "Citigroup is positioning AI as a core driver of operational efficiency and revenue growth, signaling a strategic pivot toward AI-first operations across the enterprise. Complements earlier signals of AI-driven cost reduction and client-facing automation.",
+    "why_it_matters": "Mega-bank systematic AI bet signals confidence in ROI. Other money-center banks likely to follow similar org restructuring and capital allocation toward AI ops.",
+    "source": {
+      "name": "Zacks Investment Research · 2026-06-29",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObWI1eHRrVUJmS0pvenNmSnhJR2tGR29oT0NoRlNvTGVtclg4RS1VV0VuSW5qaDBvMVZrOFRhNE1JYk1LSjNaaE9GY1pHamltYlJWUUpuOFVHN2twZGEwMGozM1lVeFJCM3NzcXU4VUpSNnk2NUFsdHJkcjI5LUllbXdQQjFmWTl0aEEtVVJfemNRdUFSdHVzalNmSjFuLWh4U1NrTQ"
+    }
+  },
+  {
+    "id": "2026-06-29-citi-open-source-ai",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-29T13:58:00.000Z",
+    "headline": "Citi flags open-source AI as emerging strategy as proprietary model access tightens",
+    "plain_english": "Citi sees open-source AI models as a strategic hedge as access to cutting-edge proprietary models (from OpenAI, Anthropic, Google) becomes more restricted. Banks may shift workloads to permissively-licensed models like Meta's Llama.",
+    "why_it_matters": "Signals industry-wide shift toward open-source models for cost and autonomy. Pressure on frontier labs to monetize or risk losing BFSI customers to cheaper, privacy-preserving alternatives.",
+    "jargon": [
+      {
+        "term": "open-source AI models",
+        "def": "AI models published freely with transparent weights and code, usable without vendor contracts or usage restrictions."
+      }
+    ],
+    "source": {
+      "name": "Yahoo Finance UK · 2026-06-29",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMjc4Z2ozZ0h1ZkFGNm9wVGNlNmhURnhIZVZJdHZ3ZjZXbmd5UVRwdHhpNFFKV2NNRHVQYXI3d043cEVIR2EzTXlfVHZ3Y2FUNGdhNTBlaGZEclNwRUE5NzBvTWphR0pwY3RXVUFlSGlEWFF3TmNzLWxrb1hsQVNCTlFUVlA"
+    }
+  },
+  {
+    "id": "2026-06-24-market-impact-square-root-law-apple",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Square-root law of market impact confirmed in large-cap AAPL trading",
+    "plain_english": "Analysis of 0.5 billion AAPL order events (Dec 2024–Aug 2025) from Nasdaq TotalView-ITCH confirms the square-root law: price impact grows as the square root of order size. Validates execution algorithms tuned to this model.",
+    "why_it_matters": "Execution desks rely on square-root models for slippage prediction; empirical confirmation on recent data ensures algo-trading cost estimates remain accurate amid market structure evolution.",
+    "jargon": [
+      {
+        "term": "Market impact",
+        "def": "The adverse price movement caused by executing a large order; modeled proportionally to order size."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.24019"
+    }
+  },
+  {
+    "id": "2026-06-29-lse-us-listing-migration",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-06-29T12:52:00.000Z",
+    "headline": "London Stock Exchange warns up to 200 listed companies could migrate to US; capital flight risk",
+    "plain_english": "In a worst-case scenario analysis, the LSE warned that up to 200 companies could delist and relist on US exchanges (Nasdaq, NYSE) due to regulatory burden, lower trading volumes, or competitive disadvantage. The shift would drain London's position as a global financial hub.",
+    "why_it_matters": "If material UK/EU corporates flee to US listings, London-based investment banks lose advisory fees and trading revenue. Regulators may be forced to relax listing rules or capital requirements, creating competitive pressure on others.",
+    "stat_value": "200",
+    "stat_label": "companies at risk of migrating to US listings (LSE worst-case scenario)",
+    "source": {
+      "name": "Finextra · 2026-06-29",
+      "url": "https://www.finextra.com/newsarticle/48006/lse-warns-of-listed-companies-moving-to-us"
+    }
+  },
+  {
+    "id": "2026-06-24-wealth-banking-tech-scale-gap",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T12:46:38.000Z",
+    "headline": "Only 25% of wealth and banking firms achieve true scale despite €243B tech investment",
+    "plain_english": "Analysis shows that despite €243B in technology spending, only a quarter of wealth and banking firms have scaled AI and digital capabilities meaningfully, signaling implementation and organizational velocity gaps.",
+    "why_it_matters": "Highlights persistent gap between tech budget and business impact; suggests most BFSI orgs lack operational discipline or talent to translate AI investments into revenue or cost wins.",
+    "stat_value": "25%",
+    "stat_label": "of wealth and banking firms achieving true AI/digital scale",
+    "source": {
+      "name": "FF News · 2026-06-24",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSzhXYVV0QnRLbG1Gd1JRak5fUDk5WmhhbjFrSS1YWDF0RnphYmRSX3gwbzFNM2NNazBlQ1dYV2Rqc2huMWhNc2xlZmNJUlk3SzRtMXlfV2RpcmQ5ZS1ZWVIyZ3VZSjVQM29Yc2p6RFZGTkRQMDMyTmZsN28zdkMydEJCTzFBYTkwNlN5U3hSN2lqM1RyODZFcjVNd2R5aGRPcEFnSkh3NA?oc=5"
     }
   },
   {
