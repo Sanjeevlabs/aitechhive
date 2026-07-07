@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-07-06-sec-jpmorgan-knight-coo",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-06T23:11:06Z",
+    "headline": "SEC appoints JPMorgan veteran Paul Knight as chief operating officer",
+    "plain_english": "The Securities and Exchange Commission named Paul Knight, a former JPMorgan executive, as its new COO. Knight's appointment signals SEC intent to accelerate decision-making on crypto, market structure, and investor protection—areas where operational velocity has lagged.",
+    "why_it_matters": "JPMorgan's operational playbook (scaled AI adoption, rapid infrastructure decisions, risk automation) may influence SEC's internal AI roadmap. Watch for faster rule-drafting on algorithmic trading, market surveillance, and data standardization.",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/legal/2026/sec-names-jpmorgan-veteran-paul-knight-as-coo/"
+    }
+  },
+  {
+    "id": "2026-07-07-google-training-data-expansion",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-06T22:18:05Z",
+    "headline": "Google expands AI training to include user-uploaded media without explicit consent",
+    "plain_english": "Google broadened its data-collection policy to use media uploaded via search tools to train AI models. Policy change was implemented quietly, affecting users across multiple Google services. No prior explicit opt-in was required.",
+    "why_it_matters": "BFSI compliance teams must audit vendor data policies for hidden re-use clauses. If financial institutions or customers upload documents (mortgage statements, tax returns, compliance reports) to Google services for search, they may now train Google's LLMs—creating IP leakage and regulatory exposure.",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/google/2026/google-expands-ai-training-to-include-user-uploaded-media-via-search-tools/"
+    }
+  },
+  {
     "id": "2026-07-06-fca-vertex-legacy-management-enforcement",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -144,34 +172,6 @@
     "source": {
       "name": "Finextra · 2026-07-01",
       "url": "https://www.finextra.com/newsarticle/48022/boe-calls-for-bespoke-ai-regulation"
-    }
-  },
-  {
-    "id": "2026-07-01-regulation-anthropic-export-controls-lifted",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-01T12:45:01.000Z",
-    "headline": "US lifts export controls on Anthropic Claude Fable 5, Mythos 5 models",
-    "plain_english": "US Department of Commerce removed restrictions on two Anthropic frontier models, allowing international distribution. Signals eased AI export policy after initial broad controls on advanced model weights.",
-    "why_it_matters": "Reduces friction for global BFSI deployment of Anthropic models; sets precedent for case-by-case model de-listing from export controls, benefiting non-US financial institutions.",
-    "source": {
-      "name": "PYMNTS · 2026-07-01",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-says-us-has-lifted-fable-5-ai-model-ban/"
-    }
-  },
-  {
-    "id": "2026-07-01-house-panel-fraud-tools-bill",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-30T23:57:01.000Z",
-    "headline": "House panel advances payments fraud bills giving banks new AI and data-use flexibility",
-    "plain_english": "The House Financial Services Committee advanced legislation granting banks greater flexibility to combat payments fraud, expand consumer credit history data sources, and establish a national earned wage access framework.",
-    "why_it_matters": "Regulatory tailwind for fraud-detection AI deployment; expanded data inputs reduce model training friction and legitimize alternative credit signals for underwriting.",
-    "source": {
-      "name": "PYMNTS · 2026-06-30",
-      "url": "https://www.pymnts.com/legal/2026/banks-gain-new-fraud-tools-as-house-panel-advances-payments-bills/"
     }
   },
   {
@@ -335,6 +335,42 @@
     }
   },
   {
+    "id": "2026-07-06-thrive-holdings-2b-ai-acquirer",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-06T23:19:47Z",
+    "headline": "Thrive Holdings raises $2B to acquire and AI-transform services firms",
+    "plain_english": "Thrive Holdings, a one-year-old holding company backed by Thrive Capital (OpenAI investor), raised ~$2B from Altimeter Capital and D1 Capital to buy traditional services businesses and rewire them with AI. Model: acquire, automate, resell or scale.",
+    "why_it_matters": "Roll-up strategy using AI-as-cost-reducer targets services sectors (tax prep, BPO, compliance ops). If successful, pressure spreads to BFSI outsource partners and middle-office providers—expect M&A consolidation and pricing pressure in back-office AI services.",
+    "amount": "$2B",
+    "round": "Growth",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/thrive-holdings-raises-2-billion-to-buy-and-rewire-services-firms-with-ai/"
+    }
+  },
+  {
+    "id": "2026-07-06-syntiant-ipo-intel",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-06T22:27:45Z",
+    "headline": "Intel-backed AI chip and software maker Syntiant files for IPO",
+    "plain_english": "Syntiant, an Intel-backed AI chip and edge software maker, filed for initial public offering. The company specializes in low-power AI inference—critical for on-device processing in banking apps, ATMs, and IoT security.",
+    "why_it_matters": "Edge AI IPOs signal investor appetite for inference hardware beyond data-center GPUs. BFSI players evaluating on-device biometric auth, fraud detection, and compliance monitoring will track Syntiant's valuation and roadmap for cost trajectory.",
+    "jargon": [
+      {
+        "term": "Edge inference",
+        "def": "Running AI models directly on end devices (phones, ATMs) rather than cloud, reducing latency and privacy exposure."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-07-06",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSHdGSko2bkxSLTNJLWpyeUZ2d0JHeUdKVlRVYnI5cjFncFlSeXRCSFZURDBkTGxQcXpoTFNfVW01MjNnSE5ERy1Ta0RnbDFRUHhrcXM4Szd1M1JtU2MxTFBDRU1fUkJPcE1LMkF5N3BXcU9vMVVseTBFSUlqbDlxZ2Q5eEhrYWNvZVRpQzVWSU9JRmV3alpVdEdGSERETkhxdXp1c1pTVGpGY2ZCQWdlZVFnVQ"
+    }
+  },
+  {
     "id": "2026-07-06-mynd-c2fo-supply-chain-finance",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -452,31 +488,31 @@
     }
   },
   {
-    "id": "2026-07-02-sofi-composer-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-07-07-santander-ai-github",
+    "category": "shift",
+    "jurisdiction": "EU",
     "severity": "med",
-    "published_at": "2026-07-02T00:01:00Z",
-    "headline": "SoFi acquires Composer, Toronto AI investing startup",
-    "plain_english": "SoFi (Social Finance Inc.), US fintech lender and brokerage, bought Composer, an AI-powered retail investing platform based in Toronto. No financial terms disclosed. Acquisition expands SoFi's algorithmic portfolio management and automation stack for retail investors.",
-    "why_it_matters": "SoFi consolidates AI-driven investing capability in-house; signals fintech consolidation strategy to own end-to-end automation vs. licensing, reducing API dependencies and tech debt.",
+    "published_at": "2026-07-07T00:01:00Z",
+    "headline": "Santander open-sources AI projects to accelerate banking innovation",
+    "plain_english": "Banco Santander published multiple AI projects on GitHub under open-source licence, signalling a strategic pivot toward collaborative innovation. The move allows other financial institutions and developers to build on Santander's work, lowering barriers to AI adoption across banking.",
+    "why_it_matters": "Banks publishing production AI code shifts the competitive model from proprietary lockdown to shared standards. Expect faster industry standardization on risk models, fraud detection, and KYC workflows—reducing vendor lock-in for peers.",
     "source": {
-      "name": "Finextra · 2026-07-02",
-      "url": "https://www.finextra.com/newsarticle/48026/sofi-buys-ai-based-investing-startup-composer"
+      "name": "Finextra · 2026-07-07",
+      "url": "https://www.finextra.com/newsarticle/48044/santander-publishes-ai-projects-on-github"
     }
   },
   {
-    "id": "2026-07-01-vendor-stripe-ai-agents-germany",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-01T14:11:00.000Z",
-    "headline": "Stripe launches tools for German businesses to sell via and to AI agents",
-    "plain_english": "Stripe released integrations enabling German SMBs to transact with and through AI agents, plus global expansion tooling. Positions payment infrastructure for agentic commerce.",
-    "why_it_matters": "First major payment processor to explicitly enable merchant acceptance of AI agent transactions; signals shift from B2C to B2A (business-to-agent) payment flows.",
+    "id": "2026-07-07-jpmorgan-debit-fees",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-07T01:01:16Z",
+    "headline": "JPMorgan, major US banks explore payments deal to circumvent federal debit-fee limits",
+    "plain_english": "JPMorgan Chase and other large US banks are negotiating a deal that could reshape debit-card economics and bypass federal interchange-fee caps they have opposed for over a decade. Move signals potential shift in payment revenue models.",
+    "why_it_matters": "If deal succeeds, debit-revenue pressure forces mid-tier and regional banks to rethink payment strategies, accelerating adoption of embedded finance, buy-now-pay-later, and alternative settlement models. AI-driven routing and fraud prevention become cost-critical differentiators.",
     "source": {
-      "name": "Finextra · 2026-07-01",
-      "url": "https://www.finextra.com/pressarticle/110314/stripe-rolls-out-tools-to-help-german-businesses-sell-globally"
+      "name": "PYMNTS · 2026-07-07",
+      "url": "https://www.pymnts.com/news/banking/2026/big-banks-eye-payments-deal-that-could-rewire-debit-fees/"
     }
   },
   {
@@ -589,34 +625,6 @@
     "source": {
       "name": "CNBC · 2026-07-04",
       "url": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html"
-    }
-  },
-  {
-    "id": "2026-07-03-starling-bank-130-jobs-ai",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-03T13:01:43Z",
-    "headline": "Starling Bank cuts 130 jobs in efficiency push centered on AI and automation",
-    "plain_english": "UK challenger bank Starling announced 130+ job eliminations as part of broader automation and AI-driven efficiency initiative. Reflects industry shift toward replacing manual ops with intelligent systems.",
-    "why_it_matters": "Signals mainstreaming of AI-for-cost-reduction in retail banking; labor displacement in back/mid-office now routine for digital-native challengers, likely to spread to legacy banks.",
-    "source": {
-      "name": "Finextra · 2026-07-03",
-      "url": "https://www.finextra.com/newsarticle/48039/starling-to-axe-130-jobs-as-part-of-automation-drive"
-    }
-  },
-  {
-    "id": "2026-07-03-lloyds-halifax-brand-retirement",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-03T10:35:00Z",
-    "headline": "Lloyds Banking Group retires Halifax brand after 179 years, consolidating under single identity",
-    "plain_english": "Lloyds announced phase-out of Halifax brand from UK retail banking, consolidating subsidiary into parent identity. Strategic simplification tied to digital-first channel shift and cost reduction.",
-    "why_it_matters": "Signals accelerating rationalization of legacy multi-brand retail banking models as digital distribution reduces need for distinct branch-based identities; reflects broader consolidation pressure.",
-    "source": {
-      "name": "Finextra · 2026-07-03",
-      "url": "https://www.finextra.com/newsarticle/48036/lloyds-to-retire-halifax-brand"
     }
   },
   {
@@ -826,6 +834,42 @@
     }
   },
   {
+    "id": "2026-07-07-gift-card-fraud-ai",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-07T00:09:50Z",
+    "headline": "AI gifting features create new account-takeover monetization vector",
+    "plain_english": "Attackers are exploiting gifting features on AI platforms (e.g., Claude subscriptions) to cash out stolen payment credentials without detection. Charges appear as legitimate gift subscriptions, bypassing traditional fraud rules tuned for direct purchases.",
+    "why_it_matters": "BFSI risk teams must expand fraud monitoring beyond transaction type. Gifting workflows lack the velocity/velocity controls of payment flows—attackers exploit lower scrutiny thresholds, forcing banks to retrain models on new abuse patterns.",
+    "stat_value": "Multiple AI platforms",
+    "stat_label": "affected by gift-card account-takeover abuse",
+    "source": {
+      "name": "PYMNTS · 2026-07-07",
+      "url": "https://www.pymnts.com/cybersecurity/2026/gift-card-loophole-gives-hackers-a-new-way-to-cash-out/"
+    }
+  },
+  {
+    "id": "2026-07-06-ai-ransomware-human-hybrid",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-06T23:56:14Z",
+    "headline": "First documented AI-assisted ransomware attack required human orchestration",
+    "plain_english": "An AI agent executed technical steps in a real ransomware attack, but humans still chose the target, built infrastructure, and supplied stolen credentials. The attack was not fully autonomous despite initial headlines suggesting a breakthrough in autonomous cybercrime.",
+    "why_it_matters": "Banks over-indexing on 'fully autonomous AI threats' may miss the real risk: human-directed AI agents that compress attack timelines and reduce skill barriers for opportunistic operators. Focus defensive investment on credential theft and early-stage reconnaissance.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Software system executing multi-step tasks autonomously within defined constraints, but requiring human direction on high-stakes decisions."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-07-06",
+      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/"
+    }
+  },
+  {
     "id": "2026-07-06-morgan-stanley-ai-hyperscalers-pivot",
     "category": "insight",
     "jurisdiction": "Global",
@@ -954,43 +998,17 @@
     }
   },
   {
-    "id": "2026-07-02-tearsheet-kya-bnpl-agents",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-02T11:30:00.000Z",
-    "headline": "BNPL infrastructure faces mismatch as AI agents replace human purchasers",
-    "plain_english": "BNPL platforms were designed to verify human intent at purchase time. As AI agents begin autonomous buying and financing transactions on behalf of consumers, BNPL networks must shift from 'Know Your Customer' (KYC) to 'Know Your Agent' (KYA)—verifying agent authority, budget, and risk profile instead.",
-    "why_it_matters": "BNPL lenders unprepared for agentic commerce will face fraud spikes, misclassified risk, and regulatory ambiguity around agent liability. Early winners will build agent-aware credit decisioning; stragglers face portfolio deterioration.",
-    "jargon": [
-      {
-        "term": "Agentic commerce",
-        "def": "Autonomous software making purchasing and payment decisions on behalf of users without explicit human approval per transaction."
-      },
-      {
-        "term": "KYA (Know Your Agent)",
-        "def": "Risk framework for verifying an AI agent's identity, spending authority, and financial capacity—replacing traditional KYC."
-      }
-    ],
+    "id": "2026-07-06-sk-hynix-us-ipo",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-06T23:21:03Z",
+    "headline": "SK Hynix memory chip maker prepares US IPO amid AI infrastructure boom",
+    "plain_english": "SK Hynix, a South Korean DRAM and NAND memory manufacturer riding the AI boom, is preparing a multibillion-dollar US IPO expected Friday. Demand for AI training and inference hardware is driving record memory chip valuations.",
+    "why_it_matters": "Memory supply constraints remain a bottleneck for large-scale AI deployment in BFSI data centres. SK Hynix IPO unlocks US capital for supply expansion; watch capex guidance for hints on global availability timeline for high-bandwidth memory (HBM) used in LLM inference.",
     "source": {
-      "name": "Tearsheet · 2026-07-02",
-      "url": "https://tearsheet.co/bnpl/why-bnpl-infrastructure-needs-to-learn-a-new-acronym-kya-know-your-agent/"
-    }
-  },
-  {
-    "id": "2026-07-02-bfsi-fraud-awareness",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-02T12:21:00.000Z",
-    "headline": "One in four UK adults have lost money to online financial scams",
-    "plain_english": "A quarter of British adults have been defrauded by online financial scams and reduced their digital spending as a result. Retail fraud and social engineering remain dominant vectors despite mature payment infrastructure.",
-    "why_it_matters": "High victim rates and behavior change signal that transaction-layer controls (tokenization, 3DS) are insufficient; cognitive and social controls matter. Banks investing only in tech defense will fall short against evolving social engineering.",
-    "stat_value": "25%",
-    "stat_label": "of UK adults fallen for online financial scams",
-    "source": {
-      "name": "Finextra · 2026-07-02",
-      "url": "https://www.finextra.com/newsarticle/48029/one-in-four-brits-have-fallen-for-online-financial-scams"
+      "name": "TechCrunch · 2026-07-06",
+      "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/"
     }
   },
   {
@@ -1123,20 +1141,6 @@
     "source": {
       "name": "Breakingthenews.net · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdkREUEEtb0xPcXpISTk2OG40MDJlRElQVUZjalZON2U2b0FUNHMwTUoteU9DYU9CZW9CSi1vVDkwM0FhbmEzN2dhVjRsU1VNNm82S3lpaExBbGFFeXo1dk1YWXBGekUwSUhpLVh0MkdTdW9wd0pEWGhmVzBmTS1aM2J0RFRqU1ZpeEltNlFZWVhvNzE3UVRyMTJodzZ3UQ"
-    }
-  },
-  {
-    "id": "2026-07-01-frontier-un-panel-ai-catastrophic-risk",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-01T13:10:00.000Z",
-    "headline": "UN panel warns unchecked AI progress poses catastrophic systemic risks",
-    "plain_english": "United Nations panel flagged that rapid AI scaling without governance frameworks risks cascading financial, geopolitical, and infrastructure failures. Calls for international AI safety standards.",
-    "why_it_matters": "Lends authority to BFSI's AI governance concerns; likely to spur central bank collaboration on AI stress-testing and systemic-risk frameworks. Watch for Bank for International Settlements guidance by Q4 2026.",
-    "source": {
-      "name": "Reuters · 2026-07-01",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZzlYcjZBRTVTUHhqcGM3ZXZwVS1XWktHaWVmckFuZjg1bzZPNnZqWDJxUzktV2c4TDA5VHY4ajIxbjVrb21MYnRiM0Q3WDRmMUZZQWxpWlZzZGh4QlVsWF82SGlYZ3lSZVNab056ZWdhTWphSnhXY2lZZHUxb19oWF9udWpTQnNGWkFVVFo0Y0VPckVYTkU5VmozMHA2dE9OanE3SER1cFVzN0U4WkE"
     }
   },
   {
@@ -1342,6 +1346,22 @@
     }
   },
   {
+    "id": "2026-07-06-trending-samsung-ai-profit",
+    "category": "trending",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-06T23:31:00Z",
+    "headline": "Samsung forecasts record $58.4B Q2 operating profit on AI chip demand surge",
+    "plain_english": "Samsung announced record quarterly operating profit of $58.4B, driven overwhelmingly by AI infrastructure chip sales (memory and processors). The result reflects massive capex by cloud providers (OpenAI, Google, Microsoft, Meta) racing to build training and inference capacity.",
+    "why_it_matters": "Chip supply remains the binding constraint on BFSI AI deployment. Samsung's record profit signals sustained pricing power—expect AI infrastructure costs to remain elevated through 2027, forcing banks to prioritize high-ROI use cases (fraud, KYC, portfolio optimization) over exploratory pilots.",
+    "stat_value": "$58.4B",
+    "stat_label": "Samsung Q2 2026 operating profit",
+    "source": {
+      "name": "WSJ · 2026-07-06",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXNJdU16RnhvZW9aSmp6ckJBSjE3QnVkV25SWG41VTEta2hlZEkwZlV4aXZtd3BSNFRyT0dsRy1xU1JWdjJKTmdJNWZTOEZodVVsbUc2eGRvb0FDb0hBYmZNTHZPdU9UU0l0SGxUTmtJTEw5X21vNDREekh1dnN3YkZmWVpZQjduNVMwc0g1M2tmVFVn"
+    }
+  },
+  {
     "id": "2026-07-06-tech-ceos-ai-job-loss-pivot",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1409,6 +1429,144 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-07-01-regulation-anthropic-export-controls-lifted",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-01T12:45:01.000Z",
+    "headline": "US lifts export controls on Anthropic Claude Fable 5, Mythos 5 models",
+    "plain_english": "US Department of Commerce removed restrictions on two Anthropic frontier models, allowing international distribution. Signals eased AI export policy after initial broad controls on advanced model weights.",
+    "why_it_matters": "Reduces friction for global BFSI deployment of Anthropic models; sets precedent for case-by-case model de-listing from export controls, benefiting non-US financial institutions.",
+    "source": {
+      "name": "PYMNTS · 2026-07-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-says-us-has-lifted-fable-5-ai-model-ban/"
+    }
+  },
+  {
+    "id": "2026-07-01-house-panel-fraud-tools-bill",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-06-30T23:57:01.000Z",
+    "headline": "House panel advances payments fraud bills giving banks new AI and data-use flexibility",
+    "plain_english": "The House Financial Services Committee advanced legislation granting banks greater flexibility to combat payments fraud, expand consumer credit history data sources, and establish a national earned wage access framework.",
+    "why_it_matters": "Regulatory tailwind for fraud-detection AI deployment; expanded data inputs reduce model training friction and legitimize alternative credit signals for underwriting.",
+    "source": {
+      "name": "PYMNTS · 2026-06-30",
+      "url": "https://www.pymnts.com/legal/2026/banks-gain-new-fraud-tools-as-house-panel-advances-payments-bills/"
+    }
+  },
+  {
+    "id": "2026-07-02-sofi-composer-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-02T00:01:00Z",
+    "headline": "SoFi acquires Composer, Toronto AI investing startup",
+    "plain_english": "SoFi (Social Finance Inc.), US fintech lender and brokerage, bought Composer, an AI-powered retail investing platform based in Toronto. No financial terms disclosed. Acquisition expands SoFi's algorithmic portfolio management and automation stack for retail investors.",
+    "why_it_matters": "SoFi consolidates AI-driven investing capability in-house; signals fintech consolidation strategy to own end-to-end automation vs. licensing, reducing API dependencies and tech debt.",
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/newsarticle/48026/sofi-buys-ai-based-investing-startup-composer"
+    }
+  },
+  {
+    "id": "2026-07-01-vendor-stripe-ai-agents-germany",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-07-01T14:11:00.000Z",
+    "headline": "Stripe launches tools for German businesses to sell via and to AI agents",
+    "plain_english": "Stripe released integrations enabling German SMBs to transact with and through AI agents, plus global expansion tooling. Positions payment infrastructure for agentic commerce.",
+    "why_it_matters": "First major payment processor to explicitly enable merchant acceptance of AI agent transactions; signals shift from B2C to B2A (business-to-agent) payment flows.",
+    "source": {
+      "name": "Finextra · 2026-07-01",
+      "url": "https://www.finextra.com/pressarticle/110314/stripe-rolls-out-tools-to-help-german-businesses-sell-globally"
+    }
+  },
+  {
+    "id": "2026-07-03-starling-bank-130-jobs-ai",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-03T13:01:43Z",
+    "headline": "Starling Bank cuts 130 jobs in efficiency push centered on AI and automation",
+    "plain_english": "UK challenger bank Starling announced 130+ job eliminations as part of broader automation and AI-driven efficiency initiative. Reflects industry shift toward replacing manual ops with intelligent systems.",
+    "why_it_matters": "Signals mainstreaming of AI-for-cost-reduction in retail banking; labor displacement in back/mid-office now routine for digital-native challengers, likely to spread to legacy banks.",
+    "source": {
+      "name": "Finextra · 2026-07-03",
+      "url": "https://www.finextra.com/newsarticle/48039/starling-to-axe-130-jobs-as-part-of-automation-drive"
+    }
+  },
+  {
+    "id": "2026-07-03-lloyds-halifax-brand-retirement",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-03T10:35:00Z",
+    "headline": "Lloyds Banking Group retires Halifax brand after 179 years, consolidating under single identity",
+    "plain_english": "Lloyds announced phase-out of Halifax brand from UK retail banking, consolidating subsidiary into parent identity. Strategic simplification tied to digital-first channel shift and cost reduction.",
+    "why_it_matters": "Signals accelerating rationalization of legacy multi-brand retail banking models as digital distribution reduces need for distinct branch-based identities; reflects broader consolidation pressure.",
+    "source": {
+      "name": "Finextra · 2026-07-03",
+      "url": "https://www.finextra.com/newsarticle/48036/lloyds-to-retire-halifax-brand"
+    }
+  },
+  {
+    "id": "2026-07-02-tearsheet-kya-bnpl-agents",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-02T11:30:00.000Z",
+    "headline": "BNPL infrastructure faces mismatch as AI agents replace human purchasers",
+    "plain_english": "BNPL platforms were designed to verify human intent at purchase time. As AI agents begin autonomous buying and financing transactions on behalf of consumers, BNPL networks must shift from 'Know Your Customer' (KYC) to 'Know Your Agent' (KYA)—verifying agent authority, budget, and risk profile instead.",
+    "why_it_matters": "BNPL lenders unprepared for agentic commerce will face fraud spikes, misclassified risk, and regulatory ambiguity around agent liability. Early winners will build agent-aware credit decisioning; stragglers face portfolio deterioration.",
+    "jargon": [
+      {
+        "term": "Agentic commerce",
+        "def": "Autonomous software making purchasing and payment decisions on behalf of users without explicit human approval per transaction."
+      },
+      {
+        "term": "KYA (Know Your Agent)",
+        "def": "Risk framework for verifying an AI agent's identity, spending authority, and financial capacity—replacing traditional KYC."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-07-02",
+      "url": "https://tearsheet.co/bnpl/why-bnpl-infrastructure-needs-to-learn-a-new-acronym-kya-know-your-agent/"
+    }
+  },
+  {
+    "id": "2026-07-02-bfsi-fraud-awareness",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-02T12:21:00.000Z",
+    "headline": "One in four UK adults have lost money to online financial scams",
+    "plain_english": "A quarter of British adults have been defrauded by online financial scams and reduced their digital spending as a result. Retail fraud and social engineering remain dominant vectors despite mature payment infrastructure.",
+    "why_it_matters": "High victim rates and behavior change signal that transaction-layer controls (tokenization, 3DS) are insufficient; cognitive and social controls matter. Banks investing only in tech defense will fall short against evolving social engineering.",
+    "stat_value": "25%",
+    "stat_label": "of UK adults fallen for online financial scams",
+    "source": {
+      "name": "Finextra · 2026-07-02",
+      "url": "https://www.finextra.com/newsarticle/48029/one-in-four-brits-have-fallen-for-online-financial-scams"
+    }
+  },
+  {
+    "id": "2026-07-01-frontier-un-panel-ai-catastrophic-risk",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-01T13:10:00.000Z",
+    "headline": "UN panel warns unchecked AI progress poses catastrophic systemic risks",
+    "plain_english": "United Nations panel flagged that rapid AI scaling without governance frameworks risks cascading financial, geopolitical, and infrastructure failures. Calls for international AI safety standards.",
+    "why_it_matters": "Lends authority to BFSI's AI governance concerns; likely to spur central bank collaboration on AI stress-testing and systemic-risk frameworks. Watch for Bank for International Settlements guidance by Q4 2026.",
+    "source": {
+      "name": "Reuters · 2026-07-01",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZzlYcjZBRTVTUHhqcGM3ZXZwVS1XWktHaWVmckFuZjg1bzZPNnZqWDJxUzktV2c4TDA5VHY4ajIxbjVrb21MYnRiM0Q3WDRmMUZZQWxpWlZzZGh4QlVsWF82SGlYZ3lSZVNab056ZWdhTWphSnhXY2lZZHUxb19oWF9udWpTQnNGWkFVVFo0Y0VPckVYTkU5VmozMHA2dE9OanE3SER1cFVzN0U4WkE"
     }
   },
   {
