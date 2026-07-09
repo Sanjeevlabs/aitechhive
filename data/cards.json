@@ -1,5 +1,61 @@
 [
   {
+    "id": "2026-07-08-mica-stablecoin-eu-compliance",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-08T21:45:22.000Z",
+    "headline": "EU Markets in Crypto Assets regulation begins enforcing stablecoin categorization",
+    "plain_english": "MiCA went live across the EU in early July. The regulation divides stablecoins into distinct risk classes (asset-referenced, fiat-backed, e-money) with tailored capital and reserve rules. Non-compliant tokens already facing exclusion.",
+    "why_it_matters": "Creates first binding EU-wide perimeter for digital assets. Non-compliant issuers and service providers face de-listing. Banks and fintechs must re-classify holdings and trading partners within weeks, not months.",
+    "jargon": [
+      {
+        "term": "MiCA",
+        "def": "Markets in Crypto Assets Regulation. EU's comprehensive rulebook for stablecoins, crypto service providers, and digital asset trading."
+      }
+    ],
+    "effective_date": "2026-07-01",
+    "source": {
+      "name": "PYMNTS · 2026-07-08",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/mica-says-no-funny-money-in-europes-stablecoin-basket/"
+    }
+  },
+  {
+    "id": "2026-07-08-clarity-act-crypto-deadline",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-08T23:56:24.000Z",
+    "headline": "US Senate crypto advocates push CLARITY Act passage before August 7 deadline",
+    "plain_english": "CFTC Chair Michael Selig stated July 8 that passage of the Commodity Futures Trading Commission and Responsible Liquidity Innovation for the Real Economy (CLARITY) Act is imminent. The bill aims to establish federal crypto asset classification standards, replacing fragmented state and agency rules.",
+    "why_it_matters": "Unified federal framework would simplify compliance for BFSI crypto operations. Current patchwork across SEC, CFTC, OCC, and state regulators creates operational friction. Passage would signal institutional crypto readiness.",
+    "jargon": [
+      {
+        "term": "CLARITY Act",
+        "def": "Proposed US legislation to assign clear commodity vs. security vs. payment classification to crypto assets under CFTC purview."
+      }
+    ],
+    "effective_date": "2026-08-07",
+    "source": {
+      "name": "PYMNTS · 2026-07-08",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-advocates-push-senate-to-pass-clarity-act-before-august-deadline/"
+    }
+  },
+  {
+    "id": "2026-07-08-ubs-crisis-plan-sec-clearance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-08T21:59:24.000Z",
+    "headline": "SEC clears UBS crisis resolution and securities exchange plan",
+    "plain_english": "SEC Division of Corporation Finance confirmed it will not recommend enforcement action against a securities exchange order mandated by Swiss FINMA. Removes federal obstacle to UBS's residual post-acquisition reorganization.",
+    "why_it_matters": "Signals US-Swiss regulatory alignment on systemically important bank restructuring. Reduces legal overhang on UBS's ongoing integration and compliance obligations post-Credit Suisse acquisition.",
+    "source": {
+      "name": "PYMNTS · 2026-07-08",
+      "url": "https://www.pymnts.com/legal/2026/securities-exchange-commission-clears-path-ubs-crisis-resolution-plans/"
+    }
+  },
+  {
     "id": "2026-07-08-fed-aml-overhaul",
     "category": "regulation",
     "jurisdiction": "US",
@@ -111,55 +167,17 @@
     }
   },
   {
-    "id": "2026-07-07-google-training-data-expansion",
-    "category": "regulation",
+    "id": "2026-07-09-jpmorgan-sambanova-inference",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-07-06T22:18:05Z",
-    "headline": "Google expands AI training to include user-uploaded media without explicit consent",
-    "plain_english": "Google broadened its data-collection policy to use media uploaded via search tools to train AI models. Policy change was implemented quietly, affecting users across multiple Google services. No prior explicit opt-in was required.",
-    "why_it_matters": "BFSI compliance teams must audit vendor data policies for hidden re-use clauses. If financial institutions or customers upload documents (mortgage statements, tax returns, compliance reports) to Google services for search, they may now train Google's LLMs—creating IP leakage and regulatory exposure.",
+    "published_at": "2026-07-09T00:01:00.000Z",
+    "headline": "JPMorgan Chase deploys SambaNova systems for on-premises AI inference",
+    "plain_english": "JPMorgan has selected AI chip startup SambaNova as an infrastructure partner to power on-premises AI inference workloads. The deployment signals large-scale BFSI commitment to sovereign, non-cloud AI compute for production risk and compliance workflows.",
+    "why_it_matters": "On-prem AI inference reduces latency, regulatory friction, and third-party data dependencies for banks handling sensitive financial data. Validates specialized AI chip vendors as alternatives to hyperscaler monopoly.",
     "source": {
-      "name": "PYMNTS · 2026-07-06",
-      "url": "https://www.pymnts.com/google/2026/google-expands-ai-training-to-include-user-uploaded-media-via-search-tools/"
-    }
-  },
-  {
-    "id": "2026-07-06-fca-vertex-legacy-management-enforcement",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-06T13:00:09.000Z",
-    "headline": "FCA enforcement action against Vertex Legacy Management signals tighter legacy-fund oversight",
-    "plain_english": "The UK Financial Conduct Authority has taken regulatory action against Vertex Legacy Management, a specialist in managing closed-ended and legacy investment funds. The enforcement signals heightened FCA focus on legacy asset management operations and governance standards.",
-    "why_it_matters": "FCA legacy-fund enforcement often targets operational resilience, conflicts of interest, and customer outcome protection. For BFSI asset managers, especially those with closed funds or wind-down portfolios, this signals FCA's willingness to scrutinize custody, valuation, and fee transparency practices.",
-    "source": {
-      "name": "FCA · 2026-07-06",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12TmEtVFF0VmZqV1F1U2dqVTUxcUd2TF8xdUI1VnJPakFhcG96UmZPNDljcUNGZW9zTkFIMTBsYnpxcUpaWjliWFN5WnRib1FsamxkX3FtNmZwZk1JemhnMWtrU1VLLUY1aGVSRjBR"
-    }
-  },
-  {
-    "id": "2026-07-04-wsj-crypto-sanctions-evasion",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-04T21:31:00.000Z",
-    "headline": "Rogue nations increasingly use cryptocurrencies to circumvent sanctions regimes",
-    "plain_english": "WSJ reports adversarial states and non-state actors leveraging crypto and stablecoins to bypass international financial sanctions and AML controls. Exposes BFSI exposure to illicit financing via decentralized infrastructure.",
-    "why_it_matters": "OFAC, FinCEN enforcement pivot toward crypto transaction monitoring; banks must expand AML/KYC to cover blockchain bridges, exchanges, and on/off-ramps. Non-compliance risk rising sharply.",
-    "jargon": [
-      {
-        "term": "OFAC",
-        "def": "U.S. Office of Foreign Assets Control—enforces economic sanctions and blocks illicit transactions"
-      },
-      {
-        "term": "AML/KYC",
-        "def": "Anti-money laundering and know-your-customer compliance—verify customer identity and source of funds"
-      }
-    ],
-    "source": {
-      "name": "Wall Street Journal · 2026-07-04",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RODdZM3NwZ3RlYTJyRm5ZSU9IRmg2ZWdOSm14cEtYQW5rcm5FUmYyVzlLaGVnNnhJMFJHR3B4SHFpbk9hQW5tU1lxN05hb1pla3R6eGd5cGpucHdyR3JkR0ttN0hjVWZ6S3dLSW5MY1V2cW1EZUA"
+      "name": "Finextra · 2026-07-09",
+      "url": "https://www.finextra.com/newsarticle/48057/jpmorgan-chase-picks-sambanova-for-on-prem-ai-inference"
     }
   },
   {
@@ -303,23 +321,39 @@
     }
   },
   {
-    "id": "2026-07-03-edo-visa-ai-agents-travel",
-    "category": "deployment",
+    "id": "2026-07-09-nium-cypher-crypto-fiat",
+    "category": "vendor",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-03T19:13:35.000Z",
-    "headline": "eDreams ODIGEO enables AI agents to book travel directly via Visa integration",
-    "plain_english": "Travel platform eDO (eDreams ODIGEO) partnered with Visa to let AI agents autonomously initiate and complete travel purchases across its four brands. Agents can now transact without human intermediation.",
-    "why_it_matters": "First production use of AI-agent-to-payment integration in travel; signals regulatory tolerance for autonomous transaction initiation and sets precedent for fintech/travel convergence.",
+    "published_at": "2026-07-09T00:24:35.000Z",
+    "headline": "Nium acquires Cypher to bridge fiat and crypto payment rails",
+    "plain_english": "Cross-border fintech Nium has acquired Cypher, a crypto-native non-custodial wallet provider, to integrate digital asset infrastructure into Nium's fiat payment platform. Combines compliant stablecoin and fiat money movement.",
+    "why_it_matters": "Consolidates crypto and fiat rails under single compliance umbrella—critical for regulated institutions navigating MiCA and emerging stablecoin frameworks. Nium positions as infrastructure for institutional digital-asset adoption.",
     "jargon": [
       {
-        "term": "AI agent",
-        "def": "Autonomous software that perceives state, decides actions, and executes them without real-time human approval."
+        "term": "non-custodial wallet",
+        "def": "User retains private keys; operator never holds customer assets. Reduces regulatory liability vs. custodial vaults."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-07-03",
-      "url": "https://www.pymnts.com/transportation/travel-payments/2026/edo-taps-visa-to-allow-ai-agents-to-purchase-travel/"
+      "name": "PYMNTS · 2026-07-09",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/nium-acquires-cypher-to-bridge-fiat-and-crypto/"
+    }
+  },
+  {
+    "id": "2026-07-08-lovable-valuation-double",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-08T22:41:33.000Z",
+    "headline": "Lovable AI platform in talks to double valuation to $13.2 billion in $300M round",
+    "plain_english": "Lovable, an AI-powered software development platform, is in advanced funding talks led by Menlo Ventures. The $300M round would value the company at $13.2B, doubling its prior valuation.",
+    "why_it_matters": "Shows sustained venture appetite for AI infrastructure and developer tools. Signals market validation for AI-native software delivery—relevant for BFSI tech teams building internal AI applications and modernizing core systems.",
+    "amount": "$300M",
+    "round": "Growth/Series C",
+    "source": {
+      "name": "TechCrunch · 2026-07-08",
+      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
     }
   },
   {
@@ -447,33 +481,17 @@
     }
   },
   {
-    "id": "2026-07-06-mesh-crypto-payments-2b-valuation-binance",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-06T00:59:18.000Z",
-    "headline": "Mesh eyes $2 billion valuation in Binance-led funding round",
-    "plain_english": "Crypto payments firm Mesh is raising capital at a $2 billion valuation with Binance leading the round, according to reporting. The funding targets rising demand for digital-asset-to-fiat conversions, positioning Mesh as a critical bridge between crypto and traditional banking rails.",
-    "why_it_matters": "Binance's anchor position in a fiat-crypto ramp signals institutional confidence in digital asset settlement infrastructure. BFSI risk officers should monitor how quickly Mesh gains banking partnerships, as crypto-native payments rails could disrupt traditional correspondent banking.",
-    "source": {
-      "name": "PYMNTS · 2026-07-06",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-payments-firm-mesh-eyes-2-billion-valuation-backed-by-binance/"
-    }
-  },
-  {
-    "id": "2026-07-04-vendor-werize-funding-sony",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-07-09-monzo-debt-consolidation",
+    "category": "shift",
+    "jurisdiction": "UK",
     "severity": "low",
-    "published_at": "2026-07-04T09:40:50.000Z",
-    "headline": "WeRize raises $7M in pre-Series C round led by Sony Innovation Fund",
-    "plain_english": "WeRize, a fintech or enterprise platform, secured $7M in pre-Series C funding with Sony Innovation Fund as lead investor, continuing its path toward larger growth stage.",
-    "why_it_matters": "Sony's strategic entry signals rising corporate appetite for fintech/AI platforms; validates market for specialized fintech AI tools beyond pure venture capital.",
-    "amount": "$7M",
-    "round": "Pre-Series C",
+    "published_at": "2026-07-09T00:01:00.000Z",
+    "headline": "Monzo partners with ClearScore to offer simplified debt consolidation service",
+    "plain_english": "UK digital bank Monzo partnered with credit-data provider ClearScore to streamline debt consolidation for customers. The service integrates ClearScore's credit matching engine into Monzo's app, automating offer curation and application.",
+    "why_it_matters": "Signals neobanks moving beyond transactional payments into credit origination and portfolio management. Bundles AI-driven credit decisioning (ClearScore) with digital onboarding (Monzo) to compete with traditional personal-finance platforms.",
     "source": {
-      "name": "ascendants.in · 2026-07-04",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMkVrcEtFZHd5Zzd2dXc5VDlCVUNsb0ZkODlfTzhyQ180S2hSdmg5NDBNdG9zdE9VMkswSVV2d2lKSzBMdnFkTlRBN24zQ0JJQ1FQalpjQjdxckdjWTUxdFRxeDVqNzlpelJmSldRajU2dEw2cWZsM1BVbHY5SEFscUVvbUFHenpCM1k4"
+      "name": "Finextra · 2026-07-09",
+      "url": "https://www.finextra.com/newsarticle/48059/monzo-takes-the-hassle-out-of-debt-consolidation"
     }
   },
   {
@@ -608,20 +626,6 @@
     "source": {
       "name": "PYMNTS · 2026-07-07",
       "url": "https://www.pymnts.com/news/banking/2026/big-banks-eye-payments-deal-that-could-rewire-debit-fees/"
-    }
-  },
-  {
-    "id": "2026-07-06-klarna-us-banking-license",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-06T15:22:00.000Z",
-    "headline": "Klarna applies for US banking license, signaling fintech-to-bank charter shift",
-    "plain_english": "Swedish buy-now-pay-later giant Klarna has filed for a US banking license, a transformative move that would let it accept deposits and operate as a regulated bank rather than a fintech lender. This signals a broader industry trend of non-bank fintechs seeking traditional banking charters to reduce dependency on capital markets.",
-    "why_it_matters": "Approved US banking licenses reshape fintech business models: deposit access reduces funding costs, enables credit expansion, and triggers stricter capital/liquidity rules. Expect more BNPL and embedded-finance players to follow, reshuffling competitive dynamics in consumer lending.",
-    "source": {
-      "name": "Finextra · 2026-07-06",
-      "url": "https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -855,6 +859,38 @@
     }
   },
   {
+    "id": "2026-07-08-revolving-credit-cooling",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-08T23:13:23.000Z",
+    "headline": "US revolving credit growth paused in May; Fed data shows annualized decline of 4.7%",
+    "plain_english": "After two months of strong growth, US consumer credit card balances and other revolving credit fell at a 4.7% annualized rate in May, per Federal Reserve data. Signals potential consumer credit retrenchment or temporary seasonal correction.",
+    "why_it_matters": "Credit card revenue and charge-offs drive BFSI profitability. A sustained revolving-credit contraction pressures net interest margins and signals early recession risk. Banks must stress models on slower origination and higher delinquency.",
+    "stat_value": "−4.7%",
+    "stat_label": "annualized decline in revolving credit, May 2026",
+    "source": {
+      "name": "PYMNTS · 2026-07-08",
+      "url": "https://www.pymnts.com/economy/2026/is-revolving-credit-cooling-or-simply-catching-its-breath/"
+    }
+  },
+  {
+    "id": "2026-07-08-fed-warsh-rate-signal",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-08T20:54:00.000Z",
+    "headline": "Fed Chair Warsh signals strongest rate signal yet in first FOMC minutes",
+    "plain_english": "An analyst flagged an 'unusual, unhedged' promise buried in Kevin Warsh's first FOMC minutes, calling it the document's strongest signal on monetary policy direction. The remark suggests clearer Fed guidance on rates than typical reserved language.",
+    "why_it_matters": "FOMC minutes guide market expectations for short rates, which anchor BFSI funding costs, net interest margins, and bond portfolios. A clearer signal reduces volatility and improves forecasting accuracy for Treasury trading desks and risk models.",
+    "stat_value": "Warsh's first FOMC",
+    "stat_label": "signals clearest rate guidance to date",
+    "source": {
+      "name": "Fortune · 2026-07-08",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa1dPY2RVM1M3NFliaS1Zakl5YmVpRVlDOHpFUzllR0FGN0FsQ1U1YnFEYmg3QzdrTm1UNkw2Z2o1NTNRU2ROUlpGbnpreVlHYnFaVHRBUjB3VHlDNFhxSjF6aVJhdlNPa3RMaXhUMTljV2k1eGo1UWx3Rlk0eDUwM1BnMnp0Y0g3RXc"
+    }
+  },
+  {
     "id": "2026-07-07-blackrock-private-credit-ai",
     "category": "insight",
     "jurisdiction": "Global",
@@ -981,39 +1017,17 @@
     }
   },
   {
-    "id": "2026-07-05-ai-investment-emerging-markets",
-    "category": "insight",
+    "id": "2026-07-08-meta-muse-image-gen-instagram",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-05T08:14:34.000Z",
-    "headline": "AI investment in emerging markets must address ecosystem, not just model availability",
-    "plain_english": "New report warns that pouring capital into large language models alone will not drive AI adoption in emerging-market fintech and banks. Infrastructure, talent, regulatory clarity, and localization are equally critical to success.",
-    "why_it_matters": "Banks and fintech in India, Nigeria, Southeast Asia risk wasting AI budgets on expensive model licenses without the governance, compliance, and data pipelines to deploy them safely. Ecosystem maturity now gates adoption ROI.",
-    "stat_value": "Ecosystem-first",
-    "stat_label": "investment strategy required in emerging markets",
+    "severity": "low",
+    "published_at": "2026-07-08T22:37:23.000Z",
+    "headline": "Meta Superintelligence Labs launches Muse image generation model with Instagram integration",
+    "plain_english": "Meta released Muse Image, a generative AI model that integrates directly into Instagram. Users can tag public accounts and generate images; privacy advocates flagged that public profiles are included by default, triggering pushback.",
+    "why_it_matters": "Demonstrates large-scale deployment of generative models into consumer-facing products. BFSI faces parallel questions on synthetic identity risk, deepfake regulatory liability, and consent frameworks for biometric/identity data.",
     "source": {
-      "name": "lokmattimes.com · 2026-07-05",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR2R5eGpsek8zSjlKVGFmbEh5SGFlaGcwTFY5YVBUWVc3RWRHUnJDUDhBeVp1bUhQN2FPTXZucDhoZFdObXZ3T05rc0hpNU5oMGlfaVJ6RWthY0ZNRkZCSy1JM3pJYnZyTFJVaEhEM3VUWUdsTDE5bWdaS3ItOGFEQnByMThQSDJTODdUS3dQa3J0VnFIWkV5MzVYZWNvSjBUVUV0MUcya1dXY3BvdmpmU1JnbUHSAboBQVVfeXFMTzUyTl92cnVlUzRjV1hHVlRjbzVOSTBSbWhLOXZmazJfNWdyR28xQWotbnpnUWVvR2tjVTBSb3AwaEtzaGlhRHNucUUtdkNnc05jY3liUmQzNDVDRmY1MG9yZUJzMHExWDkyeUoyVDhEemlseUZiVFNMckg3dFlMODFHZmRXcmZQTTJCSExTVzAyZ1ozWVlyTGlHb2xKV0ZkQkRmSndYV3ExTlQ1NDVEb0FkWnFpbW40Y05R"
-    }
-  },
-  {
-    "id": "2026-07-04-zoho-vembu-ai-bubble",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-04T23:31:25.000Z",
-    "headline": "Zoho founder calls AI boom 'biggest bubble yet' amid spending inflection questions",
-    "plain_english": "Sridhar Vembu (Zoho CEO) publicly labeled the current AI investment surge as the largest speculative bubble to date, echoing broader skepticism about generative AI ROI and CapEx sustainability among enterprise software leaders.",
-    "why_it_matters": "Echoes CIO and CFO concerns in BFSI about AI project payback horizons; may pressure banks to demand harder ROI metrics on LLM pilots before scaling, delaying adoption timelines.",
-    "jargon": [
-      {
-        "term": "ROI",
-        "def": "Return on investment—profit or efficiency gain relative to dollars spent"
-      }
-    ],
-    "source": {
-      "name": "Mshale · 2026-07-04",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVE43d3lLLUpxclUyMVBvZXVzS0RZRkxoZDllTWlUNWEtOXl6ZVhGSV94am9xYW1WeW0xTVJmVHJ5bUw2dFd3R2lDMmx3WkhtVFM3OTdJaEY4QQ"
+      "name": "PYMNTS · 2026-07-08",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/metas-ai-image-model-puts-instagram-to-work/"
     }
   },
   {
@@ -1143,17 +1157,27 @@
     }
   },
   {
-    "id": "2026-07-06-anthropic-white-house-government-stake",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-06T00:34:35.000Z",
-    "headline": "Anthropic has not engaged White House on government stake offer",
-    "plain_english": "Unlike OpenAI, which reportedly offered the US government an equity stake, Anthropic has not initiated similar discussions with the White House, according to sources. The divergence reflects competing strategies among frontier AI labs on government alignment and regulatory relationships.",
-    "why_it_matters": "Government equity stakes could unlock preferential access to federal procurement and classified contracts. Anthropic's silence suggests confidence in its regulatory posture or strategy to avoid entanglement; either way, it signals fragmentation in how AI labs court state backing.",
+    "id": "2026-07-09-rag-explainer",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-09T00:00:00.000Z",
+    "headline": "What is RAG? How banks use external documents to make LLMs accurate",
+    "plain_english": "Retrieval-Augmented Generation (RAG) lets an AI model (like ChatGPT) look up recent or proprietary documents before answering a question, rather than relying only on training data. A bank uses RAG to let an LLM cite current compliance rules or a customer's account history without hallucinating.",
+    "why_it_matters": "RAG is how financial institutions deploy LLMs safely on real data without retraining. JPMorgan's SambaNova deployment likely uses RAG to ground responses on policy documents, customer data, and risk rules—reducing hallucination and regulatory audit risk.",
+    "jargon": [
+      {
+        "term": "hallucination",
+        "def": "When an AI confidently outputs false or fabricated information, especially problematic for finance where accuracy is non-negotiable."
+      },
+      {
+        "term": "retrieval",
+        "def": "Automated search of a document store or database to find relevant context for the LLM before generating an answer."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-07-06",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-white-house-have-not-discussed-government-stake-in-firm/"
+      "name": "AITechHive · 2026-07-09",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -1339,26 +1363,6 @@
     }
   },
   {
-    "id": "2026-07-01-super-agents-enterprise",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-01T23:13:38Z",
-    "headline": "What are AI super-agents and why they matter for enterprise workflow",
-    "plain_english": "Super-agents are AI systems that orchestrate work across siloed enterprise software (finance, HR, IT) without human handoffs. They integrate APIs, context, and decision logic to execute multi-step processes. Example: a super-agent processes expense approval, posts to GL, triggers reimbursement—all within one workflow, not three systems.",
-    "why_it_matters": "Eliminates manual software-hopping and human approval bottlenecks; reduces process cycle time by 50–80%. BFSI operations, trade settlement, and regulatory reporting are prime targets for super-agent automation.",
-    "jargon": [
-      {
-        "term": "Super-agent",
-        "def": "AI that chains actions across multiple software systems (APIs) to complete business processes autonomously, replacing hand-offs between tools."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-07-01",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/super-agents-are-connecting-what-enterprise-software-kept-separate/"
-    }
-  },
-  {
     "id": "2026-07-07-semiconductor-ai-valuations",
     "category": "trending",
     "jurisdiction": "US",
@@ -1456,6 +1460,192 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-07-07-google-training-data-expansion",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-06T22:18:05Z",
+    "headline": "Google expands AI training to include user-uploaded media without explicit consent",
+    "plain_english": "Google broadened its data-collection policy to use media uploaded via search tools to train AI models. Policy change was implemented quietly, affecting users across multiple Google services. No prior explicit opt-in was required.",
+    "why_it_matters": "BFSI compliance teams must audit vendor data policies for hidden re-use clauses. If financial institutions or customers upload documents (mortgage statements, tax returns, compliance reports) to Google services for search, they may now train Google's LLMs—creating IP leakage and regulatory exposure.",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/google/2026/google-expands-ai-training-to-include-user-uploaded-media-via-search-tools/"
+    }
+  },
+  {
+    "id": "2026-07-06-fca-vertex-legacy-management-enforcement",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-06T13:00:09.000Z",
+    "headline": "FCA enforcement action against Vertex Legacy Management signals tighter legacy-fund oversight",
+    "plain_english": "The UK Financial Conduct Authority has taken regulatory action against Vertex Legacy Management, a specialist in managing closed-ended and legacy investment funds. The enforcement signals heightened FCA focus on legacy asset management operations and governance standards.",
+    "why_it_matters": "FCA legacy-fund enforcement often targets operational resilience, conflicts of interest, and customer outcome protection. For BFSI asset managers, especially those with closed funds or wind-down portfolios, this signals FCA's willingness to scrutinize custody, valuation, and fee transparency practices.",
+    "source": {
+      "name": "FCA · 2026-07-06",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12TmEtVFF0VmZqV1F1U2dqVTUxcUd2TF8xdUI1VnJPakFhcG96UmZPNDljcUNGZW9zTkFIMTBsYnpxcUpaWjliWFN5WnRib1FsamxkX3FtNmZwZk1JemhnMWtrU1VLLUY1aGVSRjBR"
+    }
+  },
+  {
+    "id": "2026-07-04-wsj-crypto-sanctions-evasion",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-04T21:31:00.000Z",
+    "headline": "Rogue nations increasingly use cryptocurrencies to circumvent sanctions regimes",
+    "plain_english": "WSJ reports adversarial states and non-state actors leveraging crypto and stablecoins to bypass international financial sanctions and AML controls. Exposes BFSI exposure to illicit financing via decentralized infrastructure.",
+    "why_it_matters": "OFAC, FinCEN enforcement pivot toward crypto transaction monitoring; banks must expand AML/KYC to cover blockchain bridges, exchanges, and on/off-ramps. Non-compliance risk rising sharply.",
+    "jargon": [
+      {
+        "term": "OFAC",
+        "def": "U.S. Office of Foreign Assets Control—enforces economic sanctions and blocks illicit transactions"
+      },
+      {
+        "term": "AML/KYC",
+        "def": "Anti-money laundering and know-your-customer compliance—verify customer identity and source of funds"
+      }
+    ],
+    "source": {
+      "name": "Wall Street Journal · 2026-07-04",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RODdZM3NwZ3RlYTJyRm5ZSU9IRmg2ZWdOSm14cEtYQW5rcm5FUmYyVzlLaGVnNnhJMFJHR3B4SHFpbk9hQW5tU1lxN05hb1pla3R6eGd5cGpucHdyR3JkR0ttN0hjVWZ6S3dLSW5MY1V2cW1EZUA"
+    }
+  },
+  {
+    "id": "2026-07-03-edo-visa-ai-agents-travel",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-03T19:13:35.000Z",
+    "headline": "eDreams ODIGEO enables AI agents to book travel directly via Visa integration",
+    "plain_english": "Travel platform eDO (eDreams ODIGEO) partnered with Visa to let AI agents autonomously initiate and complete travel purchases across its four brands. Agents can now transact without human intermediation.",
+    "why_it_matters": "First production use of AI-agent-to-payment integration in travel; signals regulatory tolerance for autonomous transaction initiation and sets precedent for fintech/travel convergence.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous software that perceives state, decides actions, and executes them without real-time human approval."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-03",
+      "url": "https://www.pymnts.com/transportation/travel-payments/2026/edo-taps-visa-to-allow-ai-agents-to-purchase-travel/"
+    }
+  },
+  {
+    "id": "2026-07-06-mesh-crypto-payments-2b-valuation-binance",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-06T00:59:18.000Z",
+    "headline": "Mesh eyes $2 billion valuation in Binance-led funding round",
+    "plain_english": "Crypto payments firm Mesh is raising capital at a $2 billion valuation with Binance leading the round, according to reporting. The funding targets rising demand for digital-asset-to-fiat conversions, positioning Mesh as a critical bridge between crypto and traditional banking rails.",
+    "why_it_matters": "Binance's anchor position in a fiat-crypto ramp signals institutional confidence in digital asset settlement infrastructure. BFSI risk officers should monitor how quickly Mesh gains banking partnerships, as crypto-native payments rails could disrupt traditional correspondent banking.",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-payments-firm-mesh-eyes-2-billion-valuation-backed-by-binance/"
+    }
+  },
+  {
+    "id": "2026-07-04-vendor-werize-funding-sony",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-04T09:40:50.000Z",
+    "headline": "WeRize raises $7M in pre-Series C round led by Sony Innovation Fund",
+    "plain_english": "WeRize, a fintech or enterprise platform, secured $7M in pre-Series C funding with Sony Innovation Fund as lead investor, continuing its path toward larger growth stage.",
+    "why_it_matters": "Sony's strategic entry signals rising corporate appetite for fintech/AI platforms; validates market for specialized fintech AI tools beyond pure venture capital.",
+    "amount": "$7M",
+    "round": "Pre-Series C",
+    "source": {
+      "name": "ascendants.in · 2026-07-04",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMkVrcEtFZHd5Zzd2dXc5VDlCVUNsb0ZkODlfTzhyQ180S2hSdmg5NDBNdG9zdE9VMkswSVV2d2lKSzBMdnFkTlRBN24zQ0JJQ1FQalpjQjdxckdjWTUxdFRxeDVqNzlpelJmSldRajU2dEw2cWZsM1BVbHY5SEFscUVvbUFHenpCM1k4"
+    }
+  },
+  {
+    "id": "2026-07-06-klarna-us-banking-license",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-06T15:22:00.000Z",
+    "headline": "Klarna applies for US banking license, signaling fintech-to-bank charter shift",
+    "plain_english": "Swedish buy-now-pay-later giant Klarna has filed for a US banking license, a transformative move that would let it accept deposits and operate as a regulated bank rather than a fintech lender. This signals a broader industry trend of non-bank fintechs seeking traditional banking charters to reduce dependency on capital markets.",
+    "why_it_matters": "Approved US banking licenses reshape fintech business models: deposit access reduces funding costs, enables credit expansion, and triggers stricter capital/liquidity rules. Expect more BNPL and embedded-finance players to follow, reshuffling competitive dynamics in consumer lending.",
+    "source": {
+      "name": "Finextra · 2026-07-06",
+      "url": "https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-05-ai-investment-emerging-markets",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-05T08:14:34.000Z",
+    "headline": "AI investment in emerging markets must address ecosystem, not just model availability",
+    "plain_english": "New report warns that pouring capital into large language models alone will not drive AI adoption in emerging-market fintech and banks. Infrastructure, talent, regulatory clarity, and localization are equally critical to success.",
+    "why_it_matters": "Banks and fintech in India, Nigeria, Southeast Asia risk wasting AI budgets on expensive model licenses without the governance, compliance, and data pipelines to deploy them safely. Ecosystem maturity now gates adoption ROI.",
+    "stat_value": "Ecosystem-first",
+    "stat_label": "investment strategy required in emerging markets",
+    "source": {
+      "name": "lokmattimes.com · 2026-07-05",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR2R5eGpsek8zSjlKVGFmbEh5SGFlaGcwTFY5YVBUWVc3RWRHUnJDUDhBeVp1bUhQN2FPTXZucDhoZFdObXZ3T05rc0hpNU5oMGlfaVJ6RWthY0ZNRkZCSy1JM3pJYnZyTFJVaEhEM3VUWUdsTDE5bWdaS3ItOGFEQnByMThQSDJTODdUS3dQa3J0VnFIWkV5MzVYZWNvSjBUVUV0MUcya1dXY3BvdmpmU1JnbUHSAboBQVVfeXFMTzUyTl92cnVlUzRjV1hHVlRjbzVOSTBSbWhLOXZmazJfNWdyR28xQWotbnpnUWVvR2tjVTBSb3AwaEtzaGlhRHNucUUtdkNnc05jY3liUmQzNDVDRmY1MG9yZUJzMHExWDkyeUoyVDhEemlseUZiVFNMckg3dFlMODFHZmRXcmZQTTJCSExTVzAyZ1ozWVlyTGlHb2xKV0ZkQkRmSndYV3ExTlQ1NDVEb0FkWnFpbW40Y05R"
+    }
+  },
+  {
+    "id": "2026-07-04-zoho-vembu-ai-bubble",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-04T23:31:25.000Z",
+    "headline": "Zoho founder calls AI boom 'biggest bubble yet' amid spending inflection questions",
+    "plain_english": "Sridhar Vembu (Zoho CEO) publicly labeled the current AI investment surge as the largest speculative bubble to date, echoing broader skepticism about generative AI ROI and CapEx sustainability among enterprise software leaders.",
+    "why_it_matters": "Echoes CIO and CFO concerns in BFSI about AI project payback horizons; may pressure banks to demand harder ROI metrics on LLM pilots before scaling, delaying adoption timelines.",
+    "jargon": [
+      {
+        "term": "ROI",
+        "def": "Return on investment—profit or efficiency gain relative to dollars spent"
+      }
+    ],
+    "source": {
+      "name": "Mshale · 2026-07-04",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aVE43d3lLLUpxclUyMVBvZXVzS0RZRkxoZDllTWlUNWEtOXl6ZVhGSV94am9xYW1WeW0xTVJmVHJ5bUw2dFd3R2lDMmx3WkhtVFM3OTdJaEY4QQ"
+    }
+  },
+  {
+    "id": "2026-07-06-anthropic-white-house-government-stake",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-06T00:34:35.000Z",
+    "headline": "Anthropic has not engaged White House on government stake offer",
+    "plain_english": "Unlike OpenAI, which reportedly offered the US government an equity stake, Anthropic has not initiated similar discussions with the White House, according to sources. The divergence reflects competing strategies among frontier AI labs on government alignment and regulatory relationships.",
+    "why_it_matters": "Government equity stakes could unlock preferential access to federal procurement and classified contracts. Anthropic's silence suggests confidence in its regulatory posture or strategy to avoid entanglement; either way, it signals fragmentation in how AI labs court state backing.",
+    "source": {
+      "name": "PYMNTS · 2026-07-06",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-white-house-have-not-discussed-government-stake-in-firm/"
+    }
+  },
+  {
+    "id": "2026-07-01-super-agents-enterprise",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-01T23:13:38Z",
+    "headline": "What are AI super-agents and why they matter for enterprise workflow",
+    "plain_english": "Super-agents are AI systems that orchestrate work across siloed enterprise software (finance, HR, IT) without human handoffs. They integrate APIs, context, and decision logic to execute multi-step processes. Example: a super-agent processes expense approval, posts to GL, triggers reimbursement—all within one workflow, not three systems.",
+    "why_it_matters": "Eliminates manual software-hopping and human approval bottlenecks; reduces process cycle time by 50–80%. BFSI operations, trade settlement, and regulatory reporting are prime targets for super-agent automation.",
+    "jargon": [
+      {
+        "term": "Super-agent",
+        "def": "AI that chains actions across multiple software systems (APIs) to complete business processes autonomously, replacing hand-offs between tools."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/super-agents-are-connecting-what-enterprise-software-kept-separate/"
     }
   },
   {
