@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-07-14-australia-datacentre-approvals",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-14T12:31:00Z",
+    "headline": "Australian PM announces fast-track datacenter approvals to attract AI investment and domestic capability",
+    "plain_english": "Prime Minister Anthony Albanese pledged expedited permitting for AI datacenters across Australia, aiming to compete for global AI capex and keep training/inference capacity onshore.",
+    "why_it_matters": "Regulatory arbitrage: fast-track approvals reduce cost/time for hyperscaler buildout. APAC BFSI will gain in-region LLM hosting; reduces data-residency friction vs. US/EU. Spreads geopolitical AI fragmentation.",
+    "source": {
+      "name": "The Guardian · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMHFsVkpkbTV3bFllZWJxSENQNGU1QVQySnR1Mzc0alJTcWJPQV9VdTR2SUlRdVhoTGJrMEZ4YlVaSGdMb19YdDU4dU51MVpBTkY4aVlaWXdCT2d0LTN5NlZadzlKS1Y5ZzViamFHR3VLSzR1V3Jnbzd2VGpUUmtCdWlxdXJiSzJ3b3U2WHc1UHZrVEd0bE5hbTVJYTdwbkVrOFQ5VXF2RS0zeUVnbUNiV0FwaGZwTktsS2pXd3Bmd3cwTmpZVndLZFZCV3Ytbm15aG5Zb2VR"
+    }
+  },
+  {
     "id": "2026-07-14-fca-market-maker-list",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -139,17 +153,41 @@
     }
   },
   {
-    "id": "2026-07-10-fca-bluecloudrecovery-clone",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-07-10T13:20:05Z",
-    "headline": "FCA warns of BlueCloud Recovery phishing clone impersonating regulated firm",
-    "plain_english": "UK regulator FCA issued a public warning about BlueCloud Recovery (bluecloudrecovery.com), a fraudulent website cloning an FCA-registered firm, targeting retail and institutional victims through spoofed authorization.",
-    "why_it_matters": "Illustrates rising sophistication of spoofing attacks against financial firms; banks and custodians must strengthen domain monitoring and customer verification to prevent credential theft and settlement fraud.",
+    "id": "2026-07-14-jpm-payments-keystroke-automation",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-14T12:00:00Z",
+    "headline": "JPMorgan Payments automates document processing, eliminates 13 billion keystrokes annually",
+    "plain_english": "JPMorgan Payments deployed automation to eliminate manual data entry in payment documentation. The system processes the paper and information that surrounds transactions—not the payments themselves—cutting friction that businesses face when settling accounts.",
+    "why_it_matters": "Demonstrates that AI/RPA ROI in payments is operational (back-office efficiency) not just speed. Sets template for rivals: automate the envelope, not the rail.",
+    "scale": {
+      "metric": "keystrokes eliminated",
+      "value": "13 billion annually"
+    },
     "source": {
-      "name": "FCA · 2026-07-10",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbzNwaE91cWpXTi10MTFxc0cySkZZSFFHQ3hSalNYVFV0cjhjN3VNZXlVZlZzRVVCNDdiQWRzSHZBVTRFQWd5VEQ1eW8taWhiWjBZZGxhbjBnNFFqemtHU0s1T0pDam9zbzdMZUcyM2ZNNW5nbWpXZ1c2QTVpYWlmME1hZHFxdlRWeXZVVmlSTFdBVDlpRjBqSjRCcE41TFdGa1pSbA"
+      "name": "Tearsheet · 2026-07-14",
+      "url": "https://tearsheet.co/ai-innovation-artificial-intelligence/how-j-p-morgan-payments-eliminated-13-billion-keystrokes-a-year-by-automating-the-paper-behind-payments/"
+    }
+  },
+  {
+    "id": "2026-07-14-emirates-nbd-partior-cbdc",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-14T13:04:00Z",
+    "headline": "Emirates NBD goes live on Partior blockchain network for real-time cross-border dollar payments",
+    "plain_english": "Emirates NBD launched production support for blockchain-based settlement on the Partior network, enabling real-time USD transfers across borders without traditional correspondent banking delays.",
+    "why_it_matters": "Signals APAC bank adoption of blockchain infrastructure for commercial payments. Partior (Citi/SoftBank/OCBC) now has named tier-1 customer in production, accelerating corridor competition.",
+    "jargon": [
+      {
+        "term": "Partior network",
+        "def": "Blockchain platform for instant cross-border payments, backed by Citi, SoftBank, OCBC; alternative to SWIFT for USD settlement."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network"
     }
   },
   {
@@ -290,45 +328,31 @@
     }
   },
   {
-    "id": "2026-07-09-swift-blockchain-ledger",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-09T12:52:49.000Z",
-    "headline": "Swift launches blockchain ledger for 24/7 cross-border payments; 17 banks pilot live",
-    "plain_english": "Swift, the global financial messaging platform, has activated a blockchain-based ledger enabling around-the-clock cross-border payments using tokenized deposits. Seventeen banks are conducting live pilot transactions on the system.",
-    "why_it_matters": "First production-grade distributed ledger for high-value settlement removes FX and timezone friction; early adoption signals industry shift away from legacy correspondent banking rails.",
-    "jargon": [
-      {
-        "term": "Tokenized deposits",
-        "def": "Digital representations of fiat currency on blockchain, redeemable 1:1 for actual bank funds."
-      },
-      {
-        "term": "Distributed ledger",
-        "def": "Shared database of transactions replicated across multiple participants, eliminating single point of failure."
-      }
-    ],
+    "id": "2026-07-14-bcb-vikar-account-opening",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-14T11:59:00Z",
+    "headline": "BCB Bank selects Vikar Technologies for digital account opening automation",
+    "plain_english": "Vikar Technologies, a fintech vendor for account opening and lending automation, signed a partnership with BCB Bank to streamline consumer and business onboarding workflows.",
+    "why_it_matters": "Routine but persistent: regional banks continue outsourcing account-opening ops to specialized vendors, freeing in-house engineering for core products.",
     "source": {
-      "name": "PYMNTS · 2026-07-09",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/swift-cuts-ribbon-on-blockchain-based-cross-border-payments-ledger/"
-    },
-    "scale": {
-      "metric": "banks",
-      "value": "17"
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/pressarticle/110411/bcb-bank-selects-vikar-technologies-to-streamline-consumer-and-business-account-opening"
     }
   },
   {
-    "id": "2026-07-09-jpmorgan-sambanova-inference",
-    "category": "deployment",
+    "id": "2026-07-14-branch-earned-wage-access",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-09T00:01:00.000Z",
-    "headline": "JPMorgan Chase deploys SambaNova systems for on-premises AI inference",
-    "plain_english": "JPMorgan has selected AI chip startup SambaNova as an infrastructure partner to power on-premises AI inference workloads. The deployment signals large-scale BFSI commitment to sovereign, non-cloud AI compute for production risk and compliance workflows.",
-    "why_it_matters": "On-prem AI inference reduces latency, regulatory friction, and third-party data dependencies for banks handling sensitive financial data. Validates specialized AI chip vendors as alternatives to hyperscaler monopoly.",
+    "severity": "low",
+    "published_at": "2026-07-14T13:00:00Z",
+    "headline": "Branch expands earned wage access product with flexible configuration model",
+    "plain_english": "Branch, a fintech provider of earned wage access (EWA) for workers, announced new configuration options for payroll-linked lending products, broadening deployment flexibility for employer partners.",
+    "why_it_matters": "Consumer fintech product expansion; outside core BFSI regulatory scope. Included for context: EWA is a growing alternative to payday lending, raising questions about interest-rate caps and consumer protection in BFSI oversight.",
     "source": {
-      "name": "Finextra · 2026-07-09",
-      "url": "https://www.finextra.com/newsarticle/48057/jpmorgan-chase-picks-sambanova-for-on-prem-ai-inference"
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/pressarticle/110396/branch-expands-earned-wage-access-with-flex-model"
     }
   },
   {
@@ -471,36 +495,24 @@
     }
   },
   {
-    "id": "2026-07-08-lovable-valuation-double",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-08T22:41:33.000Z",
-    "headline": "Lovable AI platform in talks to double valuation to $13.2 billion in $300M round",
-    "plain_english": "Lovable, an AI-powered software development platform, is in advanced funding talks led by Menlo Ventures. The $300M round would value the company at $13.2B, doubling its prior valuation.",
-    "why_it_matters": "Shows sustained venture appetite for AI infrastructure and developer tools. Signals market validation for AI-native software delivery—relevant for BFSI tech teams building internal AI applications and modernizing core systems.",
-    "amount": "$300M",
-    "round": "Growth/Series C",
-    "source": {
-      "name": "TechCrunch · 2026-07-08",
-      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
-    }
-  },
-  {
-    "id": "2026-07-08-gradium-nvidia-seed",
-    "category": "vendor",
+    "id": "2026-07-14-jcb-circle-stablecoin-mou",
+    "category": "shift",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-08T13:00:12Z",
-    "headline": "Nvidia backs voice AI startup Gradium in extended seed round exceeding $100m",
-    "plain_english": "Gradium, a voice AI platform, raised $30m in a Nvidia-led extension, pushing total seed funding above $100m. Nvidia's backing signals confidence in voice-based AI for enterprise workflows, including BFSI customer service and trading floors.",
-    "why_it_matters": "Enterprise voice AI moving from experiment to production; banks now have a credibly-funded, GPU-vendor-backed stack for deploying conversational AI at scale without custom model training.",
+    "published_at": "2026-07-14T11:56:00Z",
+    "headline": "JCB signs stablecoin partnership with Circle, signals card-network pivot to tokenized rails",
+    "plain_english": "JCB (Japan's major card network) signed an MOU with Circle Internet Group to explore stablecoin-based payment collaboration. First formal tie between traditional card network and USD stablecoin issuer.",
+    "why_it_matters": "Card networks (JCB, Visa, Mastercard) adopting stablecoin rails threatens correspondent banking and SWIFT fee models. JCB's move signals APAC regional shift toward tokenized settlement.",
+    "jargon": [
+      {
+        "term": "Stablecoin",
+        "def": "Cryptocurrency pegged to USD or other fiat; Circle issues USDC, a regulated stablecoin for institutional payments."
+      }
+    ],
     "source": {
-      "name": "Sifted · 2026-07-08",
-      "url": "https://sifted.eu/articles/gradium-nvidia-30m-extension-seed/"
-    },
-    "amount": "$30M",
-    "round": "Seed"
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/pressarticle/110410/jcb-signs-stablecoin-mou-with-circle"
+    }
   },
   {
     "id": "2026-07-14-anthropic-blomfield-monzo",
@@ -639,26 +651,6 @@
     }
   },
   {
-    "id": "2026-07-10-stablecoin-treasury-operations",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-10T21:02:10Z",
-    "headline": "Stablecoin adoption in corporate treasury stalled by legacy back-office systems",
-    "plain_english": "Enterprises face technical barriers adopting stablecoins for B2B payments: existing treasury management systems cannot natively process blockchain settlements without replacing legacy infrastructure. Open USD consortium aims to solve this but integration remains months away.",
-    "why_it_matters": "Reveals that regulatory approval alone won't drive stablecoin adoption. Treasury and payments infrastructure must be rebuilt to support atomic settlement, reconciliation, and reporting. BFSI players investing in blockchain-native settlement rails (not just custody) gain first-mover advantage.",
-    "jargon": [
-      {
-        "term": "treasury management system (TMS)",
-        "def": "Legacy software managing corporate cash, liquidity, FX hedging, and reporting—typically 10-20 years old and not blockchain-compatible."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-07-10",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/stablecoin-adoption-runs-into-the-treasury-back-office/"
-    }
-  },
-  {
     "id": "2026-07-09-ollama-seed-funding",
     "category": "tool",
     "jurisdiction": "Global",
@@ -716,6 +708,26 @@
     "source": {
       "name": "arXiv · 2026-06-24",
       "url": "https://arxiv.org/abs/2606.23980"
+    }
+  },
+  {
+    "id": "2026-07-14-anthropic-claude-interpretability",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-14T12:10:00Z",
+    "headline": "Anthropic demonstrates interpretability technique revealing Claude model's internal reasoning patterns",
+    "plain_english": "Anthropic released findings on a new method to observe Claude LLM's internal 'thoughts' and decision-making, advancing model interpretability. MIT Tech Review reports this opens a window into how frontier LLMs reason.",
+    "why_it_matters": "Interpretability is a BFSI regulatory milestone: explainability of AI decisions in credit, AML, fraud is table-stakes for FCA/OCC approval. Anthropic's work may unlock audit trails banks need.",
+    "jargon": [
+      {
+        "term": "Interpretability",
+        "def": "Ability to understand and explain why an AI model made a specific decision; critical for regulatory approval in finance."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-07-14",
+      "url": "https://www.technologyreview.com/2026/07/14/1140391/the-download-anthropic-claude-internal-thoughts-world-models/"
     }
   },
   {
@@ -887,23 +899,35 @@
     }
   },
   {
-    "id": "2026-06-24-web-data-infrastructure-ai",
-    "category": "research",
+    "id": "2026-07-14-mckinsey-ai-workflow-redesign",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-06-24T11:59:54.000Z",
-    "headline": "Emergence of web data infrastructure layer for enterprise AI",
-    "plain_english": "MIT Technology Review reports on a new infrastructure category: platforms that unblock and structure web data (currently fragmented, paywalled, or unstructured) for AI model training and inference. Fills the gap between data scarcity and AI demand.",
-    "why_it_matters": "Data infrastructure is becoming a bottleneck for enterprise AI; new layer abstracts source integration and compliance, reducing time-to-insight for BFSI models trained on web, document, or proprietary data.",
-    "jargon": [
-      {
-        "term": "Web data infrastructure",
-        "def": "Layer of tooling that ingests, cleans, and structures public/private web data into AI-ready formats while managing access, licensing, and compliance."
-      }
-    ],
+    "published_at": "2026-07-14T12:18:59Z",
+    "headline": "McKinsey research: AI financial returns depend on workflow redesign, not tool deployment alone",
+    "plain_english": "McKinsey analysis shows companies see significantly larger gains from AI when they rethink end-to-end processes, not just plug AI into existing workflows. Generic tool deployment yields diminishing returns.",
+    "why_it_matters": "Explains why many bank LLM pilots stall: orgs treat AI as a feature, not a process redesign. Winners will reorg around AI capabilities (e.g., real-time risk review instead of batch), not bolt on.",
+    "stat_value": "Higher",
+    "stat_label": "Financial ROI when firms redesign workflows vs. tool-only deployment",
     "source": {
-      "name": "MIT Technology Review · 2026-06-24",
-      "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/"
+      "name": "McKinsey · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBDX2ZhQmFFbnZ5MnVUVmdtZjlFRzJPRHRSV1RlajhZTlFGaUtPSnBkRTVOaDl4cTZLSXpXTndUVW"
+    }
+  },
+  {
+    "id": "2026-07-14-goldman-7b-stock-trading",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-14T11:25:48Z",
+    "headline": "Goldman Sachs stock trading revenue hits record $7.42 billion in period, outpacing equity derivatives",
+    "plain_english": "Goldman Sachs' stock trading desk generated $7.42 billion, exceeding prior records. Signals strong demand for electronic and algorithmic trading in volatility-driven markets.",
+    "why_it_matters": "Trading AI/execution algorithms now core to FICC/equities ops. Mega-banks with scale can afford frontier-model research; smaller peers will depend on vendor algos, raising vendor concentration risk.",
+    "stat_value": "$7.42B",
+    "stat_label": "Goldman Sachs stock trading revenue (record period)",
+    "source": {
+      "name": "Bloomberg · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcjBNajluVk9PS1Z2QS1hZ25EdjNndDdEYkNPWG5oNkRYRjMxMnNWUUxOQlRLdkduTWJ6RVNIVC1UaHQ1eGJJZmh2UkdseTJCSjBwbFRYOWVZemtSWDBGd2ZkMzVuSnhObVZuLVNkZmk2cnYyQkUyd1VyRnZDdElwc1FfcnRodEhqdXRYOTdfSjdJOVFDaWhUUVhpZVdTcUlvbndXQXlpSGJRdWs2UGdCdlplekk"
     }
   },
   {
@@ -1037,35 +1061,17 @@
     }
   },
   {
-    "id": "2026-07-11-inflation-ai-boom-tariffs",
-    "category": "insight",
-    "jurisdiction": "US",
+    "id": "2026-07-14-softbank-5t-ai-capex",
+    "category": "frontier",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-07-11T17:19:00Z",
-    "headline": "AI boom cited as persistent inflation driver alongside El Niño, tariffs, fuel crunch",
-    "plain_english": "Economic analysis identifies rapid AI infrastructure buildout and energy demand as a structural inflation factor, joining climate/trade pressures. Energy costs for training & inference are now material to broader price dynamics.",
-    "why_it_matters": "BFSI risk officers must embed AI-driven energy & commodity inflation into stress scenarios; Fed policy response will reflect AI capex intensity, affecting rates, credit spreads, and margin compression for tech-heavy portfolios.",
-    "stat_value": "AI infrastructure energy costs",
-    "stat_label": "now flagged as inflationary headwind by major forecasters",
+    "published_at": "2026-07-14T11:25:43Z",
+    "headline": "SoftBank CEO warns $5 trillion annual capex required globally to meet AI infrastructure demand",
+    "plain_english": "SoftBank Group's leadership stated that global economies must invest $5 trillion per year to build AI data centers and infrastructure. Signals massive M&A, energy, and geopolitical competition ahead.",
+    "why_it_matters": "If credible, implies AI capex eclipses traditional CapEx cycles—reshapes banking treasury, energy hedging, and cross-border capital flows. Central banks and regulators must plan for AI-driven inflation/deflation.",
     "source": {
-      "name": "Fortune · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQXBtWmpueDRJbG1ocU1BbU5zTXJ5ZHlEVDgzUVo0SlEwVUJpNzJzYmtNcWl2a3VUbGFmUzhpVWdqYkJpb0lXMUlveE5EMzhueDNrN052Y2t6TGJ4dnRfcGZYcV9ZeHpVTU1sR3hyU18xY0ZPa3JLUmU0clpjU3FyZzhRRnl1bFNCbzNPSzlEbnhUZS1SbzhvLVl4WWswZ0NJaU5yUUFya0xlZ0lvZkx3RlpCc3llaDlOZmc4"
-    }
-  },
-  {
-    "id": "2026-07-11-palantir-microsoft-figma-q2-earnings",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-11T12:00:49.000Z",
-    "headline": "Palantir, Microsoft, Figma emerge as primary AI beneficiaries ahead of Q2 2026 software earnings",
-    "plain_english": "Citi research identifies Palantir (data platforms), Microsoft (cloud/copilot), and Figma (design AI) as strongest beneficiaries of enterprise AI spending in Q2 2026 earnings season. BFSI allocating budget to enterprise AI infrastructure, not consumer LLMs.",
-    "why_it_matters": "Banks' capital deployment favors workflow AI (copilots, data integration) over chatbots. Palantir and Microsoft winning BFSI RFPs for compliance/risk/operations automation—expect announcements in next 90 days.",
-    "stat_value": "3",
-    "stat_label": "vendors identified as prime BFSI AI beneficiaries in Q2",
-    "source": {
-      "name": "Seeking Alpha · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMHpEZGQzNHdJM2tKUy1KanpZc1N4elNCSXQ1QWJVLV9leW5acTdhbV9vbnZremNPQm5ETE14NjJmbUFpd1lMUmg0VUVZbm9Ock96dHNMb1VYd0RxV0lIQWFjOG5jenU1WHRob2h1QmVDUHFzX1RMUnZNTWRKVklWdXFJNl84YURZUkItUjBVMUQwcmNCaXhLOFpmbklkbFFWRTZpUUktQnQ5UlhNeUlaM0hySUVObWVWSE5BaXh1bHBmT1N1Z0pV"
+      "name": "ClickOnDetroit · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdVZDbnJlZjd4NTNMd05MVF9QaUpsUkV4YWpIY1dzUHZ1NUtOS1hXZVBfVzQ3RVEyU1JuNE8tQWJyY0FuejkyanpQYWtwTm1teWlIbFh2Y281RGNia3ZnRDVsRkFJaGR2WElPYzU0SzRiSTBSdlY4eU9iVmVWUE10NEVLUnVJZld0bGl5RllOd1hmS3hFN3RlWm1sa3hhdXBsU3htT1FtMnFhZkt6Z2dVU0NhZTlXdlBIcEpzSVJmUmZaZw"
     }
   },
   {
@@ -1192,20 +1198,6 @@
     "source": {
       "name": "The Washington Post · 2026-07-11",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTmYydVFGSWFzc1hUVUxJNG5XZlo1Nk9NVGpSRmViTmItY09Vd1dvY2IwLUgtcjBUQkU1aHY4dWJxalp1eHlKQ0IxQ2FOVmRtdWNKdVl6R0pVc1d1RDRteFRlNnQ1X0swWXdXLVk1cUE1bVBGLXhhTkFFbFFlLTVZYWRiYm96SHEyalE"
-    }
-  },
-  {
-    "id": "2026-07-10-ai-race-cost-efficiency",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-10T21:27:18Z",
-    "headline": "AI industry pivots from scale to cost and task-specific optimization",
-    "plain_english": "Major AI companies and enterprise users are shifting strategy from pursuing largest possible models toward smaller, task-optimized, and cheaper systems. Selection now driven by inference cost, latency, and control—not leaderboard rank.",
-    "why_it_matters": "Signals maturation from research competition to productization. For BFSI: smaller models lower inference cost per transaction (critical for high-volume fraud detection, KYC), improve data residency compliance, and reduce vendor lock-in. Validates edge deployment and fine-tuning ROI.",
-    "source": {
-      "name": "CNBC · 2026-07-10",
-      "url": "https://www.cnbc.com/2026/07/10/the-ai-race-is-shifting-from-bigger-models-to-cheaper-smarter-systems.html"
     }
   },
   {
@@ -1411,6 +1403,20 @@
     }
   },
   {
+    "id": "2026-07-14-jpm-record-profit",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-14T11:49:54Z",
+    "headline": "JPMorgan posts highest quarterly profit in US banking history; dealmaking and equities trading surge",
+    "plain_english": "JPMorgan Chase reported record quarterly earnings, driven by investment banking fees and stock trading revenue. No AI breakthrough disclosed, but demonstrates mega-cap banks' current financial muscle.",
+    "why_it_matters": "Earnings windfall creates capital for AI/fintech M&A and hiring. Signals peak profitability may attract regulatory scrutiny on bank size/systemic risk—competes with AI investment priorities.",
+    "source": {
+      "name": "Reuters · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXZXdWw0Um15aXgwRy1uU3dobEJIREY5cDItRFd0d2ZvQjRDdXdVdHZJNmtWWmNuVG5hVWlNZmlXaVQ0eWJ2WndSM1JMOGtIQmpWM29XeVR0OVVheFZQNGVfNmhlYldNdjlfLU1MazZLMjJGVmc4TzdvSWRKNnVkRjNJemVxNGtrck5EWVA5c1dWdUdBSW92Y0RBWDRrdms"
+    }
+  },
+  {
     "id": "2026-07-11-apple-openai-trade-secrets",
     "category": "trending",
     "jurisdiction": "US",
@@ -1522,6 +1528,180 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-07-10-fca-bluecloudrecovery-clone",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-07-10T13:20:05Z",
+    "headline": "FCA warns of BlueCloud Recovery phishing clone impersonating regulated firm",
+    "plain_english": "UK regulator FCA issued a public warning about BlueCloud Recovery (bluecloudrecovery.com), a fraudulent website cloning an FCA-registered firm, targeting retail and institutional victims through spoofed authorization.",
+    "why_it_matters": "Illustrates rising sophistication of spoofing attacks against financial firms; banks and custodians must strengthen domain monitoring and customer verification to prevent credential theft and settlement fraud.",
+    "source": {
+      "name": "FCA · 2026-07-10",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbzNwaE91cWpXTi10MTFxc0cySkZZSFFHQ3hSalNYVFV0cjhjN3VNZXlVZlZzRVVCNDdiQWRzSHZBVTRFQWd5VEQ1eW8taWhiWjBZZGxhbjBnNFFqemtHU0s1T0pDam9zbzdMZUcyM2ZNNW5nbWpXZ1c2QTVpYWlmME1hZHFxdlRWeXZVVmlSTFdBVDlpRjBqSjRCcE41TFdGa1pSbA"
+    }
+  },
+  {
+    "id": "2026-07-09-swift-blockchain-ledger",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-09T12:52:49.000Z",
+    "headline": "Swift launches blockchain ledger for 24/7 cross-border payments; 17 banks pilot live",
+    "plain_english": "Swift, the global financial messaging platform, has activated a blockchain-based ledger enabling around-the-clock cross-border payments using tokenized deposits. Seventeen banks are conducting live pilot transactions on the system.",
+    "why_it_matters": "First production-grade distributed ledger for high-value settlement removes FX and timezone friction; early adoption signals industry shift away from legacy correspondent banking rails.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Digital representations of fiat currency on blockchain, redeemable 1:1 for actual bank funds."
+      },
+      {
+        "term": "Distributed ledger",
+        "def": "Shared database of transactions replicated across multiple participants, eliminating single point of failure."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-09",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/swift-cuts-ribbon-on-blockchain-based-cross-border-payments-ledger/"
+    },
+    "scale": {
+      "metric": "banks",
+      "value": "17"
+    }
+  },
+  {
+    "id": "2026-07-09-jpmorgan-sambanova-inference",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-09T00:01:00.000Z",
+    "headline": "JPMorgan Chase deploys SambaNova systems for on-premises AI inference",
+    "plain_english": "JPMorgan has selected AI chip startup SambaNova as an infrastructure partner to power on-premises AI inference workloads. The deployment signals large-scale BFSI commitment to sovereign, non-cloud AI compute for production risk and compliance workflows.",
+    "why_it_matters": "On-prem AI inference reduces latency, regulatory friction, and third-party data dependencies for banks handling sensitive financial data. Validates specialized AI chip vendors as alternatives to hyperscaler monopoly.",
+    "source": {
+      "name": "Finextra · 2026-07-09",
+      "url": "https://www.finextra.com/newsarticle/48057/jpmorgan-chase-picks-sambanova-for-on-prem-ai-inference"
+    }
+  },
+  {
+    "id": "2026-07-08-lovable-valuation-double",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-08T22:41:33.000Z",
+    "headline": "Lovable AI platform in talks to double valuation to $13.2 billion in $300M round",
+    "plain_english": "Lovable, an AI-powered software development platform, is in advanced funding talks led by Menlo Ventures. The $300M round would value the company at $13.2B, doubling its prior valuation.",
+    "why_it_matters": "Shows sustained venture appetite for AI infrastructure and developer tools. Signals market validation for AI-native software delivery—relevant for BFSI tech teams building internal AI applications and modernizing core systems.",
+    "amount": "$300M",
+    "round": "Growth/Series C",
+    "source": {
+      "name": "TechCrunch · 2026-07-08",
+      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
+    }
+  },
+  {
+    "id": "2026-07-08-gradium-nvidia-seed",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-08T13:00:12Z",
+    "headline": "Nvidia backs voice AI startup Gradium in extended seed round exceeding $100m",
+    "plain_english": "Gradium, a voice AI platform, raised $30m in a Nvidia-led extension, pushing total seed funding above $100m. Nvidia's backing signals confidence in voice-based AI for enterprise workflows, including BFSI customer service and trading floors.",
+    "why_it_matters": "Enterprise voice AI moving from experiment to production; banks now have a credibly-funded, GPU-vendor-backed stack for deploying conversational AI at scale without custom model training.",
+    "source": {
+      "name": "Sifted · 2026-07-08",
+      "url": "https://sifted.eu/articles/gradium-nvidia-30m-extension-seed/"
+    },
+    "amount": "$30M",
+    "round": "Seed"
+  },
+  {
+    "id": "2026-07-10-stablecoin-treasury-operations",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-10T21:02:10Z",
+    "headline": "Stablecoin adoption in corporate treasury stalled by legacy back-office systems",
+    "plain_english": "Enterprises face technical barriers adopting stablecoins for B2B payments: existing treasury management systems cannot natively process blockchain settlements without replacing legacy infrastructure. Open USD consortium aims to solve this but integration remains months away.",
+    "why_it_matters": "Reveals that regulatory approval alone won't drive stablecoin adoption. Treasury and payments infrastructure must be rebuilt to support atomic settlement, reconciliation, and reporting. BFSI players investing in blockchain-native settlement rails (not just custody) gain first-mover advantage.",
+    "jargon": [
+      {
+        "term": "treasury management system (TMS)",
+        "def": "Legacy software managing corporate cash, liquidity, FX hedging, and reporting—typically 10-20 years old and not blockchain-compatible."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-10",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/stablecoin-adoption-runs-into-the-treasury-back-office/"
+    }
+  },
+  {
+    "id": "2026-06-24-web-data-infrastructure-ai",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-06-24T11:59:54.000Z",
+    "headline": "Emergence of web data infrastructure layer for enterprise AI",
+    "plain_english": "MIT Technology Review reports on a new infrastructure category: platforms that unblock and structure web data (currently fragmented, paywalled, or unstructured) for AI model training and inference. Fills the gap between data scarcity and AI demand.",
+    "why_it_matters": "Data infrastructure is becoming a bottleneck for enterprise AI; new layer abstracts source integration and compliance, reducing time-to-insight for BFSI models trained on web, document, or proprietary data.",
+    "jargon": [
+      {
+        "term": "Web data infrastructure",
+        "def": "Layer of tooling that ingests, cleans, and structures public/private web data into AI-ready formats while managing access, licensing, and compliance."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-06-24",
+      "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/"
+    }
+  },
+  {
+    "id": "2026-07-11-inflation-ai-boom-tariffs",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-11T17:19:00Z",
+    "headline": "AI boom cited as persistent inflation driver alongside El Niño, tariffs, fuel crunch",
+    "plain_english": "Economic analysis identifies rapid AI infrastructure buildout and energy demand as a structural inflation factor, joining climate/trade pressures. Energy costs for training & inference are now material to broader price dynamics.",
+    "why_it_matters": "BFSI risk officers must embed AI-driven energy & commodity inflation into stress scenarios; Fed policy response will reflect AI capex intensity, affecting rates, credit spreads, and margin compression for tech-heavy portfolios.",
+    "stat_value": "AI infrastructure energy costs",
+    "stat_label": "now flagged as inflationary headwind by major forecasters",
+    "source": {
+      "name": "Fortune · 2026-07-11",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQXBtWmpueDRJbG1ocU1BbU5zTXJ5ZHlEVDgzUVo0SlEwVUJpNzJzYmtNcWl2a3VUbGFmUzhpVWdqYkJpb0lXMUlveE5EMzhueDNrN052Y2t6TGJ4dnRfcGZYcV9ZeHpVTU1sR3hyU18xY0ZPa3JLUmU0clpjU3FyZzhRRnl1bFNCbzNPSzlEbnhUZS1SbzhvLVl4WWswZ0NJaU5yUUFya0xlZ0lvZkx3RlpCc3llaDlOZmc4"
+    }
+  },
+  {
+    "id": "2026-07-11-palantir-microsoft-figma-q2-earnings",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-11T12:00:49.000Z",
+    "headline": "Palantir, Microsoft, Figma emerge as primary AI beneficiaries ahead of Q2 2026 software earnings",
+    "plain_english": "Citi research identifies Palantir (data platforms), Microsoft (cloud/copilot), and Figma (design AI) as strongest beneficiaries of enterprise AI spending in Q2 2026 earnings season. BFSI allocating budget to enterprise AI infrastructure, not consumer LLMs.",
+    "why_it_matters": "Banks' capital deployment favors workflow AI (copilots, data integration) over chatbots. Palantir and Microsoft winning BFSI RFPs for compliance/risk/operations automation—expect announcements in next 90 days.",
+    "stat_value": "3",
+    "stat_label": "vendors identified as prime BFSI AI beneficiaries in Q2",
+    "source": {
+      "name": "Seeking Alpha · 2026-07-11",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMHpEZGQzNHdJM2tKUy1KanpZc1N4elNCSXQ1QWJVLV9leW5acTdhbV9vbnZremNPQm5ETE14NjJmbUFpd1lMUmg0VUVZbm9Ock96dHNMb1VYd0RxV0lIQWFjOG5jenU1WHRob2h1QmVDUHFzX1RMUnZNTWRKVklWdXFJNl84YURZUkItUjBVMUQwcmNCaXhLOFpmbklkbFFWRTZpUUktQnQ5UlhNeUlaM0hySUVObWVWSE5BaXh1bHBmT1N1Z0pV"
+    }
+  },
+  {
+    "id": "2026-07-10-ai-race-cost-efficiency",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-10T21:27:18Z",
+    "headline": "AI industry pivots from scale to cost and task-specific optimization",
+    "plain_english": "Major AI companies and enterprise users are shifting strategy from pursuing largest possible models toward smaller, task-optimized, and cheaper systems. Selection now driven by inference cost, latency, and control—not leaderboard rank.",
+    "why_it_matters": "Signals maturation from research competition to productization. For BFSI: smaller models lower inference cost per transaction (critical for high-volume fraud detection, KYC), improve data residency compliance, and reduce vendor lock-in. Validates edge deployment and fine-tuning ROI.",
+    "source": {
+      "name": "CNBC · 2026-07-10",
+      "url": "https://www.cnbc.com/2026/07/10/the-ai-race-is-shifting-from-bigger-models-to-cheaper-smarter-systems.html"
     }
   },
   {
