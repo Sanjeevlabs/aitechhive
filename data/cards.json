@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-07-15-nyc-datacentre-moratorium-ai",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-15T20:35:40Z",
+    "headline": "New York becomes first US state to impose AI data center moratorium; Trump criticizes policy",
+    "plain_english": "New York governor signed an executive order pausing new AI data center permits pending regulatory review. Trump called for immediate reversal. Australia's PM is also considering a data center moratorium until AI rules are set. Signals state-level regulatory friction is rising.",
+    "why_it_matters": "BFSI firms hosting models in NY face infrastructure delays; creates urgency for establishing compute in other states or clouds, increasing capex and multi-region dependency for on-prem AI.",
+    "source": {
+      "name": "CNBC · 2026-07-15",
+      "url": "https://www.cnbc.com/2026/07/15/trump-blasts-new-york-gov-hochul-over-ai-data-center-moratorium.html"
+    }
+  },
+  {
     "id": "2026-07-15-uk-bnpl-regulation",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -132,17 +146,41 @@
     }
   },
   {
-    "id": "2026-07-11-meta-instagram-ai-image-pullback",
-    "category": "regulation",
-    "jurisdiction": "Global",
+    "id": "2026-07-16-mastercard-agentic-ai-sandbox",
+    "category": "deployment",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-07-11T12:01:10.000Z",
-    "headline": "Meta withdraws Instagram AI image generation feature after user and regulatory backlash",
-    "plain_english": "Meta publicly reversed course and removed AI-powered feature that generated images of users from their Instagram accounts after customer complaints and implied regulatory pressure. Marks rare retreat by major tech firm on AI product launch.",
-    "why_it_matters": "Signals tightening enforcement of biometric/identity-based AI use; BFSI players integrating face/voice AI for KYC/auth should monitor precedent. Sets bar for consent and transparency that regulators will expect banks to exceed.",
+    "published_at": "2026-07-16T00:01:00Z",
+    "headline": "Mastercard opens agentic AI sandbox in UK for bank and retailer pilots",
+    "plain_english": "Mastercard is launching a controlled testing environment in the UK where banks and retailers can safely experiment with agentic AI use cases before production rollout. Agentic systems perform multi-step tasks autonomously rather than just answering questions.",
+    "why_it_matters": "Provides production-ready banks a low-risk path to validate agent workflows on payments, fraud, and settlement tasks—likely accelerating adoption across the industry.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "AI system that takes autonomous multi-step actions toward a goal, not just responding to individual queries."
+      }
+    ],
     "source": {
-      "name": "MSN · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPSy1hcDJHbnZpXzNoRUgzekhLZWRGQnB4QWd1QmMtTm5oLTlpSEFoUjF6VmhnNHJpMTkya0x5N1h1endGMFNoaDdvTkhleVdiZjZHb09FQk95Qi03NndHNVF0NkFZMGNNMnFYbUdlMTl1OFhoSVp0ODJ1bjR2VzB4UnV2Z2VtNjdqX3VBNzVWT3lNQXJCNWtSQnRtUWxQdzlTaktsWkp2Wkl6Z0NIYW9FSlpzSldSLXFnZWxpai1ZWmpNQVNLVlFBaGozcmIyQ3hYSzdMaTVVa2pBdWtzVFFnVjJEc1F0UGpMNHJSTE9nb3VNVHFzeHVEZEhSR1E2cVd4S3lMVXRQZXZ6YjQ5clZ3cmZtdXpYT2dEUGVIWUxIalY4VXhuRlpQcDNuZHpXSFpVX0I3eXZMb1BvWHM1ZTJ2WkpaVTJRSU5BSmMzVDdvajU4bFd1SzlhQUVB"
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/newsarticle/48097/mastercard-picks-uk-as-test-environment-for-agentic-ai-sandbox"
+    }
+  },
+  {
+    "id": "2026-07-16-bank-ireland-google-ai-scholarships",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-07-16T00:01:00Z",
+    "headline": "Bank of Ireland and Google offer 10,000 AI scholarships to SME customers",
+    "plain_english": "Bank of Ireland and Google are jointly providing up to 10,000 free AI training scholarships to the bank's small business customers. Aims to build AI literacy across Irish SMEs and establish the bank as an AI-enabled business partner.",
+    "why_it_matters": "First major UK/IE bank to bundle AI education with customer banking relationships—differentiates on ecosystem value, not just products, and signals competitive pressure on fintechs offering embedded learning.",
+    "scale": {
+      "metric": "customers",
+      "value": "10,000"
+    },
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/newsarticle/48099/bank-of-ireland-and-google-offer-smes-ai-scholarships"
     }
   },
   {
@@ -284,34 +322,6 @@
     "source": {
       "name": "Finextra · 2026-07-14",
       "url": "https://www.finextra.com/newsarticle/48081/nubank-receives-banking-authorisation-in-mexico"
-    }
-  },
-  {
-    "id": "2026-07-13-ubs-ai-power-hour",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-13T12:38:48.000Z",
-    "headline": "UBS launches AI 'power hour' for staff skill-building",
-    "plain_english": "UBS has introduced a structured internal training program called 'power hour' to help employees develop AI literacy and practical skills. The initiative reflects major banks investing in workforce upskilling as AI becomes core to operations.",
-    "why_it_matters": "Banks face talent retention risk if employees lack AI competency; structured upskilling signals UBS is prioritizing human capital adaptation alongside tool deployment, reducing churn and improving internal adoption velocity.",
-    "source": {
-      "name": "Financial News London · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzOGliV2FfbjFPWFBkMEVDZ1hCXzJmQVA0amZBcEc1ekNIRjRFdF9VbkRkOTFHcTU2LTliZ0hEZU8xUDNSd08zVWVydFhrSjNpZGVyVWdDRzNOVGFDYXBUdTdkVDYxMlA4ZVNadmpzUmY3TlZFeEhwcg"
-    }
-  },
-  {
-    "id": "2026-07-12-jr-east-ai-drones",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-12T10:11:59Z",
-    "headline": "JR East deploys AI and drones to accelerate train service recovery",
-    "plain_english": "East Japan Railway Company is using AI and drone technology to speed up damage assessment and restoration after disruptions. Automation reduces downtime and manual inspection labor in critical transport infrastructure.",
-    "why_it_matters": "Shows AI-drone hybrid workflows improving operational resilience in regulated critical infrastructure. Insurance and risk models for transport ops will shift. Broader BFSI relevance: signals where automation reduces tail-risk operational losses.",
-    "source": {
-      "name": "朝日新聞 · 2026-07-12",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rWVBjc0ZkcmNHd0RwU1c2Z1JvaE80Tms1eElaLWlhY0FzUDg0dkxObmptWE5TQUxXTm43N2YwbkdvTnFCcEtDM3FnZG5Gck1lNzlOTEJNYTVKamstQUE"
     }
   },
   {
@@ -480,6 +490,21 @@
     }
   },
   {
+    "id": "2026-07-16-abn-amro-ics-worldline-outsource",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-07-16T00:01:00Z",
+    "headline": "ABN Amro outsources card operations to Worldline, cuts 450 staff",
+    "plain_english": "ABN Amro's International Card Services subsidiary is moving core card operations to Worldline, eliminating 450 jobs by Q2 2028. This is a broader trend: banks consolidating payments and processing to specialized vendors to cut costs and reduce operational complexity.",
+    "why_it_matters": "Signals accelerating consolidation in European card processing. Smaller players face pressure to offload commoditized operations, freeing capital for AI-driven customer and risk products.",
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/newsarticle/48098/abn-amros-ics-to-cut-450-staff-as-it-outsources-operations-to-worldline"
+    },
+    "effective_date": "2028-04-01"
+  },
+  {
     "id": "2026-07-15-alibaba-apple-china",
     "category": "shift",
     "jurisdiction": "APAC",
@@ -619,20 +644,6 @@
     "scale": {
       "metric": "employees",
       "value": "8900"
-    }
-  },
-  {
-    "id": "2026-07-12-hdfc-backend-redeployment",
-    "category": "shift",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-07-12T08:18:25Z",
-    "headline": "HDFC Bank retrains backend staff for customer-facing roles amid automation",
-    "plain_english": "HDFC Bank is systematically moving backend employees to front-office customer roles, signaling accelerated automation of operational functions. Reflects broader BFSI pattern of using AI to eliminate middle-office headcount while protecting client interaction roles.",
-    "why_it_matters": "Shows banks are using AI maturity to restructure cost—backend cuts offset by selective hiring in revenue-facing teams. Pressures salary bands and creates training load on HR. Early signal for broader Indian banking industry.",
-    "source": {
-      "name": "India IPO · 2026-07-12",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGlfbVFSSjFFUjRaUEpHUkVHNDlFVXdpRHhtMXY4eV9UcS05XzhacHV3YTBYZUVoSUFqUnZfc3BaU09oZTZXQTcwQ01WWnoyNFpGZVFfN0RjbW1SS2ZWelBDb3AwNkU3X0VPTHNDSlo3V2ZUSFBqUkJ3RnhIVnlCZlVCejF3Y0ZBUEV3OVhCTXNqdGtSQUUxMGJEWHpCdG8"
     }
   },
   {
@@ -904,6 +915,44 @@
     }
   },
   {
+    "id": "2026-07-16-enterprise-agents-deployment-reality",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-15T22:24:17Z",
+    "headline": "Enterprise agent deployments lag hype: most called agents are still chatbots",
+    "plain_english": "Survey of 101 enterprises shows that while organizations claim to deploy agentic AI systems, the majority are only running stateless chatbots. Real multi-step agents are concentrating on Anthropic's Claude, chosen for reliable task execution. Orchestration is the bottleneck, not the platform.",
+    "why_it_matters": "Banks and insurers investing in 'agent platforms' face a 12–18 month reality gap; most must fix operational handoff logic before upgrading from chatbots to genuine autonomous workflows.",
+    "stat_value": "majority",
+    "stat_label": "of deployed agents are still chatbots in function",
+    "jargon": [
+      {
+        "term": "agent orchestration",
+        "def": "Coordinating multiple AI steps, integrations, and approvals to execute a complex business task from start to finish."
+      }
+    ],
+    "source": {
+      "name": "VentureBeat · 2026-07-15",
+      "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents"
+    }
+  },
+  {
+    "id": "2026-07-15-cramer-ai-roi-proof",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-15T22:51:22Z",
+    "headline": "CNBC's Cramer demands 'cold hard proof' that AI investments are paying off financially",
+    "plain_english": "Jim Cramer is pushing back on the AI rally, saying investors need to see measurable financial returns from corporate AI spending, not just hype. Reflects growing investor pressure on tech and BFSI firms to quantify AI ROI.",
+    "why_it_matters": "Banks facing Q3/Q4 earnings calls must now have concrete AI cost-reduction or revenue-lift stories—not just pilot counts or model deployments. Pressure rises on proving agent/automation ROI in trading, compliance, and customer ops.",
+    "stat_value": "unquantified",
+    "stat_label": "AI ROI narrative in earnings",
+    "source": {
+      "name": "CNBC · 2026-07-15",
+      "url": "https://www.cnbc.com/2026/07/15/jim-cramer-needs-proof-ai-paying-off-.html"
+    }
+  },
+  {
     "id": "2026-07-15-deepfake-detection-burden",
     "category": "insight",
     "jurisdiction": "US",
@@ -1040,37 +1089,31 @@
     }
   },
   {
-    "id": "2026-07-13-stablecoin-market-decline",
-    "category": "insight",
-    "jurisdiction": "Global",
+    "id": "2026-07-16-anthropic-ipo-loans",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-07-13T00:27:09.000Z",
-    "headline": "Stablecoin market cap falls by $7.7B, largest decline in four years",
-    "plain_english": "The stablecoin market experienced its sharpest contraction since 2022 last month, with $7.7B in value wiped out. Market watchers attribute the drop to declining on-chain liquidity as crypto markets consolidate near 2026 lows.",
-    "why_it_matters": "Stablecoin weakness signals reduced institutional appetite for on-chain settlement and DeFi; impacts BFSI adoption of blockchain-based payment infrastructure and cross-border settlement pilots.",
-    "jargon": [
-      {
-        "term": "On-chain liquidity",
-        "def": "Volume and ease of trading crypto assets directly on blockchain networks without middlemen."
-      }
-    ],
+    "published_at": "2026-07-16T00:42:00Z",
+    "headline": "Anthropic said to be preparing for IPO with loan financing",
+    "plain_english": "Anthropic is preparing a public offering and securing loans to fund growth and expansion. The move reflects investor appetite for scaling frontier AI labs and pressure from competitors to reach public markets.",
+    "why_it_matters": "Anthropic IPO would signal FX market validation of AI lab business models and likely trigger a wave of BFSI due diligence into Claude's long-term availability and pricing—critical for banks betting on it for agents.",
     "source": {
-      "name": "PYMNTS · 2026-07-13",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-market-cap-suffers-biggest-decline-in-4-years/"
+      "name": "Breakingthenews.net · 2026-07-16",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZ0tSd1hVSjVfS25oelJDeDdRcVNBN0dCeEh1SDhYb0RMc3JvQ1lUS0lNTkFvQ3cteTBVS2hBNHQyZlphZHB5eVh1WnhLMzJLOVhIMW1ESk1SNUlEN3dZQlJQSU9Ld3RITVZnZFRyMVU1RzZuc0tsMkNDVlNJR3UwbU1HOHd3OUFQNWMzRHQ1UDNvNDA"
     }
   },
   {
-    "id": "2026-07-13-ransomware-insider-prosecution",
-    "category": "insight",
+    "id": "2026-07-15-microsoft-competes-anthropic-openai",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-12T23:49:42.000Z",
-    "headline": "Cybersecurity insider sentenced to 70 months for abetting ransomware extortion",
-    "plain_english": "Angelo Martino, a ransomware negotiator at Digital Mint, was sentenced to 6 years in federal prison for helping criminals extort his own clients. The case illustrates insider-threat risk in firms managing crisis response for breach victims.",
-    "why_it_matters": "Sentencing sets precedent for insider-collaboration prosecution; BFSI firms must audit ransomware negotiation teams, third-party IR contractors, and breach-response vendors for conflicts of interest and dual allegiances.",
+    "severity": "med",
+    "published_at": "2026-07-15T23:59:44Z",
+    "headline": "Microsoft trains sales teams to position in-house AI models against OpenAI and Anthropic",
+    "plain_english": "Microsoft is coaching its sales force to pitch its own AI models as more efficient and cost-effective than OpenAI and Anthropic offerings. Reflects Microsoft's shift from reseller of OpenAI models to direct model competitor.",
+    "why_it_matters": "Banks evaluating LLM providers now face Microsoft as a first-party vendor; creates pressure on pricing and SLAs from OpenAI/Anthropic, but introduces enterprise customer risk (bundling, support bias, vendor lock-in).",
     "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/cybersecurity/2026/ransomware-negotiator-gets-6-years-in-prison-for-assisting-scammers/"
+      "name": "TechCrunch · 2026-07-15",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/"
     }
   },
   {
@@ -1189,34 +1232,6 @@
     "source": {
       "name": "Reuters · 2026-07-13",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdUpmMER1MXFvS29zY1R4cWY5N3pGQkR0bnFYeVFuY0NCWkFMWXBCQlBLWFh3Vk5VVDkwaTlwMWtxQm1jTG9MY0dRSVA4R2VmVmtxZ1o2eXlUVGl4Q1EwUjBwdjRlSWEtZW1TQVRUVkRYemJHWXYyamQwVmxHWUotVzhlRDltRXBLZURpdDhSYmM1ZmZYUVljcEtCSFo0c2szblRQQ0RDdThoT2NLZFdEREpjbUI"
-    }
-  },
-  {
-    "id": "2026-07-13-tsmc-ai-revenue",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-13T11:08:28.000Z",
-    "headline": "TSMC June revenue jumps 68 percent on sustained AI chip demand",
-    "plain_english": "Taiwan Semiconductor Manufacturing Company reported a 68 percent year-over-year revenue increase in June, driven almost entirely by AI accelerator and GPU orders from cloud and enterprise customers.",
-    "why_it_matters": "Record TSMC demand confirms AI infrastructure buildout is not cyclical hype. BFSI should expect sustained chip scarcity and high costs for in-house model training; cloud providers will consolidate leverage, raising inference costs for bank deployments.",
-    "source": {
-      "name": "The Mac Observer · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUmJZc240TjZYSmJtLXVlN0RQY3YzcTE3cjBFbWRvdHBfeTF0cS00MGRVQ1pudEhqX0llbFFXQTlIZS16a0lzLW5CUUNsc0xyVWdweDE2Nm40akFFMmJsZUFUMVl2a2NyUmFyWDhDTkQ3eEtfb2c0YW5BeGJtQmNsWmdpY0U2dXdNOUlrQjFKR2VxX0VWOEFlMVNrUk04Q1pl"
-    }
-  },
-  {
-    "id": "2026-07-13-openai-safety-departure",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-12T21:57:44.000Z",
-    "headline": "OpenAI safety head Johannes Heidecke departs amid leadership reorganization",
-    "plain_english": "Johannes Heidecke, OpenAI's head of safety systems, left the company as part of a broader leadership shakeup aimed at merging safety operations into product teams. His exit follows broader organizational changes at the AI lab.",
-    "why_it_matters": "Departures of senior safety leadership signal shifting priorities at frontier labs—from dedicated safety functions to embedded governance—raising questions about accountability structures as AI systems scale.",
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-safety-boss-resigns-in-latest-executive-departure/"
     }
   },
   {
@@ -1422,6 +1437,21 @@
     }
   },
   {
+    "id": "2026-07-16-trending-paypal-stripe-takeover",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-16T00:37:05Z",
+    "headline": "PayPal receives $68 billion unsolicited takeover offer from Stripe and Advent Capital",
+    "plain_english": "Stripe and private-equity firm Advent Capital bid $68 billion to acquire PayPal. The deal would reshape fintech consolidation and potentially unlock significant technology and user-base recombination.",
+    "why_it_matters": "If successful, would create a combined payments giant with ~1B users and deep API/banking integrations—forcing BFSI to reassess payment rail strategy, APIs, and competitive positioning in open banking.",
+    "amount": "$68B",
+    "source": {
+      "name": "The Straits Times · 2026-07-16",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRi15ZmdKZnludm1LTERHZTRkdi1MMzhiVTVFS3I4NXpHQXJNZ090UV9fWl9aTWRnZHhLbnJVQmFEZkdPaGNiODBRSUdQVWhKbVpvbmNUWW1UX0tFczhwYXVmLU5OVmYxeTNKQ3FGVmpFY1RmWE50UTRMd3Jna3M0enA3MHZCa0hBOXdGWUVIcWI1RnN0NEZnQmVneEkwVlJKNi1GWG1vcWMySktlcjRpTjF3YndvSUg5NTh0ckRwY0NpUQ"
+    }
+  },
+  {
     "id": "2026-07-14-jpm-record-profit",
     "category": "trending",
     "jurisdiction": "US",
@@ -1547,6 +1577,124 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-07-11-meta-instagram-ai-image-pullback",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-11T12:01:10.000Z",
+    "headline": "Meta withdraws Instagram AI image generation feature after user and regulatory backlash",
+    "plain_english": "Meta publicly reversed course and removed AI-powered feature that generated images of users from their Instagram accounts after customer complaints and implied regulatory pressure. Marks rare retreat by major tech firm on AI product launch.",
+    "why_it_matters": "Signals tightening enforcement of biometric/identity-based AI use; BFSI players integrating face/voice AI for KYC/auth should monitor precedent. Sets bar for consent and transparency that regulators will expect banks to exceed.",
+    "source": {
+      "name": "MSN · 2026-07-11",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPSy1hcDJHbnZpXzNoRUgzekhLZWRGQnB4QWd1QmMtTm5oLTlpSEFoUjF6VmhnNHJpMTkya0x5N1h1endGMFNoaDdvTkhleVdiZjZHb09FQk95Qi03NndHNVF0NkFZMGNNMnFYbUdlMTl1OFhoSVp0ODJ1bjR2VzB4UnV2Z2VtNjdqX3VBNzVWT3lNQXJCNWtSQnRtUWxQdzlTaktsWkp2Wkl6Z0NIYW9FSlpzSldSLXFnZWxpai1ZWmpNQVNLVlFBaGozcmIyQ3hYSzdMaTVVa2pBdWtzVFFnVjJEc1F0UGpMNHJSTE9nb3VNVHFzeHVEZEhSR1E2cVd4S3lMVXRQZXZ6YjQ5clZ3cmZtdXpYT2dEUGVIWUxIalY4VXhuRlpQcDNuZHpXSFpVX0I3eXZMb1BvWHM1ZTJ2WkpaVTJRSU5BSmMzVDdvajU4bFd1SzlhQUVB"
+    }
+  },
+  {
+    "id": "2026-07-13-ubs-ai-power-hour",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-13T12:38:48.000Z",
+    "headline": "UBS launches AI 'power hour' for staff skill-building",
+    "plain_english": "UBS has introduced a structured internal training program called 'power hour' to help employees develop AI literacy and practical skills. The initiative reflects major banks investing in workforce upskilling as AI becomes core to operations.",
+    "why_it_matters": "Banks face talent retention risk if employees lack AI competency; structured upskilling signals UBS is prioritizing human capital adaptation alongside tool deployment, reducing churn and improving internal adoption velocity.",
+    "source": {
+      "name": "Financial News London · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzOGliV2FfbjFPWFBkMEVDZ1hCXzJmQVA0amZBcEc1ekNIRjRFdF9VbkRkOTFHcTU2LTliZ0hEZU8xUDNSd08zVWVydFhrSjNpZGVyVWdDRzNOVGFDYXBUdTdkVDYxMlA4ZVNadmpzUmY3TlZFeEhwcg"
+    }
+  },
+  {
+    "id": "2026-07-12-jr-east-ai-drones",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-12T10:11:59Z",
+    "headline": "JR East deploys AI and drones to accelerate train service recovery",
+    "plain_english": "East Japan Railway Company is using AI and drone technology to speed up damage assessment and restoration after disruptions. Automation reduces downtime and manual inspection labor in critical transport infrastructure.",
+    "why_it_matters": "Shows AI-drone hybrid workflows improving operational resilience in regulated critical infrastructure. Insurance and risk models for transport ops will shift. Broader BFSI relevance: signals where automation reduces tail-risk operational losses.",
+    "source": {
+      "name": "朝日新聞 · 2026-07-12",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rWVBjc0ZkcmNHd0RwU1c2Z1JvaE80Tms1eElaLWlhY0FzUDg0dkxObmptWE5TQUxXTm43N2YwbkdvTnFCcEtDM3FnZG5Gck1lNzlOTEJNYTVKamstQUE"
+    }
+  },
+  {
+    "id": "2026-07-12-hdfc-backend-redeployment",
+    "category": "shift",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-07-12T08:18:25Z",
+    "headline": "HDFC Bank retrains backend staff for customer-facing roles amid automation",
+    "plain_english": "HDFC Bank is systematically moving backend employees to front-office customer roles, signaling accelerated automation of operational functions. Reflects broader BFSI pattern of using AI to eliminate middle-office headcount while protecting client interaction roles.",
+    "why_it_matters": "Shows banks are using AI maturity to restructure cost—backend cuts offset by selective hiring in revenue-facing teams. Pressures salary bands and creates training load on HR. Early signal for broader Indian banking industry.",
+    "source": {
+      "name": "India IPO · 2026-07-12",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGlfbVFSSjFFUjRaUEpHUkVHNDlFVXdpRHhtMXY4eV9UcS05XzhacHV3YTBYZUVoSUFqUnZfc3BaU09oZTZXQTcwQ01WWnoyNFpGZVFfN0RjbW1SS2ZWelBDb3AwNkU3X0VPTHNDSlo3V2ZUSFBqUkJ3RnhIVnlCZlVCejF3Y0ZBUEV3OVhCTXNqdGtSQUUxMGJEWHpCdG8"
+    }
+  },
+  {
+    "id": "2026-07-13-stablecoin-market-decline",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-13T00:27:09.000Z",
+    "headline": "Stablecoin market cap falls by $7.7B, largest decline in four years",
+    "plain_english": "The stablecoin market experienced its sharpest contraction since 2022 last month, with $7.7B in value wiped out. Market watchers attribute the drop to declining on-chain liquidity as crypto markets consolidate near 2026 lows.",
+    "why_it_matters": "Stablecoin weakness signals reduced institutional appetite for on-chain settlement and DeFi; impacts BFSI adoption of blockchain-based payment infrastructure and cross-border settlement pilots.",
+    "jargon": [
+      {
+        "term": "On-chain liquidity",
+        "def": "Volume and ease of trading crypto assets directly on blockchain networks without middlemen."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-13",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-market-cap-suffers-biggest-decline-in-4-years/"
+    }
+  },
+  {
+    "id": "2026-07-13-ransomware-insider-prosecution",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-12T23:49:42.000Z",
+    "headline": "Cybersecurity insider sentenced to 70 months for abetting ransomware extortion",
+    "plain_english": "Angelo Martino, a ransomware negotiator at Digital Mint, was sentenced to 6 years in federal prison for helping criminals extort his own clients. The case illustrates insider-threat risk in firms managing crisis response for breach victims.",
+    "why_it_matters": "Sentencing sets precedent for insider-collaboration prosecution; BFSI firms must audit ransomware negotiation teams, third-party IR contractors, and breach-response vendors for conflicts of interest and dual allegiances.",
+    "source": {
+      "name": "PYMNTS · 2026-07-12",
+      "url": "https://www.pymnts.com/cybersecurity/2026/ransomware-negotiator-gets-6-years-in-prison-for-assisting-scammers/"
+    }
+  },
+  {
+    "id": "2026-07-13-tsmc-ai-revenue",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-13T11:08:28.000Z",
+    "headline": "TSMC June revenue jumps 68 percent on sustained AI chip demand",
+    "plain_english": "Taiwan Semiconductor Manufacturing Company reported a 68 percent year-over-year revenue increase in June, driven almost entirely by AI accelerator and GPU orders from cloud and enterprise customers.",
+    "why_it_matters": "Record TSMC demand confirms AI infrastructure buildout is not cyclical hype. BFSI should expect sustained chip scarcity and high costs for in-house model training; cloud providers will consolidate leverage, raising inference costs for bank deployments.",
+    "source": {
+      "name": "The Mac Observer · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUmJZc240TjZYSmJtLXVlN0RQY3YzcTE3cjBFbWRvdHBfeTF0cS00MGRVQ1pudEhqX0llbFFXQTlIZS16a0lzLW5CUUNsc0xyVWdweDE2Nm40akFFMmJsZUFUMVl2a2NyUmFyWDhDTkQ3eEtfb2c0YW5BeGJtQmNsWmdpY0U2dXdNOUlrQjFKR2VxX0VWOEFlMVNrUk04Q1pl"
+    }
+  },
+  {
+    "id": "2026-07-13-openai-safety-departure",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-12T21:57:44.000Z",
+    "headline": "OpenAI safety head Johannes Heidecke departs amid leadership reorganization",
+    "plain_english": "Johannes Heidecke, OpenAI's head of safety systems, left the company as part of a broader leadership shakeup aimed at merging safety operations into product teams. His exit follows broader organizational changes at the AI lab.",
+    "why_it_matters": "Departures of senior safety leadership signal shifting priorities at frontier labs—from dedicated safety functions to embedded governance—raising questions about accountability structures as AI systems scale.",
+    "source": {
+      "name": "PYMNTS · 2026-07-12",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-safety-boss-resigns-in-latest-executive-departure/"
     }
   },
   {
