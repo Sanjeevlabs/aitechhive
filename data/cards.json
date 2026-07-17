@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-07-17-fed-jefferson-ai-challenges",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-16T23:49:00Z",
+    "headline": "Federal Reserve Vice Chair Jefferson outlines AI and geopolitical risks in economic navigation speech",
+    "plain_english": "Federal Reserve Vice Chair Philip Jefferson delivered remarks on navigating economic shocks, explicitly addressing AI and Middle East geopolitical challenges. Signals Fed attention to AI's systemic risk profile and macro spillovers.",
+    "why_it_matters": "Fed is embedding AI into its stress-testing and systemic risk assessment. Banks will soon face Fed inquiries on AI model robustness, third-party vendor concentration risk (e.g., over-reliance on cloud providers), and contingency plans for model failure during market stress.",
+    "source": {
+      "name": "Federal Reserve · 2026-07-16",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZdndVZjRvWjVXSWlaNXNzUTF1ckVOWTA2TkxrS25LMTlYbTN1Mko2SFVWOTEtNlNEdVVma1g3OERVZFBrV1p6cE5JblZFcmptdzJFUzB1TGFTSXN5SEhlYjg1R29nM2JuQmhEeHc3UkFrNzFXZGx6eWxuZw"
+    }
+  },
+  {
     "id": "2026-07-16-osfi-banks-ai-cyber-window-closing",
     "category": "regulation",
     "jurisdiction": "CA",
@@ -132,23 +146,37 @@
     }
   },
   {
-    "id": "2026-07-13-eu-social-media-enforcement",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-12T22:58:19.000Z",
-    "headline": "European Commission seeks expanded enforcement powers over social media safety",
-    "plain_english": "The EU's executive branch is pursuing broader authority to police consumer protection failures by Big Tech platforms. The move strengthens the Commission's ability to act unilaterally on social media harms without member-state veto.",
-    "why_it_matters": "Expanded EC enforcement powers will accelerate compliance costs for US tech firms operating in EU; expect faster takedown orders, content moderation audits, and AI algorithm assessments without delay mechanisms.",
+    "id": "2026-07-17-hsbc-digital-gilt-pilot",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-17T00:01:00Z",
+    "headline": "HSBC joins London Stock Exchange's Digital Gilt Instrument pilot as investor depository",
+    "plain_english": "HSBC has joined HM Treasury and the London Stock Exchange Group in the Digital Gilt Instrument (Digit) pilot, acting as investor depository. Marks first major UK bank custodian backing blockchain-native government bond issuance.",
+    "why_it_matters": "Proof that settlement and custody can move on-chain for fixed income. If successful, opens HSBC (and competitors) to reinvent repo, collateral management, and yield attribution using distributed ledger—reducing operational risk and cost for institutional clients.",
     "jargon": [
       {
-        "term": "Member-state veto",
-        "def": "Power of individual EU nations to block or delay Commission decisions; removal streamlines enforcement."
+        "term": "depository",
+        "def": "Custodian that holds and settles ownership of securities on behalf of investors, here on a blockchain."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/legal/2026/eu-wants-more-power-to-pursue-social-media-safety/"
+      "name": "Finextra · 2026-07-17",
+      "url": "https://www.finextra.com/newsarticle/48107/hsbc-joins-digital-gilt-pilot-as-investor-depository"
+    }
+  },
+  {
+    "id": "2026-07-17-mastercard-mobile-wallet-sdk",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T00:01:00Z",
+    "headline": "Mastercard launches developer tools to enable banks and fintechs to build iOS/Android mobile wallets",
+    "plain_english": "Mastercard released a suite of software tools and services to help banks and fintech firms add contactless payments to iOS and Android apps. Simplifies wallet integration without requiring custom backend engineering.",
+    "why_it_matters": "Reduces friction for smaller banks to launch digital wallets. Expect faster customer adoption of mobile pay, lower churn, and higher transaction volumes—but also commoditization of wallet UX, pushing banks to differentiate on AI-driven personalization and embedded finance.",
+    "source": {
+      "name": "Finextra · 2026-07-17",
+      "url": "https://www.finextra.com/newsarticle/48108/mastercard-rolls-out-service-to-help-developers-build-mobile-wallets"
     }
   },
   {
@@ -286,41 +314,34 @@
     }
   },
   {
-    "id": "2026-07-14-jpm-payments-keystroke-automation",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-14T12:00:00Z",
-    "headline": "JPMorgan Payments automates document processing, eliminates 13 billion keystrokes annually",
-    "plain_english": "JPMorgan Payments deployed automation to eliminate manual data entry in payment documentation. The system processes the paper and information that surrounds transactions—not the payments themselves—cutting friction that businesses face when settling accounts.",
-    "why_it_matters": "Demonstrates that AI/RPA ROI in payments is operational (back-office efficiency) not just speed. Sets template for rivals: automate the envelope, not the rail.",
-    "scale": {
-      "metric": "keystrokes eliminated",
-      "value": "13 billion annually"
-    },
+    "id": "2026-07-17-citadel-crypto-400m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T00:01:00Z",
+    "headline": "Citadel Securities invests $400M in Crypto.com at $20B valuation",
+    "plain_english": "Citadel Securities, the market-making giant, pumped $400 million into the digital asset exchange Crypto.com, valuing the company at $20 billion. Signals mainstream finance capital flowing into regulated crypto infrastructure.",
+    "why_it_matters": "Validates crypto venue maturity for institutional BFSI. As digital assets trade volumes rise, custody, settlement, and prime brokerage built on blockchain require integration—Citadel's bet suggests crypto plumbing is ready for bank adoption.",
+    "amount": "$400M",
     "source": {
-      "name": "Tearsheet · 2026-07-14",
-      "url": "https://tearsheet.co/ai-innovation-artificial-intelligence/how-j-p-morgan-payments-eliminated-13-billion-keystrokes-a-year-by-automating-the-paper-behind-payments/"
+      "name": "Finextra · 2026-07-17",
+      "url": "https://www.finextra.com/newsarticle/48111/citadel-securities-pumps-400m-into-cryptocom"
     }
   },
   {
-    "id": "2026-07-14-emirates-nbd-partior-cbdc",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-14T13:04:00Z",
-    "headline": "Emirates NBD goes live on Partior blockchain network for real-time cross-border dollar payments",
-    "plain_english": "Emirates NBD launched production support for blockchain-based settlement on the Partior network, enabling real-time USD transfers across borders without traditional correspondent banking delays.",
-    "why_it_matters": "Signals APAC bank adoption of blockchain infrastructure for commercial payments. Partior (Citi/SoftBank/OCBC) now has named tier-1 customer in production, accelerating corridor competition.",
-    "jargon": [
-      {
-        "term": "Partior network",
-        "def": "Blockchain platform for instant cross-border payments, backed by Citi, SoftBank, OCBC; alternative to SWIFT for USD settlement."
-      }
-    ],
+    "id": "2026-07-17-global-fintech-funding-h1",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T00:01:00Z",
+    "headline": "Global fintech venture funding hits $28.6B in H1 2026, up 23% year-over-year",
+    "plain_english": "Global fintech venture capital totaled $28.6 billion in the first half of 2026, a 23% rise from H1 2025 (Crunchbase data). Signals sustained investor appetite for fintech despite macro headwinds and regulatory scrutiny.",
+    "why_it_matters": "Capital availability for fintech vendors building AI-first payment rails, lending platforms, and custody services remains robust. Banks evaluating buy-vs-build for AI-powered operations will face well-funded competitors across KYC, fraud, and settlement.",
+    "stat_value": "$28.6B",
+    "stat_label": "global fintech funding H1 2026",
     "source": {
-      "name": "Finextra · 2026-07-14",
-      "url": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network"
+      "name": "Finextra · 2026-07-17",
+      "url": "https://www.finextra.com/newsarticle/48109/h1-global-fintech-funding-grows-23-yoy"
     }
   },
   {
@@ -441,45 +462,17 @@
     }
   },
   {
-    "id": "2026-07-14-nous-research-funding",
-    "category": "vendor",
+    "id": "2026-07-17-memphis-data-center-backlash",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-13T23:31:18Z",
-    "headline": "Nous Research raises $75M+ for AI agents at $1.5B valuation",
-    "plain_english": "Nous Research, maker of the Hermes agent framework, is raising at least $75 million in new funding led by Robot Ventures and USV. The round values the company at $1.5 billion, reflecting strong investor appetite for specialized agent-building tools.",
-    "why_it_matters": "Agent frameworks are critical infrastructure for BFSI automation—compliance, risk, transaction processing. A well-funded competitor in this space accelerates developer adoption and lowers barriers to entry for banks building autonomous workflows.",
-    "jargon": [
-      {
-        "term": "Agent framework",
-        "def": "Software toolkit for building AI systems that act autonomously—make decisions, call external APIs, iterate toward goals without human intervention per step."
-      }
-    ],
+    "severity": "high",
+    "published_at": "2026-07-17T00:49:45Z",
+    "headline": "Elon Musk's Memphis AI data center faces policy pushback, litigation, and protest",
+    "plain_english": "Musk's Colossus AI data center in Memphis is becoming a cautionary case cited in policy proposals, litigation, and community protests across the U.S. regarding energy consumption, water usage, infrastructure strain, and environmental impact of large-scale compute clusters.",
+    "why_it_matters": "Signals regulatory and community resistance to hyperscale AI compute buildouts. Banks planning proprietary LLM infrastructure or co-location agreements for model training may face state/local permitting delays, mandates for renewable energy credits, and ESG reporting scrutiny—raising capex and timelines.",
     "source": {
-      "name": "TechCrunch · 2026-07-13",
-      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/"
-    },
-    "amount": "$75M+",
-    "round": "Growth"
-  },
-  {
-    "id": "2026-07-13-apple-sigscalr-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-13T21:58:47Z",
-    "headline": "Apple acquires SigScalr, developer of observability and log management tool",
-    "plain_english": "Apple has acquired certain assets of SigScalr, a company that builds data logging and observability software. Apple hired SigScalr employees as part of the deal. The acquisition was notified to the EU Commission on March 12, 2026.",
-    "why_it_matters": "Observability and logging are foundational for AI production pipelines—monitoring model drift, detecting anomalies, and maintaining audit trails. Apple's move shows tech giants building internal AI ops infrastructure rather than relying on third-party vendors.",
-    "jargon": [
-      {
-        "term": "Observability",
-        "def": "Ability to infer system state from external outputs—logs, metrics, traces. Critical for debugging AI model behavior and ensuring compliance audit trails."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-07-13",
-      "url": "https://www.pymnts.com/apple/2026/apple-acquires-open-source-observability-platform-developer-sigscalr/"
+      "name": "CNBC · 2026-07-17",
+      "url": "https://www.cnbc.com/2026/07/16/elon-musk-memphis-ai-colossus-data-center.html"
     }
   },
   {
@@ -628,17 +621,23 @@
     }
   },
   {
-    "id": "2026-07-13-mckinskey-ai-workforce",
-    "category": "shift",
+    "id": "2026-07-17-anthropic-1password-credential-access",
+    "category": "tool",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-13T13:00:25.000Z",
-    "headline": "McKinsey integrating AI into workforce but signals irreplaceable human skills remain",
-    "plain_english": "McKinsey's leadership stated that while AI is reshaping internal operations, fundamental human judgment and complex problem-solving remain irreplaceable. Reflects industry consensus that AI augments rather than displaces specialized talent.",
-    "why_it_matters": "BFSI should calibrate AI adoption narratives: vendor claims of full automation are overblown. McKinsey's public stance legitimizes hybrid human-AI teams, reducing internal resistance to AI integration and validating investment in retraining rather than headcount cuts.",
+    "published_at": "2026-07-16T22:44:12Z",
+    "headline": "1Password integrates with Claude to enable secure credential access without model exposure",
+    "plain_english": "1Password released a browser plugin that lets Anthropic's Claude AI agent access user credentials stored in 1Password vaults while keeping those secrets out of the model, memory, or Anthropic's servers. Enables Claude to complete auth-required tasks like booking travel.",
+    "why_it_matters": "First mainstream pattern for AI agents to act on behalf of users without leaking credentials. Banks exploring chatbots for customer service or internal ops (payments, KYC checks) now have a viable playbook to avoid credential sprawl and regulatory red flags.",
+    "jargon": [
+      {
+        "term": "agent",
+        "def": "AI system that can take autonomous actions (clicking, typing, calling APIs) in response to user instructions, not just answering questions."
+      }
+    ],
     "source": {
-      "name": "Facebook · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPeTgtaWs5RmJhLU5tXzIyS0dGbVRNanlZZ0RBbWRHRmtmanhyb0xLdjVkRnllOTNfN1pDc09VSms3VDBxZURmRUpQT1Q3WTQxVXN3ZHg3ZFBUbW5TWXdBZ21RZFExcWlJdGVBaGZYdWxINHQ3REp2NjYwbXo4dTZBNjl5cDU3eWRfNXNGOXVVT1licGo2U2xaLVVPMWFOODhCdVVVWmJDdDJHUlppSHhJY2pIX3hIcFJwS25lZHFjdVhDYXo5cVdRQ2dadnJGbXRJLWwtc3JsVFdBUmJKa3c"
+      "name": "PYMNTS · 2026-07-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/1password-and-anthropic-bring-secure-credential-access-to-claude/"
     }
   },
   {
@@ -924,6 +923,50 @@
     }
   },
   {
+    "id": "2026-07-17-fed-community-banks-systemic-importance",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-17T00:02:35Z",
+    "headline": "Federal Reserve report: community banks shrinking but growing systemically important",
+    "plain_english": "A new Fed report reveals that U.S. community banks have lost market share by conventional metrics yet become more essential to rural and non-standardized segments of the economy that regional consolidation and automation cannot easily serve.",
+    "why_it_matters": "Signals regulatory intent to protect community bank niche. AI automation and consolidation pressure will accelerate, but Fed support for specialized lending (agriculture, small business) creates moat for community banks that invest in AI-enabled credit decisioning and risk management, not mega-bank scale plays.",
+    "stat_value": "fraction",
+    "stat_label": "of U.S. banking assets held by community banks",
+    "source": {
+      "name": "PYMNTS · 2026-07-17",
+      "url": "https://www.pymnts.com/news/banking/2026/new-fed-report-says-community-banks-matter-more-as-they-get-smaller/"
+    }
+  },
+  {
+    "id": "2026-07-17-microsoft-nadella-anthropic-fable",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-16T23:45:16Z",
+    "headline": "Microsoft's Nadella criticizes Anthropic's Fable request policy as 'editorially controlled'",
+    "plain_english": "Microsoft CEO Satya Nadella publicly criticized Anthropic's 'Fable' feature—which requires users to request permission before Claude processes certain sensitive domains—as overly restrictive and 'editorially controlled,' contrasting it with Microsoft's approach to model refinement.",
+    "why_it_matters": "Reveals strategic tension in frontier AI governance. Banks weighing Claude vs. OpenAI for compliance-sensitive use cases (KYC, sanctions screening) now see a rift: Anthropic leans toward opt-in guardrails; Microsoft/OpenAI toward flexible fine-tuning. Impacts procurement timelines and model selection criteria.",
+    "source": {
+      "name": "CNBC · 2026-07-16",
+      "url": "https://www.cnbc.com/2026/07/16/microsoft-ceo-says-anthropic-fable-request-policy-doesnt-make-sense.html"
+    }
+  },
+  {
+    "id": "2026-07-17-cba-ai-bubble-risk",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-17T00:55:40Z",
+    "headline": "Commonwealth Bank of Australia's chief economist downplays AI bubble risk",
+    "plain_english": "Luke Yeaman, chief economist at CBA, spoke at the Australian Defence Industry Accelerator Summit and argued against AI bubble concerns. Positioning Australian financial sector as measured in AI adoption.",
+    "why_it_matters": "Reflects divergence between U.S./Western hype cycle and measured institutional risk posture in APAC. BFSI teams in Australia/NZ evaluating AI investment can cite CBA's skepticism to justify phased, ROI-focused deployments over rushed vendor lock-in—buying time for standards and regulation to mature.",
+    "source": {
+      "name": "Cyber Daily · 2026-07-17",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUDVIMl9xR284aV9SQmFwR3YyNEtidFh5d1pMWFh1S2psUE9xRWk2czZsWGlFc0pzam15X2ZPaEhvMVJ6NUJNdGFyaEYzR2tEUUM1VXJYME54d2NhZEg0NTNfNTBWbDFfdU1nWjRzQm1HUko3UmZyZGxJcWQ3R25QXzR3YzJmRUVvNW5BOGExa29HXzhtRjcwWlVTUWdQd1JONnhuYk5mTlc0ZjZfWTFSX3l2aW9CRi1TcXZWRWJGa2pnV0pLMTQxU0hWZjJLeEF3SU53OGY2N1BJUi0ta3loUw"
+    }
+  },
+  {
     "id": "2026-07-16-sifted-scaling-companies-ai-production",
     "category": "insight",
     "jurisdiction": "EU",
@@ -1046,55 +1089,31 @@
     }
   },
   {
-    "id": "2026-07-13-apple-data-offboarding-risk",
-    "category": "insight",
+    "id": "2026-07-17-world-ai-cooperation-org-china",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-16T22:23:48Z",
+    "headline": "29 nations form China-led World AI Cooperation Organization",
+    "plain_english": "Twenty-nine countries, including major economies, formalized the World Artificial Intelligence Cooperation Organization (WAICO) led by Beijing. This institutionalizes China's influence over global AI governance, standards, and digital economy rules.",
+    "why_it_matters": "Creates competing AI governance framework outside Western-led bodies (OECD, UN). BFSI firms will face dual compliance regimes and risk geopolitical fragmentation of AI model access, data flows, and algorithmic standards.",
+    "source": {
+      "name": "PYMNTS · 2026-07-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/29-nations-join-china-led-world-ai-cooperation-organization/"
+    }
+  },
+  {
+    "id": "2026-07-17-google-gemini-delay",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-13T23:00:15Z",
-    "headline": "Apple lawsuit highlights employee offboarding data risks when staff joins AI labs",
-    "plain_english": "Apple's lawsuit against OpenAI alleges a former employee exploited an authentication bug to access corporate data after joining OpenAI. The case exposes gaps in how enterprises revoke access and monitor data exfiltration during departures to AI vendors.",
-    "why_it_matters": "For banks and fintechs, this is a compliance wake-up call: departing employees joining AI labs (Anthropic, OpenAI, etc.) represent material data leakage risk. Risk and security teams must tighten offboarding workflows and audit trails.",
-    "stat_value": "authentication bug + insider access",
-    "stat_label": "Attack vector in employee transition to AI vendor",
+    "published_at": "2026-07-16T22:58:12Z",
+    "headline": "Google delays Gemini 3.5 Pro launch months past schedule",
+    "plain_english": "Google pushed its most powerful AI model, Gemini 3.5 Pro, months behind its May developer conference target. The company is still improving model capabilities that fell short of internal goals, signaling competitive pressure and execution challenges.",
+    "why_it_matters": "Delays in frontier model maturity create market uncertainty. BFSI teams evaluating Google Cloud AI for production—fraud detection, underwriting, trading—may face extended timelines. Anthropic and OpenAI gain window to solidify enterprise adoption.",
     "source": {
-      "name": "PYMNTS · 2026-07-13",
-      "url": "https://www.pymnts.com/apple/2026/apple-lawsuit-exposes-enterprise-data-risks-during-employee-offboarding/"
-    }
-  },
-  {
-    "id": "2026-07-13-tsmc-revenue-record",
-    "category": "insight",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-13T21:25:00Z",
-    "headline": "TSMC hits all-time revenue record as Arizona fab ramps production",
-    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC) has reported record revenue, with its US Arizona facility now ramping production. This underscores BFSI's growing chip dependency on geopolitically distributed fabs.",
-    "why_it_matters": "As banks and fintech accelerate AI deployment, chip supply becomes mission-critical. TSMC's Arizona fab diversifies supply away from Taiwan—lowering geopolitical concentration risk but raising capex for redundancy planning across tech infrastructure teams.",
-    "stat_value": "All-time high",
-    "stat_label": "TSMC quarterly revenue",
-    "source": {
-      "name": "Business Journals · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRTRJbnBLaEphMEstRzVwd3hpaTlDUS1vNUktT0pHZ0Q4MjBVbS0ycktUNVJaaWR5a3hJT0FhdVhTY2g4bGZ0TU40QmZhaktreVhHLU9JRG92TXQ4Si0xR1NJMHBNX3Bfem9GcGpHVFhZVW11ZkhzZVc3R2NNVGN3UTI2b1BpZ2tQbzgwUlpvbFhXVkNPcmtydmdxWlU"
-    }
-  },
-  {
-    "id": "2026-07-13-wall-street-stablecoin",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-13T12:03:11.000Z",
-    "headline": "Wall Street pushes back on trillion-dollar stablecoin boom",
-    "plain_english": "Major financial firms are raising regulatory and operational concerns about rapidly scaling stablecoin ecosystems. Pushback centers on reserve adequacy, redemption risk, and systemic stability implications.",
-    "why_it_matters": "Stablecoins threaten traditional bank deposit franchises and payment networks. Industry resistance may slow adoption, but also signals regulatory scrutiny ahead—BFSI should prepare for USDC/USDT reserve rules and central bank digital currency competition.",
-    "jargon": [
-      {
-        "term": "stablecoin",
-        "def": "Cryptocurrency pegged to a fiat asset (USD, EUR) by backing reserves; claims to offer blockchain speed with minimal price volatility."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQand3ZXljeDlMdDZQendqdFdMUmI1NHg5cVRYbzFLUlN0Sm8zSGJiZDhGWGNwbVVSSXc2ck9rdnFRVFl0bFVtcVdKWHViYkh6ZGFoUzNMV0FzNmVEQ2pGLTFvZkVfNV9pMXh6eDhDRlFjbUZpSkc3TTNTZEFKV2ZLY21GRlZCaXJZY0ptRjFKbzhRaUh4VWlFOUtnaHphTzNaQm85alQzS2VlTFA1Y2tZQnVjVQ"
+      "name": "PYMNTS · 2026-07-16",
+      "url": "https://www.pymnts.com/google/2026/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals/"
     }
   },
   {
@@ -1213,34 +1232,6 @@
     "source": {
       "name": "Cryptonews · 2026-07-14",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9CV3oxM0V2YmJiS2xlQXZoQUYwMXNLY2E2d3Q0SGhHaXp6SkdRSTB5QlZSWUdZY1RnbGtRal9pVVZCQ1E0aGVMTTlETThUclNoS0V6czF6NTM"
-    }
-  },
-  {
-    "id": "2026-07-14-softbank-5t-ai-capex",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-14T11:25:43Z",
-    "headline": "SoftBank CEO warns $5 trillion annual capex required globally to meet AI infrastructure demand",
-    "plain_english": "SoftBank Group's leadership stated that global economies must invest $5 trillion per year to build AI data centers and infrastructure. Signals massive M&A, energy, and geopolitical competition ahead.",
-    "why_it_matters": "If credible, implies AI capex eclipses traditional CapEx cycles—reshapes banking treasury, energy hedging, and cross-border capital flows. Central banks and regulators must plan for AI-driven inflation/deflation.",
-    "source": {
-      "name": "ClickOnDetroit · 2026-07-14",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdVZDbnJlZjd4NTNMd05MVF9QaUpsUkV4YWpIY1dzUHZ1NUtOS1hXZVBfVzQ3RVEyU1JuNE8tQWJyY0FuejkyanpQYWtwTm1teWlIbFh2Y281RGNia3ZnRDVsRkFJaGR2WElPYzU0SzRiSTBSdlY4eU9iVmVWUE10NEVLUnVJZld0bGl5RllOd1hmS3hFN3RlWm1sa3hhdXBsU3htT1FtMnFhZkt6Z2dVU0NhZTlXdlBIcEpzSVJmUmZaZw"
-    }
-  },
-  {
-    "id": "2026-07-14-anthropic-australia-investment",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-13T22:04:47Z",
-    "headline": "Anthropic ties $21.6B Australian investment to copyright policy clarity",
-    "plain_english": "Anthropic is conditioning a major $21.6 billion investment in Australia on the government providing clarity on AI training data copyright rules. The company wants explicit legal cover for using licensed content in model development.",
-    "why_it_matters": "Copyright liability is a live regulatory risk for all AI builders. If Anthropic wins clarity in Australia, other jurisdictions will face pressure to adopt similar rules—shaping cost structure and legal defensibility of AI model training globally.",
-    "source": {
-      "name": "Grafa · 2026-07-13",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORC0xQm8ybmxKM2FXYklOUGZfWmhQaWRteWhMX29OeG1TYTZhbzNXNGJPRWI2VG1MR1luU2llalpCQ0tJWU5jXzB3VXNYdHFKMk8zdlJ6aERDZXU2Q1dBeUpScGxJNXNuVERrSDI4Nl9CcTlqU1A4R01aVXMtcjR2dXQ2QzBmWUtuYzRUc1VVNTdZYUJfVGZJeThscw"
     }
   },
   {
@@ -1586,6 +1577,200 @@
     "source": {
       "name": "Bloomberg · 2026-07-01",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLXhTQlFXWHNNdmlsTENPd2tXSkZzXy1mbEF1VXVxZHdPRTZfYjVrSjd0STNZOGYtVnBCMzVBOGZtM0tacEtHcE1JY1ZuOU9KazlZLUtyMXNxYjlWV1dNTE9ERlJtM0JXUQA2SmxFTHRWRlA5OTVHelNyc2dKdWZuaTYwTUtnZWthWUk0NEl2TU5WME16TDZzTjZLZVVuN21YMWE3TGhmX2h2dVdybFhr"
+    }
+  },
+  {
+    "id": "2026-07-13-eu-social-media-enforcement",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-12T22:58:19.000Z",
+    "headline": "European Commission seeks expanded enforcement powers over social media safety",
+    "plain_english": "The EU's executive branch is pursuing broader authority to police consumer protection failures by Big Tech platforms. The move strengthens the Commission's ability to act unilaterally on social media harms without member-state veto.",
+    "why_it_matters": "Expanded EC enforcement powers will accelerate compliance costs for US tech firms operating in EU; expect faster takedown orders, content moderation audits, and AI algorithm assessments without delay mechanisms.",
+    "jargon": [
+      {
+        "term": "Member-state veto",
+        "def": "Power of individual EU nations to block or delay Commission decisions; removal streamlines enforcement."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-12",
+      "url": "https://www.pymnts.com/legal/2026/eu-wants-more-power-to-pursue-social-media-safety/"
+    }
+  },
+  {
+    "id": "2026-07-14-jpm-payments-keystroke-automation",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-14T12:00:00Z",
+    "headline": "JPMorgan Payments automates document processing, eliminates 13 billion keystrokes annually",
+    "plain_english": "JPMorgan Payments deployed automation to eliminate manual data entry in payment documentation. The system processes the paper and information that surrounds transactions—not the payments themselves—cutting friction that businesses face when settling accounts.",
+    "why_it_matters": "Demonstrates that AI/RPA ROI in payments is operational (back-office efficiency) not just speed. Sets template for rivals: automate the envelope, not the rail.",
+    "scale": {
+      "metric": "keystrokes eliminated",
+      "value": "13 billion annually"
+    },
+    "source": {
+      "name": "Tearsheet · 2026-07-14",
+      "url": "https://tearsheet.co/ai-innovation-artificial-intelligence/how-j-p-morgan-payments-eliminated-13-billion-keystrokes-a-year-by-automating-the-paper-behind-payments/"
+    }
+  },
+  {
+    "id": "2026-07-14-emirates-nbd-partior-cbdc",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-14T13:04:00Z",
+    "headline": "Emirates NBD goes live on Partior blockchain network for real-time cross-border dollar payments",
+    "plain_english": "Emirates NBD launched production support for blockchain-based settlement on the Partior network, enabling real-time USD transfers across borders without traditional correspondent banking delays.",
+    "why_it_matters": "Signals APAC bank adoption of blockchain infrastructure for commercial payments. Partior (Citi/SoftBank/OCBC) now has named tier-1 customer in production, accelerating corridor competition.",
+    "jargon": [
+      {
+        "term": "Partior network",
+        "def": "Blockchain platform for instant cross-border payments, backed by Citi, SoftBank, OCBC; alternative to SWIFT for USD settlement."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network"
+    }
+  },
+  {
+    "id": "2026-07-14-nous-research-funding",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-13T23:31:18Z",
+    "headline": "Nous Research raises $75M+ for AI agents at $1.5B valuation",
+    "plain_english": "Nous Research, maker of the Hermes agent framework, is raising at least $75 million in new funding led by Robot Ventures and USV. The round values the company at $1.5 billion, reflecting strong investor appetite for specialized agent-building tools.",
+    "why_it_matters": "Agent frameworks are critical infrastructure for BFSI automation—compliance, risk, transaction processing. A well-funded competitor in this space accelerates developer adoption and lowers barriers to entry for banks building autonomous workflows.",
+    "jargon": [
+      {
+        "term": "Agent framework",
+        "def": "Software toolkit for building AI systems that act autonomously—make decisions, call external APIs, iterate toward goals without human intervention per step."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-07-13",
+      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/"
+    },
+    "amount": "$75M+",
+    "round": "Growth"
+  },
+  {
+    "id": "2026-07-13-apple-sigscalr-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-13T21:58:47Z",
+    "headline": "Apple acquires SigScalr, developer of observability and log management tool",
+    "plain_english": "Apple has acquired certain assets of SigScalr, a company that builds data logging and observability software. Apple hired SigScalr employees as part of the deal. The acquisition was notified to the EU Commission on March 12, 2026.",
+    "why_it_matters": "Observability and logging are foundational for AI production pipelines—monitoring model drift, detecting anomalies, and maintaining audit trails. Apple's move shows tech giants building internal AI ops infrastructure rather than relying on third-party vendors.",
+    "jargon": [
+      {
+        "term": "Observability",
+        "def": "Ability to infer system state from external outputs—logs, metrics, traces. Critical for debugging AI model behavior and ensuring compliance audit trails."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-13",
+      "url": "https://www.pymnts.com/apple/2026/apple-acquires-open-source-observability-platform-developer-sigscalr/"
+    }
+  },
+  {
+    "id": "2026-07-13-mckinskey-ai-workforce",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-13T13:00:25.000Z",
+    "headline": "McKinsey integrating AI into workforce but signals irreplaceable human skills remain",
+    "plain_english": "McKinsey's leadership stated that while AI is reshaping internal operations, fundamental human judgment and complex problem-solving remain irreplaceable. Reflects industry consensus that AI augments rather than displaces specialized talent.",
+    "why_it_matters": "BFSI should calibrate AI adoption narratives: vendor claims of full automation are overblown. McKinsey's public stance legitimizes hybrid human-AI teams, reducing internal resistance to AI integration and validating investment in retraining rather than headcount cuts.",
+    "source": {
+      "name": "Facebook · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPeTgtaWs5RmJhLU5tXzIyS0dGbVRNanlZZ0RBbWRHRmtmanhyb0xLdjVkRnllOTNfN1pDc09VSms3VDBxZURmRUpQT1Q3WTQxVXN3ZHg3ZFBUbW5TWXdBZ21RZFExcWlJdGVBaGZYdWxINHQ3REp2NjYwbXo4dTZBNjl5cDU3eWRfNXNGOXVVT1licGo2U2xaLVVPMWFOODhCdVVVWmJDdDJHUlppSHhJY2pIX3hIcFJwS25lZHFjdVhDYXo5cVdRQ2dadnJGbXRJLWwtc3JsVFdBUmJKa3c"
+    }
+  },
+  {
+    "id": "2026-07-13-apple-data-offboarding-risk",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-13T23:00:15Z",
+    "headline": "Apple lawsuit highlights employee offboarding data risks when staff joins AI labs",
+    "plain_english": "Apple's lawsuit against OpenAI alleges a former employee exploited an authentication bug to access corporate data after joining OpenAI. The case exposes gaps in how enterprises revoke access and monitor data exfiltration during departures to AI vendors.",
+    "why_it_matters": "For banks and fintechs, this is a compliance wake-up call: departing employees joining AI labs (Anthropic, OpenAI, etc.) represent material data leakage risk. Risk and security teams must tighten offboarding workflows and audit trails.",
+    "stat_value": "authentication bug + insider access",
+    "stat_label": "Attack vector in employee transition to AI vendor",
+    "source": {
+      "name": "PYMNTS · 2026-07-13",
+      "url": "https://www.pymnts.com/apple/2026/apple-lawsuit-exposes-enterprise-data-risks-during-employee-offboarding/"
+    }
+  },
+  {
+    "id": "2026-07-13-tsmc-revenue-record",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-13T21:25:00Z",
+    "headline": "TSMC hits all-time revenue record as Arizona fab ramps production",
+    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC) has reported record revenue, with its US Arizona facility now ramping production. This underscores BFSI's growing chip dependency on geopolitically distributed fabs.",
+    "why_it_matters": "As banks and fintech accelerate AI deployment, chip supply becomes mission-critical. TSMC's Arizona fab diversifies supply away from Taiwan—lowering geopolitical concentration risk but raising capex for redundancy planning across tech infrastructure teams.",
+    "stat_value": "All-time high",
+    "stat_label": "TSMC quarterly revenue",
+    "source": {
+      "name": "Business Journals · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRTRJbnBLaEphMEstRzVwd3hpaTlDUS1vNUktT0pHZ0Q4MjBVbS0ycktUNVJaaWR5a3hJT0FhdVhTY2g4bGZ0TU40QmZhaktreVhHLU9JRG92TXQ4Si0xR1NJMHBNX3Bfem9GcGpHVFhZVW11ZkhzZVc3R2NNVGN3UTI2b1BpZ2tQbzgwUlpvbFhXVkNPcmtydmdxWlU"
+    }
+  },
+  {
+    "id": "2026-07-13-wall-street-stablecoin",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-13T12:03:11.000Z",
+    "headline": "Wall Street pushes back on trillion-dollar stablecoin boom",
+    "plain_english": "Major financial firms are raising regulatory and operational concerns about rapidly scaling stablecoin ecosystems. Pushback centers on reserve adequacy, redemption risk, and systemic stability implications.",
+    "why_it_matters": "Stablecoins threaten traditional bank deposit franchises and payment networks. Industry resistance may slow adoption, but also signals regulatory scrutiny ahead—BFSI should prepare for USDC/USDT reserve rules and central bank digital currency competition.",
+    "jargon": [
+      {
+        "term": "stablecoin",
+        "def": "Cryptocurrency pegged to a fiat asset (USD, EUR) by backing reserves; claims to offer blockchain speed with minimal price volatility."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQand3ZXljeDlMdDZQendqdFdMUmI1NHg5cVRYbzFLUlN0Sm8zSGJiZDhGWGNwbVVSSXc2ck9rdnFRVFl0bFVtcVdKWHViYkh6ZGFoUzNMV0FzNmVEQ2pGLTFvZkVfNV9pMXh6eDhDRlFjbUZpSkc3TTNTZEFKV2ZLY21GRlZCaXJZY0ptRjFKbzhRaUh4VWlFOUtnaHphTzNaQm85alQzS2VlTFA1Y2tZQnVjVQ"
+    }
+  },
+  {
+    "id": "2026-07-14-softbank-5t-ai-capex",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-14T11:25:43Z",
+    "headline": "SoftBank CEO warns $5 trillion annual capex required globally to meet AI infrastructure demand",
+    "plain_english": "SoftBank Group's leadership stated that global economies must invest $5 trillion per year to build AI data centers and infrastructure. Signals massive M&A, energy, and geopolitical competition ahead.",
+    "why_it_matters": "If credible, implies AI capex eclipses traditional CapEx cycles—reshapes banking treasury, energy hedging, and cross-border capital flows. Central banks and regulators must plan for AI-driven inflation/deflation.",
+    "source": {
+      "name": "ClickOnDetroit · 2026-07-14",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdVZDbnJlZjd4NTNMd05MVF9QaUpsUkV4YWpIY1dzUHZ1NUtOS1hXZVBfVzQ3RVEyU1JuNE8tQWJyY0FuejkyanpQYWtwTm1teWlIbFh2Y281RGNia3ZnRDVsRkFJaGR2WElPYzU0SzRiSTBSdlY4eU9iVmVWUE10NEVLUnVJZld0bGl5RllOd1hmS3hFN3RlWm1sa3hhdXBsU3htT1FtMnFhZkt6Z2dVU0NhZTlXdlBIcEpzSVJmUmZaZw"
+    }
+  },
+  {
+    "id": "2026-07-14-anthropic-australia-investment",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-13T22:04:47Z",
+    "headline": "Anthropic ties $21.6B Australian investment to copyright policy clarity",
+    "plain_english": "Anthropic is conditioning a major $21.6 billion investment in Australia on the government providing clarity on AI training data copyright rules. The company wants explicit legal cover for using licensed content in model development.",
+    "why_it_matters": "Copyright liability is a live regulatory risk for all AI builders. If Anthropic wins clarity in Australia, other jurisdictions will face pressure to adopt similar rules—shaping cost structure and legal defensibility of AI model training globally.",
+    "source": {
+      "name": "Grafa · 2026-07-13",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORC0xQm8ybmxKM2FXYklOUGZfWmhQaWRteWhMX29OeG1TYTZhbzNXNGJPRWI2VG1MR1luU2llalpCQ0tJWU5jXzB3VXNYdHFKMk8zdlJ6aERDZXU2Q1dBeUpScGxJNXNuVERrSDI4Nl9CcTlqU1A4R01aVXMtcjR2dXQ2QzBmWUtuYzRUc1VVNTdZYUJfVGZJeThscw"
     }
   },
   {
