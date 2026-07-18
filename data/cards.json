@@ -461,6 +461,34 @@
     }
   },
   {
+    "id": "2026-07-18-us-data-center-protests-national",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-18T10:07:07Z",
+    "headline": "US data center protests escalate into national movement",
+    "plain_english": "Opposition to large AI and hyperscaler data centers has grown from regional to nationwide backlash, with environmental and infrastructure concerns driving protests across multiple states. Signals emerging regulatory and community pressure on AI compute expansion.",
+    "why_it_matters": "Data center buildout is core to BFSI AI roadmaps (model serving, inference, fine-tuning). National resistance could delay infrastructure timelines and increase permitting costs, affecting banks' on-prem vs. cloud strategy.",
+    "source": {
+      "name": "Reuters · 2026-07-18",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5QUVhhdHdNUVZKT0xJVURINmc1UzZORTZpdGtnaGwxemxTSWZNUTR6MkE3SHY5RjYwSUlQSWFUSlV3RHJGSXJLcjBUWXRlNzBuREwzblp5aEtIdVFRZjJlZmt2dUF6QzNxY2hackV2NDlQbnVGbFBrRnlXOUdycTh1ck5RdUd6WndGOExPN2h5dkVuVUFEVnYzeHdxT1ViWElDZjRpNzFncVFmMEltNg"
+    }
+  },
+  {
+    "id": "2026-07-18-canada-ai-data-center-funding",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-18T09:09:17Z",
+    "headline": "Canada announces AI and data center funding for British Columbia",
+    "plain_english": "Ottawa has announced investment to support AI infrastructure and new data centers in British Columbia. Part of broader Canadian strategy to build sovereign AI compute capacity and attract tech investment.",
+    "why_it_matters": "BFSI operators and cloud providers evaluating regional AI infrastructure now have a funded alternative to US-only data center strategies. May influence bank choices on where to host inference and model training for Canadian and North American ops.",
+    "source": {
+      "name": "Mshale · 2026-07-18",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qLVBfdTVEem1waF9yN2prUkhKX0JCSHhJOUIwOXVlTGE2aFFJV2xKWHpqMXI4Qk44ZlNrTHAzWGoycjFvUDdLWVV5X2pTLWJ4Z2FIVE5GVEVPTDFTQkFPaQ"
+    }
+  },
+  {
     "id": "2026-07-17-fifth-third-comerica-integration",
     "category": "shift",
     "jurisdiction": "US",
@@ -584,37 +612,27 @@
     }
   },
   {
-    "id": "2026-07-14-citi-earnings",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-14T21:24:54Z",
-    "headline": "Citigroup reports best quarter this decade; five major banks post record Q2 2026 revenues",
-    "plain_english": "JPMorganChase, Goldman Sachs, Bank of America, Citi and others reported record Q2 revenues on July 14, signaling that global complexity—regulatory costs, geopolitical hedging, AI infrastructure spend—is now priced into Wall Street's margin structure.",
-    "why_it_matters": "If earnings quality is sustained despite inflationary compliance and tech costs, suggests tier-1 banks have pricing power to offset AI-capex spending; smaller competitors face structural margin pressure.",
-    "source": {
-      "name": "PYMNTS · 2026-07-14",
-      "url": "https://www.pymnts.com/earnings/2026/citi-best-quarter-this-decade-shows-global-complexity-new-price/"
-    }
-  },
-  {
-    "id": "2026-07-14-jcb-circle-stablecoin-mou",
-    "category": "shift",
+    "id": "2026-07-18-prompt-injection-defense",
+    "category": "tool",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-14T11:56:00Z",
-    "headline": "JCB signs stablecoin partnership with Circle, signals card-network pivot to tokenized rails",
-    "plain_english": "JCB (Japan's major card network) signed an MOU with Circle Internet Group to explore stablecoin-based payment collaboration. First formal tie between traditional card network and USD stablecoin issuer.",
-    "why_it_matters": "Card networks (JCB, Visa, Mastercard) adopting stablecoin rails threatens correspondent banking and SWIFT fee models. JCB's move signals APAC regional shift toward tokenized settlement.",
+    "published_at": "2026-07-18T09:00:00Z",
+    "headline": "Prompt injection attacks can stop malicious AI agents via context bombing",
+    "plain_english": "Security researchers demonstrate that \"context bombing\"—injecting adversarial text into an AI agent's input—can force rogue agents to shut down before executing hacks. Emerging defensive technique for autonomous AI systems.",
+    "why_it_matters": "As BFSI deploys AI agents for trading, compliance scanning, and fraud detection, defense against agent hijacking becomes critical. Prompt injection is now a known attack vector; context bombing is a testable countermeasure.",
     "jargon": [
       {
-        "term": "Stablecoin",
-        "def": "Cryptocurrency pegged to USD or other fiat; Circle issues USDC, a regulated stablecoin for institutional payments."
+        "term": "prompt injection",
+        "def": "inserting malicious instructions into AI input to override intended behavior"
+      },
+      {
+        "term": "context bombing",
+        "def": "flooding an agent's context window with noise to degrade reasoning and force shutdown"
       }
     ],
     "source": {
-      "name": "Finextra · 2026-07-14",
-      "url": "https://www.finextra.com/pressarticle/110410/jcb-signs-stablecoin-mou-with-circle"
+      "name": "Wired · 2026-07-18",
+      "url": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/"
     }
   },
   {
@@ -940,6 +958,38 @@
     }
   },
   {
+    "id": "2026-07-18-mckinsey-ai-workflow-redesign",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-18T09:00:44Z",
+    "headline": "AI ROI requires workflow redesign, not just tool deployment",
+    "plain_english": "McKinsey research shows companies see significantly larger financial returns from AI when they fundamentally rethink business processes rather than simply plugging AI tools into existing workflows. Workflow redesign unlocks 2-3x higher value.",
+    "why_it_matters": "Most BFSI orgs are in \"bolt-on\" mode. This signals that real AI ROI demands org-level change—people, process, governance—not just vendor selection.",
+    "stat_value": "2-3x",
+    "stat_label": "higher ROI from AI when workflows are redesigned vs. tools deployed into legacy processes",
+    "source": {
+      "name": "McKinsey · 2026-07-18",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPODNHR3RxTUFoZXdfZTdTVmlpajFRVnBkMFdNVXh0LWhZTTJBd2xYcWNxS0RVS0xybmY5dkJHY2tLRDQxUlRTaWVnWGhpVlVXeGw3VFB5RU5OQVU4dzFZYmNENko5ZW8tUDhOU2lldG5TREpIWXhaN1R3Z05qVF9lTEptcGxNdXhmb2dvamRrdVUyQmRDWVJSRU1ZUUhkZHZsOE1UU0NmOTFiZkdlLUk2d2Y5YjdOUDZTOVUxeDk2U1VlQUpkakN0ejNGVm00YVZ2SGYzTHpZbWlidTg"
+    }
+  },
+  {
+    "id": "2026-07-18-wired-data-privacy-risks",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-18T10:30:00Z",
+    "headline": "Health and fintech apps routinely transmit sensitive data to third parties",
+    "plain_english": "Wired investigation shows period trackers, health apps, and consumer fintech tools regularly send personal and financial data to advertisers, data brokers, and analytics firms without clear consent or disclosure. Exposes regulatory blind spots.",
+    "why_it_matters": "BFSI compliance teams need to audit their own digital ecosystems. Consumer fintech partners, embedded finance APIs, and white-label banking apps may leak customer PII and transaction data to unvetted third parties—creating unexpected regulatory and reputational risk.",
+    "stat_value": "widespread",
+    "stat_label": "undisclosed data-sharing by consumer fintech and health apps",
+    "source": {
+      "name": "Wired · 2026-07-18",
+      "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/"
+    }
+  },
+  {
     "id": "2026-07-17-compliance-stall-insight",
     "category": "insight",
     "jurisdiction": "US",
@@ -1064,42 +1114,24 @@
     }
   },
   {
-    "id": "2026-07-15-cramer-ai-roi-proof",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-15T22:51:22Z",
-    "headline": "CNBC's Cramer demands 'cold hard proof' that AI investments are paying off financially",
-    "plain_english": "Jim Cramer is pushing back on the AI rally, saying investors need to see measurable financial returns from corporate AI spending, not just hype. Reflects growing investor pressure on tech and BFSI firms to quantify AI ROI.",
-    "why_it_matters": "Banks facing Q3/Q4 earnings calls must now have concrete AI cost-reduction or revenue-lift stories—not just pilot counts or model deployments. Pressure rises on proving agent/automation ROI in trading, compliance, and customer ops.",
-    "stat_value": "unquantified",
-    "stat_label": "AI ROI narrative in earnings",
-    "source": {
-      "name": "CNBC · 2026-07-15",
-      "url": "https://www.cnbc.com/2026/07/15/jim-cramer-needs-proof-ai-paying-off-.html"
-    }
-  },
-  {
-    "id": "2026-07-15-deepfake-detection-burden",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-15T13:50:00Z",
-    "headline": "Deepfake detection expert: proving authenticity harder than spotting fakes",
-    "plain_english": "UC Berkeley professor Hany Farid, an AI deepfake expert, told fraud conferences the real challenge is no longer detecting AI forgeries—it's proving what's real. Even obvious figures (like Mitch McConnell) can be doubted.",
-    "why_it_matters": "Fraud prevention paradigm shift: can't rely on skepticism of fakes. Banks need affirmative proof-of-authenticity systems for identity, documents, and transactions. Reactive detection fails.",
+    "id": "2026-07-18-google-gemini-rate-changes",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-18T10:00:00Z",
+    "headline": "Google changes Gemini usage quota calculation, reducing response volume",
+    "plain_english": "Google has altered how it tallies API usage quotas for Gemini, meaning developers and enterprise users will now receive fewer AI responses per month under the same subscription tier. Rate changes affect all Gemini API tiers.",
+    "why_it_matters": "BFSI teams relying on Gemini for production workloads (compliance analysis, document review) need to recalculate cost-per-transaction and may need to renegotiate contracts or switch models.",
     "jargon": [
       {
-        "term": "proof-of-authenticity",
-        "def": "Active cryptographic or biometric verification that content is genuine, rather than detection of forgeries after the fact."
+        "term": "usage quota",
+        "def": "monthly allowance of API calls or tokens; lower quota = fewer requests per billing period"
       }
     ],
     "source": {
-      "name": "Finextra · 2026-07-15",
-      "url": "https://www.finextra.com/newsarticle/48100/uc-berkeley-professor-things-are-getting-weird-even-mitch-mcconnell-photos-arent-being-trusted?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    "stat_value": "n/a",
-    "stat_label": "Tipping point: doubt now outweighs detection"
+      "name": "Wired · 2026-07-18",
+      "url": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/"
+    }
   },
   {
     "id": "2026-07-17-chinese-ai-open-weight-shift",
@@ -1227,20 +1259,6 @@
     "source": {
       "name": "Wired · 2026-07-15",
       "url": "https://www.wired.com/story/the-apple-faceid-veteran-building-a-frontier-ai-model-for-the-human-brain/"
-    }
-  },
-  {
-    "id": "2026-07-14-openai-hardware",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-14T22:22:24Z",
-    "headline": "OpenAI's first hardware device reportedly a mobile screenless speaker with autonomous movement",
-    "plain_english": "OpenAI is developing its first consumer hardware—a speaker with mechanical elements that can move independently—designed to embody ChatGPT as a physical companion, signaling shift from software-only business model.",
-    "why_it_matters": "If real, marks OpenAI's expansion into hardware ecosystems; could accelerate enterprise adoption of embedded conversational AI in workplace and operational settings.",
-    "source": {
-      "name": "TechCrunch · 2026-07-14",
-      "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"
     }
   },
   {
@@ -1600,6 +1618,92 @@
     }
   },
   {
+    "id": "2026-07-14-citi-earnings",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-14T21:24:54Z",
+    "headline": "Citigroup reports best quarter this decade; five major banks post record Q2 2026 revenues",
+    "plain_english": "JPMorganChase, Goldman Sachs, Bank of America, Citi and others reported record Q2 revenues on July 14, signaling that global complexity—regulatory costs, geopolitical hedging, AI infrastructure spend—is now priced into Wall Street's margin structure.",
+    "why_it_matters": "If earnings quality is sustained despite inflationary compliance and tech costs, suggests tier-1 banks have pricing power to offset AI-capex spending; smaller competitors face structural margin pressure.",
+    "source": {
+      "name": "PYMNTS · 2026-07-14",
+      "url": "https://www.pymnts.com/earnings/2026/citi-best-quarter-this-decade-shows-global-complexity-new-price/"
+    }
+  },
+  {
+    "id": "2026-07-14-jcb-circle-stablecoin-mou",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-14T11:56:00Z",
+    "headline": "JCB signs stablecoin partnership with Circle, signals card-network pivot to tokenized rails",
+    "plain_english": "JCB (Japan's major card network) signed an MOU with Circle Internet Group to explore stablecoin-based payment collaboration. First formal tie between traditional card network and USD stablecoin issuer.",
+    "why_it_matters": "Card networks (JCB, Visa, Mastercard) adopting stablecoin rails threatens correspondent banking and SWIFT fee models. JCB's move signals APAC regional shift toward tokenized settlement.",
+    "jargon": [
+      {
+        "term": "Stablecoin",
+        "def": "Cryptocurrency pegged to USD or other fiat; Circle issues USDC, a regulated stablecoin for institutional payments."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-14",
+      "url": "https://www.finextra.com/pressarticle/110410/jcb-signs-stablecoin-mou-with-circle"
+    }
+  },
+  {
+    "id": "2026-07-15-cramer-ai-roi-proof",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-15T22:51:22Z",
+    "headline": "CNBC's Cramer demands 'cold hard proof' that AI investments are paying off financially",
+    "plain_english": "Jim Cramer is pushing back on the AI rally, saying investors need to see measurable financial returns from corporate AI spending, not just hype. Reflects growing investor pressure on tech and BFSI firms to quantify AI ROI.",
+    "why_it_matters": "Banks facing Q3/Q4 earnings calls must now have concrete AI cost-reduction or revenue-lift stories—not just pilot counts or model deployments. Pressure rises on proving agent/automation ROI in trading, compliance, and customer ops.",
+    "stat_value": "unquantified",
+    "stat_label": "AI ROI narrative in earnings",
+    "source": {
+      "name": "CNBC · 2026-07-15",
+      "url": "https://www.cnbc.com/2026/07/15/jim-cramer-needs-proof-ai-paying-off-.html"
+    }
+  },
+  {
+    "id": "2026-07-15-deepfake-detection-burden",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-15T13:50:00Z",
+    "headline": "Deepfake detection expert: proving authenticity harder than spotting fakes",
+    "plain_english": "UC Berkeley professor Hany Farid, an AI deepfake expert, told fraud conferences the real challenge is no longer detecting AI forgeries—it's proving what's real. Even obvious figures (like Mitch McConnell) can be doubted.",
+    "why_it_matters": "Fraud prevention paradigm shift: can't rely on skepticism of fakes. Banks need affirmative proof-of-authenticity systems for identity, documents, and transactions. Reactive detection fails.",
+    "jargon": [
+      {
+        "term": "proof-of-authenticity",
+        "def": "Active cryptographic or biometric verification that content is genuine, rather than detection of forgeries after the fact."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-15",
+      "url": "https://www.finextra.com/newsarticle/48100/uc-berkeley-professor-things-are-getting-weird-even-mitch-mcconnell-photos-arent-being-trusted?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "stat_value": "n/a",
+    "stat_label": "Tipping point: doubt now outweighs detection"
+  },
+  {
+    "id": "2026-07-14-openai-hardware",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-14T22:22:24Z",
+    "headline": "OpenAI's first hardware device reportedly a mobile screenless speaker with autonomous movement",
+    "plain_english": "OpenAI is developing its first consumer hardware—a speaker with mechanical elements that can move independently—designed to embody ChatGPT as a physical companion, signaling shift from software-only business model.",
+    "why_it_matters": "If real, marks OpenAI's expansion into hardware ecosystems; could accelerate enterprise adoption of embedded conversational AI in workplace and operational settings.",
+    "source": {
+      "name": "TechCrunch · 2026-07-14",
+      "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"
+    }
+  },
+  {
     "id": "2026-07-13-us-ai-export-uae",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -1703,22 +1807,6 @@
     "source": {
       "name": "Tearsheet · 2026-07-15",
       "url": "https://tearsheet.co/banking/the-four-questions-steering-modern-banking-strategy/?utm_source=rss&utm_medium=rss&utm_campaign=the-four-questions-steering-modern-banking-strategy"
-    }
-  },
-  {
-    "id": "2026-07-14-mckinsey-ai-workflow-redesign",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-14T12:18:59Z",
-    "headline": "McKinsey research: AI financial returns depend on workflow redesign, not tool deployment alone",
-    "plain_english": "McKinsey analysis shows companies see significantly larger gains from AI when they rethink end-to-end processes, not just plug AI into existing workflows. Generic tool deployment yields diminishing returns.",
-    "why_it_matters": "Explains why many bank LLM pilots stall: orgs treat AI as a feature, not a process redesign. Winners will reorg around AI capabilities (e.g., real-time risk review instead of batch), not bolt on.",
-    "stat_value": "Higher",
-    "stat_label": "Financial ROI when firms redesign workflows vs. tool-only deployment",
-    "source": {
-      "name": "McKinsey · 2026-07-14",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBDX2ZhQmFFbnZ5MnVUVmdtZjlFRzJPRHRSV1RlajhZTlFGaUtPSnBkRTVOaDl4cTZLSXpXTndUVW"
     }
   },
   {
