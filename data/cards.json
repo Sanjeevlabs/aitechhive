@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-07-20-ransomware-ban-regulation",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-07-20T13:10:37Z",
+    "headline": "UK plans ransomware payment ban for public sector and critical infrastructure",
+    "plain_english": "UK government moving to prohibit ransomware payments by public-sector bodies and critical national infrastructure operators, joining global effort to starve attackers of revenue as ransom demands escalate.",
+    "why_it_matters": "Financial firms supporting public/critical entities must prepare for operational restrictions; payment corridors may require regulatory exemptions or cyber-insurance workarounds.",
+    "jargon": [
+      {
+        "term": "Critical National Infrastructure",
+        "def": "Systems essential to national function: power, water, transport, comms. Attacks here trigger emergency protocols."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-20",
+      "url": "https://www.pymnts.com/cybersecurity/2026/governments-weigh-ransomware-payment-bans-as-hackers-grow-bolder/"
+    },
+    "effective_date": "TBD"
+  },
+  {
     "id": "2026-07-20-regulation-us-ai-regulator-proposal",
     "category": "regulation",
     "jurisdiction": "US",
@@ -144,17 +165,35 @@
     }
   },
   {
-    "id": "2026-07-15-nyc-datacentre-moratorium-ai",
-    "category": "regulation",
+    "id": "2026-07-20-amd-helios-deployment",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-15T20:35:40Z",
-    "headline": "New York becomes first US state to impose AI data center moratorium; Trump criticizes policy",
-    "plain_english": "New York governor signed an executive order pausing new AI data center permits pending regulatory review. Trump called for immediate reversal. Australia's PM is also considering a data center moratorium until AI rules are set. Signals state-level regulatory friction is rising.",
-    "why_it_matters": "BFSI firms hosting models in NY face infrastructure delays; creates urgency for establishing compute in other states or clouds, increasing capex and multi-region dependency for on-prem AI.",
+    "severity": "med",
+    "published_at": "2026-07-20T13:00:01Z",
+    "headline": "AMD ships Helios AI rack system; Microsoft joins Meta, OpenAI, Oracle as customer",
+    "plain_english": "AMD released Helios, its first rack-scale AI system, with Microsoft as newest customer alongside Meta, OpenAI, and Oracle—direct challenge to Nvidia's dominance in enterprise AI infrastructure.",
+    "why_it_matters": "Financial firms diversifying GPU supply beyond Nvidia reduces capex lock-in; competitive pricing pressure on AI infrastructure drives down inference costs for BFSI deployments.",
+    "scale": {
+      "metric": "customers",
+      "value": "4 named (Microsoft, Meta, OpenAI, Oracle)"
+    },
     "source": {
-      "name": "CNBC · 2026-07-15",
-      "url": "https://www.cnbc.com/2026/07/15/trump-blasts-new-york-gov-hochul-over-ai-data-center-moratorium.html"
+      "name": "CNBC · 2026-07-20",
+      "url": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html"
+    }
+  },
+  {
+    "id": "2026-07-20-bristol-myers-nvidia",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-20T12:33:21Z",
+    "headline": "Bristol Myers squibb purchases Nvidia latest AI computing system for drug research",
+    "plain_english": "Pharma giant Bristol Myers Squibb bought Nvidia's latest AI rack system for internal drug discovery and research—signals enterprise AI infrastructure adoption beyond finance/tech.",
+    "why_it_matters": "Validates GPU-as-infrastructure play across verticals; BFSI procurement teams may follow pharma's lead, accelerating infrastructure-stack standardization around Nvidia/AMD.",
+    "source": {
+      "name": "BNN Bloomberg · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVlBFWm9JaXgtVzNkUnpQeGVoeURadlJiYkRRWXRid2o5QzNnMWtwcHNHQ0o1N0NxaHcydWVzdUxpMnpXdHJLOEE2aXl4Zk5vbTY2dUFCcUFTdnZGRURYd3N0MDFZYzNuUFBkZENQV2tiRENkYWRSZ3kzalpFNFo3VW13dVFQNDJBMmJFOXFhbjViTFFjVW1vVFJ6aWxOTGNXUWN1TTE4UjVyQ1B4d0F6T3B6Y2dNajB2aXRyTg"
     }
   },
   {
@@ -284,31 +323,18 @@
     }
   },
   {
-    "id": "2026-07-16-remitly-uae-central-bank-license",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-07-20-aci-billing-divestiture",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-07-16T11:52:00.000Z",
-    "headline": "Remitly gains UAE stored-value licence from Central Bank, enters Gulf market",
-    "plain_english": "Remitly, a US-based remittance fintech, received regulatory approval from the Central Bank of the UAE to operate stored-value and exchange services, enabling it to serve customers and merchants in the UAE.",
-    "why_it_matters": "Regulatory pathway into GCC markets validates distributed remittance models; signals CB appetite for licensed non-bank payment operators in high-migration corridors.",
+    "published_at": "2026-07-20T12:28:00Z",
+    "headline": "ACI Worldwide exploring sale of billing division at $1.5 billion valuation",
+    "plain_english": "Payments infrastructure vendor ACI Worldwide is considering divesting its billing business unit, valued at $1.5B, as part of portfolio optimization.",
+    "why_it_matters": "Consolidation in fintech-enablement stack; buyer would integrate billing+payments; BFSI software estate may see fewer point solutions, more bundled platforms.",
+    "amount": "$1.5B",
     "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110435/remitly-granted-stored-value-licence-by-the-central-bank-of-the-uae?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-16-paypal-pay-in-30-uk",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-07-16T12:09:00.000Z",
-    "headline": "PayPal launches Pay in 30 Days for UK e-commerce, enters fee-free installment market",
-    "plain_english": "PayPal rolled out Pay in 30 Days in the UK, allowing shoppers to defer payment in a single installment with no fees or interest—competing directly with BNPL players like Klarna and Clearpay.",
-    "why_it_matters": "Incumbent payment processors now competing as direct BNPL providers, eroding fintech-exclusive market share; signals expansion of point-of-sale credit into core payment flows.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110436/paypal-launches-pay-in-30-days-for-uk-shoppers?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "Finextra · 2026-07-20",
+      "url": "https://www.finextra.com/newsarticle/48121/aci-worldwide-explores-sale-of-billing-division?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -445,17 +471,31 @@
     }
   },
   {
-    "id": "2026-07-15-msci-ubs-private-markets",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-15T12:06:00Z",
-    "headline": "MSCI and UBS partner on private markets transparency infrastructure",
-    "plain_english": "MSCI and UBS announced a strategic partnership to increase transparency in private markets data and operations. Focus is infrastructure for institutional investors managing illiquid assets.",
-    "why_it_matters": "Major asset manager and index provider bundling to own private-markets rails. Defensive play to reduce reliance on third-party data; signals private-markets digitization accelerating.",
+    "id": "2026-07-20-bank-of-ireland-cio-shift",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-07-20T12:30:00Z",
+    "headline": "Bank of Ireland appoints Citigroup exec Prag Sharma as chief AI officer",
+    "plain_english": "Bank of Ireland recruited Prag Sharma, a Citi AI strategist, to lead its AI function—signal of Irish banks professionalizing AI governance and poaching talent from US mega-banks.",
+    "why_it_matters": "European BFSI talent competition heating up; tier-1 bank AI officer hires now mimic C-suite urgency, implying real production stakes, not just pilots.",
     "source": {
-      "name": "Finextra · 2026-07-15",
-      "url": "https://www.finextra.com/pressarticle/110425/msci-and-ubs-join-forces-to-bring-more-transparency-to-private-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "businessplus.ie · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fbWx4ZnNkN09fdUVRT1lfcWgzMnJrQ3djandKNGNjWldtWFhFa1QtcEJYVzdZa25HTjNjYWdOamFTM20tTGktYWRxWmdubVJSRHlTUlFoQU4xQjh0VVRJWGJ4cw"
+    }
+  },
+  {
+    "id": "2026-07-20-banks-smb-backoffice",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-20T11:30:00Z",
+    "headline": "Banks expand infrastructure to capture SMB back-office; unified workflows for payments, ACH, FX",
+    "plain_english": "Tier-1 and mid-market banks are consolidating SMB back-office tooling—bundling ACH, wire, FX, and reconciliation into single platform to reduce customer switching costs and grow wallet share.",
+    "why_it_matters": "Traditional fintech payment processors (Stripe, Square) face platform-bundling pressure from banking incumbents; AI-driven reconciliation and exception handling become table-stakes for SMB banking.",
+    "source": {
+      "name": "Tearsheet · 2026-07-20",
+      "url": "https://tearsheet.co/banking/banks-are-making-a-bigger-play-for-the-smb-back-office/?utm_source=rss&utm_medium=rss&utm_campaign=banks-are-making-a-bigger-play-for-the-smb-back-office"
     }
   },
   {
@@ -587,33 +627,28 @@
     }
   },
   {
-    "id": "2026-07-16-pay-uk-board-appointments",
-    "category": "shift",
-    "jurisdiction": "UK",
+    "id": "2026-07-20-composable-banking-cloud",
+    "category": "tool",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-07-16T12:11:00.000Z",
-    "headline": "Pay.UK appoints fintech executives from Monzo and Equals to board, signals sector consolidation",
-    "plain_english": "Pay.UK, the UK's retail payments standards body, appointed three fintech/challenger bank leaders (Monzo, Equals, Bank of Ireland UK) as non-executive directors, reflecting shift toward fintech voices in payments governance.",
-    "why_it_matters": "Regulatory infrastructure now co-governed by fintech leaders; accelerates adoption of API-first, real-time payments standards that threaten legacy bank batch processing.",
+    "published_at": "2026-07-20T12:20:01Z",
+    "headline": "IBM report: cloud platform engineering and BIAN standard enable AI-ready composable banking",
+    "plain_english": "IBM published guidance on how cloud platform engineering + BIAN (Banking Industry Architecture Network) standard let legacy BFSI systems evolve into composable, AI-ready stacks by decoupling monoliths.",
+    "why_it_matters": "Open standards (BIAN) + cloud ops patterns reduce vendor lock-in; allows BFSI to swap AI components (vendors, models, inference layers) without full rewrite—lowers risk of AI procurement.",
+    "jargon": [
+      {
+        "term": "BIAN",
+        "def": "Banking Industry Architecture Network—open standard defining APIs and service taxonomy for modular bank systems."
+      },
+      {
+        "term": "Composable banking",
+        "def": "Modular architecture where business functions plug together via APIs; allows swapping vendors without monolith rebuild."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110437/payuk-appoints-executives-from-monzo-equals-and-bank-of-ireland-uk-to-join-board?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "IBM · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBNclVHVW9JYkVWOWt4U1o4SFhCbU5CdXVJUHJ1NU5rczJudDNMR2xUS3Bra0lTRE1YRnk1VUkzLW9URUU3YWVTeXBFYTRKRm11R1lpM2dMZmNrTlJ4bjNyeUlNYm9hVEVPZERCTjdqN01GUFlPckhQell5NA"
     }
-  },
-  {
-    "id": "2026-07-16-abn-amro-ics-worldline-outsource",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-16T00:01:00Z",
-    "headline": "ABN Amro outsources card operations to Worldline, cuts 450 staff",
-    "plain_english": "ABN Amro's International Card Services subsidiary is moving core card operations to Worldline, eliminating 450 jobs by Q2 2028. This is a broader trend: banks consolidating payments and processing to specialized vendors to cut costs and reduce operational complexity.",
-    "why_it_matters": "Signals accelerating consolidation in European card processing. Smaller players face pressure to offload commoditized operations, freeing capital for AI-driven customer and risk products.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/newsarticle/48098/abn-amros-ics-to-cut-450-staff-as-it-outsources-operations-to-worldline"
-    },
-    "effective_date": "2028-04-01"
   },
   {
     "id": "2026-07-18-prompt-injection-defense",
@@ -765,6 +800,26 @@
     "source": {
       "name": "arXiv · 2026-06-24",
       "url": "https://arxiv.org/abs/2606.23980"
+    }
+  },
+  {
+    "id": "2026-07-20-bcg-decision-agents",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-20T11:30:42Z",
+    "headline": "BCG report identifies executive decision agents as highest-value, least-funded AI use case",
+    "plain_english": "BCG research found AI agents that advise executive committees through board-level decisions represent the most strategically valuable but most underfunded AI application—acting as extra analyst reading real-time data.",
+    "why_it_matters": "Signals BFSI boards to prioritize decision-support agents for M&A, capital allocation, risk; validates agent-loop pattern over chatbots; may unlock new exec buy-in for AI spend.",
+    "jargon": [
+      {
+        "term": "Decision agent",
+        "def": "AI system that autonomously gathers data, applies rules/models, and surfaces recommendations to human decision-makers in real time."
+      }
+    ],
+    "source": {
+      "name": "BCG · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU0xCOVl4c3NCWV8xb0JwcEdJNGRiNzctVmF2ejF3TmdiN1FSV3RCY09pY2J4bUpkWjlMU1J3WlhaaVhwYW9JUGhXcElLcFVyNzlTWnFZWjV5cWFVOUQzWUFPMUJHY3dZeTluZmNMRkdHY3NpczVYTnNxMWhWNFpuLWZyTTYzNFlRRlQtRUVMRHJILWM0dGlweWc3R2RuLWNrNzBhRWNYR2FZQTlXT1B4ZGc2YmtOZUFrczdr"
     }
   },
   {
@@ -942,23 +997,19 @@
     }
   },
   {
-    "id": "2026-07-02-llm-groupthink-startup",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-02T12:10:00.000Z",
-    "headline": "Startup addresses LLM groupthink problem with diversity mechanism",
-    "plain_english": "MIT Technology Review reports a startup is tackling a fundamental LLM failure: all major models (Claude, ChatGPT, Gemini) tend to converge on similar, 'grouped' outputs for the same prompt, limiting useful diversity in responses and reducing hallucination detection.",
-    "why_it_matters": "For BFSI risk modeling, compliance screening, and fraud detection, LLM convergence creates correlated false negatives across systems. Better diversity in model families will improve ensemble robustness and regulatory defensibility of AI decisions.",
-    "jargon": [
-      {
-        "term": "Groupthink (LLMs)",
-        "def": "Tendency of large language models to produce statistically similar outputs for identical prompts, reducing solution diversity and insight generation."
-      }
-    ],
+    "id": "2026-07-20-ai-hiring-bias",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-20T12:10:00Z",
+    "headline": "AI screening systems show higher hiring bias tendency than human recruiters",
+    "plain_english": "MIT Technology Review reports AI resume-screening systems are more prone to forming hiring biases than humans—relevant as BFSI firms automate talent acquisition and risk replicating historical inequities.",
+    "why_it_matters": "Regulatory risk: bias in AI hiring tools could trigger discrimination liability and attract FCA/SEC scrutiny; BFSI must audit vendor models or face reputational/legal fallout.",
+    "stat_value": "Biased",
+    "stat_label": "AI screening systems vs. human comparison",
     "source": {
-      "name": "MIT Technology Review · 2026-07-02",
-      "url": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/"
+      "name": "MIT Technology Review · 2026-07-20",
+      "url": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage/"
     }
   },
   {
@@ -1098,17 +1149,17 @@
     }
   },
   {
-    "id": "2026-07-17-cba-ai-bubble-risk",
-    "category": "insight",
-    "jurisdiction": "APAC",
+    "id": "2026-07-20-tsmc-arizona-expansion",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-07-17T00:55:40Z",
-    "headline": "Commonwealth Bank of Australia's chief economist downplays AI bubble risk",
-    "plain_english": "Luke Yeaman, chief economist at CBA, spoke at the Australian Defence Industry Accelerator Summit and argued against AI bubble concerns. Positioning Australian financial sector as measured in AI adoption.",
-    "why_it_matters": "Reflects divergence between U.S./Western hype cycle and measured institutional risk posture in APAC. BFSI teams in Australia/NZ evaluating AI investment can cite CBA's skepticism to justify phased, ROI-focused deployments over rushed vendor lock-in—buying time for standards and regulation to mature.",
+    "published_at": "2026-07-20T12:34:57Z",
+    "headline": "TSMC accelerates Arizona fab investment to meet AI chip demand 'megatrend'",
+    "plain_english": "TSMC CFO Wendell Huang announced expanded Arizona fab investment citing robust customer demand for AI chips—reinforces semiconductor supply-chain localization to serve US AI buildout.",
+    "why_it_matters": "US onshoring of chip production reduces geopolitical supply risk for BFSI cloud vendors; longer-term: competitive pricing on local-node capacity may lower inference costs.",
     "source": {
-      "name": "Cyber Daily · 2026-07-17",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUDVIMl9xR284aV9SQmFwR3YyNEtidFh5d1pMWFh1S2psUE9xRWk2czZsWGlFc0pzam15X2ZPaEhvMVJ6NUJNdGFyaEYzR2tEUUM1VXJYME54d2NhZEg0NTNfNTBWbDFfdU1nWjRzQm1HUko3UmZyZGxJcWQ3R25QXzR3YzJmRUVvNW5BOGExa29HXzhtRjcwWlVTUWdQd1JONnhuYk5mTlc0ZjZfWTFSX3l2aW9CRi1TcXZWRWJGa2pnV0pLMTQxU0hWZjJLeEF3SU53OGY2N1BJUi0ta3loUw"
+      "name": "CNBC · 2026-07-20",
+      "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html"
     }
   },
   {
@@ -1258,17 +1309,27 @@
     }
   },
   {
-    "id": "2026-07-16-nvidia-cosmos-3-edge-physical-ai",
-    "category": "frontier",
+    "id": "2026-07-20-learner-rag",
+    "category": "learner",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-07-16T12:55:07.000Z",
-    "headline": "Nvidia unveils Cosmos 3 Edge, expands physical AI inference footprint in Japan",
-    "plain_english": "Nvidia announced Cosmos 3 Edge, a new edge-deployable AI model, and expanded infrastructure partnerships in Japan to support real-time robotic and autonomous system inference at the network edge.",
-    "why_it_matters": "Edge-deployed foundation models reduce latency and connectivity risk for mission-critical fintech operations; BFSI firms processing high-frequency trading or real-time settlement may adopt similar edge architectures.",
+    "published_at": "2026-07-20T12:00:00Z",
+    "headline": "What is RAG? How banks use retrieval-augmented generation to ground LLMs in live data",
+    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI language model retrieves relevant documents or data from a database before answering a question—ensuring answers reference current, factual information instead of hallucinatory guesses. In BFSI, banks use RAG to let chatbots cite real customer records, regulatory docs, or market data without retraining the model.",
+    "why_it_matters": "RAG is the practical bridge between general LLMs and production BFSI use cases; without it, GenAI chatbots and document-processing agents fail regulatory audit (no source lineage) and generate wrong answers.",
+    "jargon": [
+      {
+        "term": "Hallucination",
+        "def": "When an AI model confidently generates false or made-up information because it lacks grounding in real data."
+      },
+      {
+        "term": "Augmentation",
+        "def": "Adding external knowledge (documents, databases, APIs) to an AI model's prompt before it generates output, improving accuracy."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-07-16",
-      "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html"
+      "name": "Tearsheet · 2026-07-20",
+      "url": "https://tearsheet.co/10-q/why-paypal-makes-sense-for-stripe-now/?utm_source=rss&utm_medium=rss&utm_campaign=why-paypal-makes-sense-for-stripe-now"
     }
   },
   {
@@ -1392,30 +1453,6 @@
     }
   },
   {
-    "id": "2026-07-14-rag-explainer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-14T00:00:00Z",
-    "headline": "What is RAG? How banks use retrieval-augmented generation to ground LLMs in real data.",
-    "plain_english": "RAG (retrieval-augmented generation) is a technique that pulls live data from external sources—customer records, regulatory rules, transaction histories—and feeds it into an LLM before generating an answer, so the model doesn't hallucinate. BBVA's customer-experience AI likely uses RAG to fetch conversation transcripts before analyzing them.",
-    "why_it_matters": "RAG is the standard production pattern for enterprise LLM deployments; understanding it separates pilot-stage AI from ops-ready systems that comply with audit and explainability requirements.",
-    "jargon": [
-      {
-        "term": "RAG",
-        "def": "Retrieval-augmented generation: fetching factual data from external sources and feeding it to an LLM to reduce made-up answers and improve accuracy."
-      },
-      {
-        "term": "hallucination",
-        "def": "When an LLM generates plausible-sounding but false information because it has no access to real data."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Explainer · 2026-07-14",
-      "url": "https://www.aitechhive.com"
-    }
-  },
-  {
     "id": "2026-07-13-ai-older-workers",
     "category": "learner",
     "jurisdiction": "Global",
@@ -1491,6 +1528,20 @@
     "source": {
       "name": "MIT Technology Review · 2026-07-07",
       "url": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/"
+    }
+  },
+  {
+    "id": "2026-07-20-citi-mag7-dead",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-20T12:21:43Z",
+    "headline": "Citi strategists declare 'Magnificent Seven' AI stock label obsolete; pivot to growth clusters",
+    "plain_english": "Citi investment strategists announced the 'Magnificent Seven' (mega-cap tech) AI narrative is outdated; shifting focus to diversified 'growth clusters' across semiconductor, software, and infrastructure.",
+    "why_it_matters": "Portfolio rebalancing signal: BFSI investors and buy-side desks may reduce concentration bets on NVIDIA, META, MSFT; AI capex dollars dispersing to broader ecosystem—affects equity valuations and fintech funding.",
+    "source": {
+      "name": "Citi Research · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcU0wWnRSc3Vac3YzNnBlX2VKcGRDM1ZvcmYxY1NlaDVWRzcxUmo5MWh3QTR2Wm5aRTMxb0sxSERXR1IyRWZ6ZWNPOGR1bE5WSi1OdGM1U056SU1lbklua3lJc3pwWGVtVEh5bHA4RzY1OExiM3NnZ01wenBIeFRNaEFlMFhGTVhvWjhiNHBueDl4b2JhUXgtU2R6cWlQZw"
     }
   },
   {
@@ -1619,6 +1670,139 @@
     "source": {
       "name": "CNBC · 2026-07-07",
       "url": "https://www.cnbc.com/2026/07/07/jim-cramer-markets-reaction-samsung-signal-shift-ai-leadership.html"
+    }
+  },
+  {
+    "id": "2026-07-15-nyc-datacentre-moratorium-ai",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-15T20:35:40Z",
+    "headline": "New York becomes first US state to impose AI data center moratorium; Trump criticizes policy",
+    "plain_english": "New York governor signed an executive order pausing new AI data center permits pending regulatory review. Trump called for immediate reversal. Australia's PM is also considering a data center moratorium until AI rules are set. Signals state-level regulatory friction is rising.",
+    "why_it_matters": "BFSI firms hosting models in NY face infrastructure delays; creates urgency for establishing compute in other states or clouds, increasing capex and multi-region dependency for on-prem AI.",
+    "source": {
+      "name": "CNBC · 2026-07-15",
+      "url": "https://www.cnbc.com/2026/07/15/trump-blasts-new-york-gov-hochul-over-ai-data-center-moratorium.html"
+    }
+  },
+  {
+    "id": "2026-07-16-remitly-uae-central-bank-license",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-16T11:52:00.000Z",
+    "headline": "Remitly gains UAE stored-value licence from Central Bank, enters Gulf market",
+    "plain_english": "Remitly, a US-based remittance fintech, received regulatory approval from the Central Bank of the UAE to operate stored-value and exchange services, enabling it to serve customers and merchants in the UAE.",
+    "why_it_matters": "Regulatory pathway into GCC markets validates distributed remittance models; signals CB appetite for licensed non-bank payment operators in high-migration corridors.",
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/pressarticle/110435/remitly-granted-stored-value-licence-by-the-central-bank-of-the-uae?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-16-paypal-pay-in-30-uk",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-07-16T12:09:00.000Z",
+    "headline": "PayPal launches Pay in 30 Days for UK e-commerce, enters fee-free installment market",
+    "plain_english": "PayPal rolled out Pay in 30 Days in the UK, allowing shoppers to defer payment in a single installment with no fees or interest—competing directly with BNPL players like Klarna and Clearpay.",
+    "why_it_matters": "Incumbent payment processors now competing as direct BNPL providers, eroding fintech-exclusive market share; signals expansion of point-of-sale credit into core payment flows.",
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/pressarticle/110436/paypal-launches-pay-in-30-days-for-uk-shoppers?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-15-msci-ubs-private-markets",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-15T12:06:00Z",
+    "headline": "MSCI and UBS partner on private markets transparency infrastructure",
+    "plain_english": "MSCI and UBS announced a strategic partnership to increase transparency in private markets data and operations. Focus is infrastructure for institutional investors managing illiquid assets.",
+    "why_it_matters": "Major asset manager and index provider bundling to own private-markets rails. Defensive play to reduce reliance on third-party data; signals private-markets digitization accelerating.",
+    "source": {
+      "name": "Finextra · 2026-07-15",
+      "url": "https://www.finextra.com/pressarticle/110425/msci-and-ubs-join-forces-to-bring-more-transparency-to-private-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-16-pay-uk-board-appointments",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-07-16T12:11:00.000Z",
+    "headline": "Pay.UK appoints fintech executives from Monzo and Equals to board, signals sector consolidation",
+    "plain_english": "Pay.UK, the UK's retail payments standards body, appointed three fintech/challenger bank leaders (Monzo, Equals, Bank of Ireland UK) as non-executive directors, reflecting shift toward fintech voices in payments governance.",
+    "why_it_matters": "Regulatory infrastructure now co-governed by fintech leaders; accelerates adoption of API-first, real-time payments standards that threaten legacy bank batch processing.",
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/pressarticle/110437/payuk-appoints-executives-from-monzo-equals-and-bank-of-ireland-uk-to-join-board?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-16-abn-amro-ics-worldline-outsource",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-07-16T00:01:00Z",
+    "headline": "ABN Amro outsources card operations to Worldline, cuts 450 staff",
+    "plain_english": "ABN Amro's International Card Services subsidiary is moving core card operations to Worldline, eliminating 450 jobs by Q2 2028. This is a broader trend: banks consolidating payments and processing to specialized vendors to cut costs and reduce operational complexity.",
+    "why_it_matters": "Signals accelerating consolidation in European card processing. Smaller players face pressure to offload commoditized operations, freeing capital for AI-driven customer and risk products.",
+    "source": {
+      "name": "Finextra · 2026-07-16",
+      "url": "https://www.finextra.com/newsarticle/48098/abn-amros-ics-to-cut-450-staff-as-it-outsources-operations-to-worldline"
+    },
+    "effective_date": "2028-04-01"
+  },
+  {
+    "id": "2026-07-02-llm-groupthink-startup",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-02T12:10:00.000Z",
+    "headline": "Startup addresses LLM groupthink problem with diversity mechanism",
+    "plain_english": "MIT Technology Review reports a startup is tackling a fundamental LLM failure: all major models (Claude, ChatGPT, Gemini) tend to converge on similar, 'grouped' outputs for the same prompt, limiting useful diversity in responses and reducing hallucination detection.",
+    "why_it_matters": "For BFSI risk modeling, compliance screening, and fraud detection, LLM convergence creates correlated false negatives across systems. Better diversity in model families will improve ensemble robustness and regulatory defensibility of AI decisions.",
+    "jargon": [
+      {
+        "term": "Groupthink (LLMs)",
+        "def": "Tendency of large language models to produce statistically similar outputs for identical prompts, reducing solution diversity and insight generation."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-07-02",
+      "url": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/"
+    }
+  },
+  {
+    "id": "2026-07-17-cba-ai-bubble-risk",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-17T00:55:40Z",
+    "headline": "Commonwealth Bank of Australia's chief economist downplays AI bubble risk",
+    "plain_english": "Luke Yeaman, chief economist at CBA, spoke at the Australian Defence Industry Accelerator Summit and argued against AI bubble concerns. Positioning Australian financial sector as measured in AI adoption.",
+    "why_it_matters": "Reflects divergence between U.S./Western hype cycle and measured institutional risk posture in APAC. BFSI teams in Australia/NZ evaluating AI investment can cite CBA's skepticism to justify phased, ROI-focused deployments over rushed vendor lock-in—buying time for standards and regulation to mature.",
+    "source": {
+      "name": "Cyber Daily · 2026-07-17",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUDVIMl9xR284aV9SQmFwR3YyNEtidFh5d1pMWFh1S2psUE9xRWk2czZsWGlFc0pzam15X2ZPaEhvMVJ6NUJNdGFyaEYzR2tEUUM1VXJYME54d2NhZEg0NTNfNTBWbDFfdU1nWjRzQm1HUko3UmZyZGxJcWQ3R25QXzR3YzJmRUVvNW5BOGExa29HXzhtRjcwWlVTUWdQd1JONnhuYk5mTlc0ZjZfWTFSX3l2aW9CRi1TcXZWRWJGa2pnV0pLMTQxU0hWZjJLeEF3SU53OGY2N1BJUi0ta3loUw"
+    }
+  },
+  {
+    "id": "2026-07-16-nvidia-cosmos-3-edge-physical-ai",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-16T12:55:07.000Z",
+    "headline": "Nvidia unveils Cosmos 3 Edge, expands physical AI inference footprint in Japan",
+    "plain_english": "Nvidia announced Cosmos 3 Edge, a new edge-deployable AI model, and expanded infrastructure partnerships in Japan to support real-time robotic and autonomous system inference at the network edge.",
+    "why_it_matters": "Edge-deployed foundation models reduce latency and connectivity risk for mission-critical fintech operations; BFSI firms processing high-frequency trading or real-time settlement may adopt similar edge architectures.",
+    "source": {
+      "name": "CNBC · 2026-07-16",
+      "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html"
     }
   },
   {
