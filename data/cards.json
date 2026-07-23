@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-07-23-google-eu-dma-fine",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-23T10:58:21Z",
+    "headline": "EU fines Google €890 million for preferential treatment of own services under DMA",
+    "plain_english": "European regulators issued a €890 million ($1 billion) penalty against Google under the Digital Markets Act (DMA), alleging the company systematically favors its own services over competitors in search and ad placement—the first major enforcement action under the bloc's landmark digital law.",
+    "why_it_matters": "DMA enforcement signals aggressive EU tech regulation will extend to AI and ranking algorithms. BFSI competitors (fintech platforms, payment networks) should expect similar scrutiny of algorithmic preference, affiliate placement, and API access parity.",
+    "jargon": [
+      {
+        "term": "Digital Markets Act (DMA)",
+        "def": "EU law designating large tech platforms as 'gatekeepers' and requiring them to treat all competitors fairly on their systems."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-07-23",
+      "url": "https://www.cnbc.com/2026/07/23/google-1-billion-eu-fine-dma.html"
+    }
+  },
+  {
     "id": "2026-07-23-regulation-clarity-act-stablecoin",
     "category": "regulation",
     "jurisdiction": "US",
@@ -151,17 +171,37 @@
     }
   },
   {
-    "id": "2026-07-17-white-house-frontier-ai-access",
-    "category": "regulation",
+    "id": "2026-07-23-blackstone-ai-profit",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-17T23:10:07Z",
-    "headline": "White House takes control over frontier AI model access, limiting tech firms' distribution",
-    "plain_english": "Trump administration is implementing gatekeeping of frontier AI model (GPT, Claude, etc.) access via executive action. Sources say this shifts power from private labs to federal authorities and affects who can license or use cutting-edge models.",
-    "why_it_matters": "De facto nationalization of frontier AI governance. Banks and fintechs now require federal clearance to adopt latest models; compliance burden and security vetting move into critical path for AI deployment roadmaps.",
+    "severity": "med",
+    "published_at": "2026-07-23T11:01:00Z",
+    "headline": "Blackstone profit surges as AI investments yield returns",
+    "plain_english": "Blackstone reported significant profit growth tied to AI investments across its portfolio companies and internal operations, signaling that large asset managers are now seeing quantifiable ROI from AI deployment in portfolio optimization, risk analytics, and operational efficiency.",
+    "why_it_matters": "Blackstone's announced AI-driven profit gains legitimize enterprise AI spending and may trigger board pressure on other large BFSI firms to deploy AI or risk competitive disadvantage in deal analysis and fund performance.",
     "source": {
-      "name": "CNBC · 2026-07-17",
-      "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html"
+      "name": "WSJ · 2026-07-23",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQazB0S1NiZGI0QmZKcUYtVERYX2s2WjRqOVpyR0VKbklWS2FTd0xlWVoyaV91SThTbTBrN3YtTzRZcV9yeWF0T2RXTXBrMnRmVXdudDM3QndmN2tzLTdEaUFxOFZ3Ykx3b1l6UTFrNzVCcWtyU2dwa3dKS2JBMlExNjdGdEVoaHdBb05vWG9MLXFrNjVP"
+    }
+  },
+  {
+    "id": "2026-07-23-intuit-credit-karma-ai-assistants",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-23T11:30:00Z",
+    "headline": "Intuit Credit Karma launches AI-driven financial decision assistants",
+    "plain_english": "Intuit's Credit Karma released AI-powered tools—Debt Assistant, Refund Assistant, Paycheck Assistant, and Credit Karma Intelligence—that use machine learning to optimize recurring financial decisions (debt paydown strategy, tax refund allocation, paycheck allocation) rather than just show data.",
+    "why_it_matters": "PFM (personal financial management) platforms adding autonomous advice engines move the needle from passive data to active decision-making, raising compliance risk around fiduciary duty, suitability, and regulatory classification of automated recommendations.",
+    "jargon": [
+      {
+        "term": "PFM (Personal Financial Management)",
+        "def": "Consumer software that aggregates spending, savings, and investment accounts to track and advise on household finance."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-07-23",
+      "url": "https://tearsheet.co/artificial-intelligence/intuit-credit-karma-wants-to-answer-the-question-every-pfm-app-avoids"
     }
   },
   {
@@ -307,39 +347,17 @@
     }
   },
   {
-    "id": "2026-07-21-block-ai-hiring",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T19:10:26Z",
-    "headline": "Block ramping AI infrastructure: hiring Principal Engineer for AI Systems in Bay Area",
-    "plain_english": "Block (Square/Cash App parent) is recruiting a Principal Engineer for AI Systems in Bay Area and expanding compliance-tech talent in New York and Tokyo. Job postings signal internal build-out of LLM infrastructure and AI-driven compliance automation.",
-    "why_it_matters": "Confirms Block's shift toward internal AI capability rather than vendor dependency. For BFSI peers: signals that scaled fintech operators are building proprietary AI stacks (embeddings, fine-tuning, inference). Competitive pressure on AI vendors to prove ROI.",
-    "scale": {
-      "metric": "employees",
-      "value": "Block headcount unknown; multiple high-level roles opening"
-    },
+    "id": "2026-07-23-ts-imagine-trumid",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-23T13:30:00Z",
+    "headline": "TS Imagine expands workflow integration with Trumid fixed-income trading platform",
+    "plain_english": "TS Imagine (cross-asset trading and risk tech provider) deepened its integration with Trumid (fixed-income electronic trading platform), expanding workflow connectivity for bond traders between portfolio/risk systems and Trumid's trading venue.",
+    "why_it_matters": "Tighter integration between trading, portfolio, and risk systems reduces manual data entry and latency in bond trading. For compliance teams, it improves audit trail completeness and reduces rogue trading surface.",
     "source": {
-      "name": "Block careers · 2026-07-20",
-      "url": "http://block.xyz/careers/jobs/5243410008"
-    }
-  },
-  {
-    "id": "2026-07-20-amd-helios-deployment",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T13:00:01Z",
-    "headline": "AMD ships Helios AI rack system; Microsoft joins Meta, OpenAI, Oracle as customer",
-    "plain_english": "AMD released Helios, its first rack-scale AI system, with Microsoft as newest customer alongside Meta, OpenAI, and Oracle—direct challenge to Nvidia's dominance in enterprise AI infrastructure.",
-    "why_it_matters": "Financial firms diversifying GPU supply beyond Nvidia reduces capex lock-in; competitive pricing pressure on AI infrastructure drives down inference costs for BFSI deployments.",
-    "scale": {
-      "metric": "customers",
-      "value": "4 named (Microsoft, Meta, OpenAI, Oracle)"
-    },
-    "source": {
-      "name": "CNBC · 2026-07-20",
-      "url": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html"
+      "name": "Finextra · 2026-07-23",
+      "url": "https://www.finextra.com/pressarticle/110482/ts-imagine-expands-integration-with-trumid-fixed-income-platform"
     }
   },
   {
@@ -483,17 +501,37 @@
     }
   },
   {
-    "id": "2026-07-20-vendor-lumin-digital-70m",
-    "category": "vendor",
+    "id": "2026-07-23-visa-airwallex-freight",
+    "category": "shift",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-20T00:01:00Z",
-    "headline": "Cloud-native banking platform Lumin Digital raises $70M from existing clients",
-    "plain_english": "Lumin Digital, a cloud-native banking platform, closed a $70M funding round exclusively from its own client base, validating enterprise demand for modular banking infrastructure and signaling a shift toward customer-funded vendor growth.",
-    "why_it_matters": "Client-funded venture rounds reduce external dilution and align vendor incentives with customer success; this model, increasingly common in BFSI SaaS, accelerates adoption velocity by existing banks.",
+    "published_at": "2026-07-23T13:45:00Z",
+    "headline": "Visa and Airwallex partner to embed finance into freight platforms",
+    "plain_english": "Visa and Airwallex announced a joint initiative to build embedded-finance solutions (payments, working capital, cross-border settlement) tailored for freight and logistics platforms, targeting one of the least digitized supply chain segments.",
+    "why_it_matters": "Embedded finance in logistics—a $2+ trillion global market—is largely untapped. This partnership signals major payment networks are pivoting to vertical-specific finance ecosystems rather than generic APIs, forcing competitors to choose specialized verticals or lose margin.",
+    "jargon": [
+      {
+        "term": "Embedded Finance",
+        "def": "Financial services (lending, payments, insurance) built directly into non-financial platforms so users can transact without leaving the app."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-07-20",
-      "url": "https://www.finextra.com/newsarticle/48118/lumin-digital-raises-70-million-from-its-clients"
+      "name": "Finextra · 2026-07-23",
+      "url": "https://www.finextra.com/pressarticle/110483/visa-and-airwallex-join-forces-to-build-financial-infrastructure-for-freight-platforms"
+    }
+  },
+  {
+    "id": "2026-07-23-airtel-africa-fintech-ipo",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-23T12:01:52Z",
+    "headline": "Airtel Africa targets London listing for mobile money and fintech IPO",
+    "plain_english": "Airtel Africa, a major Sub-Saharan mobile operator, selected London for a public offering of its fintech and mobile money subsidiary, signaling African digital finance is ready for mainstream institutional capital and regulatory maturity.",
+    "why_it_matters": "London listing of African fintech/mobile money validates a non-Western fintech market for institutional investors. It raises regulatory expectations for governance, compliance, and audit standards across African fintechs—and sets a template for other emerging-market fintech exits.",
+    "source": {
+      "name": "Business Insider Africa · 2026-07-23",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSFhZS0s3UUtaNlpoR1ZRWDljckFjbHVnTGZoYjdjQnhCeFdIWmY0VU43SGY5LUlaVXFYYVdZZjN5OEdreWoxN09kckp1NFNjYlVDbFJ3V1pOVHIwWEU5c3FhMFBNYVZyLTY2M1BWZXZNMDFmeVVfcVVwRXFYU3NFSXFWclRfZDFBZTRIOTlVTWtIX0o2VHVfVDhmVXowaEY5UlNobXI5SmNZVUJNbTEyUXhDQW9PYVN6SW1PRzJFVkg1V2F4ZGFVM05hMkNNdlNNYmc"
     }
   },
   {
@@ -621,31 +659,27 @@
     }
   },
   {
-    "id": "2026-07-19-mufg-market-cap-leader",
-    "category": "shift",
-    "jurisdiction": "APAC",
+    "id": "2026-07-23-turnstile-mcp-agents",
+    "category": "tool",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-19T10:32:39Z",
-    "headline": "MUFG first Japanese bank to lead Tokyo stock exchange by market cap in four decades",
-    "plain_english": "Mitsubishi UFJ Financial Group reclaimed the top market-capitalization slot on the Tokyo Stock Exchange, a position it hadn't held in 40 years, signaling renewed investor confidence in Japan's largest banking group.",
-    "why_it_matters": "Reflects broader revaluation of Japanese megabanks as AI-driven cost reduction and digital transformation offset secular headwinds; may trigger capital reallocation across Asia-Pacific banking peers.",
+    "published_at": "2026-07-23T11:57:00Z",
+    "headline": "Turnstile adds Model Context Protocol for AI agents to control quote-to-cash workflows",
+    "plain_english": "Turnstile's Quote-to-Cash platform now supports read-write Model Context Protocol (MCP), allowing AI agents to execute the entire quote-to-cash process—not just query data. This is one of the first MCPs enabling agents to control financial transaction workflows end-to-end.",
+    "why_it_matters": "MCP-driven quote-to-cash automation reduces manual handoffs in deal lifecycle, lowering operational friction in complex B2B sales and potentially cutting cycle time by weeks in enterprise contracts.",
+    "jargon": [
+      {
+        "term": "Model Context Protocol (MCP)",
+        "def": "Standard that lets AI agents read and write to business tools (CRM, finance systems) as if a human was using them, enabling autonomous control of workflows."
+      },
+      {
+        "term": "Quote-to-Cash (QTC)",
+        "def": "Business process from generating a price quote through payment collection; includes proposal, contract, billing, and cash receipt."
+      }
+    ],
     "source": {
-      "name": "朝日新聞 · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkSG94RjFfQTVDSkZwZkY4VGFQZE94ZndmWFg1MC1idFFDWmh4UDVGd1ZNcU14YVh3QjNJT0RGcWs0MExQR2JwcTBCc1J4ME96Uk5Rc1dEOEJnY1FwcXc"
-    }
-  },
-  {
-    "id": "2026-07-18-us-data-center-protests-national",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-18T10:07:07Z",
-    "headline": "US data center protests escalate into national movement",
-    "plain_english": "Opposition to large AI and hyperscaler data centers has grown from regional to nationwide backlash, with environmental and infrastructure concerns driving protests across multiple states. Signals emerging regulatory and community pressure on AI compute expansion.",
-    "why_it_matters": "Data center buildout is core to BFSI AI roadmaps (model serving, inference, fine-tuning). National resistance could delay infrastructure timelines and increase permitting costs, affecting banks' on-prem vs. cloud strategy.",
-    "source": {
-      "name": "Reuters · 2026-07-18",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5QUVhhdHdNUVZKT0xJVURINmc1UzZORTZpdGtnaGwxemxTSWZNUTR6MkE3SHY5RjYwSUlQSWFUSlV3RHJGSXJLcjBUWXRlNzBuREwzblp5aEtIdVFRZjJlZmt2dUF6QzNxY2hackV2NDlQbnVGbFBrRnlXOUdycTh1ck5RdUd6WndGOExPN2h5dkVuVUFEVnYzeHdxT1ViWElDZjRpNzFncVFmMEltNg"
+      "name": "Finextra · 2026-07-23",
+      "url": "https://www.finextra.com/pressarticle/110481/turnstile-extends-quote-to-cash-platform-to-ai-agents"
     }
   },
   {
@@ -825,23 +859,17 @@
     }
   },
   {
-    "id": "2026-06-24-fokker-planck-positivity-preserving-schemes",
-    "category": "tool",
+    "id": "2026-07-23-kimi-distillation-debate",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Diagonal Frog: high-order FD schemes preserve positivity in anisotropic Fokker-Planck",
-    "plain_english": "Computational technique (Diagonal Frog) for solving Fokker-Planck equations in multi-dimensional spaces with cross-diffusion, guaranteeing non-negative probability densities. Avoids numerical artifacts in monte-carlo risk engines.",
-    "why_it_matters": "Risk and valuation systems solving PDEs (e.g., stochastic volatility calibration, CVA Monte Carlo) suffer from unphysical negative probabilities; this scheme eliminates that class of error without sacrificing accuracy.",
-    "jargon": [
-      {
-        "term": "Fokker-Planck equation",
-        "def": "PDE describing probability distribution evolution in systems with drift and diffusion (noise)—foundational in stochastic finance."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-07-23T11:00:00Z",
+    "headline": "Experts dispute whether Kimi K3 relied on Anthropic model distillation or independent scaling",
+    "plain_english": "Following Moonshot AI's release of Kimi K3, security experts told TechCrunch that the model's strength and speed-to-market are unlikely explained by distillation alone (copying outputs from Anthropic's models). Debate centers on whether Moonshot used independent scaling or other techniques.",
+    "why_it_matters": "If advanced AI models can be replicated via distillation or other cheaper methods, frontier-lab IP moats weaken faster than expected. BFSI firms investing in proprietary models should expect shorter competitive windows and pressure to license vs. build.",
     "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23980"
+      "name": "TechCrunch · 2026-07-23",
+      "url": "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/"
     }
   },
   {
@@ -998,26 +1026,6 @@
     "source": {
       "name": "Wired · 2026-07-12",
       "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/"
-    }
-  },
-  {
-    "id": "2026-07-10-anthropic-claude-interpretability",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-10T12:10:00Z",
-    "headline": "Anthropic reveals hidden reasoning space in Claude large language model internals",
-    "plain_english": "Anthropic disclosed findings that Claude exhibits an internal 'hidden space' where the model appears to puzzle over complex concepts before responding, offering the clearest view yet into large language model reasoning mechanics.",
-    "why_it_matters": "Advances interpretability of AI systems critical for BFSI compliance and risk auditing; understanding model cognition supports safer deployment in high-stakes financial tasks like credit decisions and fraud detection.",
-    "jargon": [
-      {
-        "term": "Interpretability",
-        "def": "Ability to understand and explain how an AI model makes decisions; crucial for regulatory auditability and bias detection."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-07-10",
-      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/"
     }
   },
   {
@@ -1187,6 +1195,34 @@
     }
   },
   {
+    "id": "2026-07-23-moonshot-nvidia-export-ban",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-23T11:13:44Z",
+    "headline": "White House flags Chinese AI lab Moonshot accessed Nvidia chips despite export ban",
+    "plain_english": "A White House official stated that Moonshot AI, which released the advanced Kimi K3 model last week, obtained Nvidia's GB300 chips through Thailand, circumventing U.S. export restrictions on advanced semiconductors to China.",
+    "why_it_matters": "Export-control evasion by frontier labs suggests chip restrictions are porous and will spur tighter enforcement. BFSI firms relying on U.S. chip supply chains face geopolitical supply-chain risk; regulators may require disclosure of semiconductor sourcing.",
+    "source": {
+      "name": "CNBC · 2026-07-23",
+      "url": "https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html"
+    }
+  },
+  {
+    "id": "2026-07-23-ai-alignment-frontier",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-23T12:45:24Z",
+    "headline": "AI safety experts shift from preventing AI escape to managing autonomous AI oversight",
+    "plain_english": "A Washington Post analysis notes that leading AI researchers and policy experts are now focused on controlling and monitoring autonomous AI systems in production—a paradigm shift from theoretical concerns about 'AI breaking free' to practical governance of deployed agents.",
+    "why_it_matters": "As frontier labs deploy agents that act autonomously (trading, underwriting, fraud detection), BFSI regulators and firms must design guardrails and kill-switches before agents cause systemic harm. This will drive new regulatory guidance on AI governance frameworks.",
+    "source": {
+      "name": "Washington Post / MIT Tech Review · 2026-07-23",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQXzJ6UTNnai1IR1AtWlJ3Mm9hZG1pelQ4UUxVN1k3RE1fMzNwYWIwZHQ3Y2Z5TFQwWS1wYndwcWN1WGlGU1J2bFhsNFpsOG9CMDJ2SnhTVkM4THNvSkgza0JQN1Q0SThFMlJ0TVZsLWJZUE84RERBTzg0MkZPbFN3MVk1dC1JQk0wWDZiU050MWV2U3JvaXdpNTBhYzhPSEwyOFUwLVRoYi05bjRCbC1LU2o0WXVERlJ5eUNMbXBn"
+    }
+  },
+  {
     "id": "2026-07-22-frontier-openai-containment",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1330,34 +1366,6 @@
     "source": {
       "name": "TechCrunch · 2026-07-21",
       "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
-    }
-  },
-  {
-    "id": "2026-07-21-google-gemini-chip",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-20T21:21:15Z",
-    "headline": "Google developing custom AI chip to optimize Gemini inference efficiency",
-    "plain_english": "Alphabet is building a new processor specifically designed to run Gemini models more efficiently. The chip aims to reduce compute cost and latency for Gemini inference deployments across Google's infrastructure.",
-    "why_it_matters": "Signals hardware race intensification among frontier labs. Custom chips (like Google's TPU, Anthropic-backed Cerebras) drive down per-inference cost; BFSI vendors will need to track chip roadmaps to forecast LLM operating leverage.",
-    "source": {
-      "name": "TechCrunch · 2026-07-20",
-      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
-    }
-  },
-  {
-    "id": "2026-07-21-chinese-ai-model-capability",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-20T22:10:00Z",
-    "headline": "Chinese AI model reaches capability parity with Claude and ChatGPT; surprises US industry",
-    "plain_english": "A new Chinese-developed AI model has demonstrated performance rivaling Anthropic's Claude and OpenAI's ChatGPT on standard benchmarks. The announcement caught US tech observers off-guard and signals accelerating AI development outside the US.",
-    "why_it_matters": "Geopolitical and competitive implications. BFSI firms may face pressure to evaluate non-US LLM providers (Alibaba, Baidu, local Chinese banks). Data residency, sanctions, and export-control risks complicate adoption. Accelerates fragmentation of global AI supply chain.",
-    "source": {
-      "name": "朝日新聞 (via AI Trending Now) · 2026-07-20",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qM2VyRWRUc0dCaHczLU1hWVROQ0FXVk5kbHozbTluXzU0cG8tR2h5cjViTnE0RDdGeWNiM3dOUjFvNVBONW0tM2FkcHQwaVNOUWkxODdR"
     }
   },
   {
@@ -1587,6 +1595,20 @@
     }
   },
   {
+    "id": "2026-07-23-ai-spending-macro",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-23T12:57:03Z",
+    "headline": "Investor concern over AI capex intensity weighs on tech mega-cap valuations",
+    "plain_english": "Tesla and Alphabet shares fell on revised guidance signaling higher AI infrastructure spending (data centers, chips, training compute). Broader market reaction suggests investors are recalibrating AI ROI assumptions, as capex grows faster than near-term revenue.",
+    "why_it_matters": "If mega-cap tech AI spending growth outpaces revenue growth for 2+ quarters, enterprise BFSI budgets will face scrutiny from CFOs and boards on AI ROI. This may slow mid-market AI adoption and shift spending toward pre-built AI services (managed models) versus in-house build.",
+    "source": {
+      "name": "CNBC · 2026-07-23",
+      "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html"
+    }
+  },
+  {
     "id": "2026-07-21-trending-us-china-ai-talks",
     "category": "trending",
     "jurisdiction": "US|Global",
@@ -1712,6 +1734,166 @@
     "source": {
       "name": "The Straits Times · 2026-07-16",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRi15ZmdKZnludm1LTERHZTRkdi1MMzhiVTVFS3I4NXpHQXJNZ090UV9fWl9aTWRnZHhLbnJVQmFEZkdPaGNiODBRSUdQVWhKbVpvbmNUWW1UX0tFczhwYXVmLU5OVmYxeTNKQ3FGVmpFY1RmWE50UTRMd3Jna3M0enA3MHZCa0hBOXdGWUVIcWI1RnN0NEZnQmVneEkwVlJKNi1GWG1vcWMySktlcjRpTjF3YndvSUg5NTh0ckRwY0NpUQ"
+    }
+  },
+  {
+    "id": "2026-07-17-white-house-frontier-ai-access",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-17T23:10:07Z",
+    "headline": "White House takes control over frontier AI model access, limiting tech firms' distribution",
+    "plain_english": "Trump administration is implementing gatekeeping of frontier AI model (GPT, Claude, etc.) access via executive action. Sources say this shifts power from private labs to federal authorities and affects who can license or use cutting-edge models.",
+    "why_it_matters": "De facto nationalization of frontier AI governance. Banks and fintechs now require federal clearance to adopt latest models; compliance burden and security vetting move into critical path for AI deployment roadmaps.",
+    "source": {
+      "name": "CNBC · 2026-07-17",
+      "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html"
+    }
+  },
+  {
+    "id": "2026-07-21-block-ai-hiring",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-20T19:10:26Z",
+    "headline": "Block ramping AI infrastructure: hiring Principal Engineer for AI Systems in Bay Area",
+    "plain_english": "Block (Square/Cash App parent) is recruiting a Principal Engineer for AI Systems in Bay Area and expanding compliance-tech talent in New York and Tokyo. Job postings signal internal build-out of LLM infrastructure and AI-driven compliance automation.",
+    "why_it_matters": "Confirms Block's shift toward internal AI capability rather than vendor dependency. For BFSI peers: signals that scaled fintech operators are building proprietary AI stacks (embeddings, fine-tuning, inference). Competitive pressure on AI vendors to prove ROI.",
+    "scale": {
+      "metric": "employees",
+      "value": "Block headcount unknown; multiple high-level roles opening"
+    },
+    "source": {
+      "name": "Block careers · 2026-07-20",
+      "url": "http://block.xyz/careers/jobs/5243410008"
+    }
+  },
+  {
+    "id": "2026-07-20-amd-helios-deployment",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-20T13:00:01Z",
+    "headline": "AMD ships Helios AI rack system; Microsoft joins Meta, OpenAI, Oracle as customer",
+    "plain_english": "AMD released Helios, its first rack-scale AI system, with Microsoft as newest customer alongside Meta, OpenAI, and Oracle—direct challenge to Nvidia's dominance in enterprise AI infrastructure.",
+    "why_it_matters": "Financial firms diversifying GPU supply beyond Nvidia reduces capex lock-in; competitive pricing pressure on AI infrastructure drives down inference costs for BFSI deployments.",
+    "scale": {
+      "metric": "customers",
+      "value": "4 named (Microsoft, Meta, OpenAI, Oracle)"
+    },
+    "source": {
+      "name": "CNBC · 2026-07-20",
+      "url": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html"
+    }
+  },
+  {
+    "id": "2026-07-20-vendor-lumin-digital-70m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-20T00:01:00Z",
+    "headline": "Cloud-native banking platform Lumin Digital raises $70M from existing clients",
+    "plain_english": "Lumin Digital, a cloud-native banking platform, closed a $70M funding round exclusively from its own client base, validating enterprise demand for modular banking infrastructure and signaling a shift toward customer-funded vendor growth.",
+    "why_it_matters": "Client-funded venture rounds reduce external dilution and align vendor incentives with customer success; this model, increasingly common in BFSI SaaS, accelerates adoption velocity by existing banks.",
+    "source": {
+      "name": "Finextra · 2026-07-20",
+      "url": "https://www.finextra.com/newsarticle/48118/lumin-digital-raises-70-million-from-its-clients"
+    }
+  },
+  {
+    "id": "2026-07-19-mufg-market-cap-leader",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-19T10:32:39Z",
+    "headline": "MUFG first Japanese bank to lead Tokyo stock exchange by market cap in four decades",
+    "plain_english": "Mitsubishi UFJ Financial Group reclaimed the top market-capitalization slot on the Tokyo Stock Exchange, a position it hadn't held in 40 years, signaling renewed investor confidence in Japan's largest banking group.",
+    "why_it_matters": "Reflects broader revaluation of Japanese megabanks as AI-driven cost reduction and digital transformation offset secular headwinds; may trigger capital reallocation across Asia-Pacific banking peers.",
+    "source": {
+      "name": "朝日新聞 · 2026-07-19",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkSG94RjFfQTVDSkZwZkY4VGFQZE94ZndmWFg1MC1idFFDWmh4UDVGd1ZNcU14YVh3QjNJT0RGcWs0MExQR2JwcTBCc1J4ME96Uk5Rc1dEOEJnY1FwcXc"
+    }
+  },
+  {
+    "id": "2026-07-18-us-data-center-protests-national",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-18T10:07:07Z",
+    "headline": "US data center protests escalate into national movement",
+    "plain_english": "Opposition to large AI and hyperscaler data centers has grown from regional to nationwide backlash, with environmental and infrastructure concerns driving protests across multiple states. Signals emerging regulatory and community pressure on AI compute expansion.",
+    "why_it_matters": "Data center buildout is core to BFSI AI roadmaps (model serving, inference, fine-tuning). National resistance could delay infrastructure timelines and increase permitting costs, affecting banks' on-prem vs. cloud strategy.",
+    "source": {
+      "name": "Reuters · 2026-07-18",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5QUVhhdHdNUVZKT0xJVURINmc1UzZORTZpdGtnaGwxemxTSWZNUTR6MkE3SHY5RjYwSUlQSWFUSlV3RHJGSXJLcjBUWXRlNzBuREwzblp5aEtIdVFRZjJlZmt2dUF6QzNxY2hackV2NDlQbnVGbFBrRnlXOUdycTh1ck5RdUd6WndGOExPN2h5dkVuVUFEVnYzeHdxT1ViWElDZjRpNzFncVFmMEltNg"
+    }
+  },
+  {
+    "id": "2026-06-24-fokker-planck-positivity-preserving-schemes",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-06-24T04:00:00.000Z",
+    "headline": "Diagonal Frog: high-order FD schemes preserve positivity in anisotropic Fokker-Planck",
+    "plain_english": "Computational technique (Diagonal Frog) for solving Fokker-Planck equations in multi-dimensional spaces with cross-diffusion, guaranteeing non-negative probability densities. Avoids numerical artifacts in monte-carlo risk engines.",
+    "why_it_matters": "Risk and valuation systems solving PDEs (e.g., stochastic volatility calibration, CVA Monte Carlo) suffer from unphysical negative probabilities; this scheme eliminates that class of error without sacrificing accuracy.",
+    "jargon": [
+      {
+        "term": "Fokker-Planck equation",
+        "def": "PDE describing probability distribution evolution in systems with drift and diffusion (noise)—foundational in stochastic finance."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-06-24",
+      "url": "https://arxiv.org/abs/2606.23980"
+    }
+  },
+  {
+    "id": "2026-07-10-anthropic-claude-interpretability",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-10T12:10:00Z",
+    "headline": "Anthropic reveals hidden reasoning space in Claude large language model internals",
+    "plain_english": "Anthropic disclosed findings that Claude exhibits an internal 'hidden space' where the model appears to puzzle over complex concepts before responding, offering the clearest view yet into large language model reasoning mechanics.",
+    "why_it_matters": "Advances interpretability of AI systems critical for BFSI compliance and risk auditing; understanding model cognition supports safer deployment in high-stakes financial tasks like credit decisions and fraud detection.",
+    "jargon": [
+      {
+        "term": "Interpretability",
+        "def": "Ability to understand and explain how an AI model makes decisions; crucial for regulatory auditability and bias detection."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-07-10",
+      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/"
+    }
+  },
+  {
+    "id": "2026-07-21-google-gemini-chip",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-20T21:21:15Z",
+    "headline": "Google developing custom AI chip to optimize Gemini inference efficiency",
+    "plain_english": "Alphabet is building a new processor specifically designed to run Gemini models more efficiently. The chip aims to reduce compute cost and latency for Gemini inference deployments across Google's infrastructure.",
+    "why_it_matters": "Signals hardware race intensification among frontier labs. Custom chips (like Google's TPU, Anthropic-backed Cerebras) drive down per-inference cost; BFSI vendors will need to track chip roadmaps to forecast LLM operating leverage.",
+    "source": {
+      "name": "TechCrunch · 2026-07-20",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+    }
+  },
+  {
+    "id": "2026-07-21-chinese-ai-model-capability",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-20T22:10:00Z",
+    "headline": "Chinese AI model reaches capability parity with Claude and ChatGPT; surprises US industry",
+    "plain_english": "A new Chinese-developed AI model has demonstrated performance rivaling Anthropic's Claude and OpenAI's ChatGPT on standard benchmarks. The announcement caught US tech observers off-guard and signals accelerating AI development outside the US.",
+    "why_it_matters": "Geopolitical and competitive implications. BFSI firms may face pressure to evaluate non-US LLM providers (Alibaba, Baidu, local Chinese banks). Data residency, sanctions, and export-control risks complicate adoption. Accelerates fragmentation of global AI supply chain.",
+    "source": {
+      "name": "朝日新聞 (via AI Trending Now) · 2026-07-20",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qM2VyRWRUc0dCaHczLU1hWVROQ0FXVk5kbHozbTluXzU0cG8tR2h5cjViTnE0RDdGeWNiM3dOUjFvNVBONW0tM2FkcHQwaVNOUWkxODdR"
     }
   },
   {
