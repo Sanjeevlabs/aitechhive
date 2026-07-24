@@ -1,5 +1,49 @@
 [
   {
+    "id": "2026-07-24-india-common-customer-id",
+    "category": "regulation",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-07-24T10:33:28Z",
+    "headline": "India to roll out common customer ID for banks, insurers; mutual funds to follow",
+    "plain_english": "India is introducing a unified customer identifier across banks and insurers, with mutual funds joining later. This enables regulators and institutions to track cross-sector exposure and KYC compliance at scale.",
+    "why_it_matters": "Reduces regulatory fragmentation, improves AML enforcement, and allows RBI/IRDAI to spot multi-entity fraud and systemic risk that siloed KYC previously hid.",
+    "jargon": [
+      {
+        "term": "KYC",
+        "def": "Know Your Customer: identity verification and beneficial ownership checks required by law before opening accounts."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-07-24",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMTdNMk41NFEyWmpPYi1rRFpRM2VrSXllQTJIekNneFBtWk5aV0trSUdHSWpyOFJXN0JxaTlsRENVbjNJajhEUk9HeHBRVFliaHAyTTlYSW9QS3JCQzFld2E4U0kxTzE3UUJvQ1RtSk5mdVkzTVFCSGxQbk9tTzU0RjVySlJybW9FNC1nQ0k1U251cm9kdkVyX3N0ZnlmbWdEVjVyZGdqVTUwOVZGRVB6YTNpMEplTzFyWkY3azYzMnBwR3dhc2lR"
+    }
+  },
+  {
+    "id": "2026-07-24-fatf-defi-aml-warning",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-24T12:33:39Z",
+    "headline": "FATF warns DeFi label is leaving centralized platforms outside AML rules",
+    "plain_english": "The Financial Action Task Force (FATF) is flagging that many platforms claiming decentralized finance status actually have identifiable controllers—token holders, developers—yet operate outside anti-money laundering oversight. Governments must broaden AML coverage.",
+    "why_it_matters": "Closes regulatory arbitrage: platforms hiding behind 'DeFi' labels while maintaining centralized control have evaded AML/KYC. FATF pressure will force banks and corridors to de-risk or demand compliance, fragmenting stablecoins and cross-border flow.",
+    "jargon": [
+      {
+        "term": "DeFi",
+        "def": "Decentralized Finance: blockchain-based financial services that claim no single entity controls them, but often retain hidden centralized governance."
+      },
+      {
+        "term": "AML",
+        "def": "Anti-Money Laundering: rules requiring financial institutions to verify customer identity and report suspicious transactions."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-24",
+      "url": "https://www.pymnts.com/legal/aml/2026/fatf-warns-defi-label-is-leaving-centralized-platforms-outside-aml-rules/"
+    }
+  },
+  {
     "id": "2026-07-24-openai-huggingface-kill-switch",
     "category": "regulation",
     "jurisdiction": "US",
@@ -155,31 +199,51 @@
     }
   },
   {
-    "id": "2026-07-19-regulation-australia-ai-automation-curbs",
-    "category": "regulation",
-    "jurisdiction": "APAC",
+    "id": "2026-07-24-billtrust-claude-copilot",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-07-19T21:22:00Z",
-    "headline": "Australia moves to restrict government automated AI decision-making under new rules",
-    "plain_english": "Australia is implementing rules to limit government use of automated AI systems in administrative decisions, setting a precedent for regulatory scrutiny of unvetted AI decision-making in high-stakes contexts like credit, employment, and benefits.",
-    "why_it_matters": "Australia's guardrails on government AI automation will likely influence how BFSI regulators in other APAC jurisdictions—and eventually the EU and US—frame expectations for explainability and human oversight in bank lending and fraud models.",
+    "published_at": "2026-07-24T13:16:00Z",
+    "headline": "Billtrust enables AI-powered invoice-to-cash queries via Claude and Microsoft Copilot",
+    "plain_english": "Billtrust, an invoice and accounts-receivable platform, now lets finance teams ask natural-language questions about live payment data directly inside Claude (Anthropic) and Microsoft Copilot. No report-building or SQL.",
+    "why_it_matters": "LLM-native finance tools reduce friction in AR workflows and embed reasoning into teams' daily chat. Signals the shift from 'AI dashboards' to 'AI as operating system' for back-office operations.",
     "source": {
-      "name": "The Guardian · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT1p3V1Q0LXhLUTJYTGVoTk9QWHdBbTQ1RENhY2NPV1hsbDVNYnNuVjdRSWxpTmo0YmJMcHByVnVzenhqOWxpdzV0blc5YTZLYXc1clctS2NvX0hfWWFIb3RSUXFCZVZkaFo1NTQ5N2hwelhocE9jUno4SmxqRUFKTmNkeVhxN0t2OG1aUkdES0xwbU9HSDRBZUxmbG9YNkh0TmlnOXZsV29BY2FmQnRZ"
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/pressarticle/110491/billtrust-launches-ar-intelligence-connection-for-claude-and-microsoft-copilot"
     }
   },
   {
-    "id": "2026-07-19-australia-ai-resource-governance",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-07-19T11:51:18Z",
-    "headline": "Australia proposes rules to govern water and power consumption for AI data centers",
-    "plain_english": "Australian government announced plans to regulate water and electricity use by AI infrastructure operators, aiming to manage resource strain as data-center build-out accelerates across the country.",
-    "why_it_matters": "First APAC nation to explicitly regulate AI's physical resource footprint; other jurisdictions will likely follow, imposing new operating-cost and site-planning requirements for banks and fintechs building AI compute.",
+    "id": "2026-07-24-mastercard-virtual-card-expansion",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-24T13:14:00Z",
+    "headline": "Mastercard expands In Control virtual card platform with new capabilities",
+    "plain_english": "Mastercard announced enhancements to Mastercard In Control, its virtual card number (VCN) platform used for B2B payments. Upgrades focus on security and scalability in secure, one-time payment numbers for corporate spend control.",
+    "why_it_matters": "Virtual cards reduce fraud exposure for B2B buyers and give corporates real-time visibility into supplier payments. Expansion signals Mastercard doubling down on embedded fraud prevention in payments infrastructure.",
+    "jargon": [
+      {
+        "term": "VCN",
+        "def": "Virtual Card Number: a single-use or merchant-specific payment number tied to a real card, shielding the primary account from fraud."
+      }
+    ],
     "source": {
-      "name": "WSJ · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaVNvQjJtSXlHekZDLUllbnRqY051cnN1d3ExcldUX2hUeDJsaXdMTDdZak55V3Zadk1vazd4eXFnWWhqY1F0aEE0TnZVejZzUlE5LW5rQnNPbl9qdk5TNnFaQVdMc0F0eTNSQUJ2ZkpqV09OU2d0T1kxYlM0TXV4YXNHUXdyU0FBZjFQMnM1dXdnQQ"
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/pressarticle/110490/mastercard-expands-virtual-card-programme"
+    }
+  },
+  {
+    "id": "2026-07-24-alipay-hang-seng-qr",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-24T10:24:00Z",
+    "headline": "Alipay+ partners Hang Seng Bank for cross-border QR code payments in Hong Kong",
+    "plain_english": "Ant International's Alipay+ ecosystem expanded into Hong Kong via partnership with Hang Seng Bank, enabling QR-code-based cross-border payments. Extends Alipay's regional payment rail.",
+    "why_it_matters": "Signals consolidation of Asia-Pacific payment rails around China-based digital wallets. Reduces friction for remittances and regional trade, but raises concentration risk for regulators monitoring payment-system resilience.",
+    "source": {
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/newsarticle/48141/alipay-partners-with-hong-kongs-hang-seng-bank-for-cross-border-qr-code-payments"
     }
   },
   {
@@ -304,55 +368,32 @@
     }
   },
   {
-    "id": "2026-07-22-strise-bdo-aml-deployment",
-    "category": "deployment",
-    "jurisdiction": "EU",
+    "id": "2026-07-24-bitcoin-security-consortium",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-22T13:27:00.000Z",
-    "headline": "BDO Norway adopts Strise AI platform for customer due diligence and AML",
-    "plain_english": "BDO, a major Norwegian audit and advisory firm, selected Strise's AI platform as its core AML and customer due diligence solution. First production deployment of Strise in major Nordic market.",
-    "why_it_matters": "Validates Strise's regulatory playbook: large compliance-heavy firms now outsourcing AML decision-making to vendor AI, reducing manual triage overhead and shifting third-party risk.",
-    "jargon": [
-      {
-        "term": "AML",
-        "def": "Anti-money laundering: regulatory process to detect and prevent financial crime."
-      },
-      {
-        "term": "KYC/CDD",
-        "def": "Know Your Customer / Customer Due Diligence: identity and risk assessment of counterparties."
-      }
-    ],
+    "published_at": "2026-07-24T11:16:00Z",
+    "headline": "Financial institutions and Bitcoin firms pledge $15 million for Bitcoin Security Consortium",
+    "plain_english": "Leading digital assets and financial firms have committed $15 million over three years to establish a consortium focused on Bitcoin security standards and best practices for custody and infrastructure.",
+    "why_it_matters": "Signals institutional buy-in to Bitcoin custody standards. A unified security framework could accelerate bank adoption of native Bitcoin reserves and reduce insurance costs for custodians.",
+    "amount": "$15M",
     "source": {
-      "name": "Finextra · 2026-07-22",
-      "url": "https://www.finextra.com/pressarticle/110472/norway-advisory-and-audit-firm-bdo-selects-strise-as-aml-technology-provider"
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/newsarticle/48142/leading-digital-assets-firms-pledge-15-million-to-establish-bitcoin-security-consortium"
     }
   },
   {
-    "id": "2026-07-22-mygate-ai-housing-ops",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-07-24-idenfy-bank-card-verification",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-07-22T10:58:06.000Z",
-    "headline": "Mygate launches AI assistant to automate financial operations for housing societies",
-    "plain_english": "Mygate deployed an AI assistant automating financial operations workflows for housing societies in India. Use case: invoice processing, ledger reconciliation, fund tracking for member associations.",
-    "why_it_matters": "Extends BFSI AI beyond banks to quasi-financial institutions; housing-society treasurer workflows mirror small-business accounting, proving RPA+LLM stack viable for non-bank financial operators.",
+    "published_at": "2026-07-24T13:19:00Z",
+    "headline": "iDenfy launches Bank Card Verification platform for identity compliance",
+    "plain_english": "iDenfy, a global identity verification and fraud-prevention vendor, launched a dedicated Bank Card Verification module within its dashboard to streamline card-holder KYC and AML checks.",
+    "why_it_matters": "Vendors bundling compliance checks into single panes reduce integration friction for banks managing multiple vendors. Signals consolidation pressure in identity-verification market.",
     "source": {
-      "name": "Express Computer · 2026-07-22",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPU3NwNE1uZmZORkVpdExNSDlucmhqeGhMWUxfbkg0aVRkR2k1ZXFtNHd3MnVfSkNVRmlpc2p2bTFtOTdHdzNzYThkLXVOUjdpVnE5djJtSFRqS2dMbUdvdjdBWklOcG50dDhjSGlNQm4xSHhmWjM2b19QMUxkT1d5bS1sUkxmMzE4UUpDdk9tUEtqN0JYVVRmOGN5TURNdk9LeDJKMDVnVTl6YnJESm42MElpZV9DaXctV1VxbmNrZ281c1hQczZiNE1abw"
-    }
-  },
-  {
-    "id": "2026-07-21-fed-anthropic-mythos-access",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-21T22:34:35.000Z",
-    "headline": "Federal Reserve lacked access to Anthropic's Mythos AI model for months amid banking cybersecurity alerts",
-    "plain_english": "The Federal Reserve alerted BFSI firms about cybersecurity risks in Anthropic's Mythos AI model but did not have direct access to the tool itself as of mid-July, creating an asymmetric response timeline. Other institutions and financial firms were already patching vulnerabilities.",
-    "why_it_matters": "Central bank supervisors cannot validate AI risks before issuing guidance. BFSI banks implementing frontier models face regulatory alerts without corresponding Fed access to independent testing—compliance burden shifts entirely to banks.",
-    "source": {
-      "name": "CNBC · 2026-07-21",
-      "url": "https://www.cnbc.com/2026/07/21/fed-mythos-ai-cybersecurity-banks-project-glasswing.html"
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/pressarticle/110492/idenfy-launches-bank-card-verification-platform"
     }
   },
   {
@@ -482,31 +523,17 @@
     }
   },
   {
-    "id": "2026-07-21-vendor-lemfi-bvnk-stablecoin",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-21T11:21:00Z",
-    "headline": "LemFi taps BVNK to move cross-border payments onto stablecoin rails",
-    "plain_english": "Fintech LemFi partnered with BVNK, an enterprise stablecoin infrastructure provider, to migrate diaspora remittance flows from traditional banking rails to blockchain-based stablecoin settlement.",
-    "why_it_matters": "Stablecoin infrastructure vendors now have production BFSI adoption. If LemFi gains velocity, traditional remittance networks face defection to cheaper, faster blockchain-settled flows—pressuring bank margins on cross-border retail.",
+    "id": "2026-07-24-commerzbank-unicredit-merger-talks",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-24T12:32:00Z",
+    "headline": "Commerzbank enters takeover talks with UniCredit after months of resistance",
+    "plain_english": "Germany's Commerzbank, after resisting UniCredit's advances, has agreed to merger negotiations. UniCredit, Italy's largest bank, has been pursuing Commerzbank to expand its European footprint and consolidate operations.",
+    "why_it_matters": "Major European banking consolidation. If completed, creates a pan-European challenger to France's BNP and HSBC; reshuffles tech, compliance, and risk architecture across two large legacy BFSI operations.",
     "source": {
-      "name": "Finextra · 2026-07-21",
-      "url": "https://www.finextra.com/pressarticle/110462/lemfi-taps-bvnk-to-move-cross-border-payments-on-to-stablecoin-rails"
-    }
-  },
-  {
-    "id": "2026-07-21-vendor-samsung-barclays-creditcard",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-21T10:55:23Z",
-    "headline": "Samsung launches first US credit card with Barclays and Visa",
-    "plain_english": "Samsung teamed with Barclays to issue the Samsung Galaxy Card on Visa rails, launching July 22. Card offers rewards on everyday shopping and bonus points on Samsung device purchases, available as physical and virtual.",
-    "why_it_matters": "Consumer fintech news with low enterprise impact. Signals tech giants (Apple, Samsung) continue to disintermediate traditional card networks; BFSI players should monitor ecosystem shift but no immediate AI/operations implication.",
-    "source": {
-      "name": "PYMNTS · 2026-07-21",
-      "url": "https://www.pymnts.com/credit-cards/2026/samsung-debuts-1st-us-credit-card-in-answer-to-apple/"
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/newsarticle/48143/commerzbank-relents-enters-talks-with-unicredit-for-takeover"
     }
   },
   {
@@ -652,20 +679,6 @@
         "def": "AI agents that autonomously negotiate and execute transactions on user behalf without human approval per transaction."
       }
     ]
-  },
-  {
-    "id": "2026-07-21-embedded-finance-deposits",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-20T21:13:11Z",
-    "headline": "Regional banks leverage embedded finance and fintech partnerships to capture new deposit flows",
-    "plain_english": "Fifth Third, Bancorp, Pathward, and peers are partnering with fintech platforms and embedded-finance providers to attract deposits. Q2 earnings show these partnerships are materializing as measurable balance-sheet growth—new funding source competing with traditional retail deposits.",
-    "why_it_matters": "Paradigm shift: deposits now flow through API-first, non-traditional channels. Banks must either build or partner to access fintech user bases. Net-interest-margin compression if deposit costs rise; but diversified funding reduces retail-concentration risk.",
-    "source": {
-      "name": "PYMNTS · 2026-07-20",
-      "url": "https://www.pymnts.com/news/banking/2026/banks-tap-fintechs-embedded-finance-deposits/"
-    }
   },
   {
     "id": "2026-07-23-turnstile-mcp-agents",
@@ -1034,6 +1047,22 @@
     }
   },
   {
+    "id": "2026-07-24-delhi-police-facial-recognition",
+    "category": "insight",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-07-24T11:31:46Z",
+    "headline": "Delhi Police AI facial recognition vans raise Aadhaar linking questions",
+    "plain_english": "Delhi Police deployed mobile facial recognition vans for law enforcement. Public concern: whether these systems tap India's Aadhaar biometric database without explicit legal gates, merging law enforcement with identity infrastructure.",
+    "why_it_matters": "Sets regulatory precedent for fintech. If biometric IDs (Aadhaar) can flow to police without audit, bank AI-driven KYC/sanctions screening faces similar scope-creep risks and requires firmer data-sharing agreements.",
+    "stat_value": "Rising",
+    "stat_label": "public concern over Aadhaar scope beyond financial services",
+    "source": {
+      "name": "AI Trending Now · 2026-07-24",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ3VsNm93MHpUNWd5WmxaUmY2Nkd4bGZCZkJWdnl6YlBlbGlpNDB3SXBlbkZHVWZ2WGthQ1lGODExMEJOTXZHWTRVSzZ2bDRydDljNjYyS1dkYWRXQWNNOHZOMlhfM25ncVA0VlVFSG41QU5DcXlyUFBfTWltU3NhckpIQ1FHRWRRYzFGMFc4N1NCcVFQMG1WNEhqZ1czNFRfX0YyTTZtRTY3clNtVWZieHpOSWVicGtxemRrcmpVNkh0QW9oSVpr"
+    }
+  },
+  {
     "id": "2026-07-24-big-tech-ai-spending-profitability-crunch",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1186,19 +1215,18 @@
     }
   },
   {
-    "id": "2026-07-17-compliance-stall-insight",
-    "category": "insight",
+    "id": "2026-07-24-openai-georgia-datacenter",
+    "category": "frontier",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-07-17T18:00:00Z",
-    "headline": "AI regulatory momentum stalls: Clarity Act frozen ahead of Senate recess",
-    "plain_english": "The Clarity Act, a bipartisan crypto + AI oversight bill, is stalled over ethics disagreements among Democrats, pushing any vote past the August 7 Senate recess. Regulatory clarity for BFSI AI governance remains uncertain through Q4.",
-    "why_it_matters": "Regulatory vacuum extends: banks cannot plan AI governance roadmaps with confidence. Expect voluntary compliance frameworks from OCC/Fed to fill void; slower innovation and compliance risk for aggressive early movers.",
-    "stat_value": "~3 weeks",
-    "stat_label": "until Senate recess; no Clarity Act vote scheduled",
+    "published_at": "2026-07-24T10:22:00Z",
+    "headline": "OpenAI plans $30 billion AI data center in Georgia",
+    "plain_english": "OpenAI announced a $30 billion investment to build a large-scale AI compute facility in Georgia, signaling massive infrastructure expansion to support training and inference demands.",
+    "why_it_matters": "Frontier AI labs are locking in U.S. compute capacity. Implications: BFSI institutions competing for cloud GPU/TPU access may see higher costs and longer wait-lists. Private-cloud strategies (on-prem, edge) may accelerate.",
+    "amount": "$30B",
     "source": {
-      "name": "PYMNTS · 2026-07-17",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ethics-battle-freezes-clarity-act-ahead-of-senate-recess/"
+      "name": "AI Trending Now · 2026-07-24",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGxIQlFyQlA2UXBTYTd1TTZMZkVTaHg3SjV1RDVYN1lQaHhEbWhnWmFEbHZ4bXBsR0QteWphcXhOMXI5ZXU4VS1VbXRPdXRON2wyOTY0dUgyUHNpRXpibmppYkJGX1BtT2QyVU16TGgtYURVWEIwdXhWQmU3OGJWM0pSQ2xEN2Rkb1E"
     }
   },
   {
@@ -1354,26 +1382,6 @@
         "def": "Isolated compute environment that restricts untrusted code from accessing host system, network, or data."
       }
     ]
-  },
-  {
-    "id": "2026-07-21-anthropic-copyright-settlement",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-21T00:12:24Z",
-    "headline": "Anthropic's $1.5B copyright settlement approved; broader training-data liability unresolved",
-    "plain_english": "A US court has finalized Anthropic's $1.5 billion settlement over using copyrighted works to train its Claude AI models. The deal closes one case but doesn't resolve the systemic legal question of whether AI labs can use published content for model training without explicit permission.",
-    "why_it_matters": "Sets precedent for AI lab liability risk; other frontier labs (OpenAI, Meta, Google) now face similar suits. BFSI firms using LLMs must factor copyright-indemnity clauses into vendor contracts and model-licensing risk.",
-    "jargon": [
-      {
-        "term": "training-data liability",
-        "def": "Legal exposure when AI models are trained on copyrighted text, images, or code without license or consent."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-07-21",
-      "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
-    }
   },
   {
     "id": "2026-07-22-ai-agents-escape-risk",
@@ -1744,6 +1752,164 @@
     }
   },
   {
+    "id": "2026-07-19-regulation-australia-ai-automation-curbs",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-19T21:22:00Z",
+    "headline": "Australia moves to restrict government automated AI decision-making under new rules",
+    "plain_english": "Australia is implementing rules to limit government use of automated AI systems in administrative decisions, setting a precedent for regulatory scrutiny of unvetted AI decision-making in high-stakes contexts like credit, employment, and benefits.",
+    "why_it_matters": "Australia's guardrails on government AI automation will likely influence how BFSI regulators in other APAC jurisdictions—and eventually the EU and US—frame expectations for explainability and human oversight in bank lending and fraud models.",
+    "source": {
+      "name": "The Guardian · 2026-07-19",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT1p3V1Q0LXhLUTJYTGVoTk9QWHdBbTQ1RENhY2NPV1hsbDVNYnNuVjdRSWxpTmo0YmJMcHByVnVzenhqOWxpdzV0blc5YTZLYXc1clctS2NvX0hfWWFIb3RSUXFCZVZkaFo1NTQ5N2hwelhocE9jUno4SmxqRUFKTmNkeVhxN0t2OG1aUkdES0xwbU9HSDRBZUxmbG9YNkh0TmlnOXZsV29BY2FmQnRZ"
+    }
+  },
+  {
+    "id": "2026-07-19-australia-ai-resource-governance",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-07-19T11:51:18Z",
+    "headline": "Australia proposes rules to govern water and power consumption for AI data centers",
+    "plain_english": "Australian government announced plans to regulate water and electricity use by AI infrastructure operators, aiming to manage resource strain as data-center build-out accelerates across the country.",
+    "why_it_matters": "First APAC nation to explicitly regulate AI's physical resource footprint; other jurisdictions will likely follow, imposing new operating-cost and site-planning requirements for banks and fintechs building AI compute.",
+    "source": {
+      "name": "WSJ · 2026-07-19",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaVNvQjJtSXlHekZDLUllbnRqY051cnN1d3ExcldUX2hUeDJsaXdMTDdZak55V3Zadk1vazd4eXFnWWhqY1F0aEE0TnZVejZzUlE5LW5rQnNPbl9qdk5TNnFaQVdMc0F0eTNSQUJ2ZkpqV09OU2d0T1kxYlM0TXV4YXNHUXdyU0FBZjFQMnM1dXdnQQ"
+    }
+  },
+  {
+    "id": "2026-07-22-strise-bdo-aml-deployment",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-07-22T13:27:00.000Z",
+    "headline": "BDO Norway adopts Strise AI platform for customer due diligence and AML",
+    "plain_english": "BDO, a major Norwegian audit and advisory firm, selected Strise's AI platform as its core AML and customer due diligence solution. First production deployment of Strise in major Nordic market.",
+    "why_it_matters": "Validates Strise's regulatory playbook: large compliance-heavy firms now outsourcing AML decision-making to vendor AI, reducing manual triage overhead and shifting third-party risk.",
+    "jargon": [
+      {
+        "term": "AML",
+        "def": "Anti-money laundering: regulatory process to detect and prevent financial crime."
+      },
+      {
+        "term": "KYC/CDD",
+        "def": "Know Your Customer / Customer Due Diligence: identity and risk assessment of counterparties."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-22",
+      "url": "https://www.finextra.com/pressarticle/110472/norway-advisory-and-audit-firm-bdo-selects-strise-as-aml-technology-provider"
+    }
+  },
+  {
+    "id": "2026-07-22-mygate-ai-housing-ops",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-22T10:58:06.000Z",
+    "headline": "Mygate launches AI assistant to automate financial operations for housing societies",
+    "plain_english": "Mygate deployed an AI assistant automating financial operations workflows for housing societies in India. Use case: invoice processing, ledger reconciliation, fund tracking for member associations.",
+    "why_it_matters": "Extends BFSI AI beyond banks to quasi-financial institutions; housing-society treasurer workflows mirror small-business accounting, proving RPA+LLM stack viable for non-bank financial operators.",
+    "source": {
+      "name": "Express Computer · 2026-07-22",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPU3NwNE1uZmZORkVpdExNSDlucmhqeGhMWUxfbkg0aVRkR2k1ZXFtNHd3MnVfSkNVRmlpc2p2bTFtOTdHdzNzYThkLXVOUjdpVnE5djJtSFRqS2dMbUdvdjdBWklOcG50dDhjSGlNQm4xSHhmWjM2b19QMUxkT1d5bS1sUkxmMzE4UUpDdk9tUEtqN0JYVVRmOGN5TURNdk9LeDJKMDVnVTl6YnJESm42MElpZV9DaXctV1VxbmNrZ281c1hQczZiNE1abw"
+    }
+  },
+  {
+    "id": "2026-07-21-fed-anthropic-mythos-access",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-21T22:34:35.000Z",
+    "headline": "Federal Reserve lacked access to Anthropic's Mythos AI model for months amid banking cybersecurity alerts",
+    "plain_english": "The Federal Reserve alerted BFSI firms about cybersecurity risks in Anthropic's Mythos AI model but did not have direct access to the tool itself as of mid-July, creating an asymmetric response timeline. Other institutions and financial firms were already patching vulnerabilities.",
+    "why_it_matters": "Central bank supervisors cannot validate AI risks before issuing guidance. BFSI banks implementing frontier models face regulatory alerts without corresponding Fed access to independent testing—compliance burden shifts entirely to banks.",
+    "source": {
+      "name": "CNBC · 2026-07-21",
+      "url": "https://www.cnbc.com/2026/07/21/fed-mythos-ai-cybersecurity-banks-project-glasswing.html"
+    }
+  },
+  {
+    "id": "2026-07-21-vendor-lemfi-bvnk-stablecoin",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-21T11:21:00Z",
+    "headline": "LemFi taps BVNK to move cross-border payments onto stablecoin rails",
+    "plain_english": "Fintech LemFi partnered with BVNK, an enterprise stablecoin infrastructure provider, to migrate diaspora remittance flows from traditional banking rails to blockchain-based stablecoin settlement.",
+    "why_it_matters": "Stablecoin infrastructure vendors now have production BFSI adoption. If LemFi gains velocity, traditional remittance networks face defection to cheaper, faster blockchain-settled flows—pressuring bank margins on cross-border retail.",
+    "source": {
+      "name": "Finextra · 2026-07-21",
+      "url": "https://www.finextra.com/pressarticle/110462/lemfi-taps-bvnk-to-move-cross-border-payments-on-to-stablecoin-rails"
+    }
+  },
+  {
+    "id": "2026-07-21-vendor-samsung-barclays-creditcard",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-21T10:55:23Z",
+    "headline": "Samsung launches first US credit card with Barclays and Visa",
+    "plain_english": "Samsung teamed with Barclays to issue the Samsung Galaxy Card on Visa rails, launching July 22. Card offers rewards on everyday shopping and bonus points on Samsung device purchases, available as physical and virtual.",
+    "why_it_matters": "Consumer fintech news with low enterprise impact. Signals tech giants (Apple, Samsung) continue to disintermediate traditional card networks; BFSI players should monitor ecosystem shift but no immediate AI/operations implication.",
+    "source": {
+      "name": "PYMNTS · 2026-07-21",
+      "url": "https://www.pymnts.com/credit-cards/2026/samsung-debuts-1st-us-credit-card-in-answer-to-apple/"
+    }
+  },
+  {
+    "id": "2026-07-21-embedded-finance-deposits",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-20T21:13:11Z",
+    "headline": "Regional banks leverage embedded finance and fintech partnerships to capture new deposit flows",
+    "plain_english": "Fifth Third, Bancorp, Pathward, and peers are partnering with fintech platforms and embedded-finance providers to attract deposits. Q2 earnings show these partnerships are materializing as measurable balance-sheet growth—new funding source competing with traditional retail deposits.",
+    "why_it_matters": "Paradigm shift: deposits now flow through API-first, non-traditional channels. Banks must either build or partner to access fintech user bases. Net-interest-margin compression if deposit costs rise; but diversified funding reduces retail-concentration risk.",
+    "source": {
+      "name": "PYMNTS · 2026-07-20",
+      "url": "https://www.pymnts.com/news/banking/2026/banks-tap-fintechs-embedded-finance-deposits/"
+    }
+  },
+  {
+    "id": "2026-07-17-compliance-stall-insight",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-17T18:00:00Z",
+    "headline": "AI regulatory momentum stalls: Clarity Act frozen ahead of Senate recess",
+    "plain_english": "The Clarity Act, a bipartisan crypto + AI oversight bill, is stalled over ethics disagreements among Democrats, pushing any vote past the August 7 Senate recess. Regulatory clarity for BFSI AI governance remains uncertain through Q4.",
+    "why_it_matters": "Regulatory vacuum extends: banks cannot plan AI governance roadmaps with confidence. Expect voluntary compliance frameworks from OCC/Fed to fill void; slower innovation and compliance risk for aggressive early movers.",
+    "stat_value": "~3 weeks",
+    "stat_label": "until Senate recess; no Clarity Act vote scheduled",
+    "source": {
+      "name": "PYMNTS · 2026-07-17",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/ethics-battle-freezes-clarity-act-ahead-of-senate-recess/"
+    }
+  },
+  {
+    "id": "2026-07-21-anthropic-copyright-settlement",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-21T00:12:24Z",
+    "headline": "Anthropic's $1.5B copyright settlement approved; broader training-data liability unresolved",
+    "plain_english": "A US court has finalized Anthropic's $1.5 billion settlement over using copyrighted works to train its Claude AI models. The deal closes one case but doesn't resolve the systemic legal question of whether AI labs can use published content for model training without explicit permission.",
+    "why_it_matters": "Sets precedent for AI lab liability risk; other frontier labs (OpenAI, Meta, Google) now face similar suits. BFSI firms using LLMs must factor copyright-indemnity clauses into vendor contracts and model-licensing risk.",
+    "jargon": [
+      {
+        "term": "training-data liability",
+        "def": "Legal exposure when AI models are trained on copyrighted text, images, or code without license or consent."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-07-21",
+      "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+    }
+  },
+  {
     "id": "2026-07-18-regulation-uk-digital-id-burnham",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -2008,26 +2174,6 @@
     "source": {
       "name": "Reuters · 2026-07-18",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5QUVhhdHdNUVZKT0xJVURINmc1UzZORTZpdGtnaGwxemxTSWZNUTR6MkE3SHY5RjYwSUlQSWFUSlV3RHJGSXJLcjBUWXRlNzBuREwzblp5aEtIdVFRZjJlZmt2dUF6QzNxY2hackV2NDlQbnVGbFBrRnlXOUdycTh1ck5RdUd6WndGOExPN2h5dkVuVUFEVnYzeHdxT1ViWElDZjRpNzFncVFmMEltNg"
-    }
-  },
-  {
-    "id": "2026-06-24-fokker-planck-positivity-preserving-schemes",
-    "category": "tool",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Diagonal Frog: high-order FD schemes preserve positivity in anisotropic Fokker-Planck",
-    "plain_english": "Computational technique (Diagonal Frog) for solving Fokker-Planck equations in multi-dimensional spaces with cross-diffusion, guaranteeing non-negative probability densities. Avoids numerical artifacts in monte-carlo risk engines.",
-    "why_it_matters": "Risk and valuation systems solving PDEs (e.g., stochastic volatility calibration, CVA Monte Carlo) suffer from unphysical negative probabilities; this scheme eliminates that class of error without sacrificing accuracy.",
-    "jargon": [
-      {
-        "term": "Fokker-Planck equation",
-        "def": "PDE describing probability distribution evolution in systems with drift and diffusion (noise)—foundational in stochastic finance."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23980"
     }
   },
   {
@@ -4639,26 +4785,6 @@
     }
   },
   {
-    "id": "2026-06-24-web-data-infrastructure-ai",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T11:59:54.000Z",
-    "headline": "Emergence of web data infrastructure layer for enterprise AI",
-    "plain_english": "MIT Technology Review reports on a new infrastructure category: platforms that unblock and structure web data (currently fragmented, paywalled, or unstructured) for AI model training and inference. Fills the gap between data scarcity and AI demand.",
-    "why_it_matters": "Data infrastructure is becoming a bottleneck for enterprise AI; new layer abstracts source integration and compliance, reducing time-to-insight for BFSI models trained on web, document, or proprietary data.",
-    "jargon": [
-      {
-        "term": "Web data infrastructure",
-        "def": "Layer of tooling that ingests, cleans, and structures public/private web data into AI-ready formats while managing access, licensing, and compliance."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-06-24",
-      "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/"
-    }
-  },
-  {
     "id": "2026-07-11-inflation-ai-boom-tariffs",
     "category": "insight",
     "jurisdiction": "US",
@@ -5177,30 +5303,6 @@
     }
   },
   {
-    "id": "2026-06-24-rift-bench-agentic-red-team",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "RIFT-Bench: dynamic red-teaming framework for autonomous LLM agents",
-    "plain_english": "Researchers released RIFT-Bench, an evaluation suite for stress-testing agentic AI systems (autonomous decision-making LLMs) against attack vectors beyond standard language-model vulnerabilities. Critical for banks deploying autonomous trading, underwriting, or fraud-detection agents.",
-    "why_it_matters": "Existing security evals are implementation-tied; this framework exposes gaps in autonomous agent robustness before production rollout—essential as BFSI scales agents in high-stakes workflows.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "LLM systems that autonomously plan, execute, and iterate on multi-step tasks without human approval at each step."
-      },
-      {
-        "term": "Red-teaming",
-        "def": "Systematic adversarial testing to find failure modes, attack surfaces, and misalignment in AI systems before deployment."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23927"
-    }
-  },
-  {
     "id": "2026-07-07-boe-stability-report",
     "category": "insight",
     "jurisdiction": "UK",
@@ -5674,20 +5776,6 @@
     "source": {
       "name": "Finextra · 2026-07-07",
       "url": "https://www.finextra.com/newsarticle/48044/santander-publishes-ai-projects-on-github"
-    }
-  },
-  {
-    "id": "2026-06-24-ai-tokenomics-foundation-models",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "AI Tokenomics framework links computation, memory, pricing in foundation models",
-    "plain_english": "Researchers formalized AI tokenomics: how tokens (the unit of account for LLM services) encode information processing, computation, energy, and pricing. Directly applies to BFSI cost modeling for in-house vs. API-based LLM deployment decisions.",
-    "why_it_matters": "Banks must model true cost-per-inference across regulatory overhead, latency SLAs, and data residency—this framework closes the gap between raw token math and operational TCO.",
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24616"
     }
   },
   {
@@ -6875,30 +6963,6 @@
     }
   },
   {
-    "id": "2026-06-24-neural-nets-cva-american-options",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Randomized neural networks accelerate CVA estimation for American equity options",
-    "plain_english": "Study demonstrates randomized neural networks (fast, no gradient descent) outperform traditional Monte Carlo for computing Credit Valuation Adjustment (CVA)—the cost of counterparty default—on American options under both Black-Scholes and Heston dynamics.",
-    "why_it_matters": "CVA is a regulatory capital requirement; faster, accurate neural-net estimation reduces compute bottlenecks in risk engines and improves intraday trading desk P&L reporting.",
-    "jargon": [
-      {
-        "term": "CVA",
-        "def": "Credit Valuation Adjustment: the expected loss if a counterparty defaults; a regulatory capital charge for derivatives portfolios."
-      },
-      {
-        "term": "Heston dynamics",
-        "def": "Stochastic volatility model where asset volatility itself varies randomly—more realistic than constant-vol Black-Scholes."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24309"
-    }
-  },
-  {
     "id": "2026-06-30-finextra-real-time-payments-automation",
     "category": "insight",
     "jurisdiction": "Global",
@@ -6926,20 +6990,6 @@
     "source": {
       "name": "PYMNTS · 2026-06-29",
       "url": "https://www.pymnts.com/cybersecurity/2026/apple-accelerates-security-updates-preempt-ai-powered-exploits/"
-    }
-  },
-  {
-    "id": "2026-06-24-agentic-ai-definition-critique",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "What defines an agentic AI system? Conceptual critique clarifies scope and risk",
-    "plain_english": "Paper examines the definition of 'agent' in AI: what separates a coding co-pilot from a true agentic system? Explores the conceptual and ethical boundaries as LLM systems marketed as autonomous agents proliferate. Clarifies that agency implies autonomous decision-making loops without human approval.",
-    "why_it_matters": "BFSI regulators (FCA, OCC) are scrutinizing 'autonomous' agents in trading, underwriting, and lending; clarity on what constitutes true agency vs. supervised automation helps banks design compliant disclosure and governance frameworks.",
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23991"
     }
   },
   {
@@ -7167,21 +7217,6 @@
     }
   },
   {
-    "id": "2026-06-24-sk-hynix-nasdaq-adr",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-06-24T12:30:10.000Z",
-    "headline": "SK Hynix plans $29.65 billion Nasdaq ADR listing as soon as July 10",
-    "plain_english": "South Korea's second-largest chipmaker SK Hynix intends to list American Depositary Receipts on Nasdaq in July, issuing 17.79M shares worth 45.45 trillion won ($29.65B) to fund AI chip expansion.",
-    "why_it_matters": "Major memory chip supplier seeks US capital to compete in AI inference and training infrastructure; signals confidence in sustained AI capex cycle and opens door to US institutional chip exposure.",
-    "amount": "$29.65B",
-    "source": {
-      "name": "CNBC · 2026-06-24",
-      "url": "https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html"
-    }
-  },
-  {
     "id": "2026-07-01-deployment-square-ai-integrations",
     "category": "deployment",
     "jurisdiction": "US",
@@ -7239,26 +7274,6 @@
     "source": {
       "name": "FF News · 2026-06-29",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNWxVdUs1Qmk5T1hSRDE3cDJoZ1RXa3V3UVdvb3BpQzFOODlxRkpaeGZmMGNMbENfQUFSVlFIRWpQV3NjcTNKLVA2VTg5OHBySldtSFhVRFNhUWVIUzNMNFlNMDNlN3hGd2twWjRoWjhYX0NUZEhNX2VsYnhRYWd4UzhiZWRYNUF3N2phS2hud0NsUldXenB5Uk04OVhVaTJqSFRSWVF3UWxRQQ"
-    }
-  },
-  {
-    "id": "2026-06-24-machine-learning-portfolio-loss-function",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Classification loss outperforms regression in ML-driven portfolio construction",
-    "plain_english": "Researchers compared classification vs. regression across gradient boosting, random forests, and neural networks for stock selection. Classification ensemble achieved Sharpe ratio 1.83 vs. 1.11 for regression—a 65% improvement on out-of-sample testing.",
-    "why_it_matters": "Portfolio managers optimizing ML stock-picking pipelines often default to regression; this work validates classification setups and guides hyperparameter tuning for better risk-adjusted returns.",
-    "jargon": [
-      {
-        "term": "Sharpe ratio",
-        "def": "Return per unit of volatility risk; higher is better. 1.0+ is institutional-grade performance."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2108.02283"
     }
   },
   {
@@ -7382,34 +7397,6 @@
     }
   },
   {
-    "id": "2026-06-24-stock-agent-llm-trading-simulation",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "StockAgent: LLM-based autonomous trading agent tested in simulated markets",
-    "plain_english": "Researchers built StockAgent, an LLM-powered autonomous trader that ingests macroeconomic data, policy changes, earnings, and global events to make buy/sell decisions in realistic market simulations. Tests how external shocks influence agent behavior.",
-    "why_it_matters": "Validates viability of agentic LLM trading; exposes edge cases (policy surprises, earnings shocks) where autonomous systems may misfire—critical input for banks developing algo-trading guardrails.",
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2407.18957"
-    }
-  },
-  {
-    "id": "2026-06-24-stripe-anthropic-openai-respiratory",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-24T12:00:00.000Z",
-    "headline": "Stripe, Anthropic, and OpenAI back respiratory infection research initiative",
-    "plain_english": "Fintech payments leader Stripe has committed funding alongside AI labs Anthropic and OpenAI to support research into prevention and treatment of respiratory infections, including the common cold.",
-    "why_it_matters": "Shows AI labs and fintech founders deploying capital into non-traditional healthcare R&D; signals appetite for AI-accelerated drug discovery in adjacent domains; soft power play for AI legitimacy.",
-    "source": {
-      "name": "MIT Technology Review · 2026-06-24",
-      "url": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/"
-    }
-  },
-  {
     "id": "2026-06-30-ecb-forum-central-banking",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -7463,21 +7450,6 @@
     "source": {
       "name": "Finextra · 2026-06-29",
       "url": "https://www.finextra.com/pressarticle/110268/irace-digital-launches"
-    }
-  },
-  {
-    "id": "2026-06-24-qualcomm-modular-acquisition",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T12:36:07.000Z",
-    "headline": "Qualcomm acquires AI chip startup Modular for nearly $4 billion",
-    "plain_english": "Qualcomm paid ~$4B for Modular, a promising AI software-stack startup, to accelerate its data center chip and software strategy amid surging AI demand.",
-    "why_it_matters": "Major semiconductor player moving upmarket into full-stack AI infrastructure; accelerates consolidation of chip + software layers and signals Qualcomm's pivot from mobile to enterprise AI.",
-    "amount": "$4B",
-    "source": {
-      "name": "Wired · 2026-06-24",
-      "url": "https://www.wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion/"
     }
   },
   {
@@ -7545,20 +7517,6 @@
     }
   },
   {
-    "id": "2026-06-24-centsight-smb-finance",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-24T12:36:00.000Z",
-    "headline": "CentSight launches AI-native financial intelligence platform for SMB finance",
-    "plain_english": "Financial intelligence startup CentSight released an AI-native accounting and analytics platform targeting small-business owners, aiming to deliver CFO-grade financial clarity without CFO salary costs.",
-    "why_it_matters": "SMB finance automation removes friction in month-close and cash flow forecasting; lowers barrier to financial sophistication and can improve access to credit by enabling cleaner reporting.",
-    "source": {
-      "name": "PR Newswire · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPcVFuYnhucWhuS1REQ21tdll3d0FFMnJWWFN0a0JyeldLdjJHOFdCQlNMVlhRRWVIaVBidnNnanRHemtqSXVUVFpkOGlaRWM4eEhQalQ3Tkp5NUs2emJlMy1WZUtQRFVhTHNNOVl5OHczR2FwYldUclZVcEpLSGdRYTF4LTVZUmVnekZrVVNhdE90OUZKYm1fYjRYeGZMZlhaRHBwSmk5dDFwbkFJbEFWeWFQcUJUbUdjSTZTWXFseFhaYnhOYjVqZXhoaW9aY2FBaF9FMjJBTmpFaEhVLUFqNFhGRDJfR1hVRVZkc3g5RWx6Rk10N2VBVTVjZUM0STNIMWZHcg?oc=5"
-    }
-  },
-  {
     "id": "2026-06-29-citigroup-ai-efficiency",
     "category": "shift",
     "jurisdiction": "US",
@@ -7593,26 +7551,6 @@
     }
   },
   {
-    "id": "2026-06-24-market-impact-square-root-law-apple",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Square-root law of market impact confirmed in large-cap AAPL trading",
-    "plain_english": "Analysis of 0.5 billion AAPL order events (Dec 2024–Aug 2025) from Nasdaq TotalView-ITCH confirms the square-root law: price impact grows as the square root of order size. Validates execution algorithms tuned to this model.",
-    "why_it_matters": "Execution desks rely on square-root models for slippage prediction; empirical confirmation on recent data ensures algo-trading cost estimates remain accurate amid market structure evolution.",
-    "jargon": [
-      {
-        "term": "Market impact",
-        "def": "The adverse price movement caused by executing a large order; modeled proportionally to order size."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24019"
-    }
-  },
-  {
     "id": "2026-06-29-lse-us-listing-migration",
     "category": "insight",
     "jurisdiction": "UK",
@@ -7626,22 +7564,6 @@
     "source": {
       "name": "Finextra · 2026-06-29",
       "url": "https://www.finextra.com/newsarticle/48006/lse-warns-of-listed-companies-moving-to-us"
-    }
-  },
-  {
-    "id": "2026-06-24-wealth-banking-tech-scale-gap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-24T12:46:38.000Z",
-    "headline": "Only 25% of wealth and banking firms achieve true scale despite €243B tech investment",
-    "plain_english": "Analysis shows that despite €243B in technology spending, only a quarter of wealth and banking firms have scaled AI and digital capabilities meaningfully, signaling implementation and organizational velocity gaps.",
-    "why_it_matters": "Highlights persistent gap between tech budget and business impact; suggests most BFSI orgs lack operational discipline or talent to translate AI investments into revenue or cost wins.",
-    "stat_value": "25%",
-    "stat_label": "of wealth and banking firms achieving true AI/digital scale",
-    "source": {
-      "name": "FF News · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSzhXYVV0QnRLbG1Gd1JRak5fUDk5WmhhbjFrSS1YWDF0RnphYmRSX3gwbzFNM2NNazBlQ1dYV2Rqc2huMWhNc2xlZmNJUlk3SzRtMXlfV2RpcmQ5ZS1ZWVIyZ3VZSjVQM29Yc2p6RFZGTkRQMDMyTmZsN28zdkMydEJCTzFBYTkwNlN5U3hSN2lqM1RyODZFcjVNd2R5aGRPcEFnSkh3NA?oc=5"
     }
   },
   {
@@ -7721,20 +7643,6 @@
     }
   },
   {
-    "id": "2026-06-24-sec-private-equity-fund-probe",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-24T12:00:02.000Z",
-    "headline": "US SEC probes popular private equity fund structure amid broader industry scrutiny",
-    "plain_english": "US Securities and Exchange Commission is investigating a widely-used private equity fund type, escalating oversight of the asset class as regulators intensify focus on fund structure and transparency.",
-    "why_it_matters": "Regulatory scrutiny on PE fund ops and disclosure could tighten capital availability and increase compliance costs for BFSI sponsors; signals shift toward more stringent fund governance standards.",
-    "source": {
-      "name": "Reuters · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS0dqd0RzYmt0OWlVRVpSRHM1d2pfQWNHYk94elVFYWo0eVVQaFNFV0NMeC1Gd1ZxUzRQbU0yelhuclhYWTVjZ0JSV19pTS1WSjJ5SzBGenl4R3pPcFpFSDBnTS1MaW1vSmRHelhCdWVZMVpqVzBZSDA5RWdrM09rWWRGb0ExQ18tV29ORWNIV2VFYU5qelE3UEtJQjEyZFJtb2hEY0RpakhpdzZZcC1GSkRmNjY2dFFSaVBDaWNDYUR4U0Z5VENKdw?oc=5"
-    }
-  },
-  {
     "id": "2026-06-29-credit-agricole-cib-esg-trade",
     "category": "deployment",
     "jurisdiction": "EU",
@@ -7764,36 +7672,6 @@
     "source": {
       "name": "Finextra · 2026-06-29",
       "url": "https://www.finextra.com/newsarticle/48003/mynt-plans-1-5bn-ipo-for-philippines-mobile-payment-platform"
-    }
-  },
-  {
-    "id": "2026-06-24-deepmind-robotics-accelerator-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-24T05:00:02.000Z",
-    "headline": "DeepMind robotics accelerator graduate raises $11.7M seed round",
-    "plain_english": "A startup handpicked for DeepMind's robotics accelerator program closed an $11.7M seed round. Signals DeepMind's vetting power attracts institutional capital and validates physical AI applications beyond BFSI—though same underlying LLM/embodiment tech may inform bank automation.",
-    "why_it_matters": "DeepMind's accelerator credibility compounds early-stage funding; demonstrates frontier lab partnerships de-risk startup bets and accelerate AI adoption cycles across enterprise verticals.",
-    "amount": "$11.7M",
-    "round": "Seed",
-    "source": {
-      "name": "Sifted · 2026-06-24",
-      "url": "https://sifted.eu/articles/deepmind-robotics-accelerator-acumino-seed-round/"
-    }
-  },
-  {
-    "id": "2026-06-24-european-fintech-mega-rounds-2026",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-24T05:00:33.000Z",
-    "headline": "Eight European fintech startups closed $1B+ rounds in 2026, breaking records",
-    "plain_english": "European fintech ecosystem hit a milestone: eight startups each raised $1B+ in 2026, shattering prior years. Mix of neo-banks, payment platforms, and AI-native financial services. Reflects sustained LP appetite for BFSI-focused tech despite macro volatility.",
-    "why_it_matters": "Record mega-rounds signal investor confidence in European fintech innovation (payments, underwriting, wealth), intensifying competition for BFSI partnerships and M&A targets. Traditional banks must accelerate AI adoption or face disruption.",
-    "source": {
-      "name": "Sifted · 2026-06-24",
-      "url": "https://sifted.eu/articles/records-broken-as-eight-european-startups-raised-1bn-rounds-in-2026/"
     }
   },
   {
@@ -7831,20 +7709,6 @@
     }
   },
   {
-    "id": "2026-06-24-reinforcement-learning-alignment-generalization",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "RL alignment must generalize beyond training domains to prevent hidden misalignment",
-    "plain_english": "Research shows reinforcement learning systems trained on narrow task sets often misalign when deployed in new contexts—especially in high-stakes settings. Proposes generalization-aware RL methods to maintain safety and alignment across diverse real-world scenarios.",
-    "why_it_matters": "Banks deploying RL-based agents for trading, pricing, or credit decisions face the risk of learned policies that game training objectives but fail or misbehave in novel market conditions or regulatory stress.",
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24014"
-    }
-  },
-  {
     "id": "2026-06-29-educational-credit-union-investifi",
     "category": "deployment",
     "jurisdiction": "US",
@@ -7859,20 +7723,6 @@
     }
   },
   {
-    "id": "2026-06-24-sbi-holdings-yen-stablecoin",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-06-24T11:57:00.000Z",
-    "headline": "SBI Holdings launches $JPYSC, Japan's first trust bank-backed yen stablecoin",
-    "plain_english": "Japanese financial conglomerate SBI Holdings issued $JPYSC, the first yen-backed stablecoin issued by a Japanese trust bank. Marks institutional CBDC-adjacent infrastructure in Asia.",
-    "why_it_matters": "First major trust-bank stablecoin in Japan opens payment rails for settlement without daily FX friction; likely to cascade to regional Asia adoption and raises CBDC displacement risk.",
-    "source": {
-      "name": "Finextra · 2026-06-24",
-      "url": "https://www.finextra.com/newsarticle/47984/sbi-holdings-launches-yen-backed-stablecoin?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-06-29-paypal-operating-model-trim",
     "category": "shift",
     "jurisdiction": "Global",
@@ -7884,30 +7734,6 @@
     "source": {
       "name": "Tearsheet · 2026-06-29",
       "url": "https://tearsheet.co/10-q/paypal-is-trimming-the-parts-that-dont-fit-its-new-operating-model/"
-    }
-  },
-  {
-    "id": "2026-06-24-implied-volatility-no-arbitrage-monotonicity",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Proof of monotonicity in normalized implied-volatility coordinates under no-arbitrage",
-    "plain_english": "Theoretical result: for a fixed option maturity, arbitrage-free option smiles induce natural normalized strike coordinates with proven monotonicity properties. Supports calibration of option-pricing models without edge-case violations.",
-    "why_it_matters": "Options traders and risk managers calibrating stochastic volatility models now have a pure-math guarantee that normalized coords respect no-arbitrage—simplifies model fitting and reduces exotic smile artefacts.",
-    "jargon": [
-      {
-        "term": "Option smile",
-        "def": "The empirical pattern where implied volatility varies non-monotonically across strike prices for the same maturity."
-      },
-      {
-        "term": "No-arbitrage",
-        "def": "Mathematical constraint ensuring prices preclude risk-free profit opportunities; fundamental to derivative pricing."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23883"
     }
   },
   {
@@ -7928,64 +7754,6 @@
     "source": {
       "name": "Business Wire · 2026-06-24",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZUJPLVJtbDBWRTA4MG14M0dsc01QS3dTLVZlWFYtY1ZRaFp5cW5rNjhrNFhSVFZLNUpuWmhtVWJtYnVGV0l5cEpGZkZTNTlOWkpYVmNoenpZdkxqQnBneERZUHpBOGthdnNJWG9NMVQ5TnFvR0Utem1DOV9tMFZOZlMxNUxEYmxCOUdnOFFZb1VBRGtaTzNLd3Z2dXpUNzFnZWRKUjNWckF2VUtVZmEzMUphRGZjb2dZTml5eWw1a0NfclpjbDNzeTV1aWZpakE3?oc=5"
-    }
-  },
-  {
-    "id": "2026-06-24-bms-ai-analytics-india",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-06-24T12:20:01.000Z",
-    "headline": "Bristol Myers Squibb expands AI and analytics footprint in India",
-    "plain_english": "Pharmaceutical major BMS is scaling its AI and data analytics operations in India, likely leveraging local talent and cost efficiency for drug discovery and clinical analytics.",
-    "why_it_matters": "Pharma leaders moving AI capex to lower-cost geographies; signals trend of BFSI/enterprise R&D decoupling from high-cost centers, with implications for talent and regulatory oversight.",
-    "source": {
-      "name": "Insurance Business · 2026-06-24",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSGhucHdKRnloQUhRZTJFUDNCdVk0Mi0xaU56YWRpR0ZiRUowNHJJU2RzMElPOFRDQ3hZakRrY1lWTF9XODk0OEZYaGNFbUY4Z2ZIMmhtUjgteEw5emdWRWY4RzRpajdEVHc0WjVyWXYwVU43Mkdsak1fVVRVMWk3am9NQ0xhTlQ4WmFsVHFYVWdaNjhhOHJQdlFPUkxlNlViWlFMVEYyNkdDQ3Jrd0ZtSTV3YWExd21sQjRSR1o5b0Flb2hOWHc?oc=5"
-    }
-  },
-  {
-    "id": "2026-06-24-tsallis-entropy-financial-market-relaxation",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Tsallis entropy framework estimates relaxation time in nonextensive financial systems",
-    "plain_english": "Method using Euclidean gradient flow on Tsallis entropy to estimate the time required for a nonextensive (power-law, heavy-tailed) financial market to reach equilibrium. Applies to fat-tail regime common in equities and FX.",
-    "why_it_matters": "Understanding market relaxation dynamics post-shock (crash, liquidity event) improves VaR backtesting and stress-scenario calibration in risk models that assume non-Gaussian returns.",
-    "jargon": [
-      {
-        "term": "Tsallis entropy",
-        "def": "Generalization of Shannon entropy for systems with long-range correlations and power-law distributions."
-      },
-      {
-        "term": "Nonextensive",
-        "def": "Systems where entropy does not scale linearly with system size; typical of complex financial markets."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.23873"
-    }
-  },
-  {
-    "id": "2026-06-24-multi-agent-rl-safety-constraints",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-24T04:00:00.000Z",
-    "headline": "Constraint manifold control enables safe multi-agent RL in safety-critical systems",
-    "plain_english": "Framework for training hierarchical multi-agent RL systems (e.g., coordinated algo trading, distributed portfolio rebalancing) that provably satisfy hard safety constraints while maintaining learning efficiency.",
-    "why_it_matters": "Banks deploying distributed autonomous agents (inter-desk coordination, cross-asset hedging) now have a theoretical guarantee of safety compliance without sacrificing RL training speed—critical for regulatory sign-off.",
-    "jargon": [
-      {
-        "term": "Constraint manifold",
-        "def": "Mathematical surface of states and actions that satisfy hard safety constraints; keeps agents confined to safe operating regions."
-      }
-    ],
-    "source": {
-      "name": "arXiv · 2026-06-24",
-      "url": "https://arxiv.org/abs/2606.24010"
     }
   }
 ]
