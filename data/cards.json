@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-07-28-regulation-upstart-occ-bank",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-27T23:18:48Z",
+    "headline": "Upstart wins conditional OCC approval to establish national bank",
+    "plain_english": "Lending marketplace Upstart received conditional approval from the Office of the Comptroller of the Currency to operate Upstart Bank, N.A., a milestone in its shift toward full banking operations. Final approvals still pending.",
+    "why_it_matters": "First AI-native lending platform to clear OCC hurdle signals regulatory comfort with algorithmic underwriting in deposit-taking institutions; sets precedent for fintech bank conversions.",
+    "source": {
+      "name": "PYMNTS · 2026-07-27",
+      "url": "https://www.pymnts.com/news/banking/2026/upstart-pursues-final-banking-approvals-after-landing-conditional-nod/"
+    },
+    "effective_date": "2026-07-27"
+  },
+  {
+    "id": "2026-07-28-regulation-swedbank-dfs-settlement",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-27T22:36:37Z",
+    "headline": "Swedbank pays $50M to settle New York AML investigation",
+    "plain_english": "New York State Department of Financial Services imposed a $50 million penalty on Swedbank AB and its New York branch for withholding information during an anti-money-laundering probe linked to the Panama Papers.",
+    "why_it_matters": "Reinforces DFS willingness to penalize compliance failures; signals heightened scrutiny of cross-border fund flows and information disclosure at large global banks.",
+    "jargon": [
+      {
+        "term": "AML",
+        "def": "Anti-money laundering: regulatory programs banks use to detect and prevent illegal financial activity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-27",
+      "url": "https://www.pymnts.com/legal/2026/swedbank-settles-new-york-charges-in-panama-papers-probe/"
+    },
+    "effective_date": "2026-07-27"
+  },
+  {
     "id": "2026-07-27-ai-lobbying-dc-regulation",
     "category": "regulation",
     "jurisdiction": "US",
@@ -152,43 +188,21 @@
     }
   },
   {
-    "id": "2026-07-23-google-eu-dma-fine",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-23T10:58:21Z",
-    "headline": "EU fines Google €890 million for preferential treatment of own services under DMA",
-    "plain_english": "European regulators issued a €890 million ($1 billion) penalty against Google under the Digital Markets Act (DMA), alleging the company systematically favors its own services over competitors in search and ad placement—the first major enforcement action under the bloc's landmark digital law.",
-    "why_it_matters": "DMA enforcement signals aggressive EU tech regulation will extend to AI and ranking algorithms. BFSI competitors (fintech platforms, payment networks) should expect similar scrutiny of algorithmic preference, affiliate placement, and API access parity.",
-    "jargon": [
-      {
-        "term": "Digital Markets Act (DMA)",
-        "def": "EU law designating large tech platforms as 'gatekeepers' and requiring them to treat all competitors fairly on their systems."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-07-23",
-      "url": "https://www.cnbc.com/2026/07/23/google-1-billion-eu-fine-dma.html"
-    }
-  },
-  {
-    "id": "2026-07-23-regulation-clarity-act-stablecoin",
-    "category": "regulation",
+    "id": "2026-07-28-deployment-happen-bank-deposits",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-22T22:08:06.000Z",
-    "headline": "Senate's CLARITY Act defines stablecoins as non-deposits, non-securities; reframes crypto-rewards framework",
-    "plain_english": "The Digital Asset Market Clarity Act (616 pages) explicitly states stablecoins are not federally insured deposits or investment products. This clarifies regulatory treatment for fintech and crypto firms issuing stablecoin-based rewards, opening compliance pathway for B2B payment integration in fintech.",
-    "why_it_matters": "If passed, removes legal ambiguity on stablecoin rails. Crypto-friendly fintech (Stripe, Square Cash) and enterprise payment systems can now embed stablecoin settlement without triggering banking or securities licensing. Watch for compliance-ready deployments.",
-    "jargon": [
-      {
-        "term": "stablecoin",
-        "def": "Cryptocurrency pegged to a reference asset (usually USD) to eliminate price volatility; differs from deposits (no federal insurance) and securities."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-07-27T23:40:46Z",
+    "headline": "Happen Bank hits $10.8B deposits on digital-first push",
+    "plain_english": "Happen Bank (LendingClub's new incarnation) reported 18% year-over-year deposit growth to $10.8B, driven by its digital banking platform rollout alongside personal lending operations.",
+    "why_it_matters": "Demonstrates consumer adoption of AI-driven personal finance integrations; proves fintech digital-first model can scale deposits competitively against incumbent banks.",
+    "scale": {
+      "metric": "deposits",
+      "value": "$10.8B"
+    },
     "source": {
-      "name": "PYMNTS · 2026-07-22",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/clarity-act-puts-stablecoin-rewards-work/"
+      "name": "PYMNTS · 2026-07-27",
+      "url": "https://www.pymnts.com/news/banking/2026/happens-digital-banking-push-helps-deposits-jump-18/"
     }
   },
   {
@@ -338,23 +352,17 @@
     }
   },
   {
-    "id": "2026-07-24-mastercard-virtual-card-expansion",
-    "category": "deployment",
+    "id": "2026-07-28-vendor-circle-ibm-patents",
+    "category": "vendor",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-24T13:14:00Z",
-    "headline": "Mastercard expands In Control virtual card platform with new capabilities",
-    "plain_english": "Mastercard announced enhancements to Mastercard In Control, its virtual card number (VCN) platform used for B2B payments. Upgrades focus on security and scalability in secure, one-time payment numbers for corporate spend control.",
-    "why_it_matters": "Virtual cards reduce fraud exposure for B2B buyers and give corporates real-time visibility into supplier payments. Expansion signals Mastercard doubling down on embedded fraud prevention in payments infrastructure.",
-    "jargon": [
-      {
-        "term": "VCN",
-        "def": "Virtual Card Number: a single-use or merchant-specific payment number tied to a real card, shielding the primary account from fraud."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-07-28T00:01:00Z",
+    "headline": "Circle acquires ~1,000 IBM blockchain patents",
+    "plain_english": "Stablecoin issuer Circle Internet Finance bought approximately 1,000 blockchain-related patents from IBM, strengthening its IP position in payment infrastructure.",
+    "why_it_matters": "Patent acquisition indicates Circle's defensive posture in payments; signals exit or deprioritization of blockchain by IBM, freeing capital for other ventures.",
     "source": {
-      "name": "Finextra · 2026-07-24",
-      "url": "https://www.finextra.com/pressarticle/110490/mastercard-expands-virtual-card-programme"
+      "name": "Finextra · 2026-07-28",
+      "url": "https://www.finextra.com/newsarticle/48152/circle-buys-ibms-blockchain-patent-portfolio?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -496,17 +504,17 @@
     }
   },
   {
-    "id": "2026-07-24-idenfy-bank-card-verification",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-24T13:19:00Z",
-    "headline": "iDenfy launches Bank Card Verification platform for identity compliance",
-    "plain_english": "iDenfy, a global identity verification and fraud-prevention vendor, launched a dedicated Bank Card Verification module within its dashboard to streamline card-holder KYC and AML checks.",
-    "why_it_matters": "Vendors bundling compliance checks into single panes reduce integration friction for banks managing multiple vendors. Signals consolidation pressure in identity-verification market.",
+    "id": "2026-07-28-shift-meta-ai-workforce",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-27T23:49:35Z",
+    "headline": "Meta pivots to embedding AI as coworker across all functions",
+    "plain_english": "Meta is restructuring its research division around CEO Mark Zuckerberg's 'personal superintelligence' vision, embedding AI into employee workflows across the company after spending $100B+ on AI infrastructure.",
+    "why_it_matters": "Signals shift from AI-as-tool to AI-as-embedded-culture; if successful, demonstrates ROI path for mega-scale AI capex and may pressure BFSI to treat internal AI agents as productivity multipliers.",
     "source": {
-      "name": "Finextra · 2026-07-24",
-      "url": "https://www.finextra.com/pressarticle/110492/idenfy-launches-bank-card-verification-platform"
+      "name": "PYMNTS · 2026-07-27",
+      "url": "https://www.pymnts.com/facebook-meta/2026/meta-wants-ai-to-become-every-employees-coworker/"
     }
   },
   {
@@ -648,21 +656,23 @@
     }
   },
   {
-    "id": "2026-07-24-wex-b2b-pivot",
-    "category": "shift",
-    "jurisdiction": "US",
+    "id": "2026-07-28-tool-microsoft-cybersecurity-ai",
+    "category": "tool",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-23T21:01:58.000Z",
-    "headline": "WEX pivots from travel dominance to B2B payments platform; Q2 revenue +14% to $753.5M",
-    "plain_english": "WEX Inc. reported Q2 2026 revenue of $753.5M (+14% YoY), with strong adjusted EPS growth. Company is now explicitly repositioning away from legacy travel-focused payments toward broader B2B payments. Macro tailwinds (fuel prices, FX) inflated results; underlying shift structural.",
-    "why_it_matters": "Signals BFSI consolidation: legacy vertical-specific payment processors (travel, fuel) are diversifying into horizontal B2B platforms. Competitive moat erodes; mid-market B2B payment volumes now target by all-in-one platforms (Stripe, Square, PayPal).",
-    "scale": {
-      "metric": "revenue",
-      "value": "$753.5M"
-    },
+    "published_at": "2026-07-27T23:46:25Z",
+    "headline": "Microsoft announces cost-optimized AI model for cybersecurity defense",
+    "plain_english": "Microsoft released a new cybersecurity AI model that, when paired with OpenAI's GPT-5.4, reportedly outperforms Anthropic's new Mythos 5 model on threat detection and incident response tasks.",
+    "why_it_matters": "Commoditizes specialized security AI; banks evaluating SecOps automation should benchmark against multiple providers' inference costs and detection accuracy claims.",
+    "jargon": [
+      {
+        "term": "inference",
+        "def": "Running a trained AI model on new data to generate predictions or outputs; governs per-request cost and latency."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-07-23",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/forget-travel-wex-next-act-is-b2b-payments/"
+      "name": "CNBC · 2026-07-27",
+      "url": "https://www.cnbc.com/2026/07/27/microsoft-touts-cost-saving-ai-model-for-cybersecurity.html"
     }
   },
   {
@@ -840,20 +850,24 @@
     }
   },
   {
-    "id": "2026-07-09-ollama-seed-funding",
-    "category": "tool",
+    "id": "2026-07-28-research-anthropic-open-weights",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-09T13:00:00.000Z",
-    "headline": "Ollama raises $65M; open-source LLM framework now used by nearly 9M developers",
-    "plain_english": "Ollama, a GitHub-native tool enabling developers to run large language models locally on personal computers, closed $65M funding. The project has grown to 8.9M users, 176K GitHub stars, and 17K forks, becoming the de facto standard for on-device AI inference.",
-    "why_it_matters": "Rapid adoption of open local-inference tooling signals enterprise shift toward private, offline LLM deployments—critical for BFSI compliance, data residency, and latency-sensitive applications.",
-    "stars": 176000,
+    "severity": "low",
+    "published_at": "2026-07-27T23:43:50Z",
+    "headline": "Anthropic CEO clarifies stance: no ban on open-weight models, prefers testing",
+    "plain_english": "Anthropic founder Dario Amodei stated the company does not oppose open-weight AI models (publicly released model weights), but advocates for rigorous testing and governance over outright bans; clarifies he was not backing a recent industry letter.",
+    "why_it_matters": "Resolves confusion on Anthropic's stance; signals frontier labs are converging on testing-first governance rather than outright prohibition, lowering regulatory friction for open-source adoption in BFSI.",
+    "jargon": [
+      {
+        "term": "open-weight models",
+        "def": "AI models where internal weights (learned parameters) are publicly released, allowing anyone to run, fine-tune, or deploy them without relying on a company's API."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-07-09",
-      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/"
-    },
-    "amount": "$65M"
+      "name": "CNBC · 2026-07-27",
+      "url": "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html"
+    }
   },
   {
     "id": "2026-07-27-multiagent-ai-healthcare-superintelligence",
@@ -996,17 +1010,19 @@
     }
   },
   {
-    "id": "2026-07-17-research-ai-driven-lab-automation",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-17T11:45:00Z",
-    "headline": "SLAS Technology highlights AI-driven laboratory automation advances",
-    "plain_english": "SLAS (Society for Laboratory Automation and Screening) journal Volume 38 features research on AI accelerating laboratory workflows: automation, transcriptomics, and gene therapy. Relevant to fintech infrastructure testing and risk modeling.",
-    "why_it_matters": "Lab automation AI patterns (parallel testing, automated anomaly detection) transfer to BFSI model validation and stress-testing pipelines; banks can adopt proven automation frameworks.",
+    "id": "2026-07-28-insight-ai-circular-financing",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-27T22:20:01Z",
+    "headline": "AI data center financing loop mirrors dot-com bubble dynamics",
+    "plain_english": "Reports of Nvidia backing OpenAI's data center expansion have drawn parallels to pre-2000 circular financing arrangements, where vendor-investor overlaps masked fragile unit economics and inflated capital requirements.",
+    "why_it_matters": "If AI capex boom collapses due to ROI shortfall, BFSI banks exposed to data center lending and vendor balance sheets face spillover risk; stress-test models accordingly.",
+    "stat_label": "Circular financing concern",
+    "stat_value": "Nvidia → OpenAI → Nvidia ecosystem",
     "source": {
-      "name": "Chromatography Today · 2026-07-17",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPamxQVXZwV2RGVndMMG5yN0dWaTZ5X0JoTXV5ZTJON1YtMkpTUjdTaHp4Z3pxX0phWE5WczBPVWh0TU12MWtDSms4SHdyUWZXUldZMC1HYnpRVTA1UEMzcjV2cG84U2NTUEZ2ZlVDRmVqRUZWYWFXM2MzNGNOaDQ2R2dCWXE3bENRNl9ITWVsOFRTSFVoZUl4b044YW1VWno3SGFyMHdBMnp6M0ZKUFFPM19ibDA4bGNOWEVKTWxhUkhnZFpYS0l3d1BPWDRMSGdOQlUwdmZFc0xselhxaF9iWHpUdE5MUjB5d0FQV2FhQV9WX1liaWZFUnJlNzJxUlk"
+      "name": "CNBC · 2026-07-27",
+      "url": "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html"
     }
   },
   {
@@ -1147,22 +1163,6 @@
     "source": {
       "name": "McKinsey Cited / Fox Business · 2026-07-24",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUXN5bC1DVmFJUXQ1Z1dSV3VvRjBjajZJcDl5ZEwwczVNR1BiNUVydERPUEpIR3hzUlBkdDBJclhDM3ROUE5aOExZcjgyODRmQWFaVkR5SklleDVkVWJzU3ZEUW56LWNvOTZjUWxlcUhPcjFNX3ZKQlRadHJEVFBQdXFXaDVQUlpnMHRjRS1uTkNLczJaNVdSS1dZdkU4OG85NUFGbTd3emFISmxkY3RkakZ3ONIBuAFBVV95cUxOVndsNzAyYjl6R1BveHhHT1NLdEhKM2VWTXplcV9yZ0hYalptT3hRQ3hlRWdueG41VjFPMGR4UmhYUGl1alVPR2xLekhwcDVTOWNvQ0w3YkwtWnkweVE5NFlYdnFlRERfbjZ4aEpVLXlRd3dYTFVXZnVjVFY1X2VUT21MV1ppeDVMUm1UM3p2a2p3ZnQ0RmNreGtSRnVKbVBhNkJWNzVMbjNPei1rYjluV3l5Qm8tSU1i"
-    }
-  },
-  {
-    "id": "2026-07-24-delhi-police-facial-recognition",
-    "category": "insight",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-07-24T11:31:46Z",
-    "headline": "Delhi Police AI facial recognition vans raise Aadhaar linking questions",
-    "plain_english": "Delhi Police deployed mobile facial recognition vans for law enforcement. Public concern: whether these systems tap India's Aadhaar biometric database without explicit legal gates, merging law enforcement with identity infrastructure.",
-    "why_it_matters": "Sets regulatory precedent for fintech. If biometric IDs (Aadhaar) can flow to police without audit, bank AI-driven KYC/sanctions screening faces similar scope-creep risks and requires firmer data-sharing agreements.",
-    "stat_value": "Rising",
-    "stat_label": "public concern over Aadhaar scope beyond financial services",
-    "source": {
-      "name": "AI Trending Now · 2026-07-24",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ3VsNm93MHpUNWd5WmxaUmY2Nkd4bGZCZkJWdnl6YlBlbGlpNDB3SXBlbkZHVWZ2WGthQ1lGODExMEJOTXZHWTRVSzZ2bDRydDljNjYyS1dkYWRXQWNNOHZOMlhfM25ncVA0VlVFSG41QU5DcXlyUFBfTWltU3NhckpIQ1FHRWRRYzFGMFc4N1NCcVFQMG1WNEhqZ1czNFRfX0YyTTZtRTY3clNtVWZieHpOSWVicGtxemRrcmpVNkh0QW9oSVpr"
     }
   },
   {
@@ -1558,6 +1558,20 @@
     }
   },
   {
+    "id": "2026-07-28-trending-data-breach-bank-of-baroda",
+    "category": "trending",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-07-27T21:41:32Z",
+    "headline": "Bank of Baroda customer data leaked online",
+    "plain_english": "Customer data from India's Bank of Baroda has been leaked and discovered online by security researchers, according to Reuters sources. Investigation underway into scope and exposure timeline.",
+    "why_it_matters": "Largest Indian bank facing data breach signals vulnerability in emerging-market digital infrastructure; triggers regulatory notification cascades and reputational pressure; auditors will flag BFSI third-party data governance gaps globally.",
+    "source": {
+      "name": "Reuters · 2026-07-27",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcGNLcHVmbXlxOWpvQUdsYTFtT1NYdmgxaXAyV2tETXdoQklpU0ZJSjdEamgyRUd1Q0ZfeTdlci1RSHR3aF9RTXJmNjBGNXZ0ZXg4T3VUM1RhNFRTT3FKTWd5SzZCaVpmVzA4ZENtZzBVNlZ2RFlCdVNVcllCVVZLcWxPQ0J2Yks1eHRjOEhMSHRLNUQzclprVVY1Y2d4YU9Sc0FKaFZOQ0JQMGRsTHZYWWpXc0NGTVhmcmRGVGY4MjBGUUlzOVE"
+    }
+  },
+  {
     "id": "2026-07-27-ai-distillation-debate-trending",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1703,6 +1717,144 @@
     "source": {
       "name": "Reuters · 2026-07-19",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZjZCUU55QWV3ZE5DeFpBalhfaVNTR1pMNTFKaFpFNzRYR2o4QWJGZmZoWUJ0c204TXZhNzRjUFZyRXZrdXVpcEtVZThMV0dnUEdjTlgybDdfVHRmSDZVZEtnUWFHaTBUb21CSFhiaUhKbXBnR0FLcDRieVBsVWFCTi1kVUlJam41STByRDlWcjJxYUdaQmIwdTlmdDVyMDg0YjVRWk5JMzRwRDBUbWx3d1ZZcXhvdw"
+    }
+  },
+  {
+    "id": "2026-07-23-google-eu-dma-fine",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-23T10:58:21Z",
+    "headline": "EU fines Google €890 million for preferential treatment of own services under DMA",
+    "plain_english": "European regulators issued a €890 million ($1 billion) penalty against Google under the Digital Markets Act (DMA), alleging the company systematically favors its own services over competitors in search and ad placement—the first major enforcement action under the bloc's landmark digital law.",
+    "why_it_matters": "DMA enforcement signals aggressive EU tech regulation will extend to AI and ranking algorithms. BFSI competitors (fintech platforms, payment networks) should expect similar scrutiny of algorithmic preference, affiliate placement, and API access parity.",
+    "jargon": [
+      {
+        "term": "Digital Markets Act (DMA)",
+        "def": "EU law designating large tech platforms as 'gatekeepers' and requiring them to treat all competitors fairly on their systems."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-07-23",
+      "url": "https://www.cnbc.com/2026/07/23/google-1-billion-eu-fine-dma.html"
+    }
+  },
+  {
+    "id": "2026-07-23-regulation-clarity-act-stablecoin",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-22T22:08:06.000Z",
+    "headline": "Senate's CLARITY Act defines stablecoins as non-deposits, non-securities; reframes crypto-rewards framework",
+    "plain_english": "The Digital Asset Market Clarity Act (616 pages) explicitly states stablecoins are not federally insured deposits or investment products. This clarifies regulatory treatment for fintech and crypto firms issuing stablecoin-based rewards, opening compliance pathway for B2B payment integration in fintech.",
+    "why_it_matters": "If passed, removes legal ambiguity on stablecoin rails. Crypto-friendly fintech (Stripe, Square Cash) and enterprise payment systems can now embed stablecoin settlement without triggering banking or securities licensing. Watch for compliance-ready deployments.",
+    "jargon": [
+      {
+        "term": "stablecoin",
+        "def": "Cryptocurrency pegged to a reference asset (usually USD) to eliminate price volatility; differs from deposits (no federal insurance) and securities."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-07-22",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/clarity-act-puts-stablecoin-rewards-work/"
+    }
+  },
+  {
+    "id": "2026-07-24-mastercard-virtual-card-expansion",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-24T13:14:00Z",
+    "headline": "Mastercard expands In Control virtual card platform with new capabilities",
+    "plain_english": "Mastercard announced enhancements to Mastercard In Control, its virtual card number (VCN) platform used for B2B payments. Upgrades focus on security and scalability in secure, one-time payment numbers for corporate spend control.",
+    "why_it_matters": "Virtual cards reduce fraud exposure for B2B buyers and give corporates real-time visibility into supplier payments. Expansion signals Mastercard doubling down on embedded fraud prevention in payments infrastructure.",
+    "jargon": [
+      {
+        "term": "VCN",
+        "def": "Virtual Card Number: a single-use or merchant-specific payment number tied to a real card, shielding the primary account from fraud."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/pressarticle/110490/mastercard-expands-virtual-card-programme"
+    }
+  },
+  {
+    "id": "2026-07-24-idenfy-bank-card-verification",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-24T13:19:00Z",
+    "headline": "iDenfy launches Bank Card Verification platform for identity compliance",
+    "plain_english": "iDenfy, a global identity verification and fraud-prevention vendor, launched a dedicated Bank Card Verification module within its dashboard to streamline card-holder KYC and AML checks.",
+    "why_it_matters": "Vendors bundling compliance checks into single panes reduce integration friction for banks managing multiple vendors. Signals consolidation pressure in identity-verification market.",
+    "source": {
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/pressarticle/110492/idenfy-launches-bank-card-verification-platform"
+    }
+  },
+  {
+    "id": "2026-07-24-wex-b2b-pivot",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-23T21:01:58.000Z",
+    "headline": "WEX pivots from travel dominance to B2B payments platform; Q2 revenue +14% to $753.5M",
+    "plain_english": "WEX Inc. reported Q2 2026 revenue of $753.5M (+14% YoY), with strong adjusted EPS growth. Company is now explicitly repositioning away from legacy travel-focused payments toward broader B2B payments. Macro tailwinds (fuel prices, FX) inflated results; underlying shift structural.",
+    "why_it_matters": "Signals BFSI consolidation: legacy vertical-specific payment processors (travel, fuel) are diversifying into horizontal B2B platforms. Competitive moat erodes; mid-market B2B payment volumes now target by all-in-one platforms (Stripe, Square, PayPal).",
+    "scale": {
+      "metric": "revenue",
+      "value": "$753.5M"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-07-23",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/forget-travel-wex-next-act-is-b2b-payments/"
+    }
+  },
+  {
+    "id": "2026-07-09-ollama-seed-funding",
+    "category": "tool",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-09T13:00:00.000Z",
+    "headline": "Ollama raises $65M; open-source LLM framework now used by nearly 9M developers",
+    "plain_english": "Ollama, a GitHub-native tool enabling developers to run large language models locally on personal computers, closed $65M funding. The project has grown to 8.9M users, 176K GitHub stars, and 17K forks, becoming the de facto standard for on-device AI inference.",
+    "why_it_matters": "Rapid adoption of open local-inference tooling signals enterprise shift toward private, offline LLM deployments—critical for BFSI compliance, data residency, and latency-sensitive applications.",
+    "stars": 176000,
+    "source": {
+      "name": "TechCrunch · 2026-07-09",
+      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/"
+    },
+    "amount": "$65M"
+  },
+  {
+    "id": "2026-07-17-research-ai-driven-lab-automation",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T11:45:00Z",
+    "headline": "SLAS Technology highlights AI-driven laboratory automation advances",
+    "plain_english": "SLAS (Society for Laboratory Automation and Screening) journal Volume 38 features research on AI accelerating laboratory workflows: automation, transcriptomics, and gene therapy. Relevant to fintech infrastructure testing and risk modeling.",
+    "why_it_matters": "Lab automation AI patterns (parallel testing, automated anomaly detection) transfer to BFSI model validation and stress-testing pipelines; banks can adopt proven automation frameworks.",
+    "source": {
+      "name": "Chromatography Today · 2026-07-17",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPamxQVXZwV2RGVndMMG5yN0dWaTZ5X0JoTXV5ZTJON1YtMkpTUjdTaHp4Z3pxX0phWE5WczBPVWh0TU12MWtDSms4SHdyUWZXUldZMC1HYnpRVTA1UEMzcjV2cG84U2NTUEZ2ZlVDRmVqRUZWYWFXM2MzNGNOaDQ2R2dCWXE3bENRNl9ITWVsOFRTSFVoZUl4b044YW1VWno3SGFyMHdBMnp6M0ZKUFFPM19ibDA4bGNOWEVKTWxhUkhnZFpYS0l3d1BPWDRMSGdOQlUwdmZFc0xselhxaF9iWHpUdE5MUjB5d0FQV2FhQV9WX1liaWZFUnJlNzJxUlk"
+    }
+  },
+  {
+    "id": "2026-07-24-delhi-police-facial-recognition",
+    "category": "insight",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-07-24T11:31:46Z",
+    "headline": "Delhi Police AI facial recognition vans raise Aadhaar linking questions",
+    "plain_english": "Delhi Police deployed mobile facial recognition vans for law enforcement. Public concern: whether these systems tap India's Aadhaar biometric database without explicit legal gates, merging law enforcement with identity infrastructure.",
+    "why_it_matters": "Sets regulatory precedent for fintech. If biometric IDs (Aadhaar) can flow to police without audit, bank AI-driven KYC/sanctions screening faces similar scope-creep risks and requires firmer data-sharing agreements.",
+    "stat_value": "Rising",
+    "stat_label": "public concern over Aadhaar scope beyond financial services",
+    "source": {
+      "name": "AI Trending Now · 2026-07-24",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ3VsNm93MHpUNWd5WmxaUmY2Nkd4bGZCZkJWdnl6YlBlbGlpNDB3SXBlbkZHVWZ2WGthQ1lGODExMEJOTXZHWTRVSzZ2bDRydDljNjYyS1dkYWRXQWNNOHZOMlhfM25ncVA0VlVFSG41QU5DcXlyUFBfTWltU3NhckpIQ1FHRWRRYzFGMFc4N1NCcVFQMG1WNEhqZ1czNFRfX0YyTTZtRTY3clNtVWZieHpOSWVicGtxemRrcmpVNkh0QW9oSVpr"
     }
   },
   {
