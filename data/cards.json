@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-07-29-globalfoundries-ai-chip",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T10:37:44.000Z",
+    "headline": "US awards GlobalFoundries $300M to develop faster AI chip interconnect technology",
+    "plain_english": "The US government granted GlobalFoundries $300 million to accelerate development of high-speed interconnect chips used in AI accelerators. The subsidy is part of broader domestic semiconductor resilience strategy under CHIPS Act.",
+    "why_it_matters": "Government funding for AI infrastructure chips signals policy commitment to onshore advanced compute capacity—financial firms should expect reduced vendor concentration risk and potential for clearer supply chain transparency over 3–5 years.",
+    "source": {
+      "name": "Reuters · 2026-07-29",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOW0tVXFBZ2FXNkREcFU0S3dXaExacjNVemJWU3RsbnhiTTJWdkZram9nb0s2ZFdRVHJLZmM0VHdRTEMzRFpMcV9Ea0hZNEpoeDhlb0Nyc2RzUzBJSHBXckJ3aTIwQ1F6b2lqeEFkbUFNdXIwbEpLV191OTdoS2ZocUFsdXlIaGl1dFNaMDN2STN4ZXRyLThUemlSeVdoUXJMQ3hmUjdQaTR4cURDQ0JRcUpBNA"
+    }
+  },
+  {
     "id": "2026-07-29-spp-ai-governance-pensions-framework",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -158,17 +172,37 @@
     }
   },
   {
-    "id": "2026-07-27-bank-indonesia-warjiyo",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-27T00:50:00Z",
-    "headline": "Bank Indonesia governor Warjiyo resigns early; deputy assumes leadership",
-    "plain_english": "Warjiyo stepped down ahead of schedule from his post as head of Indonesia's central bank; deputy assumes role. Transition may signal policy shift on digital finance regulation and fintech oversight.",
-    "why_it_matters": "Leadership change at major emerging-market central bank; watch for pivot on open banking mandates, crypto stance, or AI governance for Indonesian fintech sector.",
+    "id": "2026-07-29-citi-invoice-processing",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T12:03:00.000Z",
+    "headline": "Citi launches AI-powered invoice processing tool for enterprise clients",
+    "plain_english": "Citi rolled out Citi Consolidate, an AI-driven invoice automation solution built with Infor. The tool reduces manual processing overhead for corporate treasury and accounting teams managing high-volume receivables.",
+    "why_it_matters": "Automation of invoice workflows reduces operational cost per transaction and frees senior finance staff for exception handling and strategic work—a high-ROI early AI use case in banking.",
     "source": {
-      "name": "Bloomberg · 2026-07-27",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPem5JdGQ5RTN5U3BEOHNlZWxqNW1wREVUUXQ4aGVlYWRVbUpFTmdCSGV3Z0ZWZEs2dWZ6STVpWXZtakQ5WUxqWThpX3V2WHNlN3JlSnJRZGEtSDdob05RXzZfaDFqdnB6NlpaVjJ5Zl9MejR0bDdwc2VtQmVZOC1qRnVQWnVjcHRqQzRRWGlpbkZzYmFsYmFMV19OZXlTQjNpNnlCNnNRQkZWbW1PTE81U1Raaw"
+      "name": "Finextra · 2026-07-29",
+      "url": "https://www.finextra.com/pressarticle/110524/citi-rolls-out-digital-invoice-processing-tool"
+    }
+  },
+  {
+    "id": "2026-07-29-intuit-credit-karma-llm-guardrails",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T11:30:00.000Z",
+    "headline": "Intuit Credit Karma pairs deterministic financial models with tuned LLM prompts to prevent AI drift",
+    "plain_english": "Intuit Credit Karma builds domain-specific AI assistants that lock LLM outputs to validated financial logic via GEPA (prompt tuning framework), avoiding free-form model hallucination in debt, refund, and paycheck advice.",
+    "why_it_matters": "Constraining LLM behavior within deterministic financial rules is the production pattern emerging across fintech—prevents regulatory liability and customer harm from out-of-bounds recommendations.",
+    "jargon": [
+      {
+        "term": "GEPA",
+        "def": "Governance-enabled prompt architecture; method to tune LLM responses against validated business logic and compliance rules."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-07-29",
+      "url": "https://tearsheet.co/ai-innovation/we-use-prompts-that-have-been-tuned-through-gepa-so-the-llm-isnt-freelancing-intuit-credit-karmas-gurpreet-singh-on-how-the-firm-pairs-deterministic-financial-modeling-with-gen-ai"
     }
   },
   {
@@ -292,37 +326,34 @@
     }
   },
   {
-    "id": "2026-07-26-china-mobile-calling-ai",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-07-29-lemonedge-series-a",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-07-26T08:37:38Z",
-    "headline": "China Mobile and telecom operators launch AI-powered calling services for consumers",
-    "plain_english": "China Mobile and other major Asian telecom operators have commercially launched AI-augmented calling features for consumer subscribers. These include AI transcription, summarization, and voice enhancement.",
-    "why_it_matters": "Telecom-hosted AI services (vs. cloud-native SaaS) represent a new deployment paradigm; BFSI can monitor this model for in-branch, call-center, and customer-communication use cases where latency and data residency constraints favor carrier edge deployment.",
+    "published_at": "2026-07-29T10:38:00.000Z",
+    "headline": "Private markets fund accounting platform LemonEdge closes $21M Series A led by Blackstone",
+    "plain_english": "LemonEdge, a fund accounting platform for private markets, raised $21M Series A from Blackstone Innovations Investments, BNY Mellon, and Sidekick Partners. The platform automates compliance and financial reporting for alternative asset managers.",
+    "why_it_matters": "Blackstone's backing signals institutional appetite for AI-native ops platforms in alternatives—PE/VC firms face mounting audit, LP reporting, and regulatory complexity that off-the-shelf tools do not address.",
+    "amount": "$21M",
+    "round": "Series A",
     "source": {
-      "name": "Macau Business · 2026-07-26",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSUkyeGxpM0FvM2NJRmdOQWttTnozUDVvZExSZ0JCSFhURkFCS2xOcjBjblFaOG1ZN3Btdk9Lc0VMSnE1akhYNDhPbklST0pCbDVZTzVjRHpaM2JPd0JFbmN6a3g5c25jbG1qdnNicGduTGR4YUtaUUxzbzZ1bUdyS0ZMZ1JXVzNYQ2hhVVJaMkV3WkV5T0JQUGNVeUtfa2k3RUdkeVRBU2J4OVk2N1BsNEJvWUkya3hubzcyZVJoUnpMbENlR3ZmYUV3T0JsdnBQQ1JxWHA5SUE0T2Q1bmtTcExHNGduS3JfM0RpN19RV28tYUFp"
+      "name": "Finextra · 2026-07-29",
+      "url": "https://www.finextra.com/newsarticle/48164/private-market-fund-accounting-platform-lemonedge-raises-21-million"
     }
   },
   {
-    "id": "2026-07-26-woori-bank-ai-agents-korea",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-26T00:23:00Z",
-    "headline": "Woori Bank deploys AI agents for sales automation in South Korea",
-    "plain_english": "Woori Bank, South Korea's mid-size lender, rolled out autonomous AI agents to drive data-driven sales tactics and customer targeting. Shift signals broader Asian bank pivot from chatbots to agents that execute transactions and shape strategy.",
-    "why_it_matters": "Agent-led sales automation scales personalization without headcount; expect Korean, Japanese, and Southeast Asian peers to copy within 2–3 quarters as competitive pressure on margins intensifies.",
-    "jargon": [
-      {
-        "term": "AI agents",
-        "def": "Autonomous systems that perceive state, plan multi-step actions, and execute decisions (e.g., recommend products, route leads) without human intervention per step."
-      }
-    ],
+    "id": "2026-07-29-pangram-ai-detection",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-29T11:00:00.000Z",
+    "headline": "AI content detection startup Pangram raises $9M, releases Pangram 4 text and image models",
+    "plain_english": "Pangram raised $9M and launched Pangram 4, an AI text detection model, plus a new AI image detection model in research preview. The startup targets financial services and media firms combating synthetic content fraud.",
+    "why_it_matters": "As deepfakes and synthetic media proliferate, BFSI risk and compliance teams need reliable detection tools to audit third-party content (marketing, executive video calls, client documentation) for authenticity.",
+    "amount": "$9M",
     "source": {
-      "name": "CHOSUNBIZ · 2026-07-26",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMHR5eWJLREhadzdsRXNjSHVObUR6VktpZ3JaNGdjLUpKNkVGNktldW1rNEVrYmkwd2pVZ0FuU1k1WVY5aWlIdUcyemx3eFcxenNpQUl6blFnX2ZFamdZNFpfZjMzWDdQcVRiM2tQcnB5RTZ1R0FCQWtzZGdQWUozV9IBlAFBVV95cUxPdktob0JFSjFXM0RUeGNhdzRneG1ycXlxcThwOWIxQVE4ZDQwYnNEbWktNmdKVnNLeHo0QUZjN0EyRFAyMHZDaVNUNlBxWVpvQ1pkTHpiZW1LZ283WVBzMDdJVnh1MnQ4cnpyYVJhSXNSalZ3dVduUEhEQ0I3WXdZXzNHcEdmOFNzQzVXamE5Y2h4NGI5"
+      "name": "TechCrunch · 2026-07-29",
+      "url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/"
     }
   },
   {
@@ -449,33 +480,31 @@
     }
   },
   {
-    "id": "2026-07-25-vendor-consolidation-signal",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-07-29-bloomberg-canoe-intelligence",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-07-25T07:38:01Z",
-    "headline": "AI vendor business model stress: companies racing between commoditization and control",
-    "plain_english": "Industry analysis warns that AI vendors face a squeeze: open-source models + distillation erode pricing power (commoditization), while safety/compliance certifications become the only sustainable moat. Vendors must shift revenue from model licensing to managed services (consulting, monitoring, risk frameworks) or risk margin collapse.",
-    "why_it_matters": "BFSI procurement teams should expect vendor pricing to compress 30-40% over 18 months. Negotiate away from per-token or per-inference pricing; lock in managed-service contracts with SLAs and compliance guardrails. Pure model licensing plays will not survive; look for consolidation of weaker vendors by 2027.",
+    "published_at": "2026-07-29T13:00:00.000Z",
+    "headline": "Bloomberg acquires Canoe Intelligence to deepen private markets data and AI analytics",
+    "plain_english": "Bloomberg purchased AI-powered alternative investment data firm Canoe Intelligence. The acquisition expands Bloomberg's position in private markets intelligence, a segment where AI-driven fund performance and deal sourcing tools are becoming table stakes.",
+    "why_it_matters": "Terminal-dependent finance professionals now expect real-time AI synthesis of unstructured deal flow, LP commitment, and valuation signals—Bloomberg is bundling AI discovery into its core product to defend wallet share against fintech entrants.",
     "source": {
-      "name": "Hindustan Times · 2026-07-25",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU2ZvQ1FtWTJMczlFbVFEaXM2c0RHZk5MTk5hMzBiY3B4eE5uRGE4ZU1KRW5zT00wVUtYZ1RxTXA0ZUxWV2dJaEs5RVFQYXRVTFZhcmpDRW0xU0hXQ1JDVTIxblA0blVRM3BLWXpqVG5WV1NTbkV5ZjMzV1ZhT1ZaS2dkdmFlelJiNlFHVkdNODNkTlFoSEJBVUdIVFJVTHlXc3VvSlFjM0Rtb0dhWjBXeHkxWHhYZDU1YzlHY3RPaVdTQdIBxwFBVV95cUxPS1ZQVEpXRm0wUzV6MHhDcEh0UUJ2WEtfbkxpVDZDaFNjNkhUcHFlejRZTXZuMWtGYjk3Z2NoVVRrcWhxU25waXdsejItU09CeFluLWJxZHNnM0tzU0NDSEdlaHJwcHJaOTc3ekwtUGs0eUx0MWRES2hRYVVadzdyTEg5YXBCMWF1Ri13Qm9NYnNNaU5qU19BcWxYd2VuQ01zSGFDU2JFZHVLcTEwVVZXVlFjYzNPS2NhTUNTNXItU2JGckVuUmdZ"
+      "name": "Finextra · 2026-07-29",
+      "url": "https://www.finextra.com/newsarticle/48162/bloomberg-to-buy-canoe-intelligence-for-private-markets-push"
     }
   },
   {
-    "id": "2026-07-24-prentis-ai-lab-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-07-29-aci-dlocal-latam-payments",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-07-24T22:25:58.000Z",
-    "headline": "Prentis AI lab co-founded by Hoffman, Pincus raising $100M to automate routine computer tasks",
-    "plain_english": "Reid Hoffman and Mark Pincus launched Prentis, a new AI research lab betting that automating routine digital workflows (vs. coding) will become AI's dominant use case. Fundraising at $100M valuation suggests investor appetite for AI-agent infrastructure play.",
-    "why_it_matters": "If AI agents can reliably automate back-office and trading workflows, BFSI firms will need fast eval/deployment frameworks; vendors focused on agent orchestration and monitoring will capture outsized value.",
-    "amount": "$100M",
-    "round": "Funding round",
+    "published_at": "2026-07-29T13:40:00.000Z",
+    "headline": "ACI Worldwide partners with dLocal to connect global merchants to emerging-market payment rails",
+    "plain_english": "ACI Worldwide and dLocal announced a strategic partnership giving merchants instant access to local payment methods across emerging Latin American markets. The move consolidates local payment orchestration into a single API surface.",
+    "why_it_matters": "Merchants expanding into emerging markets face fragmented, region-specific payment rails—unified orchestration via API reduces operational overhead and accelerates go-to-market, setting a precedent for banks to offer similar integrated services.",
     "source": {
-      "name": "TechCrunch · 2026-07-24",
-      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/"
+      "name": "Finextra · 2026-07-29",
+      "url": "https://www.finextra.com/pressarticle/110526/aci-worldwide-and-dlocal-bring-latin-american-payment-rails-to-global-merchants"
     }
   },
   {
@@ -603,35 +632,6 @@
     "source": {
       "name": "Fintech Funding / Evotek JSC · 2026-07-24",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWlmRDROakdKa1JsZ2RNYkNTdnRvMTg1M2tSdUFpSUtBS3M4UW1mRkhOajJrMzZMUnlFbmdyZmlZM2szOEZhOEM2SnJmLUNLTGhjcjlDMmQzdnh3ZFZra2FZcU5Ud0o1UDN6bXIxaV9UYTlpSHR6ejRyeEdWbjIyYU9qTVpKN3NnV1ZCZUJFSTkwSVh0TC1ZUktlRDQtckcx"
-    }
-  },
-  {
-    "id": "2026-07-24-uber-waymo-exclusivity-end",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-24T21:48:45.000Z",
-    "headline": "Uber, Waymo end exclusivity agreement; Waymo driverless rides to compete on third-party platforms",
-    "plain_english": "Uber and Waymo agreed to terminate their exclusivity arrangement in Atlanta and Austin. Starting 2028, Waymo's autonomous-vehicle rides will be available on platforms beyond Uber, opening competition among ride-hailing apps for AV dispatch and pricing.",
-    "why_it_matters": "Autonomous vehicle commoditization signals AI-driven mobility will fragment; BFSI exposure: non-bank fintechs (Affirm, Square, PayPal) may displace card networks in AV micro-lending and toll-payment flows. Banks must prepare for disintermediation.",
-    "effective_date": "2028-01-01",
-    "source": {
-      "name": "CNBC · 2026-07-24",
-      "url": "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html"
-    }
-  },
-  {
-    "id": "2026-07-24-commerzbank-unicredit-merger-talks",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-24T12:32:00Z",
-    "headline": "Commerzbank enters takeover talks with UniCredit after months of resistance",
-    "plain_english": "Germany's Commerzbank, after resisting UniCredit's advances, has agreed to merger negotiations. UniCredit, Italy's largest bank, has been pursuing Commerzbank to expand its European footprint and consolidate operations.",
-    "why_it_matters": "Major European banking consolidation. If completed, creates a pan-European challenger to France's BNP and HSBC; reshuffles tech, compliance, and risk architecture across two large legacy BFSI operations.",
-    "source": {
-      "name": "Finextra · 2026-07-24",
-      "url": "https://www.finextra.com/newsarticle/48143/commerzbank-relents-enters-talks-with-unicredit-for-takeover"
     }
   },
   {
@@ -1149,6 +1149,20 @@
     }
   },
   {
+    "id": "2026-07-29-google-deepmind-alphafold-team",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-29T13:01:11.000Z",
+    "headline": "Google DeepMind disbands Nobel-winning AlphaFold research team",
+    "plain_english": "Google DeepMind has dissolved the team that created AlphaFold, the Nobel Prize-winning protein structure prediction AI. The move signals a strategic shift away from pure research toward productized AI deployment.",
+    "why_it_matters": "Frontier AI labs are consolidating behind commercial AI applications and reducing blue-sky bets—mirrors industry-wide pressure to connect academic breakthroughs to revenue and regulatory expectations.",
+    "source": {
+      "name": "PYMNTS · 2026-07-29",
+      "url": "https://www.pymnts.com/google/2026/google-reshuffles-nobel-winning-deepmind-ai-team/"
+    }
+  },
+  {
     "id": "2026-07-29-openai-agent-exploit-gym-breach",
     "category": "frontier",
     "jurisdiction": "US",
@@ -1290,26 +1304,6 @@
     "source": {
       "name": "PYMNTS · 2026-07-26",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/tech-giants-724-billion-ai-bill-sparks-investor-worry/"
-    }
-  },
-  {
-    "id": "2026-07-26-deepseek-fundraising-pause",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-26T09:52:00Z",
-    "headline": "DeepSeek pauses new fundraising after founder's AI remarks spark scrutiny",
-    "plain_english": "China's DeepSeek, a major AI lab, halted fundraising efforts days after founder Liang Wenfeng's public statements on AI philosophy went viral. The move signals either strategic pause or response to regulatory/investor pressure following the remarks.",
-    "why_it_matters": "DeepSeek is a key rival to Western frontier labs in AI capability; any disruption to its funding or operations affects the global AI race and could influence regulator perception of Chinese AI labs' governance.",
-    "jargon": [
-      {
-        "term": "Frontier lab",
-        "def": "Independent AI research company building state-of-the-art large language models and training infrastructure."
-      }
-    ],
-    "source": {
-      "name": "The Times of India · 2026-07-26",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNenNNam5MV0lndndMUEFPQU5hMEMxWVo2bGM2QnV1MzlZcHJZbkg5am40T3dxeUdVQ1gybVByaWJ5TnRCRjdZdkdhbGo2UXhaNzVqWV9xR3RIZD0wYTRpMHF4WFNjVjdSN0FJRnBMeng0T3oxdHpSMW9qd1J2WExES0xnWklybFVFNTdDVEpzamE5WlFVNnIyRzBkMkhCSUFQOUxJSXpLaXpTS3h1azBEalB5R0pTSkJWaHdsakJMaWhWYXN5R2lJVHRWd0p1ZXVRQjdlc244ZVdWWHo4R3kxcWNFOHM2Qlh1Yk5mcmV1b2JMZ2xNQ1Y3N21ESjVUVVBCTzFUWHBR0gGLAkFVX3lxTE81dFZFQkhiV05Wal9iU2M0QURRMTl3cC1YcnBlTElGYjJXZTEyU2FueVBZYmZ6TTJPZTJNay1kS04yY0FGdUUzNmU4VEJhc2RkU09LMnFIc3VlLW9wdHpRbnZEdHJqNDdvbVVMMTdaUG5YWlJTbVh4Y1pna2pjQnVrZ05zTG9BNW5kRFFsdHRGcG5FNVdlS21UUXZzMUNLNXZ3cHdtcENVUk1YeUZGd2JZTjNkX1haZDRXZTBRNUxGWTl3MEhtd0Z5R056emNSZXN0Rlh5bmJ3THBLSENKOTZLYjk2MkRJU1BhSGxWZWNlS1dCRzdqdkJocEZZTVF6MzBaYzNSUHFGczIwZDg"
     }
   },
   {
@@ -1545,6 +1539,20 @@
     }
   },
   {
+    "id": "2026-07-29-chip-stocks-selloff",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-29T11:25:02.000Z",
+    "headline": "Chip stocks lose $1 trillion in value as AI boom cooling concerns weigh on Nvidia, SK Hynix, Samsung",
+    "plain_english": "Nvidia, SK Hynix, and Samsung Electronics led a $1 trillion semiconductor sector selloff since Friday market close. The decline reflects pullback in AI spending growth and margin compression as GPU capacity expands and enterprise LLM ROI questions persist.",
+    "why_it_matters": "BFSI IT budgets tied to GPU/accelerator allocation may see pressure—delays in AI chip procurement timelines and lower pricing could shift capex timing and vendor leverage, particularly for tier-1 banks planning large-scale deployment.",
+    "source": {
+      "name": "CNBC · 2026-07-29",
+      "url": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html"
+    }
+  },
+  {
     "id": "2026-07-29-meta-ai-datacenter-capex-financing",
     "category": "trending",
     "jurisdiction": "US",
@@ -1690,6 +1698,133 @@
     "source": {
       "name": "Citi Research · 2026-07-20",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcU0wWnRSc3Vac3YzNnBlX2VKcGRDM1ZvcmYxY1NlaDVWRzcxUmo5MWh3QTR2Wm5aRTMxb0sxSERXR1IyRWZ6ZWNPOGR1bE5WSi1OdGM1U056SU1lbklua3lJc3pwWGVtVEh5bHA4RzY1OExiM3NnZ01wenBIeFRNaEFlMFhGTVhvWjhiNHBueDl4b2JhUXgtU2R6cWlQZw"
+    }
+  },
+  {
+    "id": "2026-07-27-bank-indonesia-warjiyo",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-27T00:50:00Z",
+    "headline": "Bank Indonesia governor Warjiyo resigns early; deputy assumes leadership",
+    "plain_english": "Warjiyo stepped down ahead of schedule from his post as head of Indonesia's central bank; deputy assumes role. Transition may signal policy shift on digital finance regulation and fintech oversight.",
+    "why_it_matters": "Leadership change at major emerging-market central bank; watch for pivot on open banking mandates, crypto stance, or AI governance for Indonesian fintech sector.",
+    "source": {
+      "name": "Bloomberg · 2026-07-27",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPem5JdGQ5RTN5U3BEOHNlZWxqNW1wREVUUXQ4aGVlYWRVbUpFTmdCSGV3Z0ZWZEs2dWZ6STVpWXZtakQ5WUxqWThpX3V2WHNlN3JlSnJRZGEtSDdob05RXzZfaDFqdnB6NlpaVjJ5Zl9MejR0bDdwc2VtQmVZOC1qRnVQWnVjcHRqQzRRWGlpbkZzYmFsYmFMV19OZXlTQjNpNnlCNnNRQkZWbW1PTE81U1Raaw"
+    }
+  },
+  {
+    "id": "2026-07-26-china-mobile-calling-ai",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-26T08:37:38Z",
+    "headline": "China Mobile and telecom operators launch AI-powered calling services for consumers",
+    "plain_english": "China Mobile and other major Asian telecom operators have commercially launched AI-augmented calling features for consumer subscribers. These include AI transcription, summarization, and voice enhancement.",
+    "why_it_matters": "Telecom-hosted AI services (vs. cloud-native SaaS) represent a new deployment paradigm; BFSI can monitor this model for in-branch, call-center, and customer-communication use cases where latency and data residency constraints favor carrier edge deployment.",
+    "source": {
+      "name": "Macau Business · 2026-07-26",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSUkyeGxpM0FvM2NJRmdOQWttTnozUDVvZExSZ0JCSFhURkFCS2xOcjBjblFaOG1ZN3Btdk9Lc0VMSnE1akhYNDhPbklST0pCbDVZTzVjRHpaM2JPd0JFbmN6a3g5c25jbG1qdnNicGduTGR4YUtaUUxzbzZ1bUdyS0ZMZ1JXVzNYQ2hhVVJaMkV3WkV5T0JQUGNVeUtfa2k3RUdkeVRBU2J4OVk2N1BsNEJvWUkya3hubzcyZVJoUnpMbENlR3ZmYUV3T0JsdnBQQ1JxWHA5SUE0T2Q1bmtTcExHNGduS3JfM0RpN19RV28tYUFp"
+    }
+  },
+  {
+    "id": "2026-07-26-woori-bank-ai-agents-korea",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-26T00:23:00Z",
+    "headline": "Woori Bank deploys AI agents for sales automation in South Korea",
+    "plain_english": "Woori Bank, South Korea's mid-size lender, rolled out autonomous AI agents to drive data-driven sales tactics and customer targeting. Shift signals broader Asian bank pivot from chatbots to agents that execute transactions and shape strategy.",
+    "why_it_matters": "Agent-led sales automation scales personalization without headcount; expect Korean, Japanese, and Southeast Asian peers to copy within 2–3 quarters as competitive pressure on margins intensifies.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous systems that perceive state, plan multi-step actions, and execute decisions (e.g., recommend products, route leads) without human intervention per step."
+      }
+    ],
+    "source": {
+      "name": "CHOSUNBIZ · 2026-07-26",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMHR5eWJLREhadzdsRXNjSHVObUR6VktpZ3JaNGdjLUpKNkVGNktldW1rNEVrYmkwd2pVZ0FuU1k1WVY5aWlIdUcyemx3eFcxenNpQUl6blFnX2ZFamdZNFpfZjMzWDdQcVRiM2tQcnB5RTZ1R0FCQWtzZGdQWUozV9IBlAFBVV95cUxPdktob0JFSjFXM0RUeGNhdzRneG1ycXlxcThwOWIxQVE4ZDQwYnNEbWktNmdKVnNLeHo0QUZjN0EyRFAyMHZDaVNUNlBxWVpvQ1pkTHpiZW1LZ283WVBzMDdJVnh1MnQ4cnpyYVJhSXNSalZ3dVduUEhEQ0I3WXdZXzNHcEdmOFNzQzVXamE5Y2h4NGI5"
+    }
+  },
+  {
+    "id": "2026-07-25-vendor-consolidation-signal",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-25T07:38:01Z",
+    "headline": "AI vendor business model stress: companies racing between commoditization and control",
+    "plain_english": "Industry analysis warns that AI vendors face a squeeze: open-source models + distillation erode pricing power (commoditization), while safety/compliance certifications become the only sustainable moat. Vendors must shift revenue from model licensing to managed services (consulting, monitoring, risk frameworks) or risk margin collapse.",
+    "why_it_matters": "BFSI procurement teams should expect vendor pricing to compress 30-40% over 18 months. Negotiate away from per-token or per-inference pricing; lock in managed-service contracts with SLAs and compliance guardrails. Pure model licensing plays will not survive; look for consolidation of weaker vendors by 2027.",
+    "source": {
+      "name": "Hindustan Times · 2026-07-25",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU2ZvQ1FtWTJMczlFbVFEaXM2c0RHZk5MTk5hMzBiY3B4eE5uRGE4ZU1KRW5zT00wVUtYZ1RxTXA0ZUxWV2dJaEs5RVFQYXRVTFZhcmpDRW0xU0hXQ1JDVTIxblA0blVRM3BLWXpqVG5WV1NTbkV5ZjMzV1ZhT1ZaS2dkdmFlelJiNlFHVkdNODNkTlFoSEJBVUdIVFJVTHlXc3VvSlFjM0Rtb0dhWjBXeHkxWHhYZDU1YzlHY3RPaVdTQdIBxwFBVV95cUxPS1ZQVEpXRm0wUzV6MHhDcEh0UUJ2WEtfbkxpVDZDaFNjNkhUcHFlejRZTXZuMWtGYjk3Z2NoVVRrcWhxU25waXdsejItU09CeFluLWJxZHNnM0tzU0NDSEdlaHJwcHJaOTc3ekwtUGs0eUx0MWRES2hRYVVadzdyTEg5YXBCMWF1Ri13Qm9NYnNNaU5qU19BcWxYd2VuQ01zSGFDU2JFZHVLcTEwVVZXVlFjYzNPS2NhTUNTNXItU2JGckVuUmdZ"
+    }
+  },
+  {
+    "id": "2026-07-24-prentis-ai-lab-funding",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-24T22:25:58.000Z",
+    "headline": "Prentis AI lab co-founded by Hoffman, Pincus raising $100M to automate routine computer tasks",
+    "plain_english": "Reid Hoffman and Mark Pincus launched Prentis, a new AI research lab betting that automating routine digital workflows (vs. coding) will become AI's dominant use case. Fundraising at $100M valuation suggests investor appetite for AI-agent infrastructure play.",
+    "why_it_matters": "If AI agents can reliably automate back-office and trading workflows, BFSI firms will need fast eval/deployment frameworks; vendors focused on agent orchestration and monitoring will capture outsized value.",
+    "amount": "$100M",
+    "round": "Funding round",
+    "source": {
+      "name": "TechCrunch · 2026-07-24",
+      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/"
+    }
+  },
+  {
+    "id": "2026-07-24-uber-waymo-exclusivity-end",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-24T21:48:45.000Z",
+    "headline": "Uber, Waymo end exclusivity agreement; Waymo driverless rides to compete on third-party platforms",
+    "plain_english": "Uber and Waymo agreed to terminate their exclusivity arrangement in Atlanta and Austin. Starting 2028, Waymo's autonomous-vehicle rides will be available on platforms beyond Uber, opening competition among ride-hailing apps for AV dispatch and pricing.",
+    "why_it_matters": "Autonomous vehicle commoditization signals AI-driven mobility will fragment; BFSI exposure: non-bank fintechs (Affirm, Square, PayPal) may displace card networks in AV micro-lending and toll-payment flows. Banks must prepare for disintermediation.",
+    "effective_date": "2028-01-01",
+    "source": {
+      "name": "CNBC · 2026-07-24",
+      "url": "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html"
+    }
+  },
+  {
+    "id": "2026-07-24-commerzbank-unicredit-merger-talks",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-07-24T12:32:00Z",
+    "headline": "Commerzbank enters takeover talks with UniCredit after months of resistance",
+    "plain_english": "Germany's Commerzbank, after resisting UniCredit's advances, has agreed to merger negotiations. UniCredit, Italy's largest bank, has been pursuing Commerzbank to expand its European footprint and consolidate operations.",
+    "why_it_matters": "Major European banking consolidation. If completed, creates a pan-European challenger to France's BNP and HSBC; reshuffles tech, compliance, and risk architecture across two large legacy BFSI operations.",
+    "source": {
+      "name": "Finextra · 2026-07-24",
+      "url": "https://www.finextra.com/newsarticle/48143/commerzbank-relents-enters-talks-with-unicredit-for-takeover"
+    }
+  },
+  {
+    "id": "2026-07-26-deepseek-fundraising-pause",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-26T09:52:00Z",
+    "headline": "DeepSeek pauses new fundraising after founder's AI remarks spark scrutiny",
+    "plain_english": "China's DeepSeek, a major AI lab, halted fundraising efforts days after founder Liang Wenfeng's public statements on AI philosophy went viral. The move signals either strategic pause or response to regulatory/investor pressure following the remarks.",
+    "why_it_matters": "DeepSeek is a key rival to Western frontier labs in AI capability; any disruption to its funding or operations affects the global AI race and could influence regulator perception of Chinese AI labs' governance.",
+    "jargon": [
+      {
+        "term": "Frontier lab",
+        "def": "Independent AI research company building state-of-the-art large language models and training infrastructure."
+      }
+    ],
+    "source": {
+      "name": "The Times of India · 2026-07-26",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNenNNam5MV0lndndMUEFPQU5hMEMxWVo2bGM2QnV1MzlZcHJZbkg5am40T3dxeUdVQ1gybVByaWJ5TnRCRjdZdkdhbGo2UXhaNzVqWV9xR3RIZD0wYTRpMHF4WFNjVjdSN0FJRnBMeng0T3oxdHpSMW9qd1J2WExES0xnWklybFVFNTdDVEpzamE5WlFVNnIyRzBkMkhCSUFQOUxJSXpLaXpTS3h1azBEalB5R0pTSkJWaHdsakJMaWhWYXN5R2lJVHRWd0p1ZXVRQjdlc244ZVdWWHo4R3kxcWNFOHM2Qlh1Yk5mcmV1b2JMZ2xNQ1Y3N21ESjVUVVBCTzFUWHBR0gGLAkFVX3lxTE81dFZFQkhiV05Wal9iU2M0QURRMTl3cC1YcnBlTElGYjJXZTEyU2FueVBZYmZ6TTJPZTJNay1kS04yY0FGdUUzNmU4VEJhc2RkU09LMnFIc3VlLW9wdHpRbnZEdHJqNDdvbVVMMTdaUG5YWlJTbVh4Y1pna2pjQnVrZ05zTG9BNW5kRFFsdHRGcG5FNVdlS21UUXZzMUNLNXZ3cHdtcENVUk1YeUZGd2JZTjNkX1haZDRXZTBRNUxGWTl3MEhtd0Z5R056emNSZXN0Rlh5bmJ3THBLSENKOTZLYjk2MkRJU1BhSGxWZWNlS1dCRzdqdkJocEZZTVF6MzBaYzNSUHFGczIwZDg"
     }
   },
   {
@@ -8313,26 +8448,6 @@
     }
   },
   {
-    "id": "2026-06-29-ai-agent-identity-verification",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T08:00:43.000Z",
-    "headline": "AI agents lack cryptographic identity; suppliers cannot distinguish legitimate from rogue procurement bots",
-    "plain_english": "When an AI agent autonomously queries suppliers, places orders, and routes payments, the supplier has no way to cryptographically verify the agent is real, authorized, and acting within permitted limits. This creates procurement fraud and authentication gaps that existing digital signature schemes don't solve.",
-    "why_it_matters": "Banks and B2B platforms will need to issue agent credentials (similar to OAuth tokens) and anchor them to customer identity and transaction limits. New compliance burden and infrastructure layer.",
-    "jargon": [
-      {
-        "term": "agent authentication",
-        "def": "Cryptographic proof that an autonomous software system is authorized to act on behalf of a human or organization and is bound to specific transaction limits."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/why-its-time-to-know-your-agent/"
-    }
-  },
-  {
     "id": "2026-07-03-standard-chartered-usdc-minting",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8525,20 +8640,6 @@
     "source": {
       "name": "PYMNTS · 2026-06-29",
       "url": "https://www.pymnts.com/news/banking/2026/fintech-partnerships-force-banks-to-fix-api-oversight/"
-    }
-  },
-  {
-    "id": "2026-06-29-ai-data-center-climate-risk",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-29T11:56:14.000Z",
-    "headline": "Heatwaves and extreme weather threaten AI data center availability; grid strain, insurance, repair costs rising",
-    "plain_english": "Severe weather events are creating operational and financial risks for AI data centers: grid overload during peak cooling demand, higher insurance premiums, and longer downtime for repairs. The climate-AI infrastructure collision is becoming a material cost factor for cloud providers.",
-    "why_it_matters": "Banks and fintech firms dependent on cloud AI services face indirect exposure to climate risks via provider capex inflation and potential outages. Expect contracts to include climate-resilience SLAs and redundancy requirements.",
-    "source": {
-      "name": "CNBC · 2026-06-29",
-      "url": "https://www.cnbc.com/2026/06/29/ai-data-centers-heatwave-climate-risk-weather.html"
     }
   },
   {
@@ -8791,20 +8892,6 @@
     }
   },
   {
-    "id": "2026-06-29-reform-technologies-ecb-chair",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-29T10:37:00.000Z",
-    "headline": "AML fintech Reform Technologies names former ECB board member Elizabeth McCaul as chair",
-    "plain_english": "AML/compliance vendor Reform Technologies appointed Elizabeth McCaul, a former member of the ECB Governing Council, as its new chair. The hire reinforces the company's regulatory credibility and ties to European supervisory bodies.",
-    "why_it_matters": "Hiring former regulators signals Reform is investing in EU compliance infrastructure, likely ahead of stricter AML/CFT rules (6AMLD, Crypto-AML). Banks may consolidate AML tools around vendors with in-house regulatory expertise.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48004/former-ecb-board-member-named-as-chair-of-reform-technologies"
-    }
-  },
-  {
     "id": "2026-06-30-gresham-spiros-ceo-data-automation",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8909,22 +8996,6 @@
     }
   },
   {
-    "id": "2026-06-29-world-cup-cross-border-payments-test",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T08:01:36.000Z",
-    "headline": "2026 World Cup will stress-test cross-border payments and fraud controls at unprecedented scale",
-    "plain_english": "The 2026 FIFA World Cup will generate billions in global ticket, travel, and merchandise transactions—creating the largest real-world test of fraud prevention and cross-border payment infrastructure that merchants and processors will face this year.",
-    "why_it_matters": "Large-scale payment infrastructure failures or fraud outbreaks during the tournament will expose vendor and processor weaknesses. Success will validate architectural choices (tokenization, real-time fraud scoring) and may become marketing claims.",
-    "stat_value": "Billions",
-    "stat_label": "in projected cross-border transactions during 2026 World Cup",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/world-cup-gives-cross-border-payments-their-super-bowl-moment/"
-    }
-  },
-  {
     "id": "2026-06-30-mastercard-africa-cybersecurity-center",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -8993,22 +9064,6 @@
     }
   },
   {
-    "id": "2026-06-29-lse-us-listing-migration",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-06-29T12:52:00.000Z",
-    "headline": "London Stock Exchange warns up to 200 listed companies could migrate to US; capital flight risk",
-    "plain_english": "In a worst-case scenario analysis, the LSE warned that up to 200 companies could delist and relist on US exchanges (Nasdaq, NYSE) due to regulatory burden, lower trading volumes, or competitive disadvantage. The shift would drain London's position as a global financial hub.",
-    "why_it_matters": "If material UK/EU corporates flee to US listings, London-based investment banks lose advisory fees and trading revenue. Regulators may be forced to relax listing rules or capital requirements, creating competitive pressure on others.",
-    "stat_value": "200",
-    "stat_label": "companies at risk of migrating to US listings (LSE worst-case scenario)",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48006/lse-warns-of-listed-companies-moving-to-us"
-    }
-  },
-  {
     "id": "2026-06-29-occ-personnel-changes",
     "category": "regulation",
     "jurisdiction": "US",
@@ -9020,26 +9075,6 @@
     "source": {
       "name": "OCC · 2026-06-29",
       "url": "https://news.google.com/rss/articles/CBMifkFVV95cUxMFpGcHM2RmxPLWNRZy1XYjhNVTl0cHRDUkRGQkhuQXJkNWZRVzF4Y3hTd29hTWdIRkFfM2VEQjBRNy13T3pLczJYcEpVdHJSVVc0Rk90eUFrLW1kY3BadGxWRnJhN1pTOTFsemp5dFZtelJ5NEJmUDJ4VzBuY3RSUQ"
-    }
-  },
-  {
-    "id": "2026-06-29-eu-e-invoicing-regulation",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-06-29T08:00:58.000Z",
-    "headline": "EU e-invoicing mandates expose embedded financial workflow inefficiencies across 27 member states",
-    "plain_english": "European regulators are tightening digital invoicing rules, forcing CFOs and controllers to modernize back-office processes. The mandate is exposing legacy inefficiencies in AP/AR workflows that vendors and banks now scramble to remediate.",
-    "why_it_matters": "Banks and fintechs that embed real-time invoice validation and payment routing into ERP systems will lock in enterprise customers before competitors. Compliance-driven infrastructure upgrades create multi-year vendor lock.",
-    "jargon": [
-      {
-        "term": "e-invoicing mandate",
-        "def": "Regulatory requirement to exchange business invoices in standardized digital format (XML/EDI) rather than PDF, enforced across EU with phased timelines per member state."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/back-office/accounts-receivable/2026/europe-makes-the-humble-invoice-a-cfo-priority/"
     }
   },
   {
@@ -9057,20 +9092,6 @@
     }
   },
   {
-    "id": "2026-06-29-adyen-agentic-commerce-maturity",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-29T08:03:42.000Z",
-    "headline": "Adyen quantifies agentic commerce adoption; integration complexity, not AI, is the bottleneck",
-    "plain_english": "Adyen's global head of agentic commerce says the industry is further along than the \"early\" and \"nascent\" adjectives suggest, but implementation friction—not AI capability—is the real constraint slowing merchant adoption of autonomous transaction agents.",
-    "why_it_matters": "If integration complexity is the limiting factor, vendors building orchestration platforms and connectors will capture more value than frontier AI labs. Expect consolidation around commerce infrastructure.",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/adyen-on-agentic-commerce-the-ai-was-never-the-hard-part/"
-    }
-  },
-  {
     "id": "2026-06-29-credit-agricole-cib-esg-trade",
     "category": "deployment",
     "jurisdiction": "EU",
@@ -9085,58 +9106,6 @@
     }
   },
   {
-    "id": "2026-06-29-mynt-gcash-ipo",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-06-29T09:55:00.000Z",
-    "headline": "Philippines fintech Mynt plans $1.5 billion IPO for GCash digital wallet; largest PE listing in country history",
-    "plain_english": "Mynt, operator of GCash (Philippines' largest mobile wallet), announced plans for a $1.5 billion IPO—the country's largest ever listing. The move validates digital payments penetration in Southeast Asia and signals investor appetite for APAC fintech scale-ups.",
-    "why_it_matters": "Successful IPO will unlock capital for Mynt to expand API-led integrations with banks and merchants, raising bar for domestic competitors and international entrants. Comparable to Southeast Asian payment giants (Grab, Shopee Pay) consolidating ecosystem control.",
-    "scale": {
-      "metric": "customers",
-      "value": "80M+ (estimated GCash active users)"
-    },
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48003/mynt-plans-1-5bn-ipo-for-philippines-mobile-payment-platform"
-    }
-  },
-  {
-    "id": "2026-06-29-westpac-cio-appointment",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-06-29T10:58:00.000Z",
-    "headline": "Westpac names new CIO amid Australian bank technology modernization push",
-    "plain_english": "Westpac, Australia's largest bank by deposits, appointed Richard Heeley as CIO. The move signals intensified focus on technology refresh and cloud migration as Westpac competes with fintech disruptors and navigates tighter regulatory capital rules.",
-    "why_it_matters": "Big bank CIO transitions often precede major infrastructure overhauls—cloud migration, AI platform buildouts, legacy system decommissioning. Watch for vendor consolidation (cloud, data, AI ops) over next 18 months.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48005/westpac-appoints-cio"
-    }
-  },
-  {
-    "id": "2026-06-29-robinhood-settlement-velocity",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-29T08:02:02.000Z",
-    "headline": "Robinhood pushes brokerages to offer same-day settlement; expectations reshaping operational requirements",
-    "plain_english": "Robinhood's push for near-instant deposit visibility and settlement is forcing competitors to rethink operational timelines. Consumers now expect money to appear in accounts within hours, not days, raising infrastructure and compliance complexity for investment platforms.",
-    "why_it_matters": "If same-day settlement becomes table-stakes, brokerages must invest in real-time payment rails (FedNow, RTP) and intraday liquidity management. Smaller competitors may outsource to settlement vendors; consolidation likely.",
-    "jargon": [
-      {
-        "term": "settlement velocity",
-        "def": "Time between trade execution and final cash/securities transfer; faster velocity requires real-time payment infrastructure and higher operational costs."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/real-time-payments/2026/robinhood-pushes-brokerages-to-end-the-waiting-game/"
-    }
-  },
-  {
     "id": "2026-06-29-educational-credit-union-investifi",
     "category": "deployment",
     "jurisdiction": "US",
@@ -9148,20 +9117,6 @@
     "source": {
       "name": "Finextra · 2026-06-29",
       "url": "https://www.finextra.com/pressarticle/110267/educational-community-alliance-credit-union-adds-in-platform-investing-with-investifi"
-    }
-  },
-  {
-    "id": "2026-06-29-paypal-operating-model-trim",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T11:30:00.000Z",
-    "headline": "PayPal divests non-core assets to align portfolio with new operating model; signals strategic refocus",
-    "plain_english": "PayPal is trimming divisions and assets that don't fit its refreshed strategy—likely spinning off or consolidating checkout, invoicing, or point-of-sale tools acquired in prior years. The move reflects pivot toward higher-margin, integrated payments and commerce services.",
-    "why_it_matters": "Strategic divestitures often precede major vendor M&A or technology partnerships. Watch for PayPal to acquire or deeply integrate with AI commerce orchestration platforms and real-time payment rails.",
-    "source": {
-      "name": "Tearsheet · 2026-06-29",
-      "url": "https://tearsheet.co/10-q/paypal-is-trimming-the-parts-that-dont-fit-its-new-operating-model/"
     }
   }
 ]
