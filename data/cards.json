@@ -172,6 +172,40 @@
     }
   },
   {
+    "id": "2026-07-30-natwest-uinsure-insurance",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-07-30T00:01:00.000Z",
+    "headline": "NatWest launches instant insurance quotes via Uinsure partnership",
+    "plain_english": "NatWest partnered exclusively with InsurTech Uinsure to embed fast home insurance quote-and-bind in its banking platform, automating underwriting decisions at point of sale.",
+    "why_it_matters": "Demonstrates retail bank shift to transaction ownership in adjacent products; insurance quote latency drops to seconds vs. minutes, pressuring traditional brokers and setting new SLA baseline.",
+    "jargon": [
+      {
+        "term": "quote-and-bind",
+        "def": "Instant insurance policy issuance without underwriter review; AI pre-screened risk."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-07-30",
+      "url": "https://www.finextra.com/newsarticle/48165/natwest-teams-with-uinsure-to-deliver-home-insurance-quotes-in-seconds?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-30-wex-securefuel-fraud",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T22:06:36.000Z",
+    "headline": "WEX deploys real-time AI fraud detection for fleet fuel purchases",
+    "plain_english": "WEX added SecureFuel, an AI-powered fraud-prevention layer to WEXOnline, to flag and block unauthorized fleet fuel purchases before approval—moving from post-transaction detection to pre-approval blocking.",
+    "why_it_matters": "Shifts fraud-prevention SLA from days to milliseconds; embedded vendor AI in transaction workflows becomes table-stakes for B2B payment rails, raising fraud-ops efficiency bar.",
+    "source": {
+      "name": "PYMNTS · 2026-07-29",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/wex-deploys-ai-stop-fleet-fuel-fraud-before-it-happens/"
+    }
+  },
+  {
     "id": "2026-07-29-citi-invoice-processing",
     "category": "deployment",
     "jurisdiction": "US",
@@ -294,35 +328,18 @@
     }
   },
   {
-    "id": "2026-07-27-dict-msme-ai-deployment-philippines",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-27T12:38:10Z",
-    "headline": "Philippines Department of ICT deploys AI tools for small and medium enterprises",
-    "plain_english": "The Philippines Department of Information and Communications Technology (DICT) rolled out AI tools to support MSMEs, providing digital capability infrastructure to underserved small-business segments.",
-    "why_it_matters": "Government-led AI adoption in emerging markets demonstrates APAC fintech institutions will face pressure to compete on AI-native MSME lending and finance products.",
-    "source": {
-      "name": "BusinessWorld Online · 2026-07-27",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdTJOdUxWY1J2Z0NNdzhTXzJ0MVZ3LUNBNmRpX2VMZ3VaSDczRVlMQkltZHFLdWF6OUxJS1paTU9GcEJZb3VvSDhTY01xVVAyTlhGYUN2bWl0eS1DVHZvcS0yVVNpSENVYVFUM0lzYktvWU5yQ3VtdDRBamczeXNYSDVFOFM0TlFwak1qZmFqQQ"
-    }
-  },
-  {
-    "id": "2026-07-27-kbank-ai-transfer",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-07-30-freehand-series-c",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-07-27T00:23:46Z",
-    "headline": "K Bank launches AI-powered voice and text remittance service",
-    "plain_english": "South Korean bank K Bank deployed 'AI transfer'—a production service letting customers initiate remittances by voice command or natural language sentences, reducing form-filling friction for cross-border payments.",
-    "why_it_matters": "First major APAC bank to ship conversational AI for remittance initiation; signals template for reducing KYC/AML friction on high-volume cross-border flows without sacrificing compliance capture.",
-    "scale": {
-      "metric": "customers",
-      "value": "K Bank customer base"
-    },
+    "published_at": "2026-07-29T22:40:26.000Z",
+    "headline": "Freehand raises $75M for AI procurement agents targeting enterprise supply-chain spend",
+    "plain_english": "Freehand, which builds autonomous AI agents for procurement, invoicing, and supplier negotiation for Meta and Pfizer, closed $75M funding to scale enterprise buy-side automation.",
+    "why_it_matters": "Validates AI-agent market for financial operations; procurement automation moves from RPA to agentic decision-making, reshaping spend analysis and vendor selection workflows in Fortune 500 CFO offices.",
+    "amount": "$75M",
     "source": {
-      "name": "Digital Today · 2026-07-27",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX1BkVFFLNWp6a1RKbXQ0Uy1TZnM1OGNhdThPcnVSa1FFemFhbmpkYURCMk5CREZnbmlQMVBnVFNBLTBBMWhYbDBYcnRXSDBrN0QwdlRLV1BuN3dmUFlmNTVFRTdCMTB6QXRFUFRjNV9WZ21CSGoteXl3b0FnbUY0dDRDN05sTkg3NS1WNDBmZldET2FFTWxXN1lOOEtuNkRX"
+      "name": "PYMNTS · 2026-07-29",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/freehand-raises-75-million-to-automate-enterprise-procurement-and-payments/"
     }
   },
   {
@@ -462,21 +479,31 @@
     }
   },
   {
-    "id": "2026-07-25-latam-fintech-funding-q1-surge",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-25T21:06:24Z",
-    "headline": "Latin American fintech funding hits $575M in Q1 2026, highest in five quarters",
-    "plain_english": "LatAm fintech raised $575M in Q1 2026, marking the strongest quarter in over a year. Appetite has rebounded after 2024–2025 consolidation, signaling renewed institutional confidence in regional payment, lending, and embedded-finance plays.",
-    "why_it_matters": "LatAm fintech renaissance unlocks capital for cross-border rails and SME lending—direct threat to branch-heavy incumbent banks. Expect M&A acceleration by regional incumbents seeking agility.",
+    "id": "2026-07-30-increase-bank-acquisition",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-30T00:01:00.000Z",
+    "headline": "Fintech Increase acquires community bank to vertically integrate payments infrastructure",
+    "plain_english": "Increase, a payments-infrastructure fintech founded by Stripe's first employee, acquired its own community bank, moving from SaaS vendor to licensed processor and deposit-taker.",
+    "why_it_matters": "Signals fintech pivot from software licensing to direct charter ownership; removes BFSI intermediaries and regulatory arbitrage. Expect wave of similar vertical integrations as fintechs own the rails.",
     "source": {
-      "name": "Evotek JSC · 2026-07-25",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdTR6Z2Vlickdyb1kxM3JZU1h6YkdQby1rdUl5eUdoNHpfOHVmOXc3Zzg2WkM4RlBCVjhlVXd3SEwwaG1nMkFtQXFWaE9uelJoQy1lcTJUWUs5TGlnVzM2aWRNMlQ0Ul91eko2aG5KTnBYeFBMNVNzWUxlTWVDVktfdW80Y19PbU1sYUxGOU8tOTZmTkl6"
-    },
-    "scale": {
-      "metric": "dollars",
-      "value": "$575M"
+      "name": "Finextra · 2026-07-30",
+      "url": "https://www.finextra.com/newsarticle/48168/stripe-vet-buys-a-bank-for-his-fintech?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-07-30-robinhood-transaction-ownership",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-30T00:45:19.000Z",
+    "headline": "Robinhood shifts from broker to transaction-ownership and financial-services ecosystem",
+    "plain_english": "Robinhood Q2 earnings showed the brokerage moving beyond commission-free stock trading into owned-transaction infrastructure, seeking recurring revenue via adjacent financial services (banking, insurance, lending).",
+    "why_it_matters": "Retail broker-to-fintech pivot signals the 'Stripe-fication' of customer transaction control; every neobank now expects to own, not outsource, payments, credit, and insurance rails.",
+    "source": {
+      "name": "PYMNTS · 2026-07-30",
+      "url": "https://www.pymnts.com/earnings/2026/robinhood-takes-an-option-out-on-owning-customer-transactions/"
     }
   },
   {
@@ -603,36 +630,6 @@
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBkZVhjbUF5a05EM3pTY0ZZR3BNb2hrMF9QUXZOQ25MR0x3NEVfRG5kQ01xaUl2OUlvd2NPdkxKRU05bGVZQ21lTUZDT082V2FUOUo1Nm40VkZoS3NrTG5TZWV3"
     },
     "amount": "$950B"
-  },
-  {
-    "id": "2026-07-25-edenred-tech-strategic-plan",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-25T00:19:37.000Z",
-    "headline": "Edenred sees early payoff from tech-heavy strategic plan across 44 countries",
-    "plain_english": "Edenred, a global corporate-payment and benefits provider serving fleet, HR, and expense segments, upgraded its forecast after its Amplify 25-28 tech strategy began yielding results. The company is doubling down on digital/AI capabilities for employee and corporate solutions.",
-    "why_it_matters": "Large BFSI-adjacent processor outpacing broader market signals that AI-driven digitization of HR and fleet payments is now table stakes; peers must accelerate capability or lose margin to digital-native competitors.",
-    "source": {
-      "name": "PYMNTS · 2026-07-25",
-      "url": "https://www.pymnts.com/earnings/2026/edenred-upgrades-forecast-as-tech-heavy-strategic-plan-delivers-early-gains/"
-    }
-  },
-  {
-    "id": "2026-07-24-indian-fintech-funding-rebound",
-    "category": "shift",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-07-24T21:12:34.000Z",
-    "headline": "Indian fintech funding rebounds 2.3x in Q2 2026 to $1.3B as mega-rounds return",
-    "plain_english": "India's fintech funding surged 2.3x to $1.3B in Q2 2026 after multi-quarter slowdown. Mega-deals are back, signaling renewed institutional appetite for Indian digital payments, lending, and wealth platforms—many leveraging AI for underwriting and fraud detection.",
-    "why_it_matters": "India's rapid fintech re-acceleration (post-regulatory clarity on UPI, BNPL) is pulling global capital; BFSI firms with India exposure must reskill on AI-driven lending and KYC to compete with newly funded domestic challengers.",
-    "stat_value": "2.3x",
-    "stat_label": "Q2 2026 fintech funding growth in India",
-    "source": {
-      "name": "Fintech Funding / Evotek JSC · 2026-07-24",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWlmRDROakdKa1JsZ2RNYkNTdnRvMTg1M2tSdUFpSUtBS3M4UW1mRkhOajJrMzZMUnlFbmdyZmlZM2szOEZhOEM2SnJmLUNLTGhjcjlDMmQzdnh3ZFZra2FZcU5Ud0o1UDN6bXIxaV9UYTlpSHR6ejRyeEdWbjIyYU9qTVpKN3NnV1ZCZUJFSTkwSVh0TC1ZUktlRDQtckcx"
-    }
   },
   {
     "id": "2026-07-28-tool-microsoft-cybersecurity-ai",
@@ -989,6 +986,22 @@
     }
   },
   {
+    "id": "2026-07-30-microsoft-anthropic-return",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T22:46:03.000Z",
+    "headline": "Microsoft logs $3.2B gain on Anthropic stake while OpenAI stakes remain mixed-return",
+    "plain_english": "Microsoft's FY2026 earnings revealed a $3.2B mark-to-market gain on its Anthropic investment, contrasting with net-negative or flat returns on OpenAI stakes, signaling divergent AI-lab valuations.",
+    "why_it_matters": "Suggests market is repricing frontier-lab equity; diversified bets across labs (not just OpenAI) are now generating measurable mark-to-market wins, shifting enterprise platform strategy.",
+    "stat_label": "Microsoft Anthropic gain",
+    "stat_value": "$3.2B",
+    "source": {
+      "name": "TechCrunch · 2026-07-29",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/"
+    }
+  },
+  {
     "id": "2026-07-28-ai-agents-task-completion-gap",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1133,19 +1146,45 @@
     }
   },
   {
-    "id": "2026-07-25-capital-one-baseball-loyalty",
-    "category": "insight",
+    "id": "2026-07-30-openai-arr-growth",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-25T09:00:00Z",
-    "headline": "Capital One bets baseball sponsorships drive credit card loyalty in competitive acquisition market",
-    "plain_english": "Capital One is investing sports marketing (baseball) to strengthen emotional brand affinity and reduce churn in a saturated credit card market. Data shows sports-linked card products drive higher engagement and lower attrition than traditional rewards programs. AI-personalization engines amplify segment-level ROI.",
-    "why_it_matters": "Card issuers are pivoting from generic rewards to AI-driven lifestyle clustering. LLM-powered recommendation engines can now predict which customers will value baseball perks vs. dining vs. travel—enabling cheaper, higher-retention acquisition. Expect industry-wide shift from broad-base rewards to micro-segmented propositions.",
-    "stat_value": "~15%",
-    "stat_label": "estimated lift in 12-month card retention for sports-branded offerings vs. generic cash-back",
+    "severity": "med",
+    "published_at": "2026-07-29T23:09:42.000Z",
+    "headline": "OpenAI July annualized revenue exceeds entire Q2 total",
+    "plain_english": "OpenAI CFO Sarah Friar told staff that monthly annualized revenue run-rate in July surpassed all Q2 combined, signaling accelerating enterprise adoption despite Anthropic and open-source competition.",
+    "why_it_matters": "Validates frontier-lab monetization model at scale; signals demand for proprietary closed-form AI is outpacing commodity open-source, reshaping vendor selection criteria in enterprises.",
     "source": {
-      "name": "Fortune · 2026-07-25",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0JpSHY0dHpJMXU0MzZPd2FidjZ1cjF2aFVVcTV1OGVlM3VWT3FER212SDNIVXloTzI4Q3FpOHJRRm5MYV95OWxBY3gxaWhRYk83OTlyT3ZJRlRVQ09nTENEY3RPTGZzZUF5dC1nWUc1bXhHWGFFMG1fbHdZQlMxM3NGZjNzM3UyRmZRcU1oNTZpRkZPc084TGlBTkhfMzB0NmhqZC1KVQ"
+      "name": "CNBC · 2026-07-29",
+      "url": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html"
+    }
+  },
+  {
+    "id": "2026-07-30-meta-ai-agent-vision",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-30T00:13:46.000Z",
+    "headline": "Zuckerberg predicts billions will rely on personal AI agents within five years",
+    "plain_english": "Meta CEO Mark Zuckerberg stated on Q2 earnings call that personal AI agents will be mainstream for billions within five years, justifying massive capex and positioning Meta as agent-OS competitor to OpenAI and Anthropic.",
+    "why_it_matters": "Frames AI-agent market as consumer-led paradigm shift, not enterprise SaaS; BFSI implications: personal AI agents will disintermediate retail banking, wealth, and insurance—redefining customer acquisition and retention.",
+    "source": {
+      "name": "TechCrunch · 2026-07-29",
+      "url": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/"
+    }
+  },
+  {
+    "id": "2026-07-30-microsoft-homegrown-models",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-30T00:21:06.000Z",
+    "headline": "Microsoft openly competes with OpenAI and Anthropic on its own AI models and inference",
+    "plain_english": "Microsoft Q4 earnings call revealed the company is pitching proprietary in-house AI models and inference harnesses to Wall Street, reducing reliance on exclusive OpenAI/Anthropic partnerships.",
+    "why_it_matters": "Signals Microsoft's shift from platform integrator to model builder; enterprises now have credible alternative to OpenAI for Copilot-class capabilities, fragmenting the closed-model moat.",
+    "source": {
+      "name": "TechCrunch · 2026-07-29",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever"
     }
   },
   {
@@ -1263,47 +1302,23 @@
     }
   },
   {
-    "id": "2026-07-27-chinese-chipmaker-ipo-surge",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-27T12:59:00Z",
-    "headline": "Chinese chipmaker surges 466% on first trading day amid AI chip competition",
-    "plain_english": "A Chinese semiconductor manufacturer soared 466% in its IPO debut, reflecting investor appetite for alternatives to Nvidia in the AI chip race and growing geopolitical diversification of compute supply.",
-    "why_it_matters": "Signals bifurcation of AI compute infrastructure along geopolitical lines; BFSI and fintech must plan for two supply chains—US/Western GPUs and China-centric alternatives.",
-    "source": {
-      "name": "Fortune · 2026-07-27",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wLTZoWDFZUl9NNUtoNXFsZmtNNm1iZHZMY0NldHZYTFE1Y0lIY0liSUszZU1STGxILXZXZkYxYnpOZUJSM3A2UFM2QTZlTElSa1BhTWJHcFJJcFR4UG11OHhxbTlwZmZTVnh2NFl6ZUVEcFk"
-    }
-  },
-  {
-    "id": "2026-07-27-deepseek-funding-pause",
-    "category": "frontier",
+    "id": "2026-07-30-learner-ai-agent",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-27T00:13:39Z",
-    "headline": "Chinese AI startup DeepSeek pauses funding round ahead of IPO",
-    "plain_english": "DeepSeek, China's high-profile open-source AI competitor to OpenAI, suspended its Series B funding drive amid founder commentary on US-China AI rivalry and preparation for public listing.",
-    "why_it_matters": "Signals Chinese government may be tightening oversight of frontier AI venture growth; IPO pivot suggests regulatory pressure. Affects BFSI investor thesis on China AI exposure and open-source model availability.",
+    "severity": "low",
+    "published_at": "2026-07-30T00:13:46.000Z",
+    "headline": "What is an AI agent? Why everyone is talking about them.",
+    "plain_english": "An AI agent is a software program that can perceive its environment, make decisions, take actions (like calling APIs or approving transactions), and adjust based on outcomes—without human approval for each step. Unlike chatbots that only respond to text, agents autonomously pursue multi-step goals (e.g., 'find and book the cheapest flight'). Freehand's procurement agents and WEX's fraud detectors are real examples: they automatically negotiate supplier rates and block fraud before you intervene.",
+    "why_it_matters": "Agents shift AI from tool (you ask, it answers) to workforce (it acts). In BFSI, this means faster approvals, lower ops cost, but new compliance and bias risks requiring real-time audit trails.",
+    "jargon": [
+      {
+        "term": "autonomous decision-making",
+        "def": "Agent executes transactions or approvals without human in-the-loop; trades speed for control risk."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-07-27",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-reportedly-suspends-funding-round-ahead-of-ipo/"
-    }
-  },
-  {
-    "id": "2026-07-27-tech-ai-spend-investor-worry",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-26T23:32:52Z",
-    "headline": "Tech giants' $724 billion AI spending spree triggers investor caution",
-    "plain_english": "Google, Microsoft, Meta, and others are investing record sums (~$724B) in AI infrastructure and development, but equity markets are signaling concern about ROI; Alphabet's cloud revenue +82% but stock reaction was muted due to AI capex anxiety.",
-    "why_it_matters": "Public markets are not yet pricing AI infrastructure spend as strategic; creates pressure on tech vendors to show near-term BFSI/enterprise returns. May slow AI feature releases and increase price pressure on platform APIs.",
-    "stat_value": "$724B",
-    "stat_label": "annual AI spending by tech giants",
-    "source": {
-      "name": "PYMNTS · 2026-07-26",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/tech-giants-724-billion-ai-bill-sparks-investor-worry/"
+      "name": "PYMNTS, TechCrunch · 2026-07-29",
+      "url": "https://www.pymnts.com/facebook-meta/2026/zuckerberg-says-billions-will-rely-on-personal-ai-agents/"
     }
   },
   {
@@ -1515,27 +1530,17 @@
     }
   },
   {
-    "id": "2026-07-17-learner-inference-chips-vs-training-chips",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-17T12:00:00Z",
-    "headline": "Why inference chips matter more than you think for bank AI",
-    "plain_english": "Training chips (GPUs) build models; inference chips run them. A $400 million loan deal to inference-chip makers signals the market shift: after models are trained, banks need cheaper, faster hardware to serve predictions to millions of users daily. Inference chips do this job.",
-    "why_it_matters": "Banks building AI pilots often obsess over training cost; production banks obsess over serving predictions at scale cheaply. This loan trend confirms inference economics are now the competitive moat.",
-    "jargon": [
-      {
-        "term": "Inference",
-        "def": "Running a trained AI model on new data to generate predictions; uses far less compute than training."
-      },
-      {
-        "term": "Training vs. inference chips",
-        "def": "Training chips (GPUs, TPUs) build models; inference chips (CPUs, ASICs, specialized accelerators) serve predictions efficiently at scale."
-      }
-    ],
+    "id": "2026-07-30-microsoft-ai-capex-signal",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-07-30T00:24:43.000Z",
+    "headline": "Microsoft signals sustained AI capex despite market skepticism on returns",
+    "plain_english": "Microsoft raised FY2027 capital spending guidance and changed accounting for data centers, posting 7% stock jump. Move signals confidence in AI infrastructure ROI as competitors face investor pressure on costs.",
+    "why_it_matters": "Sets expectations for sustained trillion-dollar AI buildout; capital markets will now price AI-as-capex-sink into infrastructure stocks, shaping M&A and vendor consolidation for 18 months.",
     "source": {
-      "name": "TechCrunch · 2026-07-17",
-      "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/"
+      "name": "CNBC · 2026-07-30",
+      "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html"
     }
   },
   {
@@ -1684,6 +1689,170 @@
     "source": {
       "name": "CNBC · 2026-07-20",
       "url": "https://www.cnbc.com/2026/07/20/jim-cramer-look-beyond-tech-ai-uncertainty.html"
+    }
+  },
+  {
+    "id": "2026-07-27-dict-msme-ai-deployment-philippines",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-07-27T12:38:10Z",
+    "headline": "Philippines Department of ICT deploys AI tools for small and medium enterprises",
+    "plain_english": "The Philippines Department of Information and Communications Technology (DICT) rolled out AI tools to support MSMEs, providing digital capability infrastructure to underserved small-business segments.",
+    "why_it_matters": "Government-led AI adoption in emerging markets demonstrates APAC fintech institutions will face pressure to compete on AI-native MSME lending and finance products.",
+    "source": {
+      "name": "BusinessWorld Online · 2026-07-27",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdTJOdUxWY1J2Z0NNdzhTXzJ0MVZ3LUNBNmRpX2VMZ3VaSDczRVlMQkltZHFLdWF6OUxJS1paTU9GcEJZb3VvSDhTY01xVVAyTlhGYUN2bWl0eS1DVHZvcS0yVVNpSENVYVFUM0lzYktvWU5yQ3VtdDRBamczeXNYSDVFOFM0TlFwak1qZmFqQQ"
+    }
+  },
+  {
+    "id": "2026-07-27-kbank-ai-transfer",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-27T00:23:46Z",
+    "headline": "K Bank launches AI-powered voice and text remittance service",
+    "plain_english": "South Korean bank K Bank deployed 'AI transfer'—a production service letting customers initiate remittances by voice command or natural language sentences, reducing form-filling friction for cross-border payments.",
+    "why_it_matters": "First major APAC bank to ship conversational AI for remittance initiation; signals template for reducing KYC/AML friction on high-volume cross-border flows without sacrificing compliance capture.",
+    "scale": {
+      "metric": "customers",
+      "value": "K Bank customer base"
+    },
+    "source": {
+      "name": "Digital Today · 2026-07-27",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX1BkVFFLNWp6a1RKbXQ0Uy1TZnM1OGNhdThPcnVSa1FFemFhbmpkYURCMk5CREZnbmlQMVBnVFNBLTBBMWhYbDBYcnRXSDBrN0QwdlRLV1BuN3dmUFlmNTVFRTdCMTB6QXRFUFRjNV9WZ21CSGoteXl3b0FnbUY0dDRDN05sTkg3NS1WNDBmZldET2FFTWxXN1lOOEtuNkRX"
+    }
+  },
+  {
+    "id": "2026-07-25-latam-fintech-funding-q1-surge",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-25T21:06:24Z",
+    "headline": "Latin American fintech funding hits $575M in Q1 2026, highest in five quarters",
+    "plain_english": "LatAm fintech raised $575M in Q1 2026, marking the strongest quarter in over a year. Appetite has rebounded after 2024–2025 consolidation, signaling renewed institutional confidence in regional payment, lending, and embedded-finance plays.",
+    "why_it_matters": "LatAm fintech renaissance unlocks capital for cross-border rails and SME lending—direct threat to branch-heavy incumbent banks. Expect M&A acceleration by regional incumbents seeking agility.",
+    "source": {
+      "name": "Evotek JSC · 2026-07-25",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdTR6Z2Vlickdyb1kxM3JZU1h6YkdQby1rdUl5eUdoNHpfOHVmOXc3Zzg2WkM4RlBCVjhlVXd3SEwwaG1nMkFtQXFWaE9uelJoQy1lcTJUWUs5TGlnVzM2aWRNMlQ0Ul91eko2aG5KTnBYeFBMNVNzWUxlTWVDVktfdW80Y19PbU1sYUxGOU8tOTZmTkl6"
+    },
+    "scale": {
+      "metric": "dollars",
+      "value": "$575M"
+    }
+  },
+  {
+    "id": "2026-07-25-edenred-tech-strategic-plan",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-25T00:19:37.000Z",
+    "headline": "Edenred sees early payoff from tech-heavy strategic plan across 44 countries",
+    "plain_english": "Edenred, a global corporate-payment and benefits provider serving fleet, HR, and expense segments, upgraded its forecast after its Amplify 25-28 tech strategy began yielding results. The company is doubling down on digital/AI capabilities for employee and corporate solutions.",
+    "why_it_matters": "Large BFSI-adjacent processor outpacing broader market signals that AI-driven digitization of HR and fleet payments is now table stakes; peers must accelerate capability or lose margin to digital-native competitors.",
+    "source": {
+      "name": "PYMNTS · 2026-07-25",
+      "url": "https://www.pymnts.com/earnings/2026/edenred-upgrades-forecast-as-tech-heavy-strategic-plan-delivers-early-gains/"
+    }
+  },
+  {
+    "id": "2026-07-24-indian-fintech-funding-rebound",
+    "category": "shift",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-07-24T21:12:34.000Z",
+    "headline": "Indian fintech funding rebounds 2.3x in Q2 2026 to $1.3B as mega-rounds return",
+    "plain_english": "India's fintech funding surged 2.3x to $1.3B in Q2 2026 after multi-quarter slowdown. Mega-deals are back, signaling renewed institutional appetite for Indian digital payments, lending, and wealth platforms—many leveraging AI for underwriting and fraud detection.",
+    "why_it_matters": "India's rapid fintech re-acceleration (post-regulatory clarity on UPI, BNPL) is pulling global capital; BFSI firms with India exposure must reskill on AI-driven lending and KYC to compete with newly funded domestic challengers.",
+    "stat_value": "2.3x",
+    "stat_label": "Q2 2026 fintech funding growth in India",
+    "source": {
+      "name": "Fintech Funding / Evotek JSC · 2026-07-24",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWlmRDROakdKa1JsZ2RNYkNTdnRvMTg1M2tSdUFpSUtBS3M4UW1mRkhOajJrMzZMUnlFbmdyZmlZM2szOEZhOEM2SnJmLUNLTGhjcjlDMmQzdnh3ZFZra2FZcU5Ud0o1UDN6bXIxaV9UYTlpSHR6ejRyeEdWbjIyYU9qTVpKN3NnV1ZCZUJFSTkwSVh0TC1ZUktlRDQtckcx"
+    }
+  },
+  {
+    "id": "2026-07-25-capital-one-baseball-loyalty",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-07-25T09:00:00Z",
+    "headline": "Capital One bets baseball sponsorships drive credit card loyalty in competitive acquisition market",
+    "plain_english": "Capital One is investing sports marketing (baseball) to strengthen emotional brand affinity and reduce churn in a saturated credit card market. Data shows sports-linked card products drive higher engagement and lower attrition than traditional rewards programs. AI-personalization engines amplify segment-level ROI.",
+    "why_it_matters": "Card issuers are pivoting from generic rewards to AI-driven lifestyle clustering. LLM-powered recommendation engines can now predict which customers will value baseball perks vs. dining vs. travel—enabling cheaper, higher-retention acquisition. Expect industry-wide shift from broad-base rewards to micro-segmented propositions.",
+    "stat_value": "~15%",
+    "stat_label": "estimated lift in 12-month card retention for sports-branded offerings vs. generic cash-back",
+    "source": {
+      "name": "Fortune · 2026-07-25",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0JpSHY0dHpJMXU0MzZPd2FidjZ1cjF2aFVVcTV1OGVlM3VWT3FER212SDNIVXloTzI4Q3FpOHJRRm5MYV95OWxBY3gxaWhRYk83OTlyT3ZJRlRVQ09nTENEY3RPTGZzZUF5dC1nWUc1bXhHWGFFMG1fbHdZQlMxM3NGZjNzM3UyRmZRcU1oNTZpRkZPc084TGlBTkhfMzB0NmhqZC1KVQ"
+    }
+  },
+  {
+    "id": "2026-07-27-chinese-chipmaker-ipo-surge",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-07-27T12:59:00Z",
+    "headline": "Chinese chipmaker surges 466% on first trading day amid AI chip competition",
+    "plain_english": "A Chinese semiconductor manufacturer soared 466% in its IPO debut, reflecting investor appetite for alternatives to Nvidia in the AI chip race and growing geopolitical diversification of compute supply.",
+    "why_it_matters": "Signals bifurcation of AI compute infrastructure along geopolitical lines; BFSI and fintech must plan for two supply chains—US/Western GPUs and China-centric alternatives.",
+    "source": {
+      "name": "Fortune · 2026-07-27",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wLTZoWDFZUl9NNUtoNXFsZmtNNm1iZHZMY0NldHZYTFE1Y0lIY0liSUszZU1STGxILXZXZkYxYnpOZUJSM3A2UFM2QTZlTElSa1BhTWJHcFJJcFR4UG11OHhxbTlwZmZTVnh2NFl6ZUVEcFk"
+    }
+  },
+  {
+    "id": "2026-07-27-deepseek-funding-pause",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-27T00:13:39Z",
+    "headline": "Chinese AI startup DeepSeek pauses funding round ahead of IPO",
+    "plain_english": "DeepSeek, China's high-profile open-source AI competitor to OpenAI, suspended its Series B funding drive amid founder commentary on US-China AI rivalry and preparation for public listing.",
+    "why_it_matters": "Signals Chinese government may be tightening oversight of frontier AI venture growth; IPO pivot suggests regulatory pressure. Affects BFSI investor thesis on China AI exposure and open-source model availability.",
+    "source": {
+      "name": "PYMNTS · 2026-07-27",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-reportedly-suspends-funding-round-ahead-of-ipo/"
+    }
+  },
+  {
+    "id": "2026-07-27-tech-ai-spend-investor-worry",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-26T23:32:52Z",
+    "headline": "Tech giants' $724 billion AI spending spree triggers investor caution",
+    "plain_english": "Google, Microsoft, Meta, and others are investing record sums (~$724B) in AI infrastructure and development, but equity markets are signaling concern about ROI; Alphabet's cloud revenue +82% but stock reaction was muted due to AI capex anxiety.",
+    "why_it_matters": "Public markets are not yet pricing AI infrastructure spend as strategic; creates pressure on tech vendors to show near-term BFSI/enterprise returns. May slow AI feature releases and increase price pressure on platform APIs.",
+    "stat_value": "$724B",
+    "stat_label": "annual AI spending by tech giants",
+    "source": {
+      "name": "PYMNTS · 2026-07-26",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/tech-giants-724-billion-ai-bill-sparks-investor-worry/"
+    }
+  },
+  {
+    "id": "2026-07-17-learner-inference-chips-vs-training-chips",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T12:00:00Z",
+    "headline": "Why inference chips matter more than you think for bank AI",
+    "plain_english": "Training chips (GPUs) build models; inference chips run them. A $400 million loan deal to inference-chip makers signals the market shift: after models are trained, banks need cheaper, faster hardware to serve predictions to millions of users daily. Inference chips do this job.",
+    "why_it_matters": "Banks building AI pilots often obsess over training cost; production banks obsess over serving predictions at scale cheaply. This loan trend confirms inference economics are now the competitive moat.",
+    "jargon": [
+      {
+        "term": "Inference",
+        "def": "Running a trained AI model on new data to generate predictions; uses far less compute than training."
+      },
+      {
+        "term": "Training vs. inference chips",
+        "def": "Training chips (GPUs, TPUs) build models; inference chips (CPUs, ASICs, specialized accelerators) serve predictions efficiently at scale."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-07-17",
+      "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/"
     }
   },
   {
@@ -8550,20 +8719,6 @@
     }
   },
   {
-    "id": "2026-06-29-apple-ai-powered-exploit-security",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-29T21:56:01.000Z",
-    "headline": "Apple Accelerates Security Updates to Counter AI-Generated Exploits",
-    "plain_english": "Apple shifted from bundling security fixes with scheduled software releases to publishing emergency patches immediately, citing AI's ability to rapidly generate and weaponize malicious tools.",
-    "why_it_matters": "First major tech firm to publicly acknowledge AI acceleration of exploit velocity. Signals shift from quarterly patch cycles to continuous deployment — precedent BFSI will follow for critical systems.",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/cybersecurity/2026/apple-accelerates-security-updates-preempt-ai-powered-exploits/"
-    }
-  },
-  {
     "id": "2026-07-02-oman-arab-bank-visa-tokenization",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -8627,22 +8782,6 @@
     }
   },
   {
-    "id": "2026-06-29-fintech-api-oversight-banking-partnerships",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-29T22:57:51.000Z",
-    "headline": "Banks Struggle to Govern APIs as FinTech Partnerships Proliferate",
-    "plain_english": "Banks outsource payments, onboarding, fraud, and analytics to multiple fintech partners via APIs, but lack centralized oversight frameworks. Each partnership introduces new security and compliance surface area.",
-    "why_it_matters": "API governance is becoming the bottleneck to partnership velocity. Banks will need AI-driven API monitoring and audit trails to scale fintech ecosystems safely.",
-    "stat_value": "dozens",
-    "stat_label": "fintech integrations per mid-size bank",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/news/banking/2026/fintech-partnerships-force-banks-to-fix-api-oversight/"
-    }
-  },
-  {
     "id": "2026-06-30-ecb-ai-financial-stability",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -8674,22 +8813,6 @@
     "source": {
       "name": "PYMNTS · 2026-07-01",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/google-cloud-pursues-financial-markets-in-factset-alliance/"
-    }
-  },
-  {
-    "id": "2026-06-29-ai-data-center-weather-risk",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-29T14:30:56.000Z",
-    "headline": "Severe weather and heatwaves create new operational risk for AI data centers",
-    "plain_english": "AI data centers face growing weather-related disruptions: grid strain during heatwaves, higher cooling costs, weather damage claims, and insurance repricing. Affects BFSI AI infrastructure resilience.",
-    "why_it_matters": "Climate risk is now a direct cost and operational constraint on AI deployment economics. BFSI ops teams must factor extreme weather into AI infrastructure capex and continuity planning.",
-    "stat_label": "Risk category",
-    "stat_value": "Climate-driven infrastructure cost",
-    "source": {
-      "name": "CNBC · 2026-06-29",
-      "url": "https://www.cnbc.com/2026/06/29/ai-data-centers-heatwave-climate-risk-weather.html"
     }
   },
   {
@@ -8740,26 +8863,6 @@
     }
   },
   {
-    "id": "2026-06-29-agent-confidence-enterprise",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T14:44:01.000Z",
-    "headline": "Enterprise executives turn to agentic AI to prove financial ROI and align with strategy",
-    "plain_english": "As organizations face pressure to demonstrate AI ROI, Gartner calls 2026 an 'inflection year' for agentic AI adoption. Execs targeting autonomous agents for measurable cost reduction and revenue impact.",
-    "why_it_matters": "ROI pressure shifts AI spend from pilot/exploration to production agentic systems. BFSI teams will expect business-case rigor on agent deployments; validates first-mover advantage for banks shipping autonomous workflows.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that operates autonomously on tasks, making decisions and executing actions with minimal human supervision."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-06-29",
-      "url": "https://www.technologyreview.com/2026/06/29/1139635/agent-confidence-on-the-technical-frontier/"
-    }
-  },
-  {
     "id": "2026-07-01-deployment-square-ai-integrations",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8792,50 +8895,6 @@
     }
   },
   {
-    "id": "2026-06-29-paysafe-primer-partnership",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-29T15:48:00.000Z",
-    "headline": "Paysafe partners with Primer to streamline card payment integration for merchants",
-    "plain_english": "Paysafe (NYSE: PSFE) integrated with Primer, a unified payment infrastructure platform. Merchants gain simplified, flexible card payment orchestration across Paysafe and other providers.",
-    "why_it_matters": "Consolidates payment rails under abstraction layer. Reduces friction for fintech and SMB migration; competitive pressure on incumbent payment gateways.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/pressarticle/110272/paysafe-joins-primer-platform-to-streamline-card-payments-for-online-merchants"
-    }
-  },
-  {
-    "id": "2026-06-29-wnstn-google-cloud-api",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-29T14:00:03.000Z",
-    "headline": "WNSTN launches enterprise API on Google Cloud Marketplace",
-    "plain_english": "WNSTN released an enterprise API available on Google Cloud Marketplace. Provides programmatic access for enterprise customers to WNSTN's services at scale.",
-    "why_it_matters": "Reduces friction for enterprise adoption via cloud marketplace. Signals vendor investment in platform-as-a-service for financial services automation.",
-    "source": {
-      "name": "FF News · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNWxVdUs1Qmk5T1hSRDE3cDJoZ1RXa3V3UVdvb3BpQzFOODlxRkpaeGZmMGNMbENfQUFSVlFIRWpQV3NjcTNKLVA2VTg5OHBySldtSFhVRFNhUWVIUzNMNFlNMDNlN3hGd2twWjRoWjhYX0NUZEhNX2VsYnhRYWd4UzhiZWRYNUF3N2phS2hud0NsUldXenB5Uk04OVhVaTJqSFRSWVF3UWxRQQ"
-    }
-  },
-  {
-    "id": "2026-06-29-bnpl-private-credit-overlap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-06-29T13:42:06.000Z",
-    "headline": "Buy-now-pay-later loans increasingly funded by private credit, raising systemic risk flags",
-    "plain_english": "BNPL loans are now commonly backed by opaque private credit structures. Credit rating agencies and former regulators flag hidden leverage and risk concentration in BNPL-private credit ecosystem.",
-    "why_it_matters": "BNPL credit risk is migrating out of visible banking system into private credit shadows. BFSI risk officers must monitor counterparty exposure to BNPL-backed vehicles; regulatory scrutiny likely to follow.",
-    "stat_label": "Market structure shift",
-    "stat_value": "BNPL funding source: private credit",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/bnpl/2026/bnpl-loans-increasingly-backed-by-private-credit/"
-    }
-  },
-  {
     "id": "2026-06-30-ecb-ai-trading-markets",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -8847,20 +8906,6 @@
     "source": {
       "name": "European Central Bank · 2026-06-30",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWTlpUnFsRWp3TmhOQlp0U05fOVdDQ1lKSnJQZTc1TG1WOEJhRDZqYnhHSXlYUnRINm5MU05HeW5pMEdFZ2lwbFQ3c2lsdXhXa0xrVTZEMmxTYXM2VUYyTDV2TkFaZGwwNEtjazlnQWpUOTRZdHlSdjVocWhiUGJDX1N0bnV0bmpHVXZUUU9kbnJFNHpZQ0Y4TjRFaw"
-    }
-  },
-  {
-    "id": "2026-06-30-jpmorgan-digital-assets-banking-rules",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-30T00:27:38.000Z",
-    "headline": "JPMorgan Urges U.S. Lawmakers to Apply Traditional Banking Rules to Digital Assets",
-    "plain_english": "JPMorgan's global payments co-head and Digital Assets CEO published a policy brief calling for durable safeguards from traditional banking regulations to be extended to crypto/digital asset frameworks under development.",
-    "why_it_matters": "Major incumbent BFSI firm is lobbying for regulatory parity with crypto platforms, not separation. Signals acceptance of digital assets as regulated banking product, not fringe.",
-    "source": {
-      "name": "PYMNTS · 2026-06-30",
-      "url": "https://www.pymnts.com/blockchain/2026/jpmorgan-executives-say-banking-rules-should-apply-to-digital-assets/"
     }
   },
   {
@@ -8906,40 +8951,6 @@
     }
   },
   {
-    "id": "2026-06-29-eib-dlt-commercial-paper-clearstream",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-06-30T00:01:00.000Z",
-    "headline": "European Investment Bank Issues DLT-Native Commercial Paper on Clearstream",
-    "plain_english": "EIB issued its first distributed ledger technology (DLT)-native commercial paper directly on Clearstream's D7 platform, eliminating paper settlement intermediaries and settling directly on-chain.",
-    "why_it_matters": "First major public issuer to skip paper entirely and issue debt natively on DLT. Signals migration path for short-term funding markets away from legacy settlement infrastructure.",
-    "jargon": [
-      {
-        "term": "DLT",
-        "def": "Distributed Ledger Technology — a database shared across multiple computers, enabling direct settlement without middlemen."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-06-30",
-      "url": "https://www.finextra.com/newsarticle/48007/eib-issues-dlt-native-commercial-paper-on-clearstream-platform"
-    }
-  },
-  {
-    "id": "2026-06-30-ecb-forum-central-banking",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-30T00:07:02.000Z",
-    "headline": "ECB Forum on Central Banking 2026 Convenes",
-    "plain_english": "The European Central Bank hosted its annual Forum on Central Banking, bringing together policymakers, regulators, and market participants to discuss monetary policy, financial stability, and digital finance topics.",
-    "why_it_matters": "ECB forums typically announce or signal regulatory shifts on AI, payments, and digital assets. Watch official ECB channels for published findings.",
-    "source": {
-      "name": "ECB Supervision · 2026-06-30",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdURaREdYa3RnVTQyM2N3cktyTDBMSnR6bUh5QmluTmV2Smx6dEhiSnl5eWs3V0dEd1YxV0NvMWFsdTk3Uk5jNzNtTTFQa0V1MXpBU1U5MGM0ZnhDcDU5cFZnd0NLMVBzSWs2MmdOVWVXbndlRl8tTW95RFcxMnJkT2FHaVVRMG5NeFZ5T3prYWxZRzlqWERnU0JB"
-    }
-  },
-  {
     "id": "2026-06-30-ncr-atleos-shell-atm-extension",
     "category": "deployment",
     "jurisdiction": "UK",
@@ -8951,172 +8962,6 @@
     "source": {
       "name": "Finextra · 2026-06-30",
       "url": "https://www.finextra.com/pressarticle/110294/ncr-atleos-extends-atm-relationship-with-shell-uk-oil-products?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-06-29-banks-ai-fraud-instant-payments",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-29T23:45:50.000Z",
-    "headline": "Banks Deploy AI to Recover Funds After Instant Payments Clear",
-    "plain_english": "Real-time payment rails are irreversible once settled, leaving no manual clawback window. Banks now use AI to trace and recover stolen funds post-transaction. PYMNTS Intelligence found 40% of financial institutions face losses from instant-payment fraud.",
-    "why_it_matters": "Shifts fraud defense upstream (prevention) to downstream (post-settlement recovery). Regulatory pressure to reduce instant-payment fraud will force AI adoption across retail banking.",
-    "source": {
-      "name": "PYMNTS · 2026-06-29",
-      "url": "https://www.pymnts.com/news/banking/2026/banks-deploy-ai-to-chase-stolen-funds-after-instant-payments-clear/"
-    }
-  },
-  {
-    "id": "2026-06-29-irace-digital-rebrand",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-06-29T14:30:00.000Z",
-    "headline": "FundBank rebrands institutional banking operations to IRACE Digital; refocuses on asset manager tech",
-    "plain_english": "FundBank Group announced a rebrand of its institutional banking operations to IRACE Digital, signaling a strategic refocus on serving asset managers with digital banking and settlement infrastructure. The move reflects consolidation within fintech banking-as-a-service (BaaS) sector.",
-    "why_it_matters": "Rebrand often precedes product launch or capital raise. Watch for IRACE to announce new AI-driven fund operations tools or custody automation aimed at buyside firms.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/pressarticle/110268/irace-digital-launches"
-    }
-  },
-  {
-    "id": "2026-06-30-synchrony-executive-transition-digital-platform",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-30T00:45:52.000Z",
-    "headline": "Synchrony Names Carol Juel to Lead Digital Platform After Schaller's Retirement",
-    "plain_english": "Synchrony announced executive transitions, with Bart Schaller retiring as EVP/CEO of its Digital platform. Carol Juel, previously in a senior Synchrony role, assumes platform leadership.",
-    "why_it_matters": "Mid-market consumer finance firm refreshing digital leadership during period of AI-driven platform modernization. Watch for strategic reprioritization under new leadership.",
-    "source": {
-      "name": "PYMNTS · 2026-06-30",
-      "url": "https://www.pymnts.com/personnel/2026/synchrony-selects-carol-juel-to-lead-digital-platform-as-bart-schaller-retires/"
-    }
-  },
-  {
-    "id": "2026-06-30-mastercard-africa-cybersecurity-center",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-06-30T00:01:00.000Z",
-    "headline": "Mastercard Launches Pan-African Cybersecurity Centre of Excellence",
-    "plain_english": "Mastercard announced a multiyear initiative to strengthen cyber resilience across Africa, establishing a dedicated centre to address continent-wide payment security gaps.",
-    "why_it_matters": "Major payment network signaling long-term commitment to APAC infrastructure. Likely includes AI-driven fraud detection, real-time risk monitoring, and capacity building.",
-    "source": {
-      "name": "Finextra · 2026-06-30",
-      "url": "https://www.finextra.com/newsarticle/48010/mastercard-launches-africa-cybersecurity-centre-of-excellence"
-    }
-  },
-  {
-    "id": "2026-06-29-credit-agricole-agentic-payment",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-06-29T15:28:00.000Z",
-    "headline": "Crédit Agricole completes first agentic payment transaction in production",
-    "plain_english": "Crédit Agricole, Mastercard, and Worldline executed the first production agentic payment transaction in France. Agentic AI systems autonomously execute multi-step financial transactions without human intervention per transaction.",
-    "why_it_matters": "Demonstrates autonomous AI agents moving from pilot to live payment flows. If scaled, shifts settlement risk models and real-time compliance monitoring at the core of payment rails.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that acts autonomously, making decisions and taking actions toward goals without human approval per action."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/newsarticle/48008/crdit-agricole-completes-agentic-payment-transaction"
-    }
-  },
-  {
-    "id": "2026-06-29-citigroup-ai-efficiency",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-06-29T14:12:13.000Z",
-    "headline": "Citigroup bets AI as central lever for efficiency and long-term growth strategy",
-    "plain_english": "Citigroup is positioning AI as a core driver of operational efficiency and revenue growth, signaling a strategic pivot toward AI-first operations across the enterprise. Complements earlier signals of AI-driven cost reduction and client-facing automation.",
-    "why_it_matters": "Mega-bank systematic AI bet signals confidence in ROI. Other money-center banks likely to follow similar org restructuring and capital allocation toward AI ops.",
-    "source": {
-      "name": "Zacks Investment Research · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObWI1eHRrVUJmS0pvenNmSnhJR2tGR29oT0NoRlNvTGVtclg4RS1VV0VuSW5qaDBvMVZrOFRhNE1JYk1LSjNaaE9GY1pHamltYlJWUUpuOFVHN2twZGEwMGozM1lVeFJCM3NzcXU4VUpSNnk2NUFsdHJkcjI5LUllbXdQQjFmWTl0aEEtVVJfemNRdUFSdHVzalNmSjFuLWh4U1NrTQ"
-    }
-  },
-  {
-    "id": "2026-06-29-citi-open-source-ai",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-06-29T13:58:00.000Z",
-    "headline": "Citi flags open-source AI as emerging strategy as proprietary model access tightens",
-    "plain_english": "Citi sees open-source AI models as a strategic hedge as access to cutting-edge proprietary models (from OpenAI, Anthropic, Google) becomes more restricted. Banks may shift workloads to permissively-licensed models like Meta's Llama.",
-    "why_it_matters": "Signals industry-wide shift toward open-source models for cost and autonomy. Pressure on frontier labs to monetize or risk losing BFSI customers to cheaper, privacy-preserving alternatives.",
-    "jargon": [
-      {
-        "term": "open-source AI models",
-        "def": "AI models published freely with transparent weights and code, usable without vendor contracts or usage restrictions."
-      }
-    ],
-    "source": {
-      "name": "Yahoo Finance UK · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMjc4Z2ozZ0h1ZkFGNm9wVGNlNmhURnhIZVZJdHZ3ZjZXbmd5UVRwdHhpNFFKV2NNRHVQYXI3d043cEVIR2EzTXlfVHZ3Y2FUNGdhNTBlaGZEclNwRUE5NzBvTWphR0pwY3RXVUFlSGlEWFF3TmNzLWxrb1hsQVNCTlFUVlA"
-    }
-  },
-  {
-    "id": "2026-06-29-occ-personnel-changes",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-29T13:42:17.000Z",
-    "headline": "OCC announces senior personnel changes",
-    "plain_english": "The Office of the Comptroller of the Currency announced staffing changes in senior leadership. No specific AI policy or supervisory focus disclosed in headline.",
-    "why_it_matters": "Watch for shifts in OCC's AI supervision and fintech oversight agenda under new leadership. Personnel moves often precede regulatory emphasis changes.",
-    "source": {
-      "name": "OCC · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMifkFVV95cUxMFpGcHM2RmxPLWNRZy1XYjhNVTl0cHRDUkRGQkhuQXJkNWZRVzF4Y3hTd29hTWdIRkFfM2VEQjBRNy13T3pLczJYcEpVdHJSVVc0Rk90eUFrLW1kY3BadGxWRnJhN1pTOTFsemp5dFZtelJ5NEJmUDJ4VzBuY3RSUQ"
-    }
-  },
-  {
-    "id": "2026-06-29-personetics-fiserv-xd",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-06-29T14:56:00.000Z",
-    "headline": "Personetics embeds AI into Fiserv Experience Digital banking platform",
-    "plain_english": "Personetics' cognitive banking AI is now integrated into Fiserv's Experience Digital (XD), a core digital banking product for banks and credit unions. Banks can now offer AI-driven account insights and recommendations natively.",
-    "why_it_matters": "Moves AI from vendor silo into incumbent core banking stack. Broadens cognitive banking adoption across Fiserv customer base without new integrations.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/pressarticle/110271/personetics-embeds-ai-into-fiserv-experience-digital"
-    }
-  },
-  {
-    "id": "2026-06-29-credit-agricole-cib-esg-trade",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-06-29T14:15:47.000Z",
-    "headline": "Crédit Agricole CIB launches AI-powered ESG trade analysis tool",
-    "plain_english": "Crédit Agricole's corporate investment bank deployed an AI tool for environmental, social, and governance (ESG) trade assessment. Tool automates ESG risk scoring and recommendation in trade workflows.",
-    "why_it_matters": "Embeds ESG compliance automation into trading desk ops. Reduces manual ESG assessment latency on corporate trades; likely precursor to broader ESG-as-a-service offerings.",
-    "source": {
-      "name": "ESG News · 2026-06-29",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5hd2JHYWxjbmVyNkpPaVlWaTUyTjUwY3FPOXBvQTJqRjA3X3ViMzNSSkZIRV91VU1icG5CdDJVQ1FjdzZzUmtUQnNLcmw0WFgxaEpJNGhsMGRwckJRSkRkTnlQNkQzdkVQdHRGUUVETTYxQlVRWGc"
-    }
-  },
-  {
-    "id": "2026-06-29-educational-credit-union-investifi",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-06-29T13:57:00.000Z",
-    "headline": "Educational Community Alliance Credit Union launches in-platform investing via InvestiFi partnership",
-    "plain_english": "A regional US credit union serving educators in the Toledo area integrated InvestiFi's investment tools into its banking platform, enabling customers to trade and manage investments without leaving the app. The move reflects wider industry trend toward unified financial experiences.",
-    "why_it_matters": "Credit unions and small regional banks are now able to embed brokerage and investing capabilities without building from scratch, using fintech APIs. This commoditizes investment infrastructure and pressures full-service brokerages on SMB market share.",
-    "source": {
-      "name": "Finextra · 2026-06-29",
-      "url": "https://www.finextra.com/pressarticle/110267/educational-community-alliance-credit-union-adds-in-platform-investing-with-investifi"
     }
   }
 ]
