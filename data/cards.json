@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-02-eu-ai-disclosure-requirements",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-02T10:00:00.000Z",
+    "headline": "EU AI Act triggers mandatory disclosure of AI interaction and synthetic content",
+    "plain_english": "New EU rules now require organizations to inform users when they interact with AI systems or view AI-generated or edited content. Implementation begins August 2026, raising concerns about 'disclosure fatigue' from repeated notices.",
+    "why_it_matters": "BFSI firms must audit all customer-facing workflows (chatbots, document review, advisors) to comply with disclosure rules; non-compliance risks regulatory action and operational friction.",
+    "jargon": [
+      {
+        "term": "Disclosure fatigue",
+        "def": "User skepticism or inattention caused by excessive mandatory warnings, reducing effectiveness of required transparency notices."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-08-02",
+      "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/"
+    },
+    "effective_date": "2026-08-02"
+  },
+  {
     "id": "2026-08-01-eu-ai-act-enforcement",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -156,17 +177,17 @@
     }
   },
   {
-    "id": "2026-07-30-fca-fraud-warnings",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-07-30T11:50:14Z",
-    "headline": "FCA issues fraud warnings on clones of authorized wealth and payments firms",
-    "plain_english": "The Financial Conduct Authority published alerts on PSP-Claimback (clone of an FCA-authorized payments firm) and selfie-wealth.com (posing as a previously authorized wealth platform). Both are unregulated scams mimicking regulated entities to solicit customer funds.",
-    "why_it_matters": "Rising clone fraud targeting BFSI consumers signals need for stronger digital identity verification and customer onboarding controls; regulators increasingly treating spoofing as systemic risk.",
+    "id": "2026-08-02-morgan-stanley-ipo-wealth",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-02T10:00:05.000Z",
+    "headline": "Morgan Stanley capitalizes on post-IPO momentum in wealth management",
+    "plain_english": "Morgan Stanley is leveraging recent IPO success to expand wealth management capabilities, capturing new client growth from the buoyant equity market.",
+    "why_it_matters": "Wealth management at scale increasingly automates advisor workflows via AI; Morgan Stanley's expansion may signal new use cases for LLM-powered portfolio analysis or client service bots.",
     "source": {
-      "name": "Financial Conduct Authority · 2026-07-30",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX3ZsRGM2NFg1RDhMdnZ2UnZvT0c5U3BHUWMtUjZQNUtJemw2NVIxVlZUUUx3b1pPdjZtbnI4TVFfRG9iSGtiWU1GMWh2eEpMVDFvd1ZUZ2dyM1VXd21TMTRvMVJiRWZLdGt5WlV1MXJQYTF6NlBfaDVOOVZBUGV2S2RR"
+      "name": "Financial Times · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOV9Ia3ZGN09FaE81ODJWUVBNNVB3eGxfbVdVUHhBdGtjQmR4ODVhZ1JJSVlIalhFMmM4cnZZbTBMbnNoaHJJUWlUa0k4ZEV5ZTBkeGh0a3NqTkw4S1N3YXRDRVNwUnB4aG42b3RQTGU0OFY0Si1xc2Rsci1tUFZfMXpmVzA"
     }
   },
   {
@@ -311,26 +332,6 @@
     "source": {
       "name": "Finextra · 2026-07-29",
       "url": "https://www.finextra.com/pressarticle/110524/citi-rolls-out-digital-invoice-processing-tool"
-    }
-  },
-  {
-    "id": "2026-07-29-intuit-credit-karma-llm-guardrails",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T11:30:00.000Z",
-    "headline": "Intuit Credit Karma pairs deterministic financial models with tuned LLM prompts to prevent AI drift",
-    "plain_english": "Intuit Credit Karma builds domain-specific AI assistants that lock LLM outputs to validated financial logic via GEPA (prompt tuning framework), avoiding free-form model hallucination in debt, refund, and paycheck advice.",
-    "why_it_matters": "Constraining LLM behavior within deterministic financial rules is the production pattern emerging across fintech—prevents regulatory liability and customer harm from out-of-bounds recommendations.",
-    "jargon": [
-      {
-        "term": "GEPA",
-        "def": "Governance-enabled prompt architecture; method to tune LLM responses against validated business logic and compliance rules."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-07-29",
-      "url": "https://tearsheet.co/ai-innovation/we-use-prompts-that-have-been-tuned-through-gepa-so-the-llm-isnt-freelancing-intuit-credit-karmas-gurpreet-singh-on-how-the-firm-pairs-deterministic-financial-modeling-with-gen-ai"
     }
   },
   {
@@ -490,6 +491,35 @@
     }
   },
   {
+    "id": "2026-08-02-citi-restructuring-workforce",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-02T09:42:42.000Z",
+    "headline": "Citigroup layoffs expand as restructuring deepens organization",
+    "plain_english": "Citigroup is conducting broad workforce reductions during restructuring, affecting employees even while on vacation. The bank is reshaping its operating structure to reduce complexity and improve efficiency.",
+    "why_it_matters": "Large-scale bank restructuring often signals shift in AI/automation strategy; watch for announced replacements of roles with automation tooling or outsourced operations.",
+    "source": {
+      "name": "LatestLY · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTVFYTkRJX0J5NjQwdFFNbDVkMzJ3dG12eXkzdjBRRmlXbHhVZV9wcE9OMWl5eFZnU0Fqb2hfdEFOMjk4ci00anN1SGZ5SXpjZjBEMm1JeWdPRHE4RG9peUhBODVRZzlPVHg5dnhTb3BKRWN3X1p3dkxxSWowWmlyV09xa19xdXlYRVFmX2dqYXdaV0ZmbTVZUW13b2J3N0JMOHhTRzBnWktfVUtHbTMzeEpCSdIBswFBVV95cUxNTVFYTkRJX0J5NjQwdFFNbDVkMzJ3dG12eXkzdjBRRmlXbHhVZV9wcE9OMWl5eFZnU0Fqb2hfdEFOMjk4ci00anN1SGZ5SXpjZjBEMm1JeWdPRHE4RG9peUhBODVRZzlPVHg5dnhTb3BKRWN3X1p3dkxxSWowWmlyV09xa19xdXlYRVFmX2dqYXdaV0ZmbTVZUW13b2J3N0JMOHhTRzBnWktfVUtHbTMzeEpCSQ"
+    }
+  },
+  {
+    "id": "2026-08-02-italy-monte-paschi-exit",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-02T09:51:47.000Z",
+    "headline": "Italy to divest Monte Paschi stake by end of September",
+    "plain_english": "Italian government plans to exit its remaining stake in Monte Paschi di Siena by September 2026, completing the full privatization of the troubled bank following years of restructuring.",
+    "why_it_matters": "Bank divestiture signals completion of turnaround; watch for AI automation initiatives inherited by private ownership, which may accelerate cost reduction and digital transformation.",
+    "source": {
+      "name": "Bloomberg · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY0JXbW1ZelNTY3Z1MEltVmZmRnRHaHBjU3JkWGczVDNWMXBTOGtBU0pKbGVqNDJnRnM2WmR5SDV0Mi15bzg1UWtnRkVTU2lyXzU2dDlYLS1pZllHUWVyNlMxUEUxRlNGSTdRZmIzVTVwTWZLcXNqMkJBTW1LZWhkMHg3MDJOeXQ4WGJWQzdEbUVYeUZJakNiQVJObk9hdGU1ZjBpbjBHWmZIYy0tSmhGLUJn"
+    },
+    "effective_date": "2026-09-30"
+  },
+  {
     "id": "2026-08-01-google-earth-ai-removal",
     "category": "shift",
     "jurisdiction": "Global",
@@ -617,34 +647,6 @@
     "source": {
       "name": "Finextra · 2026-07-30",
       "url": "https://www.finextra.com/newsarticle/48168/stripe-vet-buys-a-bank-for-his-fintech?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-30-robinhood-transaction-ownership",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-30T00:45:19.000Z",
-    "headline": "Robinhood shifts from broker to transaction-ownership and financial-services ecosystem",
-    "plain_english": "Robinhood Q2 earnings showed the brokerage moving beyond commission-free stock trading into owned-transaction infrastructure, seeking recurring revenue via adjacent financial services (banking, insurance, lending).",
-    "why_it_matters": "Retail broker-to-fintech pivot signals the 'Stripe-fication' of customer transaction control; every neobank now expects to own, not outsource, payments, credit, and insurance rails.",
-    "source": {
-      "name": "PYMNTS · 2026-07-30",
-      "url": "https://www.pymnts.com/earnings/2026/robinhood-takes-an-option-out-on-owning-customer-transactions/"
-    }
-  },
-  {
-    "id": "2026-07-29-bloomberg-canoe-intelligence",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T13:00:00.000Z",
-    "headline": "Bloomberg acquires Canoe Intelligence to deepen private markets data and AI analytics",
-    "plain_english": "Bloomberg purchased AI-powered alternative investment data firm Canoe Intelligence. The acquisition expands Bloomberg's position in private markets intelligence, a segment where AI-driven fund performance and deal sourcing tools are becoming table stakes.",
-    "why_it_matters": "Terminal-dependent finance professionals now expect real-time AI synthesis of unstructured deal flow, LP commitment, and valuation signals—Bloomberg is bundling AI discovery into its core product to defend wallet share against fintech entrants.",
-    "source": {
-      "name": "Finextra · 2026-07-29",
-      "url": "https://www.finextra.com/newsarticle/48162/bloomberg-to-buy-canoe-intelligence-for-private-markets-push"
     }
   },
   {
@@ -1008,6 +1010,36 @@
     }
   },
   {
+    "id": "2026-08-02-wallstreet-ai-monetization",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-02T11:01:03.000Z",
+    "headline": "Wall Street analysts model AI revenue pathways for major tech firms",
+    "plain_english": "Investment banks are publishing research on how technology giants will convert AI investments into measurable revenue streams, including efficiency gains and new product premiums.",
+    "why_it_matters": "BFSI investors and CIOs now have analyst consensus on AI ROI timelines; expect pressure on banks' own AI budgets to show similar payoff models or reset expectations.",
+    "stat_value": "Multiple major banks",
+    "stat_label": "publishing AI monetization frameworks",
+    "source": {
+      "name": "WSJ · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZzdxMHNMWnZqYktyTy1jVEhaRGh5ZjBwdjR5ZWcySjNMS0I5SVU0QU15WUdiNEhXMmxveV9WSWg0endtTjVKRE1JQkF6R3h6RWZ1LVJXWFdpT0pDRGNjVWlPdW9qYlVLNldkM2hJWUFtRjJiQnpNeXM4MU52YzlMRWk1VGFsamNkRnZFUUhZQlBKRlF2b3BKZVBRZXM0Zw"
+    }
+  },
+  {
+    "id": "2026-08-02-jpmorgan-amazon-ai-thesis",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-02T11:07:00.000Z",
+    "headline": "JPMorgan adjusts Amazon valuation based on AI productivity gains",
+    "plain_english": "JPMorgan's research team reset Amazon stock target to reflect AI-driven operational payoffs materializing faster than prior models assumed, signaling confidence in AI-to-revenue conversion.",
+    "why_it_matters": "Major bank research shifting valuations on AI productivity signals that BFSI boards will demand similar rigor on internal AI ROI; pressure increases on CFO/CTO alignment on AI spend returns.",
+    "source": {
+      "name": "TheStreet · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB5eFhMclUzSkFaLWRtVllfS0RvajlGaTFuaFQ0cmtfY3pDX3JvV0tLYnVrMVZaUUcyVGtVOTRVT3YtNXhWX1pOYTQzdW8xT25lMnRpNHE5d0x2WnJfZGJFYlVDUVh3NWFFUVIySmRJWHhtRm40TzRZOEhB"
+    }
+  },
+  {
     "id": "2026-08-01-water-systems-cyberattack-iran",
     "category": "insight",
     "jurisdiction": "US",
@@ -1142,39 +1174,23 @@
     }
   },
   {
-    "id": "2026-07-28-ai-agents-task-completion-gap",
-    "category": "insight",
+    "id": "2026-08-02-anthropic-ai-models-hacked",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-07-28T12:00:00.000Z",
-    "headline": "AI agents complete only 26% of assigned work tasks in real-world financial deployments",
-    "plain_english": "OpenAI data cited in Tearsheet analysis shows AI agents succeed on only one in four real-world work assignments in production financial services environments. Task failure rates remain high despite frontier model improvements.",
-    "why_it_matters": "Deflates hype around autonomous AI agents for back-office; forces BFSI to pivot from agent-as-replacement to agent-as-augmentation, requiring new governance and human-in-loop frameworks.",
-    "stat_value": "26.2%",
-    "stat_label": "of AI agent tasks completed successfully",
-    "source": {
-      "name": "Tearsheet · 2026-07-28",
-      "url": "https://tearsheet.co/numbers-with-narrative/3-data-points-that-are-resetting-expectations-for-ai-treasury-and-payments/"
-    }
-  },
-  {
-    "id": "2026-07-28-bny-ai-metrics-beyond-tokens",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-28T11:59:00.000Z",
-    "headline": "BNY Mellon avoids 'tokenmaxxing' trend; tracks alternative AI performance metrics",
-    "plain_english": "BNY Mellon deliberately bypassed the industry trend of optimizing only token throughput and latency, instead tracking broader operational and business-outcome metrics for AI deployment. Signals sophistication in LLM procurement and evaluation.",
-    "why_it_matters": "Validates that raw model performance metrics (tokens/sec) mislead ROI; enterprise banks now demanding task-completion accuracy, cost-per-transaction, and risk-adjusted KPIs—forcing vendor evals to shift away from pure benchmark scores.",
+    "published_at": "2026-08-02T11:17:28.000Z",
+    "headline": "Anthropic discloses AI model exploits during red-team testing",
+    "plain_english": "Anthropic's Claude models were successfully hacked by three organizations during controlled security testing. The exploits were identified and remediated during development, before production deployment.",
+    "why_it_matters": "Demonstrates frontier labs actively hunt adversarial attacks pre-launch; BFSI orgs should track red-team findings as adoption risk baseline before deploying LLMs in regulated workflows.",
     "jargon": [
       {
-        "term": "Tokenmaxxing",
-        "def": "Optimizing LLM performance solely on token generation speed and throughput, ignoring real-world task accuracy and business outcome alignment."
+        "term": "Red-teaming",
+        "def": "Controlled security testing where external teams attempt to break or manipulate AI models to find vulnerabilities before public release."
       }
     ],
     "source": {
-      "name": "Fortune · 2026-07-28",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM0lYOTlvbUQzY3pYR2Yxak91M1BnABorb..."
+      "name": "Cebu Daily News · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaHNXcjRGbEZabFBIdXY1V2NGY1J3RGU5YXk3a2RBRW5SaWdQUGcyQi1DV0IxblFPV05JM0Z3UkF0TTlJa3ZycnNTbDVPSXh2blRwSWhuTHJmX2dkci1SY1JlUV9xMlF3UE5SNE5hRGs2YTVwRjBWcmYxdFR3MVo4ZDBqVF9nczloQjN2Q0pva0pYZWtER1piR2YwbUtGdTBlZExFRkhPRjNxajJIU1M1Z2JEeVRqWknSAbcBQVVfeXFMUGhzV3I0RmxGWmxQSHV2NVdjRmNSd0RlOWF5N2tkQUVuUmlnUFBnMkItQ1dCMW5RT1dOSTNGd1JBdE05SWt2cnJzU2w1T0l4dm5UcElobkxyZl9nZHItUmNSZVFfcTJRd1BOUjROYURrNmE1cEYwVnJmMXRUdzFaOGQwalRfZ3M5aEIzdkNKb2tKWGVrREdaYkdmMG1LRnUwZWRMRUZIT0YzcWoySFNTNWdiRHlUalpJ"
     }
   },
   {
@@ -1316,17 +1332,23 @@
     }
   },
   {
-    "id": "2026-07-30-microsoft-homegrown-models",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-30T00:21:06.000Z",
-    "headline": "Microsoft openly competes with OpenAI and Anthropic on its own AI models and inference",
-    "plain_english": "Microsoft Q4 earnings call revealed the company is pitching proprietary in-house AI models and inference harnesses to Wall Street, reducing reliance on exclusive OpenAI/Anthropic partnerships.",
-    "why_it_matters": "Signals Microsoft's shift from platform integrator to model builder; enterprises now have credible alternative to OpenAI for Copilot-class capabilities, fragmenting the closed-model moat.",
+    "id": "2026-08-02-llm-dependency-risks",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-02T10:59:58.000Z",
+    "headline": "Understanding LLM dependency: why overreliance on chatbots creates behavioral risk",
+    "plain_english": "Large language models trigger dopamine-like satisfaction in users, creating psychological dependency. This 'LLM addiction' may cause people to over-trust chatbot outputs for critical decisions, skipping human verification—a major risk in financial advisory and risk assessment workflows.",
+    "why_it_matters": "BFSI firms deploying chatbots for advisors or compliance must design friction (forced escalations, dual sign-off) to prevent users from blindly accepting AI-generated guidance.",
+    "jargon": [
+      {
+        "term": "Dependency risk",
+        "def": "User over-reliance on AI output that bypasses human judgment, increasing error propagation in high-stakes decisions."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-07-29",
-      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever"
+      "name": "LatestLY · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV3BJcm9uSkhYWVBBYVFGYTBYeEJWMWltRDRBaEhIczFjbGhPRkJVdU1qTWc5X3p0UnJaRmR3WTdaZmFVT3o5WFBCOUlOZTZndzJvZnlIQmVVRW1fVUZEd05femU4WnYwalZQREw4N0g0SmdBaWpkV29lX2YyanJHMFRVTV9rZWhtaXh0R3RwbS12ck9ZaXF1dENkMHhtczYxOHI3Wm1vbFBKS3h3dm1jZHBFNDJodVE5OG5QYzBTMmliSU9ZSjVfM9IBzgFBVV95cUxOYlJvcjRuTkNiazR0bFN2bkFnNU1DcTRmQTk4ckpUaFNHQTh2WGVSNHdmLTZ1TFlRaXlZbFItYjJDWmVnNXpFdEU1TzNnU2ZOd3lpby1QNUl3YVVEWjRjUFV4X0xPQ1hfTlR2eUtsbnl1QVdManFFTm9DU1QxcTIzcmoyVEY1MFoxbDNTOEhsakJRbTZLVlFlMElTWVFWWXhteG5BOWdDRWVnbW5FalhPaHd0VmpJQy1nSlRIZnZpYUo5c2NaTThfbno5eHpmQQ"
     }
   },
   {
@@ -1534,30 +1556,6 @@
     }
   },
   {
-    "id": "2026-07-17-rag-learner",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-17T22:00:00Z",
-    "headline": "What is RAG? Retrieval-Augmented Generation explained for BFSI practitioners",
-    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI model fetches relevant documents or data from a private knowledge base before generating an answer. Think: LLM checks your bank's loan policies + customer file before drafting a credit decision, not hallucinating from generic training data.",
-    "why_it_matters": "RAG is foundational for BFSI: enables models to cite source documents (auditable), stay current (no retraining), and respect data privacy (queries don't leave your infrastructure). Essential for compliance in lending, claims, and underwriting.",
-    "jargon": [
-      {
-        "term": "Retrieval",
-        "def": "Searching a database (vector store or full-text index) to find relevant context before passing it to the language model."
-      },
-      {
-        "term": "Augmented Generation",
-        "def": "Feeding the retrieved context into the LLM alongside the user query so the model generates answers grounded in your data, not training data."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Learner Series",
-      "url": "https://www.aitechtechive.com"
-    }
-  },
-  {
     "id": "2026-08-01-ai-stocks-rebound",
     "category": "trending",
     "jurisdiction": "US",
@@ -1717,6 +1715,142 @@
     "source": {
       "name": "CNBC · 2026-07-23",
       "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html"
+    }
+  },
+  {
+    "id": "2026-07-30-fca-fraud-warnings",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-07-30T11:50:14Z",
+    "headline": "FCA issues fraud warnings on clones of authorized wealth and payments firms",
+    "plain_english": "The Financial Conduct Authority published alerts on PSP-Claimback (clone of an FCA-authorized payments firm) and selfie-wealth.com (posing as a previously authorized wealth platform). Both are unregulated scams mimicking regulated entities to solicit customer funds.",
+    "why_it_matters": "Rising clone fraud targeting BFSI consumers signals need for stronger digital identity verification and customer onboarding controls; regulators increasingly treating spoofing as systemic risk.",
+    "source": {
+      "name": "Financial Conduct Authority · 2026-07-30",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX3ZsRGM2NFg1RDhMdnZ2UnZvT0c5U3BHUWMtUjZQNUtJemw2NVIxVlZUUUx3b1pPdjZtbnI4TVFfRG9iSGtiWU1GMWh2eEpMVDFvd1ZUZ2dyM1VXd21TMTRvMVJiRWZLdGt5WlV1MXJQYTF6NlBfaDVOOVZBUGV2S2RR"
+    }
+  },
+  {
+    "id": "2026-07-29-intuit-credit-karma-llm-guardrails",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T11:30:00.000Z",
+    "headline": "Intuit Credit Karma pairs deterministic financial models with tuned LLM prompts to prevent AI drift",
+    "plain_english": "Intuit Credit Karma builds domain-specific AI assistants that lock LLM outputs to validated financial logic via GEPA (prompt tuning framework), avoiding free-form model hallucination in debt, refund, and paycheck advice.",
+    "why_it_matters": "Constraining LLM behavior within deterministic financial rules is the production pattern emerging across fintech—prevents regulatory liability and customer harm from out-of-bounds recommendations.",
+    "jargon": [
+      {
+        "term": "GEPA",
+        "def": "Governance-enabled prompt architecture; method to tune LLM responses against validated business logic and compliance rules."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-07-29",
+      "url": "https://tearsheet.co/ai-innovation/we-use-prompts-that-have-been-tuned-through-gepa-so-the-llm-isnt-freelancing-intuit-credit-karmas-gurpreet-singh-on-how-the-firm-pairs-deterministic-financial-modeling-with-gen-ai"
+    }
+  },
+  {
+    "id": "2026-07-30-robinhood-transaction-ownership",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-30T00:45:19.000Z",
+    "headline": "Robinhood shifts from broker to transaction-ownership and financial-services ecosystem",
+    "plain_english": "Robinhood Q2 earnings showed the brokerage moving beyond commission-free stock trading into owned-transaction infrastructure, seeking recurring revenue via adjacent financial services (banking, insurance, lending).",
+    "why_it_matters": "Retail broker-to-fintech pivot signals the 'Stripe-fication' of customer transaction control; every neobank now expects to own, not outsource, payments, credit, and insurance rails.",
+    "source": {
+      "name": "PYMNTS · 2026-07-30",
+      "url": "https://www.pymnts.com/earnings/2026/robinhood-takes-an-option-out-on-owning-customer-transactions/"
+    }
+  },
+  {
+    "id": "2026-07-29-bloomberg-canoe-intelligence",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-29T13:00:00.000Z",
+    "headline": "Bloomberg acquires Canoe Intelligence to deepen private markets data and AI analytics",
+    "plain_english": "Bloomberg purchased AI-powered alternative investment data firm Canoe Intelligence. The acquisition expands Bloomberg's position in private markets intelligence, a segment where AI-driven fund performance and deal sourcing tools are becoming table stakes.",
+    "why_it_matters": "Terminal-dependent finance professionals now expect real-time AI synthesis of unstructured deal flow, LP commitment, and valuation signals—Bloomberg is bundling AI discovery into its core product to defend wallet share against fintech entrants.",
+    "source": {
+      "name": "Finextra · 2026-07-29",
+      "url": "https://www.finextra.com/newsarticle/48162/bloomberg-to-buy-canoe-intelligence-for-private-markets-push"
+    }
+  },
+  {
+    "id": "2026-07-28-ai-agents-task-completion-gap",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-28T12:00:00.000Z",
+    "headline": "AI agents complete only 26% of assigned work tasks in real-world financial deployments",
+    "plain_english": "OpenAI data cited in Tearsheet analysis shows AI agents succeed on only one in four real-world work assignments in production financial services environments. Task failure rates remain high despite frontier model improvements.",
+    "why_it_matters": "Deflates hype around autonomous AI agents for back-office; forces BFSI to pivot from agent-as-replacement to agent-as-augmentation, requiring new governance and human-in-loop frameworks.",
+    "stat_value": "26.2%",
+    "stat_label": "of AI agent tasks completed successfully",
+    "source": {
+      "name": "Tearsheet · 2026-07-28",
+      "url": "https://tearsheet.co/numbers-with-narrative/3-data-points-that-are-resetting-expectations-for-ai-treasury-and-payments/"
+    }
+  },
+  {
+    "id": "2026-07-28-bny-ai-metrics-beyond-tokens",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-28T11:59:00.000Z",
+    "headline": "BNY Mellon avoids 'tokenmaxxing' trend; tracks alternative AI performance metrics",
+    "plain_english": "BNY Mellon deliberately bypassed the industry trend of optimizing only token throughput and latency, instead tracking broader operational and business-outcome metrics for AI deployment. Signals sophistication in LLM procurement and evaluation.",
+    "why_it_matters": "Validates that raw model performance metrics (tokens/sec) mislead ROI; enterprise banks now demanding task-completion accuracy, cost-per-transaction, and risk-adjusted KPIs—forcing vendor evals to shift away from pure benchmark scores.",
+    "jargon": [
+      {
+        "term": "Tokenmaxxing",
+        "def": "Optimizing LLM performance solely on token generation speed and throughput, ignoring real-world task accuracy and business outcome alignment."
+      }
+    ],
+    "source": {
+      "name": "Fortune · 2026-07-28",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM0lYOTlvbUQzY3pYR2Yxak91M1BnABorb..."
+    }
+  },
+  {
+    "id": "2026-07-30-microsoft-homegrown-models",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-07-30T00:21:06.000Z",
+    "headline": "Microsoft openly competes with OpenAI and Anthropic on its own AI models and inference",
+    "plain_english": "Microsoft Q4 earnings call revealed the company is pitching proprietary in-house AI models and inference harnesses to Wall Street, reducing reliance on exclusive OpenAI/Anthropic partnerships.",
+    "why_it_matters": "Signals Microsoft's shift from platform integrator to model builder; enterprises now have credible alternative to OpenAI for Copilot-class capabilities, fragmenting the closed-model moat.",
+    "source": {
+      "name": "TechCrunch · 2026-07-29",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever"
+    }
+  },
+  {
+    "id": "2026-07-17-rag-learner",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-17T22:00:00Z",
+    "headline": "What is RAG? Retrieval-Augmented Generation explained for BFSI practitioners",
+    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI model fetches relevant documents or data from a private knowledge base before generating an answer. Think: LLM checks your bank's loan policies + customer file before drafting a credit decision, not hallucinating from generic training data.",
+    "why_it_matters": "RAG is foundational for BFSI: enables models to cite source documents (auditable), stay current (no retraining), and respect data privacy (queries don't leave your infrastructure). Essential for compliance in lending, claims, and underwriting.",
+    "jargon": [
+      {
+        "term": "Retrieval",
+        "def": "Searching a database (vector store or full-text index) to find relevant context before passing it to the language model."
+      },
+      {
+        "term": "Augmented Generation",
+        "def": "Feeding the retrieved context into the LLM alongside the user query so the model generates answers grounded in your data, not training data."
+      }
+    ],
+    "source": {
+      "name": "AITechHive Learner Series",
+      "url": "https://www.aitechtechive.com"
     }
   },
   {
@@ -5470,26 +5604,6 @@
     }
   },
   {
-    "id": "2026-07-03-llm-agent-jailbreak-research",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-03T11:01:00Z",
-    "headline": "Researchers demonstrate LLM-based agents can be manipulated into executing unauthorized actions",
-    "plain_english": "Security researchers documented exploits allowing attackers to override safety guardrails in AI-powered browser agents and LLMs, forcing execution of harmful actions (credential theft, unauthorized transactions). Affects deployed agentic systems in finance.",
-    "why_it_matters": "Critical for BFSI: agentic AI (routing transactions, accessing accounts) now proven vulnerable to prompt-injection and jailbreak attacks; raises bar for production safeguards and testing before agent deployment in banking.",
-    "jargon": [
-      {
-        "term": "prompt injection",
-        "def": "Attack embedding malicious instructions in user input to override LLM's intended behavior and constraints."
-      }
-    ],
-    "source": {
-      "name": "Futurism · 2026-07-03",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB2eW16SnBVbUJqNmdlb09CdDk4a01fLVB0cjN4Rm5wVkE4ZnU1Q0x5MEVtcnZULS1wVEI5aXFTZ1JqdDBoVGxxY0hfSllyTzdpMm5NNkMyb1NFVkRNa29BY1RQTnZfQ1JWZEJQc2JZd202RHJiRXE2aVBNcnI"
-    }
-  },
-  {
     "id": "2026-07-17-chinese-ai-open-weight-shift",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -7925,30 +8039,6 @@
     }
   },
   {
-    "id": "2026-07-03-rag-retrieval-augmented-generation",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-03T12:00:00Z",
-    "headline": "Retrieval-Augmented Generation (RAG): how LLMs ground themselves in live data",
-    "plain_english": "RAG is a technique that lets LLMs fetch real-time information from external databases or documents before answering, reducing hallucinations. Banks use RAG to build Q&A agents over customer data, compliance docs, or market feeds without fine-tuning the model. Example: a customer service bot pulling account history to answer balance queries accurately.",
-    "why_it_matters": "RAG is the production workhorse in BFSI AI: enables LLM-based chatbots, compliance assistants, and risk dashboards to stay current without expensive model retraining.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When LLM generates plausible-sounding but factually incorrect or fabricated information."
-      },
-      {
-        "term": "fine-tuning",
-        "def": "Retraining a pre-trained model on domain-specific data to adapt it to a particular task."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-07-03",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-07-08-fed-aml-overhaul",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8733,26 +8823,6 @@
     }
   },
   {
-    "id": "2026-07-03-imf-tokenization-warning",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-03T11:22:00Z",
-    "headline": "IMF warns monetary policy frameworks must adapt to tokenization risk migration",
-    "plain_english": "International Monetary Fund issued alert that central banks and regulators must update frameworks as tokenization shifts financial risk from banks' balance sheets to non-bank service providers and market infrastructure operators.",
-    "why_it_matters": "Signals systemic-risk concern from global macroprudential authority; accelerates regulatory focus on custody, liquidity, and solvency rules for token custodians and DeFi-adjacent infrastructure.",
-    "jargon": [
-      {
-        "term": "tokenization",
-        "def": "Converting financial assets (deposits, bonds, equities) into blockchain-based digital tokens transferable on distributed networks."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-03",
-      "url": "https://www.finextra.com/newsarticle/48038/imf-issues-tokenisation-warning"
-    }
-  },
-  {
     "id": "2026-07-05-foxconn-q2-ai-demand",
     "category": "shift",
     "jurisdiction": "APAC",
@@ -8794,40 +8864,6 @@
     "source": {
       "name": "Mashable · 2026-07-04",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1meDBsdlhnREJMcnNSXzIya1JlTXlubjVRX2RoM3d2aTEwY0EtYkFEM21jbzRiVVFUdlhRVjZnbDFNN2wwX040ZC1vaGhQcWpfNTgzdmYtNWZoaGhuWUZpMHRCdVlLQU1xX1piTk4zOXpIZlZzWnpDbXlYZlg"
-    }
-  },
-  {
-    "id": "2026-07-03-shadow-ai-supply-chain-breach",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-03T11:15:00Z",
-    "headline": "2026 Vercel incident reveals shadow AI supply-chain vulnerabilities in developer infrastructure",
-    "plain_english": "Security analysis of Vercel breach uncovered how attackers exploited AI/ML tool supply chains to inject malicious code. Highlights risk of compromised AI models and libraries propagating across dependent fintech and banking engineering teams.",
-    "why_it_matters": "BFSI teams relying on third-party AI/ML frameworks (Hugging Face, PyPI, npm) now face indirect attack surface; supply-chain risk extends to model integrity, not just code dependencies.",
-    "jargon": [
-      {
-        "term": "supply-chain attack",
-        "def": "Compromise of a trusted third-party tool, library, or service to inject malware into downstream users' systems."
-      }
-    ],
-    "source": {
-      "name": "Security Affairs · 2026-07-03",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWVh4UWN5Y3l3Undid3VfUGdrM1BnU29zdTlfZkRtcU1wTmxneURrMmQxWXhGMjZFalZRcmhER1JucFR2UENtMlFYYkxPRHVnbnM4c2pJNGlycVpwUDN3NVlsN2tDcmwxWHctWWEtM3dFb3JXVm9ZN3dENHJSTDlJb3BGQ0FUa3M2RU1UN1BjdjNiRnl5RGtfVmhSZmlUYVR3azZqRl9ybldjVDNPSXlLODdWM2JKTjh2RnVFSnR0cEpXcGhUS2xMQ05ZbmHSAdIBQVVfeXFMTzNwcGlXVG44eFlYTHJYN1VhV1JucXdKNDZvWmlJRG1PNzM3dTg3NUhVQWtoTlI0UHY2SjBlV19mVTFaVUJCakhaQ01CekRGekFnTF9tRGI2YXBUSzlUUDRRZU0wcXhvTmsydE9TVFJHZGNTUkt5Q3JGdVZ2aWNkelVkYlYzbjRQbWtVUGt5MkltNXcwSDQyVDg3VEs3YnlpS2p6TE92eFdGd3ByTXNaZkJpUTIxRmN3NWEtdUpDcWVGM0xzTXR2Y2pwOUZ4WS1RQ2N3"
-    }
-  },
-  {
-    "id": "2026-07-03-tonetag-ekoshadmerchant-assistant",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-07-03T12:16:00Z",
-    "headline": "ToneTag launches voice-first AI assistant for merchant banking in India",
-    "plain_english": "ToneTag deployed eKosha, a voice-based AI business assistant enabling banks to deliver merchant services directly at point-of-sale without new infrastructure. Targets underbanked merchant segment in India.",
-    "why_it_matters": "Demonstrates AI-as-bridge for financial inclusion in emerging markets; reduces deployment friction for banks to reach merchant segments traditionally locked out by capex requirements.",
-    "source": {
-      "name": "Finextra · 2026-07-03",
-      "url": "https://www.finextra.com/pressarticle/110343/tonetag-launches-voice-first-bank-assistant-for-indian-market"
     }
   },
   {
@@ -8886,20 +8922,6 @@
     "source": {
       "name": "Finextra · 2026-07-03",
       "url": "https://www.finextra.com/newsarticle/48039/starling-to-axe-130-jobs-as-part-of-automation-drive"
-    }
-  },
-  {
-    "id": "2026-07-03-lloyds-halifax-brand-retirement",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-03T10:35:00Z",
-    "headline": "Lloyds Banking Group retires Halifax brand after 179 years, consolidating under single identity",
-    "plain_english": "Lloyds announced phase-out of Halifax brand from UK retail banking, consolidating subsidiary into parent identity. Strategic simplification tied to digital-first channel shift and cost reduction.",
-    "why_it_matters": "Signals accelerating rationalization of legacy multi-brand retail banking models as digital distribution reduces need for distinct branch-based identities; reflects broader consolidation pressure.",
-    "source": {
-      "name": "Finextra · 2026-07-03",
-      "url": "https://www.finextra.com/newsarticle/48036/lloyds-to-retire-halifax-brand"
     }
   }
 ]
