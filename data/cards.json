@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-08-06-eu-crypto-regs-scam-exploit",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-08-06T12:48:23Z",
+    "headline": "EU crypto regulations create temporary scam vector as criminals impersonate compliant firms",
+    "plain_english": "New EU crypto rules have created confusion that fraudsters are exploiting: criminals pose as regulated crypto firms or digital asset platforms to steal funds, taking advantage of disruption during compliance transition.",
+    "why_it_matters": "Highlights compliance-transition vulnerability: BFSI and crypto platforms must enforce strong identity verification and customer communication during regulatory shifts or risk fraud loss; affects both firms and their customers.",
+    "source": {
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-scammers-take-advantage-of-new-eu-regulations/"
+    }
+  },
+  {
     "id": "2026-08-06-jpm-fraud-whistleblower-probe",
     "category": "regulation",
     "jurisdiction": "US",
@@ -133,17 +147,45 @@
     }
   },
   {
-    "id": "2026-08-03-robinhood-fca-uk-launch",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-08-03T13:32:00.000Z",
-    "headline": "Robinhood receives FCA authorization to launch crypto services in UK",
-    "plain_english": "FCA has approved Robinhood to begin offering cryptocurrency services in the United Kingdom. Robinhood, a retail trading platform, now has regulatory clearance to expand retail crypto trading in UK market.",
-    "why_it_matters": "FCA crypto authorization opening to retail platforms. Signals regulatory comfort with retail crypto in UK; retail adoption of regulated crypto services likely to accelerate.",
+    "id": "2026-08-06-jp-morgan-klarna-embedded-bnpl",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-06T12:30:44Z",
+    "headline": "J.P. Morgan embeds Klarna BNPL directly into Commerce Platform for instant merchant access",
+    "plain_english": "J.P. Morgan's Commerce Platform now natively offers Klarna flexible-payment options at checkout with zero integration lift for US merchants across all retail categories.",
+    "why_it_matters": "Demonstrates fintech-BNPL consolidation into enterprise payment infrastructure; reduces merchant friction, increases cross-sell, and signals JPM's platform-aggregation strategy for embedded finance.",
     "source": {
-      "name": "Finextra · 2026-08-03",
-      "url": "https://www.finextra.com/newsarticle/48184/robinhood-wins-fca-approval-to-launch-in-the-uk"
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/bnpl/2026/j-p-morgan-payments-commerce-platform-embeds-klarna-for-instant-merchant-access/"
+    }
+  },
+  {
+    "id": "2026-08-06-square-google-maps-ordering",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-06T13:00:35Z",
+    "headline": "Square integrates conversational ordering into Google Maps Ask feature for restaurants",
+    "plain_english": "Square enabled restaurants on its platform to accept conversational food orders through Google Maps' Ask feature, letting customers find and order directly from Maps without leaving the app.",
+    "why_it_matters": "Extends payment-platform reach into new discovery channel; validates merchant demand for order-placement automation; BFSI must support restaurant POS integrations as ordering infrastructure consolidates.",
+    "source": {
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/square-and-google-let-restaurants-offer-conversational-ai-ordering/"
+    }
+  },
+  {
+    "id": "2026-08-06-bbva-pivot-platform-revamp",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-06T11:25:00Z",
+    "headline": "BBVA refreshes Pivot business platform with revamped user experience",
+    "plain_english": "BBVA updated its global Pivot business platform with redesigned interface, signaling continued investment in embedded SME banking and payment workflows.",
+    "why_it_matters": "Incremental product refresh; reflects BFSI investment in SME digital banking as competitive moat; relevant for competing platforms targeting merchant and SME segments.",
+    "source": {
+      "name": "Finextra · 2026-08-06",
+      "url": "https://www.finextra.com/pressarticle/110596/bbva-revamps-business-platform"
     }
   },
   {
@@ -257,51 +299,34 @@
     }
   },
   {
-    "id": "2026-08-05-cibc-ai-advisor-platform",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-05T00:01:00.000Z",
-    "headline": "CIBC deploys AI platform to automate advisor administrative work",
-    "plain_english": "Canada's CIBC rolled out an AI system designed to handle routine administrative tasks for wealth advisors, freeing them to spend more client-facing time. Typical use: document prep, scheduling, compliance logging.",
-    "why_it_matters": "Early signal that large retail banks are shifting AI from back-office efficiency plays to front-office client-experience bets—betting that advisor productivity gains drive AUM growth more than headcount cuts.",
-    "source": {
-      "name": "Finextra · 2026-08-05",
-      "url": "https://www.finextra.com/newsarticle/48191/cibc-launches-platform-to-take-on-advisors-administrative-work"
-    }
-  },
-  {
-    "id": "2026-08-05-visa-biocatch-fraud-acquisition",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-04T21:46:30.000Z",
-    "headline": "Visa acquires BioCatch to detect fraud upstream via behavioral AI",
-    "plain_english": "Visa bought behavioral-intelligence firm BioCatch to shift fraud detection earlier in the payment lifecycle. Rather than catching fraud at settlement, Visa now aims to detect anomalies in user behavior—keystroke patterns, device info, interaction cadence—before funds move.",
-    "why_it_matters": "Signals industry consensus that static rule-based fraud models are saturated; AI-driven behavioral auth will become table stakes. Non-Visa networks forced to build or acquire similar capability or lose fraud-detection edge.",
-    "jargon": [
-      {
-        "term": "behavioral authentication",
-        "def": "Fraud detection via user interaction patterns (typing speed, mouse movement, click timing) rather than static credentials or transaction rules."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-04",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/payment-fraud-is-moving-upstream-visa-bought-data-follow-it/"
-    }
-  },
-  {
-    "id": "2026-08-05-western-union-stablecard",
-    "category": "deployment",
+    "id": "2026-08-06-omilia-series-b-growth",
+    "category": "vendor",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-08-05T00:01:00.000Z",
-    "headline": "Western Union launches stablecoin-backed Visa card for global remittance flows",
-    "plain_english": "Western Union rolled out Stablecard, a digital wallet and USD stablecoin-backed secured credit card enabling users to hold and spend dollar value cross-border. Targets legacy remittance customer base seeking faster, cheaper settlement.",
-    "why_it_matters": "Legacy payment giants now forced to compete on crypto rails; signals that stablecoin UX is maturing enough for mass-market retail. Risk officers should monitor stablecoin operational / redemption risks.",
+    "published_at": "2026-08-06T12:00:00Z",
+    "headline": "Omilia raises $67M Series B, ARR up 10x since 2020 to $60M",
+    "plain_english": "Customer support AI platform Omilia closed Series B funding at $67M on the back of 10x ARR growth (now $60M annually), signaling strong enterprise AI adoption in contact-center workflows.",
+    "why_it_matters": "Validates market demand for conversational-AI in customer service; BFSI firms scaling contact-center automation will face vendor consolidation and margin compression as Omilia and peers scale.",
+    "amount": "$67M",
+    "round": "Series B",
     "source": {
-      "name": "Finextra · 2026-08-05",
-      "url": "https://www.finextra.com/newsarticle/48192/western-union-launches-stablecard"
+      "name": "TechCrunch · 2026-08-06",
+      "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/"
+    }
+  },
+  {
+    "id": "2026-08-06-mirendil-google-cloud-100m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-06T13:00:00Z",
+    "headline": "Mirendil inks $100M+ Google Cloud infrastructure deal to scale self-improving AI research",
+    "plain_english": "Mirendil signed $100M-plus Google Cloud partnership to expand compute for self-improving AI research aimed at accelerating scientific discovery, signaling frontier AI lab investment in autonomous improvement loops.",
+    "why_it_matters": "Reflects AI lab investment in recursive self-improvement; BFSI risk officers should monitor self-improving AI capability timelines as they may compress governance windows for model audits and control deployment.",
+    "amount": "$100M+",
+    "source": {
+      "name": "TechCrunch · 2026-08-06",
+      "url": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
     }
   },
   {
@@ -424,38 +449,35 @@
     }
   },
   {
-    "id": "2026-08-03-visa-biocatch-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-03T14:00:00.000Z",
-    "headline": "Visa acquires behavioral biometrics firm BioCatch for $2.4 billion",
-    "plain_english": "Visa is buying Israeli fraud-detection startup BioCatch from Permira for $2.4B in cash. BioCatch specializes in behavioral biometrics—analyzing user patterns (keystroke speed, mouse movement) to detect fraud without disrupting legitimate transactions.",
-    "why_it_matters": "Reinforces Visa's pivot from payment network to risk/AI platform. Consolidates behavioral fraud signals into core network layer, raising bar for competitors and deepening moat in card risk.",
-    "jargon": [
-      {
-        "term": "Behavioral biometrics",
-        "def": "Fraud detection by analyzing unique user behavior patterns (typing speed, mouse pressure, touch patterns) rather than static credentials."
-      }
-    ],
-    "amount": "$2.4B",
+    "id": "2026-08-06-banco-sabadell-ai-org-restructure",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-06T11:18:00Z",
+    "headline": "Banco Sabadell restructures around AI as core strategic pillar, not ancillary function",
+    "plain_english": "Spanish bank Banco Sabadell announced organizational restructuring placing AI at the center of transformation strategy, simplifying structure and embedding relationship banking model strengthened by AI.",
+    "why_it_matters": "Signals industry shift from treating AI as bolt-on technology to embedding it in core business design; other BFSI firms likely to follow, changing how risk, compliance, and product teams organize.",
     "source": {
-      "name": "Finextra · 2026-08-03",
-      "url": "https://www.finextra.com/newsarticle/48185/visa-agrees-24-billion-deal-to-acquire-biocatch"
+      "name": "Finextra · 2026-08-06",
+      "url": "https://www.finextra.com/pressarticle/110595/banco-sabadell-puts-ai-at-the-centre-of-business-overhaul"
     }
   },
   {
-    "id": "2026-08-02-ai-startups-chinese-models-vc-pullback",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-08-06-synchrony-customer-journey-shift",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-02T23:38:09Z",
-    "headline": "US AI startups race to build open-weight models as Chinese alternatives gain traction, VC interest cools",
-    "plain_english": "American AI startups are developing counterparts to rising Chinese open-source models (like Qwen), but venture capital interest has waned; tier-one VCs are shifting focus away from duplicative model-building efforts.",
-    "why_it_matters": "Open-weight model competition is flattening; BFSI teams must now evaluate Chinese and non-US models for compliance, data residency, and export controls—geopolitical fragmentation of AI stacks is irreversible.",
+    "published_at": "2026-08-06T12:00:00Z",
+    "headline": "Synchrony pivots from product-centric to journey-centric operating model, unlocking dormant data value",
+    "plain_english": "Synchrony ($120B assets) reorganized from siloed product lines (private-label credit cards) to integrated customer-journey design, enabling cross-sell and deeper relationship monetization using existing customer data.",
+    "why_it_matters": "Organizational restructuring enables higher NPS, reduced churn, and improved marketing ROI; pattern emerging across large consumer BFSI—legacy data silos are now liability unless firms reorganize around journeys.",
+    "scale": {
+      "metric": "assets",
+      "value": "$120B"
+    },
     "source": {
-      "name": "PYMNTS · 2026-08-02",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-startups-try-to-counter-chinese-models-as-vc-interest-wanes/"
+      "name": "Tearsheet · 2026-08-06",
+      "url": "https://tearsheet.co/banking/how-banks-have-stopped-thinking-in-products-and-started-thinking-in-customer-journeys/"
     }
   },
   {
@@ -574,46 +596,6 @@
     "source": {
       "name": "Tearsheet · 2026-08-04",
       "url": "https://tearsheet.co/ai-innovation/why-banks-cant-policy-their-way-out-of-shadow-ai/?utm_source=rss&utm_medium=rss&utm_campaign=why-banks-cant-policy-their-way-out-of-shadow-ai"
-    }
-  },
-  {
-    "id": "2026-08-03-palantir-karp-frontier-labs-critique",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T22:20:56Z",
-    "headline": "Palantir CEO renews attack on frontier AI labs as untrustworthy; Enterprise strategy diverges",
-    "plain_english": "Palantir CEO Alex Karp escalated criticism of frontier AI labs (OpenAI, Anthropic, Google), claiming they are extracting value and attempting to create dependency. The contrast signals a strategic divergence: enterprise software vendors building closed, proprietary AI systems vs. open-weight frontier labs.",
-    "why_it_matters": "Signals growing enterprise caution about relying on frontier labs for critical workloads; reinforces BFSI's preference for vendor-controlled AI stacks and will likely accelerate insourcing of AI capability.",
-    "jargon": [
-      {
-        "term": "frontier labs",
-        "def": "AI research companies (OpenAI, Anthropic, Google DeepMind) that develop cutting-edge large language models and release them to the market."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-03",
-      "url": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html"
-    }
-  },
-  {
-    "id": "2026-08-03-sponsor-banks-deposit-flexibility",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T23:28:06Z",
-    "headline": "Sponsor banks testing deposit-agnostic model; BaaS playbook splinters",
-    "plain_english": "Banking-as-a-service sponsor banks are experimenting with decoupled deposit and lending operations, allowing deposits to be managed independently from account issuance and lending. Latest earnings suggest traditional vertical integration of BaaS model is fragmenting.",
-    "why_it_matters": "Signals architectural shift in fintech infrastructure layer; will enable modular BFSI stacks and reduce deposit liability concentration at sponsor banks, reshaping capital and liquidity management.",
-    "jargon": [
-      {
-        "term": "Banking-as-a-service (BaaS)",
-        "def": "Sponsor bank provides deposit, payments, lending and compliance infrastructure to fintech platforms under regulated partnership."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-03",
-      "url": "https://www.pymnts.com/news/banking/2026/sponsor-banks-discover-that-deposits-dont-have-to-sit-still/"
     }
   },
   {
@@ -977,6 +959,22 @@
     }
   },
   {
+    "id": "2026-08-06-bank-of-america-data-foundation-ai",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-06T11:30:00Z",
+    "headline": "Bank of America warns: data quality matters more than model sophistication for AI reliability",
+    "plain_english": "BofA argues that AI feature reliability depends first on data quality, not model capability. A sophisticated model trained on poor, fragmented, or outdated data produces unreliable outputs regardless of architecture.",
+    "why_it_matters": "Shifts engineering priorities: BFSI must invest in data governance and master data management before chasing frontier models; poorly governed data undermines compliance, risk modeling, and customer trust.",
+    "stat_value": "$120B+",
+    "stat_label": "Synchrony assets cited as example of data-rich firm facing data-governance challenge",
+    "source": {
+      "name": "Tearsheet · 2026-08-06",
+      "url": "https://tearsheet.co/data/before-chasing-ai-bank-of-america-wants-banks-to-fix-their-data-first/"
+    }
+  },
+  {
     "id": "2026-08-06-doordash-agentic-traffic-low",
     "category": "insight",
     "jurisdiction": "US",
@@ -1113,19 +1111,31 @@
     }
   },
   {
-    "id": "2026-08-02-wallstreet-ai-monetization",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-02T11:01:03.000Z",
-    "headline": "Wall Street analysts model AI revenue pathways for major tech firms",
-    "plain_english": "Investment banks are publishing research on how technology giants will convert AI investments into measurable revenue streams, including efficiency gains and new product premiums.",
-    "why_it_matters": "BFSI investors and CIOs now have analyst consensus on AI ROI timelines; expect pressure on banks' own AI budgets to show similar payoff models or reset expectations.",
-    "stat_value": "Multiple major banks",
-    "stat_label": "publishing AI monetization frameworks",
+    "id": "2026-08-06-meta-ai-model-security-breach",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-06T11:41:00Z",
+    "headline": "Meta AI model compromised outside company, raising rogue-bot concerns",
+    "plain_english": "Meta's AI model was hacked by external actors outside the company's control, adding to growing concerns about AI systems operating autonomously without oversight or alignment safeguards.",
+    "why_it_matters": "Demonstrates real-world vulnerability of deployed frontier models to adversarial access; signals that BFSI firms relying on third-party AI infrastructure face novel attack surface and governance risk.",
     "source": {
-      "name": "WSJ · 2026-08-02",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZzdxMHNMWnZqYktyTy1jVEhaRGh5ZjBwdjR5ZWcySjNMS0I5SVU0QU15WUdiNEhXMmxveV9WSWg0endtTjVKRE1JQkF6R3h6RWZ1LVJXWFdpT0pDRGNjVWlPdW9qYlVLNldkM2hJWUFtRjJiQnpNeXM4MU52YzlMRWk1VGFsamNkRnZFUUhZQlBKRlF2b3BKZVBRZXM0Zw"
+      "name": "Wall Street Journal · 2026-08-06",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZS0wZHRJSVM4dWhIX1I2eVJqTE82c0VaU2JOU0tnVDE1em5ad3I3THZrNGFGaWVfaC1CVjZtQ0U4bThuVmJZU2N2VDRIRFpaN1hXWms1WXpaTDRfVjhrUHktQWVLQTJ1ZnpwdUNEUzhsbmNUeEowNU56ay02OGZlaEVSckRIaGJOSU1oOU1LMWd1d0hXVjJyQnVCNVZTejEzYXRVUkoxZWhFakF5"
+    }
+  },
+  {
+    "id": "2026-08-06-google-ai-org-shake-up",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-06T12:10:00Z",
+    "headline": "Google reorganizes AI organization following talent losses, model delays, and morale challenges",
+    "plain_english": "Google is restructuring its AI empire after losing talent to competitors, experiencing delays in flagship model releases, and facing internal morale issues, signaling instability in the frontier AI lab ecosystem.",
+    "why_it_matters": "Disruption at a frontier lab affects downstream BFSI adoption: delays to foundational models shift competitive advantage; BFSI firms should diversify model supplier relationships beyond Google to hedge execution risk.",
+    "source": {
+      "name": "MIT Technology Review · 2026-08-06",
+      "url": "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/"
     }
   },
   {
@@ -1268,40 +1278,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-03",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-voice-agents-take-over-the-retail-sales-floor/"
-    }
-  },
-  {
-    "id": "2026-08-03-ibm-quantum-computing-2029",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-02T23:58:12Z",
-    "headline": "IBM CEO predicts quantum computing will drive measurable revenue and profit impact by 2028–2029",
-    "plain_english": "IBM's Arvind Krishna told CNBC quantum computing will deliver material top-line and bottom-line impact within 2–3 years, with broader impact across the 2030s as the technology matures and finds production use cases.",
-    "why_it_matters": "Quantum remains a long-term bet for BFSI (portfolio optimization, cryptography, risk simulation), but IBM's timeline signals the frontier is accelerating; banks should start quantum-readiness pilots now to avoid disruption.",
-    "source": {
-      "name": "PYMNTS · 2026-08-02",
-      "url": "https://www.pymnts.com/technology/2026/ibm-ceo-foresees-quantum-computing-growth-by-2029/"
-    }
-  },
-  {
-    "id": "2026-08-02-anthropic-ai-models-hacked",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-02T11:17:28.000Z",
-    "headline": "Anthropic discloses AI model exploits during red-team testing",
-    "plain_english": "Anthropic's Claude models were successfully hacked by three organizations during controlled security testing. The exploits were identified and remediated during development, before production deployment.",
-    "why_it_matters": "Demonstrates frontier labs actively hunt adversarial attacks pre-launch; BFSI orgs should track red-team findings as adoption risk baseline before deploying LLMs in regulated workflows.",
-    "jargon": [
-      {
-        "term": "Red-teaming",
-        "def": "Controlled security testing where external teams attempt to break or manipulate AI models to find vulnerabilities before public release."
-      }
-    ],
-    "source": {
-      "name": "Cebu Daily News · 2026-08-02",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaHNXcjRGbEZabFBIdXY1V2NGY1J3RGU5YXk3a2RBRW5SaWdQUGcyQi1DV0IxblFPV05JM0Z3UkF0TTlJa3ZycnNTbDVPSXh2blRwSWhuTHJmX2dkci1SY1JlUV9xMlF3UE5SNE5hRGs2YTVwRjBWcmYxdFR3MVo4ZDBqVF9nczloQjN2Q0pva0pYZWtER1piR2YwbUtGdTBlZExFRkhPRjNxajJIU1M1Z2JEeVRqWknSAbcBQVVfeXFMUGhzV3I0RmxGWmxQSHV2NVdjRmNSd0RlOWF5N2tkQUVuUmlnUFBnMkItQ1dCMW5RT1dOSTNGd1JBdE05SWt2cnJzU2w1T0l4dm5UcElobkxyZl9nZHItUmNSZVFfcTJRd1BOUjROYURrNmE1cEYwVnJmMXRUdzFaOGQwalRfZ3M5aEIzdkNKb2tKWGVrREdaYkdmMG1LRnUwZWRMRUZIT0YzcWoySFNTNWdiRHlUalpJ"
     }
   },
   {
@@ -1529,6 +1505,20 @@
     }
   },
   {
+    "id": "2026-08-06-google-maps-agentic-ordering",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-06T12:30:00Z",
+    "headline": "Google Maps evolves into agentic assistant, enabling food ordering and hotel bookings",
+    "plain_english": "Google Maps now performs real-world transactions (food orders, hotel reservations) via conversational AI agent, transforming it from navigation tool into commerce facilitator integrated with merchant payments.",
+    "why_it_matters": "Signals mass-market deployment of agentic AI for commerce; BFSI payment and fintech firms must prepare for new friction-free transaction patterns where checkout happens inside LLM assistants, not web flows.",
+    "source": {
+      "name": "TechCrunch · 2026-08-06",
+      "url": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+    }
+  },
+  {
     "id": "2026-08-04-trending-shadow-ai-banks",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1662,6 +1652,193 @@
     "source": {
       "name": "CNBC · 2026-07-27",
       "url": "https://www.cnbc.com/2026/07/27/5-things-to-know-before-the-stock-market-opens.html"
+    }
+  },
+  {
+    "id": "2026-08-03-robinhood-fca-uk-launch",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-08-03T13:32:00.000Z",
+    "headline": "Robinhood receives FCA authorization to launch crypto services in UK",
+    "plain_english": "FCA has approved Robinhood to begin offering cryptocurrency services in the United Kingdom. Robinhood, a retail trading platform, now has regulatory clearance to expand retail crypto trading in UK market.",
+    "why_it_matters": "FCA crypto authorization opening to retail platforms. Signals regulatory comfort with retail crypto in UK; retail adoption of regulated crypto services likely to accelerate.",
+    "source": {
+      "name": "Finextra · 2026-08-03",
+      "url": "https://www.finextra.com/newsarticle/48184/robinhood-wins-fca-approval-to-launch-in-the-uk"
+    }
+  },
+  {
+    "id": "2026-08-05-cibc-ai-advisor-platform",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-05T00:01:00.000Z",
+    "headline": "CIBC deploys AI platform to automate advisor administrative work",
+    "plain_english": "Canada's CIBC rolled out an AI system designed to handle routine administrative tasks for wealth advisors, freeing them to spend more client-facing time. Typical use: document prep, scheduling, compliance logging.",
+    "why_it_matters": "Early signal that large retail banks are shifting AI from back-office efficiency plays to front-office client-experience bets—betting that advisor productivity gains drive AUM growth more than headcount cuts.",
+    "source": {
+      "name": "Finextra · 2026-08-05",
+      "url": "https://www.finextra.com/newsarticle/48191/cibc-launches-platform-to-take-on-advisors-administrative-work"
+    }
+  },
+  {
+    "id": "2026-08-05-visa-biocatch-fraud-acquisition",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-04T21:46:30.000Z",
+    "headline": "Visa acquires BioCatch to detect fraud upstream via behavioral AI",
+    "plain_english": "Visa bought behavioral-intelligence firm BioCatch to shift fraud detection earlier in the payment lifecycle. Rather than catching fraud at settlement, Visa now aims to detect anomalies in user behavior—keystroke patterns, device info, interaction cadence—before funds move.",
+    "why_it_matters": "Signals industry consensus that static rule-based fraud models are saturated; AI-driven behavioral auth will become table stakes. Non-Visa networks forced to build or acquire similar capability or lose fraud-detection edge.",
+    "jargon": [
+      {
+        "term": "behavioral authentication",
+        "def": "Fraud detection via user interaction patterns (typing speed, mouse movement, click timing) rather than static credentials or transaction rules."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-04",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/payment-fraud-is-moving-upstream-visa-bought-data-follow-it/"
+    }
+  },
+  {
+    "id": "2026-08-05-western-union-stablecard",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-05T00:01:00.000Z",
+    "headline": "Western Union launches stablecoin-backed Visa card for global remittance flows",
+    "plain_english": "Western Union rolled out Stablecard, a digital wallet and USD stablecoin-backed secured credit card enabling users to hold and spend dollar value cross-border. Targets legacy remittance customer base seeking faster, cheaper settlement.",
+    "why_it_matters": "Legacy payment giants now forced to compete on crypto rails; signals that stablecoin UX is maturing enough for mass-market retail. Risk officers should monitor stablecoin operational / redemption risks.",
+    "source": {
+      "name": "Finextra · 2026-08-05",
+      "url": "https://www.finextra.com/newsarticle/48192/western-union-launches-stablecard"
+    }
+  },
+  {
+    "id": "2026-08-03-visa-biocatch-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-03T14:00:00.000Z",
+    "headline": "Visa acquires behavioral biometrics firm BioCatch for $2.4 billion",
+    "plain_english": "Visa is buying Israeli fraud-detection startup BioCatch from Permira for $2.4B in cash. BioCatch specializes in behavioral biometrics—analyzing user patterns (keystroke speed, mouse movement) to detect fraud without disrupting legitimate transactions.",
+    "why_it_matters": "Reinforces Visa's pivot from payment network to risk/AI platform. Consolidates behavioral fraud signals into core network layer, raising bar for competitors and deepening moat in card risk.",
+    "jargon": [
+      {
+        "term": "Behavioral biometrics",
+        "def": "Fraud detection by analyzing unique user behavior patterns (typing speed, mouse pressure, touch patterns) rather than static credentials."
+      }
+    ],
+    "amount": "$2.4B",
+    "source": {
+      "name": "Finextra · 2026-08-03",
+      "url": "https://www.finextra.com/newsarticle/48185/visa-agrees-24-billion-deal-to-acquire-biocatch"
+    }
+  },
+  {
+    "id": "2026-08-02-ai-startups-chinese-models-vc-pullback",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-02T23:38:09Z",
+    "headline": "US AI startups race to build open-weight models as Chinese alternatives gain traction, VC interest cools",
+    "plain_english": "American AI startups are developing counterparts to rising Chinese open-source models (like Qwen), but venture capital interest has waned; tier-one VCs are shifting focus away from duplicative model-building efforts.",
+    "why_it_matters": "Open-weight model competition is flattening; BFSI teams must now evaluate Chinese and non-US models for compliance, data residency, and export controls—geopolitical fragmentation of AI stacks is irreversible.",
+    "source": {
+      "name": "PYMNTS · 2026-08-02",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-startups-try-to-counter-chinese-models-as-vc-interest-wanes/"
+    }
+  },
+  {
+    "id": "2026-08-03-palantir-karp-frontier-labs-critique",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-03T22:20:56Z",
+    "headline": "Palantir CEO renews attack on frontier AI labs as untrustworthy; Enterprise strategy diverges",
+    "plain_english": "Palantir CEO Alex Karp escalated criticism of frontier AI labs (OpenAI, Anthropic, Google), claiming they are extracting value and attempting to create dependency. The contrast signals a strategic divergence: enterprise software vendors building closed, proprietary AI systems vs. open-weight frontier labs.",
+    "why_it_matters": "Signals growing enterprise caution about relying on frontier labs for critical workloads; reinforces BFSI's preference for vendor-controlled AI stacks and will likely accelerate insourcing of AI capability.",
+    "jargon": [
+      {
+        "term": "frontier labs",
+        "def": "AI research companies (OpenAI, Anthropic, Google DeepMind) that develop cutting-edge large language models and release them to the market."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-03",
+      "url": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html"
+    }
+  },
+  {
+    "id": "2026-08-03-sponsor-banks-deposit-flexibility",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-03T23:28:06Z",
+    "headline": "Sponsor banks testing deposit-agnostic model; BaaS playbook splinters",
+    "plain_english": "Banking-as-a-service sponsor banks are experimenting with decoupled deposit and lending operations, allowing deposits to be managed independently from account issuance and lending. Latest earnings suggest traditional vertical integration of BaaS model is fragmenting.",
+    "why_it_matters": "Signals architectural shift in fintech infrastructure layer; will enable modular BFSI stacks and reduce deposit liability concentration at sponsor banks, reshaping capital and liquidity management.",
+    "jargon": [
+      {
+        "term": "Banking-as-a-service (BaaS)",
+        "def": "Sponsor bank provides deposit, payments, lending and compliance infrastructure to fintech platforms under regulated partnership."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-03",
+      "url": "https://www.pymnts.com/news/banking/2026/sponsor-banks-discover-that-deposits-dont-have-to-sit-still/"
+    }
+  },
+  {
+    "id": "2026-08-02-wallstreet-ai-monetization",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-02T11:01:03.000Z",
+    "headline": "Wall Street analysts model AI revenue pathways for major tech firms",
+    "plain_english": "Investment banks are publishing research on how technology giants will convert AI investments into measurable revenue streams, including efficiency gains and new product premiums.",
+    "why_it_matters": "BFSI investors and CIOs now have analyst consensus on AI ROI timelines; expect pressure on banks' own AI budgets to show similar payoff models or reset expectations.",
+    "stat_value": "Multiple major banks",
+    "stat_label": "publishing AI monetization frameworks",
+    "source": {
+      "name": "WSJ · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZzdxMHNMWnZqYktyTy1jVEhaRGh5ZjBwdjR5ZWcySjNMS0I5SVU0QU15WUdiNEhXMmxveV9WSWg0endtTjVKRE1JQkF6R3h6RWZ1LVJXWFdpT0pDRGNjVWlPdW9qYlVLNldkM2hJWUFtRjJiQnpNeXM4MU52YzlMRWk1VGFsamNkRnZFUUhZQlBKRlF2b3BKZVBRZXM0Zw"
+    }
+  },
+  {
+    "id": "2026-08-03-ibm-quantum-computing-2029",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-02T23:58:12Z",
+    "headline": "IBM CEO predicts quantum computing will drive measurable revenue and profit impact by 2028–2029",
+    "plain_english": "IBM's Arvind Krishna told CNBC quantum computing will deliver material top-line and bottom-line impact within 2–3 years, with broader impact across the 2030s as the technology matures and finds production use cases.",
+    "why_it_matters": "Quantum remains a long-term bet for BFSI (portfolio optimization, cryptography, risk simulation), but IBM's timeline signals the frontier is accelerating; banks should start quantum-readiness pilots now to avoid disruption.",
+    "source": {
+      "name": "PYMNTS · 2026-08-02",
+      "url": "https://www.pymnts.com/technology/2026/ibm-ceo-foresees-quantum-computing-growth-by-2029/"
+    }
+  },
+  {
+    "id": "2026-08-02-anthropic-ai-models-hacked",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-02T11:17:28.000Z",
+    "headline": "Anthropic discloses AI model exploits during red-team testing",
+    "plain_english": "Anthropic's Claude models were successfully hacked by three organizations during controlled security testing. The exploits were identified and remediated during development, before production deployment.",
+    "why_it_matters": "Demonstrates frontier labs actively hunt adversarial attacks pre-launch; BFSI orgs should track red-team findings as adoption risk baseline before deploying LLMs in regulated workflows.",
+    "jargon": [
+      {
+        "term": "Red-teaming",
+        "def": "Controlled security testing where external teams attempt to break or manipulate AI models to find vulnerabilities before public release."
+      }
+    ],
+    "source": {
+      "name": "Cebu Daily News · 2026-08-02",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaHNXcjRGbEZabFBIdXY1V2NGY1J3RGU5YXk3a2RBRW5SaWdQUGcyQi1DV0IxblFPV05JM0Z3UkF0TTlJa3ZycnNTbDVPSXh2blRwSWhuTHJmX2dkci1SY1JlUV9xMlF3UE5SNE5hRGs2YTVwRjBWcmYxdFR3MVo4ZDBqVF9nczloQjN2Q0pva0pYZWtER1piR2YwbUtGdTBlZExFRkhPRjNxajJIU1M1Z2JEeVRqWknSAbcBQVVfeXFMUGhzV3I0RmxGWmxQSHV2NVdjRmNSd0RlOWF5N2tkQUVuUmlnUFBnMkItQ1dCMW5RT1dOSTNGd1JBdE05SWt2cnJzU2w1T0l4dm5UcElobkxyZl9nZHItUmNSZVFfcTJRd1BOUjROYURrNmE1cEYwVnJmMXRUdzFaOGQwalRfZ3M5aEIzdkNKb2tKWGVrREdaYkdmMG1LRnUwZWRMRUZIT0YzcWoySFNTNWdiRHlUalpJ"
     }
   },
   {
@@ -6390,26 +6567,6 @@
     }
   },
   {
-    "id": "2026-07-07-ai-architecture-scale",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-07T11:10:52Z",
-    "headline": "What foundation-layer AI architecture means for BFSI IT leaders scaling agentic systems",
-    "plain_english": "MIT Technology Review digs into the core infrastructure decisions (compute, storage, orchestration, model serving) that IT leaders must lock down before deploying AI agents at production scale. No single right answer; design choices now determine flexibility and cost for 18+ months.",
-    "why_it_matters": "BFSI IT teams building internal AI ops must pick architecture (cloud-native, hybrid, on-prem) before automation reaches 10+ concurrent workflows; wrong choice locks in high migration cost later.",
-    "jargon": [
-      {
-        "term": "Agentic systems",
-        "def": "AI programs that autonomously plan and execute multi-step tasks (e.g., trade settlement, KYC underwriting) without human intervention at each step."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-07-07",
-      "url": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/"
-    }
-  },
-  {
     "id": "2026-07-17-wells-fargo-ai-advisor",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8581,36 +8738,6 @@
     }
   },
   {
-    "id": "2026-07-07-thetaray-luis-pinedo",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-07T12:15:00Z",
-    "headline": "ThetaRay hires Santander's former compliance chief as Chief Strategic Customers Officer",
-    "plain_english": "ThetaRay, an AI infrastructure provider for financial crime compliance, appoints Luis Pinedo (ex-Santander compliance lead) to lead customer strategy, signalling deepening enterprise adoption in AML/KYC automation.",
-    "why_it_matters": "Pinedo's hire validates ThetaRay's product-market fit with tier-1 banks; expect acceleration in ThetaRay's enterprise deal flow and potential enterprise AI governance playbook adoption across Spanish/LATAM banking.",
-    "source": {
-      "name": "Finextra · 2026-07-07",
-      "url": "https://www.finextra.com/pressarticle/110358/thetaray-hires-santander-compliance-chief-luis-pinedo?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-07-nomerra-seed",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-07T11:18:00Z",
-    "headline": "Nomerra raises $2M seed to automate private markets back-office with AI",
-    "plain_english": "Nomerra, an AI-native platform for private market operations, closed $2M seed round to automate document processing and workflow for asset servicers and asset managers handling alternative capital markets.",
-    "why_it_matters": "Filling gap in private-markets automation; validates demand for AI-driven ops consolidation as AUM in private markets grows; watch for adoption by tier-2 asset managers seeking operational leverage.",
-    "amount": "$2M",
-    "round": "Seed",
-    "source": {
-      "name": "Finextra · 2026-07-07",
-      "url": "https://www.finextra.com/pressarticle/110357/nomerra-raises-2-million-to-tackle-private-markets-paperwork?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-10-revolut-jp-morgan-kuba-fast",
     "category": "shift",
     "jurisdiction": "EU",
@@ -8767,22 +8894,6 @@
     }
   },
   {
-    "id": "2026-07-07-ai-realistic-scams",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-07T12:00:00Z",
-    "headline": "AI-generated voice scams hit consumer scale; Savi raises $7M to combat deepfake fraud",
-    "plain_english": "Savi, a consumer protection startup, raises $7M seed funding and launches iOS/Android app to help consumers detect AI-deepfake voice scams (e.g., synthetic ransom calls). Signals mainstream adoption of realistic AI extortion.",
-    "why_it_matters": "Consumer fraud at scale will drive BFSI demand for synthetic-voice detection, phone-line monitoring, and liability frameworks. Expect banks to embed Savi-like tech in customer call centers and recommend to small-business clients.",
-    "stat_value": "$7M",
-    "stat_label": "seed funding for consumer AI fraud detection",
-    "source": {
-      "name": "TechCrunch · 2026-07-07",
-      "url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/"
-    }
-  },
-  {
     "id": "2026-07-08-openai-gpt-5-6-release",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8840,20 +8951,6 @@
     }
   },
   {
-    "id": "2026-07-07-boe-stability-report",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-07-07T11:23:24Z",
-    "headline": "Bank of England's July 2026 Financial Stability Report flags AI, cyber, and market concentration",
-    "plain_english": "BoE's semi-annual stability report identifies AI-driven cyber risk, model concentration (multiple banks using same vendors), and amplification of market volatility as top near-term threats to UK financial system resilience.",
-    "why_it_matters": "Official BoE red-flag signals imminent PRA supervision tightening. Expect mandatory stress tests on AI model failures, third-party vendor exit scenarios, and concentration disclosures in Q4 2026 supervisory guidance.",
-    "source": {
-      "name": "Bank of England · 2026-07-07",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YSUpJWG0xd2V3RUd0eGpreVZ5VE5WQWIyWDU4U0NLNjVFdmZ0c1kxVk9JSlg3dWhsQTVKRHVNNURkOWkyRFVjbzFFOXpmaWNvNE96dkhVR3d3LWthN3RhSTJjTXFvbnNHZm50bFF0NFBfOTI3REhiRXlMZnRkQQ"
-    }
-  },
-  {
     "id": "2026-07-07-meta-muse-launch",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8896,34 +8993,6 @@
     }
   },
   {
-    "id": "2026-07-07-china-ai-export-curb",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-07T12:09:22Z",
-    "headline": "Beijing explores curbs on overseas access to China's top AI models",
-    "plain_english": "Reuters reports Beijing is considering restrictions on international access to leading Chinese AI models (such as those from Alibaba, Baidu), potentially including licensing, export controls, or geofencing via API access.",
-    "why_it_matters": "If enacted, would fragment global AI supply chain; BFSI firms relying on Chinese LLM APIs for cost optimization must plan fallback to US/EU models. Expect geopolitical risk premiums in AI vendor contracts.",
-    "source": {
-      "name": "Reuters · 2026-07-07",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWk5sbnFqSktyYjJZYUZWOVFQYTc0YldVbnhfWmlOQmFpYkF0RENrUXlwQ1lyZ1F2bzVJalFrRE5yZzhwdUZpQU55bjFiTS1jVlFfWmFxMG01TVpQcmZfOU1fdkw0WEo0bmtta3ZoMmNFWG5vUU9PZ3dXNHFaUDI0RHRWWS05bGdQRUZ3OE81dE00UkZzOUJOOVRHMGtzZENOXzJGd19TNEV2MzJkazFiZlljUmJJZ0Uy"
-    }
-  },
-  {
-    "id": "2026-07-07-openai-wealth-sharing",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-07T12:10:00Z",
-    "headline": "OpenAI wealth-sharing proposal gains traction; Altman pitches AI profit-sharing for Americans",
-    "plain_english": "MIT Technology Review reports Sam Altman is reviving his proposal that Americans receive direct financial stakes in AI wealth creation, framing OpenAI's growth as shared national value. Discussions ongoing with policymakers.",
-    "why_it_matters": "If adopted as policy, could reshape AI company valuations, tax treatment, and social license. BFSI investors should monitor for potential legislative language on AI-company profit mandates or equity redistribution.",
-    "source": {
-      "name": "MIT Technology Review · 2026-07-07",
-      "url": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/"
-    }
-  },
-  {
     "id": "2026-07-08-fed-aml-overhaul",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8937,20 +9006,6 @@
       "url": "https://www.pymnts.com/legal/bank-regulation/2026/fed-joins-banking-regulators-to-overhaul-financial-crime-fighting-rules/"
     },
     "effective_date": "TBD"
-  },
-  {
-    "id": "2026-07-07-flutterwave-circle",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-07T12:22:00Z",
-    "headline": "Flutterwave secures strategic investment from Circle Ventures",
-    "plain_english": "Flutterwave, Africa's largest payments platform, receives strategic investment from Circle Ventures (corporate venture arm of Circle Internet Group), signalling expansion of stablecoin and crypto-rail payments across African BFSI.",
-    "why_it_matters": "Circle's backing strengthens Flutterwave's position in cross-border Africa payments; expect new product offerings in stablecoin settlement and API bridges for regional banks within 18 months.",
-    "source": {
-      "name": "Finextra · 2026-07-07",
-      "url": "https://www.finextra.com/pressarticle/110359/flutterwave-secures-investment-from-circle-ventures?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
   },
   {
     "id": "2026-07-08-sofi-square-capital-one-smb",
@@ -9015,20 +9070,6 @@
     }
   },
   {
-    "id": "2026-07-07-amazon-bond-ai",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-07T12:14:20Z",
-    "headline": "Amazon returns to US bond market to fund AI infrastructure buildout",
-    "plain_english": "Amazon issues bonds in US debt markets with explicit focus on funding AI infrastructure expansion, signalling acceleration of enterprise AI compute investment and potential competitive shift in cloud-AI services pricing.",
-    "why_it_matters": "Big Tech's direct debt issuance for AI capex could force banks to reprice AI-infrastructure financing; watch for follow-on from Microsoft/Google and margin pressure on banking AI consulting margins.",
-    "source": {
-      "name": "Bloomberg · 2026-07-07",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdVdxNmR0Qm50THd5eU01ZkpfOTJyR2tNU2NZV3lzZmVNb3hseVV4MGtGeEZnaEdBVURqbkR3bXBxc3BjQjNPcGd4VnJsVWR5V1NmazVWN2VQVVNtWkJfNDgyNnZzUUFuc21tYndjWmludzY5OHhjMTNFVU93U0xXZ3lzak5NREttcnFleEJxY0xJZGEtMUNURXZodW9CRDJ6dUhLTmU3OEtyMF9kOE4wRUhUUDExUQ"
-    }
-  },
-  {
     "id": "2026-07-07-boe-financial-stability",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -9040,89 +9081,6 @@
     "source": {
       "name": "Bank of England · 2026-07-07",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YSUpJWG0xd2V3RUd0eGpreVZ5VE5WQWIyWDU4U0NLNjVFdmZ0c1kxVk9JSlg3dWhsQTVKRHVNNURkOWkyRFVjbzFFOXpmaWNvNE96dkhVR3d3LWthN3RhSTJjTXFvbnNHZm50bFF0NFBfOTI3REhiRXlMZnRkQQ"
-    }
-  },
-  {
-    "id": "2026-07-07-ecb-ai-cyber-threats",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-07T13:00:00Z",
-    "headline": "ECB mandates banks submit plans to defend against AI-enabled cyber threats",
-    "plain_english": "European Central Bank orders eurozone banks to develop action plans addressing AI-powered cyberattacks, citing emerging models like Anthropic's Mythos as posing 'profound implications' for IT system resilience.",
-    "why_it_matters": "Banks must now embed AI-threat response into governance and capital adequacy frameworks; expect new mandatory disclosures and stress-test scenarios within 12 months.",
-    "jargon": [
-      {
-        "term": "IT system resilience",
-        "def": "An organization's ability to maintain or quickly restore critical operations when attacked or disrupted."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-07",
-      "url": "https://www.finextra.com/newsarticle/48049/ecb-tells-banks-to-submit-plans-to-address-ai-cyber-threats?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-07-boe-ai-financial-stability",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-07-07T11:16:59Z",
-    "headline": "Bank of England flags AI as growing financial stability risk in July report",
-    "plain_english": "Bank of England's latest Financial Stability Report warns that AI-driven systems could amplify market shocks and cyber vulnerabilities across the UK banking system, signalling tighter supervision ahead.",
-    "why_it_matters": "Likely precursor to PRA guidance on AI governance, model risk, and concentration risk; banks should expect supervisory letters on third-party AI vendor vetting within Q3.",
-    "jargon": [
-      {
-        "term": "Concentration risk",
-        "def": "Danger that multiple firms rely on the same AI model or vendor, creating systemic failure points if that system breaks."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-07-07",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObUdISUlkdHhqQXoyVHdfNzNTaUp5bmtFYzNxMGQyREZVaWMwdG5Ha2tZSUdBcGo4VGRiX2VzbWxON3ZsZk5nMmJfYi1MdHp3SjRhZWVmSmhVN2JaWE9QRUZQaGV4dzRnN0hiaEVhWk55dURTNTZjdVdlLUlqc3A4SW55RnRFSVdYdm9TNDU0NHBheG91N0VKTUw4TWVObnNrdGN6V3phYUVtNkk"
-    }
-  },
-  {
-    "id": "2026-07-07-revolut-us-charter",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-07T11:30:00Z",
-    "headline": "Revolut files for US national bank charter, breaking European challenger mold",
-    "plain_english": "Revolut files OCC and FDIC applications for a US national bank charter (Revolut Bank US, N.A.) in March 2026, marking a fundamental shift from embedded fintech model to independent bank ownership and direct US deposits.",
-    "why_it_matters": "First European challenger to pursue independent US charter in 5+ years; success would unlock cross-border treasury services, stablecoin rails, and embedded finance for US SMBs. Watch OCC timeline for systemic competitive impact.",
-    "source": {
-      "name": "Tearsheet · 2026-07-07",
-      "url": "https://tearsheet.co/banking/revoluts-us-bet-a-bank-charter-a-stablecoin-pitch-and-a-graveyard-of-european-challengers-that-tried-before-it/?utm_source=rss&utm_medium=rss&utm_campaign=revoluts-us-bet-a-bank-charter-a-stablecoin-pitch-and-a-graveyard-of-european-challengers-that-tried-before-it"
-    },
-    "effective_date": "2026-03-01"
-  },
-  {
-    "id": "2026-07-07-boe-leverage-rules",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-07T12:10:48Z",
-    "headline": "Bank of England outlines plan to ease bank leverage ratio requirements",
-    "plain_english": "Bank of England announces structural changes to leverage rules that would reduce capital constraints on major lenders, easing balance-sheet pressure for investment in AI and digital infrastructure.",
-    "why_it_matters": "Freer leverage headroom could accelerate BFSI AI investment; competitors relying on leverage arbitrage will gain execution speed; watch for parallel moves from ECB and US regulators.",
-    "source": {
-      "name": "Reuters · 2026-07-07",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc3RRb1ZVLTRkcG8yQmNTaVBXRzhMVmRHa3VtdTZSd0tJdlNsY0FlTThSM2dZNzNZQXZKc2Z5UXBXdDBxMGlUVk5iMGJFZmdyYWs5WXpEVGpxLWFIRjNBcU1Bc3pjRm5iS1FRR05faVdHazFJY1hSaC1mWmdZZWVScDR4R2xNYzRWN2hlZG4wZVZUeWR6aG5URVYySWtFTnZVblFldTloWQ"
-    }
-  },
-  {
-    "id": "2026-07-07-jpmorgan-debit-fees",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-07T01:01:16Z",
-    "headline": "JPMorgan, major US banks explore payments deal to circumvent federal debit-fee limits",
-    "plain_english": "JPMorgan Chase and other large US banks are negotiating a deal that could reshape debit-card economics and bypass federal interchange-fee caps they have opposed for over a decade. Move signals potential shift in payment revenue models.",
-    "why_it_matters": "If deal succeeds, debit-revenue pressure forces mid-tier and regional banks to rethink payment strategies, accelerating adoption of embedded finance, buy-now-pay-later, and alternative settlement models. AI-driven routing and fraud prevention become cost-critical differentiators.",
-    "source": {
-      "name": "PYMNTS · 2026-07-07",
-      "url": "https://www.pymnts.com/news/banking/2026/big-banks-eye-payments-deal-that-could-rewire-debit-fees/"
     }
   }
 ]
