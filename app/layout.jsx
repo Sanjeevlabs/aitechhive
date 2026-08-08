@@ -14,9 +14,9 @@ const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aitechhive.com";
 
 // Single source of truth for search + social. Mirrors are in JSON-LD below.
-const TITLE = "AITechHive — Daily AI brief from enterprises and the markets that move them";
+const TITLE = "AITechHive — Premium short-form AI news";
 const DESCRIPTION =
-  "AI updates from enterprises — banks, insurers, fintechs and the regulators between them. Curated daily from Reuters, Bloomberg, FT, the FCA, OCC, RBI, frontier labs, and arXiv. Free, no inbox.";
+  "A premium short-form AI news deck for quick, high-signal updates on enterprise AI, markets, regulation, tools, research, and frontier labs.";
 
 export const metadata = {
   metadataBase: new URL(APP_URL),
@@ -77,7 +77,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
   viewportFit: "cover",
-  themeColor: "#FFFFFF",
+  themeColor: "#090A0F",
 };
 
 // JSON-LD: gives both Google and LLM crawlers (ChatGPT search, Perplexity, etc.)

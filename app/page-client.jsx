@@ -172,24 +172,19 @@ function StoryCard({ card }) {
   const stat = variant === "mega-stat" ? megaStatValue(card) : null;
 
   return (
-    <div style={{
-      height: "100%", display: "flex", flexDirection: "column",
-      background: "var(--card)", borderRadius: 12,
-      border: "1px solid var(--separator)",
-      boxShadow: "0 1px 2px rgba(17,24,28,0.04), 0 12px 32px rgba(17,24,28,0.06)",
-      overflow: "hidden",
-      userSelect: "none", WebkitUserSelect: "none",
-    }}>
+    <div className="premium-card" style={{ "--accent": hex, "--accent-soft": `${hex}24` }}>
       {/* Meta row — small, fixed height */}
       <div style={{
         flexShrink: 0,
-        padding: "18px 24px 0",
-        display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12,
+        position: "relative", zIndex: 1,
+        padding: "22px 24px 0",
+        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12,
       }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap", minWidth: 0 }}>
           <span style={{
-            fontSize: 10, fontWeight: 700, letterSpacing: "0.2em",
-            textTransform: "uppercase", color: hex,
+            fontSize: 10, fontWeight: 800, letterSpacing: "0.22em",
+            textTransform: "uppercase", color: "#0B0D12", background: hex,
+            padding: "7px 10px", borderRadius: 999,
           }}>{meta.label}</span>
           {card.jurisdiction && (
             <span style={{
@@ -205,8 +200,8 @@ function StoryCard({ card }) {
           )}
         </div>
         <span style={{
-          fontSize: 10.5, fontWeight: 500, color: "var(--text-tertiary)",
-          letterSpacing: "0.02em", flexShrink: 0, fontVariantNumeric: "tabular-nums",
+          fontSize: 11, fontWeight: 700, color: "var(--text-tertiary)",
+          letterSpacing: "0.08em", textTransform: "uppercase", flexShrink: 0, fontVariantNumeric: "tabular-nums",
         }}>{relDate(card.published_at)}</span>
       </div>
 
@@ -215,19 +210,20 @@ function StoryCard({ card }) {
           Headline + body live in the same flex column with their natural
           sizes; the wrapper centers them. */}
       <div style={{
+        position: "relative", zIndex: 1,
         flex: 1, minHeight: 0,
-        padding: "16px 24px",
+        padding: "18px 24px 14px",
         overflow: "hidden",
         display: "flex", flexDirection: "column", justifyContent: "center",
-        gap: 16,
+        gap: 18,
       }}>
         {/* Headline + optional mega-stat — DM Sans bold, Databricks voice */}
         <div style={{ flexShrink: 0 }}>
           {stat && (
             <div style={{ marginBottom: 12 }}>
               <div style={{
-                fontSize: 48, fontWeight: 700, lineHeight: 0.95, color: "var(--text-primary)",
-                letterSpacing: "-0.035em",
+                fontSize: 56, fontWeight: 800, lineHeight: 0.9, color: hex,
+                letterSpacing: "-0.055em", textShadow: `0 18px 48px ${hex}33`,
               }}>{stat.value}</div>
               <div style={{
                 fontSize: 10, fontWeight: 700, color: hex,
@@ -237,9 +233,9 @@ function StoryCard({ card }) {
           )}
           <h2 style={{
             margin: 0,
-            fontSize: isLead ? 24 : (stat ? 17 : 22),
-            fontWeight: 700, lineHeight: 1.22,
-            letterSpacing: "-0.022em",
+            fontSize: isLead ? 28 : (stat ? 20 : 24),
+            fontWeight: 800, lineHeight: 1.12,
+            letterSpacing: "-0.04em",
             color: "var(--text-primary)",
             display: "-webkit-box",
             WebkitLineClamp: 4,
@@ -254,15 +250,15 @@ function StoryCard({ card }) {
         <div style={{ flexShrink: 0 }}>
           <p style={{
             margin: 0,
-            fontSize: 16, lineHeight: 1.6,
+            fontSize: 16, lineHeight: 1.55,
             color: "var(--text-secondary)",
             fontFamily: "var(--font-sans)",
           }}>{card.plain_english}</p>
           {card.why_it_matters && (
             <p style={{
               margin: "12px 0 0",
-              fontSize: 16, lineHeight: 1.6,
-              color: "var(--text-secondary)",
+              fontSize: 15, lineHeight: 1.55,
+              color: "var(--text-tertiary)",
               fontFamily: "var(--font-sans)",
             }}>{card.why_it_matters}</p>
           )}
@@ -271,8 +267,9 @@ function StoryCard({ card }) {
 
       {/* Source footer — quiet, no labels */}
       <div style={{
-        flexShrink: 0, padding: "12px 24px 14px", marginTop: 8,
-        borderTop: "1px solid rgba(0,0,0,0.05)",
+        position: "relative", zIndex: 1,
+        flexShrink: 0, padding: "14px 24px 18px", marginTop: 8,
+        borderTop: "1px solid rgba(255,255,255,0.10)",
         display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
       }}>
         <a
@@ -379,15 +376,15 @@ function DesktopBackground() {
       <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
         <defs>
           <pattern id="bg-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r="1" fill="rgba(0,0,0,0.04)" />
+            <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.07)" />
           </pattern>
           <linearGradient id="gL" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#7C3AED" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="#2563EB" stopOpacity="0.12" />
+            <stop offset="0%" stopColor="#F7C873" stopOpacity="0.38" />
+            <stop offset="100%" stopColor="#67E8F9" stopOpacity="0.18" />
           </linearGradient>
           <linearGradient id="gR" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#0EA5E9" stopOpacity="0.18" />
-            <stop offset="100%" stopColor="#7C3AED" stopOpacity="0.12" />
+            <stop offset="0%" stopColor="#67E8F9" stopOpacity="0.26" />
+            <stop offset="100%" stopColor="#C4B5FD" stopOpacity="0.18" />
           </linearGradient>
         </defs>
         <rect width="100%" height="100%" fill="url(#bg-dots)" />
@@ -408,11 +405,11 @@ function DesktopBackground() {
       </svg>
 
       {/* Glow blobs — left */}
-      <div style={{ position: "absolute", top: "22%", left: "4%", width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(120,60,255,0.18) 0%, transparent 70%)", filter: "blur(64px)" }} />
-      <div style={{ position: "absolute", bottom: "8%", left: "12%", width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(0,200,190,0.10) 0%, transparent 70%)", filter: "blur(48px)" }} />
+      <div style={{ position: "absolute", top: "22%", left: "4%", width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(247,200,115,0.18) 0%, transparent 70%)", filter: "blur(64px)" }} />
+      <div style={{ position: "absolute", bottom: "8%", left: "12%", width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(103,232,249,0.11) 0%, transparent 70%)", filter: "blur(48px)" }} />
       {/* Glow blobs — right */}
-      <div style={{ position: "absolute", top: "48%", right: "4%", width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(0,130,255,0.16) 0%, transparent 70%)", filter: "blur(56px)", transform: "translateY(-50%)" }} />
-      <div style={{ position: "absolute", top: "15%", right: "14%", width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(120,60,255,0.10) 0%, transparent 70%)", filter: "blur(40px)" }} />
+      <div style={{ position: "absolute", top: "48%", right: "4%", width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(196,181,253,0.14) 0%, transparent 70%)", filter: "blur(56px)", transform: "translateY(-50%)" }} />
+      <div style={{ position: "absolute", top: "15%", right: "14%", width: 180, height: 180, borderRadius: "50%", background: "radial-gradient(circle, rgba(247,200,115,0.10) 0%, transparent 70%)", filter: "blur(40px)" }} />
 
     </div>
   );
@@ -425,10 +422,6 @@ function WelcomeCard({ onDismiss, briefCards }) {
   // Databricks-style: pure white surface, ink-black text, single red
   // accent line + red CTA. DM Sans throughout (serif kept only for
   // the monumental "Today." moment).
-  const surface = "#FFFFFF";
-  const brand   = "#FF3621";  // Databricks red
-  const ink     = "#11181C";
-  const inkMute = "#5A6168";
   const inkSoft = "#9CA3AF";
 
   const today = new Date();
@@ -442,22 +435,22 @@ function WelcomeCard({ onDismiss, briefCards }) {
       transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
       style={{
         position: "absolute", inset: 0, zIndex: 10,
-        background: surface,
-        borderRadius: 12, overflow: "hidden",
+        background: "linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.055)), rgba(14,16,25,0.94)",
+        borderRadius: 30, overflow: "hidden", backdropFilter: "blur(24px)",
         display: "flex", flexDirection: "column", justifyContent: "space-between",
         padding: "24px 26px 22px",
-        border: `1px solid ${inkSoft}25`,
-        boxShadow: "0 1px 2px rgba(17,24,28,0.04), 0 24px 48px rgba(17,24,28,0.08)",
+        border: "1px solid rgba(255,255,255,0.16)",
+        boxShadow: "var(--shadow-premium)",
         userSelect: "none",
       }}
     >
       {/* Thin red accent stripe — Databricks signature */}
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: brand }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: "linear-gradient(90deg, #F7C873, #67E8F9, #C4B5FD)" }} />
 
       {/* Top: ath mark + date */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0, paddingTop: 6 }}>
         <BeeMark size={32} />
-        <span style={{ fontSize: 11, fontWeight: 500, color: inkMute, letterSpacing: "0.02em", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
+        <span style={{ fontSize: 11, fontWeight: 700, color: "var(--text-tertiary)", letterSpacing: "0.12em", textTransform: "uppercase", fontVariantNumeric: "tabular-nums" }}>{dateLabel}</span>
       </div>
 
       {/* Middle: huge serif "Today." then italic-serif headlines */}
@@ -465,7 +458,7 @@ function WelcomeCard({ onDismiss, briefCards }) {
         <h1 style={{
           margin: 0,
           fontSize: 72, fontWeight: 400, lineHeight: 0.95,
-          color: ink, letterSpacing: "-0.035em",
+          color: "var(--text-primary)", letterSpacing: "-0.055em",
           fontFamily: "var(--font-serif)",
         }}>Today.</h1>
 
@@ -477,7 +470,7 @@ function WelcomeCard({ onDismiss, briefCards }) {
           }}>
             {briefCards.slice(0, 3).map((c) => (
               <li key={c.id} style={{
-                fontSize: 15, lineHeight: 1.35, color: ink,
+                fontSize: 15, lineHeight: 1.35, color: "var(--text-secondary)",
                 fontWeight: 500, letterSpacing: "-0.005em",
               }}>{c.headline}</li>
             ))}
@@ -491,9 +484,9 @@ function WelcomeCard({ onDismiss, briefCards }) {
           onClick={onDismiss}
           style={{
             width: "100%", padding: "14px",
-            borderRadius: 6,
-            background: brand,
-            color: "#FFFFFF",
+            borderRadius: 999,
+            background: "linear-gradient(135deg, #F7C873, #FDE68A)",
+            color: "#11181C",
             fontSize: 14, fontWeight: 700,
             letterSpacing: "0.04em", textTransform: "uppercase",
             border: "none", cursor: "pointer",
@@ -1287,8 +1280,8 @@ function BeeMark({ size = 36 }) {
       aria-hidden="true"
       style={{ display: "block" }}
     >
-      <circle cx="32" cy="32" r="30" fill="#0E0D0C"/>
-      <g fill="#FFFFFF">
+      <circle cx="32" cy="32" r="30" fill="#F7C873"/>
+      <g fill="#0E0D0C">
         <path d="M32 30 Q 22 14 10 22 Q 16 28 30 32 Z"/>
         <path d="M32 30 Q 42 14 54 22 Q 48 28 34 32 Z"/>
         <path d="M32 34 Q 22 50 10 42 Q 16 36 30 32 Z"/>
@@ -1296,8 +1289,8 @@ function BeeMark({ size = 36 }) {
         <ellipse cx="32" cy="33" rx="2.6" ry="10"/>
         <circle cx="32" cy="20" r="2.6"/>
       </g>
-      <rect x="29.3" y="32" width="5.4" height="1.7" fill="#0E0D0C"/>
-      <rect x="29.6" y="36.5" width="4.8" height="1.5" fill="#0E0D0C"/>
+      <rect x="29.3" y="32" width="5.4" height="1.7" fill="#F7C873"/>
+      <rect x="29.6" y="36.5" width="4.8" height="1.5" fill="#F7C873"/>
     </svg>
   );
 }
@@ -1320,7 +1313,7 @@ function IconBtn({ children, onClick, label, badge }) {
   return (
     <button
       onClick={onClick} aria-label={label}
-      style={{ position: "relative", width: 36, height: 36, borderRadius: 10, background: "var(--card)", border: "1px solid var(--separator)", display: "grid", placeItems: "center", cursor: "pointer", color: "var(--text-primary)", flexShrink: 0 }}
+      style={{ position: "relative", width: 40, height: 40, borderRadius: 14, background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.14)", display: "grid", placeItems: "center", cursor: "pointer", color: "var(--text-primary)", flexShrink: 0, backdropFilter: "blur(16px)", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08)" }}
     >
       {children}
       {badge > 0 && (
@@ -1660,7 +1653,7 @@ export default function PageClient({ initialCards }) {
 
 
       {/* ── Masthead ──────────────────────────────────────────── */}
-      <header style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "12px 16px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <header style={{ position: "relative", zIndex: 1, flexShrink: 0, padding: "16px 18px 10px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Wordmark />
         <div style={{ display: "flex", gap: 7, alignItems: "center" }}>
           <IconBtn onClick={() => setArchiveOpen(true)} label="Archive"><Archive size={15} /></IconBtn>
@@ -1692,7 +1685,7 @@ export default function PageClient({ initialCards }) {
       {/* ── Category filter — Apple News-style: tiny caps, dot separators ── */}
       <div style={{
         position: "relative", zIndex: 1, flexShrink: 0,
-        padding: "2px 16px 12px",
+        padding: "4px 18px 14px",
         display: "flex", gap: 20, alignItems: "baseline",
         overflowX: "auto",
         scrollbarWidth: "none", WebkitOverflowScrolling: "touch",
@@ -1728,7 +1721,7 @@ export default function PageClient({ initialCards }) {
       ─────────────────────────────────────────────────────────── */}
       <div style={{ flex: 1, minHeight: 0, position: "relative", zIndex: 1 }}>
         {/* Full-bleed centering wrapper */}
-        <div style={{ position: "absolute", inset: "0 12px 6px", display: "flex", justifyContent: "center" }}>
+        <div style={{ position: "absolute", inset: "0 14px 8px", display: "flex", justifyContent: "center" }}>
           {/* Max-width container with card stack */}
           <div style={{ position: "relative", width: "100%", maxWidth: 520 }}>
 
