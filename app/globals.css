@@ -9,46 +9,45 @@
    bold/black, not serif (Databricks signature voice).
 ─────────────────────────────────────────────────────────────── */
 :root {
-  --bg:              #FFFFFF;
-  --card:            #FFFFFF;
-  --card-secondary:  #F5F5F5;
-  --text-primary:    #11181C;
-  --text-secondary:  #2D3438;
-  --text-tertiary:   #5A6168;
-  --separator:       rgba(17,24,28,0.10);
-  /* Databricks signature red (#FF3621) — used sparingly as the
-     primary brand accent. Severity, key CTAs, brand surfaces. */
-  --brand:           #FF3621;
-  --brand-soft:      rgba(255,54,33,0.08);
-  /* Category accents — quieter than before so the brand red
-     stays singular. */
-  --blue:            #2563EB;
-  --blue-soft:       rgba(37,99,235,0.08);
-  --green:           #16A34A;
-  --green-soft:      rgba(22,163,74,0.08);
-  --red:             #FF3621;
-  --red-soft:        rgba(255,54,33,0.08);
-  --orange:          #EA580C;
-  --orange-soft:     rgba(234,88,12,0.08);
-  --purple:          #7C3AED;
-  --purple-soft:     rgba(124,58,237,0.08);
-  --indigo:          #4F46E5;
-  --indigo-soft:     rgba(79,70,229,0.08);
-  --teal:            #0891B2;
-  --teal-soft:       rgba(8,145,178,0.08);
-  --gray:            #6B7280;
-  --gray-soft:       rgba(107,114,128,0.10);
-  --mint:            #059669;
-  --mint-soft:       rgba(5,150,105,0.08);
-  --yellow:          #CA8A04;
-  --yellow-soft:     rgba(202,138,4,0.10);
-  --brown:           #7C2D12;
-  --brown-soft:      rgba(124,45,18,0.10);
-  --decor-stroke:    rgba(17,24,28,0.06);
-  --decor-fill:      rgba(17,24,28,0.02);
-  --decor-grad-a:    rgba(255,54,33,0.04);
-  --decor-grad-b:    rgba(17,24,28,0.02);
-  --live-dot:        #16A34A;
+  --bg:              #090A0F;
+  --card:            rgba(18, 20, 30, 0.86);
+  --card-secondary:  rgba(255, 255, 255, 0.075);
+  --text-primary:    #F8FAFC;
+  --text-secondary:  #CBD5E1;
+  --text-tertiary:   #8B98AA;
+  --separator:       rgba(255,255,255,0.13);
+  --brand:           #F7C873;
+  --brand-soft:      rgba(247,200,115,0.13);
+  --blue:            #7DD3FC;
+  --blue-soft:       rgba(125,211,252,0.13);
+  --green:           #86EFAC;
+  --green-soft:      rgba(134,239,172,0.13);
+  --red:             #FB7185;
+  --red-soft:        rgba(251,113,133,0.13);
+  --orange:          #FDBA74;
+  --orange-soft:     rgba(253,186,116,0.13);
+  --purple:          #C4B5FD;
+  --purple-soft:     rgba(196,181,253,0.14);
+  --indigo:          #A5B4FC;
+  --indigo-soft:     rgba(165,180,252,0.13);
+  --teal:            #67E8F9;
+  --teal-soft:       rgba(103,232,249,0.12);
+  --gray:            #94A3B8;
+  --gray-soft:       rgba(148,163,184,0.12);
+  --mint:            #5EEAD4;
+  --mint-soft:       rgba(94,234,212,0.12);
+  --yellow:          #FDE68A;
+  --yellow-soft:     rgba(253,230,138,0.14);
+  --brown:           #FCD9B6;
+  --brown-soft:      rgba(252,217,182,0.13);
+  --decor-stroke:    rgba(255,255,255,0.08);
+  --decor-fill:      rgba(255,255,255,0.035);
+  --decor-grad-a:    rgba(247,200,115,0.14);
+  --decor-grad-b:    rgba(125,211,252,0.08);
+  --live-dot:        #86EFAC;
+  --glass:           rgba(255,255,255,0.08);
+  --glass-strong:    rgba(255,255,255,0.14);
+  --shadow-premium:  0 32px 90px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.16);
 }
 
 html, body {
@@ -73,4 +72,55 @@ html, body {
 @keyframes floaty {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50%      { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(247,200,115,0.18), transparent 28%),
+    radial-gradient(circle at 80% 18%, rgba(125,211,252,0.13), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.045), transparent 42%);
+  z-index: -1;
+}
+
+::selection { background: rgba(247,200,115,0.28); color: var(--text-primary); }
+
+.premium-card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.13), rgba(255,255,255,0.045) 42%, rgba(255,255,255,0.075)),
+    radial-gradient(circle at 18% 0%, var(--accent-soft), transparent 34%),
+    rgba(14,16,25,0.88);
+  box-shadow: var(--shadow-premium);
+  backdrop-filter: blur(26px) saturate(140%);
+}
+
+.premium-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.18), transparent 18%, transparent 70%, rgba(255,255,255,0.08)),
+    radial-gradient(circle at 78% 18%, var(--accent-soft), transparent 26%);
+  pointer-events: none;
+}
+
+.premium-card::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 29px;
+  border: 1px solid rgba(255,255,255,0.08);
+  pointer-events: none;
 }
