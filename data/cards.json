@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-08-10-house-dems-ai-testimony",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T11:00:01.000Z",
+    "headline": "House Democrats call for AI company CEOs to testify on recent security breaches",
+    "plain_english": "A bipartisan group of House Democrats requested testimony from Anthropic, OpenAI, and other AI leaders about recent hacking incidents targeting their systems, citing safety risk.",
+    "why_it_matters": "Congressional pressure on AI security is formalizing. Expect upstream regulatory action on model-release safeguards and incident-disclosure timelines; financial firms may face secondary compliance burden.",
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html"
+    }
+  },
+  {
     "id": "2026-08-10-occ-bunq-banking-license-denial",
     "category": "regulation",
     "jurisdiction": "US",
@@ -135,19 +149,18 @@
     }
   },
   {
-    "id": "2026-08-07-fdic-fintech-certification",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-08-10-tsmc-sales-surge",
+    "category": "deployment",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-08-07T11:15:00.000Z",
-    "headline": "FDIC establishes independent standards body to certify fintech banking partners",
-    "plain_english": "The Federal Deposit Insurance Corp. is creating a formal certification framework with industry partners to standardize how banks vet third-party fintech service providers. Aims to reduce operational and compliance risk in bank-fintech partnerships.",
-    "why_it_matters": "Banks will face new vendor vetting hurdles; fintech vendors targeting banking will need certification to scale partnerships, creating gatekeeping pressure on emerging entrants.",
+    "published_at": "2026-08-10T10:29:27.000Z",
+    "headline": "TSMC reports 45% revenue surge as Big Tech AI chip demand accelerates",
+    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC), foundry for Nvidia and Google, posted 45% sales growth, signalling robust AI inference and training chip orders from major cloud platforms.",
+    "why_it_matters": "TSMC's revenue surge is a leading indicator of enterprise and cloud AI deployment velocity. Supply tightness easing but demand remains far ahead of capacity additions.",
     "source": {
-      "name": "Finextra · 2026-08-07",
-      "url": "https://www.finextra.com/newsarticle/48212/fdic-aims-to-establish-standards-body-to-certify-banking-services-providers---bloomberg-law"
-    },
-    "effective_date": "2026-08-07"
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html"
+    }
   },
   {
     "id": "2026-08-08-ionic-wealth-ai-portfolio",
@@ -280,17 +293,32 @@
     }
   },
   {
-    "id": "2026-08-06-bbva-pivot-platform-revamp",
-    "category": "deployment",
-    "jurisdiction": "EU",
+    "id": "2026-08-10-discovered-materials-seed",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-08-06T11:25:00Z",
-    "headline": "BBVA refreshes Pivot business platform with revamped user experience",
-    "plain_english": "BBVA updated its global Pivot business platform with redesigned interface, signaling continued investment in embedded SME banking and payment workflows.",
-    "why_it_matters": "Incremental product refresh; reflects BFSI investment in SME digital banking as competitive moat; relevant for competing platforms targeting merchant and SME segments.",
+    "published_at": "2026-08-10T12:00:00.000Z",
+    "headline": "Discovered Materials raises $9M to accelerate AI-driven semiconductor material discovery",
+    "plain_english": "Materials-science startup Discovered Materials closed a $9M funding round to scale AI search for novel chip-making materials and improve thermal efficiency in data-center processors.",
+    "why_it_matters": "Indirectly supports fintech infrastructure: cooler, more efficient chips reduce cloud inference costs. Long tail, but relevant to high-frequency trading and real-time risk platforms.",
+    "amount": "$9M",
     "source": {
-      "name": "Finextra · 2026-08-06",
-      "url": "https://www.finextra.com/pressarticle/110596/bbva-revamps-business-platform"
+      "name": "TechCrunch · 2026-08-10",
+      "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/"
+    }
+  },
+  {
+    "id": "2026-08-10-cloudflare-ai-radar",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-10T11:04:36.000Z",
+    "headline": "Cloudflare launches AI-powered Radar Researcher for threat intelligence automation",
+    "plain_english": "Infrastructure security firm Cloudflare released an AI tool that automates threat research and pattern detection across its global traffic visibility, enabling faster incident triage.",
+    "why_it_matters": "Relevant to fintech and banking security operations: outsourced AI threat-hunting reduces SOC headcount pressure and improves detection latency. Early signal for industry adoption.",
+    "source": {
+      "name": "Yahoo Tech · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXZCU0JjQVl6N01Rbm4xcF9mU0piWWlhNjlXRFp4ekFiUUVYR3UtT1NNODZkYkZzX1JIc0NNc19OREhxMzhJWGg4TVFxUXJOQ25uY3FSVHBTUG8xRDN5TFkxb0lhTGtzRHo5ZzFZZ3c1QTdiekZ5V3pKVTVFbHhhemxqVkw5MFFzcGNNaWRROA"
     }
   },
   {
@@ -413,35 +441,31 @@
     }
   },
   {
-    "id": "2026-08-05-maximum-seed",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-05T11:27:00Z",
-    "headline": "Core banking startup Maximum raises $30M Seed round led by CRV",
-    "plain_english": "Maximum, a U.S. core banking platform startup, has closed a $30M Seed round led by Collaborative Fund (CRV), with participation from Pear VC, Restive, Plug and Play Ventures, and Anthemis.",
-    "why_it_matters": "Well-backed core banking challenger emerges; signals VC confidence in modular, cloud-native core replacements; potential threat to legacy Temenos, Finastra incumbents.",
-    "amount": "$30M",
-    "round": "Seed",
+    "id": "2026-08-10-revolut-eu-banking",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-08-10T10:15:00.000Z",
+    "headline": "Revolut wins full European banking licence from French regulators",
+    "plain_english": "Fintech Revolut secured a full European banking licence from French regulators and ECB approval, enabling it to operate as a regulated bank across the EU. A major milestone for the London-founded challenger.",
+    "why_it_matters": "Revolut can now compete directly with incumbents on deposit-taking, lending, and lending regulation. Expected to accelerate product velocity and cross-border expansion across EU markets.",
     "source": {
-      "name": "Finextra · 2026-08-05",
-      "url": "https://www.finextra.com/newsarticle/48197/core-banking-startup-maximum-closes-30-million-seed-round"
+      "name": "Finextra · 2026-08-10",
+      "url": "https://www.finextra.com/newsarticle/48219/revolut-awarded-full-fat-european-banking-licence?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
-    "id": "2026-08-05-wordsmith-series-b-ext",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-08-05T11:45:01Z",
-    "headline": "Legaltech vendor Wordsmith raises $14M Series B extension from Index, FT Ventures",
-    "plain_english": "Wordsmith, a European legaltech company, has raised a $14M Series B extension led by Index Ventures and FT Ventures to scale AI-powered contract and legal document automation.",
-    "why_it_matters": "RegTech-adjacent legaltech vendor solidifying market position; institutional legal/compliance workflows next frontier for generative AI; relevant for bank legal departments.",
-    "amount": "$14M",
-    "round": "Series B extension",
+    "id": "2026-08-10-bill-smb-platform",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T12:00:00.000Z",
+    "headline": "BILL consolidates fragmented SMB finance stack—payroll, ERP, AP in single platform",
+    "plain_english": "BILL is positioning itself as an end-to-end financial operating system for SMBs, replacing disconnected payroll, ERP, and accounts-payable systems with a unified, AI-enhanced workflow.",
+    "why_it_matters": "Signals shift from point-solution fintech to vertical-integration playbook. Banks and buy-side platforms may face margin pressure in SMB lending, treasury, and working-capital products.",
     "source": {
-      "name": "Sifted · 2026-08-05",
-      "url": "https://sifted.eu/articles/wordsmith-14m-series-b-extension/"
+      "name": "Tearsheet · 2026-08-10",
+      "url": "https://tearsheet.co/smb-finance/how-bill-is-becoming-the-financial-backbone-of-the-smb-economy/?utm_source=rss&utm_medium=rss&utm_campaign=how-bill-is-becoming-the-financial-backbone-of-the-smb-economy"
     }
   },
   {
@@ -558,38 +582,6 @@
     "source": {
       "name": "WSJ Finance/AI · 2026-08-06",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMG9mbWdpcjhsYTZHSGNmNzVjRmpqYlM2em9NR2JlQXRIVGQtakVFeHZkbm0tVDFDYV9uUGdfdWxfSWljS2tLRnl6QWZyQk1hV0Vpa1ZFQWFRTGA0TF9Kc3p6M0dGQWxMQmVON3pid2NpYVotYzJ1RVZoc1N2a2VLX2h3bGZ3MkYzU09pcmJIaTc0eFJSdWpnYndEei01U1B6bjZV"
-    }
-  },
-  {
-    "id": "2026-08-06-banco-sabadell-ai-org-restructure",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-06T11:18:00Z",
-    "headline": "Banco Sabadell restructures around AI as core strategic pillar, not ancillary function",
-    "plain_english": "Spanish bank Banco Sabadell announced organizational restructuring placing AI at the center of transformation strategy, simplifying structure and embedding relationship banking model strengthened by AI.",
-    "why_it_matters": "Signals industry shift from treating AI as bolt-on technology to embedding it in core business design; other BFSI firms likely to follow, changing how risk, compliance, and product teams organize.",
-    "source": {
-      "name": "Finextra · 2026-08-06",
-      "url": "https://www.finextra.com/pressarticle/110595/banco-sabadell-puts-ai-at-the-centre-of-business-overhaul"
-    }
-  },
-  {
-    "id": "2026-08-06-synchrony-customer-journey-shift",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-06T12:00:00Z",
-    "headline": "Synchrony pivots from product-centric to journey-centric operating model, unlocking dormant data value",
-    "plain_english": "Synchrony ($120B assets) reorganized from siloed product lines (private-label credit cards) to integrated customer-journey design, enabling cross-sell and deeper relationship monetization using existing customer data.",
-    "why_it_matters": "Organizational restructuring enables higher NPS, reduced churn, and improved marketing ROI; pattern emerging across large consumer BFSI—legacy data silos are now liability unless firms reorganize around journeys.",
-    "scale": {
-      "metric": "assets",
-      "value": "$120B"
-    },
-    "source": {
-      "name": "Tearsheet · 2026-08-06",
-      "url": "https://tearsheet.co/banking/how-banks-have-stopped-thinking-in-products-and-started-thinking-in-customer-journeys/"
     }
   },
   {
@@ -775,6 +767,20 @@
     }
   },
   {
+    "id": "2026-08-10-meta-scaled-model-release",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T11:10:26.000Z",
+    "headline": "Meta releases lightweight AI model for consumer on-device inference",
+    "plain_english": "Meta released a scaled-down version of its AI model designed to run on consumer hardware, enabling local inference without cloud dependency.",
+    "why_it_matters": "On-device models reduce cloud inference costs and privacy friction—critical for fintech mobile apps handling PII. Watch for adoption in wealth-management and trading platforms.",
+    "source": {
+      "name": "Bloomberg · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVFZWUXFCVWlhN3JRVjQtNkRWakExRERpS2Q4Q1B4dEZVUUxMOGlHTWc5cG5lVUYxV3ZkRnZZRlZmNUk5NmpGRVpHbWtTWmo1TlhKY041VmJNZWJvaW9RWkxseEhsYzhGVHgwUDFFRC1sb1hiWktidTlRNTV5V1lXYnIwSlI2dEVMMnpHN0xDd2RIYkc1RG9xLUJGZWRKX0I0dUxtOUFRU0tlVWRkOVdJNGN2VDFRQ0xy"
+    }
+  },
+  {
     "id": "2026-08-09-research-moore-threads-hk-listing",
     "category": "research",
     "jurisdiction": "APAC",
@@ -934,20 +940,6 @@
     "source": {
       "name": "TechCrunch · 2026-07-27",
       "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/"
-    }
-  },
-  {
-    "id": "2026-07-25-deepseek-or-similar-model-release",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-25T10:00:35Z",
-    "headline": "Frontier model collisions intensify as open-source and proprietary LLM ecosystems converge",
-    "plain_english": "Industry commentary flags accelerating collision between proprietary (OpenAI, Google, Anthropic) and open-source (Meta, DeepSeek, Mistral) AI model ecosystems. Performance parity and distillation advances are eroding traditional moat defensibility, forcing vendors to compete on inference cost and safety rather than capability alone.",
-    "why_it_matters": "BFSI procurement strategies must shift: proprietary models no longer guarantee monopoly advantage. Open-source alternatives now deliver comparable performance at 1/10 the cost; compliance and safety certifications become differentiators. Vendor lock-in erosion forces competitive pricing and forces banks to evaluate multi-model hybrid stacks.",
-    "source": {
-      "name": "Breakingviews · 2026-07-25",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLUNCLVhPNUh1Tmx1NWlQVnlZRjl5LXhJM19aZEFJZmVoNWhDNzhCSjRsWjZmdU03ajZPc0piUmk1NFJoRUJ6Mk54YVhuSWRIVWMxQU1MVVlfbVAxZV9jQjdKcmFOaGhVeHVmTHNzTklhYzN2UFNLaE9nR2FGbXBhQTB6aUlsdkl6Z3BiZFdxVGZmWndTSDZCT2c4QnBiRGFndzlwTWFEeFRjcDA"
     }
   },
   {
@@ -1115,6 +1107,41 @@
     }
   },
   {
+    "id": "2026-08-10-openai-cybersecurity-controls",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T11:04:50.000Z",
+    "headline": "OpenAI restricts access to new model over critical-level cybersecurity capability",
+    "plain_english": "OpenAI imposed controls on a new model after determining it could not rule out the system reaching \"Critical\" capability—meaning it could potentially launch cyberattacks against sophisticated defenses.",
+    "why_it_matters": "Signals AI labs now formally acknowledging dual-use risk at capability thresholds. Likely to inform regulatory scrutiny of frontier model deployment and shape internal safety governance across the industry.",
+    "jargon": [
+      {
+        "term": "Critical capability",
+        "def": "AI system capability level at which the model could autonomously execute cyberattacks on hardened defenses without human intervention."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html"
+    }
+  },
+  {
+    "id": "2026-08-10-intel-equity-raise",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T11:55:21.000Z",
+    "headline": "Intel launches $15B equity raise amid AI chip demand surge",
+    "plain_english": "Intel is selling $15B in new common stock to fund manufacturing expansion and AI accelerator development, capitalizing on enterprise demand for inference and training silicon.",
+    "why_it_matters": "Major capex commitment signals incumbents competing hard with TSMC for AI workload share. Fintech platforms betting on on-premise or hybrid inference may see pricing and availability shifts.",
+    "amount": "$15B",
+    "source": {
+      "name": "Bloomberg · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYWh3QVNKT3liUUxPeUl4SUxxS29TaERxSEJPSmhySzFRX0c4NzdVLWdyN2l6bVlDSGZ0NlV2OUZOVzVZRUVxTjlzZVhZYURMbjBCSjJrbjNRRFBaRTI3SVhydE9jLWlUYTZkZVZiVm1fYWtncm5RYV9qS2VyYTdwb1ZKMFpyWjM1WlJScHBSbVRIdTBLZlprTG5GWktlRjhFTlpSVndoa1ZxZw?oc=5"
+    }
+  },
+  {
     "id": "2026-08-10-openai-astra-security-halt",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1252,34 +1279,6 @@
     "source": {
       "name": "NewsGram · 2026-08-07",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQVNwQzROLUVvRGZoOGFaS2R5bE93RTZ6U055WjBiOGpaSFdnWG4xV2Q0dGZSb0pENTg1TnhVVjNGRmxZam8xNEMzN1d2bzh0anBlQUZtc2o3V2pRZDZDMnB0cGpxYzNEeWZFb1J0X05yMThxVmdkZTJNaGRuU3BLc1dzbUxyczhsZ2ZydWdKdlgtSm1OMUHSAZYBQVVfeXFMTUFTcEM0Ti1Fb0RmaDhhWktkeWxPd0U2elNOeVowYjhqWkhXZ1huMVdkNHRmUm9KRDU4NU54VVYzRkZsWWpvMTRDMzdXdm84dGpwZUFGbXNqN1dqUWQ2QzJwdHBqcWMzRHlmRW9SdF9OcjE4cVZnZGUyTWhkblNwS3NXc21McnM4bGdmcnVnSnZYLUptTjFB"
-    }
-  },
-  {
-    "id": "2026-08-07-china-ai-frontier-gap",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-07T11:19:21.000Z",
-    "headline": "Chinese AI labs narrow performance gap with US frontier models in recent months",
-    "plain_english": "Chinese AI companies have made measurable progress closing the capability gap with OpenAI, Google DeepMind, and Anthropic. U.S. retains structural advantages in compute and talent, but China's acceleration is accelerating investment focus.",
-    "why_it_matters": "Geopolitical AI competition will intensify capital flows to US frontier labs; BFSI firms may face vendor lock-in pressure to adopt US-built models before Chinese alternatives mature further.",
-    "source": {
-      "name": "CNBC · 2026-08-07",
-      "url": "https://www.cnbc.com/2026/08/07/china-us-ai-race-hugging-face-models.html"
-    }
-  },
-  {
-    "id": "2026-08-07-ai-biosecurity-policy",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-07T11:30:46.000Z",
-    "headline": "Scientists call for urgent biosecurity measures as AI systems demonstrate ability to design viruses",
-    "plain_english": "Frontier AI labs have shown that large language models can generate viral pathogen designs. Scientific community is demanding enhanced oversight and export controls on AI model access to prevent misuse in biological weapons development.",
-    "why_it_matters": "Regulatory crackdown on AI model dual-use potential will likely drive tighter export controls, compliance burdens for BFSI firms hosting or training large models, and potential restrictions on model access in certain jurisdictions.",
-    "source": {
-      "name": "Inbox.eu · 2026-08-07",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSUpzTnJwYWpGTFVkQjN5Tl9PRVpxUE1zTFV3TGszTzdQemZDRmtMY3M3QWtrd0xaQ2toQS1xQWNxbExYWndaT01qZnRWOUlYVGNpRFQxYlZrY2UtWVpiMlJVUmZtd0Z6dFhQajAtLVZ0ZEtWUW55Y3JRRzhZbTgtVjFGa3FwbDVmQnVRMTV2QTNvT2dqRXlQaDdEOUhrdjdhclU4SF9iQWthYWp3aEdXVmUxcUlCSlYtMWQ5WFQtdlFLNjFoUVBSVGM0TQ"
     }
   },
   {
@@ -1644,6 +1643,141 @@
     "source": {
       "name": "WSJ · 2026-07-29",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTlY2LTE2cDVxQlUxNGdnbjlYLTJ5ajg3WHZWYnFweGpiOHBmTVhoYnBlWF9oX2FmMDRIMWhZOTZNMDlTYlp2UEdnVW54eTRvbHFCVTRDeUNmcVliZTR5dlhjMHhiY3NVWDVXZXBBU1Y0UE1jU3haZXVtTk9neFlKQWdURjJVdkVRNDJJdDVMdVRnRkNDNWROV2lldzJxWVBSMlg1V3dNc3g?oc=5"
+    }
+  },
+  {
+    "id": "2026-08-07-fdic-fintech-certification",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-07T11:15:00.000Z",
+    "headline": "FDIC establishes independent standards body to certify fintech banking partners",
+    "plain_english": "The Federal Deposit Insurance Corp. is creating a formal certification framework with industry partners to standardize how banks vet third-party fintech service providers. Aims to reduce operational and compliance risk in bank-fintech partnerships.",
+    "why_it_matters": "Banks will face new vendor vetting hurdles; fintech vendors targeting banking will need certification to scale partnerships, creating gatekeeping pressure on emerging entrants.",
+    "source": {
+      "name": "Finextra · 2026-08-07",
+      "url": "https://www.finextra.com/newsarticle/48212/fdic-aims-to-establish-standards-body-to-certify-banking-services-providers---bloomberg-law"
+    },
+    "effective_date": "2026-08-07"
+  },
+  {
+    "id": "2026-08-06-bbva-pivot-platform-revamp",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-06T11:25:00Z",
+    "headline": "BBVA refreshes Pivot business platform with revamped user experience",
+    "plain_english": "BBVA updated its global Pivot business platform with redesigned interface, signaling continued investment in embedded SME banking and payment workflows.",
+    "why_it_matters": "Incremental product refresh; reflects BFSI investment in SME digital banking as competitive moat; relevant for competing platforms targeting merchant and SME segments.",
+    "source": {
+      "name": "Finextra · 2026-08-06",
+      "url": "https://www.finextra.com/pressarticle/110596/bbva-revamps-business-platform"
+    }
+  },
+  {
+    "id": "2026-08-05-maximum-seed",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-05T11:27:00Z",
+    "headline": "Core banking startup Maximum raises $30M Seed round led by CRV",
+    "plain_english": "Maximum, a U.S. core banking platform startup, has closed a $30M Seed round led by Collaborative Fund (CRV), with participation from Pear VC, Restive, Plug and Play Ventures, and Anthemis.",
+    "why_it_matters": "Well-backed core banking challenger emerges; signals VC confidence in modular, cloud-native core replacements; potential threat to legacy Temenos, Finastra incumbents.",
+    "amount": "$30M",
+    "round": "Seed",
+    "source": {
+      "name": "Finextra · 2026-08-05",
+      "url": "https://www.finextra.com/newsarticle/48197/core-banking-startup-maximum-closes-30-million-seed-round"
+    }
+  },
+  {
+    "id": "2026-08-05-wordsmith-series-b-ext",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-05T11:45:01Z",
+    "headline": "Legaltech vendor Wordsmith raises $14M Series B extension from Index, FT Ventures",
+    "plain_english": "Wordsmith, a European legaltech company, has raised a $14M Series B extension led by Index Ventures and FT Ventures to scale AI-powered contract and legal document automation.",
+    "why_it_matters": "RegTech-adjacent legaltech vendor solidifying market position; institutional legal/compliance workflows next frontier for generative AI; relevant for bank legal departments.",
+    "amount": "$14M",
+    "round": "Series B extension",
+    "source": {
+      "name": "Sifted · 2026-08-05",
+      "url": "https://sifted.eu/articles/wordsmith-14m-series-b-extension/"
+    }
+  },
+  {
+    "id": "2026-08-06-banco-sabadell-ai-org-restructure",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-06T11:18:00Z",
+    "headline": "Banco Sabadell restructures around AI as core strategic pillar, not ancillary function",
+    "plain_english": "Spanish bank Banco Sabadell announced organizational restructuring placing AI at the center of transformation strategy, simplifying structure and embedding relationship banking model strengthened by AI.",
+    "why_it_matters": "Signals industry shift from treating AI as bolt-on technology to embedding it in core business design; other BFSI firms likely to follow, changing how risk, compliance, and product teams organize.",
+    "source": {
+      "name": "Finextra · 2026-08-06",
+      "url": "https://www.finextra.com/pressarticle/110595/banco-sabadell-puts-ai-at-the-centre-of-business-overhaul"
+    }
+  },
+  {
+    "id": "2026-08-06-synchrony-customer-journey-shift",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-06T12:00:00Z",
+    "headline": "Synchrony pivots from product-centric to journey-centric operating model, unlocking dormant data value",
+    "plain_english": "Synchrony ($120B assets) reorganized from siloed product lines (private-label credit cards) to integrated customer-journey design, enabling cross-sell and deeper relationship monetization using existing customer data.",
+    "why_it_matters": "Organizational restructuring enables higher NPS, reduced churn, and improved marketing ROI; pattern emerging across large consumer BFSI—legacy data silos are now liability unless firms reorganize around journeys.",
+    "scale": {
+      "metric": "assets",
+      "value": "$120B"
+    },
+    "source": {
+      "name": "Tearsheet · 2026-08-06",
+      "url": "https://tearsheet.co/banking/how-banks-have-stopped-thinking-in-products-and-started-thinking-in-customer-journeys/"
+    }
+  },
+  {
+    "id": "2026-07-25-deepseek-or-similar-model-release",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-07-25T10:00:35Z",
+    "headline": "Frontier model collisions intensify as open-source and proprietary LLM ecosystems converge",
+    "plain_english": "Industry commentary flags accelerating collision between proprietary (OpenAI, Google, Anthropic) and open-source (Meta, DeepSeek, Mistral) AI model ecosystems. Performance parity and distillation advances are eroding traditional moat defensibility, forcing vendors to compete on inference cost and safety rather than capability alone.",
+    "why_it_matters": "BFSI procurement strategies must shift: proprietary models no longer guarantee monopoly advantage. Open-source alternatives now deliver comparable performance at 1/10 the cost; compliance and safety certifications become differentiators. Vendor lock-in erosion forces competitive pricing and forces banks to evaluate multi-model hybrid stacks.",
+    "source": {
+      "name": "Breakingviews · 2026-07-25",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLUNCLVhPNUh1Tmx1NWlQVnlZRjl5LXhJM19aZEFJZmVoNWhDNzhCSjRsWjZmdU03ajZPc0piUmk1NFJoRUJ6Mk54YVhuSWRIVWMxQU1MVVlfbVAxZV9jQjdKcmFOaGhVeHVmTHNzTklhYzN2UFNLaE9nR2FGbXBhQTB6aUlsdkl6Z3BiZFdxVGZmWndTSDZCT2c4QnBiRGFndzlwTWFEeFRjcDA"
+    }
+  },
+  {
+    "id": "2026-08-07-china-ai-frontier-gap",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-07T11:19:21.000Z",
+    "headline": "Chinese AI labs narrow performance gap with US frontier models in recent months",
+    "plain_english": "Chinese AI companies have made measurable progress closing the capability gap with OpenAI, Google DeepMind, and Anthropic. U.S. retains structural advantages in compute and talent, but China's acceleration is accelerating investment focus.",
+    "why_it_matters": "Geopolitical AI competition will intensify capital flows to US frontier labs; BFSI firms may face vendor lock-in pressure to adopt US-built models before Chinese alternatives mature further.",
+    "source": {
+      "name": "CNBC · 2026-08-07",
+      "url": "https://www.cnbc.com/2026/08/07/china-us-ai-race-hugging-face-models.html"
+    }
+  },
+  {
+    "id": "2026-08-07-ai-biosecurity-policy",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-07T11:30:46.000Z",
+    "headline": "Scientists call for urgent biosecurity measures as AI systems demonstrate ability to design viruses",
+    "plain_english": "Frontier AI labs have shown that large language models can generate viral pathogen designs. Scientific community is demanding enhanced oversight and export controls on AI model access to prevent misuse in biological weapons development.",
+    "why_it_matters": "Regulatory crackdown on AI model dual-use potential will likely drive tighter export controls, compliance burdens for BFSI firms hosting or training large models, and potential restrictions on model access in certain jurisdictions.",
+    "source": {
+      "name": "Inbox.eu · 2026-08-07",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSUpzTnJwYWpGTFVkQjN5Tl9PRVpxUE1zTFV3TGszTzdQemZDRmtMY3M3QWtrd0xaQ2toQS1xQWNxbExYWndaT01qZnRWOUlYVGNpRFQxYlZrY2UtWVpiMlJVUmZtd0Z6dFhQajAtLVZ0ZEtWUW55Y3JRRzhZbTgtVjFGa3FwbDVmQnVRMTV2QTNvT2dqRXlQaDdEOUhrdjdhclU4SF9iQWthYWp3aEdXVmUxcUlCSlYtMWQ5WFQtdlFLNjFoUVBSVGM0TQ"
     }
   },
   {
@@ -7647,20 +7781,6 @@
     }
   },
   {
-    "id": "2026-07-11-apple-openai-trade-secrets",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-11T00:08:23Z",
-    "headline": "Apple sues OpenAI for trade secret theft in hardware development",
-    "plain_english": "Apple filed suit against OpenAI, alleging the company stole confidential information to develop AI devices. Two named defendants—former Apple employees Tang Tan (Chief Hardware Officer) and Chang Liu (technical staff)—are accused of facilitating the theft at senior leadership direction.",
-    "why_it_matters": "If successful, sets precedent for IP liability in AI recruiting from competitors. Signals deteriorating trust between big tech players sharing AI infrastructure and talent, raising cost of M&A integration and poaching risk for BFSI vendors.",
-    "source": {
-      "name": "CNBC · 2026-07-11",
-      "url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html"
-    }
-  },
-  {
     "id": "2026-07-16-osfi-banks-ai-cyber-window-closing",
     "category": "regulation",
     "jurisdiction": "CA",
@@ -8816,20 +8936,6 @@
     }
   },
   {
-    "id": "2026-07-11-meta-instagram-ai-image-pullback",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-11T12:01:10.000Z",
-    "headline": "Meta withdraws Instagram AI image generation feature after user and regulatory backlash",
-    "plain_english": "Meta publicly reversed course and removed AI-powered feature that generated images of users from their Instagram accounts after customer complaints and implied regulatory pressure. Marks rare retreat by major tech firm on AI product launch.",
-    "why_it_matters": "Signals tightening enforcement of biometric/identity-based AI use; BFSI players integrating face/voice AI for KYC/auth should monitor precedent. Sets bar for consent and transparency that regulators will expect banks to exceed.",
-    "source": {
-      "name": "MSN · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPSy1hcDJHbnZpXzNoRUgzekhLZWRGQnB4QWd1QmMtTm5oLTlpSEFoUjF6VmhnNHJpMTkya0x5N1h1endGMFNoaDdvTkhleVdiZjZHb09FQk95Qi03NndHNVF0NkFZMGNNMnFYbUdlMTl1OFhoSVp0ODJ1bjR2VzB4UnV2Z2VtNjdqX3VBNzVWT3lNQXJCNWtSQnRtUWxQdzlTaktsWkp2Wkl6Z0NIYW9FSlpzSldSLXFnZWxpai1ZWmpNQVNLVlFBaGozcmIyQ3hYSzdMaTVVa2pBdWtzVFFnVjJEc1F0UGpMNHJSTE9nb3VNVHFzeHVEZEhSR1E2cVd4S3lMVXRQZXZ6YjQ5clZ3cmZtdXpYT2dEUGVIWUxIalY4VXhuRlpQcDNuZHpXSFpVX0I3eXZMb1BvWHM1ZTJ2WkpaVTJRSU5BSmMzVDdvajU4bFd1SzlhQUVB"
-    }
-  },
-  {
     "id": "2026-07-13-ubs-ai-power-hour",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8958,94 +9064,6 @@
     }
   },
   {
-    "id": "2026-07-11-moonshot-abc-amex-credit-card",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-11T09:06:58.000Z",
-    "headline": "Moonshot AI, Agricultural Bank of China, American Express launch AI-native credit card",
-    "plain_english": "Moonshot AI (Chinese frontier lab) partnered with Agricultural Bank of China and American Express to launch Kimi, an AI-native credit card product. Represents first major BFSI deployment of conversational AI at card issuance and management layer in Asia-Pacific.",
-    "why_it_matters": "Signals shift from AI-as-backend-tool to AI-as-product-interface in consumer banking; card networks now racing to embed LLMs in cardholder experience. Expect similar launches from US/EU issuers within 6 months.",
-    "scale": {
-      "metric": "customers",
-      "value": "TBD at launch"
-    },
-    "source": {
-      "name": "Pandaily · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9mSGVtVm5zeXUxcWJZbS1DQ0M5dmtVMzNSZkFDSTFTeU00V2ZRckVDRDNwbUZ5eTd3M0JyM000VHBPUGpjdkVBcUZsRnpoclY0V19XalBDNjNhLW91aktRSnVzRG56NDdOR1c2RUM3VDZtdw"
-    }
-  },
-  {
-    "id": "2026-07-11-jr-east-ai-drones-ops",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-11T09:32:03.000Z",
-    "headline": "JR East deploys AI and drones for rapid train operations restoration",
-    "plain_english": "Japan Railways East (JR East) integrating AI diagnostics and drone inspection to accelerate recovery from railway disruptions. Marks transition from reactive to predictive infrastructure management in critical transport sector.",
-    "why_it_matters": "BFSI operational resilience teams should monitor: AI-driven predictive maintenance in critical infrastructure reduces systemic outage risk. Banks exposed to Japan/APAC transport financing should upgrade resilience models to account for faster recovery scenarios.",
-    "source": {
-      "name": "朝日新聞 · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rWVBjc0ZkcmNHd0RwU1c2Z1JvaE80Tms1eElaLWlhY0FzUDg0dkxObmptWE5TQUxXTm43N2YwbkdvTnFCcEtDM3FnZG5Gck1lNzlOTEJNYTVKamstQUE"
-    }
-  },
-  {
-    "id": "2026-07-11-sk-hynix-ipo-ai-semiconductor",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-11T09:00:00.000Z",
-    "headline": "SK Hynix completes second-largest U.S. share sale, powered by AI semiconductor demand",
-    "plain_english": "South Korean chipmaker SK Hynix executed a major U.S. capital raise on the back of surging demand for AI-optimized memory and compute hardware from cloud providers and enterprise. Reflects institutional capital flooding semiconductor suppliers in AI infrastructure race.",
-    "why_it_matters": "BFSI cloud/infrastructure spend on AI compute is now directly financing semiconductor capacity. Banks betting on LLM workloads need to track memory/chip supply chains; shortages will ripple into model training timelines and inference costs.",
-    "source": {
-      "name": "Fortune · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUF9OaktsU3NBZWNESUFtNUNuMFFnTkdCQjVtYUQzUHYxQkYwVmxkZ1J5azV5a3Y3aXI0SGc5cnhZM3pPeVBwRkRDSXdXeG5yTmU4TkExbVlCRHA5TUJnVUFxRzhPZjhVbWZnU2JzcllfZ2ZMekZhbnZaN2ZKbUVZQ3FHaXBuUHRRcXdiZGpOOEZ2dWlseHVpMnhTb18tZ1NjN3U5VVF5ckVhSThVNXgzZG53"
-    }
-  },
-  {
-    "id": "2026-07-11-tencent-manus-vr-buyback",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-11T07:55:00.000Z",
-    "headline": "Tencent in talks to acquire VR hand-tracking firm Manus from Meta at $2 billion valuation",
-    "plain_english": "Tencent negotiating to buy back Manus (VR input/hand-tracking hardware) from Meta at $2B valuation, signaling Tencent's pivot toward spatial computing infrastructure independent of Meta's ecosystem. Sources indicate Tencent will not seek majority control.",
-    "why_it_matters": "APAC fintech competitors building metaverse/spatial finance interfaces now have alternative hardware suppliers. Reduces Meta lock-in for banking apps in VR; relevant for institutions exploring immersive trading or remote onboarding.",
-    "source": {
-      "name": "finance.biggo.com · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MR042aHdyQU1QWUIzYkFoV2RLOFFtQ1pqZl9vYTRCREluMG5ILWdzOUVtZ2MwTjVGdUg4bTJLRkdGR1pIRXlYZzRUYnBwZDNGYVBMdE4xYlA1LURZMl9Rc0lGQkhUd1gxWVI1eXZNT29zUk91eWc"
-    }
-  },
-  {
-    "id": "2026-07-11-citi-money2020-innovation-regulation",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-11T06:26:06.000Z",
-    "headline": "Citi signals 'sweet spot' strategy balancing innovation and EU regulation at Money2020 Europe",
-    "plain_english": "Citigroup executives at Money2020 Europe conference outlined strategy to position the bank in middle ground between aggressive AI innovation and tightening EU regulations (AI Act, MiCA). Frames compliance as competitive advantage rather than friction.",
-    "why_it_matters": "Top-tier BFSI player publicly anchoring narrative that regulation is navigable; signals permission structure for other banks to accelerate AI pilots. Expect uptick in EU bank AI announcements citing similar 'regulated innovation' framing.",
-    "source": {
-      "name": "Quartz · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMk13MmhjaXcyLWNVZ0dtbHZzcEYwamtqeTVEczNBM0FKTmsxS0FrVERDZkVKektjY2FrSU1XQWRRSXNud3BMcmZBY1BIdEJDTkZ5LWJnR2NuRWJKd1kweVNFVXV2SmFWenZJX1FhQThFMERtWWtNLXgtYXZ1Y3VwcVFoSnkyc25lbUN1R0FrMlg"
-    }
-  },
-  {
-    "id": "2026-07-11-apple-openai-trade-secret-lawsuit",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-11T04:09:20.000Z",
-    "headline": "Apple sues OpenAI for alleged systematic trade secret theft following ChatGPT-iPhone partnership",
-    "plain_english": "Apple filed lawsuit against OpenAI alleging theft of trade secrets at multiple organizational levels, escalating tensions after their 2024 partnership integrated ChatGPT into iPhone OS. Marks first major IP litigation between frontier AI lab and consumer tech giant.",
-    "why_it_matters": "BFSI firms licensing or partnering with frontier labs should immediately audit data-sharing agreements and IP indemnification clauses. Partnership IP disputes now precedent; banks may face subpoena/discovery exposure if caught in crossfire.",
-    "source": {
-      "name": "CNBC · 2026-07-11",
-      "url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html"
-    }
-  },
-  {
     "id": "2026-07-13-ripple-sec-lawsuit",
     "category": "insight",
     "jurisdiction": "US",
@@ -9159,22 +9177,6 @@
     "source": {
       "name": "Fortune · 2026-07-11",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQXBtWmpueDRJbG1ocU1BbU5zTXJ5ZHlEVDgzUVo0SlEwVUJpNzJzYmtNcWl2a3VUbGFmUzhpVWdqYkJpb0lXMUlveE5EMzhueDNrN052Y2t6TGJ4dnRfcGZYcV9ZeHpVTU1sR3hyU18xY0ZPa3JLUmU0clpjU3FyZzhRRnl1bFNCbzNPSzlEbnhUZS1SbzhvLVl4WWswZ0NJaU5yUUFya0xlZ0lvZkx3RlpCc3llaDlOZmc4"
-    }
-  },
-  {
-    "id": "2026-07-11-palantir-microsoft-figma-q2-earnings",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-11T12:00:49.000Z",
-    "headline": "Palantir, Microsoft, Figma emerge as primary AI beneficiaries ahead of Q2 2026 software earnings",
-    "plain_english": "Citi research identifies Palantir (data platforms), Microsoft (cloud/copilot), and Figma (design AI) as strongest beneficiaries of enterprise AI spending in Q2 2026 earnings season. BFSI allocating budget to enterprise AI infrastructure, not consumer LLMs.",
-    "why_it_matters": "Banks' capital deployment favors workflow AI (copilots, data integration) over chatbots. Palantir and Microsoft winning BFSI RFPs for compliance/risk/operations automation—expect announcements in next 90 days.",
-    "stat_value": "3",
-    "stat_label": "vendors identified as prime BFSI AI beneficiaries in Q2",
-    "source": {
-      "name": "Seeking Alpha · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMHpEZGQzNHdJM2tKUy1KanpZc1N4elNCSXQ1QWJVLV9leW5acTdhbV9vbnZremNPQm5ETE14NjJmbUFpd1lMUmg0VUVZbm9Ock96dHNMb1VYd0RxV0lIQWFjOG5jenU1WHRob2h1QmVDUHFzX1RMUnZNTWRKVklWdXFJNl84YURZUkItUjBVMUQwcmNCaXhLOFpmbklkbFFWRTZpUUktQnQ5UlhNeUlaM0hySUVObWVWSE5BaXh1bHBmT1N1Z0pV"
     }
   }
 ]
