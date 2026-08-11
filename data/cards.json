@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-08-10-ftc-credit-glory-enforcement",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T23:18:05Z",
+    "headline": "FTC secures court order halting Credit Glory credit repair scheme",
+    "plain_english": "FTC obtained a temporary restraining order against Credit Glory and 16 related entities for alleged fraudulent credit repair practices dating to 2016. Five principals named.",
+    "why_it_matters": "Regulator accelerating enforcement against fintech fraud. Signals increased scrutiny of fringe-credit and AI-assisted underwriting claims; relevant for compliance ops evaluating vendor risk.",
+    "source": {
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/legal/2026/ftc-obtains-court-order-halting-credit-glory-operations/"
+    },
+    "effective_date": "2026-08-10"
+  },
+  {
     "id": "2026-08-10-house-dems-ai-testimony",
     "category": "regulation",
     "jurisdiction": "US",
@@ -134,18 +149,41 @@
     }
   },
   {
-    "id": "2026-08-07-battery-materials-federal-grant",
-    "category": "regulation",
+    "id": "2026-08-10-wells-fargo-tokenized-deposits",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-07T19:56:00Z",
-    "headline": "Trump administration awards $2B to battery and materials companies, signaling industrial policy shift",
-    "plain_english": "US administration is directing $2 billion in grants to battery and advanced materials manufacturers, reflecting strategic focus on domestic supply chains and reducing dependence on foreign sources.",
-    "why_it_matters": "Government capital allocation is now explicitly subsidizing AI infrastructure inputs (battery, chip materials). BFSI project-finance teams should expect higher demand for SPV financing and green-bond structuring around this supply-chain buildout.",
-    "amount": "$2B",
+    "severity": "high",
+    "published_at": "2026-08-10T23:01:54Z",
+    "headline": "Wells Fargo begins offering tokenized deposits to corporate clients this fall",
+    "plain_english": "Wells Fargo will launch blockchain-based tokenized deposits for select corporate and commercial treasurers. Enables programmable transfers and faster settlement without leaving the bank.",
+    "why_it_matters": "First major US bank operationalizes tokenized deposits in production. Shifts stablecoin debate from external networks to in-bank infrastructure, reducing regulatory friction for treasurers.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Digital representations of bank deposits on a blockchain, enabling programmable transfers and instant settlement."
+      }
+    ],
     "source": {
-      "name": "WSJ · 2026-08-07",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd2RQZEhfMUFVRWlnTHpreWZiOU00NHprWE1xNTZuYVJBRGxfMWZsVXpjSDhFYnNTaG90Tmt5RHFFXzRmX2dDNGVKZjBwdHBqN1FheWF1NVdGUWlvYmktYW93QlJDX3A5c3JnMFJRcjV1cHcxeGZfRm5vLWdQdW5pNXdUUGN5MWpRR1BIQ2xqb3NsN0taczBNRkhlMW1od3pocXc1QTViWVZQZzNnQ0MwdUo4UlhwUnNYWDBobnllZG1RR2FD"
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/blockchain/2026/wells-fargo-brings-the-stablecoin-fight-inside-the-bank/"
+    },
+    "scale": {
+      "metric": "markets",
+      "value": "US corporate treasurers"
+    }
+  },
+  {
+    "id": "2026-08-10-sun-life-upstream-ai-pre-auth",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T21:02:41Z",
+    "headline": "Health insurers deploy AI upstream into pre-authorization and care-pathway decisions",
+    "plain_english": "Sun Life and peers are shifting AI from claims processing (post-care) to pre-authorization gates and treatment recommendations (pre-care). Automates which patients get flagged and which pathways are pre-approved.",
+    "why_it_matters": "AI moves from retrospective audit to prospective gatekeeping. Increases algorithmic liability and discrimination risk; CROs must stress-test fairness, bias, and appeal mechanisms before deployment.",
+    "source": {
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/insurers-move-ai-upstream-into-the-care-decision/"
     }
   },
   {
@@ -265,32 +303,20 @@
     }
   },
   {
-    "id": "2026-08-06-jp-morgan-klarna-embedded-bnpl",
-    "category": "deployment",
+    "id": "2026-08-11-astraeus-wealth-ai-platform",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-06T12:30:44Z",
-    "headline": "J.P. Morgan embeds Klarna BNPL directly into Commerce Platform for instant merchant access",
-    "plain_english": "J.P. Morgan's Commerce Platform now natively offers Klarna flexible-payment options at checkout with zero integration lift for US merchants across all retail categories.",
-    "why_it_matters": "Demonstrates fintech-BNPL consolidation into enterprise payment infrastructure; reduces merchant friction, increases cross-sell, and signals JPM's platform-aggregation strategy for embedded finance.",
+    "published_at": "2026-08-11T00:01:00Z",
+    "headline": "Former MoneyLion execs launch AI-native wealth management infrastructure platform",
+    "plain_english": "Astraeus, founded by ex-MoneyLion staff, raised $10M+ for an infrastructure platform that lets wealth managers embed AI-native capabilities. Targets back-office automation and client experience.",
+    "why_it_matters": "Signals venture capital appetite for purpose-built BFSI AI stacks that compete with legacy vendors' bolt-on solutions. Wealth ops is moving from manual to agentic.",
     "source": {
-      "name": "PYMNTS · 2026-08-06",
-      "url": "https://www.pymnts.com/bnpl/2026/j-p-morgan-payments-commerce-platform-embeds-klarna-for-instant-merchant-access/"
-    }
-  },
-  {
-    "id": "2026-08-06-square-google-maps-ordering",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-06T13:00:35Z",
-    "headline": "Square integrates conversational ordering into Google Maps Ask feature for restaurants",
-    "plain_english": "Square enabled restaurants on its platform to accept conversational food orders through Google Maps' Ask feature, letting customers find and order directly from Maps without leaving the app.",
-    "why_it_matters": "Extends payment-platform reach into new discovery channel; validates merchant demand for order-placement automation; BFSI must support restaurant POS integrations as ordering infrastructure consolidates.",
-    "source": {
-      "name": "PYMNTS · 2026-08-06",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/square-and-google-let-restaurants-offer-conversational-ai-ordering/"
-    }
+      "name": "Finextra · 2026-08-11",
+      "url": "https://www.finextra.com/newsarticle/48223/astraeus-launches-wealth-management-infrastructure-platform"
+    },
+    "amount": "$10M+",
+    "round": "Seed"
   },
   {
     "id": "2026-08-10-discovered-materials-seed",
@@ -426,18 +452,31 @@
     }
   },
   {
-    "id": "2026-08-06-future-fintech-funding",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-05T22:49:48Z",
-    "headline": "Future FinTech closes $30M private placement at $1 per share",
-    "plain_english": "Future FinTech raised $30M in a private placement at $1/share. Limited disclosure on deployment roadmap or customer traction; indicates capital raise below recent market multiples.",
-    "why_it_matters": "Low signal unless tied to material product launch or customer win. Suggests fintech equity funding environment remains selective; valuation pressure on unfocused or pre-revenue platforms.",
-    "amount": "$30M",
+    "id": "2026-08-10-synchrony-paypal-mastercard-financing",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T23:42:13Z",
+    "headline": "Synchrony and PayPal embed BNPL directly into Mastercard network for ubiquitous checkout",
+    "plain_english": "Synchrony and PayPal now offer PayPal Credit (6-month special financing on $149+) across the entire Mastercard network, both online and in-store. No separate channel switching.",
+    "why_it_matters": "BNPL moves from payment-app islands to omnipresent rail. Signals fintech-bank fusion: card networks become BNPL distribution, reshaping merchant and consumer expectations of checkout.",
     "source": {
-      "name": "Dealroom.co · 2026-08-05",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORVVxV2wwRm1oeEtrT0dkQllSYmp2dTFSZldPVmhTc1hBNlhRREp2LWxZZEZMU29NUS1BOGtlT1hYaXdHUlF1bk1hYVh4T3NpU3hBU1ZPYzY4VzBvNmxaQVc4WGU3WVJrbFRYcWFrTjZoVEI0QlZPcWVZMjJMbk5wSDFuLUIydzVtX1NGSHl4OFB1cnJrcTJuVnpkWQ"
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/bnpl/2026/synchrony-and-paypal-bring-special-financing-to-entire-mastercard-network/"
+    }
+  },
+  {
+    "id": "2026-08-10-cybersecurity-m-a-215-deals",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-10T22:27:37Z",
+    "headline": "Cybersecurity M&A surge tops $100 billion in H1 2026; finance and payments drive consolidation",
+    "plain_english": "215 cyber M&A deals worth $100B+ in first half of 2026. Finance and payments firms leading consolidation, signaling new attack surfaces require integrated, vertical-native defenses.",
+    "why_it_matters": "Indicates BFSI CISOs are moving away from best-of-breed point solutions to integrated stacks. Consolidation creates winner-take-most dynamics; smaller vendors face margin pressure.",
+    "source": {
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/cybersecurity/2026/cybersecurity-ma-spree-maps-the-next-attack-surface/"
     }
   },
   {
@@ -554,34 +593,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-07",
       "url": "https://www.pymnts.com/news/retail/2026/qvc-group-emerges-from-bankruptcy-with-600-million-dollar-asset-backed-facility/"
-    }
-  },
-  {
-    "id": "2026-08-07-allianz-portfolio-rebalance",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-08-07T10:04:00.000Z",
-    "headline": "Allianz reports lower net profit as insurer reshuffles investment portfolio",
-    "plain_english": "Europe's largest insurer posted softer earnings in recent period due to strategic asset reallocation rather than underwriting weakness. Reflects broader industry shift toward capital-efficient, AI-optimized portfolio management.",
-    "why_it_matters": "Large insurers are reprioritizing asset allocation models; AI-driven portfolio optimization and risk modeling becoming table stakes for competitive ALM teams.",
-    "source": {
-      "name": "WSJ · 2026-08-07",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUkpZTXo1VzQySXRSeDVGbGtTRlRXajJBLVBlZURyMzMyZldaWWp4dUJZTWV1V3NJaXVQQ3Frb3FBZ3BieEFXWDhKb2NQYVIwZmNpNWQ2aG9zREw2clloNzFkYnFBQ0ZuYnZYanBQVWFiV3U5Xy1MeVhfNVpLZzY3MXhRRXVNcGhGWlBNRmpsc2JFYWd1VU41R3RLdnRCWElWRFZnX0lQdGJJdF8zbVViYlpVQ2FKdw"
-    }
-  },
-  {
-    "id": "2026-08-07-airbnb-ai-forecast",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-06T23:03:00.000Z",
-    "headline": "Airbnb raises full-year guidance as AI investments drive stronger demand and retention",
-    "plain_english": "Airbnb has lifted its full-year forecast after AI bets paid off, signaling that AI-powered personalization and pricing tools are moving consumer-facing metrics—demand, retention, and conversion.",
-    "why_it_matters": "Shows AI ROI translating to earnings guidance at scale; reinforces investor and competitor expectation that AI capex is now table-stakes for consumer platform growth. BFSI platforms face pressure to demonstrate similar AI yield.",
-    "source": {
-      "name": "WSJ Finance/AI · 2026-08-06",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMG9mbWdpcjhsYTZHSGNmNzVjRmpqYlM2em9NR2JlQXRIVGQtakVFeHZkbm0tVDFDYV9uUGdfdWxfSWljS2tLRnl6QWZyQk1hV0Vpa1ZFQWFRTGA0TF9Kc3p6M0dGQWxMQmVON3pid2NpYVotYzJ1RVZoc1N2a2VLX2h3bGZ3MkYzU09pcmJIaTc0eFJSdWpnYndEei01U1B6bjZV"
     }
   },
   {
@@ -767,6 +778,26 @@
     }
   },
   {
+    "id": "2026-08-10-openai-daybreak-cyber-model",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-10T23:56:15Z",
+    "headline": "OpenAI expands Daybreak cybersecurity program with new attack-defense AI model",
+    "plain_english": "OpenAI rolled out an updated model trained specifically to detect and defend against AI-orchestrated cyberattacks. Daybreak program now includes offensive red-team and defensive capabilities.",
+    "why_it_matters": "BFSI security ops need AI-literate defenses as threat actors automate attack chains. This signals frontier labs are shipping production-grade cyber tooling alongside general models.",
+    "jargon": [
+      {
+        "term": "Red-team",
+        "def": "Authorized adversarial testing that simulates attacker tactics to find weaknesses before real threats do."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-08-10",
+      "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/"
+    }
+  },
+  {
     "id": "2026-08-10-meta-scaled-model-release",
     "category": "research",
     "jurisdiction": "US",
@@ -929,18 +960,30 @@
     }
   },
   {
-    "id": "2026-07-27-physical-ai-brainwave",
-    "category": "research",
+    "id": "2026-08-10-agentic-ai-zero-trust-cybersecurity",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-27T00:19:14Z",
-    "headline": "Frontier AI labs exploring brainwave signals to accelerate physical AI training",
-    "plain_english": "Cutting-edge robotics/embodied AI research is now incorporating human brainwave (EEG) data as training signal for physical AI models, moving beyond video annotation to direct neural feedback for task learning.",
-    "why_it_matters": "Illustrates frontier labs' pursuit of richer training data modalities. Long-term BFSI angle: if biometric signals become standard AI training inputs, regulatory/privacy implications for any bank deploying AI agents in customer-facing roles.",
+    "severity": "med",
+    "published_at": "2026-08-10T21:43:45Z",
+    "headline": "Agentic AI forces rethink of Zero Trust security architecture",
+    "plain_english": "Autonomous AI agents that make unsupervised decisions are breaking traditional Zero Trust models, which assume human verification gates. Security teams must re-architect identity, audit, and decision logs.",
+    "why_it_matters": "Zero Trust (verify every access request) assumes human review. Agentic workflows bypass that. Compliance teams need new frameworks for auditing and restricting AI agent scope without crippling automation ROI.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "Autonomous AI systems that take actions or make decisions without real-time human approval, using goal-setting and tool use."
+      },
+      {
+        "term": "Zero Trust",
+        "def": "Security model requiring continuous verification of every access request, assuming no implicit trust based on location or role."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-07-27",
-      "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/"
-    }
+      "name": "Breaking Defense · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmxNb0NyWVBjbkZOWklNOFYzTUdCVU83d1JFR0I5ZTV3aGQwV1ZYdmdqeUZtemJpTXhSS1JfMjc5WlF3SW9OaGRyZW5zcEFwZEFlZG0wT1gxY0RlVWlrMk9XNUpseXZHUnV2V0h6NVM4UWlVc2hPWTM0NkJ6d0E0OWxJUU5HNkRaejV0N20taUpyd2FWTHpN"
+    },
+    "stat_value": "Agentic workflows",
+    "stat_label": "breaking Zero Trust audit assumptions"
   },
   {
     "id": "2026-08-10-pe-vishing-attacks-google",
@@ -1091,20 +1134,40 @@
     }
   },
   {
-    "id": "2026-08-05-visa-layoffs",
-    "category": "insight",
+    "id": "2026-08-10-nvidia-500b-financing-commitment",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-05T11:08:32Z",
-    "headline": "Visa eliminates 2,600 jobs in global restructuring amid automation push",
-    "plain_english": "Visa has announced layoffs affecting 2,600 employees (approximately 10% of global workforce) as part of a major restructuring, likely tied to workflow automation and shifting transaction processing models.",
-    "why_it_matters": "Payment networks now openly automating headcount; signals consolidation pressure on payment processors; AI-driven settlement and dispute automation reducing middle-office roles industry-wide.",
-    "stat_label": "global workforce reduction",
-    "stat_value": "2,600 jobs",
+    "severity": "high",
+    "published_at": "2026-08-10T21:47:00Z",
+    "headline": "Nvidia and six Wall Street firms commit $500 billion to AI compute infrastructure financing",
+    "plain_english": "Nvidia partnered with JPMorgan, Goldman Sachs, and four other institutions to mobilize $500B in third-party capital via independent compute platforms. Treats chip and compute capacity as investable revenue-generating assets.",
+    "why_it_matters": "Validates compute-as-collateral thesis. BFSI becomes infrastructure lender; AI models become underwritable assets. Reshapes capital stack for data center buildout and GPU supply chains.",
+    "jargon": [
+      {
+        "term": "Compute platform",
+        "def": "Pooled GPU/processor capacity available as a service, financed and monitored like traditional infrastructure assets."
+      }
+    ],
     "source": {
-      "name": "India.Com · 2026-08-05",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSTNmMURWY0VqU0NRTGhFZzN2UXB4dmdWYUUwZTN2YmpxQU9DVHNGU21ublNYMENrU1dFTjJKS2FIVTVBdG9xRDM1M3ZoU1ZGOU9oUnY3eE9SRDgzdWdQZDJ3OHpfMEZfTTRrZVV1R29xbzc1TFphV3VtOFZ1YzYzemVIU25HVUVzYzZvdHpZbVlUeWJGSFE5UVJwcUtrbDZrY2t4MklsbFBxR21uMmJwZC1WeHpWVk9oMWdIa3EzTDV0LXlSQms4Zm93bzh2UQ"
-    }
+      "name": "Bloomberg · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSFh3ZUFwdFIxQVNrc3M5RzBZcUxuUE8wM0g1T3hUdklWeThMZmgtZVdWdlNSRGp5SkxvUEVreHRSbmZCcXV1ajN0dTV6cm1oWmhFV29DMkZ3RHI4a3BFWUFKeVE5Vkw2YV9JVnl2NHRvdEZBc01QdV8yRVpYeFdQcGdGazRVaFhMeC1MN0NoZ3cwRUVlY0tjV1psd1ZTYnktcDlCTVpiMDVha2EwMHZubFhpYw"
+    },
+    "amount": "$500B"
+  },
+  {
+    "id": "2026-08-10-openai-tender-offer-7b",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T22:15:31Z",
+    "headline": "OpenAI completes $7 billion employee share tender offer ahead of potential IPO",
+    "plain_english": "OpenAI wrapped a secondary tender offer allowing employees and early investors to sell shares, continuing its path toward public markets after closing a $122B funding round in March 2026.",
+    "why_it_matters": "Signals IPO intent within 12–24 months. Liquidity event sets valuation benchmark for AI industry; impacts M&A expectations for competing models and BFSI AI vendors.",
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/openai-wraps-7-billion-share-sale-ahead-of-potential-ipo-.html"
+    },
+    "amount": "$7B"
   },
   {
     "id": "2026-08-10-openai-cybersecurity-controls",
@@ -1245,40 +1308,6 @@
     "source": {
       "name": "The Bulrushes · 2026-08-08",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVFZCU0VvLTFLdkdpQjU3amE4QUdkNkkwbFF5VjZacDdoZVJsa3BSZTlKZHhDVmRDLUVOUWliR3pvRWNqX3RpQzJXX1gtRGRoNmVpUHpMaHd5bk9wR0JOaERGdFBCUVVaV1B3VFVTUk1yVDMxdWZlc0QzRlRJU3JjMkFQNXhILXVweGdjekF3ajMwVkJkR2otYTRMVUQzUFVFWnRHemlOMi02X2JOVE01VWhQM0VzMVhVMlJaamI3U04xcTdjIn"
-    }
-  },
-  {
-    "id": "2026-08-07-openai-astra-security-pause",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-07T22:48:24Z",
-    "headline": "OpenAI pauses Astra model development over cybersecurity capabilities concerns",
-    "plain_english": "OpenAI has suspended work on certain features of its upcoming Astra multimodal model due to concerns about the model's potential cybersecurity prowess—a rare public halt on capability development citing safety grounds.",
-    "why_it_matters": "Frontier labs are now throttling capability release for security risk. BFSI risk officers should expect similar delays from other labs; this sets precedent that powerful AI tools may face staged or gated rollout.",
-    "jargon": [
-      {
-        "term": "Astra",
-        "def": "OpenAI's next-generation multimodal AI model designed to process text, images, audio, and video."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-08-07",
-      "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
-    }
-  },
-  {
-    "id": "2026-08-07-ai-biological-threat",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-07T20:37:06Z",
-    "headline": "Scientists warn of unregulated AI-generated biological viruses posing biosecurity risks",
-    "plain_english": "Researchers have sounded an alarm about AI models being used to generate synthetic biological viruses with pandemic potential, highlighting gaps in AI regulation and biosecurity oversight.",
-    "why_it_matters": "Dual-use AI risk (legitimate research vs. misuse) is now regulatory priority. BFSI institutions hosting sensitive data on cloud infrastructure must expect incoming biosecurity compliance rules and vendor screening requirements.",
-    "source": {
-      "name": "NewsGram · 2026-08-07",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQVNwQzROLUVvRGZoOGFaS2R5bE93RTZ6U055WjBiOGpaSFdnWG4xV2Q0dGZSb0pENTg1TnhVVjNGRmxZam8xNEMzN1d2bzh0anBlQUZtc2o3V2pRZDZDMnB0cGpxYzNEeWZFb1J0X05yMThxVmdkZTJNaGRuU3BLc1dzbUxyczhsZ2ZydWdKdlgtSm1OMUHSAZYBQVVfeXFMTUFTcEM0Ti1Fb0RmaDhhWktkeWxPd0U2elNOeVowYjhqWkhXZ1huMVdkNHRmUm9KRDU4NU54VVYzRkZsWWpvMTRDMzdXdm84dGpwZUFGbXNqN1dqUWQ2QzJwdHBqcWMzRHlmRW9SdF9OcjE4cVZnZGUyTWhkblNwS3NXc21McnM4bGdmcnVnSnZYLUptTjFB"
     }
   },
   {
@@ -1502,6 +1531,20 @@
     }
   },
   {
+    "id": "2026-08-10-crowdstrike-palo-alto-black-hat",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-10T21:43:37Z",
+    "headline": "AI-powered cybersecurity demand surges at Black Hat; CrowdStrike and Palo Alto reach record valuations",
+    "plain_english": "CrowdStrike and Palo Alto Networks stock hit all-time highs following Black Hat conference, where AI-orchestrated threats took center stage. Renewed enterprise demand for AI-native endpoint and threat detection.",
+    "why_it_matters": "Signals CISO buying power shifting toward agentic and generative AI defenses. Risk officers must accelerate RFPs for AI-powered SIEM, EDR, and threat hunting to stay ahead of evolving threat models.",
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/crowdstrike-palo-alto-hit-records-after-black-hat-cyber-conference-illuminates-rising-ai-threat.html"
+    }
+  },
+  {
     "id": "2026-08-08-trending-ai-viruses",
     "category": "trending",
     "jurisdiction": "US",
@@ -1629,6 +1672,156 @@
     "source": {
       "name": "CNBC · 2026-07-29",
       "url": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html"
+    }
+  },
+  {
+    "id": "2026-08-07-battery-materials-federal-grant",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-07T19:56:00Z",
+    "headline": "Trump administration awards $2B to battery and materials companies, signaling industrial policy shift",
+    "plain_english": "US administration is directing $2 billion in grants to battery and advanced materials manufacturers, reflecting strategic focus on domestic supply chains and reducing dependence on foreign sources.",
+    "why_it_matters": "Government capital allocation is now explicitly subsidizing AI infrastructure inputs (battery, chip materials). BFSI project-finance teams should expect higher demand for SPV financing and green-bond structuring around this supply-chain buildout.",
+    "amount": "$2B",
+    "source": {
+      "name": "WSJ · 2026-08-07",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd2RQZEhfMUFVRWlnTHpreWZiOU00NHprWE1xNTZuYVJBRGxfMWZsVXpjSDhFYnNTaG90Tmt5RHFFXzRmX2dDNGVKZjBwdHBqN1FheWF1NVdGUWlvYmktYW93QlJDX3A5c3JnMFJRcjV1cHcxeGZfRm5vLWdQdW5pNXdUUGN5MWpRR1BIQ2xqb3NsN0taczBNRkhlMW1od3pocXc1QTViWVZQZzNnQ0MwdUo4UlhwUnNYWDBobnllZG1RR2FD"
+    }
+  },
+  {
+    "id": "2026-08-06-jp-morgan-klarna-embedded-bnpl",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-06T12:30:44Z",
+    "headline": "J.P. Morgan embeds Klarna BNPL directly into Commerce Platform for instant merchant access",
+    "plain_english": "J.P. Morgan's Commerce Platform now natively offers Klarna flexible-payment options at checkout with zero integration lift for US merchants across all retail categories.",
+    "why_it_matters": "Demonstrates fintech-BNPL consolidation into enterprise payment infrastructure; reduces merchant friction, increases cross-sell, and signals JPM's platform-aggregation strategy for embedded finance.",
+    "source": {
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/bnpl/2026/j-p-morgan-payments-commerce-platform-embeds-klarna-for-instant-merchant-access/"
+    }
+  },
+  {
+    "id": "2026-08-06-square-google-maps-ordering",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-06T13:00:35Z",
+    "headline": "Square integrates conversational ordering into Google Maps Ask feature for restaurants",
+    "plain_english": "Square enabled restaurants on its platform to accept conversational food orders through Google Maps' Ask feature, letting customers find and order directly from Maps without leaving the app.",
+    "why_it_matters": "Extends payment-platform reach into new discovery channel; validates merchant demand for order-placement automation; BFSI must support restaurant POS integrations as ordering infrastructure consolidates.",
+    "source": {
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/square-and-google-let-restaurants-offer-conversational-ai-ordering/"
+    }
+  },
+  {
+    "id": "2026-08-06-future-fintech-funding",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-05T22:49:48Z",
+    "headline": "Future FinTech closes $30M private placement at $1 per share",
+    "plain_english": "Future FinTech raised $30M in a private placement at $1/share. Limited disclosure on deployment roadmap or customer traction; indicates capital raise below recent market multiples.",
+    "why_it_matters": "Low signal unless tied to material product launch or customer win. Suggests fintech equity funding environment remains selective; valuation pressure on unfocused or pre-revenue platforms.",
+    "amount": "$30M",
+    "source": {
+      "name": "Dealroom.co · 2026-08-05",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORVVxV2wwRm1oeEtrT0dkQllSYmp2dTFSZldPVmhTc1hBNlhRREp2LWxZZEZMU29NUS1BOGtlT1hYaXdHUlF1bk1hYVh4T3NpU3hBU1ZPYzY4VzBvNmxaQVc4WGU3WVJrbFRYcWFrTjZoVEI0QlZPcWVZMjJMbk5wSDFuLUIydzVtX1NGSHl4OFB1cnJrcTJuVnpkWQ"
+    }
+  },
+  {
+    "id": "2026-08-07-allianz-portfolio-rebalance",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-07T10:04:00.000Z",
+    "headline": "Allianz reports lower net profit as insurer reshuffles investment portfolio",
+    "plain_english": "Europe's largest insurer posted softer earnings in recent period due to strategic asset reallocation rather than underwriting weakness. Reflects broader industry shift toward capital-efficient, AI-optimized portfolio management.",
+    "why_it_matters": "Large insurers are reprioritizing asset allocation models; AI-driven portfolio optimization and risk modeling becoming table stakes for competitive ALM teams.",
+    "source": {
+      "name": "WSJ · 2026-08-07",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUkpZTXo1VzQySXRSeDVGbGtTRlRXajJBLVBlZURyMzMyZldaWWp4dUJZTWV1V3NJaXVQQ3Frb3FBZ3BieEFXWDhKb2NQYVIwZmNpNWQ2aG9zREw2clloNzFkYnFBQ0ZuYnZYanBQVWFiV3U5Xy1MeVhfNVpLZzY3MXhRRXVNcGhGWlBNRmpsc2JFYWd1VU41R3RLdnRCWElWRFZnX0lQdGJJdF8zbVViYlpVQ2FKdw"
+    }
+  },
+  {
+    "id": "2026-08-07-airbnb-ai-forecast",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-06T23:03:00.000Z",
+    "headline": "Airbnb raises full-year guidance as AI investments drive stronger demand and retention",
+    "plain_english": "Airbnb has lifted its full-year forecast after AI bets paid off, signaling that AI-powered personalization and pricing tools are moving consumer-facing metrics—demand, retention, and conversion.",
+    "why_it_matters": "Shows AI ROI translating to earnings guidance at scale; reinforces investor and competitor expectation that AI capex is now table-stakes for consumer platform growth. BFSI platforms face pressure to demonstrate similar AI yield.",
+    "source": {
+      "name": "WSJ Finance/AI · 2026-08-06",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMG9mbWdpcjhsYTZHSGNmNzVjRmpqYlM2em9NR2JlQXRIVGQtakVFeHZkbm0tVDFDYV9uUGdfdWxfSWljS2tLRnl6QWZyQk1hV0Vpa1ZFQWFRTGA0TF9Kc3p6M0dGQWxMQmVON3pid2NpYVotYzJ1RVZoc1N2a2VLX2h3bGZ3MkYzU09pcmJIaTc0eFJSdWpnYndEei01U1B6bjZV"
+    }
+  },
+  {
+    "id": "2026-07-27-physical-ai-brainwave",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-27T00:19:14Z",
+    "headline": "Frontier AI labs exploring brainwave signals to accelerate physical AI training",
+    "plain_english": "Cutting-edge robotics/embodied AI research is now incorporating human brainwave (EEG) data as training signal for physical AI models, moving beyond video annotation to direct neural feedback for task learning.",
+    "why_it_matters": "Illustrates frontier labs' pursuit of richer training data modalities. Long-term BFSI angle: if biometric signals become standard AI training inputs, regulatory/privacy implications for any bank deploying AI agents in customer-facing roles.",
+    "source": {
+      "name": "TechCrunch · 2026-07-27",
+      "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/"
+    }
+  },
+  {
+    "id": "2026-08-05-visa-layoffs",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-05T11:08:32Z",
+    "headline": "Visa eliminates 2,600 jobs in global restructuring amid automation push",
+    "plain_english": "Visa has announced layoffs affecting 2,600 employees (approximately 10% of global workforce) as part of a major restructuring, likely tied to workflow automation and shifting transaction processing models.",
+    "why_it_matters": "Payment networks now openly automating headcount; signals consolidation pressure on payment processors; AI-driven settlement and dispute automation reducing middle-office roles industry-wide.",
+    "stat_label": "global workforce reduction",
+    "stat_value": "2,600 jobs",
+    "source": {
+      "name": "India.Com · 2026-08-05",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSTNmMURWY0VqU0NRTGhFZzN2UXB4dmdWYUUwZTN2YmpxQU9DVHNGU21ublNYMENrU1dFTjJKS2FIVTVBdG9xRDM1M3ZoU1ZGOU9oUnY3eE9SRDgzdWdQZDJ3OHpfMEZfTTRrZVV1R29xbzc1TFphV3VtOFZ1YzYzemVIU25HVUVzYzZvdHpZbVlUeWJGSFE5UVJwcUtrbDZrY2t4MklsbFBxR21uMmJwZC1WeHpWVk9oMWdIa3EzTDV0LXlSQms4Zm93bzh2UQ"
+    }
+  },
+  {
+    "id": "2026-08-07-openai-astra-security-pause",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-07T22:48:24Z",
+    "headline": "OpenAI pauses Astra model development over cybersecurity capabilities concerns",
+    "plain_english": "OpenAI has suspended work on certain features of its upcoming Astra multimodal model due to concerns about the model's potential cybersecurity prowess—a rare public halt on capability development citing safety grounds.",
+    "why_it_matters": "Frontier labs are now throttling capability release for security risk. BFSI risk officers should expect similar delays from other labs; this sets precedent that powerful AI tools may face staged or gated rollout.",
+    "jargon": [
+      {
+        "term": "Astra",
+        "def": "OpenAI's next-generation multimodal AI model designed to process text, images, audio, and video."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-08-07",
+      "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
+    }
+  },
+  {
+    "id": "2026-08-07-ai-biological-threat",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-07T20:37:06Z",
+    "headline": "Scientists warn of unregulated AI-generated biological viruses posing biosecurity risks",
+    "plain_english": "Researchers have sounded an alarm about AI models being used to generate synthetic biological viruses with pandemic potential, highlighting gaps in AI regulation and biosecurity oversight.",
+    "why_it_matters": "Dual-use AI risk (legitimate research vs. misuse) is now regulatory priority. BFSI institutions hosting sensitive data on cloud infrastructure must expect incoming biosecurity compliance rules and vendor screening requirements.",
+    "source": {
+      "name": "NewsGram · 2026-08-07",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQVNwQzROLUVvRGZoOGFaS2R5bE93RTZ6U055WjBiOGpaSFdnWG4xV2Q0dGZSb0pENTg1TnhVVjNGRmxZam8xNEMzN1d2bzh0anBlQUZtc2o3V2pRZDZDMnB0cGpxYzNEeWZFb1J0X05yMThxVmdkZTJNaGRuU3BLc1dzbUxyczhsZ2ZydWdKdlgtSm1OMUHSAZYBQVVfeXFMTUFTcEM0Ti1Fb0RmaDhhWktkeWxPd0U2elNOeVowYjhqWkhXZ1huMVdkNHRmUm9KRDU4NU54VVYzRkZsWWpvMTRDMzdXdm84dGpwZUFGbXNqN1dqUWQ2QzJwdHBqcWMzRHlmRW9SdF9OcjE4cVZnZGUyTWhkblNwS3NXc21McnM4bGdmcnVnSnZYLUptTjFB"
     }
   },
   {
@@ -6388,26 +6581,6 @@
     }
   },
   {
-    "id": "2026-07-11-altman-job-creator-statement",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-11T21:59:00Z",
-    "headline": "What does 'AI net job creator' claim mean?",
-    "plain_english": "Sam Altman reiterated that AI is creating more jobs than it destroys—a core industry thesis. 'Net job creator' means total new roles added across the economy exceed total roles automated away, though distribution of winners and losers is uneven and time-lagged.",
-    "why_it_matters": "BFSI hiring strategies diverge: some banks staff up AI CoEs and risk/compliance roles; others shrink back-office headcount. The truth is sectoral—finance likely sees net job loss in ops, net gain in ML and quant roles.",
-    "jargon": [
-      {
-        "term": "Net job creation",
-        "def": "New jobs added minus jobs lost to automation; captures total labor-market effect, ignoring wage/skill mismatches."
-      }
-    ],
-    "source": {
-      "name": "Breakingthenews.net · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUExISTQ5TTFVeUpydHRlbXZ6YUNfdmtaOUd4Y3VGTnM0ZkxxM2JCVzdidDBxZVhiY2tVZTRoQWdyOG03QWc3ZlV3VmotX2ZVakhvNjBnZTJ6TnVBLXgtckJ5YmpQTW9sLWh2Z1pQSEVKQ1FmemVHQzFjQ0pwcXQtdDJKTnluSlZ5"
-    }
-  },
-  {
     "id": "2026-07-23-blackstone-ai-profit",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8807,20 +8980,6 @@
     }
   },
   {
-    "id": "2026-07-11-fed-july-inflation-decision",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-11T20:00:00Z",
-    "headline": "Fed July interest-rate decision hinges on inflation data and Warsh signals",
-    "plain_english": "Upcoming Federal Reserve decision expected to weigh recent inflation readings and signaling by Fed Vice Chair Christopher Warsh, who has emphasized data-dependency and the risk of sustained price pressures.",
-    "why_it_matters": "Direct impact on bank net interest margins, deposit costs, and credit risk models. AI-heavy capex spending by tech firms may keep energy/commodity inflation elevated, influencing whether Fed cuts, holds, or shifts forward guidance.",
-    "source": {
-      "name": "Bloomberg · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObV9saktwa2dkUVBDSzVjY0lkZ0dkSm45aGREZDQ2bkZWX1A5WjBPTjRLWDZHSVNEakNSNDlaSlZSUEVDMTNlVmtKcklYSUIyOWFQbUFXRGFDTVdEU05MbURtbnNCWDdiYVF0ZTh3LXVuZF9PNzVEZHhrTDVlMFNkM0FZWEFMdDRSdnJIM2ppcHBFOXhVRkdCRHViVUE0em9nT19lN0FOQWFEYjdpcUE"
-    }
-  },
-  {
     "id": "2026-07-14-robinhood-abs-bond",
     "category": "deployment",
     "jurisdiction": "US",
@@ -9040,30 +9199,6 @@
     }
   },
   {
-    "id": "2026-07-11-fifth-third-ai-mobile",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-11T17:07:10Z",
-    "headline": "Fifth Third Bank deploys AI-powered mobile app interface for retail customers",
-    "plain_english": "Fifth Third Bancorp (FITB) launched an AI-driven mobile banking interface enabling customers to interact with banking services through natural language commands and personalized recommendations, expanding customer-facing AI adoption in retail banking.",
-    "why_it_matters": "Signals accelerating push by mid-tier US banks to embed conversational AI in customer touchpoints; competitive pressure on smaller banks to match AI parity or lose deposit-gathering edge.",
-    "jargon": [
-      {
-        "term": "Natural language interface",
-        "def": "Chat-like system that understands plain English commands instead of menu clicks; powered by LLMs."
-      }
-    ],
-    "scale": {
-      "metric": "employees",
-      "value": "18000"
-    },
-    "source": {
-      "name": "Crypto Briefing · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Ub2c3ZGc2SFBwVWFseC03ZnFmcXl1YVVQVHlYQkdNYUtsRmY3WlBCOGJ2T1JoOW1Mb2lBa3JvWGZfSjJ4dGQzOXNPckN6UUQ5TVhzOTBIUWMwVFZUNzRCREtOYXBFbGhNOHo1aw"
-    }
-  },
-  {
     "id": "2026-07-13-ripple-sec-lawsuit",
     "category": "insight",
     "jurisdiction": "US",
@@ -9133,50 +9268,6 @@
     "source": {
       "name": "Free Press Journal · 2026-07-12",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSHlURDVKemRSYmtsQ0kxdDVtajV0NjVDbHFZdzlSRlNLbUFVQkc5d2FsMTF5YnVTdGVXLW9kSlZKUTBJckRhQzlPVUVNTUZhQXJEa0wzVlo5TnNFRnhvTTBDcVlkaHF4dE8zdXJXS0pWZHBUaEg0YW1oRFpYREo4YkJkYU1NVGV2NEhJcUNhckFPLU9ZczZ0WHZLT0NGT2Y3Ym1uctIBqgFBVV95cUxOV3pvajBHenFvV2hXX1M0MlZkdlJTcC10c1JVd0RSOHMwU2FWZFhLUUFTeG51Q3g4d0ZLbWVVdWZ6bDY5NGpnc0xLUEswYkNuTnA4azBjVTlobkVkZWt0ME5QejQtcHZaUkFBWFRSSmo0TWZ2bUxHVDNXUGM3ODJpMG9yZC15SEZveXV3eEdQLWcyNE56TUVJT1dJNFhpTVJyemtPcFZuMGFSZw"
-    }
-  },
-  {
-    "id": "2026-07-11-sam-altman-gpt-obsessed",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-11T17:43:06Z",
-    "headline": "Sam Altman claims Elon Musk obsessed with him amid latest GPT model boast",
-    "plain_english": "OpenAI CEO Sam Altman made public comments about Elon Musk's preoccupation with him while discussing advances in the latest GPT model, continuing a high-profile rivalry between the two AI entrepreneurs.",
-    "why_it_matters": "Reflects ongoing competitive tension in frontier AI labs; personality-driven narratives can distract from technical progress but signal market attention to OpenAI's model roadmap.",
-    "source": {
-      "name": "Forbes · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMjRHYWo1ZnpsS19OMkJUSDRjRG05S2FhYXQtYV9IX3lIdzhHaElPenpSYnJxWUxmQ0h1Z2hWX3BtLW9oWllKOEVOM21yc1ZmZjBNb3FPT3hiOWZGMElwWGY1LXJKOXdJTDI5a1VuTGdtTnZRRXlQcmF5RGppdEI1N1g0ZEdjdmZEeHdhbmZCME8wWGhBSUg1b2ZkQjE1Ry1UekdZLWh2bTc4RlAtZVlwRlBnNmFwNGpJUjF4bllwZ0VFY2xSNXRPRHB0M0p0YkhWSmc"
-    }
-  },
-  {
-    "id": "2026-07-11-ai-apocalypse-narrative",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-11T22:06:32Z",
-    "headline": "Thematic reassessment: AI existential risk rhetoric vs near-term deployment realities",
-    "plain_english": "Opinion piece challenges alarmist AI safety narratives, arguing actual risks are concentrated in near-term deployment failures (bias, data leaks, operational failures) rather than speculative AI takeoff scenarios.",
-    "why_it_matters": "Shifts BFSI risk conversation from distant AGI concerns to immediate operational governance: model cards, eval frameworks, audit trails, bias testing. Compliance and ops teams should reprioritize against real production failure modes.",
-    "source": {
-      "name": "The Washington Post · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTmYydVFGSWFzc1hUVUxJNG5XZlo1Nk9NVGpSRmViTmItY09Vd1dvY2IwLUgtcjBUQkU1aHY4dWJxalp1eHlKQ0IxQ2FOVmRtdWNKdVl6R0pVc1d1RDRteFRlNnQ1X0swWXdXLVk1cUE1bVBGLXhhTkFFbFFlLTVZYWRiYm96SHEyalE"
-    }
-  },
-  {
-    "id": "2026-07-11-inflation-ai-boom-tariffs",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-11T17:19:00Z",
-    "headline": "AI boom cited as persistent inflation driver alongside El Niño, tariffs, fuel crunch",
-    "plain_english": "Economic analysis identifies rapid AI infrastructure buildout and energy demand as a structural inflation factor, joining climate/trade pressures. Energy costs for training & inference are now material to broader price dynamics.",
-    "why_it_matters": "BFSI risk officers must embed AI-driven energy & commodity inflation into stress scenarios; Fed policy response will reflect AI capex intensity, affecting rates, credit spreads, and margin compression for tech-heavy portfolios.",
-    "stat_value": "AI infrastructure energy costs",
-    "stat_label": "now flagged as inflationary headwind by major forecasters",
-    "source": {
-      "name": "Fortune · 2026-07-11",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQXBtWmpueDRJbG1ocU1BbU5zTXJ5ZHlEVDgzUVo0SlEwVUJpNzJzYmtNcWl2a3VUbGFmUzhpVWdqYkJpb0lXMUlveE5EMzhueDNrN052Y2t6TGJ4dnRfcGZYcV9ZeHpVTU1sR3hyU18xY0ZPa3JLUmU0clpjU3FyZzhRRnl1bFNCbzNPSzlEbnhUZS1SbzhvLVl4WWswZ0NJaU5yUUFya0xlZ0lvZkx3RlpCc3llaDlOZmc4"
     }
   }
 ]
