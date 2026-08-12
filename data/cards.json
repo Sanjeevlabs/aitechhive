@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-08-11-banking-cyber-autonomy-risk",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-11T23:08:45.000Z",
+    "headline": "Banks face emerging cyber autonomy risk as AI agents test attack paths independently",
+    "plain_english": "PYMNTS reports that AI systems deployed in bank security operations are evolving from threat detection into autonomous vulnerability testing and attack-path exploration, stretching containment assumptions. Regulators and risk officers now face a new class of threat.",
+    "why_it_matters": "If autonomous agents can probe bank networks without human approval, traditional firewalls and approval workflows become liabilities. Regulators will soon mandate agent-containment policies and audit trails; non-compliance becomes a supervisory violation.",
+    "jargon": [
+      {
+        "term": "Cyber autonomy",
+        "def": "AI systems that independently discover vulnerabilities, simulate attacks, and test exploit paths without human review or explicit authorization at each step."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-11",
+      "url": "https://www.pymnts.com/cybersecurity/2026/bankings-next-ai-risk-is-cyber-autonomy/"
+    }
+  },
+  {
     "id": "2026-08-11-banks-ai-vendor-concentration-risk",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -141,17 +161,31 @@
     }
   },
   {
-    "id": "2026-08-08-regulation-fca-advisory-committee",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-08-08T09:10:20.000Z",
-    "headline": "FCA appoints new members to Secondary Markets Advisory Committee",
-    "plain_english": "UK regulator FCA has refreshed the composition of its Secondary Markets Advisory Committee, a governance body that advises on capital markets policy. Part of routine regulatory housekeeping.",
-    "why_it_matters": "Signals FCA's focus on market structure and capital markets resilience. If new members have AI/fintech expertise, advisory priorities may shift toward algorithmic trading oversight or market data governance.",
+    "id": "2026-08-12-amex-fazeshift-agentic-ar",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-11T20:56:29.000Z",
+    "headline": "Amex Ventures backs Fazeshift agentic AI for end-to-end accounts receivable automation",
+    "plain_english": "American Express's venture arm invested in Fazeshift, an AI platform that deploys autonomous agents to execute full AR workflows—from invoice generation to collection—without human intervention. Marks early bank-led push into autonomous finance operations.",
+    "why_it_matters": "If AR fully automates via agents, back-office headcount drops sharply and working-capital cycles compress. Other BFSI players will rush to replicate; signals Amex sees autonomous agents as core, not experimental.",
+    "jargon": [
+      {
+        "term": "Autonomous agent",
+        "def": "AI system that perceives its environment, makes decisions, and takes actions independently to achieve a goal without step-by-step human guidance."
+      },
+      {
+        "term": "Accounts receivable (AR)",
+        "def": "Money owed to a company by customers for goods/services sold on credit; invoicing, payment tracking, and collection are manual-heavy today."
+      }
+    ],
+    "scale": {
+      "metric": "customers",
+      "value": "Undisclosed"
+    },
     "source": {
-      "name": "FCA · 2026-08-08",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRkl3YXRMcVNNUnczbjc0bHE0TjZQcW9FOHE4UDgtUkF4QV9OZGJQQzRFdG9jUk5YcXNqcGM5NE8zVl8xcVREUU9TbDFXSG9WZFlIcTg0MFJnSS1HUk02UjhBb1VxTFlobWtSZVV6aVJNS2plVE5MYmowMHo0WDdnLWYwTmlYTDZ0TnRDbk41NVA5Tm1FUGMyVmpxWjk4MjZDZHhBdk1iZw"
+      "name": "Finextra · 2026-08-11",
+      "url": "https://www.finextra.com/newsarticle/48230/amex-ventures-invests-in-autonomous-finance-startup-fazeshift?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -301,17 +335,35 @@
     }
   },
   {
-    "id": "2026-08-07-realreal-ai-gmv",
-    "category": "deployment",
+    "id": "2026-08-12-happyrobot-series-c-valuation",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-08-06T23:51:35.000Z",
-    "headline": "The RealReal reports 22% GMV growth driven by AI authentication and pricing system",
-    "plain_english": "The RealReal rebuilt core operations around AI: its Athena intake system automates authentication and cataloging, while a new pricing algorithm evaluates inventory. GMV grew 22% alongside the transformation.",
-    "why_it_matters": "Demonstrates measurable revenue lift from AI-driven operational automation in e-commerce; validates business case for AI-first process redesign in BFSI back-office and underwriting workflows.",
+    "published_at": "2026-08-11T23:26:57.000Z",
+    "headline": "HappyRobot raises $150M Series C, reaches $1.2B valuation on agent platform momentum",
+    "plain_english": "AI agent platform HappyRobot closed a $150M Series C round, valuing it at $1.2B post-money. Total funding now $200M. Round oversubscribed, reflecting enterprise demand for autonomous workflow automation across finance and ops.",
+    "why_it_matters": "Late-stage agent-platform valuations now rival mid-market banks' market caps. First-mover advantage in AR, hiring, and procurement automation will compound; laggards face margin pressure.",
+    "amount": "$150M",
+    "round": "Series C",
     "source": {
-      "name": "PYMNTS · 2026-08-06",
-      "url": "https://www.pymnts.com/commerce/ecommerce/2026/the-realreals-ai-overhaul-helps-drive-22-gmv-growth/"
+      "name": "PYMNTS · 2026-08-11",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/happyrobot-vaults-to-1-2-billion-valuation-as-enterprise-demand-for-ai-automation-soars/"
+    }
+  },
+  {
+    "id": "2026-08-11-accel-india-fund-550m-close",
+    "category": "vendor",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-08-11T21:39:11.000Z",
+    "headline": "Accel closes oversubscribed $550M India fund in weeks; fintech and AI remain core themes",
+    "plain_english": "Venture capital firm Accel has closed a $550M India-focused fund in an unusually short timeframe, signaling strong LP appetite for Indian tech and fintech plays. Fund is oversubscribed; Accel still has 55% of prior $650M fund dry powder available.",
+    "why_it_matters": "India's fintech/AI venture market is now hot enough to raise mega-funds at speed. BFSI-adjacent startups (lending, payments, underwriting AI) will attract fresh capital; expect acceleration in competitive dynamics and regional consolidation.",
+    "amount": "$550M",
+    "round": "Fund close",
+    "source": {
+      "name": "TechCrunch · 2026-08-11",
+      "url": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/"
     }
   },
   {
@@ -433,33 +485,35 @@
     }
   },
   {
-    "id": "2026-08-07-moonpay-stablecoin",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-07T00:01:00.000Z",
-    "headline": "MoonPay launches unified stablecoin infrastructure suite for enterprise customers",
-    "plain_english": "Crypto infrastructure firm MoonPay has released a stablecoin platform for business use, consolidating issuance, settlement, and custody in one product.",
-    "why_it_matters": "Signals consolidation of stablecoin tooling; financial institutions evaluating digital asset infrastructure should track MoonPay's enterprise adoption to benchmark competitive vendor positioning.",
+    "id": "2026-08-12-coreweave-earnings-revenue-double",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-11T22:51:06.000Z",
+    "headline": "CoreWeave revenue doubles year-on-year as AI infrastructure demand accelerates; stock pops 14%",
+    "plain_english": "GPU-cloud provider CoreWeave reported revenue doubled in Q2 2026 on surging AI workload demand. Stock surged 14% on earnings beat. However, company carries $35B debt, signaling aggressive expansion to capture the AI compute boom.",
+    "why_it_matters": "Profitable AI-infrastructure players now face a scale race: those who can debt-finance GPU capacity fastest will lock in BFSI customers (model training, inference) before competitors. Debt-fueled capacity wars are coming.",
+    "scale": {
+      "metric": "revenue growth",
+      "value": "2x YoY"
+    },
     "source": {
-      "name": "Finextra · 2026-08-07",
-      "url": "https://www.finextra.com/newsarticle/48208/moonpay-launches-stablecoin-platform-for-businesses?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "CNBC · 2026-08-11",
+      "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html"
     }
   },
   {
-    "id": "2026-08-06-omilia-series-b-growth",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-06T12:00:00Z",
-    "headline": "Omilia raises $67M Series B, ARR up 10x since 2020 to $60M",
-    "plain_english": "Customer support AI platform Omilia closed Series B funding at $67M on the back of 10x ARR growth (now $60M annually), signaling strong enterprise AI adoption in contact-center workflows.",
-    "why_it_matters": "Validates market demand for conversational-AI in customer service; BFSI firms scaling contact-center automation will face vendor consolidation and margin compression as Omilia and peers scale.",
-    "amount": "$67M",
-    "round": "Series B",
+    "id": "2026-08-12-nasdaq-level-markets-acquisition",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-12T00:01:00.000Z",
+    "headline": "Nasdaq acquires alternative trading system LeveL Markets; terms undisclosed",
+    "plain_english": "Exchange operator Nasdaq has agreed to acquire LeveL Markets, a dark pool (Alternative Trading System). No financial terms disclosed. Consolidates Nasdaq's non-display trading footprint as market structure evolves.",
+    "why_it_matters": "Nasdaq doubling down on ATS/dark-pool market share as retail and institutional trading volumes fragment across venues. AI order routing and execution optimization will become competitive moats; acquirer gains customer base for next-gen trading algo deployment.",
     "source": {
-      "name": "TechCrunch · 2026-08-06",
-      "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/"
+      "name": "Finextra · 2026-08-12",
+      "url": "https://www.finextra.com/newsarticle/48231/nasdaq-to-buy-ats-level-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -572,34 +626,6 @@
     "source": {
       "name": "Adelaide Now · 2026-08-08",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPVVliWGVOdHhVVC1nM2RYdHFFbFpvMzI2OFVxSkxGckcyc3IyWmZVakdDR0RhbU5IVG9Va2JmS1FhMWFFWTlib29Cb2RGSWNfRFZSWUtDaFEzTHJ5aUVTYmYxSWhhX2NsWU9MRHNtZGVRYUVRbEtVVThaU0lwZ1hiX3NOU1JGbnpaOFZBV2pDU3h2ZXFVWWdhZ1hseGxwWk1TbjQzdnNlLU14Y0ozbTYzVHpnaEJUZ3E0Nng2eXdaZFlnN0Q2dUh5ZGVBQWFtNHZ2QmNzQ1o2eW5sblBlemg4MXVSYWRHYmQyeVczb3NyS3RXVzV1eExB"
-    }
-  },
-  {
-    "id": "2026-08-08-shift-vanguard-ai-employment-thesis",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-08T09:06:13.000Z",
-    "headline": "Vanguard Chief Economist: AI job impact still in experimental phase",
-    "plain_english": "Vanguard's chief economist characterizes AI's effect on employment and labor markets as still in an \"ATM phase\"—early stage, localized, limited systemic impact. Signals major asset managers are moderating AI-as-productivity-shock narratives in 2026.",
-    "why_it_matters": "If major institutional investors downgrade AI-driven labor disruption fears, BFSI hiring, wage pressure, and operational efficiency projections will reset. Banks may slow AI capex if the talent-arbitrage thesis weakens; compliance and risk orgs should recalibrate staffing plans.",
-    "source": {
-      "name": "Fortune · 2026-08-08",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUHVVZjhLdEt0QlZuQ1RIMlEzU1E4emRENVJ3eFdsSWdWU1FUZ2E1UWlvNC1MN0RIdnhhY281cHNVWjZJZU50VnBuNEc1TzRYYVFpMXNDc05jRjZoZFV1RnlEcFcwM0R6YThjOEoyOTQ4SDBWZHVwR3JnREJ4TTlhWTZCZWY"
-    }
-  },
-  {
-    "id": "2026-08-07-switch-data-center-ipo",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-07T22:03:46Z",
-    "headline": "Data center operator Switch files confidentially for IPO amid AI compute surge",
-    "plain_english": "Switch, a major US data center operator, has filed confidentially for IPO. The move reflects soaring AI infrastructure demand and investor appetite for compute-heavy businesses.",
-    "why_it_matters": "IPO confidence in data-center operators signals sustained AI capex cycle. BFSI should expect rising cloud and colocation costs as hyperscalers compete for AI-grade power and cooling capacity.",
-    "source": {
-      "name": "Bloomberg · 2026-08-07",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVF8wWjF2QXZ0bkVuVDFzN3pJOGwxWkczcXJxVFdvSGRDeTZxMUlBWWlrSWs2R0V5T3JqMF9OVnFOUS1oX0p1aFJ1bS1BcFVmV2hVakl4OFZSajA3eUsyU3FpQngyXzNQT1FYOXlhWDJEVHF3NzRrQUxTcUdSYUNYOHQwejRQQ0NPQlFRend3Wm81TzZQbHpoc2IxUUZoLW14X0FHa3FIZUlIN1JNdjBDY3lwYw"
     }
   },
   {
@@ -967,6 +993,22 @@
     }
   },
   {
+    "id": "2026-08-11-nvidia-credit-markets-confidence",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-11T20:38:08.000Z",
+    "headline": "Nvidia's financial strength calms credit-market jitters; AI infrastructure spending remains resilient",
+    "plain_english": "Nvidia's demonstrated financial force—strong cash position, no distress—has eased credit-market volatility. Signals to BFSI and infrastructure investors that AI capex cycle is genuine and well-funded, not speculative. Credit spreads stabilize on confidence in sustained GPU demand.",
+    "why_it_matters": "When mega-cap tech balance sheets are healthy, banks feel safer lending to AI infrastructure plays. Credit costs drop, fintech and enterprise AI deals get cheaper financing. Trickle-down effect: regional and smaller BFSI players can borrow at better rates for their own AI builds.",
+    "stat_value": "Risk-off sentiment easing",
+    "stat_label": "Credit spreads narrow",
+    "source": {
+      "name": "Bloomberg · 2026-08-11",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcDJkSllRazZwMW40WDRwUFVWbDg2NWNGbG9WYkVEVzJNSWpKS1lVNFhxcUlwYjRMYmxxQTFRbVYzQmdWR3MyTmpRekZXS0JDezdPOUpGNHl3N2NBRnlRM0REVGNGS2VjR0xJWlg4cDJlaXR6R292OU5QSzhYWjBzdEJ4OTZZb3NSMHFaNTZYcVVfNTY5S0J0YmpWWGdtYWpKcmtMbVNRd3lBVi1Gcy1CdjlDRHg"
+    }
+  },
+  {
     "id": "2026-08-10-agentic-ai-zero-trust-cybersecurity",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1125,19 +1167,17 @@
     }
   },
   {
-    "id": "2026-08-06-doordash-agentic-traffic-low",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-05T23:40:04Z",
-    "headline": "DoorDash reports agentic AI order volume remains negligible despite broader AI gains in Q2",
-    "plain_english": "DoorDash CEO Tony Xu noted in earnings that orders placed by AI agents (e.g., ChatGPT plugins) remain minimal, even as broader AI optimisations drove Q2 growth. Suggests autonomous agent adoption in commerce slower than hype cycle predicts.",
-    "why_it_matters": "Reality check: agentic commerce is still marginal in adoption. For BFSI, implies enterprise autonomous workflows (e.g., agent-driven trading, claim processing) may face similar lag between pilot and production scale.",
-    "stat_value": "Low",
-    "stat_label": "agentic order volume as % of total DoorDash orders",
+    "id": "2026-08-11-nvidia-jensen-huang-500b-financing-china-risk",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-11T21:01:13.000Z",
+    "headline": "Nvidia CEO proposes $500B AI financing using GPUs as collateral; China policy risk looms",
+    "plain_english": "Jensen Huang is pitching a massive financing scheme where Nvidia GPUs serve as long-term collateral to unlock $500B in funding for AI infrastructure builds. Risk: how quickly will chip values depreciate as technology advances, and will export controls (esp. China) undermine collateral valuations?",
+    "why_it_matters": "If GPU-backed financing becomes standard, BFSI players betting on long-term AI infrastructure ROI face collateral volatility exposure. Geopolitical supply-chain fragmentation could crater valuations mid-deployment; banks must model tech-risk haircuts into capex planning.",
     "source": {
-      "name": "PYMNTS · 2026-08-05",
-      "url": "https://www.pymnts.com/news/delivery/2026/doordash-says-agentic-traffic-is-low-but-ai-gains-are-not/"
+      "name": "CNBC · 2026-08-11",
+      "url": "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html"
     }
   },
   {
@@ -1298,23 +1338,17 @@
     }
   },
   {
-    "id": "2026-08-08-frontier-ai-viral-genome-design",
-    "category": "frontier",
+    "id": "2026-08-11-learner-autonomous-agents-101",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-08T09:49:01.000Z",
-    "headline": "Scientists use AI to design and synthesize viral genomes for first time",
-    "plain_english": "Researchers have used AI to design completely novel viral genomes that do not exist in nature, then synthesized them in the lab. While harmless to humans, the breakthrough raises biosecurity concerns about dual-use AI capabilities in virology.",
-    "why_it_matters": "BFSI firms investing in AI safety, regulatory frameworks, and biosecurity risk need to track dual-use AI capability emergence. This signals rapid convergence of frontier AI with biotech—a regulatory flashpoint for compliance and enterprise AI governance.",
-    "jargon": [
-      {
-        "term": "Dual-use AI",
-        "def": "Technology with both beneficial civilian applications and potential weapons or harmful misuse; requires export/access controls and governance."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-08-11T23:26:57.000Z",
+    "headline": "What is an autonomous AI agent? A primer for BFSI engineers new to agentic workflows",
+    "plain_english": "An autonomous agent is an AI system that perceives its environment (data inputs), makes decisions (what to do next), and takes actions (execute tasks) without asking a human for approval at each step. Unlike chatbots that answer questions, agents *do* things: they might send emails, move money, file paperwork, or find vulnerabilities. In BFSI, agents are being deployed in AR workflows (invoice → chase → payment), fraud detection (spot anomaly → freeze account → alert analyst), and hiring (parse resume → score → rank). The key difference from a simple script: agents learn from outcomes and adapt strategy mid-task.",
+    "why_it_matters": "Agencies are the next frontier of BFSI automation. Understanding how they differ from rule-based automation and RAG-powered chatbots is crucial for evaluating vendor pitches and assessing your own org's readiness to deploy them safely.",
     "source": {
-      "name": "Medical Buyer · 2026-08-08",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0ZBOFBkcTRhX0FRZ3BOUnlNbmJuWHZIR25kQjlmY3lHODlXNGV3OGd1NjBLcERqZU5nekN5TUtvUUZTLVhvTWFEZHZkSlRYZUFBanZkQUdFRTI2ekYxT01jZGR1bkZvMDM5TFUyTkFCVjdOQ0ZQVTl3RHlBc2lFZzF6RWZLckpuMG5LMTNYSTZCME8wTUE"
+      "name": "Finextra, PYMNTS synthesis · 2026-08-11",
+      "url": "https://www.finextra.com/newsarticle/48230/amex-ventures-invests-in-autonomous-finance-startup-fazeshift"
     }
   },
   {
@@ -1518,26 +1552,6 @@
     }
   },
   {
-    "id": "2026-07-26-ai-generated-snake-video",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-26T09:46:12Z",
-    "headline": "Viral video of snake on plane wing fact-checked as AI-generated deepfake",
-    "plain_english": "A widely circulated video showing a snake crawling on an aircraft wing was verified to be entirely AI-generated. The discovery highlights how convincing modern generative video models (like OpenAI's Sora, Meta's Gen-2) can fool audiences at scale.",
-    "why_it_matters": "For BFSI compliance and fraud detection teams: deepfake videos and synthetic media are now weaponizable for social engineering, account takeovers, and regulatory manipulation. Banks must upgrade detection, verification, and proof-of-authenticity protocols.",
-    "jargon": [
-      {
-        "term": "Deepfake / Synthetic media",
-        "def": "Audio, video, or image entirely generated by AI models, not captured from real events. Often indistinguishable from authentic at first glance."
-      }
-    ],
-    "source": {
-      "name": "LatestLY · 2026-07-26",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMXhBcG5FeE41Z2xOd2t1NzAwRzN6RWJaS0s3NjljN3dieDlMbE9ZdXA0UVVQbktVazhMcWpCWTVaR1E3RlVadU5XYUJTaUNJQmdoVE42d3BnV0huMGRVSWJ1cXdxM1djaDhJRGRwY2RaLU9FX2NOWm5FR3FhcnM2ZTd2ajlUNjBLS1hPR19Ld1U1S2xzeWJJcG44dXJicWtYUTRsZ1haYS16SHFaczBfZHFfbjJLSGo5UFl2clFnbi1vTng1UTVTVi1JaGpqd0oySndETjJRRkVlZUNON0d2LTctOGl0NlgzZzhRQTcxc9IB9AFBVV95cUxOdFBMRk02bWJSNURNanVSTllURXZBYjRFSW9XSERNQjJ3OXpIZVN6VUZCcllxdWpPN3FhdFZSTGo3eUlnRHBBaVNTQXpvUXY4VnFVTmNVbnU3OU5fbnVCdGJfcW4wbmV0TzhEVFpsTlNCcjg2Z2VvUGE2S1VZeHFsY0JwSUxlZUhLOGczaG94RUNsSXA0SURzZUF5Z3N2ZFVQR05Tdzl0Umg0ZTNSOF9xYWJ3V3lyZ0YwMU1FQkJuc3dRU2lmUk9aWTdPbEcwN2JvSW9VXzctOHFVVmlvbUtiOEh4SGZHQVg2N1EycDF1blQ2cVps"
-    }
-  },
-  {
     "id": "2026-08-11-nvidia-jensen-huang-ai-capex-concept",
     "category": "trending",
     "jurisdiction": "US",
@@ -1679,6 +1693,148 @@
     "source": {
       "name": "CNBC · 2026-07-30",
       "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html"
+    }
+  },
+  {
+    "id": "2026-08-08-regulation-fca-advisory-committee",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-08-08T09:10:20.000Z",
+    "headline": "FCA appoints new members to Secondary Markets Advisory Committee",
+    "plain_english": "UK regulator FCA has refreshed the composition of its Secondary Markets Advisory Committee, a governance body that advises on capital markets policy. Part of routine regulatory housekeeping.",
+    "why_it_matters": "Signals FCA's focus on market structure and capital markets resilience. If new members have AI/fintech expertise, advisory priorities may shift toward algorithmic trading oversight or market data governance.",
+    "source": {
+      "name": "FCA · 2026-08-08",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRkl3YXRMcVNNUnczbjc0bHE0TjZQcW9FOHE4UDgtUkF4QV9OZGJQQzRFdG9jUk5YcXNqcGM5NE8zVl8xcVREUU9TbDFXSG9WZFlIcTg0MFJnSS1HUk02UjhBb1VxTFlobWtSZVV6aVJNS2plVE5MYmowMHo0WDdnLWYwTmlYTDZ0TnRDbk41NVA5Tm1FUGMyVmpxWjk4MjZDZHhBdk1iZw"
+    }
+  },
+  {
+    "id": "2026-08-07-realreal-ai-gmv",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-06T23:51:35.000Z",
+    "headline": "The RealReal reports 22% GMV growth driven by AI authentication and pricing system",
+    "plain_english": "The RealReal rebuilt core operations around AI: its Athena intake system automates authentication and cataloging, while a new pricing algorithm evaluates inventory. GMV grew 22% alongside the transformation.",
+    "why_it_matters": "Demonstrates measurable revenue lift from AI-driven operational automation in e-commerce; validates business case for AI-first process redesign in BFSI back-office and underwriting workflows.",
+    "source": {
+      "name": "PYMNTS · 2026-08-06",
+      "url": "https://www.pymnts.com/commerce/ecommerce/2026/the-realreals-ai-overhaul-helps-drive-22-gmv-growth/"
+    }
+  },
+  {
+    "id": "2026-08-07-moonpay-stablecoin",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-07T00:01:00.000Z",
+    "headline": "MoonPay launches unified stablecoin infrastructure suite for enterprise customers",
+    "plain_english": "Crypto infrastructure firm MoonPay has released a stablecoin platform for business use, consolidating issuance, settlement, and custody in one product.",
+    "why_it_matters": "Signals consolidation of stablecoin tooling; financial institutions evaluating digital asset infrastructure should track MoonPay's enterprise adoption to benchmark competitive vendor positioning.",
+    "source": {
+      "name": "Finextra · 2026-08-07",
+      "url": "https://www.finextra.com/newsarticle/48208/moonpay-launches-stablecoin-platform-for-businesses?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-08-06-omilia-series-b-growth",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-06T12:00:00Z",
+    "headline": "Omilia raises $67M Series B, ARR up 10x since 2020 to $60M",
+    "plain_english": "Customer support AI platform Omilia closed Series B funding at $67M on the back of 10x ARR growth (now $60M annually), signaling strong enterprise AI adoption in contact-center workflows.",
+    "why_it_matters": "Validates market demand for conversational-AI in customer service; BFSI firms scaling contact-center automation will face vendor consolidation and margin compression as Omilia and peers scale.",
+    "amount": "$67M",
+    "round": "Series B",
+    "source": {
+      "name": "TechCrunch · 2026-08-06",
+      "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/"
+    }
+  },
+  {
+    "id": "2026-08-08-shift-vanguard-ai-employment-thesis",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-08T09:06:13.000Z",
+    "headline": "Vanguard Chief Economist: AI job impact still in experimental phase",
+    "plain_english": "Vanguard's chief economist characterizes AI's effect on employment and labor markets as still in an \"ATM phase\"—early stage, localized, limited systemic impact. Signals major asset managers are moderating AI-as-productivity-shock narratives in 2026.",
+    "why_it_matters": "If major institutional investors downgrade AI-driven labor disruption fears, BFSI hiring, wage pressure, and operational efficiency projections will reset. Banks may slow AI capex if the talent-arbitrage thesis weakens; compliance and risk orgs should recalibrate staffing plans.",
+    "source": {
+      "name": "Fortune · 2026-08-08",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUHVVZjhLdEt0QlZuQ1RIMlEzU1E4emRENVJ3eFdsSWdWU1FUZ2E1UWlvNC1MN0RIdnhhY281cHNVWjZJZU50VnBuNEc1TzRYYVFpMXNDc05jRjZoZFV1RnlEcFcwM0R6YThjOEoyOTQ4SDBWZHVwR3JnREJ4TTlhWTZCZWY"
+    }
+  },
+  {
+    "id": "2026-08-07-switch-data-center-ipo",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-07T22:03:46Z",
+    "headline": "Data center operator Switch files confidentially for IPO amid AI compute surge",
+    "plain_english": "Switch, a major US data center operator, has filed confidentially for IPO. The move reflects soaring AI infrastructure demand and investor appetite for compute-heavy businesses.",
+    "why_it_matters": "IPO confidence in data-center operators signals sustained AI capex cycle. BFSI should expect rising cloud and colocation costs as hyperscalers compete for AI-grade power and cooling capacity.",
+    "source": {
+      "name": "Bloomberg · 2026-08-07",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVF8wWjF2QXZ0bkVuVDFzN3pJOGwxWkczcXJxVFdvSGRDeTZxMUlBWWlrSWs2R0V5T3JqMF9OVnFOUS1oX0p1aFJ1bS1BcFVmV2hVakl4OFZSajA3eUsyU3FpQngyXzNQT1FYOXlhWDJEVHF3NzRrQUxTcUdSYUNYOHQwejRQQ0NPQlFRend3Wm81TzZQbHpoc2IxUUZoLW14X0FHa3FIZUlIN1JNdjBDY3lwYw"
+    }
+  },
+  {
+    "id": "2026-08-06-doordash-agentic-traffic-low",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-05T23:40:04Z",
+    "headline": "DoorDash reports agentic AI order volume remains negligible despite broader AI gains in Q2",
+    "plain_english": "DoorDash CEO Tony Xu noted in earnings that orders placed by AI agents (e.g., ChatGPT plugins) remain minimal, even as broader AI optimisations drove Q2 growth. Suggests autonomous agent adoption in commerce slower than hype cycle predicts.",
+    "why_it_matters": "Reality check: agentic commerce is still marginal in adoption. For BFSI, implies enterprise autonomous workflows (e.g., agent-driven trading, claim processing) may face similar lag between pilot and production scale.",
+    "stat_value": "Low",
+    "stat_label": "agentic order volume as % of total DoorDash orders",
+    "source": {
+      "name": "PYMNTS · 2026-08-05",
+      "url": "https://www.pymnts.com/news/delivery/2026/doordash-says-agentic-traffic-is-low-but-ai-gains-are-not/"
+    }
+  },
+  {
+    "id": "2026-08-08-frontier-ai-viral-genome-design",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-08T09:49:01.000Z",
+    "headline": "Scientists use AI to design and synthesize viral genomes for first time",
+    "plain_english": "Researchers have used AI to design completely novel viral genomes that do not exist in nature, then synthesized them in the lab. While harmless to humans, the breakthrough raises biosecurity concerns about dual-use AI capabilities in virology.",
+    "why_it_matters": "BFSI firms investing in AI safety, regulatory frameworks, and biosecurity risk need to track dual-use AI capability emergence. This signals rapid convergence of frontier AI with biotech—a regulatory flashpoint for compliance and enterprise AI governance.",
+    "jargon": [
+      {
+        "term": "Dual-use AI",
+        "def": "Technology with both beneficial civilian applications and potential weapons or harmful misuse; requires export/access controls and governance."
+      }
+    ],
+    "source": {
+      "name": "Medical Buyer · 2026-08-08",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0ZBOFBkcTRhX0FRZ3BOUnlNbmJuWHZIR25kQjlmY3lHODlXNGV3OGd1NjBLcERqZU5nekN5TUtvUUZTLVhvTWFEZHZkSlRYZUFBanZkQUdFRTI2ekYxT01jZGR1bkZvMDM5TFUyTkFCVjdOQ0ZQVTl3RHlBc2lFZzF6RWZLckpuMG5LMTNYSTZCME8wTUE"
+    }
+  },
+  {
+    "id": "2026-07-26-ai-generated-snake-video",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-26T09:46:12Z",
+    "headline": "Viral video of snake on plane wing fact-checked as AI-generated deepfake",
+    "plain_english": "A widely circulated video showing a snake crawling on an aircraft wing was verified to be entirely AI-generated. The discovery highlights how convincing modern generative video models (like OpenAI's Sora, Meta's Gen-2) can fool audiences at scale.",
+    "why_it_matters": "For BFSI compliance and fraud detection teams: deepfake videos and synthetic media are now weaponizable for social engineering, account takeovers, and regulatory manipulation. Banks must upgrade detection, verification, and proof-of-authenticity protocols.",
+    "jargon": [
+      {
+        "term": "Deepfake / Synthetic media",
+        "def": "Audio, video, or image entirely generated by AI models, not captured from real events. Often indistinguishable from authentic at first glance."
+      }
+    ],
+    "source": {
+      "name": "LatestLY · 2026-07-26",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMXhBcG5FeE41Z2xOd2t1NzAwRzN6RWJaS0s3NjljN3dieDlMbE9ZdXA0UVVQbktVazhMcWpCWTVaR1E3RlVadU5XYUJTaUNJQmdoVE42d3BnV0huMGRVSWJ1cXdxM1djaDhJRGRwY2RaLU9FX2NOWm5FR3FhcnM2ZTd2ajlUNjBLS1hPR19Ld1U1S2xzeWJJcG44dXJicWtYUTRsZ1haYS16SHFaczBfZHFfbjJLSGo5UFl2clFnbi1vTng1UTVTVi1JaGpqd0oySndETjJRRkVlZUNON0d2LTctOGl0NlgzZzhRQTcxc9IB9AFBVV95cUxOdFBMRk02bWJSNURNanVSTllURXZBYjRFSW9XSERNQjJ3OXpIZVN6VUZCcllxdWpPN3FhdFZSTGo3eUlnRHBBaVNTQXpvUXY4VnFVTmNVbnU3OU5fbnVCdGJfcW4wbmV0TzhEVFpsTlNCcjg2Z2VvUGE2S1VZeHFsY0JwSUxlZUhLOGczaG94RUNsSXA0SURzZUF5Z3N2ZFVQR05Tdzl0Umg0ZTNSOF9xYWJ3V3lyZ0YwMU1FQkJuc3dRU2lmUk9aWTdPbEcwN2JvSW9VXzctOHFVVmlvbUtiOEh4SGZHQVg2N1EycDF1blQ2cVps"
     }
   },
   {
@@ -8896,26 +9052,6 @@
     }
   },
   {
-    "id": "2026-07-13-eu-social-media-enforcement",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-12T22:58:19.000Z",
-    "headline": "European Commission seeks expanded enforcement powers over social media safety",
-    "plain_english": "The EU's executive branch is pursuing broader authority to police consumer protection failures by Big Tech platforms. The move strengthens the Commission's ability to act unilaterally on social media harms without member-state veto.",
-    "why_it_matters": "Expanded EC enforcement powers will accelerate compliance costs for US tech firms operating in EU; expect faster takedown orders, content moderation audits, and AI algorithm assessments without delay mechanisms.",
-    "jargon": [
-      {
-        "term": "Member-state veto",
-        "def": "Power of individual EU nations to block or delay Commission decisions; removal streamlines enforcement."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/legal/2026/eu-wants-more-power-to-pursue-social-media-safety/"
-    }
-  },
-  {
     "id": "2026-07-14-jpm-payments-keystroke-automation",
     "category": "deployment",
     "jurisdiction": "US",
@@ -9145,34 +9281,6 @@
     }
   },
   {
-    "id": "2026-07-13-goldman-retirement-assets",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-12T21:37:00.000Z",
-    "headline": "Goldman Sachs expands into US retirement asset management, quietly capturing share",
-    "plain_english": "Goldman Sachs has moved into managing portions of America's retirement savings pool, marking a strategic pivot into retail asset management historically dominated by passive index funds and specialized firms.",
-    "why_it_matters": "Goldman's entry into retail retirement signals bulge-bracket convergence toward direct consumer assets; drives competition on fees and tech; creates M&A pressure on mid-sized wealth managers.",
-    "source": {
-      "name": "TheStreet · 2026-07-12",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVkZmbVVIWG8xN2U2a1gtcngzMGk4akxoNmFVa0V5TlhUZlB4R0pUajRlQUt6OHo4d3ptYTdLaW5BNExCcU4wcnF3QW9rX1c0LUttc2VWSTFNMzVtQzJWaWJzMWZfQU9vdXp1Qk5zS2t2YUJMREd2bm5sOVlOSDhvUGZncjZfend6VVBGUHYxODJwejJ2SXhZb1c1TWs5TVVLRHhTdVVvSHBHZw"
-    }
-  },
-  {
-    "id": "2026-07-13-visa-ai-adoption-europe",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-13T00:01:00.000Z",
-    "headline": "Early AI adopters to dominate European banking by 2030, Visa study shows",
-    "plain_english": "Visa's survey of European banks finds that institutions deploying AI now will significantly outperform laggards by 2030. AI will fundamentally reshape retail banking within four years, widening competitive gaps between leaders and followers.",
-    "why_it_matters": "Banks investing now lock in first-mover advantage; laggards face margin compression and market-share loss as AI becomes table-stakes for customer acquisition and operational efficiency.",
-    "source": {
-      "name": "Finextra · 2026-07-13",
-      "url": "https://www.finextra.com/newsarticle/48076/early-ai-adopters-set-to-dominate-european-banking-market---visa-study?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-13-intel-ireland-capex",
     "category": "frontier",
     "jurisdiction": "EU",
@@ -9221,20 +9329,6 @@
     }
   },
   {
-    "id": "2026-07-13-ransomware-insider-prosecution",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-12T23:49:42.000Z",
-    "headline": "Cybersecurity insider sentenced to 70 months for abetting ransomware extortion",
-    "plain_english": "Angelo Martino, a ransomware negotiator at Digital Mint, was sentenced to 6 years in federal prison for helping criminals extort his own clients. The case illustrates insider-threat risk in firms managing crisis response for breach victims.",
-    "why_it_matters": "Sentencing sets precedent for insider-collaboration prosecution; BFSI firms must audit ransomware negotiation teams, third-party IR contractors, and breach-response vendors for conflicts of interest and dual allegiances.",
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/cybersecurity/2026/ransomware-negotiator-gets-6-years-in-prison-for-assisting-scammers/"
-    }
-  },
-  {
     "id": "2026-07-13-tsmc-ai-revenue",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -9246,48 +9340,6 @@
     "source": {
       "name": "The Mac Observer · 2026-07-13",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUmJZc240TjZYSmJtLXVlN0RQY3YzcTE3cjBFbWRvdHBfeTF0cS00MGRVQ1pudEhqX0llbFFXQTlIZS16a0lzLW5CUUNsc0xyVWdweDE2Nm40akFFMmJsZUFUMVl2a2NyUmFyWDhDTkQ3eEtfb2c0YW5BeGJtQmNsWmdpY0U2dXdNOUlrQjFKR2VxX0VWOEFlMVNrUk04Q1pl"
-    }
-  },
-  {
-    "id": "2026-07-13-openai-safety-departure",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-12T21:57:44.000Z",
-    "headline": "OpenAI safety head Johannes Heidecke departs amid leadership reorganization",
-    "plain_english": "Johannes Heidecke, OpenAI's head of safety systems, left the company as part of a broader leadership shakeup aimed at merging safety operations into product teams. His exit follows broader organizational changes at the AI lab.",
-    "why_it_matters": "Departures of senior safety leadership signal shifting priorities at frontier labs—from dedicated safety functions to embedded governance—raising questions about accountability structures as AI systems scale.",
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-safety-boss-resigns-in-latest-executive-departure/"
-    }
-  },
-  {
-    "id": "2026-07-13-ripple-sec-lawsuit",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-12T22:24:17.000Z",
-    "headline": "Ripple CEO: company considered shuttering before SEC legal fight",
-    "plain_english": "Brad Garlinghouse revealed that Ripple's leadership weighed winding down operations and distributing XRP holdings during the SEC's multiyear lawsuit. The admission underscores existential regulatory risk in crypto infrastructure.",
-    "why_it_matters": "Demonstrates how SEC enforcement can chill innovation even if ultimately unsuccessful; signals to BFSI and fintech: blockchain infrastructure faces binary regulatory outcomes (approval or extinction).",
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/blockchain/2026/ripple-ceo-says-company-considered-folding-before-sec-fight/"
-    }
-  },
-  {
-    "id": "2026-07-13-meta-image-tool-shutdown",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-12T23:23:49.000Z",
-    "headline": "Meta pulls AI image generation tool after three days over privacy backlash",
-    "plain_english": "Meta launched an AI image creation feature using public Instagram accounts on July 7, then shut it down by July 10 after public outcry over privacy concerns. The rapid reversal reflects tension between AI product velocity and user consent expectations.",
-    "why_it_matters": "Quick product kills signal reputational risk management but also reveal regulatory/public pressure on AI deployments—especially those involving user data—pushing firms toward defensive postures.",
-    "source": {
-      "name": "PYMNTS · 2026-07-12",
-      "url": "https://www.pymnts.com/facebook-meta/2026/meta-shuts-down-ai-image-tool-following-backlash/"
     }
   }
 ]
