@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-08-13-cftc-kalshi-derivatives",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-13T11:20:00Z",
+    "headline": "CFTC orders prediction market platform Kalshi to remain operational",
+    "plain_english": "The US Commodity Futures Trading Commission directed Kalshi, a derivatives prediction-market platform, to continue operating despite multiple state lawsuits seeking shutdowns. CFTC asserted federal regulatory authority.",
+    "why_it_matters": "Federal-state jurisdictional clash on fintech derivatives; BFSI firms relying on prediction markets or event-contract infrastructure face unclear compliance risk if states escalate.",
+    "source": {
+      "name": "Finextra · 2026-08-13",
+      "url": "https://www.finextra.com/newsarticle/48243/cftc-orders-kalshi-to-keep-operating-in-response-to-new-york-lawsuit"
+    }
+  },
+  {
+    "id": "2026-08-13-fca-firm-clone-warning",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-08-13T10:05:08Z",
+    "headline": "FCA warns of clone financial website impersonating registered firm",
+    "plain_english": "The UK Financial Conduct Authority flagged housetrading-financial.com as a fraudulent clone of an FCA-registered entity. The imposter site mimics legitimate branding to siphon deposits.",
+    "why_it_matters": "Deepfake and domain-squatting fraud accelerating; BFSI firms must harden brand-protection and customer-verification layers, especially in onboarding and password-reset flows.",
+    "source": {
+      "name": "FCA · 2026-08-13",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVks2Vmlka2ppMFpfNVk4SDN1V3VjMmd1dUl0eWoyNnJycDktcHQ5bzN5NnZtXzdLbS1ldVpmSDc0eWN1OE1tOGRuallXWHZEeHFHWS0wTm9NYlgtbzVSQ09UZ2ZTLXdLQXlqRkF6ajl6SU1WVDEtdFdKb0pMNHZaWWd3YmlOWkJ0c1IyYXRtLW1oQQ"
+    }
+  },
+  {
     "id": "2026-08-12-regulation-occ-stablecoin-reporting",
     "category": "regulation",
     "jurisdiction": "US",
@@ -131,38 +159,23 @@
     }
   },
   {
-    "id": "2026-08-10-occ-bunq-banking-license-denial",
-    "category": "regulation",
+    "id": "2026-08-13-maverick-findustry-chargeback-agent",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-09T22:45:01.000Z",
-    "headline": "OCC denies Dutch fintech Bunq's US banking license, cites vague expansion plan",
-    "plain_english": "US Office of the Comptroller of the Currency rejected Bunq's application for a US banking charter, requiring the Netherlands-based fintech to provide more detail on its American market entry strategy before reapplication.",
-    "why_it_matters": "OCC is raising scrutiny bars for foreign fintech charter applicants. Banks and investors should expect regulators to demand granular US compliance, AML, and data-residency plans earlier in the licensing cycle to avoid delays.",
-    "source": {
-      "name": "PYMNTS · 2026-08-09",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-said-no-to-bunq-us-banking-license-bid/"
-    }
-  },
-  {
-    "id": "2026-08-10-brazil-crypto-24h-transfer-delay",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-09T22:31:31.000Z",
-    "headline": "Brazil central bank mandates 24-hour delay on overseas crypto transfers, effective Jan 2027",
-    "plain_english": "Brazil's central bank issued a resolution (effective 1 Jan 2027) requiring crypto exchanges to hold overseas transfers for 24 hours as a fraud-prevention measure, affecting all cross-border cryptocurrency flows from the country.",
-    "why_it_matters": "Precedent for emerging-market regulators using latency-based controls to detect and slow exit fraud. Expect similar rules in India, SE Asia, and Africa. Compliance-tech vendors should prepare custody and settlement delay tooling for crypto platforms.",
-    "effective_date": "2027-01-01",
+    "published_at": "2026-08-13T11:00:58Z",
+    "headline": "Maverick Payments deploys Findustry chargeback agent to automate disputes",
+    "plain_english": "Payment processor Maverick Payments integrated Findustry AI's Chargeback Agent into its white-label platform, allowing merchants to automate dispute rebuttals and reduce manual processing.",
+    "why_it_matters": "Automation of chargeback workflows reduces revenue leakage; signals commodity fintech ops (dispute handling, AML) moving to AI agents—expect cost compression and staffing shifts.",
     "jargon": [
       {
-        "term": "resolution",
-        "def": "Binding regulatory directive issued by a central bank or financial authority (not requiring legislative vote)."
+        "term": "AI agent",
+        "def": "Autonomous system that plans and executes multi-step tasks (e.g., gathering evidence, drafting rebuttal, submitting claim) without human intervention per step."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-08-09",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/brazil-tells-crypto-exchanges-to-delay-overseas-transfers/"
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/maverick-payments-integrates-findustry-ai-agent-to-automate-chargeback-rebuttals/"
     }
   },
   {
@@ -322,17 +335,37 @@
     }
   },
   {
-    "id": "2026-08-07-rippling-ai-spend-console",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-08-13-oracle-quantinuum-quantum-ai",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-08-07T21:30:11Z",
-    "headline": "Rippling launches AI Spend Console to track employee AI usage and ROI",
-    "plain_english": "HR and IT platform Rippling unveiled AI Spend Console, a tool that measures individual and team-level AI spending, after internal discovery that the company had burned millions on AI in months without visibility.",
-    "why_it_matters": "AI cost-control tools are now table-stakes. BFSI ops teams need similar spend-tracking to avoid budget overruns in LLM API calls, compute, and licensing—expect demand for internal chargeback systems.",
+    "published_at": "2026-08-13T12:24:00Z",
+    "headline": "Oracle and Quantinuum partner on quantum-AI hybrid infrastructure",
+    "plain_english": "Oracle announced a partnership with quantum computing firm Quantinuum to develop quantum-AI hybrid systems. The collaboration aims to unlock quantum advantages for enterprise AI workloads.",
+    "why_it_matters": "Quantum-accelerated AI could disrupt cryptographic security and portfolio optimization in banking; early Oracle-Quantinuum deployments will shape BFSI quantum-readiness roadmaps.",
+    "jargon": [
+      {
+        "term": "Quantum-AI hybrid",
+        "def": "System combining quantum processors for specific tasks (optimization, sampling) with classical AI for reasoning and deployment."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-08-07",
-      "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+      "name": "Finextra · 2026-08-13",
+      "url": "https://www.finextra.com/newsarticle/48244/oracle-and-quantinuum-partnership-enables-quantum-ai-innovation"
+    }
+  },
+  {
+    "id": "2026-08-13-legora-10bn-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-13T10:27:47Z",
+    "headline": "Legal-tech platform Legora in talks to raise at $10 billion valuation",
+    "plain_english": "Legora, a European legal operations platform, is fundraising at a reported $10 billion valuation. The EU fintech is consolidating the contract-review and compliance-automation market.",
+    "why_it_matters": "Contract AI and legal automation moving from outsourcing to in-house platforms; BFSI compliance teams will face pressure to adopt Legora-class systems for regulatory document management.",
+    "source": {
+      "name": "Sifted · 2026-08-13",
+      "url": "https://sifted.eu/articles/legora-in-talks-to-raise-at-a-10bn-valuation-according-to-reports/"
     }
   },
   {
@@ -459,31 +492,17 @@
     }
   },
   {
-    "id": "2026-08-10-cloudflare-ai-radar",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-10T11:04:36.000Z",
-    "headline": "Cloudflare launches AI-powered Radar Researcher for threat intelligence automation",
-    "plain_english": "Infrastructure security firm Cloudflare released an AI tool that automates threat research and pattern detection across its global traffic visibility, enabling faster incident triage.",
-    "why_it_matters": "Relevant to fintech and banking security operations: outsourced AI threat-hunting reduces SOC headcount pressure and improves detection latency. Early signal for industry adoption.",
-    "source": {
-      "name": "Yahoo Tech · 2026-08-10",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXZCU0JjQVl6N01Rbm4xcF9mU0piWWlhNjlXRFp4ekFiUUVYR3UtT1NNODZkYkZzX1JIc0NNc19OREhxMzhJWGg4TVFxUXJOQ25uY3FSVHBTUG8xRDN5TFkxb0lhTGtzRHo5ZzFZZ3c1QTdiekZ5V3pKVTVFbHhhemxqVkw5MFFzcGNNaWRROA"
-    }
-  },
-  {
-    "id": "2026-08-08-openai-nextslide-acquisition",
-    "category": "vendor",
+    "id": "2026-08-13-apple-siri-publisher-deals",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-08T19:41:13Z",
-    "headline": "OpenAI acquires NextSlide presentation startup",
-    "plain_english": "OpenAI has acquired NextSlide, a presentation software startup. The NextSlide team is now working on ChatGPT product development, signaling OpenAI's vertical integration into productivity tools.",
-    "why_it_matters": "Signals OpenAI's shift from API-first to end-user product bundling; competitors (Microsoft/Copilot, Google) likely to consolidate similar capabilities into suites.",
+    "published_at": "2026-08-13T10:44:37Z",
+    "headline": "Apple explores per-use payments to publishers for Siri training data",
+    "plain_english": "Apple is negotiating direct compensation to media publishers when Siri consumes their content—shifting from bulk-archive licensing to usage-based payments. First major AI firm to test dynamic pricing model.",
+    "why_it_matters": "Pay-per-inference model could become industry norm; BFSI content providers (research, ratings, news) may demand similar usage contracts, raising AI training costs significantly.",
     "source": {
-      "name": "TechCrunch · 2026-08-08",
-      "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-discusses-paying-publishers-to-improve-siri/"
     }
   },
   {
@@ -614,20 +633,6 @@
     "source": {
       "name": "Finextra · 2026-08-10",
       "url": "https://www.finextra.com/newsarticle/48216/bofa-and-usaa-ink-patent-cross-license-agreement"
-    }
-  },
-  {
-    "id": "2026-08-10-singapore-pm-ai-worker-protection",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-09T23:45:45.000Z",
-    "headline": "Singapore PM pledges AI deployment to protect workers' jobs, not displace them",
-    "plain_english": "Singapore Prime Minister Lawrence Wong announced a commitment to use AI strategically to safeguard employment and worker outcomes, framing AI adoption as a tool for job preservation rather than replacement in the city-state's financial and fintech sectors.",
-    "why_it_matters": "APAC's leading fintech hub is institutionalizing AI-for-good messaging at the executive level. BFSI vendors pitching Singapore and regional markets should emphasize upskilling, retention, and productivity gains over headcount reduction to align with national policy.",
-    "source": {
-      "name": "PYMNTS · 2026-08-09",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/singapore-pledges-to-use-ai-to-protect-workers-jobs/"
     }
   },
   {
@@ -979,6 +984,22 @@
     }
   },
   {
+    "id": "2026-08-13-banks-smb-trust",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T11:30:00Z",
+    "headline": "Only 7% of SMB owners see their bank as true strategic partner",
+    "plain_english": "Survey of small business owners shows just 7% trust their bank as a strategic advisor; 65% view it as a utility. Banks' decades-long positioning as trusted advisors is failing with SMBs.",
+    "why_it_matters": "Fintech and embedded finance competitors are winning SMB loyalty; traditional banks cannot compete without AI-driven personalization and real-time cash-flow insights.",
+    "stat_value": "7%",
+    "stat_label": "of SMB owners consider bank a true strategic partner",
+    "source": {
+      "name": "Tearsheet · Beyond Small / Grasshopper Bank · 2026-08-13",
+      "url": "https://tearsheet.co/member-exclusive/why-banks-trusted-advisor-pitch-isnt-landing-with-smbs-right-now/"
+    }
+  },
+  {
     "id": "2026-08-12-insight-enterprises-own-ai-vs-rent",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1135,17 +1156,31 @@
     }
   },
   {
-    "id": "2026-08-07-llm-transformation-limits",
-    "category": "insight",
+    "id": "2026-08-13-anthropic-decart-acquisition",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-07T12:00:00.000Z",
-    "headline": "Industry questions whether LLMs and AI agents alone drive fintech transformation",
-    "plain_english": "Tearsheet Editor Sara Khairi argues that financial services have narrowed focus to chatbot-like LLMs and autonomous agents, overlooking deeper structural shifts in how risk, compliance, and operations actually change. Suggests overhyped tool adoption may mask slower underlying transformation.",
-    "why_it_matters": "Banks investing heavily in LLM pilots may face ROI shortfalls if foundational process redesign is skipped; forces BFSI leaders to rethink AI spending beyond chatbot novelty.",
+    "severity": "high",
+    "published_at": "2026-08-13T12:50:00Z",
+    "headline": "Anthropic in talks to acquire Decart AI ahead of IPO",
+    "plain_english": "Claude-maker Anthropic is negotiating to buy Decart AI before pursuing a reported October IPO targeting a $2 trillion valuation. The deal would bolster Anthropic's tech stack pre-public markets.",
+    "why_it_matters": "Signals Anthropic is consolidating AI infrastructure before a record IPO; sets precedent for frontier labs acquiring specialized AI firms to compete on capability.",
     "source": {
-      "name": "Tearsheet · 2026-08-07",
-      "url": "https://tearsheet.co/opinion/have-we-mistaken-chatgpt-like-llms-and-ai-agents-for-the-whole-transformation"
+      "name": "Bloomberg · Finextra · 2026-08-13",
+      "url": "https://www.finextra.com/newsarticle/48242/anthropic-in-talks-to-purchase-decart-ai"
+    }
+  },
+  {
+    "id": "2026-08-13-ibm-openai-partnership",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T10:23:00Z",
+    "headline": "IBM and OpenAI announce strategic partnership",
+    "plain_english": "IBM and OpenAI disclosed a formal partnership to integrate OpenAI models into IBM's enterprise software and services. Details on scope and go-to-market remain limited.",
+    "why_it_matters": "IBM's 140K+ enterprise customer base (including major BFSI firms) gains direct OpenAI integration; traditional systems integrators now compete directly with frontier labs on customer access.",
+    "source": {
+      "name": "Breakingthenews.net · 2026-08-13",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOFpUaG1wRHhRV1A3NlJ4dFB1R2dKTFBLUkpxZWEwLXVaT1EwbTByZHNralpGclNLV3NNeEJna2J3RTVFZFE0ZWJrME4yN3hKdU9JX0RhWlNzb0k5VjY5aGcyUkRVcGtMVVNaOWllYzZnTVVWV09CeUhxczUyb1FrMTREWjBCazJaOUctS08zZ25LOEFO"
     }
   },
   {
@@ -1279,44 +1314,6 @@
     "source": {
       "name": "Bloomberg · 2026-08-10",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYWh3QVNKT3liUUxPeUl4SUxxS29TaERxSEJPSmhySzFRX0c4NzdVLWdyN2l6bVlDSGZ0NlV2OUZOVzVZRUVxTjlzZVhZYURMbjBCSjJrbjNRRFBaRTI3SVhydE9jLWlUYTZkZVZiVm1fYWtncm5RYV9qS2VyYTdwb1ZKMFpyWjM1WlJScHBSbVRIdTBLZlprTG5GWktlRjhFTlpSVndoa1ZxZw?oc=5"
-    }
-  },
-  {
-    "id": "2026-08-10-openai-astra-security-halt",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-09T22:17:04.000Z",
-    "headline": "OpenAI pauses Astra model rollout citing uncontrollable cyber capabilities",
-    "plain_english": "OpenAI halted internal deployment of its Astra AI model after discovering it could not rule out critical cyber attack capabilities during in-house safety evaluation. The pause reflects tightening scrutiny of frontier model risks before release.",
-    "why_it_matters": "Demonstrates frontier labs are now blocking their own model releases over security grounds—a shift from 'move fast' culture. Sets precedent for other labs' deployment gates and pressures regulators to codify safety-first release standards.",
-    "jargon": [
-      {
-        "term": "cyber capabilities",
-        "def": "AI system's potential to exploit, discover, or weaponize software/network vulnerabilities autonomously."
-      },
-      {
-        "term": "in-house evaluation",
-        "def": "Internal safety red-team test before any external deployment or API access to customers/partners."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-09",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-halts-new-model-rollout-due-to-security-worries/"
-    }
-  },
-  {
-    "id": "2026-08-10-china-capital-markets-ai-challenge",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-09T21:00:19.000Z",
-    "headline": "China mobilizes $28 trillion capital market to compete in AI against US",
-    "plain_english": "China is deploying its vast domestic capital markets—$28 trillion in scale—as a strategic lever to fund and scale AI infrastructure and talent, positioning itself as a direct challenger to US frontier AI leadership.",
-    "why_it_matters": "BFSI actors should expect Chinese AI vendors and fintech platforms to move faster, cheaper, and with state backing. Increases geopolitical AI fragmentation and creates regulatory arbitrage zones for cross-border fintech/trading.",
-    "source": {
-      "name": "Bloomberg · 2026-08-09",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdFdvZ2tPSDZZdVpMbUxQLXlSOGZTeHd3QlA1LXR5Y1M4d1ZlWnpIVkNRdjd2MTFmZmVGemFvYlJLUzVKeDBPUFdLUE9ENGY4RkhwaDBYY3U1V25DNHpTQUZFbVlUVXhUSnZ1TUJJbmlvNmhxZ3JOS1EyQlE5Yk9WSUhtUkd1U2ZqTzRBalVfOUlIa01ZRFZ3TVdJd09CVWRVcklaY2RxMlp5YjV6WTBMSXFZTjhLWFBLVWN5ekJ3"
     }
   },
   {
@@ -1530,6 +1527,20 @@
     }
   },
   {
+    "id": "2026-08-13-anthropic-2t-ipo",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-13T10:52:44Z",
+    "headline": "Anthropic targets $2 trillion valuation in October IPO bid",
+    "plain_english": "Anthropic, the Claude AI firm, is preparing for a public listing as early as October with a $2 trillion valuation target—the largest IPO debut in history. Six major backers confirmed the timeframe to the Financial Times.",
+    "why_it_matters": "BFSI institutions will face direct competition from a public-market-validated AI competitor with massive capital; expect rapid R&D acceleration and enterprise pricing shifts.",
+    "source": {
+      "name": "Financial Times · PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-could-seek-2-trillion-valuation-in-record-ipo/"
+    }
+  },
+  {
     "id": "2026-08-12-trending-cerebras-ipo-earnings",
     "category": "trending",
     "jurisdiction": "US",
@@ -1657,6 +1668,149 @@
     "source": {
       "name": "Wall Street Journal · 2026-08-03",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWF84SFNmZXoyQW42SmY2N05KSWxNeURWeWM4NlFZRnlmTk03dXcyRXRkT0E3UjhQMmloeV8yQ1hySzdKVV9oLXRKSWs0d1Y3OUctaGowdkNDTVdBZjhSZHBXcUdvUGd3OEQwOFJVWUs2aGZKdm1RT3J0M2k4a3d1TGItZ0tvZ1RxMlg5S3o4X0YwbXJZbGZzR0MzRGRucHIyNWRFYW04NEJRZVRC"
+    }
+  },
+  {
+    "id": "2026-08-10-occ-bunq-banking-license-denial",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-09T22:45:01.000Z",
+    "headline": "OCC denies Dutch fintech Bunq's US banking license, cites vague expansion plan",
+    "plain_english": "US Office of the Comptroller of the Currency rejected Bunq's application for a US banking charter, requiring the Netherlands-based fintech to provide more detail on its American market entry strategy before reapplication.",
+    "why_it_matters": "OCC is raising scrutiny bars for foreign fintech charter applicants. Banks and investors should expect regulators to demand granular US compliance, AML, and data-residency plans earlier in the licensing cycle to avoid delays.",
+    "source": {
+      "name": "PYMNTS · 2026-08-09",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-said-no-to-bunq-us-banking-license-bid/"
+    }
+  },
+  {
+    "id": "2026-08-10-brazil-crypto-24h-transfer-delay",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-09T22:31:31.000Z",
+    "headline": "Brazil central bank mandates 24-hour delay on overseas crypto transfers, effective Jan 2027",
+    "plain_english": "Brazil's central bank issued a resolution (effective 1 Jan 2027) requiring crypto exchanges to hold overseas transfers for 24 hours as a fraud-prevention measure, affecting all cross-border cryptocurrency flows from the country.",
+    "why_it_matters": "Precedent for emerging-market regulators using latency-based controls to detect and slow exit fraud. Expect similar rules in India, SE Asia, and Africa. Compliance-tech vendors should prepare custody and settlement delay tooling for crypto platforms.",
+    "effective_date": "2027-01-01",
+    "jargon": [
+      {
+        "term": "resolution",
+        "def": "Binding regulatory directive issued by a central bank or financial authority (not requiring legislative vote)."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-09",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/brazil-tells-crypto-exchanges-to-delay-overseas-transfers/"
+    }
+  },
+  {
+    "id": "2026-08-07-rippling-ai-spend-console",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-07T21:30:11Z",
+    "headline": "Rippling launches AI Spend Console to track employee AI usage and ROI",
+    "plain_english": "HR and IT platform Rippling unveiled AI Spend Console, a tool that measures individual and team-level AI spending, after internal discovery that the company had burned millions on AI in months without visibility.",
+    "why_it_matters": "AI cost-control tools are now table-stakes. BFSI ops teams need similar spend-tracking to avoid budget overruns in LLM API calls, compute, and licensing—expect demand for internal chargeback systems.",
+    "source": {
+      "name": "TechCrunch · 2026-08-07",
+      "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+    }
+  },
+  {
+    "id": "2026-08-10-cloudflare-ai-radar",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-10T11:04:36.000Z",
+    "headline": "Cloudflare launches AI-powered Radar Researcher for threat intelligence automation",
+    "plain_english": "Infrastructure security firm Cloudflare released an AI tool that automates threat research and pattern detection across its global traffic visibility, enabling faster incident triage.",
+    "why_it_matters": "Relevant to fintech and banking security operations: outsourced AI threat-hunting reduces SOC headcount pressure and improves detection latency. Early signal for industry adoption.",
+    "source": {
+      "name": "Yahoo Tech · 2026-08-10",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXZCU0JjQVl6N01Rbm4xcF9mU0piWWlhNjlXRFp4ekFiUUVYR3UtT1NNODZkYkZzX1JIc0NNc19OREhxMzhJWGg4TVFxUXJOQ25uY3FSVHBTUG8xRDN5TFkxb0lhTGtzRHo5ZzFZZ3c1QTdiekZ5V3pKVTVFbHhhemxqVkw5MFFzcGNNaWRROA"
+    }
+  },
+  {
+    "id": "2026-08-08-openai-nextslide-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-08T19:41:13Z",
+    "headline": "OpenAI acquires NextSlide presentation startup",
+    "plain_english": "OpenAI has acquired NextSlide, a presentation software startup. The NextSlide team is now working on ChatGPT product development, signaling OpenAI's vertical integration into productivity tools.",
+    "why_it_matters": "Signals OpenAI's shift from API-first to end-user product bundling; competitors (Microsoft/Copilot, Google) likely to consolidate similar capabilities into suites.",
+    "source": {
+      "name": "TechCrunch · 2026-08-08",
+      "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+    }
+  },
+  {
+    "id": "2026-08-10-singapore-pm-ai-worker-protection",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-09T23:45:45.000Z",
+    "headline": "Singapore PM pledges AI deployment to protect workers' jobs, not displace them",
+    "plain_english": "Singapore Prime Minister Lawrence Wong announced a commitment to use AI strategically to safeguard employment and worker outcomes, framing AI adoption as a tool for job preservation rather than replacement in the city-state's financial and fintech sectors.",
+    "why_it_matters": "APAC's leading fintech hub is institutionalizing AI-for-good messaging at the executive level. BFSI vendors pitching Singapore and regional markets should emphasize upskilling, retention, and productivity gains over headcount reduction to align with national policy.",
+    "source": {
+      "name": "PYMNTS · 2026-08-09",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/singapore-pledges-to-use-ai-to-protect-workers-jobs/"
+    }
+  },
+  {
+    "id": "2026-08-07-llm-transformation-limits",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-07T12:00:00.000Z",
+    "headline": "Industry questions whether LLMs and AI agents alone drive fintech transformation",
+    "plain_english": "Tearsheet Editor Sara Khairi argues that financial services have narrowed focus to chatbot-like LLMs and autonomous agents, overlooking deeper structural shifts in how risk, compliance, and operations actually change. Suggests overhyped tool adoption may mask slower underlying transformation.",
+    "why_it_matters": "Banks investing heavily in LLM pilots may face ROI shortfalls if foundational process redesign is skipped; forces BFSI leaders to rethink AI spending beyond chatbot novelty.",
+    "source": {
+      "name": "Tearsheet · 2026-08-07",
+      "url": "https://tearsheet.co/opinion/have-we-mistaken-chatgpt-like-llms-and-ai-agents-for-the-whole-transformation"
+    }
+  },
+  {
+    "id": "2026-08-10-openai-astra-security-halt",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-09T22:17:04.000Z",
+    "headline": "OpenAI pauses Astra model rollout citing uncontrollable cyber capabilities",
+    "plain_english": "OpenAI halted internal deployment of its Astra AI model after discovering it could not rule out critical cyber attack capabilities during in-house safety evaluation. The pause reflects tightening scrutiny of frontier model risks before release.",
+    "why_it_matters": "Demonstrates frontier labs are now blocking their own model releases over security grounds—a shift from 'move fast' culture. Sets precedent for other labs' deployment gates and pressures regulators to codify safety-first release standards.",
+    "jargon": [
+      {
+        "term": "cyber capabilities",
+        "def": "AI system's potential to exploit, discover, or weaponize software/network vulnerabilities autonomously."
+      },
+      {
+        "term": "in-house evaluation",
+        "def": "Internal safety red-team test before any external deployment or API access to customers/partners."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-09",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-halts-new-model-rollout-due-to-security-worries/"
+    }
+  },
+  {
+    "id": "2026-08-10-china-capital-markets-ai-challenge",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-09T21:00:19.000Z",
+    "headline": "China mobilizes $28 trillion capital market to compete in AI against US",
+    "plain_english": "China is deploying its vast domestic capital markets—$28 trillion in scale—as a strategic lever to fund and scale AI infrastructure and talent, positioning itself as a direct challenger to US frontier AI leadership.",
+    "why_it_matters": "BFSI actors should expect Chinese AI vendors and fintech platforms to move faster, cheaper, and with state backing. Increases geopolitical AI fragmentation and creates regulatory arbitrage zones for cross-border fintech/trading.",
+    "source": {
+      "name": "Bloomberg · 2026-08-09",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdFdvZ2tPSDZZdVpMbUxQLXlSOGZTeHd3QlA1LXR5Y1M4d1ZlWnpIVkNRdjd2MTFmZmVGemFvYlJLUzVKeDBPUFdLUE9ENGY4RkhwaDBYY3U1V25DNHpTQUZFbVlUVXhUSnZ1TUJJbmlvNmhxZ3JOS1EyQlE5Yk9WSUhtUkd1U2ZqTzRBalVfOUlIa01ZRFZ3TVdJd09CVWRVcklaY2RxMlp5YjV6WTBMSXFZTjhLWFBLVWN5ekJ3"
     }
   },
   {
@@ -8009,20 +8163,6 @@
     }
   },
   {
-    "id": "2026-07-14-jpm-record-profit",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-14T11:49:54Z",
-    "headline": "JPMorgan posts highest quarterly profit in US banking history; dealmaking and equities trading surge",
-    "plain_english": "JPMorgan Chase reported record quarterly earnings, driven by investment banking fees and stock trading revenue. No AI breakthrough disclosed, but demonstrates mega-cap banks' current financial muscle.",
-    "why_it_matters": "Earnings windfall creates capital for AI/fintech M&A and hiring. Signals peak profitability may attract regulatory scrutiny on bank size/systemic risk—competes with AI investment priorities.",
-    "source": {
-      "name": "Reuters · 2026-07-14",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXZXdWw0Um15aXgwRy1uU3dobEJIREY5cDItRFd0d2ZvQjRDdXdVdHZJNmtWWmNuVG5hVWlNZmlXaVQ0eWJ2WndSM1JMOGtIQmpWM29XeVR0OVVheFZQNGVfNmhlYldNdjlfLU1MazZLMjJGVmc4TzdvSWRKNnVkRjNJemVxNGtrck5EWVA5c1dWdUdBSW92Y0RBWDRrdms"
-    }
-  },
-  {
     "id": "2026-07-17-regulation-fca-clone-fraud-alert",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -9020,26 +9160,6 @@
     }
   },
   {
-    "id": "2026-07-14-jcb-circle-stablecoin-mou",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-14T11:56:00Z",
-    "headline": "JCB signs stablecoin partnership with Circle, signals card-network pivot to tokenized rails",
-    "plain_english": "JCB (Japan's major card network) signed an MOU with Circle Internet Group to explore stablecoin-based payment collaboration. First formal tie between traditional card network and USD stablecoin issuer.",
-    "why_it_matters": "Card networks (JCB, Visa, Mastercard) adopting stablecoin rails threatens correspondent banking and SWIFT fee models. JCB's move signals APAC regional shift toward tokenized settlement.",
-    "jargon": [
-      {
-        "term": "Stablecoin",
-        "def": "Cryptocurrency pegged to USD or other fiat; Circle issues USDC, a regulated stablecoin for institutional payments."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-14",
-      "url": "https://www.finextra.com/pressarticle/110410/jcb-signs-stablecoin-mou-with-circle"
-    }
-  },
-  {
     "id": "2026-07-15-cramer-ai-roi-proof",
     "category": "insight",
     "jurisdiction": "US",
@@ -9126,20 +9246,6 @@
     }
   },
   {
-    "id": "2026-07-14-bcb-vikar-account-opening",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-14T11:59:00Z",
-    "headline": "BCB Bank selects Vikar Technologies for digital account opening automation",
-    "plain_english": "Vikar Technologies, a fintech vendor for account opening and lending automation, signed a partnership with BCB Bank to streamline consumer and business onboarding workflows.",
-    "why_it_matters": "Routine but persistent: regional banks continue outsourcing account-opening ops to specialized vendors, freeing in-house engineering for core products.",
-    "source": {
-      "name": "Finextra · 2026-07-14",
-      "url": "https://www.finextra.com/pressarticle/110411/bcb-bank-selects-vikar-technologies-to-streamline-consumer-and-business-account-opening"
-    }
-  },
-  {
     "id": "2026-07-14-branch-earned-wage-access",
     "category": "vendor",
     "jurisdiction": "US",
@@ -9210,22 +9316,6 @@
     }
   },
   {
-    "id": "2026-07-14-goldman-7b-stock-trading",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-14T11:25:48Z",
-    "headline": "Goldman Sachs stock trading revenue hits record $7.42 billion in period, outpacing equity derivatives",
-    "plain_english": "Goldman Sachs' stock trading desk generated $7.42 billion, exceeding prior records. Signals strong demand for electronic and algorithmic trading in volatility-driven markets.",
-    "why_it_matters": "Trading AI/execution algorithms now core to FICC/equities ops. Mega-banks with scale can afford frontier-model research; smaller peers will depend on vendor algos, raising vendor concentration risk.",
-    "stat_value": "$7.42B",
-    "stat_label": "Goldman Sachs stock trading revenue (record period)",
-    "source": {
-      "name": "Bloomberg · 2026-07-14",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcjBNajluVk9PS1Z2QS1hZ25EdjNndDdEYkNPWG5oNkRYRjMxMnNWUUxOQlRLdkduTWJ6RVNIVC1UaHQ1eGJJZmh2UkdseTJCSjBwbFRYOWVZemtSWDBGd2ZkMzVuSnhObVZuLVNkZmk2cnYyQkUyd1VyRnZDdElwc1FfcnRodEhqdXRYOTdfSjdJOVFDaWhUUVhpZVdTcUlvbndXQXlpSGJRdWs2UGdCdlplekk"
-    }
-  },
-  {
     "id": "2026-07-14-deepseek-ipo",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -9237,24 +9327,6 @@
     "source": {
       "name": "Cryptonews · 2026-07-14",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9CV3oxM0V2YmJiS2xlQXZoQUYwMXNLY2E2d3Q0SGhHaXp6SkdRSTB5QlZSWUdZY1RnbGtRal9pVVZCQ1E0aGVMTTlETThUclNoS0V6czF6NTM"
-    }
-  },
-  {
-    "id": "2026-07-14-jpm-payments-keystroke-automation",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-14T12:00:00Z",
-    "headline": "JPMorgan Payments automates document processing, eliminates 13 billion keystrokes annually",
-    "plain_english": "JPMorgan Payments deployed automation to eliminate manual data entry in payment documentation. The system processes the paper and information that surrounds transactions—not the payments themselves—cutting friction that businesses face when settling accounts.",
-    "why_it_matters": "Demonstrates that AI/RPA ROI in payments is operational (back-office efficiency) not just speed. Sets template for rivals: automate the envelope, not the rail.",
-    "scale": {
-      "metric": "keystrokes eliminated",
-      "value": "13 billion annually"
-    },
-    "source": {
-      "name": "Tearsheet · 2026-07-14",
-      "url": "https://tearsheet.co/ai-innovation-artificial-intelligence/how-j-p-morgan-payments-eliminated-13-billion-keystrokes-a-year-by-automating-the-paper-behind-payments/"
     }
   },
   {
@@ -9275,20 +9347,6 @@
     "source": {
       "name": "Finextra · 2026-07-14",
       "url": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network"
-    }
-  },
-  {
-    "id": "2026-07-14-softbank-5t-ai-capex",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-14T11:25:43Z",
-    "headline": "SoftBank CEO warns $5 trillion annual capex required globally to meet AI infrastructure demand",
-    "plain_english": "SoftBank Group's leadership stated that global economies must invest $5 trillion per year to build AI data centers and infrastructure. Signals massive M&A, energy, and geopolitical competition ahead.",
-    "why_it_matters": "If credible, implies AI capex eclipses traditional CapEx cycles—reshapes banking treasury, energy hedging, and cross-border capital flows. Central banks and regulators must plan for AI-driven inflation/deflation.",
-    "source": {
-      "name": "ClickOnDetroit · 2026-07-14",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdVZDbnJlZjd4NTNMd05MVF9QaUpsUkV4YWpIY1dzUHZ1NUtOS1hXZVBfVzQ3RVEyU1JuNE8tQWJyY0FuejkyanpQYWtwTm1teWlIbFh2Y281RGNia3ZnRDVsRkFJaGR2WElPYzU0SzRiSTBSdlY4eU9iVmVWUE10NEVLUnVJZld0bGl5RllOd1hmS3hFN3RlWm1sa3hhdXBsU3htT1FtMnFhZkt6Z2dVU0NhZTlXdlBIcEpzSVJmUmZaZw"
     }
   }
 ]
