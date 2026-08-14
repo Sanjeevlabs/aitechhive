@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-08-14-french-taxpayer-cyberattack",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-08-14T10:12:00Z",
+    "headline": "French Finance Ministry confirms cyberattack resulted in taxpayer data breach; June incident under investigation",
+    "plain_english": "French Finance Ministry disclosed a June cyberattack by a 'malicious actor' that compromised taxpayer personal data. Incident now public; breach scope and response measures still being detailed.",
+    "why_it_matters": "High-profile breach of government financial data signals mature threat capability; BFSI firms and EU regulators will cite this in data-residency and incident-disclosure enforcement; may trigger ECB/EBA guidance updates.",
+    "source": {
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/newsarticle/48248/french-taxpayers-data-stolen-in-cyberattack"
+    }
+  },
+  {
     "id": "2026-08-13-cftc-kalshi-derivatives",
     "category": "regulation",
     "jurisdiction": "US",
@@ -145,17 +159,21 @@
     "effective_date": "2026-08-10"
   },
   {
-    "id": "2026-08-10-house-dems-ai-testimony",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-08-14-indian-banks-cai-officers",
+    "category": "deployment",
+    "jurisdiction": "IN",
     "severity": "med",
-    "published_at": "2026-08-10T11:00:01.000Z",
-    "headline": "House Democrats call for AI company CEOs to testify on recent security breaches",
-    "plain_english": "A bipartisan group of House Democrats requested testimony from Anthropic, OpenAI, and other AI leaders about recent hacking incidents targeting their systems, citing safety risk.",
-    "why_it_matters": "Congressional pressure on AI security is formalizing. Expect upstream regulatory action on model-release safeguards and incident-disclosure timelines; financial firms may face secondary compliance burden.",
+    "published_at": "2026-08-14T11:12:42Z",
+    "headline": "Indian banks accelerate Chief AI Officer appointments amid AI strategy urgency",
+    "plain_english": "Indian banking sector is rapidly hiring dedicated Chief AI Officer roles as banks formalize AI governance and deployment strategies. Reflects RBI regulatory push and competitive pressure to operationalize AI.",
+    "why_it_matters": "RBI's AI governance expectations are now cascading into hiring and org structure; peer banks facing talent war for AI leadership roles; emerging model for BFSI AI governance offices.",
+    "scale": {
+      "metric": "markets",
+      "value": "Indian banking sector"
+    },
     "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html"
+      "name": "Analytics India Mag · 2026-08-14",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT0QzSHVoQ2xzTEM0TVhhTURwQkNmd20yNGZLU3l4RFJTTFdDbGJzNlR2VGxjUTY2SjQ5OHZ5LWVZcldiTUtEbXMzR2xraWtCZXlrYnNrcjdqZnRpOWZZdjM3R0llX1J4cWtWWWJDWi1INWR0OHp3elFCNVU4TjU2SHBjU0N2VzJOR3ByUDZ1WHlBR3Z0anpiUEZjbXlKQQ"
     }
   },
   {
@@ -336,17 +354,23 @@
     }
   },
   {
-    "id": "2026-08-10-tsmc-sales-surge",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-08-14-citi-kard-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-10T10:29:27.000Z",
-    "headline": "TSMC reports 45% revenue surge as Big Tech AI chip demand accelerates",
-    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC), foundry for Nvidia and Google, posted 45% sales growth, signalling robust AI inference and training chip orders from major cloud platforms.",
-    "why_it_matters": "TSMC's revenue surge is a leading indicator of enterprise and cloud AI deployment velocity. Supply tightness easing but demand remains far ahead of capacity additions.",
+    "published_at": "2026-08-14T10:21:00Z",
+    "headline": "Citigroup Consumer Cards acquires fintech Kard for commerce media and rewards personalization",
+    "plain_english": "Citi's Consumer Cards unit has agreed to acquire Kard Financial, a commerce media and rewards platform that uses data and personalization to drive customer engagement. Builds Citi's in-house capabilities for AI-driven offer engine.",
+    "why_it_matters": "Large bank buying specialized fintech tooling to own AI recommendation stack end-to-end; signals build-vs-buy shift as Citi integrates customer engagement AI internally rather than outsourcing.",
+    "jargon": [
+      {
+        "term": "Commerce media",
+        "def": "Targeted offers and ads delivered at point of purchase, typically powered by customer transaction data and ML ranking."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html"
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/pressarticle/110647/citigroups-consumer-cards-to-acquire-fintech-kard"
     }
   },
   {
@@ -498,31 +522,17 @@
     }
   },
   {
-    "id": "2026-08-11-openai-premium-chatgpt-business",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-11T10:46:29Z",
-    "headline": "OpenAI launches Premium ChatGPT tier for enterprise customers with 5x usage capacity",
-    "plain_english": "OpenAI introduced a new Premium tier for business ChatGPT users, offering 5x higher usage capacity and removing the standard 5-hour usage limit. Designed for active enterprise teams managing complex workflows.",
-    "why_it_matters": "Enterprise banks testing ChatGPT for compliance, risk analytics, or trading research will face higher per-seat costs but fewer throttling issues. Watch for adoption rates among Fortune-500 BFSI shops; adoption signals confidence in OpenAI's reliability for production use.",
-    "source": {
-      "name": "PYMNTS · 2026-08-11",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-courts-business-users-with-premium-chatgpt/"
-    }
-  },
-  {
-    "id": "2026-08-14-citi-kard-acquisition",
+    "id": "2026-08-14-nvidia-wall-street-ai-infra",
     "category": "shift",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-14T00:02:18Z",
-    "headline": "Citi acquires Kard to embed commerce media and rewards into card stack",
-    "plain_english": "Citi's consumer cards division is buying Kard Financial, a commerce media and rewards platform, to deepen customer engagement and monetize transaction data through targeted merchant offers directly in cardholder experiences.",
-    "why_it_matters": "Banks are moving beyond payment rails into transaction-layer commerce intermediation; this signals a shift from interchange-dependent revenue to first-party data monetization via contextual offers.",
+    "severity": "high",
+    "published_at": "2026-08-14T11:07:00Z",
+    "headline": "Nvidia partners with Wall Street asset managers to mobilize AI infrastructure funding; Goldman Sachs leads",
+    "plain_english": "Nvidia has structured a deal with top asset managers to collectively fund AI infrastructure buildout, with Goldman Sachs coordinating financing. Signals shift toward collaborative, institutionalized capex models for AI hardware.",
+    "why_it_matters": "Banks and asset managers now underwriting AI infrastructure as core investment thesis; BFSI counterparties must understand their cost of compute vs. vendor margins in deal modeling.",
     "source": {
-      "name": "PYMNTS · 2026-08-14",
-      "url": "https://www.pymnts.com/news/acquiring/2026/citi-plans-to-acquire-kard-to-deliver-more-personalized-rewards/"
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/newsarticle/48249/nvidia-partners-with-wall-street-mobilise-funds-for-ai-infrastructure-goldman-sachs-leads-financing"
     }
   },
   {
@@ -828,6 +838,26 @@
     }
   },
   {
+    "id": "2026-08-14-mckinsey-agentic-ai-adoption-gap",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-14T10:26:03Z",
+    "headline": "McKinsey report: organizations failing to capture value from agentic AI despite heavy investment",
+    "plain_english": "McKinsey's August 2026 report 'How to Close the Agentic AI Adoption Gap' reveals that organizations are under-realizing returns from agentic AI transformations despite substantial technical spending. Identifies organizational and governance misalignment as core blockers.",
+    "why_it_matters": "BFSI firms building agentic workflows (customer service, underwriting, claims) facing similar adoption friction; McKinsey analysis illuminates why AI pilots stall, helping risk officers scope governance and change readiness.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "AI systems that autonomously plan, make decisions, and take actions toward goals with minimal human intervention; goes beyond chatbots."
+      }
+    ],
+    "source": {
+      "name": "McKinsey · 2026-08-14",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaDBFaHNqcnNWLUJYR3ZfQmY2Y28zWGRaOEFSY3ZaTVE4Tndab2M1M1AySTBNTm5NMElfXzU1SEZ1ZkRYUjQ3ZVBiYTNXbFJUWmhoWVdVOHZmM2U4NDF0YXBSaEpJZWpwd3I1YkNKelhIM3ZyQUdJT0kwdUJwTGwyNkJIV3htQXBIWF9CQ2lleWVZclExbW1FTllYc2tUV0tYaVJwS05DUkZRZHIyQnd3OUYzY0YwTU9tZ1B2QkVBMFRxUklmbVFsVUpYUFgzM2tCOUR2THdn"
+    }
+  },
+  {
     "id": "2026-08-12-research-anthropic-watermarking",
     "category": "research",
     "jurisdiction": "Global",
@@ -984,23 +1014,17 @@
     }
   },
   {
-    "id": "2026-07-30-llm-security-vulnerability",
-    "category": "research",
+    "id": "2026-08-14-cnbc-space-data-centers-insurance",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-30T12:10:00Z",
-    "headline": "Fundamental LLM architecture flaw leaves models vulnerable to systematic attack",
-    "plain_english": "Researchers at MIT Technology Review report that large language models contain an architectural flaw making them impossible to fully secure against certain attack vectors. The vulnerability is inherent to how LLMs process and store information internally.",
-    "why_it_matters": "If true, implies BFSI deployment of LLMs in regulated workflows (anti-money laundering, fraud detection, credit decisions) requires assume-breach posture; risk models must account for model-level failures, not just data-level ones.",
-    "jargon": [
-      {
-        "term": "LLM jailbreak",
-        "def": "Technique to exploit model vulnerabilities and bypass safety guardrails, forcing the model to generate unintended or harmful outputs."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-08-14T11:19:51Z",
+    "headline": "Space-based data centers emerge as emerging risk class for insurers; pricing models still underdeveloped",
+    "plain_english": "Insurers are facing demand to underwrite data centers in low Earth orbit as commercial space infrastructure accelerates. Risk modeling and pricing frameworks don't yet exist for orbital hardware and operations failures.",
+    "why_it_matters": "BFSI insurers and captive programs must build actuarial competency in space infrastructure; new asset class opens revenue but requires novel risk quantification and claims frameworks.",
     "source": {
-      "name": "MIT Technology Review · 2026-07-30",
-      "url": "https://www.technologyreview.com/2026/07/30/1140936/the-download-tricking-llms-reviving-geothermal/"
+      "name": "CNBC · 2026-08-14",
+      "url": "https://www.cnbc.com/2026/08/14/data-centers-in-space-emerge-as-next-frontier-for-insurers.html"
     }
   },
   {
@@ -1162,17 +1186,17 @@
     }
   },
   {
-    "id": "2026-08-08-insight-fraud-prevention-ancient-economy",
-    "category": "insight",
+    "id": "2026-08-14-openai-revenue-ipo",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-08T08:00:48.000Z",
-    "headline": "Ancient economies managed financial risk through trust, not controls",
-    "plain_english": "PYMNTS piece traces how Homeric economies functioned on trust networks rather than formal spend controls, settlement procedures, or fraud detection—and still faced embezzlement and financial chaos. Puts modern BFSI compliance and AI-powered fraud detection in historical context.",
-    "why_it_matters": "Reminds ops and compliance teams that even AI-enhanced fraud controls cannot eliminate trust-default architectures in financial systems. Human judgment and governance frameworks remain foundational; AI is a sensor layer, not a replacement for institutional design.",
+    "severity": "high",
+    "published_at": "2026-08-14T10:54:36Z",
+    "headline": "OpenAI revenue run rate reaches $40 billion as IPO preparation accelerates",
+    "plain_english": "OpenAI's annualized revenue has doubled to $40B+ from end-2025, signaling strong enterprise adoption momentum as the AI company prepares for a public offering. Marks a major inflection point in AI vendor monetization.",
+    "why_it_matters": "Sets valuation benchmark for downstream AI infrastructure deals; BFSI firms watching OpenAI's unit economics for their own AI cost models and vendor negotiation leverage.",
     "source": {
-      "name": "PYMNTS · 2026-08-08",
-      "url": "https://www.pymnts.com/economy/2026/homer-economy-ran-oxen-wine-trust/"
+      "name": "PYMNTS · 2026-08-14",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-revenue-run-rate-tops-40-billion-as-ipo-nears/"
     }
   },
   {
@@ -1320,26 +1344,6 @@
       "url": "https://www.cnbc.com/2026/08/10/openai-wraps-7-billion-share-sale-ahead-of-potential-ipo-.html"
     },
     "amount": "$7B"
-  },
-  {
-    "id": "2026-08-10-openai-cybersecurity-controls",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-10T11:04:50.000Z",
-    "headline": "OpenAI restricts access to new model over critical-level cybersecurity capability",
-    "plain_english": "OpenAI imposed controls on a new model after determining it could not rule out the system reaching \"Critical\" capability—meaning it could potentially launch cyberattacks against sophisticated defenses.",
-    "why_it_matters": "Signals AI labs now formally acknowledging dual-use risk at capability thresholds. Likely to inform regulatory scrutiny of frontier model deployment and shape internal safety governance across the industry.",
-    "jargon": [
-      {
-        "term": "Critical capability",
-        "def": "AI system capability level at which the model could autonomously execute cyberattacks on hardened defenses without human intervention."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html"
-    }
   },
   {
     "id": "2026-08-12-rag-explainer",
@@ -1693,6 +1697,102 @@
     "source": {
       "name": "Wall Street Journal · 2026-08-03",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWF84SFNmZXoyQW42SmY2N05KSWxNeURWeWM4NlFZRnlmTk03dXcyRXRkT0E3UjhQMmloeV8yQ1hySzdKVV9oLXRKSWs0d1Y3OUctaGowdkNDTVdBZjhSZHBXcUdvUGd3OEQwOFJVWUs2aGZKdm1RT3J0M2k4a3d1TGItZ0tvZ1RxMlg5S3o4X0YwbXJZbGZzR0MzRGRucHIyNWRFYW04NEJRZVRC"
+    }
+  },
+  {
+    "id": "2026-08-10-house-dems-ai-testimony",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-10T11:00:01.000Z",
+    "headline": "House Democrats call for AI company CEOs to testify on recent security breaches",
+    "plain_english": "A bipartisan group of House Democrats requested testimony from Anthropic, OpenAI, and other AI leaders about recent hacking incidents targeting their systems, citing safety risk.",
+    "why_it_matters": "Congressional pressure on AI security is formalizing. Expect upstream regulatory action on model-release safeguards and incident-disclosure timelines; financial firms may face secondary compliance burden.",
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html"
+    }
+  },
+  {
+    "id": "2026-08-10-tsmc-sales-surge",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-10T10:29:27.000Z",
+    "headline": "TSMC reports 45% revenue surge as Big Tech AI chip demand accelerates",
+    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC), foundry for Nvidia and Google, posted 45% sales growth, signalling robust AI inference and training chip orders from major cloud platforms.",
+    "why_it_matters": "TSMC's revenue surge is a leading indicator of enterprise and cloud AI deployment velocity. Supply tightness easing but demand remains far ahead of capacity additions.",
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html"
+    }
+  },
+  {
+    "id": "2026-08-11-openai-premium-chatgpt-business",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-11T10:46:29Z",
+    "headline": "OpenAI launches Premium ChatGPT tier for enterprise customers with 5x usage capacity",
+    "plain_english": "OpenAI introduced a new Premium tier for business ChatGPT users, offering 5x higher usage capacity and removing the standard 5-hour usage limit. Designed for active enterprise teams managing complex workflows.",
+    "why_it_matters": "Enterprise banks testing ChatGPT for compliance, risk analytics, or trading research will face higher per-seat costs but fewer throttling issues. Watch for adoption rates among Fortune-500 BFSI shops; adoption signals confidence in OpenAI's reliability for production use.",
+    "source": {
+      "name": "PYMNTS · 2026-08-11",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-courts-business-users-with-premium-chatgpt/"
+    }
+  },
+  {
+    "id": "2026-07-30-llm-security-vulnerability",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-07-30T12:10:00Z",
+    "headline": "Fundamental LLM architecture flaw leaves models vulnerable to systematic attack",
+    "plain_english": "Researchers at MIT Technology Review report that large language models contain an architectural flaw making them impossible to fully secure against certain attack vectors. The vulnerability is inherent to how LLMs process and store information internally.",
+    "why_it_matters": "If true, implies BFSI deployment of LLMs in regulated workflows (anti-money laundering, fraud detection, credit decisions) requires assume-breach posture; risk models must account for model-level failures, not just data-level ones.",
+    "jargon": [
+      {
+        "term": "LLM jailbreak",
+        "def": "Technique to exploit model vulnerabilities and bypass safety guardrails, forcing the model to generate unintended or harmful outputs."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-07-30",
+      "url": "https://www.technologyreview.com/2026/07/30/1140936/the-download-tricking-llms-reviving-geothermal/"
+    }
+  },
+  {
+    "id": "2026-08-08-insight-fraud-prevention-ancient-economy",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-08T08:00:48.000Z",
+    "headline": "Ancient economies managed financial risk through trust, not controls",
+    "plain_english": "PYMNTS piece traces how Homeric economies functioned on trust networks rather than formal spend controls, settlement procedures, or fraud detection—and still faced embezzlement and financial chaos. Puts modern BFSI compliance and AI-powered fraud detection in historical context.",
+    "why_it_matters": "Reminds ops and compliance teams that even AI-enhanced fraud controls cannot eliminate trust-default architectures in financial systems. Human judgment and governance frameworks remain foundational; AI is a sensor layer, not a replacement for institutional design.",
+    "source": {
+      "name": "PYMNTS · 2026-08-08",
+      "url": "https://www.pymnts.com/economy/2026/homer-economy-ran-oxen-wine-trust/"
+    }
+  },
+  {
+    "id": "2026-08-10-openai-cybersecurity-controls",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T11:04:50.000Z",
+    "headline": "OpenAI restricts access to new model over critical-level cybersecurity capability",
+    "plain_english": "OpenAI imposed controls on a new model after determining it could not rule out the system reaching \"Critical\" capability—meaning it could potentially launch cyberattacks against sophisticated defenses.",
+    "why_it_matters": "Signals AI labs now formally acknowledging dual-use risk at capability thresholds. Likely to inform regulatory scrutiny of frontier model deployment and shape internal safety governance across the industry.",
+    "jargon": [
+      {
+        "term": "Critical capability",
+        "def": "AI system capability level at which the model could autonomously execute cyberattacks on hardened defenses without human intervention."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-10",
+      "url": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html"
     }
   },
   {
@@ -7136,30 +7236,6 @@
     }
   },
   {
-    "id": "2026-07-15-rag-explainer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-15T12:00:00Z",
-    "headline": "What is RAG? Why banks use it to ground LLMs in real data",
-    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique that pulls relevant documents or data from a bank's internal system and feeds them into an AI model before generating an answer. Instead of the AI relying only on its training, RAG lets it cite current, accurate facts.",
-    "why_it_matters": "RAG is the production workaround to LLM hallucination. Banks deploying customer service or risk-analysis bots almost always layer RAG to anchor outputs in compliance docs, policies, and transaction history.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When an AI model confidently generates false or fabricated information because it lacks grounding in real data."
-      },
-      {
-        "term": "Retrieval-Augmented Generation (RAG)",
-        "def": "AI technique that fetches relevant documents from a database before generating text, so answers are anchored in factual sources."
-      }
-    ],
-    "source": {
-      "name": "Finextra (industry context) · 2026-07-15",
-      "url": "https://www.finextra.com"
-    }
-  },
-  {
     "id": "2026-07-17-apple-unseats-nvidia",
     "category": "trending",
     "jurisdiction": "Global",
@@ -7219,26 +7295,6 @@
     "source": {
       "name": "PYMNTS · 2026-07-22",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-unveils-product-to-hone-ai-voice-and-chat-agents/"
-    }
-  },
-  {
-    "id": "2026-07-15-vint-cerf-ai-agents",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-15T12:00:00Z",
-    "headline": "TCP/IP co-inventor Vint Cerf leading standards effort to identify AI agents on internet",
-    "plain_english": "Vint Cerf is developing a standard protocol to mark and identify AI agents operating autonomously on the open internet. Goal: make agent activity transparent and verifiable.",
-    "why_it_matters": "Foundational infrastructure for agent governance. If widely adopted, enables BFSI platforms to distinguish human from bot traffic, enforce permissions, and audit autonomous transactions at network layer.",
-    "jargon": [
-      {
-        "term": "agent identification standard",
-        "def": "Protocol that cryptographically marks and authenticates autonomous AI agents so receiving systems can verify origin and authorization."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-07-15",
-      "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/"
     }
   },
   {
@@ -8669,36 +8725,6 @@
     }
   },
   {
-    "id": "2026-07-15-fintech-h1-surge",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-15T11:00:35Z",
-    "headline": "Fintech funding surges 23% in H1 2026, weighted toward AI and infrastructure",
-    "plain_english": "Fintech funding rose 23% in first half of 2026. Investor capital is concentrating on AI capabilities and financial infrastructure plays, signaling sector consolidation around core bets.",
-    "why_it_matters": "Capital concentration narrows fintech landscape. AI and rails become table-stakes; non-AI consumer fintech faces drying venture funding. M&A pressure intensifies.",
-    "source": {
-      "name": "Crunchbase News · 2026-07-15",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9JeDVXSkR2Nzg0YmFxTFpHMmlZUUwtUS1RY1FYMmNrQmJBaHBxTzZHMFVJNTVEUkFwODJUeFlwMkwxYWg0MnJrcWs3RmY5eVBpcUpNRW1rT1dsaEpXMkU3X0hZX3BQOGh6cmFaRThGNWNlbHUzcjBvdWNn"
-    }
-  },
-  {
-    "id": "2026-07-15-emergent-unicorn",
-    "category": "vendor",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-07-15T12:00:00Z",
-    "headline": "Indian AI coding startup Emergent reaches unicorn status on 200K paying customers",
-    "plain_english": "Emergent, an Indian AI coding assistant, achieved $1B+ valuation after Series C. The startup has 200K+ paying customers and $120M annualized revenue run-rate just over a year after launch.",
-    "why_it_matters": "Non-Western AI vendor scaling rapidly into enterprise. Signals talent and market conditions favor specialized AI tools beyond US frontier labs; BFSI will face competing vendor ecosystems.",
-    "amount": "$130M",
-    "round": "Series C",
-    "source": {
-      "name": "TechCrunch · 2026-07-15",
-      "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/"
-    }
-  },
-  {
     "id": "2026-07-17-memphis-data-center-backlash",
     "category": "shift",
     "jurisdiction": "US",
@@ -8939,20 +8965,6 @@
     }
   },
   {
-    "id": "2026-07-15-msci-ubs-private-markets",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-15T12:06:00Z",
-    "headline": "MSCI and UBS partner on private markets transparency infrastructure",
-    "plain_english": "MSCI and UBS announced a strategic partnership to increase transparency in private markets data and operations. Focus is infrastructure for institutional investors managing illiquid assets.",
-    "why_it_matters": "Major asset manager and index provider bundling to own private-markets rails. Defensive play to reduce reliance on third-party data; signals private-markets digitization accelerating.",
-    "source": {
-      "name": "Finextra · 2026-07-15",
-      "url": "https://www.finextra.com/pressarticle/110425/msci-and-ubs-join-forces-to-bring-more-transparency-to-private-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-16-pay-uk-board-appointments",
     "category": "shift",
     "jurisdiction": "UK",
@@ -9030,20 +9042,6 @@
     }
   },
   {
-    "id": "2026-07-15-alibaba-apple-china",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-07-15T11:55:31Z",
-    "headline": "China approves Alibaba Qwen AI for Apple Intelligence platform integration",
-    "plain_english": "China's Cyberspace Administration approved Apple's use of Alibaba's Qwen AI model to power iPhone intelligence features in China. Signals first major cross-border AI model integration in consumer device.",
-    "why_it_matters": "Geopolitical AI fragmentation realized. Apple forced to use Chinese AI for China market; sets precedent for local-model mandates. BFSI platforms in APAC will face similar sandbox requirements.",
-    "source": {
-      "name": "CNBC · 2026-07-15",
-      "url": "https://www.cnbc.com/2026/07/15/alibaba-qwen-ai-apple-intelligence.html"
-    }
-  },
-  {
     "id": "2026-07-16-sifted-scaling-companies-ai-production",
     "category": "insight",
     "jurisdiction": "EU",
@@ -9104,20 +9102,6 @@
     }
   },
   {
-    "id": "2026-07-15-asml-ai-chip-demand",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-15T11:25:49Z",
-    "headline": "ASML raises 2026 sales forecast again on sustained AI chip capacity build",
-    "plain_english": "ASML (lithography equipment maker) raised guidance for the second time this year as customers ramp AI semiconductor production. Supply chain capacity constraints easing; AI chip availability improving.",
-    "why_it_matters": "AI compute scarcity easing. Banks and fintechs currently rationing inference budgets will see costs fall 2H 2026+. Enables larger-scale language model deployments in production BFSI workflows.",
-    "source": {
-      "name": "CNBC · 2026-07-15",
-      "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html"
-    }
-  },
-  {
     "id": "2026-07-16-enterprise-agents-deployment-reality",
     "category": "insight",
     "jurisdiction": "US",
@@ -9168,20 +9152,6 @@
     }
   },
   {
-    "id": "2026-07-15-hemispheric-brain-ai",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-07-15T12:00:00Z",
-    "headline": "Apple FaceID inventor's startup uses AI to diagnose brain conditions from imaging",
-    "plain_english": "Gidi Littwin (former Apple FaceID engineer) founded Hemispheric, an AI startup that diagnoses depression, PTSD, and Parkinson's from brain scans. Goal: make diagnostic AI as accessible and cheap as blood tests.",
-    "why_it_matters": "Medical AI moving into early detection and remote diagnostics. Implications for BFSI: employee wellness programs, insurance underwriting data, healthcare fintech partnerships expand.",
-    "source": {
-      "name": "Wired · 2026-07-15",
-      "url": "https://www.wired.com/story/the-apple-faceid-veteran-building-a-frontier-ai-model-for-the-human-brain/"
-    }
-  },
-  {
     "id": "2026-07-15-cramer-ai-roi-proof",
     "category": "insight",
     "jurisdiction": "US",
@@ -9218,55 +9188,5 @@
     },
     "stat_value": "n/a",
     "stat_label": "Tipping point: doubt now outweighs detection"
-  },
-  {
-    "id": "2026-07-15-hsbc-visa-agentic-commerce",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-07-15T11:59:00Z",
-    "headline": "HSBC UK trials AI agent shopping with Visa in controlled environment",
-    "plain_english": "HSBC UK and Visa are developing agentic commerce—AI agents that initiate and execute purchases on behalf of cardholders. The trial emphasizes security controls and customer consent frameworks, marking an early move into autonomous transaction initiation.",
-    "why_it_matters": "First major card-issuer + network agentic commerce trial signals shift from advisory AI to autonomous spending. Will force compliance and fraud frameworks to evolve; sets template for other banks.",
-    "jargon": [
-      {
-        "term": "agentic commerce",
-        "def": "AI agents authorized to independently initiate and complete transactions on behalf of a user within preset guardrails."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-15",
-      "url": "https://www.finextra.com/pressarticle/110423/hsbc-uk-trials-ai-shopping-with-visa?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-15-caixabank-payment-platform",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-07-15T12:02:00Z",
-    "headline": "CaixaBank launches integrated payment and business management platform",
-    "plain_english": "CaixaBank released an advanced payment solution that integrates transaction processing with broader business operations for SMEs. Platform scope extends beyond transaction rails into operational workflows.",
-    "why_it_matters": "Spanish bank bundling payments with back-office management mirrors fintech playbook. Shows traditional banks embedding themselves deeper into customer business processes, not just payments.",
-    "source": {
-      "name": "Finextra · 2026-07-15",
-      "url": "https://www.finextra.com/pressarticle/110424/caixabank-releases-platform-capable-of-integrating-payment-services-and-business-management?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-15-lending-ai-pilots",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-15T11:30:00Z",
-    "headline": "Banking strategy shifts signal AI reshaping advice, infrastructure now competitive edge",
-    "plain_english": "Recent moves by KeyBank, SoFi, Fifth Third, and Grasshopper reveal banks betting AI will reshape advisory services. Infrastructure and treasury platforms are emerging as differentiation levers. Banks narrowing focus to select value chains.",
-    "why_it_matters": "Banks no longer compete on product breadth. AI forces specialization: some chase advisory margin, others bet on rails/operations. Consolidation and partnerships accelerate.",
-    "stat_value": "4",
-    "stat_label": "Major banks publicly signaling AI-driven strategy pivots",
-    "source": {
-      "name": "Tearsheet · 2026-07-15",
-      "url": "https://tearsheet.co/banking/the-four-questions-steering-modern-banking-strategy/?utm_source=rss&utm_medium=rss&utm_campaign=the-four-questions-steering-modern-banking-strategy"
-    }
   }
 ]
