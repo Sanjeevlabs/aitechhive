@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-08-15-amazon-twitch-ai-training-opt-out",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-15T09:00:00.000Z",
+    "headline": "Amazon allows Twitch users to opt out of AI training data harvesting",
+    "plain_english": "After backlash, Amazon gave Twitch streamers ability to opt out of having their content used to train AI models. Policy shift reflects emerging compliance practice where consumer consent is now table-stakes for large-scale AI training.",
+    "why_it_matters": "Precedent: major tech firms now expect regulatory pressure on training-data provenance; BFSI AI teams should audit whether their internal models were trained on third-party data without explicit consent—liability vector.",
+    "jargon": [
+      {
+        "term": "Training data harvesting",
+        "def": "Collecting and using user-generated content or customer data to teach AI models without explicit permission."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-08-15",
+      "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/"
+    }
+  },
+  {
     "id": "2026-08-14-world-liberty-bank-charter",
     "category": "regulation",
     "jurisdiction": "US",
@@ -138,23 +158,17 @@
     }
   },
   {
-    "id": "2026-08-11-banks-ai-vendor-concentration-risk",
-    "category": "regulation",
-    "jurisdiction": "Global",
+    "id": "2026-08-15-wall-street-ai-deployment",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-08-11T10:55:00Z",
-    "headline": "Moody's flags AI vendor concentration risk for global banking sector",
-    "plain_english": "Rating agency Moody's warns that banks are becoming dangerously dependent on a small number of AI vendors, creating systemic risk. This concentration could limit operational flexibility and increase exposure to single-vendor failures or pricing leverage.",
-    "why_it_matters": "Regulators will likely use this as ammunition for mandatory vendor diversification rules and stress-test scenarios. Expect supervisory letters on third-party AI risk management and board-level scrutiny of vendor contracts within 12 months.",
-    "jargon": [
-      {
-        "term": "Concentration risk",
-        "def": "Over-reliance on one or few critical suppliers; if they fail, entire system collapses."
-      }
-    ],
+    "published_at": "2026-08-15T10:26:19.000Z",
+    "headline": "Wall Street's biggest banks disclose AI usage patterns and operational scope",
+    "plain_english": "Major US banks have begun public disclosures of AI deployment—spanning risk modeling, trading, compliance, and customer service. Business Insider compiled the inventory, showing scale and functional breadth of enterprise AI adoption across the sector.",
+    "why_it_matters": "Public disclosure of AI footprint signals banks normalizing AI in core functions; risk officers must audit their own stack against disclosed peer deployments to benchmark governance maturity.",
     "source": {
-      "name": "Finextra · 2026-08-11",
-      "url": "https://www.finextra.com/newsarticle/48225/banks-facing-ai-concentration-risk"
+      "name": "Business Insider · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZG9Pa3NsYUhnbUplaklxOFIyRkV4dGNYQy05ZHRweXNqT0VabnAwTjYtMWhJdkZRTzVta3ZMTEQ5V3ZfTTNHRGhJY0liY3JmbWxfZFpvTW96NEJPUGQ4UHFUQ3FyTTFzbkdoSnkxb284di1oTHBsVTJzRmViWjZ2SDNRNUZibnhpbmlLbU5ZOTduRlZIT3NLMy1UVHl0Zw"
     }
   },
   {
@@ -326,30 +340,6 @@
     "source": {
       "name": "Tearsheet · 2026-08-11",
       "url": "https://tearsheet.co/the-quarterly-review/the-quarterly-review-paypals-jeff-pomeroy-on-scaling-the-firms-payment-services-and-how-crypto-and-agentic-commerce-fit-in"
-    }
-  },
-  {
-    "id": "2026-08-10-wells-fargo-tokenized-deposits",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-10T23:01:54Z",
-    "headline": "Wells Fargo begins offering tokenized deposits to corporate clients this fall",
-    "plain_english": "Wells Fargo will launch blockchain-based tokenized deposits for select corporate and commercial treasurers. Enables programmable transfers and faster settlement without leaving the bank.",
-    "why_it_matters": "First major US bank operationalizes tokenized deposits in production. Shifts stablecoin debate from external networks to in-bank infrastructure, reducing regulatory friction for treasurers.",
-    "jargon": [
-      {
-        "term": "Tokenized deposits",
-        "def": "Digital representations of bank deposits on a blockchain, enabling programmable transfers and instant settlement."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-10",
-      "url": "https://www.pymnts.com/blockchain/2026/wells-fargo-brings-the-stablecoin-fight-inside-the-bank/"
-    },
-    "scale": {
-      "metric": "markets",
-      "value": "US corporate treasurers"
     }
   },
   {
@@ -525,6 +515,20 @@
     }
   },
   {
+    "id": "2026-08-15-india-ai-skilling-pm-modi",
+    "category": "shift",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-08-15T06:11:15.000Z",
+    "headline": "India announces AI upskilling program for 10 million youth, free coaching nationwide",
+    "plain_english": "PM Modi's Independence Day address committed to free AI skilling for one crore (10 million) Indian youth, positioning India as a major training hub. National-scale program signals state pivot toward AI-native workforce.",
+    "why_it_matters": "India's talent pipeline for BFSI AI roles will expand dramatically; Indian banks and fintech operators will have deeper bench for AI engineering; labor arbitrage advantage may shift as local expertise grows.",
+    "source": {
+      "name": "Devbhoomi News · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE42NDNadWNiMXpzZmpsT2xiUmNSRFk3U3QyZzNqYnFzNXdJV0RZVXRVQmhKbTkxNEx6OFh3bEJmQjJXLTlSU1V4dg"
+    }
+  },
+  {
     "id": "2026-08-14-openai-enterprise-revenue-milestone",
     "category": "shift",
     "jurisdiction": "US",
@@ -652,20 +656,6 @@
     "source": {
       "name": "CNBC · 2026-08-11",
       "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html"
-    }
-  },
-  {
-    "id": "2026-08-12-nasdaq-level-markets-acquisition",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T00:01:00.000Z",
-    "headline": "Nasdaq acquires alternative trading system LeveL Markets; terms undisclosed",
-    "plain_english": "Exchange operator Nasdaq has agreed to acquire LeveL Markets, a dark pool (Alternative Trading System). No financial terms disclosed. Consolidates Nasdaq's non-display trading footprint as market structure evolves.",
-    "why_it_matters": "Nasdaq doubling down on ATS/dark-pool market share as retail and institutional trading volumes fragment across venues. AI order routing and execution optimization will become competitive moats; acquirer gains customer base for next-gen trading algo deployment.",
-    "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48231/nasdaq-to-buy-ats-level-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -1017,6 +1007,20 @@
     }
   },
   {
+    "id": "2026-08-15-italy-climate-risk-cheese-collateral",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-15T08:00:36.000Z",
+    "headline": "Italian bank uses climate-controlled Parmigiano-Reggiano warehouses as loan collateral",
+    "plain_english": "Credito Emiliano in Emilia-Romagna now accepts wheels of Parmigiano-Reggiano as physical collateral for loans, storing them in climate-controlled vaults. Real-world example of how banks are adapting lending models to commodity-backed financing.",
+    "why_it_matters": "Shows regional banks adapting collateral frameworks outside traditional bonds/equities; signals growing importance of supply-chain financing and ESG-adjacent risk models in retail lending.",
+    "source": {
+      "name": "PYMNTS · 2026-08-15",
+      "url": "https://www.pymnts.com/news/banking/2026/italy-cheese-bank-finds-climate-risk-has-rind/"
+    }
+  },
+  {
     "id": "2026-08-14-platforms-merchant-credit-expansion",
     "category": "insight",
     "jurisdiction": "US",
@@ -1175,17 +1179,17 @@
     }
   },
   {
-    "id": "2026-08-09-insight-ai-philanthropy-pledge",
-    "category": "insight",
+    "id": "2026-08-15-alibaba-ai-downloads",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-09T09:30:00Z",
-    "headline": "AI billionaires pledge wealth giveaways amid concerns over follow-through",
-    "plain_english": "A new generation of AI-industry billionaires has announced plans to donate vast fortunes, yet critics question whether pledges without binding legal structures constitute credible commitments. The Giving Pledge model has historically seen delayed or incomplete payouts.",
-    "why_it_matters": "If AI philanthropic pledges remain unfulfilled, it signals that regulatory frameworks—not voluntary commitments—will drive AI safety research funding, compliance, and workforce development in financial services.",
+    "severity": "med",
+    "published_at": "2026-08-15T09:16:06.000Z",
+    "headline": "Alibaba AI models reach 3 billion downloads, surpassing Meta and Google",
+    "plain_english": "Alibaba's open-source AI models crossed 3 billion downloads, becoming the most-downloaded AI toolkit globally by volume. This signals shift in AI adoption patterns away from US-centric platforms toward China-based alternatives.",
+    "why_it_matters": "Indicates accelerating developer preference for non-US AI infrastructure; BFSI teams building on Alibaba stack face geopolitical and vendor-concentration risk if regulatory friction deepens.",
     "source": {
-      "name": "Wired · 2026-08-09",
-      "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/"
+      "name": "Bloomberg · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNkdXS05xRW1WQ2ItQmhUZEd1SVowVkJISVhwQ1Z5STF5dnJkV2pVRmExN1JoLXNEMkZKdGV1eGZnWnVvV2I1QllUZ3JJTktoeFdKa3JtY3NSMFlBRUYta3k5d2RJdnFzVUJIMGVGY2V0SThGTG94SlEzMl9KQWRsZkduN0RycGx1SjBGOVViQVNvbXE4TS1WdTU2MGhLNjhZLUtUVHM2WVF3ZGZKalBmOURR"
     }
   },
   {
@@ -1324,20 +1328,6 @@
     "source": {
       "name": "CNBC · 2026-08-11",
       "url": "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html"
-    }
-  },
-  {
-    "id": "2026-08-11-frontier-ai-organoid-neural-networks",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-11T10:00:00Z",
-    "headline": "Lab-grown human brain organoids could outperform artificial neural networks",
-    "plain_english": "Wired reports that mini human brains (organoids) grown in labs worldwide may soon outperform silicon-based neural networks in reasoning and learning tasks. This represents a fundamental shift in computing substrate.",
-    "why_it_matters": "Long-term: biocomputing could disrupt assumptions about AI scaling laws and energy efficiency. Short-term signal: frontier research is exploring non-digital compute as alternative to semiconductor bottlenecks. Not BFSI-specific, but watch for biotech VC funding pivots.",
-    "source": {
-      "name": "Wired · 2026-08-11",
-      "url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/"
     }
   },
   {
@@ -1692,6 +1682,92 @@
     "source": {
       "name": "Wall Street Journal · 2026-08-03",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWF84SFNmZXoyQW42SmY2N05KSWxNeURWeWM4NlFZRnlmTk03dXcyRXRkT0E3UjhQMmloeV8yQ1hySzdKVV9oLXRKSWs0d1Y3OUctaGowdkNDTVdBZjhSZHBXcUdvUGd3OEQwOFJVWUs2aGZKdm1RT3J0M2k4a3d1TGItZ0tvZ1RxMlg5S3o4X0YwbXJZbGZzR0MzRGRucHIyNWRFYW04NEJRZVRC"
+    }
+  },
+  {
+    "id": "2026-08-11-banks-ai-vendor-concentration-risk",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-11T10:55:00Z",
+    "headline": "Moody's flags AI vendor concentration risk for global banking sector",
+    "plain_english": "Rating agency Moody's warns that banks are becoming dangerously dependent on a small number of AI vendors, creating systemic risk. This concentration could limit operational flexibility and increase exposure to single-vendor failures or pricing leverage.",
+    "why_it_matters": "Regulators will likely use this as ammunition for mandatory vendor diversification rules and stress-test scenarios. Expect supervisory letters on third-party AI risk management and board-level scrutiny of vendor contracts within 12 months.",
+    "jargon": [
+      {
+        "term": "Concentration risk",
+        "def": "Over-reliance on one or few critical suppliers; if they fail, entire system collapses."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-11",
+      "url": "https://www.finextra.com/newsarticle/48225/banks-facing-ai-concentration-risk"
+    }
+  },
+  {
+    "id": "2026-08-10-wells-fargo-tokenized-deposits",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T23:01:54Z",
+    "headline": "Wells Fargo begins offering tokenized deposits to corporate clients this fall",
+    "plain_english": "Wells Fargo will launch blockchain-based tokenized deposits for select corporate and commercial treasurers. Enables programmable transfers and faster settlement without leaving the bank.",
+    "why_it_matters": "First major US bank operationalizes tokenized deposits in production. Shifts stablecoin debate from external networks to in-bank infrastructure, reducing regulatory friction for treasurers.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Digital representations of bank deposits on a blockchain, enabling programmable transfers and instant settlement."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-10",
+      "url": "https://www.pymnts.com/blockchain/2026/wells-fargo-brings-the-stablecoin-fight-inside-the-bank/"
+    },
+    "scale": {
+      "metric": "markets",
+      "value": "US corporate treasurers"
+    }
+  },
+  {
+    "id": "2026-08-12-nasdaq-level-markets-acquisition",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-12T00:01:00.000Z",
+    "headline": "Nasdaq acquires alternative trading system LeveL Markets; terms undisclosed",
+    "plain_english": "Exchange operator Nasdaq has agreed to acquire LeveL Markets, a dark pool (Alternative Trading System). No financial terms disclosed. Consolidates Nasdaq's non-display trading footprint as market structure evolves.",
+    "why_it_matters": "Nasdaq doubling down on ATS/dark-pool market share as retail and institutional trading volumes fragment across venues. AI order routing and execution optimization will become competitive moats; acquirer gains customer base for next-gen trading algo deployment.",
+    "source": {
+      "name": "Finextra · 2026-08-12",
+      "url": "https://www.finextra.com/newsarticle/48231/nasdaq-to-buy-ats-level-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-08-09-insight-ai-philanthropy-pledge",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-09T09:30:00Z",
+    "headline": "AI billionaires pledge wealth giveaways amid concerns over follow-through",
+    "plain_english": "A new generation of AI-industry billionaires has announced plans to donate vast fortunes, yet critics question whether pledges without binding legal structures constitute credible commitments. The Giving Pledge model has historically seen delayed or incomplete payouts.",
+    "why_it_matters": "If AI philanthropic pledges remain unfulfilled, it signals that regulatory frameworks—not voluntary commitments—will drive AI safety research funding, compliance, and workforce development in financial services.",
+    "source": {
+      "name": "Wired · 2026-08-09",
+      "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/"
+    }
+  },
+  {
+    "id": "2026-08-11-frontier-ai-organoid-neural-networks",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-11T10:00:00Z",
+    "headline": "Lab-grown human brain organoids could outperform artificial neural networks",
+    "plain_english": "Wired reports that mini human brains (organoids) grown in labs worldwide may soon outperform silicon-based neural networks in reasoning and learning tasks. This represents a fundamental shift in computing substrate.",
+    "why_it_matters": "Long-term: biocomputing could disrupt assumptions about AI scaling laws and energy efficiency. Short-term signal: frontier research is exploring non-digital compute as alternative to semiconductor bottlenecks. Not BFSI-specific, but watch for biotech VC funding pivots.",
+    "source": {
+      "name": "Wired · 2026-08-11",
+      "url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/"
     }
   },
   {
@@ -7855,21 +7931,6 @@
     }
   },
   {
-    "id": "2026-07-16-trending-paypal-stripe-takeover",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-16T00:37:05Z",
-    "headline": "PayPal receives $68 billion unsolicited takeover offer from Stripe and Advent Capital",
-    "plain_english": "Stripe and private-equity firm Advent Capital bid $68 billion to acquire PayPal. The deal would reshape fintech consolidation and potentially unlock significant technology and user-base recombination.",
-    "why_it_matters": "If successful, would create a combined payments giant with ~1B users and deep API/banking integrations—forcing BFSI to reassess payment rail strategy, APIs, and competitive positioning in open banking.",
-    "amount": "$68B",
-    "source": {
-      "name": "The Straits Times · 2026-07-16",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRi15ZmdKZnludm1LTERHZTRkdi1MMzhiVTVFS3I4NXpHQXJNZ090UV9fWl9aTWRnZHhLbnJVQmFEZkdPaGNiODBRSUdQVWhKbVpvbmNUWW1UX0tFczhwYXVmLU5OVmYxeTNKQ3FGVmpFY1RmWE50UTRMd3Jna3M0enA3MHZCa0hBOXdGWUVIcWI1RnN0NEZnQmVneEkwVlJKNi1GWG1vcWMySktlcjRpTjF3YndvSUg5NTh0ckRwY0NpUQ"
-    }
-  },
-  {
     "id": "2026-07-20-regulation-us-ai-regulator-proposal",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8797,20 +8858,6 @@
     }
   },
   {
-    "id": "2026-07-16-indian-fintech-h1-2026-funding",
-    "category": "vendor",
-    "jurisdiction": "IN",
-    "severity": "low",
-    "published_at": "2026-07-16T10:59:20.000Z",
-    "headline": "Indian fintech funding reaches $2 billion in first half of 2026",
-    "plain_english": "India's fintech sector attracted $2 billion in venture capital during H1 2026, indicating sustained investor appetite despite global tech funding volatility and regulatory tightening.",
-    "why_it_matters": "APAC fintech funding recovery signals investor confidence in emerging-market payments and lending; Indian digital lending and UPI ecosystems continue to attract global capital competing with China.",
-    "source": {
-      "name": "Whalesbook · 2026-07-16",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWDJmdUJCb0FxaEo5TzBpblYyQmVfMGpaaVAxUlJ4bm80QjM4Mm4tbFJFam5oYkFGR1JocHBjdGFIcmJMRVpKdDB0WUJ3a1RpWjFHUVFhVlN1clVZMFc2Rk52QllGRC1ENjVmaEQ2SnZEM0lSWFNuNzRiMXN2bS1Qdy05bzFFeEdKWWNGMlpXeGcxdlhsNnQyc3FhS1V1UWY1V01IYS0zNHkxdXJ5UzBBaUFhU0xtOEhsNlZvQmZmX1ZDSnpjRjVNMVRHdUQwS05WYU04"
-    }
-  },
-  {
     "id": "2026-07-18-frontier-kimi-moonshot",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8993,26 +9040,6 @@
     }
   },
   {
-    "id": "2026-07-16-klarna-bnpl-monetization-shift",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-16T11:30:00.000Z",
-    "headline": "Klarna pivots from growth to profitability as BNPL matures; applies for US bank charter",
-    "plain_english": "Swedish buy-now-pay-later leader Klarna is shifting from customer acquisition to retention and monetization, and filed for a US national bank charter to diversify revenue beyond transaction fees.",
-    "why_it_matters": "Maturation of BNPL segment forces fintechs toward banking licenses for deposit-taking and lending; banks now face entrenched competitors moving upmarket into core retail banking products.",
-    "jargon": [
-      {
-        "term": "BNPL",
-        "def": "Buy-now-pay-later; point-of-sale credit allowing consumers to defer payment; typically in 2-4 equal interest-free installments."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-07-16",
-      "url": "https://tearsheet.co/funding/with-bnpl-mainstream-klarna-shifts-its-focus-to-better-economics/?utm_source=rss&utm_medium=rss&utm_campaign=with-bnpl-mainstream-klarna-shifts-its-focus-to-better-economics"
-    }
-  },
-  {
     "id": "2026-07-17-chinese-ai-open-weight-shift",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -9113,21 +9140,6 @@
     }
   },
   {
-    "id": "2026-07-16-abn-amro-ics-worldline-outsource",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-16T00:01:00Z",
-    "headline": "ABN Amro outsources card operations to Worldline, cuts 450 staff",
-    "plain_english": "ABN Amro's International Card Services subsidiary is moving core card operations to Worldline, eliminating 450 jobs by Q2 2028. This is a broader trend: banks consolidating payments and processing to specialized vendors to cut costs and reduce operational complexity.",
-    "why_it_matters": "Signals accelerating consolidation in European card processing. Smaller players face pressure to offload commoditized operations, freeing capital for AI-driven customer and risk products.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/newsarticle/48098/abn-amros-ics-to-cut-450-staff-as-it-outsources-operations-to-worldline"
-    },
-    "effective_date": "2028-04-01"
-  },
-  {
     "id": "2026-07-17-cba-ai-bubble-risk",
     "category": "insight",
     "jurisdiction": "APAC",
@@ -9153,86 +9165,6 @@
     "source": {
       "name": "CNBC · 2026-07-16",
       "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html"
-    }
-  },
-  {
-    "id": "2026-07-16-mastercard-agentic-ai-sandbox",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-16T00:01:00Z",
-    "headline": "Mastercard opens agentic AI sandbox in UK for bank and retailer pilots",
-    "plain_english": "Mastercard is launching a controlled testing environment in the UK where banks and retailers can safely experiment with agentic AI use cases before production rollout. Agentic systems perform multi-step tasks autonomously rather than just answering questions.",
-    "why_it_matters": "Provides production-ready banks a low-risk path to validate agent workflows on payments, fraud, and settlement tasks—likely accelerating adoption across the industry.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that takes autonomous multi-step actions toward a goal, not just responding to individual queries."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/newsarticle/48097/mastercard-picks-uk-as-test-environment-for-agentic-ai-sandbox"
-    }
-  },
-  {
-    "id": "2026-07-16-sifted-scaling-companies-ai-production",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-07-16T10:46:06.000Z",
-    "headline": "How European scaling companies move AI from pilot to production without stumbling",
-    "plain_english": "Sifted reports on best practices for European high-growth fintech and scale-up companies deploying AI from proof-of-concept to live systems: governance, data pipelines, and team structure matter more than model choice.",
-    "why_it_matters": "Pilot-to-production AI scaling is where most fintech projects fail; peer playbooks reduce time-to-market and inform compliance setup before regulators tighten oversight.",
-    "source": {
-      "name": "Sifted · 2026-07-16",
-      "url": "https://sifted.eu/articles/how-scaling-companies-are-making-ai-work-brnd/"
-    }
-  },
-  {
-    "id": "2026-07-16-anthropic-ipo-loans",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-16T00:42:00Z",
-    "headline": "Anthropic said to be preparing for IPO with loan financing",
-    "plain_english": "Anthropic is preparing a public offering and securing loans to fund growth and expansion. The move reflects investor appetite for scaling frontier AI labs and pressure from competitors to reach public markets.",
-    "why_it_matters": "Anthropic IPO would signal FX market validation of AI lab business models and likely trigger a wave of BFSI due diligence into Claude's long-term availability and pricing—critical for banks betting on it for agents.",
-    "source": {
-      "name": "Breakingthenews.net · 2026-07-16",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZ0tSd1hVSjVfS25oelJDeDdRcVNBN0dCeEh1SDhYb0RMc3JvQ1lUS0lNTkFvQ3cteTBVS2hBNHQyZlphZHB5eVh1WnhLMzJLOVhIMW1ESk1SNUlEN3dZQlJQSU9Ld3RITVZnZFRyMVU1RzZuc0tsMkNDVlNJR3UwbU1HOHd3OUFQNWMzRHQ1UDNvNDA"
-    }
-  },
-  {
-    "id": "2026-07-16-bank-ireland-google-ai-scholarships",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-07-16T00:01:00Z",
-    "headline": "Bank of Ireland and Google offer 10,000 AI scholarships to SME customers",
-    "plain_english": "Bank of Ireland and Google are jointly providing up to 10,000 free AI training scholarships to the bank's small business customers. Aims to build AI literacy across Irish SMEs and establish the bank as an AI-enabled business partner.",
-    "why_it_matters": "First major UK/IE bank to bundle AI education with customer banking relationships—differentiates on ecosystem value, not just products, and signals competitive pressure on fintechs offering embedded learning.",
-    "scale": {
-      "metric": "customers",
-      "value": "10,000"
-    },
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/newsarticle/48099/bank-of-ireland-and-google-offer-smes-ai-scholarships"
-    }
-  },
-  {
-    "id": "2026-07-15-microsoft-competes-anthropic-openai",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-15T23:59:44Z",
-    "headline": "Microsoft trains sales teams to position in-house AI models against OpenAI and Anthropic",
-    "plain_english": "Microsoft is coaching its sales force to pitch its own AI models as more efficient and cost-effective than OpenAI and Anthropic offerings. Reflects Microsoft's shift from reseller of OpenAI models to direct model competitor.",
-    "why_it_matters": "Banks evaluating LLM providers now face Microsoft as a first-party vendor; creates pressure on pricing and SLAs from OpenAI/Anthropic, but introduces enterprise customer risk (bundling, support bias, vendor lock-in).",
-    "source": {
-      "name": "TechCrunch · 2026-07-15",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/"
     }
   }
 ]
