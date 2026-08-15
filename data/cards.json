@@ -158,6 +158,20 @@
     }
   },
   {
+    "id": "2026-08-15-world-liberty-financial-bank-approval",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-15T19:39:00Z",
+    "headline": "World Liberty Financial gains preliminary regulatory approval to launch U.S. bank",
+    "plain_english": "The Trump family's World Liberty Financial won preliminary greenlight from U.S. banking regulators to establish a bank charter. The fintech firm had previously raised capital for crypto and digital asset services; bank license enables deposit-taking and lending.",
+    "why_it_matters": "New bank charters in fintech remain rare and politically charged. Approval sets precedent for politically connected players and may signal regulator openness to alternative-custody and DeFi-integrated banking—watch for AI-driven compliance and KYC automation as competitive edge.",
+    "source": {
+      "name": "WSJ · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWlQwM214bWI1eFkwOTl0NzBjaXFVaVh3MXdKVXhrV1V5S2lJclVkTlZNNVVhNkJQS0tGMlZmV0YtSGxYWG1LOGtvRUpmaUNBbWdRYk55S3RicDZfc0ZOTnNlbnBzSFJtck43dG5jUTcwOFFfeGhld0Q1RndTalF2UENtVzFZTVAyMFpndWduckVMM2ZEV2RTOWFVZUdJdVNTRTBBVnFGOW9ZR3haV053MlR6Mnc5RURn"
+    }
+  },
+  {
     "id": "2026-08-15-wall-street-ai-deployment",
     "category": "deployment",
     "jurisdiction": "US",
@@ -323,23 +337,18 @@
     }
   },
   {
-    "id": "2026-08-11-paypal-agentic-commerce-expansion",
-    "category": "deployment",
+    "id": "2026-08-15-nvidia-sb-energy-data-center",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-11T11:30:00Z",
-    "headline": "PayPal scales payment services with focus on agentic commerce and crypto integration",
-    "plain_english": "PayPal SVP Jeff Pomeroy announced progress on unifying global platform, expanding in-store payments, and integrating agentic AI commerce (autonomous AI agents handling transactions). The company is positioning crypto as part of its core payment mix.",
-    "why_it_matters": "Agentic commerce—where AI agents autonomously execute transactions—is the next frontier in payments. PayPal's early integration signals that Fortune-500 fintech is betting on agent-to-agent settlement at scale within 18–24 months.",
-    "jargon": [
-      {
-        "term": "Agentic commerce",
-        "def": "AI agents autonomously negotiate, order, and settle transactions without human intervention."
-      }
-    ],
+    "severity": "high",
+    "published_at": "2026-08-15T20:16:56Z",
+    "headline": "Nvidia pursues $3 billion SB Energy stake tied to OpenAI data center infrastructure",
+    "plain_english": "Nvidia is exploring a $3 billion investment in SB Energy as part of a broader OpenAI data center partnership. The move signals consolidation of AI compute financing and ownership—Nvidia chips power the centers, SB Energy provides capital and infrastructure.",
+    "why_it_matters": "Vertical integration of AI infrastructure ownership (chip maker + capex provider) reduces BFSI reliance on spot market pricing and availability. Banks and insurers training proprietary models will face tighter vendor lock-in and higher capex barriers to entry.",
+    "amount": "$3B",
     "source": {
-      "name": "Tearsheet · 2026-08-11",
-      "url": "https://tearsheet.co/the-quarterly-review/the-quarterly-review-paypals-jeff-pomeroy-on-scaling-the-firms-payment-services-and-how-crypto-and-agentic-commerce-fit-in"
+      "name": "Reuters · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZ3pfaW5nWDJod3o1WmVuMnludzV4bUF3WllYcXJtV3phQndZbDc1NW5TQkFpODUtN25oLU9sVmhtU0VhNU9PMzhfUjNxWDVyenljaElYb3Y5R0VnN29HUTJGOGdUZnJqUUFOSUxDWlZwdThKcVNqSUhZT19HOWFsN284OFUzWHlLTmdCVXJhemFxUDd2dGhacjFidFlnXzZyTVY5Vk9ZRzcxSUpIelJtcXlRMDNoeFA3dHc4U2xQUDhDSUk"
     }
   },
   {
@@ -496,22 +505,6 @@
     "source": {
       "name": "Sifted · 2026-08-12",
       "url": "https://sifted.eu/articles/lovable-raises-e400m-series-c/"
-    }
-  },
-  {
-    "id": "2026-08-12-happyrobot-series-c-valuation",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-11T23:26:57.000Z",
-    "headline": "HappyRobot raises $150M Series C, reaches $1.2B valuation on agent platform momentum",
-    "plain_english": "AI agent platform HappyRobot closed a $150M Series C round, valuing it at $1.2B post-money. Total funding now $200M. Round oversubscribed, reflecting enterprise demand for autonomous workflow automation across finance and ops.",
-    "why_it_matters": "Late-stage agent-platform valuations now rival mid-market banks' market caps. First-mover advantage in AR, hiring, and procurement automation will compound; laggards face margin pressure.",
-    "amount": "$150M",
-    "round": "Series C",
-    "source": {
-      "name": "PYMNTS · 2026-08-11",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/happyrobot-vaults-to-1-2-billion-valuation-as-enterprise-demand-for-ai-automation-soars/"
     }
   },
   {
@@ -831,6 +824,26 @@
     }
   },
   {
+    "id": "2026-08-15-anthropic-claude-watermarks",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-15T18:58:39Z",
+    "headline": "Anthropic details Claude AI-generated content watermarking mechanism",
+    "plain_english": "Anthropic released technical specifics on how Claude will embed invisible watermarks into text to mark AI-generated content. The scheme aims to help downstream systems and auditors detect synthetic writing; details cover robustness against editing and code generation edge cases.",
+    "why_it_matters": "Watermarking is now table stakes for frontier models. Banks and compliance teams will need tooling to detect and flag AI-drafted client comms, regulatory filings, and risk assessments—critical for audit trails and consumer protection.",
+    "jargon": [
+      {
+        "term": "Watermarking",
+        "def": "Invisible digital marker embedded in AI output to prove origin and prevent tampering; survives minor edits."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-08-15",
+      "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/"
+    }
+  },
+  {
     "id": "2026-08-14-mckinsey-agentic-ai-adoption-gap",
     "category": "research",
     "jurisdiction": "Global",
@@ -993,17 +1006,19 @@
     }
   },
   {
-    "id": "2026-08-01-antibody-discovery-wet-lab-ai",
-    "category": "research",
+    "id": "2026-08-15-ai-credit-backstops-bond-market",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-01T10:30:21.000Z",
-    "headline": "AI labs tackle wet-lab bottleneck in antibody discovery; machine learning accelerates pharma R&D timelines",
-    "plain_english": "Researchers reported AI-driven methods that reduce the wet-lab validation cycle for antibody discovery, historically the slowest phase. Machine learning predicts binding properties before physical synthesis, compressing timelines from months to weeks.",
-    "why_it_matters": "Pharma and biotech are major BFSI lending verticals. Faster drug discovery cycles reduce R&D financing timelines and de-risk venture debt instruments. Asset managers tracking biotech growth should monitor this capability shift.",
+    "severity": "high",
+    "published_at": "2026-08-15T19:00:00Z",
+    "headline": "Bond traders scrutinize $70 billion in undisclosed credit backstops for AI companies",
+    "plain_english": "Fixed-income traders are increasingly concerned about $70 billion in off-balance-sheet credit arrangements (guarantees, standby financing) supporting high-cash-burn AI firms. The \"shadow credit\" is largely unregulated and opaque, creating systemic risk blind spots.",
+    "why_it_matters": "If AI company funding dries up, these implicit guarantees could trigger fire sales or failures affecting downstream investors—including pension funds and bank treasuries. Risk officers must audit portfolio exposure to AI company bonds and securitizations backed by these arrangements.",
+    "stat_value": "$70B",
+    "stat_label": "Shadow credit backstops for AI firms",
     "source": {
-      "name": "Inside Precision Medicine · 2026-08-01",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLTRlVk5pQlVYSHZiMFVuUjdKck1NcmowbllqS0Q5cEdLakZteXNHU3lOTnhDN1hmQjBGWmp0N0dNNnoxUVB0ZGJsMUNVeEU1SW9ZQWVBb3o0NExvenBjTmNFc2ZYODJHc2h1bUZCMllmMmNzd1dwcW9LelVhSnRjNC1tNlBtSWRPaTJmcjRuYnhGaVcyNU9pS0ZmWWpUVVhUV18tRC1BTXB2R25TN29wV29jZ2Y"
+      "name": "Bloomberg · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOExrX3ZOZm42OC1DNDd1MlY3dE5VWDM0MEV2NDdSa3gzal9majFhTm1UQmkwc0tZSHY1RnJVMUZZN2VuQjJJN0hfNncyZTNMRVJsS2lkdmt1T1FaQ2c3bEEwbUdyaHAtdklzaTFkUjdNcUJZTWVwQ1BHY1lyRG9rOURJQngxSS1XbnJrVFBQM0VyU2tKbXZCQ1UwSVBranN5QXhHSTlPSG55TEROSHJfeUF4Nms4RzU2NUVVdHdrWDIxYUJPcXc"
     }
   },
   {
@@ -1155,28 +1170,6 @@
     },
     "stat_value": "Agentic workflows",
     "stat_label": "breaking Zero Trust audit assumptions"
-  },
-  {
-    "id": "2026-08-10-pe-vishing-attacks-google",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-10T00:01:00.000Z",
-    "headline": "Private equity firms targeted by low-tech vishing attacks despite AI security build-out",
-    "plain_english": "Google security researchers report dozens of PE firms hit by old-school phone-call social engineering (vishing) in recent months, even as the financial sector invests heavily in AI-powered cyber defense systems.",
-    "why_it_matters": "Reveals the maturity paradox: AI defense vendors focus on algorithmic threats while human-layer attacks remain economical and effective. PE firms—attractive targets for fraud and intel—need balanced defense budgets that don't over-invest in flashy tech.",
-    "stat_value": "dozens",
-    "stat_label": "PE firms targeted via vishing in recent months",
-    "jargon": [
-      {
-        "term": "vishing",
-        "def": "Voice phishing: social engineering via phone calls impersonating trusted parties to extract credentials or wire money."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-10",
-      "url": "https://www.finextra.com/newsarticle/48215/hackers-target-pe-firms-with-old-school-vishing-attacks---google-researchers"
-    }
   },
   {
     "id": "2026-08-15-alibaba-ai-downloads",
@@ -1682,6 +1675,78 @@
     "source": {
       "name": "Wall Street Journal · 2026-08-03",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWF84SFNmZXoyQW42SmY2N05KSWxNeURWeWM4NlFZRnlmTk03dXcyRXRkT0E3UjhQMmloeV8yQ1hySzdKVV9oLXRKSWs0d1Y3OUctaGowdkNDTVdBZjhSZHBXcUdvUGd3OEQwOFJVWUs2aGZKdm1RT3J0M2k4a3d1TGItZ0tvZ1RxMlg5S3o4X0YwbXJZbGZzR0MzRGRucHIyNWRFYW04NEJRZVRC"
+    }
+  },
+  {
+    "id": "2026-08-11-paypal-agentic-commerce-expansion",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-11T11:30:00Z",
+    "headline": "PayPal scales payment services with focus on agentic commerce and crypto integration",
+    "plain_english": "PayPal SVP Jeff Pomeroy announced progress on unifying global platform, expanding in-store payments, and integrating agentic AI commerce (autonomous AI agents handling transactions). The company is positioning crypto as part of its core payment mix.",
+    "why_it_matters": "Agentic commerce—where AI agents autonomously execute transactions—is the next frontier in payments. PayPal's early integration signals that Fortune-500 fintech is betting on agent-to-agent settlement at scale within 18–24 months.",
+    "jargon": [
+      {
+        "term": "Agentic commerce",
+        "def": "AI agents autonomously negotiate, order, and settle transactions without human intervention."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-08-11",
+      "url": "https://tearsheet.co/the-quarterly-review/the-quarterly-review-paypals-jeff-pomeroy-on-scaling-the-firms-payment-services-and-how-crypto-and-agentic-commerce-fit-in"
+    }
+  },
+  {
+    "id": "2026-08-12-happyrobot-series-c-valuation",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-11T23:26:57.000Z",
+    "headline": "HappyRobot raises $150M Series C, reaches $1.2B valuation on agent platform momentum",
+    "plain_english": "AI agent platform HappyRobot closed a $150M Series C round, valuing it at $1.2B post-money. Total funding now $200M. Round oversubscribed, reflecting enterprise demand for autonomous workflow automation across finance and ops.",
+    "why_it_matters": "Late-stage agent-platform valuations now rival mid-market banks' market caps. First-mover advantage in AR, hiring, and procurement automation will compound; laggards face margin pressure.",
+    "amount": "$150M",
+    "round": "Series C",
+    "source": {
+      "name": "PYMNTS · 2026-08-11",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/happyrobot-vaults-to-1-2-billion-valuation-as-enterprise-demand-for-ai-automation-soars/"
+    }
+  },
+  {
+    "id": "2026-08-01-antibody-discovery-wet-lab-ai",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-01T10:30:21.000Z",
+    "headline": "AI labs tackle wet-lab bottleneck in antibody discovery; machine learning accelerates pharma R&D timelines",
+    "plain_english": "Researchers reported AI-driven methods that reduce the wet-lab validation cycle for antibody discovery, historically the slowest phase. Machine learning predicts binding properties before physical synthesis, compressing timelines from months to weeks.",
+    "why_it_matters": "Pharma and biotech are major BFSI lending verticals. Faster drug discovery cycles reduce R&D financing timelines and de-risk venture debt instruments. Asset managers tracking biotech growth should monitor this capability shift.",
+    "source": {
+      "name": "Inside Precision Medicine · 2026-08-01",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLTRlVk5pQlVYSHZiMFVuUjdKck1NcmowbllqS0Q5cEdLakZteXNHU3lOTnhDN1hmQjBGWmp0N0dNNnoxUVB0ZGJsMUNVeEU1SW9ZQWVBb3o0NExvenBjTmNFc2ZYODJHc2h1bUZCMllmMmNzd1dwcW9LelVhSnRjNC1tNlBtSWRPaTJmcjRuYnhGaVcyNU9pS0ZmWWpUVVhUV18tRC1BTXB2R25TN29wV29jZ2Y"
+    }
+  },
+  {
+    "id": "2026-08-10-pe-vishing-attacks-google",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-10T00:01:00.000Z",
+    "headline": "Private equity firms targeted by low-tech vishing attacks despite AI security build-out",
+    "plain_english": "Google security researchers report dozens of PE firms hit by old-school phone-call social engineering (vishing) in recent months, even as the financial sector invests heavily in AI-powered cyber defense systems.",
+    "why_it_matters": "Reveals the maturity paradox: AI defense vendors focus on algorithmic threats while human-layer attacks remain economical and effective. PE firms—attractive targets for fraud and intel—need balanced defense budgets that don't over-invest in flashy tech.",
+    "stat_value": "dozens",
+    "stat_label": "PE firms targeted via vishing in recent months",
+    "jargon": [
+      {
+        "term": "vishing",
+        "def": "Voice phishing: social engineering via phone calls impersonating trusted parties to extract credentials or wire money."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-10",
+      "url": "https://www.finextra.com/newsarticle/48215/hackers-target-pe-firms-with-old-school-vishing-attacks---google-researchers"
     }
   },
   {
@@ -5064,26 +5129,6 @@
     }
   },
   {
-    "id": "2026-07-17-anthropic-1password-credential-access",
-    "category": "tool",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-16T22:44:12Z",
-    "headline": "1Password integrates with Claude to enable secure credential access without model exposure",
-    "plain_english": "1Password released a browser plugin that lets Anthropic's Claude AI agent access user credentials stored in 1Password vaults while keeping those secrets out of the model, memory, or Anthropic's servers. Enables Claude to complete auth-required tasks like booking travel.",
-    "why_it_matters": "First mainstream pattern for AI agents to act on behalf of users without leaking credentials. Banks exploring chatbots for customer service or internal ops (payments, KYC checks) now have a viable playbook to avoid credential sprawl and regulatory red flags.",
-    "jargon": [
-      {
-        "term": "agent",
-        "def": "AI system that can take autonomous actions (clicking, typing, calling APIs) in response to user instructions, not just answering questions."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-07-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/1password-and-anthropic-bring-secure-credential-access-to-claude/"
-    }
-  },
-  {
     "id": "2026-07-23-kimi-distillation-debate",
     "category": "research",
     "jurisdiction": "Global",
@@ -5373,20 +5418,6 @@
     "source": {
       "name": "Insurance Business (via Google News) · 2026-07-30",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdFZ3MUJrcDlOdXpkcW0zaTJxTXMwUlNURjdYcnJmX21GVVd6a1dmQXU5TzJTbUdmZTJCd0NHekFjZkl1dnI3RTlPbW5XWk9iNTMtVFBadG9ZQVlVcEItN3kxQzBjTWtNUEtmYXpSS21zM0UtM0Q2NXRhRlF6UENpU0dCZ25sMEdhQkoyejcxamh1eF9ZaXBPTk01VG5OM3YyeDZFRFoxcjdoRkMyOXJ6UzRtQ3p3cFpnMDhCOXpoek1hODY1UjdWZg"
-    }
-  },
-  {
-    "id": "2026-07-16-linux-foundation-x402-payments-protocol",
-    "category": "tool",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-16T12:16:00.000Z",
-    "headline": "Linux Foundation recruits 40 finance firms behind x402 internet payments protocol",
-    "plain_english": "The Linux Foundation has assembled 40 financial services and technology companies to standardize x402, an open protocol for sending payments directly over the internet, reducing dependency on legacy payment rails.",
-    "why_it_matters": "Open-standard payments infrastructure reduces switching costs and vendor lock-in for issuers; early adoption by incumbent banks signals willingness to challenge card networks and correspondent banking models.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/newsarticle/48105/finance-and-tech-firms-unite-around-internet-payments-protocol-x402?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -7397,26 +7428,6 @@
     }
   },
   {
-    "id": "2026-07-16-openai-gpt-red-adversarial-testing",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-16T12:10:00.000Z",
-    "headline": "OpenAI builds GPT-Red, an LLM red-teamer, to stress-test model safety",
-    "plain_english": "OpenAI developed GPT-Red, a specialized LLM designed to identify vulnerabilities in its own models by acting as an adversarial sparring partner. The model helps identify safety flaws before deployment.",
-    "why_it_matters": "Automated red-teaming at scale reduces manual security review bottlenecks; BFSI firms deploying LLMs in production must adopt similar adversarial-testing practices to meet regulatory scrutiny.",
-    "jargon": [
-      {
-        "term": "Red-teaming",
-        "def": "Adversarial testing where AI is trained to break or bypass another AI system to find vulnerabilities before production."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-07-16",
-      "url": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/"
-    }
-  },
-  {
     "id": "2026-07-24-south-korea-anthropic",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -8968,26 +8979,6 @@
     }
   },
   {
-    "id": "2026-07-16-osfi-banks-ai-cyber-window-closing",
-    "category": "regulation",
-    "jurisdiction": "CA",
-    "severity": "high",
-    "published_at": "2026-07-16T11:46:04.000Z",
-    "headline": "OSFI warns Canadian banks AI deployment is closing their window to fix cyber vulnerabilities",
-    "plain_english": "Canada's Office of the Superintendent of Financial Institutions signaled that as banks accelerate AI adoption, they have shrinking time to remediate existing cybersecurity flaws before those systems inherit or amplify those weaknesses.",
-    "why_it_matters": "Regulatory pressure to harden cyber defenses *before* AI rollout will force risk and compliance teams to front-load legacy system remediation; delays now compound regulatory risk later.",
-    "jargon": [
-      {
-        "term": "OSFI",
-        "def": "Office of the Superintendent of Financial Institutions; Canada's banking regulator equivalent to US OCC."
-      }
-    ],
-    "source": {
-      "name": "Reuters / Insurance Business · 2026-07-16",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdl9DSzRkdU9Halp4VXN0cmsxMmxZZVpJV3V0LXdpdDRuOGlqWjkteHNXSmthWUhqd0E1aDNQTFNneDFSSkhBTERrOXZuQl9TOXA5a2lFaS1UX2JWZmZ5TkZ0Ymc5dmQyUDBiUUs0dHVxbUFFUzl4emRXaHFma0JoUXExVHBUNllQbWVXS3hjQ09Cd1dvdFBpUlUtNkFvR04wVGl0U2czb2Y2NTRuSmtnVUVOYWVoQkRoaFBocUpzbXBSVWd4a1RPWTFrMTRrbVJPNXViMXBzQ0Q"
-    }
-  },
-  {
     "id": "2026-07-17-deployment-bbva-swift-retail-payments",
     "category": "deployment",
     "jurisdiction": "EU",
@@ -9070,76 +9061,6 @@
     }
   },
   {
-    "id": "2026-07-17-world-ai-cooperation-org-china",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-16T22:23:48Z",
-    "headline": "29 nations form China-led World AI Cooperation Organization",
-    "plain_english": "Twenty-nine countries, including major economies, formalized the World Artificial Intelligence Cooperation Organization (WAICO) led by Beijing. This institutionalizes China's influence over global AI governance, standards, and digital economy rules.",
-    "why_it_matters": "Creates competing AI governance framework outside Western-led bodies (OECD, UN). BFSI firms will face dual compliance regimes and risk geopolitical fragmentation of AI model access, data flows, and algorithmic standards.",
-    "source": {
-      "name": "PYMNTS · 2026-07-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/29-nations-join-china-led-world-ai-cooperation-organization/"
-    }
-  },
-  {
-    "id": "2026-07-17-google-gemini-delay",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-16T22:58:12Z",
-    "headline": "Google delays Gemini 3.5 Pro launch months past schedule",
-    "plain_english": "Google pushed its most powerful AI model, Gemini 3.5 Pro, months behind its May developer conference target. The company is still improving model capabilities that fell short of internal goals, signaling competitive pressure and execution challenges.",
-    "why_it_matters": "Delays in frontier model maturity create market uncertainty. BFSI teams evaluating Google Cloud AI for production—fraud detection, underwriting, trading—may face extended timelines. Anthropic and OpenAI gain window to solidify enterprise adoption.",
-    "source": {
-      "name": "PYMNTS · 2026-07-16",
-      "url": "https://www.pymnts.com/google/2026/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals/"
-    }
-  },
-  {
-    "id": "2026-07-16-remitly-uae-central-bank-license",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-16T11:52:00.000Z",
-    "headline": "Remitly gains UAE stored-value licence from Central Bank, enters Gulf market",
-    "plain_english": "Remitly, a US-based remittance fintech, received regulatory approval from the Central Bank of the UAE to operate stored-value and exchange services, enabling it to serve customers and merchants in the UAE.",
-    "why_it_matters": "Regulatory pathway into GCC markets validates distributed remittance models; signals CB appetite for licensed non-bank payment operators in high-migration corridors.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110435/remitly-granted-stored-value-licence-by-the-central-bank-of-the-uae?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-16-paypal-pay-in-30-uk",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-07-16T12:09:00.000Z",
-    "headline": "PayPal launches Pay in 30 Days for UK e-commerce, enters fee-free installment market",
-    "plain_english": "PayPal rolled out Pay in 30 Days in the UK, allowing shoppers to defer payment in a single installment with no fees or interest—competing directly with BNPL players like Klarna and Clearpay.",
-    "why_it_matters": "Incumbent payment processors now competing as direct BNPL providers, eroding fintech-exclusive market share; signals expansion of point-of-sale credit into core payment flows.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110436/paypal-launches-pay-in-30-days-for-uk-shoppers?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-07-16-pay-uk-board-appointments",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-07-16T12:11:00.000Z",
-    "headline": "Pay.UK appoints fintech executives from Monzo and Equals to board, signals sector consolidation",
-    "plain_english": "Pay.UK, the UK's retail payments standards body, appointed three fintech/challenger bank leaders (Monzo, Equals, Bank of Ireland UK) as non-executive directors, reflecting shift toward fintech voices in payments governance.",
-    "why_it_matters": "Regulatory infrastructure now co-governed by fintech leaders; accelerates adoption of API-first, real-time payments standards that threaten legacy bank batch processing.",
-    "source": {
-      "name": "Finextra · 2026-07-16",
-      "url": "https://www.finextra.com/pressarticle/110437/payuk-appoints-executives-from-monzo-equals-and-bank-of-ireland-uk-to-join-board?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-17-cba-ai-bubble-risk",
     "category": "insight",
     "jurisdiction": "APAC",
@@ -9151,20 +9072,6 @@
     "source": {
       "name": "Cyber Daily · 2026-07-17",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUDVIMl9xR284aV9SQmFwR3YyNEtidFh5d1pMWFh1S2psUE9xRWk2czZsWGlFc0pzam15X2ZPaEhvMVJ6NUJNdGFyaEYzR2tEUUM1VXJYME54d2NhZEg0NTNfNTBWbDFfdU1nWjRzQm1HUko3UmZyZGxJcWQ3R25QXzR3YzJmRUVvNW5BOGExa29HXzhtRjcwWlVTUWdQd1JONnhuYk5mTlc0ZjZfWTFSX3l2aW9CRi1TcXZWRWJGa2pnV0pLMTQxU0hWZjJLeEF3SU53OGY2N1BJUi0ta3loUw"
-    }
-  },
-  {
-    "id": "2026-07-16-nvidia-cosmos-3-edge-physical-ai",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-16T12:55:07.000Z",
-    "headline": "Nvidia unveils Cosmos 3 Edge, expands physical AI inference footprint in Japan",
-    "plain_english": "Nvidia announced Cosmos 3 Edge, a new edge-deployable AI model, and expanded infrastructure partnerships in Japan to support real-time robotic and autonomous system inference at the network edge.",
-    "why_it_matters": "Edge-deployed foundation models reduce latency and connectivity risk for mission-critical fintech operations; BFSI firms processing high-frequency trading or real-time settlement may adopt similar edge architectures.",
-    "source": {
-      "name": "CNBC · 2026-07-16",
-      "url": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html"
     }
   }
 ]
