@@ -158,6 +158,54 @@
     }
   },
   {
+    "id": "2026-08-17-ups-ai-customs-90pct",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-17T21:08:10Z",
+    "headline": "UPS automates 90% of daily customs clearances with AI agents",
+    "plain_english": "UPS deployed AI agents to automatically classify and clear 90% of daily package customs declarations, eliminating manual bottlenecks at the border. Previously, packages faced multi-day delays due to human review.",
+    "why_it_matters": "Non-BFSI enterprises now run production AI agents on high-stakes judgment tasks (customs compliance). Banks should study UPS's guardrails, explainability, and audit trails as a template for deploying agents in AML, KYC, and sanctions screening.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous systems that perceive their environment, make decisions, and take actions (e.g., classify a shipment) with minimal human intervention per cycle."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-17",
+      "url": "https://www.pymnts.com/news/delivery/2026/ups-automates-90-of-daily-customs-clearances-with-ai-agents/"
+    }
+  },
+  {
+    "id": "2026-08-18-synchrony-chatgpt-plugin",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-18T00:01:00Z",
+    "headline": "Synchrony launches ChatGPT plugin for shopping rewards discovery",
+    "plain_english": "Consumer finance firm Synchrony released a ChatGPT plugin that lets shoppers query their Synchrony marketplace for available discounts and savings offers. The plugin surfaces Synchrony's lending and rewards products via conversational AI.",
+    "why_it_matters": "B2C fintech is embedding itself into LLM chat interfaces; incumbent banks should track consumer adoption velocity and evaluate defensive integrations with Claude, GPT, and Gemini to maintain customer engagement.",
+    "source": {
+      "name": "Finextra · 2026-08-18",
+      "url": "https://www.finextra.com/newsarticle/48260/synchrony-unveils-chatgpt-plugin"
+    }
+  },
+  {
+    "id": "2026-08-17-n3xt-tokenized-cross-border",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-17T20:44:13Z",
+    "headline": "Wyoming-chartered N3XT bank launches tokenized cross-border payments",
+    "plain_english": "Blockchain bank N3XT won Wyoming regulatory approval to offer customers instant cross-border transfers using its native digital token. The move is among the first full bank licenses to embed tokenized settlement into a payments product.",
+    "why_it_matters": "Niche BFSI players are shipping blockchain-native payments to niche audiences; incumbents should monitor whether tokenized settlement gains traction with corporate treasuries, forcing legacy correspondent banking to modernize its fee structure.",
+    "source": {
+      "name": "PYMNTS · 2026-08-17",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/n3xt-unveils-tokenized-cross-border-payments/"
+    }
+  },
+  {
     "id": "2026-08-17-alipay-agentic-commerce",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -272,67 +320,19 @@
     }
   },
   {
-    "id": "2026-08-14-bofa-jio-credit-stake",
-    "category": "deployment",
-    "jurisdiction": "IN",
+    "id": "2026-08-18-stripe-openrouter-acquisition",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-08-14T00:01:00Z",
-    "headline": "Bank of America takes 49.9% stake in Indian digital lender Jio Credit for $1.9 billion",
-    "plain_english": "BofA is investing $1.9B for a near-majority stake in Jio Credit, a digital-native Indian NBFC, gaining exposure to India's consumer lending growth and access to a fintech-native underwriting and servicing model.",
-    "why_it_matters": "Major US bank is outsourcing consumer lending infrastructure to an AI-native Indian fintech; signals acceptance that greenfield digital lenders outcompete legacy origination and collections stacks in emerging markets.",
-    "scale": {
-      "metric": "markets",
-      "value": "India"
+    "published_at": "2026-08-18T00:01:00Z",
+    "headline": "Stripe acquires AI gateway OpenRouter for $7 billion",
+    "plain_english": "Payments giant Stripe has agreed to buy OpenRouter, a startup that routes requests across multiple AI models (like GPT-4, Claude), for $7B. The deal signals Stripe's pivot into embedded AI infrastructure for merchants and platforms.",
+    "why_it_matters": "Banks and fintech platforms will now route AI workloads through Stripe's payments layer, collapsing the boundary between transaction processing and generative AI spend—critical for corporate treasury teams tracking software-as-a-service costs.",
+    "source": {
+      "name": "Finextra · 2026-08-18",
+      "url": "https://www.finextra.com/newsarticle/48258/stripe-agrees-7bn-takeover-of-ai-firm-openrouter---bloomberg"
     },
-    "amount": "$1.9B",
-    "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/newsarticle/48247/bofa-to-buy-499-stake-in-indian-digital-lender-jio-credit"
-    }
-  },
-  {
-    "id": "2026-08-14-mufg-blockchain-jgb-repo",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-14T00:01:00Z",
-    "headline": "MUFG trials on-chain settlement for Japanese government bond repo using Canton Network",
-    "plain_english": "Mitsubishi UFJ is running a proof-of-concept to settle JGB repo trades on the Canton Network blockchain, moving post-trade infrastructure from T+1 messaging to atomic on-chain settlement.",
-    "why_it_matters": "Tier-1 global bank is testing blockchain for core fixed-income post-trade; success here de-risks adoption by regional banks and could standardize blockchain settlement for repo markets globally.",
-    "jargon": [
-      {
-        "term": "repo",
-        "def": "Repurchase agreement—short-term loan of cash secured by bonds; backbone of funding markets."
-      },
-      {
-        "term": "post-trade settlement",
-        "def": "Process of confirming, clearing, and transferring assets after a trade; blockchain replaces custodian intermediaries."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/newsarticle/48246/mufg-trials-blockchain-settlement-for-japanese-government-bond-repo-trades"
-    }
-  },
-  {
-    "id": "2026-08-13-maverick-findustry-chargeback-agent",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T11:00:58Z",
-    "headline": "Maverick Payments deploys Findustry chargeback agent to automate disputes",
-    "plain_english": "Payment processor Maverick Payments integrated Findustry AI's Chargeback Agent into its white-label platform, allowing merchants to automate dispute rebuttals and reduce manual processing.",
-    "why_it_matters": "Automation of chargeback workflows reduces revenue leakage; signals commodity fintech ops (dispute handling, AML) moving to AI agents—expect cost compression and staffing shifts.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Autonomous system that plans and executes multi-step tasks (e.g., gathering evidence, drafting rebuttal, submitting claim) without human intervention per step."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/maverick-payments-integrates-findustry-ai-agent-to-automate-chargeback-rebuttals/"
-    }
+    "amount": "$7B"
   },
   {
     "id": "2026-08-16-stripe-openrouter-acquisition",
@@ -498,17 +498,45 @@
     }
   },
   {
-    "id": "2026-08-12-hsbc-model-ml",
-    "category": "vendor",
+    "id": "2026-08-17-barclays-joo-ceo-investment-bank",
+    "category": "shift",
     "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-08-12T12:28:00.000Z",
-    "headline": "HSBC Asset Management backs London AI modelling startup",
-    "plain_english": "HSBC AM provided funding to London-based AI startup Model ML. No amount disclosed; investment suggests HSBC testing third-party AI risk/model tooling for asset management workflows.",
-    "why_it_matters": "Mega-bank using balance sheet to bet on point solutions; signals continued vendor fragmentation in AI-for-finance and HSBC's openness to external builders.",
+    "severity": "med",
+    "published_at": "2026-08-17T21:35:40Z",
+    "headline": "Barclays names former Bank of America executive as co-CEO of investment bank",
+    "plain_english": "Barclays appointed Joo, a veteran Bank of America investment banker, as co-CEO of its investment banking division. The move signals a strategic shift toward hiring seasoned executives to rebuild profitability in advisory and capital markets.",
+    "why_it_matters": "Tier-1 banks are restructuring investment banking leadership; Barclays' hire of BofA talent suggests a pivot toward M&A and advisory, where AI augmentation (deal analysis, client research) is differentiating. Monitor Barclays' AI roadmap for that division.",
     "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48237/hsbc-invests-in-ai-modelling-firm"
+      "name": "Reuters · 2026-08-17",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzIxOWhsdkhhSmtYbVV3NkpEWi1IYk5JMkpZLUJWVloxNG53cnF4VW9tWVJMSU5TVEZtSTZ2WU5aWEV6TmNpTHNpem1LWGhSRmJDaXh2TlIwY29oaTN4Xy1zY1F3QUwtM1c4Ty1VOWt1bGV5TXQyY0o0bXRnNjlpLXVGNHdHVVdubkI5TVdOYldfV3VSOTVDaFFFZDJKXzdORklvUmw3WWpoZmtVV0FzQkZ6QVkwZnlCU3dCWFdhZjh2anppRmc"
+    }
+  },
+  {
+    "id": "2026-08-17-relay-shutdown-google-chrome",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-17T21:27:05Z",
+    "headline": "Google acquires AI automation startup Relay; integration into Chrome announced",
+    "plain_english": "AI automation startup Relay shut down and joined Google's Chrome team. Founder Jacob Bank hinted at integrating AI task automation directly into the Chrome browser, representing a shift in how enterprise workflows handle repetitive tasks.",
+    "why_it_matters": "Major platforms (Chrome, Office 365, Salesforce) are embedding AI agents into core enterprise tools. BFSI tech leads should evaluate whether browser-native automation will cannibalize or complement internal RPA and enterprise workflow platforms.",
+    "source": {
+      "name": "TechCrunch · 2026-08-17",
+      "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/"
+    }
+  },
+  {
+    "id": "2026-08-17-square-small-business-finance-integration",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-17T23:06:53Z",
+    "headline": "Square accelerates integration of payments, banking, credit, and bill management",
+    "plain_english": "Square (Block) is tightly integrating its payments, banking, credit, and bill-management products for small businesses, including a refreshed Square Credit Card. The shift aims to create a unified SMB financial OS rather than a payments layer.",
+    "why_it_matters": "Fintech disintermediators are moving upstream into lending and cash management—traditional bank products. BFSI incumbents should accelerate their own SMB platform strategies or risk losing payment flow data and wallet share to platforms with superior UX.",
+    "source": {
+      "name": "PYMNTS · 2026-08-17",
+      "url": "https://www.pymnts.com/smbs/2026/square-accelerates-push-to-integrate-small-business-finance/"
     }
   },
   {
@@ -607,48 +635,6 @@
     "source": {
       "name": "Finextra · 2026-08-14",
       "url": "https://www.finextra.com/newsarticle/48249/nvidia-partners-with-wall-street-mobilise-funds-for-ai-infrastructure-goldman-sachs-leads-financing"
-    }
-  },
-  {
-    "id": "2026-08-13-microsoft-copilot-unification",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-13T21:29:58Z",
-    "headline": "Microsoft unifies consumer and enterprise Copilot into single platform to compete with ChatGPT and Claude",
-    "plain_english": "Microsoft is merging its fragmented Copilot consumer and enterprise apps into one unified product, consolidating the company's generalist AI assistant strategy and narrowing the feature parity gap with OpenAI's ChatGPT.",
-    "why_it_matters": "Enterprise AI adoption is forced to accept consumer-grade UX; this signals that building separate enterprise and consumer AI products is inefficient, reshaping how banks buy and deploy copilots.",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-unifies-consumer-and-enterprise-copilot-in-push-for-single-ai-platform/"
-    }
-  },
-  {
-    "id": "2026-08-13-chime-stablecoin-wallet",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T23:13:30Z",
-    "headline": "Chime explores stablecoin wallet integration into consumer banking app",
-    "plain_english": "Chime Financial is soliciting proposals from blockchain firms to embed stablecoin send/receive capability directly in its mobile banking app, signaling acceptance of crypto-native banking as table stakes for Gen Z fintech.",
-    "why_it_matters": "A mainstream consumer fintech integrating stablecoins normalizes cryptoassets as on-ramp to banking; if successful, forces legacy banks to follow or cede younger cohorts entirely.",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/blockchain/2026/chime-weighs-adding-stablecoin-wallet-to-consumer-banking-app/"
-    }
-  },
-  {
-    "id": "2026-08-13-apple-siri-publisher-deals",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T10:44:37Z",
-    "headline": "Apple explores per-use payments to publishers for Siri training data",
-    "plain_english": "Apple is negotiating direct compensation to media publishers when Siri consumes their content—shifting from bulk-archive licensing to usage-based payments. First major AI firm to test dynamic pricing model.",
-    "why_it_matters": "Pay-per-inference model could become industry norm; BFSI content providers (research, ratings, news) may demand similar usage contracts, raising AI training costs significantly.",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-discusses-paying-publishers-to-improve-siri/"
     }
   },
   {
@@ -1006,6 +992,26 @@
     }
   },
   {
+    "id": "2026-08-17-corporate-ai-spend-disparity",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-17T23:10:58Z",
+    "headline": "Top 1% of U.S. firms spend $7,400 per employee on AI; median company $11.95",
+    "plain_english": "Ramp's AI Index shows the top 1% of U.S. businesses spent a median $7,400 per employee on AI in July, while the top 10% spent ~$650 and the median company just $11.95—a 600x disparity that signals AI adoption is highly concentrated.",
+    "why_it_matters": "BFSI incumbents in the top 1% are already running parallel AI stacks (LLMs, agents, RAG) at scale; laggard banks have a narrowing window to build in-house AI capability before competitive disadvantage becomes irreversible.",
+    "jargon": [
+      {
+        "term": "AI Index",
+        "def": "Ramp's corporate spending tracker; measures actual card-based AI tool and compute outlays, not budget allocations."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-17",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/corporate-americas-top-1-spend-7400-per-employee-on-ai/"
+    }
+  },
+  {
     "id": "2026-08-17-ecb-cash-acceptance",
     "category": "insight",
     "jurisdiction": "EU",
@@ -1144,19 +1150,37 @@
     }
   },
   {
-    "id": "2026-08-12-insight-enterprises-own-ai-vs-rent",
-    "category": "insight",
+    "id": "2026-08-17-anthropic-revenue-65b-arr",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-12T22:41:53.000Z",
-    "headline": "Enterprises increasingly prefer owned or fine-tuned AI over shared LLM APIs",
-    "plain_english": "BFSI and enterprise teams are moving away from renting commodity LLM APIs (shared with competitors, costly at scale, exposes proprietary queries) toward fine-tuned or open-weight models they can control. Running proprietary models 5–10x cheaper than API spending at volume.",
-    "why_it_matters": "Shifts margin economics for frontier labs (OpenAI, Anthropic); accelerates on-premise and private SaaS adoption; banks prioritise data sovereignty and cost control over cutting-edge reasoning.",
-    "stat_value": "5–10x",
-    "stat_label": "cost reduction for enterprise-owned vs. API models at scale",
+    "severity": "high",
+    "published_at": "2026-08-17T22:55:31Z",
+    "headline": "Anthropic reports $65 billion annualized revenue run rate in July",
+    "plain_english": "Frontier AI lab Anthropic told investors its annualized revenue run rate (ARR) reached $65B in July, up sevenfold year-over-year. The metric reflects enterprise adoption of Claude across financial services, legal, and tech sectors.",
+    "why_it_matters": "Sustained enterprise demand for frontier LLMs is now proven at scale; banks evaluating Claude for document review, compliance, and trading research can factor this into contract negotiation and vendor viability assessments.",
+    "jargon": [
+      {
+        "term": "annualized revenue run rate (ARR)",
+        "def": "Monthly recurring revenue multiplied by 12; shows revenue trajectory if current pace holds for a full year."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-08-12",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/companies-want-to-own-their-ai-not-rent-it/"
+      "name": "CNBC · 2026-08-17",
+      "url": "https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html"
+    }
+  },
+  {
+    "id": "2026-08-17-nvidia-openai-105b-datacenter",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-17T21:22:37Z",
+    "headline": "Nvidia backs $105 billion financing for OpenAI Ohio data center",
+    "plain_english": "Nvidia is providing financing for OpenAI's $105B data center build-out in Ohio. The scale reflects massive capital requirements to train and serve frontier LLMs; banks are watching compute capacity as a proxy for AI model availability and pricing.",
+    "why_it_matters": "Constraint on frontier AI supply is shifting from model capability to semiconductor and power availability. BFSI firms should monitor data center expansion timelines to forecast when new model tiers and API pricing become accessible.",
+    "source": {
+      "name": "CNBC · 2026-08-17",
+      "url": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html"
     }
   },
   {
@@ -1269,34 +1293,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-14",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-uses-500-billion-dollar-financing-initiative-dispel-ai-bubble-fears/"
-    }
-  },
-  {
-    "id": "2026-08-14-nvidia-spacex-xai-stake",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-14T21:45:19.000Z",
-    "headline": "Nvidia discloses $21 billion SpaceX stake through xAI investment",
-    "plain_english": "Nvidia disclosed a $21 billion stake in SpaceX acquired through an investment in Elon Musk's xAI. Position reflects Nvidia's bet on AI compute infrastructure and satellite-based connectivity as growth vectors.",
-    "why_it_matters": "Vertical integration of AI chip supply (Nvidia) with satellite infrastructure (SpaceX) and model development (xAI) may reshape fintech latency and data sovereignty assumptions. Banks relying on terrestrial cloud may face pricing pressure from space-based alternatives.",
-    "source": {
-      "name": "CNBC · 2026-08-14",
-      "url": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html"
-    }
-  },
-  {
-    "id": "2026-08-14-openai-revenue-ipo",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-14T10:54:36Z",
-    "headline": "OpenAI revenue run rate reaches $40 billion as IPO preparation accelerates",
-    "plain_english": "OpenAI's annualized revenue has doubled to $40B+ from end-2025, signaling strong enterprise adoption momentum as the AI company prepares for a public offering. Marks a major inflection point in AI vendor monetization.",
-    "why_it_matters": "Sets valuation benchmark for downstream AI infrastructure deals; BFSI firms watching OpenAI's unit economics for their own AI cost models and vendor negotiation leverage.",
-    "source": {
-      "name": "PYMNTS · 2026-08-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-revenue-run-rate-tops-40-billion-as-ipo-nears/"
     }
   },
   {
@@ -1657,6 +1653,169 @@
     "source": {
       "name": "Tearsheet · 2026-08-04",
       "url": "https://tearsheet.co/ai-innovation/why-banks-cant-policy-their-way-out-of-shadow-ai/"
+    }
+  },
+  {
+    "id": "2026-08-14-bofa-jio-credit-stake",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-08-14T00:01:00Z",
+    "headline": "Bank of America takes 49.9% stake in Indian digital lender Jio Credit for $1.9 billion",
+    "plain_english": "BofA is investing $1.9B for a near-majority stake in Jio Credit, a digital-native Indian NBFC, gaining exposure to India's consumer lending growth and access to a fintech-native underwriting and servicing model.",
+    "why_it_matters": "Major US bank is outsourcing consumer lending infrastructure to an AI-native Indian fintech; signals acceptance that greenfield digital lenders outcompete legacy origination and collections stacks in emerging markets.",
+    "scale": {
+      "metric": "markets",
+      "value": "India"
+    },
+    "amount": "$1.9B",
+    "source": {
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/newsarticle/48247/bofa-to-buy-499-stake-in-indian-digital-lender-jio-credit"
+    }
+  },
+  {
+    "id": "2026-08-14-mufg-blockchain-jgb-repo",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-14T00:01:00Z",
+    "headline": "MUFG trials on-chain settlement for Japanese government bond repo using Canton Network",
+    "plain_english": "Mitsubishi UFJ is running a proof-of-concept to settle JGB repo trades on the Canton Network blockchain, moving post-trade infrastructure from T+1 messaging to atomic on-chain settlement.",
+    "why_it_matters": "Tier-1 global bank is testing blockchain for core fixed-income post-trade; success here de-risks adoption by regional banks and could standardize blockchain settlement for repo markets globally.",
+    "jargon": [
+      {
+        "term": "repo",
+        "def": "Repurchase agreement—short-term loan of cash secured by bonds; backbone of funding markets."
+      },
+      {
+        "term": "post-trade settlement",
+        "def": "Process of confirming, clearing, and transferring assets after a trade; blockchain replaces custodian intermediaries."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/newsarticle/48246/mufg-trials-blockchain-settlement-for-japanese-government-bond-repo-trades"
+    }
+  },
+  {
+    "id": "2026-08-13-maverick-findustry-chargeback-agent",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T11:00:58Z",
+    "headline": "Maverick Payments deploys Findustry chargeback agent to automate disputes",
+    "plain_english": "Payment processor Maverick Payments integrated Findustry AI's Chargeback Agent into its white-label platform, allowing merchants to automate dispute rebuttals and reduce manual processing.",
+    "why_it_matters": "Automation of chargeback workflows reduces revenue leakage; signals commodity fintech ops (dispute handling, AML) moving to AI agents—expect cost compression and staffing shifts.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous system that plans and executes multi-step tasks (e.g., gathering evidence, drafting rebuttal, submitting claim) without human intervention per step."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/maverick-payments-integrates-findustry-ai-agent-to-automate-chargeback-rebuttals/"
+    }
+  },
+  {
+    "id": "2026-08-12-hsbc-model-ml",
+    "category": "vendor",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-08-12T12:28:00.000Z",
+    "headline": "HSBC Asset Management backs London AI modelling startup",
+    "plain_english": "HSBC AM provided funding to London-based AI startup Model ML. No amount disclosed; investment suggests HSBC testing third-party AI risk/model tooling for asset management workflows.",
+    "why_it_matters": "Mega-bank using balance sheet to bet on point solutions; signals continued vendor fragmentation in AI-for-finance and HSBC's openness to external builders.",
+    "source": {
+      "name": "Finextra · 2026-08-12",
+      "url": "https://www.finextra.com/newsarticle/48237/hsbc-invests-in-ai-modelling-firm"
+    }
+  },
+  {
+    "id": "2026-08-13-microsoft-copilot-unification",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-13T21:29:58Z",
+    "headline": "Microsoft unifies consumer and enterprise Copilot into single platform to compete with ChatGPT and Claude",
+    "plain_english": "Microsoft is merging its fragmented Copilot consumer and enterprise apps into one unified product, consolidating the company's generalist AI assistant strategy and narrowing the feature parity gap with OpenAI's ChatGPT.",
+    "why_it_matters": "Enterprise AI adoption is forced to accept consumer-grade UX; this signals that building separate enterprise and consumer AI products is inefficient, reshaping how banks buy and deploy copilots.",
+    "source": {
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-unifies-consumer-and-enterprise-copilot-in-push-for-single-ai-platform/"
+    }
+  },
+  {
+    "id": "2026-08-13-chime-stablecoin-wallet",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T23:13:30Z",
+    "headline": "Chime explores stablecoin wallet integration into consumer banking app",
+    "plain_english": "Chime Financial is soliciting proposals from blockchain firms to embed stablecoin send/receive capability directly in its mobile banking app, signaling acceptance of crypto-native banking as table stakes for Gen Z fintech.",
+    "why_it_matters": "A mainstream consumer fintech integrating stablecoins normalizes cryptoassets as on-ramp to banking; if successful, forces legacy banks to follow or cede younger cohorts entirely.",
+    "source": {
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/blockchain/2026/chime-weighs-adding-stablecoin-wallet-to-consumer-banking-app/"
+    }
+  },
+  {
+    "id": "2026-08-13-apple-siri-publisher-deals",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T10:44:37Z",
+    "headline": "Apple explores per-use payments to publishers for Siri training data",
+    "plain_english": "Apple is negotiating direct compensation to media publishers when Siri consumes their content—shifting from bulk-archive licensing to usage-based payments. First major AI firm to test dynamic pricing model.",
+    "why_it_matters": "Pay-per-inference model could become industry norm; BFSI content providers (research, ratings, news) may demand similar usage contracts, raising AI training costs significantly.",
+    "source": {
+      "name": "PYMNTS · 2026-08-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-discusses-paying-publishers-to-improve-siri/"
+    }
+  },
+  {
+    "id": "2026-08-12-insight-enterprises-own-ai-vs-rent",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-12T22:41:53.000Z",
+    "headline": "Enterprises increasingly prefer owned or fine-tuned AI over shared LLM APIs",
+    "plain_english": "BFSI and enterprise teams are moving away from renting commodity LLM APIs (shared with competitors, costly at scale, exposes proprietary queries) toward fine-tuned or open-weight models they can control. Running proprietary models 5–10x cheaper than API spending at volume.",
+    "why_it_matters": "Shifts margin economics for frontier labs (OpenAI, Anthropic); accelerates on-premise and private SaaS adoption; banks prioritise data sovereignty and cost control over cutting-edge reasoning.",
+    "stat_value": "5–10x",
+    "stat_label": "cost reduction for enterprise-owned vs. API models at scale",
+    "source": {
+      "name": "PYMNTS · 2026-08-12",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/companies-want-to-own-their-ai-not-rent-it/"
+    }
+  },
+  {
+    "id": "2026-08-14-nvidia-spacex-xai-stake",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-14T21:45:19.000Z",
+    "headline": "Nvidia discloses $21 billion SpaceX stake through xAI investment",
+    "plain_english": "Nvidia disclosed a $21 billion stake in SpaceX acquired through an investment in Elon Musk's xAI. Position reflects Nvidia's bet on AI compute infrastructure and satellite-based connectivity as growth vectors.",
+    "why_it_matters": "Vertical integration of AI chip supply (Nvidia) with satellite infrastructure (SpaceX) and model development (xAI) may reshape fintech latency and data sovereignty assumptions. Banks relying on terrestrial cloud may face pricing pressure from space-based alternatives.",
+    "source": {
+      "name": "CNBC · 2026-08-14",
+      "url": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html"
+    }
+  },
+  {
+    "id": "2026-08-14-openai-revenue-ipo",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-14T10:54:36Z",
+    "headline": "OpenAI revenue run rate reaches $40 billion as IPO preparation accelerates",
+    "plain_english": "OpenAI's annualized revenue has doubled to $40B+ from end-2025, signaling strong enterprise adoption momentum as the AI company prepares for a public offering. Marks a major inflection point in AI vendor monetization.",
+    "why_it_matters": "Sets valuation benchmark for downstream AI infrastructure deals; BFSI firms watching OpenAI's unit economics for their own AI cost models and vendor negotiation leverage.",
+    "source": {
+      "name": "PYMNTS · 2026-08-14",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-revenue-run-rate-tops-40-billion-as-ipo-nears/"
     }
   },
   {
@@ -4280,30 +4439,6 @@
     "source": {
       "name": "Wired · 2026-08-04",
       "url": "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/"
-    }
-  },
-  {
-    "id": "2026-07-18-learner-rag-explainer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-18T18:51:07.000Z",
-    "headline": "What is RAG (Retrieval-Augmented Generation) and why banks are building it into LLMs",
-    "plain_english": "RAG is a technique that feeds a language model live, external data (e.g., current interest rates, account balances, regulatory filings) before generating a response. Unlike a vanilla LLM that relies only on training data, RAG ensures answers stay fresh and factual.",
-    "why_it_matters": "Banks deploy RAG to ground AI chatbots in real-time compliance rules and product terms, reducing hallucination (false outputs) and regulatory risk.",
-    "jargon": [
-      {
-        "term": "Hallucination",
-        "def": "When an LLM confidently generates plausible-sounding but false or made-up information."
-      },
-      {
-        "term": "Retrieval-Augmented Generation (RAG)",
-        "def": "Architecture that fetches relevant external documents before an LLM answers, ensuring responses are grounded in current facts rather than outdated training data."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Editorial · 2026-07-18",
-      "url": "https://www.aitechhive.com"
     }
   },
   {
@@ -7525,20 +7660,6 @@
     }
   },
   {
-    "id": "2026-07-18-trending-kimi-geopolitics",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-18T20:20:53.000Z",
-    "headline": "Chinese AI model Kimi surprises US tech sector with capability leap; geopolitical AI race intensifies",
-    "plain_english": "Moonshot AI's Kimi upgrade caught US tech and policy circles off-guard; model reportedly demonstrates performance near or equal to leading Western alternatives. Reignites debate on AI export controls and Chinese capability parity.",
-    "why_it_matters": "BFSI boards reassess single-vendor (US-only) LLM strategy; banks and fintechs face pressure to evaluate non-US alternatives or diversify foundation models to hedge geopolitical risk.",
-    "source": {
-      "name": "1News · 2026-07-18",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTnBDYjd0VDJOakF1WGdRbjFiTncxcXMtdGlLaWhSdkRCVjJzVkF4YTFVWUEyNmRKd0xrdTBLQ3VOa0hMbWhYdURMWGt1MVdlcy1NQjhWQllEUEI3YUNDQTAzOWtiRXBlYmxrdHh2TTQtVlgxb3VVZTBtaHhBS1RFVndyaUtMUGROcUhuU1hlMVo"
-    }
-  },
-  {
     "id": "2026-07-21-regulation-fca-enforcement-signal",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8416,34 +8537,6 @@
     }
   },
   {
-    "id": "2026-07-18-regulation-uk-digital-id-burnham",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-18T20:46:09.000Z",
-    "headline": "UK's next prime minister drops planned digital ID scheme",
-    "plain_english": "Andy Burnham, incoming UK PM, announced cancellation of the government's digital ID initiative. No replacement framework disclosed. Affects UK banks' fintech KYC/AML roadmaps tied to state-backed digital identity.",
-    "why_it_matters": "UK retail/commercial banks must replan identity verification stacks; fintech partners lose assumed regulatory anchor point for decentralized identity pilots.",
-    "source": {
-      "name": "Reuters · 2026-07-18",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaGJLeDRDSGE0WjZOdlRMbmlmc0poc3lZWk1Ncm15azFtZDR4blhGSURIdFpQTHg0UHdIMjU5QjIwYkRrdHhDdnA4YVVTdmhlLThUbk5zUkVWQkx5a1BNcWZsaWFVLTR5dXNHT2hYbXFyVlJVLWc2TlY0Vm0tV0xBQm5wcEw5SUpDMGFsV0pvUEdqTzFnNUZHZHBCSjFKOVZOelRmd2xlVQ"
-    }
-  },
-  {
-    "id": "2026-07-18-regulation-ecb-rate-hike-prep",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-07-18T20:00:00.000Z",
-    "headline": "ECB signals readiness for next rate hike amid persistent inflation pressure",
-    "plain_english": "European Central Bank officials indicated willingness to raise rates again, countering easing expectations. Affects eurozone bank margins, AI-powered ALM (asset-liability management) recalibration, and trading algo retuning.",
-    "why_it_matters": "EU bank treasury and risk teams must refresh machine learning models for rate forecasting; legacy ALM systems face margin compression feedback loops.",
-    "source": {
-      "name": "Bloomberg · 2026-07-18",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOU3A3eVd0OVV1Si1FTnFXU3VtZUxqZ19kZ3FGdEhETzg3aXZGcklvSVNDMk5EY19lajI2aXRLa3hNRFRxSmM5ZThzRkh1SkE3WmhPLWt3dGE2S2Z1MGowVDRhZ1RZNkwzZl93bWZLUG1LZk5HTlA2SVRicGNCeFg2cWtuTFYwLXUzcjhYSWIxbkNfSFFaT2o2NW1Uemxva01mV3ZFcmtRcWNnSHpn"
-    }
-  },
-  {
     "id": "2026-07-21-deployment-qumis-insurtech",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8783,40 +8876,6 @@
     "source": {
       "name": "WSJ · 2026-07-19",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkMyOHJmM0ZvRmF6YkFjMmVTcDZJaEJxVWpNYmtwRzhxS1lleWw2ekZCSmNqempFTGd6XzdISExicFIxTFRjMlI0eHAwSHVHU3oxVklmbDhNQlhmR29nV0FFOTNQWFBNaVlfcW1qbEVtVVVLaUZhelJUX0dUQVEtN2xmSDBvR2pyc3NFTDg4VlkyWGtIUEE"
-    }
-  },
-  {
-    "id": "2026-07-18-frontier-kimi-moonshot",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-18T18:51:07.000Z",
-    "headline": "Chinese AI lab Moonshot releases upgraded Kimi model, sparking Western competitive concern",
-    "plain_english": "Moonshot AI (China) shipped a new version of Kimi, its large language model, this week. US and allied tech analysts flagged competitive risk and geopolitical friction around Chinese AI capability parity.",
-    "why_it_matters": "BFSI risk: frontier AI commoditization outside US/EU regulatory perimeter; second-source LLM dependency for non-US banks accelerates.",
-    "source": {
-      "name": "TechCrunch · 2026-07-18",
-      "url": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/"
-    }
-  },
-  {
-    "id": "2026-07-18-frontier-google-search-ai-child-safety",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-18T21:28:33.000Z",
-    "headline": "Google's search AI system flagged as unacceptable risk for children by safety advocates",
-    "plain_english": "Independent report rated Google's AI-powered search feature unsafe for minors, citing misinformation and harmful outputs. Triggers renewed regulatory scrutiny of generative AI in consumer-facing apps; potential spillover to banking apps with embedded search/assistant features.",
-    "why_it_matters": "BFSI compliance: banks integrating LLM-powered customer service chatbots face renewed child-safety obligations; product liability risk if minors access financial advice via AI assistants.",
-    "jargon": [
-      {
-        "term": "LLM",
-        "def": "Large language model—an AI trained on vast text data to generate human-like responses to queries."
-      }
-    ],
-    "source": {
-      "name": "MSN · 2026-07-18",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU0dwSnQ3Sm1tajBzMXNta0NOR1dXd1JyV1NiX21ya281czdmS2lsOGpheUtxdGdMOVRQVkJhdmFIbTZUbWluRmhsb0xrVTNfaEpuRWdaU1RBWFIzS2lQcXNObkx3QlRnNW41YUhJMkd1bzM2TGw0N2JabXR1ZmM5dmFmTTh1ZG0ydWpKNXhLbnJLQmc0bnB2Q19XMUdKeGd0bGpHelIzSnY4dE0xNjBtcE54Mzh3Y2VmQS1BYjlsa014ZjgzRlFDZVF0VjZ1ZmxFdldjOFdsSjJsODFp"
     }
   }
 ]
