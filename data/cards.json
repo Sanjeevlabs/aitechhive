@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-08-18-saudi-anti-crime-bank-transfers-uae",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-08-18T10:21:31Z",
+    "headline": "Saudi Arabia tightens anti-crime oversight on UAE-bound bank transfers, raising compliance friction across Gulf corridors",
+    "plain_english": "Saudi authorities have intensified monitoring of cross-border bank transfers destined for the UAE, citing anti-crime enforcement. This is a unilateral tightening of correspondent banking controls and transaction scrutiny in a major regional corridor.",
+    "why_it_matters": "Banks operating in the Gulf face higher compliance costs, longer settlement times, and increased false-positive alerts on routine UAE transfers. Expect similar moves across MENA; global banks must recalibrate AML models and correspondent relationships.",
+    "source": {
+      "name": "Reuters · 2026-08-18",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN3FiMTFmdzZfN3RFSlRJQUtGcGhwaDFXN1ZMNDh4dzNtUV9jY2YxbzJmSFBvNmhuOGtNbHc3c09WcWt6LVhoaXZTdzFFSUlQVEpZS3MyMWU5NnZYUXBzRU81X294d2lFQ3VqWWJ4SFlzanZ5Q1h5c0Fwck41aXEycnRMX1ZKRUdQNk5iSEFFMUVud3VEaFlXcFFSekdvOHlSU1NJeHdfY1Bic2tmWUt1NWhJMFd2c2haUy13V3R3"
+    }
+  },
+  {
     "id": "2026-08-16-western-union-intermax-nydfs",
     "category": "regulation",
     "jurisdiction": "US",
@@ -144,17 +158,37 @@
     }
   },
   {
-    "id": "2026-08-12-rbi-ai-governance",
-    "category": "regulation",
-    "jurisdiction": "IN",
+    "id": "2026-08-18-plaid-foundation-models-credit-risk",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-12T11:02:00.000Z",
-    "headline": "RBI urges Indian banks to lead AI adoption, not follow technology",
-    "plain_english": "Reserve Bank of India governor signals banks must proactively shape AI's role in banking rather than passively accept inevitable changes. Implies RBI will expect governance frameworks and risk controls from lenders adopting AI.",
-    "why_it_matters": "India's $5.7T banking sector now has explicit regulator mandate to embed AI controls early; banks lagging on governance face supervisory pressure.",
+    "published_at": "2026-08-18T11:30:00Z",
+    "headline": "Plaid deploys foundation models to improve credit risk assessment beyond traditional income signals",
+    "plain_english": "Plaid launched a two-layer foundation model architecture to help lenders differentiate credit risk using behavioral financial data. Traditional models miss nuance; two borrowers with identical income and overdraft history pose different risks. Plaid's models capture this complexity.",
+    "why_it_matters": "If successful, this shifts credit underwriting from static attributes to behavioral signals, forcing competitors to retool risk models and potentially improving loan approval equity for underserved borrowers.",
+    "jargon": [
+      {
+        "term": "foundation model",
+        "def": "Large pre-trained neural network (like GPT) fine-tuned for a specific domain; learns general patterns, then adapts to specialized tasks."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48235/rbi-governor-tells-indian-banks-to-control-ai"
+      "name": "Tearsheet · 2026-08-18",
+      "url": "https://tearsheet.co/awards/from-connectivity-to-intelligence-how-plaid-is-teaching-ai-to-understand-financial-behavior/"
+    }
+  },
+  {
+    "id": "2026-08-18-melio-ai-expense-management-smb",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-18T10:16:08Z",
+    "headline": "Melio launches AI-powered expense management tool automating payables and financial operations for SMBs",
+    "plain_english": "Melio, a payments platform, introduced an AI-driven expense management tool that automates invoice processing, categorization, and reconciliation for small and medium-sized businesses. Reduces manual bookkeeping and AP friction.",
+    "why_it_matters": "SMB fintech is a wedge into banking relationships. If Melio's AI reduces SMB accounting burden, banks lose transaction optics and customer engagement; banks must build similar tools or integrate Melio's output into treasury platforms.",
+    "source": {
+      "name": "FF News · 2026-08-18",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVEtrYm5KMzZaWEUxd0dBM0JzN3NjcVJxa0Y2T19mYTlvLU1hN2t3aDJkTmNMU1d0TXhiVWdVNThtazVPdkE5NzdxS1RDVUJZM3phUTJMMkdrbmdHdVlFRnpTMjV3Rlo5c2xTd1BLUVg2QzFubUh1UkFEbXFJdHJ1RFNwczhFM2xjWnFEZTV0TnAycHU3SUtfYkdmSXJzeU5VOFg3cHFCcHpzTkJJTUFuUUt2dDB2Zw"
     }
   },
   {
@@ -288,35 +322,37 @@
     }
   },
   {
-    "id": "2026-08-14-citigroup-rewards-startup-acquisition",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-08-18-quartr-18m-series-funding-institutional-data",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-08-14T21:29:32.000Z",
-    "headline": "Citigroup acquires rewards startup to deepen customer engagement platform",
-    "plain_english": "Citigroup agreed to acquire an unnamed rewards technology startup, adding a customer engagement layer to its digital banking suite. Move signals continued Citi investment in fintech M&A to compete with neobanks.",
-    "why_it_matters": "Legacy banks are buying fintech talent and tech to close AI/UX gaps faster than organic build. Expect similar Citi/JPMorgan/BofA acquisition patterns to accelerate through 2027, raising fintech acquisition multiples and talent velocity.",
+    "published_at": "2026-08-18T11:16:00Z",
+    "headline": "Quartr raises $18M to expand first-party financial data layer for institutional AI applications",
+    "plain_english": "Quartr, a financial data platform serving institutional finance and AI workflows, closed an $18M funding round led by existing investor Altos Ventures with new participation from SEB (Swedish bank). Quartr positions itself as a first-party data layer—proprietary, clean financial intelligence for AI models.",
+    "why_it_matters": "Banks and asset managers training proprietary AI models need cleaner, more reliable financial data inputs. Quartr's funding signals investor confidence in the data-as-AI-infrastructure narrative; similar plays will multiply.",
+    "amount": "$18M",
+    "round": "Growth",
     "source": {
-      "name": "Simply Wall St · 2026-08-14",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb2ZnUS0xZ2d1ZFhXYzdyLV9iLXJkb1BzSTlUY2xvSGFRVUNtWk5OU0lnQTZPTVdtNjJmU1lFYzA0ZjNMbWc0X0FfN0txejVHcFEzZE5MSmVyR3NDOFdJY1Qwc1labzlZTkN6dTZzU1E4Wk04amdJbVpETkpIdmpaTDI2dXZsTEtMcGtpYmpGa05wV3NzQlMzOUljYkMyMDZBdW9EekdRcklHbWfSAbABQVVfeXFMUDJaVlhoMmFkTHhKVHVyNi01ajYzNXRfVngwUjJHbWQ1ZDRndHM4dHI4b0xVWG85Tkt3ZkxoMi1yNTJOY2k2V1k0ZGRSRDZtVDkxRF93UkVibFN0cU5Ea2ZydVh2WWNCVms4TFZydF9UbHBGZjE3ZHZ0YUZpc3g2dm42ck5DWDdwRERkVDlDY2htRGkxaHdjR3FrODJteWV5UGMteFpsWG1tZTdiT3dYQWY"
+      "name": "Finextra · 2026-08-18",
+      "url": "https://www.finextra.com/pressarticle/110666/financial-data-startup-quatr-raises-18-million"
     }
   },
   {
-    "id": "2026-08-14-indian-banks-cai-officers",
-    "category": "deployment",
-    "jurisdiction": "IN",
+    "id": "2026-08-18-atrium-data-center-ai-platform-1.3t",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-14T11:12:42Z",
-    "headline": "Indian banks accelerate Chief AI Officer appointments amid AI strategy urgency",
-    "plain_english": "Indian banking sector is rapidly hiring dedicated Chief AI Officer roles as banks formalize AI governance and deployment strategies. Reflects RBI regulatory push and competitive pressure to operationalize AI.",
-    "why_it_matters": "RBI's AI governance expectations are now cascading into hiring and org structure; peer banks facing talent war for AI leadership roles; emerging model for BFSI AI governance offices.",
+    "published_at": "2026-08-18T10:30:38Z",
+    "headline": "Atrium launches AI-powered data center tracking platform covering $1.3T in global IT infrastructure spending",
+    "plain_english": "Atrium unveiled a data center AI platform that analyzes and optimizes $1.3T in corporate data center spending. Uses machine learning to track utilization, cost, and sustainability across multi-cloud environments.",
+    "why_it_matters": "Banks' infrastructure costs (cloud, on-prem, hybrid) are rising due to AI model training and inference. Atrium's platform helps CFOs and CTOs audit and optimize spend—signals a new AI subcategory (infrastructure cost intelligence) relevant to any bank scaling AI.",
     "scale": {
       "metric": "markets",
-      "value": "Indian banking sector"
+      "value": "$1.3T"
     },
     "source": {
-      "name": "Analytics India Mag · 2026-08-14",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT0QzSHVoQ2xzTEM0TVhhTURwQkNmd20yNGZLU3l4RFJTTFdDbGJzNlR2VGxjUTY2SjQ5OHZ5LWVZcldiTUtEbXMzR2xraWtCZXlrYnNrcjdqZnRpOWZZdjM3R0llX1J4cWtWWWJDWi1INWR0OHp3elFCNVU4TjU2SHBjU0N2VzJOR3ByUDZ1WHlBR3Z0anpiUEZjbXlKQQ"
+      "name": "Commercial Observer · 2026-08-18",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeXlISnJBWTdtT1lZOERvYmF5cmxGaS1HbHZOS0VRWlZDWjRRdmhlX2xrb25BSTU5Mmw3MWtfNGExcUpnNkhLdmJydGEzXzJ3c1dCRi05QVhOSk9vOU9VdEk5bDAyUVNJWWNSYzY1T1EzMmdXUVlTSF9wZFU3VThfUGhTeVVDY003cGttMk5jUl9MRXdjc3Zub3pZWEJPTFk"
     }
   },
   {
@@ -468,33 +504,31 @@
     }
   },
   {
-    "id": "2026-08-13-legora-10bn-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-13T10:27:47Z",
-    "headline": "Legal-tech platform Legora in talks to raise at $10 billion valuation",
-    "plain_english": "Legora, a European legal operations platform, is fundraising at a reported $10 billion valuation. The EU fintech is consolidating the contract-review and compliance-automation market.",
-    "why_it_matters": "Contract AI and legal automation moving from outsourcing to in-house platforms; BFSI compliance teams will face pressure to adopt Legora-class systems for regulatory document management.",
+    "id": "2026-08-18-citi-custody-plus-realtime-settlement",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-18T11:00:00Z",
+    "headline": "Citi launches Custody+ to enable near-real-time settlement, reshaping institutional asset operations",
+    "plain_english": "Citi Investor Services unveiled Custody+, a suite of near- and real-time custody solutions designed to meet continuous demand from institutional clients. Moves beyond traditional T+2 settlement to enable always-on settlement cycles, forcing the industry toward 24/5 or 24/7 operations.",
+    "why_it_matters": "Real-time settlement eliminates billions in idle float, reduces counterparty risk, and compresses working-capital requirements across the institutional buy-side. Competitors must follow or risk losing prime broking share.",
     "source": {
-      "name": "Sifted · 2026-08-13",
-      "url": "https://sifted.eu/articles/legora-in-talks-to-raise-at-a-10bn-valuation-according-to-reports/"
+      "name": "Business Wire · 2026-08-18",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNLU81b2l6NjVCLUpBNzg5RlVGZVhTd0FuZUJ0c2pSSnRvMHY2UVFhWHA2Nm04Qlpwb01IOTFOdEtzQ3U2NjZYVHd3OFY2cElRTEE4M2FwTTA0MUxkU0VGNXNKT0pEeVMtZUNqTDdUZHk0LWJOZG9GbjByMFJBcTUxaVo1elZTTTVCVXVZMFdLX0tzb0lhR1lUM1NIalFCRVRWb1V1V0V2aEJac3MxQzAtaVdCcEdXcEpmSUtsYTl6VjgtcGc0dDNqNEdXRHFYbE1fc1pGQlhZTmRLSXB6UmlNSm1tQ2ZoYUpxcjM1Vi11Q1dXQQ"
     }
   },
   {
-    "id": "2026-08-12-vendor-yuno-series-b",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-08-18-monzo-chairman-departs-shareholder-backlash",
+    "category": "shift",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-08-12T23:12:00.000Z",
-    "headline": "Yuno raises $45M Series B for AI-native global payments OS",
-    "plain_english": "Yuno, an AI-first payments orchestration platform serving merchants, banks, and digital wallets, secured $45M in Series B funding to scale its enterprise payment operating system across markets.",
-    "why_it_matters": "Demonstrates continued investor appetite for AI-native payments infrastructure; Yuno competes with legacy transaction managers by offering machine-learning-driven routing and fraud detection from day one.",
-    "amount": "$45M",
-    "round": "Series B",
+    "published_at": "2026-08-18T10:57:09Z",
+    "headline": "Monzo's chairman departs following shareholder pressure, signaling governance friction in UK fintech scale-up phase",
+    "plain_english": "Gary Hoffman, Monzo's chairman since 2019, is stepping down after shareholders lobbied for his removal. Karen Peacock will serve as interim chair while the company searches for a permanent replacement. Reflects investor dissatisfaction with leadership or strategy.",
+    "why_it_matters": "Monzo is a bellwether for UK fintech governance maturity. Board churn suggests disagreements over AI investment pace, profitability timelines, or regulatory capital plans—dynamics that affect competitors (Revolut, Wise) and set precedent for FCA oversight.",
     "source": {
-      "name": "PYMNTS · 2026-08-12",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/yuno-raises-45-million-to-drive-global-payments-push/"
+      "name": "PYMNTS · 2026-08-18",
+      "url": "https://www.pymnts.com/news/banking/2026/monzo-chair-departs-following-last-years-shareholder-backlash/"
     }
   },
   {
@@ -607,34 +641,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-14",
       "url": "https://www.pymnts.com/personnel/2026/openai-appoints-former-wiz-executive-dali-rajic-chief-revenue-officer/"
-    }
-  },
-  {
-    "id": "2026-08-14-paypal-stripe-acquisition-talks",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-14T22:20:33.000Z",
-    "headline": "PayPal in acquisition talks with Stripe-led consortium after rejecting first offer",
-    "plain_english": "PayPal is negotiating a sale to a group including Stripe and private equity firm Advent International at a price higher than an initial July offer. Talks follow years of PayPal shareholder pressure for strategic alternatives or breakup.",
-    "why_it_matters": "Consolidation of two payment giants would reshape merchant credit, fintech settlement infrastructure, and API-first banking. Stripe's AI-forward product roadmap combined with PayPal's installed base could accelerate AI-powered underwriting and fraud detection industry-wide.",
-    "source": {
-      "name": "PYMNTS · 2026-08-14",
-      "url": "https://www.pymnts.com/news/acquiring/2026/paypal-discussing-sale-stripe-after-rejecting-first-offer/"
-    }
-  },
-  {
-    "id": "2026-08-14-nvidia-wall-street-ai-infra",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-14T11:07:00Z",
-    "headline": "Nvidia partners with Wall Street asset managers to mobilize AI infrastructure funding; Goldman Sachs leads",
-    "plain_english": "Nvidia has structured a deal with top asset managers to collectively fund AI infrastructure buildout, with Goldman Sachs coordinating financing. Signals shift toward collaborative, institutionalized capex models for AI hardware.",
-    "why_it_matters": "Banks and asset managers now underwriting AI infrastructure as core investment thesis; BFSI counterparties must understand their cost of compute vs. vendor margins in deal modeling.",
-    "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/newsarticle/48249/nvidia-partners-with-wall-street-mobilise-funds-for-ai-infrastructure-goldman-sachs-leads-financing"
     }
   },
   {
@@ -992,6 +998,22 @@
     }
   },
   {
+    "id": "2026-08-18-we-dont-know-how-ai-is-used",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-18T10:06:43Z",
+    "headline": "Independent corroboration missing: AI vendors control narratives on real-world adoption and impact",
+    "plain_english": "Anthropic, OpenAI, and other AI labs publish proprietary usage reports, but researchers note there is no independent third-party verification of these claims. Banks and enterprises relying on vendor metrics to justify AI spend lack objective truth on what users actually do with these tools.",
+    "why_it_matters": "Risk officers and CROs cannot independently validate ROI claims vendors make about LLM deployments. This creates audit blind spots and inflates internal AI business cases, leading to capital misallocation.",
+    "stat_value": "Zero",
+    "stat_label": "independent auditable sources on AI adoption patterns",
+    "source": {
+      "name": "MIT Technology Review · 2026-08-18",
+      "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/"
+    }
+  },
+  {
     "id": "2026-08-17-corporate-ai-spend-disparity",
     "category": "insight",
     "jurisdiction": "US",
@@ -1134,19 +1156,31 @@
     }
   },
   {
-    "id": "2026-08-13-banks-smb-trust",
-    "category": "insight",
+    "id": "2026-08-18-nvidia-moat-shifting-chips-to-capital",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T11:30:00Z",
-    "headline": "Only 7% of SMB owners see their bank as true strategic partner",
-    "plain_english": "Survey of small business owners shows just 7% trust their bank as a strategic advisor; 65% view it as a utility. Banks' decades-long positioning as trusted advisors is failing with SMBs.",
-    "why_it_matters": "Fintech and embedded finance competitors are winning SMB loyalty; traditional banks cannot compete without AI-driven personalization and real-time cash-flow insights.",
-    "stat_value": "7%",
-    "stat_label": "of SMB owners consider bank a true strategic partner",
+    "severity": "high",
+    "published_at": "2026-08-18T11:00:01Z",
+    "headline": "Nvidia's AI competitive moat shifting from chip manufacturing dominance to capital deployment and ecosystem control",
+    "plain_english": "As competition in AI chips intensifies (AMD, Intel, custom chips), Nvidia is leveraging another asymmetric advantage: capital. The company invests in AI infrastructure, startups, and software layers, creating a moat that survives commodity chip competition.",
+    "why_it_matters": "This shift signals Nvidia is not a pure-play semiconductor company anymore—it's an AI infrastructure holding company. BFSI customers must plan for tighter Nvidia integration, higher switching costs, and dependency on Nvidia's strategic priorities.",
     "source": {
-      "name": "Tearsheet · Beyond Small / Grasshopper Bank · 2026-08-13",
-      "url": "https://tearsheet.co/member-exclusive/why-banks-trusted-advisor-pitch-isnt-landing-with-smbs-right-now/"
+      "name": "CNBC · 2026-08-18",
+      "url": "https://www.cnbc.com/2026/08/18/nvidias-ai-moat-is-shifting-from-chips-to-capital.html"
+    }
+  },
+  {
+    "id": "2026-08-18-openai-chatgpt-teens-education",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-18T11:00:00Z",
+    "headline": "OpenAI launches ChatGPT for Teens with parental controls and guardrails, signaling trust-building in regulated demographics",
+    "plain_english": "OpenAI released ChatGPT for Teens—a variant with stronger content safeguards, healthy-use features, and parental oversight. Represents OpenAI's first formal segmentation by age and regulated use case (education).",
+    "why_it_matters": "As generative AI becomes embedded in fintech education (investment advice, financial literacy), regulators will expect age-gated, monitored deployments. This product telegraphs how frontier labs will comply with child-protection and consumer-harm regulations.",
+    "source": {
+      "name": "OpenAI · 2026-08-18",
+      "url": "https://openai.com/index/chatgpt-for-teens"
     }
   },
   {
@@ -1265,34 +1299,6 @@
     "source": {
       "name": "Wall Street Journal · 2026-08-16",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY0lHME8wRVdUTU1wc3k2NmVneUpYejJYdnVYYlFxSklPQmFUeHBmVU05R0d0ay00Q0ZyZGNmemxMQm1XWk4zR1pxaWFES2VkR2lBaHBTX3VDYmg4YjctajR2WnhBRDFxNjBuWVNRdzdVLWdDSk1QN3E5VDh6b0cwTVIzTXFFQ2tSeTBkV28zcmNQR09MRmc"
-    }
-  },
-  {
-    "id": "2026-08-15-alibaba-ai-downloads",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-15T09:16:06.000Z",
-    "headline": "Alibaba AI models reach 3 billion downloads, surpassing Meta and Google",
-    "plain_english": "Alibaba's open-source AI models crossed 3 billion downloads, becoming the most-downloaded AI toolkit globally by volume. This signals shift in AI adoption patterns away from US-centric platforms toward China-based alternatives.",
-    "why_it_matters": "Indicates accelerating developer preference for non-US AI infrastructure; BFSI teams building on Alibaba stack face geopolitical and vendor-concentration risk if regulatory friction deepens.",
-    "source": {
-      "name": "Bloomberg · 2026-08-15",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNkdXS05xRW1WQ2ItQmhUZEd1SVowVkJISVhwQ1Z5STF5dnJkV2pVRmExN1JoLXNEMkZKdGV1eGZnWnVvV2I1QllUZ3JJTktoeFdKa3JtY3NSMFlBRUYta3k5d2RJdnFzVUJIMGVGY2V0SThGTG94SlEzMl9KQWRsZkduN0RycGx1SjBGOVViQVNvbXE4TS1WdTU2MGhLNjhZLUtUVHM2WVF3ZGZKalBmOURR"
-    }
-  },
-  {
-    "id": "2026-08-14-nvidia-500b-ai-financing",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-14T23:28:16.000Z",
-    "headline": "Nvidia launches $500 billion financing initiative to support AI infrastructure buyers",
-    "plain_english": "Nvidia announced a $500 billion financing program to ensure AI startups and enterprises can afford chip purchases, directly addressing investor concerns about an AI bubble. The initiative aims to decouple hardware demand from customer capital constraints.",
-    "why_it_matters": "Removes a major friction point for BFSI AI adoption: capital-intensive ML infrastructure. Banks and insurers deploying in-house models now have a clear path to finance GPU clusters without balance-sheet strain, accelerating enterprise AI velocity.",
-    "source": {
-      "name": "PYMNTS · 2026-08-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-uses-500-billion-dollar-financing-initiative-dispel-ai-bubble-fears/"
     }
   },
   {
@@ -1653,6 +1659,154 @@
     "source": {
       "name": "Tearsheet · 2026-08-04",
       "url": "https://tearsheet.co/ai-innovation/why-banks-cant-policy-their-way-out-of-shadow-ai/"
+    }
+  },
+  {
+    "id": "2026-08-12-rbi-ai-governance",
+    "category": "regulation",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-08-12T11:02:00.000Z",
+    "headline": "RBI urges Indian banks to lead AI adoption, not follow technology",
+    "plain_english": "Reserve Bank of India governor signals banks must proactively shape AI's role in banking rather than passively accept inevitable changes. Implies RBI will expect governance frameworks and risk controls from lenders adopting AI.",
+    "why_it_matters": "India's $5.7T banking sector now has explicit regulator mandate to embed AI controls early; banks lagging on governance face supervisory pressure.",
+    "source": {
+      "name": "Finextra · 2026-08-12",
+      "url": "https://www.finextra.com/newsarticle/48235/rbi-governor-tells-indian-banks-to-control-ai"
+    }
+  },
+  {
+    "id": "2026-08-14-citigroup-rewards-startup-acquisition",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-14T21:29:32.000Z",
+    "headline": "Citigroup acquires rewards startup to deepen customer engagement platform",
+    "plain_english": "Citigroup agreed to acquire an unnamed rewards technology startup, adding a customer engagement layer to its digital banking suite. Move signals continued Citi investment in fintech M&A to compete with neobanks.",
+    "why_it_matters": "Legacy banks are buying fintech talent and tech to close AI/UX gaps faster than organic build. Expect similar Citi/JPMorgan/BofA acquisition patterns to accelerate through 2027, raising fintech acquisition multiples and talent velocity.",
+    "source": {
+      "name": "Simply Wall St · 2026-08-14",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb2ZnUS0xZ2d1ZFhXYzdyLV9iLXJkb1BzSTlUY2xvSGFRVUNtWk5OU0lnQTZPTVdtNjJmU1lFYzA0ZjNMbWc0X0FfN0txejVHcFEzZE5MSmVyR3NDOFdJY1Qwc1labzlZTkN6dTZzU1E4Wk04amdJbVpETkpIdmpaTDI2dXZsTEtMcGtpYmpGa05wV3NzQlMzOUljYkMyMDZBdW9EekdRcklHbWfSAbABQVVfeXFMUDJaVlhoMmFkTHhKVHVyNi01ajYzNXRfVngwUjJHbWQ1ZDRndHM4dHI4b0xVWG85Tkt3ZkxoMi1yNTJOY2k2V1k0ZGRSRDZtVDkxRF93UkVibFN0cU5Ea2ZydVh2WWNCVms4TFZydF9UbHBGZjE3ZHZ0YUZpc3g2dm42ck5DWDdwRERkVDlDY2htRGkxaHdjR3FrODJteWV5UGMteFpsWG1tZTdiT3dYQWY"
+    }
+  },
+  {
+    "id": "2026-08-14-indian-banks-cai-officers",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-08-14T11:12:42Z",
+    "headline": "Indian banks accelerate Chief AI Officer appointments amid AI strategy urgency",
+    "plain_english": "Indian banking sector is rapidly hiring dedicated Chief AI Officer roles as banks formalize AI governance and deployment strategies. Reflects RBI regulatory push and competitive pressure to operationalize AI.",
+    "why_it_matters": "RBI's AI governance expectations are now cascading into hiring and org structure; peer banks facing talent war for AI leadership roles; emerging model for BFSI AI governance offices.",
+    "scale": {
+      "metric": "markets",
+      "value": "Indian banking sector"
+    },
+    "source": {
+      "name": "Analytics India Mag · 2026-08-14",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT0QzSHVoQ2xzTEM0TVhhTURwQkNmd20yNGZLU3l4RFJTTFdDbGJzNlR2VGxjUTY2SjQ5OHZ5LWVZcldiTUtEbXMzR2xraWtCZXlrYnNrcjdqZnRpOWZZdjM3R0llX1J4cWtWWWJDWi1INWR0OHp3elFCNVU4TjU2SHBjU0N2VzJOR3ByUDZ1WHlBR3Z0anpiUEZjbXlKQQ"
+    }
+  },
+  {
+    "id": "2026-08-13-legora-10bn-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-13T10:27:47Z",
+    "headline": "Legal-tech platform Legora in talks to raise at $10 billion valuation",
+    "plain_english": "Legora, a European legal operations platform, is fundraising at a reported $10 billion valuation. The EU fintech is consolidating the contract-review and compliance-automation market.",
+    "why_it_matters": "Contract AI and legal automation moving from outsourcing to in-house platforms; BFSI compliance teams will face pressure to adopt Legora-class systems for regulatory document management.",
+    "source": {
+      "name": "Sifted · 2026-08-13",
+      "url": "https://sifted.eu/articles/legora-in-talks-to-raise-at-a-10bn-valuation-according-to-reports/"
+    }
+  },
+  {
+    "id": "2026-08-12-vendor-yuno-series-b",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-12T23:12:00.000Z",
+    "headline": "Yuno raises $45M Series B for AI-native global payments OS",
+    "plain_english": "Yuno, an AI-first payments orchestration platform serving merchants, banks, and digital wallets, secured $45M in Series B funding to scale its enterprise payment operating system across markets.",
+    "why_it_matters": "Demonstrates continued investor appetite for AI-native payments infrastructure; Yuno competes with legacy transaction managers by offering machine-learning-driven routing and fraud detection from day one.",
+    "amount": "$45M",
+    "round": "Series B",
+    "source": {
+      "name": "PYMNTS · 2026-08-12",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/yuno-raises-45-million-to-drive-global-payments-push/"
+    }
+  },
+  {
+    "id": "2026-08-14-paypal-stripe-acquisition-talks",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-14T22:20:33.000Z",
+    "headline": "PayPal in acquisition talks with Stripe-led consortium after rejecting first offer",
+    "plain_english": "PayPal is negotiating a sale to a group including Stripe and private equity firm Advent International at a price higher than an initial July offer. Talks follow years of PayPal shareholder pressure for strategic alternatives or breakup.",
+    "why_it_matters": "Consolidation of two payment giants would reshape merchant credit, fintech settlement infrastructure, and API-first banking. Stripe's AI-forward product roadmap combined with PayPal's installed base could accelerate AI-powered underwriting and fraud detection industry-wide.",
+    "source": {
+      "name": "PYMNTS · 2026-08-14",
+      "url": "https://www.pymnts.com/news/acquiring/2026/paypal-discussing-sale-stripe-after-rejecting-first-offer/"
+    }
+  },
+  {
+    "id": "2026-08-14-nvidia-wall-street-ai-infra",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-14T11:07:00Z",
+    "headline": "Nvidia partners with Wall Street asset managers to mobilize AI infrastructure funding; Goldman Sachs leads",
+    "plain_english": "Nvidia has structured a deal with top asset managers to collectively fund AI infrastructure buildout, with Goldman Sachs coordinating financing. Signals shift toward collaborative, institutionalized capex models for AI hardware.",
+    "why_it_matters": "Banks and asset managers now underwriting AI infrastructure as core investment thesis; BFSI counterparties must understand their cost of compute vs. vendor margins in deal modeling.",
+    "source": {
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/newsarticle/48249/nvidia-partners-with-wall-street-mobilise-funds-for-ai-infrastructure-goldman-sachs-leads-financing"
+    }
+  },
+  {
+    "id": "2026-08-13-banks-smb-trust",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-13T11:30:00Z",
+    "headline": "Only 7% of SMB owners see their bank as true strategic partner",
+    "plain_english": "Survey of small business owners shows just 7% trust their bank as a strategic advisor; 65% view it as a utility. Banks' decades-long positioning as trusted advisors is failing with SMBs.",
+    "why_it_matters": "Fintech and embedded finance competitors are winning SMB loyalty; traditional banks cannot compete without AI-driven personalization and real-time cash-flow insights.",
+    "stat_value": "7%",
+    "stat_label": "of SMB owners consider bank a true strategic partner",
+    "source": {
+      "name": "Tearsheet · Beyond Small / Grasshopper Bank · 2026-08-13",
+      "url": "https://tearsheet.co/member-exclusive/why-banks-trusted-advisor-pitch-isnt-landing-with-smbs-right-now/"
+    }
+  },
+  {
+    "id": "2026-08-15-alibaba-ai-downloads",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-15T09:16:06.000Z",
+    "headline": "Alibaba AI models reach 3 billion downloads, surpassing Meta and Google",
+    "plain_english": "Alibaba's open-source AI models crossed 3 billion downloads, becoming the most-downloaded AI toolkit globally by volume. This signals shift in AI adoption patterns away from US-centric platforms toward China-based alternatives.",
+    "why_it_matters": "Indicates accelerating developer preference for non-US AI infrastructure; BFSI teams building on Alibaba stack face geopolitical and vendor-concentration risk if regulatory friction deepens.",
+    "source": {
+      "name": "Bloomberg · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNkdXS05xRW1WQ2ItQmhUZEd1SVowVkJISVhwQ1Z5STF5dnJkV2pVRmExN1JoLXNEMkZKdGV1eGZnWnVvV2I1QllUZ3JJTktoeFdKa3JtY3NSMFlBRUYta3k5d2RJdnFzVUJIMGVGY2V0SThGTG94SlEzMl9KQWRsZkduN0RycGx1SjBGOVViQVNvbXE4TS1WdTU2MGhLNjhZLUtUVHM2WVF3ZGZKalBmOURR"
+    }
+  },
+  {
+    "id": "2026-08-14-nvidia-500b-ai-financing",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-14T23:28:16.000Z",
+    "headline": "Nvidia launches $500 billion financing initiative to support AI infrastructure buyers",
+    "plain_english": "Nvidia announced a $500 billion financing program to ensure AI startups and enterprises can afford chip purchases, directly addressing investor concerns about an AI bubble. The initiative aims to decouple hardware demand from customer capital constraints.",
+    "why_it_matters": "Removes a major friction point for BFSI AI adoption: capital-intensive ML infrastructure. Banks and insurers deploying in-house models now have a clear path to finance GPU clusters without balance-sheet strain, accelerating enterprise AI velocity.",
+    "source": {
+      "name": "PYMNTS · 2026-08-14",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-uses-500-billion-dollar-financing-initiative-dispel-ai-bubble-fears/"
     }
   },
   {
@@ -7351,20 +7505,6 @@
     }
   },
   {
-    "id": "2026-07-19-meta-facebook-instagram-outage",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-19T08:53:49Z",
-    "headline": "Facebook and Instagram suffer widespread outages affecting millions",
-    "plain_english": "Meta's Facebook and Instagram platforms experienced service disruptions on July 19, affecting users globally; root cause not immediately disclosed but likely infrastructure-related.",
-    "why_it_matters": "Outages of this scale highlight systemic risk in cloud-native AI platforms that large financial firms depend on for marketing, payment verification, and customer authentication workflows.",
-    "source": {
-      "name": "Reuters · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZjZCUU55QWV3ZE5DeFpBalhfaVNTR1pMNTFKaFpFNzRYR2o4QWJGZmZoWUJ0c204TXZhNzRjUFZyRXZrdXVpcEtVZThMV0dnUEdjTlgybDdfVHRmSDZVZEtnUWFHaTBUb21CSFhiaUhKbXBnR0FLcDRieVBsVWFCTi1kVUlJam41STByRDlWcjJxYUdaQmIwdTlmdDVyMDg0YjVRWk5JMzRwRDBUbWx3d1ZZcXhvdw"
-    }
-  },
-  {
     "id": "2026-07-24-openai-huggingface-kill-switch",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8186,22 +8326,6 @@
     }
   },
   {
-    "id": "2026-07-19-data-center-eminent-domain",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-19T08:30:00Z",
-    "headline": "US power companies invoking eminent domain to acquire land for AI data centers",
-    "plain_english": "Energy firms are using state authority to seize private land for AI data-center buildout, despite 70% of Americans opposing such projects in their neighborhoods, creating regulatory and political friction.",
-    "why_it_matters": "Signals rising infrastructure bottleneck for AI compute; banks and cloud vendors will face delayed deployments and legal challenges, raising capex and timeline risk for AI infrastructure rollouts.",
-    "stat_value": "70%",
-    "stat_label": "of Americans oppose data centers in their neighborhoods",
-    "source": {
-      "name": "Fortune · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9HY3ZKenFCZjBRbTRDMWlsQlZua2I3NktReTRQZjdIMDdhVlNrTG16eGE0bUotaU1xeXBhRzdTSmFSLWJWRzljUWZqMXI2QXFSZW05MUY1R1I1ZDNVWktwWjYzeWQyUWpLMkVRd1RNeENBSDlHNENFaA"
-    }
-  },
-  {
     "id": "2026-07-22-openai-agent-breach",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8406,20 +8530,6 @@
     "source": {
       "name": "The Guardian · 2026-07-19",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT1p3V1Q0LXhLUTJYTGVoTk9QWHdBbTQ1RENhY2NPV1hsbDVNYnNuVjdRSWxpTmo0YmJMcHByVnVzenhqOWxpdzV0blc5YTZLYXc1clctS2NvX0hfWWFIb3RSUXFCZVZkaFo1NTQ5N2hwelhocE9jUno4SmxqRUFKTmNkeVhxN0t2OG1aUkdES0xwbU9HSDRBZUxmbG9YNkh0TmlnOXZsV29BY2FmQnRZ"
-    }
-  },
-  {
-    "id": "2026-07-19-australia-ai-resource-governance",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-07-19T11:51:18Z",
-    "headline": "Australia proposes rules to govern water and power consumption for AI data centers",
-    "plain_english": "Australian government announced plans to regulate water and electricity use by AI infrastructure operators, aiming to manage resource strain as data-center build-out accelerates across the country.",
-    "why_it_matters": "First APAC nation to explicitly regulate AI's physical resource footprint; other jurisdictions will likely follow, imposing new operating-cost and site-planning requirements for banks and fintechs building AI compute.",
-    "source": {
-      "name": "WSJ · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaVNvQjJtSXlHekZDLUllbnRqY051cnN1d3ExcldUX2hUeDJsaXdMTDdZak55V3Zadk1vazd4eXFnWWhqY1F0aEE0TnZVejZzUlE5LW5rQnNPbl9qdk5TNnFaQVdMc0F0eTNSQUJ2ZkpqV09OU2d0T1kxYlM0TXV4YXNHUXdyU0FBZjFQMnM1dXdnQQ"
     }
   },
   {
@@ -8700,20 +8810,6 @@
     }
   },
   {
-    "id": "2026-07-19-mufg-market-cap-leader",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-19T10:32:39Z",
-    "headline": "MUFG first Japanese bank to lead Tokyo stock exchange by market cap in four decades",
-    "plain_english": "Mitsubishi UFJ Financial Group reclaimed the top market-capitalization slot on the Tokyo Stock Exchange, a position it hadn't held in 40 years, signaling renewed investor confidence in Japan's largest banking group.",
-    "why_it_matters": "Reflects broader revaluation of Japanese megabanks as AI-driven cost reduction and digital transformation offset secular headwinds; may trigger capital reallocation across Asia-Pacific banking peers.",
-    "source": {
-      "name": "朝日新聞 · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkSG94RjFfQTVDSkZwZkY4VGFQZE94ZndmWFg1MC1idFFDWmh4UDVGd1ZNcU14YVh3QjNJT0RGcWs0MExQR2JwcTBCc1J4ME96Uk5Rc1dEOEJnY1FwcXc"
-    }
-  },
-  {
     "id": "2026-07-21-google-gemini-chip",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8799,38 +8895,6 @@
     }
   },
   {
-    "id": "2026-07-19-shinhan-ipo-ai",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-07-19T10:00:05Z",
-    "headline": "Shinhan Financial deploys AI-powered one-stop IPO service for private firms",
-    "plain_english": "South Korea's Shinhan Financial Group launched an AI-driven platform automating end-to-end initial public offering workflows for private companies, reducing manual compliance and underwriting steps.",
-    "why_it_matters": "Signals shift toward AI-automated capital markets workflows; other Asian lenders will likely adopt similar IPO-advisory AI to compete on speed and cost in a crowded wealth-management market.",
-    "source": {
-      "name": "Seoul Economic Daily · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOemhPNGhuWkNIRXk2czNtYVhxYVZGZFN2YW5pUmxSb2FXNkNHeDIwSnNIUEMxc2Z1cm9la1J1Zl9jT1pSOUxmdl9ROUFIVUlTVUZaVzVhNWVybEs2a0ljODU5aVp6cmZWQ2xvWGpucm51V0xqcUhHNlo3OWlBTEl5LWJRSVdzSHFuQVkwS3dEa0NsRHZqSG9KTUhrTmpDdUs5Y0dJ"
-    },
-    "scale": {
-      "metric": "markets",
-      "value": "Seoul"
-    }
-  },
-  {
-    "id": "2026-07-19-fg-crop-monitoring-ai",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-07-19T09:43:51Z",
-    "headline": "Nigeria launches AI-powered crop monitoring system for agricultural risk assessment",
-    "plain_english": "Federal Government of Nigeria deployed AI-driven satellite imaging and sensor technology to track crop health in real time, aiming to improve agricultural supply-chain visibility and reduce food-security shocks.",
-    "why_it_matters": "Demonstrates emerging-market governments using AI to address commodity and agricultural credit risk; African banks will integrate such data feeds into lending and trade-finance models.",
-    "source": {
-      "name": "Arise News · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd3NGQXJfOC1UODRNTFRMenhfNFRwbDhQck1pd2tmVzRMREJMMXZOWXdaOGNHWTJ1cURzMUtMNGF1M2ZDR2p5M0lCSl9zN1RKZ0tPRlcwRXFTUTNDWjVkX3lWOGxHR3NsQVNjd2VPZEQ3V0pHcEJZcW95MTl1b2xpdkdtX21SSkhwRzFMRWZTSWkteWJJ"
-    }
-  },
-  {
     "id": "2026-07-20-tsmc-arizona-expansion",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8862,20 +8926,6 @@
     "source": {
       "name": "CNBC · 2026-07-20",
       "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html"
-    }
-  },
-  {
-    "id": "2026-07-19-uae-ai-national-strategy",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-19T11:02:00Z",
-    "headline": "UAE's national AI strategy centers on sovereign capability and geopolitical positioning",
-    "plain_english": "The Wall Street Journal reported on undisclosed UAE government initiatives to build independent AI capability, framed as a strategic investment in national competitiveness and tech sovereignty.",
-    "why_it_matters": "Signals acceleration of non-Western nation-states investing in frontier AI infrastructure and talent; creates competitive pressure and fragmentation in global AI governance, complicating multinational bank compliance.",
-    "source": {
-      "name": "WSJ · 2026-07-19",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkMyOHJmM0ZvRmF6YkFjMmVTcDZJaEJxVWpNYmtwRzhxS1lleWw2ekZCSmNqempFTGd6XzdISExicFIxTFRjMlI0eHAwSHVHU3oxVklmbDhNQlhmR29nV0FFOTNQWFBNaVlfcW1qbEVtVVVLaUZhelJUX0dUQVEtN2xmSDBvR2pyc3NFTDg4VlkyWGtIUEE"
     }
   }
 ]
