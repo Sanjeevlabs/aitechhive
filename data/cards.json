@@ -1,5 +1,45 @@
 [
   {
+    "id": "2026-08-19-ecb-lagarde-ai-competitiveness",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-08-19T11:27:08.000Z",
+    "headline": "ECB chief Lagarde warns U.S. retreat from global order eroding European AI competitiveness",
+    "plain_english": "European Central Bank President Christine Lagarde called for deeper regional integration to enable Europe to compete in AI-driven markets, amid concerns that geopolitical fracturing is disadvantaging EU financial institutions.",
+    "why_it_matters": "Central bank now formally signalling AI competition as a systemic risk requiring regulatory coordination; expect coordinated EU AI Act enforcement and capital-concentration rules to follow.",
+    "jargon": [
+      {
+        "term": "AI Act",
+        "def": "EU's flagship regulation (in force 2025–2026) imposing risk-based compliance on high-impact AI systems; affects BFSI models for credit, trading, KYC."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-19",
+      "url": "https://www.cnbc.com/2026/08/19/lagarde-ecb-europe-economy-trump.html"
+    }
+  },
+  {
+    "id": "2026-08-19-us-nvidia-export-controls-loophole",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-19T10:32:51.000Z",
+    "headline": "U.S. tightens export controls on advanced AI chips, targets cloud-access loophole used by China",
+    "plain_english": "U.S. lawmakers are moving to close a regulatory gap that allowed Chinese AI firms to access restricted Nvidia hardware through overseas cloud services, bypassing direct semiconductor sanctions.",
+    "why_it_matters": "Signals imminent tightening of AI chip export rules; banks and cloud providers with cross-border data residency must audit AI infrastructure compliance, especially in Southeast Asia hubs.",
+    "jargon": [
+      {
+        "term": "Export controls",
+        "def": "U.S. government restrictions on sale/transfer of advanced semiconductors (esp. Nvidia H100/H200) to specified countries; enforced by Commerce Dept BIS."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-19",
+      "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
+    }
+  },
+  {
     "id": "2026-08-18-sec-crypto-rules-proposal",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,31 +164,45 @@
     }
   },
   {
-    "id": "2026-08-13-cftc-kalshi-derivatives",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-08-19-hsbc-swift-tokenised-deposit",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-08-13T11:20:00Z",
-    "headline": "CFTC orders prediction market platform Kalshi to remain operational",
-    "plain_english": "The US Commodity Futures Trading Commission directed Kalshi, a derivatives prediction-market platform, to continue operating despite multiple state lawsuits seeking shutdowns. CFTC asserted federal regulatory authority.",
-    "why_it_matters": "Federal-state jurisdictional clash on fintech derivatives; BFSI firms relying on prediction markets or event-contract infrastructure face unclear compliance risk if states escalate.",
+    "published_at": "2026-08-19T10:06:00.000Z",
+    "headline": "HSBC and Standard Chartered execute first live tokenised deposit on Swift blockchain ledger",
+    "plain_english": "Two major banks completed the first live transaction for tokenised deposits on Swift's new blockchain-based settlement infrastructure, marking production readiness for digital asset settlement at scale.",
+    "why_it_matters": "Demonstrates viability of tokenised securities and deposits in real cross-border workflows; signals that tier-1 banks are moving past pilots, validating the shift from traditional rails to blockchain settlement.",
     "source": {
-      "name": "Finextra · 2026-08-13",
-      "url": "https://www.finextra.com/newsarticle/48243/cftc-orders-kalshi-to-keep-operating-in-response-to-new-york-lawsuit"
+      "name": "Finextra · 2026-08-19",
+      "url": "https://www.finextra.com/newsarticle/48270/hsbc-and-standard-chartered-execute-first-live-transaction-on-swifts-blockchain-based-ledger"
     }
   },
   {
-    "id": "2026-08-13-fca-firm-clone-warning",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-08-13T10:05:08Z",
-    "headline": "FCA warns of clone financial website impersonating registered firm",
-    "plain_english": "The UK Financial Conduct Authority flagged housetrading-financial.com as a fraudulent clone of an FCA-registered entity. The imposter site mimics legitimate branding to siphon deposits.",
-    "why_it_matters": "Deepfake and domain-squatting fraud accelerating; BFSI firms must harden brand-protection and customer-verification layers, especially in onboarding and password-reset flows.",
+    "id": "2026-08-19-aws-ai-payment-agent-usdc",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-19T09:20:24.000Z",
+    "headline": "AWS launches AI agent payment service supporting USDC stablecoin settlement",
+    "plain_english": "Amazon Web Services released a managed AI agent service for payments that natively supports USDC, enabling banks and fintechs to automate transaction orchestration on blockchain rails.",
+    "why_it_matters": "Hyperscaler now commoditizing AI-driven payment automation; removes friction for incumbents entering tokenised finance without building from scratch.",
     "source": {
-      "name": "FCA · 2026-08-13",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVks2Vmlka2ppMFpfNVk4SDN1V3VjMmd1dUl0eWoyNnJycDktcHQ5bzN5NnZtXzdLbS1ldVpmSDc0eWN1OE1tOGRuallXWHZEeHFHWS0wTm9NYlgtbzVSQ09UZ2ZTLXdLQXlqRkF6ajl6SU1WVDEtdFdKb0pMNHZaWWd3YmlOWkJ0c1IyYXRtLW1oQQ"
+      "name": "Bloomberg · 2026-08-19",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9aMEJXVFM1Q2sxOE5Hb2VMVG5GMU9YaXlZNThBWkRWczRPc1hfbjQ2VEJhcnhNQkVvdnBmVGJVRU9RTXloNlNrNlhBR0tGMmdXdFF5Mw"
+    }
+  },
+  {
+    "id": "2026-08-19-nexo-crypto-credit-australia",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-19T09:28:00.000Z",
+    "headline": "Nexo gains Australian credit license to offer crypto-backed lending under national consumer protection",
+    "plain_english": "Crypto lender Nexo received formal Credit Representative approval in Australia, allowing it to operate crypto-collateralised credit lines under full NCCP regulatory oversight.",
+    "why_it_matters": "First major crypto lender formally licensed in APAC; signals regulatory acceptance of crypto credit as a distinct asset class; establishes precedent for other markets.",
+    "source": {
+      "name": "Finextra · 2026-08-19",
+      "url": "https://www.finextra.com/pressarticle/110680/nexo-wins-approval-to-launch-crypto-backed-credit-in-australia"
     }
   },
   {
@@ -268,51 +322,17 @@
     }
   },
   {
-    "id": "2026-08-17-bank-america-ai-tracker",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T10:04:56.000Z",
-    "headline": "Bank of America launches AI model tracker for intelligence and cost monitoring",
-    "plain_english": "Bank of America deployed an internal AI tracking system to monitor model performance and operational costs in real time. Signals enterprise BFSI moving beyond pilots to active cost governance and model observability.",
-    "why_it_matters": "BofA's instrumentation approach will drive industry adoption of LLM cost controls; cost tracking is now a competitive requirement for large-scale AI adoption.",
+    "id": "2026-08-19-tokenovate-alec-burns-cto",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-08-19T11:53:00.000Z",
+    "headline": "Tokenovate appoints new Head of Product Technology to scale tokenised settlement infrastructure",
+    "plain_english": "UK fintech Tokenovate, which offers post-trade workflow automation and programmable settlement, appointed Dr Alec Burns as Head of Product Technology to accelerate product scaling.",
+    "why_it_matters": "Signals Tokenovate's pivot from early pilots to production scale; confirms market demand for legal-first tokenisation infrastructure among tier-1 buy-side and settlement operators.",
     "source": {
-      "name": "Crypto Briefing · 2026-08-17",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zekV0Vi1hamlKUVV0YlJJT1Q0TG4yMXdqRDk4UTVUVkEyUVdCbGs3aVU0X0diYzFfeEZMMS1hRlo3aGlQVGlJZE9Wa0dyRUtNa1FtNk9YUzRKRnpWRW9rRzMwNEdHbnZCU1hkckE3cUt3eVZKX2c"
-    }
-  },
-  {
-    "id": "2026-08-16-polygon-boe-digital-pound",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-08-17T00:01:00.000Z",
-    "headline": "Polygon joins Bank of England's Digital Pound Lab for cross-border settlement pilots",
-    "plain_english": "Blockchain platform Polygon Labs has entered phase two of the BoE's Digital Pound Lab alongside Nobo Finance and Dun & Bradstreet. The project tests near-instant cross-border settlement using a digital sterling testnet, advancing CBDC infrastructure for international payments.",
-    "why_it_matters": "UK central bank is operationalising blockchain-based settlement with named vendors. Success here reduces friction for BFSI players to adopt distributed ledger rails; failure surfaces interop and custody challenges early.",
-    "jargon": [
-      {
-        "term": "CBDC",
-        "def": "Central bank digital currency. Digital form of a nation's sovereign money, issued and backed by the central bank."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-17",
-      "url": "https://www.finextra.com/newsarticle/48253/polygon-joins-bofes-digital-pound-lab-to-test-cross-border-settlement"
-    }
-  },
-  {
-    "id": "2026-08-15-world-liberty-financial-bank-approval",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-15T19:39:00Z",
-    "headline": "World Liberty Financial gains preliminary regulatory approval to launch U.S. bank",
-    "plain_english": "The Trump family's World Liberty Financial won preliminary greenlight from U.S. banking regulators to establish a bank charter. The fintech firm had previously raised capital for crypto and digital asset services; bank license enables deposit-taking and lending.",
-    "why_it_matters": "New bank charters in fintech remain rare and politically charged. Approval sets precedent for politically connected players and may signal regulator openness to alternative-custody and DeFi-integrated banking—watch for AI-driven compliance and KYC automation as competitive edge.",
-    "source": {
-      "name": "WSJ · 2026-08-15",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWlQwM214bWI1eFkwOTl0NzBjaXFVaVh3MXdKVXhrV1V5S2lJclVkTlZNNVVhNkJQS0tGMlZmV0YtSGxYWG1LOGtvRUpmaUNBbWdRYk55S3RicDZfc0ZOTnNlbnBzSFJtck43dG5jUTcwOFFfeGhld0Q1RndTalF2UENtVzFZTVAyMFpndWduckVMM2ZEV2RTOWFVZUdJdVNTRTBBVnFGOW9ZR3haV053MlR6Mnc5RURn"
+      "name": "Finextra · 2026-08-19",
+      "url": "https://www.finextra.com/pressarticle/110682/tokenovate-appoints-dr-alec-burns-to-scale-legal-first-infrastructure-for-tokenised-capital-markets"
     }
   },
   {
@@ -473,23 +493,17 @@
     }
   },
   {
-    "id": "2026-08-14-citi-kard-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-08-19-klarna-guidance-revision",
+    "category": "shift",
+    "jurisdiction": "EU",
     "severity": "med",
-    "published_at": "2026-08-14T10:21:00Z",
-    "headline": "Citigroup Consumer Cards acquires fintech Kard for commerce media and rewards personalization",
-    "plain_english": "Citi's Consumer Cards unit has agreed to acquire Kard Financial, a commerce media and rewards platform that uses data and personalization to drive customer engagement. Builds Citi's in-house capabilities for AI-driven offer engine.",
-    "why_it_matters": "Large bank buying specialized fintech tooling to own AI recommendation stack end-to-end; signals build-vs-buy shift as Citi integrates customer engagement AI internally rather than outsourcing.",
-    "jargon": [
-      {
-        "term": "Commerce media",
-        "def": "Targeted offers and ads delivered at point of purchase, typically powered by customer transaction data and ML ranking."
-      }
-    ],
+    "published_at": "2026-08-19T09:43:00.000Z",
+    "headline": "Klarna revises guidance downward; signals market contraction in buy-now-pay-later sector",
+    "plain_english": "Buy-now-pay-later unicorn Klarna cut forward-looking revenue and transaction-income guidance, reflecting softening demand and increased consumer credit risk.",
+    "why_it_matters": "BNPL consolidation accelerating; incumbents now defending turf against AI-powered underwriting and dynamic credit models from neo-banks; expect M&A wave.",
     "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/pressarticle/110647/citigroups-consumer-cards-to-acquire-fintech-kard"
+      "name": "Finextra · 2026-08-19",
+      "url": "https://www.finextra.com/newsarticle/48269/klarna-shares-dip-on-revised-guidance"
     }
   },
   {
@@ -616,20 +630,6 @@
     "source": {
       "name": "Devbhoomi News · 2026-08-15",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE42NDNadWNiMXpzZmpsT2xiUmNSRFk3U3QyZzNqYnFzNXdJV0RZVXRVQmhKbTkxNEx6OFh3bEJmQjJXLTlSU1V4dg"
-    }
-  },
-  {
-    "id": "2026-08-14-openai-enterprise-revenue-milestone",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-14T23:01:03.000Z",
-    "headline": "OpenAI enterprise revenue now exceeds consumer business, CFO tells investors",
-    "plain_english": "OpenAI's CFO Sarah Friar disclosed that the company's enterprise revenue has surpassed consumer revenue for the first time, signaling a structural pivot toward B2B as the primary growth engine. This follows leadership turbulence including the departure of revenue chief Denise Dresser.",
-    "why_it_matters": "Enterprise-first monetization de-risks AI model makers from consumer attention cycles and creates predictable, contract-based revenue. Expect other frontier labs to accelerate similar B2B repositioning within 12 months.",
-    "source": {
-      "name": "CNBC · 2026-08-14",
-      "url": "https://www.cnbc.com/2026/08/14/openai-cfo-friar-tells-investors-that-enterprise-bigger-than-consumer.html"
     }
   },
   {
@@ -987,6 +987,26 @@
     }
   },
   {
+    "id": "2026-08-19-enterprise-ai-stack-layers",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-19T11:30:00.000Z",
+    "headline": "Enterprise AI infrastructure now stratified across three architectural layers",
+    "plain_english": "Tearsheet editorial identifies emerging pattern: BFSI AI deployments organise into foundational (model training), platform (orchestration, eval), and application (domain-specific agents) layers.",
+    "why_it_matters": "Helps risk and compliance teams map governance boundaries; clarifies which layer owns hallucination risk, audit trails, and model drift monitoring.",
+    "jargon": [
+      {
+        "term": "Model drift",
+        "def": "Gradual degradation of AI model accuracy over time as real-world data distributions diverge from training data; critical for credit, fraud, and trading models."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-08-19",
+      "url": "https://tearsheet.co/podcasts/how-enterprise-ai-is-moving-up-the-stack-in-3-layers/"
+    }
+  },
+  {
     "id": "2026-08-18-fbi-ai-infrastructure-88m",
     "category": "insight",
     "jurisdiction": "US",
@@ -1126,22 +1146,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-15",
       "url": "https://www.pymnts.com/news/banking/2026/italy-cheese-bank-finds-climate-risk-has-rind/"
-    }
-  },
-  {
-    "id": "2026-08-14-platforms-merchant-credit-expansion",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-14T22:10:28.000Z",
-    "headline": "Payment platforms pivot merchant relationships into lending using transaction data",
-    "plain_english": "Block, PayPal, and other payments platforms are deepening merchant lending offerings by leveraging real-time transaction data to underwrite working capital faster. Q2 earnings show aggressive capital deployment into merchant credit products.",
-    "stat_label": "Merchant lending expansion driver",
-    "stat_value": "transaction data + algorithmic underwriting",
-    "why_it_matters": "Non-bank credit issuance by fintech platforms is fragmenting the SMB lending market away from traditional banks. BFSI risk officers must monitor off-books credit creation; regulatory arbitrage risk in merchant credit pools could trigger supervisory action within 24 months.",
-    "source": {
-      "name": "PYMNTS · 2026-08-14",
-      "url": "https://www.pymnts.com/loans/working-capital/2026/platforms-use-payments-data-push-deeper-into-merchant-credit/"
     }
   },
   {
@@ -1288,6 +1292,30 @@
     "source": {
       "name": "PYMNTS · 2026-08-16",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-ceo-says-hes-not-an-ai-pessimist/"
+    }
+  },
+  {
+    "id": "2026-08-19-learner-prompt-caching",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-19T11:00:00.000Z",
+    "headline": "What is prompt caching? A plain-English guide for BFSI engineers.",
+    "plain_english": "Prompt caching is a technique where AI models reuse portions of previously processed input context (e.g., regulatory documents, historical transaction logs) to avoid recomputing the same embeddings, cutting latency and cost. E.g., a compliance team building an AI agent to summarise 10,000 historical KYC files caches the legal definition section once, then applies it to each file.",
+    "why_it_matters": "Dramatically reduces cost of batch processing in BFSI (AML screening, regulatory reporting, portfolio analysis); enables real-time agent responses without token waste.",
+    "jargon": [
+      {
+        "term": "Embeddings",
+        "def": "Numerical vectors representing the semantic meaning of text; used by AI to compare documents, find similarity, and retrieve relevant context."
+      },
+      {
+        "term": "Tokens",
+        "def": "Smallest units of text processed by language models (roughly 4 characters); large batches incur per-token fees, so caching reduces total cost."
+      }
+    ],
+    "source": {
+      "name": "Anthropic · 2026-08-19",
+      "url": "https://anthropic.com"
     }
   },
   {
@@ -1485,23 +1513,23 @@
     }
   },
   {
-    "id": "2026-07-30-learner-ai-agent",
-    "category": "learner",
+    "id": "2026-08-19-trend-ai-agent-chaos",
+    "category": "trending",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-07-30T00:13:46.000Z",
-    "headline": "What is an AI agent? Why everyone is talking about them.",
-    "plain_english": "An AI agent is a software program that can perceive its environment, make decisions, take actions (like calling APIs or approving transactions), and adjust based on outcomes—without human approval for each step. Unlike chatbots that only respond to text, agents autonomously pursue multi-step goals (e.g., 'find and book the cheapest flight'). Freehand's procurement agents and WEX's fraud detectors are real examples: they automatically negotiate supplier rates and block fraud before you intervene.",
-    "why_it_matters": "Agents shift AI from tool (you ask, it answers) to workforce (it acts). In BFSI, this means faster approvals, lower ops cost, but new compliance and bias risks requiring real-time audit trails.",
+    "published_at": "2026-08-19T10:04:59.000Z",
+    "headline": "AI coding agents spiral into unpredictable behavior; user viral video sparks safety scrutiny",
+    "plain_english": "A user's viral video showed Claude AI agent getting stuck in repetitive, nonsensical loops while generating code, reigniting debate about agentic AI safety, interpretability, and runaway loop detection.",
+    "why_it_matters": "Highlights real deployment risk: autonomous agents (now entering production in BFSI) can fail ungracefully without robust human-in-the-loop checkpoints and circuit-breaker logic.",
     "jargon": [
       {
-        "term": "autonomous decision-making",
-        "def": "Agent executes transactions or approvals without human in-the-loop; trades speed for control risk."
+        "term": "Agent loop",
+        "def": "Iterative cycle where an AI system observes state, decides an action, executes it, and observes new state; can fail if termination condition is ambiguous or undetected."
       }
     ],
     "source": {
-      "name": "PYMNTS, TechCrunch · 2026-07-29",
-      "url": "https://www.pymnts.com/facebook-meta/2026/zuckerberg-says-billions-will-rely-on-personal-ai-agents/"
+      "name": "Moneycontrol · 2026-08-19",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTVUzS3E5dUtyMzNET0M5R2ExY1h1eGRyR2c1VUtBTll2Wk4xaHJtRzY2SUhoWi1mZlVNNThaTFdrbEdGMWdTM2hDNjB5QlppRXVBSzBiMW1MWUt6WDd3TDFJWEs3X2FBdzE3WU53blNqUHkwbzQ2NXJucXJRdkJGMDQyTTFvdDljdk4zcnliN3ljR01TQ1VpZERaUF9xZmxraFk5TTFwWk5hd1ZmNW53Z21QN1ZRX1RvYnR0aDBWN01OS2h5a21ZcHd2YU9QR0t5QnfSAdcBQVVfeXFMTVZUVl90MzZDTU5UTmpPMTkwd0RMd1l3c2ZQclNxWUI4d1R3MU5RNFR1NndoVFdLWXNOVGZDRjdQQUlwdEZDZXdMNDBmLXdTSU9nc2lXbnFlWVJSTFZuYlVTRGY0TFlOTVpuaS1NX3BhX25ZMy1kd2R2Y29Kd1BSSzlWWnI2cHg4elNsaEZiVlNfTVZwWEVBM0NvYVhoMndFVzZVb3NzRHBReDlITWRBbWo2QWYtWGppV2VPRmNBN0tHUHVsbTFEa3dzaE9PVHJPNnZpRUptYWc"
     }
   },
   {
@@ -1634,6 +1662,152 @@
     "source": {
       "name": "TechCrunch · 2026-08-06",
       "url": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+    }
+  },
+  {
+    "id": "2026-08-13-cftc-kalshi-derivatives",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-13T11:20:00Z",
+    "headline": "CFTC orders prediction market platform Kalshi to remain operational",
+    "plain_english": "The US Commodity Futures Trading Commission directed Kalshi, a derivatives prediction-market platform, to continue operating despite multiple state lawsuits seeking shutdowns. CFTC asserted federal regulatory authority.",
+    "why_it_matters": "Federal-state jurisdictional clash on fintech derivatives; BFSI firms relying on prediction markets or event-contract infrastructure face unclear compliance risk if states escalate.",
+    "source": {
+      "name": "Finextra · 2026-08-13",
+      "url": "https://www.finextra.com/newsarticle/48243/cftc-orders-kalshi-to-keep-operating-in-response-to-new-york-lawsuit"
+    }
+  },
+  {
+    "id": "2026-08-13-fca-firm-clone-warning",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-08-13T10:05:08Z",
+    "headline": "FCA warns of clone financial website impersonating registered firm",
+    "plain_english": "The UK Financial Conduct Authority flagged housetrading-financial.com as a fraudulent clone of an FCA-registered entity. The imposter site mimics legitimate branding to siphon deposits.",
+    "why_it_matters": "Deepfake and domain-squatting fraud accelerating; BFSI firms must harden brand-protection and customer-verification layers, especially in onboarding and password-reset flows.",
+    "source": {
+      "name": "FCA · 2026-08-13",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVks2Vmlka2ppMFpfNVk4SDN1V3VjMmd1dUl0eWoyNnJycDktcHQ5bzN5NnZtXzdLbS1ldVpmSDc0eWN1OE1tOGRuallXWHZEeHFHWS0wTm9NYlgtbzVSQ09UZ2ZTLXdLQXlqRkF6ajl6SU1WVDEtdFdKb0pMNHZaWWd3YmlOWkJ0c1IyYXRtLW1oQQ"
+    }
+  },
+  {
+    "id": "2026-08-17-bank-america-ai-tracker",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-17T10:04:56.000Z",
+    "headline": "Bank of America launches AI model tracker for intelligence and cost monitoring",
+    "plain_english": "Bank of America deployed an internal AI tracking system to monitor model performance and operational costs in real time. Signals enterprise BFSI moving beyond pilots to active cost governance and model observability.",
+    "why_it_matters": "BofA's instrumentation approach will drive industry adoption of LLM cost controls; cost tracking is now a competitive requirement for large-scale AI adoption.",
+    "source": {
+      "name": "Crypto Briefing · 2026-08-17",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zekV0Vi1hamlKUVV0YlJJT1Q0TG4yMXdqRDk4UTVUVkEyUVdCbGs3aVU0X0diYzFfeEZMMS1hRlo3aGlQVGlJZE9Wa0dyRUtNa1FtNk9YUzRKRnpWRW9rRzMwNEdHbnZCU1hkckE3cUt3eVZKX2c"
+    }
+  },
+  {
+    "id": "2026-08-16-polygon-boe-digital-pound",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-08-17T00:01:00.000Z",
+    "headline": "Polygon joins Bank of England's Digital Pound Lab for cross-border settlement pilots",
+    "plain_english": "Blockchain platform Polygon Labs has entered phase two of the BoE's Digital Pound Lab alongside Nobo Finance and Dun & Bradstreet. The project tests near-instant cross-border settlement using a digital sterling testnet, advancing CBDC infrastructure for international payments.",
+    "why_it_matters": "UK central bank is operationalising blockchain-based settlement with named vendors. Success here reduces friction for BFSI players to adopt distributed ledger rails; failure surfaces interop and custody challenges early.",
+    "jargon": [
+      {
+        "term": "CBDC",
+        "def": "Central bank digital currency. Digital form of a nation's sovereign money, issued and backed by the central bank."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-17",
+      "url": "https://www.finextra.com/newsarticle/48253/polygon-joins-bofes-digital-pound-lab-to-test-cross-border-settlement"
+    }
+  },
+  {
+    "id": "2026-08-15-world-liberty-financial-bank-approval",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-15T19:39:00Z",
+    "headline": "World Liberty Financial gains preliminary regulatory approval to launch U.S. bank",
+    "plain_english": "The Trump family's World Liberty Financial won preliminary greenlight from U.S. banking regulators to establish a bank charter. The fintech firm had previously raised capital for crypto and digital asset services; bank license enables deposit-taking and lending.",
+    "why_it_matters": "New bank charters in fintech remain rare and politically charged. Approval sets precedent for politically connected players and may signal regulator openness to alternative-custody and DeFi-integrated banking—watch for AI-driven compliance and KYC automation as competitive edge.",
+    "source": {
+      "name": "WSJ · 2026-08-15",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWlQwM214bWI1eFkwOTl0NzBjaXFVaVh3MXdKVXhrV1V5S2lJclVkTlZNNVVhNkJQS0tGMlZmV0YtSGxYWG1LOGtvRUpmaUNBbWdRYk55S3RicDZfc0ZOTnNlbnBzSFJtck43dG5jUTcwOFFfeGhld0Q1RndTalF2UENtVzFZTVAyMFpndWduckVMM2ZEV2RTOWFVZUdJdVNTRTBBVnFGOW9ZR3haV053MlR6Mnc5RURn"
+    }
+  },
+  {
+    "id": "2026-08-14-citi-kard-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-14T10:21:00Z",
+    "headline": "Citigroup Consumer Cards acquires fintech Kard for commerce media and rewards personalization",
+    "plain_english": "Citi's Consumer Cards unit has agreed to acquire Kard Financial, a commerce media and rewards platform that uses data and personalization to drive customer engagement. Builds Citi's in-house capabilities for AI-driven offer engine.",
+    "why_it_matters": "Large bank buying specialized fintech tooling to own AI recommendation stack end-to-end; signals build-vs-buy shift as Citi integrates customer engagement AI internally rather than outsourcing.",
+    "jargon": [
+      {
+        "term": "Commerce media",
+        "def": "Targeted offers and ads delivered at point of purchase, typically powered by customer transaction data and ML ranking."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-14",
+      "url": "https://www.finextra.com/pressarticle/110647/citigroups-consumer-cards-to-acquire-fintech-kard"
+    }
+  },
+  {
+    "id": "2026-08-14-openai-enterprise-revenue-milestone",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-14T23:01:03.000Z",
+    "headline": "OpenAI enterprise revenue now exceeds consumer business, CFO tells investors",
+    "plain_english": "OpenAI's CFO Sarah Friar disclosed that the company's enterprise revenue has surpassed consumer revenue for the first time, signaling a structural pivot toward B2B as the primary growth engine. This follows leadership turbulence including the departure of revenue chief Denise Dresser.",
+    "why_it_matters": "Enterprise-first monetization de-risks AI model makers from consumer attention cycles and creates predictable, contract-based revenue. Expect other frontier labs to accelerate similar B2B repositioning within 12 months.",
+    "source": {
+      "name": "CNBC · 2026-08-14",
+      "url": "https://www.cnbc.com/2026/08/14/openai-cfo-friar-tells-investors-that-enterprise-bigger-than-consumer.html"
+    }
+  },
+  {
+    "id": "2026-08-14-platforms-merchant-credit-expansion",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-14T22:10:28.000Z",
+    "headline": "Payment platforms pivot merchant relationships into lending using transaction data",
+    "plain_english": "Block, PayPal, and other payments platforms are deepening merchant lending offerings by leveraging real-time transaction data to underwrite working capital faster. Q2 earnings show aggressive capital deployment into merchant credit products.",
+    "stat_label": "Merchant lending expansion driver",
+    "stat_value": "transaction data + algorithmic underwriting",
+    "why_it_matters": "Non-bank credit issuance by fintech platforms is fragmenting the SMB lending market away from traditional banks. BFSI risk officers must monitor off-books credit creation; regulatory arbitrage risk in merchant credit pools could trigger supervisory action within 24 months.",
+    "source": {
+      "name": "PYMNTS · 2026-08-14",
+      "url": "https://www.pymnts.com/loans/working-capital/2026/platforms-use-payments-data-push-deeper-into-merchant-credit/"
+    }
+  },
+  {
+    "id": "2026-07-30-learner-ai-agent",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-07-30T00:13:46.000Z",
+    "headline": "What is an AI agent? Why everyone is talking about them.",
+    "plain_english": "An AI agent is a software program that can perceive its environment, make decisions, take actions (like calling APIs or approving transactions), and adjust based on outcomes—without human approval for each step. Unlike chatbots that only respond to text, agents autonomously pursue multi-step goals (e.g., 'find and book the cheapest flight'). Freehand's procurement agents and WEX's fraud detectors are real examples: they automatically negotiate supplier rates and block fraud before you intervene.",
+    "why_it_matters": "Agents shift AI from tool (you ask, it answers) to workforce (it acts). In BFSI, this means faster approvals, lower ops cost, but new compliance and bias risks requiring real-time audit trails.",
+    "jargon": [
+      {
+        "term": "autonomous decision-making",
+        "def": "Agent executes transactions or approvals without human in-the-loop; trades speed for control risk."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS, TechCrunch · 2026-07-29",
+      "url": "https://www.pymnts.com/facebook-meta/2026/zuckerberg-says-billions-will-rely-on-personal-ai-agents/"
     }
   },
   {
@@ -4582,30 +4756,6 @@
     }
   },
   {
-    "id": "2026-07-20-learner-agent-loops",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-20T00:00:00Z",
-    "headline": "What are agent loops, and why they matter for financial AI",
-    "plain_english": "An agent loop is a cycle where an AI model thinks through a problem (e.g., \"should we approve this loan?\"), takes an action (calls a calculator or database), observes the result, and repeats until it reaches a confident answer. Unlike simple prompts, agents can break complex tasks into steps and refine along the way.",
-    "why_it_matters": "Banks deploying AI for underwriting, fraud detection, and reconciliation increasingly rely on agent loops to ensure decisions are auditable: the AI can show its reasoning step-by-step, which regulators and compliance teams require.",
-    "jargon": [
-      {
-        "term": "Agent",
-        "def": "An AI system that can plan, take actions (call tools or APIs), and iterate based on results rather than just answering a question once."
-      },
-      {
-        "term": "Tool",
-        "def": "Any external function or API an agent can call—e.g., a database query, calculator, or risk model—to gather info or execute decisions."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Research · 2026-07-20",
-      "url": "https://www.aitechhive.com"
-    }
-  },
-  {
     "id": "2026-07-27-ai-distillation-debate-trending",
     "category": "trending",
     "jurisdiction": "Global",
@@ -7128,26 +7278,6 @@
     "amount": "$950B"
   },
   {
-    "id": "2026-07-20-bcg-decision-agents",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-20T11:30:42Z",
-    "headline": "BCG report identifies executive decision agents as highest-value, least-funded AI use case",
-    "plain_english": "BCG research found AI agents that advise executive committees through board-level decisions represent the most strategically valuable but most underfunded AI application—acting as extra analyst reading real-time data.",
-    "why_it_matters": "Signals BFSI boards to prioritize decision-support agents for M&A, capital allocation, risk; validates agent-loop pattern over chatbots; may unlock new exec buy-in for AI spend.",
-    "jargon": [
-      {
-        "term": "Decision agent",
-        "def": "AI system that autonomously gathers data, applies rules/models, and surfaces recommendations to human decision-makers in real time."
-      }
-    ],
-    "source": {
-      "name": "BCG · 2026-07-20",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU0xCOVl4c3NCWV8xb0JwcEdJNGRiNzctVmF2ejF3TmdiN1FSV3RCY09pY2J4bUpkWjlMU1J3WlhaaVhwYW9JUGhXcElLcFVyNzlTWnFZWjV5cWFVOUQzWUFPMUJHY3dZeTluZmNMRkdHY3NpczVYTnNxMWhWNFpuLWZyTTYzNFlRRlQtRUVMRHJILWM0dGlweWc3R2RuLWNrNzBhRWNYR2FZQTlXT1B4ZGc2YmtOZUFrczdr"
-    }
-  },
-  {
     "id": "2026-07-25-us-bancorp-q1-earnings-digital-transformation",
     "category": "insight",
     "jurisdiction": "US",
@@ -8360,20 +8490,6 @@
     }
   },
   {
-    "id": "2026-07-20-insight-aci-worldwide-billing-divestiture",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T00:58:47Z",
-    "headline": "ACI Worldwide explores sale of billing division amid investor appetite for recurring-revenue payments software",
-    "plain_english": "Payments provider ACI Worldwide is weighing a sale of its billing (accounts-receivable automation) business, capitalizing on strong institutional demand for recurring-revenue SaaS and streamlined payment stacks.",
-    "why_it_matters": "Billing-software M&A trends signal that consolidators (private equity, larger fintech) now see subscription-management and AR automation as higher-margin, sticky revenue streams than legacy transaction processing.",
-    "source": {
-      "name": "Reuters via PYMNTS · 2026-07-20",
-      "url": "https://www.pymnts.com/back-office/accounts-receivable/2026/aci-worldwide-considers-putting-billing-division-up-for-sale/"
-    }
-  },
-  {
     "id": "2026-07-22-openai-anthropic-lobbying-surge",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8815,20 +8931,6 @@
     }
   },
   {
-    "id": "2026-07-20-banks-smb-backoffice",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T11:30:00Z",
-    "headline": "Banks expand infrastructure to capture SMB back-office; unified workflows for payments, ACH, FX",
-    "plain_english": "Tier-1 and mid-market banks are consolidating SMB back-office tooling—bundling ACH, wire, FX, and reconciliation into single platform to reduce customer switching costs and grow wallet share.",
-    "why_it_matters": "Traditional fintech payment processors (Stripe, Square) face platform-bundling pressure from banking incumbents; AI-driven reconciliation and exception handling become table-stakes for SMB banking.",
-    "source": {
-      "name": "Tearsheet · 2026-07-20",
-      "url": "https://tearsheet.co/banking/banks-are-making-a-bigger-play-for-the-smb-back-office/?utm_source=rss&utm_medium=rss&utm_campaign=banks-are-making-a-bigger-play-for-the-smb-back-office"
-    }
-  },
-  {
     "id": "2026-07-21-block-ai-hiring",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8862,20 +8964,6 @@
     "source": {
       "name": "CNBC · 2026-07-20",
       "url": "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html"
-    }
-  },
-  {
-    "id": "2026-07-20-vendor-lumin-digital-70m",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-20T00:01:00Z",
-    "headline": "Cloud-native banking platform Lumin Digital raises $70M from existing clients",
-    "plain_english": "Lumin Digital, a cloud-native banking platform, closed a $70M funding round exclusively from its own client base, validating enterprise demand for modular banking infrastructure and signaling a shift toward customer-funded vendor growth.",
-    "why_it_matters": "Client-funded venture rounds reduce external dilution and align vendor incentives with customer success; this model, increasingly common in BFSI SaaS, accelerates adoption velocity by existing banks.",
-    "source": {
-      "name": "Finextra · 2026-07-20",
-      "url": "https://www.finextra.com/newsarticle/48118/lumin-digital-raises-70-million-from-its-clients"
     }
   },
   {
@@ -8921,21 +9009,6 @@
     }
   },
   {
-    "id": "2026-07-20-vendor-etched-ai-chip-20b",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T00:00:53Z",
-    "headline": "AI chip startup Etched valued at $20 billion in latest fundraise",
-    "plain_english": "Etched, an AI chip maker, is raising new capital at a $20B valuation, quadrupling from its prior valuation as institutional investors compete to back specialized silicon for LLM inference and training.",
-    "why_it_matters": "Specialized AI chip valuations at scale signal that BFSI enterprises expect sustained capex competition and may need to evaluate in-house silicon strategies to control inference costs at production scale.",
-    "amount": "Undisclosed (at $20B valuation)",
-    "source": {
-      "name": "WSJ via PYMNTS · 2026-07-20",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-chip-startup-etched-eyes-20-billion-valuation/"
-    }
-  },
-  {
     "id": "2026-07-21-moonshot-kimi-subscription-pause",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -8958,26 +9031,6 @@
     "headline": "TSMC accelerates Arizona fab investment to meet AI chip demand 'megatrend'",
     "plain_english": "TSMC CFO Wendell Huang announced expanded Arizona fab investment citing robust customer demand for AI chips—reinforces semiconductor supply-chain localization to serve US AI buildout.",
     "why_it_matters": "US onshoring of chip production reduces geopolitical supply risk for BFSI cloud vendors; longer-term: competitive pricing on local-node capacity may lower inference costs.",
-    "source": {
-      "name": "CNBC · 2026-07-20",
-      "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html"
-    }
-  },
-  {
-    "id": "2026-07-20-frontier-tsmc-arizona-ai-chip-capacity",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-20T01:01:17Z",
-    "headline": "TSMC accelerates Arizona fab buildout to meet sustained AI chip demand",
-    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC) is ramping capital investment in Arizona plants to serve multi-year demand from AI model developers and data-center operators, signaling confidence in sustained growth beyond near-term speculation.",
-    "why_it_matters": "TSMC's expanded US foundry capacity will reduce geopolitical concentration risk for US-based LLM providers and BFSI enterprises procuring inference chips, reshaping supply-chain resilience assumptions for financial AI infrastructure.",
-    "jargon": [
-      {
-        "term": "Foundry",
-        "def": "A semiconductor manufacturing facility that produces chips for external customers (contract manufacturer), as opposed to in-house production by a fabless design company."
-      }
-    ],
     "source": {
       "name": "CNBC · 2026-07-20",
       "url": "https://www.cnbc.com/2026/07/20/tsmc-arizona-fab-capacity-ai-chip-demand.html"
