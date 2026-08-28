@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-08-28-fed-inflation-jackson-hole",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-28T19:30:00Z",
+    "headline": "Federal Reserve chair signals potential rate hike in coming months amid persistent inflation",
+    "plain_english": "Fed Chair Warsh told Jackson Hole Economic Symposium that the central bank has 'work to do' on inflation, suggesting rate increases are likely in near term. Follows persistent inflation and market uncertainty about Fed trajectory.",
+    "why_it_matters": "Rising rates compress net interest margins and increase funding costs for banks; pressures valuation models for fintech lending platforms (consumer credit becomes more expensive, demand drops). Shapes capital planning and cost-of-funds forecasts.",
+    "effective_date": "2026-08-28",
+    "source": {
+      "name": "Reuters · 2026-08-28",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLW9HOXdFRGd4QWlJUHhlT0hzZEpqekl3UllCWkU2cW1BNmlzd0E4TGxSZVpIek5Vci1BM3RXNndHcGk4RWt3ZXVGV2NnMDBTQTJPNkNMUm1QVnpMdHRydXhwTFZqbTh2SDllNzdETEgydEhhWG1TVy1adWp5VDNDZEVMbWZnWWpxTGlLdEcxcm1oQ2YwenBaVy1KRUlsX1hVWS1BS0lhR21UNl93WFM4dVhWNEtHNHFZVWgtOGpUdUFITnBudmZhRA"
+    }
+  },
+  {
     "id": "2026-08-28-japan-fsm-ai-risks",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -144,23 +159,51 @@
     }
   },
   {
-    "id": "2026-08-23-uk-cyberattack-energy-sector-alert",
-    "category": "regulation",
-    "jurisdiction": "UK",
+    "id": "2026-08-28-experian-jpmorgan-account-verification",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-28T20:27:22Z",
+    "headline": "Experian and JPMorgan integrate real-time account verification into payment workflows",
+    "plain_english": "Experian and JPMorgan have launched tools that verify account ownership and integrity at the moment of payment initiation, not after. Addresses fraud and misdirected transfers in faster payment rails where traditional post-transaction checks fail.",
+    "why_it_matters": "Moves fraud prevention upstream in real-time payment systems. Banks adopting this model reduce settlement disputes and chargeback risk on near-instant transfers; sets operational baseline for competitive payment systems.",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/authentication/2026/experian-jpmorgan-push-account-checks-into-payment-workflows/"
+    }
+  },
+  {
+    "id": "2026-08-28-citigroup-arc-agent-deployment",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-08-23T08:49:36.000Z",
-    "headline": "UK energy regulator alerts sector after Iran-linked cyberattack shuts power plant",
-    "plain_english": "Iranian-linked hackers shut down a small UK power facility; the government briefed energy-sector CEOs on the incident. Regulators assessed no systemic risk but issued sector-wide advisory.",
-    "why_it_matters": "BFSI critical-infrastructure exposure rises. Banks financing energy assets and insurers underwriting operational risk now face elevated regulatory scrutiny on cyber resilience; expect new disclosure and testing mandates.",
+    "published_at": "2026-08-28T19:45:20Z",
+    "headline": "Citigroup deploys Arc platform as largest measured enterprise agent deployment to date",
+    "plain_english": "Citigroup's Arc is now the largest documented autonomous AI agent system (intelligent software that takes actions without human intervention) running in production at an enterprise. Signals major milestone for AI automation in banking operations.",
+    "why_it_matters": "Validates enterprise-scale autonomous AI viability in regulated BFSI. Other banks will benchmark Arc's capabilities and operational safeguards; raises bar for competitive AI agent deployments in finance.",
     "jargon": [
       {
-        "term": "Critical infrastructure cyberattack",
-        "def": "Adversary-initiated system compromise targeting essential services (power, water, comms); state-sponsored groups typically involved."
+        "term": "Enterprise agent",
+        "def": "AI software that independently completes workflows (customer queries, trade execution, compliance checks) without human approval on each step."
       }
     ],
     "source": {
-      "name": "Financial Times · 2026-08-23",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUGpFdUVpOXFSVTBBM0FwNVlQOFlEbUNldlQzSDBGUEt6RzJuLW9sdkJjd2NJQzRpeFp0TFJvVTZRZUxSWTh1UFhuVy1FQzFBWmxqc0p2MmxaaGlzSUxzRGZaYks5ZlVqZk1YVVlNT1U1aXNYR2pEbDdxNEtzU2NSM3NhWVQ"
+      "name": "Forkast News (via Google News) · 2026-08-28",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQlBYNmQ3NUhwVGwtZW91bms3UTlHZ1FhN0VDRmtMbzB1TThSOXdVQVJKWWpQWnZNX3lvNmJfRVMtdWMzMGNZZ0ZMZGNaQU9XZUQ0TXlIRFhtTnJFR19oalNrbDUxb3o0dTJRQ2ZBSWhwejVhSmpabFZQaE1BMTVNYkFlOWJYdlNINklCaTFvZ2htbGlodzFKRzVLY25KY3pJRGxR"
+    }
+  },
+  {
+    "id": "2026-08-28-banks-ai-atm-optimization",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-28T19:07:06Z",
+    "headline": "Banks deploy AI systems to optimize ATM cash inventory and reduce overstocking",
+    "plain_english": "Banks are using AI to predict ATM cash demand and minimize excess cash held on hand. Context: cash remains 14% of US consumer payments; 90% of consumers expect to keep using it. AI improves operational efficiency on declining but persistent cash channels.",
+    "why_it_matters": "Reduces working capital tied to physical currency distribution. As cash usage declines, AI-driven inventory optimization protects bank margins on shrinking cash business; extends ATM network viability.",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-use-ai-stop-overstocking-atms/"
     }
   },
   {
@@ -294,45 +337,19 @@
     }
   },
   {
-    "id": "2026-08-24-brazil-inter-pag-aci-payments",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-08-24T12:03:00Z",
-    "headline": "Brazil's Inter Pag selects ACI Worldwide for merchant payments platform",
-    "plain_english": "Inter Pag (Banco Inter's merchant acquiring arm) partnered with ACI Worldwide to power next-generation payment processing in Brazil. Reflects consolidation around cloud-native, real-time payments infrastructure in LatAm.",
-    "why_it_matters": "Validates ACI's market position in LatAm fintech; Brazilian merchant ecosystem modernization may include AI-driven fraud, routing, and reconciliation in follow-on deployments.",
-    "source": {
-      "name": "Finextra · 2026-08-24",
-      "url": "https://www.finextra.com/pressarticle/110706/brazils-inter-pag-selects-aci-for-payments"
-    }
-  },
-  {
-    "id": "2026-08-24-ameriflex-succession-ai",
-    "category": "deployment",
+    "id": "2026-08-28-a16z-hardware-fund",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-24T10:50:39Z",
-    "headline": "AmeriFlex Group deploys AI to identify financial advisors nearing retirement",
-    "plain_english": "AmeriFlex Group (wealth advisory platform) launched an AI program to flag advisors approaching succession eligibility. HR/talent analytics use case, part of broader wealth-management industry succession crisis mitigation.",
-    "why_it_matters": "Signals wealth-tech adoption of predictive AI for advisor retention and succession planning; as advisor shortage worsens, expect broader BFSI adoption of similar talent-risk modeling.",
-    "source": {
-      "name": "InvestmentNews · 2026-08-24",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdUp4WDNQcUVfN2tLVDlSR2RfOXZraEh1cFpwdVlHd05mckRZOU9RVDR0a3dHeFF2UkRlS3VPWm4yYjEtUGhwWWI0UjctMjNuNjlTRXRVb0J0Zms3OF9aNGJxNXhmWFoxSVRNNFhlaFM1dXJLVnVjVE1OVU51VGt4TlJXc29zcGdaaEpPd0ZTeUx1TjNFNGNQVTd0MWI0LW9mWXU0OTNkYUg0OFgxa2RadXBoQ2NoMkQ1UFdmS0c2aWd1SU84RTFF"
-    }
-  },
-  {
-    "id": "2026-08-24-egypt-cib-digital-bank",
-    "category": "deployment",
-    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-08-24T00:01:00.000Z",
-    "headline": "Egypt's CIB wins preliminary nod for digital-only bank offshoot",
-    "plain_english": "Commercial International Bank (CIB), Egypt's largest private lender, received regulatory approval to launch a digitally native banking subsidiary. This signals regulator confidence in digital-first retail banking in a major emerging market.",
-    "why_it_matters": "Sets template for legacy banks in MENA/Africa to spin digital units without legacy friction; demonstrates regulator readiness for platform banking in high-growth emerging markets.",
+    "published_at": "2026-08-28T18:46:14Z",
+    "headline": "Andreessen Horowitz launches $1.1 billion AI hardware fund to address chip supply constraints",
+    "plain_english": "a16z raised $1.1B for its Machine Age Fund to invest in founders building AI infrastructure and custom AI hardware. Targets the global bottleneck in GPU/accelerator availability constraining AI model deployment and training.",
+    "why_it_matters": "Signals major VC bet that bespoke AI hardware (not just Nvidia) will unlock value. Banks relying on third-party AI inference will benefit if fund's portfolio reduces hardware scarcity and vendor lock-in.",
+    "amount": "$1.1B",
+    "round": "Fund I",
     "source": {
-      "name": "Finextra · 2026-08-24",
-      "url": "https://www.finextra.com/newsarticle/48284/egypts-cib-scores-preliminary-approval-for-new-digital-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/andreessen-horowitz-targets-ai-supply-crunch-with-new-1-1-billion-hardware-fund/"
     }
   },
   {
@@ -484,21 +501,27 @@
     }
   },
   {
-    "id": "2026-08-22-fifth-third-payload-embedded-payments",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-22T00:26:59.000Z",
-    "headline": "Fifth Third backs Payload's embedded payments expansion with strategic investment",
-    "plain_english": "Payload, a fintech founded in 2019, raised a strategic investment led by Fifth Third Bank to expand its embedded payments platform. Payload processed nearly $500M in transaction volume in May 2026 alone.",
-    "why_it_matters": "Major bank backing of embedded-finance infrastructure signals enterprise commitment to API-first payment rails; validates Payload's B2B2C model as fifth-third sees strategic value in distribution.",
-    "scale": {
-      "metric": "customers",
-      "value": "processed $500M/month"
-    },
+    "id": "2026-08-28-bis-tokenized-deposits",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-28T21:00:43Z",
+    "headline": "BIS chief backs tokenized deposits over stablecoins for digital payments infrastructure",
+    "plain_english": "Bank for International Settlements General Manager Pablo Hernández de Cos said tokenized deposits (bank-issued digital money on blockchain) are more likely than stablecoins to function as money. Signal: central banks view tokenized bank liabilities, not private crypto, as the plumbing for next-gen payments.",
+    "why_it_matters": "Shapes regulatory stance on CBDCs and tokenized settlement. Banks holding deposits as tokenized assets vs. stablecoins shifts competitive advantage toward traditional banking infrastructure and away from crypto-native payment models.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Bank deposits converted to digital tokens on blockchain; issued and backed by licensed banks, not private entities."
+      },
+      {
+        "term": "Stablecoins",
+        "def": "Cryptocurrencies pegged to fiat currency or reserves; issued by private firms, not central banks or licensed depositories."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-08-22",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/fifth-third-backs-payloads-embedded-payments-expansion/"
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/digital-payments/2026/bis-general-manager-says-tokenized-deposits-beat-stablecoins-digital-payments/"
     }
   },
   {
@@ -637,20 +660,6 @@
     "source": {
       "name": "Finextra · 2026-08-24",
       "url": "https://www.finextra.com/newsarticle/48289/adib-appoints-first-chief-ai-officer"
-    }
-  },
-  {
-    "id": "2026-08-24-citi-restructuring-strategy",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-24T11:30:00Z",
-    "headline": "Citi signals end of divestiture cycle; focus pivots to operational excellence and AI",
-    "plain_english": "Citigroup management indicated completion of multi-year shrinkage/restructuring efforts, with strategy now shifting toward productivity gains, cost reduction, and AI-driven efficiency. Implies enterprise-wide AI deployment acceleration to offset headcount pressures.",
-    "why_it_matters": "Largest bank in U.S. shifting from 'right-sizing' to 'optimizing'—signals renewed capex in automation, LLMs for back-office, and underwriting; likely to accelerate industry AI adoption norm across BFSI.",
-    "source": {
-      "name": "Tearsheet · 2026-08-24",
-      "url": "https://tearsheet.co/10-q/citi-is-done-getting-smaller-now-it-has-to-get-better/"
     }
   },
   {
@@ -804,6 +813,26 @@
     }
   },
   {
+    "id": "2026-08-28-anthropic-self-improving-ai",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-28T19:30:38Z",
+    "headline": "Anthropic researchers demonstrate automated AI systems that improve alignment without human retraining",
+    "plain_english": "Anthropic team showed automated systems that identified and corrected 10 misaligned AI behaviors in parallel, improving performance on all without degrading overall capability. Major step toward self-correcting AI systems that need less human oversight.",
+    "why_it_matters": "Reduces cost and latency of AI safety updates in production systems. Banks deploying LLMs for customer-facing or compliance tasks will benefit from automated alignment checks; accelerates shift to autonomous AI monitoring.",
+    "jargon": [
+      {
+        "term": "Alignment",
+        "def": "AI system's behavior matches intended goals; misaligned = system produces harmful or unexpected outputs despite correct training."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-08-28",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/"
+    }
+  },
+  {
     "id": "2026-08-28-arxiv-volatility-graphs",
     "category": "research",
     "jurisdiction": "Global",
@@ -948,17 +977,33 @@
     }
   },
   {
-    "id": "2026-08-27-ethical-llm-research",
-    "category": "research",
+    "id": "2026-08-28-enterprise-ai-roi-caution",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-08-27T04:00:00.000Z",
-    "headline": "Framework for responsible LLM use in research: delegation, verification, epistemic value",
-    "plain_english": "arXiv proposes ethical guardrails for delegating scientific reasoning to LLMs (literature synthesis, hypothesis generation, coding). Establishes when delegation is valid vs. risks losing epistemic rigor, traceability, and accountability.",
-    "why_it_matters": "BFSI research teams (risk modeling, regulatory analysis, data science) increasingly use LLMs. Framework translates to: when can LLM output replace human reasoning vs. when does delegation introduce hidden bias, unverifiable steps, or liability gaps?",
+    "published_at": "2026-08-28T19:47:47Z",
+    "headline": "Enterprises slow tech spending despite 14% projected AI infrastructure growth; ROI pressure rises",
+    "plain_english": "While global IT spending is forecast to grow 14.2% on AI infrastructure investment, not all enterprises are matching that pace. Gartner notes companies are tightening tech budgets and demanding measurable ROI on AI projects before scaling.",
+    "why_it_matters": "BFSI firms with vague AI pilot roadmaps may face budget cuts. CFOs and boards increasingly skeptical of AI spend without documented cost savings or revenue uplift; validates importance of production deployment metrics over lab experiments.",
+    "stat_value": "14.2%",
+    "stat_label": "expected global IT spending growth on AI (but enterprise adoption uneven)",
     "source": {
-      "name": "arXiv · 2026-08-27",
-      "url": "https://arxiv.org/abs/2608.23644"
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/enterprises-tap-the-brakes-on-tech-budgets-while-demanding-ai-roi/"
+    }
+  },
+  {
+    "id": "2026-08-28-interop-stablecoin-competition",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-28T20:48:38Z",
+    "headline": "Stablecoin interoperability faces tension between technical standards and competitive interests",
+    "plain_english": "Banks, card networks, stablecoin issuers, and blockchain operators all claim to support cross-chain interoperability, but each is simultaneously competing for control and lock-in. Technical progress is outpaced by strategic jockeying.",
+    "why_it_matters": "Fragmented stablecoin ecosystems limit network effects. BFSI firms betting on stablecoin settlement should pressure consortiums for genuine interoperability standards; current trajectory favors walled gardens, not universal rails.",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/this-week-in-stablecoins-interoperability-vs-competing-interests/"
     }
   },
   {
@@ -1084,33 +1129,18 @@
     }
   },
   {
-    "id": "2026-08-23-apollo-economist-ai-wages",
-    "category": "insight",
-    "jurisdiction": "Global",
+    "id": "2026-08-28-neocloud-lambda-chip-financing",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-23T22:27:13.000Z",
-    "headline": "Apollo chief economist: AI hitting wage growth, not jobs, first",
-    "plain_english": "Torsten Slok, Apollo Global's chief economist, argues AI's labor market impact is visible in wage suppression (not layoffs yet). Employers use AI to flatten wage pressure before headcount cuts.",
-    "why_it_matters": "Suggests AI-driven labor productivity shows up in profit expansion before unemployment; wage deflation likely to precede headline job losses. BFSI risk: consumer income stagnation narrows lending/deposit margins.",
+    "published_at": "2026-08-28T20:24:11Z",
+    "headline": "Neocloud Lambda secures $1 billion in debt to purchase Nvidia chips for cloud AI leasing",
+    "plain_english": "AI infrastructure startup Neocloud Lambda raised $1B in private debt to buy Nvidia GPUs and resell compute capacity to hyperscalers (including Microsoft). Reflects intense competition and capital concentration in AI chip access.",
+    "why_it_matters": "Underscores ongoing GPU scarcity and high leverage financing of AI infrastructure. Banks and fintech firms competing for AI capacity face rising inference costs; validates a16z's bet on alternative hardware ecosystems.",
+    "amount": "$1B",
     "source": {
-      "name": "PYMNTS · 2026-08-23",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apollo-economist-says-ai-affecting-wages-more-than-employment/"
-    }
-  },
-  {
-    "id": "2026-08-22-china-ai-talent-leap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-22T21:31:47Z",
-    "headline": "China's AI research advances driven by domestic talent pool and institutional investment",
-    "plain_english": "WSJ profiles the researchers behind China's recent AI breakthroughs, highlighting the talent concentration and funding momentum accelerating frontier model development. China is narrowing the gap with US labs in both capability and publication velocity.",
-    "why_it_matters": "Geopolitical AI divergence affects BFSI risk models: expect greater competition for chip exports, regulatory fragmentation in AI governance, and pressure on Western incumbents to accelerate domestic R&D.",
-    "stat_value": "China publishing frontier research at near-parity with US labs",
-    "stat_label": "AI paper publication velocity",
-    "source": {
-      "name": "WSJ · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBjWE5CYjA1SjdibGl2UXJ5cmJkRm43NHZkU29wSTM3Rm9faUFqbTUzdmplcWwwcDFTbE80M3dSNzdXRDJnZVVCc2N6Tlh6M0hwNy1HRXJ6eGJYMDk0ZFN6T3FvRU1ybXhGRFl4bXl4dDRPZw"
+      "name": "TechCrunch · 2026-08-28",
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/"
     }
   },
   {
@@ -1237,20 +1267,6 @@
     "source": {
       "name": "PYMNTS (TechCrunch) · 2026-08-24",
       "url": "https://www.pymnts.com/news/investment-tracker/2026/general-intuition-aims-to-raise-capital-at-6-billion-valuation-to-power-ai-robotics/"
-    }
-  },
-  {
-    "id": "2026-08-24-hugging-face-sale-talks",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-24T10:19:28Z",
-    "headline": "Hugging Face in advanced sale talks at $13 billion valuation",
-    "plain_english": "Hugging Face, the open-source AI model hub and inference platform powering thousands of enterprise LLM deployments, is in discussions for acquisition at a $13B valuation, per multiple reports. Largest AI model marketplace now potential M&A target.",
-    "why_it_matters": "If deal closes, consolidation of fragmented AI infrastructure accelerates; acquirer gains 80M+ monthly AI developers, model hub, and commercial inference layer—reshaping AI supply chain for financial institutions.",
-    "source": {
-      "name": "Sifted · 2026-08-24",
-      "url": "https://sifted.eu/articles/hugging-face-in-talks-for-13bn-sale-reports-say/"
     }
   },
   {
@@ -1633,6 +1649,158 @@
     "source": {
       "name": "Reuters · 2026-08-12",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS3RxTUJxMTh2Mk9XSmgxdm1MZDh6MlRtcVl5aFM1bmF1ajVmWlFnUF9nNU0yYjloQ0pON2VSWFZBYTVldmJ0TGI5N2psYlcwZVRuSURZaUN1NkYzVkh4NGVNRUtjd0F0M3RMTno2X0RSNG9VbF91V2lDOUh0OG5nSDJiY2M4cDdrM1lGRnNicldnNXBBQTBDRFVzNHdJQQ"
+    }
+  },
+  {
+    "id": "2026-08-23-uk-cyberattack-energy-sector-alert",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-08-23T08:49:36.000Z",
+    "headline": "UK energy regulator alerts sector after Iran-linked cyberattack shuts power plant",
+    "plain_english": "Iranian-linked hackers shut down a small UK power facility; the government briefed energy-sector CEOs on the incident. Regulators assessed no systemic risk but issued sector-wide advisory.",
+    "why_it_matters": "BFSI critical-infrastructure exposure rises. Banks financing energy assets and insurers underwriting operational risk now face elevated regulatory scrutiny on cyber resilience; expect new disclosure and testing mandates.",
+    "jargon": [
+      {
+        "term": "Critical infrastructure cyberattack",
+        "def": "Adversary-initiated system compromise targeting essential services (power, water, comms); state-sponsored groups typically involved."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-08-23",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUGpFdUVpOXFSVTBBM0FwNVlQOFlEbUNldlQzSDBGUEt6RzJuLW9sdkJjd2NJQzRpeFp0TFJvVTZRZUxSWTh1UFhuVy1FQzFBWmxqc0p2MmxaaGlzSUxzRGZaYks5ZlVqZk1YVVlNT1U1aXNYR2pEbDdxNEtzU2NSM3NhWVQ"
+    }
+  },
+  {
+    "id": "2026-08-24-brazil-inter-pag-aci-payments",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-08-24T12:03:00Z",
+    "headline": "Brazil's Inter Pag selects ACI Worldwide for merchant payments platform",
+    "plain_english": "Inter Pag (Banco Inter's merchant acquiring arm) partnered with ACI Worldwide to power next-generation payment processing in Brazil. Reflects consolidation around cloud-native, real-time payments infrastructure in LatAm.",
+    "why_it_matters": "Validates ACI's market position in LatAm fintech; Brazilian merchant ecosystem modernization may include AI-driven fraud, routing, and reconciliation in follow-on deployments.",
+    "source": {
+      "name": "Finextra · 2026-08-24",
+      "url": "https://www.finextra.com/pressarticle/110706/brazils-inter-pag-selects-aci-for-payments"
+    }
+  },
+  {
+    "id": "2026-08-24-ameriflex-succession-ai",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-24T10:50:39Z",
+    "headline": "AmeriFlex Group deploys AI to identify financial advisors nearing retirement",
+    "plain_english": "AmeriFlex Group (wealth advisory platform) launched an AI program to flag advisors approaching succession eligibility. HR/talent analytics use case, part of broader wealth-management industry succession crisis mitigation.",
+    "why_it_matters": "Signals wealth-tech adoption of predictive AI for advisor retention and succession planning; as advisor shortage worsens, expect broader BFSI adoption of similar talent-risk modeling.",
+    "source": {
+      "name": "InvestmentNews · 2026-08-24",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdUp4WDNQcUVfN2tLVDlSR2RfOXZraEh1cFpwdVlHd05mckRZOU9RVDR0a3dHeFF2UkRlS3VPWm4yYjEtUGhwWWI0UjctMjNuNjlTRXRVb0J0Zms3OF9aNGJxNXhmWFoxSVRNNFhlaFM1dXJLVnVjVE1OVU51VGt4TlJXc29zcGdaaEpPd0ZTeUx1TjNFNGNQVTd0MWI0LW9mWXU0OTNkYUg0OFgxa2RadXBoQ2NoMkQ1UFdmS0c2aWd1SU84RTFF"
+    }
+  },
+  {
+    "id": "2026-08-24-egypt-cib-digital-bank",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-24T00:01:00.000Z",
+    "headline": "Egypt's CIB wins preliminary nod for digital-only bank offshoot",
+    "plain_english": "Commercial International Bank (CIB), Egypt's largest private lender, received regulatory approval to launch a digitally native banking subsidiary. This signals regulator confidence in digital-first retail banking in a major emerging market.",
+    "why_it_matters": "Sets template for legacy banks in MENA/Africa to spin digital units without legacy friction; demonstrates regulator readiness for platform banking in high-growth emerging markets.",
+    "source": {
+      "name": "Finextra · 2026-08-24",
+      "url": "https://www.finextra.com/newsarticle/48284/egypts-cib-scores-preliminary-approval-for-new-digital-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-08-22-fifth-third-payload-embedded-payments",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-22T00:26:59.000Z",
+    "headline": "Fifth Third backs Payload's embedded payments expansion with strategic investment",
+    "plain_english": "Payload, a fintech founded in 2019, raised a strategic investment led by Fifth Third Bank to expand its embedded payments platform. Payload processed nearly $500M in transaction volume in May 2026 alone.",
+    "why_it_matters": "Major bank backing of embedded-finance infrastructure signals enterprise commitment to API-first payment rails; validates Payload's B2B2C model as fifth-third sees strategic value in distribution.",
+    "scale": {
+      "metric": "customers",
+      "value": "processed $500M/month"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-08-22",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/fifth-third-backs-payloads-embedded-payments-expansion/"
+    }
+  },
+  {
+    "id": "2026-08-24-citi-restructuring-strategy",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-24T11:30:00Z",
+    "headline": "Citi signals end of divestiture cycle; focus pivots to operational excellence and AI",
+    "plain_english": "Citigroup management indicated completion of multi-year shrinkage/restructuring efforts, with strategy now shifting toward productivity gains, cost reduction, and AI-driven efficiency. Implies enterprise-wide AI deployment acceleration to offset headcount pressures.",
+    "why_it_matters": "Largest bank in U.S. shifting from 'right-sizing' to 'optimizing'—signals renewed capex in automation, LLMs for back-office, and underwriting; likely to accelerate industry AI adoption norm across BFSI.",
+    "source": {
+      "name": "Tearsheet · 2026-08-24",
+      "url": "https://tearsheet.co/10-q/citi-is-done-getting-smaller-now-it-has-to-get-better/"
+    }
+  },
+  {
+    "id": "2026-08-27-ethical-llm-research",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-27T04:00:00.000Z",
+    "headline": "Framework for responsible LLM use in research: delegation, verification, epistemic value",
+    "plain_english": "arXiv proposes ethical guardrails for delegating scientific reasoning to LLMs (literature synthesis, hypothesis generation, coding). Establishes when delegation is valid vs. risks losing epistemic rigor, traceability, and accountability.",
+    "why_it_matters": "BFSI research teams (risk modeling, regulatory analysis, data science) increasingly use LLMs. Framework translates to: when can LLM output replace human reasoning vs. when does delegation introduce hidden bias, unverifiable steps, or liability gaps?",
+    "source": {
+      "name": "arXiv · 2026-08-27",
+      "url": "https://arxiv.org/abs/2608.23644"
+    }
+  },
+  {
+    "id": "2026-08-23-apollo-economist-ai-wages",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-23T22:27:13.000Z",
+    "headline": "Apollo chief economist: AI hitting wage growth, not jobs, first",
+    "plain_english": "Torsten Slok, Apollo Global's chief economist, argues AI's labor market impact is visible in wage suppression (not layoffs yet). Employers use AI to flatten wage pressure before headcount cuts.",
+    "why_it_matters": "Suggests AI-driven labor productivity shows up in profit expansion before unemployment; wage deflation likely to precede headline job losses. BFSI risk: consumer income stagnation narrows lending/deposit margins.",
+    "source": {
+      "name": "PYMNTS · 2026-08-23",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apollo-economist-says-ai-affecting-wages-more-than-employment/"
+    }
+  },
+  {
+    "id": "2026-08-22-china-ai-talent-leap",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-22T21:31:47Z",
+    "headline": "China's AI research advances driven by domestic talent pool and institutional investment",
+    "plain_english": "WSJ profiles the researchers behind China's recent AI breakthroughs, highlighting the talent concentration and funding momentum accelerating frontier model development. China is narrowing the gap with US labs in both capability and publication velocity.",
+    "why_it_matters": "Geopolitical AI divergence affects BFSI risk models: expect greater competition for chip exports, regulatory fragmentation in AI governance, and pressure on Western incumbents to accelerate domestic R&D.",
+    "stat_value": "China publishing frontier research at near-parity with US labs",
+    "stat_label": "AI paper publication velocity",
+    "source": {
+      "name": "WSJ · 2026-08-22",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBjWE5CYjA1SjdibGl2UXJ5cmJkRm43NHZkU29wSTM3Rm9faUFqbTUzdmplcWwwcDFTbE80M3dSNzdXRDJnZVVCc2N6Tlh6M0hwNy1HRXJ6eGJYMDk0ZFN6T3FvRU1ybXhGRFl4bXl4dDRPZw"
+    }
+  },
+  {
+    "id": "2026-08-24-hugging-face-sale-talks",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-24T10:19:28Z",
+    "headline": "Hugging Face in advanced sale talks at $13 billion valuation",
+    "plain_english": "Hugging Face, the open-source AI model hub and inference platform powering thousands of enterprise LLM deployments, is in discussions for acquisition at a $13B valuation, per multiple reports. Largest AI model marketplace now potential M&A target.",
+    "why_it_matters": "If deal closes, consolidation of fragmented AI infrastructure accelerates; acquirer gains 80M+ monthly AI developers, model hub, and commercial inference layer—reshaping AI supply chain for financial institutions.",
+    "source": {
+      "name": "Sifted · 2026-08-24",
+      "url": "https://sifted.eu/articles/hugging-face-in-talks-for-13bn-sale-reports-say/"
     }
   },
   {
@@ -6163,20 +6331,6 @@
     }
   },
   {
-    "id": "2026-07-29-chip-stocks-selloff",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-29T11:25:02.000Z",
-    "headline": "Chip stocks lose $1 trillion in value as AI boom cooling concerns weigh on Nvidia, SK Hynix, Samsung",
-    "plain_english": "Nvidia, SK Hynix, and Samsung Electronics led a $1 trillion semiconductor sector selloff since Friday market close. The decline reflects pullback in AI spending growth and margin compression as GPU capacity expands and enterprise LLM ROI questions persist.",
-    "why_it_matters": "BFSI IT budgets tied to GPU/accelerator allocation may see pressure—delays in AI chip procurement timelines and lower pricing could shift capex timing and vendor leverage, particularly for tier-1 banks planning large-scale deployment.",
-    "source": {
-      "name": "CNBC · 2026-07-29",
-      "url": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html"
-    }
-  },
-  {
     "id": "2026-08-07-battery-materials-federal-grant",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8333,22 +8487,6 @@
     }
   },
   {
-    "id": "2026-07-29-lemonedge-series-a",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-29T10:38:00.000Z",
-    "headline": "Private markets fund accounting platform LemonEdge closes $21M Series A led by Blackstone",
-    "plain_english": "LemonEdge, a fund accounting platform for private markets, raised $21M Series A from Blackstone Innovations Investments, BNY Mellon, and Sidekick Partners. The platform automates compliance and financial reporting for alternative asset managers.",
-    "why_it_matters": "Blackstone's backing signals institutional appetite for AI-native ops platforms in alternatives—PE/VC firms face mounting audit, LP reporting, and regulatory complexity that off-the-shelf tools do not address.",
-    "amount": "$21M",
-    "round": "Series A",
-    "source": {
-      "name": "Finextra · 2026-07-29",
-      "url": "https://www.finextra.com/newsarticle/48164/private-market-fund-accounting-platform-lemonedge-raises-21-million"
-    }
-  },
-  {
     "id": "2026-07-30-wtw-ai-investment",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8396,35 +8534,6 @@
     "source": {
       "name": "OpenAI · 2026-07-31",
       "url": "https://openai.com/index/advancing-responsible-ai-across-europe"
-    }
-  },
-  {
-    "id": "2026-07-29-citi-invoice-processing",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T12:03:00.000Z",
-    "headline": "Citi launches AI-powered invoice processing tool for enterprise clients",
-    "plain_english": "Citi rolled out Citi Consolidate, an AI-driven invoice automation solution built with Infor. The tool reduces manual processing overhead for corporate treasury and accounting teams managing high-volume receivables.",
-    "why_it_matters": "Automation of invoice workflows reduces operational cost per transaction and frees senior finance staff for exception handling and strategic work—a high-ROI early AI use case in banking.",
-    "source": {
-      "name": "Finextra · 2026-07-29",
-      "url": "https://www.finextra.com/pressarticle/110524/citi-rolls-out-digital-invoice-processing-tool"
-    }
-  },
-  {
-    "id": "2026-07-29-pangram-ai-detection",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-29T11:00:00.000Z",
-    "headline": "AI content detection startup Pangram raises $9M, releases Pangram 4 text and image models",
-    "plain_english": "Pangram raised $9M and launched Pangram 4, an AI text detection model, plus a new AI image detection model in research preview. The startup targets financial services and media firms combating synthetic content fraud.",
-    "why_it_matters": "As deepfakes and synthetic media proliferate, BFSI risk and compliance teams need reliable detection tools to audit third-party content (marketing, executive video calls, client documentation) for authenticity.",
-    "amount": "$9M",
-    "source": {
-      "name": "TechCrunch · 2026-07-29",
-      "url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/"
     }
   },
   {
@@ -8502,26 +8611,6 @@
     }
   },
   {
-    "id": "2026-07-29-intuit-credit-karma-llm-guardrails",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T11:30:00.000Z",
-    "headline": "Intuit Credit Karma pairs deterministic financial models with tuned LLM prompts to prevent AI drift",
-    "plain_english": "Intuit Credit Karma builds domain-specific AI assistants that lock LLM outputs to validated financial logic via GEPA (prompt tuning framework), avoiding free-form model hallucination in debt, refund, and paycheck advice.",
-    "why_it_matters": "Constraining LLM behavior within deterministic financial rules is the production pattern emerging across fintech—prevents regulatory liability and customer harm from out-of-bounds recommendations.",
-    "jargon": [
-      {
-        "term": "GEPA",
-        "def": "Governance-enabled prompt architecture; method to tune LLM responses against validated business logic and compliance rules."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-07-29",
-      "url": "https://tearsheet.co/ai-innovation/we-use-prompts-that-have-been-tuned-through-gepa-so-the-llm-isnt-freelancing-intuit-credit-karmas-gurpreet-singh-on-how-the-firm-pairs-deterministic-financial-modeling-with-gen-ai"
-    }
-  },
-  {
     "id": "2026-07-30-robinhood-transaction-ownership",
     "category": "shift",
     "jurisdiction": "US",
@@ -8533,20 +8622,6 @@
     "source": {
       "name": "PYMNTS · 2026-07-30",
       "url": "https://www.pymnts.com/earnings/2026/robinhood-takes-an-option-out-on-owning-customer-transactions/"
-    }
-  },
-  {
-    "id": "2026-07-29-bloomberg-canoe-intelligence",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T13:00:00.000Z",
-    "headline": "Bloomberg acquires Canoe Intelligence to deepen private markets data and AI analytics",
-    "plain_english": "Bloomberg purchased AI-powered alternative investment data firm Canoe Intelligence. The acquisition expands Bloomberg's position in private markets intelligence, a segment where AI-driven fund performance and deal sourcing tools are becoming table stakes.",
-    "why_it_matters": "Terminal-dependent finance professionals now expect real-time AI synthesis of unstructured deal flow, LP commitment, and valuation signals—Bloomberg is bundling AI discovery into its core product to defend wallet share against fintech entrants.",
-    "source": {
-      "name": "Finextra · 2026-07-29",
-      "url": "https://www.finextra.com/newsarticle/48162/bloomberg-to-buy-canoe-intelligence-for-private-markets-push"
     }
   },
   {
@@ -8589,48 +8664,6 @@
     "source": {
       "name": "Tearsheet · 2026-07-30",
       "url": "https://tearsheet.co/policies-playbooks/crypto-is-finally-getting-its-rulebook-now-its-finding-its-role/"
-    }
-  },
-  {
-    "id": "2026-07-29-globalfoundries-ai-chip",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T10:37:44.000Z",
-    "headline": "US awards GlobalFoundries $300M to develop faster AI chip interconnect technology",
-    "plain_english": "The US government granted GlobalFoundries $300 million to accelerate development of high-speed interconnect chips used in AI accelerators. The subsidy is part of broader domestic semiconductor resilience strategy under CHIPS Act.",
-    "why_it_matters": "Government funding for AI infrastructure chips signals policy commitment to onshore advanced compute capacity—financial firms should expect reduced vendor concentration risk and potential for clearer supply chain transparency over 3–5 years.",
-    "source": {
-      "name": "Reuters · 2026-07-29",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOW0tVXFBZ2FXNkREcFU0S3dXaExacjNVemJWU3RsbnhiTTJWdkZram9nb0s2ZFdRVHJLZmM0VHdRTEMzRFpMcV9Ea0hZNEpoeDhlb0Nyc2RzUzBJSHBXckJ3aTIwQ1F6b2lqeEFkbUFNdXIwbEpLV191OTdoS2ZocUFsdXlIaGl1dFNaMDN2STN4ZXRyLThUemlSeVdoUXJMQ3hmUjdQaTR4cURDQ0JRcUpBNA"
-    }
-  },
-  {
-    "id": "2026-07-29-aci-dlocal-latam-payments",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-29T13:40:00.000Z",
-    "headline": "ACI Worldwide partners with dLocal to connect global merchants to emerging-market payment rails",
-    "plain_english": "ACI Worldwide and dLocal announced a strategic partnership giving merchants instant access to local payment methods across emerging Latin American markets. The move consolidates local payment orchestration into a single API surface.",
-    "why_it_matters": "Merchants expanding into emerging markets face fragmented, region-specific payment rails—unified orchestration via API reduces operational overhead and accelerates go-to-market, setting a precedent for banks to offer similar integrated services.",
-    "source": {
-      "name": "Finextra · 2026-07-29",
-      "url": "https://www.finextra.com/pressarticle/110526/aci-worldwide-and-dlocal-bring-latin-american-payment-rails-to-global-merchants"
-    }
-  },
-  {
-    "id": "2026-07-29-google-deepmind-alphafold-team",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-07-29T13:01:11.000Z",
-    "headline": "Google DeepMind disbands Nobel-winning AlphaFold research team",
-    "plain_english": "Google DeepMind has dissolved the team that created AlphaFold, the Nobel Prize-winning protein structure prediction AI. The move signals a strategic shift away from pure research toward productized AI deployment.",
-    "why_it_matters": "Frontier AI labs are consolidating behind commercial AI applications and reducing blue-sky bets—mirrors industry-wide pressure to connect academic breakthroughs to revenue and regulatory expectations.",
-    "source": {
-      "name": "PYMNTS · 2026-07-29",
-      "url": "https://www.pymnts.com/google/2026/google-reshuffles-nobel-winning-deepmind-ai-team/"
     }
   }
 ]
