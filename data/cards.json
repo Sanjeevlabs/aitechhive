@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-08-29-cftc-prediction-markets",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-29T00:19:20.000Z",
+    "headline": "CFTC signals Supreme Court fight after Nevada prediction markets ruling",
+    "plain_english": "A Nevada court ruled sports-event prediction contracts are not swaps exclusively regulated by the CFTC, setting up a Supreme Court battle. The decision expands state authority over derivatives-like instruments and challenges federal regulatory turf.",
+    "why_it_matters": "Outcome will define federal vs. state jurisdiction over algorithmic derivatives, prediction markets, and synthetic instruments—affecting how fintech and prop trading firms structure product offerings and compliance frameworks.",
+    "source": {
+      "name": "PYMNTS · 2026-08-29",
+      "url": "https://www.pymnts.com/legal/2026/cftc-signals-supreme-court-battle-after-nevada-wins-prediction-markets-case/"
+    }
+  },
+  {
     "id": "2026-08-28-fed-inflation-jackson-hole",
     "category": "regulation",
     "jurisdiction": "US",
@@ -136,26 +150,6 @@
     "source": {
       "name": "Finimize / FT · 2026-08-24",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVVNCalRIZWpfMEtMek4xV19BYzZGRE9yTExBZlZkQm84aHQ5WTdpZ3ZmamVkbDFnSzlSWUFXd2NlaFlwT1RkOWZ6RkJhdkdLOEo5eUlJV045MERjMlpEUGl4Q3hsVV9KV0Y0aDZUNzFGSmt2SmtuZjZjMmNmb25ucmlFdC0zVWtwd0tTWQ"
-    }
-  },
-  {
-    "id": "2026-08-24-sec-investigates-ai-hedge-fund",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-24T20:10:16.000Z",
-    "headline": "SEC investigates near-implosion of AI hedge fund amid leverage concerns",
-    "plain_english": "The SEC is formally investigating the near-collapse of an AI-driven hedge fund, examining whether the firm over-leveraged its positions and whether banks properly managed counterparty risk. This is a direct supervisor focus on AI trading failures.",
-    "why_it_matters": "Establishes regulatory precedent: SEC will now treat AI hedge fund failure similarly to LTCM (1998); expect new leverage caps, real-time counterparty monitoring rules, and AI-specific risk backtesting mandates.",
-    "jargon": [
-      {
-        "term": "Counterparty risk",
-        "def": "Risk that a bank's lending partner (e.g., hedge fund) cannot repay; banks must monitor this daily."
-      }
-    ],
-    "source": {
-      "name": "New York Times / JPMorgan · 2026-08-24",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRThxUENFeWt4QVJDWnNyMzh0aFpBeGxienR4Qlp3Z0xTZ3Jrd0hTaFFlTEcydF9NbmJIOGdLY0xQeE5EcDhxd2xqV2pZaFBYdWFtekxHV0ZYNUFpVE5TTWZRQ1RnZ3NQdkJ6Qi1HRUptS3FvOTlMM3I4SHFmMTdySkhlbHp3V2Jwbm54QlZWdDVMdw"
     }
   },
   {
@@ -813,6 +807,68 @@
     }
   },
   {
+    "id": "2026-08-29-cifqa-financial-qa",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "Multi-agent LLM framework tackles hallucination in financial Q&A systems",
+    "plain_english": "CIFQA is a deterministic tool-grounded framework using multiple LLM agents to answer calculation-intensive financial questions accurately. It grounds reasoning over structured rates, temporal conditions, numerical formulas, and rule-based constraints—addressing a critical gap where standalone LLMs produce numerical errors.",
+    "why_it_matters": "Production financial QA systems (earnings calls, regulatory filings, pricing) depend on exact calculation. Tool-grounded agentic pipelines reduce hallucination risk, making LLM-driven financial analytics safer for compliance and risk workflows.",
+    "jargon": [
+      {
+        "term": "tool-grounded",
+        "def": "LLM augmented with external deterministic functions (calculators, databases) to verify and execute structured operations, not just generate text."
+      },
+      {
+        "term": "agentic pipeline",
+        "def": "Multi-step workflow where LLM agents call tools, reason over results, and iterate—vs. single-shot generation."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-08-29",
+      "url": "https://arxiv.org/abs/2608.26114"
+    }
+  },
+  {
+    "id": "2026-08-29-ground-enterprise-analytics",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "GROUND framework reduces LLM hallucinations in data warehouse analytics",
+    "plain_english": "GROUND uses governed semantic definitions to ground LLM-generated SQL queries on enterprise data warehouses. It tackles hallucinated metrics, invalid table joins, wrong data grain, and unsafe access—core risks blocking production text-to-SQL deployments.",
+    "why_it_matters": "Banks and insurers using LLM-based BI tools face audit and model-risk exposure if queries hallucinate joins or metrics. Semantic governance unlocks safe, explainable NL analytics at scale—table-stakes for regulated analytics.",
+    "jargon": [
+      {
+        "term": "text-to-SQL",
+        "def": "LLM translates natural-language question into SQL query. Often produces syntactically correct but semantically wrong queries."
+      },
+      {
+        "term": "grain",
+        "def": "Level of aggregation in a query result (e.g., per-customer, per-day, per-account). Wrong grain breaks financial calculations."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-08-29",
+      "url": "https://arxiv.org/abs/2608.26157"
+    }
+  },
+  {
+    "id": "2026-08-29-eicu-llm-mortality",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "LLM-agentic pipeline generates clinical narratives for ICU mortality predictions",
+    "plain_english": "Study demonstrates a standalone LLM coupled with a pre-specified agentic workflow can generate clinically coherent explanations for machine-learning ICU mortality predictions. Bridges gap between black-box model accuracy and bedside interpretability.",
+    "why_it_matters": "Explainability is non-negotiable in clinical and financial risk workflows. Agentic LLM explanation pipelines enable clinicians and risk officers to trust and act on AI predictions—shifting from opaque scoring to narrative justification.",
+    "source": {
+      "name": "arXiv · 2026-08-29",
+      "url": "https://arxiv.org/abs/2608.26109"
+    }
+  },
+  {
     "id": "2026-08-28-anthropic-self-improving-ai",
     "category": "research",
     "jurisdiction": "Global",
@@ -929,51 +985,19 @@
     }
   },
   {
-    "id": "2026-08-27-anthropic-device-control-standard",
-    "category": "research",
+    "id": "2026-08-29-tool-grounding-insight",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-08-27T19:42:00.000Z",
-    "headline": "Anthropic unveils standard for AI agents to control devices and software",
-    "plain_english": "Anthropic published a standard protocol enabling AI agents to interact with devices, APIs, and software interfaces via structured instruction. Lays groundwork for autonomous workflows without hard-coded integrations.",
-    "why_it_matters": "BFSI operations (trade execution, settlement, KYC workflows) can adopt agent-native interfaces; reduces custom automation code and accelerates time-to-production for AI-driven compliance and back-office tasks.",
-    "jargon": [
-      {
-        "term": "AI agents",
-        "def": "Autonomous systems that perceive environment, make decisions, and take actions (e.g., filing reports, querying databases) with minimal human intervention."
-      }
-    ],
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "Production AI in BFSI demands tool-grounding, not raw LLM output",
+    "plain_english": "Three new arXiv papers (CIFQA, GROUND, ICU mortality) converge on one signal: enterprise deployments require LLMs coupled to deterministic tools (calculators, databases, APIs) and semantic governance. Raw LLM generation is insufficient for compliance, accuracy, or explainability.",
+    "why_it_matters": "Risk and compliance teams approving AI pilots often discover too late that 'LLM + prompt' fails under audit scrutiny. Tool-grounded architectures shift burden from post-hoc validation to design-time governance—faster path to production sign-off.",
+    "stat_value": "3 independent research teams",
+    "stat_label": "converging on tool-grounded agentic LLM pattern in BFSI/healthcare workflows",
     "source": {
-      "name": "Anthropic via Breakingthenews · 2026-08-27",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTXZpb29JTkNQdXZFc3JJSlhPUWtCYUJ3aHVqaDZMR1FMSmhDbDZSVkVFQ0FjejlXUEplNThrM2FKV0ZMV01VMEVCQzJlUjVyczN0UDlWczBQcFZEMmZQRFB3OU9OMTR3T2lSOGl1RjFqeUllZU5TNzdxU3FCejRlX0M4Q2tKN0h0SFQ0SmRSc2pVS0EyS0wxVnRmbi1GUDFqV1NqWG45aw"
-    }
-  },
-  {
-    "id": "2026-08-27-llm-agents-experiments",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-27T04:00:00.000Z",
-    "headline": "LLM agents can design and execute controlled experiments using simulation models",
-    "plain_english": "arXiv study demonstrates LLMs performing causal reasoning by autonomously designing and running experiments within simulation environments. Extends agent capability beyond reasoning to intervention and hypothesis testing.",
-    "why_it_matters": "For BFSI risk modeling: LLM agents could autonomously test stress scenarios, portfolio interventions, or policy changes in sandbox models. Shifts agent role from advisor to experimental scientist, raising both capability and guardrail requirements.",
-    "source": {
-      "name": "arXiv · 2026-08-27",
-      "url": "https://arxiv.org/abs/2608.23622"
-    }
-  },
-  {
-    "id": "2026-08-27-flare-healthcare-ai",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-27T04:00:00.000Z",
-    "headline": "FLARE framework separates AI accuracy from real-world economic ROI in healthcare",
-    "plain_english": "arXiv publication proposes FLARE: systematic evaluation framework that measures whether AI adoption is economically worthwhile in real workflows, not just whether models are accurate. Embeds uncertainty quantification and cost-benefit analysis.",
-    "why_it_matters": "Template transferable to BFSI: banks often deploy AI based on model benchmark scores, not operational value. FLARE's methodology could reshape how institutions justify AI spend to risk and finance teams, forcing honesty on deployment costs vs. savings.",
-    "source": {
-      "name": "arXiv · 2026-08-27",
-      "url": "https://arxiv.org/abs/2608.23643"
+      "name": "arXiv · 2026-08-29",
+      "url": "https://arxiv.org/list/cs.AI/2608"
     }
   },
   {
@@ -1113,19 +1137,17 @@
     }
   },
   {
-    "id": "2026-08-23-anthropic-customer-migration",
-    "category": "insight",
+    "id": "2026-08-29-nvidia-q2-record-revenue",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-23T22:06:55.000Z",
-    "headline": "Anthropic customers shift to cheaper AI models pre-IPO",
-    "plain_english": "U.S. customers of Anthropic are migrating from its flagship (expensive) Claude model to lower-cost alternatives, per Financial Times. Raises questions about Anthropic's pricing power and willingness to trade volume for margin ahead of public debut.",
-    "why_it_matters": "Signals price elasticity in enterprise LLM market; cheaper alternatives (OpenAI, Meta Llama) now table-stakes; commoditization risk for frontier labs that price for scarcity rather than supply.",
-    "stat_value": "Undisclosed",
-    "stat_label": "percentage of Anthropic customers switching",
+    "severity": "low",
+    "published_at": "2026-08-29T04:10:06.000Z",
+    "headline": "Nvidia Q2 2026 revenue hits record $96.2B driven by AI chip demand",
+    "plain_english": "Nvidia reported Q2 2026 revenue of $96.2B, marking record performance fueled by sustained AI chip demand across data centers and enterprise deployments. Signals continued hardware tailwinds for LLM and AI infrastructure investment.",
+    "why_it_matters": "BFSI firms' capex for in-house AI infrastructure (training, inference) remains capital-intensive and hardware-dependent. Nvidia's record revenue validates long-term margins on AI workloads, but also signals oligopoly pressure on compute costs and supply chains.",
     "source": {
-      "name": "PYMNTS · 2026-08-23",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-customers-switch-to-cheaper-models-ahead-of-ipo/"
+      "name": "Intellectia AI · 2026-08-29",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeVp1NW4tRktteFVDMXNycEhpS19KZUl1TEZoLXRyNTZrQW9xNXVhWGZrWG5MdVptZURDSmtxUkV6RDIwa1FFalZMSTZxS2RaWW1TZWVrNGFQVkY0UjFwc2g1TENINVlOM3NLS2I3ajhQM0Npei1Namdzc01MX1JORA?oc=5"
     }
   },
   {
@@ -1256,17 +1278,27 @@
     }
   },
   {
-    "id": "2026-08-24-general-intuition-robotics-ai",
-    "category": "frontier",
+    "id": "2026-08-29-rag-learner",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-24T20:36:08.000Z",
-    "headline": "General Intuition seeks $6B valuation for AI robotics foundation model",
-    "plain_english": "General Intuition, developing a large foundation model for robotics applications, is finalizing a funding round at a $6 billion valuation. The model was trained on hundreds of millions of robotics demonstrations.",
-    "why_it_matters": "Signals frontier investors betting on embodied AI (physical robots running on AI models). BFSI relevance: automated warehouse sorting, logistics automation, and eventually robotic process automation in back-office.",
+    "severity": "low",
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "What is Retrieval-Augmented Generation (RAG)?",
+    "plain_english": "RAG is a technique that lets LLMs fetch real-time data from external documents or databases before generating answers. Instead of relying only on weights baked into training, an LLM retrieves relevant context, then reasons over it—dramatically reducing hallucination and keeping answers current.",
+    "why_it_matters": "Banks and insurers use RAG to ground LLMs on live regulatory rules, customer data, or transaction records without retraining. It's the backbone of compliant chatbots, Q&A systems, and risk-engine integrations—trades speed for accuracy by coupling retrieval + reasoning.",
+    "jargon": [
+      {
+        "term": "hallucination",
+        "def": "When an LLM generates plausible-sounding but false or outdated information, because it was never trained on or has no access to the actual fact."
+      },
+      {
+        "term": "grounding",
+        "def": "Anchoring LLM output to verified external data (documents, databases, tools) so answers stay factually accurate and auditable."
+      }
+    ],
     "source": {
-      "name": "PYMNTS (TechCrunch) · 2026-08-24",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/general-intuition-aims-to-raise-capital-at-6-billion-valuation-to-power-ai-robotics/"
+      "name": "AITechHive · 2026-08-29",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -1470,30 +1502,6 @@
     }
   },
   {
-    "id": "2026-08-16-mckinsey-dx-vs-ax",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-16T07:24:07Z",
-    "headline": "Can banks skip digital transformation and leap straight to AI transformation?",
-    "plain_english": "McKinsey frame: AI Transformation (AX) vs. Digital Transformation (DX). Traditional DX modernizes legacy systems, data pipelines, APIs. AX assumes those foundations exist and focuses on deploying machine learning and autonomous decision-making. Question: must you finish DX first, or can you parallelize?",
-    "why_it_matters": "BFSI executives under board pressure to deliver AI ROI quickly may try cutting DX corners. Most fail: fragmented data and weak APIs cripple even best AI models. DX and AX are sequential for 80% of banks; parallel only for rare greenfield fintechs.",
-    "jargon": [
-      {
-        "term": "AI Transformation (AX)",
-        "def": "Organizational shift to embed machine learning, generative AI, and autonomous agents into core business processes and decision-making."
-      },
-      {
-        "term": "Digital Transformation (DX)",
-        "def": "Modernizing legacy IT infrastructure, data systems, APIs, and cloud readiness that serve as foundation for AI deployment."
-      }
-    ],
-    "source": {
-      "name": "McKinsey (Cited) · 2026-08-16",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QZlVsTnFfZTVHblk1UGo4VTJnN3RSRTdsVC1acmpGQTA5dXl6bkN4M2tzbkVJQ1piWkt6T0x6cE1CMnFfNkRVWkc2X1dsdkl5cWpNbWI5N1lwYVBu"
-    }
-  },
-  {
     "id": "2026-08-28-trending-gate-notes",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1649,6 +1657,128 @@
     "source": {
       "name": "Reuters · 2026-08-12",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS3RxTUJxMTh2Mk9XSmgxdm1MZDh6MlRtcVl5aFM1bmF1ajVmWlFnUF9nNU0yYjloQ0pON2VSWFZBYTVldmJ0TGI5N2psYlcwZVRuSURZaUN1NkYzVkh4NGVNRUtjd0F0M3RMTno2X0RSNG9VbF91V2lDOUh0OG5nSDJiY2M4cDdrM1lGRnNicldnNXBBQTBDRFVzNHdJQQ"
+    }
+  },
+  {
+    "id": "2026-08-24-sec-investigates-ai-hedge-fund",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-24T20:10:16.000Z",
+    "headline": "SEC investigates near-implosion of AI hedge fund amid leverage concerns",
+    "plain_english": "The SEC is formally investigating the near-collapse of an AI-driven hedge fund, examining whether the firm over-leveraged its positions and whether banks properly managed counterparty risk. This is a direct supervisor focus on AI trading failures.",
+    "why_it_matters": "Establishes regulatory precedent: SEC will now treat AI hedge fund failure similarly to LTCM (1998); expect new leverage caps, real-time counterparty monitoring rules, and AI-specific risk backtesting mandates.",
+    "jargon": [
+      {
+        "term": "Counterparty risk",
+        "def": "Risk that a bank's lending partner (e.g., hedge fund) cannot repay; banks must monitor this daily."
+      }
+    ],
+    "source": {
+      "name": "New York Times / JPMorgan · 2026-08-24",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRThxUENFeWt4QVJDWnNyMzh0aFpBeGxienR4Qlp3Z0xTZ3Jrd0hTaFFlTEcydF9NbmJIOGdLY0xQeE5EcDhxd2xqV2pZaFBYdWFtekxHV0ZYNUFpVE5TTWZRQ1RnZ3NQdkJ6Qi1HRUptS3FvOTlMM3I4SHFmMTdySkhlbHp3V2Jwbm54QlZWdDVMdw"
+    }
+  },
+  {
+    "id": "2026-08-27-anthropic-device-control-standard",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-27T19:42:00.000Z",
+    "headline": "Anthropic unveils standard for AI agents to control devices and software",
+    "plain_english": "Anthropic published a standard protocol enabling AI agents to interact with devices, APIs, and software interfaces via structured instruction. Lays groundwork for autonomous workflows without hard-coded integrations.",
+    "why_it_matters": "BFSI operations (trade execution, settlement, KYC workflows) can adopt agent-native interfaces; reduces custom automation code and accelerates time-to-production for AI-driven compliance and back-office tasks.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous systems that perceive environment, make decisions, and take actions (e.g., filing reports, querying databases) with minimal human intervention."
+      }
+    ],
+    "source": {
+      "name": "Anthropic via Breakingthenews · 2026-08-27",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTXZpb29JTkNQdXZFc3JJSlhPUWtCYUJ3aHVqaDZMR1FMSmhDbDZSVkVFQ0FjejlXUEplNThrM2FKV0ZMV01VMEVCQzJlUjVyczN0UDlWczBQcFZEMmZQRFB3OU9OMTR3T2lSOGl1RjFqeUllZU5TNzdxU3FCejRlX0M4Q2tKN0h0SFQ0SmRSc2pVS0EyS0wxVnRmbi1GUDFqV1NqWG45aw"
+    }
+  },
+  {
+    "id": "2026-08-27-llm-agents-experiments",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-27T04:00:00.000Z",
+    "headline": "LLM agents can design and execute controlled experiments using simulation models",
+    "plain_english": "arXiv study demonstrates LLMs performing causal reasoning by autonomously designing and running experiments within simulation environments. Extends agent capability beyond reasoning to intervention and hypothesis testing.",
+    "why_it_matters": "For BFSI risk modeling: LLM agents could autonomously test stress scenarios, portfolio interventions, or policy changes in sandbox models. Shifts agent role from advisor to experimental scientist, raising both capability and guardrail requirements.",
+    "source": {
+      "name": "arXiv · 2026-08-27",
+      "url": "https://arxiv.org/abs/2608.23622"
+    }
+  },
+  {
+    "id": "2026-08-27-flare-healthcare-ai",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-27T04:00:00.000Z",
+    "headline": "FLARE framework separates AI accuracy from real-world economic ROI in healthcare",
+    "plain_english": "arXiv publication proposes FLARE: systematic evaluation framework that measures whether AI adoption is economically worthwhile in real workflows, not just whether models are accurate. Embeds uncertainty quantification and cost-benefit analysis.",
+    "why_it_matters": "Template transferable to BFSI: banks often deploy AI based on model benchmark scores, not operational value. FLARE's methodology could reshape how institutions justify AI spend to risk and finance teams, forcing honesty on deployment costs vs. savings.",
+    "source": {
+      "name": "arXiv · 2026-08-27",
+      "url": "https://arxiv.org/abs/2608.23643"
+    }
+  },
+  {
+    "id": "2026-08-23-anthropic-customer-migration",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-23T22:06:55.000Z",
+    "headline": "Anthropic customers shift to cheaper AI models pre-IPO",
+    "plain_english": "U.S. customers of Anthropic are migrating from its flagship (expensive) Claude model to lower-cost alternatives, per Financial Times. Raises questions about Anthropic's pricing power and willingness to trade volume for margin ahead of public debut.",
+    "why_it_matters": "Signals price elasticity in enterprise LLM market; cheaper alternatives (OpenAI, Meta Llama) now table-stakes; commoditization risk for frontier labs that price for scarcity rather than supply.",
+    "stat_value": "Undisclosed",
+    "stat_label": "percentage of Anthropic customers switching",
+    "source": {
+      "name": "PYMNTS · 2026-08-23",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-customers-switch-to-cheaper-models-ahead-of-ipo/"
+    }
+  },
+  {
+    "id": "2026-08-24-general-intuition-robotics-ai",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-24T20:36:08.000Z",
+    "headline": "General Intuition seeks $6B valuation for AI robotics foundation model",
+    "plain_english": "General Intuition, developing a large foundation model for robotics applications, is finalizing a funding round at a $6 billion valuation. The model was trained on hundreds of millions of robotics demonstrations.",
+    "why_it_matters": "Signals frontier investors betting on embodied AI (physical robots running on AI models). BFSI relevance: automated warehouse sorting, logistics automation, and eventually robotic process automation in back-office.",
+    "source": {
+      "name": "PYMNTS (TechCrunch) · 2026-08-24",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/general-intuition-aims-to-raise-capital-at-6-billion-valuation-to-power-ai-robotics/"
+    }
+  },
+  {
+    "id": "2026-08-16-mckinsey-dx-vs-ax",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-16T07:24:07Z",
+    "headline": "Can banks skip digital transformation and leap straight to AI transformation?",
+    "plain_english": "McKinsey frame: AI Transformation (AX) vs. Digital Transformation (DX). Traditional DX modernizes legacy systems, data pipelines, APIs. AX assumes those foundations exist and focuses on deploying machine learning and autonomous decision-making. Question: must you finish DX first, or can you parallelize?",
+    "why_it_matters": "BFSI executives under board pressure to deliver AI ROI quickly may try cutting DX corners. Most fail: fragmented data and weak APIs cripple even best AI models. DX and AX are sequential for 80% of banks; parallel only for rare greenfield fintechs.",
+    "jargon": [
+      {
+        "term": "AI Transformation (AX)",
+        "def": "Organizational shift to embed machine learning, generative AI, and autonomous agents into core business processes and decision-making."
+      },
+      {
+        "term": "Digital Transformation (DX)",
+        "def": "Modernizing legacy IT infrastructure, data systems, APIs, and cloud readiness that serve as foundation for AI deployment."
+      }
+    ],
+    "source": {
+      "name": "McKinsey (Cited) · 2026-08-16",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QZlVsTnFfZTVHblk1UGo4VTJnN3RSRTdsVC1acmpGQTA5dXl6bkN4M2tzbkVJQ1piWkt6T0x6cE1CMnFfNkRVWkc2X1dsdkl5cWpNbWI5N1lwYVBu"
     }
   },
   {
@@ -4389,26 +4519,6 @@
     }
   },
   {
-    "id": "2026-07-30-learner-ai-agent",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-07-30T00:13:46.000Z",
-    "headline": "What is an AI agent? Why everyone is talking about them.",
-    "plain_english": "An AI agent is a software program that can perceive its environment, make decisions, take actions (like calling APIs or approving transactions), and adjust based on outcomes—without human approval for each step. Unlike chatbots that only respond to text, agents autonomously pursue multi-step goals (e.g., 'find and book the cheapest flight'). Freehand's procurement agents and WEX's fraud detectors are real examples: they automatically negotiate supplier rates and block fraud before you intervene.",
-    "why_it_matters": "Agents shift AI from tool (you ask, it answers) to workforce (it acts). In BFSI, this means faster approvals, lower ops cost, but new compliance and bias risks requiring real-time audit trails.",
-    "jargon": [
-      {
-        "term": "autonomous decision-making",
-        "def": "Agent executes transactions or approvals without human in-the-loop; trades speed for control risk."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS, TechCrunch · 2026-07-29",
-      "url": "https://www.pymnts.com/facebook-meta/2026/zuckerberg-says-billions-will-rely-on-personal-ai-agents/"
-    }
-  },
-  {
     "id": "2026-08-04-trending-shadow-ai-banks",
     "category": "trending",
     "jurisdiction": "Global",
@@ -6103,20 +6213,6 @@
     "source": {
       "name": "Khabarhub · 2026-08-08",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91TnI3dlE2emVObF9uZ3lOVVpycFkxQVZKVjNmb0h1UVB0bVhEMjhucDM2OEJnRzVXTGx1UUFOWldoREVJTGR1SDRmYy14b25HZHd1M2tZVEI"
-    }
-  },
-  {
-    "id": "2026-07-30-microsoft-ai-capex-signal",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-30T00:24:43.000Z",
-    "headline": "Microsoft signals sustained AI capex despite market skepticism on returns",
-    "plain_english": "Microsoft raised FY2027 capital spending guidance and changed accounting for data centers, posting 7% stock jump. Move signals confidence in AI infrastructure ROI as competitors face investor pressure on costs.",
-    "why_it_matters": "Sets expectations for sustained trillion-dollar AI buildout; capital markets will now price AI-as-capex-sink into infrastructure stocks, shaping M&A and vendor consolidation for 18 months.",
-    "source": {
-      "name": "CNBC · 2026-07-30",
-      "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html"
     }
   },
   {
@@ -8297,26 +8393,6 @@
     }
   },
   {
-    "id": "2026-07-30-natwest-uinsure-insurance",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-07-30T00:01:00.000Z",
-    "headline": "NatWest launches instant insurance quotes via Uinsure partnership",
-    "plain_english": "NatWest partnered exclusively with InsurTech Uinsure to embed fast home insurance quote-and-bind in its banking platform, automating underwriting decisions at point of sale.",
-    "why_it_matters": "Demonstrates retail bank shift to transaction ownership in adjacent products; insurance quote latency drops to seconds vs. minutes, pressuring traditional brokers and setting new SLA baseline.",
-    "jargon": [
-      {
-        "term": "quote-and-bind",
-        "def": "Instant insurance policy issuance without underwriter review; AI pre-screened risk."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-07-30",
-      "url": "https://www.finextra.com/newsarticle/48165/natwest-teams-with-uinsure-to-deliver-home-insurance-quotes-in-seconds?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-30-mifinity-bvnk-stablecoin",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -8328,21 +8404,6 @@
     "source": {
       "name": "Finextra · 2026-07-30",
       "url": "https://www.finextra.com/newsarticle/48171/mifinity-taps-bvnk-for-global-stablecoin-payouts"
-    }
-  },
-  {
-    "id": "2026-07-30-freehand-series-c",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T22:40:26.000Z",
-    "headline": "Freehand raises $75M for AI procurement agents targeting enterprise supply-chain spend",
-    "plain_english": "Freehand, which builds autonomous AI agents for procurement, invoicing, and supplier negotiation for Meta and Pfizer, closed $75M funding to scale enterprise buy-side automation.",
-    "why_it_matters": "Validates AI-agent market for financial operations; procurement automation moves from RPA to agentic decision-making, reshaping spend analysis and vendor selection workflows in Fortune 500 CFO offices.",
-    "amount": "$75M",
-    "source": {
-      "name": "PYMNTS · 2026-07-29",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/freehand-raises-75-million-to-automate-enterprise-procurement-and-payments/"
     }
   },
   {
@@ -8438,20 +8499,6 @@
     }
   },
   {
-    "id": "2026-07-30-openai-arr-growth",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T23:09:42.000Z",
-    "headline": "OpenAI July annualized revenue exceeds entire Q2 total",
-    "plain_english": "OpenAI CFO Sarah Friar told staff that monthly annualized revenue run-rate in July surpassed all Q2 combined, signaling accelerating enterprise adoption despite Anthropic and open-source competition.",
-    "why_it_matters": "Validates frontier-lab monetization model at scale; signals demand for proprietary closed-form AI is outpacing commodity open-source, reshaping vendor selection criteria in enterprises.",
-    "source": {
-      "name": "CNBC · 2026-07-29",
-      "url": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html"
-    }
-  },
-  {
     "id": "2026-07-31-eu-ai-act-enforcement-begins",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -8471,20 +8518,6 @@
         "def": "Systems that can materially harm people's rights (lending, hiring, biometric ID). Require pre-deployment testing & human approval."
       }
     ]
-  },
-  {
-    "id": "2026-07-30-wex-securefuel-fraud",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T22:06:36.000Z",
-    "headline": "WEX deploys real-time AI fraud detection for fleet fuel purchases",
-    "plain_english": "WEX added SecureFuel, an AI-powered fraud-prevention layer to WEXOnline, to flag and block unauthorized fleet fuel purchases before approval—moving from post-transaction detection to pre-approval blocking.",
-    "why_it_matters": "Shifts fraud-prevention SLA from days to milliseconds; embedded vendor AI in transaction workflows becomes table-stakes for B2B payment rails, raising fraud-ops efficiency bar.",
-    "source": {
-      "name": "PYMNTS · 2026-07-29",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/wex-deploys-ai-stop-fleet-fuel-fraud-before-it-happens/"
-    }
   },
   {
     "id": "2026-07-30-wtw-ai-investment",
@@ -8537,20 +8570,6 @@
     }
   },
   {
-    "id": "2026-07-30-increase-bank-acquisition",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-07-30T00:01:00.000Z",
-    "headline": "Fintech Increase acquires community bank to vertically integrate payments infrastructure",
-    "plain_english": "Increase, a payments-infrastructure fintech founded by Stripe's first employee, acquired its own community bank, moving from SaaS vendor to licensed processor and deposit-taker.",
-    "why_it_matters": "Signals fintech pivot from software licensing to direct charter ownership; removes BFSI intermediaries and regulatory arbitrage. Expect wave of similar vertical integrations as fintechs own the rails.",
-    "source": {
-      "name": "Finextra · 2026-07-30",
-      "url": "https://www.finextra.com/newsarticle/48168/stripe-vet-buys-a-bank-for-his-fintech?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-07-30-same-day-ach-surge",
     "category": "insight",
     "jurisdiction": "US",
@@ -8567,36 +8586,6 @@
     }
   },
   {
-    "id": "2026-07-30-microsoft-anthropic-return",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-29T22:46:03.000Z",
-    "headline": "Microsoft logs $3.2B gain on Anthropic stake while OpenAI stakes remain mixed-return",
-    "plain_english": "Microsoft's FY2026 earnings revealed a $3.2B mark-to-market gain on its Anthropic investment, contrasting with net-negative or flat returns on OpenAI stakes, signaling divergent AI-lab valuations.",
-    "why_it_matters": "Suggests market is repricing frontier-lab equity; diversified bets across labs (not just OpenAI) are now generating measurable mark-to-market wins, shifting enterprise platform strategy.",
-    "stat_label": "Microsoft Anthropic gain",
-    "stat_value": "$3.2B",
-    "source": {
-      "name": "TechCrunch · 2026-07-29",
-      "url": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/"
-    }
-  },
-  {
-    "id": "2026-07-30-meta-ai-agent-vision",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-07-30T00:13:46.000Z",
-    "headline": "Zuckerberg predicts billions will rely on personal AI agents within five years",
-    "plain_english": "Meta CEO Mark Zuckerberg stated on Q2 earnings call that personal AI agents will be mainstream for billions within five years, justifying massive capex and positioning Meta as agent-OS competitor to OpenAI and Anthropic.",
-    "why_it_matters": "Frames AI-agent market as consumer-led paradigm shift, not enterprise SaaS; BFSI implications: personal AI agents will disintermediate retail banking, wealth, and insurance—redefining customer acquisition and retention.",
-    "source": {
-      "name": "TechCrunch · 2026-07-29",
-      "url": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/"
-    }
-  },
-  {
     "id": "2026-07-30-fca-fraud-warnings",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8608,34 +8597,6 @@
     "source": {
       "name": "Financial Conduct Authority · 2026-07-30",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX3ZsRGM2NFg1RDhMdnZ2UnZvT0c5U3BHUWMtUjZQNUtJemw2NVIxVlZUUUx3b1pPdjZtbnI4TVFfRG9iSGtiWU1GMWh2eEpMVDFvd1ZUZ2dyM1VXd21TMTRvMVJiRWZLdGt5WlV1MXJQYTF6NlBfaDVOOVZBUGV2S2RR"
-    }
-  },
-  {
-    "id": "2026-07-30-robinhood-transaction-ownership",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-30T00:45:19.000Z",
-    "headline": "Robinhood shifts from broker to transaction-ownership and financial-services ecosystem",
-    "plain_english": "Robinhood Q2 earnings showed the brokerage moving beyond commission-free stock trading into owned-transaction infrastructure, seeking recurring revenue via adjacent financial services (banking, insurance, lending).",
-    "why_it_matters": "Retail broker-to-fintech pivot signals the 'Stripe-fication' of customer transaction control; every neobank now expects to own, not outsource, payments, credit, and insurance rails.",
-    "source": {
-      "name": "PYMNTS · 2026-07-30",
-      "url": "https://www.pymnts.com/earnings/2026/robinhood-takes-an-option-out-on-owning-customer-transactions/"
-    }
-  },
-  {
-    "id": "2026-07-30-microsoft-homegrown-models",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-07-30T00:21:06.000Z",
-    "headline": "Microsoft openly competes with OpenAI and Anthropic on its own AI models and inference",
-    "plain_english": "Microsoft Q4 earnings call revealed the company is pitching proprietary in-house AI models and inference harnesses to Wall Street, reducing reliance on exclusive OpenAI/Anthropic partnerships.",
-    "why_it_matters": "Signals Microsoft's shift from platform integrator to model builder; enterprises now have credible alternative to OpenAI for Copilot-class capabilities, fragmenting the closed-model moat.",
-    "source": {
-      "name": "TechCrunch · 2026-07-29",
-      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever"
     }
   },
   {
