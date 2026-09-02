@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-09-02-regulation-cybersecurity-infrastructure",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-01T23:20:44.000Z",
+    "headline": "Palo Alto CEO warns $1 trillion of cybersecurity infrastructure unready for AI-driven attacks",
+    "plain_english": "Nikesh Arora (Palo Alto Networks CEO) warned that roughly $1 trillion of legacy cybersecurity infrastructure lacks defenses against AI-accelerated attacks. Signals imminent regulatory pressure to modernize detection/response systems and baseline AI-era threat models.",
+    "why_it_matters": "Sets frame for forthcoming FCA/OCC/Fed expectations: BFSI firms must audit legacy security stacks for AI-attack readiness. Expect supervisory guidance or enforcement actions targeting firms running outdated detection systems, especially those handling sensitive customer data.",
+    "source": {
+      "name": "CNBC · 2026-09-01",
+      "url": "https://www.cnbc.com/2026/09/01/palo-alto-ceo-says-1-trillion-of-cybersecurity-infrastructure-isnt-ready-for-ai.html"
+    }
+  },
+  {
     "id": "2026-09-01-g20-ai-financial-stability",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -138,17 +152,49 @@
     }
   },
   {
-    "id": "2026-08-29-regulation-tech-backlash-elections",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-09-02-deployment-incore-kyc",
+    "category": "deployment",
+    "jurisdiction": "EU",
     "severity": "high",
-    "published_at": "2026-08-29T12:16:03Z",
-    "headline": "US regulatory backlash on AI data centers, social media accelerates ahead of midterms",
-    "plain_english": "Data center environmental concerns have become a major election issue; Meta also reached a landmark social media settlement. Together, these signals indicate Congress and state regulators are moving to tighten AI infrastructure and platform oversight.",
-    "why_it_matters": "BFSI boards must assume future AI buildout will face new environmental, data residency, and transparency rules. Capital expenditure plans need regulatory buffer and modular architecture to accommodate compliance pivots.",
+    "published_at": "2026-09-01T23:56:06.000Z",
+    "headline": "Incore Bank deploys AI reaching 99% accuracy on KYC compliance checks",
+    "plain_english": "Swiss fintech Incore Bank shipped an AI system that automates know-your-customer verification, extracting data from identity documents, cross-checking multiple systems, flagging risk factors, and generating audit trails—all at 99% accuracy. Cuts manual compliance workload.",
+    "why_it_matters": "KYC is a bottleneck and cost center for all retail/SMB onboarding. If accuracy holds and regulators accept AI findings, competitors will rush to deploy similar systems, reshaping onboarding SLAs across the industry.",
+    "jargon": [
+      {
+        "term": "KYC",
+        "def": "Know-Your-Customer: regulatory requirement to verify customer identity and assess money-laundering/sanctions risk before account opening."
+      },
+      {
+        "term": "Audit trail",
+        "def": "Timestamped record of every decision and data source used, required by regulators to justify compliance judgments."
+      }
+    ],
+    "scale": {
+      "metric": "accuracy",
+      "value": "99%"
+    },
     "source": {
-      "name": "CNBC · 2026-08-29",
-      "url": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html"
+      "name": "PYMNTS · 2026-09-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/incore-banks-ai-hits-99-accuracy-on-kyc-checks/"
+    }
+  },
+  {
+    "id": "2026-09-02-deployment-dell-ai-servers",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-01T21:40:18.000Z",
+    "headline": "Dell lifts fiscal 2027 guidance on AI server demand tripling; expects 3x growth vs prior 2x forecast",
+    "plain_english": "Dell raised its fiscal 2027 outlook after six months; AI server revenue forecast tripled from 2x growth expectations. Signals accelerating enterprise hardware refresh cycles driven by LLM and inference workloads. BFSI data centers are core customers.",
+    "why_it_matters": "Reflects sustained capex surge for AI-capable infrastructure. BFSI must plan for multi-year hardware refresh and energy cost increases. Firms with on-prem AI ambitions face capex pressure; expect acceleration of cloud-LLM adoption to avoid infrastructure investment.",
+    "scale": {
+      "metric": "revenue growth",
+      "value": "3x vs 2x prior forecast"
+    },
+    "source": {
+      "name": "CNBC · 2026-09-01",
+      "url": "https://www.cnbc.com/2026/09/01/dell-q2-earnings-report-2027.html"
     }
   },
   {
@@ -302,31 +348,35 @@
     }
   },
   {
-    "id": "2026-08-30-andhra-ai-ca-msme-platform",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "low",
-    "published_at": "2026-08-30T00:17:35.000Z",
-    "headline": "Andhra Pradesh CM launches AI platform for chartered accountants and MSMEs",
-    "plain_english": "Chief Minister N Chandrababu Naidu unveiled AI-powered digital platform targeting chartered accountants and micro/small/medium enterprises. Focus on improving financial services access in Indian state.",
-    "why_it_matters": "State-level fintech infrastructure plays test AI regulatory compliance; India's push to digitize MSME lending creates template for emerging-market bank AI adoption.",
+    "id": "2026-09-02-vendor-air-security-seed",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-01T22:38:15.000Z",
+    "headline": "AI agent security startup AIR raises $50M seed to monitor autonomous agent supply chains",
+    "plain_english": "AIR, founded by Yair Saban, publicly debuted with $50M seed funding to help enterprises monitor and secure software supply chains built around autonomous AI agents. Targets risk in AI agent workflows and third-party dependencies.",
+    "why_it_matters": "First dedicated security vendor for AI agent ecosystems signals market believes agent-based systems introduce novel supply-chain attack surface. BFSI will need agent-specific guardrails; watch for AIR or clones becoming standard in agent deployment stacks.",
+    "amount": "$50M",
+    "round": "Seed",
     "source": {
-      "name": "The Indian Express · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYW04ZTdOSjdIR2I2UmJSTDBjeXI2cHBXdTB4SXhQTEx6akNmYUhTeUhFUzN2RzRnbXVlVFcyX1Y4ZmpUc3dyUzR2LUNqY0JfUGU0S2R3akppbHNzSmotVXNqcHBVRTFlX1JhMEZORnpkRTFIblFGbUttRTdBMmhqOFRzNjFVeFVEQzRfSFQ4SDFjWGJrbjdjQVlQZTZHb3RZRENzUVJxUzlXUVIzeE50TGpoSVRsb05FN3drZkkyQ1BFTU1CVVpvbFFoSC1zdUcyNUk04gHaAUFVX3lxTFAxWWlrMzl3Ukl6Q0NVMEduSW9FaE9KQ3BoeENOWk9vcGpzc1NaaWlES2pTSjN4QjR2YjFNdVJXYlFyeWttSEppa0R5dTBsUXZORGZRRWplQnAtdnVpTks4S1N1SFFMNTBsVUp4YXhMaWpOUnZ6Um9XbVZLOThkZ2ZnNFZNYU5MUGw5UXpKU2xXYWRBMXhoTFU1YkVPazhaQkJtbWxiZHJ4Q3lxbE5HYTZnd3N5c3l0bHprNGJmX2VUQjNQYk11SWgzQzJtdXRDRVBFbklWX25sRExB"
+      "name": "PYMNTS · 2026-09-01",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/ai-agent-security-startup-air-raises-50-million-to-guard-enterprise-supply-chains/"
     }
   },
   {
-    "id": "2026-08-28-experian-jpmorgan-account-verification",
-    "category": "deployment",
+    "id": "2026-09-02-vendor-felix-remittance-fintech",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-28T20:27:22Z",
-    "headline": "Experian and JPMorgan integrate real-time account verification into payment workflows",
-    "plain_english": "Experian and JPMorgan have launched tools that verify account ownership and integrity at the moment of payment initiation, not after. Addresses fraud and misdirected transfers in faster payment rails where traditional post-transaction checks fail.",
-    "why_it_matters": "Moves fraud prevention upstream in real-time payment systems. Banks adopting this model reduce settlement disputes and chargeback risk on near-instant transfers; sets operational baseline for competitive payment systems.",
+    "published_at": "2026-09-02T00:01:00.000Z",
+    "headline": "Félix raises $200M in Series C plus debt to expand beyond remittances; targets full financial services",
+    "plain_english": "Félix, a WhatsApp-based remittance platform for Latino immigrants in the US, raised $87M Series C equity plus debt to broaden into lending, payments, and other financial products. Signals remittance neobanks are converting into full BFSI platforms.",
+    "why_it_matters": "Remittance rails are gateway to deeper financial relationships. BFSI incumbents should monitor Félix and peers for credit/lending ambitions; if neobanks capture underserved segments, they may attract regulatory oversight and force banks to build competing products.",
+    "amount": "$200M (equity + debt)",
+    "round": "Series C",
     "source": {
-      "name": "PYMNTS · 2026-08-28",
-      "url": "https://www.pymnts.com/authentication/2026/experian-jpmorgan-push-account-checks-into-payment-workflows/"
+      "name": "Finextra · 2026-09-02",
+      "url": "https://www.finextra.com/newsarticle/48333/flix-raises-200m-in-equity-and-debt-to-expand-beyond-remittances?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -453,33 +503,17 @@
     }
   },
   {
-    "id": "2026-08-26-vendor-google-cloud-financial-ai",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-26T00:01:00.000Z",
-    "headline": "Google Cloud launches agentic AI platform for financial services, signs Deutsche Bank",
-    "plain_english": "Google Cloud unveiled a purpose-built AI agent platform designed for financial professionals. Deutsche Bank signed on as an early adopter, signaling confidence in the offering's readiness for production banking workflows.",
-    "why_it_matters": "Validates agentic AI as a category within financial services; Deutsche Bank's early adoption pressures competitors to accelerate similar deployments and raises stakes for AI infrastructure vendors.",
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/newsarticle/48299/google-cloud-launches-ai-platform-for-financial-professionals"
-    }
-  },
-  {
-    "id": "2026-08-25-standard-metrics-series-b",
-    "category": "vendor",
+    "id": "2026-09-02-shift-block-cash-app-score",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-25T09:46:00Z",
-    "headline": "AI-driven portfolio management platform Standard Metrics raises $20 million Series B",
-    "plain_english": "Standard Metrics, which uses AI to optimize portfolio management for venture capital and private equity firms, closed a $20M Series B round led by 8VC. The round included participation from Salesforce Ventures and other institutional backers.",
-    "why_it_matters": "Continued venture funding into AI-native portfolio tools signals institutional LP appetite for algorithmic asset allocation—pressure on traditional PM workflows accelerating.",
-    "amount": "$20M",
-    "round": "Series B",
+    "severity": "high",
+    "published_at": "2026-09-02T00:01:00.000Z",
+    "headline": "Block opens proprietary Cash App Score credit signal to external lenders via Nova Credit",
+    "plain_english": "Block is licensing its real-time Cash App Score—a credit signal trained on millions of Square/Cash App transactions—to third-party lenders through partner Nova Credit. First major BNPL/lending data platform to monetize proprietary alternative credit intel at scale.",
+    "why_it_matters": "Signals fintech data moats are becoming revenue streams. Alternative credit data (transaction velocity, spending patterns) now rivals FICO. Traditional banks and lenders will compete on access to fintech datasets, reshaping credit decisioning and underwriting workflows.",
     "source": {
-      "name": "Finextra · 2026-08-25",
-      "url": "https://www.finextra.com/pressarticle/110716/ai-driven-portfolio-management-platform-standard-metrics-raises-20-million"
+      "name": "Finextra · 2026-09-02",
+      "url": "https://www.finextra.com/newsarticle/48335/block-opens-up-its-cash-app-score-to-other-lenders?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -628,20 +662,6 @@
     "source": {
       "name": "CNBC · 2026-08-27",
       "url": "https://www.cnbc.com/2026/08/27/salesforce-stock-soars-on-track-for-second-best-day-ever.html"
-    }
-  },
-  {
-    "id": "2026-08-27-crowdstrike-okta-ai-security-surge",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-27T20:08:43.000Z",
-    "headline": "CrowdStrike and Okta surge as AI adoption drives cybersecurity spending",
-    "plain_english": "CrowdStrike posted best day ever and Okta jumped 29% after strong earnings. Bank and enterprise customers increasing security tool budgets in response to new AI-driven threat surface (prompt injection, model poisoning, data exfiltration).",
-    "why_it_matters": "BFSI risk and security teams must budget for incremental AI-specific security controls beyond traditional endpoint and identity tools; signals market confidence that AI threat surface justifies premium spend.",
-    "source": {
-      "name": "CNBC · 2026-08-27",
-      "url": "https://www.cnbc.com/2026/08/27/okta-skyrockets-20percent-and-crowdstrike-surges-15percent-leading-cyber-rally.html"
     }
   },
   {
@@ -794,6 +814,21 @@
     "source": {
       "name": "Investing.com · 2026-08-03",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNEtIVXVkQllHWkhYSUh5QTdwRlZmTnJwdkRON3FFZUF5RjFobnh6VjJfVlJMcFQzT2I0ZU1FNWxFYXJJM1BIU2l5Um1KYmQ5SEJ5QXctVVBKU0JyZ1oycjZkNW9Yb3FIandvd3VnVmZId0JRQXVUekZGVl9kUkxHaVQzTVdCaHdiWFhEM2lKbHJBSkF4a2RrZElqZW8xNGRaN1ZjOW1QSWRwNGtKd1JRUG5sSVhhYnM"
+    }
+  },
+  {
+    "id": "2026-09-02-research-ai-model-training-speed",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-01T22:08:24.000Z",
+    "headline": "AfterQuery becomes Y Combinator's fastest-ever unicorn at $3.2B valuation in five months",
+    "plain_english": "AfterQuery, an AI model-training platform, raised a Series B round valuing it at $3.2B—only five months after Series A at $300M. Signals explosive demand for infrastructure to accelerate AI model development and fine-tuning workflows.",
+    "why_it_matters": "Speed of BFSI AI deployment bottleneck is shifting from model availability to training/tuning infrastructure. Expect banks to invest heavily in similar tools to fine-tune LLMs on proprietary financial data and compliance rules. Tooling vendors will see procurement pressure.",
+    "amount": "$3.2B valuation",
+    "source": {
+      "name": "TechCrunch · 2026-09-01",
+      "url": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/"
     }
   },
   {
@@ -961,23 +996,27 @@
     }
   },
   {
-    "id": "2026-08-28-arxiv-tcn-bitcoin",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Temporal convolutional nets with profit-optimized thresholds forecast economically significant Bitcoin moves",
-    "plain_english": "Paper proposes multi-scale temporal convolutional networks (TCNs) tuned to detect Bitcoin price swings that clear transaction costs. Backtests show profit-optimized threshold selection beats fixed-level alerts.",
-    "why_it_matters": "TCNs offer efficient alternative to LSTMs for crypto trading signals; profit-centered thresholds reduce false-positive alerts. Crypto desks and fintech custodians may adopt for volatility forecasting.",
+    "id": "2026-09-02-insight-incident-jack-henry-ransomware",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-02T00:01:00.000Z",
+    "headline": "Jack Henry, major US core banking vendor, suffers ransomware attack; impact scope unclear",
+    "plain_english": "Jack Henry & Associates, which powers core banking for ~10,000 US credit unions and small banks, fell victim to a ransomware attack. Extent of customer impact not yet disclosed. Represents critical supply-chain risk for BFSI.",
+    "why_it_matters": "Jack Henry incident exposes dependency risk in BFSI supply chains. Regulators (OCC, Fed) will likely issue guidance on vendor continuity and cyber-resilience. Affected banks must engage Jack Henry on breach scope and RTO; expect heightened scrutiny of vendor SLAs and incident-response plans.",
     "jargon": [
       {
-        "term": "temporal convolutional network (TCN)",
-        "def": "Neural net that slides a fixed filter across time series, capturing multi-scale temporal patterns faster than recurrent nets."
+        "term": "Ransomware",
+        "def": "Malware that encrypts a victim's data and demands payment for decryption; can halt operations if backups are compromised."
+      },
+      {
+        "term": "Core banking system",
+        "def": "Central software platform handling deposits, withdrawals, transfers, and customer account records; failure cascades to entire institution."
       }
     ],
     "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26174"
+      "name": "Finextra · 2026-09-02",
+      "url": "https://www.finextra.com/newsarticle/48332/jack-henry-falls-victim-to-ransomware-attack?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -1121,19 +1160,23 @@
     }
   },
   {
-    "id": "2026-08-25-insight-saas-survival-ai-paradox",
-    "category": "insight",
+    "id": "2026-09-02-frontier-anthropic-data-retention",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-25T23:39:32.000Z",
-    "headline": "Enterprise SaaS beats earnings despite AI commoditization fears",
-    "plain_english": "During recent earnings season, three major SaaS incumbents reported results that defied doomsayer predictions that AI would slash their revenue (customers building tools themselves) and margins (fewer staff needed). Reality: SaaS vendors pivoted to AI-embedded offerings faster than customers could build.",
-    "why_it_matters": "SaaS-embedded AI is becoming table-stakes, not a threat. For BFSI, suggests vendor consolidation continues; point solutions lose leverage unless AI-native from day one.",
-    "stat_value": "Earnings beat",
-    "stat_label": "reported by three of enterprise software's largest incumbents",
+    "severity": "high",
+    "published_at": "2026-09-01T21:24:54.000Z",
+    "headline": "Anthropic revises enterprise data retention policy after customer pushback; launches Frontier Safeguards",
+    "plain_english": "Anthropic introduced Enterprise Frontier Safeguards following complaints from business users about data storage and review practices. New system gives enterprises granular control over how their prompts and outputs are retained and potentially used for model improvement.",
+    "why_it_matters": "Signals frontier labs are fragmenting enterprise trust policies. BFSI customers will demand contractual guarantees against proprietary data ingestion into model training. Expect LLM vendor agreements to bifurcate: standard (data used) vs. enterprise (data isolated).",
+    "jargon": [
+      {
+        "term": "Data retention policy",
+        "def": "Rules governing how long a vendor stores customer inputs/outputs and whether they use it to train or improve models."
+      }
+    ],
     "source": {
-      "name": "PYMNTS · 2026-08-25",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/saas-cashes-in-on-its-own-apocalypse/"
+      "name": "PYMNTS · 2026-09-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-revises-enterprise-data-retention-policy-after-customer-pushback/"
     }
   },
   {
@@ -1284,20 +1327,6 @@
     "source": {
       "name": "Gates Notes · 2026-08-29",
       "url": "https://news.google.com/rss/articles/CBMif0FVV95cUxOb3RZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtdUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
-    }
-  },
-  {
-    "id": "2026-08-29-agi-disease-cure",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-29T21:47:19.000Z",
-    "headline": "Artificial general intelligence and disease curing: opportunities and complexities",
-    "plain_english": "Forbes article explores intersection of AGI development and biomedical research, examining how frontier AI systems could accelerate drug discovery and treatment breakthroughs.",
-    "why_it_matters": "BFSI investors tracking healthcare AI: AGI-scale models will unlock biotech funding flows; early-stage AI drug discovery plays now entering larger institutional portfolios.",
-    "source": {
-      "name": "Forbes · 2026-08-29",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPel9nM1ZrTGhmbjZ6RFFTUW5jd3ZfZEdRVEZ3RDBOYUphLTU0bThMb2Y3YUg4WmQ2M3N0Y1JzSWpUazJETlZEZlhTTzRwVmNEbTZyWWdPbEdURTljSnZZV1lJakRlOE9tNDQzMmpnR2R0cHB5NFB4emh5cVBmd191QW5KRlp4RDk1dWttV21RdzUzTUViOUktR29xOV95azF2c0JuV2VoVms4X0RGN2U1U1hjMklnSkVLQ0E"
     }
   },
   {
@@ -1525,6 +1554,20 @@
     }
   },
   {
+    "id": "2026-09-02-trending-palo-alto-ai-security-demand",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-01T21:41:15.000Z",
+    "headline": "Palo Alto Networks stock rallies on AI security demand; beats earnings, raises outlook",
+    "plain_english": "Palo Alto Networks beat Q4 earnings estimates and raised guidance on strong demand for AI-powered detection and response tools. Stock has nearly doubled this year. Signals enterprise security budgets are being redirected toward AI-capable threat platforms.",
+    "why_it_matters": "Market is rewarding AI-centric security vendors. BFSI procurement teams will accelerate migration from legacy (SIEM, IDS) to AI-native (behavioral detection, autonomous response). Budget reallocation creates disruption risk for vendors without credible AI roadmaps.",
+    "source": {
+      "name": "CNBC · 2026-09-01",
+      "url": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html"
+    }
+  },
+  {
     "id": "2026-08-31-trending-ai-agents-unsupervised",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1654,6 +1697,142 @@
     "source": {
       "name": "Reuters · 2026-08-22",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLWE3OUFQMndpYzJSVFBuYXBocWg0RUlmWGFtZDU0NEdtTUJzRmV2c3ZtWjJFOTUxNEFwaFNkSno5ZlhCdGpTSjJOMnNUc2U1Y01Fc1YtX2NrdnRFM0pEMDYyYXBrWGdHUVpTei1ramJ6YVE1aFFFTGVwX0drX1lBOFdyRGM4cEpZVG9uUEhka1J1RDZDQ0F3UWY3S0VjQVhLbzVjYmZPazhPcnV3c1ZVd0F4bExTeU9QN0VnOVRyVlA"
+    }
+  },
+  {
+    "id": "2026-08-29-regulation-tech-backlash-elections",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-08-29T12:16:03Z",
+    "headline": "US regulatory backlash on AI data centers, social media accelerates ahead of midterms",
+    "plain_english": "Data center environmental concerns have become a major election issue; Meta also reached a landmark social media settlement. Together, these signals indicate Congress and state regulators are moving to tighten AI infrastructure and platform oversight.",
+    "why_it_matters": "BFSI boards must assume future AI buildout will face new environmental, data residency, and transparency rules. Capital expenditure plans need regulatory buffer and modular architecture to accommodate compliance pivots.",
+    "source": {
+      "name": "CNBC · 2026-08-29",
+      "url": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html"
+    }
+  },
+  {
+    "id": "2026-08-30-andhra-ai-ca-msme-platform",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-08-30T00:17:35.000Z",
+    "headline": "Andhra Pradesh CM launches AI platform for chartered accountants and MSMEs",
+    "plain_english": "Chief Minister N Chandrababu Naidu unveiled AI-powered digital platform targeting chartered accountants and micro/small/medium enterprises. Focus on improving financial services access in Indian state.",
+    "why_it_matters": "State-level fintech infrastructure plays test AI regulatory compliance; India's push to digitize MSME lending creates template for emerging-market bank AI adoption.",
+    "source": {
+      "name": "The Indian Express · 2026-08-30",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYW04ZTdOSjdIR2I2UmJSTDBjeXI2cHBXdTB4SXhQTEx6akNmYUhTeUhFUzN2RzRnbXVlVFcyX1Y4ZmpUc3dyUzR2LUNqY0JfUGU0S2R3akppbHNzSmotVXNqcHBVRTFlX1JhMEZORnpkRTFIblFGbUttRTdBMmhqOFRzNjFVeFVEQzRfSFQ4SDFjWGJrbjdjQVlQZTZHb3RZRENzUVJxUzlXUVIzeE50TGpoSVRsb05FN3drZkkyQ1BFTU1CVVpvbFFoSC1zdUcyNUk04gHaAUFVX3lxTFAxWWlrMzl3Ukl6Q0NVMEduSW9FaE9KQ3BoeENOWk9vcGpzc1NaaWlES2pTSjN4QjR2YjFNdVJXYlFyeWttSEppa0R5dTBsUXZORGZRRWplQnAtdnVpTks4S1N1SFFMNTBsVUp4YXhMaWpOUnZ6Um9XbVZLOThkZ2ZnNFZNYU5MUGw5UXpKU2xXYWRBMXhoTFU1YkVPazhaQkJtbWxiZHJ4Q3lxbE5HYTZnd3N5c3l0bHprNGJmX2VUQjNQYk11SWgzQzJtdXRDRVBFbklWX25sRExB"
+    }
+  },
+  {
+    "id": "2026-08-28-experian-jpmorgan-account-verification",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-28T20:27:22Z",
+    "headline": "Experian and JPMorgan integrate real-time account verification into payment workflows",
+    "plain_english": "Experian and JPMorgan have launched tools that verify account ownership and integrity at the moment of payment initiation, not after. Addresses fraud and misdirected transfers in faster payment rails where traditional post-transaction checks fail.",
+    "why_it_matters": "Moves fraud prevention upstream in real-time payment systems. Banks adopting this model reduce settlement disputes and chargeback risk on near-instant transfers; sets operational baseline for competitive payment systems.",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/authentication/2026/experian-jpmorgan-push-account-checks-into-payment-workflows/"
+    }
+  },
+  {
+    "id": "2026-08-26-vendor-google-cloud-financial-ai",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-26T00:01:00.000Z",
+    "headline": "Google Cloud launches agentic AI platform for financial services, signs Deutsche Bank",
+    "plain_english": "Google Cloud unveiled a purpose-built AI agent platform designed for financial professionals. Deutsche Bank signed on as an early adopter, signaling confidence in the offering's readiness for production banking workflows.",
+    "why_it_matters": "Validates agentic AI as a category within financial services; Deutsche Bank's early adoption pressures competitors to accelerate similar deployments and raises stakes for AI infrastructure vendors.",
+    "source": {
+      "name": "Finextra · 2026-08-26",
+      "url": "https://www.finextra.com/newsarticle/48299/google-cloud-launches-ai-platform-for-financial-professionals"
+    }
+  },
+  {
+    "id": "2026-08-25-standard-metrics-series-b",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-25T09:46:00Z",
+    "headline": "AI-driven portfolio management platform Standard Metrics raises $20 million Series B",
+    "plain_english": "Standard Metrics, which uses AI to optimize portfolio management for venture capital and private equity firms, closed a $20M Series B round led by 8VC. The round included participation from Salesforce Ventures and other institutional backers.",
+    "why_it_matters": "Continued venture funding into AI-native portfolio tools signals institutional LP appetite for algorithmic asset allocation—pressure on traditional PM workflows accelerating.",
+    "amount": "$20M",
+    "round": "Series B",
+    "source": {
+      "name": "Finextra · 2026-08-25",
+      "url": "https://www.finextra.com/pressarticle/110716/ai-driven-portfolio-management-platform-standard-metrics-raises-20-million"
+    }
+  },
+  {
+    "id": "2026-08-27-crowdstrike-okta-ai-security-surge",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-27T20:08:43.000Z",
+    "headline": "CrowdStrike and Okta surge as AI adoption drives cybersecurity spending",
+    "plain_english": "CrowdStrike posted best day ever and Okta jumped 29% after strong earnings. Bank and enterprise customers increasing security tool budgets in response to new AI-driven threat surface (prompt injection, model poisoning, data exfiltration).",
+    "why_it_matters": "BFSI risk and security teams must budget for incremental AI-specific security controls beyond traditional endpoint and identity tools; signals market confidence that AI threat surface justifies premium spend.",
+    "source": {
+      "name": "CNBC · 2026-08-27",
+      "url": "https://www.cnbc.com/2026/08/27/okta-skyrockets-20percent-and-crowdstrike-surges-15percent-leading-cyber-rally.html"
+    }
+  },
+  {
+    "id": "2026-08-28-arxiv-tcn-bitcoin",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-28T04:00:00Z",
+    "headline": "Temporal convolutional nets with profit-optimized thresholds forecast economically significant Bitcoin moves",
+    "plain_english": "Paper proposes multi-scale temporal convolutional networks (TCNs) tuned to detect Bitcoin price swings that clear transaction costs. Backtests show profit-optimized threshold selection beats fixed-level alerts.",
+    "why_it_matters": "TCNs offer efficient alternative to LSTMs for crypto trading signals; profit-centered thresholds reduce false-positive alerts. Crypto desks and fintech custodians may adopt for volatility forecasting.",
+    "jargon": [
+      {
+        "term": "temporal convolutional network (TCN)",
+        "def": "Neural net that slides a fixed filter across time series, capturing multi-scale temporal patterns faster than recurrent nets."
+      }
+    ],
+    "source": {
+      "name": "arXiv q-fin · 2026-08-28",
+      "url": "https://arxiv.org/abs/2608.26174"
+    }
+  },
+  {
+    "id": "2026-08-25-insight-saas-survival-ai-paradox",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-25T23:39:32.000Z",
+    "headline": "Enterprise SaaS beats earnings despite AI commoditization fears",
+    "plain_english": "During recent earnings season, three major SaaS incumbents reported results that defied doomsayer predictions that AI would slash their revenue (customers building tools themselves) and margins (fewer staff needed). Reality: SaaS vendors pivoted to AI-embedded offerings faster than customers could build.",
+    "why_it_matters": "SaaS-embedded AI is becoming table-stakes, not a threat. For BFSI, suggests vendor consolidation continues; point solutions lose leverage unless AI-native from day one.",
+    "stat_value": "Earnings beat",
+    "stat_label": "reported by three of enterprise software's largest incumbents",
+    "source": {
+      "name": "PYMNTS · 2026-08-25",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/saas-cashes-in-on-its-own-apocalypse/"
+    }
+  },
+  {
+    "id": "2026-08-29-agi-disease-cure",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-08-29T21:47:19.000Z",
+    "headline": "Artificial general intelligence and disease curing: opportunities and complexities",
+    "plain_english": "Forbes article explores intersection of AGI development and biomedical research, examining how frontier AI systems could accelerate drug discovery and treatment breakthroughs.",
+    "why_it_matters": "BFSI investors tracking healthcare AI: AGI-scale models will unlock biotech funding flows; early-stage AI drug discovery plays now entering larger institutional portfolios.",
+    "source": {
+      "name": "Forbes · 2026-08-29",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPel9nM1ZrTGhmbjZ6RFFTUW5jd3ZfZEdRVEZ3RDBOYUphLTU0bThMb2Y3YUg4WmQ2M3N0Y1JzSWpUazJETlZEZlhTTzRwVmNEbTZyWWdPbEdURTljSnZZV1lJakRlOE9tNDQzMmpnR2R0cHB5NFB4emh5cVBmd191QW5KRlp4RDk1dWttV21RdzUzTUViOUktR29xOV95azF2c0JuV2VoVms4X0RGN2U1U1hjMklnSkVLQ0E"
     }
   },
   {
@@ -8106,22 +8285,6 @@
     }
   },
   {
-    "id": "2026-08-03-retailers-phone-scam-surge",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T00:21:04Z",
-    "headline": "US retailers report 69% surge in phone scams as theft prevention advances",
-    "plain_english": "National Retail Federation data shows phone-based fraud and external theft rising sharply even as in-store shoplifting declines for the first time in years, signaling criminals are shifting to remote and social-engineering attacks.",
-    "why_it_matters": "Retailers are deploying AI loss-prevention in-store but leaving call centers and payment channels exposed; BFSI vendors must now layer voice/call-center AI to catch spoofing and account-takeover fraud upstream.",
-    "stat_value": "69%",
-    "stat_label": "increase in phone scams, NRF survey",
-    "source": {
-      "name": "PYMNTS · 2026-08-03",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/retailers-report-69-increase-in-phone-scams-as-shoplifting-dips/"
-    }
-  },
-  {
     "id": "2026-08-04-amd-data-center-earnings",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8257,20 +8420,6 @@
     "source": {
       "name": "Tearsheet · 2026-08-04",
       "url": "https://tearsheet.co/ai-innovation/why-banks-cant-policy-their-way-out-of-shadow-ai/?utm_source=rss&utm_medium=rss&utm_campaign=why-banks-cant-policy-their-way-out-of-shadow-ai"
-    }
-  },
-  {
-    "id": "2026-08-02-reddit-ceo-google-ai-overviews",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-02T23:15:36Z",
-    "headline": "Reddit CEO pushes back against Google AI Overviews, positions platform as antidote to automated web",
-    "plain_english": "Reddit's Steve Huffman told investors Google's AI Overviews undermine Reddit's value by scraping user-generated content and summarizing it without attribution; Reddit is positioning itself as the 'antidote to an automated web.'",
-    "why_it_matters": "Content friction between LLM providers and sources is now a business moat; BFSI should expect similar battles over proprietary trading signals, research, and customer data—licensing and partnership models will reshape data supply chains.",
-    "source": {
-      "name": "PYMNTS · 2026-08-02",
-      "url": "https://www.pymnts.com/google/2026/reddit-ceo-pushes-back-against-ai-powered-search-results/"
     }
   },
   {
@@ -8411,20 +8560,6 @@
     }
   },
   {
-    "id": "2026-08-02-ai-startups-chinese-models-vc-pullback",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-02T23:38:09Z",
-    "headline": "US AI startups race to build open-weight models as Chinese alternatives gain traction, VC interest cools",
-    "plain_english": "American AI startups are developing counterparts to rising Chinese open-source models (like Qwen), but venture capital interest has waned; tier-one VCs are shifting focus away from duplicative model-building efforts.",
-    "why_it_matters": "Open-weight model competition is flattening; BFSI teams must now evaluate Chinese and non-US models for compliance, data residency, and export controls—geopolitical fragmentation of AI stacks is irreversible.",
-    "source": {
-      "name": "PYMNTS · 2026-08-02",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-startups-try-to-counter-chinese-models-as-vc-interest-wanes/"
-    }
-  },
-  {
     "id": "2026-08-03-palantir-karp-frontier-labs-critique",
     "category": "shift",
     "jurisdiction": "US",
@@ -8462,34 +8597,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-03",
       "url": "https://www.pymnts.com/news/banking/2026/sponsor-banks-discover-that-deposits-dont-have-to-sit-still/"
-    }
-  },
-  {
-    "id": "2026-08-03-ibm-quantum-computing-2029",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-02T23:58:12Z",
-    "headline": "IBM CEO predicts quantum computing will drive measurable revenue and profit impact by 2028–2029",
-    "plain_english": "IBM's Arvind Krishna told CNBC quantum computing will deliver material top-line and bottom-line impact within 2–3 years, with broader impact across the 2030s as the technology matures and finds production use cases.",
-    "why_it_matters": "Quantum remains a long-term bet for BFSI (portfolio optimization, cryptography, risk simulation), but IBM's timeline signals the frontier is accelerating; banks should start quantum-readiness pilots now to avoid disruption.",
-    "source": {
-      "name": "PYMNTS · 2026-08-02",
-      "url": "https://www.pymnts.com/technology/2026/ibm-ceo-foresees-quantum-computing-growth-by-2029/"
-    }
-  },
-  {
-    "id": "2026-08-02-foreign-ai-dominance-nigeria-autonomy",
-    "category": "regulation",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-08-02T23:50:29Z",
-    "headline": "Nigeria flags foreign AI dominance as threat to digital autonomy and national sovereignty",
-    "plain_english": "Nigerian regulators and media warn that reliance on foreign (US, Chinese) AI models undermines local digital sovereignty, data control, and development of indigenous AI capacity in African fintech and banking.",
-    "why_it_matters": "Emerging-market regulators are pushing AI localization mandates (compute, training, custodianship); BFSI firms with African exposure must now build regional model partnerships and data governance frameworks or face operational friction.",
-    "source": {
-      "name": "Punch Newspapers · 2026-08-02",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVVVtb2Jmb2ZBajRjQUlYM3B4UzQyZ3BQS2tqSHBHMWV0dllqc19VZVA1VHRudklBNmEyYVdSMzgxU1pzUlJYdVhFSDdTUWNpUVU2TXpuNUx2ZFBQcG1XN0loQUJOSlRFcTY5Y20yZTZzQXNpSHA0YXpKRmNuSk5rVF9INVhTLTNaZGU3b2N6a3p5b2hZSDNTYkdCVzV6eDVyeHc0TEY0REFGeDFvM3IwbFRRNTU1bkJ4S3d3"
     }
   },
   {
@@ -8586,44 +8693,6 @@
     "source": {
       "name": "Tearsheet · 2026-08-03",
       "url": "https://tearsheet.co/banking/regions-bank-chose-a-modern-core-heres-what-that-journey-looks-like"
-    }
-  },
-  {
-    "id": "2026-08-03-partior-openassets-atomic-settlement",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-03T00:01:00Z",
-    "headline": "Bank settlement platform proves atomic delivery-versus-payment for stablecoins and tokenized deposits",
-    "plain_english": "Partior (bank-backed global settlement infrastructure) and OpenAssets completed a proof-of-concept showing stablecoins and commercial tokenized bank deposits can settle atomically in one transaction—no counterparty or timing risk.",
-    "why_it_matters": "Removes settlement friction and risk from blockchain-based finance; enables real-time PvP across digital assets and regulated deposits, reshaping how banks will clear and settle in the next 3–5 years.",
-    "jargon": [
-      {
-        "term": "Atomic settlement",
-        "def": "Two or more assets exchange simultaneously in one transaction; if one leg fails, the whole trade unwinds—zero counterparty risk."
-      },
-      {
-        "term": "Tokenized deposits",
-        "def": "Digital representation of a bank deposit on a blockchain; maintains regulatory status and FDIC/deposit insurance backing."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-03",
-      "url": "https://www.finextra.com/newsarticle/48180/partior-and-openassets-poc-proves-stablecoins-and-tokenised-deposits-can-settle-atomically"
-    }
-  },
-  {
-    "id": "2026-08-03-bofa-mdsec-cybersecurity-acquisition",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T00:01:00Z",
-    "headline": "Bank of America acquires UK cybersecurity firm MDSec Consulting",
-    "plain_english": "Bank of America is buying MDSec Consulting, a UK-based information security specialist, to strengthen its in-house cyber defenses and operational resilience against evolving threats.",
-    "why_it_matters": "Big banks are moving from outsourced security to owned capabilities; signals rising in-house AI/ML security stack investments to defend trading, customer data, and core infrastructure.",
-    "source": {
-      "name": "Finextra · 2026-08-03",
-      "url": "https://www.finextra.com/newsarticle/48179/bofa-to-buy-uk-cybersecurity-firm-mdsec-consulting"
     }
   }
 ]
