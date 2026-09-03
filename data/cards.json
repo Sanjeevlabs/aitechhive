@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-09-03-us-g20-ai-training-copyright",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-02T22:04:30.000Z",
+    "headline": "US urges G20 to allow AI model training on creators' copyrighted work without consent",
+    "plain_english": "US government lobbied G20 members to adopt policies permitting AI training on creators' copyrighted content without licensing or compensation. Counter to emerging EU copyright enforcement; signals US intent to keep training data costs low and AI commoditization high.",
+    "why_it_matters": "Creates regulatory fork: EU tightens IP protection; US pushes permissive training regimes. BFSI firms training proprietary models on internal data face divergent compliance costs by region. Cross-border AI ops will require dual-track legal strategies.",
+    "jargon": [
+      {
+        "term": "copyright training exemption",
+        "def": "Legal right to use copyrighted works to train AI without author permission or payment."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-09-02",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTRRRFloNlZWNUJwamZCOEJrcGRwQ0JzaS1DeExVS3JOQ21pRi1yRFdyOEsyVlpCSHNobWExOENjRmJEU2dZV1BHY1hVNm9idkdTMGRZQS1YYnhHR1JGNW5mUlJMMGJiQ3E1bDVOWENLTkc2dnZHdUVvZzllWXJpd21KQXZ1TU1ScUJCWkdDd0ppTWZRcnhGQmw4ZkZGTG44SlNJdDcwdGVOVzA2djhfOE93"
+    }
+  },
+  {
+    "id": "2026-09-02-us-trump-g20-pro-ai-policy",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-02T21:52:00.000Z",
+    "headline": "US and tech CEOs lobby G20 for pro-AI regulatory frameworks",
+    "plain_english": "Trump administration and Silicon Valley leaders petitioned G20 countries to adopt permissive AI policies, focusing on minimal red tape and competitive neutrality. Contrasts with EU's AI Act and tighter enforcement stance; signals geopolitical AI regulatory split.",
+    "why_it_matters": "BFSI firms with global ops must prepare for divergent AI governance by region: light-touch US rules vs. strict EU oversight. Compliance costs will vary by market; banks may establish separate AI governance teams by jurisdiction or containerize models by deployment region.",
+    "source": {
+      "name": "WSJ · 2026-09-02",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdTNQSnJnNl9jZXVwakxoOWk4RDh6ODd2S0VNVkR0MWd5X0Z4OE1ZaDh4d0RaemR3Um5KTVlzTXJ0T2NFdjlZQXYwV3VrTmVUTExhM01ibTdPTWp4a0JGWE5ncUZWMWI0TkZMYlk4RERhUjY1U0RMdlFtZ29rMjRzZjh4T1BPREVnODNBaFNlYUZTSlcxZWhFQkRteGs0U3p1QXlv"
+    }
+  },
+  {
     "id": "2026-09-02-emvco-agentic-payments",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -130,31 +164,43 @@
     }
   },
   {
-    "id": "2026-08-31-regulation-data-center-energy",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-09-03-discovery-bank-ai-payback",
+    "category": "deployment",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-08-31T17:32:02Z",
-    "headline": "US political pressure mounts on communities opposing AI data center expansion",
-    "plain_english": "Trump and Republican leaders are criticizing local communities blocking AI data center construction, citing economic and geopolitical risks. Signals federal push to override local objections to power-hungry AI infrastructure.",
-    "why_it_matters": "BFSI firms planning AI capex (training, inference clusters) face shifting regulatory landscape around siting and energy. Federal support for data center build-out could enable lower-cost on-premises or co-location infra, reshaping vendor economics.",
+    "published_at": "2026-09-03T00:03:45.000Z",
+    "headline": "Discovery Bank achieves AI ROI in under two years, faster than peer average of six",
+    "plain_english": "Discovery Bank (South Africa) deployed AI to connect fragmented customer data and detect fraud signals missed by legacy systems. Result: faster payback on AI spend than peer banks, which typically wait 6+ years. Speed came from linking dormant customer insights to real-time decisions.",
+    "why_it_matters": "Demonstrates that AI ROI in retail banking hinges on data integration speed, not just model sophistication. Peers will benchmark against Discovery's timeline, pressuring legacy banks to consolidate data infrastructure faster.",
+    "jargon": [
+      {
+        "term": "data integration",
+        "def": "Connecting customer data across silos (transactions, behavior, fraud flags) so AI models see complete picture instantly."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-08-31",
-      "url": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html"
+      "name": "PYMNTS · 2026-09-03",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/most-banks-wait-six-years-for-ai-payback-discovery-didnt/"
     }
   },
   {
-    "id": "2026-08-30-mas-t-bill-auction",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-08-30T14:33:29Z",
-    "headline": "MAS announces 6-month T-bill auction; Singapore bond issuance continuing regular cadence",
-    "plain_english": "Monetary Authority of Singapore issued new 6-month Treasury bill issuance via auction—routine financial infrastructure operation. Signals stable liquidity management and continued confidence in Singapore's debt markets amid global trade volatility.",
-    "why_it_matters": "Background signal: MAS continues normal operations; no emergency liquidity measures or market stress. Provides baseline for Singapore's BFSI operating environment; relevant for APAC-focused risk teams assessing regional financial stability.",
+    "id": "2026-09-02-equinix-nvidia-together-inference",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-02T22:49:01.000Z",
+    "headline": "Nvidia partners with Equinix and Together AI for enterprise open-model inference",
+    "plain_english": "Nvidia announced new partnership with data-center operator Equinix and open-model platform Together AI to offer inference services for enterprise customers. Targets firms building AI apps without committing to proprietary (closed) models; lowers switching costs.",
+    "why_it_matters": "Fintech and banking ML teams can now cheaply run open-source models (Llama, Mistral) on shared Equinix infra instead of building private clouds. Accelerates AI adoption for cost-conscious firms; pressures hyperscalers to compete on open-model support.",
+    "jargon": [
+      {
+        "term": "inference",
+        "def": "Running a trained AI model on new data to make predictions or generate outputs; different from training (building the model)."
+      }
+    ],
     "source": {
-      "name": "MAS Singapore · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXg3WU9kYldIMkduY1p6aENoS0hIdFE0dkhDSlJrMFdzaF9GS2c5clVod1RoNXBTY3ZyaUNDdW5rNllvMGFrUTg4bXZXXzlpZVNyNnhaSHdzcUUzTmJ3NDRyeFhmN3o4UGZrdHYzZFFMbk5KanIzcXU2cEdFa0h4cUF0eEdfOVJnd3Z6blJWalo2cGIyRzl0TzY2eTJRcEhGYnlfZmllV3lzMnVGd3g4a1MtRGw1QmxXelpCUTJNTVV0b0I0"
+      "name": "CNBC · 2026-09-02",
+      "url": "https://www.cnbc.com/2026/09/02/equinix-partners-with-nvidia-carves-niche-in-ai-data-center-boom.html"
     }
   },
   {
@@ -304,47 +350,33 @@
     }
   },
   {
-    "id": "2026-08-31-td-tokenized-payments-agora",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-31T16:23:00Z",
-    "headline": "TD Bank executes real USD tokenized payment via Project Agorá platform",
-    "plain_english": "TD completed a live test moving real USD through Project Agorá, a tokenized settlement platform. Signals major bank moving from pilot to operational testing of blockchain-based payment infrastructure.",
-    "why_it_matters": "Real-money execution on tokenized rails reduces settlement risk and latency; if successful at scale, disrupts correspondent banking and liquidity management models BFSI has relied on for decades.",
-    "jargon": [
-      {
-        "term": "tokenized settlement",
-        "def": "Assets represented as blockchain tokens; trades settle on-chain without intermediaries."
-      }
-    ],
+    "id": "2026-09-03-tabapay-bank-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-03T00:01:00.000Z",
+    "headline": "TabaPay raises $155M and agrees to acquire Denver-based bank",
+    "plain_english": "Money-movement platform TabaPay closed $155M Series growth round led by FTV Capital and entered agreement to acquire a Denver bank. The bank charter removes payment processing friction; TabaPay now owns rails instead of leasing them.",
+    "why_it_matters": "Signals fintech-to-regulated-banking acquisition wave accelerating. Acquiring a charter eliminates API/settlement latency and regulatory arbitrage risk—a playbook other large fintech platforms will copy in 2026–27.",
+    "amount": "$155M",
     "source": {
-      "name": "Finextra · 2026-08-31",
-      "url": "https://www.finextra.com/newsarticle/48326/td-tests-tokenised-payments-through-project-agor?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "Finextra · 2026-09-03",
+      "url": "https://www.finextra.com/newsarticle/48340/tabapay-closes-155m-financing-agrees-to-buy-a-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
-    "id": "2026-08-31-shinhan-visa-stablecoin",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-09-02-palo-alto-console-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-31T00:01:00Z",
-    "headline": "Shinhan Financial Group signs MOU with Visa for stablecoin platform and AI payments",
-    "plain_english": "South Korea's Shinhan Financial Group committed to Visa's new stablecoin platform and will explore AI-driven payment models. This marks a major regional bank's formal adoption of stablecoin infrastructure for institutional use.",
-    "why_it_matters": "Signals APAC mega-bank willingness to embed stablecoins and AI into payment rails; may accelerate similar commitments from peers in Japan, Singapore, Hong Kong.",
-    "jargon": [
-      {
-        "term": "Stablecoin",
-        "def": "Cryptocurrency pegged to a fiat asset (e.g., USD) to minimize volatility; used for cross-border settlements."
-      }
-    ],
+    "published_at": "2026-09-02T22:44:56.000Z",
+    "headline": "Palo Alto Networks acquires Console for $500M; IT service automation consolidates",
+    "plain_english": "Palo Alto Networks paid $500M for Console (backed by Thrive Capital), an AI IT service automation platform. Move leaves Sequoia-backed Serval as dominant competitor. Banking IT ops teams increasingly buy single vendors for end-to-end automation.",
+    "why_it_matters": "Enterprise BFSI IT will face vendor consolidation pressure. Banks deploying separate AI agents for security, incident response, and infrastructure mgmt may need to unify on one platform to reduce operational complexity and cost.",
+    "amount": "$500M",
     "source": {
-      "name": "Finextra · 2026-08-31",
-      "url": "https://www.finextra.com/newsarticle/48323/south-koreas-shinhan-signs-for-visa-stablecoin-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    "scale": {
-      "metric": "customers",
-      "value": "Shinhan ~30M retail, 500K+ SMEs"
+      "name": "TechCrunch · 2026-09-02",
+      "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
     }
   },
   {
@@ -467,33 +499,45 @@
     }
   },
   {
-    "id": "2026-08-31-docsie-ai-comparison",
-    "category": "vendor",
+    "id": "2026-09-02-microsoft-azure-revenue-disclosure",
+    "category": "shift",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-31T00:25:16Z",
-    "headline": "Docsie launches AI-powered document and video comparison tool",
-    "plain_english": "Docsie released AI-based content comparison for documents, videos, and knowledge bases. Targets document-heavy workflows (compliance, contracts, training materials).",
-    "why_it_matters": "Document-centric AI tools proliferate; BFSI teams evaluating for regulatory filings, AML/KYC comparison, or contract review should benchmark against emerging competitors.",
+    "severity": "med",
+    "published_at": "2026-09-02T22:37:13.000Z",
+    "headline": "Microsoft to disclose Azure revenue separately; signals confidence in cloud-as-core-business",
+    "plain_english": "Microsoft will report Azure quarterly revenue in dollars for first time, splitting it from broader cloud and enterprise services. Move reflects Azure's scale and investor appetite for cloud transparency; pressure on AWS to match granularity.",
+    "why_it_matters": "BFSI CFOs and architects will now see Microsoft's AI/cloud investment ROI directly tied to Azure. Banks evaluating multi-cloud strategies will demand similar transparency from AWS and Google Cloud. Reporting shift accelerates vendor scorecard differentiation.",
     "source": {
-      "name": "The National Law Review · 2026-08-31",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxRQ1FkTFJaeWNkaU9aUUQtMk5tazBUdHpqak5ta3FCdG52Yk1iMjdWekgydmZzTGZlYlAwMGlFWUJjMkxLb1QyblJQdEZ6bHU1bFR6dTdHRXJadU1KakYxNUJmLUs1MWdsWW91ZjJ3VWhlVTNzOGs2SmhSVUNrNnJ5YzhOYWtnMW9CSVgzUV9yOUJTWThhVWQwcGtzd0hKTkxUeHBiNVktMWt4cWhzVjhVQ0loWmY"
+      "name": "CNBC · 2026-09-02",
+      "url": "https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html"
     }
   },
   {
-    "id": "2026-08-28-a16z-hardware-fund",
-    "category": "vendor",
+    "id": "2026-09-02-microsoft-org-restructure-ai",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-02T21:21:00.000Z",
+    "headline": "Microsoft restructures reporting to reflect AI-driven business impact",
+    "plain_english": "Microsoft reorganized internal reporting structure to isolate and measure effects of AI on revenue and margin across segments. Signals company-wide commitment to quantify AI ROI; investors and rivals now expect AI-specific P&L transparency.",
+    "why_it_matters": "Every Fortune 500 CFO and CTO will face pressure to adopt similar AI impact reporting. BFSI firms will need AI governance frameworks with separate cost centers and revenue attribution—changing how banks budget and measure AI project success.",
+    "source": {
+      "name": "WSJ · 2026-09-02",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU3hZTS1LdVBJWUFVdjZ2ZUpUQ1hSMkJJYkRzVmJ5aWZ1UHdscUtrLW1WNzR3eEZBYW9DZFhYWERCaEtYVTZ5VDExelNWZTRzTHRjaTRqX3B3VTNMWjRIRlNVSjdDSEFPU21lRzZmZWh3cXhlVUlmNXZmTnpZc3p0ajZPUjFoNlRNVlAtVmkwdkJiQUgtczJ2MkpSR3FuLXdQZ29v"
+    }
+  },
+  {
+    "id": "2026-09-02-x-money-stripe-replacement",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-08-28T18:46:14Z",
-    "headline": "Andreessen Horowitz launches $1.1 billion AI hardware fund to address chip supply constraints",
-    "plain_english": "a16z raised $1.1B for its Machine Age Fund to invest in founders building AI infrastructure and custom AI hardware. Targets the global bottleneck in GPU/accelerator availability constraining AI model deployment and training.",
-    "why_it_matters": "Signals major VC bet that bespoke AI hardware (not just Nvidia) will unlock value. Banks relying on third-party AI inference will benefit if fund's portfolio reduces hardware scarcity and vendor lock-in.",
-    "amount": "$1.1B",
-    "round": "Fund I",
+    "published_at": "2026-09-02T21:56:51.000Z",
+    "headline": "X replaces Stripe with proprietary X Money for US creator payouts",
+    "plain_english": "X (formerly Twitter) migrated all US creator payouts from Stripe to its own X Money payments service. Creators now receive funds via X's internal rails rather than third-party processor. Expands fintech capabilities for social platforms; signals vertically integrated payment networks.",
+    "why_it_matters": "Social platforms and marketplaces building in-house payment infrastructure accelerate shift away from traditional processors. BFSI competitors face margin pressure and customer churn as platforms own payout rails; regulatory arbitrage risk rises as platforms operate payment services without full banking oversight.",
     "source": {
-      "name": "PYMNTS · 2026-08-28",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/andreessen-horowitz-targets-ai-supply-crunch-with-new-1-1-billion-hardware-fund/"
+      "name": "PYMNTS · 2026-09-02",
+      "url": "https://www.pymnts.com/commerce/social-commerce/2026/x-replaces-stripe-united-states-creator-payouts/"
     }
   },
   {
@@ -598,64 +642,6 @@
     "source": {
       "name": "Bloomberg · 2026-08-30",
       "url": "https://www.bloomberg.com/news/articles/2026-08-30/apple-s-ternus-takes-the-reins-as-ceo-with-ai-as-job-no-1"
-    }
-  },
-  {
-    "id": "2026-08-30-caterpillar-ai-deployment",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-30T15:00:00Z",
-    "headline": "Caterpillar applies mining automation playbook to enterprise AI rollout",
-    "plain_english": "Caterpillar is leveraging three decades of autonomous equipment deployment in remote mining sites to inform how it scales AI across operations—focusing on field-tested reliability, minimal supervision, and fail-safe design patterns proven in harsh, unforgiving environments.",
-    "why_it_matters": "Heavy industry's proven ops model for autonomous systems (mining trucks, drilling rigs) now blueprinting corporate AI governance; signals shift from lab-to-lab AI to industrial-grade deployment discipline—relevant for risk-averse BFSI adopters seeking real-world operational patterns.",
-    "source": {
-      "name": "TechCrunch · 2026-08-30",
-      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/"
-    }
-  },
-  {
-    "id": "2026-08-29-shift-salesforce-ai-battleground",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-29T13:00:01Z",
-    "headline": "Salesforce signals AI battleground has shifted from models to workflow integration",
-    "plain_english": "Salesforce's recent earnings revealed that the next wave of AI value in enterprise software is not raw model capability but seamless agent integration into existing business processes—marking a strategic pivot from 'foundation model arms race' to 'enterprise workflow.'",
-    "why_it_matters": "BFSI AI teams should pivot from chasing frontier LLM benchmarks to embedding agents into core operations (trade settlement, compliance workflows, customer onboarding). Execution beats model quality.",
-    "jargon": [
-      {
-        "term": "Agent",
-        "def": "An AI system that autonomously takes actions (run queries, execute trades, file docs) based on goals, not just generate text."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-29",
-      "url": "https://www.cnbc.com/2026/08/29/op-ed-salesforce-revealed-next-battleground-in-ai-its-not-models.html"
-    }
-  },
-  {
-    "id": "2026-08-28-bis-tokenized-deposits",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-28T21:00:43Z",
-    "headline": "BIS chief backs tokenized deposits over stablecoins for digital payments infrastructure",
-    "plain_english": "Bank for International Settlements General Manager Pablo Hernández de Cos said tokenized deposits (bank-issued digital money on blockchain) are more likely than stablecoins to function as money. Signal: central banks view tokenized bank liabilities, not private crypto, as the plumbing for next-gen payments.",
-    "why_it_matters": "Shapes regulatory stance on CBDCs and tokenized settlement. Banks holding deposits as tokenized assets vs. stablecoins shifts competitive advantage toward traditional banking infrastructure and away from crypto-native payment models.",
-    "jargon": [
-      {
-        "term": "Tokenized deposits",
-        "def": "Bank deposits converted to digital tokens on blockchain; issued and backed by licensed banks, not private entities."
-      },
-      {
-        "term": "Stablecoins",
-        "def": "Cryptocurrencies pegged to fiat currency or reserves; issued by private firms, not central banks or licensed depositories."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-28",
-      "url": "https://www.pymnts.com/digital-payments/2026/bis-general-manager-says-tokenized-deposits-beat-stablecoins-digital-payments/"
     }
   },
   {
@@ -976,6 +962,54 @@
     }
   },
   {
+    "id": "2026-09-03-amazon-alexa-fraud-detection",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-03T00:01:00.000Z",
+    "headline": "Amazon Alexa launches scam-verification feature for US customers",
+    "plain_english": "Amazon's shopping assistant now verifies whether incoming messages, emails, calls, or texts actually originated from Amazon. Consumer-facing fraud detection is now embedded in a major voice interface; signals shift toward ambient anti-fraud (AI always listening for phishing).",
+    "why_it_matters": "Consumer habit-formation around AI-powered authentication may accelerate enterprise demand for real-time message/transaction verification. BFSI will face pressure to embed similar checks into customer touchpoints (mobile, web, voice).",
+    "source": {
+      "name": "Finextra · 2026-09-03",
+      "url": "https://www.finextra.com/newsarticle/48341/amazon-shopping-assistant-now-helps-users-check-if-a-message-is-a-scam?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-02-ai-trade-finance-payoff",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-02T21:22:23.000Z",
+    "headline": "AI reduces due diligence cost for trade finance, reviving small-company lending",
+    "plain_english": "Banks historically avoided lending against international trade receivables (30–90 day payment cycles) for small firms because manual credit checks and paperwork verification was too costly. AI can now automate due diligence, making sub-$1M trade loans profitable again for regional banks.",
+    "why_it_matters": "Supply-chain finance, long dominated by large corporates, now unlocks for SMEs. Regional banks and fintech platforms will compete on speed and cost, creating new wholesale lending revenue streams and reducing SME working-capital drag.",
+    "jargon": [
+      {
+        "term": "trade receivables financing",
+        "def": "Lending against invoices or payment orders owed by overseas buyers; lender holds collateral until buyer pays."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-02",
+      "url": "https://www.pymnts.com/loans/working-capital/2026/ai-could-make-small-trade-loans-pay-off-again/"
+    }
+  },
+  {
+    "id": "2026-09-02-broadcom-ai-labs-growth",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-02T22:21:45.000Z",
+    "headline": "Broadcom reports strong fiscal 2028 guidance, buoyed by AI lab infrastructure demand",
+    "plain_english": "Broadcom delivered robust earnings guidance for FY 2028 despite softer current-quarter revenue forecast. CEO attributed upside to accelerating demand from AI labs (hyperscalers and research orgs) for semiconductor and networking infrastructure.",
+    "why_it_matters": "BFSI CIOs budgeting for on-premises AI infrastructure should expect sustained chip and interconnect cost inflation through 2028. Cloud hosting will remain cheaper for non-core AI workloads; private AI infrastructure ROI depends on high-utilization models.",
+    "source": {
+      "name": "CNBC · 2026-09-02",
+      "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
+    }
+  },
+  {
     "id": "2026-09-02-uk-banks-collateral-risk",
     "category": "insight",
     "jurisdiction": "UK",
@@ -1093,50 +1127,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-28",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/enterprises-tap-the-brakes-on-tech-budgets-while-demanding-ai-roi/"
-    }
-  },
-  {
-    "id": "2026-08-28-interop-stablecoin-competition",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-28T20:48:38Z",
-    "headline": "Stablecoin interoperability faces tension between technical standards and competitive interests",
-    "plain_english": "Banks, card networks, stablecoin issuers, and blockchain operators all claim to support cross-chain interoperability, but each is simultaneously competing for control and lock-in. Technical progress is outpaced by strategic jockeying.",
-    "why_it_matters": "Fragmented stablecoin ecosystems limit network effects. BFSI firms betting on stablecoin settlement should pressure consortiums for genuine interoperability standards; current trajectory favors walled gardens, not universal rails.",
-    "source": {
-      "name": "PYMNTS · 2026-08-28",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/this-week-in-stablecoins-interoperability-vs-competing-interests/"
-    }
-  },
-  {
-    "id": "2026-08-27-b2b-software-roi-transparency-pricing",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-27T20:47:17.000Z",
-    "headline": "B2B software vendors face pricing pressure as AI automates customer ROI measurement",
-    "plain_english": "Software vendors traditionally capture value by making benefits (cost savings, efficiency gains) hard to measure by customers. AI-powered analytics now let customers quantify ROI independently, eroding vendor pricing power and bundling leverage.",
-    "why_it_matters": "BFSI software procurement teams can demand outcome-based pricing and transparent ROI metrics; reduces lock-in on legacy platforms and accelerates evaluation of AI-native alternatives with measurable cost/revenue impact.",
-    "stat_value": "Unknown",
-    "stat_label": "Vendors with ROI obfuscation losing negotiating leverage to AI transparency tools",
-    "source": {
-      "name": "PYMNTS · 2026-08-27",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/b2b-pricing-power-changes-when-software-can-prove-its-own-roi/"
-    }
-  },
-  {
-    "id": "2026-08-27-llm-confabulation-audit",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-27T04:00:00.000Z",
-    "headline": "LLM-generated autobiography audit finds scene-level confabulation rates measurable",
-    "plain_english": "First quantified audit: LLM asked to write someone's life generates plausible scenes that are factually false (measurable against ground-truth records). Confabulation is not random—it's coherent and hard to detect without external validation.",
-    "why_it_matters": "For BFSI compliance: if LLMs generate coherent false narratives in summarization, transcription, or historical reconstruction, detection requires external ground-truth. Manual spot-checks miss systematic bias. Affects KYC, AML reporting, audit trails.",
-    "source": {
-      "name": "arXiv · 2026-08-27",
-      "url": "https://arxiv.org/abs/2608.23640"
     }
   },
   {
@@ -1673,6 +1663,210 @@
     "source": {
       "name": "Bloomberg · 2026-08-23",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVjVLTTFEZzVNaE9RQmNUNEd4Q0k5ZXF6UDJZYVdLTGdZWU1PR3FTZXBUWlRmdXptZkc4dXE5SEZoLS1ZLXVBbHA0T2x6VTc3X1U5MFlORXJOdzRNT3ZZNU9BTVNUN19teWRkLTZlYXl2UG5xNXMwOGxpWU1nQk9iTkFOd3NvdURpbFZJNmw0cS02RVgw?oc=5"
+    }
+  },
+  {
+    "id": "2026-08-31-regulation-data-center-energy",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-31T17:32:02Z",
+    "headline": "US political pressure mounts on communities opposing AI data center expansion",
+    "plain_english": "Trump and Republican leaders are criticizing local communities blocking AI data center construction, citing economic and geopolitical risks. Signals federal push to override local objections to power-hungry AI infrastructure.",
+    "why_it_matters": "BFSI firms planning AI capex (training, inference clusters) face shifting regulatory landscape around siting and energy. Federal support for data center build-out could enable lower-cost on-premises or co-location infra, reshaping vendor economics.",
+    "source": {
+      "name": "CNBC · 2026-08-31",
+      "url": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html"
+    }
+  },
+  {
+    "id": "2026-08-30-mas-t-bill-auction",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-08-30T14:33:29Z",
+    "headline": "MAS announces 6-month T-bill auction; Singapore bond issuance continuing regular cadence",
+    "plain_english": "Monetary Authority of Singapore issued new 6-month Treasury bill issuance via auction—routine financial infrastructure operation. Signals stable liquidity management and continued confidence in Singapore's debt markets amid global trade volatility.",
+    "why_it_matters": "Background signal: MAS continues normal operations; no emergency liquidity measures or market stress. Provides baseline for Singapore's BFSI operating environment; relevant for APAC-focused risk teams assessing regional financial stability.",
+    "source": {
+      "name": "MAS Singapore · 2026-08-30",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXg3WU9kYldIMkduY1p6aENoS0hIdFE0dkhDSlJrMFdzaF9GS2c5clVod1RoNXBTY3ZyaUNDdW5rNllvMGFrUTg4bXZXXzlpZVNyNnhaSHdzcUUzTmJ3NDRyeFhmN3o4UGZrdHYzZFFMbk5KanIzcXU2cEdFa0h4cUF0eEdfOVJnd3Z6blJWalo2cGIyRzl0TzY2eTJRcEhGYnlfZmllV3lzMnVGd3g4a1MtRGw1QmxXelpCUTJNTVV0b0I0"
+    }
+  },
+  {
+    "id": "2026-08-31-td-tokenized-payments-agora",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-31T16:23:00Z",
+    "headline": "TD Bank executes real USD tokenized payment via Project Agorá platform",
+    "plain_english": "TD completed a live test moving real USD through Project Agorá, a tokenized settlement platform. Signals major bank moving from pilot to operational testing of blockchain-based payment infrastructure.",
+    "why_it_matters": "Real-money execution on tokenized rails reduces settlement risk and latency; if successful at scale, disrupts correspondent banking and liquidity management models BFSI has relied on for decades.",
+    "jargon": [
+      {
+        "term": "tokenized settlement",
+        "def": "Assets represented as blockchain tokens; trades settle on-chain without intermediaries."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-31",
+      "url": "https://www.finextra.com/newsarticle/48326/td-tests-tokenised-payments-through-project-agor?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-08-31-shinhan-visa-stablecoin",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-08-31T00:01:00Z",
+    "headline": "Shinhan Financial Group signs MOU with Visa for stablecoin platform and AI payments",
+    "plain_english": "South Korea's Shinhan Financial Group committed to Visa's new stablecoin platform and will explore AI-driven payment models. This marks a major regional bank's formal adoption of stablecoin infrastructure for institutional use.",
+    "why_it_matters": "Signals APAC mega-bank willingness to embed stablecoins and AI into payment rails; may accelerate similar commitments from peers in Japan, Singapore, Hong Kong.",
+    "jargon": [
+      {
+        "term": "Stablecoin",
+        "def": "Cryptocurrency pegged to a fiat asset (e.g., USD) to minimize volatility; used for cross-border settlements."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-08-31",
+      "url": "https://www.finextra.com/newsarticle/48323/south-koreas-shinhan-signs-for-visa-stablecoin-platform?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "scale": {
+      "metric": "customers",
+      "value": "Shinhan ~30M retail, 500K+ SMEs"
+    }
+  },
+  {
+    "id": "2026-08-31-docsie-ai-comparison",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-31T00:25:16Z",
+    "headline": "Docsie launches AI-powered document and video comparison tool",
+    "plain_english": "Docsie released AI-based content comparison for documents, videos, and knowledge bases. Targets document-heavy workflows (compliance, contracts, training materials).",
+    "why_it_matters": "Document-centric AI tools proliferate; BFSI teams evaluating for regulatory filings, AML/KYC comparison, or contract review should benchmark against emerging competitors.",
+    "source": {
+      "name": "The National Law Review · 2026-08-31",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxRQ1FkTFJaeWNkaU9aUUQtMk5tazBUdHpqak5ta3FCdG52Yk1iMjdWekgydmZzTGZlYlAwMGlFWUJjMkxLb1QyblJQdEZ6bHU1bFR6dTdHRXJadU1KakYxNUJmLUs1MWdsWW91ZjJ3VWhlVTNzOGs2SmhSVUNrNnJ5YzhOYWtnMW9CSVgzUV9yOUJTWThhVWQwcGtzd0hKTkxUeHBiNVktMWt4cWhzVjhVQ0loWmY"
+    }
+  },
+  {
+    "id": "2026-08-28-a16z-hardware-fund",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-28T18:46:14Z",
+    "headline": "Andreessen Horowitz launches $1.1 billion AI hardware fund to address chip supply constraints",
+    "plain_english": "a16z raised $1.1B for its Machine Age Fund to invest in founders building AI infrastructure and custom AI hardware. Targets the global bottleneck in GPU/accelerator availability constraining AI model deployment and training.",
+    "why_it_matters": "Signals major VC bet that bespoke AI hardware (not just Nvidia) will unlock value. Banks relying on third-party AI inference will benefit if fund's portfolio reduces hardware scarcity and vendor lock-in.",
+    "amount": "$1.1B",
+    "round": "Fund I",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/andreessen-horowitz-targets-ai-supply-crunch-with-new-1-1-billion-hardware-fund/"
+    }
+  },
+  {
+    "id": "2026-08-30-caterpillar-ai-deployment",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-30T15:00:00Z",
+    "headline": "Caterpillar applies mining automation playbook to enterprise AI rollout",
+    "plain_english": "Caterpillar is leveraging three decades of autonomous equipment deployment in remote mining sites to inform how it scales AI across operations—focusing on field-tested reliability, minimal supervision, and fail-safe design patterns proven in harsh, unforgiving environments.",
+    "why_it_matters": "Heavy industry's proven ops model for autonomous systems (mining trucks, drilling rigs) now blueprinting corporate AI governance; signals shift from lab-to-lab AI to industrial-grade deployment discipline—relevant for risk-averse BFSI adopters seeking real-world operational patterns.",
+    "source": {
+      "name": "TechCrunch · 2026-08-30",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/"
+    }
+  },
+  {
+    "id": "2026-08-29-shift-salesforce-ai-battleground",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-08-29T13:00:01Z",
+    "headline": "Salesforce signals AI battleground has shifted from models to workflow integration",
+    "plain_english": "Salesforce's recent earnings revealed that the next wave of AI value in enterprise software is not raw model capability but seamless agent integration into existing business processes—marking a strategic pivot from 'foundation model arms race' to 'enterprise workflow.'",
+    "why_it_matters": "BFSI AI teams should pivot from chasing frontier LLM benchmarks to embedding agents into core operations (trade settlement, compliance workflows, customer onboarding). Execution beats model quality.",
+    "jargon": [
+      {
+        "term": "Agent",
+        "def": "An AI system that autonomously takes actions (run queries, execute trades, file docs) based on goals, not just generate text."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-08-29",
+      "url": "https://www.cnbc.com/2026/08/29/op-ed-salesforce-revealed-next-battleground-in-ai-its-not-models.html"
+    }
+  },
+  {
+    "id": "2026-08-28-bis-tokenized-deposits",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-28T21:00:43Z",
+    "headline": "BIS chief backs tokenized deposits over stablecoins for digital payments infrastructure",
+    "plain_english": "Bank for International Settlements General Manager Pablo Hernández de Cos said tokenized deposits (bank-issued digital money on blockchain) are more likely than stablecoins to function as money. Signal: central banks view tokenized bank liabilities, not private crypto, as the plumbing for next-gen payments.",
+    "why_it_matters": "Shapes regulatory stance on CBDCs and tokenized settlement. Banks holding deposits as tokenized assets vs. stablecoins shifts competitive advantage toward traditional banking infrastructure and away from crypto-native payment models.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Bank deposits converted to digital tokens on blockchain; issued and backed by licensed banks, not private entities."
+      },
+      {
+        "term": "Stablecoins",
+        "def": "Cryptocurrencies pegged to fiat currency or reserves; issued by private firms, not central banks or licensed depositories."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/digital-payments/2026/bis-general-manager-says-tokenized-deposits-beat-stablecoins-digital-payments/"
+    }
+  },
+  {
+    "id": "2026-08-28-interop-stablecoin-competition",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-28T20:48:38Z",
+    "headline": "Stablecoin interoperability faces tension between technical standards and competitive interests",
+    "plain_english": "Banks, card networks, stablecoin issuers, and blockchain operators all claim to support cross-chain interoperability, but each is simultaneously competing for control and lock-in. Technical progress is outpaced by strategic jockeying.",
+    "why_it_matters": "Fragmented stablecoin ecosystems limit network effects. BFSI firms betting on stablecoin settlement should pressure consortiums for genuine interoperability standards; current trajectory favors walled gardens, not universal rails.",
+    "source": {
+      "name": "PYMNTS · 2026-08-28",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/this-week-in-stablecoins-interoperability-vs-competing-interests/"
+    }
+  },
+  {
+    "id": "2026-08-27-b2b-software-roi-transparency-pricing",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-27T20:47:17.000Z",
+    "headline": "B2B software vendors face pricing pressure as AI automates customer ROI measurement",
+    "plain_english": "Software vendors traditionally capture value by making benefits (cost savings, efficiency gains) hard to measure by customers. AI-powered analytics now let customers quantify ROI independently, eroding vendor pricing power and bundling leverage.",
+    "why_it_matters": "BFSI software procurement teams can demand outcome-based pricing and transparent ROI metrics; reduces lock-in on legacy platforms and accelerates evaluation of AI-native alternatives with measurable cost/revenue impact.",
+    "stat_value": "Unknown",
+    "stat_label": "Vendors with ROI obfuscation losing negotiating leverage to AI transparency tools",
+    "source": {
+      "name": "PYMNTS · 2026-08-27",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/b2b-pricing-power-changes-when-software-can-prove-its-own-roi/"
+    }
+  },
+  {
+    "id": "2026-08-27-llm-confabulation-audit",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-27T04:00:00.000Z",
+    "headline": "LLM-generated autobiography audit finds scene-level confabulation rates measurable",
+    "plain_english": "First quantified audit: LLM asked to write someone's life generates plausible scenes that are factually false (measurable against ground-truth records). Confabulation is not random—it's coherent and hard to detect without external validation.",
+    "why_it_matters": "For BFSI compliance: if LLMs generate coherent false narratives in summarization, transcription, or historical reconstruction, detection requires external ground-truth. Manual spot-checks miss systematic bias. Affects KYC, AML reporting, audit trails.",
+    "source": {
+      "name": "arXiv · 2026-08-27",
+      "url": "https://arxiv.org/abs/2608.23640"
     }
   },
   {
@@ -8155,22 +8349,6 @@
     }
   },
   {
-    "id": "2026-08-03-big-tech-anthropic-openai-stakes-earnings-distortion",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T22:48:18Z",
-    "headline": "Big Tech earnings inflated by private AI company stakes; underlying revenue story less bullish",
-    "plain_english": "Analysis shows Big Tech firms (Google, Amazon, Microsoft) are reporting significant unrealized investment gains from stakes in OpenAI and Anthropic. Stripping out these gains reveals underlying enterprise AI adoption is slower and less profitable than headline earnings suggest.",
-    "stat_value": "Significant portion of Q2 earnings",
-    "stat_label": "attributable to private AI investment gains",
-    "why_it_matters": "BFSI CIOs should discount vendor AI roadmaps and forecasts; vendors' own AI monetization remains unproven and dependent on mark-ups of private holdings.",
-    "source": {
-      "name": "CNBC · 2026-08-03",
-      "url": "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html"
-    }
-  },
-  {
     "id": "2026-08-06-google-ai-org-shake-up",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8477,34 +8655,6 @@
     }
   },
   {
-    "id": "2026-08-03-palantir-q2-earnings-blowout",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-03T22:47:54Z",
-    "headline": "Palantir posts blowout Q2, raises guidance; U.S. commercial revenue surges 150%",
-    "plain_english": "Palantir beat Q2 earnings expectations and raised full-year revenue guidance, driven by U.S. commercial revenue jumping nearly 150%. The AI software company also posted $1 billion profit for the quarter, signalling strong enterprise demand for its data analytics and AI platforms.",
-    "why_it_matters": "Marks first major BFSI-adjacent software vendor to demonstrate at-scale commercial AI monetization; likely to reset market expectations for enterprise AI ROI and trigger copycat pricing models.",
-    "source": {
-      "name": "CNBC · 2026-08-03",
-      "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html"
-    }
-  },
-  {
-    "id": "2026-08-03-paymentus-q2-billing-revenue",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-04T00:35:07Z",
-    "headline": "Paymentus posts record Q2 revenue; service providers invest in billing experience",
-    "plain_english": "Bill payment platform Paymentus reported record Q2 revenue as service providers (utilities, telcos, healthcare) prioritized customer experience in billing workflows. CEO cited focus on customer loyalty as driver of growth.",
-    "why_it_matters": "Reflects continued enterprise appetite for customer-facing fintech infrastructure; validates market thesis that end-user experience in payments is discretionary spend priority.",
-    "source": {
-      "name": "PYMNTS · 2026-08-04",
-      "url": "https://www.pymnts.com/earnings/2026/paymentus-revenue-surges-as-businesses-seek-to-deliver-smooth-billing-experiences/"
-    }
-  },
-  {
     "id": "2026-08-04-shift-shadow-ai-banks-compliance",
     "category": "shift",
     "jurisdiction": "US",
@@ -8542,40 +8692,6 @@
     "source": {
       "name": "TechCrunch · 2026-08-04",
       "url": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/"
-    }
-  },
-  {
-    "id": "2026-08-03-frontier-labs-trump-ai-safety-meeting",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-03T23:26:37Z",
-    "headline": "Meta, Anthropic, Google, OpenAI to meet Trump officials on AI safety testing",
-    "plain_english": "Frontier AI labs (Meta, Anthropic, Google, OpenAI) are scheduled to meet with Trump administration officials to discuss AI safety testing protocols and governance frameworks. This marks formal U.S. government engagement with private AI labs on standardized evaluation.",
-    "why_it_matters": "Signals potential shift toward industry-led AI safety governance under Trump admin; outcomes could reshape regulatory approach to AI validation and certification in BFSI.",
-    "source": {
-      "name": "Reuters · 2026-08-03",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObWVNalU0cV9OY2Q0RHFkdFJtakZJRTdzV1BiUDVvamY3RlVRX3ZydGl5YnAzU2dxQldBTVVMMW1wMWl0ekI1eXZJdm84bjBtUFBZc2JBeVJfblJEMVhDZGs4UWpaZXZTTUQtYy1QVFVsYmxsUG1jVHZTd2VFWEJXV2FlNXg4ZVZmRUI5SWpxMWo2cGFTT0hWRUJmNUpyaXZFRnRISnhvNy1YUQ"
-    }
-  },
-  {
-    "id": "2026-08-03-ai-voice-agents-retail-sales",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-03T23:12:56Z",
-    "headline": "Voice-based AI agents power retail sales conversations; GPT-Realtime moves chatbots to close deals",
-    "plain_english": "Retail deployments of real-time voice AI (built on OpenAI's GPT-Realtime) are enabling AI agents to conduct natural sales conversations, ask probing questions, and adapt responses like human floor associates. Early systems are closing transactions, not just answering FAQs.",
-    "why_it_matters": "Demonstrates voice AI is moving from customer service to revenue-generating workflows; BFSI should expect similar migration in wealth advice, lending origination, and trading client interaction.",
-    "jargon": [
-      {
-        "term": "GPT-Realtime",
-        "def": "OpenAI model variant optimized for low-latency voice conversations, enabling real-time back-and-forth dialogue without perceptible lag."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-03",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-voice-agents-take-over-the-retail-sales-floor/"
     }
   },
   {
@@ -8627,46 +8743,6 @@
     }
   },
   {
-    "id": "2026-08-03-palantir-karp-frontier-labs-critique",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T22:20:56Z",
-    "headline": "Palantir CEO renews attack on frontier AI labs as untrustworthy; Enterprise strategy diverges",
-    "plain_english": "Palantir CEO Alex Karp escalated criticism of frontier AI labs (OpenAI, Anthropic, Google), claiming they are extracting value and attempting to create dependency. The contrast signals a strategic divergence: enterprise software vendors building closed, proprietary AI systems vs. open-weight frontier labs.",
-    "why_it_matters": "Signals growing enterprise caution about relying on frontier labs for critical workloads; reinforces BFSI's preference for vendor-controlled AI stacks and will likely accelerate insourcing of AI capability.",
-    "jargon": [
-      {
-        "term": "frontier labs",
-        "def": "AI research companies (OpenAI, Anthropic, Google DeepMind) that develop cutting-edge large language models and release them to the market."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-03",
-      "url": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html"
-    }
-  },
-  {
-    "id": "2026-08-03-sponsor-banks-deposit-flexibility",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T23:28:06Z",
-    "headline": "Sponsor banks testing deposit-agnostic model; BaaS playbook splinters",
-    "plain_english": "Banking-as-a-service sponsor banks are experimenting with decoupled deposit and lending operations, allowing deposits to be managed independently from account issuance and lending. Latest earnings suggest traditional vertical integration of BaaS model is fragmenting.",
-    "why_it_matters": "Signals architectural shift in fintech infrastructure layer; will enable modular BFSI stacks and reduce deposit liability concentration at sponsor banks, reshaping capital and liquidity management.",
-    "jargon": [
-      {
-        "term": "Banking-as-a-service (BaaS)",
-        "def": "Sponsor bank provides deposit, payments, lending and compliance infrastructure to fintech platforms under regulated partnership."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-03",
-      "url": "https://www.pymnts.com/news/banking/2026/sponsor-banks-discover-that-deposits-dont-have-to-sit-still/"
-    }
-  },
-  {
     "id": "2026-08-04-deployment-amex-gbt-travel-ai",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8678,60 +8754,6 @@
     "source": {
       "name": "FF News · 2026-08-04",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRkEyMXJzeXJfbnBJelhlRzJQUFhzQkNFcDZvbkdEcklTbUNuOW14OVFGNzRDdjdidjMzQk1MNlIwbi01clpCZkRRZnA5emlIMjhHWXVFUWxDOFJtcjQ3SXcwRWVHUTZhTnZ0a1lQclJWLU5oWC1VNTBhdGYyQ3ZIZWJ4M0FQcmN1MGxnOTY5Tk9LWHBKWVEySml3ZDkzQnBMbXROR0N5MUJKNVMteXNLYzdFSEtTUGhTampIQg"
-    }
-  },
-  {
-    "id": "2026-08-04-bbva-ai-agents-contact-centre",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-04T00:01:00Z",
-    "headline": "BBVA deploys AI agents in Italian, German contact centres; cuts handling time 15%",
-    "plain_english": "BBVA's contact centre teams in Italy and Germany built and deployed two generative AI assistants that reduced average handling time for common customer enquiries about products, services and procedures by more than 15%, speeding resolution of routine questions.",
-    "why_it_matters": "Demonstrates that in-house AI agent development by frontline teams (not just engineering) can deliver measurable operational gains; model likely to spread across European retail banking.",
-    "jargon": [
-      {
-        "term": "generative AI assistant",
-        "def": "AI system trained to understand customer queries and generate natural-language responses without pre-scripted answers."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-04",
-      "url": "https://www.finextra.com/newsarticle/48183/bbva-call-centre-staff-develop-and-deploy-ai-agents-to-speed-up-response-times"
-    }
-  },
-  {
-    "id": "2026-08-04-google-pay-gemini-india",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-08-04T00:01:00Z",
-    "headline": "Google embeds Gemini AI assistant into Google Pay in India for spending insights",
-    "plain_english": "Google is integrating its Gemini AI assistant into Google Pay in India, allowing users to ask the payments app about spending patterns and get natural-language insights into their transaction history.",
-    "why_it_matters": "First major fintech player to embed conversational AI for personal finance insights at scale in emerging market; likely to drive adoption wave among Indian digital wallet users.",
-    "jargon": [
-      {
-        "term": "Gemini",
-        "def": "Google's large language model (AI system) that can understand and generate human-like text across various tasks."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-04",
-      "url": "https://www.finextra.com/newsarticle/48186/google-in-india-embeds-ai-into-google-pay"
-    }
-  },
-  {
-    "id": "2026-08-03-mid-market-payments-platforms-bank-earnings",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-03T22:11:32Z",
-    "headline": "Banks reposition payments infrastructure as profit centre for mid-market; earmark as product, not utility",
-    "plain_english": "Recent bank earnings show major institutions shifting payments and treasury platforms from infrastructure layer to standalone commercial product for mid-market corporate clients. Banks are now pricing and positioning payments as value-add service rather than commodity backend.",
-    "why_it_matters": "Indicates major banks are recapturing fintech-adjacent revenue streams; mid-market customers increasingly expect integrated payments APIs, not third-party integrations. Reshapes competitive dynamics for standalone payments vendors.",
-    "source": {
-      "name": "PYMNTS · 2026-08-03",
-      "url": "https://www.pymnts.com/news/banking/2026/earnings-show-banks-chasing-mid-market-with-payments-platforms/"
     }
   }
 ]
