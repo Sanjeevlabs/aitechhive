@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-09-08-beijing-50b-bank-insurer-capital",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-09-08T14:23:42.000Z",
+    "headline": "Beijing announces $50B+ capital injection into banks and insurers to stabilize growth",
+    "plain_english": "China's government will inject over $50 billion into Chinese banks and insurers to shore up lending capacity and manage economic slowdown. Direct state recapitalization signals heightened systemic risk concerns in Beijing's eyes.",
+    "why_it_matters": "Large-scale state recapitalization typically precedes either a credit crackdown or a widening of asset-quality problems. BFSI institutions with China exposure face counterparty or market risk if stimulus fails to restore growth. Regulators globally will monitor spillover effects.",
+    "source": {
+      "name": "WSJ · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
+    }
+  },
+  {
+    "id": "2026-09-08-fca-novatrust-asset-enforcement",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-09-08T14:20:07.000Z",
+    "headline": "FCA enforcement action against Novatrust Asset signals tightening oversight of unregulated fintech platforms",
+    "plain_english": "FCA published enforcement details on Novatrust Asset, an unregulated investment platform. Action underscores FCA's focus on closing regulatory gaps in online asset platforms, many of which use AI recommendation engines without proper governance.",
+    "why_it_matters": "UK regulator is actively policing unauthorized platforms offering AI-driven advice or trading. BFSI firms building AI advisory tools must ensure FCA authorization and governance; using third-party AI without proper Model Risk Management audits is now a visible enforcement target.",
+    "source": {
+      "name": "FCA · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jM0ktVllPMHc3b0ZQMVd1Q1VVMU91Um9CaXBGQW5PMWhIUDhvMXo0SzdzNHlHTTl2bGM3VTN0aTh0S2pBdmc1ZGZ4RlU2LTlwWGpiS29Ed2dFN3hteUU4dHNB"
+    }
+  },
+  {
     "id": "2026-09-07-law-schools-ban-ai",
     "category": "regulation",
     "jurisdiction": "US",
@@ -118,37 +146,17 @@
     }
   },
   {
-    "id": "2026-09-05-fed-blackout-banker-meetings",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-09-08-visa-stablecoin-working-capital",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-05T19:32:33.000Z",
-    "headline": "Federal Reserve governors' calendars reveal scheduled meetings with bankers during blackout windows",
-    "plain_english": "Bloomberg reported that Fed officials held calendar slots for banker meetings during periods when Fed staff typically restrict external contact. Raises concerns about regulatory capture and independence of monetary policy communications.",
-    "why_it_matters": "Compliance and IR teams must document all Fed contact windows; tighter blackout enforcement could restrict treasury and capital planning workflows tied to Fed signals.",
+    "published_at": "2026-09-08T14:44:46.000Z",
+    "headline": "Visa launches on-chain lending program for stablecoin card programs using VisaNet settlement data",
+    "plain_english": "Visa launched a platform that combines settlement data from VisaNet with on-chain credit infrastructure to help stablecoin card programs and fintechs access working capital. Lenders use payment history to underwrite on-chain loans in real time.",
+    "why_it_matters": "Traditional payment rails (Visa/Mastercard) are merging with on-chain liquidity pools. This creates new credit-risk vectors: lenders using immutable settlement data for undercollateralized lending. Risk officers need playbooks for contagion if stablecoin collateral volatility triggers margin calls.",
     "source": {
-      "name": "Bloomberg · 2026-09-05",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNanFSTGxJMTlOWjlvem12eHVuSXdUcGpWbjdndWhDMUtpWkZnaGRpSWFmblZUWG5JZU1MRVdoM1BCR0RPRm9DZkoxeHRuSHdpSXd6WWk3eGtLM2lDTHFGTVFheFJXd2tvWHl2bG1rdkpvVERGUVlkanExS1RPa1k4UmpWMDVKN011RlB2dGdXbXpsT2tpNU45UVBsU2NQSlNrVmRaY3FrVXlxY0hU"
-    }
-  },
-  {
-    "id": "2026-09-05-treasury-iran-egypt-bank-sanction",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-05T12:32:09Z",
-    "headline": "US Treasury targets Egyptian bank in Iran sanctions crackdown",
-    "plain_english": "A major Egyptian lender has been caught in Treasury Department sanctions tied to Iran sanctions enforcement. The move affects cross-border payment corridors used by Middle Eastern and African banks.",
-    "why_it_matters": "BFSI sanctions compliance teams must re-audit correspondent bank relationships and AI-powered transaction screening systems. False-negative risk on Iran-linked transactions just increased; compliance vendors will see demand spike.",
-    "jargon": [
-      {
-        "term": "Correspondent banking",
-        "def": "Relationship where one bank settles payments on behalf of another bank in a different jurisdiction, common for cross-border flows."
-      }
-    ],
-    "source": {
-      "name": "Wall Street Journal · 2026-09-05",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTGpiVi1ZdE5JNi1hT25MLXBWOGZMWEpUczRhZG1ySTNqMFBFdVhyN3ViY2EtVlg1SnIxRmNEa28wcU5mMkpTNGhxVEdVT1ItcU1rNDU3OUhOb25fclBOS25Gek1hbUhMcVFidHlaMmdNa2xTSTFpZFZMMDFJZGI1TXY1c1Y4TVg5MEVZdUFNa2l6RWVPSmU1ajhTM0Q4T1BTaDBTVTdRN2hYVm9TZU5n?oc=5"
+      "name": "PYMNTS · 2026-09-08",
+      "url": "https://www.pymnts.com/visa/2026/visa-unlocks-working-capital-for-stablecoin-linked-card-programs-and-fintechs/"
     }
   },
   {
@@ -300,21 +308,19 @@
     }
   },
   {
-    "id": "2026-09-04-deployment-iit-madras-multilingual-ai-tutor",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "low",
-    "published_at": "2026-09-04T14:30:15Z",
-    "headline": "IIT Madras launches AI tutor supporting 22 Indian languages",
-    "plain_english": "Indian Institute of Technology Madras deployed an AI tutoring system fluent in 22 Indian languages, addressing educational access gaps. Signals India's push for localized AI deployment beyond English.",
-    "why_it_matters": "RBI-regulated fintech and banking institutions must localize AI compliance, KYC, and support systems; monolingual models will struggle in regulated Indian market.",
-    "scale": {
-      "metric": "languages",
-      "value": "22"
-    },
+    "id": "2026-09-08-mistral-series-d-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-09-08T14:45:21.000Z",
+    "headline": "Mistral raises €3B in record EU funding round, valuation hits €21B",
+    "plain_english": "France-based AI startup Mistral closed a €3 billion Series D (approx. $3.5B), led by Samsung, Scaleup Europe, and PSG Equity. It's the largest equity raise ever by a European tech company. Sovereign AI (non-US models) is now a scaled business.",
+    "why_it_matters": "EU AI Act compliance and geopolitical autonomy drive massive capital into alternatives to US/China labs. BFSI will face vendor choice: adopt US frontier models or back European players with regulatory tailwinds but less mature production track records.",
+    "amount": "€3B",
+    "round": "Series D",
     "source": {
-      "name": "India Today · 2026-09-04",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQd3ZtRXVXOU5CcHNLUXNfN3VlZTZ5OUJQdTVfMU1CSkFocERXTUFxT2ZJZGQ3bGxSUlVDUEtNOEpTcldmX3kzcmc1dFZENjcyUHIwc3FtV2lib1psYl9USEMyTlFoTGZraUdnVXFyUm9NN1NOZVVpX2NFY3BCZVdhNDdSRlFkcldmcHk3d2ZubVUtNWV5cWp6czJxaG5iNGxSMXhseUxZVzFrZ04tVS1MdXNsN29HSVhOelgwUjFEYURQRmpManZON3ZTUnEtcWl6UUtWSEF6Qk50bUZpWnVoaUFXdXo"
+      "name": "PYMNTS · 2026-09-08",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mistral-raises-3-billion-dollars-ai-research-record-european-union-funding-round/"
     }
   },
   {
@@ -470,17 +476,45 @@
     }
   },
   {
-    "id": "2026-09-03-fis-embedded-banking",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-09-08-qualcomm-amazon-data-center-ai",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-03T15:40:00.000Z",
-    "headline": "FIS launches Embedded Banking Platform for bank-to-fintech partnerships",
-    "plain_english": "FIS announced Embedded Banking Platform, its first product built to help banks offer banking services via fintechs and third-party apps. Addresses demand for white-label, modular banking APIs for B2B2C distribution.",
-    "why_it_matters": "Competitive response to Fintech-as-a-Service consolidation: enables legacy banks to monetize capabilities through partner networks without full digital rebuild. Expands FIS's TAM into embedded-finance infrastructure.",
+    "published_at": "2026-09-08T14:43:12.000Z",
+    "headline": "Qualcomm issues Amazon $4B stock warrants for AI datacenter chip partnership",
+    "plain_english": "Qualcomm and Amazon announced a strategic AI infrastructure deal: Amazon gains warrants to buy $4B of Qualcomm stock. Qualcomm is pivoting from handset dominance into datacenter, a market Nvidia has owned. This is Qualcomm's bet to capture AI inference workloads in enterprise and cloud.",
+    "why_it_matters": "BFSI datacenters currently locked into Nvidia for training+inference. Qualcomm's pivot could fracture that monopoly, creating alternative pathways for cost-optimized inference. Risk: vendor lock-in shifts but doesn't vanish; compliance teams must track new supply-chain dependencies.",
     "source": {
-      "name": "Finextra · 2026-09-03",
-      "url": "https://www.finextra.com/pressarticle/110809/fis-rolls-out-embedded-banking-platform"
+      "name": "CNBC · 2026-09-08",
+      "url": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html"
+    }
+  },
+  {
+    "id": "2026-09-08-circle-tazapay-acquisition",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-08T14:32:00.000Z",
+    "headline": "Circle acquires Tazapay, integrates stablecoin settlement into B2B payments",
+    "plain_english": "Stablecoin issuer Circle bought Singapore-based Tazapay, a B2B cross-border payments platform. No financial terms disclosed. Circle is embedding on-chain settlement directly into corporate payment rails—collapsing the correspondent bank layer.",
+    "why_it_matters": "Stablecoin infrastructure is moving upstream: from consumer spend into enterprise payables. BFSI treasury operations face disintermediation risk if stablecoin rails become cheaper/faster than wire. Compliance must model new AML/sanctions scenarios on immutable ledgers.",
+    "source": {
+      "name": "Finextra · 2026-09-08",
+      "url": "https://www.finextra.com/newsarticle/48363/circle-to-buy-singapore-based-cross-border-payments-platform-tazapay?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-08-india-ai-fintech-strategy",
+    "category": "shift",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-09-08T14:27:24.000Z",
+    "headline": "India signals AI as next growth lever after digital payments success, attracting fintech AI investment",
+    "plain_english": "Bloomberg reports India's government and private sector are positioning AI as the follow-on innovation wave after the digital-payment boom (UPI, JAM). Banks and fintechs are racing to deploy AI for credit, fraud, and customer acquisition.",
+    "why_it_matters": "RBI has signaled openness to AI pilots in credit/underwriting. This creates a first-mover advantage for banks willing to deploy AI-driven lending at scale in an under-banked population. Compliance risk: local regulators lack mature guidelines; banks must self-regulate or face future enforcement.",
+    "source": {
+      "name": "Bloomberg · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRzNXUFdPVC1QYjF1dTU2N19UMHBnWDJQRzlqWk80cVB2MV9nNW9qcGZiUV9wWTgyMjUwMFdkaGdxMXZDYnFTY2hUQ0tTY21pSF9HUFF1N1VPN0ViQzVuZ01hRG5XUkFOODNUYjZqVmI1VG9GZDBTWXVkM2hXclNOMFJycFVXVHRWQkpJX29Kdzc0ZmRWLUV2Y2owazlDRmxRU1lkd1RUVGpOc1BfdmNVVDBjRGc"
     }
   },
   {
@@ -600,48 +634,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-04",
       "url": "https://www.pymnts.com/news/investment-tracker/2026/paypal-pauses-venture-capital-portfolio-sale-after-lowball-offers/"
-    }
-  },
-  {
-    "id": "2026-09-04-shift-microsoft-ai-talent-h-sifre",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-04T14:05:07Z",
-    "headline": "H cofounder Laurent Sifre joins Microsoft as AI researcher",
-    "plain_english": "Laurent Sifre, cofounder of H (an AI research org), has joined Microsoft. This signals Microsoft's continued poaching of frontier AI talent to bolster internal research and model capability.",
-    "why_it_matters": "Microsoft-OpenAI parity strategy accelerates; banks standardized on Azure + GPT may face competitive pressure as Microsoft deploys native frontier models.",
-    "source": {
-      "name": "Sifted · 2026-09-04",
-      "url": "https://sifted.eu/articles/exclusive-h-cofounder-laurent-sifre-joins-microsoft/"
-    }
-  },
-  {
-    "id": "2026-09-04-shift-adobe-ceo-transition-chakravarthy",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-04T14:18:49Z",
-    "headline": "Adobe names Anil Chakravarthy as new CEO; Shantanu Narayen steps down",
-    "plain_english": "Adobe announced Anil Chakravarthy as CEO, replacing Shantanu Narayen who exited in March. Chakravarthy's appointment signals strategic reprioritization of Adobe's enterprise and cloud AI roadmap.",
-    "why_it_matters": "Adobe is a top AI platform for BFSI content teams (Firefly, Express). Leadership change may accelerate or pivot generative AI integration; compliance and audit teams should monitor Adobe's regulatory positioning.",
-    "source": {
-      "name": "CNBC · 2026-09-04",
-      "url": "https://www.cnbc.com/2026/09/03/adobe-anil-chakravarthy-ceo.html"
-    }
-  },
-  {
-    "id": "2026-09-04-shift-aci-cranium-microservices",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-03T22:32:12.000Z",
-    "headline": "ACI Worldwide acquires Cranium to add cloud-native card-switch microservices",
-    "plain_english": "Payments infrastructure firm ACI Worldwide has agreed to acquire Cranium Ventures, a privately held developer of cloud-native card payment switching technology, to modernize its own switching architecture and expand cloud capabilities.",
-    "why_it_matters": "Signals shift from monolithic to modular microservices payment switching; enables faster innovation and lower-cost scaling for card processors, a pattern other legacy fintech vendors will feel pressure to replicate.",
-    "source": {
-      "name": "PYMNTS · 2026-09-03",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/aci-worldwide-to-add-microservices-card-switching-through-cranium-acquisition/"
     }
   },
   {
@@ -769,17 +761,17 @@
     }
   },
   {
-    "id": "2026-08-09-research-meetily-open-source",
-    "category": "tool",
+    "id": "2026-09-08-deepmind-alphagenome-atlas",
+    "category": "research",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-08-09T10:30:00Z",
-    "headline": "Meetily offers free, open-source meeting transcription without subscription",
-    "plain_english": "Meetily is a free, open-source tool for transcribing and summarizing virtual meetings using AI, eliminating the need for paid subscription services like Otter or Fireflies. It democratizes access to meeting intelligence for teams avoiding vendor lock-in.",
-    "why_it_matters": "Open-source meeting AI tooling reduces friction for enterprises to integrate conversational AI into knowledge workflows without incremental SaaS costs; compliance teams can audit code and retain data on-premises.",
+    "published_at": "2026-09-08T14:00:15.000Z",
+    "headline": "Google DeepMind releases AlphaGenome Atlas: AI predictions for 9B human DNA variants",
+    "plain_english": "DeepMind published AlphaGenome Atlas, mapping molecular effects of 9 billion single-letter DNA variants across the human genome using neural network predictions. Open-access resource for genomics research and potential pharma/insurance risk modeling.",
+    "why_it_matters": "This is a frontier AI applied to biology, not direct BFSI value—but insurers investing in genetic underwriting or personalized medicine need to track how AI-predicted variant effects change risk models. Regulatory and ethical liability for discriminatory use of genetic AI is emerging.",
     "source": {
-      "name": "Wired · 2026-08-09",
-      "url": "https://www.wired.com/story/meetily-lets-you-transcribe-and-summarize-meetings-without-a-subscription-heres-how/"
+      "name": "Google DeepMind · 2026-09-08",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
     }
   },
   {
@@ -942,23 +934,19 @@
     }
   },
   {
-    "id": "2026-08-28-anthropic-self-improving-ai",
-    "category": "research",
+    "id": "2026-09-08-crypto-hacks-3-6b-losses",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-08-28T19:30:38Z",
-    "headline": "Anthropic researchers demonstrate automated AI systems that improve alignment without human retraining",
-    "plain_english": "Anthropic team showed automated systems that identified and corrected 10 misaligned AI behaviors in parallel, improving performance on all without degrading overall capability. Major step toward self-correcting AI systems that need less human oversight.",
-    "why_it_matters": "Reduces cost and latency of AI safety updates in production systems. Banks deploying LLMs for customer-facing or compliance tasks will benefit from automated alignment checks; accelerates shift to autonomous AI monitoring.",
-    "jargon": [
-      {
-        "term": "Alignment",
-        "def": "AI system's behavior matches intended goals; misaligned = system produces harmful or unexpected outputs despite correct training."
-      }
-    ],
+    "published_at": "2026-09-08T14:13:40.000Z",
+    "headline": "Crypto platforms lost $3.6B to hacks in 18 months despite security audits",
+    "plain_english": "CoinGecko data: cryptocurrency platforms suffered $3.6B in losses to cyberattacks and theft over the last 18 months, even after conducting formal security audits. Breaches often stem from stolen private keys and sophisticated social engineering, not code flaws alone.",
+    "why_it_matters": "Security audit fatigue is real: passing an audit does not eliminate operational security risk. For BFSI entering crypto/stablecoin settlement, this underscores the need for continuous monitoring and insider-threat programs, not point-in-time audits. Regulators will expect higher assurance standards than crypto-native firms deliver.",
+    "stat_value": "$3.6B",
+    "stat_label": "crypto platform losses (18 months)",
     "source": {
-      "name": "TechCrunch · 2026-08-28",
-      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/"
+      "name": "PYMNTS · 2026-09-08",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-platforms-lose-3-6-billion-to-hacks-despite-security-audits/"
     }
   },
   {
@@ -1104,22 +1092,6 @@
     "source": {
       "name": "Industry consensus · 2026-09",
       "url": "https://www.aitechihealth.com"
-    }
-  },
-  {
-    "id": "2026-09-04-insight-ceo-ai-value-realization-gap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-04T13:00:01Z",
-    "headline": "CEOs optimistic on AI returns but most companies still see minimal value",
-    "plain_english": "BCG research shows CEOs increasingly bullish on AI ROI vs. a year ago, yet most enterprises report negligible realized value. High-performer companies move beyond pilots, concentrating investment on fewer deep initiatives.",
-    "why_it_matters": "BFSI leaders: pilot proliferation without focused roadmaps wastes capital. Benchmark your AI value capture against peer consolidation strategies or risk competitive attrition.",
-    "stat_value": "Most companies",
-    "stat_label": "still see minimal AI value despite CEO optimism",
-    "source": {
-      "name": "BCG (via LinkedIn) · 2026-09-04",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObHdYSjNoVGF3TUo0U0lidlh3UUI2NGppbDRDcDUtN0NUZGA1cDljVG84RTVDek12LVBFTHplbmVISUYzZXlKYjZpRnRCS3cwNThRWXBSaGtRYWpsSVNXWFoxQmJrSUFyNDRMM0lsbFpBZ0llS1F6cDYyc2Q1T2tNNzZSUVhFSGQ0NFhNaXNwZ1UyeFo5R1FwMWJwTzYyMkIydVF2TDh3QzJNa2hzT0dWalVHWDk0YzMxSHkzSWY4dDRfbVJLb1lQbmdCSjM"
     }
   },
   {
@@ -1646,6 +1618,150 @@
     "source": {
       "name": "Gates Notes · 2026-08-28",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
+    }
+  },
+  {
+    "id": "2026-09-05-fed-blackout-banker-meetings",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-05T19:32:33.000Z",
+    "headline": "Federal Reserve governors' calendars reveal scheduled meetings with bankers during blackout windows",
+    "plain_english": "Bloomberg reported that Fed officials held calendar slots for banker meetings during periods when Fed staff typically restrict external contact. Raises concerns about regulatory capture and independence of monetary policy communications.",
+    "why_it_matters": "Compliance and IR teams must document all Fed contact windows; tighter blackout enforcement could restrict treasury and capital planning workflows tied to Fed signals.",
+    "source": {
+      "name": "Bloomberg · 2026-09-05",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNanFSTGxJMTlOWjlvem12eHVuSXdUcGpWbjdndWhDMUtpWkZnaGRpSWFmblZUWG5JZU1MRVdoM1BCR0RPRm9DZkoxeHRuSHdpSXd6WWk3eGtLM2lDTHFGTVFheFJXd2tvWHl2bG1rdkpvVERGUVlkanExS1RPa1k4UmpWMDVKN011RlB2dGdXbXpsT2tpNU45UVBsU2NQSlNrVmRaY3FrVXlxY0hU"
+    }
+  },
+  {
+    "id": "2026-09-05-treasury-iran-egypt-bank-sanction",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-05T12:32:09Z",
+    "headline": "US Treasury targets Egyptian bank in Iran sanctions crackdown",
+    "plain_english": "A major Egyptian lender has been caught in Treasury Department sanctions tied to Iran sanctions enforcement. The move affects cross-border payment corridors used by Middle Eastern and African banks.",
+    "why_it_matters": "BFSI sanctions compliance teams must re-audit correspondent bank relationships and AI-powered transaction screening systems. False-negative risk on Iran-linked transactions just increased; compliance vendors will see demand spike.",
+    "jargon": [
+      {
+        "term": "Correspondent banking",
+        "def": "Relationship where one bank settles payments on behalf of another bank in a different jurisdiction, common for cross-border flows."
+      }
+    ],
+    "source": {
+      "name": "Wall Street Journal · 2026-09-05",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTGpiVi1ZdE5JNi1hT25MLXBWOGZMWEpUczRhZG1ySTNqMFBFdVhyN3ViY2EtVlg1SnIxRmNEa28wcU5mMkpTNGhxVEdVT1ItcU1rNDU3OUhOb25fclBOS25Gek1hbUhMcVFidHlaMmdNa2xTSTFpZFZMMDFJZGI1TXY1c1Y4TVg5MEVZdUFNa2l6RWVPSmU1ajhTM0Q4T1BTaDBTVTdRN2hYVm9TZU5n?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-04-deployment-iit-madras-multilingual-ai-tutor",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-09-04T14:30:15Z",
+    "headline": "IIT Madras launches AI tutor supporting 22 Indian languages",
+    "plain_english": "Indian Institute of Technology Madras deployed an AI tutoring system fluent in 22 Indian languages, addressing educational access gaps. Signals India's push for localized AI deployment beyond English.",
+    "why_it_matters": "RBI-regulated fintech and banking institutions must localize AI compliance, KYC, and support systems; monolingual models will struggle in regulated Indian market.",
+    "scale": {
+      "metric": "languages",
+      "value": "22"
+    },
+    "source": {
+      "name": "India Today · 2026-09-04",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQd3ZtRXVXOU5CcHNLUXNfN3VlZTZ5OUJQdTVfMU1CSkFocERXTUFxT2ZJZGQ3bGxSUlVDUEtNOEpTcldmX3kzcmc1dFZENjcyUHIwc3FtV2lib1psYl9USEMyTlFoTGZraUdnVXFyUm9NN1NOZVVpX2NFY3BCZVdhNDdSRlFkcldmcHk3d2ZubVUtNWV5cWp6czJxaG5iNGxSMXhseUxZVzFrZ04tVS1MdXNsN29HSVhOelgwUjFEYURQRmpManZON3ZTUnEtcWl6UUtWSEF6Qk50bUZpWnVoaUFXdXo"
+    }
+  },
+  {
+    "id": "2026-09-03-fis-embedded-banking",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-03T15:40:00.000Z",
+    "headline": "FIS launches Embedded Banking Platform for bank-to-fintech partnerships",
+    "plain_english": "FIS announced Embedded Banking Platform, its first product built to help banks offer banking services via fintechs and third-party apps. Addresses demand for white-label, modular banking APIs for B2B2C distribution.",
+    "why_it_matters": "Competitive response to Fintech-as-a-Service consolidation: enables legacy banks to monetize capabilities through partner networks without full digital rebuild. Expands FIS's TAM into embedded-finance infrastructure.",
+    "source": {
+      "name": "Finextra · 2026-09-03",
+      "url": "https://www.finextra.com/pressarticle/110809/fis-rolls-out-embedded-banking-platform"
+    }
+  },
+  {
+    "id": "2026-09-04-shift-microsoft-ai-talent-h-sifre",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-04T14:05:07Z",
+    "headline": "H cofounder Laurent Sifre joins Microsoft as AI researcher",
+    "plain_english": "Laurent Sifre, cofounder of H (an AI research org), has joined Microsoft. This signals Microsoft's continued poaching of frontier AI talent to bolster internal research and model capability.",
+    "why_it_matters": "Microsoft-OpenAI parity strategy accelerates; banks standardized on Azure + GPT may face competitive pressure as Microsoft deploys native frontier models.",
+    "source": {
+      "name": "Sifted · 2026-09-04",
+      "url": "https://sifted.eu/articles/exclusive-h-cofounder-laurent-sifre-joins-microsoft/"
+    }
+  },
+  {
+    "id": "2026-09-04-shift-adobe-ceo-transition-chakravarthy",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-04T14:18:49Z",
+    "headline": "Adobe names Anil Chakravarthy as new CEO; Shantanu Narayen steps down",
+    "plain_english": "Adobe announced Anil Chakravarthy as CEO, replacing Shantanu Narayen who exited in March. Chakravarthy's appointment signals strategic reprioritization of Adobe's enterprise and cloud AI roadmap.",
+    "why_it_matters": "Adobe is a top AI platform for BFSI content teams (Firefly, Express). Leadership change may accelerate or pivot generative AI integration; compliance and audit teams should monitor Adobe's regulatory positioning.",
+    "source": {
+      "name": "CNBC · 2026-09-04",
+      "url": "https://www.cnbc.com/2026/09/03/adobe-anil-chakravarthy-ceo.html"
+    }
+  },
+  {
+    "id": "2026-09-04-shift-aci-cranium-microservices",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-03T22:32:12.000Z",
+    "headline": "ACI Worldwide acquires Cranium to add cloud-native card-switch microservices",
+    "plain_english": "Payments infrastructure firm ACI Worldwide has agreed to acquire Cranium Ventures, a privately held developer of cloud-native card payment switching technology, to modernize its own switching architecture and expand cloud capabilities.",
+    "why_it_matters": "Signals shift from monolithic to modular microservices payment switching; enables faster innovation and lower-cost scaling for card processors, a pattern other legacy fintech vendors will feel pressure to replicate.",
+    "source": {
+      "name": "PYMNTS · 2026-09-03",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/aci-worldwide-to-add-microservices-card-switching-through-cranium-acquisition/"
+    }
+  },
+  {
+    "id": "2026-08-28-anthropic-self-improving-ai",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-08-28T19:30:38Z",
+    "headline": "Anthropic researchers demonstrate automated AI systems that improve alignment without human retraining",
+    "plain_english": "Anthropic team showed automated systems that identified and corrected 10 misaligned AI behaviors in parallel, improving performance on all without degrading overall capability. Major step toward self-correcting AI systems that need less human oversight.",
+    "why_it_matters": "Reduces cost and latency of AI safety updates in production systems. Banks deploying LLMs for customer-facing or compliance tasks will benefit from automated alignment checks; accelerates shift to autonomous AI monitoring.",
+    "jargon": [
+      {
+        "term": "Alignment",
+        "def": "AI system's behavior matches intended goals; misaligned = system produces harmful or unexpected outputs despite correct training."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-08-28",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/"
+    }
+  },
+  {
+    "id": "2026-09-04-insight-ceo-ai-value-realization-gap",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-04T13:00:01Z",
+    "headline": "CEOs optimistic on AI returns but most companies still see minimal value",
+    "plain_english": "BCG research shows CEOs increasingly bullish on AI ROI vs. a year ago, yet most enterprises report negligible realized value. High-performer companies move beyond pilots, concentrating investment on fewer deep initiatives.",
+    "why_it_matters": "BFSI leaders: pilot proliferation without focused roadmaps wastes capital. Benchmark your AI value capture against peer consolidation strategies or risk competitive attrition.",
+    "stat_value": "Most companies",
+    "stat_label": "still see minimal AI value despite CEO optimism",
+    "source": {
+      "name": "BCG (via LinkedIn) · 2026-09-04",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObHdYSjNoVGF3TUo0U0lidlh3UUI2NGppbDRDcDUtN0NUZGA1cDljVG84RTVDek12LVBFTHplbmVISUYzZXlKYjZpRnRCS3cwNThRWXBSaGtRYWpsSVNXWFoxQmJrSUFyNDRMM0lsbFpBZ0llS1F6cDYyc2Q1T2tNNzZSUVhFSGQ0NFhNaXNwZ1UyeFo5R1FwMWJwTzYyMkIydVF2TDh3QzJNa2hzT0dWalVHWDk0YzMxSHkzSWY4dDRfbVJLb1lQbmdCSjM"
     }
   },
   {
@@ -5686,26 +5802,6 @@
     }
   },
   {
-    "id": "2026-08-09-research-moore-threads-hk-listing",
-    "category": "research",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-09T09:39:56Z",
-    "headline": "China's Moore Threads plans Hong Kong IPO to fund AI chip competition",
-    "plain_english": "Moore Threads, a Chinese AI chip designer, is preparing a Hong Kong listing to raise capital and compete against Nvidia and AMD in AI accelerators. The move reflects Beijing's push for domestic semiconductor sovereignty amid US export controls.",
-    "why_it_matters": "China-designed AI chips entering global markets could circumvent US export restrictions, lower costs for emerging-market AI deployments, and create geopolitical pressure on BFSI firms to audit chip supply chains for sanctions risk.",
-    "jargon": [
-      {
-        "term": "AI accelerators",
-        "def": "Specialized processors (GPUs, TPUs) optimized for training and running large language models; critical bottleneck in AI scaling."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-08-09",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZGhaajNuWXdVelQyN0ZBNzQ3eGhUVkNfVEZxRzNXM1V2WjhKaGYzUFRtUHdFSElOVThVMWphbjZBZGVjNEhwRHJEdHM4QVdvdXJ3dDZza2xLcllFNE1MN1NNWTNKY1I1X012TXJheTlSTjE4VllpWlhHR2ZuOWljQ094MnR5bzFZWGc0TTlCaFRuMjA0cHlVVkFCekV0VWRUeU5NZ04xZXBuS2U3d3JuWA"
-    }
-  },
-  {
     "id": "2026-08-21-insight-fannie-mae-senior-exec-turnover",
     "category": "insight",
     "jurisdiction": "US",
@@ -8140,20 +8236,6 @@
     }
   },
   {
-    "id": "2026-08-09-insight-ai-philanthropy-pledge",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-09T09:30:00Z",
-    "headline": "AI billionaires pledge wealth giveaways amid concerns over follow-through",
-    "plain_english": "A new generation of AI-industry billionaires has announced plans to donate vast fortunes, yet critics question whether pledges without binding legal structures constitute credible commitments. The Giving Pledge model has historically seen delayed or incomplete payouts.",
-    "why_it_matters": "If AI philanthropic pledges remain unfulfilled, it signals that regulatory frameworks—not voluntary commitments—will drive AI safety research funding, compliance, and workforce development in financial services.",
-    "source": {
-      "name": "Wired · 2026-08-09",
-      "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/"
-    }
-  },
-  {
     "id": "2026-08-11-frontier-ai-organoid-neural-networks",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8568,26 +8650,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-09",
       "url": "https://www.pymnts.com/cryptocurrency/2026/senate-clarity-act-draft-seeks-stablecoin-defi-compromise/"
-    }
-  },
-  {
-    "id": "2026-08-09-frontier-irregular-ai-hacks",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-09T11:31:42Z",
-    "headline": "Israeli startup Irregular linked to rogue AI hacks at OpenAI, Anthropic, Meta",
-    "plain_english": "A small Israeli startup named Irregular has been connected to coordinated attacks targeting OpenAI, Anthropic, and Meta, revealing vulnerabilities in AI lab security. Details on attack methods and scope remain limited, but the incident underscores rising threats to frontier AI infrastructure.",
-    "why_it_matters": "AI lab compromises can leak proprietary model weights, training data, or safety research—accelerating access to dangerous capabilities and forcing regulators to tighten critical infrastructure protections for frontier labs.",
-    "jargon": [
-      {
-        "term": "model weights",
-        "def": "Numerical parameters that define how an AI model processes inputs and generates outputs; leaking them can enable others to replicate or reverse-engineer a proprietary system."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-09",
-      "url": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html"
     }
   }
 ]
