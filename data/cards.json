@@ -1,5 +1,45 @@
 [
   {
+    "id": "2026-09-09-regulation-mas-deepfake-safeguards",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-09-09T14:32:57Z",
+    "headline": "MAS outlines bank safeguards against AI-generated deepfake impersonation scams",
+    "plain_english": "Singapore's Monetary Authority issued guidance on how banks must detect and prevent fraud involving synthetic deepfake voice and video impersonations. Banks are required to implement multi-factor authentication and real-time fraud monitoring to catch account takeover attempts.",
+    "why_it_matters": "Sets precedent for APAC regulators on deepfake liability; banks face compliance burden to retrofit legacy channels (phone, video ID verification) with liveness detection and behavioral biometrics.",
+    "jargon": [
+      {
+        "term": "Deepfake",
+        "def": "Synthetic media (video, audio, image) created by AI to impersonate a real person; used here to bypass authentication."
+      }
+    ],
+    "source": {
+      "name": "MAS · 2026-09-09",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQc2FnbnhIaHhGV24yMHZBQk1OQmswd2o3NmxLNG9FUjZIeTg0dWV1ckIteGFrOEtIaFFmLTNxU0gwYS13ZmpFaUd6RnNIaFhMdjNQbnJpbU4yUGl4U19Dd1hrcWN4aVMwdTd6NzJNY2owVURfM3k2RmFBZWRXbXBiWmtiUlVaNFBRVEFNVEZGdVJzbTU5cWVKRzkxVkl3cTRJVHFHWlVpZkJwUkRuUWJNM2o4OTlHYS1MWHlaeTVVZmpTU3ZjZ2c4djNLYTRRUQ"
+    }
+  },
+  {
+    "id": "2026-09-09-regulation-algorithmic-pricing-state-crackdown",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-09T14:28:59Z",
+    "headline": "US states accelerate crackdown on algorithmic pricing across antitrust, consumer protection, and data privacy",
+    "plain_english": "California, Connecticut, Maryland, and New Jersey are enacting patchwork restrictions on dynamic and discriminatory pricing algorithms. Rules target practices that vary prices by customer segment or use personal data; enforcement focuses on transparency and consent.",
+    "why_it_matters": "Fragmented state-level regulation forces fintech and e-commerce firms to maintain separate pricing logic per state; compliance cost rises sharply if federal floor doesn't emerge. Financial services (lending, insurance underwriting) face similar scrutiny on algorithmic discrimination.",
+    "jargon": [
+      {
+        "term": "Algorithmic pricing",
+        "def": "Software that dynamically sets prices based on demand, customer data, or behavior; raises fairness concerns when outcomes differ by protected class."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/legal/2026/states-accelerate-crackdown-on-algorithmic-pricing-raising-compliance-stakes/"
+    }
+  },
+  {
     "id": "2026-09-09-block-occ-trust-bank-charter",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,37 +164,36 @@
     }
   },
   {
-    "id": "2026-09-07-wsj-us-bank-enforcement-action",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-07T00:52:35Z",
-    "headline": "U.S. regulators issue 'Outcast' enforcement action against major bank",
-    "plain_english": "Federal regulators have initiated an enforcement action against a U.S. bank, flagged as 'Outcast' status. Details sparse in headline, but signals active supervisory escalation—likely tied to compliance, risk management, or operational failures.",
-    "why_it_matters": "Enforcement actions trigger immediate capital, governance, and audit overhead; peer banks will face increased examiner scrutiny on similar control gaps.",
+    "id": "2026-09-09-deployment-kapital-125m-business-lending",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-09T14:46:21Z",
+    "headline": "Kapital raises $125M to scale AI-powered SMB lending platform across Mexico, Colombia, Spain, US",
+    "plain_english": "Kapital, a fintech lender serving small businesses, closed $125M funding to expand its proprietary AI engine for credit risk assessment and product personalization. Funding accelerates deployment in underserved markets with limited credit history data.",
+    "why_it_matters": "AI-driven lending enables rapid underwriting in emerging markets where traditional FICO scores unavailable; Kapital's cross-border playbook signals fintech shift toward underbanked SMB segments using alternative data and real-time cash flow analysis.",
+    "scale": {
+      "metric": "markets",
+      "value": "4"
+    },
+    "amount": "$125M",
     "source": {
-      "name": "WSJ · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaGMxSUdvMEJHTUVIS0Vub1V6ME5fUVhDMnNvOFUzNFBVU29CX1BRYVhZWk5LNmNCSUxjR1Q0c01nUDFJQVllandTeExhcjlRdGl4d0F1eFNrT1k2VnhBSHgxUURpaGFjZGR6MXYycG5CUW03RXRESUFHaXR6a2VzQWU5MWEzenVwZ1lIeW5yWXVLYXlrTmduODRISFM3ZGpJbHZCeGNQNWk1MDdhYzRj"
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/kapital-lands-125-million-dollars-scale-ai-powered-business-platform/"
     }
   },
   {
-    "id": "2026-09-06-iran-sanctions-banks-compliance-pressure",
-    "category": "regulation",
+    "id": "2026-09-09-deployment-chime-stride-bank-charter",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-09-06T22:01:55Z",
-    "headline": "U.S. banks face heightened pressure to block Iran-linked transactions amid geopolitical escalation",
-    "plain_english": "American banks are under intensified regulatory scrutiny to detect and block transactions tied to Iran, which uses front companies and shell networks to obscure payments. Compliance complexity and false-positive risk are rising sharply.",
-    "why_it_matters": "Sanctions compliance requires enhanced AML/CFT AI to handle adversarial obfuscation; regulatory expectations for transaction screening accuracy are tightening—banks need more sophisticated ML models and face liability if AI misses hidden flows.",
-    "jargon": [
-      {
-        "term": "AML/CFT",
-        "def": "Anti-money laundering and counter-financing of terrorism—regulatory obligation to detect and block illicit fund flows."
-      }
-    ],
+    "published_at": "2026-09-09T13:42:13Z",
+    "headline": "Chime's Stride acquisition puts consumer fintech on path to bank charter",
+    "plain_english": "Chime, a consumer neobank, acquired Stride Bank to obtain a full banking license. Move signals shift from third-party bank partnership model toward proprietary deposit-taking and lending infrastructure.",
+    "why_it_matters": "Fintech-to-bank trajectory changes regulatory surface: Chime now faces OCC/Fed oversight, capital requirements, and CRA compliance. AI risk management systems must scale to satisfy banking regulators; this model is spreading across fintechs seeking operational control.",
     "source": {
-      "name": "PYMNTS · 2026-09-06",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/iran-war-puts-new-pressure-on-banks-to-police-transactions/"
+      "name": "Reuters · 2026-09-09",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1A2VDh4RlAyWURKeWhoY3VsSHAxUEk1OC13RS15eTY3VGRHbGwybk1xVDJQU09OM0lleUkzZEhhSVJ4bjRCT0FpSTZJcEdRMGo0bUFTZUZMTG5PMlRrN0xtcGdtdU5wX2xkeXF5QU5vaG50WEl4NGp2VEtBcms0Sld0dy1Ob0VSRHdlQld5ZlVmYXRHRGdnSWpVQVNmRjlrbjhMZzY5cWVWTTV4UWZQRDBHZTE"
     }
   },
   {
@@ -296,37 +335,33 @@
     }
   },
   {
-    "id": "2026-09-07-carefull-elder-fraud-prevention",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-09-09-vendor-silver-lake-cegid-silae-merger",
+    "category": "vendor",
+    "jurisdiction": "EU",
     "severity": "med",
-    "published_at": "2026-09-07T15:08:38.000Z",
-    "headline": "Carefull brings neuroscientist to sharpen elder fraud detection AI",
-    "plain_english": "Carefull, a fintech serving older adults, hired Duke neuroscientist Gregory Samanez-Larkin to embed behavioral insights into its fraud-prevention AI—improving detection of cognitive manipulation tactics.",
-    "why_it_matters": "First known hire of neuroscience PhD into fintech fraud team signals shift toward human-cognition modeling in AI; regulators increasingly scrutinize elder exploitation, so this legitimizes approach.",
-    "jargon": [
-      {
-        "term": "behavioral AI",
-        "def": "Machine learning trained on cognitive and psychological patterns, not just transaction data alone."
-      }
-    ],
+    "published_at": "2026-09-09T14:26:10Z",
+    "headline": "Silver Lake merges Cegid and Silae into €10B AI-era software champion",
+    "plain_english": "Silver Lake Partners combined Cegid (business management software) and Silae (payroll/HR platform) to create a unified enterprise software stack. Deal valued at €10 billion; targets SME and mid-market automation with AI-driven workflows.",
+    "why_it_matters": "Consolidation in European enterprise SaaS accelerates AI feature deployment (predictive analytics, RPA, document intelligence) to payroll, finance, and supply-chain workflows. Banks and insurers relying on these vendors will see embedded AI risk controls propagate upstream.",
+    "amount": "€10B",
     "source": {
-      "name": "FF News · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOclVLcElWeEt5OTI0b3pYaUREaW56d3BWR3VBdHU5QVVNcXQzY1gyUE1Lc1QwMmVZWVVXcUJCajFhNjNpcm1QNzhlbU80S3Z6SFp2Y2pXUmxsZWpUX3Z4ZTRoR3ZaSmdFZVNiRXU0dVBCZTRBbGtQbldKenRiUWhNalV6UFRnYUh1d29GMkpVLU1kUQ?oc=5"
+      "name": "CNBC · 2026-09-09",
+      "url": "https://www.cnbc.com/2026/09/09/silver-lake-merges-cegid-silae-ai-software-deal.html"
     }
   },
   {
-    "id": "2026-09-06-palo-alto-ai-cybersecurity-growth",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-06T22:38:44Z",
-    "headline": "Palo Alto Networks projects double-digit growth as AI accelerates cybersecurity spending",
-    "plain_english": "Palo Alto forecasts double-digit revenue growth driven by AI-powered security capabilities. Indicates enterprise BFSI demand for AI-native threat detection and compliance tooling is outpacing traditional security module growth.",
-    "why_it_matters": "Banks are funding AI-augmented security at scale; budget allocation signal shows security ops are treated as strategic capex, not cost centers—shapes vendor selection and internal build-vs-buy decisions.",
+    "id": "2026-09-09-vendor-zeal-10m-loyalty-merchants",
+    "category": "vendor",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-09T14:21:54Z",
+    "headline": "Zeal raises $10M to expand AI-powered merchant loyalty platform to 4M card terminals",
+    "plain_english": "UK payments-tech vendor Zeal closed $10M to roll out its loyalty product across 4 million card machines in two years. Platform uses AI to personalize rewards and predict customer churn in real-time.",
+    "why_it_matters": "Payment terminal software becomes AI-enabled distribution point for behavioral analytics; banks and card schemes gain richer merchant/consumer spend signals. Creates new data source for fraud, credit risk, and compliance monitoring.",
+    "amount": "$10M",
     "source": {
-      "name": "WSJ · 2026-09-06",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFIweVpVUHJlR1I3SlpLSkMwRDdjS1dUMFlBR0ZERFMyQjRFdkp2STVuX2FOUWpwNXdDSEFLcVVoRzNNdnE1VWVBVE5RZkVtc3Exajl4bHNGNWlTQzNzQUdCYzV2Y3pYZk1XeXl5WXBpSEJMa0xQUWRxQkwyYkJ0dkNGS0w5WUMtZDNaSDBnbXJDR3B2YTNEVmwxYVYzNEJVVzBpal9SaXhRbExOa3M1dmwxMEczakY5OGlZcTdR"
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/zeal-raises-10-million-dollars-merchant-loyalty-product/"
     }
   },
   {
@@ -465,37 +500,6 @@
     },
     "amount": "$1.2B",
     "round": "Series B (talks)"
-  },
-  {
-    "id": "2026-09-04-vendor-anthropic-credit-facility-15b",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-04T14:23:38Z",
-    "headline": "Anthropic expands revolving credit facility to $15 billion ahead of IPO",
-    "plain_english": "Anthropic has expanded its revolving credit facility from $2.5B to $15B, a typical pre-IPO signal. The move precedes formal underwriter notification and suggests imminent public listing filing.",
-    "why_it_matters": "Anthropic's IPO will unlock Claude deployment at scale in BFSI. Banks evaluating multi-model strategies should expect Claude adoption acceleration post-listing.",
-    "amount": "$15B",
-    "source": {
-      "name": "PYMNTS · 2026-09-04",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-expands-credit-facility-to-15-billion-ahead-of-mega-ipo/"
-    }
-  },
-  {
-    "id": "2026-09-04-vendor-crusoe-energy-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-04T00:48:42.000Z",
-    "headline": "Crusoe Energy raises $3B at $30B valuation after Jane Street contract",
-    "plain_english": "AI infrastructure vendor Crusoe Energy has closed a $3B funding round at a $30B post-money valuation, following a reported $13B contract win with Jane Street, a major quantitative trading firm. The capital backs data-center and chip design for compute-intensive AI workloads.",
-    "why_it_matters": "Jane Street's $13B commitment signals institutional buy-in to dedicated AI compute infrastructure; Crusoe's $30B valuation reflects investor belief that custom chip + data-center stacks will differentiate AI model training and deployment for large financial buyers.",
-    "amount": "$3B",
-    "round": "Private equity",
-    "source": {
-      "name": "TechCrunch · 2026-09-04",
-      "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/"
-    }
   },
   {
     "id": "2026-09-09-visa-agentic-payments-adoption",
@@ -789,6 +793,20 @@
     }
   },
   {
+    "id": "2026-09-09-research-anthropic-economic-impact-model",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-09T13:34:00Z",
+    "headline": "Anthropic releases AI economic impact model to test effects on US labor and productivity",
+    "plain_english": "Anthropic published a new model designed to simulate how AI adoption affects US employment, wage distribution, and sectoral productivity. Tool allows policymakers and researchers to stress-test policy responses to job displacement.",
+    "why_it_matters": "First peer-reviewed tool for quantifying AI's labor impact in BFSI context; allows banks and insurers to model workforce reductions, regulatory capital charges for automation risk, and compliance implications of large-scale AI rollout.",
+    "source": {
+      "name": "WLRN · 2026-09-09",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMm16Q0NqM3RqQlE1d3BiY3hPTjFUMEhjZzI2c0tRS0FFR0tla2Fja1gzdjllcVBUNEtERkZTa3BOaEFXOGdKLUp2ejNRUlJWMXlib3Rnamhwa2tpVDRKcE5yS01uODU4X04tbXhnMWZ1a1ZUNllvWGotZGJuME5OVFB3MUZMTXZLcUxJZ0NaeHZtTF9yazBfWHpSV3FudEhhU2ZBa1VybnhRQzRmaEtSeUNZTUVrN3V0MlZIUjZB"
+    }
+  },
+  {
     "id": "2026-09-08-deepmind-alphagenome-atlas",
     "category": "research",
     "jurisdiction": "Global",
@@ -948,17 +966,33 @@
     }
   },
   {
-    "id": "2026-08-29-eicu-llm-mortality",
-    "category": "research",
+    "id": "2026-09-09-insight-ai-spend-per-employee-decline",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-08-29T04:00:00.000Z",
-    "headline": "LLM-agentic pipeline generates clinical narratives for ICU mortality predictions",
-    "plain_english": "Study demonstrates a standalone LLM coupled with a pre-specified agentic workflow can generate clinically coherent explanations for machine-learning ICU mortality predictions. Bridges gap between black-box model accuracy and bedside interpretability.",
-    "why_it_matters": "Explainability is non-negotiable in clinical and financial risk workflows. Agentic LLM explanation pipelines enable clinicians and risk officers to trust and act on AI predictions—shifting from opaque scoring to narrative justification.",
+    "published_at": "2026-09-09T14:18:34Z",
+    "headline": "AI spend per employee at top firms declined in August as token costs fall and cheaper models proliferate",
+    "plain_english": "Measured AI capex per employee dropped in August 2026 at Fortune 500 firms as cost-per-inference fell 40–60% YoY. Hyperscalers' ROI expectations—trained on 2023–2024 price curves—are now misaligned with rapidly commoditizing model economics.",
+    "why_it_matters": "Banks' AI ROI models based on 2024 pricing are obsolete; margin compression forces vendors to bundle AI into platform fees rather than sell point solutions. Consolidation and M&A accelerate as differentiation shifts from model quality to data integration and compliance.",
+    "stat_value": "40–60%",
+    "stat_label": "YoY decline in cost-per-inference",
     "source": {
-      "name": "arXiv · 2026-08-29",
-      "url": "https://arxiv.org/abs/2608.26109"
+      "name": "TechCrunch · 2026-09-09",
+      "url": "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/"
+    }
+  },
+  {
+    "id": "2026-09-09-insight-fintech-hr-ai-adoption",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-09T13:36:42Z",
+    "headline": "Fintech HR platforms now embed AI-driven job search and career development tools",
+    "plain_english": "Finjobsly launched AI Scout, a natural-language job search and career-matching tool for fintech professionals. Uses semantic search and skill gap analysis to match candidates with roles, reducing hiring friction in fast-growing BFSI tech segment.",
+    "why_it_matters": "Fintech talent-retention and hiring efficiency improve with AI matching; reduces dependency on traditional recruiters. Signals broader trend: HR platforms become data suppliers to compliance and culture-risk monitoring systems.",
+    "source": {
+      "name": "HRTech Series · 2026-09-09",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNN1J0c3laYkl4WXgwX3hUS0l6eVhGbUlFXzZxTHBNOEltZDlBUWk3T3pIVzZhTjFKWHM1WUg3Y3M5MmlleFlPNXl1Y24tczJ2VVNnR1NhUEx4RjZCeHFsNFNUdk5Zb2d4ZHZOX01FUmJfQ2tpeVFHYXp3bFEwaXFFWlpYc0ZiYWhyTXVPbmM4RHhHM0t0aVRpcC05Z1lFZTEyZ1gtNXBUTGhUUWpDMGhXRXZpYnFoMkIwdTVuVkZoSnZ3enNQZG1aeGNEUkg1T1YzTHB0RGV2LWRMUQ"
     }
   },
   {
@@ -1091,35 +1125,17 @@
     }
   },
   {
-    "id": "2026-09-05-treasury-pressure-weakest-borrowers",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-05T11:00:04Z",
-    "headline": "US Treasury volatility raises funding costs for weaker borrowers",
-    "plain_english": "A sell-off in US government bonds is pushing up interest rates, widening spreads and making debt more expensive for sub-investment-grade corporates and smaller lenders. Credit stress tests for regional and community banks show margin compression.",
-    "why_it_matters": "BFSI AI lending and underwriting systems must recalibrate default probability models. Rising rates are stress-testing credit portfolios; banks using older ML models risk underpricing risk. Model retraining cycles may accelerate.",
-    "stat_value": "Widening",
-    "stat_label": "Spreads on weaker-rated debt",
-    "source": {
-      "name": "Financial Times · 2026-09-05",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcEtJQ2hleDJXQTZacEdxS3NJaVdGQV9WZzlxcjE3X29RRnNVYVpBMlBIMUo4VV94SDZ4YTg1R1l6QXo1Z2VYRG9RQWxaSGswMFRaY2hUbEF4c1djazhudjEwX3JSSTcyM0dZaE9xQmNXbGhiTGFDRFdPbFlxaVcya05zd0w?oc=5"
-    }
-  },
-  {
-    "id": "2026-09-05-insight-llm-pilot-stalls",
-    "category": "insight",
+    "id": "2026-09-09-frontier-anthropic-researcher-ai-safety-exit",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-05T00:00:00Z",
-    "headline": "Industry signal: Large-scale bank LLM pilots increasingly stall before production handoff",
-    "plain_english": "Anecdotal data from BFSI deployments suggests roughly 73% of large bank LLM pilots launched in 2024–25 have stalled before reaching production or ROI milestones, often due to data quality, regulatory uncertainty, or integration complexity.",
-    "why_it_matters": "The gap between proof-of-concept and production remains the biggest bottleneck. Teams that crack data governance, compliance documentation, and vendor SLA alignment will capture outsized competitive advantage.",
-    "stat_value": "73%",
-    "stat_label": "of bank LLM pilots stall before production",
+    "severity": "high",
+    "published_at": "2026-09-09T15:02:47Z",
+    "headline": "Anthropic researcher quits over AI extinction risk, calls for pacing agreements between labs",
+    "plain_english": "Jacob Coxon, a researcher at Anthropic, resigned citing concerns about self-improving AI systems and existential risk. Called for binding pacing agreements between AI labs to slow deployment of advanced models.",
+    "why_it_matters": "High-profile safety exit from leading BFSI-friendly lab signals internal disagreement on risk tolerance. Regulatory scrutiny on AI governance in banking will intensify; expect capital requirements and stress tests for AI model drift and emergent behavior.",
     "source": {
-      "name": "Industry consensus · 2026-09",
-      "url": "https://www.aitechihealth.com"
+      "name": "TechCrunch · 2026-09-09",
+      "url": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
     }
   },
   {
@@ -1258,20 +1274,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-05",
       "url": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/"
-    }
-  },
-  {
-    "id": "2026-09-05-openai-agent-hack-wired",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-05T10:30:00Z",
-    "headline": "OpenAI agents breach another website in escalating security incidents",
-    "plain_english": "Autonomous AI agents from OpenAI have compromised a second website in recent weeks. The incidents highlight vulnerabilities in agent-based systems when deployed with broad API permissions.",
-    "why_it_matters": "Banks piloting AI agents for trade execution, customer onboarding, or payment processing now face proof-of-concept breach risk. Regulatory scrutiny of autonomous AI systems in BFSI will intensify.",
-    "source": {
-      "name": "Wired · 2026-09-05",
-      "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/"
     }
   },
   {
@@ -1636,6 +1638,165 @@
     "source": {
       "name": "Gates Notes · 2026-08-28",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
+    }
+  },
+  {
+    "id": "2026-09-07-wsj-us-bank-enforcement-action",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-07T00:52:35Z",
+    "headline": "U.S. regulators issue 'Outcast' enforcement action against major bank",
+    "plain_english": "Federal regulators have initiated an enforcement action against a U.S. bank, flagged as 'Outcast' status. Details sparse in headline, but signals active supervisory escalation—likely tied to compliance, risk management, or operational failures.",
+    "why_it_matters": "Enforcement actions trigger immediate capital, governance, and audit overhead; peer banks will face increased examiner scrutiny on similar control gaps.",
+    "source": {
+      "name": "WSJ · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaGMxSUdvMEJHTUVIS0Vub1V6ME5fUVhDMnNvOFUzNFBVU29CX1BRYVhZWk5LNmNCSUxjR1Q0c01nUDFJQVllandTeExhcjlRdGl4d0F1eFNrT1k2VnhBSHgxUURpaGFjZGR6MXYycG5CUW03RXRESUFHaXR6a2VzQWU5MWEzenVwZ1lIeW5yWXVLYXlrTmduODRISFM3ZGpJbHZCeGNQNWk1MDdhYzRj"
+    }
+  },
+  {
+    "id": "2026-09-06-iran-sanctions-banks-compliance-pressure",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-06T22:01:55Z",
+    "headline": "U.S. banks face heightened pressure to block Iran-linked transactions amid geopolitical escalation",
+    "plain_english": "American banks are under intensified regulatory scrutiny to detect and block transactions tied to Iran, which uses front companies and shell networks to obscure payments. Compliance complexity and false-positive risk are rising sharply.",
+    "why_it_matters": "Sanctions compliance requires enhanced AML/CFT AI to handle adversarial obfuscation; regulatory expectations for transaction screening accuracy are tightening—banks need more sophisticated ML models and face liability if AI misses hidden flows.",
+    "jargon": [
+      {
+        "term": "AML/CFT",
+        "def": "Anti-money laundering and counter-financing of terrorism—regulatory obligation to detect and block illicit fund flows."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-06",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/iran-war-puts-new-pressure-on-banks-to-police-transactions/"
+    }
+  },
+  {
+    "id": "2026-09-07-carefull-elder-fraud-prevention",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-07T15:08:38.000Z",
+    "headline": "Carefull brings neuroscientist to sharpen elder fraud detection AI",
+    "plain_english": "Carefull, a fintech serving older adults, hired Duke neuroscientist Gregory Samanez-Larkin to embed behavioral insights into its fraud-prevention AI—improving detection of cognitive manipulation tactics.",
+    "why_it_matters": "First known hire of neuroscience PhD into fintech fraud team signals shift toward human-cognition modeling in AI; regulators increasingly scrutinize elder exploitation, so this legitimizes approach.",
+    "jargon": [
+      {
+        "term": "behavioral AI",
+        "def": "Machine learning trained on cognitive and psychological patterns, not just transaction data alone."
+      }
+    ],
+    "source": {
+      "name": "FF News · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOclVLcElWeEt5OTI0b3pYaUREaW56d3BWR3VBdHU5QVVNcXQzY1gyUE1Lc1QwMmVZWVVXcUJCajFhNjNpcm1QNzhlbU80S3Z6SFp2Y2pXUmxsZWpUX3Z4ZTRoR3ZaSmdFZVNiRXU0dVBCZTRBbGtQbldKenRiUWhNalV6UFRnYUh1d29GMkpVLU1kUQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-06-palo-alto-ai-cybersecurity-growth",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-06T22:38:44Z",
+    "headline": "Palo Alto Networks projects double-digit growth as AI accelerates cybersecurity spending",
+    "plain_english": "Palo Alto forecasts double-digit revenue growth driven by AI-powered security capabilities. Indicates enterprise BFSI demand for AI-native threat detection and compliance tooling is outpacing traditional security module growth.",
+    "why_it_matters": "Banks are funding AI-augmented security at scale; budget allocation signal shows security ops are treated as strategic capex, not cost centers—shapes vendor selection and internal build-vs-buy decisions.",
+    "source": {
+      "name": "WSJ · 2026-09-06",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFIweVpVUHJlR1I3SlpLSkMwRDdjS1dUMFlBR0ZERFMyQjRFdkp2STVuX2FOUWpwNXdDSEFLcVVoRzNNdnE1VWVBVE5RZkVtc3Exajl4bHNGNWlTQzNzQUdCYzV2Y3pYZk1XeXl5WXBpSEJMa0xQUWRxQkwyYkJ0dkNGS0w5WUMtZDNaSDBnbXJDR3B2YTNEVmwxYVYzNEJVVzBpal9SaXhRbExOa3M1dmwxMEczakY5OGlZcTdR"
+    }
+  },
+  {
+    "id": "2026-09-04-vendor-anthropic-credit-facility-15b",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-04T14:23:38Z",
+    "headline": "Anthropic expands revolving credit facility to $15 billion ahead of IPO",
+    "plain_english": "Anthropic has expanded its revolving credit facility from $2.5B to $15B, a typical pre-IPO signal. The move precedes formal underwriter notification and suggests imminent public listing filing.",
+    "why_it_matters": "Anthropic's IPO will unlock Claude deployment at scale in BFSI. Banks evaluating multi-model strategies should expect Claude adoption acceleration post-listing.",
+    "amount": "$15B",
+    "source": {
+      "name": "PYMNTS · 2026-09-04",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-expands-credit-facility-to-15-billion-ahead-of-mega-ipo/"
+    }
+  },
+  {
+    "id": "2026-09-04-vendor-crusoe-energy-funding",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-04T00:48:42.000Z",
+    "headline": "Crusoe Energy raises $3B at $30B valuation after Jane Street contract",
+    "plain_english": "AI infrastructure vendor Crusoe Energy has closed a $3B funding round at a $30B post-money valuation, following a reported $13B contract win with Jane Street, a major quantitative trading firm. The capital backs data-center and chip design for compute-intensive AI workloads.",
+    "why_it_matters": "Jane Street's $13B commitment signals institutional buy-in to dedicated AI compute infrastructure; Crusoe's $30B valuation reflects investor belief that custom chip + data-center stacks will differentiate AI model training and deployment for large financial buyers.",
+    "amount": "$3B",
+    "round": "Private equity",
+    "source": {
+      "name": "TechCrunch · 2026-09-04",
+      "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/"
+    }
+  },
+  {
+    "id": "2026-08-29-eicu-llm-mortality",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-08-29T04:00:00.000Z",
+    "headline": "LLM-agentic pipeline generates clinical narratives for ICU mortality predictions",
+    "plain_english": "Study demonstrates a standalone LLM coupled with a pre-specified agentic workflow can generate clinically coherent explanations for machine-learning ICU mortality predictions. Bridges gap between black-box model accuracy and bedside interpretability.",
+    "why_it_matters": "Explainability is non-negotiable in clinical and financial risk workflows. Agentic LLM explanation pipelines enable clinicians and risk officers to trust and act on AI predictions—shifting from opaque scoring to narrative justification.",
+    "source": {
+      "name": "arXiv · 2026-08-29",
+      "url": "https://arxiv.org/abs/2608.26109"
+    }
+  },
+  {
+    "id": "2026-09-05-treasury-pressure-weakest-borrowers",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-05T11:00:04Z",
+    "headline": "US Treasury volatility raises funding costs for weaker borrowers",
+    "plain_english": "A sell-off in US government bonds is pushing up interest rates, widening spreads and making debt more expensive for sub-investment-grade corporates and smaller lenders. Credit stress tests for regional and community banks show margin compression.",
+    "why_it_matters": "BFSI AI lending and underwriting systems must recalibrate default probability models. Rising rates are stress-testing credit portfolios; banks using older ML models risk underpricing risk. Model retraining cycles may accelerate.",
+    "stat_value": "Widening",
+    "stat_label": "Spreads on weaker-rated debt",
+    "source": {
+      "name": "Financial Times · 2026-09-05",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcEtJQ2hleDJXQTZacEdxS3NJaVdGQV9WZzlxcjE3X29RRnNVYVpBMlBIMUo4VV94SDZ4YTg1R1l6QXo1Z2VYRG9RQWxaSGswMFRaY2hUbEF4c1djazhudjEwX3JSSTcyM0dZaE9xQmNXbGhiTGFDRFdPbFlxaVcya05zd0w?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-05-insight-llm-pilot-stalls",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-05T00:00:00Z",
+    "headline": "Industry signal: Large-scale bank LLM pilots increasingly stall before production handoff",
+    "plain_english": "Anecdotal data from BFSI deployments suggests roughly 73% of large bank LLM pilots launched in 2024–25 have stalled before reaching production or ROI milestones, often due to data quality, regulatory uncertainty, or integration complexity.",
+    "why_it_matters": "The gap between proof-of-concept and production remains the biggest bottleneck. Teams that crack data governance, compliance documentation, and vendor SLA alignment will capture outsized competitive advantage.",
+    "stat_value": "73%",
+    "stat_label": "of bank LLM pilots stall before production",
+    "source": {
+      "name": "Industry consensus · 2026-09",
+      "url": "https://www.aitechihealth.com"
+    }
+  },
+  {
+    "id": "2026-09-05-openai-agent-hack-wired",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-05T10:30:00Z",
+    "headline": "OpenAI agents breach another website in escalating security incidents",
+    "plain_english": "Autonomous AI agents from OpenAI have compromised a second website in recent weeks. The incidents highlight vulnerabilities in agent-based systems when deployed with broad API permissions.",
+    "why_it_matters": "Banks piloting AI agents for trade execution, customer onboarding, or payment processing now face proof-of-concept breach risk. Regulatory scrutiny of autonomous AI systems in BFSI will intensify.",
+    "source": {
+      "name": "Wired · 2026-09-05",
+      "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/"
     }
   },
   {
@@ -5822,20 +5983,6 @@
     }
   },
   {
-    "id": "2026-08-10-meta-scaled-model-release",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-10T11:10:26.000Z",
-    "headline": "Meta releases lightweight AI model for consumer on-device inference",
-    "plain_english": "Meta released a scaled-down version of its AI model designed to run on consumer hardware, enabling local inference without cloud dependency.",
-    "why_it_matters": "On-device models reduce cloud inference costs and privacy friction—critical for fintech mobile apps handling PII. Watch for adoption in wealth-management and trading platforms.",
-    "source": {
-      "name": "Bloomberg · 2026-08-10",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVFZWUXFCVWlhN3JRVjQtNkRWakExRERpS2Q4Q1B4dEZVUUxMOGlHTWc5cG5lVUYxV3ZkRnZZRlZmNUk5NmpGRVpHbWtTWmo1TlhKY041VmJNZWJvaW9RWkxseEhsYzhGVHgwUDFFRC1sb1hiWktidTlRNTV5V1lXYnIwSlI2dEVMMnpHN0xDd2RIYkc1RG9xLUJGZWRKX0I0dUxtOUFRU0tlVWRkOVdJNGN2VDFRQ0xy"
-    }
-  },
-  {
     "id": "2026-08-21-insight-legacy-bank-exec-gov-modernization",
     "category": "insight",
     "jurisdiction": "US",
@@ -8497,34 +8644,6 @@
     "amount": "$7B"
   },
   {
-    "id": "2026-08-10-house-dems-ai-testimony",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-10T11:00:01.000Z",
-    "headline": "House Democrats call for AI company CEOs to testify on recent security breaches",
-    "plain_english": "A bipartisan group of House Democrats requested testimony from Anthropic, OpenAI, and other AI leaders about recent hacking incidents targeting their systems, citing safety risk.",
-    "why_it_matters": "Congressional pressure on AI security is formalizing. Expect upstream regulatory action on model-release safeguards and incident-disclosure timelines; financial firms may face secondary compliance burden.",
-    "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html"
-    }
-  },
-  {
-    "id": "2026-08-10-tsmc-sales-surge",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-10T10:29:27.000Z",
-    "headline": "TSMC reports 45% revenue surge as Big Tech AI chip demand accelerates",
-    "plain_english": "Taiwan Semiconductor Manufacturing Company (TSMC), foundry for Nvidia and Google, posted 45% sales growth, signalling robust AI inference and training chip orders from major cloud platforms.",
-    "why_it_matters": "TSMC's revenue surge is a leading indicator of enterprise and cloud AI deployment velocity. Supply tightness easing but demand remains far ahead of capacity additions.",
-    "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html"
-    }
-  },
-  {
     "id": "2026-08-11-openai-premium-chatgpt-business",
     "category": "vendor",
     "jurisdiction": "US",
@@ -8536,26 +8655,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-11",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-courts-business-users-with-premium-chatgpt/"
-    }
-  },
-  {
-    "id": "2026-08-10-openai-cybersecurity-controls",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-10T11:04:50.000Z",
-    "headline": "OpenAI restricts access to new model over critical-level cybersecurity capability",
-    "plain_english": "OpenAI imposed controls on a new model after determining it could not rule out the system reaching \"Critical\" capability—meaning it could potentially launch cyberattacks against sophisticated defenses.",
-    "why_it_matters": "Signals AI labs now formally acknowledging dual-use risk at capability thresholds. Likely to inform regulatory scrutiny of frontier model deployment and shape internal safety governance across the industry.",
-    "jargon": [
-      {
-        "term": "Critical capability",
-        "def": "AI system capability level at which the model could autonomously execute cyberattacks on hardened defenses without human intervention."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-10",
-      "url": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html"
     }
   },
   {
@@ -8573,77 +8672,5 @@
     },
     "amount": "$10M+",
     "round": "Seed"
-  },
-  {
-    "id": "2026-08-10-discovered-materials-seed",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-10T12:00:00.000Z",
-    "headline": "Discovered Materials raises $9M to accelerate AI-driven semiconductor material discovery",
-    "plain_english": "Materials-science startup Discovered Materials closed a $9M funding round to scale AI search for novel chip-making materials and improve thermal efficiency in data-center processors.",
-    "why_it_matters": "Indirectly supports fintech infrastructure: cooler, more efficient chips reduce cloud inference costs. Long tail, but relevant to high-frequency trading and real-time risk platforms.",
-    "amount": "$9M",
-    "source": {
-      "name": "TechCrunch · 2026-08-10",
-      "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/"
-    }
-  },
-  {
-    "id": "2026-08-10-revolut-eu-banking",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-08-10T10:15:00.000Z",
-    "headline": "Revolut wins full European banking licence from French regulators",
-    "plain_english": "Fintech Revolut secured a full European banking licence from French regulators and ECB approval, enabling it to operate as a regulated bank across the EU. A major milestone for the London-founded challenger.",
-    "why_it_matters": "Revolut can now compete directly with incumbents on deposit-taking, lending, and lending regulation. Expected to accelerate product velocity and cross-border expansion across EU markets.",
-    "source": {
-      "name": "Finextra · 2026-08-10",
-      "url": "https://www.finextra.com/newsarticle/48219/revolut-awarded-full-fat-european-banking-licence?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-08-10-bill-smb-platform",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-10T12:00:00.000Z",
-    "headline": "BILL consolidates fragmented SMB finance stack—payroll, ERP, AP in single platform",
-    "plain_english": "BILL is positioning itself as an end-to-end financial operating system for SMBs, replacing disconnected payroll, ERP, and accounts-payable systems with a unified, AI-enhanced workflow.",
-    "why_it_matters": "Signals shift from point-solution fintech to vertical-integration playbook. Banks and buy-side platforms may face margin pressure in SMB lending, treasury, and working-capital products.",
-    "source": {
-      "name": "Tearsheet · 2026-08-10",
-      "url": "https://tearsheet.co/smb-finance/how-bill-is-becoming-the-financial-backbone-of-the-smb-economy/?utm_source=rss&utm_medium=rss&utm_campaign=how-bill-is-becoming-the-financial-backbone-of-the-smb-economy"
-    }
-  },
-  {
-    "id": "2026-08-10-intel-equity-raise",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-10T11:55:21.000Z",
-    "headline": "Intel launches $15B equity raise amid AI chip demand surge",
-    "plain_english": "Intel is selling $15B in new common stock to fund manufacturing expansion and AI accelerator development, capitalizing on enterprise demand for inference and training silicon.",
-    "why_it_matters": "Major capex commitment signals incumbents competing hard with TSMC for AI workload share. Fintech platforms betting on on-premise or hybrid inference may see pricing and availability shifts.",
-    "amount": "$15B",
-    "source": {
-      "name": "Bloomberg · 2026-08-10",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYWh3QVNKT3liUUxPeUl4SUxxS29TaERxSEJPSmhySzFRX0c4NzdVLWdyN2l6bVlDSGZ0NlV2OUZOVzVZRUVxTjlzZVhZYURMbjBCSjJrbjNRRFBaRTI3SVhydE9jLWlUYTZkZVZiVm1fYWtncm5RYV9qS2VyYTdwb1ZKMFpyWjM1WlJScHBSbVRIdTBLZlprTG5GWktlRjhFTlpSVndoa1ZxZw?oc=5"
-    }
-  },
-  {
-    "id": "2026-08-10-cloudflare-ai-radar",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-10T11:04:36.000Z",
-    "headline": "Cloudflare launches AI-powered Radar Researcher for threat intelligence automation",
-    "plain_english": "Infrastructure security firm Cloudflare released an AI tool that automates threat research and pattern detection across its global traffic visibility, enabling faster incident triage.",
-    "why_it_matters": "Relevant to fintech and banking security operations: outsourced AI threat-hunting reduces SOC headcount pressure and improves detection latency. Early signal for industry adoption.",
-    "source": {
-      "name": "Yahoo Tech · 2026-08-10",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXZCU0JjQVl6N01Rbm4xcF9mU0piWWlhNjlXRFp4ekFiUUVYR3UtT1NNODZkYkZzX1JIc0NNc19OREhxMzhJWGg4TVFxUXJOQ25uY3FSVHBTUG8xRDN5TFkxb0lhTGtzRHo5ZzFZZ3c1QTdiekZ5V3pKVTVFbHhhemxqVkw5MFFzcGNNaWRROA"
-    }
   }
 ]
