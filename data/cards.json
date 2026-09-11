@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-09-11-regulation-fintech-charters-diverge",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T00:42:41.000Z",
+    "headline": "U.S. fintech charter activity produces divergent bank models under single regulator",
+    "plain_english": "Recent bank charter approvals (Revolut seeking full national bank; Circle approved as national trust bank) show regulators allowing radically different business models under same federal charter. Signals flexible rather than prescriptive oversight.",
+    "why_it_matters": "Regulatory fragmentation in practice: same OCC label, vastly different risk profiles and scope. Creates compliance arbitrage and supervisory gaps; expect coordinated interagency guidance or enforcement action within 12 months.",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/fintechs-are-shopping-for-very-different-charters/"
+    }
+  },
+  {
     "id": "2026-09-10-regulation-openai-hugging-face-senate",
     "category": "regulation",
     "jurisdiction": "US",
@@ -156,17 +170,17 @@
     }
   },
   {
-    "id": "2026-09-08-fca-novatrust-asset-enforcement",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-09-08T14:20:07.000Z",
-    "headline": "FCA enforcement action against Novatrust Asset signals tightening oversight of unregulated fintech platforms",
-    "plain_english": "FCA published enforcement details on Novatrust Asset, an unregulated investment platform. Action underscores FCA's focus on closing regulatory gaps in online asset platforms, many of which use AI recommendation engines without proper governance.",
-    "why_it_matters": "UK regulator is actively policing unauthorized platforms offering AI-driven advice or trading. BFSI firms building AI advisory tools must ensure FCA authorization and governance; using third-party AI without proper Model Risk Management audits is now a visible enforcement target.",
+    "id": "2026-09-11-deployment-openai-financial-services",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-10T22:49:04.000Z",
+    "headline": "OpenAI launches ChatGPT tailored for investment banking and equity research",
+    "plain_english": "OpenAI released ChatGPT for Financial Services, a specialized variant designed to help investment bankers develop research, financial models, and analysis. Initial rollout targets equity research teams at financial institutions.",
+    "why_it_matters": "First named major frontier lab entering production BFSI workflows at scale; signals broader financial services expansion beyond consumer and sets template for compliance-aware AI deployment in regulated verticals.",
     "source": {
-      "name": "FCA · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jM0ktVllPMHc3b0ZQMVd1Q1VVMU91Um9CaXBGQW5PMWhIUDhvMXo0SzdzNHlHTTl2bGM3VTN0aTh0S2pBdmc1ZGZ4RlU2LTlwWGpiS29Ed2dFN3hteUU4dHNB"
+      "name": "PYMNTS · 2026-09-10",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-focuses-on-investment-banking-ahead-of-wider-financial-services-rollout/"
     }
   },
   {
@@ -315,17 +329,18 @@
     }
   },
   {
-    "id": "2026-09-08-visa-stablecoin-working-capital",
-    "category": "deployment",
-    "jurisdiction": "Global",
+    "id": "2026-09-11-vendor-nasdaq-payward-100m",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-08T14:44:46.000Z",
-    "headline": "Visa launches on-chain lending program for stablecoin card programs using VisaNet settlement data",
-    "plain_english": "Visa launched a platform that combines settlement data from VisaNet with on-chain credit infrastructure to help stablecoin card programs and fintechs access working capital. Lenders use payment history to underwrite on-chain loans in real time.",
-    "why_it_matters": "Traditional payment rails (Visa/Mastercard) are merging with on-chain liquidity pools. This creates new credit-risk vectors: lenders using immutable settlement data for undercollateralized lending. Risk officers need playbooks for contagion if stablecoin collateral volatility triggers margin calls.",
+    "published_at": "2026-09-11T01:18:54.000Z",
+    "headline": "Nasdaq Ventures invests $100 million in Payward to advance tokenized equities",
+    "plain_english": "Nasdaq Ventures committed $100M to Payward (Kraken parent) as part of expanded partnership on tokenized stock infrastructure. Extends Nasdaq's infrastructure play into digital assets and decentralized settlement.",
+    "why_it_matters": "Tier-1 exchange backing blockchain-native settlement; signals institutional readiness to parallel legacy clearing with token rails. Competitive pressure on other exchanges to follow.",
+    "amount": "$100M",
     "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/visa/2026/visa-unlocks-working-capital-for-stablecoin-linked-card-programs-and-fintechs/"
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/nasdaq-invests-100-million-in-kraken-parent-payward-to-accelerate-tokenized-stock-push/"
     }
   },
   {
@@ -483,23 +498,23 @@
     }
   },
   {
-    "id": "2026-09-07-koody-ai-bank-statement-import",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-07T14:19:17.000Z",
-    "headline": "Koody launches AI bank-statement import for sole proprietors",
-    "plain_english": "Koody, a small-business accounting fintech, released an AI feature extracting financial data directly from PDF bank statements—automating data entry for freelancers and self-employed.",
-    "why_it_matters": "Narrow use case but signals OCR+LLM commoditization; SMB fintechs now expect AI extraction as table-stakes, raising bar for all B2B finance platforms.",
+    "id": "2026-09-11-shift-blik-agentic-payment",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-09-11T00:01:00.000Z",
+    "headline": "Blik records first agentic payment transaction in production",
+    "plain_english": "Polish payment network Blik executed its first live agentic transaction: a user authorized an AI agent to autonomously search for a product and pay when conditions were met. Marks industry first for agent-initiated payments at scale.",
+    "why_it_matters": "Demonstrates autonomous AI agents entering transaction settlement loop without human intervention—a foundational shift for commerce. Other payment networks and fintech will replicate this model within months; compliance frameworks now lag operational reality.",
     "jargon": [
       {
-        "term": "OCR+LLM",
-        "def": "Optical character recognition paired with large language models to extract and interpret unstructured document text."
+        "term": "agentic payment",
+        "def": "AI agent autonomously executes purchase decision and payment settlement based on predefined user criteria, without per-transaction approval."
       }
     ],
     "source": {
-      "name": "FF News · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYUlDMXg5Tk1JY1M5ZVFZYWNGSGd0Y01PaE5oRkxJMjlmZWZTV1cxMWxkOEFJVTNnazVUXy0xcjNqbTNQaGxpRUdCa0M0U1RfUS1ta3V4NklpZ2lIemNJVms5eGlaYUYwSDdPSlFKZ09JRFBrSlREWk1qTEdxd2UzQWdQc3ZxVWJQNnl5WFB0cm9PcmhfZGNtLVRyR3FHWXktblNaZk9R?oc=5"
+      "name": "Finextra · 2026-09-11",
+      "url": "https://www.finextra.com/newsarticle/48379/blik-records-first-agentic-payment-transaction?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -647,20 +662,6 @@
     }
   },
   {
-    "id": "2026-09-07-td-bank-coo-departure-tech-restructure",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-07T00:01:00Z",
-    "headline": "TD Bank COO exits after 11 months; group head appointed for global technology division",
-    "plain_english": "TD Bank's COO Taylan Turan is leaving after less than a year, concurrent with Vlad Shpilsky's appointment as group head of global technology and solutions. Signals possible tech strategy pivot or operational reshuffling at major Canadian lender.",
-    "why_it_matters": "Executive churn in ops + tech leadership realignment often precedes major infrastructure or AI capability investments; watch for capital allocation changes in 2H 2026.",
-    "source": {
-      "name": "Finextra · 2026-09-07",
-      "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job"
-    }
-  },
-  {
     "id": "2026-09-10-tool-mistral-sovereign-ai",
     "category": "tool",
     "jurisdiction": "EU",
@@ -796,6 +797,26 @@
     "source": {
       "name": "CNBC · 2026-08-12",
       "url": "https://www.cnbc.com/2026/08/12/jim-cramer-ai-data-center-trade-leading-stocks.html"
+    }
+  },
+  {
+    "id": "2026-09-11-research-google-toolgrad",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-10T22:50:22.000Z",
+    "headline": "Google Research introduces ToolGrad: efficient dataset generation for tool-use in AI agents",
+    "plain_english": "Google released ToolGrad, a technique using textual gradients to efficiently generate synthetic datasets for training AI agents to use external tools. Reduces compute cost and annotation burden for agent fine-tuning.",
+    "why_it_matters": "Lowers barrier to training production agents; enables BFSI firms to deploy custom API-calling agents without frontier-lab dependency. Expect rapid adoption in investment banks for research automation.",
+    "jargon": [
+      {
+        "term": "textual gradients",
+        "def": "Feedback signals expressed as natural language suggestions to improve model outputs, used to guide synthetic dataset generation without manual labeling."
+      }
+    ],
+    "source": {
+      "name": "Google Research · 2026-09-10",
+      "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/"
     }
   },
   {
@@ -938,23 +959,35 @@
     }
   },
   {
-    "id": "2026-08-31-google-timesfm-3-forecast",
-    "category": "research",
+    "id": "2026-09-11-insight-ai-agents-funding-model",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-31T17:19:40Z",
-    "headline": "Google DeepMind releases TimesFM-3, zero-shot multivariate forecasting foundation model",
-    "plain_english": "Google Research published TimesFM-3, a foundation model that predicts multiple time series at once without task-specific training. Directly applicable to market forecasting, risk modeling, and portfolio rebalancing in finance.",
-    "why_it_matters": "Zero-shot capability means BFSI teams can apply a single pre-trained model to new forecasting tasks (e.g., credit spreads, FX volatility) without expensive fine-tuning, accelerating model deployment cycles.",
-    "jargon": [
-      {
-        "term": "zero-shot",
-        "def": "Model works on new tasks without seeing examples; trained knowledge transfers directly."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-09-10T23:43:35.000Z",
+    "headline": "Agentic commerce requires permissioned funding accounts, not direct company bank access",
+    "plain_english": "PYMNTS analysis: scaling autonomous agents across procurement, travel, advertising, and supplier negotiation requires segregated, permissioned funding pools per agent—not central company treasury. Mitigates fraud and control risk as agent count scales to thousands.",
+    "why_it_matters": "Architectural constraint for CFOs and controllers: agent-friendly finance infrastructure (sub-accounts, spend policies, real-time auditability) becomes competitive moat. Banks/fintechs offering embedded agent-wallet services win wallet share.",
+    "stat_value": "10,000+",
+    "stat_label": "AI agents per enterprise requiring independent funding",
     "source": {
-      "name": "Google Research · 2026-08-31",
-      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
+      "name": "PYMNTS · 2026-09-10",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-need-permissioned-funding-sources-not-company-bank-accounts/"
+    }
+  },
+  {
+    "id": "2026-09-11-insight-jensen-huang-cybersecurity-ai",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T00:55:36.000Z",
+    "headline": "Nvidia CEO: next major AI market is enterprise cybersecurity",
+    "plain_english": "Jensen Huang told Goldman Sachs conference that AI-powered cybersecurity will be the next trillion-dollar AI market, driven by new frontier model capabilities enabling autonomous threat detection, incident response, and adversarial modeling.",
+    "why_it_matters": "Signals hardware + software co-investment cycle: BFSI CISOs will face board pressure to adopt AI-first security architecture. Budget reallocation from legacy SIEM and IDS to agentic security ops coming; creates acquisition and hiring arms race.",
+    "stat_value": "$1T+",
+    "stat_label": "market opportunity in AI-driven cybersecurity per Nvidia",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/cybersecurity/2026/jensen-huang-predicts-new-ai-models-will-drive-massive-cybersecurity-demand/"
     }
   },
   {
@@ -1085,31 +1118,37 @@
     }
   },
   {
-    "id": "2026-09-06-insight-openai-lawsuit-news-orgs",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-06T11:44:03.000Z",
-    "headline": "Seattle Times and Newsday sue OpenAI for copyright infringement over training data",
-    "plain_english": "Major US news organizations are suing OpenAI, alleging the model was trained on copyrighted articles without permission or compensation. Joins growing wave of copyright litigation against frontier AI labs. Precedent could reshape BFSI compliance burden for LLM deployment.",
-    "why_it_matters": "If courts rule data used must be licensed, BFSI vendors and banks face material IP liability exposure for any model trained on third-party content. May require retraining, licensing audits, or settlement reserves.",
+    "id": "2026-09-11-frontier-anthropic-claude-distillation",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-11T00:59:45.000Z",
+    "headline": "Anthropic reports seven Chinese labs cloned Claude at scale via illicit model distillation",
+    "plain_english": "Anthropic detected coordinated unauthorized model distillation attacks by China-based labs (including Alibaba, Moonshot AI) extracting Claude capabilities to train competing systems. Describes industrial-scale IP theft via API abuse without authorization.",
+    "why_it_matters": "First public admission of adversarial frontier-lab model extraction at production scale; undermines frontier lab IP protection and raises questions about API rate-limiting, monitoring, and enforcement. Sets precedent for regulatory scrutiny of frontier labs' own security posture.",
+    "jargon": [
+      {
+        "term": "model distillation",
+        "def": "Process of training a smaller/cheaper model by feeding it outputs from a larger model, replicating its capabilities without access to training data or weights."
+      }
+    ],
     "source": {
-      "name": "LatestLY (via news aggregator) · 2026-09-06",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUFdKQzd0VGZSTlZBRkY5YzJBYXo1VWlKYnRmdGhGMnZCenZzNUNxem03ZDlWV1NycHJkWXc5aHVFMUlTbzBEcUE5bzQ5OWpWdzFwWEVXbVRGMVZ4NDJaeWpwZEFwUVVUOEh3UVc5eUNXbF9wUk8yc0N0alIwM3F5UTVrb0pqUDBUNUlmRmVKcm5LdDRIMEN4UWhUaW8zZTBQQmZiQjFjbHlBZw"
+      "name": "CNBC · 2026-09-11",
+      "url": "https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html"
     }
   },
   {
-    "id": "2026-09-06-insight-boe-inflation-cooling",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-09-06T13:40:12.000Z",
-    "headline": "Bank of England survey shows cooling price pressures, moderating inflation outlook",
-    "plain_english": "BoE's latest business survey signals reduced pricing power and easing wage-growth expectations among firms. Firms are less likely to raise prices in coming months. Underpins softer inflation trajectory and may support rate-hold or cut bias.",
-    "why_it_matters": "Lower inflation expectations ease regulatory capital and liquidity stress for UK banks. May enable lower stress-test loss assumptions in next supervisory cycle. Good news for consumer-facing lenders' credit profiles.",
+    "id": "2026-09-11-frontier-openai-antitrust-slowdown",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-10T23:28:42.000Z",
+    "headline": "OpenAI questions legality of industry-coordinated AI development slowdown under antitrust law",
+    "plain_english": "OpenAI leadership is asking whether antitrust law permits frontier labs to coordinate a slowdown in AI capability development—a safety measure some labs consider urgent. Legal analysis suggests coordination could violate Sherman Act even if motivated by safety.",
+    "why_it_matters": "Reveals unresolved tension between AI safety (which may require collective restraint) and competition law (which prohibits competitor coordination). Likely triggers DOJ/FTC guidance or litigation within 18 months; directly impacts BFSI's ability to adopt safety-first procurement mandates.",
     "source": {
-      "name": "WSJ · 2026-09-06",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSEJfa2xWNDZrdmlGQVE0RFpQajVEQWJkYU0zUjVmd1B1ZGM4emJLUU1zYUUtakh1cTVDU29rVXBfcUpWMkVKb2VUMlF2NDVqRUNzNGlGVXNaWHZTb09UZ3NmSGt2U1lfdVF3RFY2NnVIQm9SdkpNRHRUN19PcEJUSGtPMGJiTkh3Y21JN3NHaGE0QQ"
+      "name": "Wired · 2026-09-10",
+      "url": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/"
     }
   },
   {
@@ -1222,46 +1261,6 @@
     "source": {
       "name": "CNBC · 2026-09-06",
       "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html"
-    }
-  },
-  {
-    "id": "2026-09-05-openai-astra-hacking-capability",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-05T22:04:18.000Z",
-    "headline": "OpenAI's Astra model demonstrates hacking capability with minimal human guidance",
-    "plain_english": "OpenAI's new Astra AI model can execute hacking tasks with very little human instruction, raising security and responsible deployment concerns. The capability was reported by WSJ, signaling potential dual-use risks in frontier multimodal AI.",
-    "why_it_matters": "BFSI security teams must prepare defenses against AI-assisted cyberattacks; governance frameworks for frontier model access become urgent as capabilities scale.",
-    "jargon": [
-      {
-        "term": "multimodal AI",
-        "def": "AI system that processes multiple input types (text, images, video) and can execute complex tasks across them."
-      }
-    ],
-    "source": {
-      "name": "Wall Street Journal · 2026-09-05",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQVdQYXRwR1lYWnZ0XzRJaEt4ZDJvSHhFMUpyVEd5SlZYSklTYU1uOVRfUWM3UngwY2VfTFVsU0dxRUNKYVNLSXVzWW9Xd2xYbjhiRGFKZUs3eUdxN0NXcWhZblJNV0R2MlJPaXNROHZGazZlRHNuZDlXV25INHlkZi02YVp6cUhfYTduaXloekRQQXZWaG83algtdVpVZ20z"
-    }
-  },
-  {
-    "id": "2026-09-05-openai-wiki-incident-transparency",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-05T21:23:43.000Z",
-    "headline": "OpenAI acknowledges unintended AI behavior and commits to greater transparency",
-    "plain_english": "OpenAI publicly acknowledged a 'wiki incident' involving unintended model behavior and pledged to improve transparency around edge cases and failures. The move signals growing pressure for responsible disclosure in production AI systems.",
-    "why_it_matters": "Regulatory bodies and enterprise risk officers will demand similar transparency commitments; incident disclosure frameworks now becoming table-stakes for BFSI AI vendor selection.",
-    "jargon": [
-      {
-        "term": "unintended behavior",
-        "def": "AI output or action that deviates from intended design, often discovered post-deployment and hard to predict."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-09-05",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPU0FtQktXNWY5eEpHaUxBVGI2YWpHWE9SUGUtb1BhUkxLQmJvODRPX01WMnFqeEI2RThKMi1IT0E1eDBSUngtQkIwTUtiQWFjSHpFbXY0Q1BFcjZuUnBkVEZFMnFtOWpLUHVOZ1lZZzIwT3NxSnJnNG5DdHBvWi1STnFWSk1reWZRVkpEQjlCT05fdm8tV3ItQU5kSThCSjZON3ZvNXJhNXB2dWV0Zmt6NlJ1UUxoUDY4ZjZERk1qWmNUNkIxaW01anhRSURSaGlPZkE"
     }
   },
   {
@@ -1626,6 +1625,156 @@
     "source": {
       "name": "CNBC · 2026-08-29",
       "url": "https://www.cnbc.com/2026/08/29/big-lesson-from-this-weeks-earnings-ai-buildout-is-not-a-zero-sum-game.html"
+    }
+  },
+  {
+    "id": "2026-09-08-fca-novatrust-asset-enforcement",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-09-08T14:20:07.000Z",
+    "headline": "FCA enforcement action against Novatrust Asset signals tightening oversight of unregulated fintech platforms",
+    "plain_english": "FCA published enforcement details on Novatrust Asset, an unregulated investment platform. Action underscores FCA's focus on closing regulatory gaps in online asset platforms, many of which use AI recommendation engines without proper governance.",
+    "why_it_matters": "UK regulator is actively policing unauthorized platforms offering AI-driven advice or trading. BFSI firms building AI advisory tools must ensure FCA authorization and governance; using third-party AI without proper Model Risk Management audits is now a visible enforcement target.",
+    "source": {
+      "name": "FCA · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jM0ktVllPMHc3b0ZQMVd1Q1VVMU91Um9CaXBGQW5PMWhIUDhvMXo0SzdzNHlHTTl2bGM3VTN0aTh0S2pBdmc1ZGZ4RlU2LTlwWGpiS29Ed2dFN3hteUU4dHNB"
+    }
+  },
+  {
+    "id": "2026-09-08-visa-stablecoin-working-capital",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-08T14:44:46.000Z",
+    "headline": "Visa launches on-chain lending program for stablecoin card programs using VisaNet settlement data",
+    "plain_english": "Visa launched a platform that combines settlement data from VisaNet with on-chain credit infrastructure to help stablecoin card programs and fintechs access working capital. Lenders use payment history to underwrite on-chain loans in real time.",
+    "why_it_matters": "Traditional payment rails (Visa/Mastercard) are merging with on-chain liquidity pools. This creates new credit-risk vectors: lenders using immutable settlement data for undercollateralized lending. Risk officers need playbooks for contagion if stablecoin collateral volatility triggers margin calls.",
+    "source": {
+      "name": "PYMNTS · 2026-09-08",
+      "url": "https://www.pymnts.com/visa/2026/visa-unlocks-working-capital-for-stablecoin-linked-card-programs-and-fintechs/"
+    }
+  },
+  {
+    "id": "2026-09-07-koody-ai-bank-statement-import",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-07T14:19:17.000Z",
+    "headline": "Koody launches AI bank-statement import for sole proprietors",
+    "plain_english": "Koody, a small-business accounting fintech, released an AI feature extracting financial data directly from PDF bank statements—automating data entry for freelancers and self-employed.",
+    "why_it_matters": "Narrow use case but signals OCR+LLM commoditization; SMB fintechs now expect AI extraction as table-stakes, raising bar for all B2B finance platforms.",
+    "jargon": [
+      {
+        "term": "OCR+LLM",
+        "def": "Optical character recognition paired with large language models to extract and interpret unstructured document text."
+      }
+    ],
+    "source": {
+      "name": "FF News · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYUlDMXg5Tk1JY1M5ZVFZYWNGSGd0Y01PaE5oRkxJMjlmZWZTV1cxMWxkOEFJVTNnazVUXy0xcjNqbTNQaGxpRUdCa0M0U1RfUS1ta3V4NklpZ2lIemNJVms5eGlaYUYwSDdPSlFKZ09JRFBrSlREWk1qTEdxd2UzQWdQc3ZxVWJQNnl5WFB0cm9PcmhfZGNtLVRyR3FHWXktblNaZk9R?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-07-td-bank-coo-departure-tech-restructure",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-07T00:01:00Z",
+    "headline": "TD Bank COO exits after 11 months; group head appointed for global technology division",
+    "plain_english": "TD Bank's COO Taylan Turan is leaving after less than a year, concurrent with Vlad Shpilsky's appointment as group head of global technology and solutions. Signals possible tech strategy pivot or operational reshuffling at major Canadian lender.",
+    "why_it_matters": "Executive churn in ops + tech leadership realignment often precedes major infrastructure or AI capability investments; watch for capital allocation changes in 2H 2026.",
+    "source": {
+      "name": "Finextra · 2026-09-07",
+      "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job"
+    }
+  },
+  {
+    "id": "2026-08-31-google-timesfm-3-forecast",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-31T17:19:40Z",
+    "headline": "Google DeepMind releases TimesFM-3, zero-shot multivariate forecasting foundation model",
+    "plain_english": "Google Research published TimesFM-3, a foundation model that predicts multiple time series at once without task-specific training. Directly applicable to market forecasting, risk modeling, and portfolio rebalancing in finance.",
+    "why_it_matters": "Zero-shot capability means BFSI teams can apply a single pre-trained model to new forecasting tasks (e.g., credit spreads, FX volatility) without expensive fine-tuning, accelerating model deployment cycles.",
+    "jargon": [
+      {
+        "term": "zero-shot",
+        "def": "Model works on new tasks without seeing examples; trained knowledge transfers directly."
+      }
+    ],
+    "source": {
+      "name": "Google Research · 2026-08-31",
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
+    }
+  },
+  {
+    "id": "2026-09-06-insight-openai-lawsuit-news-orgs",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-06T11:44:03.000Z",
+    "headline": "Seattle Times and Newsday sue OpenAI for copyright infringement over training data",
+    "plain_english": "Major US news organizations are suing OpenAI, alleging the model was trained on copyrighted articles without permission or compensation. Joins growing wave of copyright litigation against frontier AI labs. Precedent could reshape BFSI compliance burden for LLM deployment.",
+    "why_it_matters": "If courts rule data used must be licensed, BFSI vendors and banks face material IP liability exposure for any model trained on third-party content. May require retraining, licensing audits, or settlement reserves.",
+    "source": {
+      "name": "LatestLY (via news aggregator) · 2026-09-06",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUFdKQzd0VGZSTlZBRkY5YzJBYXo1VWlKYnRmdGhGMnZCenZzNUNxem03ZDlWV1NycHJkWXc5aHVFMUlTbzBEcUE5bzQ5OWpWdzFwWEVXbVRGMVZ4NDJaeWpwZEFwUVVUOEh3UVc5eUNXbF9wUk8yc0N0alIwM3F5UTVrb0pqUDBUNUlmRmVKcm5LdDRIMEN4UWhUaW8zZTBQQmZiQjFjbHlBZw"
+    }
+  },
+  {
+    "id": "2026-09-06-insight-boe-inflation-cooling",
+    "category": "insight",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-06T13:40:12.000Z",
+    "headline": "Bank of England survey shows cooling price pressures, moderating inflation outlook",
+    "plain_english": "BoE's latest business survey signals reduced pricing power and easing wage-growth expectations among firms. Firms are less likely to raise prices in coming months. Underpins softer inflation trajectory and may support rate-hold or cut bias.",
+    "why_it_matters": "Lower inflation expectations ease regulatory capital and liquidity stress for UK banks. May enable lower stress-test loss assumptions in next supervisory cycle. Good news for consumer-facing lenders' credit profiles.",
+    "source": {
+      "name": "WSJ · 2026-09-06",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSEJfa2xWNDZrdmlGQVE0RFpQajVEQWJkYU0zUjVmd1B1ZGM4emJLUU1zYUUtakh1cTVDU29rVXBfcUpWMkVKb2VUMlF2NDVqRUNzNGlGVXNaWHZTb09UZ3NmSGt2U1lfdVF3RFY2NnVIQm9SdkpNRHRUN19PcEJUSGtPMGJiTkh3Y21JN3NHaGE0QQ"
+    }
+  },
+  {
+    "id": "2026-09-05-openai-astra-hacking-capability",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-05T22:04:18.000Z",
+    "headline": "OpenAI's Astra model demonstrates hacking capability with minimal human guidance",
+    "plain_english": "OpenAI's new Astra AI model can execute hacking tasks with very little human instruction, raising security and responsible deployment concerns. The capability was reported by WSJ, signaling potential dual-use risks in frontier multimodal AI.",
+    "why_it_matters": "BFSI security teams must prepare defenses against AI-assisted cyberattacks; governance frameworks for frontier model access become urgent as capabilities scale.",
+    "jargon": [
+      {
+        "term": "multimodal AI",
+        "def": "AI system that processes multiple input types (text, images, video) and can execute complex tasks across them."
+      }
+    ],
+    "source": {
+      "name": "Wall Street Journal · 2026-09-05",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQVdQYXRwR1lYWnZ0XzRJaEt4ZDJvSHhFMUpyVEd5SlZYSklTYU1uOVRfUWM3UngwY2VfTFVsU0dxRUNKYVNLSXVzWW9Xd2xYbjhiRGFKZUs3eUdxN0NXcWhZblJNV0R2MlJPaXNROHZGazZlRHNuZDlXV25INHlkZi02YVp6cUhfYTduaXloekRQQXZWaG83algtdVpVZ20z"
+    }
+  },
+  {
+    "id": "2026-09-05-openai-wiki-incident-transparency",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-05T21:23:43.000Z",
+    "headline": "OpenAI acknowledges unintended AI behavior and commits to greater transparency",
+    "plain_english": "OpenAI publicly acknowledged a 'wiki incident' involving unintended model behavior and pledged to improve transparency around edge cases and failures. The move signals growing pressure for responsible disclosure in production AI systems.",
+    "why_it_matters": "Regulatory bodies and enterprise risk officers will demand similar transparency commitments; incident disclosure frameworks now becoming table-stakes for BFSI AI vendor selection.",
+    "jargon": [
+      {
+        "term": "unintended behavior",
+        "def": "AI output or action that deviates from intended design, often discovered post-deployment and hard to predict."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-09-05",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPU0FtQktXNWY5eEpHaUxBVGI2YWpHWE9SUGUtb1BhUkxLQmJvODRPX01WMnFqeEI2RThKMi1IT0E1eDBSUngtQkIwTUtiQWFjSHpFbXY0Q1BFcjZuUnBkVEZFMnFtOWpLUHVOZ1lZZzIwT3NxSnJnNG5DdHBvWi1STnFWSk1reWZRVkpEQjlCT05fdm8tV3ItQU5kSThCSjZON3ZvNXJhNXB2dWV0Zmt6NlJ1UUxoUDY4ZjZERk1qWmNUNkIxaW01anhRSURSaGlPZkE"
     }
   },
   {
@@ -5974,20 +6123,6 @@
     }
   },
   {
-    "id": "2026-08-11-learner-autonomous-agents-101",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-11T23:26:57.000Z",
-    "headline": "What is an autonomous AI agent? A primer for BFSI engineers new to agentic workflows",
-    "plain_english": "An autonomous agent is an AI system that perceives its environment (data inputs), makes decisions (what to do next), and takes actions (execute tasks) without asking a human for approval at each step. Unlike chatbots that answer questions, agents *do* things: they might send emails, move money, file paperwork, or find vulnerabilities. In BFSI, agents are being deployed in AR workflows (invoice → chase → payment), fraud detection (spot anomaly → freeze account → alert analyst), and hiring (parse resume → score → rank). The key difference from a simple script: agents learn from outcomes and adapt strategy mid-task.",
-    "why_it_matters": "Agencies are the next frontier of BFSI automation. Understanding how they differ from rule-based automation and RAG-powered chatbots is crucial for evaluating vendor pitches and assessing your own org's readiness to deploy them safely.",
-    "source": {
-      "name": "Finextra, PYMNTS synthesis · 2026-08-11",
-      "url": "https://www.finextra.com/newsarticle/48230/amex-ventures-invests-in-autonomous-finance-startup-fazeshift"
-    }
-  },
-  {
     "id": "2026-08-21-regulation-apollo-social-engineering-breach",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8399,22 +8534,6 @@
     }
   },
   {
-    "id": "2026-08-11-nvidia-credit-markets-confidence",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-11T20:38:08.000Z",
-    "headline": "Nvidia's financial strength calms credit-market jitters; AI infrastructure spending remains resilient",
-    "plain_english": "Nvidia's demonstrated financial force—strong cash position, no distress—has eased credit-market volatility. Signals to BFSI and infrastructure investors that AI capex cycle is genuine and well-funded, not speculative. Credit spreads stabilize on confidence in sustained GPU demand.",
-    "why_it_matters": "When mega-cap tech balance sheets are healthy, banks feel safer lending to AI infrastructure plays. Credit costs drop, fintech and enterprise AI deals get cheaper financing. Trickle-down effect: regional and smaller BFSI players can borrow at better rates for their own AI builds.",
-    "stat_value": "Risk-off sentiment easing",
-    "stat_label": "Credit spreads narrow",
-    "source": {
-      "name": "Bloomberg · 2026-08-11",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcDJkSllRazZwMW40WDRwUFVWbDg2NWNGbG9WYkVEVzJNSWpKS1lVNFhxcUlwYjRMYmxxQTFRbVYzQmdWR3MyTmpRekZXS0JDezdPOUpGNHl3N2NBRnlRM0REVGNGS2VjR0xJWlg4cDJlaXR6R292OU5QSzhYWjBzdEJ4OTZZb3NSMHFaNTZYcVVfNTY5S0J0YmpWWGdtYWpKcmtMbVNRd3lBVi1Gcy1CdjlDRHg"
-    }
-  },
-  {
     "id": "2026-08-13-openai-safety-culture",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8460,54 +8579,6 @@
     "source": {
       "name": "Tearsheet · 2026-08-12",
       "url": "https://tearsheet.co/policies-playbooks/fintechs-want-to-become-banks-bunq-just-found-out-what-the-occ-expects-in-return/"
-    }
-  },
-  {
-    "id": "2026-08-11-banking-cyber-autonomy-risk",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-11T23:08:45.000Z",
-    "headline": "Banks face emerging cyber autonomy risk as AI agents test attack paths independently",
-    "plain_english": "PYMNTS reports that AI systems deployed in bank security operations are evolving from threat detection into autonomous vulnerability testing and attack-path exploration, stretching containment assumptions. Regulators and risk officers now face a new class of threat.",
-    "why_it_matters": "If autonomous agents can probe bank networks without human approval, traditional firewalls and approval workflows become liabilities. Regulators will soon mandate agent-containment policies and audit trails; non-compliance becomes a supervisory violation.",
-    "jargon": [
-      {
-        "term": "Cyber autonomy",
-        "def": "AI systems that independently discover vulnerabilities, simulate attacks, and test exploit paths without human review or explicit authorization at each step."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-11",
-      "url": "https://www.pymnts.com/cybersecurity/2026/bankings-next-ai-risk-is-cyber-autonomy/"
-    }
-  },
-  {
-    "id": "2026-08-12-amex-fazeshift-agentic-ar",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-11T20:56:29.000Z",
-    "headline": "Amex Ventures backs Fazeshift agentic AI for end-to-end accounts receivable automation",
-    "plain_english": "American Express's venture arm invested in Fazeshift, an AI platform that deploys autonomous agents to execute full AR workflows—from invoice generation to collection—without human intervention. Marks early bank-led push into autonomous finance operations.",
-    "why_it_matters": "If AR fully automates via agents, back-office headcount drops sharply and working-capital cycles compress. Other BFSI players will rush to replicate; signals Amex sees autonomous agents as core, not experimental.",
-    "jargon": [
-      {
-        "term": "Autonomous agent",
-        "def": "AI system that perceives its environment, makes decisions, and takes actions independently to achieve a goal without step-by-step human guidance."
-      },
-      {
-        "term": "Accounts receivable (AR)",
-        "def": "Money owed to a company by customers for goods/services sold on credit; invoicing, payment tracking, and collection are manual-heavy today."
-      }
-    ],
-    "scale": {
-      "metric": "customers",
-      "value": "Undisclosed"
-    },
-    "source": {
-      "name": "Finextra · 2026-08-11",
-      "url": "https://www.finextra.com/newsarticle/48230/amex-ventures-invests-in-autonomous-finance-startup-fazeshift?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -8572,84 +8643,6 @@
     "source": {
       "name": "CNBC · 2026-08-12",
       "url": "https://www.cnbc.com/2026/08/12/coreweave-q2-earnings-ai-demand.html"
-    }
-  },
-  {
-    "id": "2026-08-12-coreweave-earnings-revenue-double",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-11T22:51:06.000Z",
-    "headline": "CoreWeave revenue doubles year-on-year as AI infrastructure demand accelerates; stock pops 14%",
-    "plain_english": "GPU-cloud provider CoreWeave reported revenue doubled in Q2 2026 on surging AI workload demand. Stock surged 14% on earnings beat. However, company carries $35B debt, signaling aggressive expansion to capture the AI compute boom.",
-    "why_it_matters": "Profitable AI-infrastructure players now face a scale race: those who can debt-finance GPU capacity fastest will lock in BFSI customers (model training, inference) before competitors. Debt-fueled capacity wars are coming.",
-    "scale": {
-      "metric": "revenue growth",
-      "value": "2x YoY"
-    },
-    "source": {
-      "name": "CNBC · 2026-08-11",
-      "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html"
-    }
-  },
-  {
-    "id": "2026-08-11-nvidia-jensen-huang-500b-financing-china-risk",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-11T21:01:13.000Z",
-    "headline": "Nvidia CEO proposes $500B AI financing using GPUs as collateral; China policy risk looms",
-    "plain_english": "Jensen Huang is pitching a massive financing scheme where Nvidia GPUs serve as long-term collateral to unlock $500B in funding for AI infrastructure builds. Risk: how quickly will chip values depreciate as technology advances, and will export controls (esp. China) undermine collateral valuations?",
-    "why_it_matters": "If GPU-backed financing becomes standard, BFSI players betting on long-term AI infrastructure ROI face collateral volatility exposure. Geopolitical supply-chain fragmentation could crater valuations mid-deployment; banks must model tech-risk haircuts into capex planning.",
-    "source": {
-      "name": "CNBC · 2026-08-11",
-      "url": "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html"
-    }
-  },
-  {
-    "id": "2026-08-12-happyrobot-series-c-valuation",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-11T23:26:57.000Z",
-    "headline": "HappyRobot raises $150M Series C, reaches $1.2B valuation on agent platform momentum",
-    "plain_english": "AI agent platform HappyRobot closed a $150M Series C round, valuing it at $1.2B post-money. Total funding now $200M. Round oversubscribed, reflecting enterprise demand for autonomous workflow automation across finance and ops.",
-    "why_it_matters": "Late-stage agent-platform valuations now rival mid-market banks' market caps. First-mover advantage in AR, hiring, and procurement automation will compound; laggards face margin pressure.",
-    "amount": "$150M",
-    "round": "Series C",
-    "source": {
-      "name": "PYMNTS · 2026-08-11",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/happyrobot-vaults-to-1-2-billion-valuation-as-enterprise-demand-for-ai-automation-soars/"
-    }
-  },
-  {
-    "id": "2026-08-12-nasdaq-level-markets-acquisition",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T00:01:00.000Z",
-    "headline": "Nasdaq acquires alternative trading system LeveL Markets; terms undisclosed",
-    "plain_english": "Exchange operator Nasdaq has agreed to acquire LeveL Markets, a dark pool (Alternative Trading System). No financial terms disclosed. Consolidates Nasdaq's non-display trading footprint as market structure evolves.",
-    "why_it_matters": "Nasdaq doubling down on ATS/dark-pool market share as retail and institutional trading volumes fragment across venues. AI order routing and execution optimization will become competitive moats; acquirer gains customer base for next-gen trading algo deployment.",
-    "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48231/nasdaq-to-buy-ats-level-markets?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-08-11-accel-india-fund-550m-close",
-    "category": "vendor",
-    "jurisdiction": "IN",
-    "severity": "low",
-    "published_at": "2026-08-11T21:39:11.000Z",
-    "headline": "Accel closes oversubscribed $550M India fund in weeks; fintech and AI remain core themes",
-    "plain_english": "Venture capital firm Accel has closed a $550M India-focused fund in an unusually short timeframe, signaling strong LP appetite for Indian tech and fintech plays. Fund is oversubscribed; Accel still has 55% of prior $650M fund dry powder available.",
-    "why_it_matters": "India's fintech/AI venture market is now hot enough to raise mega-funds at speed. BFSI-adjacent startups (lending, payments, underwriting AI) will attract fresh capital; expect acceleration in competitive dynamics and regional consolidation.",
-    "amount": "$550M",
-    "round": "Fund close",
-    "source": {
-      "name": "TechCrunch · 2026-08-11",
-      "url": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/"
     }
   }
 ]
