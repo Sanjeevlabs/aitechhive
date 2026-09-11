@@ -1,5 +1,54 @@
 [
   {
+    "id": "2026-09-11-california-ai-audit-regulation",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-11T14:55:22Z",
+    "headline": "California establishes first U.S. framework for independent AI auditor licensing",
+    "plain_english": "California Governor Newsom signed two bills creating the nation's first regulatory regime for independent AI verification organizations. The framework mandates licensing and oversight of auditors who assess AI risk—moving beyond requiring companies to self-audit to regulating the auditors themselves.",
+    "why_it_matters": "Sets precedent for auditor credentials and liability in BFSI; other states and EU likely to follow, creating new compliance role and potential cost for regulated financial institutions deploying AI.",
+    "jargon": [
+      {
+        "term": "Independent AI verification",
+        "def": "Third-party auditors hired by companies to assess and certify AI system risks and compliance before or after deployment."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/legal/2026/california-starts-regulating-the-people-who-audit-ai/"
+    },
+    "effective_date": "2026-09-09"
+  },
+  {
+    "id": "2026-09-11-occ-third-party-risk-guidance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T14:19:19Z",
+    "headline": "OCC proposes third-party risk management guidance for community banks, eases vendor oversight burden",
+    "plain_english": "The U.S. Office of the Comptroller of the Currency released proposed guidance and interagency statements on third-party risk supervision—targeting core service providers to community banks. The move aims to reduce compliance friction while maintaining risk oversight of outsourced critical functions.",
+    "why_it_matters": "Signals regulatory relief for smaller lenders using AI/cloud vendors; affects how banks classify and monitor fintech and SaaS partners, potentially lowering due-diligence costs for community-bank tech M&A.",
+    "source": {
+      "name": "OCC · 2026-09-11",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZczA3bjNrRHQ3SDFyMTdrMmhnVU5TTlBObmVPaWF0bXZ4b3NCV0pmT0Z0SXNITUFtS2tzUXR2U3VDdHBhMy11VTdPaDVZX2VjV3p4M0ZYNk5qS05pMVB0UlliNWpHSzNRWms1RDJaOGhuODhxX0FPZzgxcw?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-11-congress-anthropic-researcher-extinction",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T13:44:59Z",
+    "headline": "Bipartisan Congressional calls for AI regulation follow Anthropic researcher's public extinction risk warning",
+    "plain_english": "Members of Congress are now pushing for AI legislation after a researcher at Anthropic publicly warned that OpenAI and Anthropic are acting recklessly with frontier AI development. The viral warning triggered coordinated legislative response.",
+    "why_it_matters": "Signals Congress willing to act on AI governance; likely to accelerate draft regulations on model safety, transparency, and auditing—affecting BFSI vendors and banks' AI governance frameworks.",
+    "source": {
+      "name": "CNBC · 2026-09-11",
+      "url": "https://www.cnbc.com/2026/09/11/ai-regulation-anthropic-researcher-extinction-warning.html"
+    }
+  },
+  {
     "id": "2026-09-11-regulation-fintech-charters-diverge",
     "category": "regulation",
     "jurisdiction": "US",
@@ -122,51 +171,27 @@
     }
   },
   {
-    "id": "2026-09-09-china-50b-bank-insurer-capital",
-    "category": "regulation",
-    "jurisdiction": "APAC",
+    "id": "2026-09-11-google-cloud-ai-agents-deutsche-bank",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-09T00:53:44.000Z",
-    "headline": "Beijing to inject over $50 billion into banks and insurers",
-    "plain_english": "Chinese government announced capital injections exceeding $50B into state and commercial banks and insurers. Move aims to boost lending and growth amid economic slowdown concerns.",
-    "why_it_matters": "Capital backstop signals Beijing prioritizes financial stability and AI-driven lending expansion. Likely to accelerate adoption of AI credit models by Chinese banks. Foreign and domestic fintech players seeking partnership access may face new compliance/data residency requirements.",
-    "source": {
-      "name": "WSJ · 2026-09-09",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
-    }
-  },
-  {
-    "id": "2026-09-09-eu-dlt-pilot-regime-cap-100bn",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-09T00:01:00.000Z",
-    "headline": "Market infrastructure operators urge EU to raise €100 billion DLT Pilot Regime cap",
-    "plain_english": "Nasdaq, Börse Stuttgart, and other market operators called on EU lawmakers to raise or remove the €100B cap on total assets in the DLT Pilot Regime sandbox. Cap constrains settlement and trading innovation via blockchain.",
-    "why_it_matters": "€100B ceiling may be insufficient for large-scale settlement pilots. If cap stays low, major exchanges will exhaust sandbox space, delaying enterprise DLT adoption. EU policymakers must choose: expand sandbox or force faster permanent DLT regulation.",
+    "published_at": "2026-09-11T13:16:21Z",
+    "headline": "Google Cloud launches AI agents for banking; Deutsche Bank leads pilot deployment",
+    "plain_english": "Google Cloud unveiled AI agents (autonomous systems that execute tasks independently) purpose-built for banking workflows. Deutsche Bank is the anchor customer, using the agents for customer-facing or back-office operations, marking a shift from chatbots to agentic automation in enterprise banking.",
+    "why_it_matters": "Deutsche Bank's adoption validates agentic AI for BFSI at scale; signals Google competing directly with specialized fintech AI vendors; expect rapid copycat deployments among tier-1 global banks.",
     "jargon": [
       {
-        "term": "DLT Pilot Regime",
-        "def": "EU regulatory sandbox for distributed ledger (blockchain) settlement and trading pilots; capped at €100B assets."
+        "term": "AI agents",
+        "def": "Autonomous AI systems that perceive their environment, make decisions, and take actions without human intervention at each step—unlike chatbots, which respond to explicit prompts."
       }
     ],
     "source": {
-      "name": "Finextra · 2026-09-09",
-      "url": "https://www.finextra.com/newsarticle/48365/nasdaq-brse-stuttgart-and-others-urge-eu-to-rethink-100bn-dlt-cap"
-    }
-  },
-  {
-    "id": "2026-09-08-beijing-50b-bank-insurer-capital",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-09-08T14:23:42.000Z",
-    "headline": "Beijing announces $50B+ capital injection into banks and insurers to stabilize growth",
-    "plain_english": "China's government will inject over $50 billion into Chinese banks and insurers to shore up lending capacity and manage economic slowdown. Direct state recapitalization signals heightened systemic risk concerns in Beijing's eyes.",
-    "why_it_matters": "Large-scale state recapitalization typically precedes either a credit crackdown or a widening of asset-quality problems. BFSI institutions with China exposure face counterparty or market risk if stimulus fails to restore growth. Regulators globally will monitor spillover effects.",
-    "source": {
-      "name": "WSJ · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
+      "name": "Yahoo Finance · 2026-09-11",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQWFCTk95bF9iUzRWdXhTZ3lMTUJHazQ0TGdTV2hKdmxGcy1Ra1FyS0ZuRjdIS2FpN2I3NTNOLU9YbE5mX0wtVHJmdWhwLXhMNFpROVduelMyeEMydXdjRXNjQW16MWJPN2FMeVhxNTZYcTdlWUtRYUJkeFRuUG55a25KV2xVQkEwT0o2T1ctUV9VVEhrbTRfUDkxOA?"
+    },
+    "scale": {
+      "metric": "customers",
+      "value": "Deutsche Bank (anchor)"
     }
   },
   {
@@ -315,17 +340,17 @@
     }
   },
   {
-    "id": "2026-09-09-visa-blockchain-lending",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-09T00:01:00.000Z",
-    "headline": "Visa integrates settlement data with blockchain lending infrastructure",
-    "plain_english": "Visa combined on-chain settlement data with blockchain lending infrastructure. Stablecoin card programmes and fintechs can now access working capital using Visa transaction history as collateral proxy.",
-    "why_it_matters": "Bridges legacy payment data (Visa) with crypto-native lending (on-chain collateral). Reduces friction for stablecoin issuers and fintechs to raise working capital. Signals Visa's shift from payment-rail monopoly to fintech infrastructure layer.",
+    "id": "2026-09-11-oracle-ai-cloud-earnings",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-11T13:34:34Z",
+    "headline": "Oracle reports 121% year-over-year cloud infrastructure growth driven by AI demand",
+    "plain_english": "Oracle's cloud infrastructure revenue surged 121% YoY in Q1, fueled by customer demand for AI and large language model workloads. The result underscores competitive pressure on legacy enterprise software vendors to scale AI-ready cloud infrastructure.",
+    "why_it_matters": "Validates cloud infrastructure as key lever for AI adoption in BFSI; banks deploying large models on Oracle Cloud expect continued investment and feature parity with hyperscalers.",
     "source": {
-      "name": "Finextra · 2026-09-09",
-      "url": "https://www.finextra.com/newsarticle/48362/visa-makes-onchain-lending-move"
+      "name": "CNBC · 2026-09-11",
+      "url": "https://www.cnbc.com/2026/09/11/oracle-stock-q1-earnings-ai-cloud.html"
     }
   },
   {
@@ -483,18 +508,17 @@
     }
   },
   {
-    "id": "2026-09-07-jack-and-jill-30m-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
+    "id": "2026-09-11-natwest-ikea-exec-ux-digital",
+    "category": "shift",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-09-07T14:21:02.000Z",
-    "headline": "Jack & Jill raises £30 million led by Air Street Capital",
-    "plain_english": "Jack & Jill, a UK fintech (likely B2B or underwriting-focused), secured £30M in Series funding from Air Street Capital, a venture firm focused on frontier AI applications in enterprise.",
-    "why_it_matters": "Tier-1 UK VC backing AI fintech signals strong appetite for AI+finance bets in EU; other blue-chip investors will follow, accelerating R&D spend in regulated lending and underwriting.",
-    "amount": "£30M",
+    "published_at": "2026-09-11T14:29:00Z",
+    "headline": "NatWest appoints Ikea executive as managing director of customer experience and digital engagement",
+    "plain_english": "NatWest hired Harsh Agarwal, a retail outsider from Ikea, to lead customer experience and digital engagement. The hire signals a strategic pivot toward consumer-grade UX and omnichannel engagement, applying retail best practices to banking.",
+    "why_it_matters": "Reflects trend of tier-1 banks recruiting from non-BFSI to overhaul digital strategy; likely to accelerate AI-driven personalization and agent-based customer interaction development at NatWest.",
     "source": {
-      "name": "Sifted · 2026-09-07",
-      "url": "https://sifted.eu/articles/exclusive-jack-jill-30m/"
+      "name": "Finextra · 2026-09-11",
+      "url": "https://www.finextra.com/newsarticle/48387/natwest-hires-former-ikea-exec-to-lead-customer-experience-and-digital-engagement?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -641,24 +665,6 @@
     "source": {
       "name": "Sifted · 2026-09-07",
       "url": "https://sifted.eu/articles/matt-clifford-quits-aria/"
-    }
-  },
-  {
-    "id": "2026-09-07-dubai-chambers-ai-training",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-07T15:18:21.000Z",
-    "headline": "Dubai Chambers launches AI training program for 14,000+ companies",
-    "plain_english": "Dubai Chamber of Commerce launched a mandatory or incentivized AI upskilling initiative targeting over 14,000 businesses—signaling government-led push for regional AI adoption in BFSI and trade.",
-    "why_it_matters": "Largest coordinated government AI literacy push in MENA; creates talent advantage for UAE fintech and shows Middle East regulators now treat AI as economic priority, not afterthought.",
-    "scale": {
-      "metric": "companies enrolled",
-      "value": "14000+"
-    },
-    "source": {
-      "name": "IntelliNews · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX0NxWUg5X3RHS2lZcXVpTGtuNWlGTHlya3o2RzZIQ0Q1cURUUlJQdTMtY3RFcmQ3WlU0TmRBNEhXdjZMNVVhSGNSdlhPVmczRzlCQ2NjZEs3d0RlX0lrWGtQZDFEVTNMTVJsRVVxSzRYaVo1TFdqemVBek9MaEFqczRtQUpGdUY3UUFvdUgxU1owdDJoS1oxNmp5dTBOd3RySHp4SzVUbGgwNXZSd19EUWhzX1Fvc1hqbVRjamhvQkQwajlEU3ZGeVRsM3c?oc=5"
     }
   },
   {
@@ -1118,6 +1124,34 @@
     }
   },
   {
+    "id": "2026-09-11-anthropic-iran-navy-targeting",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-11T13:49:00Z",
+    "headline": "Anthropic discloses Iran used its Claude model to target U.S. Navy warships",
+    "plain_english": "Anthropic reported that adversaries affiliated with Iran deployed its Claude AI model (obtained via American access) for surveillance or targeting intelligence against U.S. Navy assets. Anthropic detected and reported the abuse; the incident highlights dual-use AI risks and prompts debate on frontier model export controls.",
+    "why_it_matters": "Reinforces regulatory and congressional pressure on AI companies to implement abuse-detection and export guardrails; likely to accelerate U.S. restrictions on AI model access and drive BFSI AI vendors to tighten customer vetting.",
+    "source": {
+      "name": "WSJ · 2026-09-11",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaElwSjlfRDJiaDhsR3pkdFlhMDk3cGJXb3NUMHZRNDh0V2tKOVNhR0FTMlUzNFdNOWJRbGNlNE5WV3FJT1l5UjFfV1lvYU1uMVB4ZXdLbjZiZldYMnhtRXdMVURGcnlINEM5Rk5ueldZaDFoczJfZV9Tb2RfdzRLUnFybjZUNDlSaE9pWHJ3NnhXX1ZZS0dqN09xUHNvamtSNkFRSTl4VE9pdy1jR3pfeS1oNFNEMTZMNmZOR0h3dHBjSmFQV1pKOVJR?"
+    }
+  },
+  {
+    "id": "2026-09-11-openai-sam-altman-slowdown",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-11T14:02:14Z",
+    "headline": "OpenAI CEO Altman signals possible industry-wide pause on frontier AI development amid safety concerns",
+    "plain_english": "Sam Altman told OpenAI staff the company is considering slowing cutting-edge AI development and hopes competitors will join a coordinated industry pause. The statement follows internal and external pressure over AI safety risks from leading researchers.",
+    "why_it_matters": "If implemented, would reshape AI vendor roadmaps and timelines for BFSI; signals credible frontier labs may self-regulate before regulation forces action, affecting customer expectations for model release cadence.",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altman-floats-industrywide-pause-as-frontier-ai-safety-concerns-grow/"
+    }
+  },
+  {
     "id": "2026-09-11-frontier-anthropic-claude-distillation",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1233,34 +1267,6 @@
     "source": {
       "name": "OpenAI & Anthropic official · 2026-09-07",
       "url": "https://openai.com/research"
-    }
-  },
-  {
-    "id": "2026-09-06-anthropic-ipo-postponement-ai-funding",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-06T21:13:24Z",
-    "headline": "Anthropic postpones IPO to late October, pausing public market AI champion debut",
-    "plain_english": "Frontier AI lab Anthropic is delaying its IPO from early September to late October. Move follows weeks of market volatility and regulatory uncertainty around AI company valuations and oversight.",
-    "why_it_matters": "Delays in frontier AI company IPOs reflect lingering investor caution on AI regulation and profitability timelines; BFSI institutions betting on AI tech via venture or direct investment should prepare for longer funding cycles.",
-    "source": {
-      "name": "PYMNTS · 2026-09-06",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-said-to-postpone-ipo-to-just-before-midterms/"
-    }
-  },
-  {
-    "id": "2026-09-06-frontier-model-fatigue",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-06T12:13:49.000Z",
-    "headline": "Anthropic, OpenAI, Meta, Google release model updates as lab release cadence accelerates",
-    "plain_english": "Frontier AI labs are shipping new model versions at record pace this week. Nvidia is also acquiring Hugging Face, the open-source platform. Industry observers note 'model fatigue' — saturation from constant releases and uncertainty over which model to standardize on.",
-    "why_it_matters": "BFSI teams evaluating LLMs for production face moving targets; rapid releases make cost projections and compliance validation cycles unpredictable. Model churn increases vendor lock-in risk and deployment instability.",
-    "source": {
-      "name": "CNBC · 2026-09-06",
-      "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html"
     }
   },
   {
@@ -1476,6 +1482,20 @@
     }
   },
   {
+    "id": "2026-09-11-anthropic-extinction-ai-regulation",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-11T14:08:20Z",
+    "headline": "Anthropic researcher's extinction warning sparks bipartisan push for AI regulation in Congress",
+    "plain_english": "A researcher from Anthropic publicly warned of AI extinction risks and alleged irresponsible conduct by leading labs. The statement went viral, triggering immediate bipartisan Congressional calls for AI regulation and safety safeguards. Multiple accounts of insider concerns at OpenAI and Anthropic surfaced simultaneously.",
+    "why_it_matters": "Highest-signal regulatory event this week; shifts AI safety from academic debate to emergency legislative priority; expect rapid U.S. AI governance bills targeting model transparency, testing, and auditing by year-end.",
+    "source": {
+      "name": "Quartz · 2026-09-11",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbWxhUjhHM2s5UHl2N2dNbTJCaGFkZi1qRGNsdVF2NVFBbnZHMjZiSVAzOHI1bmpWajJYRXYtV0EyTXI2QjVBbXA5a1VXcnFIdXg0X3pMOThPOW9fblM1dm9LWDV2M2V1MGRudFR6cy1taHp1UzZOWDhIdnJWQlBlbE1oczJ4ZGx5NnRaMw?"
+    }
+  },
+  {
     "id": "2026-09-10-trending-anthropic-safety",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1611,6 +1631,129 @@
     "source": {
       "name": "CNBC · 2026-08-29",
       "url": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html"
+    }
+  },
+  {
+    "id": "2026-09-09-china-50b-bank-insurer-capital",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-09T00:53:44.000Z",
+    "headline": "Beijing to inject over $50 billion into banks and insurers",
+    "plain_english": "Chinese government announced capital injections exceeding $50B into state and commercial banks and insurers. Move aims to boost lending and growth amid economic slowdown concerns.",
+    "why_it_matters": "Capital backstop signals Beijing prioritizes financial stability and AI-driven lending expansion. Likely to accelerate adoption of AI credit models by Chinese banks. Foreign and domestic fintech players seeking partnership access may face new compliance/data residency requirements.",
+    "source": {
+      "name": "WSJ · 2026-09-09",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
+    }
+  },
+  {
+    "id": "2026-09-09-eu-dlt-pilot-regime-cap-100bn",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-09T00:01:00.000Z",
+    "headline": "Market infrastructure operators urge EU to raise €100 billion DLT Pilot Regime cap",
+    "plain_english": "Nasdaq, Börse Stuttgart, and other market operators called on EU lawmakers to raise or remove the €100B cap on total assets in the DLT Pilot Regime sandbox. Cap constrains settlement and trading innovation via blockchain.",
+    "why_it_matters": "€100B ceiling may be insufficient for large-scale settlement pilots. If cap stays low, major exchanges will exhaust sandbox space, delaying enterprise DLT adoption. EU policymakers must choose: expand sandbox or force faster permanent DLT regulation.",
+    "jargon": [
+      {
+        "term": "DLT Pilot Regime",
+        "def": "EU regulatory sandbox for distributed ledger (blockchain) settlement and trading pilots; capped at €100B assets."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-09",
+      "url": "https://www.finextra.com/newsarticle/48365/nasdaq-brse-stuttgart-and-others-urge-eu-to-rethink-100bn-dlt-cap"
+    }
+  },
+  {
+    "id": "2026-09-08-beijing-50b-bank-insurer-capital",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-09-08T14:23:42.000Z",
+    "headline": "Beijing announces $50B+ capital injection into banks and insurers to stabilize growth",
+    "plain_english": "China's government will inject over $50 billion into Chinese banks and insurers to shore up lending capacity and manage economic slowdown. Direct state recapitalization signals heightened systemic risk concerns in Beijing's eyes.",
+    "why_it_matters": "Large-scale state recapitalization typically precedes either a credit crackdown or a widening of asset-quality problems. BFSI institutions with China exposure face counterparty or market risk if stimulus fails to restore growth. Regulators globally will monitor spillover effects.",
+    "source": {
+      "name": "WSJ · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
+    }
+  },
+  {
+    "id": "2026-09-09-visa-blockchain-lending",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-09T00:01:00.000Z",
+    "headline": "Visa integrates settlement data with blockchain lending infrastructure",
+    "plain_english": "Visa combined on-chain settlement data with blockchain lending infrastructure. Stablecoin card programmes and fintechs can now access working capital using Visa transaction history as collateral proxy.",
+    "why_it_matters": "Bridges legacy payment data (Visa) with crypto-native lending (on-chain collateral). Reduces friction for stablecoin issuers and fintechs to raise working capital. Signals Visa's shift from payment-rail monopoly to fintech infrastructure layer.",
+    "source": {
+      "name": "Finextra · 2026-09-09",
+      "url": "https://www.finextra.com/newsarticle/48362/visa-makes-onchain-lending-move"
+    }
+  },
+  {
+    "id": "2026-09-07-jack-and-jill-30m-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-07T14:21:02.000Z",
+    "headline": "Jack & Jill raises £30 million led by Air Street Capital",
+    "plain_english": "Jack & Jill, a UK fintech (likely B2B or underwriting-focused), secured £30M in Series funding from Air Street Capital, a venture firm focused on frontier AI applications in enterprise.",
+    "why_it_matters": "Tier-1 UK VC backing AI fintech signals strong appetite for AI+finance bets in EU; other blue-chip investors will follow, accelerating R&D spend in regulated lending and underwriting.",
+    "amount": "£30M",
+    "source": {
+      "name": "Sifted · 2026-09-07",
+      "url": "https://sifted.eu/articles/exclusive-jack-jill-30m/"
+    }
+  },
+  {
+    "id": "2026-09-07-dubai-chambers-ai-training",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-07T15:18:21.000Z",
+    "headline": "Dubai Chambers launches AI training program for 14,000+ companies",
+    "plain_english": "Dubai Chamber of Commerce launched a mandatory or incentivized AI upskilling initiative targeting over 14,000 businesses—signaling government-led push for regional AI adoption in BFSI and trade.",
+    "why_it_matters": "Largest coordinated government AI literacy push in MENA; creates talent advantage for UAE fintech and shows Middle East regulators now treat AI as economic priority, not afterthought.",
+    "scale": {
+      "metric": "companies enrolled",
+      "value": "14000+"
+    },
+    "source": {
+      "name": "IntelliNews · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX0NxWUg5X3RHS2lZcXVpTGtuNWlGTHlya3o2RzZIQ0Q1cURUUlJQdTMtY3RFcmQ3WlU0TmRBNEhXdjZMNVVhSGNSdlhPVmczRzlCQ2NjZEs3d0RlX0lrWGtQZDFEVTNMTVJsRVVxSzRYaVo1TFdqemVBek9MaEFqczRtQUpGdUY3UUFvdUgxU1owdDJoS1oxNmp5dTBOd3RySHp4SzVUbGgwNXZSd19EUWhzX1Fvc1hqbVRjamhvQkQwajlEU3ZGeVRsM3c?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-06-anthropic-ipo-postponement-ai-funding",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-06T21:13:24Z",
+    "headline": "Anthropic postpones IPO to late October, pausing public market AI champion debut",
+    "plain_english": "Frontier AI lab Anthropic is delaying its IPO from early September to late October. Move follows weeks of market volatility and regulatory uncertainty around AI company valuations and oversight.",
+    "why_it_matters": "Delays in frontier AI company IPOs reflect lingering investor caution on AI regulation and profitability timelines; BFSI institutions betting on AI tech via venture or direct investment should prepare for longer funding cycles.",
+    "source": {
+      "name": "PYMNTS · 2026-09-06",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-said-to-postpone-ipo-to-just-before-midterms/"
+    }
+  },
+  {
+    "id": "2026-09-06-frontier-model-fatigue",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-06T12:13:49.000Z",
+    "headline": "Anthropic, OpenAI, Meta, Google release model updates as lab release cadence accelerates",
+    "plain_english": "Frontier AI labs are shipping new model versions at record pace this week. Nvidia is also acquiring Hugging Face, the open-source platform. Industry observers note 'model fatigue' — saturation from constant releases and uncertainty over which model to standardize on.",
+    "why_it_matters": "BFSI teams evaluating LLMs for production face moving targets; rapid releases make cost projections and compliance validation cycles unpredictable. Model churn increases vendor lock-in risk and deployment instability.",
+    "source": {
+      "name": "CNBC · 2026-09-06",
+      "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html"
     }
   },
   {
@@ -5887,40 +6030,6 @@
     "amount": "$6.3B"
   },
   {
-    "id": "2026-08-12-rag-explainer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-12T11:00:00.000Z",
-    "headline": "What is RAG? How banks ground AI in real data",
-    "plain_english": "RAG (Retrieval-Augmented Generation) combines a large language model with a search engine over your own documents or databases. Instead of relying only on what the AI was trained on, RAG pulls relevant facts from your bank's records—client data, compliance docs, transaction history—and uses those to answer questions accurately. Example: A bank's LLM uses RAG to fetch a customer's actual account history before drafting a credit decision letter, ensuring the AI doesn't hallucinate.",
-    "why_it_matters": "RAG is the most production-ready pattern for bank AI because it reduces hallucinations and keeps responses grounded in verifiable data; critical for compliance, credit, and customer-facing use cases.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "AI confidently inventing false information when it doesn't know the answer. RAG prevents this by tethering responses to real data."
-      }
-    ],
-    "source": {
-      "name": "AITechHive synthesis · 2026-08-12",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
-    "id": "2026-08-12-ai-newsroom-scoop",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-12T10:30:00.000Z",
-    "headline": "AI newsroom broke OpenAI security story before mainstream media",
-    "plain_english": "An AI-powered newsroom beat mainstream journalists—including WIRED—to breaking news about OpenAI and a hacking incident. Demonstrates AI systems now competitive on hard news discovery and speed.",
-    "why_it_matters": "AI's ability to parse information at scale and break news raises questions for financial newsrooms and market surveillance teams; AI-generated market-moving intelligence will disrupt traditional news cycles.",
-    "source": {
-      "name": "WIRED · 2026-08-12",
-      "url": "https://www.wired.com/story/ai-newsrooms-are-breaking-news-now-haha-im-in-danger/"
-    }
-  },
-  {
     "id": "2026-08-22-digital-privacy-ai-era",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -8165,20 +8274,6 @@
     }
   },
   {
-    "id": "2026-08-12-rbi-ai-governance",
-    "category": "regulation",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-08-12T11:02:00.000Z",
-    "headline": "RBI urges Indian banks to lead AI adoption, not follow technology",
-    "plain_english": "Reserve Bank of India governor signals banks must proactively shape AI's role in banking rather than passively accept inevitable changes. Implies RBI will expect governance frameworks and risk controls from lenders adopting AI.",
-    "why_it_matters": "India's $5.7T banking sector now has explicit regulator mandate to embed AI controls early; banks lagging on governance face supervisory pressure.",
-    "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48235/rbi-governor-tells-indian-banks-to-control-ai"
-    }
-  },
-  {
     "id": "2026-08-14-citigroup-rewards-startup-acquisition",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8376,20 +8471,6 @@
     }
   },
   {
-    "id": "2026-08-12-hsbc-model-ml",
-    "category": "vendor",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-08-12T12:28:00.000Z",
-    "headline": "HSBC Asset Management backs London AI modelling startup",
-    "plain_english": "HSBC AM provided funding to London-based AI startup Model ML. No amount disclosed; investment suggests HSBC testing third-party AI risk/model tooling for asset management workflows.",
-    "why_it_matters": "Mega-bank using balance sheet to bet on point solutions; signals continued vendor fragmentation in AI-for-finance and HSBC's openness to external builders.",
-    "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48237/hsbc-invests-in-ai-modelling-firm"
-    }
-  },
-  {
     "id": "2026-08-13-microsoft-copilot-unification",
     "category": "shift",
     "jurisdiction": "US",
@@ -8490,20 +8571,6 @@
     }
   },
   {
-    "id": "2026-08-12-mt-bank-ai-cto",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-12T11:56:00.000Z",
-    "headline": "M&T Bank names head of AI engineering",
-    "plain_english": "US regional lender M&T Bank appointed Kalyana Bedhu as head of AI engineering, signaling formal AI engineering practice and likely production roadmap for core banking systems.",
-    "why_it_matters": "Mid-tier regional bank now has C-suite AI engineering leadership; indicates shift from vendor-led pilots to in-house AI capability, common prelude to multi-year modernization.",
-    "source": {
-      "name": "Finextra · 2026-08-12",
-      "url": "https://www.finextra.com/newsarticle/48236/mt-bank-appoints-head-of-ai-engineering"
-    }
-  },
-  {
     "id": "2026-08-13-shift-sp-global-microsoft-copilot",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8515,22 +8582,6 @@
     "source": {
       "name": "Finextra · 2026-08-13",
       "url": "https://www.finextra.com/newsarticle/48238/sp-global-data-integrated-into-microsoft-365-copilot"
-    }
-  },
-  {
-    "id": "2026-08-12-fed-ai-inflation",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T11:00:01.000Z",
-    "headline": "AI's data center buildout creates near-term inflation pressure, complicating Fed policy",
-    "plain_english": "Tech leaders promise AI will reduce costs long-term, but near-term capital expenditure on data centers and slow corporate adoption creates inflation headwinds. Fed's rate strategy faces conflicting signals: AI's deflationary promise vs. current spending surge.",
-    "why_it_matters": "Banks' net interest margin outlook depends partly on Fed policy path; if AI buildout stalls inflation decline, rate cuts may pause longer, affecting deposit/lending spreads through 2026–27.",
-    "stat_value": "Billions",
-    "stat_label": "in annual capex committed by hyperscalers for AI infrastructure",
-    "source": {
-      "name": "CNBC · 2026-08-12",
-      "url": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html"
     }
   },
   {
@@ -8568,36 +8619,6 @@
     }
   },
   {
-    "id": "2026-08-12-bunq-occ-charter",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-12T11:30:00.000Z",
-    "headline": "OCC's Bunq charter review exposes regulatory bar for fintech bank conversions",
-    "plain_english": "Dutch neobank Bunq seeking US bank charter is learning OCC requirements go far beyond customer experience; deposits, lending, and risk infrastructure must meet federal standards. Sets precedent for other fintechs eyeing charters.",
-    "why_it_matters": "Fintech-to-bank conversions will slow and cost more; only well-capitalized startups with compliance depth will clear OCC gates. Shifts M&A calculus toward bank partnerships over independence.",
-    "source": {
-      "name": "Tearsheet · 2026-08-12",
-      "url": "https://tearsheet.co/policies-playbooks/fintechs-want-to-become-banks-bunq-just-found-out-what-the-occ-expects-in-return/"
-    }
-  },
-  {
-    "id": "2026-08-12-lovable-eu-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-08-12T11:29:35.000Z",
-    "headline": "Lovable raises €400M Series C with EU Scaleup Fund backing",
-    "plain_english": "European AI builder Lovable closed €400M Series C round with support from EU's Scaleup Fund, signaling renewed EU appetite for homegrown AI vendors competing with US-based peers.",
-    "why_it_matters": "EU funding momentum for AI startups strengthens EMEA fintech stack diversification; banks can now explore non-US vendor ecosystems with better capitalization.",
-    "amount": "€400M",
-    "round": "Series C",
-    "source": {
-      "name": "Sifted · 2026-08-12",
-      "url": "https://sifted.eu/articles/lovable-raises-e400m-series-c/"
-    }
-  },
-  {
     "id": "2026-08-13-ibm-openai-partnership",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8623,26 +8644,6 @@
     "source": {
       "name": "Wired · 2026-08-12",
       "url": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/"
-    }
-  },
-  {
-    "id": "2026-08-12-coreweave-q2",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-12T11:22:47.000Z",
-    "headline": "CoreWeave Q2 revenue doubles on hyperscaler AI infrastructure demand",
-    "plain_english": "AI cloud provider CoreWeave reported doubled Q2 revenue driven by hyperscaler demand for GPU/compute capacity. Stock surged 18% in premarket trading, reflecting investor confidence in AI buildout secular trend.",
-    "why_it_matters": "Hyperscalers' AI capex appetite remains robust; CoreWeave surge signals sustained infrastructure spending, which pressures bank IT budgets competing for same compute resources.",
-    "jargon": [
-      {
-        "term": "hyperscalers",
-        "def": "Cloud giants (AWS, Google, Microsoft, Meta) that operate at global scale and drive majority of enterprise AI workload demand."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-12",
-      "url": "https://www.cnbc.com/2026/08/12/coreweave-q2-earnings-ai-demand.html"
     }
   }
 ]
