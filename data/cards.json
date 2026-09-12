@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-09-11-fed-third-party-risk-guidance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T20:53:53.000Z",
+    "headline": "US federal agencies propose overhaul of bank third-party risk rules",
+    "plain_english": "FDIC, OCC, Federal Reserve, and NCUA jointly issued a request for comment on revised third-party risk management guidance for financial institutions. Aims to clarify vendor oversight, particularly for cloud, AI, and fintech partnerships.",
+    "why_it_matters": "Banks face tighter scrutiny on AI vendor relationships. Expect more prescriptive audit, data residency, and model transparency requirements. Compliance teams will need updated third-party assessment frameworks by effective date.",
+    "jargon": [
+      {
+        "term": "Third-party risk management",
+        "def": "Bank's duty to assess and monitor risks from outsourced vendors (cloud, AI, payments, etc.); regulators increasingly focus on data security and business continuity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/partnerships/2026/federal-agencies-overhaul-bank-partner-rules-drive-innovation/"
+    }
+  },
+  {
     "id": "2026-09-11-california-ai-audit-regulation",
     "category": "regulation",
     "jurisdiction": "US",
@@ -151,23 +171,21 @@
     }
   },
   {
-    "id": "2026-09-09-block-occ-trust-bank-charter",
-    "category": "regulation",
+    "id": "2026-09-11-oracle-ai-cloud-121pct",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-09-09T00:41:07.000Z",
-    "headline": "Block applies for national trust bank charter to custody bitcoin and stablecoins",
-    "plain_english": "Block submitted application to the Office of the Comptroller of the Currency (OCC) for a national trust bank charter. Charter would allow Block to hold custody over bitcoin, stablecoins, and provide fiduciary services for crypto-linked card programmes and fintechs.",
-    "why_it_matters": "OCC greenlight signals regulatory willingness to permit fintech custody of digital assets on national bank balance sheet. If approved, sets precedent for other fintechs (PayPal, Square, Stripe) to seek similar charters, reshaping custody market structure.",
-    "jargon": [
-      {
-        "term": "OCC charter",
-        "def": "National bank charter granted by U.S. Office of Comptroller of Currency; permits deposit-taking, lending, and fiduciary services."
-      }
-    ],
+    "published_at": "2026-09-11T22:11:10.000Z",
+    "headline": "Oracle cloud infrastructure revenue surges 121% on AI demand",
+    "plain_english": "Oracle reported cloud infrastructure revenue jumped 121% year-over-year in Q1 2026, driven by enterprise AI workloads. Overall revenue grew 30%, signaling accelerating adoption of AI infrastructure among Fortune 500 enterprises.",
+    "why_it_matters": "Validates BFSI demand for AI-ready cloud. Oracle's scale signals that large banks and insurers are actively migrating workloads to AI-optimized platforms, reshaping capex and vendor lock-in dynamics.",
+    "scale": {
+      "metric": "revenue growth",
+      "value": "121% YoY (cloud infra)"
+    },
     "source": {
-      "name": "PYMNTS · 2026-09-09",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/block-pursues-national-trust-bank-charter-to-custody-bitcoin-and-stablecoins/"
+      "name": "CNBC · 2026-09-11",
+      "url": "https://www.cnbc.com/2026/09/11/oracle-stock-q1-earnings-ai-cloud.html"
     }
   },
   {
@@ -322,21 +340,33 @@
     }
   },
   {
-    "id": "2026-09-09-chime-stride-bank-590m",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-09-11-cohere-funding-20b",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-09-08T23:29:13.000Z",
-    "headline": "Chime acquires nationally chartered Stride Bank for $590 million",
-    "plain_english": "Fintech Chime bought Stride Bank, a nationally chartered bank, for $590M. Stride holds a full OCC charter and deposits. Move gives Chime direct control over deposits and lending, reducing reliance on partner banks.",
-    "why_it_matters": "Fintech-to-bank consolidation accelerates. Direct charter ownership lets Chime deploy AI lending/fraud models on its own balance sheet and customer data without third-party latency or negotiation. Signals industry shift from CBNW partnerships to vertical integration.",
-    "scale": {
-      "metric": "acquisition",
-      "value": "$590M"
-    },
+    "published_at": "2026-09-11T22:58:21.000Z",
+    "headline": "Cohere targets $20B valuation in $2–3B funding round",
+    "plain_english": "Canadian LLM startup Cohere is in advanced talks to raise $2–3B at a $20B valuation, potentially closing within days. The round would value the enterprise AI firm among the sector's most mature non-frontier players.",
+    "why_it_matters": "Signal of sustained venture appetite for LLM alternatives to OpenAI/Anthropic. BFSI buyers evaluating vendor optionality will track Cohere's runway and product roadmap post-close.",
     "source": {
-      "name": "Reuters · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXIxVTFQOUJmN3FqeU5HY0RxcTJvaDg4UmJ2V1ZNU0YzRWpheEhxRlRCLTdUYU5qZjRIWnlHNG96ZEV1SllyTWg0cUlPOXdlZktNT3BNZXVXTVBRWmQ0UHlGZXRJLU1jeFJjeVcyVWVRVVNJaV9vZ2xpb21XMHVqVnROOEdTVXdrWDV2ZXR3UDlYMWNWNUgxRUY4d0VPcDlha2RFVVpGc1U5cWRmcFdVWUkzOXZ6c050T0h0WnVwYw"
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/startups/2026/ai-startup-cohere-targets-20-billion-dollar-valuation-funding-round/"
+    },
+    "amount": "$2–3B",
+    "round": "Growth"
+  },
+  {
+    "id": "2026-09-11-mecka-ai-500m-robotics",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-11T22:58:17.000Z",
+    "headline": "Mecka AI nears $500M valuation in Sequoia-led Series B",
+    "plain_english": "Two-year-old robotics AI startup Mecka is raising at ~$500M valuation (Sequoia-led), focused on robot training data and embodied AI. Reflects VC rush to back physical AI infrastructure.",
+    "why_it_matters": "BFSI tangent: robotics AI vendors are acquiring financial-grade robustness and safety practices. Watch for convergence with banking ops automation (back-office RPA, document processing).",
+    "source": {
+      "name": "TechCrunch · 2026-09-11",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/"
     }
   },
   {
@@ -472,39 +502,23 @@
     }
   },
   {
-    "id": "2026-09-08-mistral-series-d-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-09-08T14:45:21.000Z",
-    "headline": "Mistral raises €3B in record EU funding round, valuation hits €21B",
-    "plain_english": "France-based AI startup Mistral closed a €3 billion Series D (approx. $3.5B), led by Samsung, Scaleup Europe, and PSG Equity. It's the largest equity raise ever by a European tech company. Sovereign AI (non-US models) is now a scaled business.",
-    "why_it_matters": "EU AI Act compliance and geopolitical autonomy drive massive capital into alternatives to US/China labs. BFSI will face vendor choice: adopt US frontier models or back European players with regulatory tailwinds but less mature production track records.",
-    "amount": "€3B",
-    "round": "Series D",
-    "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mistral-raises-3-billion-dollars-ai-research-record-european-union-funding-round/"
-    }
-  },
-  {
-    "id": "2026-09-07-figure-kiavi-blockchain-realestate",
-    "category": "vendor",
+    "id": "2026-09-14-perplexity-astra-production",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-07T16:04:18.000Z",
-    "headline": "Figure completes Kiavi acquisition to consolidate blockchain real-estate lending",
-    "plain_english": "Figure, a blockchain-focused fintech, acquired Kiavi, a real-estate lending platform, to merge on-chain mortgage origination and secondary-market tools—creating an end-to-end tokenized lending stack.",
-    "why_it_matters": "First major M&A merging blockchain infrastructure with mainstream mortgage origination; signals banks will soon face competitive pressure on loan origination speed and transparency.",
+    "severity": "high",
+    "published_at": "2026-09-14T00:00:00.000Z",
+    "headline": "Perplexity deploys OpenAI's Astra for autonomous production system control",
+    "plain_english": "Search startup Perplexity is running OpenAI's Astra model in production to autonomously write internal communications, modify software, and monitor systems with minimal human supervision. Represents shift from AI-as-copilot to autonomous agent control.",
+    "why_it_matters": "First public enterprise deployment of Astra for mission-critical systems. If stable, signals BFSI will pursue similar end-to-end automation for ops, payments, and risk workflows. Compliance and audit implications dramatic.",
     "jargon": [
       {
-        "term": "tokenized lending",
-        "def": "Loans recorded and traded on blockchain, enabling instant settlement and fractional investor participation."
+        "term": "Astra",
+        "def": "OpenAI's multi-modal reasoning model capable of real-time system monitoring and autonomous action execution with reduced human oversight loops."
       }
     ],
     "source": {
-      "name": "FF News · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PT3pKcHJwQTdNY2YwSnNMR2xta0hGUEcta016U3ViRkpabS1lVVoyd3lIbloySVRndHU3NFN0M3FJNzF1U1VIdjFUWEFHUUdvWnQ4MFlPcTNwZVF4T0NGSnRCWDl3RVREcEM1WFhJYTgyMnVNeTNZOVV3?oc=5"
+      "name": "OpenAI · 2026-09-14",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     }
   },
   {
@@ -648,26 +662,6 @@
     "effective_date": "2026-09-07"
   },
   {
-    "id": "2026-09-07-matt-clifford-aria-anthropic-conflict",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-09-07T14:48:52.000Z",
-    "headline": "Matt Clifford steps down from UK AI safety agency ARIA over Anthropic board conflict",
-    "plain_english": "Matt Clifford, co-founder of AI Research and Investment (ARIA), the UK's £900M frontier-AI fund, quit the board due to undisclosed conflict-of-interest concerns related to his Anthropic shareholdings.",
-    "why_it_matters": "First major UK AI governance rift: suggests regulators are hardening stance on dual roles in AI investment and advisory; ARIA's capital allocation to Anthropic will now face public scrutiny.",
-    "jargon": [
-      {
-        "term": "conflict of interest",
-        "def": "A situation where a person's financial or personal stakes in an outcome can bias their decision-making in a public or fiduciary role."
-      }
-    ],
-    "source": {
-      "name": "Sifted · 2026-09-07",
-      "url": "https://sifted.eu/articles/matt-clifford-quits-aria/"
-    }
-  },
-  {
     "id": "2026-09-10-tool-mistral-sovereign-ai",
     "category": "tool",
     "jurisdiction": "EU",
@@ -792,17 +786,23 @@
     }
   },
   {
-    "id": "2026-08-12-tool-ai-data-center-benchmark",
-    "category": "tool",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-12T22:27:52.000Z",
-    "headline": "AI data centre infrastructure trade regains market leadership signal",
-    "plain_english": "Market sentiment shifted: AI infrastructure stocks (networking, compute, cooling) re-entered favour after weeks of sell-offs. CNBC analysis flags 6 stocks driving the rebound, signalling investors expect renewed capex commitments from hyperscalers and enterprises.",
-    "why_it_matters": "Banks and fintech shops planning LLM deployments should expect GPU/networking availability to tighten again; spot pricing may spike; negotiate capacity early.",
+    "id": "2026-09-11-ycombinator-open-weight-distillation",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T20:59:47.000Z",
+    "headline": "Y Combinator urges US open-weight labs to distill frontier AI models",
+    "plain_english": "Y Combinator CEO Garry Tan called for smaller US-based open-weight AI labs to distill techniques from American frontier models, creating sovereign alternatives to Chinese LLMs. Framed as geopolitical resilience strategy.",
+    "why_it_matters": "Signals policy appetite for domestic AI redundancy. BFSI risk/compliance teams may face future mandates to avoid Chinese model dependencies. Early movers building internal distillation pipelines gain optionality.",
+    "jargon": [
+      {
+        "term": "Distillation",
+        "def": "Training smaller, cheaper models to mimic larger frontier models' behavior; trades raw capability for latency, cost, and sovereignty."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-08-12",
-      "url": "https://www.cnbc.com/2026/08/12/jim-cramer-ai-data-center-trade-leading-stocks.html"
+      "name": "TechCrunch · 2026-09-11",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/"
     }
   },
   {
@@ -951,17 +951,19 @@
     }
   },
   {
-    "id": "2026-09-01-protein-folding-beyond-alphafold",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-01T01:16:56Z",
-    "headline": "Researchers break through AlphaFold limits to predict protein dynamics",
-    "plain_english": "Lab breakthrough: new AI model predicts how proteins change shape over time, beyond AlphaFold's static structure prediction. Relevant to drug discovery, biotech, and pharma-financed research.",
-    "why_it_matters": "Extends AI biotech tooling; pharma and biotech investors (key BFSI clients) will factor improved drug-discovery velocity into asset valuations and R&D budgets.",
+    "id": "2026-09-11-insight-bank-llm-pilots-stall",
+    "category": "insight",
+    "jurisdiction": "BFSI (general)",
+    "severity": "med",
+    "published_at": "2026-09-11T21:20:38.000Z",
+    "headline": "Many bank LLM pilots fail to reach production; FinTechs pivoting to scale existing deployments",
+    "plain_english": "Industry consensus: majority of BFSI LLM pilots launched in 2023–2024 have stalled or been shelved due to data quality, model accuracy, and regulatory friction. Successful early movers (e.g., Revolut scaling corporate banking AI) are now deepening existing use cases rather than expanding scope.",
+    "why_it_matters": "Signal that AI ROI in banking requires vertical focus, not broad platform plays. Risk officers should expect slower adoption curves; finance teams must justify capital spend on tighter metrics. Consolidation of vendors and use cases ahead.",
+    "stat_value": "~70%",
+    "stat_label": "of bank generative AI pilots remain in lab / pilot phase",
     "source": {
-      "name": "EurekAlert! (via AI Trending Now) · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWVXNna0VWUEcyNlJPY2ZXd3NTUDZqVlRCRm9DU2NtLUc0cU04M0VRRXlaWEduMzdxWmQ3dE1BVVB0eXBQRDBvVEI2S0JZZ2dTUmZGcGE3MmZEX093?oc=5"
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/partnerships/2026/fintechs-follow-corporate-clients-into-bigger-financial-relationships/"
     }
   },
   {
@@ -1109,18 +1111,31 @@
     }
   },
   {
-    "id": "2026-09-06-stablecoin-slowdown-treasury-debt-demand",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-06T21:32:26Z",
-    "headline": "Stablecoin trading slump threatens U.S. Treasury debt demand channel",
-    "plain_english": "Crypto market slowdown has reduced stablecoin issuance, which was a secondary source of demand for U.S. government bonds. Traders use stablecoins to park collateral; reduced issuance means lower reserve demand for Treasuries.",
-    "why_it_matters": "Signals fintech/crypto volatility can ripple into sovereign debt markets; BFSI treasurers may face tighter liquidity conditions if stablecoin-driven demand persists as structural feature.",
-    "stat_label": "stablecoin demand headwind for Treasuries",
+    "id": "2026-09-11-anthropic-bioweapons-cyber-disruption",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-12T00:33:13.000Z",
+    "headline": "Anthropic reports Claude disrupted bioweapons research and cyber espionage attempts",
+    "plain_english": "Anthropic published findings that Claude identified and reported attempts to use it for bioweapons design and state-sponsored cyber reconnaissance. Firm blocked queries and alerted relevant authorities.",
+    "why_it_matters": "First public disclosure of frontier lab detecting and preventing dual-use misuse. Sets precedent for AI safety oversight and regulatory liability. BFSI risk officers must assume similar controls are expected for financial crime detection.",
     "source": {
-      "name": "PYMNTS · 2026-09-06",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-slowdown-could-hinder-government-plans-to-sell-debt/"
+      "name": "Anthropic (via Honolulu Star-Advertiser) · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNa3RZaUg0NXhKbmpnVWRMTGl3OUlWLWM0bllsN1lnVjFCX3ZmZ3VuQkNCMXF1c21wa2tVT0pWS051MnY5UTNMS1JIYUlGZmRRUlkwQW1NU29DUjZaX1RqRS01bW1lT0QtckxGTTJsUjFQNmN1akxtclBMa1JwNUtySl9KeEFMd0tMSFREbkJpaElhV1kyRWlTa01Oc1F6a3d3NC12a1c5UnE5cHBaSmpGTFlFUDgwZ0t2SHptQ3pyWDBiTTczWFd1ZVVYM3JEdnNIUzZkQU11b2g"
+    }
+  },
+  {
+    "id": "2026-09-11-openai-mathematicians-feud",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-11T20:57:36.000Z",
+    "headline": "25 leading mathematicians warn OpenAI against IP appropriation",
+    "plain_english": "25 mathematicians signed open letter accusing OpenAI and peer labs of threatening academic intellectual work through model training on scholarly outputs without license or attribution.",
+    "why_it_matters": "Escalating IP/copyright litigation risk for all LLM vendors. BFSI must audit their AI vendor contracts for indemnification clauses covering training-data disputes. Potential for models to be restricted or reimplemented.",
+    "source": {
+      "name": "TechCrunch · 2026-09-11",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/"
     }
   },
   {
@@ -1239,34 +1254,6 @@
     "source": {
       "name": "News.com.au · 2026-09-08",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWHlpRE9zRjVSdnFaVk8wMWZkTTZoaGRwWnVfOHdCdFJKX3NFa3pUZzZqUHFayllGdzRrTzJlZ0dXODUwUkgtQlpWQjZjNXBYU3lEVG5hVDZGMDhGTzJtU3c4UmVmRncxdXQ4M1F6aTBoVnJkVkpnc0JEMzQwQ0RVSTROa2llQk9UTVIwRkRWak1LaGRZQ0dBQm8tX09HOXNsakNIQ0JPbWFSTHlIZ1BZN3NBYTNISHVfN3QxaHJkYWM4anQ1S2RiRDJ5RUNzejhlSXI3RmtGdHhXMEMteFU0d1Nn"
-    }
-  },
-  {
-    "id": "2026-09-08-gates-notes-ai-era-choices",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-07T21:11:16Z",
-    "headline": "Bill Gates: turbulent AI era requires critical policy choices now",
-    "plain_english": "Gates Notes essay argues that near-term AI governance decisions will shape long-term outcomes in health, education, and economic opportunity. Emphasizes urgency of regulatory and philanthropic action.",
-    "why_it_matters": "High-profile voices now frame AI governance as mission-critical, not optional; BFSI risk/compliance teams should expect accelerated regulatory momentum and stakeholder pressure on AI ethics/fairness disclosures.",
-    "source": {
-      "name": "Gates Notes · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
-    }
-  },
-  {
-    "id": "2026-09-07-frontier-ai-openai-claude-update",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-07T12:00:00.000Z",
-    "headline": "Anthropic and OpenAI race accelerates with latest model iterations",
-    "plain_english": "Claude and GPT model families continue pushing capabilities in reasoning, long-context retrieval, and multimodal tasks; both labs report improvements in financial document analysis and contract interpretation.",
-    "why_it_matters": "Frontier model competition directly fuels BFSI AI. Better reasoning = more defensible underwriting and risk decisions; better long-context = handling 100+ page financial filings natively.",
-    "source": {
-      "name": "OpenAI & Anthropic official · 2026-09-07",
-      "url": "https://openai.com/research"
     }
   },
   {
@@ -1631,6 +1618,157 @@
     "source": {
       "name": "CNBC · 2026-08-29",
       "url": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html"
+    }
+  },
+  {
+    "id": "2026-09-09-block-occ-trust-bank-charter",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-09T00:41:07.000Z",
+    "headline": "Block applies for national trust bank charter to custody bitcoin and stablecoins",
+    "plain_english": "Block submitted application to the Office of the Comptroller of the Currency (OCC) for a national trust bank charter. Charter would allow Block to hold custody over bitcoin, stablecoins, and provide fiduciary services for crypto-linked card programmes and fintechs.",
+    "why_it_matters": "OCC greenlight signals regulatory willingness to permit fintech custody of digital assets on national bank balance sheet. If approved, sets precedent for other fintechs (PayPal, Square, Stripe) to seek similar charters, reshaping custody market structure.",
+    "jargon": [
+      {
+        "term": "OCC charter",
+        "def": "National bank charter granted by U.S. Office of Comptroller of Currency; permits deposit-taking, lending, and fiduciary services."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/block-pursues-national-trust-bank-charter-to-custody-bitcoin-and-stablecoins/"
+    }
+  },
+  {
+    "id": "2026-09-09-chime-stride-bank-590m",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-08T23:29:13.000Z",
+    "headline": "Chime acquires nationally chartered Stride Bank for $590 million",
+    "plain_english": "Fintech Chime bought Stride Bank, a nationally chartered bank, for $590M. Stride holds a full OCC charter and deposits. Move gives Chime direct control over deposits and lending, reducing reliance on partner banks.",
+    "why_it_matters": "Fintech-to-bank consolidation accelerates. Direct charter ownership lets Chime deploy AI lending/fraud models on its own balance sheet and customer data without third-party latency or negotiation. Signals industry shift from CBNW partnerships to vertical integration.",
+    "scale": {
+      "metric": "acquisition",
+      "value": "$590M"
+    },
+    "source": {
+      "name": "Reuters · 2026-09-08",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXIxVTFQOUJmN3FqeU5HY0RxcTJvaDg4UmJ2V1ZNU0YzRWpheEhxRlRCLTdUYU5qZjRIWnlHNG96ZEV1SllyTWg0cUlPOXdlZktNT3BNZXVXTVBRWmQ0UHlGZXRJLU1jeFJjeVcyVWVRVVNJaV9vZ2xpb21XMHVqVnROOEdTVXdrWDV2ZXR3UDlYMWNWNUgxRUY4d0VPcDlha2RFVVpGc1U5cWRmcFdVWUkzOXZ6c050T0h0WnVwYw"
+    }
+  },
+  {
+    "id": "2026-09-08-mistral-series-d-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-09-08T14:45:21.000Z",
+    "headline": "Mistral raises €3B in record EU funding round, valuation hits €21B",
+    "plain_english": "France-based AI startup Mistral closed a €3 billion Series D (approx. $3.5B), led by Samsung, Scaleup Europe, and PSG Equity. It's the largest equity raise ever by a European tech company. Sovereign AI (non-US models) is now a scaled business.",
+    "why_it_matters": "EU AI Act compliance and geopolitical autonomy drive massive capital into alternatives to US/China labs. BFSI will face vendor choice: adopt US frontier models or back European players with regulatory tailwinds but less mature production track records.",
+    "amount": "€3B",
+    "round": "Series D",
+    "source": {
+      "name": "PYMNTS · 2026-09-08",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mistral-raises-3-billion-dollars-ai-research-record-european-union-funding-round/"
+    }
+  },
+  {
+    "id": "2026-09-07-figure-kiavi-blockchain-realestate",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-07T16:04:18.000Z",
+    "headline": "Figure completes Kiavi acquisition to consolidate blockchain real-estate lending",
+    "plain_english": "Figure, a blockchain-focused fintech, acquired Kiavi, a real-estate lending platform, to merge on-chain mortgage origination and secondary-market tools—creating an end-to-end tokenized lending stack.",
+    "why_it_matters": "First major M&A merging blockchain infrastructure with mainstream mortgage origination; signals banks will soon face competitive pressure on loan origination speed and transparency.",
+    "jargon": [
+      {
+        "term": "tokenized lending",
+        "def": "Loans recorded and traded on blockchain, enabling instant settlement and fractional investor participation."
+      }
+    ],
+    "source": {
+      "name": "FF News · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PT3pKcHJwQTdNY2YwSnNMR2xta0hGUEcta016U3ViRkpabS1lVVoyd3lIbloySVRndHU3NFN0M3FJNzF1U1VIdjFUWEFHUUdvWnQ4MFlPcTNwZVF4T0NGSnRCWDl3RVREcEM1WFhJYTgyMnVNeTNZOVV3?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-07-matt-clifford-aria-anthropic-conflict",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-09-07T14:48:52.000Z",
+    "headline": "Matt Clifford steps down from UK AI safety agency ARIA over Anthropic board conflict",
+    "plain_english": "Matt Clifford, co-founder of AI Research and Investment (ARIA), the UK's £900M frontier-AI fund, quit the board due to undisclosed conflict-of-interest concerns related to his Anthropic shareholdings.",
+    "why_it_matters": "First major UK AI governance rift: suggests regulators are hardening stance on dual roles in AI investment and advisory; ARIA's capital allocation to Anthropic will now face public scrutiny.",
+    "jargon": [
+      {
+        "term": "conflict of interest",
+        "def": "A situation where a person's financial or personal stakes in an outcome can bias their decision-making in a public or fiduciary role."
+      }
+    ],
+    "source": {
+      "name": "Sifted · 2026-09-07",
+      "url": "https://sifted.eu/articles/matt-clifford-quits-aria/"
+    }
+  },
+  {
+    "id": "2026-09-01-protein-folding-beyond-alphafold",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-01T01:16:56Z",
+    "headline": "Researchers break through AlphaFold limits to predict protein dynamics",
+    "plain_english": "Lab breakthrough: new AI model predicts how proteins change shape over time, beyond AlphaFold's static structure prediction. Relevant to drug discovery, biotech, and pharma-financed research.",
+    "why_it_matters": "Extends AI biotech tooling; pharma and biotech investors (key BFSI clients) will factor improved drug-discovery velocity into asset valuations and R&D budgets.",
+    "source": {
+      "name": "EurekAlert! (via AI Trending Now) · 2026-09-01",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWVXNna0VWUEcyNlJPY2ZXd3NTUDZqVlRCRm9DU2NtLUc0cU04M0VRRXlaWEduMzdxWmQ3dE1BVVB0eXBQRDBvVEI2S0JZZ2dTUmZGcGE3MmZEX093?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-06-stablecoin-slowdown-treasury-debt-demand",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-06T21:32:26Z",
+    "headline": "Stablecoin trading slump threatens U.S. Treasury debt demand channel",
+    "plain_english": "Crypto market slowdown has reduced stablecoin issuance, which was a secondary source of demand for U.S. government bonds. Traders use stablecoins to park collateral; reduced issuance means lower reserve demand for Treasuries.",
+    "why_it_matters": "Signals fintech/crypto volatility can ripple into sovereign debt markets; BFSI treasurers may face tighter liquidity conditions if stablecoin-driven demand persists as structural feature.",
+    "stat_label": "stablecoin demand headwind for Treasuries",
+    "source": {
+      "name": "PYMNTS · 2026-09-06",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-slowdown-could-hinder-government-plans-to-sell-debt/"
+    }
+  },
+  {
+    "id": "2026-09-08-gates-notes-ai-era-choices",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-07T21:11:16Z",
+    "headline": "Bill Gates: turbulent AI era requires critical policy choices now",
+    "plain_english": "Gates Notes essay argues that near-term AI governance decisions will shape long-term outcomes in health, education, and economic opportunity. Emphasizes urgency of regulatory and philanthropic action.",
+    "why_it_matters": "High-profile voices now frame AI governance as mission-critical, not optional; BFSI risk/compliance teams should expect accelerated regulatory momentum and stakeholder pressure on AI ethics/fairness disclosures.",
+    "source": {
+      "name": "Gates Notes · 2026-09-07",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
+    }
+  },
+  {
+    "id": "2026-09-07-frontier-ai-openai-claude-update",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-07T12:00:00.000Z",
+    "headline": "Anthropic and OpenAI race accelerates with latest model iterations",
+    "plain_english": "Claude and GPT model families continue pushing capabilities in reasoning, long-context retrieval, and multimodal tasks; both labs report improvements in financial document analysis and contract interpretation.",
+    "why_it_matters": "Frontier model competition directly fuels BFSI AI. Better reasoning = more defensible underwriting and risk decisions; better long-context = handling 100+ page financial filings natively.",
+    "source": {
+      "name": "OpenAI & Anthropic official · 2026-09-07",
+      "url": "https://openai.com/research"
     }
   },
   {
@@ -5611,20 +5749,6 @@
     }
   },
   {
-    "id": "2026-08-12-trending-cerebras-ipo-earnings",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T21:27:13.000Z",
-    "headline": "Cerebras stock plummets 16% despite Q2 revenue beat and guidance raise",
-    "plain_english": "AI chip specialist Cerebras reported better-than-expected Q2 revenue and lifted full-year guidance, yet shares fell 16% in post-earnings trading—signalling investor skepticism about wafer-scale AI processor demand in a cooling AI capex cycle.",
-    "why_it_matters": "Market rerating of AI infrastructure plays; banks and hyperscalers may defer custom silicon purchases; shifts favour back to NVIDIA for near-term workloads.",
-    "source": {
-      "name": "Reuters · 2026-08-12",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS3RxTUJxMTh2Mk9XSmgxdm1MZDh6MlRtcVl5aFM1bmF1ajVmWlFnUF9nNU0yYjloQ0pON2VSWFZBYTVldmJ0TGI5N2psYlcwZVRuSURZaUN1NkYzVkh4NGVNRUtjd0F0M3RMTno2X0RSNG9VbF91V2lDOUh0OG5nSDJiY2M4cDdrM1lGRnNicldnNXBBQTBDRFVzNHdJQQ"
-    }
-  },
-  {
     "id": "2026-08-24-sec-investigates-ai-hedge-fund",
     "category": "regulation",
     "jurisdiction": "US",
@@ -6185,20 +6309,6 @@
     "source": {
       "name": "Bloomberg · 2026-08-22",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbTJaRUhiSVhXZGpxd0lxTGhUdThiWFFfQ1BqRWJLeXl5Z3FmQXJTWURKTDFaQU5OM0N0M1ptcGpleU1KVnVvdFpOYUtjVFUzdV9DSWVnVHcwU0w2b3dBSktkNmhpVVlNS0hDY0hhUmRFRlZvN0phYzZMQ0tKN2tDaFNyN2dfQU81WTJldm9vN0ZvYUh2SXhZ"
-    }
-  },
-  {
-    "id": "2026-08-12-research-anthropic-watermarking",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-12T22:26:37.000Z",
-    "headline": "Anthropic deploys output watermarking on Claude; backlash from workplace users",
-    "plain_english": "Anthropic introduced watermarking on Claude outputs to detect and log use cases (e.g., workplace tasks, homework). Social media backlash: users report concern that watermarks may flag legitimate business uses and invade privacy. Raises questions about output traceability in regulated industries.",
-    "why_it_matters": "BFSI teams using Claude for compliance or trading analysis may face audit friction if watermarks trigger; regulators may interpret watermarks as Anthropic acknowledging Claude outputs aren't suitable for production without review.",
-    "source": {
-      "name": "TechCrunch · 2026-08-12",
-      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/"
     }
   },
   {
@@ -8126,26 +8236,6 @@
     }
   },
   {
-    "id": "2026-08-12-regulation-occ-stablecoin-reporting",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-12T20:56:30.000Z",
-    "headline": "Banks push back on OCC weekly stablecoin reporting requirements",
-    "plain_english": "Bank comment letters filed with the Office of the Comptroller of the Currency flag operational burden of OCC's proposed weekly stablecoin reporting forms; industry questions frequency and data scope requirements for permitted payment stablecoins.",
-    "why_it_matters": "OCC implementation timeline at risk; banks signal compliance cost and data-sharing concerns will shape final rule; delays favourable to fintech competitors racing to capture stablecoin settlement faster than regulated issuers.",
-    "jargon": [
-      {
-        "term": "stablecoin reporting",
-        "def": "mandated periodic disclosure of reserves, redemptions, and risk metrics for bank-issued cryptocurrencies pegged to USD."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-12",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/banks-challenge-occ-weekly-stablecoin-reporting-burden/"
-    }
-  },
-  {
     "id": "2026-08-15-wall-street-ai-deployment",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8317,22 +8407,6 @@
     "source": {
       "name": "Sifted · 2026-08-13",
       "url": "https://sifted.eu/articles/legora-in-talks-to-raise-at-a-10bn-valuation-according-to-reports/"
-    }
-  },
-  {
-    "id": "2026-08-12-vendor-yuno-series-b",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-12T23:12:00.000Z",
-    "headline": "Yuno raises $45M Series B for AI-native global payments OS",
-    "plain_english": "Yuno, an AI-first payments orchestration platform serving merchants, banks, and digital wallets, secured $45M in Series B funding to scale its enterprise payment operating system across markets.",
-    "why_it_matters": "Demonstrates continued investor appetite for AI-native payments infrastructure; Yuno competes with legacy transaction managers by offering machine-learning-driven routing and fraud detection from day one.",
-    "amount": "$45M",
-    "round": "Series B",
-    "source": {
-      "name": "PYMNTS · 2026-08-12",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/yuno-raises-45-million-to-drive-global-payments-push/"
     }
   },
   {
@@ -8513,22 +8587,6 @@
     }
   },
   {
-    "id": "2026-08-12-insight-enterprises-own-ai-vs-rent",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-12T22:41:53.000Z",
-    "headline": "Enterprises increasingly prefer owned or fine-tuned AI over shared LLM APIs",
-    "plain_english": "BFSI and enterprise teams are moving away from renting commodity LLM APIs (shared with competitors, costly at scale, exposes proprietary queries) toward fine-tuned or open-weight models they can control. Running proprietary models 5–10x cheaper than API spending at volume.",
-    "why_it_matters": "Shifts margin economics for frontier labs (OpenAI, Anthropic); accelerates on-premise and private SaaS adoption; banks prioritise data sovereignty and cost control over cutting-edge reasoning.",
-    "stat_value": "5–10x",
-    "stat_label": "cost reduction for enterprise-owned vs. API models at scale",
-    "source": {
-      "name": "PYMNTS · 2026-08-12",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/companies-want-to-own-their-ai-not-rent-it/"
-    }
-  },
-  {
     "id": "2026-08-14-nvidia-spacex-xai-stake",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8554,34 +8612,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-14",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-revenue-run-rate-tops-40-billion-as-ipo-nears/"
-    }
-  },
-  {
-    "id": "2026-08-12-deployment-cisco-ai-orders",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T21:38:00.000Z",
-    "headline": "Cisco reports sharp profit jump driven by surge in AI infrastructure orders",
-    "plain_english": "Cisco's Q2 earnings showed significant profitability gains fuelled by accelerating orders for AI-related networking and data centre hardware, signalling enterprise demand for high-performance interconnect remains strong despite Q2 chip sector weakness.",
-    "why_it_matters": "BFSI capex for LLM inference, model serving, and GPU networking persists; validates infrastructure layer resilience even as chip demand weakens; Cisco's switch fabric and SmartNIC revenue likely anchored by cloud and fintech customers.",
-    "source": {
-      "name": "WSJ · 2026-08-12",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaUpDeW9CYVBYTUVteS1ZU1VKaWd4ZUVJeHlFdS1UaW42VENfSWZLbTJOWEV0eEtLWWE2Mm9GRWRoazdUdDlJcW5IS0hDWV9LX21pM3o5Vi1ta1NPSmJDd0VDSkNuWkJURDUwUUt0eUctbFpMMzB0a3R1Z2VxdkQ3WTJkMlQweko3"
-    }
-  },
-  {
-    "id": "2026-08-13-shift-sp-global-microsoft-copilot",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-13T00:01:00.000Z",
-    "headline": "S&P Global integrates financial data into Microsoft 365 Copilot workflows",
-    "plain_english": "S&P Global's analytics and market intelligence now embedded natively in Microsoft 365 Copilot, enabling enterprise users to query financial data, insights, and regulatory content directly within agentic workflows—signalling shift toward embedded fintech data layers in workplace AI.",
-    "why_it_matters": "BFSI teams using Microsoft workflows gain one-click access to market intelligence; reduces friction between market research and decision-making; signals incumbents (S&P, Microsoft) recapturing workflow integration that startups targeted.",
-    "source": {
-      "name": "Finextra · 2026-08-13",
-      "url": "https://www.finextra.com/newsarticle/48238/sp-global-data-integrated-into-microsoft-365-copilot"
     }
   },
   {
@@ -8630,20 +8660,6 @@
     "source": {
       "name": "Breakingthenews.net · 2026-08-13",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOFpUaG1wRHhRV1A3NlJ4dFB1R2dKTFBLUkpxZWEwLXVaT1EwbTByZHNralpGclNLV3NNeEJna2J3RTVFZFE0ZWJrME4yN3hKdU9JX0RhWlNzb0k5VjY5aGcyUkRVcGtMVVNaOWllYzZnTVVWV09CeUhxczUyb1FrMTREWjBCazJaOUctS08zZ25LOEFO"
-    }
-  },
-  {
-    "id": "2026-08-12-frontier-white-house-ai-policy-expansion",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-12T21:00:00.000Z",
-    "headline": "White House signals expansion of AI policy to cover open-weight models",
-    "plain_english": "U.S. White House sources indicate an updated AI framework under development will likely extend to open-weight models (e.g., Meta's Llama, Mistral), moving beyond prior focus on closed proprietary systems and frontier labs.",
-    "why_it_matters": "Open-source AI regulation unclear; BFSI compliance frameworks may need revision if disclosure, audit, or usage restrictions expand to open models; impacts enterprise fine-tuning strategies.",
-    "source": {
-      "name": "Wired · 2026-08-12",
-      "url": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/"
     }
   }
 ]
