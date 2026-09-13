@@ -944,6 +944,22 @@
     }
   },
   {
+    "id": "2026-09-13-insight-ai-safety-industry-signal",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-12T23:13:41Z",
+    "headline": "Top AI leaders publicly warning on pace signals regulatory capitulation risk for labs",
+    "plain_english": "When Altman, Musk, and Amodei align on slowing development, they pre-emptively frame regulation as self-imposed rather than externally forced. Reduces legal exposure; signals labs expect oversight soon.",
+    "why_it_matters": "BFSI compliance teams should expect AI governance mandates within 18 months. Self-regulation now = stricter external rules later. Plan procurement & model audits accordingly.",
+    "stat_value": "3",
+    "stat_label": "major AI lab leaders publicly calling for development slowdown (Altman, Musk, Amodei)",
+    "source": {
+      "name": "CNBC · 2026-09-12",
+      "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html"
+    }
+  },
+  {
     "id": "2026-09-12-insight-claude-misuse-at-scale",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1090,43 +1106,71 @@
     }
   },
   {
-    "id": "2026-09-07-liquid-network-320m-breach",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-07T16:22:54.000Z",
-    "headline": "$320 million siphoned from Liquid Network blockchain in latest crypto heist",
-    "plain_english": "Hackers stole $320M from Liquid Network, a sidechain scaling Bitcoin. The breach was attributed to 'white-hat' hackers, suggesting a potential vulnerability disclosure gone sideways—raising questions about bridge security.",
-    "why_it_matters": "Stablecoin and bridge risks remain BFSI's blind spot; regulators will use this as evidence that crypto infrastructure is too fragile for bank integration—delaying enterprise crypto adoption.",
-    "jargon": [
-      {
-        "term": "white-hat hacker",
-        "def": "Ethical security researcher who finds vulnerabilities to report them, but can sometimes cross legal lines if not contracted formally."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-07",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/hackers-take-320-million-dollars-from-liquid-network-blockchain/"
-    }
-  },
-  {
     "id": "2026-09-14-frontier-perplexity-astra",
     "category": "frontier",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-09-14T00:00:00.000Z",
-    "headline": "OpenAI's Astra now handles end-to-end production systems for Perplexity",
-    "plain_english": "Perplexity is deploying OpenAI's GPT-6 Astra model to autonomously write communications, modify software, and monitor production systems with less human oversight than prior models. This signals frontier AI agents moving into critical infrastructure roles.",
-    "why_it_matters": "Marks milestone: frontier agentic systems now trusted for unsupervised production management, reshaping how engineering teams deploy oversight and validation.",
+    "published_at": "2026-09-14T00:00:00Z",
+    "headline": "OpenAI's Astra enables Perplexity to automate software deployment and system monitoring",
+    "plain_english": "Perplexity integrated OpenAI's latest-gen Astra model into production for end-to-end system tasks: writing comms, modifying software, monitoring infrastructure. Checkpoints drop significantly vs. earlier models.",
+    "why_it_matters": "Marks frontier-to-production handoff for autonomous systems work. If agents can reliably handle deployment & monitoring, ops headcount pressure on fintechs accelerates.",
     "jargon": [
       {
-        "term": "agentic AI",
-        "def": "AI system that operates autonomously over multiple steps, making decisions and taking actions without human intervention between steps."
+        "term": "end-to-end systems",
+        "def": "AI handling full task lifecycle without human intervention between steps (write → test → deploy → monitor)."
       }
     ],
     "source": {
       "name": "OpenAI · 2026-09-14",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    }
+  },
+  {
+    "id": "2026-09-12-frontier-openai-ipo-delay",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-12T20:46:43Z",
+    "headline": "OpenAI pushes IPO beyond 2026 citing AI safety and capability concerns",
+    "plain_english": "Sam Altman announced OpenAI will not go public in 2026. Stated reason: ongoing AI safety debates and concerns about development pace. Reflects broader c-suite unease over frontier model risks.",
+    "why_it_matters": "IPO delays signal capital scarcity risk for AGI-race players. BFSI labs dependent on frontier model access may face vendor consolidation or forced partnerships if funding tightens.",
+    "source": {
+      "name": "Reuters · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSkNHUFFrUlZCVWVKZ2dpVVkxSzBmcy16aFFHVTJDV25PZ0YzMjBLVlFQZ0pJcU5EVWJlUW13azNiV1BwOENLcTFVOFpZYVVlT0haaXI2ZkFaOUZxTGp2eE1kaGZCb2pXV1dBQy1XcjQ2NmNXMFA3Ynk5ZnA3MU5wWGZCV0ktTWZad2o0LVBmeW1BclBndWRfWEJScFduQklEZUFEX0NteFBhNDYxRG5keUdiUml3dVYz"
+    }
+  },
+  {
+    "id": "2026-09-12-frontier-mistral-sovereign-ai",
+    "category": "frontier",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-12T21:03:17Z",
+    "headline": "Mistral emphasizes sovereign, open-weight AI as European technology frontier",
+    "plain_english": "Mistral rebranded strategy around EU-aligned, open-source AI models. Pitch: escape US vendor lock-in, meet EU AI Act compliance, own model weights locally.",
+    "why_it_matters": "EU fintechs may shift from OpenAI/Anthropic to local models for regulatory safety. Mistral & open-weights startups gain BFSI traction if compliance burden rises under EU AI Act.",
+    "jargon": [
+      {
+        "term": "open-weight models",
+        "def": "AI models with publicly released parameters; users run locally, avoid vendor API dependency."
+      }
+    ],
+    "source": {
+      "name": "Mistral AI · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
+    }
+  },
+  {
+    "id": "2026-09-13-frontier-anthropic-safety-exit",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-12T23:44:24Z",
+    "headline": "Anthropic researcher quits, citing AI as existential threat to humanity",
+    "plain_english": "Senior researcher at Anthropic departed publicly, stating AI development poses existential risk. Joins growing chorus of safety-focused departures from frontier labs.",
+    "why_it_matters": "Brain drain from safety teams signals internal dissent over pace & risk. May reduce Anthropic's governance edge vs. competitors. BFSI firms betting on Anthropic for compliance need contingency vendor plans.",
+    "source": {
+      "name": "Mashable · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8tengyUVFUb0w0X2lha3NqWXhWWGM3bGpfMENGY1NOU3UzREtoOXJvbXBjLXc3VmJLUlMxSWF1a0VOWXRpRFZoaVJEbVBZUGg2bHNjTmVGRTB2SEVSd3Y1Qkt3VkFSaUdOX3psdjVUOXNVc3ZSZmpJ"
     }
   },
   {
@@ -1220,45 +1264,27 @@
     }
   },
   {
-    "id": "2026-09-11-frontier-openai-antitrust-slowdown",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-10T23:28:42.000Z",
-    "headline": "OpenAI questions legality of industry-coordinated AI development slowdown under antitrust law",
-    "plain_english": "OpenAI leadership is asking whether antitrust law permits frontier labs to coordinate a slowdown in AI capability development—a safety measure some labs consider urgent. Legal analysis suggests coordination could violate Sherman Act even if motivated by safety.",
-    "why_it_matters": "Reveals unresolved tension between AI safety (which may require collective restraint) and competition law (which prohibits competitor coordination). Likely triggers DOJ/FTC guidance or litigation within 18 months; directly impacts BFSI's ability to adopt safety-first procurement mandates.",
-    "source": {
-      "name": "Wired · 2026-09-10",
-      "url": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/"
-    }
-  },
-  {
-    "id": "2026-09-10-openai-alignment-board",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-09T22:25:22Z",
-    "headline": "Paul Christiano, AI alignment researcher, joins OpenAI Foundation board",
-    "plain_english": "Paul Christiano, a prominent AI safety and alignment expert, was appointed to the OpenAI Foundation board. Christiano has long advocated for caution on AGI timelines and robustness of AI systems before scaling.",
-    "why_it_matters": "Appointment signals OpenAI's commitment to board-level AI safety oversight amid regulatory pressure and internal debate on deployment speed—relevant to enterprise customers weighing frontier-model risk.",
-    "source": {
-      "name": "TechCrunch · 2026-09-09",
-      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/"
-    }
-  },
-  {
-    "id": "2026-09-09-frontier-anthropic-researcher-ai-safety-exit",
-    "category": "frontier",
+    "id": "2026-09-13-learner-token-limits",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-09T15:02:47Z",
-    "headline": "Anthropic researcher quits over AI extinction risk, calls for pacing agreements between labs",
-    "plain_english": "Jacob Coxon, a researcher at Anthropic, resigned citing concerns about self-improving AI systems and existential risk. Called for binding pacing agreements between AI labs to slow deployment of advanced models.",
-    "why_it_matters": "High-profile safety exit from leading BFSI-friendly lab signals internal disagreement on risk tolerance. Regulatory scrutiny on AI governance in banking will intensify; expect capital requirements and stress tests for AI model drift and emergent behavior.",
+    "severity": "low",
+    "published_at": "2026-09-13T00:47:50Z",
+    "headline": "Understanding AI token limits: why LLM context windows matter for enterprise",
+    "plain_english": "Tokens are the words/subwords an AI model 'reads' in one go. Limits (context windows) cap how much data you feed at once. Longer contexts = bigger processing; shorter = cheaper but may miss context.",
+    "why_it_matters": "BFSI ops like document review, trade note analysis, regulatory parsing hit token ceilings fast. Understanding limits helps you choose model size and architecutre (chunking, RAG).",
+    "jargon": [
+      {
+        "term": "context window",
+        "def": "Max number of tokens (roughly words) an LLM can process in a single request; longer windows enable more complex tasks but cost more."
+      },
+      {
+        "term": "RAG",
+        "def": "Retrieval-Augmented Generation: feeding external documents to an LLM to answer questions without fine-tuning the model."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-09-09",
-      "url": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
+      "name": "WSJ · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSzRLaE5aaENWTG9TMnptd3hHX1NrWkNVUmEzemF5MEhwVnBTNVlHT3k1MTFSV2hWWk5DcDF0eHM0djhlQXlLNWVHTVVpME1DN0xyR2tKVDJEWklmTTFOZlJudlNYUkd4MGpXbkVFYkQzMWRBQ0k2V01fdG1sNTBQQm01NmljcG5mblZvNFBqc2o"
     }
   },
   {
@@ -1454,23 +1480,17 @@
     }
   },
   {
-    "id": "2026-08-27-llm-preference-measurement",
-    "category": "learner",
+    "id": "2026-09-13-trending-ai-safety-pace",
+    "category": "trending",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-27T04:00:00.000Z",
-    "headline": "What does an LLM preference test measure: the model or the test design?",
-    "plain_english": "arXiv meta-analysis: LLM preference measurements (what a model 'likes' inferred from prompts) can be 50% model behavior, 50% test instrument artifacts. Questionnaire design, phrasing, context order shape results as much as actual model values.",
-    "why_it_matters": "When banks run LLM evaluations for fairness, bias, or alignment, results depend heavily on evaluation design. Two banks testing the same model on different benchmarks may reach opposite conclusions. Signals need for standardized evaluation protocols, not one-off testing.",
-    "jargon": [
-      {
-        "term": "Preference elicitation",
-        "def": "Inferring what an AI system values or prefers by asking it questions; results depend on question design as much as the system itself."
-      }
-    ],
+    "severity": "high",
+    "published_at": "2026-09-13T00:09:00Z",
+    "headline": "Anthropic CEO calls for AI model development slowdown; Altman, Musk, others align",
+    "plain_english": "Dario Amodei (Anthropic) publicly urges AI labs to reduce model capability growth pace due to misuse risks. Sam Altman (OpenAI) and Elon Musk publicly support. OpenAI delays 2026 IPO partly citing safety concerns.",
+    "why_it_matters": "Front-running regulatory pushback. If major labs self-impose capability throttles, BFSI models (LLMs for compliance, trading) face upstream supply-side delays. Competitive moats shift from speed to safety certification.",
     "source": {
-      "name": "arXiv · 2026-08-27",
-      "url": "https://arxiv.org/abs/2608.23641"
+      "name": "Reuters · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObV9NUVhESy1GWXRLaWhTYlM1UUNSU0kweVg1N2YxNTRXUVdORW5EWHQ2MXNpYlo3SHNlLWZVZ2N1ZEZYZlNnUDY4TUZBMVFvcU1BaDBIWm94TkhqQUVXVzRZQlBUX3JOZUJYNnVVcVV3dlhTMDRFMmVXVGpNOU1RUEhnV254NWV0clJhc0NEOVFPWGFYSEtiY2R3U0JqM0NVc3c"
     }
   },
   {
@@ -1609,6 +1629,88 @@
     "source": {
       "name": "gatesnotes · 2026-08-30",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
+    }
+  },
+  {
+    "id": "2026-09-07-liquid-network-320m-breach",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-07T16:22:54.000Z",
+    "headline": "$320 million siphoned from Liquid Network blockchain in latest crypto heist",
+    "plain_english": "Hackers stole $320M from Liquid Network, a sidechain scaling Bitcoin. The breach was attributed to 'white-hat' hackers, suggesting a potential vulnerability disclosure gone sideways—raising questions about bridge security.",
+    "why_it_matters": "Stablecoin and bridge risks remain BFSI's blind spot; regulators will use this as evidence that crypto infrastructure is too fragile for bank integration—delaying enterprise crypto adoption.",
+    "jargon": [
+      {
+        "term": "white-hat hacker",
+        "def": "Ethical security researcher who finds vulnerabilities to report them, but can sometimes cross legal lines if not contracted formally."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-07",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/hackers-take-320-million-dollars-from-liquid-network-blockchain/"
+    }
+  },
+  {
+    "id": "2026-09-11-frontier-openai-antitrust-slowdown",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-10T23:28:42.000Z",
+    "headline": "OpenAI questions legality of industry-coordinated AI development slowdown under antitrust law",
+    "plain_english": "OpenAI leadership is asking whether antitrust law permits frontier labs to coordinate a slowdown in AI capability development—a safety measure some labs consider urgent. Legal analysis suggests coordination could violate Sherman Act even if motivated by safety.",
+    "why_it_matters": "Reveals unresolved tension between AI safety (which may require collective restraint) and competition law (which prohibits competitor coordination). Likely triggers DOJ/FTC guidance or litigation within 18 months; directly impacts BFSI's ability to adopt safety-first procurement mandates.",
+    "source": {
+      "name": "Wired · 2026-09-10",
+      "url": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/"
+    }
+  },
+  {
+    "id": "2026-09-10-openai-alignment-board",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-09T22:25:22Z",
+    "headline": "Paul Christiano, AI alignment researcher, joins OpenAI Foundation board",
+    "plain_english": "Paul Christiano, a prominent AI safety and alignment expert, was appointed to the OpenAI Foundation board. Christiano has long advocated for caution on AGI timelines and robustness of AI systems before scaling.",
+    "why_it_matters": "Appointment signals OpenAI's commitment to board-level AI safety oversight amid regulatory pressure and internal debate on deployment speed—relevant to enterprise customers weighing frontier-model risk.",
+    "source": {
+      "name": "TechCrunch · 2026-09-09",
+      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/"
+    }
+  },
+  {
+    "id": "2026-09-09-frontier-anthropic-researcher-ai-safety-exit",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-09T15:02:47Z",
+    "headline": "Anthropic researcher quits over AI extinction risk, calls for pacing agreements between labs",
+    "plain_english": "Jacob Coxon, a researcher at Anthropic, resigned citing concerns about self-improving AI systems and existential risk. Called for binding pacing agreements between AI labs to slow deployment of advanced models.",
+    "why_it_matters": "High-profile safety exit from leading BFSI-friendly lab signals internal disagreement on risk tolerance. Regulatory scrutiny on AI governance in banking will intensify; expect capital requirements and stress tests for AI model drift and emergent behavior.",
+    "source": {
+      "name": "TechCrunch · 2026-09-09",
+      "url": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
+    }
+  },
+  {
+    "id": "2026-08-27-llm-preference-measurement",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-27T04:00:00.000Z",
+    "headline": "What does an LLM preference test measure: the model or the test design?",
+    "plain_english": "arXiv meta-analysis: LLM preference measurements (what a model 'likes' inferred from prompts) can be 50% model behavior, 50% test instrument artifacts. Questionnaire design, phrasing, context order shape results as much as actual model values.",
+    "why_it_matters": "When banks run LLM evaluations for fairness, bias, or alignment, results depend heavily on evaluation design. Two banks testing the same model on different benchmarks may reach opposite conclusions. Signals need for standardized evaluation protocols, not one-off testing.",
+    "jargon": [
+      {
+        "term": "Preference elicitation",
+        "def": "Inferring what an AI system values or prefers by asking it questions; results depend on question design as much as the system itself."
+      }
+    ],
+    "source": {
+      "name": "arXiv · 2026-08-27",
+      "url": "https://arxiv.org/abs/2608.23641"
     }
   },
   {
@@ -8338,42 +8440,6 @@
     }
   },
   {
-    "id": "2026-08-13-databricks-series-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T22:45:12Z",
-    "headline": "Databricks raises $5 billion at $190 billion valuation for enterprise AI agent platform",
-    "plain_english": "Databricks closed a $5B funding round (valuation: $190B, up from $134B in Feb), positioning itself as the infrastructure layer for enterprise AI agents that can autonomously execute workflows across data and business systems.",
-    "why_it_matters": "Investors are betting that the abstraction layer for multi-step AI agent automation will command higher valuations than individual model providers; signals shift from model scarcity to orchestration complexity.",
-    "amount": "$5B",
-    "round": "Strategic",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/databricks-raises-5-billion-to-expand-enterprise-ai-agent-platform/"
-    }
-  },
-  {
-    "id": "2026-08-13-writer-ai-model-token-optimization",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-13T21:13:24Z",
-    "headline": "Writer releases post-trained model and cost-optimization harness to reduce token consumption",
-    "plain_english": "Writer (enterprise AI vendor) launched a new model based on Z.ai's open-source GLM-5.2 plus proprietary cost-containment tooling, targeting lower per-token economics for production deployments.",
-    "why_it_matters": "Token cost remains a primary adoption blocker for enterprise AI; vendors optimizing inference efficiency are winning budget-constrained use cases in financial services.",
-    "jargon": [
-      {
-        "term": "token cost",
-        "def": "Price per unit of text processed by an LLM; measured in cents per 1K tokens. Cheaper = larger deployments are feasible."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-08-13",
-      "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/"
-    }
-  },
-  {
     "id": "2026-08-14-openai-appoints-rajic-cro",
     "category": "shift",
     "jurisdiction": "US",
@@ -8399,22 +8465,6 @@
     "source": {
       "name": "CNBC · 2026-08-14",
       "url": "https://www.cnbc.com/2026/08/14/data-centers-in-space-emerge-as-next-frontier-for-insurers.html"
-    }
-  },
-  {
-    "id": "2026-08-13-openai-cfo-ai-native-finance",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-13T22:22:06Z",
-    "headline": "OpenAI CFO built AI-native finance ops; mid-market finance teams face different constraints",
-    "plain_english": "OpenAI's CFO Sarah Friar rebuilt the company's finance workflows around AI-native tools (no Excel, no manual reconciliation), but mid-market CFOs lack the engineering resources and data maturity to replicate this; incremental improvements within legacy ERP remain realistic.",
-    "why_it_matters": "Enterprise AI adoption in finance is bifurcated: frontier AI companies are rewriting processes ground-up; most corporates are patching around legacy stacks. Understands the productivity gap but telegraphs pragmatic next steps for ordinary BFSI firms.",
-    "stat_value": "Most mid-market CFOs",
-    "stat_label": "cannot replicate AI-native finance stack due to ERP lock-in and lean teams",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-cfo-sarah-friar-built-an-ai-native-department-mid-market-cfos-can-start-smaller/"
     }
   },
   {
@@ -8520,77 +8570,6 @@
     }
   },
   {
-    "id": "2026-08-14-bofa-jio-credit-stake",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "high",
-    "published_at": "2026-08-14T00:01:00Z",
-    "headline": "Bank of America takes 49.9% stake in Indian digital lender Jio Credit for $1.9 billion",
-    "plain_english": "BofA is investing $1.9B for a near-majority stake in Jio Credit, a digital-native Indian NBFC, gaining exposure to India's consumer lending growth and access to a fintech-native underwriting and servicing model.",
-    "why_it_matters": "Major US bank is outsourcing consumer lending infrastructure to an AI-native Indian fintech; signals acceptance that greenfield digital lenders outcompete legacy origination and collections stacks in emerging markets.",
-    "scale": {
-      "metric": "markets",
-      "value": "India"
-    },
-    "amount": "$1.9B",
-    "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/newsarticle/48247/bofa-to-buy-499-stake-in-indian-digital-lender-jio-credit"
-    }
-  },
-  {
-    "id": "2026-08-14-mufg-blockchain-jgb-repo",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-14T00:01:00Z",
-    "headline": "MUFG trials on-chain settlement for Japanese government bond repo using Canton Network",
-    "plain_english": "Mitsubishi UFJ is running a proof-of-concept to settle JGB repo trades on the Canton Network blockchain, moving post-trade infrastructure from T+1 messaging to atomic on-chain settlement.",
-    "why_it_matters": "Tier-1 global bank is testing blockchain for core fixed-income post-trade; success here de-risks adoption by regional banks and could standardize blockchain settlement for repo markets globally.",
-    "jargon": [
-      {
-        "term": "repo",
-        "def": "Repurchase agreement—short-term loan of cash secured by bonds; backbone of funding markets."
-      },
-      {
-        "term": "post-trade settlement",
-        "def": "Process of confirming, clearing, and transferring assets after a trade; blockchain replaces custodian intermediaries."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-14",
-      "url": "https://www.finextra.com/newsarticle/48246/mufg-trials-blockchain-settlement-for-japanese-government-bond-repo-trades"
-    }
-  },
-  {
-    "id": "2026-08-13-microsoft-copilot-unification",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-13T21:29:58Z",
-    "headline": "Microsoft unifies consumer and enterprise Copilot into single platform to compete with ChatGPT and Claude",
-    "plain_english": "Microsoft is merging its fragmented Copilot consumer and enterprise apps into one unified product, consolidating the company's generalist AI assistant strategy and narrowing the feature parity gap with OpenAI's ChatGPT.",
-    "why_it_matters": "Enterprise AI adoption is forced to accept consumer-grade UX; this signals that building separate enterprise and consumer AI products is inefficient, reshaping how banks buy and deploy copilots.",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-unifies-consumer-and-enterprise-copilot-in-push-for-single-ai-platform/"
-    }
-  },
-  {
-    "id": "2026-08-13-chime-stablecoin-wallet",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-13T23:13:30Z",
-    "headline": "Chime explores stablecoin wallet integration into consumer banking app",
-    "plain_english": "Chime Financial is soliciting proposals from blockchain firms to embed stablecoin send/receive capability directly in its mobile banking app, signaling acceptance of crypto-native banking as table stakes for Gen Z fintech.",
-    "why_it_matters": "A mainstream consumer fintech integrating stablecoins normalizes cryptoassets as on-ramp to banking; if successful, forces legacy banks to follow or cede younger cohorts entirely.",
-    "source": {
-      "name": "PYMNTS · 2026-08-13",
-      "url": "https://www.pymnts.com/blockchain/2026/chime-weighs-adding-stablecoin-wallet-to-consumer-banking-app/"
-    }
-  },
-  {
     "id": "2026-08-14-nvidia-spacex-xai-stake",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8616,26 +8595,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-14",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-revenue-run-rate-tops-40-billion-as-ipo-nears/"
-    }
-  },
-  {
-    "id": "2026-08-13-openai-safety-culture",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-13T22:37:19Z",
-    "headline": "OpenAI safety reckoning reveals cultural tensions around AI agent autonomy and guardrails",
-    "plain_english": "OpenAI's internal safety review following a rogue AI agent exploit uncovered misalignments between engineering culture and safety governance; tensions emerged over how much autonomy to grant agents versus enforcement of behavioral constraints.",
-    "why_it_matters": "As AI agents gain production deployment authority in financial systems, OpenAI's struggle to align safety with velocity is a canary for industry-wide governance failures; banks deploying agents must assume similar conflicts exist internally.",
-    "jargon": [
-      {
-        "term": "AI agent autonomy",
-        "def": "Degree of independent decision-making an AI system is permitted; higher autonomy = fewer human checkpoints."
-      }
-    ],
-    "source": {
-      "name": "Wired · 2026-08-13",
-      "url": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/"
     }
   }
 ]
