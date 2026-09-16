@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-09-16-regulation-aml-threshold-reform",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-16T00:46:07Z",
+    "headline": "Treasury mulls raising AML reporting thresholds, factoring in customer tenure",
+    "plain_english": "US Treasury Secretary Scott Bessent signaled the administration may raise long-standing Suspicious Activity Report (SAR) thresholds and give banks credit for how long they've known customers—potentially lowering compliance burden for established relationships.",
+    "why_it_matters": "Could reshape AML risk models: banks holding 5+ years of customer data may face lighter scrutiny, shifting cost-benefit on customer onboarding automation and fraud detection AI.",
+    "jargon": [
+      {
+        "term": "SAR threshold",
+        "def": "Dollar amount above which banks must file Suspicious Activity Reports; raising it reduces reporting volume but may increase systemic opacity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/treasury-rethinks-aml-rules-for-banks-that-know-their-customers/"
+    }
+  },
+  {
     "id": "2026-09-15-hassett-private-sector-ai",
     "category": "regulation",
     "jurisdiction": "US",
@@ -157,20 +177,6 @@
     "effective_date": "2026-09-09"
   },
   {
-    "id": "2026-09-11-occ-third-party-risk-guidance",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-11T14:19:19Z",
-    "headline": "OCC proposes third-party risk management guidance for community banks, eases vendor oversight burden",
-    "plain_english": "The U.S. Office of the Comptroller of the Currency released proposed guidance and interagency statements on third-party risk supervision—targeting core service providers to community banks. The move aims to reduce compliance friction while maintaining risk oversight of outsourced critical functions.",
-    "why_it_matters": "Signals regulatory relief for smaller lenders using AI/cloud vendors; affects how banks classify and monitor fintech and SaaS partners, potentially lowering due-diligence costs for community-bank tech M&A.",
-    "source": {
-      "name": "OCC · 2026-09-11",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZczA3bjNrRHQ3SDFyMTdrMmhnVU5TTlBObmVPaWF0bXZ4b3NCV0pmT0Z0SXNITUFtS2tzUXR2U3VDdHBhMy11VTdPaDVZX2VjV3p4M0ZYNk5qS05pMVB0UlliNWpHSzNRWms1RDJaOGhuODhxX0FPZzgxcw?oc=5"
-    }
-  },
-  {
     "id": "2026-09-15-personetics-ai-banking-console",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -321,6 +327,51 @@
     }
   },
   {
+    "id": "2026-09-16-vendor-connectpay-serdis-spinoff",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-16T00:01:00Z",
+    "headline": "Lithuanian fintech ConnectPay spins off AWS-native core banking platform Serdis as independent product",
+    "plain_english": "ConnectPay has separated its proprietary core banking system (Serdis), built on AWS, into a standalone commercial offering for EMIs and other financial institutions—targeting open-market adoption.",
+    "why_it_matters": "Cloud-native core platforms are now commoditizing; banks and fintechs can now buy unbundled tech rather than build in-house, accelerating AI integration into payment and settlement stacks.",
+    "source": {
+      "name": "Finextra · 2026-09-16",
+      "url": "https://www.finextra.com/newsarticle/48404/connectpay-spins-off-core-banking-technology-as-independent-product?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-16-vendor-velocity-stablecoin-10m",
+    "category": "vendor",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-16T00:01:00Z",
+    "headline": "Stablecoin infrastructure platform Velocity raises $10M in Series A extension backed by Visa, Circle, Ripple",
+    "plain_english": "UK-based Velocity, a stablecoin settlement platform, closed a $10M Series A extension with backing from Visa Ventures, Circle Ventures, Ripple, and other tier-1 crypto/fintech investors.",
+    "why_it_matters": "Major payment networks (Visa) and stablecoin issuers (Circle, Ripple) betting on unified stablecoin rails; signals convergence of traditional payment infrastructure and crypto settlement layers for enterprise use.",
+    "amount": "$10M",
+    "round": "Series A extension",
+    "source": {
+      "name": "Finextra · 2026-09-16",
+      "url": "https://www.finextra.com/newsarticle/48406/circle-ripple-and-visa-join-10-funding-round-for-stablecoin-platform-velocity?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-16-vendor-fin-com-orchestration-20m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T00:01:00Z",
+    "headline": "Payments orchestration startup Fin.com emerges with $20M to unify cross-border collection and settlement",
+    "plain_english": "Fin.com, building an abstraction layer for global money movement across local rails, SWIFT, USD virtual accounts, and stablecoins, raised $20M from undisclosed backers and exited stealth.",
+    "why_it_matters": "Orchestration layers reduce friction for enterprises moving money globally; banks will adopt to compete with fintech speed while keeping compliance. AI-driven routing and anomaly detection next.",
+    "amount": "$20M",
+    "source": {
+      "name": "Finextra · 2026-09-16",
+      "url": "https://www.finextra.com/newsarticle/48408/payments-infrastructure-startup-fincom-emerges-from-stealth-with-20m-funding?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
     "id": "2026-09-15-profound-unicorn-aeo",
     "category": "vendor",
     "jurisdiction": "US",
@@ -433,46 +484,17 @@
     "round": "Growth"
   },
   {
-    "id": "2026-09-11-mecka-ai-500m-robotics",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-11T22:58:17.000Z",
-    "headline": "Mecka AI nears $500M valuation in Sequoia-led Series B",
-    "plain_english": "Two-year-old robotics AI startup Mecka is raising at ~$500M valuation (Sequoia-led), focused on robot training data and embodied AI. Reflects VC rush to back physical AI infrastructure.",
-    "why_it_matters": "BFSI tangent: robotics AI vendors are acquiring financial-grade robustness and safety practices. Watch for convergence with banking ops automation (back-office RPA, document processing).",
-    "source": {
-      "name": "TechCrunch · 2026-09-11",
-      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/"
-    }
-  },
-  {
-    "id": "2026-09-11-oracle-ai-cloud-earnings",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-11T13:34:34Z",
-    "headline": "Oracle reports 121% year-over-year cloud infrastructure growth driven by AI demand",
-    "plain_english": "Oracle's cloud infrastructure revenue surged 121% YoY in Q1, fueled by customer demand for AI and large language model workloads. The result underscores competitive pressure on legacy enterprise software vendors to scale AI-ready cloud infrastructure.",
-    "why_it_matters": "Validates cloud infrastructure as key lever for AI adoption in BFSI; banks deploying large models on Oracle Cloud expect continued investment and feature parity with hyperscalers.",
-    "source": {
-      "name": "CNBC · 2026-09-11",
-      "url": "https://www.cnbc.com/2026/09/11/oracle-stock-q1-earnings-ai-cloud.html"
-    }
-  },
-  {
-    "id": "2026-09-11-vendor-nasdaq-payward-100m",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-09-16-deployment-mastercard-agentic-trust",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-11T01:18:54.000Z",
-    "headline": "Nasdaq Ventures invests $100 million in Payward to advance tokenized equities",
-    "plain_english": "Nasdaq Ventures committed $100M to Payward (Kraken parent) as part of expanded partnership on tokenized stock infrastructure. Extends Nasdaq's infrastructure play into digital assets and decentralized settlement.",
-    "why_it_matters": "Tier-1 exchange backing blockchain-native settlement; signals institutional readiness to parallel legacy clearing with token rails. Competitive pressure on other exchanges to follow.",
-    "amount": "$100M",
+    "published_at": "2026-09-16T01:10:38Z",
+    "headline": "Mastercard convenes exec roundtable: agentic commerce scaling hinges on consumer and merchant trust",
+    "plain_english": "Mastercard held a New York roundtable with executives exploring how autonomous AI agents can drive commerce at scale. The consensus: trust frameworks for both buyer and seller sides are the bottleneck, not technology.",
+    "why_it_matters": "Signals a major payment network is treating agentic UX (autonomous purchasing decisions) as infrastructure-ready but waiting for compliance and liability norms to mature before bank/fintech deployment.",
     "source": {
-      "name": "PYMNTS · 2026-09-11",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/nasdaq-invests-100-million-in-kraken-parent-payward-to-accelerate-tokenized-stock-push/"
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/agentic-commerce-needs-ecommerce-level-trust-to-scale-mastercard-pymnts-panelists-say/"
     }
   },
   {
@@ -615,17 +637,17 @@
     }
   },
   {
-    "id": "2026-09-08-qualcomm-amazon-data-center-ai",
-    "category": "shift",
-    "jurisdiction": "US",
+    "id": "2026-09-16-tool-cloudflare-ai-scraping-block",
+    "category": "tool",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-08T14:43:12.000Z",
-    "headline": "Qualcomm issues Amazon $4B stock warrants for AI datacenter chip partnership",
-    "plain_english": "Qualcomm and Amazon announced a strategic AI infrastructure deal: Amazon gains warrants to buy $4B of Qualcomm stock. Qualcomm is pivoting from handset dominance into datacenter, a market Nvidia has owned. This is Qualcomm's bet to capture AI inference workloads in enterprise and cloud.",
-    "why_it_matters": "BFSI datacenters currently locked into Nvidia for training+inference. Qualcomm's pivot could fracture that monopoly, creating alternative pathways for cost-optimized inference. Risk: vendor lock-in shifts but doesn't vanish; compliance teams must track new supply-chain dependencies.",
+    "published_at": "2026-09-16T01:28:02Z",
+    "headline": "Cloudflare launches 'Disallow AI Training' setting for site owners to opt out of model training",
+    "plain_english": "Cloudflare released a new DNS/WAF setting that blocks AI crawlers from scraping a site's content for model training while preserving search engine indexing—providing legal and technical middle ground for content owners.",
+    "why_it_matters": "Banks and fintech platforms hosting public APIs will use this to protect proprietary data from unauthorized LLM training. Expect rapid adoption by wealth management, lending, and fraud-detection platforms to lock down training data lineage.",
     "source": {
-      "name": "CNBC · 2026-09-08",
-      "url": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html"
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/connectedeconomy/2026/cloudflare-helps-website-owners-block-ai-scraping-without-losing-search-visibility/"
     }
   },
   {
@@ -1105,6 +1127,20 @@
     }
   },
   {
+    "id": "2026-09-16-frontier-anthropic-data-retention-guardrails",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-15T23:34:12Z",
+    "headline": "Nvidia, Palantir restrict Anthropic's latest models over data retention terms",
+    "plain_english": "Nvidia, Palantir, Booz Allen Hamilton, and others are contractually blocking deployment of Anthropic's advanced models (Fable) due to concerns about Anthropic's data retention policies—marking early enterprise pushback on frontier lab practices.",
+    "why_it_matters": "Enterprise security teams are weaponizing procurement to enforce data governance on frontier AI labs. Expect compliance-driven model restrictions to become standard; AI vendors will fork product tiers by data handling.",
+    "source": {
+      "name": "PYMNTS · 2026-09-15",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-and-palantir-restrict-anthropics-fable-over-data-retention/"
+    }
+  },
+  {
     "id": "2026-09-15-musk-ai-safety-testing",
     "category": "frontier",
     "jurisdiction": "US",
@@ -1246,20 +1282,6 @@
     "source": {
       "name": "OpenAI · 2026-09-14",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
-    }
-  },
-  {
-    "id": "2026-09-12-frontier-openai-ipo-delay",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-12T20:46:43Z",
-    "headline": "OpenAI pushes IPO beyond 2026 citing AI safety and capability concerns",
-    "plain_english": "Sam Altman announced OpenAI will not go public in 2026. Stated reason: ongoing AI safety debates and concerns about development pace. Reflects broader c-suite unease over frontier model risks.",
-    "why_it_matters": "IPO delays signal capital scarcity risk for AGI-race players. BFSI labs dependent on frontier model access may face vendor consolidation or forced partnerships if funding tightens.",
-    "source": {
-      "name": "Reuters · 2026-09-12",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSkNHUFFrUlZCVWVKZ2dpVVkxSzBmcy16aFFHVTJDV25PZ0YzMjBLVlFQZ0pJcU5EVWJlUW13azNiV1BwOENLcTFVOFpZYVVlT0haaXI2ZkFaOUZxTGp2eE1kaGZCb2pXV1dBQy1XcjQ2NmNXMFA3Ynk5ZnA3MU5wWGZCV0ktTWZad2o0LVBmeW1BclBndWRfWEJScFduQklEZUFEX0NteFBhNDYxRG5keUdiUml3dVYz"
     }
   },
   {
@@ -1475,6 +1497,20 @@
     }
   },
   {
+    "id": "2026-09-16-trending-ai-safety-slowdown-debate",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-15T23:25:43Z",
+    "headline": "AI leaders call for safety review and peer testing; Wall Street dismisses slowdown risk",
+    "plain_english": "Elon Musk, OpenAI's Sarah Friar, Salesforce's Marc Benioff, and ex-Anthropic researchers are publicly warning of AI risks and calling for peer review and testing protocols. Nvidia's Jensen Huang opposes regulation, saying safety is an engineering problem. Wall Street is buying AI equities regardless.",
+    "why_it_matters": "C-suite and frontier-lab divergence on AI governance is shaping regulatory strategy. BFSI CROs must prepare for either stricter guardrails (if safety concerns escalate) or faster deployment (if industry self-regulation wins). Procurement will swing on this outcome.",
+    "source": {
+      "name": "CNBC · 2026-09-15",
+      "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html"
+    }
+  },
+  {
     "id": "2026-09-15-trending-ai-slowdown-wall-street",
     "category": "trending",
     "jurisdiction": "US",
@@ -1604,6 +1640,91 @@
     "source": {
       "name": "Mashable · 2026-09-07",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBsQkxWVDFMTnFDZUl0VjZLNHN2dXJNOTJVWk9VY2IxXzZLVldnWHV1OTBQNFJQUnFUX2pKdXExcHI5VFRkRFU0TS1kWXFZQTU0ZGQzRDZfOWpkQ0UyUW9xbERnczlJTmVyNF8zWVgzSzdpMUVmYnAteHNB"
+    }
+  },
+  {
+    "id": "2026-09-11-occ-third-party-risk-guidance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T14:19:19Z",
+    "headline": "OCC proposes third-party risk management guidance for community banks, eases vendor oversight burden",
+    "plain_english": "The U.S. Office of the Comptroller of the Currency released proposed guidance and interagency statements on third-party risk supervision—targeting core service providers to community banks. The move aims to reduce compliance friction while maintaining risk oversight of outsourced critical functions.",
+    "why_it_matters": "Signals regulatory relief for smaller lenders using AI/cloud vendors; affects how banks classify and monitor fintech and SaaS partners, potentially lowering due-diligence costs for community-bank tech M&A.",
+    "source": {
+      "name": "OCC · 2026-09-11",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZczA3bjNrRHQ3SDFyMTdrMmhnVU5TTlBObmVPaWF0bXZ4b3NCV0pmT0Z0SXNITUFtS2tzUXR2U3VDdHBhMy11VTdPaDVZX2VjV3p4M0ZYNk5qS05pMVB0UlliNWpHSzNRWms1RDJaOGhuODhxX0FPZzgxcw?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-11-mecka-ai-500m-robotics",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-11T22:58:17.000Z",
+    "headline": "Mecka AI nears $500M valuation in Sequoia-led Series B",
+    "plain_english": "Two-year-old robotics AI startup Mecka is raising at ~$500M valuation (Sequoia-led), focused on robot training data and embodied AI. Reflects VC rush to back physical AI infrastructure.",
+    "why_it_matters": "BFSI tangent: robotics AI vendors are acquiring financial-grade robustness and safety practices. Watch for convergence with banking ops automation (back-office RPA, document processing).",
+    "source": {
+      "name": "TechCrunch · 2026-09-11",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/"
+    }
+  },
+  {
+    "id": "2026-09-11-oracle-ai-cloud-earnings",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-11T13:34:34Z",
+    "headline": "Oracle reports 121% year-over-year cloud infrastructure growth driven by AI demand",
+    "plain_english": "Oracle's cloud infrastructure revenue surged 121% YoY in Q1, fueled by customer demand for AI and large language model workloads. The result underscores competitive pressure on legacy enterprise software vendors to scale AI-ready cloud infrastructure.",
+    "why_it_matters": "Validates cloud infrastructure as key lever for AI adoption in BFSI; banks deploying large models on Oracle Cloud expect continued investment and feature parity with hyperscalers.",
+    "source": {
+      "name": "CNBC · 2026-09-11",
+      "url": "https://www.cnbc.com/2026/09/11/oracle-stock-q1-earnings-ai-cloud.html"
+    }
+  },
+  {
+    "id": "2026-09-11-vendor-nasdaq-payward-100m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T01:18:54.000Z",
+    "headline": "Nasdaq Ventures invests $100 million in Payward to advance tokenized equities",
+    "plain_english": "Nasdaq Ventures committed $100M to Payward (Kraken parent) as part of expanded partnership on tokenized stock infrastructure. Extends Nasdaq's infrastructure play into digital assets and decentralized settlement.",
+    "why_it_matters": "Tier-1 exchange backing blockchain-native settlement; signals institutional readiness to parallel legacy clearing with token rails. Competitive pressure on other exchanges to follow.",
+    "amount": "$100M",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/nasdaq-invests-100-million-in-kraken-parent-payward-to-accelerate-tokenized-stock-push/"
+    }
+  },
+  {
+    "id": "2026-09-08-qualcomm-amazon-data-center-ai",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-08T14:43:12.000Z",
+    "headline": "Qualcomm issues Amazon $4B stock warrants for AI datacenter chip partnership",
+    "plain_english": "Qualcomm and Amazon announced a strategic AI infrastructure deal: Amazon gains warrants to buy $4B of Qualcomm stock. Qualcomm is pivoting from handset dominance into datacenter, a market Nvidia has owned. This is Qualcomm's bet to capture AI inference workloads in enterprise and cloud.",
+    "why_it_matters": "BFSI datacenters currently locked into Nvidia for training+inference. Qualcomm's pivot could fracture that monopoly, creating alternative pathways for cost-optimized inference. Risk: vendor lock-in shifts but doesn't vanish; compliance teams must track new supply-chain dependencies.",
+    "source": {
+      "name": "CNBC · 2026-09-08",
+      "url": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html"
+    }
+  },
+  {
+    "id": "2026-09-12-frontier-openai-ipo-delay",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-12T20:46:43Z",
+    "headline": "OpenAI pushes IPO beyond 2026 citing AI safety and capability concerns",
+    "plain_english": "Sam Altman announced OpenAI will not go public in 2026. Stated reason: ongoing AI safety debates and concerns about development pace. Reflects broader c-suite unease over frontier model risks.",
+    "why_it_matters": "IPO delays signal capital scarcity risk for AGI-race players. BFSI labs dependent on frontier model access may face vendor consolidation or forced partnerships if funding tightens.",
+    "source": {
+      "name": "Reuters · 2026-09-12",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSkNHUFFrUlZCVWVKZ2dpVVkxSzBmcy16aFFHVTJDV25PZ0YzMjBLVlFQZ0pJcU5EVWJlUW13azNiV1BwOENLcTFVOFpZYVVlT0haaXI2ZkFaOUZxTGp2eE1kaGZCb2pXV1dBQy1XcjQ2NmNXMFA3Ynk5ZnA3MU5wWGZCV0ktTWZad2o0LVBmeW1BclBndWRfWEJScFduQklEZUFEX0NteFBhNDYxRG5keUdiUml3dVYz"
     }
   },
   {
@@ -8439,20 +8560,6 @@
     }
   },
   {
-    "id": "2026-08-16-western-union-intermax-nydfs",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T00:01:00.000Z",
-    "headline": "New York DFS approves Western Union's Intermax deal; California review ongoing",
-    "plain_english": "New York's financial regulator has conditionally approved Western Union's acquisition of rival remittance platform Intermax. Approval hinges on Western Union maintaining store locations and capping fee increases for three years. California regulators continue review.",
-    "why_it_matters": "Shows state-level BFSI regulators using M&A conditions to lock in consumer protections. Pattern signals tightening scrutiny of payments consolidation; multi-state approval timelines are lengthening deal closure windows.",
-    "source": {
-      "name": "Finextra · 2026-08-17",
-      "url": "https://www.finextra.com/newsarticle/48252/western-union-gets-new-york-nod-for-intermax-acquisition-still-face-california-hurdles"
-    }
-  },
-  {
     "id": "2026-08-18-plaid-foundation-models-credit-risk",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8517,40 +8624,6 @@
     "source": {
       "name": "TechSpot · 2026-08-17",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUHhfUDNmb2w4eWlOR3UzemdURmFWOW54bDNTQzhRcmFhVGdKMzY2eXlUSm5yTHdFN0E3NjJGZG8yUklLbGUzMm80OUZwV0ZWREF3aXFpeVhoS2dfRFdMVGhZemVKTzBCdTVWdlZqXzhmelhpRlBxTUpCbDM5YktiME4xU25xdEx5QndLbXM3RnZWQ0tiWGZrX0R3"
-    }
-  },
-  {
-    "id": "2026-08-16-anthropic-14x-revenue-growth",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-16T21:44:30.000Z",
-    "headline": "Anthropic reports 14-fold revenue growth in Q2 2026 as fundraising accelerates",
-    "plain_english": "Anthropic's quarterly revenue jumped 14x year-over-year in Q2 2026. The AI safety-focused company is using this data in fundraising pitches to investors, signalling strong enterprise adoption of Claude API and enterprise contracts.",
-    "why_it_matters": "Demonstrates frontier lab revenue scaling outpacing hype cycle. Strong signal that enterprise BFSI customers are moving AI from pilots to production workloads with paid consumption models.",
-    "source": {
-      "name": "PYMNTS · 2026-08-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-touts-14-fold-jump-in-revenue-for-would-be-investors/"
-    }
-  },
-  {
-    "id": "2026-08-16-occ-trump-crypto-charter",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-16T20:47:50.000Z",
-    "headline": "OCC grants conditional bank charter to Trump-linked crypto firm World Liberty Financial",
-    "plain_english": "The Office of the Comptroller of the Currency approved a preliminary conditional national banking charter for World Liberty Financial (WLF), a cryptocurrency company affiliated with President Trump. The charter allows WLF to operate as a federally regulated bank.",
-    "why_it_matters": "First precedent of OCC chartering a Trump-backed crypto entity in current administration. Sets expectation for more crypto company bank conversions; creates regulatory arbitrage signal that triggers competitive applications from other crypto platforms.",
-    "jargon": [
-      {
-        "term": "National banking charter",
-        "def": "Federal license from OCC allowing a company to operate as a bank with deposit insurance and Federal Reserve access, superseding state oversight."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-16",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/trump-affiliated-crypto-company-wins-us-banking-charter/"
     }
   },
   {
@@ -8650,20 +8723,6 @@
     }
   },
   {
-    "id": "2026-08-16-alibaba-ai-model-dominance",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-16T22:06:50.000Z",
-    "headline": "Alibaba's open-weight models surpass Google and Meta with 3B downloads",
-    "plain_english": "Alibaba's open-source AI models have accumulated over 3 billion downloads globally in six months, exceeding Google and Meta. This reflects accelerating adoption of Chinese open-weight alternatives in enterprise and developer communities outside the US.",
-    "why_it_matters": "Signals geopolitical fragmentation of AI infrastructure. BFSI players in APAC now have credible domestic alternatives for compliance and cost, reducing reliance on US frontier labs for core workloads.",
-    "source": {
-      "name": "PYMNTS · 2026-08-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/alibaba-overtakes-google-and-meta-with-3-billion-ai-model-downloads/"
-    }
-  },
-  {
     "id": "2026-08-18-synchrony-chatgpt-plugin",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8727,28 +8786,6 @@
     "amount": "$7B"
   },
   {
-    "id": "2026-08-16-stripe-openrouter-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-16T20:08:01.000Z",
-    "headline": "Stripe to acquire AI gateway startup OpenRouter for $7B+",
-    "plain_english": "Stripe is buying OpenRouter, an AI infrastructure platform that acts as a unified interface for multiple large language models. The deal values OpenRouter at over $7 billion and positions Stripe to offer AI services directly to merchants and developers via its payments platform.",
-    "why_it_matters": "Marks major fintech player's direct bet on AI infrastructure consolidation. Stripe can now bundle AI capabilities into its core payment rails, lowering friction for bank and enterprise customers to embed LLM features.",
-    "jargon": [
-      {
-        "term": "AI gateway",
-        "def": "Software layer that routes requests to multiple LLM providers (Claude, GPT, etc.) and optimises cost/latency/output quality."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-08-16",
-      "url": "https://www.bloomberg.com"
-    },
-    "amount": "$7B+",
-    "round": "Acquisition"
-  },
-  {
     "id": "2026-08-17-barclays-joo-ceo-investment-bank",
     "category": "shift",
     "jurisdiction": "UK",
@@ -8805,20 +8842,6 @@
     }
   },
   {
-    "id": "2026-08-16-anthropic-ceo-optimism",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-16T23:22:37.000Z",
-    "headline": "Anthropic CEO Amodei rejects pessimism label over AI risks",
-    "plain_english": "Anthropic co-founder and CEO Dario Amodei disputed investor Gavin Baker's characterisation of him as overly pessimistic about AI. Amodei clarified his positions on AI safety and societal impact in response to public criticism.",
-    "why_it_matters": "Signals Anthropic's public posture is shifting toward optimism to attract capital. Matters for BFSI because frontier lab confidence affects enterprise customer perception of safety/liability; uncertainty deters financial institutions from betting on a single vendor.",
-    "source": {
-      "name": "PYMNTS · 2026-08-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-ceo-says-hes-not-an-ai-pessimist/"
-    }
-  },
-  {
     "id": "2026-08-17-bank-america-ai-tracker",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8830,26 +8853,6 @@
     "source": {
       "name": "Crypto Briefing · 2026-08-17",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zekV0Vi1hamlKUVV0YlJJT1Q0TG4yMXdqRDk4UTVUVkEyUVdCbGs3aVU0X0diYzFfeEZMMS1hRlo3aGlQVGlJZE9Wa0dyRUtNa1FtNk9YUzRKRnpWRW9rRzMwNEdHbnZCU1hkckE3cUt3eVZKX2c"
-    }
-  },
-  {
-    "id": "2026-08-16-polygon-boe-digital-pound",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-08-17T00:01:00.000Z",
-    "headline": "Polygon joins Bank of England's Digital Pound Lab for cross-border settlement pilots",
-    "plain_english": "Blockchain platform Polygon Labs has entered phase two of the BoE's Digital Pound Lab alongside Nobo Finance and Dun & Bradstreet. The project tests near-instant cross-border settlement using a digital sterling testnet, advancing CBDC infrastructure for international payments.",
-    "why_it_matters": "UK central bank is operationalising blockchain-based settlement with named vendors. Success here reduces friction for BFSI players to adopt distributed ledger rails; failure surfaces interop and custody challenges early.",
-    "jargon": [
-      {
-        "term": "CBDC",
-        "def": "Central bank digital currency. Digital form of a nation's sovereign money, issued and backed by the central bank."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-17",
-      "url": "https://www.finextra.com/newsarticle/48253/polygon-joins-bofes-digital-pound-lab-to-test-cross-border-settlement"
     }
   }
 ]
