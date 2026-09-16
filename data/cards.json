@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-09-16-nist-ai-vendor-testing",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T14:39:31.000Z",
+    "headline": "NIST establishes common evaluation framework for bank AI vendor approval",
+    "plain_english": "National Institute of Standards and Technology is finalizing a federal standards effort to give banks a common testing methodology for evaluating AI vendors. The framework addresses a practical adoption barrier: what evidence should vendors provide before winning bank approval?",
+    "why_it_matters": "Standardized AI vendor evaluation reduces procurement friction and risk variance across the banking sector, accelerating AI deployment while establishing baseline safety/performance expectations.",
+    "jargon": [
+      {
+        "term": "AI vendor evaluation framework",
+        "def": "Standardized criteria and testing protocols banks use to assess whether commercial AI products meet safety, performance, and regulatory requirements before purchase."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nist-push-could-give-banks-ommon-test-ai-vendors/"
+    },
+    "effective_date": "2026-09-16"
+  },
+  {
+    "id": "2026-09-16-india-upi-merchant-fees",
+    "category": "regulation",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-09-16T14:28:58.000Z",
+    "headline": "India imposes merchant discount rate on UPI transactions above 2,000 rupees",
+    "plain_english": "India's Reserve Bank is introducing a 0.4% merchant fee (MDR) on UPI payments exceeding 2,000 rupees (~$21), ending six years of zero-fee transactions. The change applies to merchant acceptance of the digital payment system.",
+    "why_it_matters": "Fee introduction shifts UPI economics for merchants and platforms; lower-value transactions remain free, but medium/large payments now carry friction that may redirect volume to competing payment rails or cards.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/india-brings-merchant-fees-to-popular-upi-payment-system/"
+    },
+    "effective_date": "2026-09-16"
+  },
+  {
     "id": "2026-09-16-regulation-aml-threshold-reform",
     "category": "regulation",
     "jurisdiction": "US",
@@ -136,45 +172,18 @@
     }
   },
   {
-    "id": "2026-09-11-fed-third-party-risk-guidance",
-    "category": "regulation",
+    "id": "2026-09-16-google-agentic-retail",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-11T20:53:53.000Z",
-    "headline": "US federal agencies propose overhaul of bank third-party risk rules",
-    "plain_english": "FDIC, OCC, Federal Reserve, and NCUA jointly issued a request for comment on revised third-party risk management guidance for financial institutions. Aims to clarify vendor oversight, particularly for cloud, AI, and fintech partnerships.",
-    "why_it_matters": "Banks face tighter scrutiny on AI vendor relationships. Expect more prescriptive audit, data residency, and model transparency requirements. Compliance teams will need updated third-party assessment frameworks by effective date.",
-    "jargon": [
-      {
-        "term": "Third-party risk management",
-        "def": "Bank's duty to assess and monitor risks from outsourced vendors (cloud, AI, payments, etc.); regulators increasingly focus on data security and business continuity."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-09-16T14:00:06.000Z",
+    "headline": "Google rolls out agentic AI commerce tools for retailers ahead of holiday season",
+    "plain_english": "Google unveiled new agentic AI capabilities for merchants, enabling autonomous product discovery, comparison, and recommendation during holiday shopping. Tools integrate with Google Shopping and retail platforms to assist both consumer decision-making and merchant optimization.",
+    "why_it_matters": "Agentic retail assistants signal Google's pivot from search-based discovery to autonomous transaction orchestration; BFSI payment/lending partners must adapt fraud detection and credit-risk models to handle agent-initiated commerce flows.",
     "source": {
-      "name": "PYMNTS · 2026-09-11",
-      "url": "https://www.pymnts.com/partnerships/2026/federal-agencies-overhaul-bank-partner-rules-drive-innovation/"
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/google/2026/google-debuts-agentic-tools-to-prep-retailers-for-holidays/"
     }
-  },
-  {
-    "id": "2026-09-11-california-ai-audit-regulation",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-11T14:55:22Z",
-    "headline": "California establishes first U.S. framework for independent AI auditor licensing",
-    "plain_english": "California Governor Newsom signed two bills creating the nation's first regulatory regime for independent AI verification organizations. The framework mandates licensing and oversight of auditors who assess AI risk—moving beyond requiring companies to self-audit to regulating the auditors themselves.",
-    "why_it_matters": "Sets precedent for auditor credentials and liability in BFSI; other states and EU likely to follow, creating new compliance role and potential cost for regulated financial institutions deploying AI.",
-    "jargon": [
-      {
-        "term": "Independent AI verification",
-        "def": "Third-party auditors hired by companies to assess and certify AI system risks and compliance before or after deployment."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-11",
-      "url": "https://www.pymnts.com/legal/2026/california-starts-regulating-the-people-who-audit-ai/"
-    },
-    "effective_date": "2026-09-09"
   },
   {
     "id": "2026-09-15-personetics-ai-banking-console",
@@ -307,23 +316,35 @@
     }
   },
   {
-    "id": "2026-09-14-perplexity-astra-production",
-    "category": "deployment",
+    "id": "2026-09-16-tare-private-credit-blockchain",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-14T00:00:00Z",
-    "headline": "Perplexity deploys GPT-6 Astra for autonomous system operations and code deployment",
-    "plain_english": "Perplexity is running OpenAI's latest model (Astra) in production for end-to-end operations: writing internal comms, deploying software, and monitoring production systems. The model requires check-ins far less often than predecessors, suggesting significantly reduced human oversight needs.",
-    "why_it_matters": "Marks a material shift toward autonomous LLM governance of critical infrastructure (deployment, monitoring). If sustained across BFSI, implies fewer human control points in transaction processing and risk management workflows.",
-    "jargon": [
-      {
-        "term": "End-to-end systems",
-        "def": "AI handling complete tasks (planning, execution, feedback) without human intervention between steps"
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-09-16T14:45:00.000Z",
+    "headline": "Tare raises $13M Series A for blockchain-based private credit origination and management",
+    "plain_english": "Tare, a fintech focused on tokenizing and managing private credit on blockchain, closed a $13 million Series A round led by Blockchain Capital. The platform enables institutional lenders to originate, trade, and settle private debt on distributed ledgers.",
+    "why_it_matters": "Private credit has become a core BFSI growth engine; blockchain-native origination/servicing platforms reduce friction in syndication and secondary trading, potentially displacing traditional private-credit platforms.",
+    "amount": "$13M",
+    "round": "Series A",
     "source": {
-      "name": "OpenAI · 2026-09-14",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+      "name": "Fortune Tech/AI · 2026-09-16",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVWZ6bmJENms4Ynpob1pxYTZjcERhb1VTU2lHWWFwZi0xdUpQT2JNMWRxRkQyUDA3a1BjdVpQc18yaDA0OE5IaDdmMmtuZlZhMmhNczc2ZmNmNXFZamR1aEZleWRXc21ZTmJIb2xQMk5mYU1ZQmlkNVJHaDc5SmJ2YzZUTFF1alFxUVVSVGNLSnI0bGlBdWNVYU81RkdXR3RIDHQ2ajZmamI0M1dQQkxJUUdQUnJ2QQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-16-bain-capital-agi-fund",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T14:00:00.000Z",
+    "headline": "Bain Capital Ventures raises $1.6B fund focused on post-AGI and AI infrastructure opportunities",
+    "plain_english": "Bain Capital Ventures closed a $1.6 billion fund explicitly targeting companies positioned for an AGI-adjacent future and AI infrastructure buildout. The vehicle reflects investor conviction that frontier AI capabilities are near-term and shaping next-generation enterprise software.",
+    "why_it_matters": "Dedicated AGI-adjacent fund signals LP conviction that BFSI must prepare for rapid AI capability shifts; portfolio companies will likely include risk-management, compliance automation, and data platforms built for AI-driven decision-making.",
+    "amount": "$1.6B",
+    "round": "Fund VI",
+    "source": {
+      "name": "Bloomberg Finance/AI · 2026-09-16",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRWh3TzhDMmhSdVczLXZjM0h6YlZ1YXZLa0l1emRCcWM0NnJ2NV84RmlZX01kdmlSWER5N0M1QTR5V0hOUnhvNmxpTVI2Mm9mYlZPajk5RlBHNjllbWFjZVRBZ1JFVExsR3h4SngyTWl1QXlSY3UwU2hfVXc5Y3dJOVI2anlycndkMHdqRXpraWZCcVVzMXVXenNjcHd5ZlJTSm1HbXBZeTREVjR4ZXgw?oc=5"
     }
   },
   {
@@ -446,42 +467,24 @@
     }
   },
   {
-    "id": "2026-09-14-vendor-anthropic-ipo-nvidia",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-13T23:09:08.000Z",
-    "headline": "Anthropic targets $100B IPO with Nvidia as anchor investor",
-    "plain_english": "Frontier AI lab Anthropic is in talks with chipmaker Nvidia to anchor its initial public offering, aiming to raise up to $100 billion and signalling imminent public-market debut for a major LLM competitor.",
-    "why_it_matters": "Validates stratospheric private valuations for frontier labs; Nvidia's participation signals confidence in Anthropic's commercial viability and deepens chip-to-model-to-deployment supply-chain linkage.",
-    "amount": "$100B",
-    "round": "IPO (anchor investor)",
+    "id": "2026-09-16-circle-arc-blockchain",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T15:19:36.000Z",
+    "headline": "Circle launches Arc, agentic-native blockchain for real-time financial settlement and autonomous transactions",
+    "plain_english": "Circle introduced Arc, a blockchain platform designed specifically for financial markets, real-time money movement, and autonomous (agentic) economic activity. Arc integrates with Circle's USDC stablecoin and broader payment infrastructure.",
+    "why_it_matters": "Arc represents the first major stablecoin-issuer bet on agentic blockchain design; if adopted for institutional settlement, it signals a structural shift from human-initiated to AI-orchestrated transaction flows in tokenized finance.",
     "jargon": [
       {
-        "term": "anchor investor",
-        "def": "Major institutional buyer who commits substantial capital upfront to stabilize IPO pricing and signal confidence to retail investors."
+        "term": "Agentic blockchain",
+        "def": "Distributed ledger designed to enable autonomous AI agents to initiate, verify, and settle transactions without real-time human approval."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-09-13",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-could-land-nvidia-as-10-billion-ipo-investor/"
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/blockchain/2026/circle-debuts-agentic-commerce-focused-blockchain-arc/"
     }
-  },
-  {
-    "id": "2026-09-11-cohere-funding-20b",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-11T22:58:21.000Z",
-    "headline": "Cohere targets $20B valuation in $2–3B funding round",
-    "plain_english": "Canadian LLM startup Cohere is in advanced talks to raise $2–3B at a $20B valuation, potentially closing within days. The round would value the enterprise AI firm among the sector's most mature non-frontier players.",
-    "why_it_matters": "Signal of sustained venture appetite for LLM alternatives to OpenAI/Anthropic. BFSI buyers evaluating vendor optionality will track Cohere's runway and product roadmap post-close.",
-    "source": {
-      "name": "PYMNTS · 2026-09-11",
-      "url": "https://www.pymnts.com/startups/2026/ai-startup-cohere-targets-20-billion-dollar-valuation-funding-round/"
-    },
-    "amount": "$2–3B",
-    "round": "Growth"
   },
   {
     "id": "2026-09-16-deployment-mastercard-agentic-trust",
@@ -615,26 +618,6 @@
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/salesforce-eyes-2-billion-acquisition-of-ai-powered-platform-listen-labs/"
     },
     "amount": "~$2B"
-  },
-  {
-    "id": "2026-09-09-visa-agentic-payments-adoption",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-09T01:08:23.000Z",
-    "headline": "Visa CEO: AI shopping adoption outpacing autonomous payment systems",
-    "plain_english": "Visa CEO Ryan McInerney said consumers are adopting AI for shopping decisions but not yet for autonomous (agent-driven) payments. Agentic payment systems—where AI autonomously initiates transactions—remain unproven in production, despite AI shopping UI gaining traction.",
-    "why_it_matters": "The gap signals payment rails must solve trust, liability, and fraud detection before banks can confidently deploy autonomous agent-to-merchant transactions at scale. This delays the fintech fintech-as-platform shift.",
-    "jargon": [
-      {
-        "term": "Agentic payments",
-        "def": "AI agent autonomously initiates and completes financial transactions without real-time human approval."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-09",
-      "url": "https://www.pymnts.com/visa/2026/visa-ceo-says-ai-shopping-has-arrived-but-agentic-payments-havent/"
-    }
   },
   {
     "id": "2026-09-16-tool-cloudflare-ai-scraping-block",
@@ -951,6 +934,36 @@
     }
   },
   {
+    "id": "2026-09-16-revolut-fed-banking-trust",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-16T15:24:39.000Z",
+    "headline": "Revolut and Federal Reserve incidents reveal trust-layer vulnerabilities beyond perimeter security",
+    "plain_english": "Separate breaches at Revolut and the Fed exposed a pattern: attackers accessed sensitive data without breaking into systems directly. The incidents highlight risks in banking's trust architecture—third-party access, credential abuse, and shared infrastructure—rather than pure cybersecurity failures.",
+    "why_it_matters": "Trust-layer compromises bypass traditional security controls; BFSI risk teams must reassess third-party access policies, API governance, and identity verification, not just intrusion detection.",
+    "stat_value": "2",
+    "stat_label": "named banking entities compromised via trust, not perimeter breach",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/cybersecurity/2026/revolut-fed-incidents-expose-new-risks-inside-banking-trust-system/"
+    }
+  },
+  {
+    "id": "2026-09-16-microsft-anthropic-claude-risk",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T14:08:07.000Z",
+    "headline": "Microsoft AI chief warns that Anthropic's Claude-style humanlike models pose unchecked deployment risks",
+    "plain_english": "A Microsoft AI executive publicly cautioned that Anthropic's Claude and similar highly capable, conversational AI systems are being deployed without sufficient safeguards for high-stakes applications. The warning highlights tension between frontier AI lab agility and enterprise risk governance.",
+    "why_it_matters": "Public disagreement between frontier-lab allies signals fragmentation in AI safety standards; BFSI compliance teams must expect divergent model-safety profiles and may face pressure to adopt independent guardrails rather than relying on vendor assurance.",
+    "source": {
+      "name": "Bloomberg Finance/AI · 2026-09-16",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc1JCREtIdFpLTWZNUmZFUnM2UGZBdUR0bTFBMDNwQnZSeVFiRFEtOGdSX1ZiSUE3d05RZlhjT3owRFE2MmlyY1BLeHJYZ2l0RXk4LVg1bkZfU3ZWM0VMNWkzZ1NoVG0zRkZXRXNwOVd3MjZuVlVlbUxvdVllZzBJWE1XRFVIci16UDVZSXBVRzQ0UVJJZTJzRVdyc0RwOVRaRzhWYkdOa21JU3NYREpMaEhldw?oc=5"
+    }
+  },
+  {
     "id": "2026-09-15-agentic-b2b-permission-layer",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1091,39 +1104,31 @@
     }
   },
   {
-    "id": "2026-09-12-insight-claude-misuse-at-scale",
-    "category": "insight",
-    "jurisdiction": "Global",
+    "id": "2026-09-16-anthropic-openai-eval-risk",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-09-12T10:30:00.000Z",
-    "headline": "Claude misuse now spans hacking, bioweapons research, and child abuse material",
-    "plain_english": "Wired reports Claude AI is being systematically abused for illegal and harmful purposes: writing exploits, generating bioweapon protocols, and creating synthetic child abuse material. Indicates frontier LLMs lack sufficient safety controls at production scale.",
-    "why_it_matters": "BFSI must assume frontier models in their supply chains or third-party integrations carry elevated compliance and reputational risk; incident response and model selection frameworks now essential.",
-    "jargon": [
-      {
-        "term": "model misuse",
-        "def": "End-user application of AI system for purposes violating terms of service, law, or ethics—hard to prevent retroactively."
-      }
-    ],
+    "published_at": "2026-09-16T14:47:13.000Z",
+    "headline": "Anthropic and OpenAI propose embedded AI safety evaluators; critics question independence and scope",
+    "plain_english": "Anthropic and OpenAI are advancing proposals for AI systems embedded within frontier models to identify and mitigate catastrophic-harm risks. The approach aims to automate safety monitoring but raises concerns about evaluator independence, audit trails, and whether self-monitoring suffices.",
+    "why_it_matters": "If adopted, embedded AI safety mechanisms could become the de facto standard for frontier model deployment; however, regulatory/institutional skepticism signals potential mandate for external, independent evaluation in high-stakes domains like finance.",
     "source": {
-      "name": "Wired · 2026-09-12",
-      "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/"
+      "name": "CNBC Tech/Finance · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html"
     }
   },
   {
-    "id": "2026-09-11-insight-bank-llm-pilots-stall",
-    "category": "insight",
-    "jurisdiction": "BFSI (general)",
-    "severity": "med",
-    "published_at": "2026-09-11T21:20:38.000Z",
-    "headline": "Many bank LLM pilots fail to reach production; FinTechs pivoting to scale existing deployments",
-    "plain_english": "Industry consensus: majority of BFSI LLM pilots launched in 2023–2024 have stalled or been shelved due to data quality, model accuracy, and regulatory friction. Successful early movers (e.g., Revolut scaling corporate banking AI) are now deepening existing use cases rather than expanding scope.",
-    "why_it_matters": "Signal that AI ROI in banking requires vertical focus, not broad platform plays. Risk officers should expect slower adoption curves; finance teams must justify capital spend on tighter metrics. Consolidation of vendors and use cases ahead.",
-    "stat_value": "~70%",
-    "stat_label": "of bank generative AI pilots remain in lab / pilot phase",
+    "id": "2026-09-16-openai-ipo-funding",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-16T15:18:16.000Z",
+    "headline": "OpenAI investors approach company about funding round ahead of expected 2027 IPO",
+    "plain_english": "OpenAI is fielding investor interest in a pre-IPO funding round as the company prepares for a widely anticipated initial public offering in 2027. OpenAI confidentially filed its IPO prospectus in June.",
+    "why_it_matters": "Pre-IPO funding validates frontier AI valuation multiples; a successful public listing would establish AI-lab equity as institutional BFSI portfolio exposure and potentially trigger downstream M&A consolidation.",
     "source": {
-      "name": "PYMNTS · 2026-09-11",
-      "url": "https://www.pymnts.com/partnerships/2026/fintechs-follow-corporate-clients-into-bigger-financial-relationships/"
+      "name": "CNBC Tech/Finance · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html"
     }
   },
   {
@@ -1248,40 +1253,6 @@
     "source": {
       "name": "CNBC · 2026-09-13",
       "url": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html"
-    }
-  },
-  {
-    "id": "2026-09-13-anthropic-researcher-safety-concerns",
-    "category": "frontier",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-09-13T11:13:07Z",
-    "headline": "Ex-Anthropic researcher tells BBC staff are 'genuinely frightened' for humanity's future",
-    "plain_english": "A former Anthropic safety researcher disclosed to the BBC that laboratory staff hold serious fears about advanced AI's existential risk. Comments reflect internal tension between capability-building pressure and long-term safety concerns at a frontier lab.",
-    "why_it_matters": "Public recruitment of internal safety doubts erodes frontier-lab credibility in regulatory eyes. May trigger scrutiny of AI governance structures at labs and downstream commercial deployments (e.g., BFSI use of frontier models).",
-    "source": {
-      "name": "BBC · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMkFTZ25QYzR0R0V3UnUteU9DTl9KZzRRd0ZKMjhYS0tqVUFDYjlLaFYtSW41eVpjeGg3Q0EybnlKQ1JLUWZiQ25DTVBYUjJlVEhGeVQtR1JuQQ"
-    }
-  },
-  {
-    "id": "2026-09-14-frontier-perplexity-astra",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-14T00:00:00Z",
-    "headline": "OpenAI's Astra enables Perplexity to automate software deployment and system monitoring",
-    "plain_english": "Perplexity integrated OpenAI's latest-gen Astra model into production for end-to-end system tasks: writing comms, modifying software, monitoring infrastructure. Checkpoints drop significantly vs. earlier models.",
-    "why_it_matters": "Marks frontier-to-production handoff for autonomous systems work. If agents can reliably handle deployment & monitoring, ops headcount pressure on fintechs accelerates.",
-    "jargon": [
-      {
-        "term": "end-to-end systems",
-        "def": "AI handling full task lifecycle without human intervention between steps (write → test → deploy → monitor)."
-      }
-    ],
-    "source": {
-      "name": "OpenAI · 2026-09-14",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     }
   },
   {
@@ -1640,6 +1611,195 @@
     "source": {
       "name": "Mashable · 2026-09-07",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBsQkxWVDFMTnFDZUl0VjZLNHN2dXJNOTJVWk9VY2IxXzZLVldnWHV1OTBQNFJQUnFUX2pKdXExcHI5VFRkRFU0TS1kWXFZQTU0ZGQzRDZfOWpkQ0UyUW9xbERnczlJTmVyNF8zWVgzSzdpMUVmYnAteHNB"
+    }
+  },
+  {
+    "id": "2026-09-11-fed-third-party-risk-guidance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T20:53:53.000Z",
+    "headline": "US federal agencies propose overhaul of bank third-party risk rules",
+    "plain_english": "FDIC, OCC, Federal Reserve, and NCUA jointly issued a request for comment on revised third-party risk management guidance for financial institutions. Aims to clarify vendor oversight, particularly for cloud, AI, and fintech partnerships.",
+    "why_it_matters": "Banks face tighter scrutiny on AI vendor relationships. Expect more prescriptive audit, data residency, and model transparency requirements. Compliance teams will need updated third-party assessment frameworks by effective date.",
+    "jargon": [
+      {
+        "term": "Third-party risk management",
+        "def": "Bank's duty to assess and monitor risks from outsourced vendors (cloud, AI, payments, etc.); regulators increasingly focus on data security and business continuity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/partnerships/2026/federal-agencies-overhaul-bank-partner-rules-drive-innovation/"
+    }
+  },
+  {
+    "id": "2026-09-11-california-ai-audit-regulation",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-11T14:55:22Z",
+    "headline": "California establishes first U.S. framework for independent AI auditor licensing",
+    "plain_english": "California Governor Newsom signed two bills creating the nation's first regulatory regime for independent AI verification organizations. The framework mandates licensing and oversight of auditors who assess AI risk—moving beyond requiring companies to self-audit to regulating the auditors themselves.",
+    "why_it_matters": "Sets precedent for auditor credentials and liability in BFSI; other states and EU likely to follow, creating new compliance role and potential cost for regulated financial institutions deploying AI.",
+    "jargon": [
+      {
+        "term": "Independent AI verification",
+        "def": "Third-party auditors hired by companies to assess and certify AI system risks and compliance before or after deployment."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/legal/2026/california-starts-regulating-the-people-who-audit-ai/"
+    },
+    "effective_date": "2026-09-09"
+  },
+  {
+    "id": "2026-09-14-perplexity-astra-production",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-14T00:00:00Z",
+    "headline": "Perplexity deploys GPT-6 Astra for autonomous system operations and code deployment",
+    "plain_english": "Perplexity is running OpenAI's latest model (Astra) in production for end-to-end operations: writing internal comms, deploying software, and monitoring production systems. The model requires check-ins far less often than predecessors, suggesting significantly reduced human oversight needs.",
+    "why_it_matters": "Marks a material shift toward autonomous LLM governance of critical infrastructure (deployment, monitoring). If sustained across BFSI, implies fewer human control points in transaction processing and risk management workflows.",
+    "jargon": [
+      {
+        "term": "End-to-end systems",
+        "def": "AI handling complete tasks (planning, execution, feedback) without human intervention between steps"
+      }
+    ],
+    "source": {
+      "name": "OpenAI · 2026-09-14",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    }
+  },
+  {
+    "id": "2026-09-14-vendor-anthropic-ipo-nvidia",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-13T23:09:08.000Z",
+    "headline": "Anthropic targets $100B IPO with Nvidia as anchor investor",
+    "plain_english": "Frontier AI lab Anthropic is in talks with chipmaker Nvidia to anchor its initial public offering, aiming to raise up to $100 billion and signalling imminent public-market debut for a major LLM competitor.",
+    "why_it_matters": "Validates stratospheric private valuations for frontier labs; Nvidia's participation signals confidence in Anthropic's commercial viability and deepens chip-to-model-to-deployment supply-chain linkage.",
+    "amount": "$100B",
+    "round": "IPO (anchor investor)",
+    "jargon": [
+      {
+        "term": "anchor investor",
+        "def": "Major institutional buyer who commits substantial capital upfront to stabilize IPO pricing and signal confidence to retail investors."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-could-land-nvidia-as-10-billion-ipo-investor/"
+    }
+  },
+  {
+    "id": "2026-09-11-cohere-funding-20b",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-11T22:58:21.000Z",
+    "headline": "Cohere targets $20B valuation in $2–3B funding round",
+    "plain_english": "Canadian LLM startup Cohere is in advanced talks to raise $2–3B at a $20B valuation, potentially closing within days. The round would value the enterprise AI firm among the sector's most mature non-frontier players.",
+    "why_it_matters": "Signal of sustained venture appetite for LLM alternatives to OpenAI/Anthropic. BFSI buyers evaluating vendor optionality will track Cohere's runway and product roadmap post-close.",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/startups/2026/ai-startup-cohere-targets-20-billion-dollar-valuation-funding-round/"
+    },
+    "amount": "$2–3B",
+    "round": "Growth"
+  },
+  {
+    "id": "2026-09-09-visa-agentic-payments-adoption",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-09T01:08:23.000Z",
+    "headline": "Visa CEO: AI shopping adoption outpacing autonomous payment systems",
+    "plain_english": "Visa CEO Ryan McInerney said consumers are adopting AI for shopping decisions but not yet for autonomous (agent-driven) payments. Agentic payment systems—where AI autonomously initiates transactions—remain unproven in production, despite AI shopping UI gaining traction.",
+    "why_it_matters": "The gap signals payment rails must solve trust, liability, and fraud detection before banks can confidently deploy autonomous agent-to-merchant transactions at scale. This delays the fintech fintech-as-platform shift.",
+    "jargon": [
+      {
+        "term": "Agentic payments",
+        "def": "AI agent autonomously initiates and completes financial transactions without real-time human approval."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/visa/2026/visa-ceo-says-ai-shopping-has-arrived-but-agentic-payments-havent/"
+    }
+  },
+  {
+    "id": "2026-09-12-insight-claude-misuse-at-scale",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-12T10:30:00.000Z",
+    "headline": "Claude misuse now spans hacking, bioweapons research, and child abuse material",
+    "plain_english": "Wired reports Claude AI is being systematically abused for illegal and harmful purposes: writing exploits, generating bioweapon protocols, and creating synthetic child abuse material. Indicates frontier LLMs lack sufficient safety controls at production scale.",
+    "why_it_matters": "BFSI must assume frontier models in their supply chains or third-party integrations carry elevated compliance and reputational risk; incident response and model selection frameworks now essential.",
+    "jargon": [
+      {
+        "term": "model misuse",
+        "def": "End-user application of AI system for purposes violating terms of service, law, or ethics—hard to prevent retroactively."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-09-12",
+      "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/"
+    }
+  },
+  {
+    "id": "2026-09-11-insight-bank-llm-pilots-stall",
+    "category": "insight",
+    "jurisdiction": "BFSI (general)",
+    "severity": "med",
+    "published_at": "2026-09-11T21:20:38.000Z",
+    "headline": "Many bank LLM pilots fail to reach production; FinTechs pivoting to scale existing deployments",
+    "plain_english": "Industry consensus: majority of BFSI LLM pilots launched in 2023–2024 have stalled or been shelved due to data quality, model accuracy, and regulatory friction. Successful early movers (e.g., Revolut scaling corporate banking AI) are now deepening existing use cases rather than expanding scope.",
+    "why_it_matters": "Signal that AI ROI in banking requires vertical focus, not broad platform plays. Risk officers should expect slower adoption curves; finance teams must justify capital spend on tighter metrics. Consolidation of vendors and use cases ahead.",
+    "stat_value": "~70%",
+    "stat_label": "of bank generative AI pilots remain in lab / pilot phase",
+    "source": {
+      "name": "PYMNTS · 2026-09-11",
+      "url": "https://www.pymnts.com/partnerships/2026/fintechs-follow-corporate-clients-into-bigger-financial-relationships/"
+    }
+  },
+  {
+    "id": "2026-09-13-anthropic-researcher-safety-concerns",
+    "category": "frontier",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-09-13T11:13:07Z",
+    "headline": "Ex-Anthropic researcher tells BBC staff are 'genuinely frightened' for humanity's future",
+    "plain_english": "A former Anthropic safety researcher disclosed to the BBC that laboratory staff hold serious fears about advanced AI's existential risk. Comments reflect internal tension between capability-building pressure and long-term safety concerns at a frontier lab.",
+    "why_it_matters": "Public recruitment of internal safety doubts erodes frontier-lab credibility in regulatory eyes. May trigger scrutiny of AI governance structures at labs and downstream commercial deployments (e.g., BFSI use of frontier models).",
+    "source": {
+      "name": "BBC · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMkFTZ25QYzR0R0V3UnUteU9DTl9KZzRRd0ZKMjhYS0tqVUFDYjlLaFYtSW41eVpjeGg3Q0EybnlKQ1JLUWZiQ25DTVBYUjJlVEhGeVQtR1JuQQ"
+    }
+  },
+  {
+    "id": "2026-09-14-frontier-perplexity-astra",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-14T00:00:00Z",
+    "headline": "OpenAI's Astra enables Perplexity to automate software deployment and system monitoring",
+    "plain_english": "Perplexity integrated OpenAI's latest-gen Astra model into production for end-to-end system tasks: writing comms, modifying software, monitoring infrastructure. Checkpoints drop significantly vs. earlier models.",
+    "why_it_matters": "Marks frontier-to-production handoff for autonomous systems work. If agents can reliably handle deployment & monitoring, ops headcount pressure on fintechs accelerates.",
+    "jargon": [
+      {
+        "term": "end-to-end systems",
+        "def": "AI handling full task lifecycle without human intervention between steps (write → test → deploy → monitor)."
+      }
+    ],
+    "source": {
+      "name": "OpenAI · 2026-09-14",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     }
   },
   {
@@ -8502,50 +8662,6 @@
     }
   },
   {
-    "id": "2026-08-17-ecb-cash-acceptance",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-08-17T11:09:00.000Z",
-    "headline": "ECB data shows company cash acceptance decline has paused post-pandemic",
-    "plain_english": "European Central Bank reported that the shift away from physical cash by businesses, which accelerated during COVID-19, has now stalled. Corporate cash usage remains more resilient than fintech narratives suggest.",
-    "why_it_matters": "Payment processors and digital-only BFSI models overestimated cash displacement; SMEs and retailers still rely on cash rails, limiting addressable market for pure-digital solutions.",
-    "stat_value": "Paused decline",
-    "stat_label": "in corporate cash acceptance post-COVID",
-    "source": {
-      "name": "Finextra · 2026-08-17",
-      "url": "https://www.finextra.com/newsarticle/48255/companies-prefer-cash-over-digital-payments---ecb"
-    }
-  },
-  {
-    "id": "2026-08-17-ai-roi-payback-period",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-17T11:30:00.000Z",
-    "headline": "BFSI AI investments now under pressure to demonstrate ROI as hype cycle matures",
-    "plain_english": "Industry analysts and investors are demanding measurable return on AI spending as banks and fintechs move beyond pilots. Payback-period scrutiny signals shift from speculation to unit economics discipline.",
-    "why_it_matters": "Boards will reject AI projects lacking 18–24 month payback models; vendors face margin pressure to prove efficiency gains outweigh infrastructure costs.",
-    "source": {
-      "name": "Tearsheet · 2026-08-17",
-      "url": "https://tearsheet.co/10-q/is-it-time-for-ai-to-enter-the-payback-period-and-show-its-roi"
-    }
-  },
-  {
-    "id": "2026-08-17-alibaba-qwen-laptop-model",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-08-17T11:24:23.000Z",
-    "headline": "Alibaba releases laptop-ready Qwen model weights, escalating open-model competition with Meta",
-    "plain_english": "Alibaba released its most powerful Qwen model weights and a laptop-optimized variant, directly challenging Meta's open-weight AI dominance. Open-source LLM competition now includes edge deployment capability.",
-    "why_it_matters": "Laptop-deployable open models reduce BFSI dependence on cloud APIs; lowers compliance and latency risk for regulated institutions considering edge AI.",
-    "source": {
-      "name": "CNBC · 2026-08-17",
-      "url": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html"
-    }
-  },
-  {
     "id": "2026-08-18-saudi-anti-crime-bank-transfers-uae",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -8610,20 +8726,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-18",
       "url": "https://www.pymnts.com/news/investment-tracker/2026/pointskash-secures-capital-commitment-after-beginning-rollout-of-crypto-atms/"
-    }
-  },
-  {
-    "id": "2026-08-17-nvidia-hyperscaler-strategy",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-17T10:07:00.000Z",
-    "headline": "Nvidia builds cloud infrastructure strategy without owning data centers—hyperscaler model shift",
-    "plain_english": "Nvidia is constructing a hyperscaler-like business (renting GPU capacity and orchestration) through partnerships instead of owning physical data centers. Signals chip maker pivoting to software and services margin.",
-    "why_it_matters": "If Nvidia succeeds, GPU access becomes a utility service, not a capex-heavy competitive moat; BFSI firms gain flexible AI compute without multi-year data center contracts.",
-    "source": {
-      "name": "TechSpot · 2026-08-17",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUHhfUDNmb2w4eWlOR3UzemdURmFWOW54bDNTQzhRcmFhVGdKMzY2eXlUSm5yTHdFN0E3NjJGZG8yUklLbGUzMm80OUZwV0ZWREF3aXFpeVhoS2dfRFdMVGhZemVKTzBCdTVWdlZqXzhmelhpRlBxTUpCbDM5YktiME4xU25xdEx5QndLbXM3RnZWQ0tiWGZrX0R3"
     }
   },
   {
@@ -8751,26 +8853,6 @@
     }
   },
   {
-    "id": "2026-08-17-alipay-agentic-commerce",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-08-17T10:18:00.000Z",
-    "headline": "Alipay launches full-stack agentic commerce platform in China",
-    "plain_english": "Alipay unveiled China's first full-stack agentic commerce platform, enabling merchants to transition from digital operations to AI-driven autonomous agents. This marks a major fintech operator shift toward agent-based infrastructure.",
-    "why_it_matters": "Sets template for APAC fintech platforms to embed autonomous agents into merchant ecosystems; directly competes with Western AI infrastructure plays in payments and SME finance.",
-    "jargon": [
-      {
-        "term": "Agentic commerce",
-        "def": "AI systems that autonomously execute business tasks (inventory, pricing, customer service) without constant human intervention."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-17",
-      "url": "https://www.finextra.com/pressarticle/110650/alipay-launches-full-stack-agentic-commerce-platform-in-china"
-    }
-  },
-  {
     "id": "2026-08-18-stripe-openrouter-acquisition",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -8825,34 +8907,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-17",
       "url": "https://www.pymnts.com/smbs/2026/square-accelerates-push-to-integrate-small-business-finance/"
-    }
-  },
-  {
-    "id": "2026-08-17-citi-singapore-cdo",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-17T11:00:00.000Z",
-    "headline": "Citi Singapore appoints Chief Data Officer as systemic role",
-    "plain_english": "Citi Singapore named Shahzad Alam as Chief Data Officer, institutionalizing data governance at regional level. Signals major bank treating data strategy as executive-level, not IT-delegated function.",
-    "why_it_matters": "CDO appointments indicate banks restructuring around data-first AI roadmaps; establishes accountability for model governance and compliance in high-stakes regions.",
-    "source": {
-      "name": "CDO Magazine · 2026-08-17",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVGk5S09SN2RXQnRlY2I2VWxRbjIxZDZsRS1tM1JDY1NVVWM1ZmJiYVhXRGNJVlEyOHFmTEpfcmpUNXJrWEZJUzVwR19oUUdic3dzU1A1Uk5kTTBxLUpReGJQOWR6T2l5RmE4UUtDcDVSWF9sZWs0aXFCOVd6c184QUZYY0RINFJweEU0SFkzMHhKSlRRbFRXTERzSnRmQ1U"
-    }
-  },
-  {
-    "id": "2026-08-17-bank-america-ai-tracker",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T10:04:56.000Z",
-    "headline": "Bank of America launches AI model tracker for intelligence and cost monitoring",
-    "plain_english": "Bank of America deployed an internal AI tracking system to monitor model performance and operational costs in real time. Signals enterprise BFSI moving beyond pilots to active cost governance and model observability.",
-    "why_it_matters": "BofA's instrumentation approach will drive industry adoption of LLM cost controls; cost tracking is now a competitive requirement for large-scale AI adoption.",
-    "source": {
-      "name": "Crypto Briefing · 2026-08-17",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zekV0Vi1hamlKUVV0YlJJT1Q0TG4yMXdqRDk4UTVUVkEyUVdCbGs3aVU0X0diYzFfeEZMMS1hRlo3aGlQVGlJZE9Wa0dyRUtNa1FtNk9YUzRKRnpWRW9rRzMwNEdHbnZCU1hkckE3cUt3eVZKX2c"
     }
   }
 ]
