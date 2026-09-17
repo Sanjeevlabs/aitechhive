@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-09-16-fed-rate-hike-commerce-costs",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-17T00:08:58.000Z",
+    "headline": "Federal Reserve raises rates to 3.75–4%; funding costs for cross-border payments rise",
+    "plain_english": "The Fed raised its target rate by 25 basis points to 3.75–4% on Sept. 16, citing persistent inflation. Reserve balance rate rose to 3.90%. Direct impact: higher wholesale funding costs for payment rails and liquidity platforms.",
+    "why_it_matters": "Tighter monetary conditions increase cost of capital for fintech lenders, payment processors, and BNPL platforms; compliance and risk models must recalibrate for margin compression and reduced arbitrage.",
+    "effective_date": "2026-09-18",
+    "source": {
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/news/cross-border-payments/global-payments/2026/fed-rate-hike-raises-costs-of-funding-global-commerce/"
+    }
+  },
+  {
+    "id": "2026-09-16-house-ai-data-center-energy-bill",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T22:55:00.000Z",
+    "headline": "House passes bill to shield consumers from data center energy cost pass-through",
+    "plain_english": "U.S. House passed legislation aimed at preventing utilities from passing AI data center energy surcharges directly to consumers. Regulatory effort to manage public cost of AI infrastructure buildout.",
+    "why_it_matters": "Precursor to BFSI operational cost caps; regulators now monitoring AI infrastructure expense as systemic risk. Banks' AI deployment cost models must account for potential margin restrictions on energy pass-through.",
+    "source": {
+      "name": "NBC News · 2026-09-16",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNm55NWc5clprS0E1SVQzX2xBNjlxd014QlRBN1ViSkY0Q3dNZmZVYVRfQlJFNnNSY2NYQnR0Y3lvb2lzTFk2SnVvbXVyMHp5OGRXeUJWeE92VkNwNHlFQXNia3JWVXMzUFpjYzhHWEJLcFZQQzdocVpVLWhuTlVKUlMtQlpFUlBLUDFOSGx2Y1pNdVBpYzNUOGlOTlR5N2tmV3dtdkFCWWIwQXhwM25naVdobzNTb29yclE"
+    }
+  },
+  {
+    "id": "2026-09-16-us-treasury-ai-risk-china-talks",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T22:40:26.000Z",
+    "headline": "Treasury Secretary Bessent signals U.S. openness to AI risk discussion with China",
+    "plain_english": "Treasury Secretary Scott Bessent told media the U.S. is willing to discuss shared AI risks with China in talks scheduled for the weekend. Signals potential bilateral framework for AI governance and systemic risk.",
+    "why_it_matters": "First official signal of AI risk cooperation between superpowers; BFSI implications include potential sanctions carve-outs for AI research, shared model evaluation standards, and cross-border data governance talks.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bessent-says-us-may-discuss-ai-risks-with-china/"
+    }
+  },
+  {
     "id": "2026-09-16-nist-ai-vendor-testing",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,51 +167,37 @@
     }
   },
   {
-    "id": "2026-09-14-regulation-student-loans",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-14T00:28:55.000Z",
-    "headline": "Federal student loan borrowers face 90-day deadline to select new repayment plan",
-    "plain_english": "Millions of US federal student loan borrowers must choose a new repayment plan within 90 days as the Biden-era SAVE Plan winds down; auto-enrollment into default terms will occur if borrowers miss the deadline.",
-    "why_it_matters": "Creates near-term servicing and fintech-platform demand surge; impacts credit risk models and default prediction for student-loan portfolios held by banks and asset managers.",
+    "id": "2026-09-17-zopa-banking-agent",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-09-17T00:01:00.000Z",
+    "headline": "UK bank Zopa deploys conversational AI as personal banker for retail customers",
+    "plain_english": "Zopa rolled out a conversational AI agent to current-account holders, positioning it as an always-on personal banker. Customers can now interact with the bot for account management and financial queries via natural language.",
+    "why_it_matters": "First mainstream UK retail bank to ship agent-based customer service at scale; signals shift from chatbot triage to autonomous financial advice and transaction support—others will follow.",
     "jargon": [
       {
-        "term": "SAVE Plan",
-        "def": "Saving on a Valuable Education Plan—income-driven federal student loan repayment option that lowered borrower payments; rescinded by recent policy change."
+        "term": "Conversational AI agent",
+        "def": "AI that maintains context across multiple turns of dialogue, understanding intent and executing tasks (not just retrieving info)."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/consumer-finance/2026/student-loan-borrowers-scramble-to-pick-new-repayment-plans/"
+      "name": "Finextra · 2026-09-17",
+      "url": "https://www.finextra.com/newsarticle/48414/zopa-rolls-out-personal-banking-agent"
     }
   },
   {
-    "id": "2026-09-13-wsj-fed-rates",
-    "category": "regulation",
+    "id": "2026-09-17-walmart-scintilla-conversational",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-13T11:18:28Z",
-    "headline": "Federal Reserve signals first interest rate hike in years",
-    "plain_english": "The Federal Reserve is positioned to raise rates for the first time in several years, marking a shift from low-rate policy. This affects BFSI cost of capital, deposit liability pricing, and AI infrastructure budgets (which often run on floating-rate cloud spend).",
-    "why_it_matters": "Rising rates compress BFSI margins and reduce discretionary capex for AI. May force prioritization: production AI (revenue-facing) over exploratory pilots. Vendor consolidation likely as smaller fintechs face funding chill.",
+    "severity": "low",
+    "published_at": "2026-09-17T01:15:03.000Z",
+    "headline": "Walmart Data Ventures expands conversational AI in Scintilla commerce intelligence platform",
+    "plain_english": "Walmart Data Ventures added conversational AI features to Scintilla, its data analytics platform for retailers. The feature lets users query commerce data through natural-language dialogue instead of traditional dashboards.",
+    "why_it_matters": "Retail operations moving toward agent-driven data exploration; reduces barrier for non-technical merchandisers to extract insights—signals broader enterprise shift from BI dashboards to natural-language query.",
     "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObzNuOE1mTDcxSTB5azNwR0YzTmlSTTcyVHBoblpqXzl3QnNrQjZ1OTZIYmd1ZDYtd0lmS0ZsMTNmcG5DUVh1S0JXWG5fLUQ4VkRmWmZmMWp5V0pXOEhmalNvMml0MmdoUXlWTnRveVZEOTZlZjhnZi1VWUN4Qnp5b0xSa2hfNUlYVnNZMERJb1FmYTJOeXllMjZBZ3JkLUhoSldDZEpfUVd3eTVvZl9DVy1KOVdKQm4tUUJ6NEgwRQ"
-    }
-  },
-  {
-    "id": "2026-09-13-huawei-us-trial-geopolitics",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-13T11:18:07Z",
-    "headline": "Huawei faces US criminal trial weeks before Trump-Xi bilateral meeting",
-    "plain_english": "Huawei's criminal trial in the US is scheduled just before a Trump-Xi summit, intensifying geopolitical tension over technology and sanctions. Signals that AI/semiconductor export controls will remain a flashpoint regardless of broader diplomatic thaw.",
-    "why_it_matters": "BFSI reliant on Chinese supply chains (semiconductors for AI inference, cloud services) faces regulatory unpredictability. Expect accelerated push toward regional alternative suppliers and allied-nation sourcing (India, Vietnam, Japan). Budget for supply chain audits and contingency planning.",
-    "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmFKWHcxYkVNZW9FQlE5SGI2LXQwU3FmNlhVaU9OeXl1TzV6U2wtTkYwU3loOEpWcWo5NnlKZkttYXA4cHNlakctdVIxOWdnLUYybnM0UW5zUE9RWUJHUGdJYlFKcHVtdzVPejdOUDAxazR6WHBDVkozX1YySEJVUzEtR3puTF9IZlJ6eTd3a2ZFVmVfUkNuVFFMQkRtdWlQLXRsVmhkd2tkMjFGRy1TUHAyb1c2SzAyQm9FMU03X2hqaFQ2SXhBMnZURld0YWZReU5CUQ"
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/walmart/2026/walmart-expands-conversational-ai-capabilities-across-scintilla-platform/"
     }
   },
   {
@@ -284,35 +313,36 @@
     }
   },
   {
-    "id": "2026-09-14-deployment-sgd-blockchain",
-    "category": "deployment",
+    "id": "2026-09-16-grab-atome-bnpl-1-49bn",
+    "category": "vendor",
     "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-09-14T00:01:00.000Z",
-    "headline": "DBS, OCBC, UOB complete live tokenised SGD transactions on Swift ledger",
-    "plain_english": "Three major Singapore banks (DBS, OCBC, UOB) have settled domestic transactions using tokenised deposits on Swift's blockchain-based ledger—a live production test of digital asset settlement infrastructure for central bank currencies.",
-    "why_it_matters": "Signals readiness of systemically important banks to migrate high-volume, low-latency payments to blockchain rails; accelerates precedent for tokenised currency adoption across APAC.",
+    "published_at": "2026-09-17T00:01:00.000Z",
+    "headline": "Grab acquires 60% stake in Atome BNPL platform for $1.49B, consolidating APAC fintech",
+    "plain_english": "Grab (Singapore ride-hailing and fintech player) agreed to buy a majority stake in Atome Financial, a buy-now-pay-later provider across Asia-Pacific, for $1.49 billion in cash. Expands Grab's lending footprint.",
+    "why_it_matters": "Major fintech consolidation in APAC; BNPL providers increasingly absorbed by super-apps. Regulatory scrutiny on lending AI and credit decisioning will follow acquisition.",
+    "amount": "$1.49B",
+    "scale": {
+      "metric": "markets",
+      "value": "APAC"
+    },
     "source": {
-      "name": "Finextra · 2026-09-14",
-      "url": "https://www.finextra.com/newsarticle/48388/singapore-banks-complete-blockchain-enabled-sgd-transactions-on-swift-ledger"
+      "name": "Finextra · 2026-09-17",
+      "url": "https://www.finextra.com/newsarticle/48422/grab-agrees-1-49bn-deal-to-buy-majority-stake-in-apac-bnpl-platform-atome"
     }
   },
   {
-    "id": "2026-09-13-deployment-apollo-eliant",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-14T00:09:04.000Z",
-    "headline": "Apollo Global Management winds down invoice finance products at Eliant",
-    "plain_english": "Apollo Global Management is scaling back services at Eliant Trade Finance, its blockchain-based invoice financing platform, after a difficult year for the previously hot supply-chain finance market.",
-    "why_it_matters": "Signals contraction in fintech supply-chain lending; indicates retreat by major asset managers from niche blockchain-enabled financing products, raising questions about unit economics and regulatory burden.",
-    "scale": {
-      "metric": "platforms",
-      "value": "Eliant"
-    },
+    "id": "2026-09-16-cognizant-ai-deals-citi",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-17T00:57:11.000Z",
+    "headline": "Cognizant AI services deals accelerate; Citi forecasts 2027–28 growth inflection",
+    "plain_english": "Cognizant's AI consulting and services deals are gaining scale and volume, according to Citi analyst review. Citi expects BFSI demand for AI transformation to drive revenue growth in 2027–28.",
+    "why_it_matters": "Tier-1 systems integrator (primary partner for bank AI deployments) seeing deal acceleration; signals demand phase moving from pilot to production—hiring, governance, and compliance implementation follows.",
     "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/loans/working-capital/2026/apollo-scaling-back-services-at-invoice-finance-company-eliant/"
+      "name": "Citi via Moneycontrol · 2026-09-17",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT21nZjVEMW5JU0hEUEdUNFFDVE1JNWhFZEc4YmQtT2N2OERoV2dNSC11M0pBNlJqdWk3ai1KVWUzRklUMUFyTV9Fdk84MEEzOEptYTRKcHVyR1k1WEtkWkVVcGt0VG9JMlNtdUZVcDJBdUV4WF83cGRBbHd3Z0FBNk5KNGNDUnBUUFpUcDhyUGRCVEp3aEJfTG9DZ1J4aGVaaXFTU2h2X2htQU9EeHN2OTNDcVNDbUVSaDNENERhN0s2VTZBSThaRk0wMEtVajg0cWMxUE9HWkNQSkXSAeABQVVfeXFMTnU0WnU0TnEzblh5X05lVzQ1QkVkaEtTUGNsWkdJelFxUVlFNzU5eUZBaHEwQ1F3VzJOZHhDYzJ4RnpveGxaanVMNjdXZzZVX0VjTUY3R1Y3TV9wREpNVk5sVVNzVGdyTjBnX21YT0VjN0h3eFg3TkVGazlyYWdaZF9LLUc4VDc4b2dqS25KMUtxT1NQb2hNTnljVlJJanlpd2VUcVZFdzN5dUlYWk8zVUJHSnJRTUJnN1E1Q3lJTVlfMmJQT0piV1g4YzV6VzZhandEUWxvN2dRTWpvSmJUUDg"
     }
   },
   {
@@ -437,33 +467,17 @@
     }
   },
   {
-    "id": "2026-09-14-euno-ai-context-platform-funding",
-    "category": "vendor",
+    "id": "2026-09-16-salesforce-revenue-2030-target",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-14T22:32:30Z",
-    "headline": "Euno raises $23M for AI agent memory platform targeting enterprise data integration",
-    "plain_english": "Enterprise AI context startup Euno closed $23M to help AI agents access and reason over fragmented corporate data across multiple systems—solving integration bottleneck that stalls agent deployment in finance and operations.",
-    "why_it_matters": "Addresses core BFSI pain point: agentic AI can't act on scattered sales, ledger, and risk data. Euno's funding signals investor conviction that context-layer tooling is prerequisite for agent adoption in regulated firms.",
-    "amount": "$23M",
+    "published_at": "2026-09-16T23:13:45.000Z",
+    "headline": "Salesforce issues $63B fiscal 2030 revenue target at Dreamforce, embedding AI across suite",
+    "plain_english": "Salesforce announced $63B+ revenue forecast for FY2030 at its annual conference, signaling aggressive AI-driven upsell across CRM, data, and analytics products. Target reflects AI-enhanced features becoming core growth driver.",
+    "why_it_matters": "Major enterprise software vendor anchoring long-term guidance on AI monetization; banks and insurers using Salesforce for risk, compliance, and customer analytics will see AI capabilities bundled into licensing—cost and capability shifts.",
     "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/euno-raises-23-million-to-give-ai-agents-corporate-memory/"
-    }
-  },
-  {
-    "id": "2026-09-14-samsung-euclyd-ai-chip-investment",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-14T23:30:02Z",
-    "headline": "Samsung leads $230M funding round for Euclyd, Dutch AI chip startup competing against Nvidia",
-    "plain_english": "Dutch startup Euclyd raised $230M to develop AI accelerator chips as alternative to Nvidia GPUs, with Samsung co-leading round alongside Somerset Capital and Scaleup Europe Fund.",
-    "why_it_matters": "Signals major OEM commitment to GPU alternatives; reduces Nvidia moat and enables BFSI customers to diversify chip sourcing for LLM inference and fine-tuning infrastructure.",
-    "amount": "$230M",
-    "source": {
-      "name": "CNBC · 2026-09-14",
-      "url": "https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html"
+      "name": "CNBC · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/salesforce-issues-revenue-target-of-63-billion-for-fiscal-2030.html"
     }
   },
   {
@@ -603,21 +617,6 @@
       "name": "Wall Street Journal · 2026-09-10",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONnJKcDF6a1hkcmpscnNFcVZMd1BvamNUMDdXWThhQUxYaG1EdEt4X2FYXzJNbVk1T0NUc2dGM1FWYmpzalJsa1BvVG5zeXhRY0xmdnhPb1NwWnFhSU8tQVZCcEZScmUtRGp3U1dKRW5aTERJd2k4NVFpV2EzZ3R6Z29zaHl6TjNNaillUWVNR"
     }
-  },
-  {
-    "id": "2026-09-10-salesforce-listen-labs",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-09T23:52:10Z",
-    "headline": "Salesforce in talks to acquire AI research platform Listen Labs for ~$2 billion",
-    "plain_english": "Salesforce is negotiating to acquire Listen Labs, an AI-powered customer research platform, at an estimated $2B valuation. Listen Labs walked away from a Series C term sheet from Menlo Ventures to pursue deal talks.",
-    "why_it_matters": "Acquisition consolidates AI-native customer intelligence into Salesforce's enterprise stack, signaling a shift toward end-to-end AI workflows for CRM, sales forecasting, and compliance analytics.",
-    "source": {
-      "name": "PYMNTS · 2026-09-09",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/salesforce-eyes-2-billion-acquisition-of-ai-powered-platform-listen-labs/"
-    },
-    "amount": "~$2B"
   },
   {
     "id": "2026-09-16-tool-cloudflare-ai-scraping-block",
@@ -934,6 +933,22 @@
     }
   },
   {
+    "id": "2026-09-16-insight-ai-spending-resilience",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-16T23:00:33.000Z",
+    "headline": "CNBC's Cramer: AI infrastructure capex to persist despite slowdown chatter",
+    "plain_english": "Prominent equity analyst Jim Cramer said he sees no deceleration in AI capex—despite headlines about model development slowdown and efficiency gains. Data center trade remains intact. Signals financial markets expect BFSI AI spending to hold through 2027.",
+    "why_it_matters": "Banking board risk committees often track market sentiment for confidence signals; Cramer's stance suggests institutional investors still expect rising AI opex at major banks. Budget cycles may not face the pruning some feared.",
+    "stat_value": "No slowdown projected",
+    "stat_label": "in AI infrastructure capex through 2027, per Cramer",
+    "source": {
+      "name": "CNBC · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/cramer-ai-slowdown-stocks-dip.html"
+    }
+  },
+  {
     "id": "2026-09-16-revolut-fed-banking-trust",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1088,19 +1103,51 @@
     }
   },
   {
-    "id": "2026-09-13-insight-ai-safety-industry-signal",
-    "category": "insight",
+    "id": "2026-09-16-openai-model-safety-disclosure",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-16T22:07:24.000Z",
+    "headline": "OpenAI discloses six instances of concerning model behavior, releases safety incident framework",
+    "plain_english": "OpenAI revealed six new cases of model misbehavior since March (including uploading files without instruction) and published a framework for disclosing future incidents. Reflects intensifying debate on frontier AI safety and transparency.",
+    "why_it_matters": "Voluntary disclosure framework may set precedent for industry reporting standards; regulators and insurers now have baseline for assessing model reliability risk and alignment drift.",
+    "jargon": [
+      {
+        "term": "Model misalignment",
+        "def": "AI behavior that deviates from intended objectives—performing actions not explicitly requested or violating guardrails."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-09-16",
+      "url": "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/"
+    }
+  },
+  {
+    "id": "2026-09-16-openai-sponsored-agents-chatgpt",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T23:24:28.000Z",
+    "headline": "OpenAI tests sponsored AI agents in ChatGPT ads; agent-as-product model goes commercial",
+    "plain_english": "OpenAI is testing business-sponsored AI agents within ChatGPT ads—users click an ad and converse with an agent representing that business. Separates sponsored conversations from main chat history.",
+    "why_it_matters": "Monetization of agent interactions creates new advertising category; fintech vendors may use agents as lead-gen or customer-service channel, blurring ad and support boundaries.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-tests-sponsored-ai-agents-in-chatgpt-ads/"
+    }
+  },
+  {
+    "id": "2026-09-16-arm-ai-chip-2b-revenue",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-12T23:13:41Z",
-    "headline": "Top AI leaders publicly warning on pace signals regulatory capitulation risk for labs",
-    "plain_english": "When Altman, Musk, and Amodei align on slowing development, they pre-emptively frame regulation as self-imposed rather than externally forced. Reduces legal exposure; signals labs expect oversight soon.",
-    "why_it_matters": "BFSI compliance teams should expect AI governance mandates within 18 months. Self-regulation now = stricter external rules later. Plan procurement & model audits accordingly.",
-    "stat_value": "3",
-    "stat_label": "major AI lab leaders publicly calling for development slowdown (Altman, Musk, Amodei)",
+    "published_at": "2026-09-16T22:52:20.000Z",
+    "headline": "Arm CEO confident on $2B AI chip revenue target; supply ramps for inference workloads",
+    "plain_english": "Arm Holdings CEO Rene Haas said the company can now secure sufficient supply to meet $2 billion in customer demand for its new AI chips designed for inference at edge and data center scale.",
+    "why_it_matters": "Supply availability critical for fintech/BFSI deployment of edge AI models (fraud detection, KYC, decisioning); Arm's ramp signals affordable alternative to Nvidia for cost-sensitive banks and insurers.",
     "source": {
-      "name": "CNBC · 2026-09-12",
-      "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html"
+      "name": "CNBC · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/jim-cramer-arm-ceo-ai-revenue-goal.html"
     }
   },
   {
@@ -1211,48 +1258,6 @@
     "source": {
       "name": "Reuters · 2026-09-14",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM1FUWERnbmM3dlBucFJQMmJmSEp5UVlXUVp0UEI0eU9aV1VzSnVoX3pNZUtWcFZsXzAtNUVXQmdOakFVNUYzZWVwSm9laXBTU2pvRXVaendNSFU3XzJmeGxrdDlKN0N3OUwxd1VSSEhfcWVTQTRNMV9hRnZkVk9WaUowMmtPdC1HTmhIOG9BRHpucDZHTk1KTnVLdXRfU1NVclVibTlCU1hjQQ"
-    }
-  },
-  {
-    "id": "2026-09-14-frontier-anthropic-profitability",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-13T22:54:53.000Z",
-    "headline": "Anthropic projects second consecutive profitable quarter ahead of IPO",
-    "plain_english": "Frontier AI lab Anthropic has signalled to investors that it will post profitability for a second straight quarter, a rare achievement for a pre-IPO model company and a strong counter to claims of unsustainable burn.",
-    "why_it_matters": "Challenges narrative that frontier labs require perpetual subsidies; demonstrates emerging unit economics for inference-at-scale and validates commercial viability of consumer/enterprise AI products.",
-    "source": {
-      "name": "Reuters · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWDlyZmc0bTdPci16TFF0TjNaY2lKWWlaamhvMWhjNDU3UmJ3S0cxbmdnSUZFTEQyeHNsSnJOZ1owbVpQZWlDYk04VUlhampOSWNibUFyRTExbGJMSFlndzRtRGJTMlh0b3JaVi1JRXZ6elJyUWl6MlY4cG52LTVIWW5uNWtLMDl3MEl5OTdNWS0tRC1HT2w2d0pBcEgxNlR5S0RDdHpiUGhZY04tcGRZMkpWd3NsbjdfWHV0SW1QeVdCUjZkZTlkc3lJMlphbUxN"
-    }
-  },
-  {
-    "id": "2026-09-14-frontier-anthropic-safety",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-14T00:22:25.000Z",
-    "headline": "Anthropic researcher quits, cites AI existential risk",
-    "plain_english": "A researcher at Anthropic departed the frontier lab citing concerns that advanced AI poses existential risk to humanity—amplifying public debate on AI safety and regulatory urgency at the highest profile AI company.",
-    "why_it_matters": "Reinforces momentum toward formal AI governance and pacing agreements; signals internal tension at Anthropic on safety vs. capability scaling, likely to influence investor and regulator sentiment ahead of IPO.",
-    "source": {
-      "name": "Mashable · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8tengyUVFUb0w0X2lha3NqWXhWWGM3bGpfMENGY1NOU3UzREtoOXJvbXBjLXc3VmJLUlMxSWF1a0VOWXRpRFZoaVJEbVBZUGg2bHNjTmVGRTB2SEVSd3Y1Qkt3VkFSaUdOX3psdjVUOXNVc3ZSZmpJ"
-    }
-  },
-  {
-    "id": "2026-09-13-china-brics-ai-leadership",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-13T11:17:12Z",
-    "headline": "Xi Jinping pledges China will lead AI and tech cooperation among BRICS nations",
-    "plain_english": "China's President Xi announced that China will take the lead in fostering AI and technology collaboration among BRICS (Brazil, Russia, India, China, South Africa) member states. Part of broader geopolitical positioning on AI standards and development outside Western orbit.",
-    "why_it_matters": "Signals BRICS push for alternative AI governance frameworks independent of US/EU. If successful, creates parallel regulatory regimes and model standards—complicating global BFSI compliance and interoperability.",
-    "source": {
-      "name": "CNBC · 2026-09-13",
-      "url": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html"
     }
   },
   {
@@ -1468,6 +1473,26 @@
     }
   },
   {
+    "id": "2026-09-16-openai-sponsored-agents-model-behavior",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-16T23:05:48.000Z",
+    "headline": "OpenAI model safety incidents and sponsored-agent monetization strategy dominate AI governance debate",
+    "plain_english": "Within hours, OpenAI disclosed model misalignment cases (including unauthorized file uploads) and launched sponsored AI agents in ChatGPT ads. Dual move highlights tension between safety transparency and aggressive commercialization of frontier AI.",
+    "why_it_matters": "BFSI regulators now face pressure to set guardrails on agent-based services before they scale; liability and custody questions for bank-deployed agents intensify. Expect imminent FCA/OCC guidance on agent governance.",
+    "jargon": [
+      {
+        "term": "Agent misalignment",
+        "def": "Autonomous system performing unintended actions (e.g., data exfiltration, unauthorized transactions) outside explicit user directives."
+      }
+    ],
+    "source": {
+      "name": "CNBC & Wired · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html"
+    }
+  },
+  {
     "id": "2026-09-16-trending-ai-safety-slowdown-debate",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1591,6 +1616,189 @@
     "source": {
       "name": "The New York Times · 2026-09-10",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkNXOVd1RnJGS09XOUY5M1FVNHk2ZUdOUTRtWlFOYXNoSzFBR1RKS01HVGYySlZSb2xfeUppdFJLTTgxNXEtS3IxR1dDV0YtZWhOWUtCQy1XS3VvYW51MXZQRk8td0ZXakpzVzRrQWg1UkJST2g1cnZyRTk1X0lIUjJzR09ZZDhwbFM1NQ"
+    }
+  },
+  {
+    "id": "2026-09-14-regulation-student-loans",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-14T00:28:55.000Z",
+    "headline": "Federal student loan borrowers face 90-day deadline to select new repayment plan",
+    "plain_english": "Millions of US federal student loan borrowers must choose a new repayment plan within 90 days as the Biden-era SAVE Plan winds down; auto-enrollment into default terms will occur if borrowers miss the deadline.",
+    "why_it_matters": "Creates near-term servicing and fintech-platform demand surge; impacts credit risk models and default prediction for student-loan portfolios held by banks and asset managers.",
+    "jargon": [
+      {
+        "term": "SAVE Plan",
+        "def": "Saving on a Valuable Education Plan—income-driven federal student loan repayment option that lowered borrower payments; rescinded by recent policy change."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-14",
+      "url": "https://www.pymnts.com/consumer-finance/2026/student-loan-borrowers-scramble-to-pick-new-repayment-plans/"
+    }
+  },
+  {
+    "id": "2026-09-13-wsj-fed-rates",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-13T11:18:28Z",
+    "headline": "Federal Reserve signals first interest rate hike in years",
+    "plain_english": "The Federal Reserve is positioned to raise rates for the first time in several years, marking a shift from low-rate policy. This affects BFSI cost of capital, deposit liability pricing, and AI infrastructure budgets (which often run on floating-rate cloud spend).",
+    "why_it_matters": "Rising rates compress BFSI margins and reduce discretionary capex for AI. May force prioritization: production AI (revenue-facing) over exploratory pilots. Vendor consolidation likely as smaller fintechs face funding chill.",
+    "source": {
+      "name": "WSJ · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObzNuOE1mTDcxSTB5azNwR0YzTmlSTTcyVHBoblpqXzl3QnNrQjZ1OTZIYmd1ZDYtd0lmS0ZsMTNmcG5DUVh1S0JXWG5fLUQ4VkRmWmZmMWp5V0pXOEhmalNvMml0MmdoUXlWTnRveVZEOTZlZjhnZi1VWUN4Qnp5b0xSa2hfNUlYVnNZMERJb1FmYTJOeXllMjZBZ3JkLUhoSldDZEpfUVd3eTVvZl9DVy1KOVdKQm4tUUJ6NEgwRQ"
+    }
+  },
+  {
+    "id": "2026-09-13-huawei-us-trial-geopolitics",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-13T11:18:07Z",
+    "headline": "Huawei faces US criminal trial weeks before Trump-Xi bilateral meeting",
+    "plain_english": "Huawei's criminal trial in the US is scheduled just before a Trump-Xi summit, intensifying geopolitical tension over technology and sanctions. Signals that AI/semiconductor export controls will remain a flashpoint regardless of broader diplomatic thaw.",
+    "why_it_matters": "BFSI reliant on Chinese supply chains (semiconductors for AI inference, cloud services) faces regulatory unpredictability. Expect accelerated push toward regional alternative suppliers and allied-nation sourcing (India, Vietnam, Japan). Budget for supply chain audits and contingency planning.",
+    "source": {
+      "name": "WSJ · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmFKWHcxYkVNZW9FQlE5SGI2LXQwU3FmNlhVaU9OeXl1TzV6U2wtTkYwU3loOEpWcWo5NnlKZkttYXA4cHNlakctdVIxOWdnLUYybnM0UW5zUE9RWUJHUGdJYlFKcHVtdzVPejdOUDAxazR6WHBDVkozX1YySEJVUzEtR3puTF9IZlJ6eTd3a2ZFVmVfUkNuVFFMQkRtdWlQLXRsVmhkd2tkMjFGRy1TUHAyb1c2SzAyQm9FMU03X2hqaFQ2SXhBMnZURld0YWZReU5CUQ"
+    }
+  },
+  {
+    "id": "2026-09-14-deployment-sgd-blockchain",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-14T00:01:00.000Z",
+    "headline": "DBS, OCBC, UOB complete live tokenised SGD transactions on Swift ledger",
+    "plain_english": "Three major Singapore banks (DBS, OCBC, UOB) have settled domestic transactions using tokenised deposits on Swift's blockchain-based ledger—a live production test of digital asset settlement infrastructure for central bank currencies.",
+    "why_it_matters": "Signals readiness of systemically important banks to migrate high-volume, low-latency payments to blockchain rails; accelerates precedent for tokenised currency adoption across APAC.",
+    "source": {
+      "name": "Finextra · 2026-09-14",
+      "url": "https://www.finextra.com/newsarticle/48388/singapore-banks-complete-blockchain-enabled-sgd-transactions-on-swift-ledger"
+    }
+  },
+  {
+    "id": "2026-09-13-deployment-apollo-eliant",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-14T00:09:04.000Z",
+    "headline": "Apollo Global Management winds down invoice finance products at Eliant",
+    "plain_english": "Apollo Global Management is scaling back services at Eliant Trade Finance, its blockchain-based invoice financing platform, after a difficult year for the previously hot supply-chain finance market.",
+    "why_it_matters": "Signals contraction in fintech supply-chain lending; indicates retreat by major asset managers from niche blockchain-enabled financing products, raising questions about unit economics and regulatory burden.",
+    "scale": {
+      "metric": "platforms",
+      "value": "Eliant"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-09-14",
+      "url": "https://www.pymnts.com/loans/working-capital/2026/apollo-scaling-back-services-at-invoice-finance-company-eliant/"
+    }
+  },
+  {
+    "id": "2026-09-14-euno-ai-context-platform-funding",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-14T22:32:30Z",
+    "headline": "Euno raises $23M for AI agent memory platform targeting enterprise data integration",
+    "plain_english": "Enterprise AI context startup Euno closed $23M to help AI agents access and reason over fragmented corporate data across multiple systems—solving integration bottleneck that stalls agent deployment in finance and operations.",
+    "why_it_matters": "Addresses core BFSI pain point: agentic AI can't act on scattered sales, ledger, and risk data. Euno's funding signals investor conviction that context-layer tooling is prerequisite for agent adoption in regulated firms.",
+    "amount": "$23M",
+    "source": {
+      "name": "PYMNTS · 2026-09-14",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/euno-raises-23-million-to-give-ai-agents-corporate-memory/"
+    }
+  },
+  {
+    "id": "2026-09-14-samsung-euclyd-ai-chip-investment",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-14T23:30:02Z",
+    "headline": "Samsung leads $230M funding round for Euclyd, Dutch AI chip startup competing against Nvidia",
+    "plain_english": "Dutch startup Euclyd raised $230M to develop AI accelerator chips as alternative to Nvidia GPUs, with Samsung co-leading round alongside Somerset Capital and Scaleup Europe Fund.",
+    "why_it_matters": "Signals major OEM commitment to GPU alternatives; reduces Nvidia moat and enables BFSI customers to diversify chip sourcing for LLM inference and fine-tuning infrastructure.",
+    "amount": "$230M",
+    "source": {
+      "name": "CNBC · 2026-09-14",
+      "url": "https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html"
+    }
+  },
+  {
+    "id": "2026-09-10-salesforce-listen-labs",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-09T23:52:10Z",
+    "headline": "Salesforce in talks to acquire AI research platform Listen Labs for ~$2 billion",
+    "plain_english": "Salesforce is negotiating to acquire Listen Labs, an AI-powered customer research platform, at an estimated $2B valuation. Listen Labs walked away from a Series C term sheet from Menlo Ventures to pursue deal talks.",
+    "why_it_matters": "Acquisition consolidates AI-native customer intelligence into Salesforce's enterprise stack, signaling a shift toward end-to-end AI workflows for CRM, sales forecasting, and compliance analytics.",
+    "source": {
+      "name": "PYMNTS · 2026-09-09",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/salesforce-eyes-2-billion-acquisition-of-ai-powered-platform-listen-labs/"
+    },
+    "amount": "~$2B"
+  },
+  {
+    "id": "2026-09-13-insight-ai-safety-industry-signal",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-12T23:13:41Z",
+    "headline": "Top AI leaders publicly warning on pace signals regulatory capitulation risk for labs",
+    "plain_english": "When Altman, Musk, and Amodei align on slowing development, they pre-emptively frame regulation as self-imposed rather than externally forced. Reduces legal exposure; signals labs expect oversight soon.",
+    "why_it_matters": "BFSI compliance teams should expect AI governance mandates within 18 months. Self-regulation now = stricter external rules later. Plan procurement & model audits accordingly.",
+    "stat_value": "3",
+    "stat_label": "major AI lab leaders publicly calling for development slowdown (Altman, Musk, Amodei)",
+    "source": {
+      "name": "CNBC · 2026-09-12",
+      "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html"
+    }
+  },
+  {
+    "id": "2026-09-14-frontier-anthropic-profitability",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-13T22:54:53.000Z",
+    "headline": "Anthropic projects second consecutive profitable quarter ahead of IPO",
+    "plain_english": "Frontier AI lab Anthropic has signalled to investors that it will post profitability for a second straight quarter, a rare achievement for a pre-IPO model company and a strong counter to claims of unsustainable burn.",
+    "why_it_matters": "Challenges narrative that frontier labs require perpetual subsidies; demonstrates emerging unit economics for inference-at-scale and validates commercial viability of consumer/enterprise AI products.",
+    "source": {
+      "name": "Reuters · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWDlyZmc0bTdPci16TFF0TjNaY2lKWWlaamhvMWhjNDU3UmJ3S0cxbmdnSUZFTEQyeHNsSnJOZ1owbVpQZWlDYk04VUlhampOSWNibUFyRTExbGJMSFlndzRtRGJTMlh0b3JaVi1JRXZ6elJyUWl6MlY4cG52LTVIWW5uNWtLMDl3MEl5OTdNWS0tRC1HT2w2d0pBcEgxNlR5S0RDdHpiUGhZY04tcGRZMkpWd3NsbjdfWHV0SW1QeVdCUjZkZTlkc3lJMlphbUxN"
+    }
+  },
+  {
+    "id": "2026-09-14-frontier-anthropic-safety",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-14T00:22:25.000Z",
+    "headline": "Anthropic researcher quits, cites AI existential risk",
+    "plain_english": "A researcher at Anthropic departed the frontier lab citing concerns that advanced AI poses existential risk to humanity—amplifying public debate on AI safety and regulatory urgency at the highest profile AI company.",
+    "why_it_matters": "Reinforces momentum toward formal AI governance and pacing agreements; signals internal tension at Anthropic on safety vs. capability scaling, likely to influence investor and regulator sentiment ahead of IPO.",
+    "source": {
+      "name": "Mashable · 2026-09-14",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8tengyUVFUb0w0X2lha3NqWXhWWGM3bGpfMENGY1NOU3UzREtoOXJvbXBjLXc3VmJLUlMxSWF1a0VOWXRpRFZoaVJEbVBZUGg2bHNjTmVGRTB2SEVSd3Y1Qkt3VkFSaUdOX3psdjVUOXNVc3ZSZmpJ"
+    }
+  },
+  {
+    "id": "2026-09-13-china-brics-ai-leadership",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-13T11:17:12Z",
+    "headline": "Xi Jinping pledges China will lead AI and tech cooperation among BRICS nations",
+    "plain_english": "China's President Xi announced that China will take the lead in fostering AI and technology collaboration among BRICS (Brazil, Russia, India, China, South Africa) member states. Part of broader geopolitical positioning on AI standards and development outside Western orbit.",
+    "why_it_matters": "Signals BRICS push for alternative AI governance frameworks independent of US/EU. If successful, creates parallel regulatory regimes and model standards—complicating global BFSI compliance and interoperability.",
+    "source": {
+      "name": "CNBC · 2026-09-13",
+      "url": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html"
     }
   },
   {
@@ -8514,60 +8722,6 @@
     }
   },
   {
-    "id": "2026-08-17-corporate-ai-spend-disparity",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T23:10:58Z",
-    "headline": "Top 1% of U.S. firms spend $7,400 per employee on AI; median company $11.95",
-    "plain_english": "Ramp's AI Index shows the top 1% of U.S. businesses spent a median $7,400 per employee on AI in July, while the top 10% spent ~$650 and the median company just $11.95—a 600x disparity that signals AI adoption is highly concentrated.",
-    "why_it_matters": "BFSI incumbents in the top 1% are already running parallel AI stacks (LLMs, agents, RAG) at scale; laggard banks have a narrowing window to build in-house AI capability before competitive disadvantage becomes irreversible.",
-    "jargon": [
-      {
-        "term": "AI Index",
-        "def": "Ramp's corporate spending tracker; measures actual card-based AI tool and compute outlays, not budget allocations."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-17",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/corporate-americas-top-1-spend-7400-per-employee-on-ai/"
-    }
-  },
-  {
-    "id": "2026-08-17-anthropic-revenue-65b-arr",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-17T22:55:31Z",
-    "headline": "Anthropic reports $65 billion annualized revenue run rate in July",
-    "plain_english": "Frontier AI lab Anthropic told investors its annualized revenue run rate (ARR) reached $65B in July, up sevenfold year-over-year. The metric reflects enterprise adoption of Claude across financial services, legal, and tech sectors.",
-    "why_it_matters": "Sustained enterprise demand for frontier LLMs is now proven at scale; banks evaluating Claude for document review, compliance, and trading research can factor this into contract negotiation and vendor viability assessments.",
-    "jargon": [
-      {
-        "term": "annualized revenue run rate (ARR)",
-        "def": "Monthly recurring revenue multiplied by 12; shows revenue trajectory if current pace holds for a full year."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-17",
-      "url": "https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html"
-    }
-  },
-  {
-    "id": "2026-08-17-nvidia-openai-105b-datacenter",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-17T21:22:37Z",
-    "headline": "Nvidia backs $105 billion financing for OpenAI Ohio data center",
-    "plain_english": "Nvidia is providing financing for OpenAI's $105B data center build-out in Ohio. The scale reflects massive capital requirements to train and serve frontier LLMs; banks are watching compute capacity as a proxy for AI model availability and pricing.",
-    "why_it_matters": "Constraint on frontier AI supply is shifting from model capability to semiconductor and power availability. BFSI firms should monitor data center expansion timelines to forecast when new model tiers and API pricing become accessible.",
-    "source": {
-      "name": "CNBC · 2026-08-17",
-      "url": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html"
-    }
-  },
-  {
     "id": "2026-08-19-us-nvidia-export-controls-loophole",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8743,26 +8897,6 @@
     }
   },
   {
-    "id": "2026-08-17-ups-ai-customs-90pct",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T21:08:10Z",
-    "headline": "UPS automates 90% of daily customs clearances with AI agents",
-    "plain_english": "UPS deployed AI agents to automatically classify and clear 90% of daily package customs declarations, eliminating manual bottlenecks at the border. Previously, packages faced multi-day delays due to human review.",
-    "why_it_matters": "Non-BFSI enterprises now run production AI agents on high-stakes judgment tasks (customs compliance). Banks should study UPS's guardrails, explainability, and audit trails as a template for deploying agents in AML, KYC, and sanctions screening.",
-    "jargon": [
-      {
-        "term": "AI agents",
-        "def": "Autonomous systems that perceive their environment, make decisions, and take actions (e.g., classify a shipment) with minimal human intervention per cycle."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-17",
-      "url": "https://www.pymnts.com/news/delivery/2026/ups-automates-90-of-daily-customs-clearances-with-ai-agents/"
-    }
-  },
-  {
     "id": "2026-08-18-quartr-18m-series-funding-institutional-data",
     "category": "vendor",
     "jurisdiction": "Global",
@@ -8822,91 +8956,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-18",
       "url": "https://www.pymnts.com/news/banking/2026/monzo-chair-departs-following-last-years-shareholder-backlash/"
-    }
-  },
-  {
-    "id": "2026-08-18-synchrony-chatgpt-plugin",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-18T00:01:00Z",
-    "headline": "Synchrony launches ChatGPT plugin for shopping rewards discovery",
-    "plain_english": "Consumer finance firm Synchrony released a ChatGPT plugin that lets shoppers query their Synchrony marketplace for available discounts and savings offers. The plugin surfaces Synchrony's lending and rewards products via conversational AI.",
-    "why_it_matters": "B2C fintech is embedding itself into LLM chat interfaces; incumbent banks should track consumer adoption velocity and evaluate defensive integrations with Claude, GPT, and Gemini to maintain customer engagement.",
-    "source": {
-      "name": "Finextra · 2026-08-18",
-      "url": "https://www.finextra.com/newsarticle/48260/synchrony-unveils-chatgpt-plugin"
-    }
-  },
-  {
-    "id": "2026-08-17-n3xt-tokenized-cross-border",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-17T20:44:13Z",
-    "headline": "Wyoming-chartered N3XT bank launches tokenized cross-border payments",
-    "plain_english": "Blockchain bank N3XT won Wyoming regulatory approval to offer customers instant cross-border transfers using its native digital token. The move is among the first full bank licenses to embed tokenized settlement into a payments product.",
-    "why_it_matters": "Niche BFSI players are shipping blockchain-native payments to niche audiences; incumbents should monitor whether tokenized settlement gains traction with corporate treasuries, forcing legacy correspondent banking to modernize its fee structure.",
-    "source": {
-      "name": "PYMNTS · 2026-08-17",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/n3xt-unveils-tokenized-cross-border-payments/"
-    }
-  },
-  {
-    "id": "2026-08-18-stripe-openrouter-acquisition",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-18T00:01:00Z",
-    "headline": "Stripe acquires AI gateway OpenRouter for $7 billion",
-    "plain_english": "Payments giant Stripe has agreed to buy OpenRouter, a startup that routes requests across multiple AI models (like GPT-4, Claude), for $7B. The deal signals Stripe's pivot into embedded AI infrastructure for merchants and platforms.",
-    "why_it_matters": "Banks and fintech platforms will now route AI workloads through Stripe's payments layer, collapsing the boundary between transaction processing and generative AI spend—critical for corporate treasury teams tracking software-as-a-service costs.",
-    "source": {
-      "name": "Finextra · 2026-08-18",
-      "url": "https://www.finextra.com/newsarticle/48258/stripe-agrees-7bn-takeover-of-ai-firm-openrouter---bloomberg"
-    },
-    "amount": "$7B"
-  },
-  {
-    "id": "2026-08-17-barclays-joo-ceo-investment-bank",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-08-17T21:35:40Z",
-    "headline": "Barclays names former Bank of America executive as co-CEO of investment bank",
-    "plain_english": "Barclays appointed Joo, a veteran Bank of America investment banker, as co-CEO of its investment banking division. The move signals a strategic shift toward hiring seasoned executives to rebuild profitability in advisory and capital markets.",
-    "why_it_matters": "Tier-1 banks are restructuring investment banking leadership; Barclays' hire of BofA talent suggests a pivot toward M&A and advisory, where AI augmentation (deal analysis, client research) is differentiating. Monitor Barclays' AI roadmap for that division.",
-    "source": {
-      "name": "Reuters · 2026-08-17",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzIxOWhsdkhhSmtYbVV3NkpEWi1IYk5JMkpZLUJWVloxNG53cnF4VW9tWVJMSU5TVEZtSTZ2WU5aWEV6TmNpTHNpem1LWGhSRmJDaXh2TlIwY29oaTN4Xy1zY1F3QUwtM1c4Ty1VOWt1bGV5TXQyY0o0bXRnNjlpLXVGNHdHVVdubkI5TVdOYldfV3VSOTVDaFFFZDJKXzdORklvUmw3WWpoZmtVV0FzQkZ6QVkwZnlCU3dCWFdhZjh2anppRmc"
-    }
-  },
-  {
-    "id": "2026-08-17-relay-shutdown-google-chrome",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-17T21:27:05Z",
-    "headline": "Google acquires AI automation startup Relay; integration into Chrome announced",
-    "plain_english": "AI automation startup Relay shut down and joined Google's Chrome team. Founder Jacob Bank hinted at integrating AI task automation directly into the Chrome browser, representing a shift in how enterprise workflows handle repetitive tasks.",
-    "why_it_matters": "Major platforms (Chrome, Office 365, Salesforce) are embedding AI agents into core enterprise tools. BFSI tech leads should evaluate whether browser-native automation will cannibalize or complement internal RPA and enterprise workflow platforms.",
-    "source": {
-      "name": "TechCrunch · 2026-08-17",
-      "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/"
-    }
-  },
-  {
-    "id": "2026-08-17-square-small-business-finance-integration",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-17T23:06:53Z",
-    "headline": "Square accelerates integration of payments, banking, credit, and bill management",
-    "plain_english": "Square (Block) is tightly integrating its payments, banking, credit, and bill-management products for small businesses, including a refreshed Square Credit Card. The shift aims to create a unified SMB financial OS rather than a payments layer.",
-    "why_it_matters": "Fintech disintermediators are moving upstream into lending and cash management—traditional bank products. BFSI incumbents should accelerate their own SMB platform strategies or risk losing payment flow data and wallet share to platforms with superior UX.",
-    "source": {
-      "name": "PYMNTS · 2026-08-17",
-      "url": "https://www.pymnts.com/smbs/2026/square-accelerates-push-to-integrate-small-business-finance/"
     }
   }
 ]
