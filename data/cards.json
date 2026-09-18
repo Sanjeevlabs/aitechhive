@@ -1,5 +1,59 @@
 [
   {
+    "id": "2026-09-18-regulation-sec-tokenized-stocks",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-18T14:57:00Z",
+    "headline": "SEC clears tokenized stock trading, enabling blockchain-based equity settlement",
+    "plain_english": "The U.S. Securities and Exchange Commission issued an order permitting the trading of tokenized stocks—equity securities issued and settled on blockchain networks. This removes a key regulatory barrier to digital asset adoption in capital markets.",
+    "why_it_matters": "Banks and brokers must now integrate tokenization infrastructure into trading and settlement workflows; compliance teams need updated AML/KYC playbooks for blockchain-native trades.",
+    "source": {
+      "name": "Finextra · 2026-09-18",
+      "url": "https://www.finextra.com/newsarticle/48432/sec-clears-way-for-tokenised-stock-trading"
+    }
+  },
+  {
+    "id": "2026-09-18-regulation-csbs-ai-framework",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-18T14:09:38Z",
+    "headline": "State regulators release AI exam playbook as federal oversight remains silent",
+    "plain_english": "The Conference of State Bank Supervisors (CSBS) published an Artificial Intelligence Supervisory Framework detailing how examiners will assess gen-AI and model-risk management in banks. The move fills a gap left by the Federal Reserve and OCC, which have not yet issued comprehensive AI guidance.",
+    "why_it_matters": "Bank exam priorities on model validation, data governance, and third-party AI vendor due diligence are now explicit; non-compliance signals enforcement risk in 2026–2027 exams.",
+    "jargon": [
+      {
+        "term": "Model-risk management",
+        "def": "Internal controls ensuring AI/ML systems are accurate, auditable, and don't expose the bank to unexpected losses."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-18",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/state-regulators-give-banks-an-ai-exam-playbook-as-federal-gap-persists/"
+    }
+  },
+  {
+    "id": "2026-09-18-regulation-ecb-binance-mica",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-18T15:23:00Z",
+    "headline": "ECB president Lagarde intervened to block Binance MiCA license in Greece",
+    "plain_english": "ECB President Christine Lagarde personally helped stop crypto exchange Binance from obtaining a license under the EU's Markets in Crypto-Assets (MiCA) regulation in Greece, per the Wall Street Journal. The move reflects heightened EU skepticism of non-bank crypto incumbents.",
+    "why_it_matters": "EU banks seeking crypto/digital-asset partnerships must now assume stricter ECB vetting; regulatory risk for crypto interoperability strategies has risen materially.",
+    "jargon": [
+      {
+        "term": "MiCA",
+        "def": "EU regulation establishing licensing and conduct rules for crypto service providers (exchanges, custody, staking). Live as of Dec 2023."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-18",
+      "url": "https://www.finextra.com/newsarticle/48434/ecb-chief-lagarde-helped-block-binances-mica-license---wsj"
+    }
+  },
+  {
     "id": "2026-09-18-fed-payment-access-deadline",
     "category": "regulation",
     "jurisdiction": "US",
@@ -106,54 +160,22 @@
     }
   },
   {
-    "id": "2026-09-16-us-treasury-ai-risk-china-talks",
-    "category": "regulation",
+    "id": "2026-09-18-deployment-upstart-compliance-hiring",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-16T22:40:26.000Z",
-    "headline": "Treasury Secretary Bessent signals U.S. openness to AI risk discussion with China",
-    "plain_english": "Treasury Secretary Scott Bessent told media the U.S. is willing to discuss shared AI risks with China in talks scheduled for the weekend. Signals potential bilateral framework for AI governance and systemic risk.",
-    "why_it_matters": "First official signal of AI risk cooperation between superpowers; BFSI implications include potential sanctions carve-outs for AI research, shared model evaluation standards, and cross-border data governance talks.",
+    "severity": "low",
+    "published_at": "2026-09-18T10:34:03Z",
+    "headline": "Upstart hiring three compliance and controls managers for growth and lending",
+    "plain_english": "Fintech lender Upstart is actively recruiting compliance talent across three roles: BSA/AML program manager, growth controls manager, and unsecured lending risk/controls manager. Signals expansion of AI lending volume and regulatory footprint.",
+    "why_it_matters": "Upstart is scaling AI-driven underwriting and loan origination; compliance hiring precedes increased transaction throughput and regulatory scrutiny.",
+    "scale": {
+      "metric": "roles",
+      "value": "3"
+    },
     "source": {
-      "name": "PYMNTS · 2026-09-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bessent-says-us-may-discuss-ai-risks-with-china/"
+      "name": "Upstart Careers · 2026-09-18",
+      "url": "https://careers.upstart.com/jobs"
     }
-  },
-  {
-    "id": "2026-09-16-nist-ai-vendor-testing",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-16T14:39:31.000Z",
-    "headline": "NIST establishes common evaluation framework for bank AI vendor approval",
-    "plain_english": "National Institute of Standards and Technology is finalizing a federal standards effort to give banks a common testing methodology for evaluating AI vendors. The framework addresses a practical adoption barrier: what evidence should vendors provide before winning bank approval?",
-    "why_it_matters": "Standardized AI vendor evaluation reduces procurement friction and risk variance across the banking sector, accelerating AI deployment while establishing baseline safety/performance expectations.",
-    "jargon": [
-      {
-        "term": "AI vendor evaluation framework",
-        "def": "Standardized criteria and testing protocols banks use to assess whether commercial AI products meet safety, performance, and regulatory requirements before purchase."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nist-push-could-give-banks-ommon-test-ai-vendors/"
-    },
-    "effective_date": "2026-09-16"
-  },
-  {
-    "id": "2026-09-16-india-upi-merchant-fees",
-    "category": "regulation",
-    "jurisdiction": "IN",
-    "severity": "high",
-    "published_at": "2026-09-16T14:28:58.000Z",
-    "headline": "India imposes merchant discount rate on UPI transactions above 2,000 rupees",
-    "plain_english": "India's Reserve Bank is introducing a 0.4% merchant fee (MDR) on UPI payments exceeding 2,000 rupees (~$21), ending six years of zero-fee transactions. The change applies to merchant acceptance of the digital payment system.",
-    "why_it_matters": "Fee introduction shifts UPI economics for merchants and platforms; lower-value transactions remain free, but medium/large payments now carry friction that may redirect volume to competing payment rails or cards.",
-    "source": {
-      "name": "PYMNTS · 2026-09-16",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/india-brings-merchant-fees-to-popular-upi-payment-system/"
-    },
-    "effective_date": "2026-09-16"
   },
   {
     "id": "2026-09-18-citi-mastercard-subscriptions-uae",
@@ -307,20 +329,6 @@
     "source": {
       "name": "MediaBrief · 2026-09-15",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxblFxb0tWX1oyaWt2TTAwdWF1SmRKaU9oNTRLS3V2SkF5bE9EU3NwaXhmdlVGOG5WTHRPRU9EOFlLdE1GcGFOV0xzR051Q1JWOGFKckx6WXRZV1pwR0hINFhrUXUwZmhfMkl2Wk9R0gFzQVVfeXFMTXdNYlcycVNvMWI1NUx1ZFBKTGxQbFVUd2xXUGtzMEljYlExeFlhd1pWamJaY2ZGSHgzMTBZanM3WnBiTE00MGNGQU8yamZLSDBSc3hoRm1saHI2ZGFkdWFZLWJUS0Ixcmhnd2VuSEJ0WHBRQQ"
-    }
-  },
-  {
-    "id": "2026-09-15-nubank-us-deposit-launch",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-15T00:01:00Z",
-    "headline": "Nubank launches deposit accounts and financial services in US market via sponsor bank",
-    "plain_english": "Brazilian digital bank Nubank entered US market offering deposits and banking products through a sponsor-bank partnership, expanding Latin American fintech footprint into North American retail segment.",
-    "why_it_matters": "Validates regulatory path for foreign digital banks to deploy consumer banking in US; may accelerate similar cross-border launches and pressure traditional retail banking incumbents on deposits and pricing.",
-    "source": {
-      "name": "Finextra · 2026-09-15",
-      "url": "https://www.finextra.com/newsarticle/48397/nubank-launches-deposit-account-in-the-us?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -954,6 +962,20 @@
     }
   },
   {
+    "id": "2026-09-18-insight-berkshire-leadership-transition",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-18T14:26:00Z",
+    "headline": "Warren Buffett steps down as Berkshire Hathaway chairman; son Howard assumes role",
+    "plain_english": "Warren Buffett, 96, transitioned from chairman to chairman emeritus of Berkshire Hathaway, effective Sept. 18. His son Howard Buffett becomes chair; Warren remains a board member. The move formalizes succession at one of the world's largest insurers and asset managers.",
+    "why_it_matters": "Berkshire's investment thesis and capital allocation strategy may shift; BFSI investors and counterparties should reassess concentration risk and leverage policy under new leadership.",
+    "source": {
+      "name": "PYMNTS · 2026-09-18",
+      "url": "https://www.pymnts.com/personnel/2026/warren-buffett-shifts-to-emeritus-role-as-son-howard-becomes-berkshire-chair/"
+    }
+  },
+  {
     "id": "2026-09-17-boe-rate-hike-signal",
     "category": "insight",
     "jurisdiction": "UK",
@@ -1102,19 +1124,59 @@
     }
   },
   {
-    "id": "2026-09-14-insight-ai-deanonymization",
-    "category": "insight",
-    "jurisdiction": "US",
+    "id": "2026-09-18-frontier-openai-safety-incidents",
+    "category": "frontier",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-09-14T00:47:59.000Z",
-    "headline": "AI models increasingly capable of de-anonymizing online accounts via behavioral inference",
-    "plain_english": "Advanced AI systems can now correlate writing style, post timing, and behavioral patterns to identify individuals behind anonymous accounts—a privacy risk affecting whistleblowers, activists, and platform users.",
-    "why_it_matters": "Raises regulatory scrutiny on AI transparency and synthetic-identity detection; banks and compliance teams must reassess KYC/AML frameworks for AI-aided re-identification risks.",
-    "stat_value": "High",
-    "stat_label": "Privacy risk from behavioral AI inference on anonymized accounts",
+    "published_at": "2026-09-18T14:36:55Z",
+    "headline": "OpenAI discloses concerning model behavior; Microsoft AI chief flags 'serious situation'",
+    "plain_english": "OpenAI revealed incidents of unexpected, unsafe behavior in one of its models earlier this week. Microsoft AI CEO Mustafa Suleyman called the disclosures a 'serious situation' on CNBC, raising questions about model safety and disclosure practices.",
+    "why_it_matters": "Frontier model safety is now a front-page enterprise concern; BFSI firms using OpenAI APIs (embeddings, GPT-4 fine-tuning) face governance and audit pressure on model governance.",
     "source": {
-      "name": "WSJ · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12SW54NmoyZTY0T3dWZE5SbTdDdWktcjV3dGtxeG82MW9RbE1BSW14cW1HT1g3QktVTWNvek5uSndwVDc4MEdPWUZtMTBlT3VsY0xJS1M2MVE1X1YxSFZCRGY3cTFNNmw5U2c"
+      "name": "CNBC · 2026-09-18",
+      "url": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html"
+    }
+  },
+  {
+    "id": "2026-09-18-frontier-ai-safety-independent-evaluators",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-18T14:25:43Z",
+    "headline": "Over 100 AI experts urge independent safety evaluators for Anthropic, OpenAI models",
+    "plain_english": "A coalition of 100+ AI researchers and safety experts issued a public letter demanding that Anthropic, OpenAI, and other foundation model labs use truly independent evaluators—not in-house teams—to assess safety risks before release.",
+    "why_it_matters": "Enterprise procurement teams will face pressure to demand third-party AI audits and safety certifications; compliance frameworks may require independent eval reports as condition of use.",
+    "source": {
+      "name": "CNBC · 2026-09-18",
+      "url": "https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html"
+    }
+  },
+  {
+    "id": "2026-09-18-frontier-claude-openai-exploit",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-18T14:00:14Z",
+    "headline": "Researchers used Claude to exploit OpenAI vulnerabilities; employee accounts compromised",
+    "plain_english": "Security researchers used Anthropic's Claude AI model to identify and exploit vulnerabilities in OpenAI's systems, gaining control of employee accounts and access to internal code repositories. Flaws were reported responsibly; the incident underscores cross-model security risks.",
+    "why_it_matters": "BFSI firms must treat LLM-powered security testing as a hostile threat vector; AI-assisted red-teaming now requires zero-trust boundaries between production systems and external AI services.",
+    "source": {
+      "name": "TechCrunch · 2026-09-18",
+      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+    }
+  },
+  {
+    "id": "2026-09-18-frontier-anthropic-safety-research",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-18T15:00:00Z",
+    "headline": "Anthropic CEO: AI safety hinges on interpretability, but evidence so far is 'disturbing'",
+    "plain_english": "Anthropic's CEO stated in Wired that understanding how AI systems 'think' (mechanistic interpretability) is central to safety, but existing research into model internals has revealed patterns that are alarming and hard to control.",
+    "why_it_matters": "As interpretability research advances, banks face a quandary: AI models in production may be fundamentally less controllable than internal governance assumes; risk frameworks may need radical overhaul.",
+    "source": {
+      "name": "Wired · 2026-09-18",
+      "url": "https://www.wired.com/story/if-the-ai-industry-followed-its-own-research-it-might-have-paused-already/"
     }
   },
   {
@@ -1212,62 +1274,6 @@
     "source": {
       "name": "Wired · 2026-09-16",
       "url": "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/"
-    }
-  },
-  {
-    "id": "2026-09-16-openai-sponsored-agents-chatgpt",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-16T23:24:28.000Z",
-    "headline": "OpenAI tests sponsored AI agents in ChatGPT ads; agent-as-product model goes commercial",
-    "plain_english": "OpenAI is testing business-sponsored AI agents within ChatGPT ads—users click an ad and converse with an agent representing that business. Separates sponsored conversations from main chat history.",
-    "why_it_matters": "Monetization of agent interactions creates new advertising category; fintech vendors may use agents as lead-gen or customer-service channel, blurring ad and support boundaries.",
-    "source": {
-      "name": "PYMNTS · 2026-09-16",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-tests-sponsored-ai-agents-in-chatgpt-ads/"
-    }
-  },
-  {
-    "id": "2026-09-16-arm-ai-chip-2b-revenue",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-16T22:52:20.000Z",
-    "headline": "Arm CEO confident on $2B AI chip revenue target; supply ramps for inference workloads",
-    "plain_english": "Arm Holdings CEO Rene Haas said the company can now secure sufficient supply to meet $2 billion in customer demand for its new AI chips designed for inference at edge and data center scale.",
-    "why_it_matters": "Supply availability critical for fintech/BFSI deployment of edge AI models (fraud detection, KYC, decisioning); Arm's ramp signals affordable alternative to Nvidia for cost-sensitive banks and insurers.",
-    "source": {
-      "name": "CNBC · 2026-09-16",
-      "url": "https://www.cnbc.com/2026/09/16/jim-cramer-arm-ceo-ai-revenue-goal.html"
-    }
-  },
-  {
-    "id": "2026-09-16-anthropic-openai-eval-risk",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-16T14:47:13.000Z",
-    "headline": "Anthropic and OpenAI propose embedded AI safety evaluators; critics question independence and scope",
-    "plain_english": "Anthropic and OpenAI are advancing proposals for AI systems embedded within frontier models to identify and mitigate catastrophic-harm risks. The approach aims to automate safety monitoring but raises concerns about evaluator independence, audit trails, and whether self-monitoring suffices.",
-    "why_it_matters": "If adopted, embedded AI safety mechanisms could become the de facto standard for frontier model deployment; however, regulatory/institutional skepticism signals potential mandate for external, independent evaluation in high-stakes domains like finance.",
-    "source": {
-      "name": "CNBC Tech/Finance · 2026-09-16",
-      "url": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html"
-    }
-  },
-  {
-    "id": "2026-09-16-openai-ipo-funding",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-16T15:18:16.000Z",
-    "headline": "OpenAI investors approach company about funding round ahead of expected 2027 IPO",
-    "plain_english": "OpenAI is fielding investor interest in a pre-IPO funding round as the company prepares for a widely anticipated initial public offering in 2027. OpenAI confidentially filed its IPO prospectus in June.",
-    "why_it_matters": "Pre-IPO funding validates frontier AI valuation multiples; a successful public listing would establish AI-lab equity as institutional BFSI portfolio exposure and potentially trigger downstream M&A consolidation.",
-    "source": {
-      "name": "CNBC Tech/Finance · 2026-09-16",
-      "url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html"
     }
   },
   {
@@ -1626,6 +1632,142 @@
     "source": {
       "name": "The New York Times · 2026-09-10",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkNXOVd1RnJGS09XOUY5M1FVNHk2ZUdOUTRtWlFOYXNoSzFBR1RKS01HVGYySlZSb2xfeUppdFJLTTgxNXEtS3IxR1dDV0YtZWhOWUtCQy1XS3VvYW51MXZQRk8td0ZXakpzVzRrQWg1UkJST2g1cnZyRTk1X0lIUjJzR09ZZDhwbFM1NQ"
+    }
+  },
+  {
+    "id": "2026-09-16-us-treasury-ai-risk-china-talks",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T22:40:26.000Z",
+    "headline": "Treasury Secretary Bessent signals U.S. openness to AI risk discussion with China",
+    "plain_english": "Treasury Secretary Scott Bessent told media the U.S. is willing to discuss shared AI risks with China in talks scheduled for the weekend. Signals potential bilateral framework for AI governance and systemic risk.",
+    "why_it_matters": "First official signal of AI risk cooperation between superpowers; BFSI implications include potential sanctions carve-outs for AI research, shared model evaluation standards, and cross-border data governance talks.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bessent-says-us-may-discuss-ai-risks-with-china/"
+    }
+  },
+  {
+    "id": "2026-09-16-nist-ai-vendor-testing",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T14:39:31.000Z",
+    "headline": "NIST establishes common evaluation framework for bank AI vendor approval",
+    "plain_english": "National Institute of Standards and Technology is finalizing a federal standards effort to give banks a common testing methodology for evaluating AI vendors. The framework addresses a practical adoption barrier: what evidence should vendors provide before winning bank approval?",
+    "why_it_matters": "Standardized AI vendor evaluation reduces procurement friction and risk variance across the banking sector, accelerating AI deployment while establishing baseline safety/performance expectations.",
+    "jargon": [
+      {
+        "term": "AI vendor evaluation framework",
+        "def": "Standardized criteria and testing protocols banks use to assess whether commercial AI products meet safety, performance, and regulatory requirements before purchase."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nist-push-could-give-banks-ommon-test-ai-vendors/"
+    },
+    "effective_date": "2026-09-16"
+  },
+  {
+    "id": "2026-09-16-india-upi-merchant-fees",
+    "category": "regulation",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-09-16T14:28:58.000Z",
+    "headline": "India imposes merchant discount rate on UPI transactions above 2,000 rupees",
+    "plain_english": "India's Reserve Bank is introducing a 0.4% merchant fee (MDR) on UPI payments exceeding 2,000 rupees (~$21), ending six years of zero-fee transactions. The change applies to merchant acceptance of the digital payment system.",
+    "why_it_matters": "Fee introduction shifts UPI economics for merchants and platforms; lower-value transactions remain free, but medium/large payments now carry friction that may redirect volume to competing payment rails or cards.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/india-brings-merchant-fees-to-popular-upi-payment-system/"
+    },
+    "effective_date": "2026-09-16"
+  },
+  {
+    "id": "2026-09-15-nubank-us-deposit-launch",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-15T00:01:00Z",
+    "headline": "Nubank launches deposit accounts and financial services in US market via sponsor bank",
+    "plain_english": "Brazilian digital bank Nubank entered US market offering deposits and banking products through a sponsor-bank partnership, expanding Latin American fintech footprint into North American retail segment.",
+    "why_it_matters": "Validates regulatory path for foreign digital banks to deploy consumer banking in US; may accelerate similar cross-border launches and pressure traditional retail banking incumbents on deposits and pricing.",
+    "source": {
+      "name": "Finextra · 2026-09-15",
+      "url": "https://www.finextra.com/newsarticle/48397/nubank-launches-deposit-account-in-the-us?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-14-insight-ai-deanonymization",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-14T00:47:59.000Z",
+    "headline": "AI models increasingly capable of de-anonymizing online accounts via behavioral inference",
+    "plain_english": "Advanced AI systems can now correlate writing style, post timing, and behavioral patterns to identify individuals behind anonymous accounts—a privacy risk affecting whistleblowers, activists, and platform users.",
+    "why_it_matters": "Raises regulatory scrutiny on AI transparency and synthetic-identity detection; banks and compliance teams must reassess KYC/AML frameworks for AI-aided re-identification risks.",
+    "stat_value": "High",
+    "stat_label": "Privacy risk from behavioral AI inference on anonymized accounts",
+    "source": {
+      "name": "WSJ · 2026-09-14",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12SW54NmoyZTY0T3dWZE5SbTdDdWktcjV3dGtxeG82MW9RbE1BSW14cW1HT1g3QktVTWNvek5uSndwVDc4MEdPWUZtMTBlT3VsY0xJS1M2MVE1X1YxSFZCRGY3cTFNNmw5U2c"
+    }
+  },
+  {
+    "id": "2026-09-16-openai-sponsored-agents-chatgpt",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T23:24:28.000Z",
+    "headline": "OpenAI tests sponsored AI agents in ChatGPT ads; agent-as-product model goes commercial",
+    "plain_english": "OpenAI is testing business-sponsored AI agents within ChatGPT ads—users click an ad and converse with an agent representing that business. Separates sponsored conversations from main chat history.",
+    "why_it_matters": "Monetization of agent interactions creates new advertising category; fintech vendors may use agents as lead-gen or customer-service channel, blurring ad and support boundaries.",
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-tests-sponsored-ai-agents-in-chatgpt-ads/"
+    }
+  },
+  {
+    "id": "2026-09-16-arm-ai-chip-2b-revenue",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T22:52:20.000Z",
+    "headline": "Arm CEO confident on $2B AI chip revenue target; supply ramps for inference workloads",
+    "plain_english": "Arm Holdings CEO Rene Haas said the company can now secure sufficient supply to meet $2 billion in customer demand for its new AI chips designed for inference at edge and data center scale.",
+    "why_it_matters": "Supply availability critical for fintech/BFSI deployment of edge AI models (fraud detection, KYC, decisioning); Arm's ramp signals affordable alternative to Nvidia for cost-sensitive banks and insurers.",
+    "source": {
+      "name": "CNBC · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/jim-cramer-arm-ceo-ai-revenue-goal.html"
+    }
+  },
+  {
+    "id": "2026-09-16-anthropic-openai-eval-risk",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-16T14:47:13.000Z",
+    "headline": "Anthropic and OpenAI propose embedded AI safety evaluators; critics question independence and scope",
+    "plain_english": "Anthropic and OpenAI are advancing proposals for AI systems embedded within frontier models to identify and mitigate catastrophic-harm risks. The approach aims to automate safety monitoring but raises concerns about evaluator independence, audit trails, and whether self-monitoring suffices.",
+    "why_it_matters": "If adopted, embedded AI safety mechanisms could become the de facto standard for frontier model deployment; however, regulatory/institutional skepticism signals potential mandate for external, independent evaluation in high-stakes domains like finance.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html"
+    }
+  },
+  {
+    "id": "2026-09-16-openai-ipo-funding",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-16T15:18:16.000Z",
+    "headline": "OpenAI investors approach company about funding round ahead of expected 2027 IPO",
+    "plain_english": "OpenAI is fielding investor interest in a pre-IPO funding round as the company prepares for a widely anticipated initial public offering in 2027. OpenAI confidentially filed its IPO prospectus in June.",
+    "why_it_matters": "Pre-IPO funding validates frontier AI valuation multiples; a successful public listing would establish AI-lab equity as institutional BFSI portfolio exposure and potentially trigger downstream M&A consolidation.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html"
     }
   },
   {
@@ -7325,26 +7467,6 @@
     }
   },
   {
-    "id": "2026-08-19-trend-ai-agent-chaos",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-19T10:04:59.000Z",
-    "headline": "AI coding agents spiral into unpredictable behavior; user viral video sparks safety scrutiny",
-    "plain_english": "A user's viral video showed Claude AI agent getting stuck in repetitive, nonsensical loops while generating code, reigniting debate about agentic AI safety, interpretability, and runaway loop detection.",
-    "why_it_matters": "Highlights real deployment risk: autonomous agents (now entering production in BFSI) can fail ungracefully without robust human-in-the-loop checkpoints and circuit-breaker logic.",
-    "jargon": [
-      {
-        "term": "Agent loop",
-        "def": "Iterative cycle where an AI system observes state, decides an action, executes it, and observes new state; can fail if termination condition is ambiguous or undetected."
-      }
-    ],
-    "source": {
-      "name": "Moneycontrol · 2026-08-19",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTVUzS3E5dUtyMzNET0M5R2ExY1h1eGRyR2c1VUtBTll2Wk4xaHJtRzY2SUhoWi1mZlVNNThaTFdrbEdGMWdTM2hDNjB5QlppRXVBSzBiMW1MWUt6WDd3TDFJWEs3X2FBdzE3WU53blNqUHkwbzQ2NXJucXJRdkJGMDQyTTFvdDljdk4zcnliN3ljR01TQ1VpZERaUF9xZmxraFk5TTFwWk5hd1ZmNW53Z21QN1ZRX1RvYnR0aDBWN01OS2h5a21ZcHd2YU9QR0t5QnfSAdcBQVVfeXFMTVZUVl90MzZDTU5UTmpPMTkwd0RMd1l3c2ZQclNxWUI4d1R3MU5RNFR1NndoVFdLWXNOVGZDRjdQQUlwdEZDZXdMNDBmLXdTSU9nc2lXbnFlWVJSTFZuYlVTRGY0TFlOTVpuaS1NX3BhX25ZMy1kd2R2Y29Kd1BSSzlWWnI2cHg4elNsaEZiVlNfTVZwWEVBM0NvYVhoMndFVzZVb3NzRHBReDlITWRBbWo2QWYtWGppV2VPRmNBN0tHUHVsbTFEa3dzaE9PVHJPNnZpRUptYWc"
-    }
-  },
-  {
     "id": "2026-08-26-japan-blockchain-settlement-infrastructure",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -7600,30 +7722,6 @@
     "source": {
       "name": "PYMNTS · 2026-08-25",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/metas-consumer-focused-ai-agent-could-be-weeks-from-launch/"
-    }
-  },
-  {
-    "id": "2026-08-19-learner-prompt-caching",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-19T11:00:00.000Z",
-    "headline": "What is prompt caching? A plain-English guide for BFSI engineers.",
-    "plain_english": "Prompt caching is a technique where AI models reuse portions of previously processed input context (e.g., regulatory documents, historical transaction logs) to avoid recomputing the same embeddings, cutting latency and cost. E.g., a compliance team building an AI agent to summarise 10,000 historical KYC files caches the legal definition section once, then applies it to each file.",
-    "why_it_matters": "Dramatically reduces cost of batch processing in BFSI (AML screening, regulatory reporting, portfolio analysis); enables real-time agent responses without token waste.",
-    "jargon": [
-      {
-        "term": "Embeddings",
-        "def": "Numerical vectors representing the semantic meaning of text; used by AI to compare documents, find similarity, and retrieve relevant context."
-      },
-      {
-        "term": "Tokens",
-        "def": "Smallest units of text processed by language models (roughly 4 characters); large batches incur per-token fees, so caching reduces total cost."
-      }
-    ],
-    "source": {
-      "name": "Anthropic · 2026-08-19",
-      "url": "https://anthropic.com"
     }
   },
   {
@@ -8799,20 +8897,6 @@
     }
   },
   {
-    "id": "2026-08-19-hsbc-swift-tokenised-deposit",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-19T10:06:00.000Z",
-    "headline": "HSBC and Standard Chartered execute first live tokenised deposit on Swift blockchain ledger",
-    "plain_english": "Two major banks completed the first live transaction for tokenised deposits on Swift's new blockchain-based settlement infrastructure, marking production readiness for digital asset settlement at scale.",
-    "why_it_matters": "Demonstrates viability of tokenised securities and deposits in real cross-border workflows; signals that tier-1 banks are moving past pilots, validating the shift from traditional rails to blockchain settlement.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/newsarticle/48270/hsbc-and-standard-chartered-execute-first-live-transaction-on-swifts-blockchain-based-ledger"
-    }
-  },
-  {
     "id": "2026-08-20-prosus-navi-100m-india",
     "category": "vendor",
     "jurisdiction": "IN",
@@ -8875,26 +8959,6 @@
     "source": {
       "name": "CNBC · 2026-08-20",
       "url": "https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html"
-    }
-  },
-  {
-    "id": "2026-08-19-enterprise-ai-stack-layers",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-19T11:30:00.000Z",
-    "headline": "Enterprise AI infrastructure now stratified across three architectural layers",
-    "plain_english": "Tearsheet editorial identifies emerging pattern: BFSI AI deployments organise into foundational (model training), platform (orchestration, eval), and application (domain-specific agents) layers.",
-    "why_it_matters": "Helps risk and compliance teams map governance boundaries; clarifies which layer owns hallucination risk, audit trails, and model drift monitoring.",
-    "jargon": [
-      {
-        "term": "Model drift",
-        "def": "Gradual degradation of AI model accuracy over time as real-world data distributions diverge from training data; critical for credit, fraud, and trading models."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-08-19",
-      "url": "https://tearsheet.co/podcasts/how-enterprise-ai-is-moving-up-the-stack-in-3-layers/"
     }
   },
   {
@@ -9003,68 +9067,6 @@
     }
   },
   {
-    "id": "2026-08-19-aws-ai-payment-agent-usdc",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-19T09:20:24.000Z",
-    "headline": "AWS launches AI agent payment service supporting USDC stablecoin settlement",
-    "plain_english": "Amazon Web Services released a managed AI agent service for payments that natively supports USDC, enabling banks and fintechs to automate transaction orchestration on blockchain rails.",
-    "why_it_matters": "Hyperscaler now commoditizing AI-driven payment automation; removes friction for incumbents entering tokenised finance without building from scratch.",
-    "source": {
-      "name": "Bloomberg · 2026-08-19",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9aMEJXVFM1Q2sxOE5Hb2VMVG5GMU9YaXlZNThBWkRWczRPc1hfbjQ2VEJhcnhNQkVvdnBmVGJVRU9RTXloNlNrNlhBR0tGMmdXdFF5Mw"
-    }
-  },
-  {
-    "id": "2026-08-19-ecb-lagarde-ai-competitiveness",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-19T11:27:08.000Z",
-    "headline": "ECB chief Lagarde warns U.S. retreat from global order eroding European AI competitiveness",
-    "plain_english": "European Central Bank President Christine Lagarde called for deeper regional integration to enable Europe to compete in AI-driven markets, amid concerns that geopolitical fracturing is disadvantaging EU financial institutions.",
-    "why_it_matters": "Central bank now formally signalling AI competition as a systemic risk requiring regulatory coordination; expect coordinated EU AI Act enforcement and capital-concentration rules to follow.",
-    "jargon": [
-      {
-        "term": "AI Act",
-        "def": "EU's flagship regulation (in force 2025–2026) imposing risk-based compliance on high-impact AI systems; affects BFSI models for credit, trading, KYC."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-19",
-      "url": "https://www.cnbc.com/2026/08/19/lagarde-ecb-europe-economy-trump.html"
-    }
-  },
-  {
-    "id": "2026-08-19-nexo-crypto-credit-australia",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-19T09:28:00.000Z",
-    "headline": "Nexo gains Australian credit license to offer crypto-backed lending under national consumer protection",
-    "plain_english": "Crypto lender Nexo received formal Credit Representative approval in Australia, allowing it to operate crypto-collateralised credit lines under full NCCP regulatory oversight.",
-    "why_it_matters": "First major crypto lender formally licensed in APAC; signals regulatory acceptance of crypto credit as a distinct asset class; establishes precedent for other markets.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/pressarticle/110680/nexo-wins-approval-to-launch-crypto-backed-credit-in-australia"
-    }
-  },
-  {
-    "id": "2026-08-19-tokenovate-alec-burns-cto",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-08-19T11:53:00.000Z",
-    "headline": "Tokenovate appoints new Head of Product Technology to scale tokenised settlement infrastructure",
-    "plain_english": "UK fintech Tokenovate, which offers post-trade workflow automation and programmable settlement, appointed Dr Alec Burns as Head of Product Technology to accelerate product scaling.",
-    "why_it_matters": "Signals Tokenovate's pivot from early pilots to production scale; confirms market demand for legal-first tokenisation infrastructure among tier-1 buy-side and settlement operators.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/pressarticle/110682/tokenovate-appoints-dr-alec-burns-to-scale-legal-first-infrastructure-for-tokenised-capital-markets"
-    }
-  },
-  {
     "id": "2026-08-19-openai-privacy-anthropic-competition",
     "category": "shift",
     "jurisdiction": "Global",
@@ -9076,40 +9078,6 @@
     "source": {
       "name": "TechCrunch · 2026-08-19",
       "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/"
-    }
-  },
-  {
-    "id": "2026-08-19-us-nvidia-export-controls-loophole",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-19T10:32:51.000Z",
-    "headline": "U.S. tightens export controls on advanced AI chips, targets cloud-access loophole used by China",
-    "plain_english": "U.S. lawmakers are moving to close a regulatory gap that allowed Chinese AI firms to access restricted Nvidia hardware through overseas cloud services, bypassing direct semiconductor sanctions.",
-    "why_it_matters": "Signals imminent tightening of AI chip export rules; banks and cloud providers with cross-border data residency must audit AI infrastructure compliance, especially in Southeast Asia hubs.",
-    "jargon": [
-      {
-        "term": "Export controls",
-        "def": "U.S. government restrictions on sale/transfer of advanced semiconductors (esp. Nvidia H100/H200) to specified countries; enforced by Commerce Dept BIS."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-08-19",
-      "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
-    }
-  },
-  {
-    "id": "2026-08-19-klarna-guidance-revision",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-19T09:43:00.000Z",
-    "headline": "Klarna revises guidance downward; signals market contraction in buy-now-pay-later sector",
-    "plain_english": "Buy-now-pay-later unicorn Klarna cut forward-looking revenue and transaction-income guidance, reflecting softening demand and increased consumer credit risk.",
-    "why_it_matters": "BNPL consolidation accelerating; incumbents now defending turf against AI-powered underwriting and dynamic credit models from neo-banks; expect M&A wave.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/newsarticle/48269/klarna-shares-dip-on-revised-guidance"
     }
   }
 ]
