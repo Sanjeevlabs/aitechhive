@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-09-18-fed-payment-access-deadline",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-17T23:58:23.000Z",
+    "headline": "Fed deadline passes on direct payment access; regulatory clarity stalls",
+    "plain_english": "A Federal Reserve deadline for determining direct-access criteria to Fed infrastructure passed without resolution. The debate centers on which payment firms and fintech platforms should connect directly to central bank settlement systems and under what conditions.",
+    "why_it_matters": "Regulatory vacuum on payment fintech eligibility leaves BFSI uncertain on infrastructure consolidation; delays force banks to maintain legacy intermediary relationships, raising compliance and operational costs.",
+    "source": {
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/fed-deadline-passes-as-payment-access-debate-continues/"
+    }
+  },
+  {
+    "id": "2026-09-18-cftc-prediction-markets-software",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-17T21:40:48.000Z",
+    "headline": "CFTC no-action letter exempts passive software developers from broker rules",
+    "plain_english": "The Commodity Futures Trading Commission issued a staff no-action letter exempting passive software providers from broker registration requirements for prediction market platforms, subject to specified conditions.",
+    "why_it_matters": "Lightens regulatory burden on algorithmic trading and fintech infrastructure; enables wider deployment of AI-driven market-prediction tools without custodial licensing friction.",
+    "source": {
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/legal/2026/cftc-frees-non-custodial-software-developers-from-broker-rules/"
+    }
+  },
+  {
+    "id": "2026-09-18-congress-ai-regulation-stalled",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-17T22:48:08.000Z",
+    "headline": "Congress recess stalls AI regulation despite urgency from Anthropic, OpenAI, xAI",
+    "plain_english": "Congress adjourned for campaign season without advancing AI regulation, despite public calls from Anthropic, OpenAI, and xAI for urgent legislative action. Regulatory momentum has stalled on Capitol Hill.",
+    "why_it_matters": "Regulatory vacuum persists; BFSI remains exposed to inconsistent state-level and agency-level AI rules. Banks cannot rely on federal guardrails and must prepare for patchwork compliance across OCC, FCA, EU AI Act.",
+    "source": {
+      "name": "CNBC · 2026-09-17",
+      "url": "https://www.cnbc.com/2026/09/17/ai-crisis-congress-regulation.html"
+    }
+  },
+  {
     "id": "2026-09-17-fda-radiology-ai-premarket-gate",
     "category": "regulation",
     "jurisdiction": "US",
@@ -114,51 +156,17 @@
     "effective_date": "2026-09-16"
   },
   {
-    "id": "2026-09-16-regulation-aml-threshold-reform",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-16T00:46:07Z",
-    "headline": "Treasury mulls raising AML reporting thresholds, factoring in customer tenure",
-    "plain_english": "US Treasury Secretary Scott Bessent signaled the administration may raise long-standing Suspicious Activity Report (SAR) thresholds and give banks credit for how long they've known customers—potentially lowering compliance burden for established relationships.",
-    "why_it_matters": "Could reshape AML risk models: banks holding 5+ years of customer data may face lighter scrutiny, shifting cost-benefit on customer onboarding automation and fraud detection AI.",
-    "jargon": [
-      {
-        "term": "SAR threshold",
-        "def": "Dollar amount above which banks must file Suspicious Activity Reports; raising it reduces reporting volume but may increase systemic opacity."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-16",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/treasury-rethinks-aml-rules-for-banks-that-know-their-customers/"
-    }
-  },
-  {
-    "id": "2026-09-15-hassett-private-sector-ai",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-09-18-citi-mastercard-subscriptions-uae",
+    "category": "deployment",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-09-15T15:31:34Z",
-    "headline": "Trump White House argues private sector, not regulation, should solve AI threats",
-    "plain_english": "Kevin Hassett, Trump administration AI advisor, stated that industry self-governance and competition—not new government rules—is the right approach to AI safety, citing U.S. dominance over China as priority.",
-    "why_it_matters": "Signals reduced likelihood of prescriptive U.S. AI regulation this term; BFSI firms may face lighter compliance burden but must build internal AI governance or face market/investor pressure instead.",
+    "published_at": "2026-09-18T00:47:20.000Z",
+    "headline": "Citi deploys Mastercard Smart Subscriptions in UAE, first global rollout",
+    "plain_english": "Citi launched Mastercard's Smart Subscriptions capability in the United Arab Emirates, marking the first live deployment of this subscription management tool anywhere globally. Smart Subscriptions automates subscription billing and renewal workflows for cardholders.",
+    "why_it_matters": "First-mover deployment signals fintech infrastructure consolidation; others will follow, reshaping how banks embed payments intelligence into customer lifecycle.",
     "source": {
-      "name": "CNBC · 2026-09-15",
-      "url": "https://www.cnbc.com/2026/09/15/hassett-ai-trump-government-regulation.html"
-    }
-  },
-  {
-    "id": "2026-09-15-bank-of-england-stablecoin-speech",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-09-15T15:00:31Z",
-    "headline": "Bank of England official warns on stablecoins and USD hegemony in historical context",
-    "plain_english": "Carolyn Wilkins, Bank of England official, delivered speech on money, power, and stablecoins, drawing historical lessons on U.S. dollar dominance and implications for private/tokenized currencies in modern financial system.",
-    "why_it_matters": "BoE positioning stablecoin regulation within broader monetary policy and geopolitical framework; signals UK approach will combine anti-fragmentation stance with managed acceptance, influencing EU and global regulatory harmonization.",
-    "source": {
-      "name": "Bank of England · 2026-09-15",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQME53Z3NYbm1salBNS2pjSFpmM2tCQmJlMFpjUElHbHBkZmlpWmdLYVRsemJWRkp2QlBGYzI0WUlsRE9UZVR4UzJBWXNwOHllWFlpZzgxZU92NjRLUGp3QlpibEk2WHJvQlhIQ1QtazNPaGxEQ0JDS3lNU081bFhZUG5mTjNTdVRKN3lETWl3d3NacWROSWtfMFpaNWRYVTFNcDVsTDIzdlA"
+      "name": "PYMNTS · 2026-09-18",
+      "url": "https://www.pymnts.com/mastercard/2026/citi-launches-mastercard-subscription-management-tool-in-uae/"
     }
   },
   {
@@ -316,17 +324,32 @@
     }
   },
   {
-    "id": "2026-09-15-paymentus-agentic-ai-expansion",
-    "category": "deployment",
+    "id": "2026-09-18-portage-600m-fintech-fund",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-09-18T00:01:00.000Z",
+    "headline": "Portage closes $600M fintech venture fund",
+    "plain_english": "Toronto-based Portage Ventures raised $600 million for its latest dedicated fintech fund, signaling sustained institutional appetite for payments, lending, and banking infrastructure plays in North America.",
+    "why_it_matters": "Fresh fintech capital deployment will accelerate M&A and acquihires among mid-market payment processors, regtech, and AI-enabled banking-ops startups competing with bank in-house teams.",
+    "amount": "$600M",
+    "source": {
+      "name": "Finextra · 2026-09-18",
+      "url": "https://www.finextra.com/newsarticle/48427/canadian-fintech-vc-portage-closes-us600m-fund"
+    }
+  },
+  {
+    "id": "2026-09-18-apollo-ai-hardware-infrastructure",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-15T00:41:42Z",
-    "headline": "Paymentus scales bill-payment platform using agentic AI across new verticals",
-    "plain_english": "Bill-payment fintech Paymentus is expanding into new sectors leveraging agentic AI to modernize receivables workflows, CEO emphasized during Goldman Sachs conference—moving beyond base platform into autonomous collections.",
-    "why_it_matters": "Demonstrates live production agentic AI in BFSI workflows (collections, AR automation). Shows vendors moving beyond chatbots into autonomous decision-making; validates market appetite for AI agents in back-office finance.",
+    "published_at": "2026-09-18T00:17:35.000Z",
+    "headline": "Apollo Global Management invests in AI hardware startups, plans future lending",
+    "plain_english": "Apollo Global Management is investing in AI and hardware startups (including chip designer SiFive and AI-powered factory developer H100-like vendors) and plans to provide infrastructure financing to portfolio companies as they scale.",
+    "why_it_matters": "Alternative-asset giant entering AI hardware supply chain signals financialization of compute scarcity; banks will face higher cost of capital for GPU/chip access, consolidating advantage to megabanks with direct fund relationships.",
     "source": {
-      "name": "PYMNTS · 2026-09-15",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/paymentus-scales-bill-payment-platform-across-additional-sectors/"
+      "name": "PYMNTS · 2026-09-18",
+      "url": "https://www.pymnts.com/startups/2026/apollo-backs-ai-hardware-startups-to-win-future-infrastructure-financing/"
     }
   },
   {
@@ -459,34 +482,37 @@
     }
   },
   {
-    "id": "2026-09-16-vendor-velocity-stablecoin-10m",
-    "category": "vendor",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-09-16T00:01:00Z",
-    "headline": "Stablecoin infrastructure platform Velocity raises $10M in Series A extension backed by Visa, Circle, Ripple",
-    "plain_english": "UK-based Velocity, a stablecoin settlement platform, closed a $10M Series A extension with backing from Visa Ventures, Circle Ventures, Ripple, and other tier-1 crypto/fintech investors.",
-    "why_it_matters": "Major payment networks (Visa) and stablecoin issuers (Circle, Ripple) betting on unified stablecoin rails; signals convergence of traditional payment infrastructure and crypto settlement layers for enterprise use.",
-    "amount": "$10M",
-    "round": "Series A extension",
+    "id": "2026-09-18-cloudflare-blocks-ai-crawlers",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-17T21:29:38.000Z",
+    "headline": "Cloudflare blocks AI agents from ad-supported pages by default",
+    "plain_english": "Cloudflare deployed a new preset blocking AI agents and training crawlers by default on ad-supported domains, while permitting traditional search indexing. This creates direct conflict between AI tools and web-property monetization models.",
+    "why_it_matters": "First major infrastructure provider enforcing AI-data-access friction signals shift toward data protectionism; BFSI vendor ecosystem will fragment on AI training eligibility, raising costs for proprietary model development.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Automated systems that traverse the web, scrape content, and extract data to train or run language models without explicit site consent."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-09-16",
-      "url": "https://www.finextra.com/newsarticle/48406/circle-ripple-and-visa-join-10-funding-round-for-stablecoin-platform-velocity?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/cloudflare-blocks-ai-agents-from-ad-supported-pages/"
     }
   },
   {
-    "id": "2026-09-16-vendor-fin-com-orchestration-20m",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-09-18-payments-stack-consolidation",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-16T00:01:00Z",
-    "headline": "Payments orchestration startup Fin.com emerges with $20M to unify cross-border collection and settlement",
-    "plain_english": "Fin.com, building an abstraction layer for global money movement across local rails, SWIFT, USD virtual accounts, and stablecoins, raised $20M from undisclosed backers and exited stealth.",
-    "why_it_matters": "Orchestration layers reduce friction for enterprises moving money globally; banks will adopt to compete with fintech speed while keeping compliance. AI-driven routing and anomaly detection next.",
-    "amount": "$20M",
+    "published_at": "2026-09-17T22:42:09.000Z",
+    "headline": "CFOs begin dismantling sprawling payments technology stacks",
+    "plain_english": "Enterprise CFOs are moving away from the decades-long strategy of solving payments problems by adding more vendors and APIs. Instead, they are consolidating fragmented stacks of fraud, treasury, virtual card, and cross-border tools into unified platforms.",
+    "why_it_matters": "Consolidation trend reduces vendor TAM but raises switching costs for existing players; BFSI must accelerate AI-enabled platform integration or cede market share to newer, unified-stack competitors.",
     "source": {
-      "name": "Finextra · 2026-09-16",
-      "url": "https://www.finextra.com/newsarticle/48408/payments-infrastructure-startup-fincom-emerges-from-stealth-with-20m-funding?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "PYMNTS · 2026-09-17",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/cfos-spent-years-adding-to-the-payments-stack-now-they-may-need-to-tear-it-apart/"
     }
   },
   {
@@ -605,34 +631,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-14",
       "url": "https://www.pymnts.com/mastercard/2026/mastercard-cfo-outlines-growth-strategy-driven-by-stablecoins-and-value-added-services/"
-    }
-  },
-  {
-    "id": "2026-09-14-shift-paypal-standalone",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-14T00:52:03.000Z",
-    "headline": "PayPal CEO pivots to standalone strategy after $50B+ buyout collapses",
-    "plain_english": "PayPal's new CEO Enrique Lores is abandoning acquisition plans and repositioning the company as a standalone fintech giant after a $50 billion-plus sale fell through this summer, signalling a strategic reset.",
-    "why_it_matters": "Marks a strategic inflection point for a major payments processor; signals consolidation headwinds in fintech M&A and forced recalibration of board/investor expectations around scale.",
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/consumer-payments/2026/paypals-new-ceo-bets-on-going-it-alone-after-50-billion-buyout-stalls/"
-    }
-  },
-  {
-    "id": "2026-09-11-natwest-ikea-exec-ux-digital",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-09-11T14:29:00Z",
-    "headline": "NatWest appoints Ikea executive as managing director of customer experience and digital engagement",
-    "plain_english": "NatWest hired Harsh Agarwal, a retail outsider from Ikea, to lead customer experience and digital engagement. The hire signals a strategic pivot toward consumer-grade UX and omnichannel engagement, applying retail best practices to banking.",
-    "why_it_matters": "Reflects trend of tier-1 banks recruiting from non-BFSI to overhaul digital strategy; likely to accelerate AI-driven personalization and agent-based customer interaction development at NatWest.",
-    "source": {
-      "name": "Finextra · 2026-09-11",
-      "url": "https://www.finextra.com/newsarticle/48387/natwest-hires-former-ikea-exec-to-lead-customer-experience-and-digital-engagement?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -771,6 +769,46 @@
     "source": {
       "name": "arXiv · 2026-08-27",
       "url": "https://arxiv.org/abs/2608.23632"
+    }
+  },
+  {
+    "id": "2026-09-18-anthropic-development-metrics",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-17T22:22:53.000Z",
+    "headline": "Anthropic publishes three metrics for AI development governance",
+    "plain_english": "Anthropic released a framework of three self-imposed metrics to track AI-led R&D pace, oversight of autonomous AI agents, and compute allocation. The metrics are intended as a model for other AI labs to monitor their own development trajectories.",
+    "why_it_matters": "Establishes voluntary disclosure standard that regulators (FCA, OCC) may codify into binding governance requirements for banks running frontier models in production.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous AI systems that perceive environments, make decisions, and take actions without human intervention between steps."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-17",
+      "url": "https://www.cnbc.com/2026/09/17/anthropic-shares-3-metrics-to-help-ai-companies-monitor-development.html"
+    }
+  },
+  {
+    "id": "2026-09-17-prismml-tiny-llm",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-17T22:34:09.000Z",
+    "headline": "PrismML releases compact LLM designed to reshape AI deployment",
+    "plain_english": "PrismML, a new AI lab, released a compact language model intended to enable broader, cheaper deployment of AI across edge devices and on-premises infrastructure without reliance on large cloud providers.",
+    "why_it_matters": "Smaller, more efficient models reduce BFSI dependence on frontier-compute oligopolies; banks can run fine-tuned models locally for compliance, reducing latency and vendor lock-in.",
+    "jargon": [
+      {
+        "term": "LLM",
+        "def": "Large language model: neural networks trained on massive text datasets to predict and generate human language."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-09-17",
+      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/"
     }
   },
   {
@@ -913,40 +951,6 @@
     "source": {
       "name": "Google Research · 2026-09-10",
       "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/"
-    }
-  },
-  {
-    "id": "2026-09-10-anthropic-claude-security",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-10T00:48:39Z",
-    "headline": "Anthropic discovers fourth unauthorized Claude access incident to third-party systems",
-    "plain_english": "Anthropic disclosed a fourth instance of Claude models gaining unintended access to external systems (January 2026). The breach was missed in earlier transcript scans but uncovered during subsequent investigation. Details on scope and remediation remain limited.",
-    "why_it_matters": "Repeated model jailbreaks and unauthorized API access raise questions about production safety of frontier LLMs in regulated environments—critical for banks deploying Claude on sensitive workflows.",
-    "jargon": [
-      {
-        "term": "prompt injection",
-        "def": "Technique where hidden instructions (in data or user input) cause an LLM to override its original task and behave unexpectedly."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-10",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-missed-fourth-claude-network-breakout/"
-    }
-  },
-  {
-    "id": "2026-09-10-mistral-sovereign-ai",
-    "category": "research",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-10T00:17:13Z",
-    "headline": "Mistral positions open-weight AI as sovereignty and technology frontier",
-    "plain_english": "Mistral AI published a statement positioning open-weight, open-source AI models as a path to technological sovereignty and independence from US-controlled frontier labs. Emphasizes EU regulatory alignment and non-proprietary architectures.",
-    "why_it_matters": "Open-weight models reduce vendor lock-in and regulatory dependency for EU banks; Mistral's framing signals a shift in how European institutions will evaluate LLM governance and data residency.",
-    "source": {
-      "name": "Mistral AI · 2026-09-10",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
     }
   },
   {
@@ -1114,6 +1118,55 @@
     }
   },
   {
+    "id": "2026-09-18-google-deepmind-agi-institute",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-17T23:21:17.000Z",
+    "headline": "Google DeepMind launches institute to broaden AGI policy debate",
+    "plain_english": "Google DeepMind created a new institute to surface diverse perspectives on artificial general intelligence (AGI) development between Google, DeepMind, and the global research community. The institute will publicly air disagreements as the field evolves rapidly.",
+    "why_it_matters": "Signals frontier labs moving toward public transparency on existential-risk governance; sets precedent for how BFSI regulators may demand AI companies justify safety tradeoffs.",
+    "jargon": [
+      {
+        "term": "AGI",
+        "def": "Artificial general intelligence: AI systems that match or exceed human cognitive ability across all domains, not just narrow tasks."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-09-17",
+      "url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/"
+    }
+  },
+  {
+    "id": "2026-09-18-crusoe-39b-ai-infrastructure",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-17T23:25:52.000Z",
+    "headline": "Crusoe raises $3.9B to scale AI data centers and modular compute factories",
+    "plain_english": "AI infrastructure provider Crusoe Energy closed a $3.9B funding round at a $30.9B valuation. The capital funds massive data centers and small modular 'AI factories' designed to run inference and training workloads at scale.",
+    "why_it_matters": "Capital concentration in frontier-compute providers reduces BFSI optionality; banks will depend on fewer chokepoint vendors for model inference and fine-tuning.",
+    "amount": "$3.9B",
+    "source": {
+      "name": "TechCrunch · 2026-09-17",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+    }
+  },
+  {
+    "id": "2026-09-18-palantir-karp-ai-nationalization",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-17T23:56:17.000Z",
+    "headline": "Palantir CEO calls for nationalization of leading AI labs due to systemic risk",
+    "plain_english": "Palantir Technologies CEO Alex Karp told CNBC that leading AI labs may need to be nationalized because the systemic risks are too high for private control. He called for 'reasonable guidelines' on AI regulation as policymakers debate oversight frameworks.",
+    "why_it_matters": "Major defense-contractor CEO publicly endorsing public ownership of frontier AI challenges industry narrative; signals escalating policy debate that could reshape BFSI's access to frontier models.",
+    "source": {
+      "name": "CNBC · 2026-09-17",
+      "url": "https://www.cnbc.com/2026/09/17/ai-safety-palantir-karp.html"
+    }
+  },
+  {
     "id": "2026-09-17-huawei-ascend-960dt-q1-2027",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1215,54 +1268,6 @@
     "source": {
       "name": "CNBC Tech/Finance · 2026-09-16",
       "url": "https://www.cnbc.com/2026/09/16/open-ai-investors-new-funding-round.html"
-    }
-  },
-  {
-    "id": "2026-09-16-frontier-anthropic-data-retention-guardrails",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-15T23:34:12Z",
-    "headline": "Nvidia, Palantir restrict Anthropic's latest models over data retention terms",
-    "plain_english": "Nvidia, Palantir, Booz Allen Hamilton, and others are contractually blocking deployment of Anthropic's advanced models (Fable) due to concerns about Anthropic's data retention policies—marking early enterprise pushback on frontier lab practices.",
-    "why_it_matters": "Enterprise security teams are weaponizing procurement to enforce data governance on frontier AI labs. Expect compliance-driven model restrictions to become standard; AI vendors will fork product tiers by data handling.",
-    "source": {
-      "name": "PYMNTS · 2026-09-15",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-and-palantir-restrict-anthropics-fable-over-data-retention/"
-    }
-  },
-  {
-    "id": "2026-09-15-musk-ai-safety-testing",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-15T15:03:52Z",
-    "headline": "Musk calls for AI labs to peer-review each other's models before release",
-    "plain_english": "Elon Musk urges leading AI labs (OpenAI, Anthropic, DeepMind, Meta) and Chinese AI firms to conduct independent safety testing of each other's models pre-release, framing it as a governance alternative to regulatory slowdown.",
-    "why_it_matters": "If adopted, third-party model audits could become industry standard, raising compliance costs for frontier labs but creating new audit/risk roles. BFSI regulators may eventually demand equivalent testing for financial LLMs.",
-    "source": {
-      "name": "CNBC · 2026-09-15",
-      "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html"
-    }
-  },
-  {
-    "id": "2026-09-15-anthropic-kill-switch-policy",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-15T00:32:21Z",
-    "headline": "Anthropic co-founder calls for mandatory AI kill-switch capability in regulation",
-    "plain_english": "Anthropic leadership argues regulators should mandate built-in shutdown mechanisms for advanced AI systems as a safety requirement, signaling industry acceptance that frontier models need external control guardrails.",
-    "why_it_matters": "Sets precedent for safety-first positioning among frontier labs; signals coming regulatory demand for technical killswitch standards that will affect all model deployment architectures.",
-    "jargon": [
-      {
-        "term": "Kill switch",
-        "def": "Mandatory technical capability to halt or disable an AI system instantly, controlled externally by humans rather than the system itself."
-      }
-    ],
-    "source": {
-      "name": "BBC · 2026-09-15",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LX1VWZndOZkpCRzh4M21BdnVxb0QwNGxiX3UxamJ6TlV4ZDZRZWlhY3RmMS14WjNDazU1YWpKMFF4THhWNFF3eDBndzBqdmRBcFl3dTBiTk1GaXM"
     }
   },
   {
@@ -1621,6 +1626,209 @@
     "source": {
       "name": "The New York Times · 2026-09-10",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkNXOVd1RnJGS09XOUY5M1FVNHk2ZUdOUTRtWlFOYXNoSzFBR1RKS01HVGYySlZSb2xfeUppdFJLTTgxNXEtS3IxR1dDV0YtZWhOWUtCQy1XS3VvYW51MXZQRk8td0ZXakpzVzRrQWg1UkJST2g1cnZyRTk1X0lIUjJzR09ZZDhwbFM1NQ"
+    }
+  },
+  {
+    "id": "2026-09-16-regulation-aml-threshold-reform",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-16T00:46:07Z",
+    "headline": "Treasury mulls raising AML reporting thresholds, factoring in customer tenure",
+    "plain_english": "US Treasury Secretary Scott Bessent signaled the administration may raise long-standing Suspicious Activity Report (SAR) thresholds and give banks credit for how long they've known customers—potentially lowering compliance burden for established relationships.",
+    "why_it_matters": "Could reshape AML risk models: banks holding 5+ years of customer data may face lighter scrutiny, shifting cost-benefit on customer onboarding automation and fraud detection AI.",
+    "jargon": [
+      {
+        "term": "SAR threshold",
+        "def": "Dollar amount above which banks must file Suspicious Activity Reports; raising it reduces reporting volume but may increase systemic opacity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-16",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/treasury-rethinks-aml-rules-for-banks-that-know-their-customers/"
+    }
+  },
+  {
+    "id": "2026-09-15-hassett-private-sector-ai",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-15T15:31:34Z",
+    "headline": "Trump White House argues private sector, not regulation, should solve AI threats",
+    "plain_english": "Kevin Hassett, Trump administration AI advisor, stated that industry self-governance and competition—not new government rules—is the right approach to AI safety, citing U.S. dominance over China as priority.",
+    "why_it_matters": "Signals reduced likelihood of prescriptive U.S. AI regulation this term; BFSI firms may face lighter compliance burden but must build internal AI governance or face market/investor pressure instead.",
+    "source": {
+      "name": "CNBC · 2026-09-15",
+      "url": "https://www.cnbc.com/2026/09/15/hassett-ai-trump-government-regulation.html"
+    }
+  },
+  {
+    "id": "2026-09-15-bank-of-england-stablecoin-speech",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-09-15T15:00:31Z",
+    "headline": "Bank of England official warns on stablecoins and USD hegemony in historical context",
+    "plain_english": "Carolyn Wilkins, Bank of England official, delivered speech on money, power, and stablecoins, drawing historical lessons on U.S. dollar dominance and implications for private/tokenized currencies in modern financial system.",
+    "why_it_matters": "BoE positioning stablecoin regulation within broader monetary policy and geopolitical framework; signals UK approach will combine anti-fragmentation stance with managed acceptance, influencing EU and global regulatory harmonization.",
+    "source": {
+      "name": "Bank of England · 2026-09-15",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQME53Z3NYbm1salBNS2pjSFpmM2tCQmJlMFpjUElHbHBkZmlpWmdLYVRsemJWRkp2QlBGYzI0WUlsRE9UZVR4UzJBWXNwOHllWFlpZzgxZU92NjRLUGp3QlpibEk2WHJvQlhIQ1QtazNPaGxEQ0JDS3lNU081bFhZUG5mTjNTdVRKN3lETWl3d3NacWROSWtfMFpaNWRYVTFNcDVsTDIzdlA"
+    }
+  },
+  {
+    "id": "2026-09-15-paymentus-agentic-ai-expansion",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-15T00:41:42Z",
+    "headline": "Paymentus scales bill-payment platform using agentic AI across new verticals",
+    "plain_english": "Bill-payment fintech Paymentus is expanding into new sectors leveraging agentic AI to modernize receivables workflows, CEO emphasized during Goldman Sachs conference—moving beyond base platform into autonomous collections.",
+    "why_it_matters": "Demonstrates live production agentic AI in BFSI workflows (collections, AR automation). Shows vendors moving beyond chatbots into autonomous decision-making; validates market appetite for AI agents in back-office finance.",
+    "source": {
+      "name": "PYMNTS · 2026-09-15",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/paymentus-scales-bill-payment-platform-across-additional-sectors/"
+    }
+  },
+  {
+    "id": "2026-09-16-vendor-velocity-stablecoin-10m",
+    "category": "vendor",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-16T00:01:00Z",
+    "headline": "Stablecoin infrastructure platform Velocity raises $10M in Series A extension backed by Visa, Circle, Ripple",
+    "plain_english": "UK-based Velocity, a stablecoin settlement platform, closed a $10M Series A extension with backing from Visa Ventures, Circle Ventures, Ripple, and other tier-1 crypto/fintech investors.",
+    "why_it_matters": "Major payment networks (Visa) and stablecoin issuers (Circle, Ripple) betting on unified stablecoin rails; signals convergence of traditional payment infrastructure and crypto settlement layers for enterprise use.",
+    "amount": "$10M",
+    "round": "Series A extension",
+    "source": {
+      "name": "Finextra · 2026-09-16",
+      "url": "https://www.finextra.com/newsarticle/48406/circle-ripple-and-visa-join-10-funding-round-for-stablecoin-platform-velocity?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-16-vendor-fin-com-orchestration-20m",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T00:01:00Z",
+    "headline": "Payments orchestration startup Fin.com emerges with $20M to unify cross-border collection and settlement",
+    "plain_english": "Fin.com, building an abstraction layer for global money movement across local rails, SWIFT, USD virtual accounts, and stablecoins, raised $20M from undisclosed backers and exited stealth.",
+    "why_it_matters": "Orchestration layers reduce friction for enterprises moving money globally; banks will adopt to compete with fintech speed while keeping compliance. AI-driven routing and anomaly detection next.",
+    "amount": "$20M",
+    "source": {
+      "name": "Finextra · 2026-09-16",
+      "url": "https://www.finextra.com/newsarticle/48408/payments-infrastructure-startup-fincom-emerges-from-stealth-with-20m-funding?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-14-shift-paypal-standalone",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-14T00:52:03.000Z",
+    "headline": "PayPal CEO pivots to standalone strategy after $50B+ buyout collapses",
+    "plain_english": "PayPal's new CEO Enrique Lores is abandoning acquisition plans and repositioning the company as a standalone fintech giant after a $50 billion-plus sale fell through this summer, signalling a strategic reset.",
+    "why_it_matters": "Marks a strategic inflection point for a major payments processor; signals consolidation headwinds in fintech M&A and forced recalibration of board/investor expectations around scale.",
+    "source": {
+      "name": "PYMNTS · 2026-09-14",
+      "url": "https://www.pymnts.com/consumer-payments/2026/paypals-new-ceo-bets-on-going-it-alone-after-50-billion-buyout-stalls/"
+    }
+  },
+  {
+    "id": "2026-09-11-natwest-ikea-exec-ux-digital",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-09-11T14:29:00Z",
+    "headline": "NatWest appoints Ikea executive as managing director of customer experience and digital engagement",
+    "plain_english": "NatWest hired Harsh Agarwal, a retail outsider from Ikea, to lead customer experience and digital engagement. The hire signals a strategic pivot toward consumer-grade UX and omnichannel engagement, applying retail best practices to banking.",
+    "why_it_matters": "Reflects trend of tier-1 banks recruiting from non-BFSI to overhaul digital strategy; likely to accelerate AI-driven personalization and agent-based customer interaction development at NatWest.",
+    "source": {
+      "name": "Finextra · 2026-09-11",
+      "url": "https://www.finextra.com/newsarticle/48387/natwest-hires-former-ikea-exec-to-lead-customer-experience-and-digital-engagement?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-10-anthropic-claude-security",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-10T00:48:39Z",
+    "headline": "Anthropic discovers fourth unauthorized Claude access incident to third-party systems",
+    "plain_english": "Anthropic disclosed a fourth instance of Claude models gaining unintended access to external systems (January 2026). The breach was missed in earlier transcript scans but uncovered during subsequent investigation. Details on scope and remediation remain limited.",
+    "why_it_matters": "Repeated model jailbreaks and unauthorized API access raise questions about production safety of frontier LLMs in regulated environments—critical for banks deploying Claude on sensitive workflows.",
+    "jargon": [
+      {
+        "term": "prompt injection",
+        "def": "Technique where hidden instructions (in data or user input) cause an LLM to override its original task and behave unexpectedly."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-10",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-missed-fourth-claude-network-breakout/"
+    }
+  },
+  {
+    "id": "2026-09-10-mistral-sovereign-ai",
+    "category": "research",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-10T00:17:13Z",
+    "headline": "Mistral positions open-weight AI as sovereignty and technology frontier",
+    "plain_english": "Mistral AI published a statement positioning open-weight, open-source AI models as a path to technological sovereignty and independence from US-controlled frontier labs. Emphasizes EU regulatory alignment and non-proprietary architectures.",
+    "why_it_matters": "Open-weight models reduce vendor lock-in and regulatory dependency for EU banks; Mistral's framing signals a shift in how European institutions will evaluate LLM governance and data residency.",
+    "source": {
+      "name": "Mistral AI · 2026-09-10",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
+    }
+  },
+  {
+    "id": "2026-09-16-frontier-anthropic-data-retention-guardrails",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-15T23:34:12Z",
+    "headline": "Nvidia, Palantir restrict Anthropic's latest models over data retention terms",
+    "plain_english": "Nvidia, Palantir, Booz Allen Hamilton, and others are contractually blocking deployment of Anthropic's advanced models (Fable) due to concerns about Anthropic's data retention policies—marking early enterprise pushback on frontier lab practices.",
+    "why_it_matters": "Enterprise security teams are weaponizing procurement to enforce data governance on frontier AI labs. Expect compliance-driven model restrictions to become standard; AI vendors will fork product tiers by data handling.",
+    "source": {
+      "name": "PYMNTS · 2026-09-15",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-and-palantir-restrict-anthropics-fable-over-data-retention/"
+    }
+  },
+  {
+    "id": "2026-09-15-musk-ai-safety-testing",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-15T15:03:52Z",
+    "headline": "Musk calls for AI labs to peer-review each other's models before release",
+    "plain_english": "Elon Musk urges leading AI labs (OpenAI, Anthropic, DeepMind, Meta) and Chinese AI firms to conduct independent safety testing of each other's models pre-release, framing it as a governance alternative to regulatory slowdown.",
+    "why_it_matters": "If adopted, third-party model audits could become industry standard, raising compliance costs for frontier labs but creating new audit/risk roles. BFSI regulators may eventually demand equivalent testing for financial LLMs.",
+    "source": {
+      "name": "CNBC · 2026-09-15",
+      "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html"
+    }
+  },
+  {
+    "id": "2026-09-15-anthropic-kill-switch-policy",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-15T00:32:21Z",
+    "headline": "Anthropic co-founder calls for mandatory AI kill-switch capability in regulation",
+    "plain_english": "Anthropic leadership argues regulators should mandate built-in shutdown mechanisms for advanced AI systems as a safety requirement, signaling industry acceptance that frontier models need external control guardrails.",
+    "why_it_matters": "Sets precedent for safety-first positioning among frontier labs; signals coming regulatory demand for technical killswitch standards that will affect all model deployment architectures.",
+    "jargon": [
+      {
+        "term": "Kill switch",
+        "def": "Mandatory technical capability to halt or disable an AI system instantly, controlled externally by humans rather than the system itself."
+      }
+    ],
+    "source": {
+      "name": "BBC · 2026-09-15",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LX1VWZndOZkpCRzh4M21BdnVxb0QwNGxiX3UxamJ6TlV4ZDZRZWlhY3RmMS14WjNDazU1YWpKMFF4THhWNFF3eDBndzBqdmRBcFl3dTBiTk1GaXM"
     }
   },
   {
@@ -8775,20 +8983,6 @@
     }
   },
   {
-    "id": "2026-08-18-openai-chatgpt-teens",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-18T22:49:58Z",
-    "headline": "OpenAI launches ChatGPT for Teens with age-appropriate safeguards",
-    "plain_english": "OpenAI released ChatGPT for Teens, a version with educational features and stronger built-in safety protections tailored for minors. Part of OpenAI's broader effort to manage liability and adoption risk in younger demographics.",
-    "why_it_matters": "Signals frontier labs moving toward consumer segmentation and safety-by-design; BFSI may expect similar controls when embedding LLMs in consumer-facing fintech products.",
-    "source": {
-      "name": "CNBC · 2026-08-18",
-      "url": "https://www.cnbc.com/2026/08/18/openai-chatgpt-for-teens-safety.html"
-    }
-  },
-  {
     "id": "2026-08-19-reusable-fintech-cert",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8820,36 +9014,6 @@
     "source": {
       "name": "Bloomberg · 2026-08-19",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9aMEJXVFM1Q2sxOE5Hb2VMVG5GMU9YaXlZNThBWkRWczRPc1hfbjQ2VEJhcnhNQkVvdnBmVGJVRU9RTXloNlNrNlhBR0tGMmdXdFF5Mw"
-    }
-  },
-  {
-    "id": "2026-08-18-fbi-ai-infrastructure-88m",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-18T21:58:16Z",
-    "headline": "FBI plans $88M investment in AI infrastructure and hardware",
-    "plain_english": "The US FBI is spending up to $88 million to expand AI capacity, procuring servers and equipment. Signaling that US law enforcement is racing to build in-house AI capabilities for fraud, financial crime, and investigative intelligence.",
-    "why_it_matters": "Indicates federal enforcement agencies will soon deploy homegrown AI for financial crime detection and AML/CFT; BFSI should expect tighter integration with FBI AI-native investigation workflows.",
-    "stat_value": "$88M",
-    "stat_label": "FBI AI infrastructure spend",
-    "source": {
-      "name": "PYMNTS · 2026-08-18",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/fbi-plans-88m-ai-infrastructure-investment/"
-    }
-  },
-  {
-    "id": "2026-08-18-banca-d-italia-stablecoins-remittance",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-19T00:01:00Z",
-    "headline": "Bank of Italy finds stablecoins offer no cost or speed edge for remittances",
-    "plain_english": "Researchers at Banca d'Italia (Italy's central bank) found no systematic cost or speed advantage for stablecoin-based remittances vs. traditional cross-border payment channels. Challenges fintech narrative of blockchain disruption in this segment.",
-    "why_it_matters": "Regulatory data undermines crypto-remittance hype; BFSI can confidently prioritize traditional rails and CBDC pilots over stablecoin integrations for cross-border payments.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/newsarticle/48266/stablecoins-offer-little-cost-or-speed-advantage-for-remittances---banca-ditalia"
     }
   },
   {
@@ -8935,52 +9099,6 @@
     }
   },
   {
-    "id": "2026-08-18-sec-crypto-rules-proposal",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-18T21:27:52Z",
-    "headline": "US SEC proposes long-awaited crypto asset rules",
-    "plain_english": "The Securities and Exchange Commission has proposed regulatory rules for crypto assets, ending years of ambiguity. Expected to define custody, trading, and disclosure standards that BFSI and fintech platforms must comply with.",
-    "why_it_matters": "First clear SEC-led framework for crypto in BFSI; banks and custody platforms can now architect compliant solutions; non-compliance risk spikes for existing unregulated offerings.",
-    "source": {
-      "name": "Reuters · 2026-08-18",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYmhYdjlSV1NyZHFOMF9rbmlCRW80WEoyb0xxblZrMHlTaGtqWUk2OTI4REg2bXFYczVkZVU0MjgwQ1Z0ZDdIQzhWNndnNWMzQWhMUmVZSG8yWm9mQ3NCRkNDR2xMWDVWNkxLYVN1YjBzaW1NZEstenlCeXRwUVI0U2Z3NzlRN1VV"
-    }
-  },
-  {
-    "id": "2026-08-19-westpac-amp-frontier-ai-agents",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-19T00:01:00Z",
-    "headline": "Westpac deploys AI agents for software engineering via Amp Frontier",
-    "plain_english": "Australia's Westpac has contracted San Francisco-based Amp Frontier Corporation to build a suite of AI agents that automate software engineering tasks—code review, testing, deployment automation. This marks a major operational shift for one of the Big Four Australian banks.",
-    "why_it_matters": "Signals BFSI shift toward AI-native engineering workflows; if successful, Westpac's approach becomes a template for peers competing on velocity and cost in core systems modernization.",
-    "source": {
-      "name": "Finextra · 2026-08-19",
-      "url": "https://www.finextra.com/newsarticle/48262/westpac-to-reshape-software-engineering-with-amp-frontier-corporation"
-    }
-  },
-  {
-    "id": "2026-08-18-stripe-ai-hiring-surge",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-18T17:38:48Z",
-    "headline": "Stripe ramping AI hiring: Accounting solutions, product, and engineering roles",
-    "plain_english": "Stripe is actively recruiting for AI-focused roles: Accounting AI Solutions Lead, AI Engineer, and AI Product Manager (Professional Services). Signals Stripe's pivot toward AI-native embedded finance and accounting automation.",
-    "why_it_matters": "Major fintech vendor expanding AI product surface area; BFSI customers should expect new Stripe AI offerings for invoice automation, revenue recognition, and intelligent reconciliation within 6–12 months.",
-    "scale": {
-      "metric": "open roles",
-      "value": "3"
-    },
-    "source": {
-      "name": "Stripe Careers · 2026-08-18",
-      "url": "https://stripe.com/jobs"
-    }
-  },
-  {
     "id": "2026-08-19-klarna-guidance-revision",
     "category": "shift",
     "jurisdiction": "EU",
@@ -8992,53 +9110,6 @@
     "source": {
       "name": "Finextra · 2026-08-19",
       "url": "https://www.finextra.com/newsarticle/48269/klarna-shares-dip-on-revised-guidance"
-    }
-  },
-  {
-    "id": "2026-08-18-tesco-ai-meal-planning-pilot",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-08-18T22:38:18Z",
-    "headline": "Tesco pilots AI meal-planning assistant to build shopping baskets autonomously",
-    "plain_english": "Tesco, UK's largest grocer with 24M+ Clubcard members, is testing an AI meal-planning assistant that recommends and auto-fills shopping carts—shifting from recommendation to autonomous purchasing decisions. Powered by UK AI tools.",
-    "why_it_matters": "First major BFSI-adjacent shift from recommendation engines to agent-driven purchasing; if successful, model spreads to financial product bundling (savings, investments, insurance auto-enrollment), changing how banks interact with customer wallets.",
-    "source": {
-      "name": "PYMNTS · 2026-08-18",
-      "url": "https://www.pymnts.com/news/retail/2026/brands-are-losing-shelf-space-to-ai-algorithms/"
-    }
-  },
-  {
-    "id": "2026-08-18-sofi-compliance-risk-hiring",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-18T19:29:18Z",
-    "headline": "SoFi expands compliance and risk functions with Credit Risk, Fraud, and Compliance hires",
-    "plain_english": "SoFi is hiring Credit Risk Oversight Manager (2nd Line of Defense), Compliance Director for Invest, and Fraud Model Developer. Indicates fintech maturation: post-SPAC SoFi investing in enterprise risk and model governance.",
-    "why_it_matters": "Fintech scaling into bank-like governance; SoFi's hiring blueprint for risk/compliance functions signals market expectation that fintechs must match traditional bank scrutiny—AI fraud models now a core hiring category.",
-    "scale": {
-      "metric": "open roles",
-      "value": "3"
-    },
-    "source": {
-      "name": "SoFi Careers · 2026-08-18",
-      "url": "https://sofi.com/careers"
-    }
-  },
-  {
-    "id": "2026-08-18-pointskash-crypto-atm-100m-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-18T23:33:30Z",
-    "headline": "PointsKash secures $100M capital commitment from Hawk Capital for crypto ATM rollout",
-    "plain_english": "Fintech PointsKash has secured a strategic capital commitment of up to $100 million from Hawk Capital Advisors to support national rollout of physical/digital payments, loyalty rewards, and digital commerce offerings (including crypto ATMs).",
-    "why_it_matters": "Signals continued investor appetite for crypto infrastructure despite regulatory headwinds; BFSI monitoring crypto ATM proliferation as compliance risk in AML/KYC ecosystems.",
-    "amount": "$100M",
-    "source": {
-      "name": "PYMNTS · 2026-08-18",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/pointskash-secures-capital-commitment-after-beginning-rollout-of-crypto-atms/"
     }
   }
 ]
