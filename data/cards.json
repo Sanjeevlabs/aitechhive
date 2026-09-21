@@ -1,5 +1,60 @@
 [
   {
+    "id": "2026-09-21-maryland-algorithmic-pricing-ban",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-21T17:07:53Z",
+    "headline": "Maryland bans personalized pricing for groceries, moving beyond disclosure rules",
+    "plain_english": "Maryland becomes first U.S. state to outright prohibit certain personalized grocery prices, effective Oct. 1. Shifts policy from requiring disclosure of algorithmic pricing to prohibition, signaling potential regulatory trend.",
+    "why_it_matters": "Sets template for state-level AI pricing guardrails; BFSI firms offering algorithmic pricing or fintech tools must monitor compliance exposure across jurisdictions as prohibition spreads.",
+    "jargon": [
+      {
+        "term": "Algorithmic pricing",
+        "def": "Using AI/ML to dynamically adjust prices per customer based on behavior, location, or other data."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-21",
+      "url": "https://www.pymnts.com/news/retail/2026/maryland-personalized-pricing-ban-marks-shift-from-disclosure-prohibition/"
+    },
+    "effective_date": "2026-10-01"
+  },
+  {
+    "id": "2026-09-21-occ-national-trust-charters",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-21T16:17:59Z",
+    "headline": "OCC conditionally approves three national trust bank charters",
+    "plain_english": "Office of the Comptroller of the Currency issued conditional approvals to Bastion Platforms Trust Co., Agora National Trust Bank, and Catena Trust Bank. Applications filed March–May 2026.",
+    "why_it_matters": "Expands fintech custody/trust infrastructure. Signals OCC appetite for specialized fintech charters; downstream impact on asset tokenization, digital asset custody ecosystems.",
+    "source": {
+      "name": "Banking Dive · 2026-09-21",
+      "url": "https://www.bankingdive.com/news/occ-conditionally-approves-three-national-trust-charters-bastion-agora-catena/830913/"
+    }
+  },
+  {
+    "id": "2026-09-21-fed-boe-trading-firm-exposure-probe",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-21T16:35:31Z",
+    "headline": "Fed, Bank of England probe banks' trading firm exposure after Jane Street loss",
+    "plain_english": "Federal Reserve and BoE investigating banks' counterparty risk and concentration exposure to algorithmic/quantitative trading firms, triggered by Jane Street trading losses.",
+    "why_it_matters": "Tightens counterparty risk scrutiny for high-frequency and algorithmic trading operations; banks must reassess algo trading vendor & prop trading desk risk models; may drive new capital/liquidity buffers.",
+    "jargon": [
+      {
+        "term": "Counterparty risk",
+        "def": "Risk that a trading partner or financier fails to fulfill contractual obligations, leaving the bank exposed."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-09-21",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNb3VXY2VHUTI3azdKbTBoSlhXcmFJZjhmMzVpVnVReEFwdlpUTlZFSElhSVNURlpSRFcyZVczOTRZaWFSRS11NDhwZXVhdVZFSXBTckpxc3JjclBkRTl1T1VEQXQ1R09mZGpWRFNGdnRmM1BJcmMwOHhBbHhCeklTY0ZKZ1o5Ni1ucWdFekhHYUVRa0JpbUxqWGxnQlJ6ZVdqbnNqNFhFTklrYzRKNktNWk9jU2lVc2NKYjdnUGdNS19iZkZDQ2tsalJ3VQ"
+    }
+  },
+  {
     "id": "2026-09-21-occ-stablecoin-ai-agents",
     "category": "regulation",
     "jurisdiction": "US",
@@ -99,45 +154,21 @@
     }
   },
   {
-    "id": "2026-09-18-california-ai-safety-panel",
-    "category": "regulation",
+    "id": "2026-09-21-evergreen-ai-harris-launch",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-18T23:02:09.000Z",
-    "headline": "California governor convenes expert panel to strengthen AI safety laws",
-    "plain_english": "California Gov. Gavin Newsom issued an executive order establishing a task force of national experts to guide state AI safety and security regulation, reinforcing existing laws post-SB 1047 era.",
-    "why_it_matters": "Signals state-level AI governance momentum; California's framework influences fintech and enterprise AI deployment standards nationwide. BFSI compliance teams must track dual federal–state AI safety regimes.",
+    "published_at": "2026-09-21T16:08:22Z",
+    "headline": "Fintech veteran Bill Harris launches AI-powered financial advice app Evergreen.ai",
+    "plain_english": "Bill Harris (former SFBC, Intuit exec) debuts Evergreen.ai, an AI-driven financial advisory application. Targets consumer wealth/financial planning automation.",
+    "why_it_matters": "Demonstrates fintech founder re-entry into AI robo-advisory; validates market demand for conversational AI wealth tools. Competitor for legacy bank digital advisory; signals consumer readiness for AI-led planning.",
+    "scale": {
+      "metric": "customers",
+      "value": "TBD"
+    },
     "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/california-governor-mobilizes-expert-panel-strengthen-ai-safety-laws/"
-    }
-  },
-  {
-    "id": "2026-09-18-india-caller-id-spam-regulation",
-    "category": "regulation",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-09-19T01:00:00.000Z",
-    "headline": "India mandates caller-ID apps share spam reports directly with telecom operators",
-    "plain_english": "India's telecom regulator requires caller-identification applications (e.g., Truecaller) to feed spam complaint data one-way to telecom operators, raising concerns that proprietary datasets become industry assets. Affects fintech KYC and fraud detection vendors.",
-    "why_it_matters": "Establishes precedent for regulatory data-sharing mandates; threatens fintech business models relying on proprietary fraud signals. BFSI in India will face similar data-sovereignty demands around AI training sets and model weights.",
-    "source": {
-      "name": "TechCrunch · 2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/"
-    }
-  },
-  {
-    "id": "2026-09-18-regulation-sec-tokenized-stocks",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-18T14:57:00Z",
-    "headline": "SEC clears tokenized stock trading, enabling blockchain-based equity settlement",
-    "plain_english": "The U.S. Securities and Exchange Commission issued an order permitting the trading of tokenized stocks—equity securities issued and settled on blockchain networks. This removes a key regulatory barrier to digital asset adoption in capital markets.",
-    "why_it_matters": "Banks and brokers must now integrate tokenization infrastructure into trading and settlement workflows; compliance teams need updated AML/KYC playbooks for blockchain-native trades.",
-    "source": {
-      "name": "Finextra · 2026-09-18",
-      "url": "https://www.finextra.com/newsarticle/48432/sec-clears-way-for-tokenised-stock-trading"
+      "name": "News-Press NOW · 2026-09-21",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPa2lseE5xX0tqcFk3cEpEYU5vcTZ6aGZVTXlqNzg1cV9GNF80X21oclc1Y0Y2VDhRZGpwemZuR3c1WDhmX1pJRlFRVVdOWFhDWXAySmFIX1BGVWd2XzRfRUIyWW9td1dLX3hqTTBNa3dVazFwVVFrVW84Zm12N0ljWW9DbFhlWDNfOEhQQy1BM2s0QkRLdGVwQmhmQ2lhZ2dtZmk3WF9mVXpsdmNORHkxR2ROSDlVckQwOGpvYzBBc1VBaUpmUG9zdDdoalZvUWpSRVJTY1oyM1lMSTdhbWZjTmdudDhjaVpZQjIwZEh0VTdNYi1LZUNlcm9Ucmx1UDdNQVJxRw"
     }
   },
   {
@@ -297,23 +328,19 @@
     }
   },
   {
-    "id": "2026-09-17-payward-kraken-perpetual-futures",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-17T14:31:00.000Z",
-    "headline": "Payward (Kraken parent) launches onchain perpetual futures for US clients",
-    "plain_english": "Payward, parent company of Kraken crypto exchange, announced deployment of onchain perpetual futures markets for US clients via Hyperliquid HIP-3, starting with builder-deployed permissioned markets.",
-    "why_it_matters": "Onchain derivatives signal regulatory acceptance of decentralized trading infrastructure; Kraken's US expansion implies SEC/CFTC green light for custody-less leveraged products. May pressure traditional derivatives venues on cost.",
-    "jargon": [
-      {
-        "term": "onchain perpetual futures",
-        "def": "Leveraged derivative contracts settled and custodied on blockchain rather than centralized exchange; no counterparty."
-      }
-    ],
+    "id": "2026-09-21-paymob-series-c-mena-expansion",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-21T16:07:44Z",
+    "headline": "Paymob raises $35M pre-Series C for MENA payment coverage expansion",
+    "plain_english": "Egypt-based fintech Paymob secured $35M in pre-Series C funding to expand payment infrastructure across Middle East and North Africa, launch new SMB products.",
+    "why_it_matters": "Validates emerging-market payments consolidation; signals investor appetite for cross-border payment rails in MENA. Banks seeking regional payment API coverage should monitor Paymob as integration risk/opportunity.",
+    "amount": "$35M",
+    "round": "Pre-Series C",
     "source": {
-      "name": "Finextra · 2026-09-17",
-      "url": "https://www.finextra.com/pressarticle/110933/payward-plans-onchain-perpetual-futures-for-us-clients"
+      "name": "PYMNTS · 2026-09-21",
+      "url": "https://www.pymnts.com/news/investment-tracker/fintech-investments/2026/paymob-secures-35-million-dollars-expand-payment-coverage-across-mena/"
     }
   },
   {
@@ -460,17 +487,17 @@
     }
   },
   {
-    "id": "2026-09-16-cognizant-ai-deals-citi",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-09-21-barclays-rto-worker-pushback",
+    "category": "shift",
+    "jurisdiction": "UK",
     "severity": "low",
-    "published_at": "2026-09-17T00:57:11.000Z",
-    "headline": "Cognizant AI services deals accelerate; Citi forecasts 2027–28 growth inflection",
-    "plain_english": "Cognizant's AI consulting and services deals are gaining scale and volume, according to Citi analyst review. Citi expects BFSI demand for AI transformation to drive revenue growth in 2027–28.",
-    "why_it_matters": "Tier-1 systems integrator (primary partner for bank AI deployments) seeing deal acceleration; signals demand phase moving from pilot to production—hiring, governance, and compliance implementation follows.",
+    "published_at": "2026-09-21T16:24:07Z",
+    "headline": "Barclays employees, union challenge three-day-per-week RTO mandate",
+    "plain_english": "Barclays UK staff and union demand exemptions and commute/childcare pay as bank enforces three-day weekly office attendance. Highlights tension between hybrid-work flexibility and bank control.",
+    "why_it_matters": "Signals talent friction in large-bank RTO policies; AI/data roles particularly contested. Relevant to BFSI hiring/retention strategies as AI talent demand competes with office-centric corporate culture.",
     "source": {
-      "name": "Citi via Moneycontrol · 2026-09-17",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT21nZjVEMW5JU0hEUEdUNFFDVE1JNWhFZEc4YmQtT2N2OERoV2dNSC11M0pBNlJqdWk3ai1KVWUzRklUMUFyTV9Fdk84MEEzOEptYTRKcHVyR1k1WEtkWkVVcGt0VG9JMlNtdUZVcDJBdUV4WF83cGRBbHd3Z0FBNk5KNGNDUnBUUFpUcDhyUGRCVEp3aEJfTG9DZ1J4aGVaaXFTU2h2X2htQU9EeHN2OTNDcVNDbUVSaDNENERhN0s2VTZBSThaRk0wMEtVajg0cWMxUE9HWkNQSkXSAeABQVVfeXFMTnU0WnU0TnEzblh5X05lVzQ1QkVkaEtTUGNsWkdJelFxUVlFNzU5eUZBaHEwQ1F3VzJOZHhDYzJ4RnpveGxaanVMNjdXZzZVX0VjTUY3R1Y3TV9wREpNVk5sVVNzVGdyTjBnX21YT0VjN0h3eFg3TkVGazlyYWdaZF9LLUc4VDc4b2dqS25KMUtxT1NQb2hNTnljVlJJanlpd2VUcVZFdzN5dUlYWk8zVUJHSnJRTUJnN1E1Q3lJTVlfMmJQT0piV1g4YzV6VzZhandEUWxvN2dRTWpvSmJUUDg"
+      "name": "Banking Dive · 2026-09-21",
+      "url": "https://www.bankingdive.com/news/barclays-3-days-week-officer-return-workers-union-demands-commute-childcare-payment/830915/"
     }
   },
   {
@@ -619,20 +646,6 @@
     "source": {
       "name": "Pluang · 2026-09-17",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTGFyYTRlWEw3RUxWZjBNNEpGdXhEQk9jTnE4QzlORnhlTG5GbFVfTFBVUXh3a2tiQ09CNEFXRFZ2WE5QYWhVZktYZkdHZ1J1eG5kVlpITmN0QUtUZk0xWUIxN2JxVFlrcjg4Z2I2c29GWWRQdWhId1pyZzFzZDFnYzdTRGRQTW5p"
-    }
-  },
-  {
-    "id": "2026-09-16-salesforce-revenue-2030-target",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-16T23:13:45.000Z",
-    "headline": "Salesforce issues $63B fiscal 2030 revenue target at Dreamforce, embedding AI across suite",
-    "plain_english": "Salesforce announced $63B+ revenue forecast for FY2030 at its annual conference, signaling aggressive AI-driven upsell across CRM, data, and analytics products. Target reflects AI-enhanced features becoming core growth driver.",
-    "why_it_matters": "Major enterprise software vendor anchoring long-term guidance on AI monetization; banks and insurers using Salesforce for risk, compliance, and customer analytics will see AI capabilities bundled into licensing—cost and capability shifts.",
-    "source": {
-      "name": "CNBC · 2026-09-16",
-      "url": "https://www.cnbc.com/2026/09/16/salesforce-issues-revenue-target-of-63-billion-for-fiscal-2030.html"
     }
   },
   {
@@ -786,6 +799,20 @@
     "source": {
       "name": "arXiv · 2026-08-27",
       "url": "https://arxiv.org/abs/2608.23632"
+    }
+  },
+  {
+    "id": "2026-09-21-retrochimera-molecular-synthesis",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-21T15:30:19Z",
+    "headline": "Microsoft Research: RetroChimera accelerates chemical synthesis prediction at scale",
+    "plain_english": "Microsoft published Nature paper on RetroChimera, a predictive model that speeds molecular synthesis design. Reduces time/cost for custom-molecule discovery in pharma, materials, agriculture.",
+    "why_it_matters": "Demonstrates AI acceleration of drug/molecule discovery; downstream impact on pharma BFSI (valuation models, R&D financing, biotech M&A due diligence). Banks should track synthetic-biology AI progress for sector trends.",
+    "source": {
+      "name": "Microsoft Research · 2026-09-21",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/"
     }
   },
   {
@@ -951,23 +978,25 @@
     }
   },
   {
-    "id": "2026-09-11-ycombinator-open-weight-distillation",
-    "category": "research",
+    "id": "2026-09-21-gov-agentic-ai-guardrails",
+    "category": "insight",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-11T20:59:47.000Z",
-    "headline": "Y Combinator urges US open-weight labs to distill frontier AI models",
-    "plain_english": "Y Combinator CEO Garry Tan called for smaller US-based open-weight AI labs to distill techniques from American frontier models, creating sovereign alternatives to Chinese LLMs. Framed as geopolitical resilience strategy.",
-    "why_it_matters": "Signals policy appetite for domestic AI redundancy. BFSI risk/compliance teams may face future mandates to avoid Chinese model dependencies. Early movers building internal distillation pipelines gain optionality.",
+    "severity": "high",
+    "published_at": "2026-09-21T15:44:49Z",
+    "headline": "Urban Institute: government agentic AI requires governance guardrails before rollout",
+    "plain_english": "Urban Institute guidance warns state/local governments to establish governance structures before embedding autonomous AI systems into public services. Early-stage experimentation already underway.",
+    "why_it_matters": "Signals regulatory concern over unmonitored agentic AI in government. BFSI vendors selling gov AI tools must expect compliance audits; banks should pressure cloud vendors on AI governance transparency.",
     "jargon": [
       {
-        "term": "Distillation",
-        "def": "Training smaller, cheaper models to mimic larger frontier models' behavior; trades raw capability for latency, cost, and sovereignty."
+        "term": "Agentic AI",
+        "def": "AI systems that autonomously take actions (e.g., approve transactions, route decisions) without real-time human review."
       }
     ],
+    "stat_value": "Early",
+    "stat_label": "government agentic AI adoption phase; governance gaps present",
     "source": {
-      "name": "TechCrunch · 2026-09-11",
-      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/"
+      "name": "PYMNTS · 2026-09-21",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/urban-institute-urges-guardrails-as-governments-experiment-with-agentic-ai/"
     }
   },
   {
@@ -1117,17 +1146,17 @@
     }
   },
   {
-    "id": "2026-09-16-microsft-anthropic-claude-risk",
-    "category": "insight",
+    "id": "2026-09-21-ai-bandwidth-scaling-lumen",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-16T14:08:07.000Z",
-    "headline": "Microsoft AI chief warns that Anthropic's Claude-style humanlike models pose unchecked deployment risks",
-    "plain_english": "A Microsoft AI executive publicly cautioned that Anthropic's Claude and similar highly capable, conversational AI systems are being deployed without sufficient safeguards for high-stakes applications. The warning highlights tension between frontier AI lab agility and enterprise risk governance.",
-    "why_it_matters": "Public disagreement between frontier-lab allies signals fragmentation in AI safety standards; BFSI compliance teams must expect divergent model-safety profiles and may face pressure to adopt independent guardrails rather than relying on vendor assurance.",
+    "published_at": "2026-09-21T16:00:04Z",
+    "headline": "AI workloads breaking bandwidth forecasts; Lumen pushes on-demand internet scaling",
+    "plain_english": "Lumen Communications reports AI computation is exceeding enterprise bandwidth capacity projections. Offering dynamic internet scaling to address demand surge.",
+    "why_it_matters": "Infrastructure constraint for enterprise AI. Banks deploying large LLMs, inference at scale must budget for network provisioning costs. CDN/network vendor dependencies rising.",
     "source": {
-      "name": "Bloomberg Finance/AI · 2026-09-16",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc1JCREtIdFpLTWZNUmZFUnM2UGZBdUR0bTFBMDNwQnZSeVFiRFEtOGdSX1ZiSUE3d05RZlhjT3owRFE2MmlyY1BLeHJYZ2l0RXk4LVg1bkZfU3ZWM0VMNWkzZ1NoVG0zRkZXRXNwOVd3MjZuVlVlbUxvdVllZzBJWE1XRFVIci16UDVZSXBVRzQ0UVJJZTJzRVdyc0RwOVRaRzhWYkdOa21JU3NYREpMaEhldw?oc=5"
+      "name": "Fierce Network · 2026-09-21",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbkdGeUM3QUJmSjV6d1VvNUtFT1hscTNiS1hYQ0dBNHEyUVBvS00wMkVWMDliUFBNTlBfcXAtdllnMkFEYWw1Y2lsQ0swN0J1dURiRUpUNExSa1p3Z3RsSG1CcmJuTjdJOVRIM1Z5M1M2NG5mOGU2QnRYT2xQRmhoT2dUakg4RkVIWFhCdg"
     }
   },
   {
@@ -1275,23 +1304,17 @@
     }
   },
   {
-    "id": "2026-09-19-ai-kill-switch",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-19T12:00:01Z",
-    "headline": "AI kill switch debate: policymakers weigh emergency shutdown mechanisms as frontier models scale",
-    "plain_english": "CNBC and policy experts examine whether frontier AI labs should implement automatic or human-triggered shutdown systems to halt runaway models. Consensus: technical kill switches exist but are incomplete; governance and coordination across labs remain unsolved.",
-    "why_it_matters": "BFSI regulators and chief risk officers must assume frontier AI systems may not be fully stoppable once deployed at scale. Contingency planning for system-wide AI failure, manual override chains, and inter-institution coordination frameworks should begin now.",
-    "jargon": [
-      {
-        "term": "kill switch",
-        "def": "A mechanism (technical or procedural) that halts or isolates a running AI system to prevent cascading harm or uncontrolled behavior."
-      }
-    ],
+    "id": "2026-09-21-amd-trillion-market-cap",
+    "category": "learner",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-21T16:47:40Z",
+    "headline": "AMD hits $1 trillion market cap; AI chip demand drives 180% YTD gain",
+    "plain_english": "Advanced Micro Devices reached $1 trillion valuation for first time, up 180% in 2026, driven by AI accelerator (GPU/FPGA) adoption. Signals enterprise appetite for non-Nvidia compute.",
+    "why_it_matters": "BFSI infra decision-makers: AMD's scale now viable alternative for AI training/inference. Banks can negotiate multi-year chip supply; cost arbitrage vs. Nvidia possible. Portfolio of suppliers reduces concentration risk.",
     "source": {
-      "name": "CNBC · 2026-09-19",
-      "url": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html"
+      "name": "CNBC · 2026-09-21",
+      "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html"
     }
   },
   {
@@ -1491,23 +1514,17 @@
     }
   },
   {
-    "id": "2026-08-28-learner-rag",
-    "category": "learner",
+    "id": "2026-09-21-vembu-engineer-ai-usage-debate",
+    "category": "trending",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "What is RAG? Why banks use it to ground AI on real data instead of hallucinations",
-    "plain_english": "RAG (Retrieval-Augmented Generation) combines a language model with a search engine: before answering, the AI fetches relevant documents from your knowledge base and incorporates them. This reduces false claims (hallucinations) and keeps answers grounded in current, verified data—critical for compliance and risk reporting.",
-    "why_it_matters": "RAG is the foundation for safe enterprise LLMs in banking. Instead of an LLM making up numbers, RAG ensures it quotes from real policies, regulatory filings, or customer records. Every major bank is building RAG pipelines for KYC, AML, and advisory.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When an LLM invents false facts or citations because it was trained to predict plausible text, not verify truth."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-09-21T15:34:00Z",
+    "headline": "Sridhar Vembu's viral post sparks engineer debate: 'I tell our engineers to use AI, but...'",
+    "plain_english": "Zoho founder Sridhar Vembu posted on X that he advocates engineer AI use but with caveats. Thread ignited debate on AI productivity, dependency, and skill atrophy in software development.",
+    "why_it_matters": "Reflects industry anxiety over AI coding tools' impact on junior talent development and code quality. BFSI tech leaders balancing productivity gains vs. technical risk; hiring/training strategies under pressure.",
     "source": {
-      "name": "AITechHive Editorial · 2026-08-28",
-      "url": "https://aitechhive.com"
+      "name": "Moneycontrol · 2026-09-21",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdFVoWTZESi1DNnJvZWVFU0dqak1pLVVvX0VMb0FwVUw2UGVmVnZRbzZwcnRwd2pLNDVnYVo3b1JuZ3NVT0s5eGVTSjlKbVRhVTlqV3FRaFJaM2tTazBoY2FDZG54cjRwWXM5U0RIeHZ5MjVNZDlDaUh2YUdNOHRqRlFhd2JJVUF3Z2kzalpjVkpySnJRbE9Ob3dBamdMekg4ekZMdG5nd2h3RjRRTlh1OW9iMmx4alc3ZXR1TFNQd1FfYjR4cEZoMkFvb2fSAdIBQVVfeXFMUGVkYng0WnhkV2tTWldicGRwMk9ZSzdOY3VxNkhiVWlhamZFSHd6Z1o2QnZkRHJWeld0N0lxQnE0X3hReDdqN3l5LWMtUTFyeVVON3N4dmRuSWRPa0xVZGdPZFcwclk0ejJ1amFGTExLVkduVlpSczN6cEx2NHhxd1dlQ1BPTEQ0WWFJV0JNN2lWZjhKbnQySEZvVmJMdmdtYTZpS0hlOE13SjU5SDNJcERwQVdBbUZIb3U4bG1WamtuUUdKdm9rYUtPU1hRVXBGVFVR"
     }
   },
   {
@@ -1640,6 +1657,170 @@
     "source": {
       "name": "CNBC · 2026-09-13",
       "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html"
+    }
+  },
+  {
+    "id": "2026-09-18-california-ai-safety-panel",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-18T23:02:09.000Z",
+    "headline": "California governor convenes expert panel to strengthen AI safety laws",
+    "plain_english": "California Gov. Gavin Newsom issued an executive order establishing a task force of national experts to guide state AI safety and security regulation, reinforcing existing laws post-SB 1047 era.",
+    "why_it_matters": "Signals state-level AI governance momentum; California's framework influences fintech and enterprise AI deployment standards nationwide. BFSI compliance teams must track dual federal–state AI safety regimes.",
+    "source": {
+      "name": "PYMNTS · 2026-09-18",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/california-governor-mobilizes-expert-panel-strengthen-ai-safety-laws/"
+    }
+  },
+  {
+    "id": "2026-09-18-india-caller-id-spam-regulation",
+    "category": "regulation",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-09-19T01:00:00.000Z",
+    "headline": "India mandates caller-ID apps share spam reports directly with telecom operators",
+    "plain_english": "India's telecom regulator requires caller-identification applications (e.g., Truecaller) to feed spam complaint data one-way to telecom operators, raising concerns that proprietary datasets become industry assets. Affects fintech KYC and fraud detection vendors.",
+    "why_it_matters": "Establishes precedent for regulatory data-sharing mandates; threatens fintech business models relying on proprietary fraud signals. BFSI in India will face similar data-sovereignty demands around AI training sets and model weights.",
+    "source": {
+      "name": "TechCrunch · 2026-09-18",
+      "url": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/"
+    }
+  },
+  {
+    "id": "2026-09-18-regulation-sec-tokenized-stocks",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-18T14:57:00Z",
+    "headline": "SEC clears tokenized stock trading, enabling blockchain-based equity settlement",
+    "plain_english": "The U.S. Securities and Exchange Commission issued an order permitting the trading of tokenized stocks—equity securities issued and settled on blockchain networks. This removes a key regulatory barrier to digital asset adoption in capital markets.",
+    "why_it_matters": "Banks and brokers must now integrate tokenization infrastructure into trading and settlement workflows; compliance teams need updated AML/KYC playbooks for blockchain-native trades.",
+    "source": {
+      "name": "Finextra · 2026-09-18",
+      "url": "https://www.finextra.com/newsarticle/48432/sec-clears-way-for-tokenised-stock-trading"
+    }
+  },
+  {
+    "id": "2026-09-17-payward-kraken-perpetual-futures",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-17T14:31:00.000Z",
+    "headline": "Payward (Kraken parent) launches onchain perpetual futures for US clients",
+    "plain_english": "Payward, parent company of Kraken crypto exchange, announced deployment of onchain perpetual futures markets for US clients via Hyperliquid HIP-3, starting with builder-deployed permissioned markets.",
+    "why_it_matters": "Onchain derivatives signal regulatory acceptance of decentralized trading infrastructure; Kraken's US expansion implies SEC/CFTC green light for custody-less leveraged products. May pressure traditional derivatives venues on cost.",
+    "jargon": [
+      {
+        "term": "onchain perpetual futures",
+        "def": "Leveraged derivative contracts settled and custodied on blockchain rather than centralized exchange; no counterparty."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-17",
+      "url": "https://www.finextra.com/pressarticle/110933/payward-plans-onchain-perpetual-futures-for-us-clients"
+    }
+  },
+  {
+    "id": "2026-09-16-cognizant-ai-deals-citi",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-17T00:57:11.000Z",
+    "headline": "Cognizant AI services deals accelerate; Citi forecasts 2027–28 growth inflection",
+    "plain_english": "Cognizant's AI consulting and services deals are gaining scale and volume, according to Citi analyst review. Citi expects BFSI demand for AI transformation to drive revenue growth in 2027–28.",
+    "why_it_matters": "Tier-1 systems integrator (primary partner for bank AI deployments) seeing deal acceleration; signals demand phase moving from pilot to production—hiring, governance, and compliance implementation follows.",
+    "source": {
+      "name": "Citi via Moneycontrol · 2026-09-17",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT21nZjVEMW5JU0hEUEdUNFFDVE1JNWhFZEc4YmQtT2N2OERoV2dNSC11M0pBNlJqdWk3ai1KVWUzRklUMUFyTV9Fdk84MEEzOEptYTRKcHVyR1k1WEtkWkVVcGt0VG9JMlNtdUZVcDJBdUV4WF83cGRBbHd3Z0FBNk5KNGNDUnBUUFpUcDhyUGRCVEp3aEJfTG9DZ1J4aGVaaXFTU2h2X2htQU9EeHN2OTNDcVNDbUVSaDNENERhN0s2VTZBSThaRk0wMEtVajg0cWMxUE9HWkNQSkXSAeABQVVfeXFMTnU0WnU0TnEzblh5X05lVzQ1QkVkaEtTUGNsWkdJelFxUVlFNzU5eUZBaHEwQ1F3VzJOZHhDYzJ4RnpveGxaanVMNjdXZzZVX0VjTUY3R1Y3TV9wREpNVk5sVVNzVGdyTjBnX21YT0VjN0h3eFg3TkVGazlyYWdaZF9LLUc4VDc4b2dqS25KMUtxT1NQb2hNTnljVlJJanlpd2VUcVZFdzN5dUlYWk8zVUJHSnJRTUJnN1E1Q3lJTVlfMmJQT0piV1g4YzV6VzZhandEUWxvN2dRTWpvSmJUUDg"
+    }
+  },
+  {
+    "id": "2026-09-16-salesforce-revenue-2030-target",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-16T23:13:45.000Z",
+    "headline": "Salesforce issues $63B fiscal 2030 revenue target at Dreamforce, embedding AI across suite",
+    "plain_english": "Salesforce announced $63B+ revenue forecast for FY2030 at its annual conference, signaling aggressive AI-driven upsell across CRM, data, and analytics products. Target reflects AI-enhanced features becoming core growth driver.",
+    "why_it_matters": "Major enterprise software vendor anchoring long-term guidance on AI monetization; banks and insurers using Salesforce for risk, compliance, and customer analytics will see AI capabilities bundled into licensing—cost and capability shifts.",
+    "source": {
+      "name": "CNBC · 2026-09-16",
+      "url": "https://www.cnbc.com/2026/09/16/salesforce-issues-revenue-target-of-63-billion-for-fiscal-2030.html"
+    }
+  },
+  {
+    "id": "2026-09-11-ycombinator-open-weight-distillation",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-11T20:59:47.000Z",
+    "headline": "Y Combinator urges US open-weight labs to distill frontier AI models",
+    "plain_english": "Y Combinator CEO Garry Tan called for smaller US-based open-weight AI labs to distill techniques from American frontier models, creating sovereign alternatives to Chinese LLMs. Framed as geopolitical resilience strategy.",
+    "why_it_matters": "Signals policy appetite for domestic AI redundancy. BFSI risk/compliance teams may face future mandates to avoid Chinese model dependencies. Early movers building internal distillation pipelines gain optionality.",
+    "jargon": [
+      {
+        "term": "Distillation",
+        "def": "Training smaller, cheaper models to mimic larger frontier models' behavior; trades raw capability for latency, cost, and sovereignty."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-09-11",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/"
+    }
+  },
+  {
+    "id": "2026-09-16-microsft-anthropic-claude-risk",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-16T14:08:07.000Z",
+    "headline": "Microsoft AI chief warns that Anthropic's Claude-style humanlike models pose unchecked deployment risks",
+    "plain_english": "A Microsoft AI executive publicly cautioned that Anthropic's Claude and similar highly capable, conversational AI systems are being deployed without sufficient safeguards for high-stakes applications. The warning highlights tension between frontier AI lab agility and enterprise risk governance.",
+    "why_it_matters": "Public disagreement between frontier-lab allies signals fragmentation in AI safety standards; BFSI compliance teams must expect divergent model-safety profiles and may face pressure to adopt independent guardrails rather than relying on vendor assurance.",
+    "source": {
+      "name": "Bloomberg Finance/AI · 2026-09-16",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc1JCREtIdFpLTWZNUmZFUnM2UGZBdUR0bTFBMDNwQnZSeVFiRFEtOGdSX1ZiSUE3d05RZlhjT3owRFE2MmlyY1BLeHJYZ2l0RXk4LVg1bkZfU3ZWM0VMNWkzZ1NoVG0zRkZXRXNwOVd3MjZuVlVlbUxvdVllZzBJWE1XRFVIci16UDVZSXBVRzQ0UVJJZTJzRVdyc0RwOVRaRzhWYkdOa21JU3NYREpMaEhldw?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-19-ai-kill-switch",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-19T12:00:01Z",
+    "headline": "AI kill switch debate: policymakers weigh emergency shutdown mechanisms as frontier models scale",
+    "plain_english": "CNBC and policy experts examine whether frontier AI labs should implement automatic or human-triggered shutdown systems to halt runaway models. Consensus: technical kill switches exist but are incomplete; governance and coordination across labs remain unsolved.",
+    "why_it_matters": "BFSI regulators and chief risk officers must assume frontier AI systems may not be fully stoppable once deployed at scale. Contingency planning for system-wide AI failure, manual override chains, and inter-institution coordination frameworks should begin now.",
+    "jargon": [
+      {
+        "term": "kill switch",
+        "def": "A mechanism (technical or procedural) that halts or isolates a running AI system to prevent cascading harm or uncontrolled behavior."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-19",
+      "url": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html"
+    }
+  },
+  {
+    "id": "2026-08-28-learner-rag",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-08-28T04:00:00Z",
+    "headline": "What is RAG? Why banks use it to ground AI on real data instead of hallucinations",
+    "plain_english": "RAG (Retrieval-Augmented Generation) combines a language model with a search engine: before answering, the AI fetches relevant documents from your knowledge base and incorporates them. This reduces false claims (hallucinations) and keeps answers grounded in current, verified data—critical for compliance and risk reporting.",
+    "why_it_matters": "RAG is the foundation for safe enterprise LLMs in banking. Instead of an LLM making up numbers, RAG ensures it quotes from real policies, regulatory filings, or customer records. Every major bank is building RAG pipelines for KYC, AML, and advisory.",
+    "jargon": [
+      {
+        "term": "hallucination",
+        "def": "When an LLM invents false facts or citations because it was trained to predict plausible text, not verify truth."
+      }
+    ],
+    "source": {
+      "name": "AITechHive Editorial · 2026-08-28",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -8843,42 +9024,6 @@
     }
   },
   {
-    "id": "2026-08-22-uk-sovereign-ai-chip-strategy",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-08-22T09:33:14.000Z",
-    "headline": "UK pivots sovereign AI strategy to emerging chip designers outside incumbent vendors",
-    "plain_english": "The UK government is turning to newer semiconductor companies—not NVIDIA or established incumbents—to build out sovereign AI compute capacity. This reflects policy shift toward alternative chip architectures for national AI resilience.",
-    "why_it_matters": "Signals regulatory/geopolitical pressure on concentration risk in AI infrastructure; incumbents may face procurement headwinds; opens market for design-stage chip ventures but delays UK model parity.",
-    "jargon": [
-      {
-        "term": "Sovereign AI",
-        "def": "Government-controlled or nation-aligned AI compute and data infrastructure, insulated from foreign supply-chain dependency."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbTJaRUhiSVhXZGpxd0lxTGhUdThiWFFfQ1BqRWJLeXl5Z3FmQXJTWURKTDFaQU5OM0N0M1ptcGpleU1KVnVvdFpOYUtjVFUzdV9DSWVnVHcwU0w2b3dBSktkNmhpVVlNS0hDY0hhUmRFRlZvN0phYzZMQ0tKN2tDaFNyN2dfQU81WTJldm9vN0ZvYUh2SXhZ"
-    }
-  },
-  {
-    "id": "2026-08-22-samsung-ai-chip-buyback",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-22T10:49:54.000Z",
-    "headline": "Samsung announces record share buyback funded by AI chip demand windfall",
-    "plain_english": "Samsung is executing its largest-ever stock buyback program, driven by surging demand for AI semiconductor products. This reflects capital reallocation as legacy business decline is offset by AI compute revenue.",
-    "why_it_matters": "Illustrates how AI demand is reshaping capex and shareholder return calendars in semiconductors; signal of sustained pricing power in GPU/HBM markets through 2026+.",
-    "stat_value": "Record",
-    "stat_label": "Samsung buyback size (largest ever)",
-    "source": {
-      "name": "WSJ · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMkRsVFl1ZHQ0YlUwSk1EdmN6SlA3UVA3UmRxZEdhOGpDRmI3MURrblBtYVNuSVpMUHd1cHhoTTdHVUpGRWxGb0dLLWdUWi0tekY0Y3JxdWd5dFpaajJTdmVFSEhGSEs0QjVhZ01ERko0X2ZGbzNjS3BlbjlkT2h0Y0xsUFpid0ZRVzJiM3RLSjZIQ3M"
-    }
-  },
-  {
     "id": "2026-08-23-crypto-post-quantum-security-platform",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8890,36 +9035,6 @@
     "source": {
       "name": "CoinTrust · 2026-08-23",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYXpYOWZ3Wkw0YXhYeTl2TmpRYUNucnVvQ1J4THJUOWF3a2FldVlCa2FKcXUyTnd5ZURLbTBhWG1kdzJOc3BEQkxMNHpnaVRsUEN3UWZ2cFlHVDhMWGxWV21TUGlfWjhSZVh0WGNjMUVBbE0zR2h4MDFIWGdWdGZfN2hfOWNDV1lmQTN0N1NCbVBzdjJHRHo3ZDltNXJjMFVmOUU4Ty130gGrAUFVX3lxTE1neVd4WXZMcDBYRVdEbXlJd0ZQeGE2alQyVXdCVFNaaThrLVlheTA0T0VjRXd2NDREajI5bFdQNWxIbjdjS0RYSVlJOXlHUTE4WGx5eE94WnJOdVcwSGtDcXFYVEhIZmlnWWt0RUFabExldzBmR2ViaTdkWU05X0JQT0VsT0p2anE0aC1Uc01PSlJZNEtRWEVKLWYxS0NaZ0M0RkJReDF0NjFhbw"
-    }
-  },
-  {
-    "id": "2026-08-22-india-private-credit-ai-deal-sourcing",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-08-22T06:40:23.000Z",
-    "headline": "India's private credit funds deploy AI for deal sourcing and underwriting",
-    "plain_english": "Indian private credit funds are increasingly using AI systems to automate deal discovery and underwriting processes, according to EY research. This marks a shift toward algorithmic risk assessment in non-bank lending.",
-    "why_it_matters": "Signals structural shift in lending automation outside traditional banking—faster deal flow, lower human bias in underwriting, but raises regulatory oversight questions for shadow finance.",
-    "source": {
-      "name": "EY · 2026-08-22",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/your-ai-notetaker-would-like-a-word/"
-    }
-  },
-  {
-    "id": "2026-08-22-klarna-valuation-fintech-headwinds",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-22T04:00:38.000Z",
-    "headline": "Klarna stock crash illustrates valuation vulnerability of single-use fintech in competitive market",
-    "plain_english": "Klarna's share price decline reveals investor skepticism about standalone fintech moats in saturated BNPL and payments markets. The company's inability to diversify beyond point-of-sale lending constrains growth.",
-    "why_it_matters": "Pattern warning for fintech investors: single-vertical plays face margin compression; embedded or ecosystem plays (like Payload) command premiums. Suggests consolidation or API pivots ahead.",
-    "stat_value": "Stock crash",
-    "stat_label": "Klarna valuation pressure",
-    "source": {
-      "name": "Financial Times · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMXVOUnk5bkliVThJcEZaQ1A1TDRWcFJLR1hJeC04OGhkOG9SUUZCR2xJTGxTMEFFOHkzRDdGTU5qUnQ0VTBJX0hKYm5GdjZBZmRmRHlXdjFva25ibjFxMWFsWXBlenhMOUVKdGh3X3FMOGRVdDc3NHgyVzlMY2QySXp4SVA"
     }
   },
   {
@@ -8948,34 +9063,6 @@
     "source": {
       "name": "Reuters · 2026-08-22",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOFpWcEU2Z3A5dEFDSXRERWhFSGsxd0NCRDAydDk5MFZXYmkwajZ0OFhwZFh0TzN1NVM0bUFmTTBocUNfYzZoT1FUdFVGazRZVHp3NC00eVNlWlFUcnFuOW1QdkhWeWk0OW42OW42SWxWVjFJRGFKZi0xYUN2ekFuUHRyVEdzNmg0MS1NeU80MFZWeTNmX0VTR2d5VFhQUFlzVmZBX2ZKNnFOM2tFbGtiZE1fV0drOXNtOTFMQWh0VQ"
-    }
-  },
-  {
-    "id": "2026-08-22-frontier-consciousness-ethics",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-22T11:32:53.000Z",
-    "headline": "Philosopher-led debate on AI consciousness emerges in mainstream discourse",
-    "plain_english": "The Economist examines whether current or future AI systems could develop consciousness, a philosophical question now surfacing in policy and ethics conversations. No technical consensus exists on measurement.",
-    "why_it_matters": "Indirectly affects BFSI regulation: if policymakers conflate consciousness with accountability, they may impose stricter liability or rights frameworks on autonomous trading or lending AI.",
-    "source": {
-      "name": "The Economist · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB0U0JtVFpidUFfM1FoZlRsXzI4enV1Z05xWEtmY0d1Rmd3RjllakJqV1JlMHZCTkthWW11LXNJbEpMTEU5YnY2RExiTjhCTXNWYXZsNmlJWHVZU1VFVG44"
-    }
-  },
-  {
-    "id": "2026-08-22-china-ai-research-talent",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-22T11:31:43.000Z",
-    "headline": "China's AI advances powered by concentrated pool of elite researchers, WSJ analysis finds",
-    "plain_english": "WSJ investigation reveals a small cohort of top AI scientists and engineers has driven China's recent AI breakthroughs. This mirrors earlier U.S. AI concentration but raises questions about sustainability and geopolitical talent flows.",
-    "why_it_matters": "For BFSI: if China's AI talent is concentrated, poaching risks and dependency on key individuals may slow scaling of local banking AI; Western banks may have recruitment advantage.",
-    "source": {
-      "name": "WSJ · 2026-08-22",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBjWE5CYjA1SjdibGl2UXJ5cmJkRm43NHZkU29wSTM3Rm9faUFqbTUzdmplcWwwcDFTbE80M3dSNzdXRDJnZVVCc2N6Tlh6M0hwNy1HRXJ6eGJYMDk0ZFN6T3FvRU1ybXhGRFl4bXl4dDRPZw"
     }
   }
 ]
