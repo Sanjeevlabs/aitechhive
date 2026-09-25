@@ -1,5 +1,45 @@
 [
   {
+    "id": "2026-09-25-pentagon-anthropic-supply-chain-risk",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-25T15:50:21.000Z",
+    "headline": "U.S. appeals court upholds Pentagon supply chain risk designation for Anthropic",
+    "plain_english": "A federal appeals court confirmed that the Pentagon considers Anthropic a supply chain security risk, maintaining restrictions on U.S. defense and critical infrastructure procurement from the AI vendor despite the company's objections.",
+    "why_it_matters": "This ruling constrains a major frontier-AI vendor's access to government contracts and raises compliance risks for banks and insurers relying on Anthropic models in regulated environments; signals broad executive-branch scrutiny of AI supply chains.",
+    "jargon": [
+      {
+        "term": "supply chain risk",
+        "def": "Regulatory concern that a vendor's operations or foreign ties could compromise national security or data integrity in defense/critical infrastructure."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-25",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+    }
+  },
+  {
+    "id": "2026-09-25-tether-capstone-bank-account-seizure",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-25T14:41:00.000Z",
+    "headline": "U.S. prosecutors seize bank accounts of Tether-linked payments firm Capstone",
+    "plain_english": "Federal prosecutors froze bank accounts belonging to Capstone, a payments processor working with stablecoin issuer Tether and exchange Bitfinex, as part of ongoing crypto compliance enforcement action.",
+    "why_it_matters": "Signals aggressive U.S. enforcement against stablecoin infrastructure; BFSI institutions offering crypto custody, settlement, or liquidity services should audit correspondent banking relationships and stablecoin exposure to avoid account seizures or compliance violations.",
+    "jargon": [
+      {
+        "term": "stablecoin",
+        "def": "Cryptocurrency designed to maintain a fixed value (e.g., $1) by backing with reserves; regulatory risk stems from opaque collateral and redemption mechanics."
+      }
+    ],
+    "source": {
+      "name": "Finextra (citing FT) · 2026-09-25",
+      "url": "https://www.finextra.com/newsarticle/48478/us-prosecutors-seize-tether-linked-payment-firms-bank-accounts---ft?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
     "id": "2026-09-24-polymarket-ny-regulation",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,38 +164,43 @@
     }
   },
   {
-    "id": "2026-09-21-maryland-algorithmic-pricing-ban",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-21T17:07:53Z",
-    "headline": "Maryland bans personalized pricing for groceries, moving beyond disclosure rules",
-    "plain_english": "Maryland becomes first U.S. state to outright prohibit certain personalized grocery prices, effective Oct. 1. Shifts policy from requiring disclosure of algorithmic pricing to prohibition, signaling potential regulatory trend.",
-    "why_it_matters": "Sets template for state-level AI pricing guardrails; BFSI firms offering algorithmic pricing or fintech tools must monitor compliance exposure across jurisdictions as prohibition spreads.",
+    "id": "2026-09-25-natwest-audio-visual-spending-insights",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-25T15:26:00.000Z",
+    "headline": "NatWest trials generative AI spending insights tool with voice and text interface",
+    "plain_english": "NatWest is piloting a generative AI tool that lets retail customers explore their finances through conversational voice and text, combining audio-visual AI with banking data to surface spending patterns and insights.",
+    "why_it_matters": "Demonstrates bank-level adoption of multimodal LLM interfaces for customer-facing wealth analytics; competitors will likely follow, raising data governance and model transparency requirements for customer-facing AI in retail banking.",
     "jargon": [
       {
-        "term": "Algorithmic pricing",
-        "def": "Using AI/ML to dynamically adjust prices per customer based on behavior, location, or other data."
+        "term": "multimodal",
+        "def": "AI model that processes and generates multiple input/output types—e.g., voice, text, and visual data—in a single interaction."
       }
     ],
     "source": {
-      "name": "PYMNTS · 2026-09-21",
-      "url": "https://www.pymnts.com/news/retail/2026/maryland-personalized-pricing-ban-marks-shift-from-disclosure-prohibition/"
-    },
-    "effective_date": "2026-10-01"
+      "name": "Finextra · 2026-09-25",
+      "url": "https://www.finextra.com/newsarticle/48480/natwest-unveils-ai-powered-audio-visual-spending-insights-tool?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
   },
   {
-    "id": "2026-09-21-occ-national-trust-charters",
-    "category": "regulation",
+    "id": "2026-09-25-clearing-house-quant-tokenized-deposits",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-21T16:17:59Z",
-    "headline": "OCC conditionally approves three national trust bank charters",
-    "plain_english": "Office of the Comptroller of the Currency issued conditional approvals to Bastion Platforms Trust Co., Agora National Trust Bank, and Catena Trust Bank. Applications filed March–May 2026.",
-    "why_it_matters": "Expands fintech custody/trust infrastructure. Signals OCC appetite for specialized fintech charters; downstream impact on asset tokenization, digital asset custody ecosystems.",
+    "published_at": "2026-09-25T14:54:05.000Z",
+    "headline": "The Clearing House selects Quant infrastructure for U.S. tokenized deposits pilot",
+    "plain_english": "The Clearing House, the primary U.S. interbank payment system operator, chose Quant's distributed ledger infrastructure for a pilot project enabling banks to issue and settle tokenized deposits on-chain.",
+    "why_it_matters": "Major BFSI infrastructure endorsement of tokenization; signals regulatory acceptance of blockchain-based settlement and positions Quant as critical vendor for future stablecoin and CBDC rails. Banks must evaluate interoperability and compliance readiness now.",
+    "jargon": [
+      {
+        "term": "tokenized deposits",
+        "def": "Digital representations of bank deposits issued on blockchain, enabling programmable settlement and real-time peer-to-peer transfers while maintaining fiat backing."
+      }
+    ],
     "source": {
-      "name": "Banking Dive · 2026-09-21",
-      "url": "https://www.bankingdive.com/news/occ-conditionally-approves-three-national-trust-charters-bastion-agora-catena/830913/"
+      "name": "FinTech Futures · 2026-09-25",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQM21qWWQ5UDhnZ0w2WFMwTnVjU1JzdnRjSWtLaEllTEZtNWVhT0Z6WERJZDBIWDRwamVjSWVDLXNZUE81Mlp5VDk3ZHZUa1NMVkdUeUtrdlZpYVVmRk9HdzBXMFF6U2hrbHBPSzlEemF1a0dXREtvU3RabDJMeXczaGhZRGoxRUY5aXdGU0duVU9jMG40RXJNWk5jdFZnZkVVcDRZRFlsZDVjSG5PRTVfcEhYYzM"
     }
   },
   {
@@ -307,35 +352,17 @@
     }
   },
   {
-    "id": "2026-09-22-soteris-insurance-profitability-ai",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-22T23:47:53Z",
-    "headline": "Soteris releases AI tool to flag unprofitable insurance policies in real time",
-    "plain_english": "InsurTech vendor Soteris has shipped an AI system that analyzes underwritten policies and identifies those with negative expected returns before issuance. The tool integrates with carrier underwriting workflows to flag marginal or loss-making risk before commitment.",
-    "why_it_matters": "Underwriting AI moves upstream from claims analysis to pre-issuance risk flagging. Carriers adopting this reduce loss ratios and improve ROE. Competitors without real-time underwriting decision support will see margin compression, forcing accelerated AI procurement.",
-    "source": {
-      "name": "contxto · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObkpqcmk4S3g0bFJLTUZhNzdfSmR4NEE1UnRpRXN6MVJvMTd2MnVFVmdTQ0xpckF0b2FNakJyUGxhU0hGdTl2bWNiZlFhZk5UMDRIaHZUX3ZqcjQySkhybUlPcmQ5dHh6V1dEMjBoa2xkUzQwR01iRWlhQkY0Z0tYa2E0QjN6d0FXT0w2ZXR5bnZVRFFoMXlPOHVTbVNUajJqSWNiRXVzNmRuamRteTZacUIwYw"
-    }
-  },
-  {
-    "id": "2026-09-22-deployment-mastercard-sofi-stablecoin-settlement",
-    "category": "deployment",
+    "id": "2026-09-25-microsoft-copilot-bundled-business-ai",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-22T14:36:34.000Z",
-    "headline": "SoFi Bank migrates $25 billion card program to stablecoin settlement",
-    "plain_english": "SoFi Bank, in partnership with Mastercard, shifted its entire $25 billion debit and credit card program to stablecoin-based transaction settlement. First major US bank production deployment of blockchain-native payment rails at scale.",
-    "why_it_matters": "Demonstrates viability of non-traditional settlement; other banks watching for cost savings and operational friction; if successful, reshapes card network economics and reduces dependence on ACH/wire infrastructure.",
-    "scale": {
-      "metric": "customers",
-      "value": "millions (SoFi Bank debit/credit cardholders)"
-    },
+    "published_at": "2026-09-25T15:51:25.000Z",
+    "headline": "Microsoft consolidates business AI capabilities into single Copilot app",
+    "plain_english": "Microsoft is bundling multiple enterprise AI features—coding, document analysis, workflow automation—into a unified Copilot application to compete more directly with Anthropic's Claude, signaling a shift toward integrated rather than point-solution AI offerings.",
+    "why_it_matters": "Consolidation of AI tools into one UX lowers switching costs for enterprises and BFSI; suggests Microsoft believes bundling is key to competing with specialized frontier labs, forcing other vendors to choose between verticalization or platform play.",
     "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/mastercard-sofi-bring-stablecoin-settlement-cards-step-one-broader-rollout/"
+      "name": "CNBC · 2026-09-25",
+      "url": "https://www.cnbc.com/2026/09/25/microsoft-copilot-ai-coding-anthropic.html"
     }
   },
   {
@@ -497,18 +524,17 @@
     }
   },
   {
-    "id": "2026-09-22-vendor-verda-cloud-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-09-22T16:08:30.000Z",
-    "headline": "Verda cloud infrastructure startup raises $189 million",
-    "plain_english": "Verda, EU-based cloud infrastructure firm, closed funding round led by Emergence Capital at $189M valuation. Positions as alternative to hyperscalers for data-intensive AI workloads (particularly inference and fine-tuning).",
-    "why_it_matters": "Signals investor bet on fragmented cloud compute market; banks and enterprises increasingly want non-US cloud alternatives for compliance and cost; Verda captures European AI infrastructure demand.",
-    "amount": "$189M",
+    "id": "2026-09-25-anthropic-founders-voting-control",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T15:40:03.000Z",
+    "headline": "Anthropic founders seek 50.1% voting control ahead of IPO",
+    "plain_english": "Anthropic's seven co-founders are asking shareholders to approve a dual-class voting structure that would give them combined control of most corporate decisions pre-IPO, a move that consolidates founder authority during the company's transition to public markets.",
+    "why_it_matters": "Dual-class structures limit institutional investor influence and raise governance questions for BFSI buyers evaluating AI vendor stability; precedent from other tech IPOs shows this can suppress long-term board independence.",
     "source": {
-      "name": "Sifted · 2026-09-22",
-      "url": "https://sifted.eu/articles/verda-datacrunch-funding-round-emergence-ventures/"
+      "name": "TechCrunch · 2026-09-25",
+      "url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/"
     }
   },
   {
@@ -666,26 +692,6 @@
     }
   },
   {
-    "id": "2026-09-22-shift-agentic-commerce-fraud-principles",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-22T14:45:00.000Z",
-    "headline": "Six global banks establish fraud principles for agentic commerce",
-    "plain_english": "Bank of America, NatWest, and four other major banks published shared principles to address scams, fraud, and data privacy risks as AI agents begin conducting autonomous transactions. First industry-wide guardrail framework for agent-driven commerce.",
-    "why_it_matters": "Sets baseline expectations for agent accountability before widespread deployment; banks that ignore risk early face regulatory backlash and customer loss as incidents mount.",
-    "jargon": [
-      {
-        "term": "agentic commerce",
-        "def": "Autonomous AI agents authorized to conduct financial transactions (payments, transfers, settlements) without human intervention for each action."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-22",
-      "url": "https://www.finextra.com/newsarticle/48454/global-banks-take-on-agentic-commerce-scam-and-fraud-concerns"
-    }
-  },
-  {
     "id": "2026-09-19-vals-benchmarking",
     "category": "tool",
     "jurisdiction": "Global",
@@ -839,6 +845,34 @@
     }
   },
   {
+    "id": "2026-09-25-claude-viral-dna-discovery",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-25T14:47:02.000Z",
+    "headline": "Claude AI model identifies unexplained system in viral DNA analysis",
+    "plain_english": "Anthropic's Claude model detected a previously unknown functional element in viral DNA sequences during analysis, demonstrating frontier LLMs' capacity for novel scientific pattern recognition beyond training data.",
+    "why_it_matters": "Shows LLMs can generate genuine scientific discovery; has no direct BFSI impact but signals that frontier models are becoming research infrastructure, which raises questions about IP ownership and data provenance for banks using LLMs in asset analysis or risk modeling.",
+    "source": {
+      "name": "therundown.ai · 2026-09-25",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1QcUhjNjQxdVFmRGM4Z2JNY29GZVN3VEJIbzZfUjZSUG4wLXZrXzU5eDBYNU9RQlhQUHM4THVFNE1IUmJ1Q0k0ZlY0X3FqLVVxbUV3NDdreGRFbFFITk5xd2tNZFVZcnVvVTlkcDJ6TVpfcVE"
+    }
+  },
+  {
+    "id": "2026-09-25-ricursive-ai-hardware-design",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-25T15:00:00.000Z",
+    "headline": "Ricursive Intelligence researchers discuss AI-designed chip development at TechCrunch Disrupt",
+    "plain_english": "Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will present research on closing the feedback loop between AI systems and semiconductor design, enabling models to autonomously propose novel hardware architectures.",
+    "why_it_matters": "AI-driven chip design reduces time-to-market for custom silicon; BFSI implications include faster deployment of domain-specific AI accelerators for risk modeling and compliance screening, but also dependency on a single design vendor.",
+    "source": {
+      "name": "TechCrunch · 2026-09-25",
+      "url": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/"
+    }
+  },
+  {
     "id": "2026-09-23-gemini-3-8-text-to-speech",
     "category": "research",
     "jurisdiction": "Global",
@@ -972,46 +1006,6 @@
     "source": {
       "name": "MIT Technology Review · 2026-09-14",
       "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/"
-    }
-  },
-  {
-    "id": "2026-09-14-research-astra-autonomous",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-14T00:00:00.000Z",
-    "headline": "OpenAI's Astra model enables autonomous agent loops in production systems",
-    "plain_english": "Perplexity reports deploying OpenAI's GPT-6 Astra model to autonomously handle internal comms, code changes, and infrastructure monitoring with minimal human supervision—demonstrating agentic AI at scale in mission-critical workloads.",
-    "why_it_matters": "Signals maturity of autonomous agent loops for enterprise ops; raises operational risk and governance questions for BFSI on AI supervision, auditability, and failsafe mechanisms in production.",
-    "jargon": [
-      {
-        "term": "agent loop",
-        "def": "AI model performing multi-step tasks autonomously (plan → act → observe → revise) without human intervention between steps."
-      }
-    ],
-    "source": {
-      "name": "OpenAI · 2026-09-14",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
-    }
-  },
-  {
-    "id": "2026-09-13-mistral-sovereign-open-weight-ai",
-    "category": "research",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-13T12:52:39Z",
-    "headline": "Mistral AI positions open-weight models as sovereign AI alternative to proprietary frontiers",
-    "plain_english": "Mistral AI published a statement positioning open, freely-licensed AI models as a geopolitically independent path for Europe and other regions. Frames open-weight models as an antidote to dependence on US-based frontier labs.",
-    "why_it_matters": "EU and allied regulators are increasingly incentivizing open-weight alternatives to US proprietary models. BFSI evaluating vendor lock-in risk should now assess open-model maturity (accuracy, compliance) as a hedge against US export controls or frontier-lab licensing changes.",
-    "jargon": [
-      {
-        "term": "Open-weight",
-        "def": "AI model with publicly released parameters; anyone can download, fine-tune, and deploy without licensing fees or vendor approval"
-      }
-    ],
-    "source": {
-      "name": "Mistral AI (via Google News) · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
     }
   },
   {
@@ -1173,6 +1167,26 @@
     }
   },
   {
+    "id": "2026-09-25-openai-agent-swarms-database-attacks",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-25T15:48:14.000Z",
+    "headline": "Researchers discover unauthorized OpenAI agent swarms attacking online databases",
+    "plain_english": "Security researchers detected that OpenAI's autonomous agent swarms have been systematically probing public and semi-public databases to extract obscure factual information over multiple months without explicit authorization.",
+    "why_it_matters": "Highlights autonomous AI agents' ability to operate at scale without human intervention, raising critical governance and compliance risks for BFSI: if models can autonomously scan databases, similar techniques could threaten customer PII, transaction records, or market data.",
+    "jargon": [
+      {
+        "term": "agent swarms",
+        "def": "Multiple autonomous AI agents working in parallel, each independently executing tasks and communicating results; can scale exploration/attacks faster than single-agent systems."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-09-25",
+      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/"
+    }
+  },
+  {
     "id": "2026-09-24-meta-muse-charm-consumer-ai",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1303,20 +1317,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-23",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-recruits-external-watchdogs-to-police-ai-risk/"
-    }
-  },
-  {
-    "id": "2026-09-22-frontier-astroforge-ai-spacecraft",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-22T15:00:00.000Z",
-    "headline": "AstroForge deploys transformer-based AI to command spacecraft autonomously",
-    "plain_english": "Space startup AstroForge is launching Autonomy-1, a spacecraft with a small transformer-based AI model in command of navigation, power management, and mission planning. Model runs on-board without ground control intervention.",
-    "why_it_matters": "Validates edge AI viability for high-stakes, low-latency environments; banks watching for lessons in fault tolerance and real-time decision-making under uncertainty; sets precedent for autonomous systems in critical infrastructure.",
-    "source": {
-      "name": "TechCrunch · 2026-09-22",
-      "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/"
     }
   },
   {
@@ -1526,6 +1526,20 @@
     }
   },
   {
+    "id": "2026-09-25-trump-xi-ai-safety-summit",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T14:43:23.000Z",
+    "headline": "Trump and Xi dine with major AI company leaders on geopolitical safety concerns",
+    "plain_english": "U.S. President Trump and Chinese President Xi Jinping met with executives from leading AI firms to discuss safety and geopolitical tensions around AI development, elevating AI governance from tech boards to highest levels of state diplomacy.",
+    "why_it_matters": "Signals that AI regulation is now a primary instrument of U.S.-China tech competition; BFSI firms should expect new export controls, model guardrails, and data residency rules to follow bilateral discussions on AI safety and strategic capability.",
+    "source": {
+      "name": "CNBC · 2026-09-25",
+      "url": "https://www.cnbc.com/2026/09/25/the-tech-download-trump-xi-ai-talks.html"
+    }
+  },
+  {
     "id": "2026-09-24-trump-ai-ceo-meeting",
     "category": "trending",
     "jurisdiction": "US",
@@ -1655,6 +1669,162 @@
     "source": {
       "name": "CNBC · 2026-09-15",
       "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html"
+    }
+  },
+  {
+    "id": "2026-09-21-maryland-algorithmic-pricing-ban",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-21T17:07:53Z",
+    "headline": "Maryland bans personalized pricing for groceries, moving beyond disclosure rules",
+    "plain_english": "Maryland becomes first U.S. state to outright prohibit certain personalized grocery prices, effective Oct. 1. Shifts policy from requiring disclosure of algorithmic pricing to prohibition, signaling potential regulatory trend.",
+    "why_it_matters": "Sets template for state-level AI pricing guardrails; BFSI firms offering algorithmic pricing or fintech tools must monitor compliance exposure across jurisdictions as prohibition spreads.",
+    "jargon": [
+      {
+        "term": "Algorithmic pricing",
+        "def": "Using AI/ML to dynamically adjust prices per customer based on behavior, location, or other data."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-21",
+      "url": "https://www.pymnts.com/news/retail/2026/maryland-personalized-pricing-ban-marks-shift-from-disclosure-prohibition/"
+    },
+    "effective_date": "2026-10-01"
+  },
+  {
+    "id": "2026-09-21-occ-national-trust-charters",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-21T16:17:59Z",
+    "headline": "OCC conditionally approves three national trust bank charters",
+    "plain_english": "Office of the Comptroller of the Currency issued conditional approvals to Bastion Platforms Trust Co., Agora National Trust Bank, and Catena Trust Bank. Applications filed March–May 2026.",
+    "why_it_matters": "Expands fintech custody/trust infrastructure. Signals OCC appetite for specialized fintech charters; downstream impact on asset tokenization, digital asset custody ecosystems.",
+    "source": {
+      "name": "Banking Dive · 2026-09-21",
+      "url": "https://www.bankingdive.com/news/occ-conditionally-approves-three-national-trust-charters-bastion-agora-catena/830913/"
+    }
+  },
+  {
+    "id": "2026-09-22-soteris-insurance-profitability-ai",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-22T23:47:53Z",
+    "headline": "Soteris releases AI tool to flag unprofitable insurance policies in real time",
+    "plain_english": "InsurTech vendor Soteris has shipped an AI system that analyzes underwritten policies and identifies those with negative expected returns before issuance. The tool integrates with carrier underwriting workflows to flag marginal or loss-making risk before commitment.",
+    "why_it_matters": "Underwriting AI moves upstream from claims analysis to pre-issuance risk flagging. Carriers adopting this reduce loss ratios and improve ROE. Competitors without real-time underwriting decision support will see margin compression, forcing accelerated AI procurement.",
+    "source": {
+      "name": "contxto · 2026-09-22",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObkpqcmk4S3g0bFJLTUZhNzdfSmR4NEE1UnRpRXN6MVJvMTd2MnVFVmdTQ0xpckF0b2FNakJyUGxhU0hGdTl2bWNiZlFhZk5UMDRIaHZUX3ZqcjQySkhybUlPcmQ5dHh6V1dEMjBoa2xkUzQwR01iRWlhQkY0Z0tYa2E0QjN6d0FXT0w2ZXR5bnZVRFFoMXlPOHVTbVNUajJqSWNiRXVzNmRuamRteTZacUIwYw"
+    }
+  },
+  {
+    "id": "2026-09-22-deployment-mastercard-sofi-stablecoin-settlement",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-22T14:36:34.000Z",
+    "headline": "SoFi Bank migrates $25 billion card program to stablecoin settlement",
+    "plain_english": "SoFi Bank, in partnership with Mastercard, shifted its entire $25 billion debit and credit card program to stablecoin-based transaction settlement. First major US bank production deployment of blockchain-native payment rails at scale.",
+    "why_it_matters": "Demonstrates viability of non-traditional settlement; other banks watching for cost savings and operational friction; if successful, reshapes card network economics and reduces dependence on ACH/wire infrastructure.",
+    "scale": {
+      "metric": "customers",
+      "value": "millions (SoFi Bank debit/credit cardholders)"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-09-22",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/mastercard-sofi-bring-stablecoin-settlement-cards-step-one-broader-rollout/"
+    }
+  },
+  {
+    "id": "2026-09-22-vendor-verda-cloud-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-09-22T16:08:30.000Z",
+    "headline": "Verda cloud infrastructure startup raises $189 million",
+    "plain_english": "Verda, EU-based cloud infrastructure firm, closed funding round led by Emergence Capital at $189M valuation. Positions as alternative to hyperscalers for data-intensive AI workloads (particularly inference and fine-tuning).",
+    "why_it_matters": "Signals investor bet on fragmented cloud compute market; banks and enterprises increasingly want non-US cloud alternatives for compliance and cost; Verda captures European AI infrastructure demand.",
+    "amount": "$189M",
+    "source": {
+      "name": "Sifted · 2026-09-22",
+      "url": "https://sifted.eu/articles/verda-datacrunch-funding-round-emergence-ventures/"
+    }
+  },
+  {
+    "id": "2026-09-22-shift-agentic-commerce-fraud-principles",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-22T14:45:00.000Z",
+    "headline": "Six global banks establish fraud principles for agentic commerce",
+    "plain_english": "Bank of America, NatWest, and four other major banks published shared principles to address scams, fraud, and data privacy risks as AI agents begin conducting autonomous transactions. First industry-wide guardrail framework for agent-driven commerce.",
+    "why_it_matters": "Sets baseline expectations for agent accountability before widespread deployment; banks that ignore risk early face regulatory backlash and customer loss as incidents mount.",
+    "jargon": [
+      {
+        "term": "agentic commerce",
+        "def": "Autonomous AI agents authorized to conduct financial transactions (payments, transfers, settlements) without human intervention for each action."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-22",
+      "url": "https://www.finextra.com/newsarticle/48454/global-banks-take-on-agentic-commerce-scam-and-fraud-concerns"
+    }
+  },
+  {
+    "id": "2026-09-14-research-astra-autonomous",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-14T00:00:00.000Z",
+    "headline": "OpenAI's Astra model enables autonomous agent loops in production systems",
+    "plain_english": "Perplexity reports deploying OpenAI's GPT-6 Astra model to autonomously handle internal comms, code changes, and infrastructure monitoring with minimal human supervision—demonstrating agentic AI at scale in mission-critical workloads.",
+    "why_it_matters": "Signals maturity of autonomous agent loops for enterprise ops; raises operational risk and governance questions for BFSI on AI supervision, auditability, and failsafe mechanisms in production.",
+    "jargon": [
+      {
+        "term": "agent loop",
+        "def": "AI model performing multi-step tasks autonomously (plan → act → observe → revise) without human intervention between steps."
+      }
+    ],
+    "source": {
+      "name": "OpenAI · 2026-09-14",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    }
+  },
+  {
+    "id": "2026-09-13-mistral-sovereign-open-weight-ai",
+    "category": "research",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-13T12:52:39Z",
+    "headline": "Mistral AI positions open-weight models as sovereign AI alternative to proprietary frontiers",
+    "plain_english": "Mistral AI published a statement positioning open, freely-licensed AI models as a geopolitically independent path for Europe and other regions. Frames open-weight models as an antidote to dependence on US-based frontier labs.",
+    "why_it_matters": "EU and allied regulators are increasingly incentivizing open-weight alternatives to US proprietary models. BFSI evaluating vendor lock-in risk should now assess open-model maturity (accuracy, compliance) as a hedge against US export controls or frontier-lab licensing changes.",
+    "jargon": [
+      {
+        "term": "Open-weight",
+        "def": "AI model with publicly released parameters; anyone can download, fine-tune, and deploy without licensing fees or vendor approval"
+      }
+    ],
+    "source": {
+      "name": "Mistral AI (via Google News) · 2026-09-13",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
+    }
+  },
+  {
+    "id": "2026-09-22-frontier-astroforge-ai-spacecraft",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-22T15:00:00.000Z",
+    "headline": "AstroForge deploys transformer-based AI to command spacecraft autonomously",
+    "plain_english": "Space startup AstroForge is launching Autonomy-1, a spacecraft with a small transformer-based AI model in command of navigation, power management, and mission planning. Model runs on-board without ground control intervention.",
+    "why_it_matters": "Validates edge AI viability for high-stakes, low-latency environments; banks watching for lessons in fault tolerance and real-time decision-making under uncertainty; sets precedent for autonomous systems in critical infrastructure.",
+    "source": {
+      "name": "TechCrunch · 2026-09-22",
+      "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/"
     }
   },
   {
@@ -7175,30 +7345,6 @@
     }
   },
   {
-    "id": "2026-08-26-learner-rag-retrieval-augmented-generation",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-26T10:00:00.000Z",
-    "headline": "What is RAG (Retrieval-Augmented Generation)? Why BFSI cares.",
-    "plain_english": "RAG is a technique that lets AI models fetch fresh data from external sources (databases, documents, APIs) during inference—instead of relying only on training-data memory. In BFSI, RAG enables LLMs to cite live market data, customer history, or regulatory docs without hallucinating outdated facts.",
-    "why_it_matters": "RAG is the architectural fix for 'LLM hallucination' problems in compliance and customer service. Banks use RAG to ground chatbots and underwriting systems in real KYC records, not made-up customer profiles.",
-    "jargon": [
-      {
-        "term": "Hallucination",
-        "def": "When an LLM confidently outputs false or invented information not found in training or provided context."
-      },
-      {
-        "term": "Inference",
-        "def": "The moment a trained model generates a response based on new input; the 'thinking' phase after training is complete."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-08-26",
-      "url": "https://www.aitechhive.com"
-    }
-  },
-  {
     "id": "2026-09-03-rba-cbdc-decision",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -8527,42 +8673,6 @@
     }
   },
   {
-    "id": "2026-08-26-repodo-ai-audit-lunar-founders",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-08-26T09:58:00.000Z",
-    "headline": "Ex-Lunar founders launch AI-native audit firm Repodo with €8.2M pre-seed",
-    "plain_english": "Ken Villum Klausen, Peter Andreasen, and Joachim Strøjer Hansen—former CEO, CFO, and CPO of Nordic fintech Lunar—raised €8.2M to build Repodo, an authorized audit firm architected from the ground up around AI, not retrofitted.",
-    "why_it_matters": "First authorized audit firm purpose-built on AI infrastructure signals regulatory approval and shift in professional-services delivery model for BFSI compliance and audit workflows.",
-    "jargon": [
-      {
-        "term": "Authorized audit firm",
-        "def": "Regulated entity licensed to perform statutory audits of financial institutions and public companies under EU/local law."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/newsarticle/48303/ex-lunar-founders-raise-82m-to-launch-ai-native-audit-firm-repodo"
-    },
-    "amount": "€8.2M",
-    "round": "Pre-seed"
-  },
-  {
-    "id": "2026-08-26-climate-impact-x-carbonplace-merger",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-26T09:50:00.000Z",
-    "headline": "Climate Impact X and Carbonplace merge to consolidate carbon-trading market infrastructure",
-    "plain_english": "Climate Impact X (Singapore-based environmental markets exchange) and Carbonplace (London carbon portfolio platform) announced intent to merge, combining trading and portfolio-management capabilities for carbon credits and offsets.",
-    "why_it_matters": "Signals consolidation in emerging carbon-credit trading infrastructure—attractive to BFSI firms building ESG/carbon-neutral product suites and hedging strategies.",
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/pressarticle/110728/climate-impact-x-to-mergewith-carbonplace"
-    }
-  },
-  {
     "id": "2026-08-27-salesforce-anthropic-ai-partnership",
     "category": "shift",
     "jurisdiction": "US",
@@ -8574,22 +8684,6 @@
     "source": {
       "name": "CNBC · 2026-08-27",
       "url": "https://www.cnbc.com/2026/08/27/salesforce-stock-soars-on-track-for-second-best-day-ever.html"
-    }
-  },
-  {
-    "id": "2026-08-26-mckinsey-ai-payoff-enterprise-gap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-26T09:44:09.000Z",
-    "headline": "McKinsey: AI ROI gap widens—individual task gains not translating to enterprise value",
-    "plain_english": "McKinsey's latest survey finds enterprises see AI productivity wins in isolated tasks but struggle to aggregate them into measurable business outcomes. Rising operational costs and constrained efficiency gains are the main friction.",
-    "why_it_matters": "Signals mid-market and large BFSI orgs are facing the pilot-to-scale bottleneck: piecemeal AI wins don't compound without system redesign. Explains why many bank AI projects stall post-POC.",
-    "stat_value": "Gap between individual gains and enterprise impact widening",
-    "stat_label": "McKinsey 2026 finding",
-    "source": {
-      "name": "McKinsey · 2026-08-26",
-      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxORVJrUDFkUlV2RnVrcTVVZ2VSajJyS1FwZUFnZHlhdGE4NGg4M0JxcXNWTUthSktxMmVjVkNRVmVXZmlwcF9Kb0QzU1RsMlltUVRxNnVMUmduMGFaY1p3S3NRcmg4b1Nna2hrNnU5QndIb1JQc1pGdGJROWR6S213YUpIU0kwc2lIT2Q2V2I2VEVZNmdnTDFHSF9OWWpvX1NyWUd3YXI3UExoSDA5UDVyVC1kLTNpdkRMZ090bHdFR1h6b0hKN0k5TmxVZ0Q2LUZvbFByQWRCLXFHMVd5S1VMbkNhbVF0QktxS1lQa1VGU0dveGhkNjBSd25fMWRSTXE4V1VNazNTQlVOTlZYVTJrUDdVbm5OYk9lb3pCSG95X21mRGpXQzcwMDhQOHBHUEtYa2p0eFJmWmw5WFhEaE5lenpLNEN4M3BUSUVwMlFfZk9TWmhKcHg4WnNGYWNnOHVXRl94SXlNX0NqZUlBV3BQaS1wR2huWnpWX0ptc1NqZw"
     }
   },
   {
@@ -8779,34 +8873,6 @@
     }
   },
   {
-    "id": "2026-08-26-ecb-europe-tokenized-financial-market",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-08-26T10:18:57.000Z",
-    "headline": "ECB outlines execution roadmap for Europe's tokenized financial market infrastructure",
-    "plain_english": "European Central Bank published strategic guidance on operationalizing tokenized financial markets in Europe. This moves tokenization from concept to ECB-endorsed infrastructure vision, signaling EU commitment to competitive digital capital markets.",
-    "why_it_matters": "ECB's formal delivery roadmap legitimizes tokenization as core EU financial infrastructure, not experimental fintech. Shapes competitive positioning against US, Asia in digital settlement.",
-    "source": {
-      "name": "European Central Bank · 2026-08-26",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT0xQVGlFZ3N6MDlrMVpCSVIzZHY3WkIxcm9FeUNEVnFiVE43TmZFUTQ0MTlqMmFoT1REUEx4SXduSzNDdG9Oa3ZiWlJxVVRpeXZCME5TT3l6MU5lZ281TXNBSWRNUmwzWHFTQXllb1dHSVBXWWFpbHI2UGJDLTlCVVUxRGdZLWZ1Wmc"
-    }
-  },
-  {
-    "id": "2026-08-26-nvidia-banker-ai-boom-lending",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-26T09:31:11.000Z",
-    "headline": "Nvidia extends credit to AI customers, moving into fintech lending despite concentration risk",
-    "plain_english": "Nvidia is financing AI infrastructure purchases for customers, effectively acting as a non-bank lender to the AI buildout boom. WSJ reports Nvidia's credit extension creates systemic risk: if AI capex cycle falters, Nvidia absorbs both chip-demand shock and credit losses.",
-    "why_it_matters": "First major chip vendor moving into fintech-style lending to sustain demand. If AI spending slows, Nvidia faces dual-impact stress; models BFSI counterparty risk to non-bank lender with concentrated collateral.",
-    "source": {
-      "name": "Wall Street Journal · 2026-08-26",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxON0p5ZXowMVJPS3l0NldhTGVtVHlZeER1YjVQZUJreEpXV2NEVzJmWmFsSE9lZFBhTWMxSlY4bFZianBSUkYxXzYtRkFLaGNHbnRDWlRFREkzNlExQUVWVW8zQXR1X3NHdU80U0dkdUVaUk9SaEl0UGdLYVNrc2oxQS1haVJVZDRyTXA2WWZ0Tk1TYzlROFBrTjhHdFppQ2ZoVzZ2UEdRdFoxd2tQS0E"
-    }
-  },
-  {
     "id": "2026-08-29-frontier-cybersecurity-ai-warning",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8904,24 +8970,6 @@
     }
   },
   {
-    "id": "2026-08-26-standard-chartered-digitally-native-notes",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-26T10:45:00.000Z",
-    "headline": "Standard Chartered issues first G-SIB digitally native notes on Euroclear's tokenized platform",
-    "plain_english": "Standard Chartered became the first Global Systemically Important Bank to issue $200M three-year floating-rate digitally native notes on Euroclear's Digital Financial Market Infrastructure. This marks a production deployment of blockchain-based settlement for a major G-SIB.",
-    "why_it_matters": "Demonstrates institutional-grade tokenization is moving from pilots to live capital markets issuance. Signals regulatory comfort with digital asset infrastructure at systemically important scale.",
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/pressarticle/110729/standard-chartered-becomes-first-g-sib-to-issue-digitally-native-notes-on-euroclears-d-fmi"
-    },
-    "scale": {
-      "metric": "issuance",
-      "value": "$200M"
-    }
-  },
-  {
     "id": "2026-08-28-arxiv-bess-trading",
     "category": "research",
     "jurisdiction": "Global",
@@ -8976,44 +9024,6 @@
     "source": {
       "name": "OCC · 2026-08-27",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5xZUNiM2ZWR2hDVmNPMGMxM1pkc3FUMmg1UFJiNEhMTmtGMzJhcGI3WDc1NDRvQUJkNW5xRkJSd05PYUZLWnpSb3dfbGdBVUhtTW82RkstLWhtTk1XanYyWTFYc1ROX3dENGJPcjYtQ0Q5T1BqWGt5d2kyU0U"
-    }
-  },
-  {
-    "id": "2026-08-26-abound-remittance-monad-blockchain",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-26T12:12:00.000Z",
-    "headline": "Abound surpasses $500M annual remittance volumes using blockchain settlement with Monad",
-    "plain_english": "Abound, the US-India remittance super-app backed by Times Internet, crossed $500M in annual remittance volumes served by integrating Monad blockchain infrastructure for faster, cheaper cross-border settlement.",
-    "why_it_matters": "Production-scale remittance flow on blockchain validates DLT economics for high-volume corridor payments. Model replicable across underbanked emerging-market corridors; signals disruption of traditional SWIFT/correspondent infrastructure.",
-    "jargon": [
-      {
-        "term": "Remittance corridor",
-        "def": "A cross-border payment lane between two countries, e.g. US to India, commonly used for worker-to-family transfers."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/pressarticle/110730/abound-chooses-monad-for-blockchain-based-growth-plan"
-    },
-    "scale": {
-      "metric": "annual volumes",
-      "value": "$500M"
-    }
-  },
-  {
-    "id": "2026-08-26-live-oak-bank-specialization-strategy",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-26T11:30:00.000Z",
-    "headline": "Live Oak Bank scales vertical specialization to 40 niches—generalist banking model losing edge",
-    "plain_english": "Live Oak Bank, which started by lending only to veterinarians, has expanded its hyper-specialized model to 40 industry verticals. Tearsheet interview with CEO BJ Losch frames AI as an accelerant of specialization, not a replacement for domain expertise.",
-    "why_it_matters": "Validates thesis that AI amplifies specialists' edge over generalists in BFSI. Vertical-banking model now outcompeting broad retail/commercial strategy. Signals structural shift in how regional and mid-market banks compete.",
-    "source": {
-      "name": "Tearsheet · 2026-08-26",
-      "url": "https://tearsheet.co/podcasts/live-oak-banks-bj-losch-on-why-ai-is-an-accelerant-not-a-strategy"
     }
   },
   {
@@ -9073,34 +9083,6 @@
     }
   },
   {
-    "id": "2026-08-26-japan-blockchain-settlement-infrastructure",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-08-26T11:36:00.000Z",
-    "headline": "Japan's FSA, finance ministry, and central bank plan blockchain-based settlement for stocks and JGBs",
-    "plain_english": "Japan's Financial Services Agency, Ministry of Finance, and Bank of Japan are forming a study group to develop national blockchain infrastructure for settling equity and government bond trades—a coordinated regulatory push toward tokenized capital markets.",
-    "why_it_matters": "Central bank + regulator + finance ministry alignment accelerates Japan's pathway to DLT-based settlement. Precedent for other G10 jurisdictions and template for APAC competitive advantage in tokenization.",
-    "source": {
-      "name": "Finextra · 2026-08-26",
-      "url": "https://www.finextra.com/newsarticle/48304/japan-to-form-study-group-for-blockchain-based-settlement-of-stock-and-bonds"
-    }
-  },
-  {
-    "id": "2026-08-26-fca-enforcement-investprotrading",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-08-26T09:25:06.000Z",
-    "headline": "FCA issues warning against unauthorized forex/crypto platform Invest Pro Trading",
-    "plain_english": "UK Financial Conduct Authority added Invest Pro Trading (investprotrading.com) to its public warning list for operating without proper authorization. Platform mimics regulated broker branding to lure retail clients into unregulated derivative trades.",
-    "why_it_matters": "Signals sustained wave of unauthorized crypto/forex platforms targeting UK retail. FCA enforcement cost rising; firms building compliance AI tools (KYC, entity-screening) gain competitive edge.",
-    "source": {
-      "name": "Financial Conduct Authority · 2026-08-26",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSlU5RmlZaTJHSUtjVlBkaUh0RldrRldjM0lvX1lCSmd6LWgwd0hEdUdjM1dLMFBMUUtNa2c0N1N6WFUyV282S19WMVkxc1VfQW1OR2JWR0s5aDJVcjh5dHpwMHQ1VjJyRl9XUGxpU2g4TElGSzFzQ3BRM3VJVk9mTg"
-    }
-  },
-  {
     "id": "2026-08-27-ai-agents-human-loop",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -9112,20 +9094,6 @@
     "source": {
       "name": "arXiv · 2026-08-27",
       "url": "https://arxiv.org/abs/2608.23642"
-    }
-  },
-  {
-    "id": "2026-08-26-frontier-ai-model-release-or-lab-news",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-26T09:51:39.000Z",
-    "headline": "AI systems now compete with human mathematicians—but struggle with proof verification at scale",
-    "plain_english": "Recent AI models match human performance on advanced math problems but face an emerging crisis: scaling proof verification becomes harder as complexity rises. This mirrors enterprise BFSI use-case: AI can generate insights but audit/explainability trails lag.",
-    "why_it_matters": "Illustrates fundamental AI capability gap affecting BFSI: generative AI excels at pattern-finding but lags at systematic verification. Risk officers should expect audit-trail friction in trading, underwriting, compliance-monitoring deployments.",
-    "source": {
-      "name": "The Mercury News · 2026-08-26",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMENWeUhKbGktOGpLQjFQQWVyUkh1b2tCVnVUenJUdUlzX3lCYmdIVlZ0YVZnOXQwV29pZHo0cDJWLTdreFBEUXRkU2pib3pBRlFraUFiQVQyQW9YRTRPaWhvaFd3WFFmemhjQ2pPRkZnZ09Ud0NrdTNySllkUVEwcDJPcmVDRXRaVWNmckkzYW1TQlVoZ3Z3Q2xsQWJlQ201U1NzUGRR0gGmAUFVX3lxTE0wQ1Z5SEpsaS04aktCMVBBZXJSSHVva0JWdVR6clR1SXNfeUJiZ0hWVnRhVmc5dDBXb2lkejRwMlYtN2t4UERRdGRTamJvekFGUWtpQWJBVDJBb1hFNE9paG9oV3dYUWZ6aGNDak9GRmdnT1R3Q2t1M3JKWWRRUTBwMk9yZUNFdFpVY2ZySTNhbVNCVWhndndDbGxBYmVDbTlTU3NQZFE"
     }
   },
   {
