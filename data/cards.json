@@ -514,6 +514,26 @@
     "amount": "$400M"
   },
   {
+    "id": "2026-09-27-meta-muse-subscription-economy",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-27T14:33:22.000Z",
+    "headline": "Meta's Muse agent targets subscription spending patterns as AI enters household finance",
+    "plain_english": "Meta released Muse, an AI personal agent designed to monitor and optimize credit card spending, focusing on the subscription economy—a sector worth hundreds of billions annually. The move signals AI assistants are moving beyond search into active financial decision-making for consumers.",
+    "why_it_matters": "Banks and fintech rely on subscription revenue and customer spending inertia. AI agents optimizing these away could shift $100B+ in recurring revenue; financial institutions must anticipate agent-native commerce friction.",
+    "jargon": [
+      {
+        "term": "Personal agent",
+        "def": "An AI that autonomously acts on behalf of a user (e.g., cancelling unused services) without explicit per-action approval."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-27",
+      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html"
+    }
+  },
+  {
     "id": "2026-09-26-law-firms-ai-efficiency-client-discount",
     "category": "shift",
     "jurisdiction": "US",
@@ -652,30 +672,6 @@
     }
   },
   {
-    "id": "2026-09-23-agentic-ai-net-30-shift",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T15:13:02.000Z",
-    "headline": "Agentic AI poised to disrupt net-30 payment terms, reshaping corporate working capital",
-    "plain_english": "As corporates deploy agentic AI to optimize payment timing autonomously, traditional net-30 payment terms face obsolescence. AI agents will dynamically negotiate settlement dates and cash-flow strategy without human approval loops.",
-    "why_it_matters": "Shift from fixed, human-negotiated payment terms to real-time, AI-driven settlement could compress working-capital cycles industry-wide; banks lose float, corporates gain liquidity, supply-chain finance vendors gain urgency.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that acts autonomously on behalf of users—planning, executing, and correcting actions without human intervention per step."
-      },
-      {
-        "term": "working capital",
-        "def": "Cash tied up in operations (receivables, inventory, payables); faster payment cycles release this cash for reinvestment."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-23",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/agentic-ai-could-make-net-30-obsolete/"
-    }
-  },
-  {
     "id": "2026-09-19-vals-benchmarking",
     "category": "tool",
     "jurisdiction": "Global",
@@ -746,26 +742,6 @@
     "source": {
       "name": "HuggingFace (inferred from industry trend) · 2026-08-31",
       "url": "https://huggingface.co"
-    }
-  },
-  {
-    "id": "2026-08-28-arxiv-crypto-bars",
-    "category": "tool",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Systematic comparison of six information bar types for crypto futures trading; tick vs. minute-based construction",
-    "plain_english": "arXiv paper benchmarks dollar bars, volume bars, volatility bars, range bars, Renko bars, and hybrid bars on BTCUSDT perpetual futures using Binance data. Controlled methodology compares tick-driven vs. minute-based construction for signal quality.",
-    "why_it_matters": "Provides empirical foundation for choosing bar aggregation in crypto trading systems. Risk officers should reference when vetting vendor order-book analytics tools.",
-    "jargon": [
-      {
-        "term": "information bars",
-        "def": "Alternative to fixed-time OHLCV bars; group trades by volume, dollar value, or volatility to reduce noise in illiquid markets."
-      }
-    ],
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26158"
     }
   },
   {
@@ -939,6 +915,40 @@
     }
   },
   {
+    "id": "2026-09-27-kpmg-pulse-fintech-h1-2026",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-27T13:42:23.000Z",
+    "headline": "KPMG Pulse of Fintech H1 2026 report released with global funding and M&A trends",
+    "plain_english": "KPMG published its mid-year fintech report covering global funding, M&A activity, and sector trends through June 2026. The report provides benchmarking data on fintech investment appetite across regions and subsectors.",
+    "why_it_matters": "Mid-market fintech valuations and capital availability shape the ecosystem BFSI competes in for talent and partnership opportunities. Report data informs strategic investment and build-vs.-buy decisions.",
+    "source": {
+      "name": "KPMG · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5td1B4SHpxN2ZaV1d1T3g4YkkyUm1KWDBHQ1FKVW9BaGlSVzJPMWo4WUFSTkM2b253Q3dCTU13OHpWOWhobnpBT0tmM3RFMUhBeUt4U0ZHX2JJdmx3X09SSEJ5Z1pySTZJUEYtaUVvWWJKRmJGalhDbw"
+    }
+  },
+  {
+    "id": "2026-09-27-ai-subscription-credential-theft",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-27T12:03:37.000Z",
+    "headline": "Credential theft of AI service subscriptions enables unauthorized model access at scale",
+    "plain_english": "Attackers are compromising login credentials for paid AI service subscriptions (ChatGPT Plus, Claude Pro, etc.) and reselling access. This allows free/low-cost model usage and creates account-takeover risk for financial services employees.",
+    "why_it_matters": "Banks deploying enterprise LLM access must enforce MFA, monitor anomalous API usage, and audit model interactions for sensitive data leakage. Compromised subscriptions can bypass approval workflows and expose proprietary data.",
+    "jargon": [
+      {
+        "term": "Credential stuffing",
+        "def": "Automated injection of leaked username-password pairs into login forms to gain unauthorized account access."
+      }
+    ],
+    "source": {
+      "name": "NewsBytes · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNjBTNXd4RDNDMkozVEVFM05JOXpsUHpnSVRYUHVnOXhNbk1sSWpkeDZadUlQSUFUUG5HNW1QdXZqVFpsU1NKdHRkZ291R1JuZ2p3TDgwSnc3SGNnQTJ2UkRsdEwtRkNQWVZkU21IS0ZTdElTT3hjeWFENkNKTGdZZU1GeENjbEY0RzhELWR2Yk10TkJEUDR6dlhsc1BrazlTY2FMbDFqQnczX2hHOGZraGwxbjlwbGZhc2dMSTFBenc"
+    }
+  },
+  {
     "id": "2026-09-26-bcg-agentic-accounting",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1061,33 +1071,31 @@
     }
   },
   {
-    "id": "2026-09-22-meta-muse-human-fallback",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-22T23:12:11Z",
-    "headline": "Meta switches Muse AI assistant to human handlers after merchants reject AI-only calls",
-    "plain_english": "Meta's Muse AI phone-calling assistant encountered merchant pushback when it placed automated outbound calls. Meta now routes some calls to human contractors to rebuild trust. The move shows limits of fully autonomous agent deployments in high-stakes (sales/support) contexts.",
-    "why_it_matters": "BFSI agents (loan origination, compliance inquiry, debt collection) face same trust friction. Hybrid human-in-the-loop loops will become table stakes. Firms should budget for human oversight checkpoints rather than betting on fully autonomous agents for customer-facing workflows.",
+    "id": "2026-09-27-ai-infrastructure-bond-yields",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-27T15:35:34.000Z",
+    "headline": "Rising Treasury yields increase cost of AI infrastructure buildout despite unabated capex demand",
+    "plain_english": "AI data center operators face higher debt servicing costs as US Treasury yields spike. Although capex spending continues, the financing environment has become materially more expensive for the compute infrastructure underpinning frontier AI development.",
+    "why_it_matters": "BFSI relies on rented GPU clusters for model training and inference. If capex economics worsen, cloud-provider margins compress, potentially raising AI-as-a-service costs for banks deploying LLMs or proprietary models.",
     "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-tests-human-callers-for-muse-after-merchants-hang-up-on-ai/"
+      "name": "CNBC · 2026-09-27",
+      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html"
     }
   },
   {
-    "id": "2026-09-22-insight-citi-ai-patches-guardrails",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-22T15:03:03.000Z",
-    "headline": "Citi CEO warns of 'tsunami' of AI security patches ahead",
-    "plain_english": "Citi's CEO cautioned that banks should expect a wave of critical AI model patches and guardrail updates as vulnerabilities emerge in production deployments. Signals that current AI guardrails are insufficient and reactive mode is coming.",
-    "why_it_matters": "Banks must budget for continuous AI patching overhead; vulnerability disclosure and patch cycles will create operational chaos without mature AI-specific DevOps; vendors promising 'stable' models will face credibility risk.",
-    "stat_value": "Tsunami incoming",
-    "stat_label": "Citi CEO expectation on AI patch frequency",
+    "id": "2026-09-27-bill-gates-ai-safeguards",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-27T13:00:00.000Z",
+    "headline": "Bill Gates criticizes resistance to AI safety regulatory frameworks",
+    "plain_english": "Bill Gates publicly stated that opposing AI safeguards is incorrect policy, amid wider debate over governance approaches. The statement underscores ongoing tension between AI industry self-regulation and formal regulatory oversight.",
+    "why_it_matters": "BFSI compliance and risk teams track regulatory trajectory. If safety frameworks harden—either via executive action or Congress—institutions will face new guardrail requirements for LLM deployments, similar to algorithmic risk rules.",
     "source": {
-      "name": "Business Chief · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHhTRDhtYVc4b01VNWhCVjVfN09oelNiR2J3ZkVNaDFQV3J1VG0yWHVCNFpVX3lQLTNxWldlSTlRR01kNkIxd2NOSW56akVNRWNKQVF1MzdrSDRrRkVLeDYtT3VmQUNWc1VNOXJIamZGM01hQThLcFBzX0JIMURhNzRndEFTcjBqZ2MwY1JVRGVSQmM"
+      "name": "Bloomberg · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2JTZmRZXy1VcHl1NEtvYzhHRDhWd3RyNmo2UFlmVGZ1SnFSZEJ0dDRaLVZZcmNhTk4zQ2RGUnJqUFQzM3BMTGh1SF9Pd3FiVGFLbTVTeS1uZlRFMm0wWE1rS291RkwyOXNZLTJwVzhHM3d2R3Q1dHVvdnFJM0EyVENmVjNSMkp5amtKMkRrckZNVHhWV09UMG4yVm03bHRkZDI3b2ZJYVB1c2FMbG1rYUJ6MUZCQQ"
     }
   },
   {
@@ -1218,34 +1226,6 @@
     "source": {
       "name": "CNBC · 2026-09-24",
       "url": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html"
-    }
-  },
-  {
-    "id": "2026-09-24-metis-reasoning-deepmind-alumni",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-24T15:20:14Z",
-    "headline": "DeepMind AlphaGo researcher launches Metis Reasoning, seeking tens of millions for non-LLM AI",
-    "plain_english": "An AlphaGo co-creator is raising tens of millions for Metis Reasoning, a new startup focused on reasoning and planning AI beyond large language models. Signals investor appetite for post-LLM AI approaches optimized for structured problem-solving.",
-    "why_it_matters": "Marks shift in frontier AI funding from LLM scaling toward reasoning systems—relevant to BFSI use cases (portfolio optimization, risk modeling) where reasoning transparency and constraint-satisfaction matter more than text fluency.",
-    "source": {
-      "name": "PYMNTS · 2026-09-24",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deepmind-alumni-draw-investors-beyond-large-language-models/"
-    }
-  },
-  {
-    "id": "2026-09-24-lovable-annualized-revenue-600m",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-24T14:43:25Z",
-    "headline": "Lovable no-code platform reaches $600M annualized revenue as AI-assisted app creation scales",
-    "plain_english": "Lovable, a platform letting users build apps via conversational AI (\"vibe coding\"), hit $600M annualized revenue run rate. Apps built on platform achieve nearly 1B monthly views combined. Demonstrates speed-to-market advantage of agentic UI generation.",
-    "why_it_matters": "Signals rapid monetization of LLM-powered code generation. BFSI teams using similar internal tools (e.g., internal dashboards, compliance scanners) see dramatically reduced build cycles, enabling rapid pivot to new regulatory or business requirements.",
-    "source": {
-      "name": "TechCrunch · 2026-09-24",
-      "url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
     }
   },
   {
@@ -1459,6 +1439,20 @@
     }
   },
   {
+    "id": "2026-09-27-ai-sentiment-whiplash-equities",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-27T13:00:07.000Z",
+    "headline": "Stock market sentiment on AI swings rapidly between existential risk and profit euphoria",
+    "plain_english": "Equity markets are experiencing sharp reversals in AI-related sentiment, oscillating between fears of AI risk and enthusiasm for AI-driven earnings growth. Tech stocks linked to AI infrastructure and adoption are seeing heightened volatility.",
+    "why_it_matters": "BFSI asset managers and prop desks are navigating elevated AI volatility and rotation. Portfolio hedging, sector allocation, and client communication strategies must account for AI sentiment whiplash as a structural market feature.",
+    "source": {
+      "name": "Bloomberg · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcjhKd2FaWmFDNGx6VVBvd1AxMkp4MmQwek85Nzl4bWlrOEFaWmo4U190dW5zb0dOQnVXakYtWi1CTHJyZWo4T3lqRnYwVGszOEJ3M3NHMFlMU3pxSkM5WkljTkxLVU5VakNUTkhhZUFBMzQ4bHVBQldaV3k0T1JsMER3X3hzZkhvZmkzR05rSXJGWXBtdWo2OG9oN3hzVHdqU2hyQ3lvZ25BSUtuaE9qaVJhSnA1QQ"
+    }
+  },
+  {
     "id": "2026-09-26-trending-us-china-ai-safety-channel",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1582,6 +1576,88 @@
     "source": {
       "name": "Reuters · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2xmamNtUmNHeDRtbGtQS0FQWnJSZF9uWG1MVHNQRTBkMmt0Q3dkN1A1N1ZoSWo1MHBKQVhJZFB3aEhUQ3MtYmVfaTRPZ09DZzBKVWpUMjFTVktCNGxoSEFhbnhCb3lyclgxS2RfM3BpQjVCaVBPNzBOdkxEU1JCOWhpMnVjeE1MbXhRczNDNldCeXp2"
+    }
+  },
+  {
+    "id": "2026-09-23-agentic-ai-net-30-shift",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-23T15:13:02.000Z",
+    "headline": "Agentic AI poised to disrupt net-30 payment terms, reshaping corporate working capital",
+    "plain_english": "As corporates deploy agentic AI to optimize payment timing autonomously, traditional net-30 payment terms face obsolescence. AI agents will dynamically negotiate settlement dates and cash-flow strategy without human approval loops.",
+    "why_it_matters": "Shift from fixed, human-negotiated payment terms to real-time, AI-driven settlement could compress working-capital cycles industry-wide; banks lose float, corporates gain liquidity, supply-chain finance vendors gain urgency.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "AI system that acts autonomously on behalf of users—planning, executing, and correcting actions without human intervention per step."
+      },
+      {
+        "term": "working capital",
+        "def": "Cash tied up in operations (receivables, inventory, payables); faster payment cycles release this cash for reinvestment."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-23",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/agentic-ai-could-make-net-30-obsolete/"
+    }
+  },
+  {
+    "id": "2026-09-22-meta-muse-human-fallback",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-22T23:12:11Z",
+    "headline": "Meta switches Muse AI assistant to human handlers after merchants reject AI-only calls",
+    "plain_english": "Meta's Muse AI phone-calling assistant encountered merchant pushback when it placed automated outbound calls. Meta now routes some calls to human contractors to rebuild trust. The move shows limits of fully autonomous agent deployments in high-stakes (sales/support) contexts.",
+    "why_it_matters": "BFSI agents (loan origination, compliance inquiry, debt collection) face same trust friction. Hybrid human-in-the-loop loops will become table stakes. Firms should budget for human oversight checkpoints rather than betting on fully autonomous agents for customer-facing workflows.",
+    "source": {
+      "name": "PYMNTS · 2026-09-22",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-tests-human-callers-for-muse-after-merchants-hang-up-on-ai/"
+    }
+  },
+  {
+    "id": "2026-09-22-insight-citi-ai-patches-guardrails",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-22T15:03:03.000Z",
+    "headline": "Citi CEO warns of 'tsunami' of AI security patches ahead",
+    "plain_english": "Citi's CEO cautioned that banks should expect a wave of critical AI model patches and guardrail updates as vulnerabilities emerge in production deployments. Signals that current AI guardrails are insufficient and reactive mode is coming.",
+    "why_it_matters": "Banks must budget for continuous AI patching overhead; vulnerability disclosure and patch cycles will create operational chaos without mature AI-specific DevOps; vendors promising 'stable' models will face credibility risk.",
+    "stat_value": "Tsunami incoming",
+    "stat_label": "Citi CEO expectation on AI patch frequency",
+    "source": {
+      "name": "Business Chief · 2026-09-22",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHhTRDhtYVc4b01VNWhCVjVfN09oelNiR2J3ZkVNaDFQV3J1VG0yWHVCNFpVX3lQLTNxWldlSTlRR01kNkIxd2NOSW56akVNRWNKQVF1MzdrSDRrRkVLeDYtT3VmQUNWc1VNOXJIamZGM01hQThLcFBzX0JIMURhNzRndEFTcjBqZ2MwY1JVRGVSQmM"
+    }
+  },
+  {
+    "id": "2026-09-24-metis-reasoning-deepmind-alumni",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-24T15:20:14Z",
+    "headline": "DeepMind AlphaGo researcher launches Metis Reasoning, seeking tens of millions for non-LLM AI",
+    "plain_english": "An AlphaGo co-creator is raising tens of millions for Metis Reasoning, a new startup focused on reasoning and planning AI beyond large language models. Signals investor appetite for post-LLM AI approaches optimized for structured problem-solving.",
+    "why_it_matters": "Marks shift in frontier AI funding from LLM scaling toward reasoning systems—relevant to BFSI use cases (portfolio optimization, risk modeling) where reasoning transparency and constraint-satisfaction matter more than text fluency.",
+    "source": {
+      "name": "PYMNTS · 2026-09-24",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deepmind-alumni-draw-investors-beyond-large-language-models/"
+    }
+  },
+  {
+    "id": "2026-09-24-lovable-annualized-revenue-600m",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-24T14:43:25Z",
+    "headline": "Lovable no-code platform reaches $600M annualized revenue as AI-assisted app creation scales",
+    "plain_english": "Lovable, a platform letting users build apps via conversational AI (\"vibe coding\"), hit $600M annualized revenue run rate. Apps built on platform achieve nearly 1B monthly views combined. Demonstrates speed-to-market advantage of agentic UI generation.",
+    "why_it_matters": "Signals rapid monetization of LLM-powered code generation. BFSI teams using similar internal tools (e.g., internal dashboards, compliance scanners) see dramatically reduced build cycles, enabling rapid pivot to new regulatory or business requirements.",
+    "source": {
+      "name": "TechCrunch · 2026-09-24",
+      "url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
     }
   },
   {
@@ -3358,26 +3434,6 @@
     "source": {
       "name": "CNBC · 2026-09-19",
       "url": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html"
-    }
-  },
-  {
-    "id": "2026-08-28-learner-rag",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "What is RAG? Why banks use it to ground AI on real data instead of hallucinations",
-    "plain_english": "RAG (Retrieval-Augmented Generation) combines a language model with a search engine: before answering, the AI fetches relevant documents from your knowledge base and incorporates them. This reduces false claims (hallucinations) and keeps answers grounded in current, verified data—critical for compliance and risk reporting.",
-    "why_it_matters": "RAG is the foundation for safe enterprise LLMs in banking. Instead of an LLM making up numbers, RAG ensures it quotes from real policies, regulatory filings, or customer records. Every major bank is building RAG pipelines for KYC, AML, and advisory.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When an LLM invents false facts or citations because it was trained to predict plausible text, not verify truth."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Editorial · 2026-08-28",
-      "url": "https://aitechhive.com"
     }
   },
   {
@@ -6850,20 +6906,6 @@
     }
   },
   {
-    "id": "2026-08-28-trending-gate-notes",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-28T06:22:24Z",
-    "headline": "Gates Foundation publishes essay on turbulent AI era; global policy choices now critical",
-    "plain_english": "Bill Gates published an essay on Gates Notes arguing that the choices institutions and governments make regarding AI deployment in the coming years will be defining. The piece emphasizes that AI era volatility and risks require deliberate policy and governance now.",
-    "why_it_matters": "High-profile endorsement by Gates (influential in global health and development funding) signals that frontier-AI governance is not just tech-sector or BFSI concern—it's a civilizational priority. Likely to accelerate regulatory momentum in APAC and EU.",
-    "source": {
-      "name": "Gates Notes · 2026-08-28",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
-    }
-  },
-  {
     "id": "2026-09-07-wsj-us-bank-enforcement-action",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7893,26 +7935,6 @@
     }
   },
   {
-    "id": "2026-08-28-arxiv-volatility-graphs",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Researchers model financial volatility using graph-based neural methods instead of static snapshots",
-    "plain_english": "arXiv paper proposes treating implied volatility surfaces as dynamic graphs rather than static images, capturing real-time interactions between option prices. Benchmark shows improved forecasting for risk management and derivatives pricing.",
-    "why_it_matters": "Graph neural nets on volatility could improve mark-to-market accuracy and hedge effectiveness in option desks. Risk officers should monitor for vendor tools adopting this approach.",
-    "jargon": [
-      {
-        "term": "implied volatility surface",
-        "def": "Matrix of option prices across strikes and maturities; reveals market's expectation of future price swings."
-      }
-    ],
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26127"
-    }
-  },
-  {
     "id": "2026-09-02-insight-incident-jack-henry-ransomware",
     "category": "insight",
     "jurisdiction": "US",
@@ -8448,20 +8470,6 @@
     }
   },
   {
-    "id": "2026-08-28-arxiv-option-crash-risk",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Machine learning finds option-implied signals predict equity crashes; 12M+ firm-days tested 2015–2026",
-    "plain_english": "Large-scale study analyzed 12.36M firm-day observations across 10K+ underlying equities, testing whether option prices signal imminent crashes. XGBoost and ensemble methods outperform traditional econometric models across three volatility regimes.",
-    "why_it_matters": "Suggests ML-driven early-warning systems for portfolio volatility spikes can outperform legacy VaR models. Risk teams may adopt option-based ML to tighten intraday monitoring.",
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26115"
-    }
-  },
-  {
     "id": "2026-08-28-enterprise-ai-roi-caution",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8621,20 +8629,6 @@
     "source": {
       "name": "Bloomberg · 2026-08-30",
       "url": "https://www.bloomberg.com/news/articles/2026-08-30/apple-s-ternus-takes-the-reins-as-ceo-with-ai-as-job-no-1"
-    }
-  },
-  {
-    "id": "2026-08-28-arxiv-spy-prediction",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Walk-forward benchmark: XGBoost outperforms LightGBM and logistic regression on SPY same-day directional forecasts",
-    "plain_english": "arXiv study backtests XGBoost, Random Forest, LightGBM, and logistic regression on predicting daily SPY direction using only opening-bell data. Walk-forward validation from 1993–2024 shows tree ensembles beat linear models but transaction costs limit profits.",
-    "why_it_matters": "Validates ensemble tree methods for short-horizon equity alpha; realistic cost assumptions strip illusion of profits. Useful baseline for trading desks evaluating new ML models.",
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26106"
     }
   },
   {
@@ -8984,26 +8978,6 @@
     }
   },
   {
-    "id": "2026-08-28-arxiv-tcn-bitcoin",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Temporal convolutional nets with profit-optimized thresholds forecast economically significant Bitcoin moves",
-    "plain_english": "Paper proposes multi-scale temporal convolutional networks (TCNs) tuned to detect Bitcoin price swings that clear transaction costs. Backtests show profit-optimized threshold selection beats fixed-level alerts.",
-    "why_it_matters": "TCNs offer efficient alternative to LSTMs for crypto trading signals; profit-centered thresholds reduce false-positive alerts. Crypto desks and fintech custodians may adopt for volatility forecasting.",
-    "jargon": [
-      {
-        "term": "temporal convolutional network (TCN)",
-        "def": "Neural net that slides a fixed filter across time series, capturing multi-scale temporal patterns faster than recurrent nets."
-      }
-    ],
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26174"
-    }
-  },
-  {
     "id": "2026-08-29-agi-disease-cure",
     "category": "frontier",
     "jurisdiction": "US",
@@ -9135,40 +9109,6 @@
     }
   },
   {
-    "id": "2026-08-28-japan-fsm-ai-risks",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-28T04:03:34Z",
-    "headline": "Japan's financial services minister warns frontier AI poses risks beyond traditional financial crises",
-    "plain_english": "Financial Services Minister Satsuki Katayama stated that frontier AI systems present novel systemic risks distinct from prior banking, market, and credit crises. Japan is signaling regulatory concern about AI-driven contagion and model failures in financial services.",
-    "why_it_matters": "Japan joining EU and UK in flagging AI-specific financial risk; likely to inform APAC AI governance frameworks. BFSI firms operating in Japan should expect tighter guardrails on model deployment and third-party vendor risk.",
-    "jargon": [
-      {
-        "term": "frontier AI",
-        "def": "Advanced AI systems like GPT-4 or Claude with emergent capabilities beyond supervised learning; less predictable and harder to audit."
-      }
-    ],
-    "source": {
-      "name": "朝日新聞 · 2026-08-28",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE05V1RvVFFJSVR6c2ZmSHJ4VWRMbjQyOXFKLXhVXzY2U3NTamtYT2hXRDd1b3E4V2ZMWkxzQ0h0VzNzZDJxUm5LOExlazZFV2hhY0MwblRGWHJJRm1OUWc"
-    }
-  },
-  {
-    "id": "2026-08-28-arxiv-bess-trading",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Probabilistic electricity-price forecasts optimize battery energy storage trading revenue",
-    "plain_english": "Research compares methods for multidimensional probabilistic forecasting of electricity prices to maximize BESS (battery energy storage system) arbitrage profit. Multiple-split averaging across forecast windows improves performance.",
-    "why_it_matters": "Energy finance desks managing BESS portfolios can improve real-time trading decisions with calibrated price distributions. Relevant for investment banks and utilities entering energy-trading AI.",
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26122"
-    }
-  },
-  {
     "id": "2026-08-29-nvidia-q2-record-revenue",
     "category": "frontier",
     "jurisdiction": "US",
@@ -9195,34 +9135,6 @@
     "source": {
       "name": "TechCrunch · 2026-08-28",
       "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/"
-    }
-  },
-  {
-    "id": "2026-08-28-arxiv-sp500-econophysics",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-28T04:00:00Z",
-    "headline": "Principal-component analysis of S&P 500 correlation matrices reveals market collective dynamics",
-    "plain_english": "Study treats S&P 500 as a complex system, constructing rolling Pearson correlation matrices from 430 stocks' daily returns. Principal component analysis exposes time-varying market structure and sector synchronization.",
-    "why_it_matters": "Econophysics framework may improve portfolio diversification and systemic-risk monitoring. Risk teams can adapt correlation-tracking models for stress testing.",
-    "source": {
-      "name": "arXiv q-fin · 2026-08-28",
-      "url": "https://arxiv.org/abs/2608.26128"
-    }
-  },
-  {
-    "id": "2026-08-28-anthropic-pentagon-ruling",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-08-28T04:25:00Z",
-    "headline": "Judge rules Pentagon's enforcement measures against Anthropic illegal and baseless",
-    "plain_english": "A federal judge invalidated the Pentagon's restrictions on Anthropic, finding the agency lacked legal grounds to restrict the frontier AI lab's operations or contracts. The ruling may limit how government agencies can unilaterally constrain AI vendors.",
-    "why_it_matters": "Sets precedent for AI vendor sovereignty against ad-hoc agency enforcement; signals courts will scrutinize national-security overreach if not grounded in statute. BFSI vendors supplying DoD may face similar challenges.",
-    "source": {
-      "name": "WLRN · 2026-08-28",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY19UUDF1MEowYTVyV0dHQXZ1UzZoX1puLVhpR2pFVmhJMW9ZaEZxMUVQdFBSTnpHMmNheUdPQ0RJWnRNOFNQLXRwTVJtWGJmblB4SE0xYl9xYUdPSEJpbmhGNjRFTFNLd0NrX1BKSlJQYWZmZEhsbllia3RvN1NUN0huNGlLczB0OF9rWjRrc0xFRU1SMnFEU3o0U2VNTGlfeHVtWXFZLTBMQ1JEcjF6REo3RlJiSUJtTVc0UWhrX2c"
     }
   }
 ]
