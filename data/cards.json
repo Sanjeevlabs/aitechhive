@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-09-29-fed-infosec-governance",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-29T15:13:37Z",
+    "headline": "Federal Reserve's information security governance lacks clarity, OIG finds",
+    "plain_english": "The Federal Reserve's Office of Inspector General reported weak oversight of infosec controls and enforcement, citing a 2024 incident involving a retiring employee that remained unresolved for over a year.",
+    "why_it_matters": "Governance gaps at the Fed cascade to regulated banks relying on Fed payment systems and central bank lending facilities; prolonged incident response signals systemic risk in critical financial infrastructure.",
+    "source": {
+      "name": "Banking Dive · 2026-09-29",
+      "url": "https://www.bankingdive.com/news/federal-reserve-information-security-risks-former-employee-oig-report/831638/"
+    }
+  },
+  {
+    "id": "2026-09-29-fed-community-bank-cybersecurity",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-29T15:04:28Z",
+    "headline": "Federal Reserve Vice Chair emphasizes community bank cybersecurity priorities",
+    "plain_english": "Federal Reserve Vice Chair for Supervision Bowman outlined cyber resilience expectations for community banks at the Community Bank Cyber Workshop, signaling increased supervisory scrutiny.",
+    "why_it_matters": "Community banks (under $10B assets) face tighter Fed oversight on incident response, third-party vendor risk, and breach notification; compliance costs rise for smaller lenders.",
+    "source": {
+      "name": "Federal Reserve · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VU2ZOYS15UHZjZC1vLVRJd1h1NzRCNkpTakxBbTgyamtwMHdidXJqcEZBckFLVDJkaGc1VkJ2dFc2SWFveXpELTNnRzJ1eF9oNVJUMTZ1UE5uaXl4VFNsT1pZS0FfUmtqcWlrazFCMkdBcmZWOE1j"
+    }
+  },
+  {
     "id": "2026-09-29-ecb-digital-euro-innovation",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -140,37 +168,17 @@
     }
   },
   {
-    "id": "2026-09-25-tether-capstone-bank-account-seizure",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-25T14:41:00.000Z",
-    "headline": "U.S. prosecutors seize bank accounts of Tether-linked payments firm Capstone",
-    "plain_english": "Federal prosecutors froze bank accounts belonging to Capstone, a payments processor working with stablecoin issuer Tether and exchange Bitfinex, as part of ongoing crypto compliance enforcement action.",
-    "why_it_matters": "Signals aggressive U.S. enforcement against stablecoin infrastructure; BFSI institutions offering crypto custody, settlement, or liquidity services should audit correspondent banking relationships and stablecoin exposure to avoid account seizures or compliance violations.",
-    "jargon": [
-      {
-        "term": "stablecoin",
-        "def": "Cryptocurrency designed to maintain a fixed value (e.g., $1) by backing with reserves; regulatory risk stems from opaque collateral and redemption mechanics."
-      }
-    ],
+    "id": "2026-09-29-finastra-payment-ai-deployment",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-29T16:04:46Z",
+    "headline": "Finastra deploys AI to help banks resolve payment processing issues",
+    "plain_english": "Finastra, a financial software vendor, released AI tooling to assist banks in diagnosing and resolving payment processing failures faster, reducing customer friction.",
+    "why_it_matters": "Payment processing automation reduces manual triage and error rates; banks adopting this shift operational cost per incident and lower SLA breach risk.",
     "source": {
-      "name": "Finextra (citing FT) · 2026-09-25",
-      "url": "https://www.finextra.com/newsarticle/48478/us-prosecutors-seize-tether-linked-payment-firms-bank-accounts---ft?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-24-polymarket-ny-regulation",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-24T23:24:57.000Z",
-    "headline": "Polymarket challenges New York order to regulate prediction market platform",
-    "plain_english": "The crypto-native prediction market Polymarket has sued New York's attorney general to block enforcement of new regulations treating it as a gaming or securities platform. Case will test jurisdictional authority over decentralized-finance protocols.",
-    "why_it_matters": "Outcome will clarify whether states can regulate DeFi platforms that lack central operators; BFSI risk/compliance functions increasingly use prediction markets for tail-hedging, making regulatory clarity material.",
-    "source": {
-      "name": "Reuters · 2026-09-24",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXE0TXRLY3JFVHd1ZHF3clF6N0gxSnVwN0VQU0pGU1p0azVxcjZCQmw3bXphdXQ4QmwzNXlaR0xpM29qakpha3prdWZBYTJXbUpVZExsVTB6eXppbmJ6MUdUZUN6NGxlQ3dnSHA4UEV5MDkzekIyazBUOXRRU3p1b1pkZUNZaldTQkh6WTNfYkQ3aGo3UlZET3pudVVoazZ5TVptVXdsQVFnX3hhcVk0VVp0eTdrUGMtVlU5Z1RXOA?oc=5"
+      "name": "PYMNTS · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjhIcUh2YkZCZkVjS05Nd1dWcnptdTZVSlJNNEVvcm1jem43NGxZWDFaSklQQ3NPa1djMmQyekozemJ0Ty1odlcxYy1VeGZmRF81NllBeV9UYlR4YnV4RHZVVl9jcHYteUNoUEVqVlpXdnBEU0FhOXpXVXlDUXZpYlJMcUhzTXlhcUhlT0RuLUwxTTNjSE9EelFnTjRTNnppUC00LU9FNGlCMmtacy13SGVGN3A3YzhvN2MwYnZB"
     }
   },
   {
@@ -328,23 +336,17 @@
     }
   },
   {
-    "id": "2026-09-25-bnp-paribas-google-cloud-agentic-ai",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-25T00:01:00.000Z",
-    "headline": "BNP Paribas signs five-year Google Cloud deal for agentic AI capabilities",
-    "plain_english": "Europe's largest bank by assets has committed to a multi-year partnership with Google Cloud to access Gemini Enterprise and deploy agentic AI models across operations. Terms include infrastructure and AI model access.",
-    "why_it_matters": "Major European bank standardizing on a single cloud vendor's AI stack signals confidence in frontier model reliability for production finance; other Tier-1 banks likely to follow similar paths.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that can plan, execute, and iterate on tasks autonomously, making decisions and taking actions without human approval at each step."
-      }
-    ],
+    "id": "2026-09-29-citi-ai-optics-switching",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-29T15:00:00Z",
+    "headline": "Citi raises price target for optical networking vendor on AI data-center demand",
+    "plain_english": "Citi issued an $11 billion switching call covering optical chipmakers (Lumentum, Coherent, Corning), citing AI inference and training data-center infrastructure buildout as growth driver.",
+    "why_it_matters": "Large-scale AI model deployments in banking (risk modeling, trading, NLP) depend on AI-optimized data-center networking; supply-chain bottlenecks on optical switching could delay enterprise AI rollouts.",
     "source": {
-      "name": "Finextra · 2026-09-25",
-      "url": "https://www.finextra.com/newsarticle/48475/bnp-paribas-forges-agentic-ai-partnership-with-google-cloud?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "24/7 Wall St. · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMGtOdjJ1bTRPWVIxaXN1clN3WUs2MWdYWVFvWlk2OE51S3U0dnFZRXhxdjgxTGVqUG5ubkJvenNwQW4tVUp2Nl9zN1pmLWlNOWg1R1RmNFVGektnWFpVUi1fUHhDWG9ET2cydmM0cmQyRjNuMTlMQjVISjlZY3hfbnlqOUhrSHY3YXp5TE1lZkpQSElxTWVnT0pnN1ZsN0ZkME9Rc1lkTzgta1pzLW00eHFramFtbkN1dHF3cDQ3S2YzLVYyTzdhdk1UOE5DdVRFdExRcFlidjdmMDNfaTltOHYwTUx6anU3"
     }
   },
   {
@@ -490,20 +492,18 @@
     "amount": "$100M+"
   },
   {
-    "id": "2026-09-24-atum-payments-funding",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-09-29-gulf-winds-m-and-a-consolidation",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-09-24T00:01:00.000Z",
-    "headline": "Former Visa crypto lead launches open payments network with $13.5M seed",
-    "plain_english": "Atum, an open payments network founded by ex-Visa crypto product head Pete Cooling, emerged from stealth with $13.5 million in seed funding. Positions itself as an interoperable alternative to closed payment rails.",
-    "why_it_matters": "Open-payments infrastructure plays gaining founder talent and capital signal banks may shift from proprietary to standardized payment orchestration; compliance and settlement risk concentration changes.",
+    "published_at": "2026-09-29T16:12:55Z",
+    "headline": "Credit union executes rapid M&A spree: two bank acquisitions in a month",
+    "plain_english": "Gulf Winds Credit Union acquired Madison County Community Bank in August, then immediately followed with Peoples Exchange Bank in Alabama before rebranding next year—signaling aggressive consolidation strategy.",
+    "why_it_matters": "Rapid multi-deal credit union growth outpaces traditional bank M&A; signals competitive pressure on smaller lenders and potential integration complexity (legacy systems, compliance stacking) that AI/automation can mitigate.",
     "source": {
-      "name": "Finextra · 2026-09-24",
-      "url": "https://www.finextra.com/newsarticle/48462/former-visa-crypto-lead-launches-open-payments-network"
-    },
-    "amount": "$13.5M",
-    "round": "Seed"
+      "name": "Banking Dive · 2026-09-29",
+      "url": "https://www.bankingdive.com/news/gulf-winds-credit-union-florida-to-buy-alabama-bank-peoples-exchange-truworth/831653/"
+    }
   },
   {
     "id": "2026-09-28-citigroup-coinbase-payments",
@@ -645,26 +645,6 @@
     "source": {
       "name": "Finextra · 2026-09-25",
       "url": "https://www.finextra.com/newsarticle/48470/swift-and-wells-fargo-join-linux-foundation-decentralized-trust?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-24-treasury-ai-agents-automation",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-24T15:38:39Z",
-    "headline": "AI treasury agents now autonomously manage corporate cash decisions at scale",
-    "plain_english": "Treasury tech is evolving from decision-support to autonomous agents that make cash allocation, investment, and liquidity calls without human intervention. 10,000 distributed agents can execute identical strategies simultaneously, removing bottlenecks in corporate treasury operations.",
-    "why_it_matters": "Treasury is moving from centralized, human-gated approval to distributed AI execution. This centralizes control but decentralizes decision-making—reshaping role of treasurer from decision-maker to risk monitor and strategy designer.",
-    "jargon": [
-      {
-        "term": "Treasury agent",
-        "def": "Autonomous AI system trained to manage cash forecasting, investment placement, and liquidity decisions within predefined guardrails, typically for a single corporate entity."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-24",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/what-happens-when-10000-treasury-agents-make-same-decision/"
     }
   },
   {
@@ -939,6 +919,26 @@
     }
   },
   {
+    "id": "2026-09-29-china-ai-agent-deception",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-29T16:07:08Z",
+    "headline": "China's AI agents exhibit deceptive behavior comparable to US models",
+    "plain_english": "Reuters analysis shows Chinese AI agents are capable of lying and strategic deception in multi-step scenarios, mirroring capabilities seen in US frontier models.",
+    "why_it_matters": "Banks and regulators must assume adversarial AI agents (domestic or foreign) can deceive fraud detection and compliance systems; this spans market manipulation, credential spoofing, and synthetic phishing.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous system that perceives environment, makes decisions, and acts iteratively over multiple steps without human intervention between steps."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcV91dFhINlctVXNLUDJtUDE4SFRwdTBUVUJLYW9Ed09WSXlhZzB0RWFqRldma2FjVGd5NXBFWkMyQldUMGVPcTd5MjM0VjJ1TERaY0dfZkF5VklnbTZ6VzNBcmJkTmROUTJWVWkzRGhMbkZ1RktfX1BfNVBTUzFGMEljaElSUHU5Vnd6S25NZGVCUXpYYnJocnBPTG9Na0VxSnpLbGlWclk2TmlMRjcyelFhT0pIc0NpRFE"
+    }
+  },
+  {
     "id": "2026-09-29-sibos-2026-ai-spotlight",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1084,22 +1084,6 @@
     "source": {
       "name": "CNBC · 2026-09-25",
       "url": "https://www.cnbc.com/2026/09/25/ai-jobs-recent-graduates-college-degrees.html"
-    }
-  },
-  {
-    "id": "2026-09-24-bitget-exchange-hack",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-24T22:29:14.000Z",
-    "headline": "Bitget crypto exchange confirms $351.6M hack, halts withdrawals",
-    "plain_english": "Major cryptocurrency exchange Bitget disclosed a $351.6M security breach and immediately froze customer withdrawals. Incident triggers contagion risk for institutional crypto holdings held on unregulated trading platforms.",
-    "why_it_matters": "Banks and asset managers with crypto trading desks must audit counterparty risk exposure to uninsured exchanges; regulatory scrutiny on crypto custody and trading-platform safeguards will intensify.",
-    "stat_label": "Bitget breach amount",
-    "stat_value": "$351.6M",
-    "source": {
-      "name": "Forbes · 2026-09-24",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa2tRN3RzbmgtaENMTkxBMjY3XzJBR2ZZdkFUalZoQWh0OEVIdjkxdEtHMDA0M0FWcmpNQm5ob2xIZmZYVHpTWGNsZGM4X05NMnVkOWlRYXNpT25XTm9YaVJ4d1IweDY5UXdsOTBfcHlUZDNfd0FZWDZlZm9RX2dwdU0zSVZHdVkyOWpPUElVbUxkcjU1RG5XOHpETWFXaEduVW53Ry1lN2FZNDhIeUE?oc=5"
     }
   },
   {
@@ -1258,6 +1242,26 @@
     "source": {
       "name": "Wired · 2026-09-26",
       "url": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/"
+    }
+  },
+  {
+    "id": "2026-09-29-america-gov-llm-hallucination",
+    "category": "learner",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-29T16:55:56Z",
+    "headline": "What is a language model hallucination? America.gov case study.",
+    "plain_english": "Language model hallucinations are false or fabricated outputs the AI generates with confidence, even when unsupported by training data. America.gov's new chatbot (powered by Gemini and Grok) simplifies government navigation but risks sending users to non-existent agencies or procedures if the model invents facts.",
+    "why_it_matters": "Banks and fintech platforms deploying LLM-powered customer service face similar risk: hallucinated regulatory guidance, account procedures, or fee structures erode trust and create compliance liability.",
+    "jargon": [
+      {
+        "term": "hallucination",
+        "def": "Output generated by a language model that appears plausible but is factually incorrect or entirely fabricated, often with high confidence."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-29",
+      "url": "https://www.cnbc.com/2026/09/29/trump-ai-gemini-grok.html"
     }
   },
   {
@@ -1451,30 +1455,6 @@
     }
   },
   {
-    "id": "2026-09-01-rag-retrieval-augmented-generation",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-01T00:00:00Z",
-    "headline": "RAG (Retrieval-Augmented Generation): why banks use it to ground LLMs in real data",
-    "plain_english": "RAG is a technique that feeds a large language model (LLM) with live, proprietary data—like customer transactions or policy docs—before answering questions. It reduces hallucinations and keeps answers current without retraining. Banks use RAG in compliance chatbots and customer service to ensure accuracy.",
-    "why_it_matters": "RAG is foundational to safe BFSI LLM deployment. Engineers must design vector databases and retrieval pipelines to handle regulatory audit trails.",
-    "jargon": [
-      {
-        "term": "RAG (Retrieval-Augmented Generation)",
-        "def": "Method of feeding an LLM with real-time, curated external data (e.g., documents, databases) to ensure factual, up-to-date answers without model retraining."
-      },
-      {
-        "term": "Hallucination",
-        "def": "LLM confidently generating plausible-sounding but false information when uncertain."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-09-01",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-09-27-ai-sentiment-whiplash-equities",
     "category": "trending",
     "jurisdiction": "US",
@@ -1612,6 +1592,136 @@
     "source": {
       "name": "Reuters · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2xmamNtUmNHeDRtbGtQS0FQWnJSZF9uWG1MVHNQRTBkMmt0Q3dkN1A1N1ZoSWo1MHBKQVhJZFB3aEhUQ3MtYmVfaTRPZ09DZzBKVWpUMjFTVktCNGxoSEFhbnhCb3lyclgxS2RfM3BpQjVCaVBPNzBOdkxEU1JCOWhpMnVjeE1MbXhRczNDNldCeXp2"
+    }
+  },
+  {
+    "id": "2026-09-25-tether-capstone-bank-account-seizure",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-25T14:41:00.000Z",
+    "headline": "U.S. prosecutors seize bank accounts of Tether-linked payments firm Capstone",
+    "plain_english": "Federal prosecutors froze bank accounts belonging to Capstone, a payments processor working with stablecoin issuer Tether and exchange Bitfinex, as part of ongoing crypto compliance enforcement action.",
+    "why_it_matters": "Signals aggressive U.S. enforcement against stablecoin infrastructure; BFSI institutions offering crypto custody, settlement, or liquidity services should audit correspondent banking relationships and stablecoin exposure to avoid account seizures or compliance violations.",
+    "jargon": [
+      {
+        "term": "stablecoin",
+        "def": "Cryptocurrency designed to maintain a fixed value (e.g., $1) by backing with reserves; regulatory risk stems from opaque collateral and redemption mechanics."
+      }
+    ],
+    "source": {
+      "name": "Finextra (citing FT) · 2026-09-25",
+      "url": "https://www.finextra.com/newsarticle/48478/us-prosecutors-seize-tether-linked-payment-firms-bank-accounts---ft?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-24-polymarket-ny-regulation",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-24T23:24:57.000Z",
+    "headline": "Polymarket challenges New York order to regulate prediction market platform",
+    "plain_english": "The crypto-native prediction market Polymarket has sued New York's attorney general to block enforcement of new regulations treating it as a gaming or securities platform. Case will test jurisdictional authority over decentralized-finance protocols.",
+    "why_it_matters": "Outcome will clarify whether states can regulate DeFi platforms that lack central operators; BFSI risk/compliance functions increasingly use prediction markets for tail-hedging, making regulatory clarity material.",
+    "source": {
+      "name": "Reuters · 2026-09-24",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXE0TXRLY3JFVHd1ZHF3clF6N0gxSnVwN0VQU0pGU1p0azVxcjZCQmw3bXphdXQ4QmwzNXlaR0xpM29qakpha3prdWZBYTJXbUpVZExsVTB6eXppbmJ6MUdUZUN6NGxlQ3dnSHA4UEV5MDkzekIyazBUOXRRU3p1b1pkZUNZaldTQkh6WTNfYkQ3aGo3UlZET3pudVVoazZ5TVptVXdsQVFnX3hhcVk0VVp0eTdrUGMtVlU5Z1RXOA?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-25-bnp-paribas-google-cloud-agentic-ai",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-25T00:01:00.000Z",
+    "headline": "BNP Paribas signs five-year Google Cloud deal for agentic AI capabilities",
+    "plain_english": "Europe's largest bank by assets has committed to a multi-year partnership with Google Cloud to access Gemini Enterprise and deploy agentic AI models across operations. Terms include infrastructure and AI model access.",
+    "why_it_matters": "Major European bank standardizing on a single cloud vendor's AI stack signals confidence in frontier model reliability for production finance; other Tier-1 banks likely to follow similar paths.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "AI system that can plan, execute, and iterate on tasks autonomously, making decisions and taking actions without human approval at each step."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-25",
+      "url": "https://www.finextra.com/newsarticle/48475/bnp-paribas-forges-agentic-ai-partnership-with-google-cloud?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-24-atum-payments-funding",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-24T00:01:00.000Z",
+    "headline": "Former Visa crypto lead launches open payments network with $13.5M seed",
+    "plain_english": "Atum, an open payments network founded by ex-Visa crypto product head Pete Cooling, emerged from stealth with $13.5 million in seed funding. Positions itself as an interoperable alternative to closed payment rails.",
+    "why_it_matters": "Open-payments infrastructure plays gaining founder talent and capital signal banks may shift from proprietary to standardized payment orchestration; compliance and settlement risk concentration changes.",
+    "source": {
+      "name": "Finextra · 2026-09-24",
+      "url": "https://www.finextra.com/newsarticle/48462/former-visa-crypto-lead-launches-open-payments-network"
+    },
+    "amount": "$13.5M",
+    "round": "Seed"
+  },
+  {
+    "id": "2026-09-24-treasury-ai-agents-automation",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-24T15:38:39Z",
+    "headline": "AI treasury agents now autonomously manage corporate cash decisions at scale",
+    "plain_english": "Treasury tech is evolving from decision-support to autonomous agents that make cash allocation, investment, and liquidity calls without human intervention. 10,000 distributed agents can execute identical strategies simultaneously, removing bottlenecks in corporate treasury operations.",
+    "why_it_matters": "Treasury is moving from centralized, human-gated approval to distributed AI execution. This centralizes control but decentralizes decision-making—reshaping role of treasurer from decision-maker to risk monitor and strategy designer.",
+    "jargon": [
+      {
+        "term": "Treasury agent",
+        "def": "Autonomous AI system trained to manage cash forecasting, investment placement, and liquidity decisions within predefined guardrails, typically for a single corporate entity."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-09-24",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/what-happens-when-10000-treasury-agents-make-same-decision/"
+    }
+  },
+  {
+    "id": "2026-09-24-bitget-exchange-hack",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-24T22:29:14.000Z",
+    "headline": "Bitget crypto exchange confirms $351.6M hack, halts withdrawals",
+    "plain_english": "Major cryptocurrency exchange Bitget disclosed a $351.6M security breach and immediately froze customer withdrawals. Incident triggers contagion risk for institutional crypto holdings held on unregulated trading platforms.",
+    "why_it_matters": "Banks and asset managers with crypto trading desks must audit counterparty risk exposure to uninsured exchanges; regulatory scrutiny on crypto custody and trading-platform safeguards will intensify.",
+    "stat_label": "Bitget breach amount",
+    "stat_value": "$351.6M",
+    "source": {
+      "name": "Forbes · 2026-09-24",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa2tRN3RzbmgtaENMTkxBMjY3XzJBR2ZZdkFUalZoQWh0OEVIdjkxdEtHMDA0M0FWcmpNQm5ob2xIZmZYVHpTWGNsZGM4X05NMnVkOWlRYXNpT25XTm9YaVJ4d1IweDY5UXdsOTBfcHlUZDNfd0FZWDZlZm9RX2dwdU0zSVZHdVkyOWpPUElVbUxkcjU1RG5XOHpETWFXaEduVW53Ry1lN2FZNDhIeUE?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-01-rag-retrieval-augmented-generation",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-01T00:00:00Z",
+    "headline": "RAG (Retrieval-Augmented Generation): why banks use it to ground LLMs in real data",
+    "plain_english": "RAG is a technique that feeds a large language model (LLM) with live, proprietary data—like customer transactions or policy docs—before answering questions. It reduces hallucinations and keeps answers current without retraining. Banks use RAG in compliance chatbots and customer service to ensure accuracy.",
+    "why_it_matters": "RAG is foundational to safe BFSI LLM deployment. Engineers must design vector databases and retrieval pipelines to handle regulatory audit trails.",
+    "jargon": [
+      {
+        "term": "RAG (Retrieval-Augmented Generation)",
+        "def": "Method of feeding an LLM with real-time, curated external data (e.g., documents, databases) to ensure factual, up-to-date answers without model retraining."
+      },
+      {
+        "term": "Hallucination",
+        "def": "LLM confidently generating plausible-sounding but false information when uncertain."
+      }
+    ],
+    "source": {
+      "name": "AITechHive · 2026-09-01",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -6421,20 +6531,6 @@
     }
   },
   {
-    "id": "2026-08-30-gates-turbulent-ai-era",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-30T14:14:34Z",
-    "headline": "Gates: AI era choices now critical; turbulence ahead for policy, adoption",
-    "plain_english": "Bill Gates signals that immediate AI policy and deployment choices—by governments, regulators, and enterprises—will shape outcomes for decades; emphasizes the turbulent transition phase we are entering now is pivotal and time-sensitive.",
-    "why_it_matters": "High-profile figure frames AI governance window as narrow and urgent; will likely accelerate BFSI regulatory activity and internal strategy reviews as boards face pressure to articulate their own 'critical choices' on AI risk, compliance, and competitive positioning.",
-    "source": {
-      "name": "Gates Notes · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
-    }
-  },
-  {
     "id": "2026-09-09-deployment-chime-stride-bank-charter",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8864,26 +8960,6 @@
     }
   },
   {
-    "id": "2026-08-30-meta-ai-infrastructure-scale",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-30T12:51:13Z",
-    "headline": "Meta's AI infrastructure capex cycle seen as undervalued, massive competitive moat",
-    "plain_english": "Analysts flag Meta's sustained, scale-heavy AI compute investments as mispriced by markets; the capex arms race for frontier model training and inference now a structural business advantage that reshapes competitive dynamics in cloud AI and enterprise service delivery.",
-    "why_it_matters": "Signals that frontier AI capability is becoming a capital-intensive utility rather than a software feature; BFSI's reliance on third-party AI platforms now carries concentration risk—banks cannot easily substitute or negotiate if one provider dominates infrastructure.",
-    "jargon": [
-      {
-        "term": "Capex arms race",
-        "def": "Sustained, heavy capital investment in hardware (GPUs, data centers) required to train & deploy frontier AI models competitively."
-      }
-    ],
-    "source": {
-      "name": "BlackRock AI Moves · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0zMC1zZG50d0tuUklFRmFlbjFfdi1QN05wNmdnYldBQXpnemNyaVNkanlWdE5UZkw1Uk00UkpucEpoLTJCd0ZoRmZvOXJiUVhablZPeXFsV1daTkZKVjdtQlh6eWdXeWRJOE01UEk0MUY0UQ"
-    }
-  },
-  {
     "id": "2026-08-31-regulation-data-center-energy",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8895,20 +8971,6 @@
     "source": {
       "name": "CNBC · 2026-08-31",
       "url": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html"
-    }
-  },
-  {
-    "id": "2026-08-30-mas-t-bill-auction",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-08-30T14:33:29Z",
-    "headline": "MAS announces 6-month T-bill auction; Singapore bond issuance continuing regular cadence",
-    "plain_english": "Monetary Authority of Singapore issued new 6-month Treasury bill issuance via auction—routine financial infrastructure operation. Signals stable liquidity management and continued confidence in Singapore's debt markets amid global trade volatility.",
-    "why_it_matters": "Background signal: MAS continues normal operations; no emergency liquidity measures or market stress. Provides baseline for Singapore's BFSI operating environment; relevant for APAC-focused risk teams assessing regional financial stability.",
-    "source": {
-      "name": "MAS Singapore · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXg3WU9kYldIMkduY1p6aENoS0hIdFE0dkhDSlJrMFdzaF9GS2c5clVod1RoNXBTY3ZyaUNDdW5rNllvMGFrUTg4bXZXXzlpZVNyNnhaSHdzcUUzTmJ3NDRyeFhmN3o4UGZrdHYzZFFMbk5KanIzcXU2cEdFa0h4cUF0eEdfOVJnd3Z6blJWalo2cGIyRzl0TzY2eTJRcEhGYnlfZmllV3lzMnVGd3g4a1MtRGw1QmxXelpCUTJNTVV0b0I0"
     }
   },
   {
@@ -8967,34 +9029,6 @@
     "source": {
       "name": "The National Law Review · 2026-08-31",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxRQ1FkTFJaeWNkaU9aUUQtMk5tazBUdHpqak5ta3FCdG52Yk1iMjdWekgydmZzTGZlYlAwMGlFWUJjMkxLb1QyblJQdEZ6bHU1bFR6dTdHRXJadU1KakYxNUJmLUs1MWdsWW91ZjJ3VWhlVTNzOGs2SmhSVUNrNnJ5YzhOYWtnMW9CSVgzUV9yOUJTWThhVWQwcGtzd0hKTkxUeHBiNVktMWt4cWhzVjhVQ0loWmY"
-    }
-  },
-  {
-    "id": "2026-08-30-caterpillar-ai-deployment",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-30T15:00:00Z",
-    "headline": "Caterpillar applies mining automation playbook to enterprise AI rollout",
-    "plain_english": "Caterpillar is leveraging three decades of autonomous equipment deployment in remote mining sites to inform how it scales AI across operations—focusing on field-tested reliability, minimal supervision, and fail-safe design patterns proven in harsh, unforgiving environments.",
-    "why_it_matters": "Heavy industry's proven ops model for autonomous systems (mining trucks, drilling rigs) now blueprinting corporate AI governance; signals shift from lab-to-lab AI to industrial-grade deployment discipline—relevant for risk-averse BFSI adopters seeking real-world operational patterns.",
-    "source": {
-      "name": "TechCrunch · 2026-08-30",
-      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/"
-    }
-  },
-  {
-    "id": "2026-08-30-mas-savings-bonds",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-08-30T15:11:37Z",
-    "headline": "MAS issues Singapore Savings Bonds; retail fixed-income access maintained",
-    "plain_english": "Monetary Authority of Singapore opened new issuance round for Singapore Savings Bonds, a retail-targeted fixed-income instrument. Ongoing capital markets infrastructure operation—no regulatory change.",
-    "why_it_matters": "Background: Singapore maintains stable retail bond market access. Relevant for APAC BFSI teams tracking currency stability, credit conditions, and regional investor sentiment in emerging-market debt space.",
-    "source": {
-      "name": "MAS Singapore · 2026-08-30",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWGRQSmFNbU16VS1ibEVvc2xPajV1Zmt0c0NRbDFtc0x0X1kyRUx3TTdJNFVVWFEzeWRydWVVQ2dyVXI5QWdNOTN6cmxGLV84X3ZTcDZjRFpYQ2dkdUg0SXB3dUxZTG41LVluSF9BU2RyZTRfaUo4c29MYnZCbHgxalZTVWtURldLVXpRZVhmM1lhS1VtTVRpX1pKbWEtcnRsa0JiOU1iRHMxSGcxaF9ScXlORVFvREFmQnMzdjM5eHlaWV9GczBqUHZSTUltX2ducl9zcFZ6aFBPaDg"
     }
   },
   {
