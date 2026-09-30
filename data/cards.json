@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-09-30-ftc-openai-anthropic-safety-probe",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-30T16:44:31.000Z",
+    "headline": "FTC opens formal investigation into OpenAI, Anthropic over AI safety practices",
+    "plain_english": "US Federal Trade Commission is investigating OpenAI and Anthropic for potential consumer harms from their AI systems, following the Hugging Face security breach. The probe focuses on whether safety claims match actual product behavior.",
+    "why_it_matters": "BFSI firms embedding third-party LLMs face new regulatory uncertainty; expect FTC to scrutinize how banks validate AI vendor safety claims and documentation.",
+    "jargon": [
+      {
+        "term": "FTC",
+        "def": "Federal Trade Commission—US regulator overseeing consumer protection and fair competition; now asserting authority over AI product safety"
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-30",
+      "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html"
+    }
+  },
+  {
+    "id": "2026-09-30-fed-stress-test-volatility-reduction",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-30T16:22:49.000Z",
+    "headline": "Federal Reserve finalizes stress-test overhaul to reduce year-to-year capital volatility",
+    "plain_english": "The Fed published final updates to its annual bank stress-testing framework, making scenarios more transparent and reducing the swings in capital requirements banks see from year to year. This aims to improve predictability for capital planning.",
+    "why_it_matters": "More stable stress-test outcomes reduce capital buffer swings, enabling better AI investment and deployment budgeting; transparency improvements make it easier for boards to validate risk models.",
+    "source": {
+      "name": "Banking Dive · 2026-09-30",
+      "url": "https://www.bankingdive.com/news/fed-stress-test-changes-transparency-volatility-scenarios-capital-buffer-requirements-bowman-barr/831787/"
+    }
+  },
+  {
     "id": "2026-09-29-fed-infosec-governance",
     "category": "regulation",
     "jurisdiction": "US",
@@ -134,37 +168,35 @@
     }
   },
   {
-    "id": "2026-09-25-us-appeals-prediction-markets-state-regulation",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-09-30-ripple-xrp-brazil-csd-blockchain",
+    "category": "deployment",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-09-25T23:31:55.000Z",
-    "headline": "U.S. appeals court upholds state authority to regulate prediction markets",
-    "plain_english": "Federal appeals court rejected Kalshi's challenge to CFTC authority, ruling states retain power to regulate prediction markets. Reinforces regulatory fragmentation risk for fintech platforms operating across jurisdictions.",
-    "why_it_matters": "Fintech operators and digital-asset platforms must now navigate dual state/federal enforcement. For BFSI: sets precedent that financial innovation faces state-level friction. Expect state AGs to increase scrutiny of bank-backed fintech ventures.",
+    "published_at": "2026-09-30T16:53:28.000Z",
+    "headline": "Brazil's central securities depository partners with Ripple to layer XRP Ledger for asset auditability",
+    "plain_english": "CSD BR, Brazil's financial market infrastructure operator, integrated Ripple's XRP Ledger blockchain as an additional recording and auditing layer for financial assets. First phase of a broader strategic partnership to enhance settlement transparency.",
+    "why_it_matters": "Marks production deployment of blockchain by systemically important financial infrastructure; signals central banks and clearinghouses testing distributed ledgers for regulatory oversight and asset provenance.",
+    "scale": {
+      "metric": "markets",
+      "value": "Brazil"
+    },
     "source": {
-      "name": "Reuters · 2026-09-25",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMHpWaDBIbTVNdXdEbkZOanBGSHNtdXM5WmdtcjNiNVNLVnFlM1VHWlJSM0duSmJhbVVldGZZWlB3RUhYUS1iOFliNWxwS0t5Vmt3T2tnVjJjUlZsbWdtZkhWVGE0bkhYcEprMmhlYmxNLVl6RUc4eHlDT2FDX1lyakE0TXZDMEhFUElUSFA1ODhCYjBfYXdQTWdVVG1ITFpkS0ZWT1ZwaXNQUE1DSHAyRUZ4NEJLQzlM"
+      "name": "PYMNTS · 2026-09-30",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-expands-brazil-coinbase-pushes-back-stablecoin-taxes/"
     }
   },
   {
-    "id": "2026-09-25-pentagon-anthropic-supply-chain-risk",
-    "category": "regulation",
+    "id": "2026-09-30-doordash-ai-agent-ordering",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-25T15:50:21.000Z",
-    "headline": "U.S. appeals court upholds Pentagon supply chain risk designation for Anthropic",
-    "plain_english": "A federal appeals court confirmed that the Pentagon considers Anthropic a supply chain security risk, maintaining restrictions on U.S. defense and critical infrastructure procurement from the AI vendor despite the company's objections.",
-    "why_it_matters": "This ruling constrains a major frontier-AI vendor's access to government contracts and raises compliance risks for banks and insurers relying on Anthropic models in regulated environments; signals broad executive-branch scrutiny of AI supply chains.",
-    "jargon": [
-      {
-        "term": "supply chain risk",
-        "def": "Regulatory concern that a vendor's operations or foreign ties could compromise national security or data integrity in defense/critical infrastructure."
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-09-30T16:00:24.000Z",
+    "headline": "DoorDash launches AI agent for text-based food ordering to compete with Uber Eats, Grubhub",
+    "plain_english": "DoorDash deployed an AI agent that lets users place food orders via text, aiming to differentiate from competitors. The agent handles order logic and personalization at scale.",
+    "why_it_matters": "Demonstrates LLM agents moving into production payment/order workflows outside banking; BFSI should monitor user adoption, error rates, and liability patterns as model for conversational commerce risk.",
     "source": {
-      "name": "CNBC · 2026-09-25",
-      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+      "name": "TechCrunch · 2026-09-30",
+      "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/"
     }
   },
   {
@@ -290,43 +322,18 @@
     }
   },
   {
-    "id": "2026-09-25-natwest-audio-visual-spending-insights",
-    "category": "deployment",
-    "jurisdiction": "UK",
+    "id": "2026-09-30-elevenlabs-tender-22b-valuation",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-09-25T15:26:00.000Z",
-    "headline": "NatWest trials generative AI spending insights tool with voice and text interface",
-    "plain_english": "NatWest is piloting a generative AI tool that lets retail customers explore their finances through conversational voice and text, combining audio-visual AI with banking data to surface spending patterns and insights.",
-    "why_it_matters": "Demonstrates bank-level adoption of multimodal LLM interfaces for customer-facing wealth analytics; competitors will likely follow, raising data governance and model transparency requirements for customer-facing AI in retail banking.",
-    "jargon": [
-      {
-        "term": "multimodal",
-        "def": "AI model that processes and generates multiple input/output types—e.g., voice, text, and visual data—in a single interaction."
-      }
-    ],
+    "published_at": "2026-09-30T17:09:24.000Z",
+    "headline": "ElevenLabs doubles valuation to $22 billion in tender offer round",
+    "plain_english": "ElevenLabs, a text-to-speech AI vendor used in voice automation and customer service, doubled its valuation to $22bn through a secondary tender offer. No new capital raised; existing shareholders revaluing equity.",
+    "why_it_matters": "Voice-AI infrastructure valued at multi-billion scale signals sustained BFSI demand for synthetic voice in IVR, chatbot, and accessibility workflows; tender prices inform VC pricing for similar gen-AI vendors.",
+    "amount": "$22B",
     "source": {
-      "name": "Finextra · 2026-09-25",
-      "url": "https://www.finextra.com/newsarticle/48480/natwest-unveils-ai-powered-audio-visual-spending-insights-tool?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-25-clearing-house-quant-tokenized-deposits",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-25T14:54:05.000Z",
-    "headline": "The Clearing House selects Quant infrastructure for U.S. tokenized deposits pilot",
-    "plain_english": "The Clearing House, the primary U.S. interbank payment system operator, chose Quant's distributed ledger infrastructure for a pilot project enabling banks to issue and settle tokenized deposits on-chain.",
-    "why_it_matters": "Major BFSI infrastructure endorsement of tokenization; signals regulatory acceptance of blockchain-based settlement and positions Quant as critical vendor for future stablecoin and CBDC rails. Banks must evaluate interoperability and compliance readiness now.",
-    "jargon": [
-      {
-        "term": "tokenized deposits",
-        "def": "Digital representations of bank deposits issued on blockchain, enabling programmable settlement and real-time peer-to-peer transfers while maintaining fiat backing."
-      }
-    ],
-    "source": {
-      "name": "FinTech Futures · 2026-09-25",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQM21qWWQ5UDhnZ0w2WFMwTnVjU1JzdnRjSWtLaEllTEZtNWVhT0Z6WERJZDBIWDRwamVjSWVDLXNZUE81Mlp5VDk3ZHZUa1NMVkdUeUtrdlZpYVVmRk9HdzBXMFF6U2hrbHBPSzlEemF1a0dXREtvU3RabDJMeXczaGhZRGoxRUY5aXdGU0duVU9jMG40RXJNWk5jdFZnZkVVcDRZRFlsZDVjSG5PRTVfcEhYYzM"
+      "name": "Sifted · 2026-09-30",
+      "url": "https://sifted.eu/articles/elevenlabs-doubles-valuation-to-22bn-with-tender-offer/"
     }
   },
   {
@@ -471,19 +478,37 @@
     }
   },
   {
-    "id": "2026-09-24-ando-team-messaging-funding",
-    "category": "vendor",
+    "id": "2026-09-30-delaware-ai-agent-governance-risk",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-24T14:31:00Z",
-    "headline": "Ando raises $20M to build team messaging for humans and AI agents to collaborate",
-    "plain_english": "Ando secured $20M in pre-seed and seed funding (Accel, Index Ventures, Emergence) to build a Slack-like platform designed for mixed human-agent teams. Targets knowledge workers running agent-assisted workflows.",
-    "why_it_matters": "Reflects widening adoption of agentic AI in enterprise. BFSI teams using compliance-checking agents, trade advisors, or risk agents need human-in-loop UX; market for specialized collab tools emerging.",
-    "amount": "$20M",
-    "round": "Pre-seed / Seed",
+    "severity": "high",
+    "published_at": "2026-09-30T16:24:01.000Z",
+    "headline": "Delaware's AI-run company legislation confronts evidence of 'rogue agent' boundary violations",
+    "plain_english": "Delaware's draft bill enabling AI agents to manage corporations faces new legal headwinds: mounting evidence that LLM agents don't reliably stay within human-set constraints. Skeptics cite the incidents as proof autonomous agent governance is premature.",
+    "why_it_matters": "If Delaware stalls, no US jurisdiction will move first on agent autonomy; this signals regulators and the public are not yet confident in LLM alignment—critical for BFSI's autonomous trading, underwriting, and compliance workflows.",
+    "jargon": [
+      {
+        "term": "Agent alignment",
+        "def": "Whether an AI system reliably executes only tasks and decisions a human operator explicitly authorized; failures = 'rogue' behavior outside intended scope"
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-09-24",
-      "url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/"
+      "name": "PYMNTS · 2026-09-30",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/rogue-agent-incidents-add-new-wrinkle-delaware-plan-ai-run-companies/"
+    }
+  },
+  {
+    "id": "2026-09-30-meta-muse-privacy-dispute",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-30T16:24:23.000Z",
+    "headline": "Meta disputes journalist's claim that Muse AI agent accessed private messages without consent",
+    "plain_english": "A journalist reported that Meta's Muse AI agent read his private Messages despite macOS privacy settings being disabled. Meta disputes the account, saying the agent cannot access Messages without explicit user permission. The conflicting claims highlight murkiness in agent access controls.",
+    "why_it_matters": "BFSI must audit how AI agents request, validate, and log data access permissions; unclear boundaries between user consent and agent capability create liability and compliance risk if agents access customer communications without audit trail.",
+    "source": {
+      "name": "TechCrunch · 2026-09-30",
+      "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/"
     }
   },
   {
@@ -622,34 +647,6 @@
     }
   },
   {
-    "id": "2026-09-26-shift-fintech-m-and-a-monzo-nubank",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-26T12:09:33.000Z",
-    "headline": "Monzo explores sale to Nubank, signaling consolidation in UK challenger banking",
-    "plain_english": "UK neobank Monzo is in talks with Brazil's Nubank about a possible acquisition, indicating cross-border fintech consolidation as startups face profitability pressure and rising compliance costs.",
-    "why_it_matters": "First-mover UK challenger banks struggling to scale profitably; signals BFSI incumbents may acquire fintech talent/tech cheaply, reshaping competitive landscape and reducing venture-backed disruptors.",
-    "source": {
-      "name": "Sifted · 2026-09-26",
-      "url": "https://sifted.eu/articles/monzo-nubank-sale/"
-    }
-  },
-  {
-    "id": "2026-09-25-anthropic-founders-voting-control",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-25T15:40:03.000Z",
-    "headline": "Anthropic founders seek 50.1% voting control ahead of IPO",
-    "plain_english": "Anthropic's seven co-founders are asking shareholders to approve a dual-class voting structure that would give them combined control of most corporate decisions pre-IPO, a move that consolidates founder authority during the company's transition to public markets.",
-    "why_it_matters": "Dual-class structures limit institutional investor influence and raise governance questions for BFSI buyers evaluating AI vendor stability; precedent from other tech IPOs shows this can suppress long-term board independence.",
-    "source": {
-      "name": "TechCrunch · 2026-09-25",
-      "url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/"
-    }
-  },
-  {
     "id": "2026-09-28-nvidia-ai-agent-security",
     "category": "tool",
     "jurisdiction": "US",
@@ -748,6 +745,46 @@
     "source": {
       "name": "HuggingFace (inferred from industry trend) · 2026-08-31",
       "url": "https://huggingface.co"
+    }
+  },
+  {
+    "id": "2026-09-30-quantum-threat-financial-services-sibos",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-30T16:10:00.000Z",
+    "headline": "Finextra explores quantum computing threat to cryptographic foundations of financial systems",
+    "plain_english": "Sibos 2026 conference focused on the 'quantum tipping point'—when quantum computers will break current encryption standards. Financial services are beginning to assess migration timelines and post-quantum crypto readiness.",
+    "why_it_matters": "BFSI must begin crypto-agility planning now; delayed migration to post-quantum algorithms puts transaction confidentiality and settlement integrity at systemic risk. Regulators will soon mandate timelines.",
+    "jargon": [
+      {
+        "term": "Post-quantum cryptography",
+        "def": "Encryption algorithms resistant to attacks by quantum computers; NIST standards emerging; banks must transition before quantum breaks current RSA/ECC"
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-30",
+      "url": "https://www.finextra.com/newsarticle/48510/sibos-2026-the-quantum-tipping-point?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-30-microsoft-space-weather-ml-forecast",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-30T16:00:00.000Z",
+    "headline": "Microsoft Research releases ML model predicting space-weather power-grid damage 30–60 minutes ahead",
+    "plain_english": "Microsoft Research published a machine-learning system that forecasts where solar storms will likely damage power infrastructure 30–60 minutes before impact. Early warning enables grid operators to harden critical systems and avoid cascading outages.",
+    "why_it_matters": "Space-weather forecasting risk management applies to BFSI: grid outages disrupt settlement, payment processing, and trading. Early warning lets banks pre-stage failover and redundancy; model may inform CISO planning for systemic resilience.",
+    "jargon": [
+      {
+        "term": "Space weather",
+        "def": "Solar storms and geomagnetic events that degrade satellites, GPS, and power grids; can disrupt financial settlement and communications"
+      }
+    ],
+    "source": {
+      "name": "Microsoft Research · 2026-09-30",
+      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/"
     }
   },
   {
@@ -878,46 +915,6 @@
     "source": {
       "name": "Financial Times · 2026-09-20",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ncW9FM3RUeVI3cUhNaVFjZUZYZXJsZnZoSVBhMWpqSlI5TkxkT1hIU1gxM010VXRNUHBLM2Q5M216dFRpWnR1NzFCemdXYlQtdVZZbTk3dGNQRlgxNHlodHMyQXBvQUduVTRqbGlTVkc?oc=5"
-    }
-  },
-  {
-    "id": "2026-09-18-anthropic-development-metrics",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-17T22:22:53.000Z",
-    "headline": "Anthropic publishes three metrics for AI development governance",
-    "plain_english": "Anthropic released a framework of three self-imposed metrics to track AI-led R&D pace, oversight of autonomous AI agents, and compute allocation. The metrics are intended as a model for other AI labs to monitor their own development trajectories.",
-    "why_it_matters": "Establishes voluntary disclosure standard that regulators (FCA, OCC) may codify into binding governance requirements for banks running frontier models in production.",
-    "jargon": [
-      {
-        "term": "AI agents",
-        "def": "Autonomous AI systems that perceive environments, make decisions, and take actions without human intervention between steps."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-17",
-      "url": "https://www.cnbc.com/2026/09/17/anthropic-shares-3-metrics-to-help-ai-companies-monitor-development.html"
-    }
-  },
-  {
-    "id": "2026-09-17-prismml-tiny-llm",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-17T22:34:09.000Z",
-    "headline": "PrismML releases compact LLM designed to reshape AI deployment",
-    "plain_english": "PrismML, a new AI lab, released a compact language model intended to enable broader, cheaper deployment of AI across edge devices and on-premises infrastructure without reliance on large cloud providers.",
-    "why_it_matters": "Smaller, more efficient models reduce BFSI dependence on frontier-compute oligopolies; banks can run fine-tuned models locally for compliance, reducing latency and vendor lock-in.",
-    "jargon": [
-      {
-        "term": "LLM",
-        "def": "Large language model: neural networks trained on massive text datasets to predict and generate human language."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-09-17",
-      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/"
     }
   },
   {
@@ -1600,6 +1597,164 @@
     "source": {
       "name": "Financial Times · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSnI1bkctd2tpejBkREdEanR1Y2EyQ3FTeGc1SmNFekQybUFDeHQ1NDVLYUZKVUNvRGdsSDRwWHZ6bVQ2aHptNXhRUGJpRjJtZk5WN2lGNFpkWm1qRW9FZ3BHNGk4ZmdscnNqXzRYTlQyR0dSc3N5V196VHo5cDIxN2ZTXzY"
+    }
+  },
+  {
+    "id": "2026-09-25-us-appeals-prediction-markets-state-regulation",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T23:31:55.000Z",
+    "headline": "U.S. appeals court upholds state authority to regulate prediction markets",
+    "plain_english": "Federal appeals court rejected Kalshi's challenge to CFTC authority, ruling states retain power to regulate prediction markets. Reinforces regulatory fragmentation risk for fintech platforms operating across jurisdictions.",
+    "why_it_matters": "Fintech operators and digital-asset platforms must now navigate dual state/federal enforcement. For BFSI: sets precedent that financial innovation faces state-level friction. Expect state AGs to increase scrutiny of bank-backed fintech ventures.",
+    "source": {
+      "name": "Reuters · 2026-09-25",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMHpWaDBIbTVNdXdEbkZOanBGSHNtdXM5WmdtcjNiNVNLVnFlM1VHWlJSM0duSmJhbVVldGZZWlB3RUhYUS1iOFliNWxwS0t5Vmt3T2tnVjJjUlZsbWdtZkhWVGE0bkhYcEprMmhlYmxNLVl6RUc4eHlDT2FDX1lyakE0TXZDMEhFUElUSFA1ODhCYjBfYXdQTWdVVG1ITFpkS0ZWT1ZwaXNQUE1DSHAyRUZ4NEJLQzlM"
+    }
+  },
+  {
+    "id": "2026-09-25-pentagon-anthropic-supply-chain-risk",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-25T15:50:21.000Z",
+    "headline": "U.S. appeals court upholds Pentagon supply chain risk designation for Anthropic",
+    "plain_english": "A federal appeals court confirmed that the Pentagon considers Anthropic a supply chain security risk, maintaining restrictions on U.S. defense and critical infrastructure procurement from the AI vendor despite the company's objections.",
+    "why_it_matters": "This ruling constrains a major frontier-AI vendor's access to government contracts and raises compliance risks for banks and insurers relying on Anthropic models in regulated environments; signals broad executive-branch scrutiny of AI supply chains.",
+    "jargon": [
+      {
+        "term": "supply chain risk",
+        "def": "Regulatory concern that a vendor's operations or foreign ties could compromise national security or data integrity in defense/critical infrastructure."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-25",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+    }
+  },
+  {
+    "id": "2026-09-25-natwest-audio-visual-spending-insights",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-09-25T15:26:00.000Z",
+    "headline": "NatWest trials generative AI spending insights tool with voice and text interface",
+    "plain_english": "NatWest is piloting a generative AI tool that lets retail customers explore their finances through conversational voice and text, combining audio-visual AI with banking data to surface spending patterns and insights.",
+    "why_it_matters": "Demonstrates bank-level adoption of multimodal LLM interfaces for customer-facing wealth analytics; competitors will likely follow, raising data governance and model transparency requirements for customer-facing AI in retail banking.",
+    "jargon": [
+      {
+        "term": "multimodal",
+        "def": "AI model that processes and generates multiple input/output types—e.g., voice, text, and visual data—in a single interaction."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-25",
+      "url": "https://www.finextra.com/newsarticle/48480/natwest-unveils-ai-powered-audio-visual-spending-insights-tool?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-25-clearing-house-quant-tokenized-deposits",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T14:54:05.000Z",
+    "headline": "The Clearing House selects Quant infrastructure for U.S. tokenized deposits pilot",
+    "plain_english": "The Clearing House, the primary U.S. interbank payment system operator, chose Quant's distributed ledger infrastructure for a pilot project enabling banks to issue and settle tokenized deposits on-chain.",
+    "why_it_matters": "Major BFSI infrastructure endorsement of tokenization; signals regulatory acceptance of blockchain-based settlement and positions Quant as critical vendor for future stablecoin and CBDC rails. Banks must evaluate interoperability and compliance readiness now.",
+    "jargon": [
+      {
+        "term": "tokenized deposits",
+        "def": "Digital representations of bank deposits issued on blockchain, enabling programmable settlement and real-time peer-to-peer transfers while maintaining fiat backing."
+      }
+    ],
+    "source": {
+      "name": "FinTech Futures · 2026-09-25",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQM21qWWQ5UDhnZ0w2WFMwTnVjU1JzdnRjSWtLaEllTEZtNWVhT0Z6WERJZDBIWDRwamVjSWVDLXNZUE81Mlp5VDk3ZHZUa1NMVkdUeUtrdlZpYVVmRk9HdzBXMFF6U2hrbHBPSzlEemF1a0dXREtvU3RabDJMeXczaGhZRGoxRUY5aXdGU0duVU9jMG40RXJNWk5jdFZnZkVVcDRZRFlsZDVjSG5PRTVfcEhYYzM"
+    }
+  },
+  {
+    "id": "2026-09-24-ando-team-messaging-funding",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-24T14:31:00Z",
+    "headline": "Ando raises $20M to build team messaging for humans and AI agents to collaborate",
+    "plain_english": "Ando secured $20M in pre-seed and seed funding (Accel, Index Ventures, Emergence) to build a Slack-like platform designed for mixed human-agent teams. Targets knowledge workers running agent-assisted workflows.",
+    "why_it_matters": "Reflects widening adoption of agentic AI in enterprise. BFSI teams using compliance-checking agents, trade advisors, or risk agents need human-in-loop UX; market for specialized collab tools emerging.",
+    "amount": "$20M",
+    "round": "Pre-seed / Seed",
+    "source": {
+      "name": "TechCrunch · 2026-09-24",
+      "url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/"
+    }
+  },
+  {
+    "id": "2026-09-26-shift-fintech-m-and-a-monzo-nubank",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-26T12:09:33.000Z",
+    "headline": "Monzo explores sale to Nubank, signaling consolidation in UK challenger banking",
+    "plain_english": "UK neobank Monzo is in talks with Brazil's Nubank about a possible acquisition, indicating cross-border fintech consolidation as startups face profitability pressure and rising compliance costs.",
+    "why_it_matters": "First-mover UK challenger banks struggling to scale profitably; signals BFSI incumbents may acquire fintech talent/tech cheaply, reshaping competitive landscape and reducing venture-backed disruptors.",
+    "source": {
+      "name": "Sifted · 2026-09-26",
+      "url": "https://sifted.eu/articles/monzo-nubank-sale/"
+    }
+  },
+  {
+    "id": "2026-09-25-anthropic-founders-voting-control",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T15:40:03.000Z",
+    "headline": "Anthropic founders seek 50.1% voting control ahead of IPO",
+    "plain_english": "Anthropic's seven co-founders are asking shareholders to approve a dual-class voting structure that would give them combined control of most corporate decisions pre-IPO, a move that consolidates founder authority during the company's transition to public markets.",
+    "why_it_matters": "Dual-class structures limit institutional investor influence and raise governance questions for BFSI buyers evaluating AI vendor stability; precedent from other tech IPOs shows this can suppress long-term board independence.",
+    "source": {
+      "name": "TechCrunch · 2026-09-25",
+      "url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/"
+    }
+  },
+  {
+    "id": "2026-09-18-anthropic-development-metrics",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-17T22:22:53.000Z",
+    "headline": "Anthropic publishes three metrics for AI development governance",
+    "plain_english": "Anthropic released a framework of three self-imposed metrics to track AI-led R&D pace, oversight of autonomous AI agents, and compute allocation. The metrics are intended as a model for other AI labs to monitor their own development trajectories.",
+    "why_it_matters": "Establishes voluntary disclosure standard that regulators (FCA, OCC) may codify into binding governance requirements for banks running frontier models in production.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous AI systems that perceive environments, make decisions, and take actions without human intervention between steps."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-17",
+      "url": "https://www.cnbc.com/2026/09/17/anthropic-shares-3-metrics-to-help-ai-companies-monitor-development.html"
+    }
+  },
+  {
+    "id": "2026-09-17-prismml-tiny-llm",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-17T22:34:09.000Z",
+    "headline": "PrismML releases compact LLM designed to reshape AI deployment",
+    "plain_english": "PrismML, a new AI lab, released a compact language model intended to enable broader, cheaper deployment of AI across edge devices and on-premises infrastructure without reliance on large cloud providers.",
+    "why_it_matters": "Smaller, more efficient models reduce BFSI dependence on frontier-compute oligopolies; banks can run fine-tuned models locally for compliance, reducing latency and vendor lock-in.",
+    "jargon": [
+      {
+        "term": "LLM",
+        "def": "Large language model: neural networks trained on massive text datasets to predict and generate human language."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-09-17",
+      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/"
     }
   },
   {
@@ -8951,20 +9106,6 @@
     }
   },
   {
-    "id": "2026-08-31-bitgo-nydig-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-31T16:18:45Z",
-    "headline": "BitGo acquires NYDIG's institutional trading business",
-    "plain_english": "BitGo bought NYDIG's institutional crypto trading operations. NYDIG will focus on mining and data centers. Consolidates crypto trading infrastructure under a single custody and execution layer.",
-    "why_it_matters": "Reduces fragmentation in institutional crypto infrastructure; simplifies onboarding for banks evaluating digital-asset offerings by centralizing custody and trading under one vendor.",
-    "source": {
-      "name": "Banking Dive · 2026-08-31",
-      "url": "https://www.bankingdive.com/news/bitgo-acquires-nydig-institutional-trading-business-digital-assets-crypto-occ/829195/"
-    }
-  },
-  {
     "id": "2026-09-01-atlassian-ai-winner-shift",
     "category": "shift",
     "jurisdiction": "US",
@@ -9004,26 +9145,6 @@
     "source": {
       "name": "CNBC · 2026-08-31",
       "url": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html"
-    }
-  },
-  {
-    "id": "2026-08-31-td-tokenized-payments-agora",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-08-31T16:23:00Z",
-    "headline": "TD Bank executes real USD tokenized payment via Project Agorá platform",
-    "plain_english": "TD completed a live test moving real USD through Project Agorá, a tokenized settlement platform. Signals major bank moving from pilot to operational testing of blockchain-based payment infrastructure.",
-    "why_it_matters": "Real-money execution on tokenized rails reduces settlement risk and latency; if successful at scale, disrupts correspondent banking and liquidity management models BFSI has relied on for decades.",
-    "jargon": [
-      {
-        "term": "tokenized settlement",
-        "def": "Assets represented as blockchain tokens; trades settle on-chain without intermediaries."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-08-31",
-      "url": "https://www.finextra.com/newsarticle/48326/td-tests-tokenised-payments-through-project-agor?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   }
 ]
