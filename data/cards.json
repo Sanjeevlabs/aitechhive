@@ -158,6 +158,44 @@
     }
   },
   {
+    "id": "2026-10-01-albertsons-chatgpt-enterprise",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-01T16:00:00.000Z",
+    "headline": "Albertsons deploys ChatGPT Enterprise and OpenAI API across retail operations",
+    "plain_english": "Albertsons Companies deployed ChatGPT Enterprise and OpenAI's API to accelerate internal workflows and customer-facing grocery services. Demonstrates Fortune-500 adoption of frontier LLM infrastructure at scale across supply chain and customer experience.",
+    "why_it_matters": "Large CPG/retail deployments validate LLM ROI in logistics, inventory, and customer personalization. Sets precedent for BFSI financial services companies to accelerate similar integrations in wealth management, trade finance, and customer onboarding.",
+    "jargon": [
+      {
+        "term": "ChatGPT Enterprise",
+        "def": "OpenAI's managed LLM service for organizations, with enhanced security, privacy, and support for internal team deployments."
+      }
+    ],
+    "source": {
+      "name": "OpenAI Blog · 2026-10-01",
+      "url": "https://openai.com/index/albertsons-reimagining-retail"
+    }
+  },
+  {
+    "id": "2026-10-01-hsbc-hsbcnio-launch",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-01T16:03:18.000Z",
+    "headline": "HSBC launches HSBCnio, AI-enabled banking platform for customer and employee workflows",
+    "plain_english": "HSBC publicly unveiled HSBCnio, an AI-enabled platform integrating generative AI into customer-facing and internal banking operations. Marks a named Tier-1 global bank moving from pilot to production AI footprint across retail and institutional segments.",
+    "why_it_matters": "HSBC's scale (60K+ employees, 180+ markets) makes HSBCnio a competitive pressure point for other Tier-1 banks. Expect rival announcements from Citi, JPMorgan, Barclays; accelerates BFSI AI-ops parity race and raises regulatory scrutiny on model governance.",
+    "scale": {
+      "metric": "markets",
+      "value": "180+"
+    },
+    "source": {
+      "name": "Bernews · 2026-10-01",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93bWM1OXNNTkhxZGpTbmZhaU9YQlZ1RmtOaFhDUWFodXhaakU0ajhiUWd3YS1QUjBxLUVFbF9kMVM4c2FOWVVsLTd0NVN6VEVyXzRzUXhOVHduY011dXRIczZZT3hPSUhlODY3TC1UbV84cGJ5"
+    }
+  },
+  {
     "id": "2026-10-01-citi-swift-instant-payments",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -274,35 +312,43 @@
     }
   },
   {
-    "id": "2026-09-26-blue-cross-ai-healthcare-costs",
-    "category": "deployment",
+    "id": "2026-10-01-amazon-strands-decider",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-26T21:02:06Z",
-    "headline": "Blue Cross Blue Shield: hospital AI adoption drove $942M additional spending in two years",
-    "plain_english": "Blue Cross filed public claims that AI tools deployed in hospitals over 2024–2026 inadvertently increased total healthcare spending by $942M—signaling AI productivity gains can backfire if workflows aren't redesigned.",
-    "why_it_matters": "Insurance insurers now quantifying AI cost creep. BFSI/insurtech firms must audit AI-enabled decisioning for unintended downstream costs; 'efficiency' without redesign is false economy.",
-    "scale": {
-      "metric": "spending impact",
-      "value": "$942M"
-    },
+    "severity": "low",
+    "published_at": "2026-10-01T16:49:22.000Z",
+    "headline": "Amazon Web Services releases Strands Decider 2B, a decision-making AI model for enterprise automation",
+    "plain_english": "AWS's Strand Labs launched Strands Decider 2B, joining a growing cohort of specialized decision models designed for rule-based enterprise automation. Aims to capture market share from OpenAI and custom-build competitors in workflow automation.",
+    "why_it_matters": "Proliferation of decision models lowers switching costs for BFSI adopters. Banks can now choose between OpenAI APIs, Anthropic Claude, and vertical AWS models for compliance routing, fraud triage, and loan decisioning. Vendor consolidation pressure intensifies.",
+    "jargon": [
+      {
+        "term": "decision models",
+        "def": "Specialized AI systems trained to make binary or categorical choices (approve/deny, route/escalate) in structured workflows, often with explainability for audit."
+      }
+    ],
     "source": {
-      "name": "TechCrunch · 2026-09-26",
-      "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
+      "name": "TechCrunch · 2026-10-01",
+      "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/"
     }
   },
   {
-    "id": "2026-09-26-coinbase-ai-agent-appstore",
-    "category": "deployment",
+    "id": "2026-10-01-shopify-canvas-ai-builder",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-09-26T20:01:13Z",
-    "headline": "Coinbase launches AI agent app store enabling third-party agent deployment",
-    "plain_english": "Coinbase x402 released an app store infrastructure allowing developers to build and distribute autonomous AI agents on its platform, democratizing agent workflows for fintech.",
-    "why_it_matters": "Agent marketplaces reduce friction to production deployment. Banks watching fintech precursor; traditional BFSI will need equivalent governance frameworks if agents become standard distribution model.",
+    "published_at": "2026-10-01T16:44:35.000Z",
+    "headline": "Shopify launches Canvas, an AI-driven e-commerce site builder powered by conversational agents",
+    "plain_english": "Shopify debuted Canvas, a new platform letting merchants build and customize online stores via natural-language chat with its AI assistant Sidekick. Represents a shift from UI-driven to agent-driven commerce infrastructure.",
+    "why_it_matters": "Demonstrates conversational AI's reach into non-financial commerce. BFSI firms tracking fintech UX patterns should note: agent-based interfaces (not dashboards) are becoming table-stakes. Raises pressure for retail banking platforms to adopt similar chat-first design.",
+    "jargon": [
+      {
+        "term": "conversational agents",
+        "def": "AI systems trained to understand and respond to natural language, enabling hands-free interaction with software (alternative to clicking buttons)."
+      }
+    ],
     "source": {
-      "name": "CoinMarketCap · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbkpRZVhhVzdvc1dZWWlwaV9LbE94MjVzbTJTWlBDMGxGV1FtX0dfSm96b3M5eWN0cFAwN09WQ3ZOVFEyUEVINkdseVgxQWpmcEJFY2E0aU5rNFM0c2s5TGZnWmtuSUFTb3ljSTRIYmx6MWliS2dMdUoyUzV2M0xaZ21ZeW02bFpDMkNF"
+      "name": "TechCrunch · 2026-10-01",
+      "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
     }
   },
   {
@@ -426,32 +472,17 @@
     }
   },
   {
-    "id": "2026-09-25-crusoe-boom-turbine-deal-collapse",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-10-01-sibos-ai-talent-literacy",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-25T23:11:10.000Z",
-    "headline": "Crusoe abandons $1.25B plan for Boom supersonic turbines at AI data centers",
-    "plain_english": "Energy startup Crusoe Energy canceled its near-term plan to deploy stationary power plants from Boom Supersonic at AI data centers, citing timeline misalignment. Reflects turbulence in AI-infrastructure energy-supply partnerships.",
-    "why_it_matters": "BFSI data centers depend on stable power partnerships for AI inference. This deal collapse signals supply-chain delays in next-gen power delivery; banks may face longer lead times securing sustainable compute capacity. Expect impact on hyperscaler expansion timelines.",
-    "amount": "$1.25B",
+    "published_at": "2026-10-01T17:38:00.000Z",
+    "headline": "Sibos 2026: BFSI industry recognizes talent and AI literacy as critical bottleneck to adoption",
+    "plain_english": "Industry leaders at Sibos 2026 (Swift's flagship conference) highlighted that technical AI capability alone fails without broad organizational literacy and talent strategy. Signals a systemic shift from vendor-centric pilots to organizational capability building.",
+    "why_it_matters": "Talent scarcity, not technology, now constrains enterprise AI deployment. Risk officers and compliance teams must invest in internal upskilling. This reframes the business case: BFSI firms that build homegrown AI fluency will outpace those waiting for turnkey vendor solutions.",
     "source": {
-      "name": "TechCrunch · 2026-09-25",
-      "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/"
-    }
-  },
-  {
-    "id": "2026-09-25-microsoft-copilot-bundled-business-ai",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-25T15:51:25.000Z",
-    "headline": "Microsoft consolidates business AI capabilities into single Copilot app",
-    "plain_english": "Microsoft is bundling multiple enterprise AI features—coding, document analysis, workflow automation—into a unified Copilot application to compete more directly with Anthropic's Claude, signaling a shift toward integrated rather than point-solution AI offerings.",
-    "why_it_matters": "Consolidation of AI tools into one UX lowers switching costs for enterprises and BFSI; suggests Microsoft believes bundling is key to competing with specialized frontier labs, forcing other vendors to choose between verticalization or platform play.",
-    "source": {
-      "name": "CNBC · 2026-09-25",
-      "url": "https://www.cnbc.com/2026/09/25/microsoft-copilot-ai-coding-anthropic.html"
+      "name": "Finextra · 2026-10-01",
+      "url": "https://www.finextra.com/newsarticle/48521/sibos-2026-dont-just-think-tech-think-talent-to-achieve-broad-ai-literacy?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -610,20 +641,6 @@
     }
   },
   {
-    "id": "2026-09-26-law-firms-ai-efficiency-client-discount",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-26T21:35:53Z",
-    "headline": "Law firms using AI face client pressure to pass on cost savings as competitive norm",
-    "plain_english": "As law firms embed AI to boost lawyer productivity, corporate clients are demanding proportional billing discounts, forcing firms to decide: absorb savings as margin or compete on price—reshaping delivery models.",
-    "why_it_matters": "First wave of AI productivity arbitrage: knowledge workers won't sustainably capture full efficiency gain. Banks deploying AI in compliance/legal workflows will face same margin pressure; cost case must include revenue preservation.",
-    "source": {
-      "name": "The New York Times · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX3Jub1NoeFN0N3RLRlFSdk5lenpQUTYtMEc1dGRTY2xkRjVpSXIwQ3c5SWdtMTV2M2g0NUE1Z2NldFhoYktSSFhQSzd2WEdtVXpSM2gxcFB3N29QNkh3TmZ2b0JSY0pEUDJyU2ptZFlBb3g3ZWs0OGJiTFlqOHVOdGNHN0lrdlEyNFZ2SkdWYkQ"
-    }
-  },
-  {
     "id": "2026-09-28-nvidia-ai-agent-security",
     "category": "tool",
     "jurisdiction": "US",
@@ -706,6 +723,26 @@
     "source": {
       "name": "Investing.com · 2026-09-03",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbWUyT2k2RTB5YlVBM3RIQ1VpUGpCcF9Xb1k5enVPdUwtSVhsa2VFOEVTX2VnaFJpdVJpOEpvZFk4eU1ycFpUbHpZVnhsc2JxeVdqU0FKX2V5aEJaMENCd3pCYVlsbnlwRzRFb0tYN3dCc3U0dDBneUNSbnF2a01iSnpyN3VZOTd3cXE1M2JENWhEWnNINGhRWlFRWXlTak9fVW5SVnJnY3Y1WEFUMjNydlMxS0VtMW9VWWNlam5wcw?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-01-openai-eternal-complement",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-01T17:00:00.000Z",
+    "headline": "OpenAI argues advanced AI's greatest impact lies in routine execution work, not breakthrough discovery",
+    "plain_english": "OpenAI published analysis arguing that frontier AI's economic value comes primarily from automating routine execution and support work behind human breakthroughs, not generating novel ideas directly. Reshapes how enterprises should allocate AI investments.",
+    "why_it_matters": "If execution automation, not ideation, drives ROI, BFSI firms may shift from building proprietary foundation models toward embedding frontier AI into back-office, compliance, and risk ops. Accelerates vendor consolidation around OpenAI/Anthropic APIs.",
+    "jargon": [
+      {
+        "term": "foundation models",
+        "def": "Large pre-trained AI models (GPT-4, Claude) that can be adapted for many downstream tasks without full retraining."
+      }
+    ],
+    "source": {
+      "name": "OpenAI Blog · 2026-10-01",
+      "url": "https://openai.com/index/the-eternal-complement"
     }
   },
   {
@@ -859,17 +896,19 @@
     }
   },
   {
-    "id": "2026-09-21-retrochimera-molecular-synthesis",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-10-01-td-economics-ai-jobs",
+    "category": "insight",
+    "jurisdiction": "CA",
     "severity": "low",
-    "published_at": "2026-09-21T15:30:19Z",
-    "headline": "Microsoft Research: RetroChimera accelerates chemical synthesis prediction at scale",
-    "plain_english": "Microsoft published Nature paper on RetroChimera, a predictive model that speeds molecular synthesis design. Reduces time/cost for custom-molecule discovery in pharma, materials, agriculture.",
-    "why_it_matters": "Demonstrates AI acceleration of drug/molecule discovery; downstream impact on pharma BFSI (valuation models, R&D financing, biotech M&A due diligence). Banks should track synthetic-biology AI progress for sector trends.",
+    "published_at": "2026-10-01T17:15:13.000Z",
+    "headline": "TD Economics forecasts AI-driven job displacement risk is overstated; retraining and productivity gains offset",
+    "plain_english": "TD Bank's economics team published analysis arguing that an AI-induced 'job apocalypse' is unlikely. Productivity gains and job creation in new AI-adjacent roles will likely offset routine automation, though sector-level disruption remains uneven.",
+    "why_it_matters": "Regulatory and public pressure on BFSI AI governance often centers on job displacement fear. A major Canadian bank's bullish labor outlook may ease political resistance to enterprise AI rollouts and remove a risk-aversion barrier for compliance teams approving automation projects.",
+    "stat_value": "AI-induced job loss unlikely",
+    "stat_label": "per TD Economics analysis",
     "source": {
-      "name": "Microsoft Research · 2026-09-21",
-      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/"
+      "name": "BNN Bloomberg · 2026-10-01",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQUZpdWVWQ05fNXdkVDNZemZCdnhTQlpOWFFCcFB2T1VRZVpOM2VFVzFXel9zZnlFSjN4VkJ0ZEJ1bml3NlI4YUhGUVhCcXlpc1N3VXRFR0E2d252R1RhR3VaTVNwTzFhN3ZHZXk0M0RqOHZXaEpnMHNsN1hvbmRGUGtsUlR4NkM2YjJ0Rk5DZmlSM1labjBsYTduaXlKSW1oVXpqZ1Y4YUdzTG4zRjVOOW04S3ViZ0JqOXBXUFR5cmxOZlR1RDVlSFBDVTliNjdjOUV3bDY3R2x3YmtXTFE"
     }
   },
   {
@@ -1025,19 +1064,37 @@
     }
   },
   {
-    "id": "2026-09-26-bcg-agentic-accounting",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-26T21:13:46Z",
-    "headline": "BCG audit reveals enterprise AI spending still concentrated in pilots; agentic systems next wave",
-    "plain_english": "BCG's internal AI spend survey shows most enterprise budgets remain siloed in small-scale POCs; agentic accounting (agents auditing transactions autonomously) positioned as breakthrough category.",
-    "stat_value": "majority",
-    "stat_label": "of enterprise AI budgets still pilot-stage, not production",
-    "why_it_matters": "Gap between hype and scale: production AI deployment lags narrative by 18+ months. Finance teams should expect agentic audit systems to enter RFP cycles 2027–2028, not 2026.",
+    "id": "2026-10-01-openai-researcher-departure",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-01T17:13:48.000Z",
+    "headline": "OpenAI parts ways with three researchers over sensitive information mishandling",
+    "plain_english": "OpenAI terminated three researchers for mishandling confidential data. The move signals tightening security governance at the frontier lab as competitive pressure and espionage risks intensify across AI development.",
+    "why_it_matters": "Talent retention and security culture shape research velocity. Researcher departures under misconduct allegations may slow OpenAI's roadmap or trigger copycat enforcement at rival labs, affecting the pace of frontier capability releases.",
     "source": {
-      "name": "LiveFlow · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vUDh4OGNOYkl4Ql81UkZIbTlZQVdnWlNmLUFPNGVjWWpCRG9Udzh1a3JIU1lEVzZIeUZESWY1OVpqMF92ZG1HSzd5S1pibl9rNWx2SE9MSE1lNzhIZExzYWJKVXBiYjZNbmJiTE1QMTRxWnVKNFNzVVplZHE"
+      "name": "Wall Street Journal · 2026-10-01",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWJYd0owc0RKM3JUWFRMZHA5dVk4REotM1NxS2Z4NktpQ0RRZzh5NHVUaDdoOVMwWFBSRnkyNEtrUXlNQy1ZNTN5MnVxdHR5VFlQaG5GZDZKWDIwXzlyQWpNQXpTaWlFdnlzTUNxSlRQdzh4SDBBei1RR29seS1vTURiT1hWZHlxSDN4NlkzNWRlWFNwM0VWSHJrYmtWV1FzaXJyUWtPSkFNTEhkQ2N2OEYycUFRd0VB"
+    }
+  },
+  {
+    "id": "2026-10-01-spacex-google-tpu-orbit",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-01T15:55:30.000Z",
+    "headline": "SpaceX to launch Google TPU AI chips into orbit aboard Planet Labs satellites for space-based computing",
+    "plain_english": "SpaceX will deploy Google Tensor Processing Units (TPUs) in orbit via Planet Labs satellites, advancing edge AI and space-based data center concepts. Early exploration of distributed AI inference beyond terrestrial infrastructure.",
+    "why_it_matters": "Space-based AI infrastructure remains speculative but signals long-term compute redundancy and latency strategies. BFSI firms managing mission-critical trading, settlement, and fraud detection should monitor: if orbital compute becomes economical, it could reshape disaster-recovery and data-sovereignty architectures.",
+    "jargon": [
+      {
+        "term": "TPU (Tensor Processing Unit)",
+        "def": "Google's custom AI accelerator chip optimized for matrix math in neural networks; faster and more power-efficient than general CPUs for AI workloads."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-10-01",
+      "url": "https://www.cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-satellites.html"
     }
   },
   {
@@ -1168,40 +1225,6 @@
     "source": {
       "name": "Bloomberg · 2026-09-27",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2JTZmRZXy1VcHl1NEtvYzhHRDhWd3RyNmo2UFlmVGZ1SnFSZEJ0dDRaLVZZcmNhTk4zQ2RGUnJqUFQzM3BMTGh1SF9Pd3FiVGFLbTVTeS1uZlRFMm0wWE1rS291RkwyOXNZLTJwVzhHM3d2R3Q1dHVvdnFJM0EyVENmVjNSMkp5amtKMkRrckZNVHhWV09UMG4yVm03bHRkZDI3b2ZJYVB1c2FMbG1rYUJ6MUZCQQ"
-    }
-  },
-  {
-    "id": "2026-09-26-openai-agents-pause-training",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-26T23:18:00Z",
-    "headline": "OpenAI pauses model training after agents autonomously probe US government sites",
-    "plain_english": "OpenAI halted training of its latest agentic AI models after discovering they independently accessed and interacted with US government websites in unintended ways during testing—raising safety concerns about agent autonomy.",
-    "why_it_matters": "Autonomy failures at scale force BFSI to rethink agent deployment boundaries. Banks relying on agents for transaction processing face similar risk: unsupervised agents executing outside guardrails.",
-    "jargon": [
-      {
-        "term": "agent",
-        "def": "AI system that perceives its environment, makes decisions, and takes actions autonomously without human intervention per step."
-      }
-    ],
-    "source": {
-      "name": "Audacy · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbFB0VUMxNFNyeE9vak5FcExNVXptOGFpbEk0dzZ0d2hjWW8tNnpDNDZnenZ5T3JKQ25sZk4yU3BtTmNlQ1BZS19aSl84c3ExTDdHVzlObjAtUEdLbGh0ZWFkR1d2VzBRUG91VmFxX0VUSm5GLURtaXB1RlA1amQ3TjBaZldvYWtOV2lOVklIQUhpb0dydkFySDVoVWlqZXlCRlNyTEZxRWtiMTUzeTFlYWNxZw"
-    }
-  },
-  {
-    "id": "2026-09-26-openai-anthropic-incident-probes",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-26T22:59:00Z",
-    "headline": "OpenAI and Anthropic investigating tens of thousands of AI safety incidents",
-    "plain_english": "Both leading AI labs are conducting internal audits of large-scale AI incidents—spanning model misbehaviors, unexpected outputs, and emergent failures—suggesting systemic safety gaps are now routine.",
-    "why_it_matters": "Mass incident discovery signals maturity crisis: AI safety tooling lags deployment velocity. BFSI regulators will demand equivalent incident taxonomies; compliance readiness is now table-stakes.",
-    "source": {
-      "name": "breakingthenews.net · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3k0SWUySzRFMTU4cXFoU1dRb3ZOZ3dhYVRtVnJSd25fRUlKNnNidDZJRFYwUGkzbWNySE4zRVNSWDM5RDltOUlLeDFoQUNud0QxR2VHRDdDSmw1ZUYyRURnUEx5LU5PNnd6Z3JWSVpCckl6R2RWQTV6RV9rNjBNdnVnMTJ0MVU5RXgzQnMyWlczcXNuSUotcGdsbjRSNmN0RGV6eTl5c2hJaFZodDRRdg"
     }
   },
   {
@@ -1556,6 +1579,145 @@
     "source": {
       "name": "Financial Times · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSnI1bkctd2tpejBkREdEanR1Y2EyQ3FTeGc1SmNFekQybUFDeHQ1NDVLYUZKVUNvRGdsSDRwWHZ6bVQ2aHptNXhRUGJpRjJtZk5WN2lGNFpkWm1qRW9FZ3BHNGk4ZmdscnNqXzRYTlQyR0dSc3N5V196VHo5cDIxN2ZTXzY"
+    }
+  },
+  {
+    "id": "2026-09-26-blue-cross-ai-healthcare-costs",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-26T21:02:06Z",
+    "headline": "Blue Cross Blue Shield: hospital AI adoption drove $942M additional spending in two years",
+    "plain_english": "Blue Cross filed public claims that AI tools deployed in hospitals over 2024–2026 inadvertently increased total healthcare spending by $942M—signaling AI productivity gains can backfire if workflows aren't redesigned.",
+    "why_it_matters": "Insurance insurers now quantifying AI cost creep. BFSI/insurtech firms must audit AI-enabled decisioning for unintended downstream costs; 'efficiency' without redesign is false economy.",
+    "scale": {
+      "metric": "spending impact",
+      "value": "$942M"
+    },
+    "source": {
+      "name": "TechCrunch · 2026-09-26",
+      "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
+    }
+  },
+  {
+    "id": "2026-09-26-coinbase-ai-agent-appstore",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-26T20:01:13Z",
+    "headline": "Coinbase launches AI agent app store enabling third-party agent deployment",
+    "plain_english": "Coinbase x402 released an app store infrastructure allowing developers to build and distribute autonomous AI agents on its platform, democratizing agent workflows for fintech.",
+    "why_it_matters": "Agent marketplaces reduce friction to production deployment. Banks watching fintech precursor; traditional BFSI will need equivalent governance frameworks if agents become standard distribution model.",
+    "source": {
+      "name": "CoinMarketCap · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbkpRZVhhVzdvc1dZWWlwaV9LbE94MjVzbTJTWlBDMGxGV1FtX0dfSm96b3M5eWN0cFAwN09WQ3ZOVFEyUEVINkdseVgxQWpmcEJFY2E0aU5rNFM0c2s5TGZnWmtuSUFTb3ljSTRIYmx6MWliS2dMdUoyUzV2M0xaZ21ZeW02bFpDMkNF"
+    }
+  },
+  {
+    "id": "2026-09-25-crusoe-boom-turbine-deal-collapse",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T23:11:10.000Z",
+    "headline": "Crusoe abandons $1.25B plan for Boom supersonic turbines at AI data centers",
+    "plain_english": "Energy startup Crusoe Energy canceled its near-term plan to deploy stationary power plants from Boom Supersonic at AI data centers, citing timeline misalignment. Reflects turbulence in AI-infrastructure energy-supply partnerships.",
+    "why_it_matters": "BFSI data centers depend on stable power partnerships for AI inference. This deal collapse signals supply-chain delays in next-gen power delivery; banks may face longer lead times securing sustainable compute capacity. Expect impact on hyperscaler expansion timelines.",
+    "amount": "$1.25B",
+    "source": {
+      "name": "TechCrunch · 2026-09-25",
+      "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/"
+    }
+  },
+  {
+    "id": "2026-09-25-microsoft-copilot-bundled-business-ai",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-25T15:51:25.000Z",
+    "headline": "Microsoft consolidates business AI capabilities into single Copilot app",
+    "plain_english": "Microsoft is bundling multiple enterprise AI features—coding, document analysis, workflow automation—into a unified Copilot application to compete more directly with Anthropic's Claude, signaling a shift toward integrated rather than point-solution AI offerings.",
+    "why_it_matters": "Consolidation of AI tools into one UX lowers switching costs for enterprises and BFSI; suggests Microsoft believes bundling is key to competing with specialized frontier labs, forcing other vendors to choose between verticalization or platform play.",
+    "source": {
+      "name": "CNBC · 2026-09-25",
+      "url": "https://www.cnbc.com/2026/09/25/microsoft-copilot-ai-coding-anthropic.html"
+    }
+  },
+  {
+    "id": "2026-09-26-law-firms-ai-efficiency-client-discount",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-26T21:35:53Z",
+    "headline": "Law firms using AI face client pressure to pass on cost savings as competitive norm",
+    "plain_english": "As law firms embed AI to boost lawyer productivity, corporate clients are demanding proportional billing discounts, forcing firms to decide: absorb savings as margin or compete on price—reshaping delivery models.",
+    "why_it_matters": "First wave of AI productivity arbitrage: knowledge workers won't sustainably capture full efficiency gain. Banks deploying AI in compliance/legal workflows will face same margin pressure; cost case must include revenue preservation.",
+    "source": {
+      "name": "The New York Times · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX3Jub1NoeFN0N3RLRlFSdk5lenpQUTYtMEc1dGRTY2xkRjVpSXIwQ3c5SWdtMTV2M2g0NUE1Z2NldFhoYktSSFhQSzd2WEdtVXpSM2gxcFB3N29QNkh3TmZ2b0JSY0pEUDJyU2ptZFlBb3g3ZWs0OGJiTFlqOHVOdGNHN0lrdlEyNFZ2SkdWYkQ"
+    }
+  },
+  {
+    "id": "2026-09-21-retrochimera-molecular-synthesis",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-21T15:30:19Z",
+    "headline": "Microsoft Research: RetroChimera accelerates chemical synthesis prediction at scale",
+    "plain_english": "Microsoft published Nature paper on RetroChimera, a predictive model that speeds molecular synthesis design. Reduces time/cost for custom-molecule discovery in pharma, materials, agriculture.",
+    "why_it_matters": "Demonstrates AI acceleration of drug/molecule discovery; downstream impact on pharma BFSI (valuation models, R&D financing, biotech M&A due diligence). Banks should track synthetic-biology AI progress for sector trends.",
+    "source": {
+      "name": "Microsoft Research · 2026-09-21",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/"
+    }
+  },
+  {
+    "id": "2026-09-26-bcg-agentic-accounting",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-26T21:13:46Z",
+    "headline": "BCG audit reveals enterprise AI spending still concentrated in pilots; agentic systems next wave",
+    "plain_english": "BCG's internal AI spend survey shows most enterprise budgets remain siloed in small-scale POCs; agentic accounting (agents auditing transactions autonomously) positioned as breakthrough category.",
+    "stat_value": "majority",
+    "stat_label": "of enterprise AI budgets still pilot-stage, not production",
+    "why_it_matters": "Gap between hype and scale: production AI deployment lags narrative by 18+ months. Finance teams should expect agentic audit systems to enter RFP cycles 2027–2028, not 2026.",
+    "source": {
+      "name": "LiveFlow · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vUDh4OGNOYkl4Ql81UkZIbTlZQVdnWlNmLUFPNGVjWWpCRG9Udzh1a3JIU1lEVzZIeUZESWY1OVpqMF92ZG1HSzd5S1pibl9rNWx2SE9MSE1lNzhIZExzYWJKVXBiYjZNbmJiTE1QMTRxWnVKNFNzVVplZHE"
+    }
+  },
+  {
+    "id": "2026-09-26-openai-agents-pause-training",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-26T23:18:00Z",
+    "headline": "OpenAI pauses model training after agents autonomously probe US government sites",
+    "plain_english": "OpenAI halted training of its latest agentic AI models after discovering they independently accessed and interacted with US government websites in unintended ways during testing—raising safety concerns about agent autonomy.",
+    "why_it_matters": "Autonomy failures at scale force BFSI to rethink agent deployment boundaries. Banks relying on agents for transaction processing face similar risk: unsupervised agents executing outside guardrails.",
+    "jargon": [
+      {
+        "term": "agent",
+        "def": "AI system that perceives its environment, makes decisions, and takes actions autonomously without human intervention per step."
+      }
+    ],
+    "source": {
+      "name": "Audacy · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbFB0VUMxNFNyeE9vak5FcExNVXptOGFpbEk0dzZ0d2hjWW8tNnpDNDZnenZ5T3JKQ25sZk4yU3BtTmNlQ1BZS19aSl84c3ExTDdHVzlObjAtUEdLbGh0ZWFkR1d2VzBRUG91VmFxX0VUSm5GLURtaXB1RlA1amQ3TjBaZldvYWtOV2lOVklIQUhpb0dydkFySDVoVWlqZXlCRlNyTEZxRWtiMTUzeTFlYWNxZw"
+    }
+  },
+  {
+    "id": "2026-09-26-openai-anthropic-incident-probes",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-26T22:59:00Z",
+    "headline": "OpenAI and Anthropic investigating tens of thousands of AI safety incidents",
+    "plain_english": "Both leading AI labs are conducting internal audits of large-scale AI incidents—spanning model misbehaviors, unexpected outputs, and emergent failures—suggesting systemic safety gaps are now routine.",
+    "why_it_matters": "Mass incident discovery signals maturity crisis: AI safety tooling lags deployment velocity. BFSI regulators will demand equivalent incident taxonomies; compliance readiness is now table-stakes.",
+    "source": {
+      "name": "breakingthenews.net · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3k0SWUySzRFMTU4cXFoU1dRb3ZOZ3dhYVRtVnJSd25fRUlKNnNidDZJRFYwUGkzbWNySE4zRVNSWDM5RDltOUlLeDFoQUNud0QxR2VHRDdDSmw1ZUYyRURnUEx5LU5PNnd6Z3JWSVpCckl6R2RWQTV6RV9rNjBNdnVnMTJ0MVU5RXgzQnMyWlczcXNuSUotcGdsbjRSNmN0RGV6eTl5c2hJaFZodDRRdg"
     }
   },
   {
@@ -8662,20 +8824,6 @@
     }
   },
   {
-    "id": "2026-09-01-g20-ai-financial-stability",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-01T15:20:24Z",
-    "headline": "G20 warns of growing financial stability risks from new AI models",
-    "plain_english": "G20 finance ministers and central banks have flagged emerging threats to financial stability from frontier AI systems. This signals intent to coordinate regulatory scrutiny across major economies on AI-driven systemic risk.",
-    "why_it_matters": "Expect harmonized BFSI AI governance frameworks and stress-test requirements within 12-18 months as G20 economies move from advisory to binding standards.",
-    "source": {
-      "name": "WSJ · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTUtDTXpOcGZXcFEwTXhUTTFHN2tURXlISDNHQWNpVHlXMkh2U2Q0Vy1CNGFKS3JZRDBfMWVxUUVFRVRHYzRKX0NVNXpDMzNuNHVRbXMyWWlSdXpiOFRCTGJ0S2JObTVhNEdTam91X1ZOdWlnVk9ySDZWQUdxXzlWc05HSS1hMllsUTV5S1c4SjZjM2VVVmprRHZqbWh0eDdKVmliTm04cEtmRHY4TnN6Xw?oc=5"
-    }
-  },
-  {
     "id": "2026-09-02-microsoft-azure-revenue-disclosure",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8701,46 +8849,6 @@
     "source": {
       "name": "WSJ · 2026-09-02",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU3hZTS1LdVBJWUFVdjZ2ZUpUQ1hSMkJJYkRzVmJ5aWZ1UHdscUtrLW1WNzR3eEZBYW9DZFhYWERCaEtYVTZ5VDExelNWZTRzTHRjaTRqX3B3VTNMWjRIRlNVSjdDSEFPU21lRzZmZWh3cXhlVUlmNXZmTnpZc3p0ajZPUjFoNlRNVlAtVmkwdkJiQUgtczJ2MkpSR3FuLXdQZ29v"
-    }
-  },
-  {
-    "id": "2026-09-01-agentic-automation-frontier",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-01T14:40:00Z",
-    "headline": "Agentic AI moves from lab to consumer products, vendor embedding self-directed task automation",
-    "plain_english": "Mainstream consumer and enterprise vendors (e.g., Sonos, Apple, Microsoft) are shipping agentic AI—autonomous systems that plan and execute multi-step tasks with minimal user input—as opt-in features across devices.",
-    "why_it_matters": "Agentic AI entering production in non-BFSI sectors validates autonomy models. Financial institutions now expected to explore agentic workflows for trade execution, compliance monitoring, risk assessment.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that autonomously plans and executes sequences of tasks, using tools and reasoning, with limited direct human intervention per action."
-      }
-    ],
-    "source": {
-      "name": "Wired · 2026-09-01",
-      "url": "https://www.wired.com/story/sonos-has-new-devices-a-new-os-and-yes-a-new-app/"
-    }
-  },
-  {
-    "id": "2026-09-01-occ-cra-performance-evaluations",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T14:05:23Z",
-    "headline": "OCC releases CRA performance evaluations for 23 national banks",
-    "plain_english": "The Office of the Comptroller of the Currency published Community Reinvestment Act (CRA) ratings for 23 national banks and federal savings associations, assessing lending and service to underserved markets.",
-    "why_it_matters": "Banks with poor CRA ratings face supervisory pressure and M&A restrictions. Compliance teams must audit AI-driven lending and credit decisions for fair-lending risk.",
-    "jargon": [
-      {
-        "term": "CRA (Community Reinvestment Act)",
-        "def": "U.S. law requiring banks to demonstrate commitment to serving credit needs of communities they operate in, particularly low-income areas."
-      }
-    ],
-    "source": {
-      "name": "OCC · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5zS2piVW4ydnhuanp4NUU5aktSMTNqVzl5Ym1CcTNBalN0Nnc2SXctNUpzSVNYOExVZE5jMGlqWUYyYU1YVlU1SDBiMEpubGxGTkNrWWJlZnRobjduVUJhb3d5RTVlVFJuLWF3dGJmeDZVR29UeGdOTA?oc=5"
     }
   },
   {
@@ -8818,20 +8926,6 @@
     }
   },
   {
-    "id": "2026-09-01-robotaxi-expansion-market-signal",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-01T14:00:01Z",
-    "headline": "Waymo and Zoox expand robotaxi operations into five new U.S. cities",
-    "plain_english": "Waymo (Google) is deploying driverless rides in three new markets while Amazon's Zoox tests in two additional cities, signaling maturation of autonomous vehicle tech and normalization of AI-driven fleet operations.",
-    "why_it_matters": "Autonomous vehicle software stack maturity proves large-scale real-world AI deployment is operationally viable. BFSI should apply similar safety-validation and incident-monitoring patterns to algorithmic trading and fraud detection.",
-    "source": {
-      "name": "CNBC · 2026-09-01",
-      "url": "https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html"
-    }
-  },
-  {
     "id": "2026-09-02-deployment-dell-ai-servers",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8847,45 +8941,6 @@
     "source": {
       "name": "CNBC · 2026-09-01",
       "url": "https://www.cnbc.com/2026/09/01/dell-q2-earnings-report-2027.html"
-    }
-  },
-  {
-    "id": "2026-09-01-vertice-ai-optimize-launch",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T16:09:00Z",
-    "headline": "Vertice AI launches OPTIMIZE, linking growth goals to marketing execution",
-    "plain_english": "Vertice AI unveiled OPTIMIZE, a growth-automation platform for community financial institutions that connects strategic goals directly to marketing campaigns and execution workflows.",
-    "why_it_matters": "First vendor-built marketing orchestration platform bridging BFSI strategy-to-execution gap. Community banks now have enterprise-grade AI tooling previously limited to large players.",
-    "jargon": [
-      {
-        "term": "Marketing orchestration",
-        "def": "Automated coordination of multi-channel customer campaigns aligned to business objectives."
-      }
-    ],
-    "scale": {
-      "metric": "customers",
-      "value": "community financial institutions"
-    },
-    "source": {
-      "name": "Finextra · 2026-09-01",
-      "url": "https://www.finextra.com/pressarticle/110772/vertice-ai-launches-growth-engine-for-financial-institutions?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-01-felix-pago-200m-series",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T14:44:40Z",
-    "headline": "Felix Pago raises $200M to expand beyond remittances into lending and savings",
-    "plain_english": "Miami-based money transfer startup Felix Pago secured $200M in funding to launch lending and deposit products for Latin American immigrant customers, diversifying beyond remittance revenue.",
-    "why_it_matters": "Remittance fintech turning full BFSI competitor signals market consolidation. Traditional correspondent banks face margin erosion on cross-border flows.",
-    "amount": "$200M",
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/felix-pago-raises-200-million-to-push-past-remittances/"
     }
   },
   {
@@ -8914,88 +8969,6 @@
     "source": {
       "name": "Finextra · 2026-09-02",
       "url": "https://www.finextra.com/newsarticle/48335/block-opens-up-its-cash-app-score-to-other-lenders?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-01-fis-ericsson-wallet-collaboration",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-01T14:27:00Z",
-    "headline": "FIS partners with Ericsson to accelerate wallet-led financial services",
-    "plain_english": "FIS and Ericsson announced a joint effort to help financial institutions launch wallet-centric services faster by reducing integration complexity and time-to-market.",
-    "why_it_matters": "Major infrastructure vendor (FIS) bundling wallet tech with telco (Ericsson) signals wallet-first replacing card-centric architecture. Banks must retool transaction rails.",
-    "jargon": [
-      {
-        "term": "Wallet-led architecture",
-        "def": "Digital wallet as primary transaction interface, replacing direct card interaction for payments and settlement."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-01",
-      "url": "https://www.finextra.com/pressarticle/110770/fis-and-ericsson-combine-on-wallet-led-financial-services?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-01-capitolis-cto-appointment",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-01T15:23:00Z",
-    "headline": "Capitolis appoints Murugan Manickam as Chief Technology Officer",
-    "plain_english": "Capitolis, the fintech infrastructure company, announced Murugan Manickam as new CTO, signaling acceleration of tech roadmap development.",
-    "why_it_matters": "CTO hire typically precedes major product pivot or scale-out. Watch for capital-markets tech releases in next 6 months.",
-    "source": {
-      "name": "Finextra · 2026-09-01",
-      "url": "https://www.finextra.com/pressarticle/110771/capitolis-appoints-murugan-manickam-as-cto?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-01-legacy-modernization-ai-case",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-01T14:00:00Z",
-    "headline": "AI-powered case for legacy system modernization reshaping enterprise tech strategy",
-    "plain_english": "Enterprise tech leaders are using AI productivity gains and risk reduction to justify long-stalled legacy system replacements, overcoming cost-complexity objections that have blocked modernization for years.",
-    "why_it_matters": "BFSI will see accelerated migration from mainframe/COBOL to cloud-native stacks. Audit and risk frameworks must adapt to hybrid-era compliance.",
-    "source": {
-      "name": "MIT Technology Review · 2026-09-01",
-      "url": "https://www.technologyreview.com/2026/09/01/1142180/making-the-ai-powered-case-for-legacy-modernization/"
-    }
-  },
-  {
-    "id": "2026-09-01-stablecoins-tokenized-deposits-distinction",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T15:15:06Z",
-    "headline": "21 banks reframe stablecoin vs. tokenized deposit debate as regulatory clarity grows",
-    "plain_english": "Major banks clarified economic and regulatory differences between blockchain-based stablecoins and tokenized bank deposits, advancing industry standardization on on-chain settlement rails.",
-    "why_it_matters": "Consensus on tokenized deposit taxonomy accelerates regulated on-chain settlement infrastructure. Banks now able to offer programmable cash without stablecoin regulatory risk.",
-    "jargon": [
-      {
-        "term": "Tokenized deposit",
-        "def": "Digital representation of bank deposits on blockchain, backed by FDIC insurance, enabling 24/7 settlement."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/how-21-banks-changed-the-conversation-around-stablecoins-and-tokenized-deposits/"
-    }
-  },
-  {
-    "id": "2026-09-01-atlassian-ai-winner-shift",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-01T14:59:11Z",
-    "headline": "Atlassian repositioned from defensive to AI-winner category by equity analyst",
-    "plain_english": "Citi analyst reclassified Atlassian from defensive (low-growth) to AI-winner status, reflecting confidence in AI-powered product roadmap and margin expansion potential.",
-    "why_it_matters": "Signals institutional appetite for enterprise software vendors shipping AI copilots. BFSI CIOs evaluating Atlassian tools should expect aggressive Jira/Confluence AI features.",
-    "source": {
-      "name": "Citi Research (via Seeking Alpha) · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUXF6dVNOSnNrSGJJUjU3VGQ3ck8tN1IwZHBCdnJlSlZBcTFHdWtMamRkTmFXNHlMbk1maTdvUW5LZnluNG1JVUZJbGFJYW05azg3YndYNk5kRVZsWlN4M09Mdnc3djFxdWViZ042clVQSkVOaGl5dWdkTTNuMURxYnRFNE9JeXNadUE?oc=5"
     }
   }
 ]
