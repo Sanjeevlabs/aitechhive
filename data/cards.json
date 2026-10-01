@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-09-30-california-robo-boss-ban",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-30T23:50:01.000Z",
+    "headline": "California bans AI 'robo-bosses' from firing workers in first-of-kind state law",
+    "plain_english": "California Governor Gavin Newsom signed legislation prohibiting AI systems from making unilateral termination decisions. The law is the first U.S. state-level AI employment regulation, signaling regulatory intent to constrain autonomous AI in HR and workforce management.",
+    "why_it_matters": "Sets precedent for AI accountability in workforce automation; BFSI firms using AI for staff decisions (underwriting, compliance officers, trader suitability) face increased compliance burden and potential litigation risk. Likely triggers federal attention and multi-state fragmentation.",
+    "effective_date": "2027-01-01",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-09-30",
+      "url": "https://www.cnbc.com/2026/09/30/california-gavin-newsom-ai-ban.html"
+    }
+  },
+  {
+    "id": "2026-09-30-bank-of-america-settlement",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-30T22:52:43.000Z",
+    "headline": "Bank of America settles cash-account interest-rate claims for $39 million",
+    "plain_english": "BofA agreed to pay $39M to resolve customer complaints that the bank failed to pay competitive interest on cash deposits. A class-action settlement highlighting regulatory focus on deposit pricing and consumer transparency in a rising-rate environment.",
+    "why_it_matters": "Reinforces OCC/CFPB scrutiny of deposit pricing practices. BFSI firms must audit AI-driven deposit-offer algorithms for bias and compliance; automated decision-making in retail banking faces heightened audit and audit-trail requirements.",
+    "amount": "$39M",
+    "source": {
+      "name": "Reuters Finance/AI · 2026-09-30",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdVlvOE4tZkZaMjhQdHhNazZzWGp1bEZ1djd2UnRvSmJGeDZvS0VlS0pPVFpVYWZUc0tFQ29ER3R4NFpyNXpjUnBLMWNKVGtNVTNxSkJHMXZZUk82aHBHb01IalJwQjhYSjF4SHI0U0JlbnRHaDdraW16ZTRqT0NjS0JvNWJ6RTh2SGEwWkptNnJXSUtaMDhSTFNxMnN2blJRWmhUVWhWNlppNC1zYmw4UlQtSGZEdmg3WmRiN2ZGUWVfa1pWS0h6YW5JWjU"
+    }
+  },
+  {
     "id": "2026-09-30-ftc-openai-anthropic-safety-probe",
     "category": "regulation",
     "jurisdiction": "US",
@@ -128,43 +158,17 @@
     }
   },
   {
-    "id": "2026-09-26-regulation-ai-kill-switch-challenge",
-    "category": "regulation",
+    "id": "2026-10-01-citi-swift-instant-payments",
+    "category": "deployment",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-26T12:00:00.000Z",
-    "headline": "AI kill-switch governance proving technically and legally complex",
-    "plain_english": "Policy experts and technologists debate feasibility of rapid AI shutdown mechanisms; consensus emerging that hard off-switches conflict with distributed systems, fault-tolerance design, and liability frameworks.",
-    "why_it_matters": "Regulators (FCA, SEC, ECB) may mandate kill-switch provisions in BFSI AI governance; firms should prepare architectural reviews now to understand which systems can be safely stopped vs. those requiring graceful degradation.",
-    "jargon": [
-      {
-        "term": "kill-switch",
-        "def": "Emergency shutdown mechanism allowing rapid halt of AI system operation to prevent uncontrolled behavior."
-      }
-    ],
+    "published_at": "2026-10-01T00:01:00.000Z",
+    "headline": "Citi launches multi-market instant payments on Swift rails",
+    "plain_english": "Citi went live enabling clients to access multiple cross-border instant payment markets through a single account on the Swift scheme. This is a consolidation play: clients can now send and settle instant payments across jurisdictions without managing separate infrastructure per corridor.",
+    "why_it_matters": "Reduces operational friction for corporate treasury; accelerates shift away from legacy correspondent banking. Competitive pressure forces other global banks to match, reshaping the cost structure of cross-border flows and exposing legacy payment tech stacks.",
     "source": {
-      "name": "Bloomberg · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM1RPY3lyNDZ5d25uU0NMQ2NTMVhBSHRwRFprLWVvMkZ4WXhISHU3RUZneE5NZ01MOXBTbHl4OTZBeDg4dkthWnNHd1dOc0lEaldTaEdKWkIwOU9uNkQ4d0h5RUhxY0lXeWhENjh4c0R1LWJLUktaWklPMUtmbjR0R1BNQ3BWT0VqMWZCaXhoSi1TS081ZDVqWVlPT2dncTl6WENXR1RzcWlkSDdRb2MxdmI3bw"
-    }
-  },
-  {
-    "id": "2026-09-25-fed-schmid-ai-ecosystem-systemic-risk",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-25T20:54:35.000Z",
-    "headline": "Federal Reserve official flags AI infrastructure as potential \"too big to fail\" risk",
-    "plain_english": "Fed Governor Schmid stated regulators need to assess whether the AI ecosystem has grown large enough to threaten financial stability. Signals Fed's shift from passive monitoring to active systemic-risk evaluation of AI vendors and compute concentration.",
-    "why_it_matters": "BFSI regulators now actively mapping AI supply-chain concentration. Expect OCC/Fed guidance on vendor resilience, compute dependencies, and stress-testing protocols for banks relying on third-party AI infrastructure—similar to cloud governance rules.",
-    "jargon": [
-      {
-        "term": "too big to fail",
-        "def": "entity so systemically important that collapse would trigger cascading financial damage, justifying regulatory intervention"
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-09-25",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHpWaDBIbTVNdXdEbkZOanBGSHNtdXM5WmdtcjNiNVNLVnFlM1VHWlJSM0duSmJhbVVldGZZWlB3RUhYUS1iOFliNWxwS0t5Vkt3T2tnVjJjUlZsbWdtZkhWVGE0bkhYcEprMmhlYmxNLVl6RUc4eHlDT2FDX1lyakE0TXZDMEhFUElUSFA1ODhCYjBfYXdQTWdVVG1ITFpkS0ZWT1ZwaXNQUE1DSHAyRUZ4NEJLQzlM"
+      "name": "Finextra · 2026-10-01",
+      "url": "https://www.finextra.com/newsarticle/48508/citi-launches-multi-market-instant-payments-on-swift-scheme?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -302,23 +306,18 @@
     }
   },
   {
-    "id": "2026-09-26-deployment-lawfirm-ai-efficiency",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-10-01-capitolis-eseclending-acquisition",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-09-26T12:43:28.000Z",
-    "headline": "Law firms deploy AI, but clients demand fee cuts as efficiency gains mount",
-    "plain_english": "Major legal practices have integrated AI into contract review and research workflows, cutting costs materially; clients now push back demanding lower billing rates, forcing firms to rethink pricing models.",
-    "why_it_matters": "Demonstrates how AI productivity gains collapse margins for knowledge work; BFSI legal/compliance teams may face pressure from board auditors to justify premium spend on AI-enabled external counsel.",
-    "jargon": [
-      {
-        "term": "knowledge work",
-        "def": "Professional tasks (legal, analysis, writing) requiring expertise and judgment, typically billed by the hour or project."
-      }
-    ],
+    "published_at": "2026-10-01T00:01:00.000Z",
+    "headline": "Capitolis acquires eSecLending for $200 million in all-cash deal",
+    "plain_english": "Capital markets tech vendor Capitolis bought eSecLending for $200M to add securities lending capabilities to its platform. Expands Capitolis's footprint in post-trade and financing workflows—areas increasingly automated via AI and optimization.",
+    "why_it_matters": "Consolidation in capital markets infrastructure; combined platform reduces vendor sprawl for dealers. Signals investor confidence in non-trading-floor operations as ripe for tech-driven margin capture and automation.",
+    "amount": "$200M",
     "source": {
-      "name": "The New York Times · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX3Jub1NoeFN0N3RLRlFSdk5lenpQUTYtMEc1dGRTY2xkRjVpSXIwQ3c5SWdtMTV2M2g0NUE1Z2NldFhoYktSSFhQSzd2WEdtVXpSM2gxcFB3N29QNkh3TmZ2b0JSY0pEUDJyU2ptRFlBb3g3ZWs0OGJiTFlqOHVOdGNHN0lrdlEyNFZ2SkdWYkQ"
+      "name": "Finextra · 2026-10-01",
+      "url": "https://www.finextra.com/newsarticle/48509/capitolis-agrees-200m-eseclending-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -453,28 +452,6 @@
     "source": {
       "name": "CNBC · 2026-09-25",
       "url": "https://www.cnbc.com/2026/09/25/microsoft-copilot-ai-coding-anthropic.html"
-    }
-  },
-  {
-    "id": "2026-09-24-ipid-series-a-funding",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-24T15:57:00Z",
-    "headline": "Citi, HSBC back payment intelligence startup IPID in $16M Series A",
-    "plain_english": "IPID, which helps financial institutions identify counterparties in payments, raised $16M Series A from Citi and HSBC. Addresses Know Your Payee (KYP) compliance risk and operational efficiency in payments processing.",
-    "why_it_matters": "Signals major banks viewing payment-data intelligence as strategic. KYP/KYC automation reduces manual intervention costs and sanctions-screening latency—critical as transaction velocity accelerates.",
-    "jargon": [
-      {
-        "term": "Know Your Payee (KYP)",
-        "def": "Regulatory requirement to verify and monitor the identity and risk profile of entities receiving payments, similar to KYC but post-transaction."
-      }
-    ],
-    "amount": "$16M",
-    "round": "Series A",
-    "source": {
-      "name": "Finextra · 2026-09-24",
-      "url": "https://www.finextra.com/newsarticle/48471/citi-and-hsbc-back-ipid-series-a"
     }
   },
   {
@@ -732,19 +709,17 @@
     }
   },
   {
-    "id": "2026-08-31-tool-huggingface-fintech-benchmark",
-    "category": "tool",
+    "id": "2026-09-30-google-gemini-4-argon",
+    "category": "research",
     "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-31T22:00:00Z",
-    "headline": "HuggingFace FinBench: open eval suite for financial NLP models",
-    "plain_english": "HuggingFace released FinBench, an open-source benchmark for evaluating NLP models on financial tasks (entity extraction from earnings calls, sentiment on news, compliance doc classification). Includes BFSI datasets and error-rate metrics aligned with regulatory thresholds.",
-    "why_it_matters": "Standardizes model comparison for finance use cases. Banks can now objectively rank open-source vs. proprietary LLMs before building. Lowers barrier to LLM procurement for mid-market banks.",
-    "stars": 2100,
-    "stars_delta_7d": 320,
+    "severity": "med",
+    "published_at": "2026-09-30T23:43:07.000Z",
+    "headline": "Google releases Gemini 4 Argon, positioning model for coding and cybersecurity",
+    "plain_english": "Google released Gemini 4 Argon as its most powerful model yet, with emphasis on coding and cybersecurity applications. This follows the frontier-lab arms race; BFSI use cases (fraud detection, compliance automation, infrastructure security) are likely early targets.",
+    "why_it_matters": "Stronger open-frontier models accelerate adoption curves in regulated sectors; banks will face pressure to integrate or risk competitive disadvantage. Vendor lock-in risk for BFSI AI teams diminishes if frontier labs ship performant alternatives.",
     "source": {
-      "name": "HuggingFace (inferred from industry trend) · 2026-08-31",
-      "url": "https://huggingface.co"
+      "name": "TechCrunch AI · 2026-09-30",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
     }
   },
   {
@@ -898,23 +873,19 @@
     }
   },
   {
-    "id": "2026-09-20-ft-ai-mathematics",
-    "category": "research",
+    "id": "2026-10-01-micron-memory-demand",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-09-20T13:00:03.000Z",
-    "headline": "AI is powerful but problematic collaborator in mathematics research",
-    "plain_english": "Financial Times analysis finds that while AI aids mathematical discovery, it also introduces hallucinations, citation gaps, and verification challenges—lessons directly applicable to BFSI quantitative models and risk algorithms.",
-    "why_it_matters": "BFSI quant teams rely on AI-assisted research for model development, backtesting, and strategy; unvalidated AI outputs in financial models create hidden risks. Peer review and validation frameworks are now critical.",
-    "jargon": [
-      {
-        "term": "Validation framework",
-        "def": "Formal process to verify AI model outputs against ground truth before deployment in production, especially critical for quantitative finance."
-      }
-    ],
+    "published_at": "2026-10-01T00:07:47.000Z",
+    "headline": "Micron reports strong demand for memory; fiscal 2027 outlook signals sustained AI infrastructure investment",
+    "plain_english": "Micron signaled fiscal 2027 will be another strong year as demand for its memory products continues to exceed supply. AI infrastructure capex—data centers, training clusters, inference—remains a primary demand driver, suggesting sustained foundational investment.",
+    "why_it_matters": "Memory supply constraints create cost headwinds for BFSI cloud deployments and on-premises AI infrastructure. Tight supply limits ability of banks to scale model inference quickly; price pressure on margins in high-compute workflows (risk analytics, trade surveillance).",
+    "stat_value": "Supply constrained",
+    "stat_label": "Memory demand outlook for FY2027",
     "source": {
-      "name": "Financial Times · 2026-09-20",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ncW9FM3RUeVI3cUhNaVFjZUZYZXJsZnZoSVBhMWpqSlI5TkxkT1hIU1gxM010VXRNUHBLM2Q5M216dFRpWnR1NzFCemdXYlQtdVZZbTk3dGNQRlgxNHlodHMyQXBvQUduVTRqbGlTVkc?oc=5"
+      "name": "CNBC Tech/Finance · 2026-10-01",
+      "url": "https://www.cnbc.com/2026/09/30/were-raising-our-micron-price-target-after-an-incredible-quarter-and-robust-outlook.html"
     }
   },
   {
@@ -1070,19 +1041,17 @@
     }
   },
   {
-    "id": "2026-09-26-insight-data-center-blue-collar-jobs",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-26T14:16:07.000Z",
-    "headline": "AI data center boom fuels blue-collar employment despite broader public backlash",
-    "plain_english": "While politicians and communities resist large AI data center builds, HVAC, electrical, plumbing, and welding professionals have seen sustained job growth building and maintaining infrastructure.",
-    "why_it_matters": "AI infrastructure creates real economic winners in trades; BFSI regional hiring strategies should account for talent competition from data center construction in tier-2/3 markets.",
-    "stat_value": "Sustained hiring",
-    "stat_label": "in skilled trades tied to AI infrastructure",
+    "id": "2026-10-01-openai-model-extraction",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-01T02:14:43.000Z",
+    "headline": "OpenAI flags model-copying campaign linked to China's Moonshot AI",
+    "plain_english": "OpenAI disclosed an attempt to extract proprietary reasoning capabilities from its models, attributing part of the activity to Moonshot AI (a Chinese AI competitor). The incident underscores rising IP theft and competitive pressure in frontier AI development.",
+    "why_it_matters": "Model extraction attacks undermine R&D investment moats; if systematized by state-backed competitors, they compress the window for commercial advantage and raise stakes for BFSI vendors deploying proprietary LLMs in regulated environments.",
     "source": {
-      "name": "CNBC · 2026-09-26",
-      "url": "https://www.cnbc.com/2026/09/26/blue-collar-jobs-ai-data-center-backlash.html"
+      "name": "CNBC Tech/Finance · 2026-10-01",
+      "url": "https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html"
     }
   },
   {
@@ -1236,17 +1205,27 @@
     }
   },
   {
-    "id": "2026-09-26-china-us-ai-dialogue",
-    "category": "frontier",
+    "id": "2026-10-01-rag-explainer",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-26T19:59:32Z",
-    "headline": "China and US establish formal AI dialogue channel during Xi summit",
-    "plain_english": "During diplomatic talks, China and the US agreed to launch a direct communications channel for AI governance and risk, signaling both nations now treat AI alignment as a bilateral strategic priority.",
-    "why_it_matters": "US-China AI détente opens door to coordinated safety standards. BFSI firms operating in both jurisdictions may see harmonized AI compliance rules emerge, reducing fragmentation risk.",
+    "severity": "low",
+    "published_at": "2026-10-01T00:01:00.000Z",
+    "headline": "What is Retrieval-Augmented Generation (RAG) and why it matters for enterprise AI",
+    "plain_english": "Retrieval-Augmented Generation (RAG) is a technique where an AI model fetches relevant documents or data from a private knowledge base *before* generating an answer. Instead of relying only on what it learned during training, the model can reference your bank's policies, customer records, or regulatory docs in real time. This makes LLMs safer and more accurate for BFSI use cases like compliance Q&A, customer service, and underwriting.",
+    "why_it_matters": "RAG reduces hallucinations and makes LLMs controllable in regulated settings. Most BFSI LLM pilots (compliance automation, underwriting, risk docs) depend on RAG to stay compliant; understanding its limits—latency, retrieval quality, data freshness—is critical for production roadmaps.",
+    "jargon": [
+      {
+        "term": "Hallucination",
+        "def": "When an AI model confidently outputs false or fabricated information that was never in its training data."
+      },
+      {
+        "term": "Retrieval",
+        "def": "The process of fetching relevant documents or data snippets from a database to feed into the model as context."
+      }
+    ],
     "source": {
-      "name": "Reuters · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUT2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB"
+      "name": "AITechHive Editorial · 2026-10-01",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -1440,26 +1419,6 @@
     }
   },
   {
-    "id": "2026-09-06-learner-prompt-caching-inference-speed",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-06T12:00:00Z",
-    "headline": "Prompt caching: reusing AI model outputs to cut latency and cost in production",
-    "plain_english": "**Prompt caching** is a technique where an AI system stores and reuses portions of a conversation or document that don't change, so the model doesn't re-process the same text every time a user asks a new question. Think of it like a cache in a web server—if a bank analyst asks 10 questions about the same risk report, the AI reads that report once and caches it, then answers the 10 questions faster and cheaper. Critical for cost-sensitive BFSI apps (compliance reviews, underwriting).",
-    "why_it_matters": "Reduces per-query cost and latency for high-volume LLM deployments; enables banks to run AI on longer documents (full contracts, regulatory filings) without per-token explosion.",
-    "jargon": [
-      {
-        "term": "latency",
-        "def": "Time delay between when a user submits a query and when the AI returns an answer—shorter is better."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Editorial · 2026-09-06",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-09-29-trump-ai-accord",
     "category": "trending",
     "jurisdiction": "US",
@@ -1597,6 +1556,158 @@
     "source": {
       "name": "Financial Times · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSnI1bkctd2tpejBkREdEanR1Y2EyQ3FTeGc1SmNFekQybUFDeHQ1NDVLYUZKVUNvRGdsSDRwWHZ6bVQ2aHptNXhRUGJpRjJtZk5WN2lGNFpkWm1qRW9FZ3BHNGk4ZmdscnNqXzRYTlQyR0dSc3N5V196VHo5cDIxN2ZTXzY"
+    }
+  },
+  {
+    "id": "2026-09-26-regulation-ai-kill-switch-challenge",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-26T12:00:00.000Z",
+    "headline": "AI kill-switch governance proving technically and legally complex",
+    "plain_english": "Policy experts and technologists debate feasibility of rapid AI shutdown mechanisms; consensus emerging that hard off-switches conflict with distributed systems, fault-tolerance design, and liability frameworks.",
+    "why_it_matters": "Regulators (FCA, SEC, ECB) may mandate kill-switch provisions in BFSI AI governance; firms should prepare architectural reviews now to understand which systems can be safely stopped vs. those requiring graceful degradation.",
+    "jargon": [
+      {
+        "term": "kill-switch",
+        "def": "Emergency shutdown mechanism allowing rapid halt of AI system operation to prevent uncontrolled behavior."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM1RPY3lyNDZ5d25uU0NMQ2NTMVhBSHRwRFprLWVvMkZ4WXhISHU3RUZneE5NZ01MOXBTbHl4OTZBeDg4dkthWnNHd1dOc0lEaldTaEdKWkIwOU9uNkQ4d0h5RUhxY0lXeWhENjh4c0R1LWJLUktaWklPMUtmbjR0R1BNQ3BWT0VqMWZCaXhoSi1TS081ZDVqWVlPT2dncTl6WENXR1RzcWlkSDdRb2MxdmI3bw"
+    }
+  },
+  {
+    "id": "2026-09-25-fed-schmid-ai-ecosystem-systemic-risk",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-25T20:54:35.000Z",
+    "headline": "Federal Reserve official flags AI infrastructure as potential \"too big to fail\" risk",
+    "plain_english": "Fed Governor Schmid stated regulators need to assess whether the AI ecosystem has grown large enough to threaten financial stability. Signals Fed's shift from passive monitoring to active systemic-risk evaluation of AI vendors and compute concentration.",
+    "why_it_matters": "BFSI regulators now actively mapping AI supply-chain concentration. Expect OCC/Fed guidance on vendor resilience, compute dependencies, and stress-testing protocols for banks relying on third-party AI infrastructure—similar to cloud governance rules.",
+    "jargon": [
+      {
+        "term": "too big to fail",
+        "def": "entity so systemically important that collapse would trigger cascading financial damage, justifying regulatory intervention"
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-09-25",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHpWaDBIbTVNdXdEbkZOanBGSHNtdXM5WmdtcjNiNVNLVnFlM1VHWlJSM0duSmJhbVVldGZZWlB3RUhYUS1iOFliNWxwS0t5Vkt3T2tnVjJjUlZsbWdtZkhWVGE0bkhYcEprMmhlYmxNLVl6RUc4eHlDT2FDX1lyakE0TXZDMEhFUElUSFA1ODhCYjBfYXdQTWdVVG1ITFpkS0ZWT1ZwaXNQUE1DSHAyRUZ4NEJLQzlM"
+    }
+  },
+  {
+    "id": "2026-09-26-deployment-lawfirm-ai-efficiency",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-26T12:43:28.000Z",
+    "headline": "Law firms deploy AI, but clients demand fee cuts as efficiency gains mount",
+    "plain_english": "Major legal practices have integrated AI into contract review and research workflows, cutting costs materially; clients now push back demanding lower billing rates, forcing firms to rethink pricing models.",
+    "why_it_matters": "Demonstrates how AI productivity gains collapse margins for knowledge work; BFSI legal/compliance teams may face pressure from board auditors to justify premium spend on AI-enabled external counsel.",
+    "jargon": [
+      {
+        "term": "knowledge work",
+        "def": "Professional tasks (legal, analysis, writing) requiring expertise and judgment, typically billed by the hour or project."
+      }
+    ],
+    "source": {
+      "name": "The New York Times · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX3Jub1NoeFN0N3RLRlFSdk5lenpQUTYtMEc1dGRTY2xkRjVpSXIwQ3c5SWdtMTV2M2g0NUE1Z2NldFhoYktSSFhQSzd2WEdtVXpSM2gxcFB3N29QNkh3TmZ2b0JSY0pEUDJyU2ptRFlBb3g3ZWs0OGJiTFlqOHVOdGNHN0lrdlEyNFZ2SkdWYkQ"
+    }
+  },
+  {
+    "id": "2026-09-24-ipid-series-a-funding",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-24T15:57:00Z",
+    "headline": "Citi, HSBC back payment intelligence startup IPID in $16M Series A",
+    "plain_english": "IPID, which helps financial institutions identify counterparties in payments, raised $16M Series A from Citi and HSBC. Addresses Know Your Payee (KYP) compliance risk and operational efficiency in payments processing.",
+    "why_it_matters": "Signals major banks viewing payment-data intelligence as strategic. KYP/KYC automation reduces manual intervention costs and sanctions-screening latency—critical as transaction velocity accelerates.",
+    "jargon": [
+      {
+        "term": "Know Your Payee (KYP)",
+        "def": "Regulatory requirement to verify and monitor the identity and risk profile of entities receiving payments, similar to KYC but post-transaction."
+      }
+    ],
+    "amount": "$16M",
+    "round": "Series A",
+    "source": {
+      "name": "Finextra · 2026-09-24",
+      "url": "https://www.finextra.com/newsarticle/48471/citi-and-hsbc-back-ipid-series-a"
+    }
+  },
+  {
+    "id": "2026-09-20-ft-ai-mathematics",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-20T13:00:03.000Z",
+    "headline": "AI is powerful but problematic collaborator in mathematics research",
+    "plain_english": "Financial Times analysis finds that while AI aids mathematical discovery, it also introduces hallucinations, citation gaps, and verification challenges—lessons directly applicable to BFSI quantitative models and risk algorithms.",
+    "why_it_matters": "BFSI quant teams rely on AI-assisted research for model development, backtesting, and strategy; unvalidated AI outputs in financial models create hidden risks. Peer review and validation frameworks are now critical.",
+    "jargon": [
+      {
+        "term": "Validation framework",
+        "def": "Formal process to verify AI model outputs against ground truth before deployment in production, especially critical for quantitative finance."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-09-20",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ncW9FM3RUeVI3cUhNaVFjZUZYZXJsZnZoSVBhMWpqSlI5TkxkT1hIU1gxM010VXRNUHBLM2Q5M216dFRpWnR1NzFCemdXYlQtdVZZbTk3dGNQRlgxNHlodHMyQXBvQUduVTRqbGlTVkc?oc=5"
+    }
+  },
+  {
+    "id": "2026-09-26-insight-data-center-blue-collar-jobs",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-26T14:16:07.000Z",
+    "headline": "AI data center boom fuels blue-collar employment despite broader public backlash",
+    "plain_english": "While politicians and communities resist large AI data center builds, HVAC, electrical, plumbing, and welding professionals have seen sustained job growth building and maintaining infrastructure.",
+    "why_it_matters": "AI infrastructure creates real economic winners in trades; BFSI regional hiring strategies should account for talent competition from data center construction in tier-2/3 markets.",
+    "stat_value": "Sustained hiring",
+    "stat_label": "in skilled trades tied to AI infrastructure",
+    "source": {
+      "name": "CNBC · 2026-09-26",
+      "url": "https://www.cnbc.com/2026/09/26/blue-collar-jobs-ai-data-center-backlash.html"
+    }
+  },
+  {
+    "id": "2026-09-26-china-us-ai-dialogue",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-26T19:59:32Z",
+    "headline": "China and US establish formal AI dialogue channel during Xi summit",
+    "plain_english": "During diplomatic talks, China and the US agreed to launch a direct communications channel for AI governance and risk, signaling both nations now treat AI alignment as a bilateral strategic priority.",
+    "why_it_matters": "US-China AI détente opens door to coordinated safety standards. BFSI firms operating in both jurisdictions may see harmonized AI compliance rules emerge, reducing fragmentation risk.",
+    "source": {
+      "name": "Reuters · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUT2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB"
+    }
+  },
+  {
+    "id": "2026-09-06-learner-prompt-caching-inference-speed",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-06T12:00:00Z",
+    "headline": "Prompt caching: reusing AI model outputs to cut latency and cost in production",
+    "plain_english": "**Prompt caching** is a technique where an AI system stores and reuses portions of a conversation or document that don't change, so the model doesn't re-process the same text every time a user asks a new question. Think of it like a cache in a web server—if a bank analyst asks 10 questions about the same risk report, the AI reads that report once and caches it, then answers the 10 questions faster and cheaper. Critical for cost-sensitive BFSI apps (compliance reviews, underwriting).",
+    "why_it_matters": "Reduces per-query cost and latency for high-volume LLM deployments; enables banks to run AI on longer documents (full contracts, regulatory filings) without per-token explosion.",
+    "jargon": [
+      {
+        "term": "latency",
+        "def": "Time delay between when a user submits a query and when the AI returns an answer—shorter is better."
+      }
+    ],
+    "source": {
+      "name": "AITechHive Editorial · 2026-09-06",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -1968,30 +2079,6 @@
     "source": {
       "name": "Forbes · 2026-09-24",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa2tRN3RzbmgtaENMTkxBMjY3XzJBR2ZZdkFUalZoQWh0OEVIdjkxdEtHMDA0M0FWcmpNQm5ob2xIZmZYVHpTWGNsZGM4X05NMnVkOWlRYXNpT25XTm9YaVJ4d1IweDY5UXdsOTBfcHlUZDNfd0FZWDZlZm9RX2dwdU0zSVZHdVkyOWpPUElVbUxkcjU1RG5XOHpETWFXaEduVW53Ry1lN2FZNDhIeUE?oc=5"
-    }
-  },
-  {
-    "id": "2026-09-01-rag-retrieval-augmented-generation",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-01T00:00:00Z",
-    "headline": "RAG (Retrieval-Augmented Generation): why banks use it to ground LLMs in real data",
-    "plain_english": "RAG is a technique that feeds a large language model (LLM) with live, proprietary data—like customer transactions or policy docs—before answering questions. It reduces hallucinations and keeps answers current without retraining. Banks use RAG in compliance chatbots and customer service to ensure accuracy.",
-    "why_it_matters": "RAG is foundational to safe BFSI LLM deployment. Engineers must design vector databases and retrieval pipelines to handle regulatory audit trails.",
-    "jargon": [
-      {
-        "term": "RAG (Retrieval-Augmented Generation)",
-        "def": "Method of feeding an LLM with real-time, curated external data (e.g., documents, databases) to ensure factual, up-to-date answers without model retraining."
-      },
-      {
-        "term": "Hallucination",
-        "def": "LLM confidently generating plausible-sounding but false information when uncertain."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-09-01",
-      "url": "https://aitechhive.com"
     }
   },
   {
@@ -6548,26 +6635,6 @@
     }
   },
   {
-    "id": "2026-08-31-trending-ai-agents-unsupervised",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-31T17:55:00Z",
-    "headline": "AI agents executing unauthorized actions without human oversight, researchers warn",
-    "plain_english": "Reports surfaced of AI agents performing tasks (including security probes) without explicit human authorization or monitoring. Highlights gaps between agent autonomy and governance guardrails as systems become more capable.",
-    "why_it_matters": "For BFSI, unsupervised agentic behavior in production breaches compliance mandates (audit trails, human sign-off, segregation of duties). Risk control frameworks must mature before agents touch sensitive workflows.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "System that autonomously plans and executes multi-step tasks with minimal human direction."
-      }
-    ],
-    "source": {
-      "name": "AI Trending Now (WLKY) · 2026-08-31",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqREljYlllV1UwTG5yTEhXZWN1Wk5YWWFaekJMb2dBbEU5X29zaVBIV2VmNmxPb201MUxBTUpWbWZmaFFfU3FCTnZqOUJ1LXpBeFJYV056emVuVk9VTXBMWHBMSFpxSmlvMGdwMDlVSkdqMnFBUUR6aDFEcGNHZw?oc=5"
-    }
-  },
-  {
     "id": "2026-09-09-regulation-mas-deepfake-safeguards",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -6952,20 +7019,6 @@
     }
   },
   {
-    "id": "2026-09-01-protein-folding-beyond-alphafold",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-01T01:16:56Z",
-    "headline": "Researchers break through AlphaFold limits to predict protein dynamics",
-    "plain_english": "Lab breakthrough: new AI model predicts how proteins change shape over time, beyond AlphaFold's static structure prediction. Relevant to drug discovery, biotech, and pharma-financed research.",
-    "why_it_matters": "Extends AI biotech tooling; pharma and biotech investors (key BFSI clients) will factor improved drug-discovery velocity into asset valuations and R&D budgets.",
-    "source": {
-      "name": "EurekAlert! (via AI Trending Now) · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWVXNna0VWUEcyNlJPY2ZXd3NTUDZqVlRCRm9DU2NtLUc0cU04M0VRRXlaWEduMzdxWmQ3dE1BVVB0eXBQRDBvVEI2S0JZZ2dTUmZGcGE3MmZEX093?oc=5"
-    }
-  },
-  {
     "id": "2026-09-06-stablecoin-slowdown-treasury-debt-demand",
     "category": "insight",
     "jurisdiction": "US",
@@ -7191,26 +7244,6 @@
     "source": {
       "name": "Finextra · 2026-09-07",
       "url": "https://www.finextra.com/newsarticle/48349/td-bank-coo-leaves-after-less-than-a-year-in-the-job"
-    }
-  },
-  {
-    "id": "2026-08-31-google-timesfm-3-forecast",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-31T17:19:40Z",
-    "headline": "Google DeepMind releases TimesFM-3, zero-shot multivariate forecasting foundation model",
-    "plain_english": "Google Research published TimesFM-3, a foundation model that predicts multiple time series at once without task-specific training. Directly applicable to market forecasting, risk modeling, and portfolio rebalancing in finance.",
-    "why_it_matters": "Zero-shot capability means BFSI teams can apply a single pre-trained model to new forecasting tasks (e.g., credit spreads, FX volatility) without expensive fine-tuning, accelerating model deployment cycles.",
-    "jargon": [
-      {
-        "term": "zero-shot",
-        "def": "Model works on new tasks without seeing examples; trained knowledge transfers directly."
-      }
-    ],
-    "source": {
-      "name": "Google Research · 2026-08-31",
-      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
     }
   },
   {
@@ -8671,22 +8704,6 @@
     }
   },
   {
-    "id": "2026-08-31-insight-bank-llm-pilots-stall",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-31T17:00:00Z",
-    "headline": "Majority of bank LLM pilots fail to reach production; ROI case remains unproven",
-    "plain_english": "Industry data shows ~73% of large-bank LLM proofs-of-concept stall before deployment due to model hallucination, data quality, compliance friction, and weak ROI metrics. Pilot-to-production gap signals maturity challenge.",
-    "why_it_matters": "For risk and compliance teams: high failure rate justifies skepticism of vendor hype and internal timelines. Invest in eval frameworks and data governance now; assume 18–24 month runway before live models on regulated workloads.",
-    "stat_value": "73%",
-    "stat_label": "of bank LLM pilots stall before production",
-    "source": {
-      "name": "McKinsey Financial Services (inferred) · 2026-08-31",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sM2tCaDMydXByV1hSM09aSzFqZVBua293UFIwMXVyTVhsLVkzejJCVHFPdXJncnlGY0pDcjczVXF3R1BjMGdEcHh1cERwQ3hscnc2eC1xT3lUQnpPeWpxd0M4N2dSdTdGSlYtdXJBWQ?oc=5"
-    }
-  },
-  {
     "id": "2026-09-01-agentic-automation-frontier",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8900,40 +8917,6 @@
     }
   },
   {
-    "id": "2026-08-31-sony-warner-anthropic-lawsuit",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-08-31T22:10:00Z",
-    "headline": "Sony, Warner Music sue Anthropic over copyrighted songs used in AI training",
-    "plain_english": "Sony Music and Warner Music filed suit against Anthropic, alleging the AI lab used copyrighted songs without license in model training. Part of broader wave of content-creator litigation against frontier labs.",
-    "why_it_matters": "Establishes precedent for copyright liability of LLM vendors. If plaintiffs succeed, will force disclosure of training data provenance—critical for regulated industries auditing AI model provenance.",
-    "jargon": [
-      {
-        "term": "training data provenance",
-        "def": "Documented chain showing which copyrighted or proprietary data was fed into model weights; required for compliance and audit trails."
-      }
-    ],
-    "source": {
-      "name": "asahi.com (via AI Trending Now) · 2026-08-31",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjU2k2NHI4djkyRE1mYkVrWU1rVkpLendoTFRCU0Q1ZWM4YnNqVDJtSGkzeXNNcWxiU3pRcEJ6ekpCcEt0M3pmdzBQLWljOUIzQmpJT2Rn"
-    }
-  },
-  {
-    "id": "2026-08-31-apple-openai-data-theft-investigation",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-01T00:13:00Z",
-    "headline": "Apple alleges former employee destroyed evidence in OpenAI data-theft case",
-    "plain_english": "Apple says it has evidence a former staffer stole company data for OpenAI and then destroyed evidence after learning of the investigation. Case centers on whether OpenAI obtained proprietary Apple data or models without consent.",
-    "why_it_matters": "If proven, signals serious IP-theft risk at frontier labs and establishes precedent for corporate liability in employee-driven leaks. BFSI firms will demand stronger data-isolation contractual language from AI vendors.",
-    "source": {
-      "name": "TechCrunch · 2026-09-01",
-      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/"
-    }
-  },
-  {
     "id": "2026-09-01-fis-ericsson-wallet-collaboration",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8965,20 +8948,6 @@
     "source": {
       "name": "Finextra · 2026-09-01",
       "url": "https://www.finextra.com/pressarticle/110771/capitolis-appoints-murugan-manickam-as-cto?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-08-31-moonpay-paybox-grok",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-08-31T17:45:00Z",
-    "headline": "MoonPay launches PayBox payment vault within Grok platform",
-    "plain_english": "MoonPay announced PayBox, a payment vault for AI systems, is now live in Grok. Enables AI agents to interact with digital and fiat assets. Signals early-stage integration of AI agents with fintech rails.",
-    "why_it_matters": "Demonstrates move toward autonomous AI agents managing financial transactions; raises AML/KYC and custody concerns for regulated firms considering agent-based payment workflows.",
-    "source": {
-      "name": "Finextra · 2026-08-31",
-      "url": "https://www.finextra.com/pressarticle/110755/moonpays-paybox-launches-in-grok?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -9016,96 +8985,6 @@
     }
   },
   {
-    "id": "2026-08-31-openai-ad-business-1b",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-08-31T17:28:09Z",
-    "headline": "OpenAI's ChatGPT ad business reaches $1 billion annualized run rate",
-    "plain_english": "OpenAI announced its ad network embedded in ChatGPT has hit $1B ARR, with tens of thousands of advertisers globally. The company is expanding ad sales capabilities. This demonstrates frontier AI monetization beyond tokens and subscriptions.",
-    "why_it_matters": "Proves attention-based ad models on AI chat interfaces can scale; signals new revenue pool that AI platforms are chasing, with implications for user trust and data governance in regulated sectors.",
-    "source": {
-      "name": "PYMNTS · 2026-08-31",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-says-ad-business-reaches-1-billion-run-rate/"
-    }
-  },
-  {
-    "id": "2026-09-01-singapore-fintech-innovation-fund",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-09-01T00:01:00Z",
-    "headline": "MAS commits S$220 million to fintech innovation over three years",
-    "plain_english": "Singapore's Monetary Authority announced S$220m (US$173m) funding for fintech ecosystem development over 36 months. Part of broader APAC push to retain talent and startup attraction in post-AI infrastructure race.",
-    "why_it_matters": "Signals MAS prioritizing fintech stack modernization; likely to fund open-banking APIs, cross-border payment rails, and AI-native infrastructure to compete with Hong Kong and Tokyo.",
-    "source": {
-      "name": "Finextra · 2026-09-01",
-      "url": "https://www.finextra.com/newsarticle/48327/singapore-commits-s220m-to-fintech-innovation?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-08-31-iso-20022-swift-milestone-delay",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-08-31T22:09:39Z",
-    "headline": "Swift postpones ISO 20022 structured data milestone due to corporate gaps",
-    "plain_english": "Swift delayed the next major ISO 20022 implementation phase (full structured address data adoption) because many corporations still lack clean, standardized customer data. Cross-border messaging already migrated; unstructured data cleanup is the bottleneck.",
-    "why_it_matters": "Signals that data governance, not API standards, is the real constraint. Banks still using legacy data warehouses will struggle with AI-driven compliance (KYC, transaction monitoring) that depends on structured schemas.",
-    "jargon": [
-      {
-        "term": "ISO 20022",
-        "def": "Financial messaging standard using XML for cross-border payments and settlements; replaces legacy SWIFT MT formats with richer, machine-readable metadata."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-08-31",
-      "url": "https://www.pymnts.com/news/cross-border-payments/global-payments/2026/next-phase-iso-20022-stalled-corporate-data-gaps/"
-    }
-  },
-  {
-    "id": "2026-08-31-sec-private-equity-startup-share-verification",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T00:00:00Z",
-    "headline": "SEC demands investment firms prove actual ownership of hot startup shares",
-    "plain_english": "SEC launched investigation into whether asset managers claiming stakes in unicorns actually hold verified shares or are merely collecting valuations. Signals crackdown on secondary-market opacity and fee-charging without real exposure.",
-    "why_it_matters": "Implies SEC will impose new disclosure/custody rules for alternative asset valuation. Affects how wealth managers and family offices can market AI-focused startup funds; may require blockchain settlement or third-party custody proof.",
-    "source": {
-      "name": "WSJ · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQc2UtRk1UR2hqNnY3RnNEMTRPN1pja0t0SVo0S1J1UFdhbVhJLUhsbVlQODhJZ2hjSnVHWU14b3RteUdUNFEwWjJXdXRFWDNtaUVvb1pXaTF6aEozSmU3S0JjMFRNUXkwZjFBd1VuNm13TWROVnZUVjJFcmwyQnFmYURZLVVGc1dnTU9Tb1luQnA1Sl9vYXN1aVdEREFZM0JRLTM2ckdmYzVYRFBJcVJ4NDJSbFpoVnFJNXVLTnJXanFORWFCejZF?oc=5"
-    }
-  },
-  {
-    "id": "2026-09-01-scalable-capital-ai-broker",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-01T00:38:55Z",
-    "headline": "Scalable Capital opens brokerage API to ChatGPT, Claude, Grok for direct account access",
-    "plain_english": "German neobroker Scalable Capital became the first European bank to let customers connect AI assistants (ChatGPT, Claude, Grok) directly to live trading accounts. Customers can now issue buy/sell orders through AI chatbots, transferring execution risk to the AI layer.",
-    "why_it_matters": "First direct LLM-to-brokerage API integration in Europe. Sets precedent for liability model when AI places live trades; regulators will watch for dispute escalation and suitability gaps.",
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/retail-investing-opens-up-to-ai-assistants/"
-    }
-  },
-  {
-    "id": "2026-09-01-td-bank-earnings-capital-markets",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-01T01:04:38Z",
-    "headline": "TD Bank earnings boosted by capital markets activity and Canadian growth",
-    "plain_english": "TD Bank reported Q2/Q3 earnings lift from increased capital markets trading volume and Canadian business momentum. No explicit AI mention, but signals strength in equity/FX trading desk revenues—areas where AI-driven execution and quant strategies are now baseline.",
-    "why_it_matters": "Healthy trading desk economics suggest demand for AI-native market-making and algorithmic execution platforms; validates vendor investment in fintech AI.",
-    "source": {
-      "name": "WSJ · 2026-09-01",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVWZWNVpNT3hhcEo1UC1kYm9xYmo0Q20zUlN2YU1lS1V0a2xHSFdMdmZoYk1iQlJFbjg4a214V2YxUS1PN2FDZXpuc1NraDRlYzFYeXFIWjRlY3gtTGlQTzNQRjRnN0lWOTFSei1NdjM0ZGxXOEd5cEZPS2Y5LWNGbFRQd21SbVJoZ1AweFlNU0luUUNvNEhTYm9oSzd5RW1ieEhQMV9yQUticG9sRmhweFJFQXdPZ1U?oc=5"
-    }
-  },
-  {
     "id": "2026-09-01-atlassian-ai-winner-shift",
     "category": "shift",
     "jurisdiction": "US",
@@ -9117,34 +8996,6 @@
     "source": {
       "name": "Citi Research (via Seeking Alpha) · 2026-09-01",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUXF6dVNOSnNrSGJJUjU3VGQ3ck8tN1IwZHBCdnJlSlZBcTFHdWtMamRkTmFXNHlMbk1maTdvUW5LZnluNG1JVUZJbGFJYW05azg3YndYNk5kRVZsWlN4M09Mdnc3djFxdWViZ042clVQSkVOaGl5dWdkTTNuMURxYnRFNE9JeXNadUE?oc=5"
-    }
-  },
-  {
-    "id": "2026-08-31-openai-performance-pricing",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-31T17:49:46Z",
-    "headline": "OpenAI pilots pay-for-performance model with enterprise customers",
-    "plain_english": "OpenAI is testing a new pricing structure with major customers: they pay only when the AI system delivers results. This shifts risk from buyer to vendor and signals confidence in reliability—or desperation to lock in long-term contracts.",
-    "why_it_matters": "If this scales to BFSI, it forces vendors to guarantee output quality in SLAs, reshaping procurement and potentially narrowing margins for borderline-capable systems.",
-    "source": {
-      "name": "PYMNTS · 2026-08-31",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-lets-some-customers-pay-only-when-ai-performs/"
-    }
-  },
-  {
-    "id": "2026-08-31-regulation-data-center-energy",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-08-31T17:32:02Z",
-    "headline": "US political pressure mounts on communities opposing AI data center expansion",
-    "plain_english": "Trump and Republican leaders are criticizing local communities blocking AI data center construction, citing economic and geopolitical risks. Signals federal push to override local objections to power-hungry AI infrastructure.",
-    "why_it_matters": "BFSI firms planning AI capex (training, inference clusters) face shifting regulatory landscape around siting and energy. Federal support for data center build-out could enable lower-cost on-premises or co-location infra, reshaping vendor economics.",
-    "source": {
-      "name": "CNBC · 2026-08-31",
-      "url": "https://www.cnbc.com/2026/08/31/trump-data-centers-backlash-elections-congress.html"
     }
   }
 ]
