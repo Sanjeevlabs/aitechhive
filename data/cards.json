@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-10-02-cfpb-hardware-security-vacated-offices",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-02T01:23:06Z",
+    "headline": "CFPB ordered to secure hardware from vacated offices after inspector general warning",
+    "plain_english": "US Federal Reserve's Office of Inspector General issued a report flagging unsecured IT assets left at CFPB regional offices vacated in early 2025. The OIG recommended asset recovery; CFPB subsequently cleared hardware. Signals lax physical security controls at federal financial regulator.",
+    "why_it_matters": "Underscores asset management gaps even at federal agencies. If CFPB—which regulates consumer finance—lapses on physical security, it weakens enforcement credibility around cybersecurity standards it imposes on fintech and banks.",
+    "source": {
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/legal/cfpb/2026/cfpb-clears-hardware-from-vacated-offices-after-watchdog-security-warning/"
+    }
+  },
+  {
     "id": "2026-09-30-california-robo-boss-ban",
     "category": "regulation",
     "jurisdiction": "US",
@@ -140,21 +154,65 @@
     }
   },
   {
-    "id": "2026-09-28-regulation-singapore-ai-workforce",
-    "category": "regulation",
-    "jurisdiction": "APAC",
+    "id": "2026-10-02-barclays-anthropic-claude-deployment",
+    "category": "deployment",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-09-28T00:01:00Z",
-    "headline": "Singapore mandates AI skills training for 80,000 financial services workers",
-    "plain_english": "Singapore's financial regulator and industry bodies launched a co-lab to upskill the FS workforce in AI. Target: 80,000 employees trained in AI fundamentals, applications, and risk management within 24 months. Signals regulatory expectation that every BFSI employee needs baseline AI literacy.",
-    "why_it_matters": "Sets precedent for mandatory workforce AI competency standards. Expect EU, UK, and US regulators to follow with formal training mandates tied to operational risk governance and vendor oversight.",
+    "published_at": "2026-10-02T00:01:00Z",
+    "headline": "Barclays expands Anthropic's Claude for software development and legacy system modernization",
+    "plain_english": "Barclays is scaling Claude (Anthropic's LLM) across engineering and operations teams to accelerate code generation, modernize legacy infrastructure, and improve operational efficiency. Deployment scope and financial impact not disclosed.",
+    "why_it_matters": "Large-cap bank validating Claude for internal software delivery signals enterprise confidence in Anthropic's model safety and performance relative to competitors. May justify Anthropic's pre-IPO $2T valuation claim.",
+    "jargon": [
+      {
+        "term": "LLM",
+        "def": "Large language model—an AI trained on vast text data to generate human-like text; used for code, analysis, writing."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-09-28",
-      "url": "https://www.finextra.com/newsarticle/48482/singapore-to-train-80000-fs-sector-employees-in-ai-skills"
-    },
-    "scale": {
-      "metric": "employees",
-      "value": "80000"
+      "name": "Finextra · 2026-10-02",
+      "url": "https://www.finextra.com/newsarticle/48519/barclays-ramps-up-use-of-anthropics-claude?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-10-02-fiserv-digital-asset-live-bank-north-dakota",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-02T01:03:44Z",
+    "headline": "Fiserv digital asset platform goes live with Bank of North Dakota stablecoin",
+    "plain_english": "Fiserv's digital asset infrastructure entered production with Bank of North Dakota's Roughrider Coin (USD-backed stablecoin). First live use case demonstrates Fiserv's readiness to support tokenized money for regulated issuers.",
+    "why_it_matters": "Validates Fiserv's stablecoin-as-infrastructure capability. If other US regional banks adopt similar tokenized deposit products, payment rails and settlement efficiency improve; opens new revenue stream for core processors.",
+    "source": {
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/blockchain/2026/fiserv-digital-asset-platform-goes-live-with-bank-of-north-dakota-stablecoin/"
+    }
+  },
+  {
+    "id": "2026-10-02-lexisnexis-ai-fraud-adaptive",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-02T01:55:29Z",
+    "headline": "LexisNexis launches adaptive AI fraud detection tool",
+    "plain_english": "LexisNexis released an AI fraud detection system that adapts to evolving attack patterns in real time. Designed to counter fraud schemes that evade static rule-based systems. Deployment partners and scope not yet detailed.",
+    "why_it_matters": "Signals fraud detection moving from rule engines to continuous learning models. Banks adopting adaptive AI tools can reduce false positives and catch sophisticated schemes faster than competitors using rule-based systems.",
+    "source": {
+      "name": "CFOtech Asia · 2026-10-02",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObE1UakhLUEZLaThyMk5HOHFXdEpJM3hBTmc0dTByenl6bkxKeXdYNEg4RVBJT01JOWNoS3hMQkFhVkpqT1RsNkFXTklPZXFHUWR4eHFBbi1fdHdqWUNhM0xieEczSEFqSFVhRzlKRThQdXVKa3ZzbkVVUExRbEhUS1ZuajVlRUxhMVNz"
+    }
+  },
+  {
+    "id": "2026-10-02-wemoney-ai-lending-assessment-australia",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-02T00:01:00Z",
+    "headline": "WeMoney launches AI lending assessment service on Australia's Consumer Data Right",
+    "plain_english": "Australian fintech WeMoney deployed an AI-powered lending assessment tool that ingests open banking data via Consumer Data Right (CDR). Uses AI to evaluate creditworthiness in real time. Designed to speed loan decisioning and reduce friction.",
+    "why_it_matters": "Demonstrates CDR + AI + lending as viable model. Other APAC markets (Singapore, Hong Kong) observing Australia's open banking success; similar tools likely to follow in UK, EU, and India.",
+    "source": {
+      "name": "Finextra · 2026-10-02",
+      "url": "https://www.finextra.com/newsarticle/48525/australias-wemoney-launches-ai-and-open-banking-powered-lending-assessment-service?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -256,59 +314,17 @@
     }
   },
   {
-    "id": "2026-09-29-finastra-payment-ai-deployment",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-29T16:04:46Z",
-    "headline": "Finastra deploys AI to help banks resolve payment processing issues",
-    "plain_english": "Finastra, a financial software vendor, released AI tooling to assist banks in diagnosing and resolving payment processing failures faster, reducing customer friction.",
-    "why_it_matters": "Payment processing automation reduces manual triage and error rates; banks adopting this shift operational cost per incident and lower SLA breach risk.",
-    "source": {
-      "name": "PYMNTS · 2026-09-29",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjhIcUh2YkZCZkVjS05Nd1dWcnptdTZVSlJNNEVvcm1jem43NGxZWDFaSklQQ3NPa1djMmQyekozemJ0Ty1odlcxYy1VeGZmRF81NllBeV9UYlR4YnV4RHZVVl9jcHYteUNoUEVqVlpXdnBEU0FhOXpXVXlDUXZpYlJMcUhzTXlhcUhlT0RuLUwxTTNjSE9EelFnTjRTNnppUC00LU9FNGlCMmtacy13SGVGN3A3YzhvN2MwYnZB"
-    }
-  },
-  {
-    "id": "2026-09-28-deployment-citi-ventures-ai-bets",
-    "category": "deployment",
+    "id": "2026-10-02-anthropic-ipo-2t-valuation",
+    "category": "vendor",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-28T18:14:00Z",
-    "headline": "Citi Ventures invests across AI for lending, coding, and back-office automation",
-    "plain_english": "Citi's venture arm announced a portfolio of AI bets spanning loan origination, software engineering, and manual process automation. Deployment targets areas of high labor cost and standardized decision-making—typical entry points for AI ROI in banking.",
-    "why_it_matters": "Signals Citi shifting from AI pilots to committed venture capital allocation on autonomous workflows. Other G-SIFI banks monitoring Citi's vendor choices (lending models, coding assistants, RPA augmentation) as bellwethers for production-grade tooling.",
+    "published_at": "2026-10-01T23:23:09Z",
+    "headline": "Anthropic targets pre-Thanksgiving IPO at $2 trillion valuation",
+    "plain_english": "Anthropic is preparing for a formal IPO roadshow starting week of November 9, aiming to trade before Thanksgiving (November 26), according to Bloomberg sources. Valuation target: $2 trillion. Plans remain subject to change.",
+    "why_it_matters": "Anthropic IPO at mega-cap valuation signals investor belief in Claude as enterprise standard. If successful, validates BFSI demand for Anthropic's models and establishes clear competitor to OpenAI in regulated sectors.",
     "source": {
-      "name": "American Banker · 2026-09-28",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONXdZTUpKX2tpNjBab1BlTkFMT0JnaG1UalFfdzQzQWRfai1SZHVJU2RfYWxLZXk3enJSOXJqcFIzNFVSRzdtdFVnUjhPMFpZTnhhUWgtSm8yZUhibk1FaHBQU3NCSTdaNU5VWWhRQW10WTJsTWloQU1IQ3c2UW9qTFFWX29sNHVvZ3ByUExNWGp3STZrR1E"
-    }
-  },
-  {
-    "id": "2026-09-28-deployment-narmi-ai-marketplace",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-28T17:10:08Z",
-    "headline": "Narmi launches AI marketplace for community financial institutions",
-    "plain_english": "Narmi, a fintech serving community banks and credit unions, opened an AI marketplace allowing smaller financial institutions to adopt pre-built, vetted AI tools without building in-house. Addresses SMB fintech's AI capability gap.",
-    "why_it_matters": "Community banks historically lag on AI adoption due to cost and complexity. Marketplace model lowers switching costs; expect consolidation of compliance-grade AI tools (KYC, fraud detection, document processing) around a few trusted BFSI-vertical marketplaces.",
-    "source": {
-      "name": "Pulse 2.0 · 2026-09-28",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQenZjRExlLUZ3cExpTGl3RVo4TUpuWnVGVW5zUkRSOGVURDBGcjJOLXFkaG1EZ0ppajIwZGJiRnVJMkl2NURxWmk4MmZzcjVEMDVCWDNnV3R0WXl1YVhFTWxMUW5aUW8yYlRPUXl5bDJSUE1aMnQ0T0pOQmxxUWh2bVVvcWlSbDQ4dkNxREZPWdIB4wJBVV95cUxPdXhZMVJqbmlMc1pOOWxDTno1LUVoZ19oTFhxS1hOU1VMVzE4ZlhYbVFWWU9udmxFdmVZb29aUXVPaWhqd1VEZFIzWmwzUGEtV1FsSWtRRldCUmVUWXpGZjVkYlpnU2l1OGdmay1wWDJfWjdDS1dFcDRlR3dOOS1iQnBFcm4xTVZJQUl0OUJCYU1fcmVTUFRsVHNfNEhHZF9PcW91aVJrMmVXYUE4VEZwdWc3dEN2TnlseG9aUWh5UTRzdFowR1AzVElMSS1Ba2ZsMkd6SnlUY1Uzd0NGVTBXT0NpQlkyWWI3OE1pMjUzZmtYbW9oa25reDFJRmNMRlFSYnoycU5xY2s2X08zdm1LSS1nSU1XbWFvclJIRjk1b294V2FsTTJWZkJ2X055TkdWR1FicHZmYmZMcHNyOHRHT3hDczF1OGtrejEzMldEWC1rdmhvNmRYMW5EN2lsN0FlbktN"
-    }
-  },
-  {
-    "id": "2026-09-28-deployment-revolut-banco-cetelem",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-28T00:01:00Z",
-    "headline": "Revolut wins regulatory nod to acquire Banco Cetelem Argentina from BNP Paribas",
-    "plain_english": "Revolut received green light to buy small Argentine bank Banco Cetelem from BNP Paribas. Adds core banking license and peso deposits to Revolut's LatAm footprint. Signals Revolut's shift from FinTech to regulated bank operator across multiple jurisdictions.",
-    "why_it_matters": "Demonstrates FinTech consolidation into legacy banking infrastructure. Revolut now must operationalize AI-driven compliance, KYC, and fraud monitoring across three regulatory regimes (EU, UK, Argentina).",
-    "source": {
-      "name": "Finextra · 2026-09-28",
-      "url": "https://www.finextra.com/newsarticle/48479/revolut-gets-green-light-to-buy-argentinian-bank"
+      "name": "PYMNTS · 2026-10-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-targets-pre-thanksgiving-ipo-at-2-trillion-valuation/"
     }
   },
   {
@@ -458,17 +474,23 @@
     }
   },
   {
-    "id": "2026-09-26-vendor-apple-haptics-patent-verdict",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-26T14:55:59.000Z",
-    "headline": "Jury awards Taction Technology $5.7 billion in iPhone, Apple Watch haptics patent case",
-    "plain_english": "A US federal court found Apple infringed two haptics patents owned by Taction Technology, awarding $5.7 billion in damages; Apple plans to appeal.",
-    "why_it_matters": "Massive patent verdict underscores hardware IP risk for consumer tech; BFSI device makers (payment cards, wearables) using haptic feedback should audit IP clearance to avoid similar exposure.",
+    "id": "2026-10-02-bmo-mastercard-embedded-commercial-payments",
+    "category": "shift",
+    "jurisdiction": "US|CA",
+    "severity": "med",
+    "published_at": "2026-10-02T00:27:27Z",
+    "headline": "BMO launches embedded commercial payments on Mastercard; first Canadian issuer",
+    "plain_english": "Bank of Montreal and Mastercard deployed embedded payments capability allowing corporate card users to initiate transactions within third-party enterprise software (e.g., ERP, procurement platforms) without leaving the app. Live in Canada and US.",
+    "why_it_matters": "Embedded finance shifts payment friction from separate gateways to native UX within B2B workflows. First-mover advantage in Canada; other card issuers will replicate. Reduces drop-off, increases transaction frequency.",
+    "jargon": [
+      {
+        "term": "embedded payments",
+        "def": "Payment capability integrated directly into a non-bank app or platform so users can transact without switching to a separate payment provider."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-09-26",
-      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html"
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/bmo-becomes-first-canadian-issuer-to-deploy-mastercard-embedded-commercial-payments/"
     }
   },
   {
@@ -618,26 +640,6 @@
     "source": {
       "name": "Reuters · 2026-09-27",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQmNRNTdyaGdENWhHUlEzVFpTVnRndmtXcDBfZlVmTVZpWWF2SEF6M1FwXzBtbFZRdWJWOGNKc2JfYll1aEZxamJYYTJwZ2pXMUZ0NW1wWjEyQXRObnRJa29BbzhrLWxXOTFmSVZlRlkyS1Z3endodzAyYm9Sc0NOYlE5REhwbnZQbERfdWc2Mi1LbWVyaGpiOGtjZ1dVWGQ2cTJib1FVM1ZJYkVZbmRJWA"
-    }
-  },
-  {
-    "id": "2026-09-27-meta-muse-subscription-economy",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-27T14:33:22.000Z",
-    "headline": "Meta's Muse agent targets subscription spending patterns as AI enters household finance",
-    "plain_english": "Meta released Muse, an AI personal agent designed to monitor and optimize credit card spending, focusing on the subscription economy—a sector worth hundreds of billions annually. The move signals AI assistants are moving beyond search into active financial decision-making for consumers.",
-    "why_it_matters": "Banks and fintech rely on subscription revenue and customer spending inertia. AI agents optimizing these away could shift $100B+ in recurring revenue; financial institutions must anticipate agent-native commerce friction.",
-    "jargon": [
-      {
-        "term": "Personal agent",
-        "def": "An AI that autonomously acts on behalf of a user (e.g., cancelling unused services) without explicit per-action approval."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-27",
-      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html"
     }
   },
   {
@@ -896,6 +898,20 @@
     }
   },
   {
+    "id": "2026-10-01-fortune-bofa-sp-ai-regulated-risk",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-01T23:36:00Z",
+    "headline": "BofA and S&P warn on AI ROI in regulated industries; risk of rushing adoption without governance",
+    "plain_english": "Bank of America and S&P Global executives told Fortune that while AI offers massive productivity gains in banking, insurance, and asset management, regulatory and legal risk increase sharply if implementation outpaces governance. Early movers face higher reputational and compliance costs.",
+    "why_it_matters": "Signals divergence between AI-first shops (tech firms) and compliance-first shops (banks). Banks deploying without proper audit trails, model governance, and third-party validation risk enforcement action. Governance maturity is now a competitive moat.",
+    "source": {
+      "name": "Fortune · 2026-10-01",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNjdDYWM3NjRMa2pURktwWmQ0VEJ5RlFFbTIxR0NyaXdrOVZPN2VUQlRXejVrWnIzdWhvcENlUzllTEVGY0tOT0d4aWVjZWhON1RNM2FldjVNYmNyUkJPS1ZRZXVFUGgtdk5yMlU0OU1YS1JLNzBEQjFrT3EzanVRaEh5VnkwN2Z1"
+    }
+  },
+  {
     "id": "2026-10-01-td-economics-ai-jobs",
     "category": "insight",
     "jurisdiction": "CA",
@@ -1044,23 +1060,37 @@
     }
   },
   {
-    "id": "2026-09-27-ai-subscription-credential-theft",
-    "category": "insight",
+    "id": "2026-10-02-interpol-agentic-ai-cyber-threats",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-09-27T12:03:37.000Z",
-    "headline": "Credential theft of AI service subscriptions enables unauthorized model access at scale",
-    "plain_english": "Attackers are compromising login credentials for paid AI service subscriptions (ChatGPT Plus, Claude Pro, etc.) and reselling access. This allows free/low-cost model usage and creates account-takeover risk for financial services employees.",
-    "why_it_matters": "Banks deploying enterprise LLM access must enforce MFA, monitor anomalous API usage, and audit model interactions for sensitive data leakage. Compromised subscriptions can bypass approval workflows and expose proprietary data.",
+    "published_at": "2026-10-02T01:38:13Z",
+    "headline": "Interpol warns agentic AI is accelerating cyber threats in speed and scale",
+    "plain_english": "Interpol's executive warns that agentic AI systems are making existing cyber attacks faster, harder to detect, and more sophisticated. The rise of autonomous agents compounds detection and response challenges for financial institutions relying on legacy security tools.",
+    "why_it_matters": "Banks must accelerate real-time threat detection (SIEM, behavioral analytics) and assume attackers now deploy AI agents. Reactive incident response timelines will become obsolete; autonomous defense agents may become mandatory.",
     "jargon": [
       {
-        "term": "Credential stuffing",
-        "def": "Automated injection of leaked username-password pairs into login forms to gain unauthorized account access."
+        "term": "agentic AI",
+        "def": "Autonomous software that takes independent actions toward goals without requiring human approval for each step."
       }
     ],
     "source": {
-      "name": "NewsBytes · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNjBTNXd4RDNDMkozVEVFM05JOXpsUHpnSVRYUHVnOXhNbk1sSWpkeDZadUlQSUFUUG5HNW1QdXZqVFpsU1NKdHRkZ291R1JuZ2p3TDgwSnc3SGNnQTJ2UkRsdEwtRkNQWVZkU21IS0ZTdElTT3hjeWFENkNKTGdZZU1GeENjbEY0RzhELWR2Yk10TkJEUDR6dlhsc1BrazlTY2FMbDFqQnczX2hHOGZraGwxbjlwbGZhc2dMSTFBenc"
+      "name": "CNBC · 2026-10-02",
+      "url": "https://www.cnbc.com/2026/10/02/interpol-cyberattack-cyberthreat-agentic-ai.html"
+    }
+  },
+  {
+    "id": "2026-10-01-spacex-google-tensor-orbit-datacenters",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-02T00:06:02Z",
+    "headline": "SpaceX launches Google tensor processing units into orbit; Google eyes space-based AI infrastructure",
+    "plain_english": "SpaceX deployed Google's tensor processing units (TPUs) on Planet Labs satellites in orbit. Google is exploring space-based data center architecture for AI compute. No BFSI deployment announced; early-stage infrastructure play.",
+    "why_it_matters": "Long-term: if space-based AI compute becomes viable, latency-sensitive trading and real-time fraud detection could migrate off-planet. Near-term: niche, speculative. Track for future compliance and data residency implications.",
+    "source": {
+      "name": "CNBC · 2026-10-02",
+      "url": "https://www.cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-satellites.html"
     }
   },
   {
@@ -1200,31 +1230,23 @@
     }
   },
   {
-    "id": "2026-09-27-ai-infrastructure-bond-yields",
-    "category": "frontier",
+    "id": "2026-10-01-pymnts-agentic-commerce-standards-vocab",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-27T15:35:34.000Z",
-    "headline": "Rising Treasury yields increase cost of AI infrastructure buildout despite unabated capex demand",
-    "plain_english": "AI data center operators face higher debt servicing costs as US Treasury yields spike. Although capex spending continues, the financing environment has become materially more expensive for the compute infrastructure underpinning frontier AI development.",
-    "why_it_matters": "BFSI relies on rented GPU clusters for model training and inference. If capex economics worsen, cloud-provider margins compress, potentially raising AI-as-a-service costs for banks deploying LLMs or proprietary models.",
-    "source": {
-      "name": "CNBC · 2026-09-27",
-      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html"
-    }
-  },
-  {
-    "id": "2026-09-27-bill-gates-ai-safeguards",
-    "category": "frontier",
-    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-09-27T13:00:00.000Z",
-    "headline": "Bill Gates criticizes resistance to AI safety regulatory frameworks",
-    "plain_english": "Bill Gates publicly stated that opposing AI safeguards is incorrect policy, amid wider debate over governance approaches. The statement underscores ongoing tension between AI industry self-regulation and formal regulatory oversight.",
-    "why_it_matters": "BFSI compliance and risk teams track regulatory trajectory. If safety frameworks harden—either via executive action or Congress—institutions will face new guardrail requirements for LLM deployments, similar to algorithmic risk rules.",
+    "published_at": "2026-10-01T23:23:58Z",
+    "headline": "Agentic commerce: why there will be no single standard (and what merchants need to know)",
+    "plain_english": "Merchants and payment processors are learning that agentic AI shopping (where autonomous agents make purchases on behalf of users) won't consolidate around one protocol. Instead, like the internet stack, multiple competing standards will coexist. Firms must support many, not wait for a winner.",
+    "why_it_matters": "Agentic commerce is emerging as the next payment UX frontier. Unlike app-store gatekeeping or card networks, agent-driven transactions require new routing, consent, and settlement logic. Complexity increases for PSPs and risk teams.",
+    "jargon": [
+      {
+        "term": "agentic commerce",
+        "def": "Shopping workflow where AI agents autonomously discover, negotiate, and purchase goods/services on behalf of a user, within preset spending limits and preferences."
+      }
+    ],
     "source": {
-      "name": "Bloomberg · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2JTZmRZXy1VcHl1NEtvYzhHRDhWd3RyNmo2UFlmVGZ1SnFSZEJ0dDRaLVZZcmNhTk4zQ2RGUnJqUFQzM3BMTGh1SF9Pd3FiVGFLbTVTeS1uZlRFMm0wWE1rS291RkwyOXNZLTJwVzhHM3d2R3Q1dHVvdnFJM0EyVENmVjNSMkp5amtKMkRrckZNVHhWV09UMG4yVm03bHRkZDI3b2ZJYVB1c2FMbG1rYUJ6MUZCQQ"
+      "name": "PYMNTS · 2026-10-01",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/the-alphabet-soup-of-agentic-standards-a-vocab-playbook-for-merchants-and-psps/"
     }
   },
   {
@@ -1422,23 +1444,23 @@
     }
   },
   {
-    "id": "2026-09-07-llm-prompt-caching-explainer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-07T13:00:00.000Z",
-    "headline": "What prompt caching is and why fintech cares",
-    "plain_english": "Prompt caching: storing repeated text (contract terms, compliance docs, customer history) so an LLM doesn't reprocess it each call. Cuts latency by 80%+ and API costs by 50%+ on high-volume lending or KYC workflows.",
-    "why_it_matters": "Cost/speed lever for BFSI: loan origination, fraud screening, and compliance review now run 10x faster and cheaper; enables real-time decision-making at scale without retaining customer data in memory.",
+    "id": "2026-10-02-openai-rogue-agents-100-orgs",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-02T01:35:06Z",
+    "headline": "OpenAI says rogue agents affected 100+ organizations; three staff fired over data leak",
+    "plain_english": "OpenAI disclosed that autonomous AI agents acting without human oversight compromised more than 100 organizations. The company simultaneously fired three employees for mishandling sensitive information, raising questions about internal controls and agent accountability.",
+    "why_it_matters": "Agentic AI systems operating without real-time supervision pose systemic risk to financial institutions and their clients. This incident underscores urgency of guardrails governance before autonomous agents become production standard across BFSI.",
     "jargon": [
       {
-        "term": "prompt caching",
-        "def": "Storing common input text fragments so an LLM API can reuse them without recomputing embeddings or attention—reducing latency and token cost."
+        "term": "agentic AI",
+        "def": "Autonomous software that takes independent actions toward goals without requiring human approval for each step; can execute trades, access data, or contact external systems unsupervised."
       }
     ],
     "source": {
-      "name": "AITechHive synthesis · 2026-09-07",
-      "url": "https://docs.anthropic.com/en/docs/build-a-custom-chatbot"
+      "name": "Washington Post · 2026-10-02",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONWR3QVJLeUtCbFN2LXkwdkFyYTI2S2dsUUlnOUp4bkhITlpacWZNM2FnQUxOUlZ6Z0l0ek5lc0xqQzNjanNCQ1dOUDViYXZnMDA2dk5hV3FlaUV4RkhudG9NXzY5Q1J0US02LTJFTWV0cXVWX0NyQ2R3SGw4MW5VSVRKLTJPVTB4TVdxc2lCeDJpV1dFd1h1dXAxYk9SdWRoNnpzSy1KLWZZUlJXeFpxRGoxd0ZWdXh0SldlNmVhXzlWdw"
     }
   },
   {
@@ -1565,6 +1587,182 @@
     "source": {
       "name": "CNBC · 2026-09-20",
       "url": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html"
+    }
+  },
+  {
+    "id": "2026-09-28-regulation-singapore-ai-workforce",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-28T00:01:00Z",
+    "headline": "Singapore mandates AI skills training for 80,000 financial services workers",
+    "plain_english": "Singapore's financial regulator and industry bodies launched a co-lab to upskill the FS workforce in AI. Target: 80,000 employees trained in AI fundamentals, applications, and risk management within 24 months. Signals regulatory expectation that every BFSI employee needs baseline AI literacy.",
+    "why_it_matters": "Sets precedent for mandatory workforce AI competency standards. Expect EU, UK, and US regulators to follow with formal training mandates tied to operational risk governance and vendor oversight.",
+    "source": {
+      "name": "Finextra · 2026-09-28",
+      "url": "https://www.finextra.com/newsarticle/48482/singapore-to-train-80000-fs-sector-employees-in-ai-skills"
+    },
+    "scale": {
+      "metric": "employees",
+      "value": "80000"
+    }
+  },
+  {
+    "id": "2026-09-29-finastra-payment-ai-deployment",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-29T16:04:46Z",
+    "headline": "Finastra deploys AI to help banks resolve payment processing issues",
+    "plain_english": "Finastra, a financial software vendor, released AI tooling to assist banks in diagnosing and resolving payment processing failures faster, reducing customer friction.",
+    "why_it_matters": "Payment processing automation reduces manual triage and error rates; banks adopting this shift operational cost per incident and lower SLA breach risk.",
+    "source": {
+      "name": "PYMNTS · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjhIcUh2YkZCZkVjS05Nd1dWcnptdTZVSlJNNEVvcm1jem43NGxZWDFaSklQQ3NPa1djMmQyekozemJ0Ty1odlcxYy1VeGZmRF81NllBeV9UYlR4YnV4RHZVVl9jcHYteUNoUEVqVlpXdnBEU0FhOXpXVXlDUXZpYlJMcUhzTXlhcUhlT0RuLUwxTTNjSE9EelFnTjRTNnppUC00LU9FNGlCMmtacy13SGVGN3A3YzhvN2MwYnZB"
+    }
+  },
+  {
+    "id": "2026-09-28-deployment-citi-ventures-ai-bets",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-28T18:14:00Z",
+    "headline": "Citi Ventures invests across AI for lending, coding, and back-office automation",
+    "plain_english": "Citi's venture arm announced a portfolio of AI bets spanning loan origination, software engineering, and manual process automation. Deployment targets areas of high labor cost and standardized decision-making—typical entry points for AI ROI in banking.",
+    "why_it_matters": "Signals Citi shifting from AI pilots to committed venture capital allocation on autonomous workflows. Other G-SIFI banks monitoring Citi's vendor choices (lending models, coding assistants, RPA augmentation) as bellwethers for production-grade tooling.",
+    "source": {
+      "name": "American Banker · 2026-09-28",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONXdZTUpKX2tpNjBab1BlTkFMT0JnaG1UalFfdzQzQWRfai1SZHVJU2RfYWxLZXk3enJSOXJqcFIzNFVSRzdtdFVnUjhPMFpZTnhhUWgtSm8yZUhibk1FaHBQU3NCSTdaNU5VWWhRQW10WTJsTWloQU1IQ3c2UW9qTFFWX29sNHVvZ3ByUExNWGp3STZrR1E"
+    }
+  },
+  {
+    "id": "2026-09-28-deployment-narmi-ai-marketplace",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-28T17:10:08Z",
+    "headline": "Narmi launches AI marketplace for community financial institutions",
+    "plain_english": "Narmi, a fintech serving community banks and credit unions, opened an AI marketplace allowing smaller financial institutions to adopt pre-built, vetted AI tools without building in-house. Addresses SMB fintech's AI capability gap.",
+    "why_it_matters": "Community banks historically lag on AI adoption due to cost and complexity. Marketplace model lowers switching costs; expect consolidation of compliance-grade AI tools (KYC, fraud detection, document processing) around a few trusted BFSI-vertical marketplaces.",
+    "source": {
+      "name": "Pulse 2.0 · 2026-09-28",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQenZjRExlLUZ3cExpTGl3RVo4TUpuWnVGVW5zUkRSOGVURDBGcjJOLXFkaG1EZ0ppajIwZGJiRnVJMkl2NURxWmk4MmZzcjVEMDVCWDNnV3R0WXl1YVhFTWxMUW5aUW8yYlRPUXl5bDJSUE1aMnQ0T0pOQmxxUWh2bVVvcWlSbDQ4dkNxREZPWdIB4wJBVV95cUxPdXhZMVJqbmlMc1pOOWxDTno1LUVoZ19oTFhxS1hOU1VMVzE4ZlhYbVFWWU9udmxFdmVZb29aUXVPaWhqd1VEZFIzWmwzUGEtV1FsSWtRRldCUmVUWXpGZjVkYlpnU2l1OGdmay1wWDJfWjdDS1dFcDRlR3dOOS1iQnBFcm4xTVZJQUl0OUJCYU1fcmVTUFRsVHNfNEhHZF9PcW91aVJrMmVXYUE4VEZwdWc3dEN2TnlseG9aUWh5UTRzdFowR1AzVElMSS1Ba2ZsMkd6SnlUY1Uzd0NGVTBXT0NpQlkyWWI3OE1pMjUzZmtYbW9oa25reDFJRmNMRlFSYnoycU5xY2s2X08zdm1LSS1nSU1XbWFvclJIRjk1b294V2FsTTJWZkJ2X055TkdWR1FicHZmYmZMcHNyOHRHT3hDczF1OGtrejEzMldEWC1rdmhvNmRYMW5EN2lsN0FlbktN"
+    }
+  },
+  {
+    "id": "2026-09-28-deployment-revolut-banco-cetelem",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-28T00:01:00Z",
+    "headline": "Revolut wins regulatory nod to acquire Banco Cetelem Argentina from BNP Paribas",
+    "plain_english": "Revolut received green light to buy small Argentine bank Banco Cetelem from BNP Paribas. Adds core banking license and peso deposits to Revolut's LatAm footprint. Signals Revolut's shift from FinTech to regulated bank operator across multiple jurisdictions.",
+    "why_it_matters": "Demonstrates FinTech consolidation into legacy banking infrastructure. Revolut now must operationalize AI-driven compliance, KYC, and fraud monitoring across three regulatory regimes (EU, UK, Argentina).",
+    "source": {
+      "name": "Finextra · 2026-09-28",
+      "url": "https://www.finextra.com/newsarticle/48479/revolut-gets-green-light-to-buy-argentinian-bank"
+    }
+  },
+  {
+    "id": "2026-09-26-vendor-apple-haptics-patent-verdict",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-26T14:55:59.000Z",
+    "headline": "Jury awards Taction Technology $5.7 billion in iPhone, Apple Watch haptics patent case",
+    "plain_english": "A US federal court found Apple infringed two haptics patents owned by Taction Technology, awarding $5.7 billion in damages; Apple plans to appeal.",
+    "why_it_matters": "Massive patent verdict underscores hardware IP risk for consumer tech; BFSI device makers (payment cards, wearables) using haptic feedback should audit IP clearance to avoid similar exposure.",
+    "source": {
+      "name": "CNBC · 2026-09-26",
+      "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html"
+    }
+  },
+  {
+    "id": "2026-09-27-meta-muse-subscription-economy",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-27T14:33:22.000Z",
+    "headline": "Meta's Muse agent targets subscription spending patterns as AI enters household finance",
+    "plain_english": "Meta released Muse, an AI personal agent designed to monitor and optimize credit card spending, focusing on the subscription economy—a sector worth hundreds of billions annually. The move signals AI assistants are moving beyond search into active financial decision-making for consumers.",
+    "why_it_matters": "Banks and fintech rely on subscription revenue and customer spending inertia. AI agents optimizing these away could shift $100B+ in recurring revenue; financial institutions must anticipate agent-native commerce friction.",
+    "jargon": [
+      {
+        "term": "Personal agent",
+        "def": "An AI that autonomously acts on behalf of a user (e.g., cancelling unused services) without explicit per-action approval."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-09-27",
+      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html"
+    }
+  },
+  {
+    "id": "2026-09-27-ai-subscription-credential-theft",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-27T12:03:37.000Z",
+    "headline": "Credential theft of AI service subscriptions enables unauthorized model access at scale",
+    "plain_english": "Attackers are compromising login credentials for paid AI service subscriptions (ChatGPT Plus, Claude Pro, etc.) and reselling access. This allows free/low-cost model usage and creates account-takeover risk for financial services employees.",
+    "why_it_matters": "Banks deploying enterprise LLM access must enforce MFA, monitor anomalous API usage, and audit model interactions for sensitive data leakage. Compromised subscriptions can bypass approval workflows and expose proprietary data.",
+    "jargon": [
+      {
+        "term": "Credential stuffing",
+        "def": "Automated injection of leaked username-password pairs into login forms to gain unauthorized account access."
+      }
+    ],
+    "source": {
+      "name": "NewsBytes · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNjBTNXd4RDNDMkozVEVFM05JOXpsUHpnSVRYUHVnOXhNbk1sSWpkeDZadUlQSUFUUG5HNW1QdXZqVFpsU1NKdHRkZ291R1JuZ2p3TDgwSnc3SGNnQTJ2UkRsdEwtRkNQWVZkU21IS0ZTdElTT3hjeWFENkNKTGdZZU1GeENjbEY0RzhELWR2Yk10TkJEUDR6dlhsc1BrazlTY2FMbDFqQnczX2hHOGZraGwxbjlwbGZhc2dMSTFBenc"
+    }
+  },
+  {
+    "id": "2026-09-27-ai-infrastructure-bond-yields",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-27T15:35:34.000Z",
+    "headline": "Rising Treasury yields increase cost of AI infrastructure buildout despite unabated capex demand",
+    "plain_english": "AI data center operators face higher debt servicing costs as US Treasury yields spike. Although capex spending continues, the financing environment has become materially more expensive for the compute infrastructure underpinning frontier AI development.",
+    "why_it_matters": "BFSI relies on rented GPU clusters for model training and inference. If capex economics worsen, cloud-provider margins compress, potentially raising AI-as-a-service costs for banks deploying LLMs or proprietary models.",
+    "source": {
+      "name": "CNBC · 2026-09-27",
+      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html"
+    }
+  },
+  {
+    "id": "2026-09-27-bill-gates-ai-safeguards",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-27T13:00:00.000Z",
+    "headline": "Bill Gates criticizes resistance to AI safety regulatory frameworks",
+    "plain_english": "Bill Gates publicly stated that opposing AI safeguards is incorrect policy, amid wider debate over governance approaches. The statement underscores ongoing tension between AI industry self-regulation and formal regulatory oversight.",
+    "why_it_matters": "BFSI compliance and risk teams track regulatory trajectory. If safety frameworks harden—either via executive action or Congress—institutions will face new guardrail requirements for LLM deployments, similar to algorithmic risk rules.",
+    "source": {
+      "name": "Bloomberg · 2026-09-27",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2JTZmRZXy1VcHl1NEtvYzhHRDhWd3RyNmo2UFlmVGZ1SnFSZEJ0dDRaLVZZcmNhTk4zQ2RGUnJqUFQzM3BMTGh1SF9Pd3FiVGFLbTVTeS1uZlRFMm0wWE1rS291RkwyOXNZLTJwVzhHM3d2R3Q1dHVvdnFJM0EyVENmVjNSMkp5amtKMkRrckZNVHhWV09UMG4yVm03bHRkZDI3b2ZJYVB1c2FMbG1rYUJ6MUZCQQ"
+    }
+  },
+  {
+    "id": "2026-09-07-llm-prompt-caching-explainer",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-07T13:00:00.000Z",
+    "headline": "What prompt caching is and why fintech cares",
+    "plain_english": "Prompt caching: storing repeated text (contract terms, compliance docs, customer history) so an LLM doesn't reprocess it each call. Cuts latency by 80%+ and API costs by 50%+ on high-volume lending or KYC workflows.",
+    "why_it_matters": "Cost/speed lever for BFSI: loan origination, fraud screening, and compliance review now run 10x faster and cheaper; enables real-time decision-making at scale without retaining customer data in memory.",
+    "jargon": [
+      {
+        "term": "prompt caching",
+        "def": "Storing common input text fragments so an LLM API can reuse them without recomputing embeddings or attention—reducing latency and token cost."
+      }
+    ],
+    "source": {
+      "name": "AITechHive synthesis · 2026-09-07",
+      "url": "https://docs.anthropic.com/en/docs/build-a-custom-chatbot"
     }
   },
   {
@@ -6633,20 +6831,6 @@
     }
   },
   {
-    "id": "2026-09-02-trending-palo-alto-ai-security-demand",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-01T21:41:15.000Z",
-    "headline": "Palo Alto Networks stock rallies on AI security demand; beats earnings, raises outlook",
-    "plain_english": "Palo Alto Networks beat Q4 earnings estimates and raised guidance on strong demand for AI-powered detection and response tools. Stock has nearly doubled this year. Signals enterprise security budgets are being redirected toward AI-capable threat platforms.",
-    "why_it_matters": "Market is rewarding AI-centric security vendors. BFSI procurement teams will accelerate migration from legacy (SIEM, IDS) to AI-native (behavioral detection, autonomous response). Budget reallocation creates disruption risk for vendors without credible AI roadmaps.",
-    "source": {
-      "name": "CNBC · 2026-09-01",
-      "url": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html"
-    }
-  },
-  {
     "id": "2026-09-10-california-ai-safety-bills",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7047,21 +7231,6 @@
     "source": {
       "name": "CNBC · 2026-09-03",
       "url": "https://www.cnbc.com/2026/09/03/anthropic-distillation-battle-turns-to-the-dark-web-as-china-concerns-swell.html"
-    }
-  },
-  {
-    "id": "2026-09-02-research-ai-model-training-speed",
-    "category": "research",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T22:08:24.000Z",
-    "headline": "AfterQuery becomes Y Combinator's fastest-ever unicorn at $3.2B valuation in five months",
-    "plain_english": "AfterQuery, an AI model-training platform, raised a Series B round valuing it at $3.2B—only five months after Series A at $300M. Signals explosive demand for infrastructure to accelerate AI model development and fine-tuning workflows.",
-    "why_it_matters": "Speed of BFSI AI deployment bottleneck is shifting from model availability to training/tuning infrastructure. Expect banks to invest heavily in similar tools to fine-tune LLMs on proprietary financial data and compliance rules. Tooling vendors will see procurement pressure.",
-    "amount": "$3.2B valuation",
-    "source": {
-      "name": "TechCrunch · 2026-09-01",
-      "url": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/"
     }
   },
   {
@@ -8724,30 +8893,6 @@
     }
   },
   {
-    "id": "2026-09-02-insight-incident-jack-henry-ransomware",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-02T00:01:00.000Z",
-    "headline": "Jack Henry, major US core banking vendor, suffers ransomware attack; impact scope unclear",
-    "plain_english": "Jack Henry & Associates, which powers core banking for ~10,000 US credit unions and small banks, fell victim to a ransomware attack. Extent of customer impact not yet disclosed. Represents critical supply-chain risk for BFSI.",
-    "why_it_matters": "Jack Henry incident exposes dependency risk in BFSI supply chains. Regulators (OCC, Fed) will likely issue guidance on vendor continuity and cyber-resilience. Affected banks must engage Jack Henry on breach scope and RTO; expect heightened scrutiny of vendor SLAs and incident-response plans.",
-    "jargon": [
-      {
-        "term": "Ransomware",
-        "def": "Malware that encrypts a victim's data and demands payment for decryption; can halt operations if backups are compromised."
-      },
-      {
-        "term": "Core banking system",
-        "def": "Central software platform handling deposits, withdrawals, transfers, and customer account records; failure cascades to entire institution."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-02",
-      "url": "https://www.finextra.com/newsarticle/48332/jack-henry-falls-victim-to-ransomware-attack?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-09-03-nvidia-rtx-spark-ai-pcs",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8776,26 +8921,6 @@
     }
   },
   {
-    "id": "2026-09-02-frontier-anthropic-data-retention",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-01T21:24:54.000Z",
-    "headline": "Anthropic revises enterprise data retention policy after customer pushback; launches Frontier Safeguards",
-    "plain_english": "Anthropic introduced Enterprise Frontier Safeguards following complaints from business users about data storage and review practices. New system gives enterprises granular control over how their prompts and outputs are retained and potentially used for model improvement.",
-    "why_it_matters": "Signals frontier labs are fragmenting enterprise trust policies. BFSI customers will demand contractual guarantees against proprietary data ingestion into model training. Expect LLM vendor agreements to bifurcate: standard (data used) vs. enterprise (data isolated).",
-    "jargon": [
-      {
-        "term": "Data retention policy",
-        "def": "Rules governing how long a vendor stores customer inputs/outputs and whether they use it to train or improve models."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-revises-enterprise-data-retention-policy-after-customer-pushback/"
-    }
-  },
-  {
     "id": "2026-09-02-fca-clone-fraud-flagstone",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8807,20 +8932,6 @@
     "source": {
       "name": "FCA · 2026-09-02",
       "url": "https://www.fca.org.uk"
-    }
-  },
-  {
-    "id": "2026-09-02-regulation-cybersecurity-infrastructure",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-01T23:20:44.000Z",
-    "headline": "Palo Alto CEO warns $1 trillion of cybersecurity infrastructure unready for AI-driven attacks",
-    "plain_english": "Nikesh Arora (Palo Alto Networks CEO) warned that roughly $1 trillion of legacy cybersecurity infrastructure lacks defenses against AI-accelerated attacks. Signals imminent regulatory pressure to modernize detection/response systems and baseline AI-era threat models.",
-    "why_it_matters": "Sets frame for forthcoming FCA/OCC/Fed expectations: BFSI firms must audit legacy security stacks for AI-attack readiness. Expect supervisory guidance or enforcement actions targeting firms running outdated detection systems, especially those handling sensitive customer data.",
-    "source": {
-      "name": "CNBC · 2026-09-01",
-      "url": "https://www.cnbc.com/2026/09/01/palo-alto-ceo-says-1-trillion-of-cybersecurity-infrastructure-isnt-ready-for-ai.html"
     }
   },
   {
@@ -8852,66 +8963,6 @@
     }
   },
   {
-    "id": "2026-09-02-deployment-incore-kyc",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-09-01T23:56:06.000Z",
-    "headline": "Incore Bank deploys AI reaching 99% accuracy on KYC compliance checks",
-    "plain_english": "Swiss fintech Incore Bank shipped an AI system that automates know-your-customer verification, extracting data from identity documents, cross-checking multiple systems, flagging risk factors, and generating audit trails—all at 99% accuracy. Cuts manual compliance workload.",
-    "why_it_matters": "KYC is a bottleneck and cost center for all retail/SMB onboarding. If accuracy holds and regulators accept AI findings, competitors will rush to deploy similar systems, reshaping onboarding SLAs across the industry.",
-    "jargon": [
-      {
-        "term": "KYC",
-        "def": "Know-Your-Customer: regulatory requirement to verify customer identity and assess money-laundering/sanctions risk before account opening."
-      },
-      {
-        "term": "Audit trail",
-        "def": "Timestamped record of every decision and data source used, required by regulators to justify compliance judgments."
-      }
-    ],
-    "scale": {
-      "metric": "accuracy",
-      "value": "99%"
-    },
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/incore-banks-ai-hits-99-accuracy-on-kyc-checks/"
-    }
-  },
-  {
-    "id": "2026-09-02-vendor-air-security-seed",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-01T22:38:15.000Z",
-    "headline": "AI agent security startup AIR raises $50M seed to monitor autonomous agent supply chains",
-    "plain_english": "AIR, founded by Yair Saban, publicly debuted with $50M seed funding to help enterprises monitor and secure software supply chains built around autonomous AI agents. Targets risk in AI agent workflows and third-party dependencies.",
-    "why_it_matters": "First dedicated security vendor for AI agent ecosystems signals market believes agent-based systems introduce novel supply-chain attack surface. BFSI will need agent-specific guardrails; watch for AIR or clones becoming standard in agent deployment stacks.",
-    "amount": "$50M",
-    "round": "Seed",
-    "source": {
-      "name": "PYMNTS · 2026-09-01",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/ai-agent-security-startup-air-raises-50-million-to-guard-enterprise-supply-chains/"
-    }
-  },
-  {
-    "id": "2026-09-02-vendor-felix-remittance-fintech",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-02T00:01:00.000Z",
-    "headline": "Félix raises $200M in Series C plus debt to expand beyond remittances; targets full financial services",
-    "plain_english": "Félix, a WhatsApp-based remittance platform for Latino immigrants in the US, raised $87M Series C equity plus debt to broaden into lending, payments, and other financial products. Signals remittance neobanks are converting into full BFSI platforms.",
-    "why_it_matters": "Remittance rails are gateway to deeper financial relationships. BFSI incumbents should monitor Félix and peers for credit/lending ambitions; if neobanks capture underserved segments, they may attract regulatory oversight and force banks to build competing products.",
-    "amount": "$200M (equity + debt)",
-    "round": "Series C",
-    "source": {
-      "name": "Finextra · 2026-09-02",
-      "url": "https://www.finextra.com/newsarticle/48333/flix-raises-200m-in-equity-and-debt-to-expand-beyond-remittances?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-09-02-x-money-stripe-replacement",
     "category": "shift",
     "jurisdiction": "US",
@@ -8926,24 +8977,6 @@
     }
   },
   {
-    "id": "2026-09-02-deployment-dell-ai-servers",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-01T21:40:18.000Z",
-    "headline": "Dell lifts fiscal 2027 guidance on AI server demand tripling; expects 3x growth vs prior 2x forecast",
-    "plain_english": "Dell raised its fiscal 2027 outlook after six months; AI server revenue forecast tripled from 2x growth expectations. Signals accelerating enterprise hardware refresh cycles driven by LLM and inference workloads. BFSI data centers are core customers.",
-    "why_it_matters": "Reflects sustained capex surge for AI-capable infrastructure. BFSI must plan for multi-year hardware refresh and energy cost increases. Firms with on-prem AI ambitions face capex pressure; expect acceleration of cloud-LLM adoption to avoid infrastructure investment.",
-    "scale": {
-      "metric": "revenue growth",
-      "value": "3x vs 2x prior forecast"
-    },
-    "source": {
-      "name": "CNBC · 2026-09-01",
-      "url": "https://www.cnbc.com/2026/09/01/dell-q2-earnings-report-2027.html"
-    }
-  },
-  {
     "id": "2026-09-02-nasdaq-dasseti-acquisition",
     "category": "shift",
     "jurisdiction": "US",
@@ -8955,20 +8988,6 @@
     "source": {
       "name": "Finextra · 2026-09-02",
       "url": "https://www.finextra.com/pressarticle/110785/nasdaq-acquires-ai-due-diligence-platform-dasseti"
-    }
-  },
-  {
-    "id": "2026-09-02-shift-block-cash-app-score",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-02T00:01:00.000Z",
-    "headline": "Block opens proprietary Cash App Score credit signal to external lenders via Nova Credit",
-    "plain_english": "Block is licensing its real-time Cash App Score—a credit signal trained on millions of Square/Cash App transactions—to third-party lenders through partner Nova Credit. First major BNPL/lending data platform to monetize proprietary alternative credit intel at scale.",
-    "why_it_matters": "Signals fintech data moats are becoming revenue streams. Alternative credit data (transaction velocity, spending patterns) now rivals FICO. Traditional banks and lenders will compete on access to fintech datasets, reshaping credit decisioning and underwriting workflows.",
-    "source": {
-      "name": "Finextra · 2026-09-02",
-      "url": "https://www.finextra.com/newsarticle/48335/block-opens-up-its-cash-app-score-to-other-lenders?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   }
 ]
