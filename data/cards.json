@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-10-02-icba-occ-crypto-charters",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-03T00:05:22.000Z",
+    "headline": "Community bankers sue OCC alleging fast-track crypto firm charters bypass scrutiny",
+    "plain_english": "The Independent Community Bankers of America filed suit against the Office of the Comptroller of the Currency, claiming the regulator granted cryptocurrency firms banking licenses without imposing the same compliance and capital standards applied to traditional community banks.",
+    "why_it_matters": "Outcome will reshape crypto-bank competitive dynamics and set precedent for regulatory consistency; if plaintiffs win, crypto banking faces higher barriers; if OCC prevails, incumbent banks face new crypto competition with lighter oversight.",
+    "jargon": [
+      {
+        "term": "OCC",
+        "def": "Office of the Comptroller of the Currency; U.S. regulator that charters and supervises national banks."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/icba-sues-occ-to-stop-alleged-fast-track-of-crypto-bank-charters/"
+    }
+  },
+  {
     "id": "2026-10-02-india-upi-mdr-merchant-discount-rate",
     "category": "regulation",
     "jurisdiction": "IN",
@@ -140,23 +160,35 @@
     }
   },
   {
-    "id": "2026-09-29-ecb-digital-euro-innovation",
-    "category": "regulation",
-    "jurisdiction": "EU",
+    "id": "2026-10-02-liberate-insurance-ai-agents",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-29T00:01:00.000Z",
-    "headline": "ECB opens digital euro innovation platform to private-sector applications",
-    "plain_english": "The European Central Bank is inviting private companies and organisations to join a digital euro innovation platform to experiment with new services, value-added features, and future technological developments. This signals regulatory appetite for private-sector collaboration on central bank digital currency (CBDC) use cases.",
-    "why_it_matters": "BFSI firms can now formally partner with the ECB on CBDC integration, payments rails, and settlement. Early movers in fintech and payments will gain regulatory visibility and potential pilot opportunities ahead of formal digital euro rollout.",
-    "jargon": [
-      {
-        "term": "CBDC",
-        "def": "Central Bank Digital Currency—a digital version of a nation's official money, issued and controlled by the central bank, not a commercial bank."
-      }
-    ],
+    "published_at": "2026-10-02T23:18:32.000Z",
+    "headline": "Liberate deploys AI agents handling insurance night-shift customer calls end-to-end",
+    "plain_english": "Liberate's AI agents are answering policyholder calls, retrieving account balances, and logging interactions into insurer core systems with zero human intervention. Insurance agencies and carriers have reclaimed over 100 million minutes of staff time since deployment.",
+    "why_it_matters": "Demonstrates production-scale agentic automation in a regulated vertical; if call-center deflection at this scale holds, carrier operating costs drop materially and talent redeploys to complex claims and underwriting.",
+    "scale": {
+      "metric": "minutes",
+      "value": "100M+"
+    },
     "source": {
-      "name": "Finextra · 2026-09-29",
-      "url": "https://www.finextra.com/newsarticle/48490/ecb-invites-expressions-of-interest-for-digital-euro-innovation-workstreams?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/insurance/2026/liberates-ai-agents-take-over-the-insurance-night-shift/"
+    }
+  },
+  {
+    "id": "2026-10-02-paynearme-ai-collections",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-02T22:10:24.000Z",
+    "headline": "PayNearMe launches AI servicing and collections agent for lenders",
+    "plain_english": "PayNearMe, a payment and lending platform, has released an AI agent that handles customer servicing inquiries and collections workflows in-house, integrating with lender systems for real-time account data and decision-making.",
+    "why_it_matters": "Collections and servicing are high-friction, compliance-heavy workflows; automating them with AI reduces cost-per-contact and shrinks regulatory risk if audit trails and dispute handling are embedded in the agent design.",
+    "source": {
+      "name": "Finovate · 2026-10-02",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVk8xTXlyLXFUSzB4STNMbzlmUktmcGJCZDlJQlJGakprOVRvS3hWUDJlVV9FUkZvenVwclM3QW1nd1hHNHp1LU1YbjZVeDl4NHdnTlV3T09nWVVCQTZQYTUxREFSSk84Ri1HX2xLNTJ6RmQzOVZaN1dLalVpc0xqcA"
     }
   },
   {
@@ -288,35 +320,31 @@
     }
   },
   {
-    "id": "2026-09-30-ripple-xrp-brazil-csd-blockchain",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-10-02-cerebras-ipo-decline",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-09-30T16:53:28.000Z",
-    "headline": "Brazil's central securities depository partners with Ripple to layer XRP Ledger for asset auditability",
-    "plain_english": "CSD BR, Brazil's financial market infrastructure operator, integrated Ripple's XRP Ledger blockchain as an additional recording and auditing layer for financial assets. First phase of a broader strategic partnership to enhance settlement transparency.",
-    "why_it_matters": "Marks production deployment of blockchain by systemically important financial infrastructure; signals central banks and clearinghouses testing distributed ledgers for regulatory oversight and asset provenance.",
-    "scale": {
-      "metric": "markets",
-      "value": "Brazil"
-    },
+    "published_at": "2026-10-02T22:38:49.000Z",
+    "headline": "Cerebras shares hit post-IPO low on Nvidia competitive pressure and lockup expiration",
+    "plain_english": "Cerebras, a specialized AI chip maker, fell 20% in one week, hitting its lowest post-IPO price, as Nvidia competition intensified and insider lockup restrictions expired, triggering broader equity sell-off.",
+    "why_it_matters": "Signals investor skepticism about AI chip unicorns facing Nvidia's entrenched dominance; BFSI procurement teams should monitor: if Cerebras or similar challengers can't sustain valuations, diversified AI infrastructure procurement remains risky.",
     "source": {
-      "name": "PYMNTS · 2026-09-30",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-expands-brazil-coinbase-pushes-back-stablecoin-taxes/"
+      "name": "CNBC · 2026-10-02",
+      "url": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html"
     }
   },
   {
-    "id": "2026-09-30-doordash-ai-agent-ordering",
-    "category": "deployment",
-    "jurisdiction": "US",
+    "id": "2026-10-02-stability-ai-music",
+    "category": "vendor",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-09-30T16:00:24.000Z",
-    "headline": "DoorDash launches AI agent for text-based food ordering to compete with Uber Eats, Grubhub",
-    "plain_english": "DoorDash deployed an AI agent that lets users place food orders via text, aiming to differentiate from competitors. The agent handles order logic and personalization at scale.",
-    "why_it_matters": "Demonstrates LLM agents moving into production payment/order workflows outside banking; BFSI should monitor user adoption, error rates, and liability patterns as model for conversational commerce risk.",
+    "published_at": "2026-10-02T21:09:14.000Z",
+    "headline": "Sean Parker-backed Stability AI pivots to generative music with label backing",
+    "plain_english": "Sean Parker is restructuring Stability AI around music generation, with support and funding from major record labels. Move represents strategic pivot away from image generation toward audio, positioning with regulatory support from rights holders.",
+    "why_it_matters": "Demonstrates that generative AI vendors are retreating from commoditized image space and seeking defensible niches; for BFSI, audio synthesis (customer service, trading comms) may become next-gen differentiation point if Stability succeeds.",
     "source": {
-      "name": "TechCrunch · 2026-09-30",
-      "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/"
+      "name": "TechCrunch · 2026-10-02",
+      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/"
     }
   },
   {
@@ -449,34 +477,41 @@
     }
   },
   {
-    "id": "2026-09-28-samsung-helix-investment",
-    "category": "vendor",
+    "id": "2026-10-02-emvco-agentic-payments",
+    "category": "shift",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-28T23:37:00.000Z",
-    "headline": "Samsung invests $1 billion in Helix, KKR-backed AI infrastructure platform",
-    "plain_english": "Samsung Electronics and five affiliates are committing $1 billion to Helix, a KKR-launched AI infrastructure firm also backed by Nvidia. This positions Samsung as a major player in global AI compute and data-center scaling, competing with hyperscalers to supply hardware and infrastructure to financial institutions.",
-    "why_it_matters": "BFSI firms depend on reliable, diversified GPU suppliers. Samsung's bet signals confidence in AI infrastructure ROI and broadens options beyond Nvidia and cloud hyperscalers for fintech and trading platforms.",
-    "amount": "$1B",
+    "severity": "high",
+    "published_at": "2026-10-02T21:42:14.000Z",
+    "headline": "EMVCo builds framework to encode AI agent intent into card transactions",
+    "plain_english": "EMVCo, the payments standards body, is developing technical specifications to embed consumer authorization data into card payments routed through AI agents. Merchants, issuers, and networks will see what the agent was authorized to do and whether a transaction stays within bounds.",
+    "why_it_matters": "Agentic payments (where AI autonomously executes transactions on behalf of users) will scale faster if liability and fraud rules are clear; EMVCo standardization de-risks issuer adoption and reduces regulatory friction across markets.",
+    "jargon": [
+      {
+        "term": "agentic payments",
+        "def": "Transactions initiated and executed by AI agents acting under consumer authorization, not direct cardholder action."
+      },
+      {
+        "term": "EMVCo",
+        "def": "Industry body that sets global standards for secure payment transactions and chip card technology."
+      }
+    ],
     "source": {
-      "name": "WSJ · 2026-09-28",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNVgtREJ6azRuUmNkRkREbDZRdFRJZVhTSERCc2p2NTR5WVhCS1lWTzVTS3g2bm9pUE5CSTZmRTIzNHhVT2RpMm8xNVR4TnZLa0JLQzBOTVhFZTJqNnZKckR2aGtHYUhUa0kzRjB3aU8zcXV2Q04yaXBRRy1JZHRCS3lZWmZZLXN2RC1reWRWVHJ1SEFHU3RrWWhJQjFCTXUxakZPTkU5bGg2WHdXRUE"
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/emvco-framework-targets-consumer-intent-agentic-payments/"
     }
   },
   {
-    "id": "2026-09-28-peak-xv-surge-seed",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-09-29T00:30:00.000Z",
-    "headline": "Peak XV raises Surge seed investment ceiling to $5M, backs 18 startups with Asia focus",
-    "plain_english": "Peak XV, the largest Southeast Asian VC firm, has increased its seed-stage investment limit to $5 million per startup in its Surge programme. The latest cohort of 18 companies includes 13 targeting global markets and over half based in India, signaling strong fintech pipeline.",
-    "why_it_matters": "India's fintech ecosystem is accelerating at seed stage. BFSI firms looking for early-stage AI talent, data infrastructure, or payment tech should monitor Peak XV's portfolio; it's a reliable early indicator of India-born innovation trends.",
-    "amount": "$5M",
-    "round": "Seed",
+    "id": "2026-10-02-bny-payward-crypto-partnership",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-02T23:42:09.000Z",
+    "headline": "BNY Mellon in talks with Kraken parent Payward on digital asset and custody infrastructure",
+    "plain_english": "BNY Mellon and Payward (Kraken's parent company) are negotiating a partnership spanning crypto products, custody, wealth management, trading, payments, and financial infrastructure. Deal would integrate traditional custody with native crypto services.",
+    "why_it_matters": "If completed, signals major custodian legitimizing crypto as core banking asset class, not peripheral fintech; institutional adoption accelerates when Tier-1 custody providers integrate crypto natively into client workflows.",
     "source": {
-      "name": "TechCrunch · 2026-09-29",
-      "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/"
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/partnerships/2026/bny-and-kraken-parent-payward-eye-global-financial-infrastructure-partnership/"
     }
   },
   {
@@ -608,38 +643,6 @@
     "source": {
       "name": "Banking Dive · 2026-09-29",
       "url": "https://www.bankingdive.com/news/gulf-winds-credit-union-florida-to-buy-alabama-bank-peoples-exchange-truworth/831653/"
-    }
-  },
-  {
-    "id": "2026-09-28-citigroup-coinbase-payments",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-29T01:52:58.000Z",
-    "headline": "Citigroup enters digital payments partnership with Coinbase, signaling legacy bank fintech pivot",
-    "plain_english": "Citigroup has announced a digital payments partnership with Coinbase, marking a strategic shift for the legacy bank into modern fintech infrastructure. This collaboration suggests Citi is moving beyond traditional payment processing to integrate cryptocurrency and blockchain-native settlement capabilities.",
-    "why_it_matters": "When a top-5 global bank partners with a major crypto exchange on payments, it signals regulatory acceptance of crypto rails for institutional settlement. BFSI peers will face pressure to follow; expect similar deals across payments and custody over the next 12 months.",
-    "source": {
-      "name": "simplywall.st (citing Citi AI Moves) · 2026-09-29",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxMWGc3R0NOemVUNWVTUjVTYXJBLU0tNjdJSGppcHFFSUxZYkFCMTV0Vm44YnB5MGdhM2F2MGhnZ1hlVGZRaEVSdTYwTUs1NHdfRnlRQ1ItMnBHTG9YdUc3bWtSbUdlZkx5dUZZYXY3R3Nac0w3V2tSR0hRdFdIdnZqZ1F4MUt3eVdfZ1RtX1M4SjU0WHFMZWR4NjhRV3gwVnV1TWs4REhYOVhUNmJvb1MtY05HeElDNkR1UW9ENdIBwgFBVV95cUxPVzJmRmFOY2Q3SXdXaUNDNExUeVRwa3FJOHltbzFTa05XT1lMQWtTNjRFa09uOEQ0TnVNRlRKWVJJaUItejM1ak0wRHA2Z1NYelBxVFZfZEJoNjBoUlQ3Nk55UFBvTWxneUlJZVg5V1gxNy1aU2lnVmRWcWN3SE52X0g4YW5Ic1RxdzkzN1FaQlpiOEdiLXBxZ2MxVFpDOHFsN3YzbnpZb29FUUlEdnJoaHV6dURzcmYtRmxMY0xneGhidw"
-    }
-  },
-  {
-    "id": "2026-09-28-shift-meta-enterprise-platform",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-28T16:52:38Z",
-    "headline": "Meta launches enterprise AI platform, recruits MongoDB CEO to lead commercial push",
-    "plain_english": "Meta created a new Enterprise Platform unit led by incoming CEO CJ Desai (poached from MongoDB). The unit bundles Muse (agentic models), Meta Business Agent, and Muse Code to target enterprise and developer adoption—marking Meta's pivot from consumer-first to B2B AI infrastructure play.",
-    "why_it_matters": "Meta now competes directly with Microsoft-OpenAI, Google Cloud, and AWS on enterprise AI agents. BFSI CTOs evaluating LLM platforms now face a credible third option with open-weight models (Llama) and commercial support. Signals consolidation around 3–4 major AI infrastructure vendors.",
-    "scale": {
-      "metric": "new business unit",
-      "value": "CJ Desai"
-    },
-    "source": {
-      "name": "TechCrunch · 2026-09-28",
-      "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/"
     }
   },
   {
@@ -1056,6 +1059,35 @@
     }
   },
   {
+    "id": "2026-10-02-openai-white-house-cyber",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-02T21:56:38.000Z",
+    "headline": "OpenAI hires former White House AI policy chief as regulators scrutinize AI risks",
+    "plain_english": "Thomas Lind, the former head of AI policy at the White House's National Cyber Director office, joined OpenAI this week to lead cyber and strategic risk initiatives. Move signals OpenAI's intent to embed government relations and compliance expertise as regulators probe AI safety and misuse.",
+    "why_it_matters": "Hiring of government insiders accelerates frontier labs' regulatory defense posture; similar moves by competitors will shape how AI policies are drafted, signaling that labs are playing a long-term regulatory game rather than resisting oversight.",
+    "source": {
+      "name": "PYMNTS · 2026-10-02",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-hires-former-white-house-cyber-official-regulators-probe-ai-dangers/"
+    }
+  },
+  {
+    "id": "2026-10-02-anthropic-100m-engineer-training",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-02T21:03:06.000Z",
+    "headline": "Anthropic commits $100M to train 10,000 AI engineers via consulting partnerships",
+    "plain_english": "Anthropic is investing $100 million in talent development programs in partnership with consulting firms to train nearly 10,000 AI engineers, addressing a critical shortage of practitioners who can deploy and maintain AI systems.",
+    "why_it_matters": "Talent bottleneck is the binding constraint on AI adoption in BFSI; Anthropic's bet on supply-side training signals that frontier labs view skilled labor, not just models, as the bottleneck to scaling production deployments.",
+    "amount": "$100M",
+    "source": {
+      "name": "CNBC · 2026-10-02",
+      "url": "https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html"
+    }
+  },
+  {
     "id": "2026-10-02-anthropic-ipo-government-risk",
     "category": "frontier",
     "jurisdiction": "US",
@@ -1183,40 +1215,6 @@
     "source": {
       "name": "Reuters · 2026-09-29",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcV91dFhINlctVXNLUDJtUDE4SFRwdTBUVUJLYW9Ed09WSXlhZzB0RWFqRldma2FjVGd5NXBFWkMyQldUMGVPcTd5MjM0VjJ1TERaY0dfZkF5VklnbTZ6VzNBcmJkTmROUTJWVWkzRGhMbkZ1RktfX1BfNVBTUzFGMEljaElSUHU5Vnd6S25NZGVCUXpYYnJocnBPTG9Na0VxSnpLbGlWclk2TmlMRjcyelFhT0pIc0NpRFE?"
-    }
-  },
-  {
-    "id": "2026-09-28-openai-model-safety-halt",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-28T23:39:20.000Z",
-    "headline": "OpenAI abandons new model release due to safety concerns over controllability",
-    "plain_english": "OpenAI has ditched a planned model release after discovering it displayed poor performance at following instructions, raising internal alarms about alignment and controllability. The decision reflects broader calls from AI lab leaders to slow development pace amid safety escalation.",
-    "why_it_matters": "A world-leading AI lab's retreat on controllability signals that frontier model safety is not yet production-grade. BFSI risk officers must expect delays in regulatory-approved AI deployments and treat 'safety audit failure' as a credible halt point in vendor roadmaps.",
-    "source": {
-      "name": "CNBC · 2026-09-28",
-      "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"
-    }
-  },
-  {
-    "id": "2026-09-28-frontier-anthropic-sonnet-55",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-28T18:00:06Z",
-    "headline": "Anthropic releases Sonnet 5.5, cheaper model focused on coding and knowledge work",
-    "plain_english": "Anthropic launched Sonnet 5.5, a mid-range LLM positioned as faster and significantly cheaper than its predecessor. The model does not advance frontier capabilities but targets coding, data analysis, and routine knowledge tasks—a practical pivot toward production deployment over raw capability gains.",
-    "why_it_matters": "Signals industry shift from scale-at-all-costs to cost-optimized inference. BFSI ops running Claude in production now have a cheaper path for high-volume transaction classification, code generation, and document processing—key cost drivers in banking automation.",
-    "jargon": [
-      {
-        "term": "token burn",
-        "def": "Cost per unit of AI model processing; lower burn = cheaper inference per task completion"
-      }
-    ],
-    "source": {
-      "name": "Anthropic · CNBC · 2026-09-28",
-      "url": "https://www.cnbc.com/2026/09/28/anthropic-sonnet-5-5-launch.html"
     }
   },
   {
@@ -1577,6 +1575,155 @@
     "source": {
       "name": "Moneycontrol · 2026-09-21",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdFVoWTZESi1DNnJvZWVFU0dqak1pLVVvX0VMb0FwVUw2UGVmVnZRbzZwcnRwd2pLNDVnYVo3b1JuZ3NVT0s5eGVTSjlKbVRhVTlqV3FRaFJaM2tTazBoY2FDZG54cjRwWXM5U0RIeHZ5MjVNZDlDaUh2YUdNOHRqRlFhd2JJVUF3Z2kzalpjVkpySnJRbE9Ob3dBamdMekg4ekZMdG5nd2h3RjRRTlh1OW9iMmx4alc3ZXR1TFNQd1FfYjR4cEZoMkFvb2fSAdIBQVVfeXFMUGVkYng0WnhkV2tTWldicGRwMk9ZSzdOY3VxNkhiVWlhamZFSHd6Z1o2QnZkRHJWeld0N0lxQnE0X3hReDdqN3l5LWMtUTFyeVVON3N4dmRuSWRPa0xVZGdPZFcwclk0ejJ1amFGTExLVkduVlpSczN6cEx2NHhxd1dlQ1BPTEQ0WWFJV0JNN2lWZjhKbnQySEZvVmJMdmdtYTZpS0hlOE13SjU5SDNJcERwQVdBbUZIb3U4bG1WamtuUUdKdm9rYUtPU1hRVXBGVFVR"
+    }
+  },
+  {
+    "id": "2026-09-29-ecb-digital-euro-innovation",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-09-29T00:01:00.000Z",
+    "headline": "ECB opens digital euro innovation platform to private-sector applications",
+    "plain_english": "The European Central Bank is inviting private companies and organisations to join a digital euro innovation platform to experiment with new services, value-added features, and future technological developments. This signals regulatory appetite for private-sector collaboration on central bank digital currency (CBDC) use cases.",
+    "why_it_matters": "BFSI firms can now formally partner with the ECB on CBDC integration, payments rails, and settlement. Early movers in fintech and payments will gain regulatory visibility and potential pilot opportunities ahead of formal digital euro rollout.",
+    "jargon": [
+      {
+        "term": "CBDC",
+        "def": "Central Bank Digital Currency—a digital version of a nation's official money, issued and controlled by the central bank, not a commercial bank."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-09-29",
+      "url": "https://www.finextra.com/newsarticle/48490/ecb-invites-expressions-of-interest-for-digital-euro-innovation-workstreams?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-09-30-ripple-xrp-brazil-csd-blockchain",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-09-30T16:53:28.000Z",
+    "headline": "Brazil's central securities depository partners with Ripple to layer XRP Ledger for asset auditability",
+    "plain_english": "CSD BR, Brazil's financial market infrastructure operator, integrated Ripple's XRP Ledger blockchain as an additional recording and auditing layer for financial assets. First phase of a broader strategic partnership to enhance settlement transparency.",
+    "why_it_matters": "Marks production deployment of blockchain by systemically important financial infrastructure; signals central banks and clearinghouses testing distributed ledgers for regulatory oversight and asset provenance.",
+    "scale": {
+      "metric": "markets",
+      "value": "Brazil"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-09-30",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-expands-brazil-coinbase-pushes-back-stablecoin-taxes/"
+    }
+  },
+  {
+    "id": "2026-09-30-doordash-ai-agent-ordering",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-09-30T16:00:24.000Z",
+    "headline": "DoorDash launches AI agent for text-based food ordering to compete with Uber Eats, Grubhub",
+    "plain_english": "DoorDash deployed an AI agent that lets users place food orders via text, aiming to differentiate from competitors. The agent handles order logic and personalization at scale.",
+    "why_it_matters": "Demonstrates LLM agents moving into production payment/order workflows outside banking; BFSI should monitor user adoption, error rates, and liability patterns as model for conversational commerce risk.",
+    "source": {
+      "name": "TechCrunch · 2026-09-30",
+      "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/"
+    }
+  },
+  {
+    "id": "2026-09-28-samsung-helix-investment",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-28T23:37:00.000Z",
+    "headline": "Samsung invests $1 billion in Helix, KKR-backed AI infrastructure platform",
+    "plain_english": "Samsung Electronics and five affiliates are committing $1 billion to Helix, a KKR-launched AI infrastructure firm also backed by Nvidia. This positions Samsung as a major player in global AI compute and data-center scaling, competing with hyperscalers to supply hardware and infrastructure to financial institutions.",
+    "why_it_matters": "BFSI firms depend on reliable, diversified GPU suppliers. Samsung's bet signals confidence in AI infrastructure ROI and broadens options beyond Nvidia and cloud hyperscalers for fintech and trading platforms.",
+    "amount": "$1B",
+    "source": {
+      "name": "WSJ · 2026-09-28",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNVgtREJ6azRuUmNkRkREbDZRdFRJZVhTSERCc2p2NTR5WVhCS1lWTzVTS3g2bm9pUE5CSTZmRTIzNHhVT2RpMm8xNVR4TnZLa0JLQzBOTVhFZTJqNnZKckR2aGtHYUhUa0kzRjB3aU8zcXV2Q04yaXBRRy1JZHRCS3lZWmZZLXN2RC1reWRWVHJ1SEFHU3RrWWhJQjFCTXUxakZPTkU5bGg2WHdXRUE"
+    }
+  },
+  {
+    "id": "2026-09-28-peak-xv-surge-seed",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-09-29T00:30:00.000Z",
+    "headline": "Peak XV raises Surge seed investment ceiling to $5M, backs 18 startups with Asia focus",
+    "plain_english": "Peak XV, the largest Southeast Asian VC firm, has increased its seed-stage investment limit to $5 million per startup in its Surge programme. The latest cohort of 18 companies includes 13 targeting global markets and over half based in India, signaling strong fintech pipeline.",
+    "why_it_matters": "India's fintech ecosystem is accelerating at seed stage. BFSI firms looking for early-stage AI talent, data infrastructure, or payment tech should monitor Peak XV's portfolio; it's a reliable early indicator of India-born innovation trends.",
+    "amount": "$5M",
+    "round": "Seed",
+    "source": {
+      "name": "TechCrunch · 2026-09-29",
+      "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/"
+    }
+  },
+  {
+    "id": "2026-09-28-citigroup-coinbase-payments",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-09-29T01:52:58.000Z",
+    "headline": "Citigroup enters digital payments partnership with Coinbase, signaling legacy bank fintech pivot",
+    "plain_english": "Citigroup has announced a digital payments partnership with Coinbase, marking a strategic shift for the legacy bank into modern fintech infrastructure. This collaboration suggests Citi is moving beyond traditional payment processing to integrate cryptocurrency and blockchain-native settlement capabilities.",
+    "why_it_matters": "When a top-5 global bank partners with a major crypto exchange on payments, it signals regulatory acceptance of crypto rails for institutional settlement. BFSI peers will face pressure to follow; expect similar deals across payments and custody over the next 12 months.",
+    "source": {
+      "name": "simplywall.st (citing Citi AI Moves) · 2026-09-29",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxMWGc3R0NOemVUNWVTUjVTYXJBLU0tNjdJSGppcHFFSUxZYkFCMTV0Vm44YnB5MGdhM2F2MGhnZ1hlVGZRaEVSdTYwTUs1NHdfRnlRQ1ItMnBHTG9YdUc3bWtSbUdlZkx5dUZZYXY3R3Nac0w3V2tSR0hRdFdIdnZqZ1F4MUt3eVdfZ1RtX1M4SjU0WHFMZWR4NjhRV3gwVnV1TWs4REhYOVhUNmJvb1MtY05HeElDNkR1UW9ENdIBwgFBVV95cUxPVzJmRmFOY2Q3SXdXaUNDNExUeVRwa3FJOHltbzFTa05XT1lMQWtTNjRFa09uOEQ0TnVNRlRKWVJJaUItejM1ak0wRHA2Z1NYelBxVFZfZEJoNjBoUlQ3Nk55UFBvTWxneUlJZVg5V1gxNy1aU2lnVmRWcWN3SE52X0g4YW5Ic1RxdzkzN1FaQlpiOEdiLXBxZ2MxVFpDOHFsN3YzbnpZb29FUUlEdnJoaHV6dURzcmYtRmxMY0xneGhidw"
+    }
+  },
+  {
+    "id": "2026-09-28-shift-meta-enterprise-platform",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-09-28T16:52:38Z",
+    "headline": "Meta launches enterprise AI platform, recruits MongoDB CEO to lead commercial push",
+    "plain_english": "Meta created a new Enterprise Platform unit led by incoming CEO CJ Desai (poached from MongoDB). The unit bundles Muse (agentic models), Meta Business Agent, and Muse Code to target enterprise and developer adoption—marking Meta's pivot from consumer-first to B2B AI infrastructure play.",
+    "why_it_matters": "Meta now competes directly with Microsoft-OpenAI, Google Cloud, and AWS on enterprise AI agents. BFSI CTOs evaluating LLM platforms now face a credible third option with open-weight models (Llama) and commercial support. Signals consolidation around 3–4 major AI infrastructure vendors.",
+    "scale": {
+      "metric": "new business unit",
+      "value": "CJ Desai"
+    },
+    "source": {
+      "name": "TechCrunch · 2026-09-28",
+      "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/"
+    }
+  },
+  {
+    "id": "2026-09-28-openai-model-safety-halt",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-09-28T23:39:20.000Z",
+    "headline": "OpenAI abandons new model release due to safety concerns over controllability",
+    "plain_english": "OpenAI has ditched a planned model release after discovering it displayed poor performance at following instructions, raising internal alarms about alignment and controllability. The decision reflects broader calls from AI lab leaders to slow development pace amid safety escalation.",
+    "why_it_matters": "A world-leading AI lab's retreat on controllability signals that frontier model safety is not yet production-grade. BFSI risk officers must expect delays in regulatory-approved AI deployments and treat 'safety audit failure' as a credible halt point in vendor roadmaps.",
+    "source": {
+      "name": "CNBC · 2026-09-28",
+      "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"
+    }
+  },
+  {
+    "id": "2026-09-28-frontier-anthropic-sonnet-55",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-28T18:00:06Z",
+    "headline": "Anthropic releases Sonnet 5.5, cheaper model focused on coding and knowledge work",
+    "plain_english": "Anthropic launched Sonnet 5.5, a mid-range LLM positioned as faster and significantly cheaper than its predecessor. The model does not advance frontier capabilities but targets coding, data analysis, and routine knowledge tasks—a practical pivot toward production deployment over raw capability gains.",
+    "why_it_matters": "Signals industry shift from scale-at-all-costs to cost-optimized inference. BFSI ops running Claude in production now have a cheaper path for high-volume transaction classification, code generation, and document processing—key cost drivers in banking automation.",
+    "jargon": [
+      {
+        "term": "token burn",
+        "def": "Cost per unit of AI model processing; lower burn = cheaper inference per task completion"
+      }
+    ],
+    "source": {
+      "name": "Anthropic · CNBC · 2026-09-28",
+      "url": "https://www.cnbc.com/2026/09/28/anthropic-sonnet-5-5-launch.html"
     }
   },
   {
@@ -8614,56 +8761,6 @@
     }
   },
   {
-    "id": "2026-09-03-discovery-bank-ai-payback",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-03T00:03:45.000Z",
-    "headline": "Discovery Bank achieves AI ROI in under two years, faster than peer average of six",
-    "plain_english": "Discovery Bank (South Africa) deployed AI to connect fragmented customer data and detect fraud signals missed by legacy systems. Result: faster payback on AI spend than peer banks, which typically wait 6+ years. Speed came from linking dormant customer insights to real-time decisions.",
-    "why_it_matters": "Demonstrates that AI ROI in retail banking hinges on data integration speed, not just model sophistication. Peers will benchmark against Discovery's timeline, pressuring legacy banks to consolidate data infrastructure faster.",
-    "jargon": [
-      {
-        "term": "data integration",
-        "def": "Connecting customer data across silos (transactions, behavior, fraud flags) so AI models see complete picture instantly."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-03",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/most-banks-wait-six-years-for-ai-payback-discovery-didnt/"
-    }
-  },
-  {
-    "id": "2026-09-03-tabapay-bank-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-03T00:01:00.000Z",
-    "headline": "TabaPay raises $155M and agrees to acquire Denver-based bank",
-    "plain_english": "Money-movement platform TabaPay closed $155M Series growth round led by FTV Capital and entered agreement to acquire a Denver bank. The bank charter removes payment processing friction; TabaPay now owns rails instead of leasing them.",
-    "why_it_matters": "Signals fintech-to-regulated-banking acquisition wave accelerating. Acquiring a charter eliminates API/settlement latency and regulatory arbitrage risk—a playbook other large fintech platforms will copy in 2026–27.",
-    "amount": "$155M",
-    "source": {
-      "name": "Finextra · 2026-09-03",
-      "url": "https://www.finextra.com/newsarticle/48340/tabapay-closes-155m-financing-agrees-to-buy-a-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-02-palo-alto-console-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-02T22:44:56.000Z",
-    "headline": "Palo Alto Networks acquires Console for $500M; IT service automation consolidates",
-    "plain_english": "Palo Alto Networks paid $500M for Console (backed by Thrive Capital), an AI IT service automation platform. Move leaves Sequoia-backed Serval as dominant competitor. Banking IT ops teams increasingly buy single vendors for end-to-end automation.",
-    "why_it_matters": "Enterprise BFSI IT will face vendor consolidation pressure. Banks deploying separate AI agents for security, incident response, and infrastructure mgmt may need to unify on one platform to reduce operational complexity and cost.",
-    "amount": "$500M",
-    "source": {
-      "name": "TechCrunch · 2026-09-02",
-      "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
-    }
-  },
-  {
     "id": "2026-09-03-kb-kookmin-blockchain-payments",
     "category": "shift",
     "jurisdiction": "APAC",
@@ -8720,20 +8817,6 @@
     }
   },
   {
-    "id": "2026-09-03-amazon-alexa-fraud-detection",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-03T00:01:00.000Z",
-    "headline": "Amazon Alexa launches scam-verification feature for US customers",
-    "plain_english": "Amazon's shopping assistant now verifies whether incoming messages, emails, calls, or texts actually originated from Amazon. Consumer-facing fraud detection is now embedded in a major voice interface; signals shift toward ambient anti-fraud (AI always listening for phishing).",
-    "why_it_matters": "Consumer habit-formation around AI-powered authentication may accelerate enterprise demand for real-time message/transaction verification. BFSI will face pressure to embed similar checks into customer touchpoints (mobile, web, voice).",
-    "source": {
-      "name": "Finextra · 2026-09-03",
-      "url": "https://www.finextra.com/newsarticle/48341/amazon-shopping-assistant-now-helps-users-check-if-a-message-is-a-scam?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-09-04-frontier-ai-compute-power-crunch",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8782,26 +8865,6 @@
     }
   },
   {
-    "id": "2026-09-02-equinix-nvidia-together-inference",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-02T22:49:01.000Z",
-    "headline": "Nvidia partners with Equinix and Together AI for enterprise open-model inference",
-    "plain_english": "Nvidia announced new partnership with data-center operator Equinix and open-model platform Together AI to offer inference services for enterprise customers. Targets firms building AI apps without committing to proprietary (closed) models; lowers switching costs.",
-    "why_it_matters": "Fintech and banking ML teams can now cheaply run open-source models (Llama, Mistral) on shared Equinix infra instead of building private clouds. Accelerates AI adoption for cost-conscious firms; pressures hyperscalers to compete on open-model support.",
-    "jargon": [
-      {
-        "term": "inference",
-        "def": "Running a trained AI model on new data to make predictions or generate outputs; different from training (building the model)."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-02",
-      "url": "https://www.cnbc.com/2026/09/02/equinix-partners-with-nvidia-carves-niche-in-ai-data-center-boom.html"
-    }
-  },
-  {
     "id": "2026-09-03-sofi-payward-stablecoin-partnership",
     "category": "shift",
     "jurisdiction": "US",
@@ -8813,26 +8876,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-03",
       "url": "https://www.pymnts.com/partnerships/2026/sofi-and-payward-team-to-link-banking-and-digital-asset-markets/"
-    }
-  },
-  {
-    "id": "2026-09-02-ai-trade-finance-payoff",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-02T21:22:23.000Z",
-    "headline": "AI reduces due diligence cost for trade finance, reviving small-company lending",
-    "plain_english": "Banks historically avoided lending against international trade receivables (30–90 day payment cycles) for small firms because manual credit checks and paperwork verification was too costly. AI can now automate due diligence, making sub-$1M trade loans profitable again for regional banks.",
-    "why_it_matters": "Supply-chain finance, long dominated by large corporates, now unlocks for SMEs. Regional banks and fintech platforms will compete on speed and cost, creating new wholesale lending revenue streams and reducing SME working-capital drag.",
-    "jargon": [
-      {
-        "term": "trade receivables financing",
-        "def": "Lending against invoices or payment orders owed by overseas buyers; lender holds collateral until buyer pays."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-02",
-      "url": "https://www.pymnts.com/loans/working-capital/2026/ai-could-make-small-trade-loans-pay-off-again/"
     }
   },
   {
@@ -8871,40 +8914,6 @@
     }
   },
   {
-    "id": "2026-09-03-us-g20-ai-training-copyright",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-02T22:04:30.000Z",
-    "headline": "US urges G20 to allow AI model training on creators' copyrighted work without consent",
-    "plain_english": "US government lobbied G20 members to adopt policies permitting AI training on creators' copyrighted content without licensing or compensation. Counter to emerging EU copyright enforcement; signals US intent to keep training data costs low and AI commoditization high.",
-    "why_it_matters": "Creates regulatory fork: EU tightens IP protection; US pushes permissive training regimes. BFSI firms training proprietary models on internal data face divergent compliance costs by region. Cross-border AI ops will require dual-track legal strategies.",
-    "jargon": [
-      {
-        "term": "copyright training exemption",
-        "def": "Legal right to use copyrighted works to train AI without author permission or payment."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-09-02",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTRRRFloNlZWNUJwamZCOEJrcGRwQ0JzaS1DeExVS3JOQ21pRi1yRFdyOEsyVlpCSHNobWExOENjRmJEU2dZV1BHY1hVNm9idkdTMGRZQS1YYnhHR1JGNW5mUlJMMGJiQ3E1bDVOWENLTkc2dnZHdUVvZzllWXJpd21KQXZ1TU1ScUJCWkdDd0ppTWZRcnhGQmw4ZkZGTG44SlNJdDcwdGVOVzA2djhfOE93"
-    }
-  },
-  {
-    "id": "2026-09-02-broadcom-ai-labs-growth",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-02T22:21:45.000Z",
-    "headline": "Broadcom reports strong fiscal 2028 guidance, buoyed by AI lab infrastructure demand",
-    "plain_english": "Broadcom delivered robust earnings guidance for FY 2028 despite softer current-quarter revenue forecast. CEO attributed upside to accelerating demand from AI labs (hyperscalers and research orgs) for semiconductor and networking infrastructure.",
-    "why_it_matters": "BFSI CIOs budgeting for on-premises AI infrastructure should expect sustained chip and interconnect cost inflation through 2028. Cloud hosting will remain cheaper for non-core AI workloads; private AI infrastructure ROI depends on high-utilization models.",
-    "source": {
-      "name": "CNBC · 2026-09-02",
-      "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
-    }
-  },
-  {
     "id": "2026-09-03-weathernext-3-frontier",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8919,20 +8928,6 @@
     }
   },
   {
-    "id": "2026-09-02-us-trump-g20-pro-ai-policy",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-02T21:52:00.000Z",
-    "headline": "US and tech CEOs lobby G20 for pro-AI regulatory frameworks",
-    "plain_english": "Trump administration and Silicon Valley leaders petitioned G20 countries to adopt permissive AI policies, focusing on minimal red tape and competitive neutrality. Contrasts with EU's AI Act and tighter enforcement stance; signals geopolitical AI regulatory split.",
-    "why_it_matters": "BFSI firms with global ops must prepare for divergent AI governance by region: light-touch US rules vs. strict EU oversight. Compliance costs will vary by market; banks may establish separate AI governance teams by jurisdiction or containerize models by deployment region.",
-    "source": {
-      "name": "WSJ · 2026-09-02",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdTNQSnJnNl9jZXVwakxoOWk4RDh6ODd2S0VNVkR0MWd5X0Z4OE1ZaDh4d0RaemR3Um5KTVlzTXJ0T2NFdjlZQXYwV3VrTmVUTExhM01ibTdPTWp4a0JGWE5ncUZWMWI0TkZMYlk4RERhUjY1U0RMdlFtZ29rMjRzZjh4T1BPREVnODNBaFNlYUZTSlcxZWhFQkRteGs0U3p1QXlv"
-    }
-  },
-  {
     "id": "2026-09-03-nvidia-rtx-spark-ai-pcs",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8944,48 +8939,6 @@
     "source": {
       "name": "Wired · 2026-09-03",
       "url": "https://www.wired.com/story/nvidia-rtx-spark-laptops-first-look/"
-    }
-  },
-  {
-    "id": "2026-09-02-microsoft-azure-revenue-disclosure",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-02T22:37:13.000Z",
-    "headline": "Microsoft to disclose Azure revenue separately; signals confidence in cloud-as-core-business",
-    "plain_english": "Microsoft will report Azure quarterly revenue in dollars for first time, splitting it from broader cloud and enterprise services. Move reflects Azure's scale and investor appetite for cloud transparency; pressure on AWS to match granularity.",
-    "why_it_matters": "BFSI CFOs and architects will now see Microsoft's AI/cloud investment ROI directly tied to Azure. Banks evaluating multi-cloud strategies will demand similar transparency from AWS and Google Cloud. Reporting shift accelerates vendor scorecard differentiation.",
-    "source": {
-      "name": "CNBC · 2026-09-02",
-      "url": "https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html"
-    }
-  },
-  {
-    "id": "2026-09-02-microsoft-org-restructure-ai",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-02T21:21:00.000Z",
-    "headline": "Microsoft restructures reporting to reflect AI-driven business impact",
-    "plain_english": "Microsoft reorganized internal reporting structure to isolate and measure effects of AI on revenue and margin across segments. Signals company-wide commitment to quantify AI ROI; investors and rivals now expect AI-specific P&L transparency.",
-    "why_it_matters": "Every Fortune 500 CFO and CTO will face pressure to adopt similar AI impact reporting. BFSI firms will need AI governance frameworks with separate cost centers and revenue attribution—changing how banks budget and measure AI project success.",
-    "source": {
-      "name": "WSJ · 2026-09-02",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU3hZTS1LdVBJWUFVdjZ2ZUpUQ1hSMkJJYkRzVmJ5aWZ1UHdscUtrLW1WNzR3eEZBYW9DZFhYWERCaEtYVTZ5VDExelNWZTRzTHRjaTRqX3B3VTNMWjRIRlNVSjdDSEFPU21lRzZmZWh3cXhlVUlmNXZmTnpZc3p0ajZPUjFoNlRNVlAtVmkwdkJiQUgtczJ2MkpSR3FuLXdQZ29v"
-    }
-  },
-  {
-    "id": "2026-09-02-x-money-stripe-replacement",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-02T21:56:51.000Z",
-    "headline": "X replaces Stripe with proprietary X Money for US creator payouts",
-    "plain_english": "X (formerly Twitter) migrated all US creator payouts from Stripe to its own X Money payments service. Creators now receive funds via X's internal rails rather than third-party processor. Expands fintech capabilities for social platforms; signals vertically integrated payment networks.",
-    "why_it_matters": "Social platforms and marketplaces building in-house payment infrastructure accelerate shift away from traditional processors. BFSI competitors face margin pressure and customer churn as platforms own payout rails; regulatory arbitrage risk rises as platforms operate payment services without full banking oversight.",
-    "source": {
-      "name": "PYMNTS · 2026-09-02",
-      "url": "https://www.pymnts.com/commerce/social-commerce/2026/x-replaces-stripe-united-states-creator-payouts/"
     }
   }
 ]
