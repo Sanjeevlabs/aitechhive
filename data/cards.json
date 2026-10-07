@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-10-07-ofac-sanctions-payment-route",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-07T21:03:59Z",
+    "headline": "US Treasury OFAC alerts banks to hidden sanctions risk in payment routing",
+    "plain_english": "OFAC issued a Monday alert warning foreign and domestic financial institutions that sanctions exposure can hide in the payment intermediaries and routing chains, not just counterparty names. A payment can suddenly fail due to an unknown sanctioned party in the route.",
+    "why_it_matters": "Compliance teams must audit full payment corridors and intermediary chains, not just KYC/AML on named counterparties. Missed routing exposure can trigger enforcement; OFAC expects active due diligence on transaction paths.",
+    "jargon": [
+      {
+        "term": "OFAC",
+        "def": "US Treasury's Office of Foreign Assets Control, which enforces sanctions and blocks transactions to/from designated persons and countries."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/ofac-warning-shows-cfos-sanctions-risk-can-hide-in-the-payment-route/"
+    }
+  },
+  {
     "id": "2026-10-07-regulation-california-robo-bosses",
     "category": "regulation",
     "jurisdiction": "US",
@@ -151,17 +171,17 @@
     }
   },
   {
-    "id": "2026-10-04-trump-light-touch-ai-defense",
-    "category": "regulation",
+    "id": "2026-10-08-us-bank-dark-web-monitoring",
+    "category": "deployment",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-03T23:15:15Z",
-    "headline": "Trump defends light-touch AI regulation as industry sounds alarms over governance gaps",
-    "plain_english": "Trump administration is defending its hands-off approach to AI regulation despite warnings from tech and finance sectors about the need for stronger oversight. Tensions are rising between deregulation philosophy and calls for guardrails on AI deployment.",
-    "why_it_matters": "Financial services firms operating under unclear AI governance face regulatory risk; divergence between administration and industry on AI standards could trigger state-level or international regulatory responses that impose fragmented compliance.",
+    "published_at": "2026-10-08T00:01:00Z",
+    "headline": "US Bank launches dark-web monitoring service for identity and credit risk",
+    "plain_english": "US Bank rolled out a service that scans dark web marketplaces to alert customers when their credit, identity, or privacy data appears in breaches or illicit sales, enabling proactive remediation.",
+    "why_it_matters": "Marks shift from reactive breach notification to real-time dark-web threat intelligence as table-stakes customer protection, likely forcing smaller banks to invest in similar capabilities.",
     "source": {
-      "name": "WSJ · 2026-10-03",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNb3Q0S01scXhhTFpRc1lVVEhqeVA1U1d0OWJzdFpBMkQ1bnJ1Ty1yTmRsdDlHQ2hCOHhsZFA4UnJLWTBiclNDSTA2REUzWk1OODc2cU50dVpVem9ucVc4VnZxb2RlS2FmZnhJSnlkY0JqdXZ0TDZ1akRrcGVZY2Y4WDBjRjZJMU80Zm1ROHRGd252MkFfZWdRdk10S2s3ODZZX2JaT3N3eHBZQVRkRFpHUVp1UGhCRHhITEllNk1iZU1oMldFZTk4cVpIWmlBd1JiR3p1OGVkQjFVcVU"
+      "name": "Finextra · 2026-10-08",
+      "url": "https://www.finextra.com/newsarticle/48550/us-bank-rolls-out-identity-privacy-and-credit-monitoring-service?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -319,17 +339,33 @@
     }
   },
   {
-    "id": "2026-10-04-hipo-bangla-ai-interviews",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-04T14:16:01.000Z",
-    "headline": "Hipo launches AI interview platform with Bangla language support",
-    "plain_english": "Hipo, a recruitment tech platform, launched an AI-powered interview system with native support for Bangla conversations. Addresses hiring workflows in South Asia and demonstrates localized AI capability for non-English-dominant markets.",
-    "why_it_matters": "BFSI talent workflows in India, Bangladesh, and broader APAC are increasingly AI-assisted. Compliance and audit teams should prepare for HR tools that generate bias in hiring; RBI and similar regulators may soon require bias testing for AI-driven recruitment.",
+    "id": "2026-10-07-nous-research-series-b-agents",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-07T20:48:45Z",
+    "headline": "Nous Research raises $90M Series B, launches AI agents for enterprise workflows",
+    "plain_english": "Nous Research, maker of Hermes Agent, secured $90M Series B at $1.5B valuation and released business-focused AI agents. The startup targets enterprise automation workflows beyond consumer chatbots.",
+    "why_it_matters": "Sustained venture funding for specialized AI-agent vendors signals BFSI and enterprise buyers are moving beyond LLM experiments toward production automation, driving competition with in-house builds.",
+    "amount": "$90M",
+    "round": "Series B",
     "source": {
-      "name": "The Business Standard · 2026-10-04",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOa2txSURoNGtlR19aUkZfakprV0N0OUFLakhKRHdRTG1wVmRKMl9Wenhxd0pqZnZxU3EwMXF6SGs4TXljLWNsakE2dllwc0ZxVlN0LWk5ejJ2MVM2dDZiSFU5NllEVU0ySDJHN0QybGtwdVg2RDFTQUU3SnJxeG1EMmQyWnVvTTE4eVNzSEhnZVB2bC14c1REWmsyVVdrSlp5M2ZHdVpDbTZZSmJ0eFlfVnZ4VQ"
+      "name": "TechCrunch AI · 2026-10-07",
+      "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"
+    }
+  },
+  {
+    "id": "2026-10-07-anthropic-ipo-timing",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-07T22:29:41Z",
+    "headline": "Anthropic targets pre-Thanksgiving Nasdaq listing; analyst warns of elevated valuation risk",
+    "plain_english": "Anthropic plans to go public on Nasdaq before US Thanksgiving (late Nov 2026), according to reports. A bearish investment advisory firm labeled it the 'most ridiculous IPO' of the year and advised sitting it out.",
+    "why_it_matters": "Successful AI-lab IPO at elevated multiples would validate frontier model-company valuations and accelerate talent/capital competition for BFSI hiring and vendor partnerships.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-10-07",
+      "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html"
     }
   },
   {
@@ -458,31 +494,31 @@
     }
   },
   {
-    "id": "2026-10-04-typesafe-jev-llm-alternatives",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-10-08-citi-ai-capex-runway",
+    "category": "shift",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-04T15:32:39.000Z",
-    "headline": "TypeSafe AI's Jev model sparks interest in LLM alternatives",
-    "plain_english": "Startup TypeSafe AI released its Jev model, garnering attention in the market for alternatives to dominant large language models. The model is generating buzz among developers and is reported to be inspiring copycat efforts.",
-    "why_it_matters": "Fragmentation in the LLM market is accelerating. BFSI tech teams evaluating model selection for compliance, latency, or cost should expect a widening menu of smaller, specialized models challenging OpenAI/Google dominance.",
+    "published_at": "2026-10-07T23:33:46Z",
+    "headline": "Citi Wealth signals sustained AI spending despite macroeconomic headwinds",
+    "plain_english": "Citi Wealth's research team says AI investment cycles are still early-to-middle stages and worth continued spending, pushing back on bubble warnings. They cite rising rates, open-source model competition, and regulatory scrutiny as constraints, but not deal-breakers.",
+    "why_it_matters": "Large bank public commitment to multi-year AI capex despite higher cost of capital signals market confidence to investors and shapes competitive AI arms-race expectations across BFSI.",
     "source": {
-      "name": "WSJ · 2026-10-04",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONHo4Zjh1Y29GaURuOFM0bXJ1OVVzUkFEQi1ZaDA3ems1R0s2YnFXdnhhLWdhNU5aeDYwYzluNmpveVBXbFFQWmVBajQ0UUtXRzhJVUNJYXBiU0lkSVlxWUVBQ01oUHpvMk9wVzB6dldqWkRZeTR3N1dqWjc1Wjc0YlItWm9UZDVOVnh6MjNrQ2NJSF81M3NrTGQzbWxPZnBiVVZjSFJvXzZlbkIt"
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/citi-wealth-sees-long-runway-for-ai-spending-despite-bubble-warnings/"
     }
   },
   {
-    "id": "2026-10-04-hongkong-ai-fundraising-record",
-    "category": "vendor",
-    "jurisdiction": "APAC",
+    "id": "2026-10-07-microsoft-windows-ai-agents",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-04T00:00:00Z",
-    "headline": "Hong Kong AI fundraising hits record high in summer driven by deal activity",
-    "plain_english": "Hong Kong saw record-breaking AI venture funding in summer 2026, driven by strong M&A and investor appetite for artificial intelligence startups. The surge reflects Asia's push to compete in frontier AI development and deployment.",
-    "why_it_matters": "Surge in Asia-Pacific AI funding signals shift in AI innovation geography; BFSI firms competing for fintech AI talent and partnerships will face stiffer competition from well-capitalized regional startups.",
+    "published_at": "2026-10-07T20:06:19Z",
+    "headline": "Microsoft positions Windows PCs as command centers for autonomous AI agents",
+    "plain_english": "Microsoft announced new Windows tools and hardware (Copilot runtime) to enable AI agents to run natively on PCs, positioning personal devices as orchestration hubs for business automation rather than user terminals.",
+    "why_it_matters": "Moves agent computing to endpoint, forcing BFSI to rethink data governance, authentication, and audit trails for distributed AI workflows; raises new compliance and model-safety questions.",
     "source": {
-      "name": "Bloomberg · 2026-10-04",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMDlyc283Wk8zZ3RubnFCdWI5UTdiRFFiamxqYUVlcXNLeG9PcGJEX1pXMmVvVkFsZk5FZ1RYcjdjZ1RxNkw5aFFVTGtqYXhNT3V2YmgxZ3p6WEZCRG1vV0d4MU5WOEN0M1JUQTdHTVlwX3Nhc0FFZkZPNnl6VV95WGY0dzdQVnBzS21YOGdkM0l4bnVDMlEyZ1o0TS1ZbTFDRzI3ck40WEFJZldRQjEyXw"
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-turns-windows-pcs-into-command-centers-for-ai-agents/"
     }
   },
   {
@@ -612,40 +648,6 @@
     }
   },
   {
-    "id": "2026-10-03-meta-muse-retail-launch",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-03T12:00:01.000Z",
-    "headline": "Meta deploys Muse shopping agent with major US retailers",
-    "plain_english": "Meta launched Muse, an AI agent that can autonomously shop and complete purchases, in partnerships with Walmart, Gap, Sephora, Expedia, Wayfair, and Best Buy. This marks the first large-scale deployment of autonomous transaction agents to mass-market retail.",
-    "why_it_matters": "Autonomous shopping agents shift power from human checkout to AI decision-making. Banks and payment processors must now model fraud, KYC, and chargeback risk for agent-initiated transactions at scale.",
-    "jargon": [
-      {
-        "term": "autonomous agent",
-        "def": "AI system that perceives environment, decides actions, and executes them without human per-transaction approval"
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-10-03",
-      "url": "https://www.cnbc.com/2026/10/03/meta-muse-shopping-ai-agent.html"
-    }
-  },
-  {
-    "id": "2026-10-03-data-center-backlash-global",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-03T12:39:29.000Z",
-    "headline": "Global communities push back against AI data center infrastructure buildout",
-    "plain_english": "Communities across Europe and Asia are resisting large-scale data center deployment for AI training and inference, citing rising electricity costs, water usage, and grid strain. The U.S. backlash is now replicating globally.",
-    "why_it_matters": "If communities block data center buildout, cloud-dependent AI services (including fintech LLM APIs) face latency and availability shocks. Banks may need to reshore or multi-cloud strategies, raising compute costs and reducing model diversity.",
-    "source": {
-      "name": "CNBC · 2026-10-03",
-      "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html"
-    }
-  },
-  {
     "id": "2026-09-28-nvidia-ai-agent-security",
     "category": "tool",
     "jurisdiction": "US",
@@ -714,6 +716,20 @@
     "source": {
       "name": "Mistral AI · 2026-09-10",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw"
+    }
+  },
+  {
+    "id": "2026-10-07-google-research-worker-productivity",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-07T20:19:57Z",
+    "headline": "Google Research publishes study on AI impact on work quality vs. worker performance",
+    "plain_english": "Google Research released a study questioning whether improved work output from AI-assisted tasks translates to better overall worker performance, examining trade-offs in automation and skill development.",
+    "why_it_matters": "BFSI managers need empirical frameworks to assess AI productivity claims; Google's research may show hidden costs (deskilling, audit risk, judgment atrophy) that offset efficiency gains in regulated roles.",
+    "source": {
+      "name": "Google Research · 2026-10-07",
+      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/"
     }
   },
   {
@@ -867,23 +883,35 @@
     }
   },
   {
-    "id": "2026-09-26-ai-mathematical-optimization-limits",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-26T23:08:47Z",
-    "headline": "Research identifies hard mathematical limits to AI optimization—'ceiling problem' unsolvable by scaling alone",
-    "plain_english": "Academic paper demonstrates certain AI optimization problems have mathematical ceilings that additional scale/compute cannot overcome—challenging LLM industry assumption that larger models solve harder problems.",
-    "why_it_matters": "Scaling fatigue incoming: BFSI teams betting on next-gen model to solve hard compliance/fraud problems may hit diminishing returns. Algorithmic breakthroughs, not just parameter scale, will define next phase.",
-    "jargon": [
-      {
-        "term": "optimization ceiling",
-        "def": "Mathematical proof that certain problem classes cannot be solved beyond a theoretical accuracy limit, regardless of model size or compute."
-      }
-    ],
+    "id": "2026-10-07-revolut-data-breach-id-replacement",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-07T19:14:53Z",
+    "headline": "Revolut commits to covering identity document replacement costs post-breach",
+    "plain_english": "Revolut's CEO announced the fintech will pay for new identity documents (passports, etc.) for customers affected by its September 2026 data breach, signaling heightened liability expectations post-incident.",
+    "why_it_matters": "Sets precedent for BFSI liability beyond regulatory fines: customer remediation costs (documents, credit monitoring, fraud recovery) now expected as part of breach response, raising post-incident financial exposure.",
+    "stat_label": "Regulatory liability shift",
+    "stat_value": "ID document replacement now vendor responsibility",
     "source": {
-      "name": "Bioengineer.org · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0JRZEx5TlpldndhRnR3bWZkeGkwc203b3hjQ2hTUHRYU1BUNTIteEUtbkZLUUI5QkhrLUZBUUpPRzFyOHExOHFGNnVtX3FwREVQRU1WNjhsNFV4eXBJMU5SV0xwRWU5WGY3QW9VLTB2bkNRVjhvUVpVMGNMcUhSdVhBWkZTaURXN0dzdmtDREktNFBCTVU1UlUtNzFIVHVnRk0xTHdfa3EtLTNH"
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/cybersecurity/2026/revolut-pays-for-new-customer-ids-after-september-data-breach/"
+    }
+  },
+  {
+    "id": "2026-10-07-consumer-credit-slowdown",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-07T20:38:08Z",
+    "headline": "US consumer credit growth halves month-on-month, signals tighter borrowing appetite",
+    "plain_english": "Federal Reserve data released Wednesday show consumer credit expanded at 1.9% annualized in August, down from 4.1% in July (revised) — the slowest pace in recent months. Consumers are easing off adjustable revolving credit.",
+    "why_it_matters": "Slowing consumer credit signals demand-side caution that may reduce card portfolio yields and increase default risk; retail banks should expect tighter credit cycles and rising loss-adjustment reserves.",
+    "stat_label": "Consumer credit growth (Aug YoY adjusted)",
+    "stat_value": "1.9%",
+    "source": {
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/consumer-finance/2026/consumers-get-choosier-about-credit/"
     }
   },
   {
@@ -1013,39 +1041,59 @@
     }
   },
   {
-    "id": "2026-10-03-ai-gdp-investment-us",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-03T14:02:09.000Z",
-    "headline": "US AI infrastructure investment may reach 9% of GDP by end of decade",
-    "plain_english": "Industry forecasters project the U.S. will deploy enough capital in AI infrastructure—chip fabs, data centers, training pipelines—to represent roughly 9% of GDP, contingent on sustained venture and public funding.",
-    "why_it_matters": "A 9% GDP share would make AI infrastructure the largest single capital allocation in decades. BFSI may face higher cost of capital and crowded-out funding if AI infrastructure competes for VC and debt capital meant for fintech.",
-    "stat_value": "9%",
-    "stat_label": "estimated share of US GDP allocated to AI infrastructure by 2030s",
+    "id": "2026-10-07-openai-gpt6-ui",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-07T22:34:08Z",
+    "headline": "OpenAI debuts GPT-6 with rich media interface supporting visuals and interactive elements",
+    "plain_english": "OpenAI rolled out GPT-6 in ChatGPT with an Intelligent UI that blends text, visuals, and interactive components in responses. Available on Plus, Pro, Business, and Enterprise tiers.",
+    "why_it_matters": "Richer output modalities reduce friction for BFSI use cases (e.g., financial dashboards, regulatory reports) and will pressure enterprise LLM platforms to match UI/UX capabilities in competitor products.",
     "source": {
-      "name": "WSJ · 2026-10-03",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS2dhQ2tycm5oZng3Y3lCYzJheWdCWU5sVWFfd0IwZUZJM01xd3BGVUpENGZtWnFwcmpoRDdrMzJGY0I0b2hhUUpnZnJEWnN1cG94V014akl1VUpmV1BUVDVGTzNITUNYdVRPcGFqV1hGVmNVN0c0aHViWlg2aEI1TVVvMXNSeTVHNXY5enhCYmJFeHdrMWQ3blNQeHZIVUxsM2VZNWxpQ28"
+      "name": "PYMNTS · 2026-10-07",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-enables-chatgpt-to-answer-with-visuals-and-interactive-experiences/"
     }
   },
   {
-    "id": "2026-10-03-meta-muse-privacy-risk",
-    "category": "insight",
+    "id": "2026-10-07-microsoft-surface-laptop-ultra",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-03T12:00:00.000Z",
-    "headline": "Meta's Muse creates detailed behavioral profiles of users' contacts",
-    "plain_english": "Wired reports that Meta's Muse AI agent builds comprehensive profiles of users' family, friends, and social networks by analyzing messaging, photo-sharing, and behavior patterns to improve purchasing recommendations.",
-    "why_it_matters": "Banks integrating Muse or similar agents risk inheriting third-party privacy liabilities. If Muse profiles are breached or misused for credit scoring or fraud rings, lenders face compliance exposure and customer trust erosion.",
-    "jargon": [
-      {
-        "term": "behavioral profiling",
-        "def": "AI construction of detailed user/network models from communications and transaction patterns, used for targeting and recommendation"
-      }
-    ],
+    "severity": "low",
+    "published_at": "2026-10-07T20:26:13Z",
+    "headline": "Microsoft launches Surface Laptop Ultra with Nvidia AI accelerator at $2,599",
+    "plain_english": "Microsoft began preorders for Surface Laptop Ultra, a $2,599 device running Nvidia's AI chips and revamped Windows 11 designed to run local AI models and agents on consumer/enterprise endpoints.",
+    "why_it_matters": "Consumer and enterprise PC refresh cycle with local AI inference capability signals shift from cloud-only LLM deployments; BFSI must evaluate on-device inference risks and governance implications.",
     "source": {
-      "name": "Wired · 2026-10-03",
-      "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/"
+      "name": "CNBC Tech/Finance · 2026-10-07",
+      "url": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html"
+    }
+  },
+  {
+    "id": "2026-10-08-samsung-q3-ai-chip-boom",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-07T22:58:05Z",
+    "headline": "Samsung Electronics posts record preliminary Q3 profit on AI infrastructure demand",
+    "plain_english": "Samsung reported preliminary Q3 2026 operating profit topping 100 trillion won (≈$80B) for the first time, buoyed by memory-chip sales to AI data centers. Analysts are watching for signs of margin compression.",
+    "why_it_matters": "Sustained semiconductor revenue from AI capex cycles validates continued infrastructure investment. If margins peak, it may signal cooling AI demand and pressure banks' near-term compute-procurement costs.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-10-07",
+      "url": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html"
+    }
+  },
+  {
+    "id": "2026-10-07-spacex-gpu-financing-apollo",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-07T21:16:24Z",
+    "headline": "Apollo Global and banks finance SpaceX's $40B Nvidia GPU purchase",
+    "plain_english": "SpaceX is in talks with Apollo Global and banking partners to finance a reported $40B purchase of Nvidia GPUs for AI infrastructure expansion, following the company's record June 2026 IPO.",
+    "why_it_matters": "Confirms scale of AI compute capital requirements now requires structured financing; similar mega-deals will reshape corporate treasury and create new counterparty risks for BFSI lenders.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-10-07",
+      "url": "https://www.cnbc.com/2026/10/07/spacex-nvidia-chips-apollo-financing.html"
     }
   },
   {
@@ -1131,62 +1179,6 @@
     "source": {
       "name": "24/7 Wall St. · 2026-10-04",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeW5sTVI2UzF4cDd5MnJJMmFQTHBHM2dPZlBFaVlSbmdSMHljOTdGRi02T1NyQXZsOHlsbmw0Zzc3aUZGLVZSSnlVc196WmRFMzVDanE2RUo5Qko4Ty1zR3psUS1MUy1IQkxlZ05PV3J3TW5PejQxMy1fbmdTa2lfVl8xekNiUUdUcEZCYVhudkN6MDdKdWZpRWh0cGpFLUdoYy1JMGMzejVhU0FiZVlwbklTU1JFUjhaMWFEbXJaU0FBWGFicmFsdS01OVF2OTF5ZFBjMFhJb3c"
-    }
-  },
-  {
-    "id": "2026-10-04-trump-super-intelligence-force",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-04T14:03:00.000Z",
-    "headline": "Trump administration creates 'Super Intelligence Force' AI task force led by Jay Clayton",
-    "plain_english": "The Trump administration formally announced a new 'Super Intelligence Force' to oversee U.S. AI policy, naming former OMB director and national intelligence official Jay Clayton to lead it. Signals intent to centralize AI governance and strategy at the federal level.",
-    "why_it_matters": "U.S. regulatory posture on AI is shifting from agency-by-agency to centralized oversight. BFSI compliance teams should prepare for unified guidance on AI testing, audit, and transparency standards that may supersede sectoral rules.",
-    "source": {
-      "name": "Fortune · 2026-10-04",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS2pTUy1zZ2FTdnV6N3dkWVY2bmhNVmwxcUJnWTU5NW9JU2JVTHpUeXlGX1otLVVfWXBxOEJwX204TmROS1ZzdFJSWHVVQTdMZWRmUl9PYndmVGtCMFJhcE8zVjM5VlRnNjBWd21SQmk1YnVoc1dPR3hJMVFtSWJ3cTFiNEdOMllzVDJBcG1PTG9QZnVPUW5PTVpibUV1ZUk0c3VSUjJVS0pfOFBnT3FIZV9sRmF3QQ"
-    }
-  },
-  {
-    "id": "2026-10-04-trump-ai-czar-clayton",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-03T22:46:00Z",
-    "headline": "Trump appoints intelligence chief Clayton as AI czar to lead federal task force",
-    "plain_english": "U.S. President Trump has named his intelligence chief Clayton to head a new AI task force, signaling heightened federal focus on artificial intelligence governance and competition. This comes amid industry pushback on light-touch AI regulation.",
-    "why_it_matters": "Centralizing AI policy under a single executive task force will likely accelerate federal AI standards, potentially creating compliance obligations for financial institutions operating in regulated AI domains.",
-    "source": {
-      "name": "Reuters · 2026-10-03",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOczlKTmxkdnE3WHZpaWs1Y2V2dFJJOENfZkRRdjdCdGJBcXRqMFRWVlFKMGZWRDhlTXBiOTQxNUY1dDlSNlZYcXlmS1ZaaF9iWkJsek5QeTZ5V2txU0hOVnFXUE9EZHU1NE1XdldXV3FaQzAzcU9KZmZNcXhJMzVaVHdYV2tIUHVDdG5Cc1FMTjFHUHRvQzEtQmhFdDUwOXR3RlUwWlBDX3c5ZlNUMWZZd1BLcm12TWVWYWc"
-    }
-  },
-  {
-    "id": "2026-10-03-openai-safety-exodus",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-03T13:13:42.000Z",
-    "headline": "OpenAI safety researcher resigns, warns of inadequate safeguards",
-    "plain_english": "A safety-focused employee at OpenAI departed and publicly called for stronger safeguards, citing concerns over the pace and rigor of safety measures. The resignation signals internal friction over how fast the company is moving versus how cautious it should be.",
-    "why_it_matters": "Talent exits from frontier labs are early signals of governance gaps. If safety talent perceives negligence, regulators and customers will follow—affecting OpenAI's operating license and enterprise adoption.",
-    "source": {
-      "name": "Bloomberg · 2026-10-03",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMjVnaDVZZC05NnowMXJkVFVFX21rOWR0OXNFTlJlVTZWYmx2cklDY241ZkNpb0JRRFJyRzJ0VWVHM3RpbTFpN3dha2MtVUQzY3ZUVXlQV3JVWjVBXzU5emoxQm1QUVp6VnBwdXYyZmZpdHpNbFJnSDlpcnBmUE80dmQ3OXNsbmtUamVVZmtINnVzc2ljVVFBU0pZTDVSdU5pdzlVOVFVcXJ1dFl5ME9NdnNJUnc"
-    }
-  },
-  {
-    "id": "2026-10-03-ai-misinformation-world-cup",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-03T14:15:58.000Z",
-    "headline": "AI-generated fake images and quotes saturated World Cup social discourse",
-    "plain_english": "Generative AI tools flooded social platforms with synthetic images and fabricated quotes during the World Cup, demonstrating at scale how easy it is to weaponize AI for mass misinformation campaigns.",
-    "why_it_matters": "Mass synthetic media attacks reduce trust in news and official communications. Banks relying on verified identity, document authenticity, or social-media-based customer KYC face amplified fraud and compliance risk.",
-    "source": {
-      "name": "Futura · 2026-10-03",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNelF6UV8ySkF2aWFaMWR3M2VyVHFraXFvTzhRTFppMTk2ZjluZ0FDQWJQQ2s0S2JIdlNZLUZwU3ZyNFZYVmZiWEpDanpNQmh3cWJDZzlkaTBaS3ZibVF2cjFHcmlUNkl1Q2VaZGlnZWVLRTFWQ2NrMHBQWVdxT1VWMkJBTzczN0NHWHJ1QjZ5UUkyTnh4UXJqQXg4ZFBhOFo4ME9SdzhJc2pCOHBhcXNRSV9sMW1wZw"
     }
   },
   {
@@ -1546,6 +1538,208 @@
     "source": {
       "name": "Reuters · 2026-09-24",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUNPVzNoNDJiWUNfY2hyZTNBT3pJS2kwUWk0Nk9UT0dTenZkTE5acXJaX0V4QXVMWXdwRVZEeVY3Y09HUTZqN2VPYUI0elhjY0RwRHFLTnFsSlNhdGgxUXJ2OE5pVHcyWUFBaWljNThLdUtqOFUzeHU2NjIyS3czT0hsVDdyQVFtemZIX0o2cTR5WGlTVXNnMUdOUUp0bm5PeFZQLXg5Uk81T3FJMmxn?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-04-trump-light-touch-ai-defense",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-03T23:15:15Z",
+    "headline": "Trump defends light-touch AI regulation as industry sounds alarms over governance gaps",
+    "plain_english": "Trump administration is defending its hands-off approach to AI regulation despite warnings from tech and finance sectors about the need for stronger oversight. Tensions are rising between deregulation philosophy and calls for guardrails on AI deployment.",
+    "why_it_matters": "Financial services firms operating under unclear AI governance face regulatory risk; divergence between administration and industry on AI standards could trigger state-level or international regulatory responses that impose fragmented compliance.",
+    "source": {
+      "name": "WSJ · 2026-10-03",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNb3Q0S01scXhhTFpRc1lVVEhqeVA1U1d0OWJzdFpBMkQ1bnJ1Ty1yTmRsdDlHQ2hCOHhsZFA4UnJLWTBiclNDSTA2REUzWk1OODc2cU50dVpVem9ucVc4VnZxb2RlS2FmZnhJSnlkY0JqdXZ0TDZ1akRrcGVZY2Y4WDBjRjZJMU80Zm1ROHRGd252MkFfZWdRdk10S2s3ODZZX2JaT3N3eHBZQVRkRFpHUVp1UGhCRHhITEllNk1iZU1oMldFZTk4cVpIWmlBd1JiR3p1OGVkQjFVcVU"
+    }
+  },
+  {
+    "id": "2026-10-04-hipo-bangla-ai-interviews",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-04T14:16:01.000Z",
+    "headline": "Hipo launches AI interview platform with Bangla language support",
+    "plain_english": "Hipo, a recruitment tech platform, launched an AI-powered interview system with native support for Bangla conversations. Addresses hiring workflows in South Asia and demonstrates localized AI capability for non-English-dominant markets.",
+    "why_it_matters": "BFSI talent workflows in India, Bangladesh, and broader APAC are increasingly AI-assisted. Compliance and audit teams should prepare for HR tools that generate bias in hiring; RBI and similar regulators may soon require bias testing for AI-driven recruitment.",
+    "source": {
+      "name": "The Business Standard · 2026-10-04",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOa2txSURoNGtlR19aUkZfakprV0N0OUFLakhKRHdRTG1wVmRKMl9Wenhxd0pqZnZxU3EwMXF6SGs4TXljLWNsakE2dllwc0ZxVlN0LWk5ejJ2MVM2dDZiSFU5NllEVU0ySDJHN0QybGtwdVg2RDFTQUU3SnJxeG1EMmQyWnVvTTE4eVNzSEhnZVB2bC14c1REWmsyVVdrSlp5M2ZHdVpDbTZZSmJ0eFlfVnZ4VQ"
+    }
+  },
+  {
+    "id": "2026-10-04-typesafe-jev-llm-alternatives",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-04T15:32:39.000Z",
+    "headline": "TypeSafe AI's Jev model sparks interest in LLM alternatives",
+    "plain_english": "Startup TypeSafe AI released its Jev model, garnering attention in the market for alternatives to dominant large language models. The model is generating buzz among developers and is reported to be inspiring copycat efforts.",
+    "why_it_matters": "Fragmentation in the LLM market is accelerating. BFSI tech teams evaluating model selection for compliance, latency, or cost should expect a widening menu of smaller, specialized models challenging OpenAI/Google dominance.",
+    "source": {
+      "name": "WSJ · 2026-10-04",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONHo4Zjh1Y29GaURuOFM0bXJ1OVVzUkFEQi1ZaDA3ems1R0s2YnFXdnhhLWdhNU5aeDYwYzluNmpveVBXbFFQWmVBajQ0UUtXRzhJVUNJYXBiU0lkSVlxWUVBQ01oUHpvMk9wVzB6dldqWkRZeTR3N1dqWjc1Wjc0YlItWm9UZDVOVnh6MjNrQ2NJSF81M3NrTGQzbWxPZnBiVVZjSFJvXzZlbkIt"
+    }
+  },
+  {
+    "id": "2026-10-04-hongkong-ai-fundraising-record",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-04T00:00:00Z",
+    "headline": "Hong Kong AI fundraising hits record high in summer driven by deal activity",
+    "plain_english": "Hong Kong saw record-breaking AI venture funding in summer 2026, driven by strong M&A and investor appetite for artificial intelligence startups. The surge reflects Asia's push to compete in frontier AI development and deployment.",
+    "why_it_matters": "Surge in Asia-Pacific AI funding signals shift in AI innovation geography; BFSI firms competing for fintech AI talent and partnerships will face stiffer competition from well-capitalized regional startups.",
+    "source": {
+      "name": "Bloomberg · 2026-10-04",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMDlyc283Wk8zZ3RubnFCdWI5UTdiRFFiamxqYUVlcXNLeG9PcGJEX1pXMmVvVkFsZk5FZ1RYcjdjZ1RxNkw5aFFVTGtqYXhNT3V2YmgxZ3p6WEZCRG1vV0d4MU5WOEN0M1JUQTdHTVlwX3Nhc0FFZkZPNnl6VV95WGY0dzdQVnBzS21YOGdkM0l4bnVDMlEyZ1o0TS1ZbTFDRzI3ck40WEFJZldRQjEyXw"
+    }
+  },
+  {
+    "id": "2026-10-03-meta-muse-retail-launch",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-03T12:00:01.000Z",
+    "headline": "Meta deploys Muse shopping agent with major US retailers",
+    "plain_english": "Meta launched Muse, an AI agent that can autonomously shop and complete purchases, in partnerships with Walmart, Gap, Sephora, Expedia, Wayfair, and Best Buy. This marks the first large-scale deployment of autonomous transaction agents to mass-market retail.",
+    "why_it_matters": "Autonomous shopping agents shift power from human checkout to AI decision-making. Banks and payment processors must now model fraud, KYC, and chargeback risk for agent-initiated transactions at scale.",
+    "jargon": [
+      {
+        "term": "autonomous agent",
+        "def": "AI system that perceives environment, decides actions, and executes them without human per-transaction approval"
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-10-03",
+      "url": "https://www.cnbc.com/2026/10/03/meta-muse-shopping-ai-agent.html"
+    }
+  },
+  {
+    "id": "2026-10-03-data-center-backlash-global",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-03T12:39:29.000Z",
+    "headline": "Global communities push back against AI data center infrastructure buildout",
+    "plain_english": "Communities across Europe and Asia are resisting large-scale data center deployment for AI training and inference, citing rising electricity costs, water usage, and grid strain. The U.S. backlash is now replicating globally.",
+    "why_it_matters": "If communities block data center buildout, cloud-dependent AI services (including fintech LLM APIs) face latency and availability shocks. Banks may need to reshore or multi-cloud strategies, raising compute costs and reducing model diversity.",
+    "source": {
+      "name": "CNBC · 2026-10-03",
+      "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html"
+    }
+  },
+  {
+    "id": "2026-09-26-ai-mathematical-optimization-limits",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-09-26T23:08:47Z",
+    "headline": "Research identifies hard mathematical limits to AI optimization—'ceiling problem' unsolvable by scaling alone",
+    "plain_english": "Academic paper demonstrates certain AI optimization problems have mathematical ceilings that additional scale/compute cannot overcome—challenging LLM industry assumption that larger models solve harder problems.",
+    "why_it_matters": "Scaling fatigue incoming: BFSI teams betting on next-gen model to solve hard compliance/fraud problems may hit diminishing returns. Algorithmic breakthroughs, not just parameter scale, will define next phase.",
+    "jargon": [
+      {
+        "term": "optimization ceiling",
+        "def": "Mathematical proof that certain problem classes cannot be solved beyond a theoretical accuracy limit, regardless of model size or compute."
+      }
+    ],
+    "source": {
+      "name": "Bioengineer.org · 2026-09-26",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0JRZEx5TlpldndhRnR3bWZkeGkwc203b3hjQ2hTUHRYU1BUNTIteEUtbkZLUUI5QkhrLUZBUUpPRzFyOHExOHFGNnVtX3FwREVQRU1WNjhsNFV4eXBJMU5SV0xwRWU5WGY3QW9VLTB2bkNRVjhvUVpVMGNMcUhSdVhBWkZTaURXN0dzdmtDREktNFBCTVU1UlUtNzFIVHVnRk0xTHdfa3EtLTNH"
+    }
+  },
+  {
+    "id": "2026-10-03-ai-gdp-investment-us",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-03T14:02:09.000Z",
+    "headline": "US AI infrastructure investment may reach 9% of GDP by end of decade",
+    "plain_english": "Industry forecasters project the U.S. will deploy enough capital in AI infrastructure—chip fabs, data centers, training pipelines—to represent roughly 9% of GDP, contingent on sustained venture and public funding.",
+    "why_it_matters": "A 9% GDP share would make AI infrastructure the largest single capital allocation in decades. BFSI may face higher cost of capital and crowded-out funding if AI infrastructure competes for VC and debt capital meant for fintech.",
+    "stat_value": "9%",
+    "stat_label": "estimated share of US GDP allocated to AI infrastructure by 2030s",
+    "source": {
+      "name": "WSJ · 2026-10-03",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS2dhQ2tycm5oZng3Y3lCYzJheWdCWU5sVWFfd0IwZUZJM01xd3BGVUpENGZtWnFwcmpoRDdrMzJGY0I0b2hhUUpnZnJEWnN1cG94V014akl1VUpmV1BUVDVGTzNITUNYdVRPcGFqV1hGVmNVN0c0aHViWlg2aEI1TVVvMXNSeTVHNXY5enhCYmJFeHdrMWQ3blNQeHZIVUxsM2VZNWxpQ28"
+    }
+  },
+  {
+    "id": "2026-10-03-meta-muse-privacy-risk",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-03T12:00:00.000Z",
+    "headline": "Meta's Muse creates detailed behavioral profiles of users' contacts",
+    "plain_english": "Wired reports that Meta's Muse AI agent builds comprehensive profiles of users' family, friends, and social networks by analyzing messaging, photo-sharing, and behavior patterns to improve purchasing recommendations.",
+    "why_it_matters": "Banks integrating Muse or similar agents risk inheriting third-party privacy liabilities. If Muse profiles are breached or misused for credit scoring or fraud rings, lenders face compliance exposure and customer trust erosion.",
+    "jargon": [
+      {
+        "term": "behavioral profiling",
+        "def": "AI construction of detailed user/network models from communications and transaction patterns, used for targeting and recommendation"
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-10-03",
+      "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/"
+    }
+  },
+  {
+    "id": "2026-10-04-trump-super-intelligence-force",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-04T14:03:00.000Z",
+    "headline": "Trump administration creates 'Super Intelligence Force' AI task force led by Jay Clayton",
+    "plain_english": "The Trump administration formally announced a new 'Super Intelligence Force' to oversee U.S. AI policy, naming former OMB director and national intelligence official Jay Clayton to lead it. Signals intent to centralize AI governance and strategy at the federal level.",
+    "why_it_matters": "U.S. regulatory posture on AI is shifting from agency-by-agency to centralized oversight. BFSI compliance teams should prepare for unified guidance on AI testing, audit, and transparency standards that may supersede sectoral rules.",
+    "source": {
+      "name": "Fortune · 2026-10-04",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS2pTUy1zZ2FTdnV6N3dkWVY2bmhNVmwxcUJnWTU5NW9JU2JVTHpUeXlGX1otLVVfWXBxOEJwX204TmROS1ZzdFJSWHVVQTdMZWRmUl9PYndmVGtCMFJhcE8zVjM5VlRnNjBWd21SQmk1YnVoc1dPR3hJMVFtSWJ3cTFiNEdOMllzVDJBcG1PTG9QZnVPUW5PTVpibUV1ZUk0c3VSUjJVS0pfOFBnT3FIZV9sRmF3QQ"
+    }
+  },
+  {
+    "id": "2026-10-04-trump-ai-czar-clayton",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-03T22:46:00Z",
+    "headline": "Trump appoints intelligence chief Clayton as AI czar to lead federal task force",
+    "plain_english": "U.S. President Trump has named his intelligence chief Clayton to head a new AI task force, signaling heightened federal focus on artificial intelligence governance and competition. This comes amid industry pushback on light-touch AI regulation.",
+    "why_it_matters": "Centralizing AI policy under a single executive task force will likely accelerate federal AI standards, potentially creating compliance obligations for financial institutions operating in regulated AI domains.",
+    "source": {
+      "name": "Reuters · 2026-10-03",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOczlKTmxkdnE3WHZpaWs1Y2V2dFJJOENfZkRRdjdCdGJBcXRqMFRWVlFKMGZWRDhlTXBiOTQxNUY1dDlSNlZYcXlmS1ZaaF9iWkJsek5QeTZ5V2txU0hOVnFXUE9EZHU1NE1XdldXV3FaQzAzcU9KZmZNcXhJMzVaVHdYV2tIUHVDdG5Cc1FMTjFHUHRvQzEtQmhFdDUwOXR3RlUwWlBDX3c5ZlNUMWZZd1BLcm12TWVWYWc"
+    }
+  },
+  {
+    "id": "2026-10-03-openai-safety-exodus",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-03T13:13:42.000Z",
+    "headline": "OpenAI safety researcher resigns, warns of inadequate safeguards",
+    "plain_english": "A safety-focused employee at OpenAI departed and publicly called for stronger safeguards, citing concerns over the pace and rigor of safety measures. The resignation signals internal friction over how fast the company is moving versus how cautious it should be.",
+    "why_it_matters": "Talent exits from frontier labs are early signals of governance gaps. If safety talent perceives negligence, regulators and customers will follow—affecting OpenAI's operating license and enterprise adoption.",
+    "source": {
+      "name": "Bloomberg · 2026-10-03",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMjVnaDVZZC05NnowMXJkVFVFX21rOWR0OXNFTlJlVTZWYmx2cklDY241ZkNpb0JRRFJyRzJ0VWVHM3RpbTFpN3dha2MtVUQzY3ZUVXlQV3JVWjVBXzU5emoxQm1QUVp6VnBwdXYyZmZpdHpNbFJnSDlpcnBmUE80dmQ3OXNsbmtUamVVZmtINnVzc2ljVVFBU0pZTDVSdU5pdzlVOVFVcXJ1dFl5ME9NdnNJUnc"
+    }
+  },
+  {
+    "id": "2026-10-03-ai-misinformation-world-cup",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-03T14:15:58.000Z",
+    "headline": "AI-generated fake images and quotes saturated World Cup social discourse",
+    "plain_english": "Generative AI tools flooded social platforms with synthetic images and fabricated quotes during the World Cup, demonstrating at scale how easy it is to weaponize AI for mass misinformation campaigns.",
+    "why_it_matters": "Mass synthetic media attacks reduce trust in news and official communications. Banks relying on verified identity, document authenticity, or social-media-based customer KYC face amplified fraud and compliance risk.",
+    "source": {
+      "name": "Futura · 2026-10-03",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNelF6UV8ySkF2aWFaMWR3M2VyVHFraXFvTzhRTFppMTk2ZjluZ0FDQWJQQ2s0S2JIdlNZLUZwU3ZyNFZYVmZiWEpDanpNQmh3cWJDZzlkaTBaS3ZibVF2cjFHcmlUNkl1Q2VaZGlnZWVLRTFWQ2NrMHBQWVdxT1VWMkJBTzczN0NHWHJ1QjZ5UUkyTnh4UXJqQXg4ZFBhOFo4ME9SdzhJc2pCOHBhcXNRSV9sMW1wZw"
     }
   },
   {
@@ -7492,26 +7686,6 @@
     }
   },
   {
-    "id": "2026-09-08-trending-anthropic-claude-usage",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-07T20:25:38Z",
-    "headline": "Anthropic Claude premium plans criticized for lower-than-advertised usage limits",
-    "plain_english": "Reddit users report that Anthropic's paid Claude tiers deliver substantially fewer tokens than marketing claims suggest. Widespread complaint signals pricing/expectation mismatch for enterprise AI consumption models.",
-    "why_it_matters": "BFSI teams evaluating LLM APIs for production (document review, KYC, sentiment analysis) must audit token-math vs. vendor claims; true cost-per-inference may be 2-3x higher than quoted, forcing vendor renegotiation.",
-    "jargon": [
-      {
-        "term": "Token limits",
-        "def": "Maximum words/sub-words an LLM can process per month or per API call; determines throughput and cost scaling."
-      }
-    ],
-    "source": {
-      "name": "Mashable · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBsQkxWVDFMTnFDZUl0VjZLNHN2dXJNOTJVWk9VY2IxXzZLVldnWHV1OTBQNFJQUnFUX2pKdXExcHI5VFRkRFU0TS1kWXFZQTU0ZGQzRDZfOWpkQ0UyUW9xbERnczlJTmVyNF8zWVgzSzdpMUVmYnAteHNB"
-    }
-  },
-  {
     "id": "2026-09-11-fed-third-party-risk-guidance",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8033,21 +8207,6 @@
       "name": "PYMNTS · 2026-09-09",
       "url": "https://www.pymnts.com/news/investment-tracker/2026/zeal-raises-10-million-dollars-merchant-loyalty-product/"
     }
-  },
-  {
-    "id": "2026-09-08-everbank-wafd-merger",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-07T20:30:00Z",
-    "headline": "EverBank and WaFd merge in $3.9B reverse deal to create $75B regional bank",
-    "plain_english": "EverBank will combine with WaFd Bank through a reverse merger, forming a $75 billion-asset regional lender. The deal signals consolidation among mid-sized US banks as competitive pressures intensify.",
-    "why_it_matters": "Mid-size bank mergers often precede AI infrastructure investments; combined entity will likely accelerate digital transformation and risk-analytics modernization to compete with mega-banks.",
-    "source": {
-      "name": "Reuters · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNelU0R1E2eUVzYUFFM3ZfeXZLNlJ1NHlmODEycFBPZzA0S0c4OHl5YTNyRy16dDZTdmhqU2RwdVIzUUFVcnYyY2hSSV9DR0dwV3ZoOFQtcWhYTG1adEwwWHpvMjVXTjlSQ0RHbGttV25EemEtWXU1THNrMlh3NHRwVDhNV1lEZ1J0VmwwaDA2RlMyZzFJbzRkanllcVN0ZEpSQi10aHluUXhkSzRF"
-    },
-    "effective_date": "2026-09-07"
   },
   {
     "id": "2026-09-11-insight-jensen-huang-cybersecurity-ai",
@@ -8631,20 +8790,6 @@
     }
   },
   {
-    "id": "2026-09-08-gates-notes-ai-era-choices",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-07T21:11:16Z",
-    "headline": "Bill Gates: turbulent AI era requires critical policy choices now",
-    "plain_english": "Gates Notes essay argues that near-term AI governance decisions will shape long-term outcomes in health, education, and economic opportunity. Emphasizes urgency of regulatory and philanthropic action.",
-    "why_it_matters": "High-profile voices now frame AI governance as mission-critical, not optional; BFSI risk/compliance teams should expect accelerated regulatory momentum and stakeholder pressure on AI ethics/fairness disclosures.",
-    "source": {
-      "name": "Gates Notes · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vNHRZblJwZHNZZEZfZ281LUdncWl0YUk0UHVfTDM1b05YSU9rVHRhYUpkQ1VwV1RJaXZ4SzZwV2dBd2ZYeEZtbUpGNkpDdng5WjRTa28yOVdIM3drTERSVVVoeWI0WnpWT3dQbGVQcVhvdEZIZE1oaTB4cHdRb0E"
-    }
-  },
-  {
     "id": "2026-09-09-china-50b-bank-insurer-capital",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -8732,60 +8877,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-08",
       "url": "https://www.pymnts.com/visa/2026/visa-unlocks-working-capital-for-stablecoin-linked-card-programs-and-fintechs/"
-    }
-  },
-  {
-    "id": "2026-09-07-law-schools-ban-ai",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-07T20:47:00Z",
-    "headline": "US law schools including University of Chicago ban AI in classroom",
-    "plain_english": "Law schools have begun restricting LLM/AI use by students during classes and exams, citing concerns about stunted legal reasoning development. University of Chicago Law School leads the move.",
-    "why_it_matters": "Education policy on AI may signal regulatory posture: if bar counsel and law schools distrust AI judgment, expect heightened scrutiny of AI in compliance, legal review, and regulatory interpretation roles in BFSI.",
-    "source": {
-      "name": "PYMNTS · 2026-09-07",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/law-schools-outlaw-ai-amid-fears-stunted-academic-growth/"
-    }
-  },
-  {
-    "id": "2026-09-07-dbs-citi-swift-weekend-payment",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-07T23:13:32Z",
-    "headline": "DBS and Citi settle first weekend cross-border payment on SWIFT Ledger",
-    "plain_english": "DBS and Citibank completed a weekend cross-border payment on SWIFT Ledger, demonstrating 24/7 settlement capability. This proof-of-concept shows blockchain-based infrastructure for near-real-time FX and remittance flows.",
-    "why_it_matters": "Weekend settlement breaks traditional T+2 cycles; enables operational cost cuts for FX desks and opens new revenue via faster remittance corridors—critical for APAC fintech competition.",
-    "jargon": [
-      {
-        "term": "SWIFT Ledger",
-        "def": "Blockchain network by SWIFT enabling instant cross-border payments, bypassing traditional correspondent banking delays."
-      }
-    ],
-    "source": {
-      "name": "KuCoin · 2026-09-07",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM2hXNDgycGlBVjgzX0ZIMzlCV1E4UUMtSWhnZzI0QUxtbTNhS3lZSkdEMmVkbkxzUDU1UGZqQUpWeXQxRzY3QUlwaHd1VnVmLVZQSUNQTURjZTdDQUZ6cXlseDNTLW5ld0FJUy1nYnhYRE14VGx3b0VGcDhOcGJHNUpUWWhtR3d3WjdxM3Bsa0hZYTF5ZUZxZ2wyaC0zSXVTekJEc09Ic3BBQQ"
-    }
-  },
-  {
-    "id": "2026-09-07-mastercard-flowcart-africa",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-09-07T19:57:06Z",
-    "headline": "Mastercard partners with Flowcart to embed payments in East Africa social commerce",
-    "plain_english": "Mastercard integrated card payments directly into Flowcart's social commerce platform in Kenya. Users can now purchase and pay within chat and social apps without friction.",
-    "why_it_matters": "Embedded payments (API-driven) reduce cart abandonment and unlock new KYC/AML workflows; signals BFSI shift toward conversational commerce APIs as a core channel.",
-    "jargon": [
-      {
-        "term": "Embedded payments",
-        "def": "Payment processing integrated into third-party apps via APIs, eliminating redirect to card checkout."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-07",
-      "url": "https://www.pymnts.com/commerce/social-commerce/2026/mastercard-flowcart-team-promote-social-commerce-africa/"
     }
   }
 ]
