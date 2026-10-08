@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-10-08-amex-aml-penalty",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-08T20:59:44.000Z",
+    "headline": "American Express fined $350M for anti-money laundering program failures",
+    "plain_english": "Federal Reserve and OCC penalized Amex $350M for significant deficiencies in its enterprise-wide anti-money laundering implementation, particularly at the firm's subsidiary national bank.",
+    "why_it_matters": "Signals OCC/Fed enforcement focus on AML controls at large payment processors; compliance teams must audit end-to-end program ownership, especially at bank subsidiaries.",
+    "jargon": [
+      {
+        "term": "Anti-Money Laundering (AML)",
+        "def": "Regulatory programs detecting and preventing illicit financial flows; includes customer verification, transaction monitoring, and suspicious activity reporting."
+      }
+    ],
+    "source": {
+      "name": "Office of the Comptroller of the Currency · 2026-10-08",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBjelNId0JIUVB4dEpXSVhxRFpYTHZpcWpqcHR1MzdwUGlYLTlMQUlvRXk0ZF9pd2ZoX3dMY0gtenFiX29fMVV2ZmNKN09YYUZBY3MxdHByQzBiaUl1WExubmRSanZEUWtldVdCLVBWanhseUpUV2liVU1xMTFnZw"
+    },
+    "effective_date": "2026-10-08"
+  },
+  {
     "id": "2026-10-08-wise-tax-software-error-liability",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -157,17 +178,17 @@
     }
   },
   {
-    "id": "2026-10-05-nyc-ai-safety-rules-openai-anthropic",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:34:23Z",
-    "headline": "New York City Council advances local AI safety rules, grills OpenAI and Anthropic executives",
-    "plain_english": "NYC lawmakers held a hearing on AI safety, questioning leaders from OpenAI, Anthropic, Meta, and Google. The city is moving toward establishing its own AI governance framework independent of federal rules, focusing on model safety and operational transparency.",
-    "why_it_matters": "City-level AI regulation bypasses federal gridlock and creates compliance fragmentation; BFSI firms using frontier models must now track NYC disclosure/safety rules separately, increasing deployment friction and legal cost.",
+    "id": "2026-10-08-shory-uae-ai-insurance",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-08T20:06:34.000Z",
+    "headline": "Insurtech Shory launches AI insurance agent for car insurance in UAE",
+    "plain_english": "UAE-based insurtech Shory deployed AI agent for car insurance sales and service, automating customer interactions in regional market.",
+    "why_it_matters": "Demonstrates early production AI agent adoption in emerging BFSI markets; regional insurers face competitive pressure to automate front-end customer service.",
     "source": {
-      "name": "PYMNTS · 2026-10-05",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nyc-lawmakers-aim-to-lead-nation-in-establishing-ai-safety-rules/"
+      "name": "Beinsure · 2026-10-08",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVzlDXzM5WFFMZlJBVGJER2hJbm5hMENoRmsxOHhMdWZVc19TYUIzSjNCdlFTR1pGZ2FjVDFFU0tMSnlKdWdObVlrcy0waUc2MV9sb3hDT1lNV2hLeWVxajZGUHZJSnBiNnlnc1dXVFBNR3N3Q0JnRVhLYldfaU9zZE1XbTBfX0t5eVE"
     }
   },
   {
@@ -311,27 +332,17 @@
     }
   },
   {
-    "id": "2026-10-06-anz-tokenised-deposit-swift-ledger",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-06T00:01:00Z",
-    "headline": "ANZ completes live cross-border transaction using tokenised deposits on Swift's blockchain ledger",
-    "plain_english": "Australia and New Zealand Banking Group has executed a production corporate treasury payment using tokenised deposits on Swift's blockchain infrastructure, marking the first live proof of DLT-based settlement for institutional payments at major bank scale.",
-    "why_it_matters": "Live tokenised-deposit settlement removes a key blocker for BFSI DLT adoption; Swift's entry validates the infrastructure path, forcing other correspondent banks to adopt or risk client migration to parallel rails.",
-    "jargon": [
-      {
-        "term": "Tokenised deposits",
-        "def": "Digital representations of bank-issued deposits on blockchain ledgers, enabling programmable settlement and atomic clearing."
-      },
-      {
-        "term": "DLT (Distributed Ledger Technology)",
-        "def": "Blockchain or similar decentralized database that multiple institutions maintain copies of without central authority."
-      }
-    ],
+    "id": "2026-10-08-anyflo-stablecoin-stealth",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-09T00:01:00.000Z",
+    "headline": "Anyflo emerges from stealth with stablecoin payments orchestration for enterprises",
+    "plain_english": "Fintech Anyflo launched publicly with acquisition of bitcoin lending platform Native, positioning itself as orchestration layer for stablecoin-based enterprise payments.",
+    "why_it_matters": "Signals fresh venture capital focus on enterprise stablecoin rails; payment teams should monitor whether stablecoin infrastructure stabilizes around orchestration versus direct chain-settlement models.",
     "source": {
-      "name": "Finextra · 2026-10-06",
-      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "Finextra · 2026-10-09",
+      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises"
     }
   },
   {
@@ -473,20 +484,6 @@
     "source": {
       "name": "Sifted · 2026-10-06",
       "url": "https://sifted.eu/articles/sap-techwolf-acquisition-deal/"
-    }
-  },
-  {
-    "id": "2026-10-06-anthropic-ai-academy-enterprise",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-06T01:30:00Z",
-    "headline": "Anthropic launches AI academy for enterprise engineers",
-    "plain_english": "Anthropic has launched a training academy aimed at enterprise engineers, signaling investment in developer enablement as frontier labs compete to shape downstream adoption of LLMs in production BFSI and enterprise systems.",
-    "why_it_matters": "Frontier labs' direct academy investments signal market consolidation around developer lock-in; BFSI orgs will face pressure to standardize on vendors' preferred frameworks and APIs or face skill gaps.",
-    "source": {
-      "name": "CFOtech Asia · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNXzU5a3RwUlVUanBWMmtKS2VndEtxcHhCdEMzdWRKVEVJbHJiNHhTSkNlRWlNTGpXQmZHdW9DclhpZzdhTjFtbm00ZlBSYkJTRFZiNXlkTTVqT2JSUmRpa0VmRlNkS1J6VE02WTYzTTNXY3Z3Z0tOUDFJanN3bzBNYXdIZXJJbUh6"
     }
   },
   {
@@ -1041,6 +1038,34 @@
     }
   },
   {
+    "id": "2026-10-08-openai-50b-revenue",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-08T21:19:14.000Z",
+    "headline": "OpenAI reaches $50 billion annualized revenue, sparks AI stock volatility",
+    "plain_english": "OpenAI disclosed roughly $50B annualized revenue run rate as of end September 2026, triggering sharp sell-off in AI hardware and infrastructure stocks including Nvidia, Oracle, and CoreWeave on profit-margin concerns.",
+    "why_it_matters": "Validates frontier AI model monetization at scale; BFSI investors must reassess whether AI infrastructure capex demands justify valuations amid margin pressure.",
+    "source": {
+      "name": "CNBC · 2026-10-08",
+      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
+    }
+  },
+  {
+    "id": "2026-10-08-openai-safety-researchers-letter",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-08T20:04:26.000Z",
+    "headline": "Fired OpenAI safety researchers dispute misconduct allegations, warn of chilling effect",
+    "plain_english": "Three OpenAI safety researchers disputed dismissal claims and released open letter asserting their exits create a chilling effect on the company's internal AI safety culture and governance.",
+    "why_it_matters": "Highlights governance and culture tensions inside frontier AI labs; BFSI risk/compliance teams deploying OpenAI models should track OpenAI's internal safety oversight credibility.",
+    "source": {
+      "name": "TechCrunch · 2026-10-08",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
+    }
+  },
+  {
     "id": "2026-10-08-crypto-quantum-threat-ai",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1157,34 +1182,6 @@
     "source": {
       "name": "매일경제 · 2026-10-07",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBR0dWbm93X2hJQ1k3d3dIbUJSQmdhX3ltOFlJdndCMXBHUC1WU2dlaE5lNS11MktaV2RobU1JU3ZpNUFISWZfaTQ3OVotUUU?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-06-mistral-large-4-frontier",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-06T14:33:16.000Z",
-    "headline": "Mistral AI releases Large 4, claiming multimodal edge over US and Chinese rivals",
-    "plain_english": "French lab Mistral AI unveiled Mistral Large 4, a new flagship multimodal model targeting competitive parity with OpenAI, Google, and Chinese counterparts. The 1-trillion-parameter model aims to narrow gaps in reasoning, vision, and cross-modal tasks.",
-    "why_it_matters": "Open-source frontier models at this scale compress cost and latency for enterprise adoption; banks and insurers can benchmark against proprietary alternatives without vendor lock-in.",
-    "source": {
-      "name": "TechCrunch · 2026-10-06",
-      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
-    }
-  },
-  {
-    "id": "2026-10-05-white-house-ai-czar-task-force",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:53:39Z",
-    "headline": "White House names new AI czar and unveils task force goals for national AI strategy",
-    "plain_english": "The White House has appointed a lead AI policy official and announced a dedicated task force with explicit policy goals, signaling formalized federal AI governance and potential regulatory action in coming quarters.",
-    "why_it_matters": "Federal AI czar appointment indicates shift from ad-hoc policy to institutionalized strategy; BFSI compliance teams should expect formal guidance on AI use cases, model procurement, and national-security vetting within 6-12 months.",
-    "source": {
-      "name": "Wall Street Journal · 2026-10-05",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzllZ3FlUmNzR3pPMkNlbDRWSU5yT2lZLXA0bnpMZjI5VmxNTG5KZFBfZEp3elVXSG1XOU5jckVlRVA1M05oRHNtMDdhVDQyY0pLdXlScG54OXJpZlZJSTFtZkMxVVBHOWlaM2hKVmpuaFpwR3c3c05ITDU1N19IcnhENHQwdTAxeGtmRnVpNDdSc0IwWFowTmlxREVocURBVFppVFRoaVdLYXpsbXBmSUxqUTZ6MG1GSjE3RHRmVQ"
     }
   },
   {
@@ -1394,6 +1391,20 @@
     }
   },
   {
+    "id": "2026-10-08-ai-profit-doubts-tech",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-08T20:42:00.000Z",
+    "headline": "U.S. tech stocks decline as investor doubts grow over AI profitability models",
+    "plain_english": "Major tech sell-off driven by market skepticism on AI unit economics and return-on-investment timelines; Nvidia, Oracle, CoreWeave shares sank amid revenue growth but margin-compression signals.",
+    "why_it_matters": "AI infrastructure funding cycle faces headwinds; fintech and banking tech budgets may face pressure as investor scrutiny sharpens on AI capex ROI.",
+    "source": {
+      "name": "Wall Street Journal · 2026-10-08",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcmRmSzBtSkZNNUdzbkJoOThxUHFJNlhXVDQ3aUhtQklNTTlCN2lyckhrSGxJY2d2OGV3QnFlYzdXYTltUmdvb01Kd3Uwa0ZGYnJ3VnE2OFkxUzRpSWpLUURoX2hkcVVhc056UXAxTEdrR0k3S3A1U3RUOUhjMlVjNk5WM1JXazV6VFpBY2lZeUpPa0E4YVBmZEFQVzhuWUZCNWc"
+    }
+  },
+  {
     "id": "2026-10-08-ai-bubble-sp500-crash-2008",
     "category": "trending",
     "jurisdiction": "US",
@@ -1530,6 +1541,86 @@
     "source": {
       "name": "Reuters · 2026-09-26",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUT2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB"
+    }
+  },
+  {
+    "id": "2026-10-05-nyc-ai-safety-rules-openai-anthropic",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-05T23:34:23Z",
+    "headline": "New York City Council advances local AI safety rules, grills OpenAI and Anthropic executives",
+    "plain_english": "NYC lawmakers held a hearing on AI safety, questioning leaders from OpenAI, Anthropic, Meta, and Google. The city is moving toward establishing its own AI governance framework independent of federal rules, focusing on model safety and operational transparency.",
+    "why_it_matters": "City-level AI regulation bypasses federal gridlock and creates compliance fragmentation; BFSI firms using frontier models must now track NYC disclosure/safety rules separately, increasing deployment friction and legal cost.",
+    "source": {
+      "name": "PYMNTS · 2026-10-05",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nyc-lawmakers-aim-to-lead-nation-in-establishing-ai-safety-rules/"
+    }
+  },
+  {
+    "id": "2026-10-06-anz-tokenised-deposit-swift-ledger",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-10-06T00:01:00Z",
+    "headline": "ANZ completes live cross-border transaction using tokenised deposits on Swift's blockchain ledger",
+    "plain_english": "Australia and New Zealand Banking Group has executed a production corporate treasury payment using tokenised deposits on Swift's blockchain infrastructure, marking the first live proof of DLT-based settlement for institutional payments at major bank scale.",
+    "why_it_matters": "Live tokenised-deposit settlement removes a key blocker for BFSI DLT adoption; Swift's entry validates the infrastructure path, forcing other correspondent banks to adopt or risk client migration to parallel rails.",
+    "jargon": [
+      {
+        "term": "Tokenised deposits",
+        "def": "Digital representations of bank-issued deposits on blockchain ledgers, enabling programmable settlement and atomic clearing."
+      },
+      {
+        "term": "DLT (Distributed Ledger Technology)",
+        "def": "Blockchain or similar decentralized database that multiple institutions maintain copies of without central authority."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-06",
+      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-10-06-anthropic-ai-academy-enterprise",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-06T01:30:00Z",
+    "headline": "Anthropic launches AI academy for enterprise engineers",
+    "plain_english": "Anthropic has launched a training academy aimed at enterprise engineers, signaling investment in developer enablement as frontier labs compete to shape downstream adoption of LLMs in production BFSI and enterprise systems.",
+    "why_it_matters": "Frontier labs' direct academy investments signal market consolidation around developer lock-in; BFSI orgs will face pressure to standardize on vendors' preferred frameworks and APIs or face skill gaps.",
+    "source": {
+      "name": "CFOtech Asia · 2026-10-06",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNXzU5a3RwUlVUanBWMmtKS2VndEtxcHhCdEMzdWRKVEVJbHJiNHhTSkNlRWlNTGpXQmZHdW9DclhpZzdhTjFtbm00ZlBSYkJTRFZiNXlkTTVqT2JSUmRpa0VmRlNkS1J6VE02WTYzTTNXY3Z3Z0tOUDFJanN3bzBNYXdIZXJJbUh6"
+    }
+  },
+  {
+    "id": "2026-10-06-mistral-large-4-frontier",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-06T14:33:16.000Z",
+    "headline": "Mistral AI releases Large 4, claiming multimodal edge over US and Chinese rivals",
+    "plain_english": "French lab Mistral AI unveiled Mistral Large 4, a new flagship multimodal model targeting competitive parity with OpenAI, Google, and Chinese counterparts. The 1-trillion-parameter model aims to narrow gaps in reasoning, vision, and cross-modal tasks.",
+    "why_it_matters": "Open-source frontier models at this scale compress cost and latency for enterprise adoption; banks and insurers can benchmark against proprietary alternatives without vendor lock-in.",
+    "source": {
+      "name": "TechCrunch · 2026-10-06",
+      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
+    }
+  },
+  {
+    "id": "2026-10-05-white-house-ai-czar-task-force",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-05T23:53:39Z",
+    "headline": "White House names new AI czar and unveils task force goals for national AI strategy",
+    "plain_english": "The White House has appointed a lead AI policy official and announced a dedicated task force with explicit policy goals, signaling formalized federal AI governance and potential regulatory action in coming quarters.",
+    "why_it_matters": "Federal AI czar appointment indicates shift from ad-hoc policy to institutionalized strategy; BFSI compliance teams should expect formal guidance on AI use cases, model procurement, and national-security vetting within 6-12 months.",
+    "source": {
+      "name": "Wall Street Journal · 2026-10-05",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzllZ3FlUmNzR3pPMkNlbDRWSU5yT2lZLXA0bnpMZjI5VmxNTG5KZFBfZEp3elVXSG1XOU5jckVlRVA1M05oRHNtMDdhVDQyY0pLdXlScG54OXJpZlZJSTFtZkMxVVBHOWlaM2hKVmpuaFpwR3c3c05ITDU1N19IcnhENHQwdTAxeGtmRnVpNDdSc0IwWFowTmlxREVocURBVFppVFRoaVdLYXpsbXBmSUxqUTZ6MG1GSjE3RHRmVQ"
     }
   },
   {
@@ -8116,20 +8207,6 @@
     }
   },
   {
-    "id": "2026-09-08-qualcomm-amazon-data-center-ai",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-08T14:43:12.000Z",
-    "headline": "Qualcomm issues Amazon $4B stock warrants for AI datacenter chip partnership",
-    "plain_english": "Qualcomm and Amazon announced a strategic AI infrastructure deal: Amazon gains warrants to buy $4B of Qualcomm stock. Qualcomm is pivoting from handset dominance into datacenter, a market Nvidia has owned. This is Qualcomm's bet to capture AI inference workloads in enterprise and cloud.",
-    "why_it_matters": "BFSI datacenters currently locked into Nvidia for training+inference. Qualcomm's pivot could fracture that monopoly, creating alternative pathways for cost-optimized inference. Risk: vendor lock-in shifts but doesn't vanish; compliance teams must track new supply-chain dependencies.",
-    "source": {
-      "name": "CNBC · 2026-09-08",
-      "url": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html"
-    }
-  },
-  {
     "id": "2026-09-12-frontier-openai-ipo-delay",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8255,34 +8332,6 @@
     },
     "amount": "$7.3M",
     "round": "Seed"
-  },
-  {
-    "id": "2026-09-08-circle-tazapay-acquisition",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-08T14:32:00.000Z",
-    "headline": "Circle acquires Tazapay, integrates stablecoin settlement into B2B payments",
-    "plain_english": "Stablecoin issuer Circle bought Singapore-based Tazapay, a B2B cross-border payments platform. No financial terms disclosed. Circle is embedding on-chain settlement directly into corporate payment rails—collapsing the correspondent bank layer.",
-    "why_it_matters": "Stablecoin infrastructure is moving upstream: from consumer spend into enterprise payables. BFSI treasury operations face disintermediation risk if stablecoin rails become cheaper/faster than wire. Compliance must model new AML/sanctions scenarios on immutable ledgers.",
-    "source": {
-      "name": "Finextra · 2026-09-08",
-      "url": "https://www.finextra.com/newsarticle/48363/circle-to-buy-singapore-based-cross-border-payments-platform-tazapay?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-09-08-india-ai-fintech-strategy",
-    "category": "shift",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-09-08T14:27:24.000Z",
-    "headline": "India signals AI as next growth lever after digital payments success, attracting fintech AI investment",
-    "plain_english": "Bloomberg reports India's government and private sector are positioning AI as the follow-on innovation wave after the digital-payment boom (UPI, JAM). Banks and fintechs are racing to deploy AI for credit, fraud, and customer acquisition.",
-    "why_it_matters": "RBI has signaled openness to AI pilots in credit/underwriting. This creates a first-mover advantage for banks willing to deploy AI-driven lending at scale in an under-banked population. Compliance risk: local regulators lack mature guidelines; banks must self-regulate or face future enforcement.",
-    "source": {
-      "name": "Bloomberg · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRzNXUFdPVC1QYjF1dTU2N19UMHBnWDJQRzlqWk80cVB2MV9nNW9qcGZiUV9wWTgyMjUwMFdkaGdxMXZDYnFTY2hUQ0tTY21pSF9HUFF1N1VPN0ViQzVuZ01hRG5XUkFOODNUYjZqVmI1VG9GZDBTWXVkM2hXclNOMFJycFVXVHRWQkpJX29Kdzc0ZmRWLUV2Y2owazlDRmxRU1lkd1RUVGpOc1BfdmNVVDBjRGc"
-    }
   },
   {
     "id": "2026-09-11-insight-ai-agents-funding-model",
@@ -8619,36 +8668,6 @@
     }
   },
   {
-    "id": "2026-09-09-cognition-48b-series-e",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-08T22:34:47.000Z",
-    "headline": "AI coding startup Cognition raises over $2 billion at $48 billion valuation",
-    "plain_english": "Cognition, an AI coding automation startup, closed Series E funding of $2B+ at $48B valuation. Demand for AI-assisted code generation and autonomous software engineering surging. Previous Series D in May 2026 raised $1B+.",
-    "why_it_matters": "Validates market for AI software-engineering tooling. Banks and fintechs increasingly deploy Cognition-like tools (GitHub Copilot, Claude) to accelerate backend/fraud/compliance codebases. Talent compression in fintech engineering may accelerate AI adoption.",
-    "amount": "$2B+",
-    "round": "Series E",
-    "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/cognition-secures-48-billion-valuation-as-demand-for-ai-coding-surges/"
-    }
-  },
-  {
-    "id": "2026-09-08-deepmind-alphagenome-atlas",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-08T14:00:15.000Z",
-    "headline": "Google DeepMind releases AlphaGenome Atlas: AI predictions for 9B human DNA variants",
-    "plain_english": "DeepMind published AlphaGenome Atlas, mapping molecular effects of 9 billion single-letter DNA variants across the human genome using neural network predictions. Open-access resource for genomics research and potential pharma/insurance risk modeling.",
-    "why_it_matters": "This is a frontier AI applied to biology, not direct BFSI value—but insurers investing in genetic underwriting or personalized medicine need to track how AI-predicted variant effects change risk models. Regulatory and ethical liability for discriminatory use of genetic AI is emerging.",
-    "source": {
-      "name": "Google DeepMind · 2026-09-08",
-      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
-    }
-  },
-  {
     "id": "2026-09-09-insight-ai-spend-per-employee-decline",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8763,22 +8782,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-09",
       "url": "https://www.pymnts.com/news/investment-tracker/2026/kapital-lands-125-million-dollars-scale-ai-powered-business-platform/"
-    }
-  },
-  {
-    "id": "2026-09-08-crypto-hacks-3-6b-losses",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-08T14:13:40.000Z",
-    "headline": "Crypto platforms lost $3.6B to hacks in 18 months despite security audits",
-    "plain_english": "CoinGecko data: cryptocurrency platforms suffered $3.6B in losses to cyberattacks and theft over the last 18 months, even after conducting formal security audits. Breaches often stem from stolen private keys and sophisticated social engineering, not code flaws alone.",
-    "why_it_matters": "Security audit fatigue is real: passing an audit does not eliminate operational security risk. For BFSI entering crypto/stablecoin settlement, this underscores the need for continuous monitoring and insider-threat programs, not point-in-time audits. Regulators will expect higher assurance standards than crypto-native firms deliver.",
-    "stat_value": "$3.6B",
-    "stat_label": "crypto platform losses (18 months)",
-    "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-platforms-lose-3-6-billion-to-hacks-despite-security-audits/"
     }
   },
   {
@@ -8926,40 +8929,6 @@
     }
   },
   {
-    "id": "2026-09-09-chime-stride-bank-590m",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-08T23:29:13.000Z",
-    "headline": "Chime acquires nationally chartered Stride Bank for $590 million",
-    "plain_english": "Fintech Chime bought Stride Bank, a nationally chartered bank, for $590M. Stride holds a full OCC charter and deposits. Move gives Chime direct control over deposits and lending, reducing reliance on partner banks.",
-    "why_it_matters": "Fintech-to-bank consolidation accelerates. Direct charter ownership lets Chime deploy AI lending/fraud models on its own balance sheet and customer data without third-party latency or negotiation. Signals industry shift from CBNW partnerships to vertical integration.",
-    "scale": {
-      "metric": "acquisition",
-      "value": "$590M"
-    },
-    "source": {
-      "name": "Reuters · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXIxVTFQOUJmN3FqeU5HY0RxcTJvaDg4UmJ2V1ZNU0YzRWpheEhxRlRCLTdUYU5qZjRIWnlHNG96ZEV1SllyTWg0cUlPOXdlZktNT3BNZXVXTVBRWmQ0UHlGZXRJLU1jeFJjeVcyVWVRVVNJaV9vZ2xpb21XMHVqVnROOEdTVXdrWDV2ZXR3UDlYMWNWNUgxRUY4d0VPcDlha2RFVVpGc1U5cWRmcFdVWUkzOXZ6c050T0h0WnVwYw"
-    }
-  },
-  {
-    "id": "2026-09-08-mistral-series-d-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-09-08T14:45:21.000Z",
-    "headline": "Mistral raises €3B in record EU funding round, valuation hits €21B",
-    "plain_english": "France-based AI startup Mistral closed a €3 billion Series D (approx. $3.5B), led by Samsung, Scaleup Europe, and PSG Equity. It's the largest equity raise ever by a European tech company. Sovereign AI (non-US models) is now a scaled business.",
-    "why_it_matters": "EU AI Act compliance and geopolitical autonomy drive massive capital into alternatives to US/China labs. BFSI will face vendor choice: adopt US frontier models or back European players with regulatory tailwinds but less mature production track records.",
-    "amount": "€3B",
-    "round": "Series D",
-    "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mistral-raises-3-billion-dollars-ai-research-record-european-union-funding-round/"
-    }
-  },
-  {
     "id": "2026-09-09-china-50b-bank-insurer-capital",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -8994,20 +8963,6 @@
     }
   },
   {
-    "id": "2026-09-08-beijing-50b-bank-insurer-capital",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-09-08T14:23:42.000Z",
-    "headline": "Beijing announces $50B+ capital injection into banks and insurers to stabilize growth",
-    "plain_english": "China's government will inject over $50 billion into Chinese banks and insurers to shore up lending capacity and manage economic slowdown. Direct state recapitalization signals heightened systemic risk concerns in Beijing's eyes.",
-    "why_it_matters": "Large-scale state recapitalization typically precedes either a credit crackdown or a widening of asset-quality problems. BFSI institutions with China exposure face counterparty or market risk if stimulus fails to restore growth. Regulators globally will monitor spillover effects.",
-    "source": {
-      "name": "WSJ · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeWRvcWJKVmo2WVF4dDJCZU1VMF9QTFdTZWlxM3lhcXVyaXlHWVBZYlhDdlRuRWZYQm1DMDFRTTZzdUJHU0V6ZEdPakFROXNaSXBuUTJpVGMyaUNMMnJsQy1SdC14N1pDa3RoaUl5ck9EMXdoMzVuRnJjYjE5Vkd0RTk3dU54T3pDak5pbkJzX2xuSTNZTG9ETzBLbzVKVU9v"
-    }
-  },
-  {
     "id": "2026-09-09-visa-blockchain-lending",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -9019,34 +8974,6 @@
     "source": {
       "name": "Finextra · 2026-09-09",
       "url": "https://www.finextra.com/newsarticle/48362/visa-makes-onchain-lending-move"
-    }
-  },
-  {
-    "id": "2026-09-08-fca-novatrust-asset-enforcement",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-09-08T14:20:07.000Z",
-    "headline": "FCA enforcement action against Novatrust Asset signals tightening oversight of unregulated fintech platforms",
-    "plain_english": "FCA published enforcement details on Novatrust Asset, an unregulated investment platform. Action underscores FCA's focus on closing regulatory gaps in online asset platforms, many of which use AI recommendation engines without proper governance.",
-    "why_it_matters": "UK regulator is actively policing unauthorized platforms offering AI-driven advice or trading. BFSI firms building AI advisory tools must ensure FCA authorization and governance; using third-party AI without proper Model Risk Management audits is now a visible enforcement target.",
-    "source": {
-      "name": "FCA · 2026-09-08",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jM0ktVllPMHc3b0ZQMVd1Q1VVMU91Um9CaXBGQW5PMWhIUDhvMXo0SzdzNHlHTTl2bGM3VTN0aTh0S2pBdmc1ZGZ4RlU2LTlwWGpiS29Ed2dFN3hteUU4dHNB"
-    }
-  },
-  {
-    "id": "2026-09-08-visa-stablecoin-working-capital",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-08T14:44:46.000Z",
-    "headline": "Visa launches on-chain lending program for stablecoin card programs using VisaNet settlement data",
-    "plain_english": "Visa launched a platform that combines settlement data from VisaNet with on-chain credit infrastructure to help stablecoin card programs and fintechs access working capital. Lenders use payment history to underwrite on-chain loans in real time.",
-    "why_it_matters": "Traditional payment rails (Visa/Mastercard) are merging with on-chain liquidity pools. This creates new credit-risk vectors: lenders using immutable settlement data for undercollateralized lending. Risk officers need playbooks for contagion if stablecoin collateral volatility triggers margin calls.",
-    "source": {
-      "name": "PYMNTS · 2026-09-08",
-      "url": "https://www.pymnts.com/visa/2026/visa-unlocks-working-capital-for-stablecoin-linked-card-programs-and-fintechs/"
     }
   }
 ]
