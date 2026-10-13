@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-10-13-international-ai-regulator-proposal",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-13T10:00:00Z",
+    "headline": "Scientists call for creation of international AI regulatory body; echoes IPCC model",
+    "plain_english": "Leading researchers and policy experts are urging creation of a global AI governance authority modeled on the IPCC (climate), to harmonize standards, oversee frontier model development, and coordinate safety research across jurisdictions.",
+    "why_it_matters": "Currently fragmented: EU AI Act, UK FCA guidance, US executive orders, China rules. A global body would pressure BFSI to adopt unified compliance frameworks for model risk, but risk reduces regulatory competition and innovation velocity.",
+    "source": {
+      "name": "The Globe and Mail · 2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbzVQODFDbkhsWmd0S2Y5YmQwd3pUMTBQWkdqRUdOTU9aSnd2RTJvVkNKb2c5QmlJYkhJZFdHZjRSRVozbGUyRmxHeUJtczA3TjVQb21XTkFEVWNBSV9fcFF5Qm1kRkpPaGFNbHhQWjJLU0pZRmVRZjU3V2piNkQzeDdhc3pScW5pUFd2d0t1ejZVS2ttdDI5UmlLSnZsT1pjWHk3aVBnUVdmUE0zQjR6ZEdB"
+    }
+  },
+  {
+    "id": "2026-10-13-eu-ai-act-market-data-impact",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-13T11:00:00Z",
+    "headline": "EU AI Act compliance pressures banks to review market data licensing for model training",
+    "plain_english": "As EU AI Act (effective early 2025) tightens rules on high-risk AI transparency and data provenance, banks face audit pressure: can they prove market data used for model training was licensed legally and not scrapped without consent? Pushes renegotiation of data vendor contracts.",
+    "why_it_matters": "Compliance teams must now treat market data licensing as a model governance line item. Non-compliance risks regulatory fines and model deployment blocks, forcing banks to use vendor-approved synthetic or anonymized datasets instead.",
+    "effective_date": "2025-01-01",
+    "source": {
+      "name": "Finextra (EU AI Act context) · 2026-10-13",
+      "url": "https://www.finextra.com"
+    }
+  },
+  {
     "id": "2026-10-12-regulation-publishers-ai-copyright",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -114,38 +143,35 @@
     "effective_date": "2026-10-09"
   },
   {
-    "id": "2026-10-09-regulation-t1-deadline",
-    "category": "regulation",
-    "jurisdiction": "EU|UK",
-    "severity": "high",
-    "published_at": "2026-10-09T11:38:00.000Z",
-    "headline": "EU and UK banks must demonstrate T+1 settlement readiness within 12 months",
-    "plain_english": "European regulators are enforcing a one-year operational deadline for banks to move from T+2 (two-day) to T+1 (next-day) settlement. Legacy clearing and custody systems will require significant infrastructure upgrades.",
-    "why_it_matters": "T+1 compression cuts margin availability and collateral flexibility; ops and risk teams must remodel liquidity forecasting and counterparty exposure management now.",
-    "jargon": [
-      {
-        "term": "T+1",
-        "def": "Settlement on next business day instead of T+2; reduces counterparty and market risk but tightens operational and liquidity windows"
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-09",
-      "url": "https://www.finextra.com/newsarticle/48564/eu-and-uk-banks-face-1-year-deadline-for-t1"
+    "id": "2026-10-13-unit21-corelation-fraud-credit-unions",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-13T10:32:53Z",
+    "headline": "Unit21 and Corelation deploy real-time AI fraud prevention across 300+ U.S. credit unions",
+    "plain_english": "Unit21 (fraud detection AI) and Corelation (credit union infrastructure provider) partnered to deliver real-time fraud prevention to 300+ credit unions. Expands AI detection to underbanked segment.",
+    "why_it_matters": "Brings enterprise-grade AI fraud controls to credit unions, historically underserved by fintech. Sets pattern for AI vendor distribution via legacy infrastructure partners rather than direct sales.",
+    "scale": {
+      "metric": "customers",
+      "value": "300+"
     },
-    "effective_date": "2027-10-09"
+    "source": {
+      "name": "FF News · 2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWmhObkt1NHpUajZKbDZuOFRxeWJsZU5lSWlIYS12ZUpJOUxkRm51TnJ4YVBibGlhTmdzempqaVpkQjQyU3p2dWZUSnNoQnBtYktBY0hZdXhrbmFLUWt4N2VrVllKVjg4YXRuX1ZiRjF4ZUtZbHRYcXYzVFJQazhZcGwyNmtJN0doNl9UZERCaVBKbTdVRTZIbUs2UGdBdTRPbk1HMlFSVVRlOGFFV2JUTlFpSQ"
+    }
   },
   {
-    "id": "2026-10-09-regulation-fca-finfluencers",
-    "category": "regulation",
-    "jurisdiction": "UK",
+    "id": "2026-10-13-ncino-mortgage-origination-ai",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-09T10:55:00.000Z",
-    "headline": "FCA enforcement actions against unauthorized finfluencers surge 7,300% in two years",
-    "plain_english": "UK Financial Conduct Authority dramatically increased crackdowns on unlicensed social-media financial promoters between 2023–2025. Signals tightening regulatory scrutiny of unregistered advice and product recommendations online.",
-    "why_it_matters": "Banks and investment platforms operating affiliate/ambassador programs must verify influencer compliance with COBS rules or face regulatory liability for third-party misconduct.",
+    "published_at": "2026-10-13T10:38:44Z",
+    "headline": "nCino launches AI suite to automate mortgage origination workflows",
+    "plain_english": "nCino (bank workflow SaaS) released an AI-powered suite targeting mortgage origination—document parsing, compliance checks, decisioning. Targets loan ops teams and regional bank mortgage shops.",
+    "why_it_matters": "Mortgage origination is a high-friction, high-volume process ripe for AI. Automation here cuts underwriting cycles, reduces manual compliance errors, and lowers ops cost per loan—critical for banks facing rate-sensitive volumes.",
     "source": {
-      "name": "Finextra · 2026-10-09",
-      "url": "https://www.finextra.com/newsarticle/48563/fca-cracks-down-on-finfluencers"
+      "name": "FinTech Global · 2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaV83NkU1ZEhqNU1zSEhTbGtaUDBhbXBUTjZ3MjNudUtvVzNvSGhzV3ltRzdjX0pRaXhLN0Q5elZodXVVZUlNMExreUpJQ2xldUJLLVNlRGpZUXF6TVp2Wnc5MGFUOXAyb3R3X3hZamVRZnlJTXFBS3MxRjZFQkV2cHgweC1VMkx5WTBmYk5MaDc2UFE0VGEySA"
     }
   },
   {
@@ -275,31 +301,18 @@
     }
   },
   {
-    "id": "2026-10-08-robinhood-ai-agents-trading",
-    "category": "deployment",
+    "id": "2026-10-13-causa-prima-billing-ai-agents",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-08T11:30:00Z",
-    "headline": "Robinhood launches AI agents for market research, strategy, and trade execution",
-    "plain_english": "Robinhood introduced Robinhood Agents, letting retail customers build AI agents inside the platform to research markets, develop trading strategies, and execute trades. Users select an AI model and provide instructions; the agent then acts autonomously within the brokerage workflow.",
-    "why_it_matters": "Retail brokerages are handing agency to AI; this normalizes autonomous trading agents in consumer workflows and raises compliance/liability questions as algo execution scales to millions of small accounts.",
-    "source": {
-      "name": "Tearsheet · 2026-10-08",
-      "url": "https://tearsheet.co/future-of-investing/robinhood-is-giving-ai-agents-a-bigger-role-in-the-trading-workflow/"
-    }
-  },
-  {
-    "id": "2026-10-08-standard-chartered-digital-asset-custody-sg",
-    "category": "deployment",
-    "jurisdiction": "APAC",
     "severity": "low",
-    "published_at": "2026-10-08T10:50:00Z",
-    "headline": "Standard Chartered expands digital asset custody service to Singapore",
-    "plain_english": "Global custodian Standard Chartered extended its digital assets custody offering to Singapore, broadening APAC footprint for institutional crypto/tokenized asset settlement.",
-    "why_it_matters": "Tier-1 custodians expanding crypto infrastructure signals institutional adoption maturing; Singapore's regulatory clarity attracts custody players and creates competitive pressure for rivals.",
+    "published_at": "2026-10-13T10:00:00Z",
+    "headline": "Causa Prima raises $20M to automate billing dispute resolution with AI agents",
+    "plain_english": "Fintech startup Causa Prima closed $20M funding to scale AI agent platform for resolving billing and billing-related disputes in telecom, utilities, and B2B SaaS. Targets high-friction revenue leakage.",
+    "why_it_matters": "AI agents applied to back-office disputes (a common pain in BFSI and telecom). If effective, model scales to invoice discrepancies, chargeback investigations, and regulatory dispute handling in banking.",
+    "amount": "$20M",
     "source": {
-      "name": "Finextra · 2026-10-08",
-      "url": "https://www.finextra.com/newsarticle/48555/standard-chartered-extends-digital-asset-custody-to-singapore"
+      "name": "Fortune · 2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONms3WE94ejlPZGFmQ3JpaE1kZ1JOdGRpRmJEdFh2UTRreENHM2hnY1lGajh6WEVYdmxLbzVQZTJBTEh2QjdkbnBaOFQ1elctRzlmUm05YWx2MnUyWkZSbUFuLTNkY3BjTWpyNW96eVJhV19OdEVheXVQQWJ6THhOWXVFczlHdWRGX1RLR3dqSDd0ZVk"
     }
   },
   {
@@ -437,19 +450,31 @@
     }
   },
   {
-    "id": "2026-10-07-melius-fintech-20m",
-    "category": "vendor",
+    "id": "2026-10-13-valley-national-bluevine-acquisition",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-06T22:34:03.000Z",
-    "headline": "Ex-Ramp engineers raise $20M for marketing automation platform Melius",
-    "plain_english": "Engineers from fintech Ramp launched Melius and raised $20 million to build AI-driven tools for generating marketing creative and campaigns. The startup pivoted from ad-spend optimization to focus on creative asset generation.",
-    "why_it_matters": "Illustrates how AI tooling is fragmenting marketing/sales workflows—native generative AI for creative reduces reliance on external agencies, compresses labor costs in martech, relevant to bank/insurer customer acquisition.",
-    "amount": "$20M",
-    "round": "Series A/Growth",
+    "severity": "med",
+    "published_at": "2026-10-13T11:30:00Z",
+    "headline": "Valley National to acquire Bluevine for $340M; tests bank-fintech integration model",
+    "plain_english": "Valley National Bank is buying lending fintech Bluevine for $340M, closing early 2027. The deal signals how traditional banks can absorb high-velocity fintech product teams—or lose them. Key tension: preserving agile decision-making and tech velocity inside legacy banking ops.",
+    "why_it_matters": "First large-scale test of whether incumbent banks can retain fintech DNA post-acquisition. Outcome will shape M&A strategy for regional and mid-tier banks hunting growth via fintech talent and products.",
     "source": {
-      "name": "TechCrunch · 2026-10-06",
-      "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/"
+      "name": "Tearsheet · 2026-10-13",
+      "url": "https://tearsheet.co/funding/can-banks-buy-fintechs-without-losing-what-makes-them-work/"
+    }
+  },
+  {
+    "id": "2026-10-13-latvia-eu-fintech-hub-ambition",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-10-13T10:18:00Z",
+    "headline": "Latvia joins Baltic fintech hub race; signals regulatory sandbox ambition to rival Estonia, Lithuania",
+    "plain_english": "Latvia is positioning itself as an EU fintech destination, competing with Estonia and Lithuania for fintech talent, startups, and regulatory approval. Likely to announce sandbox or AI testing regime to attract firms.",
+    "why_it_matters": "Fragmented EU fintech ecosystems create arbitrage: companies may incorporate in Latvia for faster AI approvals, then serve broader EU. Regulators will coordinate. For BFSI investors, signals emerging alt-hubs for fintech R&D ops.",
+    "source": {
+      "name": "Finextra · 2026-10-13",
+      "url": "https://www.finextra.com/newsarticle/48572/latvia-enters-eu-fintech-race"
     }
   },
   {
@@ -583,34 +608,6 @@
     }
   },
   {
-    "id": "2026-10-09-shift-mckinsey-ai-productivity",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-09T09:44:00.000Z",
-    "headline": "McKinsey exec: AI is boosting worker productivity more than firm-level competitive advantage",
-    "plain_english": "McKinsey leadership noted that AI tools are increasing individual worker output faster than creating sustainable business moat for enterprises. Implies commoditization risk and shift from AI-as-differentiator to AI-as-baseline operational necessity.",
-    "why_it_matters": "BFSI AI ROI models must account for rapid commoditization; first-mover advantage erodes if competitors deploy identical commercial LLMs. Focus must shift to proprietary data, integration depth, and regulatory compliance as real leverage.",
-    "source": {
-      "name": "McKinsey / Business Insider · 2026-10-09",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVWRxWDFJQVl5TzM4WV8yZU5uMTUzZVBSNkxyUGNLclJTM0tjOWV1S1ROV1J6N2lkREZWQTNRUW1HZ2N6OFp5X1VNeFI2cGpUNDh1VGJhcjJPQ1ltRm5fdDRHQ0k4MXJTV0RWemZqb0J2d3gyTkVaeXBaelRUaUZPQjBfSWYzMXlWYVZhRnlHWk80UQ"
-    }
-  },
-  {
-    "id": "2026-10-08-goldman-young-bankers-ai-agents",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-08T09:12:18Z",
-    "headline": "Goldman Sachs expects junior bankers to manage AI agents as core workflow from hire",
-    "plain_english": "A Goldman Sachs executive stated that young bankers entering the firm will manage AI agents as a standard part of their role from day one, signaling a fundamental shift in how investment banks onboard and structure junior talent.",
-    "why_it_matters": "This redefines junior banking competency from manual execution to agent orchestration; if adopted across bulge-bracket, it accelerates labor displacement and forces talent-strategy overhaul across BFSI.",
-    "source": {
-      "name": "Bloomberg · 2026-10-08",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2d2R20zZEU0eHhZQlluUEFBeGY1czRPOGgyWjhZQTF1UEd1YWM2Vk1FdDI5U2k0UU1IU3VBUXRoVjRFeFV2THVyMVdnVWxzLWZrX3FsZEJhaGEzNF9OMmRkNXBqLV9semZrbkZScDV6TlJpRjJybjZPV2tmeUREZ0gxVkFHdFY2QW9mb1BBT2ZzdmdERy1yNXhnNHg0Ry1RXy10NEVjVlpvWW1oZ1k0bkxzSQ"
-    }
-  },
-  {
     "id": "2026-10-09-recorded-future-ai-governance",
     "category": "tool",
     "jurisdiction": "US",
@@ -679,6 +676,26 @@
     "source": {
       "name": "PYMNTS · 2026-09-16",
       "url": "https://www.pymnts.com/connectedeconomy/2026/cloudflare-helps-website-owners-block-ai-scraping-without-losing-search-visibility/"
+    }
+  },
+  {
+    "id": "2026-10-13-open-models-risk-benefits",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-13T10:00:00Z",
+    "headline": "Anthropic study raises cyberattack risk from open AI models; industry debates tradeoff",
+    "plain_english": "Anthropic published research arguing that open-weight LLMs (like GLM-5.3) pose material cybersecurity risk due to ease of misuse, sparking debate on benefits (research access, model diversity) vs. safety (attack surface for financial crime, fraud).",
+    "why_it_matters": "For BFSI, direct tension: open models enable faster AI adoption and reduce vendor lock-in, but increase attack surface. Regulators (FCA, OCC) will likely tighten controls on open-model use in production for sensitive workflows.",
+    "jargon": [
+      {
+        "term": "Open-weight LLM",
+        "def": "Large language model with publicly released weights/parameters; anyone can download and run or fine-tune locally."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-10-13",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/"
     }
   },
   {
@@ -826,23 +843,33 @@
     }
   },
   {
-    "id": "2026-09-30-microsoft-space-weather-ml-forecast",
-    "category": "research",
+    "id": "2026-10-13-market-data-costs-ai-50pct",
+    "category": "insight",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-30T16:00:00.000Z",
-    "headline": "Microsoft Research releases ML model predicting space-weather power-grid damage 30–60 minutes ahead",
-    "plain_english": "Microsoft Research published a machine-learning system that forecasts where solar storms will likely damage power infrastructure 30–60 minutes before impact. Early warning enables grid operators to harden critical systems and avoid cascading outages.",
-    "why_it_matters": "Space-weather forecasting risk management applies to BFSI: grid outages disrupt settlement, payment processing, and trading. Early warning lets banks pre-stage failover and redundancy; model may inform CISO planning for systemic resilience.",
-    "jargon": [
-      {
-        "term": "Space weather",
-        "def": "Solar storms and geomagnetic events that degrade satellites, GPS, and power grids; can disrupt financial settlement and communications"
-      }
-    ],
+    "severity": "high",
+    "published_at": "2026-10-13T11:26:00Z",
+    "headline": "Capital markets data costs set to jump 50% in 2027 due to AI consumption",
+    "plain_english": "Research shows market data fees will rise up to 50% next year, driven partly by AI model training and inference consuming far more tick data, order books, and analytics feeds. Hit risk ops and trading desks hard.",
+    "why_it_matters": "For banks and asset managers, AI-driven market data inflation eats directly into margins. Firms may cut training data scope or shift models to synthetic/alternative data, reshaping market intelligence strategy.",
+    "stat_value": "50%",
+    "stat_label": "potential increase in market data costs 2027",
     "source": {
-      "name": "Microsoft Research · 2026-09-30",
-      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/"
+      "name": "Finextra · 2026-10-13",
+      "url": "https://www.finextra.com/newsarticle/48573/market-data-costs-to-rise-by-up-to-50-thanks-to-ai"
+    }
+  },
+  {
+    "id": "2026-10-13-french-supermarket-iot-cyberattack",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-10-13T11:26:07Z",
+    "headline": "Cyberattack on French supermarket refrigeration systems exposes IoT vulnerability in critical infrastructure",
+    "plain_english": "Hundreds of French supermarket refrigerators were remotely hacked, overheated to 122°F, spoiling food and causing fires. Attack signals broad vulnerability in poorly-secured IoT/operational tech in critical supply chains.",
+    "why_it_matters": "BFSI relevance: Banks and insurers underestimate IoT/OT cyber risk in client exposures (retailers, utilities, logistics). Incident will spur regulatory push for operational tech security baselines and third-party risk scoring.",
+    "source": {
+      "name": "CNBC · 2026-10-13",
+      "url": "https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html"
     }
   },
   {
@@ -979,44 +1006,6 @@
     "source": {
       "name": "CNBC · 2026-10-09",
       "url": "https://www.cnbc.com/2026/10/09/margin-debt-stock-market-risk.html"
-    }
-  },
-  {
-    "id": "2026-10-08-mckinsey-ai-labor-displacement-11m",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-08T10:00:49Z",
-    "headline": "McKinsey study warns AI could displace 11 million US employees by 2030",
-    "plain_english": "McKinsey estimates that AI automation could displace approximately 11 million US workers, particularly in administrative, customer service, and knowledge-work roles. BFSI roles (back-office, compliance, junior trading, loan processing) are disproportionately exposed.",
-    "why_it_matters": "BFSI will face talent retraining costs, wage compression in displaced roles, and potential regulatory scrutiny on workforce stability; boards should model displacement scenarios by function.",
-    "jargon": [
-      {
-        "term": "displacement",
-        "def": "Tasks automated, not jobs eliminated instantly; roles shrink, consolidate, or require reskilling."
-      }
-    ],
-    "stat_value": "11 million",
-    "stat_label": "US employees potentially displaced by AI by 2030",
-    "source": {
-      "name": "McKinsey · 2026-10-08",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TVnBoM0tVY0JBQmpvZ3BMbVZUYXNCaGItN1piMDlSQjRwdkpDODB3LTluZUVrOUlqazRFTmtFZ2kydU1qaktoY0NUOFFDcVVZbWFXWjZzZXluRFBlZ0wxeXM3M2xkUzlDWVpZZ0x4Qy1uOVJGck81dWtR"
-    }
-  },
-  {
-    "id": "2026-10-08-usd-reserve-currency-sibos-panel",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-08T11:50:00Z",
-    "headline": "Sibos 2026 panel: experts debate whether USD's dominance as reserve currency is fading",
-    "plain_english": "At Sibos 2026 in Miami, a panel of bankers and FX experts discussed whether the US dollar's role as the world's primary cross-border payments, trade settlement, and reserve currency is under pressure from digital currencies, regional trade alternatives, and de-dollarization efforts.",
-    "why_it_matters": "De-dollarization shifts correspondent banking flows; BFSI must prepare for multi-currency settlement standards (CBDC interop) and evaluate exposure to non-USD payment corridors.",
-    "stat_value": "Multi-currency",
-    "stat_label": "share of cross-border flows likely to rise if USD reserve status erodes",
-    "source": {
-      "name": "Finextra · 2026-10-08",
-      "url": "https://www.finextra.com/newsarticle/48556/sibos-2026-is-usds-position-as-prime-global-currency-in-jeopardy"
     }
   },
   {
@@ -1186,6 +1175,20 @@
     "source": {
       "name": "CNBC · 2026-10-09",
       "url": "https://www.cnbc.com/2026/10/09/openai-anthropic-poach-trump-officials.html"
+    }
+  },
+  {
+    "id": "2026-10-13-llm-fine-tuning-learner",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-13T00:00:00Z",
+    "headline": "What is fine-tuning, and why do banks use it instead of training from scratch?",
+    "plain_english": "Fine-tuning means taking a pre-trained model (e.g., GPT-4) and retraining it on a smaller, domain-specific dataset (e.g., bank compliance documents) to specialize its behavior without retraining from scratch. Banks use it to adapt general AI to internal jargon, workflows, and risk rules in weeks instead of months, and at 1/100th the compute cost.",
+    "why_it_matters": "Explains why risk, compliance, and ops teams can build production AI fast: you don't need to build a model from scratch; you customize an existing one. Key to why AI is accelerating across BFSI.",
+    "source": {
+      "name": "AITechHive · 2026-10-13",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -1375,26 +1378,6 @@
     }
   },
   {
-    "id": "2026-09-23-ai-learner-rag",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-23T14:00:00.000Z",
-    "headline": "What is RAG? How retrieval-augmented generation grounds AI in real data",
-    "plain_english": "RAG (retrieval-augmented generation) is a technique that lets AI models fetch up-to-date documents, databases, or knowledge sources *before* answering a question. Instead of relying only on training-data memory, RAG pulls fresh facts in real-time, reducing hallucinations and keeping answers current.",
-    "why_it_matters": "RAG is foundational for BFSI AI: regulatory documents, customer records, transaction history, and compliance rules must be live and accurate. Paywhere's banking channel (above) likely uses RAG to fetch account data on demand without retraining the model.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When an AI model generates plausible-sounding but false or made-up information, because it has no real-time access to truth."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-09-23",
-      "url": "https://aitechhive.io"
-    }
-  },
-  {
     "id": "2026-10-10-trending-nadella-ai-safety",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1545,6 +1528,191 @@
     "source": {
       "name": "Forbes · 2026-09-29",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZFdnNTlSVEltSHJuRDZtRkM5WDlEdDBlLUtHSTRNcE84ajVfYk1KS1A3N3UzMm1ZUkxjSWpyQ3lRZkhNaVUxQkdYNF96NjZ2VGhzS2JFM0lpcnF0YUFic09ZX2FjdXRUWkhiX3RwWnJjNXRIeERMZEtxRzM4UVh5YWc0YXp3d0ttcFJCMkNSOHQ1d0pkSlBMS1lFRkQ3NThTcERYSk5MWHA5bGlhXzNWaENsUEVTTGl5NTdESXpPX3RCTzg?"
+    }
+  },
+  {
+    "id": "2026-10-09-regulation-t1-deadline",
+    "category": "regulation",
+    "jurisdiction": "EU|UK",
+    "severity": "high",
+    "published_at": "2026-10-09T11:38:00.000Z",
+    "headline": "EU and UK banks must demonstrate T+1 settlement readiness within 12 months",
+    "plain_english": "European regulators are enforcing a one-year operational deadline for banks to move from T+2 (two-day) to T+1 (next-day) settlement. Legacy clearing and custody systems will require significant infrastructure upgrades.",
+    "why_it_matters": "T+1 compression cuts margin availability and collateral flexibility; ops and risk teams must remodel liquidity forecasting and counterparty exposure management now.",
+    "jargon": [
+      {
+        "term": "T+1",
+        "def": "Settlement on next business day instead of T+2; reduces counterparty and market risk but tightens operational and liquidity windows"
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-09",
+      "url": "https://www.finextra.com/newsarticle/48564/eu-and-uk-banks-face-1-year-deadline-for-t1"
+    },
+    "effective_date": "2027-10-09"
+  },
+  {
+    "id": "2026-10-09-regulation-fca-finfluencers",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-10-09T10:55:00.000Z",
+    "headline": "FCA enforcement actions against unauthorized finfluencers surge 7,300% in two years",
+    "plain_english": "UK Financial Conduct Authority dramatically increased crackdowns on unlicensed social-media financial promoters between 2023–2025. Signals tightening regulatory scrutiny of unregistered advice and product recommendations online.",
+    "why_it_matters": "Banks and investment platforms operating affiliate/ambassador programs must verify influencer compliance with COBS rules or face regulatory liability for third-party misconduct.",
+    "source": {
+      "name": "Finextra · 2026-10-09",
+      "url": "https://www.finextra.com/newsarticle/48563/fca-cracks-down-on-finfluencers"
+    }
+  },
+  {
+    "id": "2026-10-08-robinhood-ai-agents-trading",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-08T11:30:00Z",
+    "headline": "Robinhood launches AI agents for market research, strategy, and trade execution",
+    "plain_english": "Robinhood introduced Robinhood Agents, letting retail customers build AI agents inside the platform to research markets, develop trading strategies, and execute trades. Users select an AI model and provide instructions; the agent then acts autonomously within the brokerage workflow.",
+    "why_it_matters": "Retail brokerages are handing agency to AI; this normalizes autonomous trading agents in consumer workflows and raises compliance/liability questions as algo execution scales to millions of small accounts.",
+    "source": {
+      "name": "Tearsheet · 2026-10-08",
+      "url": "https://tearsheet.co/future-of-investing/robinhood-is-giving-ai-agents-a-bigger-role-in-the-trading-workflow/"
+    }
+  },
+  {
+    "id": "2026-10-08-standard-chartered-digital-asset-custody-sg",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-08T10:50:00Z",
+    "headline": "Standard Chartered expands digital asset custody service to Singapore",
+    "plain_english": "Global custodian Standard Chartered extended its digital assets custody offering to Singapore, broadening APAC footprint for institutional crypto/tokenized asset settlement.",
+    "why_it_matters": "Tier-1 custodians expanding crypto infrastructure signals institutional adoption maturing; Singapore's regulatory clarity attracts custody players and creates competitive pressure for rivals.",
+    "source": {
+      "name": "Finextra · 2026-10-08",
+      "url": "https://www.finextra.com/newsarticle/48555/standard-chartered-extends-digital-asset-custody-to-singapore"
+    }
+  },
+  {
+    "id": "2026-10-07-melius-fintech-20m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-06T22:34:03.000Z",
+    "headline": "Ex-Ramp engineers raise $20M for marketing automation platform Melius",
+    "plain_english": "Engineers from fintech Ramp launched Melius and raised $20 million to build AI-driven tools for generating marketing creative and campaigns. The startup pivoted from ad-spend optimization to focus on creative asset generation.",
+    "why_it_matters": "Illustrates how AI tooling is fragmenting marketing/sales workflows—native generative AI for creative reduces reliance on external agencies, compresses labor costs in martech, relevant to bank/insurer customer acquisition.",
+    "amount": "$20M",
+    "round": "Series A/Growth",
+    "source": {
+      "name": "TechCrunch · 2026-10-06",
+      "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/"
+    }
+  },
+  {
+    "id": "2026-10-09-shift-mckinsey-ai-productivity",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-09T09:44:00.000Z",
+    "headline": "McKinsey exec: AI is boosting worker productivity more than firm-level competitive advantage",
+    "plain_english": "McKinsey leadership noted that AI tools are increasing individual worker output faster than creating sustainable business moat for enterprises. Implies commoditization risk and shift from AI-as-differentiator to AI-as-baseline operational necessity.",
+    "why_it_matters": "BFSI AI ROI models must account for rapid commoditization; first-mover advantage erodes if competitors deploy identical commercial LLMs. Focus must shift to proprietary data, integration depth, and regulatory compliance as real leverage.",
+    "source": {
+      "name": "McKinsey / Business Insider · 2026-10-09",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVWRxWDFJQVl5TzM4WV8yZU5uMTUzZVBSNkxyUGNLclJTM0tjOWV1S1ROV1J6N2lkREZWQTNRUW1HZ2N6OFp5X1VNeFI2cGpUNDh1VGJhcjJPQ1ltRm5fdDRHQ0k4MXJTV0RWemZqb0J2d3gyTkVaeXBaelRUaUZPQjBfSWYzMXlWYVZhRnlHWk80UQ"
+    }
+  },
+  {
+    "id": "2026-10-08-goldman-young-bankers-ai-agents",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-08T09:12:18Z",
+    "headline": "Goldman Sachs expects junior bankers to manage AI agents as core workflow from hire",
+    "plain_english": "A Goldman Sachs executive stated that young bankers entering the firm will manage AI agents as a standard part of their role from day one, signaling a fundamental shift in how investment banks onboard and structure junior talent.",
+    "why_it_matters": "This redefines junior banking competency from manual execution to agent orchestration; if adopted across bulge-bracket, it accelerates labor displacement and forces talent-strategy overhaul across BFSI.",
+    "source": {
+      "name": "Bloomberg · 2026-10-08",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2d2R20zZEU0eHhZQlluUEFBeGY1czRPOGgyWjhZQTF1UEd1YWM2Vk1FdDI5U2k0UU1IU3VBUXRoVjRFeFV2THVyMVdnVWxzLWZrX3FsZEJhaGEzNF9OMmRkNXBqLV9semZrbkZScDV6TlJpRjJybjZPV2tmeUREZ0gxVkFHdFY2QW9mb1BBT2ZzdmdERy1yNXhnNHg0Ry1RXy10NEVjVlpvWW1oZ1k0bkxzSQ"
+    }
+  },
+  {
+    "id": "2026-09-30-microsoft-space-weather-ml-forecast",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-30T16:00:00.000Z",
+    "headline": "Microsoft Research releases ML model predicting space-weather power-grid damage 30–60 minutes ahead",
+    "plain_english": "Microsoft Research published a machine-learning system that forecasts where solar storms will likely damage power infrastructure 30–60 minutes before impact. Early warning enables grid operators to harden critical systems and avoid cascading outages.",
+    "why_it_matters": "Space-weather forecasting risk management applies to BFSI: grid outages disrupt settlement, payment processing, and trading. Early warning lets banks pre-stage failover and redundancy; model may inform CISO planning for systemic resilience.",
+    "jargon": [
+      {
+        "term": "Space weather",
+        "def": "Solar storms and geomagnetic events that degrade satellites, GPS, and power grids; can disrupt financial settlement and communications"
+      }
+    ],
+    "source": {
+      "name": "Microsoft Research · 2026-09-30",
+      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/"
+    }
+  },
+  {
+    "id": "2026-10-08-mckinsey-ai-labor-displacement-11m",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-08T10:00:49Z",
+    "headline": "McKinsey study warns AI could displace 11 million US employees by 2030",
+    "plain_english": "McKinsey estimates that AI automation could displace approximately 11 million US workers, particularly in administrative, customer service, and knowledge-work roles. BFSI roles (back-office, compliance, junior trading, loan processing) are disproportionately exposed.",
+    "why_it_matters": "BFSI will face talent retraining costs, wage compression in displaced roles, and potential regulatory scrutiny on workforce stability; boards should model displacement scenarios by function.",
+    "jargon": [
+      {
+        "term": "displacement",
+        "def": "Tasks automated, not jobs eliminated instantly; roles shrink, consolidate, or require reskilling."
+      }
+    ],
+    "stat_value": "11 million",
+    "stat_label": "US employees potentially displaced by AI by 2030",
+    "source": {
+      "name": "McKinsey · 2026-10-08",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TVnBoM0tVY0JBQmpvZ3BMbVZUYXNCaGItN1piMDlSQjRwdkpDODB3LTluZUVrOUlqazRFTmtFZ2kydU1qaktoY0NUOFFDcVVZbWFXWjZzZXluRFBlZ0wxeXM3M2xkUzlDWVpZZ0x4Qy1uOVJGck81dWtR"
+    }
+  },
+  {
+    "id": "2026-10-08-usd-reserve-currency-sibos-panel",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-08T11:50:00Z",
+    "headline": "Sibos 2026 panel: experts debate whether USD's dominance as reserve currency is fading",
+    "plain_english": "At Sibos 2026 in Miami, a panel of bankers and FX experts discussed whether the US dollar's role as the world's primary cross-border payments, trade settlement, and reserve currency is under pressure from digital currencies, regional trade alternatives, and de-dollarization efforts.",
+    "why_it_matters": "De-dollarization shifts correspondent banking flows; BFSI must prepare for multi-currency settlement standards (CBDC interop) and evaluate exposure to non-USD payment corridors.",
+    "stat_value": "Multi-currency",
+    "stat_label": "share of cross-border flows likely to rise if USD reserve status erodes",
+    "source": {
+      "name": "Finextra · 2026-10-08",
+      "url": "https://www.finextra.com/newsarticle/48556/sibos-2026-is-usds-position-as-prime-global-currency-in-jeopardy"
+    }
+  },
+  {
+    "id": "2026-09-23-ai-learner-rag",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-09-23T14:00:00.000Z",
+    "headline": "What is RAG? How retrieval-augmented generation grounds AI in real data",
+    "plain_english": "RAG (retrieval-augmented generation) is a technique that lets AI models fetch up-to-date documents, databases, or knowledge sources *before* answering a question. Instead of relying only on training-data memory, RAG pulls fresh facts in real-time, reducing hallucinations and keeping answers current.",
+    "why_it_matters": "RAG is foundational for BFSI AI: regulatory documents, customer records, transaction history, and compliance rules must be live and accurate. Paywhere's banking channel (above) likely uses RAG to fetch account data on demand without retraining the model.",
+    "jargon": [
+      {
+        "term": "hallucination",
+        "def": "When an AI model generates plausible-sounding but false or made-up information, because it has no real-time access to truth."
+      }
+    ],
+    "source": {
+      "name": "AITechHive · 2026-09-23",
+      "url": "https://aitechhive.io"
     }
   },
   {
@@ -3835,30 +4003,6 @@
     "source": {
       "name": "AITechHive synthesis · 2026-09-15",
       "url": "https://aitechhive.com"
-    }
-  },
-  {
-    "id": "2026-09-13-learner-token-limits",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-13T00:47:50Z",
-    "headline": "Understanding AI token limits: why LLM context windows matter for enterprise",
-    "plain_english": "Tokens are the words/subwords an AI model 'reads' in one go. Limits (context windows) cap how much data you feed at once. Longer contexts = bigger processing; shorter = cheaper but may miss context.",
-    "why_it_matters": "BFSI ops like document review, trade note analysis, regulatory parsing hit token ceilings fast. Understanding limits helps you choose model size and architecutre (chunking, RAG).",
-    "jargon": [
-      {
-        "term": "context window",
-        "def": "Max number of tokens (roughly words) an LLM can process in a single request; longer windows enable more complex tasks but cost more."
-      },
-      {
-        "term": "RAG",
-        "def": "Retrieval-Augmented Generation: feeding external documents to an LLM to answer questions without fine-tuning the model."
-      }
-    ],
-    "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSzRLaE5aaENWTG9TMnptd3hHX1NrWkNVUmEzemF5MEhwVnBTNVlHT3k1MTFSV2hWWk5DcDF0eHM0djhlQXlLNWVHTVVpME1DN0xyR2tKVDJEWklmTTFOZlJudlNYUkd4MGpXbkVFYkQzMWRBQ0k2V01fdG1sNTBQQm01NmljcG5mblZvNFBqc2o"
     }
   },
   {
@@ -6698,20 +6842,6 @@
     }
   },
   {
-    "id": "2026-09-13-wsj-quieter-ai-breakthrough",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-13T11:09:55Z",
-    "headline": "WSJ reports on understated AI advances with practical financial applications",
-    "plain_english": "WSJ article highlights quiet but significant AI breakthroughs that lack the hype of headline model releases. These incremental improvements in reliability, cost, or domain specificity often matter more to enterprise BFSI than raw capability jumps.",
-    "why_it_matters": "Reminds BFSI that production value often lies in unglamorous improvements (inference latency, token efficiency, few-shot accuracy) rather than frontier-lab press releases. Budget accordingly for integrations over headlines.",
-    "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBZHlzbWNBWjhxcm1FdGszdGlLUXdNcUR1S1Z0MmwyX21RdmY1UkhKVGptcnZ5azVTcjlfcDFvbUdXQmR6YmpYZE9ucmp6RVlQVmRaRUtJNjJucU1Zdy1WUFB2YTR0VExuN3NLanR3cFNNdGRyWkFxbTlGSUJyb2c"
-    }
-  },
-  {
     "id": "2026-09-19-anthropic-autonomous-hacking",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -7270,20 +7400,6 @@
     "source": {
       "name": "CNBC · 2026-09-19",
       "url": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html"
-    }
-  },
-  {
-    "id": "2026-09-13-trending-ai-safety-pace",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-13T00:09:00Z",
-    "headline": "Anthropic CEO calls for AI model development slowdown; Altman, Musk, others align",
-    "plain_english": "Dario Amodei (Anthropic) publicly urges AI labs to reduce model capability growth pace due to misuse risks. Sam Altman (OpenAI) and Elon Musk publicly support. OpenAI delays 2026 IPO partly citing safety concerns.",
-    "why_it_matters": "Front-running regulatory pushback. If major labs self-impose capability throttles, BFSI models (LLMs for compliance, trading) face upstream supply-side delays. Competitive moats shift from speed to safety certification.",
-    "source": {
-      "name": "Reuters · 2026-09-12",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObV9NUVhESy1GWXRLaWhTYlM1UUNSU0kweVg1N2YxNTRXUVdORW5EWHQ2MXNpYlo3SHNlLWZVZ2N1ZEZYZlNnUDY4TUZBMVFvcU1BaDBIWm94TkhqQUVXVzRZQlBUX3JOZUJYNnVVcVV3dlhTMDRFMmVXVGpNOU1RUEhnV254NWV0clJhc0NEOVFPWGFYSEtiY2R3U0JqM0NVc3c"
     }
   },
   {
@@ -8411,34 +8527,6 @@
     }
   },
   {
-    "id": "2026-09-13-wsj-fed-rates",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-13T11:18:28Z",
-    "headline": "Federal Reserve signals first interest rate hike in years",
-    "plain_english": "The Federal Reserve is positioned to raise rates for the first time in several years, marking a shift from low-rate policy. This affects BFSI cost of capital, deposit liability pricing, and AI infrastructure budgets (which often run on floating-rate cloud spend).",
-    "why_it_matters": "Rising rates compress BFSI margins and reduce discretionary capex for AI. May force prioritization: production AI (revenue-facing) over exploratory pilots. Vendor consolidation likely as smaller fintechs face funding chill.",
-    "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObzNuOE1mTDcxSTB5azNwR0YzTmlSTTcyVHBoblpqXzl3QnNrQjZ1OTZIYmd1ZDYtd0lmS0ZsMTNmcG5DUVh1S0JXWG5fLUQ4VkRmWmZmMWp5V0pXOEhmalNvMml0MmdoUXlWTnRveVZEOTZlZjhnZi1VWUN4Qnp5b0xSa2hfNUlYVnNZMERJb1FmYTJOeXllMjZBZ3JkLUhoSldDZEpfUVd3eTVvZl9DVy1KOVdKQm4tUUJ6NEgwRQ"
-    }
-  },
-  {
-    "id": "2026-09-13-huawei-us-trial-geopolitics",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-13T11:18:07Z",
-    "headline": "Huawei faces US criminal trial weeks before Trump-Xi bilateral meeting",
-    "plain_english": "Huawei's criminal trial in the US is scheduled just before a Trump-Xi summit, intensifying geopolitical tension over technology and sanctions. Signals that AI/semiconductor export controls will remain a flashpoint regardless of broader diplomatic thaw.",
-    "why_it_matters": "BFSI reliant on Chinese supply chains (semiconductors for AI inference, cloud services) faces regulatory unpredictability. Expect accelerated push toward regional alternative suppliers and allied-nation sourcing (India, Vietnam, Japan). Budget for supply chain audits and contingency planning.",
-    "source": {
-      "name": "WSJ · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmFKWHcxYkVNZW9FQlE5SGI2LXQwU3FmNlhVaU9OeXl1TzV6U2wtTkYwU3loOEpWcWo5NnlKZkttYXA4cHNlakctdVIxOWdnLUYybnM0UW5zUE9RWUJHUGdJYlFKcHVtdzVPejdOUDAxazR6WHBDVkozX1YySEJVUzEtR3puTF9IZlJ6eTd3a2ZFVmVfUkNuVFFMQkRtdWlQLXRsVmhkd2tkMjFGRy1TUHAyb1c2SzAyQm9FMU03X2hqaFQ2SXhBMnZURld0YWZReU5CUQ"
-    }
-  },
-  {
     "id": "2026-09-14-deployment-sgd-blockchain",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -8529,20 +8617,6 @@
     }
   },
   {
-    "id": "2026-09-13-china-brics-ai-leadership",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-13T11:17:12Z",
-    "headline": "Xi Jinping pledges China will lead AI and tech cooperation among BRICS nations",
-    "plain_english": "China's President Xi announced that China will take the lead in fostering AI and technology collaboration among BRICS (Brazil, Russia, India, China, South Africa) member states. Part of broader geopolitical positioning on AI standards and development outside Western orbit.",
-    "why_it_matters": "Signals BRICS push for alternative AI governance frameworks independent of US/EU. If successful, creates parallel regulatory regimes and model standards—complicating global BFSI compliance and interoperability.",
-    "source": {
-      "name": "CNBC · 2026-09-13",
-      "url": "https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html"
-    }
-  },
-  {
     "id": "2026-09-14-perplexity-astra-production",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8585,20 +8659,6 @@
     }
   },
   {
-    "id": "2026-09-13-anthropic-researcher-safety-concerns",
-    "category": "frontier",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-09-13T11:13:07Z",
-    "headline": "Ex-Anthropic researcher tells BBC staff are 'genuinely frightened' for humanity's future",
-    "plain_english": "A former Anthropic safety researcher disclosed to the BBC that laboratory staff hold serious fears about advanced AI's existential risk. Comments reflect internal tension between capability-building pressure and long-term safety concerns at a frontier lab.",
-    "why_it_matters": "Public recruitment of internal safety doubts erodes frontier-lab credibility in regulatory eyes. May trigger scrutiny of AI governance structures at labs and downstream commercial deployments (e.g., BFSI use of frontier models).",
-    "source": {
-      "name": "BBC · 2026-09-13",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMkFTZ25QYzR0R0V3UnUteU9DTl9KZzRRd0ZKMjhYS0tqVUFDYjlLaFYtSW41eVpjeGg3Q0EybnlKQ1JLUWZiQ25DTVBYUjJlVEhGeVQtR1JuQQ"
-    }
-  },
-  {
     "id": "2026-09-14-frontier-perplexity-astra",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8616,20 +8676,6 @@
     "source": {
       "name": "OpenAI · 2026-09-14",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
-    }
-  },
-  {
-    "id": "2026-09-13-frontier-anthropic-safety-exit",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-12T23:44:24Z",
-    "headline": "Anthropic researcher quits, citing AI as existential threat to humanity",
-    "plain_english": "Senior researcher at Anthropic departed publicly, stating AI development poses existential risk. Joins growing chorus of safety-focused departures from frontier labs.",
-    "why_it_matters": "Brain drain from safety teams signals internal dissent over pace & risk. May reduce Anthropic's governance edge vs. competitors. BFSI firms betting on Anthropic for compliance need contingency vendor plans.",
-    "source": {
-      "name": "Mashable · 2026-09-12",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8tengyUVFUb0w0X2lha3NqWXhWWGM3bGpfMENGY1NOU3UzREtoOXJvbXBjLXc3VmJLUlMxSWF1a0VOWXRpRFZoaVJEbVBZUGg2bHNjTmVGRTB2SEVSd3Y1Qkt3VkFSaUdOX3psdjVUOXNVc3ZSZmpJ"
     }
   }
 ]
