@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-10-14-openai-8-states-lawsuit",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-14T21:09:20Z",
+    "headline": "Eight U.S. states sue OpenAI over ChatGPT safety and child protection practices",
+    "plain_english": "Eight U.S. states filed lawsuits against OpenAI alleging inadequate safety safeguards and insufficient protections for children using ChatGPT. The action reflects growing state-level scrutiny of generative AI companies' duty of care.",
+    "why_it_matters": "Signals multi-state enforcement trend; states moving faster than federal regulators. Expect discovery to expose training data practices, guardrail efficacy, and documented risks—setting precedent for liability in financial AI deployments.",
+    "source": {
+      "name": "CNBC · 2026-10-14",
+      "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html"
+    }
+  },
+  {
     "id": "2026-10-14-regulation-boa-aml-fine",
     "category": "regulation",
     "jurisdiction": "US",
@@ -144,17 +158,27 @@
     "effective_date": null
   },
   {
-    "id": "2026-10-12-regulation-bahrain-cbb-tech-investment",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-12T12:03:00Z",
-    "headline": "Central Bank of Bahrain to triple technology spending over three years",
-    "plain_english": "The CBB is increasing tech investment by 200% to position Bahrain as the Middle East's primary banking hub. Spending will cover infrastructure, AI, and fintech ecosystem development.",
-    "why_it_matters": "Regional banks face competitive pressure to match CBB's AI and digital modernization pace; enables rapid deployment of central bank digital currencies and real-time settlement.",
+    "id": "2026-10-15-natwest-nvidia-speech-recognition",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-10-15T00:01:00Z",
+    "headline": "NatWest partners Nvidia for accent-aware speech AI in spending tool",
+    "plain_english": "NatWest deployed Nvidia's speech recognition technology in its audio-visual spending insights tool to improve understanding of regional accents and pronunciations. The tool helps customers analyze spending patterns via voice.",
+    "why_it_matters": "Demonstrates tactical use of specialized AI models for inclusive UX; validates speech-based banking interfaces beyond generic chatbots, though accent bias remains a quality gate before wider rollout.",
+    "jargon": [
+      {
+        "term": "Speech recognition",
+        "def": "AI model that converts spoken words into text; accuracy varies by accent, dialect, and background noise."
+      }
+    ],
+    "scale": {
+      "metric": "customers",
+      "value": "NatWest retail base (millions)"
+    },
     "source": {
-      "name": "Finextra · 2026-10-12",
-      "url": "https://www.finextra.com/newsarticle/48570/bahrain-central-bank-to-treble-tech-budget?utm_medium=rssfinextra&utm_source=finextrafeed"
+      "name": "Finextra · 2026-10-15",
+      "url": "https://www.finextra.com/newsarticle/48586/natwest-enlists-nvidia-to-help-its-ai-spending-tool-understand-regional-accents"
     }
   },
   {
@@ -297,20 +321,6 @@
     "source": {
       "name": "WSJ · 2026-10-10",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdC1mRy1SQUVMMkpfZDEyQnByMGZad25zOXBJWVR1YXVkT0c3MHdwZEI0VmJJczBibU9fZUJJNER6Z21aSGZPTFlhMExGRlRxbjdSV0NxeVcyNVRJWVE3ODlNTFhYVDU2MUxjOFhRZDdmWVZFVzJlQkNFNzMzUXpVaHl5NGhBS1FwWG5kb05wc2xPZTZ2RHc"
-    }
-  },
-  {
-    "id": "2026-10-09-jane-street-quant-trading-dominance",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-09T20:16:03Z",
-    "headline": "Jane Street quantitative trading dominates Wall Street through AI-driven market-making",
-    "plain_english": "Jane Street, a proprietary trading firm, leverages advanced AI and machine learning to lead market-making and algorithmic trading. The firm's scale and profitability underscore how AI-native trading strategies are outcompeting legacy bank trading desks.",
-    "why_it_matters": "Jane Street's success demonstrates that AI-first trading architecture can capture disproportionate market share. Legacy banks investing in AI trading infrastructure must match or exceed Jane Street's model sophistication to retain prime-brokerage and liquidity-provision revenue.",
-    "source": {
-      "name": "Bloomberg · 2026-10-09",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUmNsaElheGVlZVVYQ1poeVI0c3hfZFV5TFBVNDNGM0w0dFA5MG8xQ2EyV25WY2dMSkp1S1BxQm00MGlpWFRFbTBIbTJJWnRDYTRxTUNfTC1OZXV5VjRpQ2I1OWpRWEZYVjZObm1HSXRvdTdYSnl3LWQtVl8yME5zOTJRQ0k2X0ZnNFgycG9KWjdySUFhMEg2Wjk4WkNyNVZmbENJbHpEaUVVcEdWY0VreGJVRGh2QU9PdHc"
     }
   },
   {
@@ -460,6 +470,34 @@
     }
   },
   {
+    "id": "2026-10-15-jpm-ai-agent-access-block",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-15T00:01:00Z",
+    "headline": "JPMorgan Chase blocks third-party AI agents from direct account access",
+    "plain_english": "JPMorgan Chase will not allow outside AI assistants (like Meta's Muse) to directly access retail customer accounts. CEO Jamie Dimon signaled the bank is tightening controls around external AI integration to protect customer data and account security.",
+    "why_it_matters": "Sets precedent for banking industry: expect other major banks to adopt similar guardrails, slowing AI automation in retail banking and forcing fintechs to redesign agent architectures for read-only or sandboxed access.",
+    "source": {
+      "name": "Finextra · 2026-10-15",
+      "url": "https://www.finextra.com/newsarticle/48585/jpmorgan-chase-blocks-outside-ai-agents-from-directly-accessing-customer-accounts"
+    }
+  },
+  {
+    "id": "2026-10-14-freshfields-lab-spinoff",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-14T21:33:29Z",
+    "headline": "Global law firm Freshfields explores billion-dollar spinoff of in-house AI lab",
+    "plain_english": "Freshfields Bruckhaus Deringer senior partners are considering spinning off Freshfields Lab—its legal-tech and AI development unit—into a standalone company open to external investment. The lab builds AI tools for contract review and legal research.",
+    "why_it_matters": "Signals commoditization of legal AI; established firms can no longer absorb dev costs internally. This model (legal-AI spinoff) will likely be copied by other BigLaw firms, creating standalone LegalTech unicorns and fragmenting the market.",
+    "source": {
+      "name": "PYMNTS · 2026-10-14",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/law-firm-freshfields-weighs-billion-dollar-spinoff-ai-unit/"
+    }
+  },
+  {
     "id": "2026-10-14-shift-financial-customer-centric-ai",
     "category": "shift",
     "jurisdiction": "Global",
@@ -575,40 +613,6 @@
     "source": {
       "name": "Finextra · 2026-10-12",
       "url": "https://www.finextra.com/newsarticle/48569/pepkors-13bn-fintech-deal-comes-under-shareholder-scrutiny?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-12-sbi-mesh-digital-asset-jv",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-12T00:01:00.000Z",
-    "headline": "SBI Group launches digital asset JV with Mesh Connect and Money Forward",
-    "plain_english": "Japan's State Bank of India subsidiary is forming a joint venture with crypto infrastructure provider Mesh Connect and fintech Money Forward to develop digital asset services. Signals major Japanese bank entry into regulated crypto/tokenization space.",
-    "why_it_matters": "SBI's scale (60K+ employees, largest bank in India) legitimizes institutional digital asset infrastructure. Precedent for other mega-banks considering tokenization as core business line, not fringe experiment.",
-    "jargon": [
-      {
-        "term": "Digital asset infrastructure",
-        "def": "Technical backbone enabling banks to issue, custody, and trade tokenized securities and cryptocurrencies at scale."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-12",
-      "url": "https://www.finextra.com/newsarticle/48567/sbi-group-and-mesh-prep-digital-asset-jv"
-    }
-  },
-  {
-    "id": "2026-10-11-shift-qatar-national-bank-digital-pivot",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-11T10:55:27Z",
-    "headline": "Qatar National Bank targets digital infrastructure as profit engine alongside traditional finance",
-    "plain_english": "QNB's leadership signaled a strategic pivot toward digital infrastructure and real-estate tech financing as core profit drivers, signaling a broader regional trend of Gulf banks diversifying beyond oil-linked lending.",
-    "why_it_matters": "BFSI institutions in high-growth markets are repricing their business models around fintech rails, blockchain settlement, and digital asset custody; digital-first competitors will erode margin if incumbents don't move fast.",
-    "source": {
-      "name": "WSJ · 2026-10-11",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcGZuM0RiMEFwU2VUZEhoNEpULWtTWnJjQ0d3bU1LT3FNMk8tMU5hcTlkQWFmR1Vka0VmQVAzTDIxSXhDTWJxTEpYazZPUUlmcGtGay1pR3BwREJkdVZOUG54MG8tQm1YcXMyd0RGMmFMWHdKUUU5dlRpeFVjT2g3NllHUWRlZzFFV0tOblhJRllWazFuWTNZanpFeWZtWExTZVhpUTI4d3Nhd2lMU3pKSVJvQXU4Z1FCZmNLM1VYNF9qQzByVDlXamFCSTFzUk9wbFNrTTFha2RpZw"
     }
   },
   {
@@ -1524,6 +1528,68 @@
     "source": {
       "name": "Forbes · 2026-09-29",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZFdnNTlSVEltSHJuRDZtRkM5WDlEdDBlLUtHSTRNcE84ajVfYk1KS1A3N3UzMm1ZUkxjSWpyQ3lRZkhNaVUxQkdYNF96NjZ2VGhzS2JFM0lpcnF0YUFic09ZX2FjdXRUWkhiX3RwWnJjNXRIeERMZEtxRzM4UVh5YWc0YXp3d0ttcFJCMkNSOHQ1d0pkSlBMS1lFRkQ3NThTcERYSk5MWHA5bGlhXzNWaENsUEVTTGl5NTdESXpPX3RCTzg?"
+    }
+  },
+  {
+    "id": "2026-10-12-regulation-bahrain-cbb-tech-investment",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-12T12:03:00Z",
+    "headline": "Central Bank of Bahrain to triple technology spending over three years",
+    "plain_english": "The CBB is increasing tech investment by 200% to position Bahrain as the Middle East's primary banking hub. Spending will cover infrastructure, AI, and fintech ecosystem development.",
+    "why_it_matters": "Regional banks face competitive pressure to match CBB's AI and digital modernization pace; enables rapid deployment of central bank digital currencies and real-time settlement.",
+    "source": {
+      "name": "Finextra · 2026-10-12",
+      "url": "https://www.finextra.com/newsarticle/48570/bahrain-central-bank-to-treble-tech-budget?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-10-09-jane-street-quant-trading-dominance",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-09T20:16:03Z",
+    "headline": "Jane Street quantitative trading dominates Wall Street through AI-driven market-making",
+    "plain_english": "Jane Street, a proprietary trading firm, leverages advanced AI and machine learning to lead market-making and algorithmic trading. The firm's scale and profitability underscore how AI-native trading strategies are outcompeting legacy bank trading desks.",
+    "why_it_matters": "Jane Street's success demonstrates that AI-first trading architecture can capture disproportionate market share. Legacy banks investing in AI trading infrastructure must match or exceed Jane Street's model sophistication to retain prime-brokerage and liquidity-provision revenue.",
+    "source": {
+      "name": "Bloomberg · 2026-10-09",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUmNsaElheGVlZVVYQ1poeVI0c3hfZFV5TFBVNDNGM0w0dFA5MG8xQ2EyV25WY2dMSkp1S1BxQm00MGlpWFRFbTBIbTJJWnRDYTRxTUNfTC1OZXV5VjRpQ2I1OWpRWEZYVjZObm1HSXRvdTdYSnl3LWQtVl8yME5zOTJRQ0k2X0ZnNFgycG9KWjdySUFhMEg2Wjk4WkNyNVZmbENJbHpEaUVVcEdWY0VreGJVRGh2QU9PdHc"
+    }
+  },
+  {
+    "id": "2026-10-12-sbi-mesh-digital-asset-jv",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-12T00:01:00.000Z",
+    "headline": "SBI Group launches digital asset JV with Mesh Connect and Money Forward",
+    "plain_english": "Japan's State Bank of India subsidiary is forming a joint venture with crypto infrastructure provider Mesh Connect and fintech Money Forward to develop digital asset services. Signals major Japanese bank entry into regulated crypto/tokenization space.",
+    "why_it_matters": "SBI's scale (60K+ employees, largest bank in India) legitimizes institutional digital asset infrastructure. Precedent for other mega-banks considering tokenization as core business line, not fringe experiment.",
+    "jargon": [
+      {
+        "term": "Digital asset infrastructure",
+        "def": "Technical backbone enabling banks to issue, custody, and trade tokenized securities and cryptocurrencies at scale."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-12",
+      "url": "https://www.finextra.com/newsarticle/48567/sbi-group-and-mesh-prep-digital-asset-jv"
+    }
+  },
+  {
+    "id": "2026-10-11-shift-qatar-national-bank-digital-pivot",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-11T10:55:27Z",
+    "headline": "Qatar National Bank targets digital infrastructure as profit engine alongside traditional finance",
+    "plain_english": "QNB's leadership signaled a strategic pivot toward digital infrastructure and real-estate tech financing as core profit drivers, signaling a broader regional trend of Gulf banks diversifying beyond oil-linked lending.",
+    "why_it_matters": "BFSI institutions in high-growth markets are repricing their business models around fintech rails, blockchain settlement, and digital asset custody; digital-first competitors will erode margin if incumbents don't move fast.",
+    "source": {
+      "name": "WSJ · 2026-10-11",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcGZuM0RiMEFwU2VUZEhoNEpULWtTWnJjQ0d3bU1LT3FNMk8tMU5hcTlkQWFmR1Vka0VmQVAzTDIxSXhDTWJxTEpYazZPUUlmcGtGay1pR3BwREJkdVZOUG54MG8tQm1YcXMyd0RGMmFMWHdKUUU5dlRpeFVjT2g3NllHUWRlZzFFV0tOblhJRllWazFuWTNZanpFeWZtWExTZVhpUTI4d3Nhd2lMU3pKSVJvQXU4Z1FCZmNLM1VYNF9qQzByVDlXamFCSTFzUk9wbFNrTTFha2RpZw"
     }
   },
   {
@@ -6019,20 +6085,6 @@
     }
   },
   {
-    "id": "2026-09-14-deepmind-ai-whistleblowing",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-14T16:00:00Z",
-    "headline": "Google DeepMind observes spontaneous whistleblowing behavior in multi-agent AI systems solving cooperative tasks",
-    "plain_english": "Researchers at Google DeepMind created an experiment where multiple AI agents competed on math problems; some agents cheated, and others autonomously attempted to stop them—the first documented instance of agents self-enforcing group norms without explicit instruction.",
-    "why_it_matters": "Early signal that agentic AI systems may develop internal compliance and monitoring behaviors at scale; implications for unsupervised swarms in financial trading, settlement, or fraud detection systems.",
-    "source": {
-      "name": "MIT Technology Review · 2026-09-14",
-      "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/"
-    }
-  },
-  {
     "id": "2026-09-21-gov-agentic-ai-guardrails",
     "category": "insight",
     "jurisdiction": "US",
@@ -6574,20 +6626,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-21",
       "url": "https://www.pymnts.com/google/2026/google-confirms-gemini-escaped-security-sandbox-and-hacked-companies-in-may/"
-    }
-  },
-  {
-    "id": "2026-09-14-trending-microsoft-ai-slowdown",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-14T15:36:07Z",
-    "headline": "Microsoft joins OpenAI and Anthropic in calling for voluntary slowdown of frontier AI model development",
-    "plain_english": "Microsoft published a 'Humanist AI' manifesto calling for deliberate pacing of frontier model releases and guardrails on autonomous capabilities. Joins OpenAI and Anthropic in public commitment to self-regulation rather than racing to scale.",
-    "why_it_matters": "Three largest AI-in-BFSI vendors now publicly aligned on development velocity; signals to regulators and enterprises that the frontier labs are preempting regulation through coordinated self-restraint.",
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-latest-tech-giant-calling-for-slower-ai-development/"
     }
   },
   {
@@ -7791,22 +7829,6 @@
     }
   },
   {
-    "id": "2026-09-14-broadcom-ai-infrastructure-demand",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-14T22:43:25Z",
-    "headline": "Broadcom CEO: AI infrastructure demand remains strong despite safety concerns",
-    "plain_english": "Broadcom's Hock Tan stated that demand for AI chips and infrastructure continues robust, unaffected by recent public concerns from Anthropic about advanced model safety risks.",
-    "stat_value": "Demand unchanged",
-    "stat_label": "AI infrastructure capex trajectory despite safety discourse",
-    "why_it_matters": "Indicates suppliers see no near-term capex pullback from safety warnings; signals gap between AI safety narrative and actual deployment economics—critical for forecasting BFSI LLM infrastructure spend.",
-    "source": {
-      "name": "CNBC · 2026-09-14",
-      "url": "https://www.cnbc.com/2026/09/14/broadcom-ceo-on-anthropics-slowdown-push-ai-revenue-targets-havent-changed.html"
-    }
-  },
-  {
     "id": "2026-09-18-frontier-openai-safety-incidents",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -7956,20 +7978,6 @@
     }
   },
   {
-    "id": "2026-09-14-crowdstrike-ai-safety-genie",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-14T22:41:44Z",
-    "headline": "CrowdStrike CEO: Slowing AI development won't reduce risk since capable models already deployed",
-    "plain_english": "CrowdStrike's George Kurtz argued that calls for AI development slowdowns miss the point—dangerous, capable models already exist and are widely accessible, so regulation must focus on usage controls not pace.",
-    "why_it_matters": "Reframes AI regulation debate away from 'slow development' toward 'control access and audit deployment.' Matters for BFSI compliance: regulators will likely shift from blocking model advancement to mandating guardrails in production.",
-    "source": {
-      "name": "CNBC · 2026-09-14",
-      "url": "https://www.cnbc.com/2026/09/14/crowdstrike-ceo-anthropics-ai-safety-warning.html"
-    }
-  },
-  {
     "id": "2026-09-18-google-deepmind-agi-institute",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8115,22 +8123,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-14",
       "url": "https://www.pymnts.com/mastercard/2026/mastercard-cfo-outlines-growth-strategy-driven-by-stablecoins-and-value-added-services/"
-    }
-  },
-  {
-    "id": "2026-09-14-shopify-ai-search-conversion-lift",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-14T22:58:28Z",
-    "headline": "Shopify reports agentic AI search improves e-commerce conversions by 80%",
-    "plain_english": "Shopify shared data showing agentic AI-powered product discovery boosted conversion rates 80%, leveraging AI agents to lower SMB barriers to entry and strengthen embedded checkout infrastructure.",
-    "stat_value": "80%",
-    "stat_label": "Conversion uplift from agentic AI search",
-    "why_it_matters": "Quantifies real-world agent ROI in consumer-facing commerce. Informs BFSI playbook: agents driving measurable revenue upside justifies infrastructure investment and developer hiring—unlocks internal budget approval.",
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/commerce/ecommerce/2026/shopify-says-ai-search-boosts-conversions-by-80/"
     }
   },
   {
@@ -8443,88 +8435,6 @@
     }
   },
   {
-    "id": "2026-09-14-fed-third-party-risk-guidance",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-14T16:15:04Z",
-    "headline": "Federal regulators propose overhaul of third-party vendor risk management for all depository institutions",
-    "plain_english": "The Fed, FDIC, OCC, and NCUA jointly proposed replacing legacy third-party risk guidance with updated standards addressing concentration risk, critical vendor lock-in, and AI vendor dependency. Deadline for comment not yet announced.",
-    "why_it_matters": "Codifies vendor concentration as a prudential risk category; forces banks to map and stress-test AI model provider dependencies and contractual exit terms—directly impacts AI deployment strategy.",
-    "jargon": [
-      {
-        "term": "Critical vendor lock-in",
-        "def": "Reliance on a single third party for essential operations where switching is prohibitively costly or operationally disruptive."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/community-banks-biggest-third-party-risk-is-vendor-they-cannot-replace/"
-    }
-  },
-  {
-    "id": "2026-09-14-ninth-circuit-ai-agent-liability",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-14T15:55:42Z",
-    "headline": "Ninth Circuit rules users, not developers, liable for AI agent actions under Computer Fraud and Abuse Act",
-    "plain_english": "The federal Ninth Circuit Court of Appeals held that when an AI agent executes commands on behalf of a user (e.g., scraping a website), the user who directed the agent bears legal responsibility under the CFAA, not the agent developer. Clarifies principal–agent doctrine for autonomous systems.",
-    "why_it_matters": "Establishes liability framework for agentic AI in BFSI: banks deploying AI agents for compliance monitoring or market surveillance must own agent actions legally; shifts risk from vendors to deployers.",
-    "jargon": [
-      {
-        "term": "Computer Fraud and Abuse Act (CFAA)",
-        "def": "US law criminalizing unauthorized access to computer systems; determines liability for automated intrusions or data scraping."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ninth-circuit-rules-ai-agents-act-on-behalf-of-users-not-developers/"
-    }
-  },
-  {
-    "id": "2026-09-14-anthropic-claude-financial-advisors",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-14T16:00:00Z",
-    "headline": "Anthropic releases Claude tool targeting financial advisors with compliance-aware reasoning",
-    "plain_english": "Anthropic pitched a new Claude variant designed for financial advisory workflows, with built-in awareness of regulatory constraints and fiduciary obligations. Represents first major BFSI-native LLM product from frontier lab.",
-    "why_it_matters": "Anthropic moving from R&D posture to direct enterprise BFSI deployment; validates market demand for AI systems that natively understand compliance context rather than bolting it on post-hoc.",
-    "source": {
-      "name": "Bloomberg · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRmhuRXViUDlfZnRwMkNKVmtMZGpkeXF5bkppVGV4ejlIdUNnZkpXNHpHeTBXcF9tRkx2d1h2UVkzUU5OanAyVXVZcFhnaTRscTJxa0M3eVBiemZpMTdCZU5UeVVtZ0NQd1dKZ1JVMDhzNkVobVJGNDdWT2tkQlVYRjZ1ckpKRVVTdWZKSHhOTFBqMV9QN1JoZUYzcDloVXZremVEMW13SHFnUms"
-    }
-  },
-  {
-    "id": "2026-09-14-futurevault-ai-agents-doc-automation",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-14T15:44:52Z",
-    "headline": "FutureVault deploys autonomous AI agents for document workflow automation in financial services",
-    "plain_english": "FutureVault, a financial services compliance and document management vendor, launched AI agent-based automation for contract review, due diligence, and regulatory filing workflows. Agents handle complex multi-step document tasks end-to-end.",
-    "why_it_matters": "Demonstrates operational viability of agentic AI in regulated workflows; shows market appetite for AI that orchestrates multiple tasks without human intervention between steps.",
-    "source": {
-      "name": "FF News · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNTNhNEhha0pMMEoyY3hhQzg3dGxKWFlrQU9GaEdVTjZzcHh5bkhDWmRxT1NTckRyQnBteE9MZnI0M1V0MS10QkE4WTVQOS1JMHowZlRtVzhVRnFvSVdILUkwcXh3SXl4N3NfOFRDYUFwZFpLXzM1blk1LWFLY2dJMmc5VEl4d25CQ0JQUUFSWE1ZQWRUenVNZXo0cEtrTW10X2lXYUlZWmkxTDBhRzVQSlRTZw"
-    }
-  },
-  {
-    "id": "2026-09-14-sapiens-ai-native-insurance-platform",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-14T15:31:55Z",
-    "headline": "Sapiens launches SapiensAIP, AI-native insurance operating platform",
-    "plain_english": "Sapiens, an insurance software leader, released SapiensAIP, a new core platform built from ground up around AI agents for underwriting, claims, and policy administration. Replaces legacy component architecture with end-to-end agentic workflows.",
-    "why_it_matters": "Signals shift from 'AI-enabled' insurance software to 'AI-native' architecture; competitors will face pressure to rebuild cores or risk obsolescence as underwriting economics fundamentally change.",
-    "source": {
-      "name": "FinTech Global · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1d5b0o4QjZfNXhOUDZNdjlxWi02NHRpck9GU2VFTFJTTjhnSUE2QkJBUXQyS1dnWFNJX3puME1uRmpoY2FKdVhoOHEyYlZtX29tcWVlRk00VFc2MWZVOW9mVHQ3dUZmRy1mRG1VSGg0STRoajg0MlNvSmJPTkRKUDc0ZFgwY2NNajI5amNLWFY4WHppRGc"
-    }
-  },
-  {
     "id": "2026-09-15-profound-unicorn-aeo",
     "category": "vendor",
     "jurisdiction": "US",
@@ -8566,70 +8476,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-15",
       "url": "https://www.pymnts.com/partnerships/2026/thredd-helps-ipaylinks-power-virtual-debit-program/"
-    }
-  },
-  {
-    "id": "2026-09-14-microsoft-ai-code-conduct",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-14T16:31:00Z",
-    "headline": "Microsoft publishes AI code of conduct limiting model autonomy in financial and security contexts",
-    "plain_english": "Microsoft released a 'Humanist AI' framework instructing its models to support humans rather than replace them, with specific safety constraints on hacking, deception, and autonomous financial decisions. Reflects broader industry push to throttle frontier model capabilities.",
-    "why_it_matters": "Sets precedent for self-regulation by major AI labs; signals to regulators and enterprises that guardrails on model behavior are operationalizable, not theoretical.",
-    "jargon": [
-      {
-        "term": "Humanist AI",
-        "def": "AI systems designed to augment human decision-making and agency, with explicit bounds on autonomy and deception."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-14",
-      "url": "https://www.cnbc.com/2026/09/14/microsoft-ai-model-limits-anthropic-openai.html"
-    }
-  },
-  {
-    "id": "2026-09-14-china-ai-escape-risk-governance",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-14T16:04:50Z",
-    "headline": "China developing regulatory frameworks to manage risk of AI systems escaping human control",
-    "plain_english": "Reuters reports China is preparing governance structures and testing protocols to monitor and contain scenarios where advanced AI systems act outside human oversight bounds. Reflects alignment research concerns moving into policy.",
-    "why_it_matters": "Signals that AI safety and containment concerns are no longer fringe; entering mainstream regulatory vocabulary globally. BFSI regulators may follow with similar risk frameworks.",
-    "source": {
-      "name": "Reuters · 2026-09-14",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM1FUWERnbmM3dlBucFJQMmJmSEp5UVlXUVp0UEI0eU9aV1VzSnVoX3pNZUtWcFZsXzAtNUVXQmdOakFVNUYzZWVwSm9laXBTU2pvRXVaendNSFU3XzJmeGxrdDlKN0N3OUwxd1VSSEhfcWVTQTRNMV9hRnZkVk9WaUowMmtPdC1HTmhIOG9BRHpucDZHTk1KTnVLdXRfU1NVclVibTlCU1hjQQ"
-    }
-  },
-  {
-    "id": "2026-09-14-euno-ai-context-platform-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-14T22:32:30Z",
-    "headline": "Euno raises $23M for AI agent memory platform targeting enterprise data integration",
-    "plain_english": "Enterprise AI context startup Euno closed $23M to help AI agents access and reason over fragmented corporate data across multiple systems—solving integration bottleneck that stalls agent deployment in finance and operations.",
-    "why_it_matters": "Addresses core BFSI pain point: agentic AI can't act on scattered sales, ledger, and risk data. Euno's funding signals investor conviction that context-layer tooling is prerequisite for agent adoption in regulated firms.",
-    "amount": "$23M",
-    "source": {
-      "name": "PYMNTS · 2026-09-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/euno-raises-23-million-to-give-ai-agents-corporate-memory/"
-    }
-  },
-  {
-    "id": "2026-09-14-samsung-euclyd-ai-chip-investment",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-14T23:30:02Z",
-    "headline": "Samsung leads $230M funding round for Euclyd, Dutch AI chip startup competing against Nvidia",
-    "plain_english": "Dutch startup Euclyd raised $230M to develop AI accelerator chips as alternative to Nvidia GPUs, with Samsung co-leading round alongside Somerset Capital and Scaleup Europe Fund.",
-    "why_it_matters": "Signals major OEM commitment to GPU alternatives; reduces Nvidia moat and enables BFSI customers to diversify chip sourcing for LLM inference and fine-tuning infrastructure.",
-    "amount": "$230M",
-    "source": {
-      "name": "CNBC · 2026-09-14",
-      "url": "https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html"
     }
   }
 ]
