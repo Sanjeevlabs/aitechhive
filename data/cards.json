@@ -171,6 +171,20 @@
     }
   },
   {
+    "id": "2026-10-19-world-deepfake-suite",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-19T00:01:00Z",
+    "headline": "World launches AI fraud detection suite for banking and finance sector",
+    "plain_english": "World, the digital identity project co-founded by Sam Altman, has released tools to help banks detect and prevent deepfake fraud and AI-driven account impersonations across customer, employee, and agent workflows.",
+    "why_it_matters": "As deepfake attacks on financial institutions accelerate, banks need production-ready detection. This signals growing market urgency and vendor maturity for biometric fraud defense.",
+    "source": {
+      "name": "Finextra · 2026-10-19",
+      "url": "https://www.finextra.com/newsarticle/48602/world-takes-on-ai-driven-impersonations-with-new-suite-for-banking-and-finance"
+    }
+  },
+  {
     "id": "2026-10-18-mexico-ai-missing-children",
     "category": "deployment",
     "jurisdiction": "APAC",
@@ -310,27 +324,51 @@
     }
   },
   {
-    "id": "2026-10-15-natwest-nvidia-speech-recognition",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-10-15T00:01:00Z",
-    "headline": "NatWest partners Nvidia for accent-aware speech AI in spending tool",
-    "plain_english": "NatWest deployed Nvidia's speech recognition technology in its audio-visual spending insights tool to improve understanding of regional accents and pronunciations. The tool helps customers analyze spending patterns via voice.",
-    "why_it_matters": "Demonstrates tactical use of specialized AI models for inclusive UX; validates speech-based banking interfaces beyond generic chatbots, though accent bias remains a quality gate before wider rollout.",
+    "id": "2026-10-18-character-bankruptcy",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-18T20:04:57Z",
+    "headline": "Character.ai maker files for Chapter 11 bankruptcy",
+    "plain_english": "Character.ai, a conversational AI platform that raised significant venture funding, has filed for bankruptcy protection, marking a high-profile failure in the consumer AI space.",
+    "why_it_matters": "Signals investor caution on consumer-facing AI startups lacking clear monetization. BFSI players should track vendor consolidation risk for any third-party AI dependencies.",
     "jargon": [
       {
-        "term": "Speech recognition",
-        "def": "AI model that converts spoken words into text; accuracy varies by accent, dialect, and background noise."
+        "term": "Chapter 11",
+        "def": "US bankruptcy process allowing companies to restructure debt while continuing operations, not full liquidation."
       }
     ],
-    "scale": {
-      "metric": "customers",
-      "value": "NatWest retail base (millions)"
-    },
     "source": {
-      "name": "Finextra · 2026-10-15",
-      "url": "https://www.finextra.com/newsarticle/48586/natwest-enlists-nvidia-to-help-its-ai-spending-tool-understand-regional-accents"
+      "name": "WSJ · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNY0pTV29WbzVtUk5PMk9LMGVKRmh2N3NDT3ZMcmxUdGRKVDFEbVFIeTJHczVkUUs2RnBaWi1vNDI1WHNvQjZUcTlRUU5zUXozZGtmWWJsMnBuck9CZHNmYl95VTFHQUloOTk5VGJyZ2UzTEhtckRUZXJKWjRpYVo5UC1HWEZvTkd6TTFOTmdBZDM"
+    }
+  },
+  {
+    "id": "2026-10-18-nscale-ipo-pushback",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-18T21:13:44Z",
+    "headline": "AI cloud firm Nscale faces investor pushback over IPO valuation",
+    "plain_english": "Nscale, an AI cloud infrastructure company preparing to go public, is meeting resistance from investors over its IPO pricing, reflecting cooling sentiment on infrastructure-layer AI startups.",
+    "why_it_matters": "Signals tightening VC appetite for infrastructure plays. BFSI cloud and AI ops teams should plan for longer vendor maturation timelines and increased M&A consolidation in this layer.",
+    "source": {
+      "name": "Bloomberg · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczR6MkNKMHd6X3VfQlgzNFlNTnQ2MDZhRWNBbXd6OE1GZlBaYlJ2RTk1YlNsNjZkVF9uUjNvNjlPd3J4WDVwNFlSYl8xNUp4eHJlMUYyOVRKaklyd0JCemRVbk8xNjdYOGx5U0JrMWU2VVU5Xy01bkF1bjY2SG8zQXJIQUNHS25hUUMxUWE3TmE4ek5Id2M2emZaTWdGYUplc2hLWjNVZDI0VjF3Q3gzbGpwSkg"
+    }
+  },
+  {
+    "id": "2026-10-19-acorns-frich",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-19T00:01:00Z",
+    "headline": "Acorns acquires Gen Z social finance app Frich",
+    "plain_english": "Savings app Acorns has acquired Frich, a Gen Z-focused social finance platform. Terms undisclosed. Move consolidates retail wealth management and community-driven fintech under single operator.",
+    "why_it_matters": "Signals continued M&A in retail fintech to add social/engagement features. BFSI players competing in mass-market wealth should track how incumbents acquire behavioral and social tooling.",
+    "source": {
+      "name": "Finextra · 2026-10-19",
+      "url": "https://www.finextra.com/newsarticle/48599/acorns-buys-gen-z-social-finance-app-frich"
     }
   },
   {
@@ -435,47 +473,17 @@
     }
   },
   {
-    "id": "2026-10-13-causa-prima-billing-ai-agents",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-13T10:00:00Z",
-    "headline": "Causa Prima raises $20M to automate billing dispute resolution with AI agents",
-    "plain_english": "Fintech startup Causa Prima closed $20M funding to scale AI agent platform for resolving billing and billing-related disputes in telecom, utilities, and B2B SaaS. Targets high-friction revenue leakage.",
-    "why_it_matters": "AI agents applied to back-office disputes (a common pain in BFSI and telecom). If effective, model scales to invoice discrepancies, chargeback investigations, and regulatory dispute handling in banking.",
-    "amount": "$20M",
-    "source": {
-      "name": "Fortune · 2026-10-13",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONms3WE94ejlPZGFmQ3JpaE1kZ1JOdGRpRmJEdFh2UTRreENHM2hnY1lGajh6WEVYdmxLbzVQZTJBTEh2QjdkbnBaOFQ1elctRzlmUm05YWx2MnUyWkZSbUFuLTNkY3BjTWpyNW96eVJhV19OdEVheXVQQWJ6THhOWXVFczlHdWRGX1RLR3dqSDd0ZVk"
-    }
-  },
-  {
-    "id": "2026-10-11-amazon-decart-acquisition",
-    "category": "vendor",
+    "id": "2026-10-18-credit-desks-fortune",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-10-11T20:46:52.000Z",
-    "headline": "Amazon in talks to acquire AI startup Decart for $7 billion",
-    "plain_english": "Amazon is negotiating to buy Decart, an AI company, for approximately $7 billion according to Wall Street Journal. Deal reflects tech giant's accelerating push into frontier AI capabilities alongside AWS financial services push.",
-    "why_it_matters": "Decart acquisition signals Amazon's strategy to own core AI IP rather than depend on third-party models. Enables AWS to compete directly with Azure OpenAI for enterprise AI workloads, including banking risk/compliance use cases.",
-    "amount": "$7B",
+    "published_at": "2026-10-18T21:00:00Z",
+    "headline": "AI's future in finance runs through credit desks, not trading floors",
+    "plain_english": "Fortune reports institutional investment in credit and underwriting automation will outpace trading-focused AI, signaling where BFSI sees highest ROI and regulatory tailwind for AI deployment.",
+    "why_it_matters": "Underwriting and credit decisioning are more defensible regulatory territory than algorithmic trading. This shapes capital allocation priorities for banks building AI centers of excellence.",
     "source": {
-      "name": "Bloomberg · 2026-10-11",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlp0dEhQeUJEblZQcDdEQmMyOGVkSFFlbzRVaXhuT0xFUFpNc21laThfRWNnVmpRMHdiVG1BbzJiTjliOFNCR0xDWEl3X0hES3FXWlZ5LUNjZnFFRkdwWTRoVC11VHllTkM3bS1sVi04cG1EVjlBbGw5R2tNRUxmWlp2QlFrZk1uemJBMUt1QjlLRnFtdDhyVWY1UTVHZE1HTmR4NjRmSDlvQQ"
-    }
-  },
-  {
-    "id": "2026-10-10-vendor-nvidia-reflection-investment",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-10T19:33:44Z",
-    "headline": "Nvidia in talks to invest in or acquire AI startup Reflection",
-    "plain_english": "Nvidia is negotiating to either buy or make a strategic investment in Reflection AI, a startup working on frontier AI models. Deal terms and focus area not yet disclosed.",
-    "why_it_matters": "Nvidia's consolidation of AI startups signals competitive concern over model inference and reasoning—core strengths that BFSI firms rely on for fraud detection, underwriting, and regulatory reporting.",
-    "source": {
-      "name": "Reuters · 2026-10-10",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQXpmTnVsdlhWdUt0a0hnSUg1YUVoRWNhT2JSQ24yeHFvRWVPdG5SNzNsWkNLVS0zbng0UWZrMS1zaGtXRmNzRThMamRUNXJPUGRwX09vN2J0dXFSUW9ZSThFeGZ6bTg5bnFqVVktSk91RzBNMkN0MGFOX2FSSEFZMzZ4TXhMb1dsc1hpLUwtY1pmeERoMnE0M2llTEI0X1V2cGxRc1UtMnpYUmc"
+      "name": "Fortune · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41MVV6Q080RmZVV2JhOXA0bjZzQktKRG0wRDNwd2xlY3ZlRlN2aVhJNnlzWFNibHNZdXg1ZHNqaWpCemFqYXo1OVBhNW1jb1hhcjdBMmMtQmxjRVlnU1BaUFRPSFJHLXZnNzNlNGFMRXBvcmhRYWc"
     }
   },
   {
@@ -621,30 +629,6 @@
     "source": {
       "name": "Finextra · 2026-10-15",
       "url": "https://www.finextra.com/newsarticle/48587/spanish-banks-arrange-syndicated-finance-on-blockchain?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-15-coinbase-payments-stablecoin-banking",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-15T11:30:00.000Z",
-    "headline": "Coinbase integrates stablecoin payments into banking rails; expands settlement optionality",
-    "plain_english": "Coinbase Payments now embeds USDC (a regulated stablecoin) into business and platform payment stacks, allowing merchants and operators to settle in crypto alongside traditional rails—blurring fintech and banking boundaries.",
-    "why_it_matters": "BFSI must now compete with crypto-native payments infrastructure in real-time settlement; implies potential margin pressure on correspondent banking and day-one liquidity for corporate customers.",
-    "jargon": [
-      {
-        "term": "Stablecoin",
-        "def": "A cryptocurrency pegged 1:1 to a fiat currency (e.g., USD) to minimize price volatility; used for faster settlement."
-      },
-      {
-        "term": "USDC",
-        "def": "USD Coin; regulated stablecoin issued by Coinbase and Circle, redeemable 1:1 for US dollars."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-10-15",
-      "url": "https://tearsheet.co/blockchain-crypto/coinbase-is-taking-stablecoin-rails-into-banking-expanding-the-market-for-both/?utm_source=rss&utm_medium=rss&utm_campaign=coinbase-is-taking-stablecoin-rails-into-banking-expanding-the-market-for-both"
     }
   },
   {
@@ -875,6 +859,40 @@
     }
   },
   {
+    "id": "2026-10-18-schwab-skeptical-agents",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-18T20:23:00Z",
+    "headline": "Charles Schwab CEO skeptical of autonomous AI agents for retail stock trading",
+    "plain_english": "Charles Schwab's leader expressed doubt on letting AI agents trade equities autonomously while retail customers sleep, citing execution risk and regulatory hurdles.",
+    "why_it_matters": "Major custodian hesitance signals regulatory and operational friction in delegating trading authority to AI agents. This tempering pushes fintech AI roadmaps toward advisory, not autonomous execution.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous software systems that perceive environment, make decisions, and take actions with minimal human intervention."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLUJFUjM3bVJWWGlGRXJPUllTcTJkMXlfSEY0UkRRanlKNkxuR18ySW9QU3ZxbDJZWnEwalh0YWZRNEtXeTdtTzYwSzVTSGFxbzdjSnNIdGd1QVZWQ09lbnFmN21QNWhDTXFuSmlKazZOczJBNXBlT1p0NHhtWTA1a09fZnp0N3BJWjFmQjl6ZlZrWnhpbEdIWFBoOUMtVTJCR2tERGc0YUFBbk1nNkJj"
+    }
+  },
+  {
+    "id": "2026-10-18-ai-obstacle-risk",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-18T21:50:06Z",
+    "headline": "AI hits next major obstacle: energy, regulatory, and talent constraints",
+    "plain_english": "WSJ's Morning Risk Report signals that frontier AI development faces hard limits—data center power grids cannot scale, regulators are tightening guardrails, and talent is concentrated in few labs.",
+    "why_it_matters": "BFSI teams building proprietary AI should expect slower vendor innovation cycles, longer lead times for model access, and rising pressure to train smaller, domain-specific models in-house.",
+    "source": {
+      "name": "WSJ · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVWkwSi1LYXRVTFhlV3l4Z01fN1M5VEY3eEtPYS1KX2xlbHVsbXRvOGlua2JrQkNOdXh2MDlFZkNYNFpsUmlibHhLN3hfYUxPWVJrM2cwSGJ4WlZQVXFQbTVFdUVKT05OY3lJRUgtWi12Tzdja2xCS2wtN3hqNk91OERTMU9KdTA3ODVzcVVidEdscG5fWGpiZGd4SkhYRzNuMGZBcGdnUzhYeFBXYlBabg"
+    }
+  },
+  {
     "id": "2026-10-17-apac-banks-ai-demand",
     "category": "insight",
     "jurisdiction": "APAC",
@@ -1000,33 +1018,17 @@
     }
   },
   {
-    "id": "2026-10-13-market-data-costs-ai-50pct",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-13T11:26:00Z",
-    "headline": "Capital markets data costs set to jump 50% in 2027 due to AI consumption",
-    "plain_english": "Research shows market data fees will rise up to 50% next year, driven partly by AI model training and inference consuming far more tick data, order books, and analytics feeds. Hit risk ops and trading desks hard.",
-    "why_it_matters": "For banks and asset managers, AI-driven market data inflation eats directly into margins. Firms may cut training data scope or shift models to synthetic/alternative data, reshaping market intelligence strategy.",
-    "stat_value": "50%",
-    "stat_label": "potential increase in market data costs 2027",
+    "id": "2026-10-18-anthropic-public-fund",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-18T19:56:36Z",
+    "headline": "Anthropic commits 5% of shares to new public benefit fund",
+    "plain_english": "Anthropic announced it will transfer 5% of company shares into a dedicated fund to support public good initiatives, a governance move that may signal pressure on frontier AI labs to demonstrate broader societal value.",
+    "why_it_matters": "Sets precedent for AI safety and public governance among frontier labs. BFSI firms partnering with Anthropic or evaluating Claude deployments should monitor how this affects product roadmap and regulatory positioning.",
     "source": {
-      "name": "Finextra · 2026-10-13",
-      "url": "https://www.finextra.com/newsarticle/48573/market-data-costs-to-rise-by-up-to-50-thanks-to-ai"
-    }
-  },
-  {
-    "id": "2026-10-13-french-supermarket-iot-cyberattack",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-10-13T11:26:07Z",
-    "headline": "Cyberattack on French supermarket refrigeration systems exposes IoT vulnerability in critical infrastructure",
-    "plain_english": "Hundreds of French supermarket refrigerators were remotely hacked, overheated to 122°F, spoiling food and causing fires. Attack signals broad vulnerability in poorly-secured IoT/operational tech in critical supply chains.",
-    "why_it_matters": "BFSI relevance: Banks and insurers underestimate IoT/OT cyber risk in client exposures (retailers, utilities, logistics). Incident will spur regulatory push for operational tech security baselines and third-party risk scoring.",
-    "source": {
-      "name": "CNBC · 2026-10-13",
-      "url": "https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html"
+      "name": "TechCrunch · 2026-10-18",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
     }
   },
   {
@@ -1159,20 +1161,6 @@
     "source": {
       "name": "CNBC · 2026-10-14",
       "url": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html"
-    }
-  },
-  {
-    "id": "2026-10-13-openai-recording-device-arrest",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-13T21:44:46.000Z",
-    "headline": "FBI arrests Saudi OpenAI employee over conference-room recording device",
-    "plain_english": "Federal authorities arrested an OpenAI employee for allegedly planting a covert listening device in an executive conference room, intensifying scrutiny on safety and insider-threat practices at frontier AI labs.",
-    "why_it_matters": "Demonstrates systemic governance gaps at major AI vendors; elevates reputational and procurement risk for BFSI partners of frontier labs, likely triggering more stringent third-party security assessments.",
-    "source": {
-      "name": "CNBC · 2026-10-13",
-      "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
     }
   },
   {
@@ -1380,6 +1368,20 @@
     }
   },
   {
+    "id": "2026-10-18-ai-industry-debt",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-18T20:19:28Z",
+    "headline": "AI industry's massive infrastructure debt is making investors nervous",
+    "plain_english": "The Economist reports that frontier AI labs have accumulated enormous capital debt—billions in compute, data, and infrastructure costs—with unclear paths to profitability, rattling venture and corporate investors.",
+    "why_it_matters": "If AI vendor economics collapse or consolidate, banks face exposure through partnerships and licensing. Signals need for vendor diversification and in-house AI capability to reduce dependency risk.",
+    "source": {
+      "name": "The Economist · 2026-10-18",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjBPZ04tUnFocVdZQlM2dkF6N3hkVk9wTDB3SWVfbHo2ZFNvcnQtanBIX2JIVVg5UXpEZGVlRDIycFFmZmlUMHdjaFlwUzNOclNlUEdzaUtQMHNPY3FkdFZQUFIyclZCQURIN09YZHlWUUdmYkhYY3B6WDlEQ2ZqbEdaai1BNUQzX3VwNC02a01abVRPWmZwdWQyMUdjbzZiaHNDVmFuMWJhZw"
+    }
+  },
+  {
     "id": "2026-10-17-trending-anthropic-clark-ai-action",
     "category": "trending",
     "jurisdiction": "US",
@@ -1516,6 +1518,142 @@
     "source": {
       "name": "CNBC · 2026-10-06",
       "url": "https://www.cnbc.com/2026/10/06/meta-muse-gives-amd-a-boost-as-ai-momentum-shifts-to-personal-agents-.html"
+    }
+  },
+  {
+    "id": "2026-10-15-natwest-nvidia-speech-recognition",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-10-15T00:01:00Z",
+    "headline": "NatWest partners Nvidia for accent-aware speech AI in spending tool",
+    "plain_english": "NatWest deployed Nvidia's speech recognition technology in its audio-visual spending insights tool to improve understanding of regional accents and pronunciations. The tool helps customers analyze spending patterns via voice.",
+    "why_it_matters": "Demonstrates tactical use of specialized AI models for inclusive UX; validates speech-based banking interfaces beyond generic chatbots, though accent bias remains a quality gate before wider rollout.",
+    "jargon": [
+      {
+        "term": "Speech recognition",
+        "def": "AI model that converts spoken words into text; accuracy varies by accent, dialect, and background noise."
+      }
+    ],
+    "scale": {
+      "metric": "customers",
+      "value": "NatWest retail base (millions)"
+    },
+    "source": {
+      "name": "Finextra · 2026-10-15",
+      "url": "https://www.finextra.com/newsarticle/48586/natwest-enlists-nvidia-to-help-its-ai-spending-tool-understand-regional-accents"
+    }
+  },
+  {
+    "id": "2026-10-13-causa-prima-billing-ai-agents",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-13T10:00:00Z",
+    "headline": "Causa Prima raises $20M to automate billing dispute resolution with AI agents",
+    "plain_english": "Fintech startup Causa Prima closed $20M funding to scale AI agent platform for resolving billing and billing-related disputes in telecom, utilities, and B2B SaaS. Targets high-friction revenue leakage.",
+    "why_it_matters": "AI agents applied to back-office disputes (a common pain in BFSI and telecom). If effective, model scales to invoice discrepancies, chargeback investigations, and regulatory dispute handling in banking.",
+    "amount": "$20M",
+    "source": {
+      "name": "Fortune · 2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONms3WE94ejlPZGFmQ3JpaE1kZ1JOdGRpRmJEdFh2UTRreENHM2hnY1lGajh6WEVYdmxLbzVQZTJBTEh2QjdkbnBaOFQ1elctRzlmUm05YWx2MnUyWkZSbUFuLTNkY3BjTWpyNW96eVJhV19OdEVheXVQQWJ6THhOWXVFczlHdWRGX1RLR3dqSDd0ZVk"
+    }
+  },
+  {
+    "id": "2026-10-11-amazon-decart-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-11T20:46:52.000Z",
+    "headline": "Amazon in talks to acquire AI startup Decart for $7 billion",
+    "plain_english": "Amazon is negotiating to buy Decart, an AI company, for approximately $7 billion according to Wall Street Journal. Deal reflects tech giant's accelerating push into frontier AI capabilities alongside AWS financial services push.",
+    "why_it_matters": "Decart acquisition signals Amazon's strategy to own core AI IP rather than depend on third-party models. Enables AWS to compete directly with Azure OpenAI for enterprise AI workloads, including banking risk/compliance use cases.",
+    "amount": "$7B",
+    "source": {
+      "name": "Bloomberg · 2026-10-11",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlp0dEhQeUJEblZQcDdEQmMyOGVkSFFlbzRVaXhuT0xFUFpNc21laThfRWNnVmpRMHdiVG1BbzJiTjliOFNCR0xDWEl3X0hES3FXWlZ5LUNjZnFFRkdwWTRoVC11VHllTkM3bS1sVi04cG1EVjlBbGw5R2tNRUxmWlp2QlFrZk1uemJBMUt1QjlLRnFtdDhyVWY1UTVHZE1HTmR4NjRmSDlvQQ"
+    }
+  },
+  {
+    "id": "2026-10-10-vendor-nvidia-reflection-investment",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-10T19:33:44Z",
+    "headline": "Nvidia in talks to invest in or acquire AI startup Reflection",
+    "plain_english": "Nvidia is negotiating to either buy or make a strategic investment in Reflection AI, a startup working on frontier AI models. Deal terms and focus area not yet disclosed.",
+    "why_it_matters": "Nvidia's consolidation of AI startups signals competitive concern over model inference and reasoning—core strengths that BFSI firms rely on for fraud detection, underwriting, and regulatory reporting.",
+    "source": {
+      "name": "Reuters · 2026-10-10",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQXpmTnVsdlhWdUt0a0hnSUg1YUVoRWNhT2JSQ24yeHFvRWVPdG5SNzNsWkNLVS0zbng0UWZrMS1zaGtXRmNzRThMamRUNXJPUGRwX09vN2J0dXFSUW9ZSThFeGZ6bTg5bnFqVVktSk91RzBNMkN0MGFOX2FSSEFZMzZ4TXhMb1dsc1hpLUwtY1pmeERoMnE0M2llTEI0X1V2cGxRc1UtMnpYUmc"
+    }
+  },
+  {
+    "id": "2026-10-15-coinbase-payments-stablecoin-banking",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-15T11:30:00.000Z",
+    "headline": "Coinbase integrates stablecoin payments into banking rails; expands settlement optionality",
+    "plain_english": "Coinbase Payments now embeds USDC (a regulated stablecoin) into business and platform payment stacks, allowing merchants and operators to settle in crypto alongside traditional rails—blurring fintech and banking boundaries.",
+    "why_it_matters": "BFSI must now compete with crypto-native payments infrastructure in real-time settlement; implies potential margin pressure on correspondent banking and day-one liquidity for corporate customers.",
+    "jargon": [
+      {
+        "term": "Stablecoin",
+        "def": "A cryptocurrency pegged 1:1 to a fiat currency (e.g., USD) to minimize price volatility; used for faster settlement."
+      },
+      {
+        "term": "USDC",
+        "def": "USD Coin; regulated stablecoin issued by Coinbase and Circle, redeemable 1:1 for US dollars."
+      }
+    ],
+    "source": {
+      "name": "Tearsheet · 2026-10-15",
+      "url": "https://tearsheet.co/blockchain-crypto/coinbase-is-taking-stablecoin-rails-into-banking-expanding-the-market-for-both/?utm_source=rss&utm_medium=rss&utm_campaign=coinbase-is-taking-stablecoin-rails-into-banking-expanding-the-market-for-both"
+    }
+  },
+  {
+    "id": "2026-10-13-market-data-costs-ai-50pct",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-13T11:26:00Z",
+    "headline": "Capital markets data costs set to jump 50% in 2027 due to AI consumption",
+    "plain_english": "Research shows market data fees will rise up to 50% next year, driven partly by AI model training and inference consuming far more tick data, order books, and analytics feeds. Hit risk ops and trading desks hard.",
+    "why_it_matters": "For banks and asset managers, AI-driven market data inflation eats directly into margins. Firms may cut training data scope or shift models to synthetic/alternative data, reshaping market intelligence strategy.",
+    "stat_value": "50%",
+    "stat_label": "potential increase in market data costs 2027",
+    "source": {
+      "name": "Finextra · 2026-10-13",
+      "url": "https://www.finextra.com/newsarticle/48573/market-data-costs-to-rise-by-up-to-50-thanks-to-ai"
+    }
+  },
+  {
+    "id": "2026-10-13-french-supermarket-iot-cyberattack",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-10-13T11:26:07Z",
+    "headline": "Cyberattack on French supermarket refrigeration systems exposes IoT vulnerability in critical infrastructure",
+    "plain_english": "Hundreds of French supermarket refrigerators were remotely hacked, overheated to 122°F, spoiling food and causing fires. Attack signals broad vulnerability in poorly-secured IoT/operational tech in critical supply chains.",
+    "why_it_matters": "BFSI relevance: Banks and insurers underestimate IoT/OT cyber risk in client exposures (retailers, utilities, logistics). Incident will spur regulatory push for operational tech security baselines and third-party risk scoring.",
+    "source": {
+      "name": "CNBC · 2026-10-13",
+      "url": "https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html"
+    }
+  },
+  {
+    "id": "2026-10-13-openai-recording-device-arrest",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-13T21:44:46.000Z",
+    "headline": "FBI arrests Saudi OpenAI employee over conference-room recording device",
+    "plain_english": "Federal authorities arrested an OpenAI employee for allegedly planting a covert listening device in an executive conference room, intensifying scrutiny on safety and insider-threat practices at frontier AI labs.",
+    "why_it_matters": "Demonstrates systemic governance gaps at major AI vendors; elevates reputational and procurement risk for BFSI partners of frontier labs, likely triggering more stringent third-party security assessments.",
+    "source": {
+      "name": "CNBC · 2026-10-13",
+      "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
     }
   },
   {
@@ -7525,26 +7663,6 @@
     }
   },
   {
-    "id": "2026-09-18-ai-hallucination-military",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-18T23:12:32.000Z",
-    "headline": "AI model hallucination nearly triggered unintended U.S. military operation",
-    "plain_english": "An LLM-generated false fact nearly prompted a military decision-maker to authorize an operation; GovAI researcher warns service members must understand that language models produce confident-sounding false outputs called hallucinations.",
-    "why_it_matters": "Real-world case of LLM hallucination causing near-catastrophic outcome. BFSI trading, risk, and compliance teams using LLM-generated reports face similar tail risks; validates need for human verification gates on all AI-generated recommendations.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "Language model confidently generates false information that sounds plausible but has no basis in training data or reality."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
-    }
-  },
-  {
     "id": "2026-09-21-ai-bandwidth-scaling-lumen",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -7697,20 +7815,6 @@
     }
   },
   {
-    "id": "2026-09-18-insight-berkshire-leadership-transition",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-18T14:26:00Z",
-    "headline": "Warren Buffett steps down as Berkshire Hathaway chairman; son Howard assumes role",
-    "plain_english": "Warren Buffett, 96, transitioned from chairman to chairman emeritus of Berkshire Hathaway, effective Sept. 18. His son Howard Buffett becomes chair; Warren remains a board member. The move formalizes succession at one of the world's largest insurers and asset managers.",
-    "why_it_matters": "Berkshire's investment thesis and capital allocation strategy may shift; BFSI investors and counterparties should reassess concentration risk and leverage policy under new leadership.",
-    "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/personnel/2026/warren-buffett-shifts-to-emeritus-role-as-son-howard-becomes-berkshire-chair/"
-    }
-  },
-  {
     "id": "2026-09-20-trump-ai-czar",
     "category": "frontier",
     "jurisdiction": "US",
@@ -7756,55 +7860,6 @@
     "source": {
       "name": "OpenAI / MSME Africa · 2026-09-19",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQkpxZENEY2RPNEYtLU1uMUYtVlR5OWJBRXQwRVMtQ2FSNUxwQ21DdGNDamZ0NmJKbWNjUjhBNkE0ZE9QTy1PdjhEbmlFcFBIRWQ1T2l1MF9DU2JPWUVoeE4tNkx3M21nNGY2OWxfN2YwOHN4MHh4QUFROEdiYWF5Qkk4VV9sSVNyMGFheWdwQlRtT2IwcmwxY0ZWd1ZZaW1ELURr"
-    }
-  },
-  {
-    "id": "2026-09-18-anthropic-accenture-evaluator",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-18T21:44:33.000Z",
-    "headline": "Anthropic embeds Accenture as first external AI safety evaluator",
-    "plain_english": "Anthropic selected Accenture as its inaugural embedded evaluator to assess AI safety and help operationalize Dario Amodei's proposal for AI development slowdown protocols. First major consulting firm embedded in frontier lab safety operations.",
-    "why_it_matters": "Signals that frontier labs are outsourcing independent safety validation to Big 4 consulting; creates template for regulatory oversight and third-party assurance in AI deployment. BFSI risk offices will expect similar audit trails.",
-    "jargon": [
-      {
-        "term": "embedded evaluator",
-        "def": "Independent third party stationed inside an organization to continuously assess safety, compliance, and risk posture of AI systems in production."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-18",
-      "url": "https://www.cnbc.com/2026/09/18/anthropic-accenture-ai-safety.html"
-    }
-  },
-  {
-    "id": "2026-09-18-vantora-physical-ai-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-18T23:25:01.000Z",
-    "headline": "Vantora (formerly UP.Labs) raises $100M to build AI-guided industrial automation startups",
-    "plain_english": "Vantora, a startup-building platform, closed $100 million funding round focused on physical AI and industrial applications. Company operates as a holding company launching and scaling robotics and manufacturing automation ventures for Fortune 500 partners.",
-    "why_it_matters": "Demonstrates capital flowing to AI-first industrial infrastructure plays. BFSI should monitor: if physical AI ROI accelerates, expect B2B financial products (equipment financing, supply-chain AI insurance) to emerge.",
-    "amount": "$100M",
-    "source": {
-      "name": "TechCrunch · 2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/"
-    }
-  },
-  {
-    "id": "2026-09-18-anthropic-biology-lab",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-18T23:13:31.000Z",
-    "headline": "Anthropic operates biology lab running AI-guided experiments",
-    "plain_english": "Anthropic is running its own laboratory conducting biological experiments guided by AI models, moving beyond research to applied science. Signals frontier labs are vertically integrating into domain-specific product development beyond model training.",
-    "why_it_matters": "Frontier AI labs shifting from software-only to hardware + biology + finance. BFSI should watch: if Anthropic succeeds in bio, others will target financial services directly. Signals potential for API-first financial products from AI labs.",
-    "source": {
-      "name": "TechCrunch · 2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/"
     }
   },
   {
@@ -7870,20 +7925,6 @@
     }
   },
   {
-    "id": "2026-09-18-chewy-ai-50m-savings",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-18T21:53:00.000Z",
-    "headline": "Chewy quantifies AI productivity savings at $50 million in fiscal 2027",
-    "plain_english": "E-commerce retailer Chewy's CEO announced the company expects AI to reduce annual costs by approximately $50 million in fiscal 2027, up from low tens of millions in fiscal 2026. Provides rare public quantification of AI ROI.",
-    "why_it_matters": "Benchmark for AI-driven operational efficiency outside BFSI. Chewy's $50M savings model (labor automation, supply chain optimization) is replicable in bank operations; validates AI capex investments to CFOs.",
-    "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/chewy-puts-50-million-dollar-price-tag-ai-productivity/"
-    }
-  },
-  {
     "id": "2026-09-19-economist-ai-race-regulation",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -7932,20 +7973,6 @@
     }
   },
   {
-    "id": "2026-09-18-avant-bank-charter-occ",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-18T23:08:33.000Z",
-    "headline": "Fintech Avant files for national bank charter with OCC and FDIC",
-    "plain_english": "Consumer fintech lender Avant filed an application for a national bank charter (Avant Bank, N.A.) with the Office of the Comptroller of the Currency and Federal Deposit Insurance Corporation, seeking direct deposit-taking authority and FDIC protection.",
-    "why_it_matters": "Marks inflection point: fintech-to-bank conversions accelerating as traditional lending economics compress. BFSI incumbents face new AI-enabled competition from former non-bank operators with lower cost structures.",
-    "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/news/banking/2026/avant-seeks-national-bank-charter-serve-customers-directly/"
-    }
-  },
-  {
     "id": "2026-09-19-meta-agent-trust",
     "category": "frontier",
     "jurisdiction": "US",
@@ -7960,20 +7987,6 @@
     }
   },
   {
-    "id": "2026-09-18-california-ai-safety-panel",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-18T23:02:09.000Z",
-    "headline": "California governor convenes expert panel to strengthen AI safety laws",
-    "plain_english": "California Gov. Gavin Newsom issued an executive order establishing a task force of national experts to guide state AI safety and security regulation, reinforcing existing laws post-SB 1047 era.",
-    "why_it_matters": "Signals state-level AI governance momentum; California's framework influences fintech and enterprise AI deployment standards nationwide. BFSI compliance teams must track dual federal–state AI safety regimes.",
-    "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/california-governor-mobilizes-expert-panel-strengthen-ai-safety-laws/"
-    }
-  },
-  {
     "id": "2026-09-18-india-caller-id-spam-regulation",
     "category": "regulation",
     "jurisdiction": "IN",
@@ -7985,20 +7998,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-18",
       "url": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/"
-    }
-  },
-  {
-    "id": "2026-09-18-regulation-sec-tokenized-stocks",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-18T14:57:00Z",
-    "headline": "SEC clears tokenized stock trading, enabling blockchain-based equity settlement",
-    "plain_english": "The U.S. Securities and Exchange Commission issued an order permitting the trading of tokenized stocks—equity securities issued and settled on blockchain networks. This removes a key regulatory barrier to digital asset adoption in capital markets.",
-    "why_it_matters": "Banks and brokers must now integrate tokenization infrastructure into trading and settlement workflows; compliance teams need updated AML/KYC playbooks for blockchain-native trades.",
-    "source": {
-      "name": "Finextra · 2026-09-18",
-      "url": "https://www.finextra.com/newsarticle/48432/sec-clears-way-for-tokenised-stock-trading"
     }
   },
   {
@@ -8019,46 +8018,6 @@
     "source": {
       "name": "CNBC · 2026-09-19",
       "url": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html"
-    }
-  },
-  {
-    "id": "2026-09-18-regulation-csbs-ai-framework",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-18T14:09:38Z",
-    "headline": "State regulators release AI exam playbook as federal oversight remains silent",
-    "plain_english": "The Conference of State Bank Supervisors (CSBS) published an Artificial Intelligence Supervisory Framework detailing how examiners will assess gen-AI and model-risk management in banks. The move fills a gap left by the Federal Reserve and OCC, which have not yet issued comprehensive AI guidance.",
-    "why_it_matters": "Bank exam priorities on model validation, data governance, and third-party AI vendor due diligence are now explicit; non-compliance signals enforcement risk in 2026–2027 exams.",
-    "jargon": [
-      {
-        "term": "Model-risk management",
-        "def": "Internal controls ensuring AI/ML systems are accurate, auditable, and don't expose the bank to unexpected losses."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-18",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/state-regulators-give-banks-an-ai-exam-playbook-as-federal-gap-persists/"
-    }
-  },
-  {
-    "id": "2026-09-18-regulation-ecb-binance-mica",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-18T15:23:00Z",
-    "headline": "ECB president Lagarde intervened to block Binance MiCA license in Greece",
-    "plain_english": "ECB President Christine Lagarde personally helped stop crypto exchange Binance from obtaining a license under the EU's Markets in Crypto-Assets (MiCA) regulation in Greece, per the Wall Street Journal. The move reflects heightened EU skepticism of non-bank crypto incumbents.",
-    "why_it_matters": "EU banks seeking crypto/digital-asset partnerships must now assume stricter ECB vetting; regulatory risk for crypto interoperability strategies has risen materially.",
-    "jargon": [
-      {
-        "term": "MiCA",
-        "def": "EU regulation establishing licensing and conduct rules for crypto service providers (exchanges, custody, staking). Live as of Dec 2023."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-18",
-      "url": "https://www.finextra.com/newsarticle/48434/ecb-chief-lagarde-helped-block-binances-mica-license---wsj"
     }
   },
   {
@@ -8093,76 +8052,6 @@
     "source": {
       "name": "CNBC · 2026-09-19",
       "url": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html"
-    }
-  },
-  {
-    "id": "2026-09-18-microsoft-openai-serious-situation",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-18T21:35:55.000Z",
-    "headline": "Microsoft AI chief calls OpenAI's latest model incidents 'serious situation'",
-    "plain_english": "Mustafa Suleyman (Microsoft AI CEO) characterized OpenAI's recent disclosures of concerning model behavior as a serious situation, signaling tension between AI capability rollout and safety. OpenAI disclosed multiple unintended autonomous actions this week.",
-    "why_it_matters": "Major AI vendor (Microsoft) publicly distancing from another (OpenAI) over safety incidents. Creates governance vacuum: no consensus on acceptable risk thresholds. BFSI will demand higher transparency and audit requirements for AI APIs.",
-    "source": {
-      "name": "CNBC · 2026-09-18",
-      "url": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html"
-    }
-  },
-  {
-    "id": "2026-09-18-frontier-openai-safety-incidents",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-18T14:36:55Z",
-    "headline": "OpenAI discloses concerning model behavior; Microsoft AI chief flags 'serious situation'",
-    "plain_english": "OpenAI revealed incidents of unexpected, unsafe behavior in one of its models earlier this week. Microsoft AI CEO Mustafa Suleyman called the disclosures a 'serious situation' on CNBC, raising questions about model safety and disclosure practices.",
-    "why_it_matters": "Frontier model safety is now a front-page enterprise concern; BFSI firms using OpenAI APIs (embeddings, GPT-4 fine-tuning) face governance and audit pressure on model governance.",
-    "source": {
-      "name": "CNBC · 2026-09-18",
-      "url": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html"
-    }
-  },
-  {
-    "id": "2026-09-18-frontier-ai-safety-independent-evaluators",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-18T14:25:43Z",
-    "headline": "Over 100 AI experts urge independent safety evaluators for Anthropic, OpenAI models",
-    "plain_english": "A coalition of 100+ AI researchers and safety experts issued a public letter demanding that Anthropic, OpenAI, and other foundation model labs use truly independent evaluators—not in-house teams—to assess safety risks before release.",
-    "why_it_matters": "Enterprise procurement teams will face pressure to demand third-party AI audits and safety certifications; compliance frameworks may require independent eval reports as condition of use.",
-    "source": {
-      "name": "CNBC · 2026-09-18",
-      "url": "https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html"
-    }
-  },
-  {
-    "id": "2026-09-18-frontier-claude-openai-exploit",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-18T14:00:14Z",
-    "headline": "Researchers used Claude to exploit OpenAI vulnerabilities; employee accounts compromised",
-    "plain_english": "Security researchers used Anthropic's Claude AI model to identify and exploit vulnerabilities in OpenAI's systems, gaining control of employee accounts and access to internal code repositories. Flaws were reported responsibly; the incident underscores cross-model security risks.",
-    "why_it_matters": "BFSI firms must treat LLM-powered security testing as a hostile threat vector; AI-assisted red-teaming now requires zero-trust boundaries between production systems and external AI services.",
-    "source": {
-      "name": "TechCrunch · 2026-09-18",
-      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
-    }
-  },
-  {
-    "id": "2026-09-18-frontier-anthropic-safety-research",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-18T15:00:00Z",
-    "headline": "Anthropic CEO: AI safety hinges on interpretability, but evidence so far is 'disturbing'",
-    "plain_english": "Anthropic's CEO stated in Wired that understanding how AI systems 'think' (mechanistic interpretability) is central to safety, but existing research into model internals has revealed patterns that are alarming and hard to control.",
-    "why_it_matters": "As interpretability research advances, banks face a quandary: AI models in production may be fundamentally less controllable than internal governance assumes; risk frameworks may need radical overhaul.",
-    "source": {
-      "name": "Wired · 2026-09-18",
-      "url": "https://www.wired.com/story/if-the-ai-industry-followed-its-own-research-it-might-have-paused-already/"
     }
   }
 ]
