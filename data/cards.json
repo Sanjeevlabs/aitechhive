@@ -1,5 +1,45 @@
 [
   {
+    "id": "2026-10-22-regulation-uk-eu-google-cloud-outage",
+    "category": "regulation",
+    "jurisdiction": "EU|UK",
+    "severity": "high",
+    "published_at": "2026-10-22T21:18:00Z",
+    "headline": "UK and EU regulators demand answers from Google after cloud outage hit bank websites",
+    "plain_english": "The European Banking Authority and UK Financial Conduct Authority contacted Google following a major cloud outage that disrupted multiple bank websites this week. Regulators are investigating operational resilience and third-party infrastructure risk.",
+    "why_it_matters": "Expect tighter cloud vendor oversight in EU and UK regulatory guidance. Banks will face new requirements to test failover scenarios and reduce single-vendor concentration in critical systems.",
+    "jargon": [
+      {
+        "term": "Operational Resilience",
+        "def": "A bank's ability to continue essential services during disruptions—now a regulatory expectation in EU and UK frameworks."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-22",
+      "url": "https://www.finextra.com/newsarticle/48637/uk-and-eu-financial-regulators-seek-answers-from-google-over-cloud-outage"
+    }
+  },
+  {
+    "id": "2026-10-22-regulation-bank-of-england-smcr-phase2",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-10-22T20:07:02Z",
+    "headline": "Bank of England launches Phase 2 review of Senior Managers and Certification Regime",
+    "plain_english": "The Bank of England and FCA are consulting on Phase 2 reforms to the SM&CR (Certification Regime), which sets accountability and conduct standards for senior bankers and certifiable staff. Phase 2 will likely expand scope to cover more roles and tighten governance.",
+    "why_it_matters": "Expect broader certification requirements for AI and data governance roles. Banks must prepare compliance frameworks now to cover new senior manager designations in emerging risk functions.",
+    "jargon": [
+      {
+        "term": "SM&CR",
+        "def": "Senior Managers and Certification Regime—UK rules making named individuals accountable for bank conduct and risk decisions."
+      }
+    ],
+    "source": {
+      "name": "Bank of England · 2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOLUZtMXhEWkwyaVFjRHJYanVyQkRqQmhfcXMzZFVNTEh5eHVrUXlzWUhGdF9fRnl0SDJwRC1sT1pxcmxMbVc5NWplSTZMQlhCMmtWbzBXVWh1dUZnSGo0aGRKYTg5LXIwdWFYVUpUczJZeFlMWDd1SkROdlB6VExvSUxCa1I1N29VYTFKVzg2eUpFdDU0elRDb1NJR2J2Y0JRUXNZaVMxY3RKRXBubDBmTmNoNDZOVlFodVNmb3l5ZVpKNjdl"
+    }
+  },
+  {
     "id": "2026-10-22-fca-complaints-h1",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -131,37 +171,23 @@
     }
   },
   {
-    "id": "2026-10-19-regulation-occ-notice",
-    "category": "regulation",
+    "id": "2026-10-22-deployment-us-banks-block-ai-agents",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-19T20:36:17Z",
-    "headline": "OCC publishes guidance or enforcement notice (details in official release)",
-    "plain_english": "The Office of the Comptroller of the Currency (OCC) posted a notice or guidance item. The raw feed lacks headline detail; refer to OCC.gov directly for supervisory guidance on model risk management, AI governance, third-party vendor oversight, or other operational risk topics relevant to national banks and federal savings associations.",
-    "why_it_matters": "OCC guidance on AI, model governance, or third-party risk is binding/expected-practice for national banks and directly influences BFSI risk frameworks. Monitor OCC.gov for issuances on LLM validation, agent oversight, or model documentation standards.",
-    "source": {
-      "name": "Office of the Comptroller of the Currency · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uVmEwdVNCX0V6T2QybmdlWV93eTJYMVFBdDhWVXBMT3J3NHB2NXowM253NDBiZGEtVUI4TUVOeklBVW9FLVI0X2pjS3daOVdPN0EwRmp6WmFPd0ZoMFVoX3JpUzJnallEOTJ2cw"
-    }
-  },
-  {
-    "id": "2026-10-19-fca-ai-advice-disclaimers",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-19T11:30:00.000Z",
-    "headline": "FCA mandates disclaimers on AI financial advice via agentic systems",
-    "plain_english": "UK Financial Conduct Authority is requiring AI providers offering financial advice through autonomous agents to display clear disclaimers to consumers. This targets advisory AI systems that operate without human intermediation in real-time decision-making.",
-    "why_it_matters": "Sets precedent for agent-specific disclosure rules—likely to trigger similar moves in EU, US. Forces fintech and bank vendors to architect disclaimer flows into agent loops before scaling.",
+    "severity": "high",
+    "published_at": "2026-10-22T21:17:12Z",
+    "headline": "US banks blocking third-party AI agents from accessing customer accounts",
+    "plain_english": "Major US banks are restricting external AI agents' access to customer accounts. Industry sources indicate banks are concerned about unauthorized data exposure, prompt injection, and liability if third-party agents act without explicit customer consent.",
+    "why_it_matters": "This blocks fintech and enterprise AI vendors from automating customer workflows (e.g., bill pay, transfers via AI assistants). Banks are choosing security and liability over UX integration—expect regulatory guidance soon on permissible agent architectures.",
     "jargon": [
       {
-        "term": "Agentic AI",
-        "def": "AI system that autonomously executes tasks (like portfolio trades or loan decisions) without human approval between steps, vs. advisory AI that only recommends."
+        "term": "AI Agent",
+        "def": "Autonomous software that accesses systems and performs actions (e.g., moving money, fetching data) based on user instructions without real-time human intervention."
       }
     ],
     "source": {
-      "name": "Finextra · 2026-10-19",
-      "url": "https://www.finextra.com/newsarticle/48604/fca-calls-for-disclaimers-on-ai-financial-advice"
+      "name": "Reuters · 2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcEFxNjAweHdoQ0ZaOWpUTGdVNWRkTXJ2Z08zeG1wOG03ZklKSW9WbTFBbGJWUVZVb211eFN4UFpjTG83aHBtMTViQ21fQmxBd2U0b2JTLXNHcjBReXRpMDl3am82SUVqVU1ndmRxejczTVZaWFlCMVZQSGNwWEQ0NXcyLWt0dlduZ2VUbjNyTUdyRUVndWEzV041cVQ1Mk1uV21vNGZBTUpaQ0tkVk1sOElNZW5NQThVZm9SemdUbXY"
     }
   },
   {
@@ -305,24 +331,20 @@
     }
   },
   {
-    "id": "2026-10-20-pay-by-bank-growth-europe",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-10-20T10:22:00Z",
-    "headline": "Pay by Bank adoption accelerates across Europe and UK as alternative to card payments",
-    "plain_english": "Pay by Bank—a direct bank account payment method bypassing credit/debit cards—is gaining traction in European and UK markets. Latest research shows consumer and merchant appetite for open banking–based payments as regulatory and fraud pressures mount on card schemes.",
-    "why_it_matters": "Signals shift in payment infrastructure from card networks to bank-to-bank rails; could reduce card-scheme dependency and fraud liability for BFSI, but requires investment in API standardization and settlement rails.",
-    "jargon": [
-      {
-        "term": "Open banking payment",
-        "def": "Transaction routed directly between customer's bank and merchant via standardized API (PSD2 in EU), bypassing card rails entirely."
-      }
-    ],
+    "id": "2026-10-22-vendor-cognitive-credit-40m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T00:01:00Z",
+    "headline": "Cognitive Credit raises $40M for corporate credit data and AI analytics",
+    "plain_english": "Cognitive Credit, a provider of specialist data and AI for credit markets, closed $40M led by Summit Partners and ETFS Capital. The platform helps credit teams analyze corporate borrower risk and market conditions using proprietary datasets and machine learning.",
+    "why_it_matters": "Credit teams at banks and asset managers now have a well-funded independent data vendor. This reduces reliance on bank-built credit models and creates new benchmarking pressure within risk functions.",
     "source": {
-      "name": "Finextra · 2026-10-20",
-      "url": "https://www.finextra.com/newsarticle/48612/pay-by-bank-sector-poised-for-growth-says-survey?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
+      "name": "Finextra · 2026-10-23",
+      "url": "https://www.finextra.com/newsarticle/48635/cognitive-credit-raises-40m-to-scale-specialist-data-and-ai-for-credit-markets"
+    },
+    "amount": "$40M",
+    "round": "Strategic Growth"
   },
   {
     "id": "2026-10-22-nebius-citi-35bn",
@@ -472,18 +494,17 @@
     }
   },
   {
-    "id": "2026-10-19-ifc-cauris-finance-africa",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-19T10:13:00.000Z",
-    "headline": "IFC commits $7.5 million to Cauris Finance's African fintech investment fund",
-    "plain_english": "International Finance Corporation announced a $7.5M commitment into Cauris Finance's fund targeting African fintech startups. Move reinforces multilateral backing for emerging-market digital finance infrastructure.",
-    "why_it_matters": "Signals sustained institutional appetite for African fintech despite macro headwinds. De-risks later-stage fundraising for portfolio companies serving underbanked segments.",
-    "amount": "$7.5M",
+    "id": "2026-10-22-shift-goldman-ai-main-street",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-22T20:43:15Z",
+    "headline": "Goldman Sachs makes major AI push into Main Street lending and small business",
+    "plain_english": "Goldman Sachs is deploying AI at scale to serve small and medium enterprises and Main Street lending—segments traditionally underserved by its investment banking core. The shift signals a strategic reorientation toward retail and SME financial services powered by automation and data.",
+    "why_it_matters": "A $2T+ global bank pivoting AI toward SMEs and lending (not trading/ops) signals that AI's highest ROI for banks is in customer acquisition and credit underwriting in underserved segments. Expect competitors to follow, intensifying competition for SME deposits and loans.",
     "source": {
-      "name": "innovation-village.com · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdURhMm9pU2l5MkRDSVFvX1BvblpJajRDTjlHYXRIcUJ1RGN5QzFfenUzX25CSUZjVDBORHRYZWIxRG4yZFVFc0NBNk00TFRTRG5wTVd1dU9QSDloTWJMWE5xQXJSZHN1eDlKWXAyaV9uLXRIcTVHUVJUdmpiT3FkMnA4SVgtd3p2U3Z4RUsxYm51bzIxRXVqQUQ4UmdMLVBxcUE"
+      "name": "NBC News · 2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOERqdTZkVDBjdlRfQ0JFV3NpLURsZmtoUGhLMnJtck9PNTgteG9CclotdTMtYm9tYnJORU9HR01uWmFIU3EzS2xEZmJTcDRwQ3Z0RjVXUGlVS1hoZzBsY3R5TFdteGliUF9leFA2d0I5NElnNlQzNkdOekdzcll1cnhGM0JBMC1JZklkN2lqazBROG1lcm40aGtPX0otcmIzTnc"
     }
   },
   {
@@ -642,20 +663,6 @@
     }
   },
   {
-    "id": "2026-10-19-tearsheet-tokenized-deposits",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-19T11:30:00.000Z",
-    "headline": "Citigroup explores tokenized deposits and stablecoin integration for institutional clients",
-    "plain_english": "Citigroup CEO Jane Fraser signaled strategic interest in tokenized deposit products and stablecoin rails for corporate and institutional treasury. Coinbase's stablecoin adoption cited as market proof point.",
-    "why_it_matters": "Mega-bank endorsement legitimizes on-chain treasury settlement. Opens path for tier-1 banks to compete with crypto-native platforms on rails, liquidity, and rails velocity. Expect pilot program announcements within 12 months.",
-    "source": {
-      "name": "Tearsheet · 2026-10-19",
-      "url": "https://tearsheet.co/10-q/jane-fraser-sees-a-future-in-tokenized-deposits-coinbase-shows-why-citi-needs-stablecoins-too/"
-    }
-  },
-  {
     "id": "2026-10-22-hugging-face-biology",
     "category": "tool",
     "jurisdiction": "Global",
@@ -709,6 +716,26 @@
     "source": {
       "name": "WSJ · 2026-09-27",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2VjVE1WTlJTbjc3MG5xU0lJRDdTWmhGcGN3ZWo0Q0pGbDNucUZvanFhblFSX281cFVnZXZSNE9WaXFrQXJVTG5TcDhiUHgxM3FaSk5IaGNTMnRZdmpTcWJ6NVBXSERnV1pRa0R5Y3FvTV96R1JkU0pvSlN1VmstMlZKbW5PbjQ1SjZwTVlGWWs0ZDNVeTBCTjdNbnNCdzJMeVVaNVRBckFCaXZtLXg1Q3F1dllDNHJzMWxGTk1oV0d4QQ"
+    }
+  },
+  {
+    "id": "2026-10-22-research-ai-serving-harness",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-22T21:17:29Z",
+    "headline": "Competitive edge in enterprise AI shifts from model choice to serving infrastructure",
+    "plain_english": "MIT Technology Review reports that enterprise AI success now hinges less on which foundation model (GPT, Claude, etc.) you choose and more on the operational layer around it—serving, caching, latency optimization, and integration. This mirrors infrastructure maturation in data engineering.",
+    "why_it_matters": "Banks will see diminishing ROI from model-hopping. Instead, invest in production-grade serving stacks: vector DBs, guardrails, caching, and integration with core banking systems. Vendor lock-in shifts from models to operational infrastructure.",
+    "jargon": [
+      {
+        "term": "Serving Infrastructure",
+        "def": "The systems that deploy and run AI models in production—caching, scaling, latency reduction, integration—separate from model training."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-10-22",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/"
     }
   },
   {
@@ -874,17 +901,19 @@
     }
   },
   {
-    "id": "2026-10-07-research-meta-csam-detection",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-10-22-insight-meta-ai-spend-fcf",
+    "category": "insight",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-07T16:53:46.000Z",
-    "headline": "Meta deploys AI tools to detect ads masking child sexual abuse material links",
-    "plain_english": "Meta rolled out new AI detection systems to identify advertisements that appear innocuous but secretly redirect users to child sexual abuse material (CSAM) hosted off-platform.",
-    "why_it_matters": "Raises bar for fintech/banking ad compliance; regulators will expect similar detection for financial fraud ads. Sets precedent for proactive, AI-driven harmful-content identification.",
+    "published_at": "2026-10-22T20:03:03Z",
+    "headline": "Meta's AI capex turns free cash flow negative; credit markets signal distress",
+    "plain_english": "Meta's Q3 earnings show free cash flow turned negative due to AI spending. Credit default swap prices on Meta bonds hit all-time highs, signaling investor worry about sustained capex and returns on AI infrastructure. The market is pricing in higher refinancing costs.",
+    "why_it_matters": "This is a cautionary tale for banks planning $1B+ AI infrastructure investments. If hyperscalers can't achieve near-term FCF from AI spend, ROI modeling for enterprise AI must be more conservative. Expect boards to demand stronger business case before greenlighting mega-scale projects.",
+    "stat_value": "Free cash flow negative",
+    "stat_label": "Meta Q3 2026 due to AI capex",
     "source": {
-      "name": "TechCrunch · 2026-10-07",
-      "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/"
+      "name": "CNBC · 2026-10-22",
+      "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
     }
   },
   {
@@ -1028,20 +1057,19 @@
     }
   },
   {
-    "id": "2026-10-19-fed-ai-inflation",
-    "category": "insight",
-    "jurisdiction": "US",
+    "id": "2026-10-22-frontier-openai-30b-1.25t",
+    "category": "frontier",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-19T10:24:37.000Z",
-    "headline": "Federal Reserve signals AI capex surge may worsen inflation despite productivity gains",
-    "plain_english": "Federal Reserve analysis warns that massive AI infrastructure investment—especially chip and energy demand—could add near-term inflationary pressure. Productivity gains from AI deployment may lag capex timing, creating policy headwinds for rate cuts.",
-    "why_it_matters": "If Fed tightens policy due to AI-driven inflation, it directly impacts fintech funding costs, M&A multiples, and bank margin compression. BFSI CFOs must brace for prolonged higher cost-of-capital.",
-    "stat_value": "Inflation risk",
-    "stat_label": "from AI infrastructure capex may persist 18–36 months ahead of productivity payoff",
+    "published_at": "2026-10-22T20:41:37Z",
+    "headline": "OpenAI nears $30B funding round at $1.25T valuation ahead of 2027 IPO",
+    "plain_english": "OpenAI is finalizing up to $30B in new funding led by UAE investors at a $1.25 trillion valuation. The round is designed as a bridge to an expected 2027 public offering. If completed, it would make OpenAI the most valuable private company ever.",
+    "why_it_matters": "A $1.25T OpenAI valuation signals investor conviction that frontier AI will drive enterprise productivity for years. Banks using OpenAI APIs face concentration risk if OpenAI's financial stability or data-use terms change post-IPO.",
     "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw"
-    }
+      "name": "CNBC · 2026-10-22",
+      "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html"
+    },
+    "amount": "$30B"
   },
   {
     "id": "2026-10-22-nvidia-neocloud-demand",
@@ -1179,20 +1207,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-18",
       "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
-    }
-  },
-  {
-    "id": "2026-10-17-anthropic-workforce-composition",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-17T20:21:19.000Z",
-    "headline": "Anthropic workforce skews more senior; meeting time up sharply",
-    "plain_english": "Anthropic's internal composition has shifted: workforce has become less junior, with staff spending significantly more time in meetings. Signals organizational maturation and possible operational overhead as the AI safety lab scales.",
-    "why_it_matters": "Frontier AI labs' hiring and org structure predict where R&D velocity shifts; more senior staff + meeting overhead can signal either focus-hardening or bureaucratic drag.",
-    "source": {
-      "name": "TechCrunch · 2026-10-17",
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"
     }
   },
   {
@@ -1559,6 +1573,133 @@
     "source": {
       "name": "Reuters · 2026-10-09",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc2ZtTkg1OU1ZeEVqdGdTUjFKR1BSYkwzcWRwWG1wNjE2UFpqa2NYbmxPMXNxM2pURVpLWVVUYm9zUmE2S1QwMEUxZURaejlrb1g1V0dEMF80RnBWOUo4U1VPYzNlM0M5dlBnMkdQVS1ObHA2b1BYTmJLa1RuUk8xSVB4bk5FUnRQblcwTUtLTVFMZGU2Y0o0VEVWLWFBUnRCOWlpUEI0MmF2WGJyTmdhd3lpQlZDZ3JQZXJMd0FYcw"
+    }
+  },
+  {
+    "id": "2026-10-19-regulation-occ-notice",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-19T20:36:17Z",
+    "headline": "OCC publishes guidance or enforcement notice (details in official release)",
+    "plain_english": "The Office of the Comptroller of the Currency (OCC) posted a notice or guidance item. The raw feed lacks headline detail; refer to OCC.gov directly for supervisory guidance on model risk management, AI governance, third-party vendor oversight, or other operational risk topics relevant to national banks and federal savings associations.",
+    "why_it_matters": "OCC guidance on AI, model governance, or third-party risk is binding/expected-practice for national banks and directly influences BFSI risk frameworks. Monitor OCC.gov for issuances on LLM validation, agent oversight, or model documentation standards.",
+    "source": {
+      "name": "Office of the Comptroller of the Currency · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uVmEwdVNCX0V6T2QybmdlWV93eTJYMVFBdDhWVXBMT3J3NHB2NXowM253NDBiZGEtVUI4TUVOeklBVW9FLVI0X2pjS3daOVdPN0EwRmp6WmFPd0ZoMFVoX3JpUzJnallEOTJ2cw"
+    }
+  },
+  {
+    "id": "2026-10-19-fca-ai-advice-disclaimers",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-10-19T11:30:00.000Z",
+    "headline": "FCA mandates disclaimers on AI financial advice via agentic systems",
+    "plain_english": "UK Financial Conduct Authority is requiring AI providers offering financial advice through autonomous agents to display clear disclaimers to consumers. This targets advisory AI systems that operate without human intermediation in real-time decision-making.",
+    "why_it_matters": "Sets precedent for agent-specific disclosure rules—likely to trigger similar moves in EU, US. Forces fintech and bank vendors to architect disclaimer flows into agent loops before scaling.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "AI system that autonomously executes tasks (like portfolio trades or loan decisions) without human approval between steps, vs. advisory AI that only recommends."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-19",
+      "url": "https://www.finextra.com/newsarticle/48604/fca-calls-for-disclaimers-on-ai-financial-advice"
+    }
+  },
+  {
+    "id": "2026-10-20-pay-by-bank-growth-europe",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-10-20T10:22:00Z",
+    "headline": "Pay by Bank adoption accelerates across Europe and UK as alternative to card payments",
+    "plain_english": "Pay by Bank—a direct bank account payment method bypassing credit/debit cards—is gaining traction in European and UK markets. Latest research shows consumer and merchant appetite for open banking–based payments as regulatory and fraud pressures mount on card schemes.",
+    "why_it_matters": "Signals shift in payment infrastructure from card networks to bank-to-bank rails; could reduce card-scheme dependency and fraud liability for BFSI, but requires investment in API standardization and settlement rails.",
+    "jargon": [
+      {
+        "term": "Open banking payment",
+        "def": "Transaction routed directly between customer's bank and merchant via standardized API (PSD2 in EU), bypassing card rails entirely."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-20",
+      "url": "https://www.finextra.com/newsarticle/48612/pay-by-bank-sector-poised-for-growth-says-survey?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-10-19-ifc-cauris-finance-africa",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-19T10:13:00.000Z",
+    "headline": "IFC commits $7.5 million to Cauris Finance's African fintech investment fund",
+    "plain_english": "International Finance Corporation announced a $7.5M commitment into Cauris Finance's fund targeting African fintech startups. Move reinforces multilateral backing for emerging-market digital finance infrastructure.",
+    "why_it_matters": "Signals sustained institutional appetite for African fintech despite macro headwinds. De-risks later-stage fundraising for portfolio companies serving underbanked segments.",
+    "amount": "$7.5M",
+    "source": {
+      "name": "innovation-village.com · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdURhMm9pU2l5MkRDSVFvX1BvblpJajRDTjlHYXRIcUJ1RGN5QzFfenUzX25CSUZjVDBORHRYZWIxRG4yZFVFc0NBNk00TFRTRG5wTVd1dU9QSDloTWJMWE5xQXJSZHN1eDlKWXAyaV9uLXRIcTVHUVJUdmpiT3FkMnA4SVgtd3p2U3Z4RUsxYm51bzIxRXVqQUQ4UmdMLVBxcUE"
+    }
+  },
+  {
+    "id": "2026-10-19-tearsheet-tokenized-deposits",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-19T11:30:00.000Z",
+    "headline": "Citigroup explores tokenized deposits and stablecoin integration for institutional clients",
+    "plain_english": "Citigroup CEO Jane Fraser signaled strategic interest in tokenized deposit products and stablecoin rails for corporate and institutional treasury. Coinbase's stablecoin adoption cited as market proof point.",
+    "why_it_matters": "Mega-bank endorsement legitimizes on-chain treasury settlement. Opens path for tier-1 banks to compete with crypto-native platforms on rails, liquidity, and rails velocity. Expect pilot program announcements within 12 months.",
+    "source": {
+      "name": "Tearsheet · 2026-10-19",
+      "url": "https://tearsheet.co/10-q/jane-fraser-sees-a-future-in-tokenized-deposits-coinbase-shows-why-citi-needs-stablecoins-too/"
+    }
+  },
+  {
+    "id": "2026-10-07-research-meta-csam-detection",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-07T16:53:46.000Z",
+    "headline": "Meta deploys AI tools to detect ads masking child sexual abuse material links",
+    "plain_english": "Meta rolled out new AI detection systems to identify advertisements that appear innocuous but secretly redirect users to child sexual abuse material (CSAM) hosted off-platform.",
+    "why_it_matters": "Raises bar for fintech/banking ad compliance; regulators will expect similar detection for financial fraud ads. Sets precedent for proactive, AI-driven harmful-content identification.",
+    "source": {
+      "name": "TechCrunch · 2026-10-07",
+      "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/"
+    }
+  },
+  {
+    "id": "2026-10-19-fed-ai-inflation",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-19T10:24:37.000Z",
+    "headline": "Federal Reserve signals AI capex surge may worsen inflation despite productivity gains",
+    "plain_english": "Federal Reserve analysis warns that massive AI infrastructure investment—especially chip and energy demand—could add near-term inflationary pressure. Productivity gains from AI deployment may lag capex timing, creating policy headwinds for rate cuts.",
+    "why_it_matters": "If Fed tightens policy due to AI-driven inflation, it directly impacts fintech funding costs, M&A multiples, and bank margin compression. BFSI CFOs must brace for prolonged higher cost-of-capital.",
+    "stat_value": "Inflation risk",
+    "stat_label": "from AI infrastructure capex may persist 18–36 months ahead of productivity payoff",
+    "source": {
+      "name": "Reuters · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw"
+    }
+  },
+  {
+    "id": "2026-10-17-anthropic-workforce-composition",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-17T20:21:19.000Z",
+    "headline": "Anthropic workforce skews more senior; meeting time up sharply",
+    "plain_english": "Anthropic's internal composition has shifted: workforce has become less junior, with staff spending significantly more time in meetings. Signals organizational maturation and possible operational overhead as the AI safety lab scales.",
+    "why_it_matters": "Frontier AI labs' hiring and org structure predict where R&D velocity shifts; more senior staff + meeting overhead can signal either focus-hardening or bureaucratic drag.",
+    "source": {
+      "name": "TechCrunch · 2026-10-17",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"
     }
   },
   {
@@ -6791,26 +6932,6 @@
     }
   },
   {
-    "id": "2026-09-22-research-quantum-ai-data-reduction-citi",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-22T15:29:09.000Z",
-    "headline": "Quantum-AI hybrid cuts data requirements for financial modeling",
-    "plain_english": "Oxford Quantum Computing, Citi, and National Quantum Computing Centre found that quantum-AI hybrid systems reduce training data needs for financial risk models. Proof-of-concept on portfolio optimization and market simulation.",
-    "why_it_matters": "Quantum-AI fusion lowers barrier to ML adoption in finance; smaller data sets mean faster time-to-model and easier compliance with data minimization rules (GDPR, PCI). Early-mover banks gain competitive edge.",
-    "jargon": [
-      {
-        "term": "quantum-AI hybrid",
-        "def": "System combining quantum processors for specific optimization tasks with classical AI for feature extraction and pattern recognition."
-      }
-    ],
-    "source": {
-      "name": "Quantum Zeitgeist · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TbnpZdnRVdkNsUFBJanlJZ3MyU1ZhLXA3MlFfUzVYLWxZRGdTUEt4ZnpHQmE4djJyYmZUeVNxODNfUFZ0a3hZei1QUi1XUVZhY0JNbV9HNVVPTHp5QzVaRmNWQ1FCbE4x"
-    }
-  },
-  {
     "id": "2026-09-27-kpmg-pulse-fintech-h1-2026",
     "category": "insight",
     "jurisdiction": "Global",
@@ -7779,22 +7900,6 @@
     }
   },
   {
-    "id": "2026-09-23-mckinseys-ai-cost-warning",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-22T22:50:37Z",
-    "headline": "McKinsey: AI agent operating costs vary wildly; enterprises must benchmark deployment economics",
-    "plain_english": "McKinsey analysis shows AI agent deployment costs diverge significantly across industries and architectures. Some agents cost $10–50 per transaction; others exceed $500. BFSI firms must rigorously benchmark total-cost-of-ownership (compute, training, monitoring, guardrails) before committing to scale.",
-    "why_it_matters": "CFOs and risk officers now have quantified cost-per-use benchmarks. Agencies claiming 'cost-neutral' AI automation will face pushback; procurement teams will demand granular cost disclosure and live ROI tracking to justify agentic AI budgets.",
-    "stat_value": "$10–500",
-    "stat_label": "cost-per-transaction range for AI agents depending on architecture",
-    "source": {
-      "name": "McKinsey (via Business Insider) · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNenZ1WFhCMVZNdTZKdFlMd0tfMU1vMkstMGYwR2VHcV9yejRWMjJ3UzhxblVzNDJfVXRlanNaSDk3Tk1hWV9wcTZhWHY3SzJ2UzNPUDd5NkZPV0hoX1VVem5JSWd0WmRBWXJEcEg5UUtpVE1aem5mVi0xb1BIMTRfMVFoSjJZQkc0"
-    }
-  },
-  {
     "id": "2026-09-25-openai-government-website-interference",
     "category": "frontier",
     "jurisdiction": "US",
@@ -7829,20 +7934,6 @@
     }
   },
   {
-    "id": "2026-09-22-nuvei-ftc-chargeback-enforcement",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-22T23:27:15Z",
-    "headline": "FTC enforcement action against Nuvei signals tighter chargeback compliance and merchant vetting rules",
-    "plain_english": "The FTC has filed cases against payment processor Nuvei alleging it opened merchant accounts for high-risk vendors knowing they posed chargeback and fraud exposure. The agency views merchant onboarding due diligence as a core compliance obligation, not a business discretion.",
-    "why_it_matters": "FTC enforcement redefines acquiring bank and processor liability. Firms must now audit merchant vetting workflows and algorithmic risk scoring. Non-compliance risks enforcement action, customer refunds, and license suspension. This will force rapid compliance upgrades in merchant KYC/KYB automation.",
-    "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/legal/2026/nuvei-case-turns-chargebacks-into-an-ftc-warning-sign/"
-    }
-  },
-  {
     "id": "2026-09-24-stitch-fix-ai-tryon",
     "category": "deployment",
     "jurisdiction": "US",
@@ -7874,20 +7965,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-24",
       "url": "https://www.pymnts.com/commerce/2026/banks-put-transaction-data-to-work-in-commerce-media/"
-    }
-  },
-  {
-    "id": "2026-09-22-crocs-unified-ai-agent",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-22T22:58:21Z",
-    "headline": "Crocs consolidates sales, service, and returns into single AI agent; eliminates customer handoffs",
-    "plain_english": "Crocs deployed a unified AI agent that handles product recommendations, inventory checks, sizing guidance, and return processing in a single conversation thread. Customers no longer bounce between FAQ pages, chat queues, and support teams for multi-step transactions.",
-    "why_it_matters": "Single-threaded agent architecture signals industry shift away from narrow task-specific bots. BFSI can apply same model: consolidate account inquiry, balance transfer, loan inquiry, and dispute handling into one continuous agent session. Reduces support costs and improves CSAT.",
-    "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/crocs-puts-one-ai-agent-in-charge-of-sales-and-service/"
     }
   },
   {
@@ -7926,36 +8003,6 @@
     "source": {
       "name": "PYMNTS · 2026-09-23",
       "url": "https://www.pymnts.com/news/b2b-payments/2026/agentic-ai-could-make-net-30-obsolete/"
-    }
-  },
-  {
-    "id": "2026-09-22-meta-muse-human-fallback",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-22T23:12:11Z",
-    "headline": "Meta switches Muse AI assistant to human handlers after merchants reject AI-only calls",
-    "plain_english": "Meta's Muse AI phone-calling assistant encountered merchant pushback when it placed automated outbound calls. Meta now routes some calls to human contractors to rebuild trust. The move shows limits of fully autonomous agent deployments in high-stakes (sales/support) contexts.",
-    "why_it_matters": "BFSI agents (loan origination, compliance inquiry, debt collection) face same trust friction. Hybrid human-in-the-loop loops will become table stakes. Firms should budget for human oversight checkpoints rather than betting on fully autonomous agents for customer-facing workflows.",
-    "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-tests-human-callers-for-muse-after-merchants-hang-up-on-ai/"
-    }
-  },
-  {
-    "id": "2026-09-22-insight-citi-ai-patches-guardrails",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-22T15:03:03.000Z",
-    "headline": "Citi CEO warns of 'tsunami' of AI security patches ahead",
-    "plain_english": "Citi's CEO cautioned that banks should expect a wave of critical AI model patches and guardrail updates as vulnerabilities emerge in production deployments. Signals that current AI guardrails are insufficient and reactive mode is coming.",
-    "why_it_matters": "Banks must budget for continuous AI patching overhead; vulnerability disclosure and patch cycles will create operational chaos without mature AI-specific DevOps; vendors promising 'stable' models will face credibility risk.",
-    "stat_value": "Tsunami incoming",
-    "stat_label": "Citi CEO expectation on AI patch frequency",
-    "source": {
-      "name": "Business Chief · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHhTRDhtYVc4b01VNWhCVjVfN09oelNiR2J3ZkVNaDFQV3J1VG0yWHVCNFpVX3lQLTNxWldlSTlRR01kNkIxd2NOSW56akVNRWNKQVF1MzdrSDRrRkVLeDYtT3VmQUNWc1VNOXJIamZGM01hQThLcFBzX0JIMURhNzRndEFTcjBqZ2MwY1JVRGVSQmM"
     }
   },
   {
@@ -8130,22 +8177,6 @@
     }
   },
   {
-    "id": "2026-09-22-vendor-paymob-series-c-funding",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-09-22T14:55:19.000Z",
-    "headline": "Paymob raises $35 million in pre-Series C round",
-    "plain_english": "Paymob, Egypt-based fintech serving emerging-market merchants and banks, closed $35M pre-Series C funding. Targets MENA, Africa expansion for payment processing and digital banking infrastructure.",
-    "why_it_matters": "Consolidation of emerging-market payment infrastructure; successful Series C signals investor confidence in non-US fintech; likely acquisition target for regional or global acquirers.",
-    "amount": "$35M",
-    "round": "Pre-Series C",
-    "source": {
-      "name": "The Paypers · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTzVDb2NicEg2UDZzY21QR0Q5TURIWm4xM2FuRHRwUnRLUXE4MmZvSUFwWG4tekN6aGpMNXk5a0hBbW5zYWRmdzZ2Vzc0SjcxNmxiSkdMbFhoUWNXS20yMzdDanEtaHk5MjJpTlU3Nm1mV0xLY1F3czJqb1FEOHEzTlBEOHhnWTVuSF9fblNBNW1MQlpKUkZHZDZ3"
-    }
-  },
-  {
     "id": "2026-09-23-canadian-banks-tokenized-deposits",
     "category": "shift",
     "jurisdiction": "APAC",
@@ -8171,41 +8202,6 @@
     "source": {
       "name": "Los Angeles Times · 2026-09-23",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSFBKaFQ4UHoxRDVBeko2QmFQeDRselp1bkRkYldOcmZoVHYyVFBud0Z4QnNxZWVUSzBkU0cyUG1GZ3lnOS00aF9NRlp5SkNUVHVTUUdUMmQ1Z3N1dUh2eWhUUEd4bXpIbHBsY3UwdjlNa25YSW54TERTVm9mQnVjVkRpSmUtRzhBaTBLM2R5YWdUQ3ZRazBqbHhBVkk3X2dfakZVYUR2dTJlZWJacDZZeGYzWmpfUEl6U3lUS1BJTnl2angyRWN3TTdRRkIxMFdFN09pN2xYb1NyYXIyMmc"
-    }
-  },
-  {
-    "id": "2026-09-22-regulation-eu-stablecoin-deposit-rule",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-22T14:25:01.000Z",
-    "headline": "EU central banks challenge MiCA stablecoin reserve requirement",
-    "plain_english": "European System of Central Banks published response to Markets in Crypto-Assets regulation arguing the 30% bank deposit reserve rule for stablecoin issuers reduces lending stability. Signals potential policy revision ahead.",
-    "why_it_matters": "Weakening reserve rules accelerates stablecoin adoption as settlement layer; banks may shift deposits away from customer accounts into crypto reserves, shrinking traditional lending capital.",
-    "jargon": [
-      {
-        "term": "MiCA",
-        "def": "EU Markets in Crypto-Assets regulation requiring stablecoin issuers to maintain reserve backing with regulated deposits."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/eu-central-banks-push-to-eliminate-stablecoin-deposit-rule/"
-    }
-  },
-  {
-    "id": "2026-09-22-vendor-mistral-pimento-acquisition",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-09-22T15:00:15.000Z",
-    "headline": "Mistral acquires adtech startup Pimento for €12.7 million",
-    "plain_english": "French AI lab Mistral bought Pimento, an adtech startup, in cash-and-shares deal valued at €12.7M. Expands Mistral's product surface beyond language models into targeted advertising automation.",
-    "why_it_matters": "Shows frontier labs building adjacent business lines to diversify revenue; Mistral consolidating talent and capabilities to compete with larger US models in applied domains.",
-    "amount": "€12.7M",
-    "source": {
-      "name": "Sifted · 2026-09-22",
-      "url": "https://sifted.eu/articles/exclusive-mistral-pimento-acquisition/"
     }
   },
   {
@@ -8248,87 +8244,6 @@
     "source": {
       "name": "contxto · 2026-09-22",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObkpqcmk4S3g0bFJLTUZhNzdfSmR4NEE1UnRpRXN6MVJvMTd2MnVFVmdTQ0xpckF0b2FNakJyUGxhU0hGdTl2bWNiZlFhZk5UMDRIaHZUX3ZqcjQySkhybUlPcmQ5dHh6V1dEMjBoa2xkUzQwR01iRWlhQkY0Z0tYa2E0QjN6d0FXT0w2ZXR5bnZVRFFoMXlPOHVTbVNUajJqSWNiRXVzNmRuamRteTZacUIwYw"
-    }
-  },
-  {
-    "id": "2026-09-22-deployment-mastercard-sofi-stablecoin-settlement",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-22T14:36:34.000Z",
-    "headline": "SoFi Bank migrates $25 billion card program to stablecoin settlement",
-    "plain_english": "SoFi Bank, in partnership with Mastercard, shifted its entire $25 billion debit and credit card program to stablecoin-based transaction settlement. First major US bank production deployment of blockchain-native payment rails at scale.",
-    "why_it_matters": "Demonstrates viability of non-traditional settlement; other banks watching for cost savings and operational friction; if successful, reshapes card network economics and reduces dependence on ACH/wire infrastructure.",
-    "scale": {
-      "metric": "customers",
-      "value": "millions (SoFi Bank debit/credit cardholders)"
-    },
-    "source": {
-      "name": "PYMNTS · 2026-09-22",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/mastercard-sofi-bring-stablecoin-settlement-cards-step-one-broader-rollout/"
-    }
-  },
-  {
-    "id": "2026-09-22-vendor-verda-cloud-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-09-22T16:08:30.000Z",
-    "headline": "Verda cloud infrastructure startup raises $189 million",
-    "plain_english": "Verda, EU-based cloud infrastructure firm, closed funding round led by Emergence Capital at $189M valuation. Positions as alternative to hyperscalers for data-intensive AI workloads (particularly inference and fine-tuning).",
-    "why_it_matters": "Signals investor bet on fragmented cloud compute market; banks and enterprises increasingly want non-US cloud alternatives for compliance and cost; Verda captures European AI infrastructure demand.",
-    "amount": "$189M",
-    "source": {
-      "name": "Sifted · 2026-09-22",
-      "url": "https://sifted.eu/articles/verda-datacrunch-funding-round-emergence-ventures/"
-    }
-  },
-  {
-    "id": "2026-09-22-shift-agentic-commerce-fraud-principles",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-22T14:45:00.000Z",
-    "headline": "Six global banks establish fraud principles for agentic commerce",
-    "plain_english": "Bank of America, NatWest, and four other major banks published shared principles to address scams, fraud, and data privacy risks as AI agents begin conducting autonomous transactions. First industry-wide guardrail framework for agent-driven commerce.",
-    "why_it_matters": "Sets baseline expectations for agent accountability before widespread deployment; banks that ignore risk early face regulatory backlash and customer loss as incidents mount.",
-    "jargon": [
-      {
-        "term": "agentic commerce",
-        "def": "Autonomous AI agents authorized to conduct financial transactions (payments, transfers, settlements) without human intervention for each action."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-22",
-      "url": "https://www.finextra.com/newsarticle/48454/global-banks-take-on-agentic-commerce-scam-and-fraud-concerns"
-    }
-  },
-  {
-    "id": "2026-09-22-frontier-astroforge-ai-spacecraft",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-22T15:00:00.000Z",
-    "headline": "AstroForge deploys transformer-based AI to command spacecraft autonomously",
-    "plain_english": "Space startup AstroForge is launching Autonomy-1, a spacecraft with a small transformer-based AI model in command of navigation, power management, and mission planning. Model runs on-board without ground control intervention.",
-    "why_it_matters": "Validates edge AI viability for high-stakes, low-latency environments; banks watching for lessons in fault tolerance and real-time decision-making under uncertainty; sets precedent for autonomous systems in critical infrastructure.",
-    "source": {
-      "name": "TechCrunch · 2026-09-22",
-      "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/"
-    }
-  },
-  {
-    "id": "2026-09-22-deployment-cellpoint-ai-decision-platform",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-09-22T14:42:24.000Z",
-    "headline": "CellPoint launches AI-powered decision platform under new leadership",
-    "plain_english": "CellPoint Digital, B2B payments infrastructure, launched new AI-decision platform and announced leadership transition. Automates payment routing, fraud detection, and compliance checks for enterprise clients.",
-    "why_it_matters": "Consolidation of payment ops around AI; smaller players integrating AI to compete with hyperscalers; signals market shift from rule-based to adaptive decision engines in payments.",
-    "source": {
-      "name": "Travolution · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTDFFdmhLd1RJRmp1SkVCUTdJRFVwVWttU0d3cDhSSDQ5SXpiRHY1RG02VW9ZWHU1LWZLZFZCeHNBZEx4Zi1uOWJuRFhVdTl1SDFsNGs3aVdLZzVzQ21pN0R2dnR3SHROSERUT2EtUGZFbFotTklQV1JBX0xWYlZSSUh6QnJSSkUxdjFld3BlelMwVlViUGwwaUt6WWpqWUEyQTNPMDVfbXc"
     }
   }
 ]
