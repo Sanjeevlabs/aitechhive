@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-23-bank-italy-digital-assets",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-23T21:19:43Z",
+    "headline": "Bank of Italy encourages banking sector digital asset investments despite market uncertainty",
+    "plain_english": "Italy's central bank is publicly backing bank investments in digital assets (crypto, tokenization) despite ongoing uncertainty. The signal encourages BFSI adoption of blockchain and digital-native capabilities.",
+    "why_it_matters": "EU regulators are diverging on digital asset appetite. Banks receiving 'green light' signals from national regulators may accelerate tokenization and stablecoin infrastructure—compliance teams need clarity on conflicting regional positions.",
+    "jargon": [
+      {
+        "term": "tokenization",
+        "def": "Converting traditional financial assets (bonds, equities, FX) into blockchain-based digital tokens for faster settlement and fractional ownership."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeWJaUzBocHF6S0JJZEEya3l3T25FSjZ5UWNhY1hfZGlIYS15enpoMjFaZFJTMVcxcVBPVEJ2TUpxT2JueEZfUDlSdVBGSUp5NTl4Rnhlay1NWXZFbTNPQXNtamNBcDdFWjE5U0ZhODZBYnBBcnJSZUdaeEJRLUpiMFJFTWVVamV6Sjd6QnJfSElfanl6ZzN6SEZrZ3NBSllOV0VWSWhBWWx0RTVyaHFaV0hBOFpRS1hiZnhsc2tHU0E0dw?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-23-wyden-ai-job-displacement",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T20:14:30Z",
+    "headline": "Senator Wyden proposes worker assistance fund for AI-driven job displacement",
+    "plain_english": "U.S. Senator Wyden introduced a proposal to provide federal aid for workers losing jobs to AI adoption. The signal indicates Congress is moving toward AI labor-impact regulation and potential employer liability.",
+    "why_it_matters": "BFSI workforce automation faces emerging political risk. Employers deploying AI to reduce headcount may face future mandates to fund retraining or severance—cost models should build in policy tail risk.",
+    "source": {
+      "name": "Newsmax · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONkNCcEhTZU9vVW41Q2VVVjhkeVFjcUlWdXdDaVoyM0ZYRlZXRnFfY2dUQlVMUGpBeE1HdGxSY294OHdyWGwwU1hsbEwtaXR4OVJvbDBKVkR2MmNSV21qY0ZXVlV0NlZwQjh1TlRZbUtwMXN0al9KNVRGNjFGNXM4LXVwSmdqYm9NeFE?oc=5"
+    }
+  },
+  {
     "id": "2026-10-23-citi-ai-agents-blocked",
     "category": "regulation",
     "jurisdiction": "US",
@@ -137,37 +171,21 @@
     }
   },
   {
-    "id": "2026-10-20-anthropic-safety-bill",
-    "category": "regulation",
+    "id": "2026-10-23-citi-commerce-media-70m-customers",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-20T23:01:23.000Z",
-    "headline": "Anthropic proposes AI safety framework requiring judicial approval for model blocking",
-    "plain_english": "Anthropic put forward a policy proposal that would require federal agencies to obtain a judge's approval before blocking an AI model release, even if the model poses high-risk harms. The bar: evidence that 50+ deaths could result.",
-    "why_it_matters": "Signals how frontier labs are shaping AI governance discourse: framing safety guardrails as requiring judicial due process rather than executive prerogative, potentially raising compliance burden and litigation risk for regulators.",
-    "jargon": [
-      {
-        "term": "model blocking",
-        "def": "Authority of a regulator to prevent a trained AI model from being released, deployed, or distributed to users based on harm assessment."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-10-23T19:09:03Z",
+    "headline": "Citigroup launches commerce media platform leveraging 70 million customer records",
+    "plain_english": "Citigroup has built a commerce media offering that uses data from 70 million customers to target ads and offers across its ecosystem. The move monetizes customer data and competes with fintech ad platforms.",
+    "why_it_matters": "BFSI data-monetization strategies are accelerating. This signals a shift toward AI-driven customer targeting and alternative revenue streams—competitors will need similar capabilities or risk margin compression.",
+    "scale": {
+      "metric": "customers",
+      "value": "70M"
+    },
     "source": {
-      "name": "TechCrunch · 2026-10-20",
-      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
-    }
-  },
-  {
-    "id": "2026-10-20-google-cloud-outage-uk-banks",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-10-20T10:42:00Z",
-    "headline": "Google Cloud outage disrupts UK banks, raising vendor concentration risk questions",
-    "plain_english": "A Google Cloud platform outage hit U.K. financial institutions, exposing single-vendor risk in cloud-dependent banking infrastructure. Regulators may use the incident to reinforce resilience and failover requirements in cloud adoption policies.",
-    "why_it_matters": "Gives FCA/PRA ammunition to strengthen operational resilience rules (BOLD, CASS reforms) on third-party cloud vendor concentration; banks may face stricter diversification and RTO/RPO mandates.",
-    "source": {
-      "name": "WSJ · 2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZU9oaGJacEZnOFoyeHBZS3k4cVJHTFdjelUxbkozMWN0QkVFSkJSZXE3cFp2VDFJM2kycjdOb2dkMU95WFlwZGNtdmprbzFpRUdDOTM1MXdld3hYakNyX0VNOEQ1NXhGSFBqT19wM3JkQlN4ZG1BNjN1MDZ3QS1fR0Q0LXhTdlZVd0lHcThJMlNaaXpLRGF4ZnNSS1VMTGd2dHAzcnBOSXBMUW9IVTFtcFBOSlBDMThlbGc2Nw"
+      "name": "Simply Wall Street · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUNrREw5UjNDRUlQYTVoNlVrMTF0WVJBeXlIWnJrajEwNGtsNy13bHBqM1pQREV2bmxhNnNfZWNVeC1xOExKSUV4QVk4XzVHQ3FyUDZKQU4yTWhpM01EbnBCTUZPcEQwWlI3OWxxMUVYRnFjVlUyYTFTbXhMWXJwb19nVG03T1JienRJNjRPcDB5bkR1eEZLNU95NmpMdHRsaGN3Z29DX25OVTFPWnpPR0FBeENYaUFoTHRqStIBwgFBVV95cUxQWU9UWEhHMWlUQUJTeUxWUG9nWHd1dTNHUl9JcVVoZzlaSk1VUGlZWlptblVXMVF3SXV5dEdtc2VyVC1Xd1g1ak9GdUlIUzd0cjdSWnNvSWsxRXFzMFlOX0dsQW5oREE1c1I2aThKNTY4NV8yckk3aUFCV25XVlJ2X0pPelZ2SEpmWE95OEhaVkxHeGk0YXo5V1g0U1NxbFZ6RFFoOUE4WU9iVXFTV2MtSjB0cWpRN2J6UkQwaFQwN0drQQ?oc=5"
     }
   },
   {
@@ -310,20 +328,6 @@
     "source": {
       "name": "ColoradoBiz · 2026-10-21",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeXdVdkZSMmdsbjRrN1d2dlVyaEpPd1NlZVNrN0xZR01IMk1fY3hWOGo1Z3VnRFhaZUc5d0x5YzRfQTVScjlPdDM2WHZfVThBdS1IOUw5QmllVmZMSklkTWhVdEVsdThpY0JKQ2NEQmF0MVZOQlFSam5KWnhNdG1TQ19Qa1NOZFoyazVadGRoaw"
-    }
-  },
-  {
-    "id": "2026-10-21-deployment-visa-commercial-payments-ai",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-21T11:08:52Z",
-    "headline": "Visa launches AI-powered tools for commercial payments",
-    "plain_english": "Visa deployed AI-driven capabilities to enhance commercial (B2B) payments workflows, addressing dispute resolution, fraud detection, and transaction optimization for enterprise clients.",
-    "why_it_matters": "Major payment network AI rollout signals shift from consumer to enterprise automation. Visa's scale means this reaches millions of merchants; sets competitive bar for Mastercard, American Express.",
-    "source": {
-      "name": "Investing.com · 2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUVlEcUJ6aXQzWW9NNDhaa2wwZVB5UHFqWnJneFgySDJjU2lvMERRMXBGczR4cjkyQkpMckdBOVl0a1FBczRxN193TlNWRUdCMF9CYW1VMFcyT0tQOVhPT2RENzc0NG0xTXJ6ZFRtanM0cXIwVlJ6a1ZNMTVGR1pSSlkydFRZSV8xQ2FkaGxNTkdGd200Y1huaHQwbWtRa25rN2JYSElpU2VUTlJwWjBPX2ZEMXA"
     }
   },
   {
@@ -892,6 +896,22 @@
     }
   },
   {
+    "id": "2026-10-23-ai-infrastructure-credit-stress",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-23T22:49:04Z",
+    "headline": "AI infrastructure funding faces credit market strain as hyperscaler IPOs stall",
+    "plain_english": "Credit stress widening on AI build-out firms, semiconductor IPO pullbacks (Solidigm), and rising default-swap spreads signal investor wariness on AI capex returns. Hyperscaler earnings will be closely watched for guidance on spending discipline.",
+    "why_it_matters": "BFSI CROs and treasury teams should monitor credit default swaps on AI infrastructure vendors and hyperscalers—rising spreads suggest underpriced default risk in AI-dependent supply chains.",
+    "stat_value": "rising",
+    "stat_label": "credit default swap spreads on AI/semiconductor firms",
+    "source": {
+      "name": "CNBC · 2026-10-23",
+      "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html"
+    }
+  },
+  {
     "id": "2026-10-22-insight-meta-ai-spend-fcf",
     "category": "insight",
     "jurisdiction": "US",
@@ -1032,19 +1052,17 @@
     }
   },
   {
-    "id": "2026-10-19-insight-ai-credit-concerns",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-19T20:58:00Z",
-    "headline": "U.S. stock market gains as AI credit and leverage concerns ease",
-    "plain_english": "U.S. equities rose as investors reduced worry about over-leverage and credit strain tied to AI infrastructure buildout and data-center financing. Signals risk sentiment has shifted from 'AI debt bubble' to 'sustainable capex cycle.'",
-    "why_it_matters": "Brief window of calmer AI-credit discourse. For BFSI lending teams, suggests AI-infrastructure lending (data center capex, GPU financing) is repricing upward from recent distress. Expect bank CFOs and risk committees to re-engage AI lending desks as sentiment stabilizes.",
-    "stat_value": "Mostly higher",
-    "stat_label": "U.S. stock market direction",
+    "id": "2026-10-23-openai-internet-training-halt",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-23T23:05:49Z",
+    "headline": "OpenAI halts live internet training for frontier models citing significant risks",
+    "plain_english": "OpenAI will no longer train its latest AI models on live internet data, citing safety and reliability concerns. The shift represents a major policy reversal and signals heightened caution around data sourcing for cutting-edge systems.",
+    "why_it_matters": "Frontier model training practices set industry norms. This move signals regulatory/safety pressure that will likely reshape how BFSI orgs approach LLM procurement and third-party data handling.",
     "source": {
-      "name": "Wall Street Journal · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQlUyMFVFazFiUzkwOVR1LXd1TlBlWWNnd3VPLVJuVHd3Q2pjd0dIbnl5cnBzZ0p6SXpYSGMya21Jb004amZSUHpIQVRIYjhkMTBRdlFMeVNwZmYyZTlJdFdSbU5mLWhWdUF3MGxIWUstRkV4X0dvdmlxd3hIV2M1OEJPQUdmeXhDbzdYc094dHFLU3JsZEZZQjZpczNDcEU"
+      "name": "TechCrunch · 2026-10-23",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
     }
   },
   {
@@ -1184,20 +1202,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-19",
       "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/"
-    }
-  },
-  {
-    "id": "2026-10-19-anthropic-pbf-shares",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-19T11:20:10.000Z",
-    "headline": "Anthropic proposes dedicating 5% of equity to public-benefit fund structure",
-    "plain_english": "Anthropic announced a proposal to allocate 5% of its shareholding to a new Public Benefit Fund, a governance move focused on long-term AI safety alignment independent of commercial pressures.",
-    "why_it_matters": "Sets precedent among frontier labs for structured governance separation. Signals investor and stakeholder concern over model deployment and safety guardrails as competition intensifies.",
-    "source": {
-      "name": "AI Trending Now · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObldXMnRuZFBrYkVjTjBvOW44WUg1cXJkYkhIOUZFRF80aW50Yk9YSnJ3X21MeVFDMjBkZ3NLUWZTWVNuNlZfdkl3eGtob3lTT1UxMnZxU2xjOTFaajhtRW1lMEM3NG9kWjAtX2l0TFFEWUlHM05wRGJRZzZWVVBtMkUxUG5WcndzQ3BhQWotcG1NUkpTSmE0ZUJyT1hvUlU"
     }
   },
   {
@@ -1409,6 +1413,26 @@
     }
   },
   {
+    "id": "2026-10-23-meta-ai-capital-wall-street",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-23T23:07:00Z",
+    "headline": "Meta's AI capital demands create tension with institutional investors",
+    "plain_english": "Meta's massive funding requests for AI infrastructure investments are drawing investor resistance on Wall Street, with concerns about profitability and capex discipline. The tension highlights broader skepticism about AI ROI expectations.",
+    "why_it_matters": "BFSI investors and CIOs are watching hyperscaler capex discipline closely. If mega-cap tech capex becomes untethered from revenue growth, it signals potential cooling in AI infrastructure adoption and vendor economics.",
+    "jargon": [
+      {
+        "term": "hyperscaler capex",
+        "def": "Large-scale infrastructure spending by mega-cap cloud/AI companies (AWS, Azure, Google Cloud) to build AI compute."
+      }
+    ],
+    "source": {
+      "name": "Wall Street Journal · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1HNFhFTFhpTzRXbFdHSzNMY3RaWHFIVllmc0VsdGdrUEYxTzdwNGRqb2Y4b3ZhUUt1RUJnZTN2QlpKdW8xQVRjYTIwQktIOGVyaHhINjJPVjFVTFN1NFEwYUd3?oc=5"
+    }
+  },
+  {
     "id": "2026-10-23-ai-trade-fed",
     "category": "trending",
     "jurisdiction": "US",
@@ -1550,6 +1574,84 @@
     "source": {
       "name": "Investing.com / Citi Research · 2026-10-15",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNGp2SlNtVXhYdGkyZVBkZ0ptS0ZEZ18yblFXc1ZSd25XYmltVFE0eXJpSHJzQ25iUVBQSFk3RmllNkpaOUVSejo2RTM5cTg0MGpIQnVIT1BmbW02VTV0dDE1Zk1vYkY2UnAySjFZdUVtY1Z1WGdYcHJSS3FQcHRSdEZHa0ViNWtDWU93RVpJSG9ZUnlKMWxWWFB1MXFkZTIwb0pBZ01KUUZBSjVVdnpWTk9hanpRSUVwV3RMU09ILVJJXzlLeHQtSFV3"
+    }
+  },
+  {
+    "id": "2026-10-20-anthropic-safety-bill",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-20T23:01:23.000Z",
+    "headline": "Anthropic proposes AI safety framework requiring judicial approval for model blocking",
+    "plain_english": "Anthropic put forward a policy proposal that would require federal agencies to obtain a judge's approval before blocking an AI model release, even if the model poses high-risk harms. The bar: evidence that 50+ deaths could result.",
+    "why_it_matters": "Signals how frontier labs are shaping AI governance discourse: framing safety guardrails as requiring judicial due process rather than executive prerogative, potentially raising compliance burden and litigation risk for regulators.",
+    "jargon": [
+      {
+        "term": "model blocking",
+        "def": "Authority of a regulator to prevent a trained AI model from being released, deployed, or distributed to users based on harm assessment."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-10-20",
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+    }
+  },
+  {
+    "id": "2026-10-20-google-cloud-outage-uk-banks",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-10-20T10:42:00Z",
+    "headline": "Google Cloud outage disrupts UK banks, raising vendor concentration risk questions",
+    "plain_english": "A Google Cloud platform outage hit U.K. financial institutions, exposing single-vendor risk in cloud-dependent banking infrastructure. Regulators may use the incident to reinforce resilience and failover requirements in cloud adoption policies.",
+    "why_it_matters": "Gives FCA/PRA ammunition to strengthen operational resilience rules (BOLD, CASS reforms) on third-party cloud vendor concentration; banks may face stricter diversification and RTO/RPO mandates.",
+    "source": {
+      "name": "WSJ · 2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZU9oaGJacEZnOFoyeHBZS3k4cVJHTFdjelUxbkozMWN0QkVFSkJSZXE3cFp2VDFJM2kycjdOb2dkMU95WFlwZGNtdmprbzFpRUdDOTM1MXdld3hYakNyX0VNOEQ1NXhGSFBqT19wM3JkQlN4ZG1BNjN1MDZ3QS1fR0Q0LXhTdlZVd0lHcThJMlNaaXpLRGF4ZnNSS1VMTGd2dHAzcnBOSXBMUW9IVTFtcFBOSlBDMThlbGc2Nw"
+    }
+  },
+  {
+    "id": "2026-10-21-deployment-visa-commercial-payments-ai",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-21T11:08:52Z",
+    "headline": "Visa launches AI-powered tools for commercial payments",
+    "plain_english": "Visa deployed AI-driven capabilities to enhance commercial (B2B) payments workflows, addressing dispute resolution, fraud detection, and transaction optimization for enterprise clients.",
+    "why_it_matters": "Major payment network AI rollout signals shift from consumer to enterprise automation. Visa's scale means this reaches millions of merchants; sets competitive bar for Mastercard, American Express.",
+    "source": {
+      "name": "Investing.com · 2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUVlEcUJ6aXQzWW9NNDhaa2wwZVB5UHFqWnJneFgySDJjU2lvMERRMXBGczR4cjkyQkpMckdBOVl0a1FBczRxN193TlNWRUdCMF9CYW1VMFcyT0tQOVhPT2RENzc0NG0xTXJ6ZFRtanM0cXIwVlJ6a1ZNMTVGR1pSSlkydFRZSV8xQ2FkaGxNTkdGd200Y1huaHQwbWtRa25rN2JYSElpU2VUTlJwWjBPX2ZEMXA"
+    }
+  },
+  {
+    "id": "2026-10-19-insight-ai-credit-concerns",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-19T20:58:00Z",
+    "headline": "U.S. stock market gains as AI credit and leverage concerns ease",
+    "plain_english": "U.S. equities rose as investors reduced worry about over-leverage and credit strain tied to AI infrastructure buildout and data-center financing. Signals risk sentiment has shifted from 'AI debt bubble' to 'sustainable capex cycle.'",
+    "why_it_matters": "Brief window of calmer AI-credit discourse. For BFSI lending teams, suggests AI-infrastructure lending (data center capex, GPU financing) is repricing upward from recent distress. Expect bank CFOs and risk committees to re-engage AI lending desks as sentiment stabilizes.",
+    "stat_value": "Mostly higher",
+    "stat_label": "U.S. stock market direction",
+    "source": {
+      "name": "Wall Street Journal · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQlUyMFVFazFiUzkwOVR1LXd1TlBlWWNnd3VPLVJuVHd3Q2pjd0dIbnl5cnBzZ0p6SXpYSGMya21Jb004amZSUHpIQVRIYjhkMTBRdlFMeVNwZmYyZTlJdFdSbU5mLWhWdUF3MGxIWUstRkV4X0dvdmlxd3hIV2M1OEJPQUdmeXhDbzdYc094dHFLU3JsZEZZQjZpczNDcEU"
+    }
+  },
+  {
+    "id": "2026-10-19-anthropic-pbf-shares",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-19T11:20:10.000Z",
+    "headline": "Anthropic proposes dedicating 5% of equity to public-benefit fund structure",
+    "plain_english": "Anthropic announced a proposal to allocate 5% of its shareholding to a new Public Benefit Fund, a governance move focused on long-term AI safety alignment independent of commercial pressures.",
+    "why_it_matters": "Sets precedent among frontier labs for structured governance separation. Signals investor and stakeholder concern over model deployment and safety guardrails as competition intensifies.",
+    "source": {
+      "name": "AI Trending Now · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObldXMnRuZFBrYkVjTjBvOW44WUg1cXJkYkhIOUZFRF80aW50Yk9YSnJ3X21MeVFDMjBkZ3NLUWZTWVNuNlZfdkl3eGtob3lTT1UxMnZxU2xjOTFaajhtRW1lMEM3NG9kWjAtX2l0TFFEWUlHM05wRGJRZzZWVVBtMkUxUG5WcndzQ3BhQWotcG1NUkpTSmE0ZUJyT1hvUlU"
     }
   },
   {
@@ -4435,26 +4537,6 @@
     }
   },
   {
-    "id": "2026-09-23-ai-learner-rag",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-23T14:00:00.000Z",
-    "headline": "What is RAG? How retrieval-augmented generation grounds AI in real data",
-    "plain_english": "RAG (retrieval-augmented generation) is a technique that lets AI models fetch up-to-date documents, databases, or knowledge sources *before* answering a question. Instead of relying only on training-data memory, RAG pulls fresh facts in real-time, reducing hallucinations and keeping answers current.",
-    "why_it_matters": "RAG is foundational for BFSI AI: regulatory documents, customer records, transaction history, and compliance rules must be live and accurate. Paywhere's banking channel (above) likely uses RAG to fetch account data on demand without retraining the model.",
-    "jargon": [
-      {
-        "term": "hallucination",
-        "def": "When an AI model generates plausible-sounding but false or made-up information, because it has no real-time access to truth."
-      }
-    ],
-    "source": {
-      "name": "AITechHive · 2026-09-23",
-      "url": "https://aitechhive.io"
-    }
-  },
-  {
     "id": "2026-10-09-regulation-eu-supervision",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -6515,20 +6597,6 @@
     }
   },
   {
-    "id": "2026-09-23-gemini-3-8-text-to-speech",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-23T15:25:14.000Z",
-    "headline": "Google DeepMind releases Gemini 3.8 with enhanced text-to-speech capability",
-    "plain_english": "Google DeepMind announced Gemini 3.8, advancing text-to-speech synthesis. Likely improves voice naturalness, latency, and multilingual support—critical for conversational AI in customer-facing BFSI applications.",
-    "why_it_matters": "Improved TTS quality lowers barrier to voice-first banking interfaces; enables banks to deploy conversational AI for phone and voice-assistant integration without external TTS licensing.",
-    "source": {
-      "name": "Google DeepMind · 2026-09-23",
-      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
-    }
-  },
-  {
     "id": "2026-10-01-spacex-google-tensor-orbit-datacenters",
     "category": "frontier",
     "jurisdiction": "US",
@@ -7039,20 +7107,6 @@
     "source": {
       "name": "Reuters · 2026-09-27",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQmNRNTdyaGdENWhHUlEzVFpTVnRndmtXcDBfZlVmTVZpWWF2SEF6M1FwXzBtbFZRdWJWOGNKc2JfYll1aEZxamJYYTJwZ2pXMUZ0NW1wWjEyQXRObnRJa29BbzhrLWxXOTFmSVZlRlkyS1Z3endodzAyYm9Sc0NOYlE5REhwbnZQbERfdWc2Mi1LbWVyaGpiOGtjZ1dVWGQ2cTJib1FVM1ZJYkVZbmRJWA"
-    }
-  },
-  {
-    "id": "2026-09-23-openai-academy-two-years",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-23T16:00:00.000Z",
-    "headline": "OpenAI Academy marks two years of AI skills development in communities",
-    "plain_english": "OpenAI announced the two-year milestone of its Academy program, which trains professionals in AI. Signals continued investment in bottom-up workforce development and talent pipeline into enterprise AI roles.",
-    "why_it_matters": "Frontier-lab investment in workforce training reduces talent bottleneck for enterprise AI deployments; BFSI operators benefit from larger pool of trained AI engineers and prompt architects.",
-    "source": {
-      "name": "OpenAI · 2026-09-23",
-      "url": "https://openai.com/index/two-years-of-openai-academy"
     }
   },
   {
@@ -7828,78 +7882,6 @@
     }
   },
   {
-    "id": "2026-09-23-ema-ai-agents-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-23T14:30:07.000Z",
-    "headline": "Ema raises $77M Series B for AI agents in HR, IT, finance automation",
-    "plain_english": "Ema closed a $77M Series B to scale autonomous AI agents that automate work across HR, IT, and finance functions in enterprises. Expands earlier investment in AI Employee platform.",
-    "why_it_matters": "Signals investor confidence in agentic AI for back-office automation; deployment in finance workflows could reshape corporate payment and reconciliation cycles.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that acts autonomously on behalf of users—planning tasks, executing them, and correcting mistakes without human intervention per step."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-23",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ema-secures-77-million-to-scale-ai-agents-across-enterprises/"
-    },
-    "amount": "$77M",
-    "round": "Series B"
-  },
-  {
-    "id": "2026-09-23-basecamp-research-funding",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-23T14:00:30.000Z",
-    "headline": "Anthropic, Nvidia back Basecamp Research in $140M funding round",
-    "plain_english": "Basecamp Research raised $140M with support from Anthropic and Nvidia, signaling frontier-lab interest in emerging AI research infrastructure and deeptech tooling.",
-    "why_it_matters": "Anthropic's direct investment in AI research infrastructure mirrors frontier labs' moves to consolidate AI capability chain; affects long-term model development roadmaps.",
-    "source": {
-      "name": "Sifted · 2026-09-23",
-      "url": "https://sifted.eu/articles/anthropic-nvidia-basecamp-research/"
-    },
-    "amount": "$140M"
-  },
-  {
-    "id": "2026-09-23-cyera-goldman-security",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T13:52:26.000Z",
-    "headline": "Cyera raises $400M from Goldman in extension round for data security AI",
-    "plain_english": "Cyera closed a $400M extension round led by Goldman Sachs, valuing the data-security AI platform as a key enterprise infrastructure play. Signals institutional capital flowing to security-AI vendors.",
-    "why_it_matters": "Goldman's direct investment in data-security tooling reflects BFSI's urgent move to operationalize compliance and breach detection via AI; likely to influence vendor selection across financial services.",
-    "jargon": [
-      {
-        "term": "extension round",
-        "def": "Follow-on investment in existing funding round, typically at same or higher valuation, used to extend runway or accelerate growth without new Series."
-      }
-    ],
-    "source": {
-      "name": "WSJ · 2026-09-23",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcWNjdmQ2QmtGbEVtay1TV1BMS1pCNDlmdUEwdy1LdWdONFY5SkE1UW56THRBTVh5VldNVzUxNGZ1S0dXbVVTcHdSRWFrdkJLNGxHYkhpeDlXOVhoQ2lyZEZGb1lNdjFFS0RMRHdjUGQ5Z0REVng5U2RNOFlpaWZsTFIwN0p1X0xwZ0drSEVmSi04N0FNT2xBemJnNm9mTHprQ2FBMEp3"
-    },
-    "amount": "$400M"
-  },
-  {
-    "id": "2026-09-24-wells-fargo-cro",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T23:30:21.000Z",
-    "headline": "Wells Fargo elevates COO Powell to Chief Risk Officer role",
-    "plain_english": "Wells Fargo promoted Chief Operating Officer Michael Powell to Chief Risk Officer, signaling a consolidation of operational and risk governance. This reflects industry trend of embedding AI risk oversight into executive operations.",
-    "why_it_matters": "CRO elevation from COO ranks suggests banks are treating AI/model risk as operationally inseparable from business continuity—not siloed in risk committees.",
-    "source": {
-      "name": "WSJ · 2026-09-24",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZUkwVm1INkg0UWxIUlJqUWNfM0g1dWhJbmQ2NVY1OXhvZ3paRzRlS3dWN1RnRlZoMTlLQU5jbUw2NHRnQXJMMks1emFwaGZTWi05TUFqS2sxNE9QV0tVcFVadTNhWVVZcHJteDlFcG9zT3NROUJURU9tOVRMeV9hcjZlc0VDNXlvQnBBeUEyVnc0dGtrSTJoa3pWQkhBNU1lLXc"
-    }
-  },
-  {
     "id": "2026-09-24-oracle-data-center-force-majeure",
     "category": "insight",
     "jurisdiction": "US",
@@ -7911,20 +7893,6 @@
     "source": {
       "name": "CNBC · 2026-09-24",
       "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html"
-    }
-  },
-  {
-    "id": "2026-09-24-openai-australian-govt",
-    "category": "insight",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-09-23T23:24:00.000Z",
-    "headline": "OpenAI agent exploited to hack Australian government website",
-    "plain_english": "An OpenAI agent was weaponized to breach an Australian government site, showing autonomous AI can be hijacked for offensive cyber. Highlights gap between agent capability and security model.",
-    "why_it_matters": "Demonstrates frontier AI agents can be misused for credential harvesting and lateral movement; financial institutions relying on AI agents face new attack surface requiring zero-trust verification.",
-    "source": {
-      "name": "WSJ · 2026-09-24",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdUxmdkdyV2FyMzMwZGk1MjUxalc5aVhsSXF2T0ZrSWcxZW5nSDJTS2Z3cVVRNDVUdmZ3MkhJMi1mV0tGQjZyTDktazVFYXBxV0J1NVdUMGJJVUVNcENMZ3RucTNlRzNpenZKam40TEdxN08xTjVvdTJxNElTNUJDYUpFOVg4dW9oV2s3cjk3WQ"
     }
   },
   {
@@ -8072,26 +8040,6 @@
     }
   },
   {
-    "id": "2026-09-24-banks-commerce-media",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-23T23:03:14.000Z",
-    "headline": "Banks leverage transaction data to enter commerce media and advertising",
-    "plain_english": "Financial institutions with large card portfolios are monetizing cross-merchant spending data by entering the commerce-media market, competing with retailers and payment networks. Banks see transaction intelligence as a new revenue stream.",
-    "why_it_matters": "Banks using AI to extract advertising value from transaction networks creates regulatory scrutiny on data monetization and consumer privacy; shifts BFSI margin model beyond fees.",
-    "jargon": [
-      {
-        "term": "Commerce media",
-        "def": "Advertising platform using merchant/shopper transaction data to target promotions; typically run by retailers, now expanding to banks."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-24",
-      "url": "https://www.pymnts.com/commerce/2026/banks-put-transaction-data-to-work-in-commerce-media/"
-    }
-  },
-  {
     "id": "2026-09-24-meta-muse-charm-consumer-ai",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8103,30 +8051,6 @@
     "source": {
       "name": "CNBC · 2026-09-24",
       "url": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html"
-    }
-  },
-  {
-    "id": "2026-09-23-agentic-ai-net-30-shift",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T15:13:02.000Z",
-    "headline": "Agentic AI poised to disrupt net-30 payment terms, reshaping corporate working capital",
-    "plain_english": "As corporates deploy agentic AI to optimize payment timing autonomously, traditional net-30 payment terms face obsolescence. AI agents will dynamically negotiate settlement dates and cash-flow strategy without human approval loops.",
-    "why_it_matters": "Shift from fixed, human-negotiated payment terms to real-time, AI-driven settlement could compress working-capital cycles industry-wide; banks lose float, corporates gain liquidity, supply-chain finance vendors gain urgency.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI system that acts autonomously on behalf of users—planning, executing, and correcting actions without human intervention per step."
-      },
-      {
-        "term": "working capital",
-        "def": "Cash tied up in operations (receivables, inventory, payables); faster payment cycles release this cash for reinvestment."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-23",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/agentic-ai-could-make-net-30-obsolete/"
     }
   },
   {
@@ -8155,38 +8079,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-24",
       "url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
-    }
-  },
-  {
-    "id": "2026-09-23-revolut-nubank-us-charter",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T14:46:34.000Z",
-    "headline": "Revolut, Nubank scale US banking after securing conditional charters",
-    "plain_english": "Revolut and Nubank, the world's most-valued digital banks, obtained conditional US banking charters and are launching retail offerings. Marks first major foreign fintech incursion into core US deposit and lending markets.",
-    "why_it_matters": "Foreign-owned neobanks now have regulated deposit-taking authority in the US; forces incumbent banks and regional operators to compete directly on digital experience and cost, reshaping retail banking competitive landscape.",
-    "source": {
-      "name": "PYMNTS · 2026-09-23",
-      "url": "https://www.pymnts.com/news/banking/2026/revolut-nubank-face-steep-climb-scaling-united-states-banking/"
-    },
-    "scale": {
-      "metric": "markets",
-      "value": "US"
-    }
-  },
-  {
-    "id": "2026-09-23-paywhere-ai-banking-channel",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-23T14:40:00.000Z",
-    "headline": "Paywhere launches AI banking channel enabling bank service inside consumer AI tools",
-    "plain_english": "Paywhere deployed a new banking channel allowing banks and credit unions to embed financial services directly within consumer AI assistants and chatbots their customers already use—reducing friction between discovery and transaction.",
-    "why_it_matters": "Signals shift from banks maintaining walled-garden apps to embedding transactional capability inside third-party AI agents; forces banks to rethink customer journey ownership and brand presence.",
-    "source": {
-      "name": "PR Newswire · 2026-09-23",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNT2szVUtHQ3lnakNsdGZZT1hpR2NLRndIdlVpR0lFRW1GamVYTnppU2pjSkR6MVBqNHNsem5hM1FJTjV2bWFpb2pYZ3NlTGlIdlE4dkVadDM5TFBvX3YxWUduNXdzUWNZM2JrdGs2X3FVSF9DbFFSRUptQ25HWGtPMWd6MENzeEY4NjRHVVVmTWd6UEpTaGZVQ3JkN2FXd0JJejZRNmh3T1JWaVRiWHFGclNIaTZmS29TRlFkWmEtTzA5NFNuOERlalFlYXBnMGxVWi01aU1QWGpFRmxrdC1pMEdyalQ4dW95eDRFcHBCZHg2NzBhZUxPMVNnRVNDU3MtWE0yYTNVZw"
     }
   },
   {
@@ -8236,34 +8128,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-24",
       "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/"
-    }
-  },
-  {
-    "id": "2026-09-23-bernie-sanders-superintelligence-ban",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-23T14:07:38.000Z",
-    "headline": "Sen. Sanders unveils bill to ban artificial superintelligence, create Department of AI",
-    "plain_english": "Senator Bernie Sanders introduced legislation proposing a ban on artificial superintelligence development and creation of a new Department of AI to oversee the field. Reflects growing political concern about AI trajectory and governance.",
-    "why_it_matters": "Legislative proposal signals Congress may pursue AI moratorium or heavy regulatory architecture; BFSI operators should monitor for export controls, compute restrictions, or mandatory audits that could slow model access.",
-    "source": {
-      "name": "Los Angeles Times · 2026-09-23",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSFBKaFQ4UHoxRDVBeko2QmFQeDRselp1bkRkYldOcmZoVHYyVFBud0Z4QnNxZWVUSzBkU0cyUG1GZ3lnOS00aF9NRlp5SkNUVHVTUUdUMmQ1Z3N1dUh2eWhUUEd4bXpIbHBsY3UwdjlNa25YSW54TERTVm9mQnVjVkRpSmUtRzhBaTBLM2R5YWdUQ3ZRazBqbHhBVkk3X2dfakZVYUR2dTJlZWJacDZZeGYzWmpfUEl6U3lUS1BJTnl2angyRWN3TTdRRkIxMFdFN09pN2xYb1NyYXIyMmc"
-    }
-  },
-  {
-    "id": "2026-09-23-youtube-custom-feeds-ai",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-23T14:30:00.000Z",
-    "headline": "YouTube enables users to build custom feeds with natural-language AI instructions",
-    "plain_english": "YouTube rolled out custom feeds powered by Gemini, letting users describe their content preferences in plain English and have AI assemble a personalized feed. Demonstrates consumer-grade agentic AI for content curation.",
-    "why_it_matters": "Shows mainstream adoption of natural-language-driven AI agents in consumer applications; signals expectation among users that financial apps will also support conversational command-and-control.",
-    "source": {
-      "name": "TechCrunch · 2026-09-23",
-      "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/"
     }
   }
 ]
