@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-23-citi-ai-agents-blocked",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-23T09:19:08.000Z",
+    "headline": "Major US banks block AI agents from customer systems",
+    "plain_english": "Citi, JPMorgan, and other major US banks are actively blocking autonomous AI agents from accessing customer account systems. Signals either regulatory direction or internal risk assessments flagging agent reliability in financial operations.",
+    "why_it_matters": "Creates hard ceiling on AI agent autonomy in banking; may reflect OCC or Federal Reserve guidance on model risk management, forcing fintech vendors to pivot to human-in-loop architectures.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous system that takes actions (trades, transfers, queries) without human approval after receiving task instruction."
+      }
+    ],
+    "source": {
+      "name": "Cybernews · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WWXVxeUxxblpfa3RlY3NEZnNoSDExUDZDNkNWMHFacnlNeEhNSGhxUUZ2cXRYSFJrOFNvM2VfbEZmNFVVTlAwMldLaERfWXJJbjF4TnA3VzBrVWJrUkZfaG5JXzA4QQ"
+    }
+  },
+  {
+    "id": "2026-10-23-us-curb-china-russia-tech-investment",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-23T09:15:00.000Z",
+    "headline": "US announces restrictions on high-tech investments in China and Russia",
+    "plain_english": "US government is introducing new constraints on US venture and private-equity capital flowing into advanced technology sectors in China and Russia. Affects chip, AI, and defense tech; likely includes BFSI-adjacent fintech and trading infrastructure.",
+    "why_it_matters": "Tightens capital flows away from geopolitical competitors; forces US fintech and AI investors to restructure emerging-market bets and may trigger re-domiciling of AI infrastructure.",
+    "source": {
+      "name": "朝日新聞 · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NWURXcjJZZnlFTXRkQTdKaXR0M3VEMGZEVE9LV3BBaWNscnJxeDF4V1VVQ2M0dGxleWhpMnoyQjd2WTJ6RkU1d2lBamVONlNoaVlWcnhB"
+    }
+  },
+  {
     "id": "2026-10-22-regulation-uk-eu-google-cloud-outage",
     "category": "regulation",
     "jurisdiction": "EU|UK",
@@ -137,37 +171,51 @@
     }
   },
   {
-    "id": "2026-10-20-regulators-agentic-ai-blockchain",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-20T10:05:00Z",
-    "headline": "Regulators and industry urged to act urgently on agentic AI and blockchain compliance risks",
-    "plain_english": "A Treasury and National Security Council alum warns that regulators and fintech players are underestimating urgency of compliance frameworks for agentic AI and blockchain-based commerce as these technologies scale. Calls for proactive collaboration to avoid reactive enforcement.",
-    "why_it_matters": "Signals potential near-term guidance tightening from OCC/Fed/FinCEN on AI agent governance and illicit finance risks; banks deploying autonomous AI systems may face heightened scrutiny and retroactive compliance costs.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that operates independently to complete multi-step tasks (e.g., trade execution, compliance decision-making) without human intervention at each step."
-      }
-    ],
+    "id": "2026-10-23-hsbc-redcoin-stablecoin",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-23T11:09:00.000Z",
+    "headline": "HSBC launches RedCoin stablecoin for public use",
+    "plain_english": "HSBC released RedCoin, its first stablecoin for public trading and settlements. This marks a major global bank moving blockchain-native payment infrastructure into production at scale.",
+    "why_it_matters": "Sets precedent for tier-1 banks embedding crypto rails into retail/institutional flows; signals regulatory comfort in major jurisdictions and likely triggers competitors' acceleration.",
     "source": {
-      "name": "Banking Dive · 2026-10-20",
-      "url": "https://www.bankingdive.com/news/regulators-illicit-finance-fraud-agentic-ai-blockchain-money2020/833412/"
+      "name": "Finextra · 2026-10-23",
+      "url": "https://www.finextra.com/newsarticle/48638/hsbc-launches-first-stablecoin"
     }
   },
   {
-    "id": "2026-10-20-uk-singapore-financial-dialogue",
-    "category": "regulation",
-    "jurisdiction": "UK|APAC",
-    "severity": "low",
-    "published_at": "2026-10-20T10:49:26Z",
-    "headline": "UK and Singapore deepen financial cooperation on digital finance and capital markets",
-    "plain_english": "The 11th UK-Singapore Financial Dialogue reinforced bilateral cooperation on digital finance, capital markets, and sustainable finance. Both regulators are aligning on fintech standards, cross-border settlement, and ESG frameworks.",
-    "why_it_matters": "Signals regulatory harmonization on digital banking and payment rules; UK and APAC banks may face more coordinated supervisory expectations, easing cross-border fintech operations but tightening compliance scope.",
+    "id": "2026-10-23-jpmorgan-goldman-ai-security",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-23T09:57:00.000Z",
+    "headline": "JPMorgan Chase, Goldman Sachs underscore security in AI plans",
+    "plain_english": "JPMorgan CIO Lori Beer and Goldman Sachs' Marco Argenti publicly emphasized risk-balancing in AI deployment strategies, signaling both firms are prioritizing security guardrails over speed-to-market in production rollouts.",
+    "why_it_matters": "Establishes security-first posture as competitive differentiator among mega-banks; implies regulatory pressure on AI governance is shaping deployment timelines and architecture decisions.",
+    "jargon": [
+      {
+        "term": "AI governance",
+        "def": "Framework of controls, audit, and risk oversight applied to machine-learning systems in production."
+      }
+    ],
     "source": {
-      "name": "MAS Singapore · 2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTld3YzhKTGt3UXRHVk5QQVZzcEVsMERCS1FGeVhqY05oekJoejR1LTNFMk91M21HWW9kRmdGRXRBTjRCcW5YYU5raTNFU0lZY2ZUNWxTYUNOYkpxdUVVdGtTc3hjTFQ0NDZnUlFWbUdLQnJYRC1EM1dldy1zQjZpb1NXRWt6TVlUaU11aFU1V0pUcmduNThic2RsNHpaYzNxcjlxQ3NKblFjY1JqM3Zv"
+      "name": "Banking Dive · 2026-10-23",
+      "url": "https://www.bankingdive.com/news/jpmorgan-chase-goldman-sachs-AI-security-lori-beer-marco-argenti/833792/"
+    }
+  },
+  {
+    "id": "2026-10-23-hkex-ai-semiconductor-indexes",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-23T10:06:04.000Z",
+    "headline": "HKEX launches AI and semiconductor indexes; licenses AI index in China",
+    "plain_english": "Hong Kong Exchanges launched dedicated AI and semiconductor indexes, plus licensed an AI index for mainland China trading. Signals major Asian exchange operators building infrastructure to track and enable AI-sector capital flows.",
+    "why_it_matters": "Creates benchmarks and liquidity pools for APAC AI investments; regulatory licensing of China index suggests government coordination on domestic AI capital markets.",
+    "source": {
+      "name": "The Economic Times · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSkxsYVJrZEU2d1gyaEVrWGxTNDFJRGNXUXoxUGcyaE9STHRGS3hfOHVLNUo3bzJ0Ri1fQ1lWb3lFUGpSM1ZfRlFvV0pqMTVXOV9KRDV0bVlrc0pFWjBRaHB6N1FxMFhDMGxGdjkycE9DakZzSVBxaGdfSDZPQjFpTTlTc096aXlhM01FRm9rUi1qM3FzMHZ0M1ZxUHh4Mmo2OG5SRnJQQTVEbFJoQjRISlFDd05uNFd4enI4YUNRSU9vaktGX211SC1DQThPbVdlV1c0WE9RaVNaNFM1bXFDaU1ueFBRQkXSAewBQVVfeXFMTWVCZC1SSnJOVXJsVmRXVTZQSlJBTVdXcnhESzRxd0RUaWxndFFuYXgxQzBoR1Uwem9JZjNheVpFdzJ5T3VxMHl4WjFtTl9JbFMwMm9GWWVsUWt1OFdhakw2ZU5oSmJqS18tWUpIYzZ1WGExX1l1N05OOExRWXl2MzdJaEN3dlpPUHROYmRnUUpVYU8zMkhlRXpyUkdXdm1UVmhNbGtieUJTdlEzd2s0TGc2dGJ5Um83MzAtM1NicktLUnBGdl9lWFY1SThzRjFtOGRncTAxRG5mRXgtb05MbzJOdmNWenNWcVBjMG8"
     }
   },
   {
@@ -276,58 +324,6 @@
     "source": {
       "name": "Investing.com · 2026-10-21",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUVlEcUJ6aXQzWW9NNDhaa2wwZVB5UHFqWnJneFgySDJjU2lvMERRMXBGczR4cjkyQkpMckdBOVl0a1FBczRxN193TlNWRUdCMF9CYW1VMFcyT0tQOVhPT2RENzc0NG0xTXJ6ZFRtanM0cXIwVlJ6a1ZNMTVGR1pSSlkydFRZSV8xQ2FkaGxNTkdGd200Y1huaHQwbWtRa25rN2JYSElpU2VUTlJwWjBPX2ZEMXA"
-    }
-  },
-  {
-    "id": "2026-10-21-deployment-state-bank-india-cyberattack",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "high",
-    "published_at": "2026-10-21T11:04:00Z",
-    "headline": "State Bank of India launches investigation after cyberattack exposes customer data",
-    "plain_english": "SBI, India's largest bank by assets, discovered unauthorized access and personal data breach affecting customers. Internal investigation underway; no immediate statement on scope or remediation timeline.",
-    "why_it_matters": "SBI breach signals vulnerability in largest systemically important bank in Asia's third-largest economy. Will likely trigger RBI scrutiny of legacy security infrastructure and accelerate mandatory AI-driven anomaly detection mandates.",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48625/indias-largest-bank-hit-by-cyberattack?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-21-starling-agentic-fincrime",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-10-21T00:01:00.000Z",
-    "headline": "Starling deploys agentic financial crime investigator completing end-to-end probes in 17 seconds",
-    "plain_english": "UK digital bank Starling has put into production an AI agent that autonomously investigates financial crime cases from initiation to completion in 17 seconds—a massive acceleration from manual investigation workflows that typically take hours or days.",
-    "why_it_matters": "This signals that agentic automation (autonomous multi-step workflows) is moving from pilot to live production in regulated financial crime detection, forcing competitors and regulators to reckon with speed-versus-audit-trail trade-offs.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "An AI system that autonomously breaks down a complex task into steps, executes them, and adapts based on intermediate results—without human intervention between steps."
-      },
-      {
-        "term": "end-to-end investigation",
-        "def": "Completing all stages of a process (intake, analysis, decision, escalation) within a single automated workflow."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48623/starling-build-agentic-fincrime-investigator-that-takes-17-seconds"
-    }
-  },
-  {
-    "id": "2026-10-20-citi-ai-investment-asia",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-20T10:15:20Z",
-    "headline": "Citi reports AI boom driving M&A and investment activity surge across Asia",
-    "plain_english": "Citi analysis shows AI hype is accelerating M&A, venture investment, and infrastructure spending across APAC financial services. Capital is flowing into AI-adjacent fintech and data center plays, particularly in India, Singapore, and Southeast Asia.",
-    "why_it_matters": "Signals regional consolidation opportunity for banks with AI capabilities; suggests APAC banks lacking in-house AI talent or infrastructure will face valuation pressure and M&A risk.",
-    "source": {
-      "name": "CNA citing Citi · 2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY2ZOOGFXQzg2M1FtVFJiS0hTb2J6LU0teV9CNndVY2otb25HYTlyUmYyYlA4czFSTW1JR1k2M2FUdFp0NFhoZWlhdHFtQlNhVW1jWDllRFRobVhURWhXM3VCSFBDZENGZ2s4dnlfU2F0UXlnQWhHNmJqTDFOTUp1X3RNdnY4bjBHVUU1M25PUmxfZnpPaWl3"
     }
   },
   {
@@ -494,6 +490,20 @@
     }
   },
   {
+    "id": "2026-10-23-anthropic-hg-eu-consultancy",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-23T09:27:00.000Z",
+    "headline": "Anthropic, Hg Capital launch European AI consultancy",
+    "plain_english": "Anthropic and Hg Capital are launching a dedicated EU consulting firm to advise financial and enterprise clients on Claude deployment and AI governance. Signals Anthropic's pivot from pure vendor to strategic enterprise advisor in regulated markets.",
+    "why_it_matters": "Positions Anthropic as trusted governance partner in EU; likely to shape bank/insurer AI policies and create switching costs via embedded consulting relationships.",
+    "source": {
+      "name": "Breakingthenews.net · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWXdJb3dlY2N0UGRLeFBDRUlCNlcydHZBWTluOG9ZOUlSQmNDbnJZRllvVU5iTHh2cWc1dVlBSnFldmxVSGQ4My1URU1kZzF6TEV2REpLQVhFc0MxeHRsM2s4a1h1em50eWxGMER0Y1d3Q0l5dkM1VW5vWlFfbV9iY3kxdldpQzUwVFZDYUxkZjhkN0Q4OUZINkZvMUc"
+    }
+  },
+  {
     "id": "2026-10-22-shift-goldman-ai-main-street",
     "category": "shift",
     "jurisdiction": "US",
@@ -641,25 +651,6 @@
     "source": {
       "name": "Reuters · 2026-10-19",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1NXdDBPdHE1QktYQVlGcFhraENxRlVHbEFSczlSS1RrLUtVcmJWOTZaN0Q3azVjbnowbzg3ZFpHTTZsY3hSNlRHQklyV2tfZldwMFJpVVNkdjRsYzRCV2FHQmo2WkdXOTVRTGI1NWlHaFcyeDdySUhIMGJveGtjY0JydWdNRThLaUFtOE1qdDlHV3RWNGgxYXdwWlkxTVY2anhJRHBzalB5VVhPYXZXMG1RYk5zVzZ0c0xnNQ"
-    }
-  },
-  {
-    "id": "2026-10-19-jpmorgan-5b-defense-investment",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-19T10:03:45.000Z",
-    "headline": "JPMorgan deploys $5 billion into US defense-tech supply chains and autonomous systems",
-    "plain_english": "JPMorgan Chase announced $5 billion in direct off-balance-sheet investments across defense hardware, manufacturing automation, and hypersonic technology. CEO Jamie Dimon frames this as a national-security capital allocation pivot tied to geopolitical tension.",
-    "why_it_matters": "Largest US bank signaling pivot from pure finance into industrial-defense backing. Will attract similar mega-bank capital and reshape venture and buyout strategy in aerospace, autonomy, and supply-chain resilience.",
-    "scale": {
-      "metric": "employees",
-      "value": "JPMorgan ~320K"
-    },
-    "amount": "$5B",
-    "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM0p3UGdnLVhzZGt6ZDlWOGVTSU9NNFlQdjdybWtvWXlzQUJOQUl5RlpNTVdjOUNleTduVUZCcmtJbm1VZjBCZ0E0c3BjZ05Nc0RkdERYWlpOUWtELVNyd1l4ZzkwZWs4YUgtVl8wSnZpQmsweFF2Z3NrS09wSl9EXzllaTZrbVUzRnRiV0c2R2dIcEFLcW4zVG8xejdRb1lOMWFZOGlHTWhaUEJBak52dUNIZXhudFNtOXFTNl9qdFJrM0xPekZDVGlTdGlBZk1ZSmc"
     }
   },
   {
@@ -1057,6 +1048,20 @@
     }
   },
   {
+    "id": "2026-10-23-openai-cyber-lab",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T10:30:11.000Z",
+    "headline": "OpenAI launches Cyber Lab to test AI system security against hacker attacks",
+    "plain_english": "OpenAI hosted a hackathon event where security researchers competed to find and fix vulnerabilities in AI systems before malicious actors exploit them. Reflects growing focus on adversarial testing and red-teaming as industry standard.",
+    "why_it_matters": "Signals acceptance that AI models themselves are attack surfaces; likely to drive regulatory demand for mandatory security audits and third-party penetration testing in banking.",
+    "source": {
+      "name": "Forbes · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2ZnT0JQaEZ2alZMTnFJYVVNa0M3Z210T1ZSbFdKWi0wa25majdtYjVsR1RPVlIzc3ZZUDVPTmZxN0FpRnBhTE92S24tUzhkaVhMb2ZKNUg0VDhMMHhaX2wxcDRHbDZDU0pWZ3RWTFRFMlZCVDRzdWZPUlB5T2gwRk5VQUVRT0pDMEJaQ1pscTQ3S29yXzR5b1hBc2xKQmwzRFB2R2VwLTZRcFY5cHNQUDVBQnZtVk0wb3pQRk9qMEY"
+    }
+  },
+  {
     "id": "2026-10-22-frontier-openai-30b-1.25t",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1193,20 +1198,6 @@
     "source": {
       "name": "AI Trending Now · 2026-10-19",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObldXMnRuZFBrYkVjTjBvOW44WUg1cXJkYkhIOUZFRF80aW50Yk9YSnJ3X21MeVFDMjBkZ3NLUWZTWVNuNlZfdkl3eGtob3lTT1UxMnZxU2xjOTFaajhtRW1lMEM3NG9kWjAtX2l0TFFEWUlHM05wRGJRZzZWVVBtMkUxUG5WcndzQ3BhQWotcG1NUkpTSmE0ZUJyT1hvUlU"
-    }
-  },
-  {
-    "id": "2026-10-18-anthropic-public-fund",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-18T19:56:36Z",
-    "headline": "Anthropic commits 5% of shares to new public benefit fund",
-    "plain_english": "Anthropic announced it will transfer 5% of company shares into a dedicated fund to support public good initiatives, a governance move that may signal pressure on frontier AI labs to demonstrate broader societal value.",
-    "why_it_matters": "Sets precedent for AI safety and public governance among frontier labs. BFSI firms partnering with Anthropic or evaluating Claude deployments should monitor how this affects product roadmap and regulatory positioning.",
-    "source": {
-      "name": "TechCrunch · 2026-10-18",
-      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
     }
   },
   {
@@ -1418,6 +1409,20 @@
     }
   },
   {
+    "id": "2026-10-23-ai-trade-fed",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T11:05:01.000Z",
+    "headline": "AI trade meets the Fed: market dynamics under policy scrutiny",
+    "plain_english": "Intersection of AI-driven equity trading euphoria and Federal Reserve monetary policy is creating friction in markets; multiple outlets reporting on how AI stock rallies interact with rate decisions and capital allocation flows.",
+    "why_it_matters": "Central banks are now factoring AI market concentration and trading dynamics into systemic risk assessment; likely to shape future guidance on leverage, liquidity, and sector concentration in trading desks.",
+    "source": {
+      "name": "Reuters · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWlIdzFDR0xNQ01RZzhsaXVtMXYtbWU3U3RvejE4NzV3TFZPXzI5SUpGTG9jLUxxbEhiNGFVMTZyUU84MVhTZGJaWkxtZ2cwaG9OTlJiYmFLTzFLLXZFQURzNUE5M05Lcjc5UXQ4Q1RIaVNWOFZlSlA2MTBLUFYtSVdLcGI3V3lCN216QQ"
+    }
+  },
+  {
     "id": "2026-10-21-central-banks-ai-jobs-policy",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1559,6 +1564,125 @@
     "source": {
       "name": "TechCrunch · 2026-10-10",
       "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"
+    }
+  },
+  {
+    "id": "2026-10-20-regulators-agentic-ai-blockchain",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-20T10:05:00Z",
+    "headline": "Regulators and industry urged to act urgently on agentic AI and blockchain compliance risks",
+    "plain_english": "A Treasury and National Security Council alum warns that regulators and fintech players are underestimating urgency of compliance frameworks for agentic AI and blockchain-based commerce as these technologies scale. Calls for proactive collaboration to avoid reactive enforcement.",
+    "why_it_matters": "Signals potential near-term guidance tightening from OCC/Fed/FinCEN on AI agent governance and illicit finance risks; banks deploying autonomous AI systems may face heightened scrutiny and retroactive compliance costs.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "AI system that operates independently to complete multi-step tasks (e.g., trade execution, compliance decision-making) without human intervention at each step."
+      }
+    ],
+    "source": {
+      "name": "Banking Dive · 2026-10-20",
+      "url": "https://www.bankingdive.com/news/regulators-illicit-finance-fraud-agentic-ai-blockchain-money2020/833412/"
+    }
+  },
+  {
+    "id": "2026-10-20-uk-singapore-financial-dialogue",
+    "category": "regulation",
+    "jurisdiction": "UK|APAC",
+    "severity": "low",
+    "published_at": "2026-10-20T10:49:26Z",
+    "headline": "UK and Singapore deepen financial cooperation on digital finance and capital markets",
+    "plain_english": "The 11th UK-Singapore Financial Dialogue reinforced bilateral cooperation on digital finance, capital markets, and sustainable finance. Both regulators are aligning on fintech standards, cross-border settlement, and ESG frameworks.",
+    "why_it_matters": "Signals regulatory harmonization on digital banking and payment rules; UK and APAC banks may face more coordinated supervisory expectations, easing cross-border fintech operations but tightening compliance scope.",
+    "source": {
+      "name": "MAS Singapore · 2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTld3YzhKTGt3UXRHVk5QQVZzcEVsMERCS1FGeVhqY05oekJoejR1LTNFMk91M21HWW9kRmdGRXRBTjRCcW5YYU5raTNFU0lZY2ZUNWxTYUNOYkpxdUVVdGtTc3hjTFQ0NDZnUlFWbUdLQnJYRC1EM1dldy1zQjZpb1NXRWt6TVlUaU11aFU1V0pUcmduNThic2RsNHpaYzNxcjlxQ3NKblFjY1JqM3Zv"
+    }
+  },
+  {
+    "id": "2026-10-21-deployment-state-bank-india-cyberattack",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "high",
+    "published_at": "2026-10-21T11:04:00Z",
+    "headline": "State Bank of India launches investigation after cyberattack exposes customer data",
+    "plain_english": "SBI, India's largest bank by assets, discovered unauthorized access and personal data breach affecting customers. Internal investigation underway; no immediate statement on scope or remediation timeline.",
+    "why_it_matters": "SBI breach signals vulnerability in largest systemically important bank in Asia's third-largest economy. Will likely trigger RBI scrutiny of legacy security infrastructure and accelerate mandatory AI-driven anomaly detection mandates.",
+    "source": {
+      "name": "Finextra · 2026-10-21",
+      "url": "https://www.finextra.com/newsarticle/48625/indias-largest-bank-hit-by-cyberattack?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-10-21-starling-agentic-fincrime",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-10-21T00:01:00.000Z",
+    "headline": "Starling deploys agentic financial crime investigator completing end-to-end probes in 17 seconds",
+    "plain_english": "UK digital bank Starling has put into production an AI agent that autonomously investigates financial crime cases from initiation to completion in 17 seconds—a massive acceleration from manual investigation workflows that typically take hours or days.",
+    "why_it_matters": "This signals that agentic automation (autonomous multi-step workflows) is moving from pilot to live production in regulated financial crime detection, forcing competitors and regulators to reckon with speed-versus-audit-trail trade-offs.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "An AI system that autonomously breaks down a complex task into steps, executes them, and adapts based on intermediate results—without human intervention between steps."
+      },
+      {
+        "term": "end-to-end investigation",
+        "def": "Completing all stages of a process (intake, analysis, decision, escalation) within a single automated workflow."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-21",
+      "url": "https://www.finextra.com/newsarticle/48623/starling-build-agentic-fincrime-investigator-that-takes-17-seconds"
+    }
+  },
+  {
+    "id": "2026-10-20-citi-ai-investment-asia",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-20T10:15:20Z",
+    "headline": "Citi reports AI boom driving M&A and investment activity surge across Asia",
+    "plain_english": "Citi analysis shows AI hype is accelerating M&A, venture investment, and infrastructure spending across APAC financial services. Capital is flowing into AI-adjacent fintech and data center plays, particularly in India, Singapore, and Southeast Asia.",
+    "why_it_matters": "Signals regional consolidation opportunity for banks with AI capabilities; suggests APAC banks lacking in-house AI talent or infrastructure will face valuation pressure and M&A risk.",
+    "source": {
+      "name": "CNA citing Citi · 2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY2ZOOGFXQzg2M1FtVFJiS0hTb2J6LU0teV9CNndVY2otb25HYTlyUmYyYlA4czFSTW1JR1k2M2FUdFp0NFhoZWlhdHFtQlNhVW1jWDllRFRobVhURWhXM3VCSFBDZENGZ2s4dnlfU2F0UXlnQWhHNmJqTDFOTUp1X3RNdnY4bjBHVUU1M25PUmxfZnpPaWl3"
+    }
+  },
+  {
+    "id": "2026-10-19-jpmorgan-5b-defense-investment",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-19T10:03:45.000Z",
+    "headline": "JPMorgan deploys $5 billion into US defense-tech supply chains and autonomous systems",
+    "plain_english": "JPMorgan Chase announced $5 billion in direct off-balance-sheet investments across defense hardware, manufacturing automation, and hypersonic technology. CEO Jamie Dimon frames this as a national-security capital allocation pivot tied to geopolitical tension.",
+    "why_it_matters": "Largest US bank signaling pivot from pure finance into industrial-defense backing. Will attract similar mega-bank capital and reshape venture and buyout strategy in aerospace, autonomy, and supply-chain resilience.",
+    "scale": {
+      "metric": "employees",
+      "value": "JPMorgan ~320K"
+    },
+    "amount": "$5B",
+    "source": {
+      "name": "Reuters · 2026-10-19",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM0p3UGdnLVhzZGt6ZDlWOGVTSU9NNFlQdjdybWtvWXlzQUJOQUl5RlpNTVdjOUNleTduVUZCcmtJbm1VZjBCZ0E0c3BjZ05Nc0RkdERYWlpOUWtELVNyd1l4ZzkwZWs4YUgtVl8wSnZpQmsweFF2Z3NrS09wSl9EXzllaTZrbVUzRnRiV0c2R2dIcEFLcW4zVG8xejdRb1lOMWFZOGlHTWhaUEJBak52dUNIZXhudFNtOXFTNl9qdFJrM0xPekZDVGlTdGlBZk1ZSmc"
+    }
+  },
+  {
+    "id": "2026-10-18-anthropic-public-fund",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-18T19:56:36Z",
+    "headline": "Anthropic commits 5% of shares to new public benefit fund",
+    "plain_english": "Anthropic announced it will transfer 5% of company shares into a dedicated fund to support public good initiatives, a governance move that may signal pressure on frontier AI labs to demonstrate broader societal value.",
+    "why_it_matters": "Sets precedent for AI safety and public governance among frontier labs. BFSI firms partnering with Anthropic or evaluating Claude deployments should monitor how this affects product roadmap and regulatory positioning.",
+    "source": {
+      "name": "TechCrunch · 2026-10-18",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
     }
   },
   {
@@ -8066,26 +8190,6 @@
     }
   },
   {
-    "id": "2026-09-23-sofi-stablecoin-settlement",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-23T00:01:00Z",
-    "headline": "SoFi Bank migrates full card settlement to blockchain using proprietary stablecoin",
-    "plain_english": "SoFi Bank and Mastercard have deployed SoFiUSD stablecoin for real-time settlement of SoFi's entire card portfolio across Mastercard's network. Payments settle on-chain rather than through traditional ACH/wire rails, eliminating multi-day clearing cycles.",
-    "why_it_matters": "First US bank to route ALL card settlement through blockchain. If adoption scales, this model commoditizes traditional card processors' settlement monopoly and forces faster stablecoin integration into core banking infrastructure.",
-    "jargon": [
-      {
-        "term": "Stablecoin",
-        "def": "Cryptocurrency pegged to a fiat currency (here, USD) to minimize price volatility while enabling fast, programmable transfers."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-23",
-      "url": "https://www.finextra.com/newsarticle/48453/sofi-bank-goes-live-with-stablecoin-settlement-across-mastercard-network"
-    }
-  },
-  {
     "id": "2026-09-24-meta-ai-agents-vr",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8135,62 +8239,6 @@
     }
   },
   {
-    "id": "2026-09-23-polymarket-regulatory-lobbying",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-09-23T00:01:00Z",
-    "headline": "Polymarket lobbies EU and UK regulators to classify prediction markets as financial products, not gambling",
-    "plain_english": "US prediction market platform Polymarket is meeting UK and European regulators to argue its contracts should be supervised as financial instruments (derivatives/synthetic assets) rather than wagering products. Outcome will determine whether BFSI firms can offer prediction-market-linked products.",
-    "why_it_matters": "Classification decision unlocks or blocks institutional deployment of prediction markets in BFSI. If regulators treat them as financial products, banks can use them for risk hedging and market signal. If deemed gambling, institutional use faces restrictions. Watch FCA and EU Commission guidance.",
-    "source": {
-      "name": "Finextra · 2026-09-23",
-      "url": "https://www.finextra.com/newsarticle/48458/polymarket-lobbies-europe-to-treat-prediction-markets-as-financial-products-not-gambling"
-    }
-  },
-  {
-    "id": "2026-09-23-deutsche-bank-kyc-ai",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-23T00:01:00Z",
-    "headline": "Deutsche Bank deploys agentic AI for KYC, targets 30% onboarding uplift",
-    "plain_english": "Deutsche Bank's Private Bank has rolled out an AI system that automates Know Your Customer (KYC) compliance checks across Singapore and Hong Kong offices. The system uses agentic AI—software that reasons and acts autonomously—to verify customer wealth sources, with the bank estimating a 30% faster client onboarding cycle.",
-    "why_it_matters": "KYC bottlenecks cost BFSI firms millions in lost customer acquisition. A proven 30% uplift proves agentic AI can compress compliance timelines without sacrificing rigor, forcing peers to accelerate AI-driven KYC roadmaps.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "Software that autonomously plans multi-step tasks, gathers data, and executes decisions with minimal human intervention, rather than just responding to prompts."
-      },
-      {
-        "term": "KYC (Know Your Customer)",
-        "def": "Regulatory process of verifying customer identity, financial background, and risk profile before onboarding."
-      }
-    ],
-    "scale": {
-      "metric": "markets",
-      "value": "2 (Singapore, Hong Kong)"
-    },
-    "source": {
-      "name": "Finextra · 2026-09-23",
-      "url": "https://www.finextra.com/newsarticle/48452/deutsche-bank-estimates-30-uplift-in-client-onboarding-by-deploying-kyc-ai"
-    }
-  },
-  {
-    "id": "2026-09-23-canadian-banks-tokenized-deposits",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-23T00:01:00Z",
-    "headline": "Canada's largest banks collaborate on tokenized deposit infrastructure for programmable payments",
-    "plain_english": "Major Canadian banks are jointly developing a tokenized Canadian dollar deposit system that enables real-time, programmable payments via blockchain rails. The system targets faster settlement and automation for corporate and institutional clients.",
-    "why_it_matters": "Coordinated BFSI infrastructure play signals central bank digital currency (CBDC) and tokenized deposit adoption is moving from pilot to production. Firms that haven't built on-chain settlement capability will face competitive pressure within 18–24 months.",
-    "source": {
-      "name": "Finextra · 2026-09-23",
-      "url": "https://www.finextra.com/newsarticle/48456/canadian-banks-join-forces-on-tokenised-deposits"
-    }
-  },
-  {
     "id": "2026-09-23-bernie-sanders-superintelligence-ban",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8216,34 +8264,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-23",
       "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/"
-    }
-  },
-  {
-    "id": "2026-09-23-openai-external-assessors",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-23T00:06:19Z",
-    "headline": "OpenAI enlists independent third-party safety auditors to validate frontier AI risk controls",
-    "plain_english": "OpenAI is recruiting external auditing firms with frontier AI expertise to conduct independent safety assessments of its models and systems. The move aims to scale third-party oversight as models grow more capable and their deployment into financial and critical infrastructure accelerates.",
-    "why_it_matters": "Regulatory bodies (FCA, OCC) increasingly demand independent model validation before BFSI firms deploy frontier AI in production. OpenAI's push to industrialize third-party audit supply chains signals imminent regulatory mandates for independent AI safety sign-offs.",
-    "source": {
-      "name": "PYMNTS · 2026-09-23",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-recruits-external-watchdogs-to-police-ai-risk/"
-    }
-  },
-  {
-    "id": "2026-09-22-soteris-insurance-profitability-ai",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-22T23:47:53Z",
-    "headline": "Soteris releases AI tool to flag unprofitable insurance policies in real time",
-    "plain_english": "InsurTech vendor Soteris has shipped an AI system that analyzes underwritten policies and identifies those with negative expected returns before issuance. The tool integrates with carrier underwriting workflows to flag marginal or loss-making risk before commitment.",
-    "why_it_matters": "Underwriting AI moves upstream from claims analysis to pre-issuance risk flagging. Carriers adopting this reduce loss ratios and improve ROE. Competitors without real-time underwriting decision support will see margin compression, forcing accelerated AI procurement.",
-    "source": {
-      "name": "contxto · 2026-09-22",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObkpqcmk4S3g0bFJLTUZhNzdfSmR4NEE1UnRpRXN6MVJvMTd2MnVFVmdTQ0xpckF0b2FNakJyUGxhU0hGdTl2bWNiZlFhZk5UMDRIaHZUX3ZqcjQySkhybUlPcmQ5dHh6V1dEMjBoa2xkUzQwR01iRWlhQkY0Z0tYa2E0QjN6d0FXT0w2ZXR5bnZVRFFoMXlPOHVTbVNUajJqSWNiRXVzNmRuamRteTZacUIwYw"
     }
   }
 ]
