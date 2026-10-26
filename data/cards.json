@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-26-openai-signal-chat-security-incident",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-26T10:57:24Z",
+    "headline": "OpenAI researchers terminated over Signal chat communications security breach",
+    "plain_english": "OpenAI fired researchers after discovering unauthorized Signal chats discussing sensitive internal matters. The incident highlights internal security lapses at a leading frontier AI lab.",
+    "why_it_matters": "Forewarns BFSI orgs about insider-threat and IP-theft risks in AI teams; raises questions about security culture maturity at AI vendors they depend on.",
+    "jargon": [
+      {
+        "term": "insider threat",
+        "def": "Risk of unauthorized disclosure or theft of proprietary data by employees, contractors, or trusted partners with system access."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdG1zWHJHcHdMY1NrMDFadURzb0tpeUsxa3hGeEpnXzYtaGhKa3p6N05hSmtmRE9Oc01RUlVXbGpPeXFsaHdJaTh0THhJcEtvQ1dFMHh5S2lhaWxST3ZmdEhzZF9PdVFuS19ud01pcm9nVzJvOUZQRmd4TFhwWVl3LUdEVEtRR1pNVFJxMEFmS2kweUM1U0hNNjVGVlpCYy1uMGtvUGgya3ZsRFlja1c3VHlIbWFfMUdhdlUtYUFFZ1VQQnFNRVpGTnVpa1RmZw"
+    }
+  },
+  {
+    "id": "2026-10-26-fca-defense-sme-banking-access",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-10-26T11:01:12Z",
+    "headline": "FCA flags banking access gaps for UK defence SMEs",
+    "plain_english": "The UK's Financial Conduct Authority identified shortfalls in banking service availability for small and mid-sized defence contractors. Issue touches critical national security supply chain resilience.",
+    "why_it_matters": "Regulator signaling potential requirement for banks to de-risk and maintain banking corridors for strategic sectors; sets precedent for sector-targeted financial inclusion mandates.",
+    "source": {
+      "name": "FCA · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1DYkM1MU5BSkt0cklNWVVHUVpyeklVekFfdFFGdzRsWll2OXpZWjZFSDhkbHlaX0I5cGk4dW8tb1hDWEFzTnpxeW8zUEJFcE9qT2R5c3ZUWTRwSlk1MkRad3JicmVJWUNIY2FzNzhkNWczbGpxeE5Bdm56dG4zQQ"
+    }
+  },
+  {
     "id": "2026-10-25-sifted-uk-fintech-sideshow",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -124,37 +158,31 @@
     }
   },
   {
-    "id": "2026-10-23-us-curb-china-russia-tech-investment",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-23T09:15:00.000Z",
-    "headline": "US announces restrictions on high-tech investments in China and Russia",
-    "plain_english": "US government is introducing new constraints on US venture and private-equity capital flowing into advanced technology sectors in China and Russia. Affects chip, AI, and defense tech; likely includes BFSI-adjacent fintech and trading infrastructure.",
-    "why_it_matters": "Tightens capital flows away from geopolitical competitors; forces US fintech and AI investors to restructure emerging-market bets and may trigger re-domiciling of AI infrastructure.",
+    "id": "2026-10-26-hsbc-ai-platform-deployment",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-26T11:17:00Z",
+    "headline": "HSBC launches AI-enabled banking platform for corporate clients",
+    "plain_english": "HSBC rolled out a new AI-powered platform designed for corporate banking. The system aims to streamline operations and client services at scale across the bank's enterprise segment.",
+    "why_it_matters": "Signals enterprise banks moving AI from pilots to production in core client-facing workflows; sets benchmark for competitors on speed and integration depth.",
     "source": {
-      "name": "朝日新聞 · 2026-10-23",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NWURXcjJZZnlFTXRkQTdKaXR0M3VEMGZEVE9LV3BBaWNscnJxeDF4V1VVQ2M0dGxleWhpMnoyQjd2WTJ6RkU1d2lBamVONlNoaVlWcnhB"
+      "name": "finews.asia · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQmNyaFc0YUk3V2RaWUg3LWNpOUVJR2lTTGRSVmJPY2MtZWc3OXpBTElsSkRwRHRhYnVsSGtVelJ4cjd2dGFPTHJXelBlWnN2Tk5FeTBxU0Vnc3NEZ1BQR3NlTkwxNFNwcnFPNURKQ2h1NnllQ3RISEx0UWcxa01lQ3ZwZXRKbWFZeXRR"
     }
   },
   {
-    "id": "2026-10-22-regulation-uk-eu-google-cloud-outage",
-    "category": "regulation",
-    "jurisdiction": "EU|UK",
-    "severity": "high",
-    "published_at": "2026-10-22T21:18:00Z",
-    "headline": "UK and EU regulators demand answers from Google after cloud outage hit bank websites",
-    "plain_english": "The European Banking Authority and UK Financial Conduct Authority contacted Google following a major cloud outage that disrupted multiple bank websites this week. Regulators are investigating operational resilience and third-party infrastructure risk.",
-    "why_it_matters": "Expect tighter cloud vendor oversight in EU and UK regulatory guidance. Banks will face new requirements to test failover scenarios and reduce single-vendor concentration in critical systems.",
-    "jargon": [
-      {
-        "term": "Operational Resilience",
-        "def": "A bank's ability to continue essential services during disruptions—now a regulatory expectation in EU and UK frameworks."
-      }
-    ],
+    "id": "2026-10-26-plus500-customer-growth",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-26T11:00:00Z",
+    "headline": "Plus500 posts 27% surge in new customer acquisitions; upgrades full-year guidance",
+    "plain_english": "Trading platform Plus500 reported new customer growth of 27% and raised its annual earnings outlook. Growth signals continued appetite for retail and institutional trading platforms.",
+    "why_it_matters": "Fintech user growth persists despite market volatility; potential demand signal for AI-powered trading and risk management tools embedded in broker workflows.",
     "source": {
-      "name": "Finextra · 2026-10-22",
-      "url": "https://www.finextra.com/newsarticle/48637/uk-and-eu-financial-regulators-seek-answers-from-google-over-cloud-outage"
+      "name": "Business Live · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWGl0cmFBV3h2TGktVm53ZHJxSDQyRm1hYkROR1doTTlTaUIyOEdRakU0cG11aXNfQ1ctZEZhaGJvTTZKOWxUWmF0TnRvbDZ1a3o1OEltaGpnY0U1SWlERHVacWhEbkJOdU9mWGZJUFA0cDJzaF9xSXlLa2U2Nlhob1pCOW9zNVp5VHd1M0twZkZUWjNqWm9jT2xxMWZaUE"
     }
   },
   {
@@ -298,37 +326,32 @@
     }
   },
   {
-    "id": "2026-10-23-hkex-ai-semiconductor-indexes",
-    "category": "deployment",
+    "id": "2026-10-26-softbank-malaysia-ai-infrastructure",
+    "category": "vendor",
     "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-23T10:06:04.000Z",
-    "headline": "HKEX launches AI and semiconductor indexes; licenses AI index in China",
-    "plain_english": "Hong Kong Exchanges launched dedicated AI and semiconductor indexes, plus licensed an AI index for mainland China trading. Signals major Asian exchange operators building infrastructure to track and enable AI-sector capital flows.",
-    "why_it_matters": "Creates benchmarks and liquidity pools for APAC AI investments; regulatory licensing of China index suggests government coordination on domestic AI capital markets.",
+    "severity": "high",
+    "published_at": "2026-10-26T11:36:26Z",
+    "headline": "SoftBank proposes $50 billion AI infrastructure investment in Malaysia",
+    "plain_english": "SoftBank is weighing a $50 billion bet to build AI data centers and infrastructure in Malaysia—a sum equal to roughly one-tenth of the country's annual GDP. The investment would position Malaysia as a regional AI hub.",
+    "why_it_matters": "Geopolitical shift in AI compute infrastructure away from US/China; creates new jurisdiction risk and opportunity for BFSI players anchored in Southeast Asia.",
+    "amount": "$50B",
     "source": {
-      "name": "The Economic Times · 2026-10-23",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSkxsYVJrZEU2d1gyaEVrWGxTNDFJRGNXUXoxUGcyaE9STHRGS3hfOHVLNUo3bzJ0Ri1fQ1lWb3lFUGpSM1ZfRlFvV0pqMTVXOV9KRDV0bVlrc0pFWjBRaHB6N1FxMFhDMGxGdjkycE9DakZzSVBxaGdfSDZPQjFpTTlTc096aXlhM01FRm9rUi1qM3FzMHZ0M1ZxUHh4Mmo2OG5SRnJQQTVEbFJoQjRISlFDd05uNFd4enI4YUNRSU9vaktGX211SC1DQThPbVdlV1c0WE9RaVNaNFM1bXFDaU1ueFBRQkXSAewBQVVfeXFMTWVCZC1SSnJOVXJsVmRXVTZQSlJBTVdXcnhESzRxd0RUaWxndFFuYXgxQzBoR1Uwem9JZjNheVpFdzJ5T3VxMHl4WjFtTl9JbFMwMm9GWWVsUWt1OFdhakw2ZU5oSmJqS18tWUpIYzZ1WGExX1l1N05OOExRWXl2MzdJaEN3dlpPUHROYmRnUUpVYU8zMkhlRXpyUkdXdm1UVmhNbGtieUJTdlEzd2s0TGc2dGJ5Um83MzAtM1NicktLUnBGdl9lWFY1SThzRjFtOGRncTAxRG5mRXgtb05MbzJOdmNWenNWcVBjMG8"
+      "name": "Fortune · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMif0FVV95cUxMTWFiR3pEUFJ2dHA5cndfVUNmTkZoNWNrSlFlXzNsSVhwLWRna2ZiMVI2MXpOdktUVFpNREVXZWRiTUdKNU5fWjhES2VyTFBrWlJTREFwYU1MVDlqeXVFSmxxTXc4R19rRlA3ZV91NnlJVTNzZ1B3aERQWWc1MnU4eFpKRnJPQUZ2MmlsV0h0UVJnbUFMbnRhY3NoYzVYOWhMOF9pZEJB"
     }
   },
   {
-    "id": "2026-10-22-deployment-us-banks-block-ai-agents",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-22T21:17:12Z",
-    "headline": "US banks blocking third-party AI agents from accessing customer accounts",
-    "plain_english": "Major US banks are restricting external AI agents' access to customer accounts. Industry sources indicate banks are concerned about unauthorized data exposure, prompt injection, and liability if third-party agents act without explicit customer consent.",
-    "why_it_matters": "This blocks fintech and enterprise AI vendors from automating customer workflows (e.g., bill pay, transfers via AI assistants). Banks are choosing security and liability over UX integration—expect regulatory guidance soon on permissible agent architectures.",
-    "jargon": [
-      {
-        "term": "AI Agent",
-        "def": "Autonomous software that accesses systems and performs actions (e.g., moving money, fetching data) based on user instructions without real-time human intervention."
-      }
-    ],
+    "id": "2026-10-26-evertrace-veck-acquisition",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-10-26T10:54:21Z",
+    "headline": "Evertrace acquires Veck to expand early-stage fraud detection",
+    "plain_english": "Evertrace, an EU-based fintech, acquired Veck to bolster founder verification and fraud detection at early stages. The deal strengthens Evertrace's ability to identify suspicious entities before they cause damage.",
+    "why_it_matters": "Vertical consolidation in KYC/fraud detection: buyers prioritizing detection breadth; signals rising cost-of-fraud pressure on smaller compliance vendors.",
     "source": {
-      "name": "Reuters · 2026-10-22",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcEFxNjAweHdoQ0ZaOWpUTGdVNWRkTXJ2Z08zeG1wOG03ZklKSW9WbTFBbGJWUVZVb211eFN4UFpjTG83aHBtMTViQ21fQmxBd2U0b2JTLXNHcjBReXRpMDl3am82SUVqVU1ndmRxejczTVZaWFlCMVZQSGNwWEQ0NXcyLWt0dlduZ2VUbjNyTUdyRUVndWEzV041cVQ1Mk1uV21vNGZBTUpaQ0tkVk1sOElNZW5NQThVZm9SemdUbXY"
+      "name": "Sifted · 2026-10-26",
+      "url": "https://sifted.eu/articles/evertrace-acquires-veck-brnd/"
     }
   },
   {
@@ -458,35 +481,23 @@
     "round": "Growth"
   },
   {
-    "id": "2026-10-20-mynt-philippines-ipo",
-    "category": "vendor",
-    "jurisdiction": "APAC",
+    "id": "2026-10-26-mastercard-ai-agents-payment",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-20T11:27:00Z",
-    "headline": "Mynt IPO raises $967M in Philippines' largest ever public offering",
-    "plain_english": "Philippines-based fintech Mynt went public in the country's biggest-ever IPO, raising $967M. The mega-IPO signals strong institutional appetite for APAC fintech scale platforms despite global fintech funding headwinds.",
-    "why_it_matters": "Demonstrates regional institutional capital is flowing into fintech despite Q3 2026 global funding decline; validates APAC as primary growth market for digital financial services.",
+    "published_at": "2026-10-26T11:06:44Z",
+    "headline": "Mastercard launches AI agent payment infrastructure for autonomous commerce",
+    "plain_english": "Mastercard introduced 'Pay for Machines,' a tool enabling AI agents to transact autonomously. This unlocks machine-to-machine commerce workflows without human intervention.",
+    "why_it_matters": "First major payment network move to systematize autonomous agent commerce; opens entirely new settlement use case tier beyond human-initiated transactions.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Software system that perceives environment and takes actions toward goals with minimal human direction; here, making purchase decisions autonomously."
+      }
+    ],
     "source": {
-      "name": "Finextra · 2026-10-20",
-      "url": "https://www.finextra.com/newsarticle/48613/mynt-ipo-breaks-records-in-philippines?utm_medium=rssfinextra&utm_source=finextrafeed"
-    },
-    "amount": "$967M",
-    "round": "IPO"
-  },
-  {
-    "id": "2026-10-20-vendor-stifel-meow",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-20T00:01:00Z",
-    "headline": "Stifel leads $31.6M Series B for Meow, plans white-label treasury platform",
-    "plain_english": "Stifel Financial invested $31.6M in business banking fintech Meow Technologies and will offer Meow's treasury management platform to its own commercial banking clients via white-label resale—a shift from pure venture play to embedded banking service.",
-    "why_it_matters": "Traditional brokers and banks are co-investing in fintech then embedding it into client-facing products. This pattern (invest + white-label) signals how legacy BFSI will capture fintech innovation without building in-house.",
-    "amount": "$31.6M",
-    "round": "Series B",
-    "source": {
-      "name": "Finextra · 2026-10-20",
-      "url": "https://www.finextra.com/newsarticle/48609/stifel-invests-in-meow-preps-white-label-treasury-platform"
+      "name": "Fortune · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWHYwWDBjQlo5QkVvSFppTGM0SjVya1gxSDhnWnBud2ZSQkZ0bk01X0FPQkJUZVNJMl9pWks2bW9GVzhnS1F5eENpMTBYU3FrWnp0MnJvSjRwV0lSNVRlSHFnNU5Ga3d6ZUJ4MGNlS1dadmxzNXlEVnV5LTFUTmpBSXZRMjQ2bm9CaU95azJkT0d1Ul9SdWxmUUJEdWlSZTFmNFpKd3QwbTllSkxEVnhkLU5FWklPbDR3ZUFkMGZ6QjI3MldLdXRF"
     }
   },
   {
@@ -628,19 +639,24 @@
     }
   },
   {
-    "id": "2026-10-20-salesforce-braze",
-    "category": "shift",
-    "jurisdiction": "US",
+    "id": "2026-10-26-aviatrix-clearance-workload-security",
+    "category": "tool",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-20T20:10:30.000Z",
-    "headline": "Salesforce acquires Braze for $5.66 billion to consolidate customer engagement stack",
-    "plain_english": "Salesforce announced acquisition of Braze, a customer engagement and marketing automation platform, for $5.66 billion (closing FY2028). Braze shareholders receive $47.50 per share in cash.",
-    "why_it_matters": "Demonstrates continued consolidation of customer-data and engagement layers into CRM platforms; signals that Salesforce sees AI-driven marketing personalization as core to future revenue, not ancillary.",
+    "published_at": "2026-10-26T10:56:09Z",
+    "headline": "Aviatrix launches Clearance to limit blast radius of compromised cloud workloads",
+    "plain_english": "Aviatrix released Clearance, a security tool that restricts what a breached cloud workload can access without breaking production operations. Useful for banks running AI models in cloud environments.",
+    "why_it_matters": "Addresses critical BFSI concern: running untrusted or legacy AI workloads in shared cloud without lateral-movement risk; reduces insurance/audit overhead.",
+    "jargon": [
+      {
+        "term": "lateral movement",
+        "def": "Attacker's ability to spread from a compromised system to other systems within a network; Clearance constrains this."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-10-20",
-      "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html"
-    },
-    "amount": "$5.66 billion"
+      "name": "AiThority · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ0doNEZselVNQW5xV1hvSXhVeXhMaU5zOEhvLU83ZU9xUlNDc0NrMVQ1Z2dIODNtRGtTRHg3Qk03SFdLMzZoRW1ua1JsQi0zbWpwakIxTnVPamdNcEh2Q0hvc1BqTXhnd3htWXYyeU1FSWp3SlFNZFNIUVBqV0dLdy03aXZsSnRtNW1QaF9ub3R0Vk5KTEYyUjJqWGxfclNYWU5rTW4yQVNOVTJrY29zcHoyYWU0akVFLU9HVUU2czhka1BpMmhMbG9RWUxDclRVN3QtcWo2YWk3S3JsOWl0NXlB"
+    }
   },
   {
     "id": "2026-10-22-hugging-face-biology",
@@ -881,6 +897,36 @@
     }
   },
   {
+    "id": "2026-10-26-asia-banks-capital-squeeze",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-26T10:26:27Z",
+    "headline": "Asia-focused banks face capital constraints amid inflation and bond market volatility",
+    "plain_english": "Regional Asian banks are squeezed between rising inflation pressures and turbulent bond markets, constraining their ability to raise capital for growth investments, including AI.",
+    "why_it_matters": "Regional banks' capital constraints may slow AI deployment pace in Asia; creates opportunity for better-capitalized global players to gain competitive ground.",
+    "stat_label": "Regional banks facing capital pressure",
+    "stat_value": "Rising inflation + bond volatility",
+    "source": {
+      "name": "Reuters · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ3c0Nl9IZUxGNGlIRFlNSW0xRUIzUTkxZlZJYVhtWjI5NXlGNFVJcm1IMnNMNVFWZVV4c0toYkxQYjB5Z3VXanB2ZE5ycUxERkRObDhkYUw3RGlrbFlzMVM3OXpyRVZhLTNnMkZhMkhHRU9oeGpuOHBDUWtkNkprSkZuQWVlSWtxYllmX1NlWkdqOHVWZzlubGs0WExDR29iVl95S1paMEhzOEFob1JkQWxpeTlGcnZO"
+    }
+  },
+  {
+    "id": "2026-10-26-western-digital-ai-storage-demand",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-26T11:23:51Z",
+    "headline": "Western Digital profit climbs on surging AI-driven data storage demand and pricing power",
+    "plain_english": "Storage giant Western Digital reported profit growth driven by rising demand for AI compute infrastructure and high-capacity drives, plus ability to maintain premium pricing.",
+    "why_it_matters": "Signals sustained capital velocity toward AI infrastructure; component-level margin expansion suggests long lead times and supply constraints in AI build-out.",
+    "source": {
+      "name": "WSJ · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSzhOYUpZbGl3TkN6ME14eUk1NklhX0dxSk90UkhtSzY2N0NFR2llaW9NSHlMWkpaZ1E3MlFadzIxRl9EbGJzQnZXbnd2NmdXQkZval9uMXBUSlBSLWZTTDk2SXBKRGJETTNBSGhtS2NiX2w1U1NTazNldXZNU2xKczZnc0JwbkdMbTR6bG1fUmdtQm1UZkR3WlZJbkwzWm8"
+    }
+  },
+  {
     "id": "2026-10-25-blackrock-bond-hedge-warning",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1005,35 +1051,18 @@
     }
   },
   {
-    "id": "2026-10-21-meta-muse-10m-users-shopping",
-    "category": "insight",
+    "id": "2026-10-26-meta-95b-capital-raise-ai",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-21T21:14:19.000Z",
-    "headline": "Meta Muse AI app reaches 10M users; shopping is top activity, outpacing productivity",
-    "plain_english": "Meta disclosed that its AI application Muse has surpassed 10 million users, with shopping and commerce as the primary use case, ahead of personal productivity tools. Suggests consumer LLM adoption is commerce-driven, not primarily office automation.",
-    "why_it_matters": "BFSI digital wallet and buy-now-pay-later platforms should study Meta Muse's commerce-first UX patterns; consumer AI adoption follows retail/impulse-buying workflows, not enterprise process automation. Signals opportunity in AI-assisted financial decisioning (budgeting, savings, investments) tied to real spending.",
-    "stat_value": "10M",
-    "stat_label": "Meta Muse users",
+    "severity": "high",
+    "published_at": "2026-10-26T11:34:42Z",
+    "headline": "Meta raises $95 billion to accelerate AI infrastructure and foundational model development",
+    "plain_english": "Meta announced a $95 billion capital raise earmarked for AI compute infrastructure and super-intelligence research. This represents one of the largest single AI infrastructure investments by a tech company.",
+    "why_it_matters": "Signals continuing arms race for AI compute dominance; massive capital commitment suggests long investment horizon and confidence in AI ROI economics.",
+    "amount": "$95B",
     "source": {
-      "name": "TechCrunch · 2026-10-21",
-      "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/"
-    }
-  },
-  {
-    "id": "2026-10-21-insight-bank-llm-pilots-stalling",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-21T11:30:00Z",
-    "headline": "73% of bank LLM pilots fail to scale past proof-of-concept phase",
-    "plain_english": "Industry observational data: roughly 3 in 4 bank LLM projects remain trapped in pilots. Root causes: data quality, domain-specific fine-tuning complexity, lack of clear compliance pathway, and competing vendor lock-in fears.",
-    "why_it_matters": "Exposes gap between board hype and engineering reality. Banks need to shift from vendor magic-bullet thinking to disciplined data engineering, model selection, and governance work before deployment can succeed.",
-    "stat_value": "73%",
-    "stat_label": "of bank LLM pilots stall before production rollout",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48626/bank-bosses-under-pressure-to-implement-ai-ahead-of-time"
+      "name": "CNBC · 2026-10-26",
+      "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
     }
   },
   {
@@ -1170,17 +1199,23 @@
     }
   },
   {
-    "id": "2026-10-21-frontier-openai-brain-implant-cancer-detection",
-    "category": "frontier",
-    "jurisdiction": "US",
+    "id": "2026-10-26-ai-decision-automation-learner",
+    "category": "learner",
+    "jurisdiction": "Global",
     "severity": "low",
-    "published_at": "2026-10-21T10:30:00Z",
-    "headline": "OpenAI invests in brain-implant startup using AI for cancer detection",
-    "plain_english": "OpenAI backs early-stage neurotechnology startup using brain-signal implants paired with AI models to detect cancer biomarkers. Part of broader trend of AI labs diversifying into biotech and medical sensing.",
-    "why_it_matters": "OpenAI's bet on brain-data AI signals confidence in multimodal model applications beyond text/vision. No direct BFSI relevance, but demonstrates frontier labs' capital discipline shifting toward medical/hard-science ROI.",
+    "published_at": "2026-10-26T10:38:23Z",
+    "headline": "Why AI excels at routine decisions—and why human leaders still own the hard calls",
+    "plain_english": "AI systems reliably automate high-volume, low-stakes decisions (e.g., transaction flagging, basic credit scoring). But strategic choices involving tradeoffs, ethics, or precedent still demand human judgment. BFSI leaders must learn to split workflows: delegate easy rules to AI, keep hard judgment calls.",
+    "why_it_matters": "Clarifies realistic AI role in BFSI: boosts efficiency on volume, doesn't replace accountability; helps teams avoid over-automating high-stakes underwriting or compliance decisions.",
+    "jargon": [
+      {
+        "term": "rule-based automation",
+        "def": "Applying predetermined, transparent logic to high-volume decisions (e.g., 'approve if credit score > 700'); differs from learning models that find patterns."
+      }
+    ],
     "source": {
-      "name": "Wired · 2026-10-21",
-      "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/"
+      "name": "Sifted · 2026-10-26",
+      "url": "https://sifted.eu/articles/ai-takes-the-easy-decisions-leaders-brnd/"
     }
   },
   {
@@ -1392,20 +1427,6 @@
     }
   },
   {
-    "id": "2026-10-13-llm-fine-tuning-learner",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-13T00:00:00Z",
-    "headline": "What is fine-tuning, and why do banks use it instead of training from scratch?",
-    "plain_english": "Fine-tuning means taking a pre-trained model (e.g., GPT-4) and retraining it on a smaller, domain-specific dataset (e.g., bank compliance documents) to specialize its behavior without retraining from scratch. Banks use it to adapt general AI to internal jargon, workflows, and risk rules in weeks instead of months, and at 1/100th the compute cost.",
-    "why_it_matters": "Explains why risk, compliance, and ops teams can build production AI fast: you don't need to build a model from scratch; you customize an existing one. Key to why AI is accelerating across BFSI.",
-    "source": {
-      "name": "AITechHive · 2026-10-13",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-10-25-trending-pentagon-iqt-commercial-tech",
     "category": "trending",
     "jurisdiction": "US",
@@ -1567,6 +1588,181 @@
     "source": {
       "name": "Breakingthenews.net · 2026-10-17",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOS1BHME9lWkplZUc0LVFaVDRtQnhrc01TeXUwT2Mtc2VhUmVxcnZDOUNuSlVZLVBwa0Rjakpfay1HSkthQ3NwOXdQX2pwbEYwVXlvMkptMTZ3X29lVXF2eUkzTjl4LUZuTmpMQXplYlFwLU53RXBsM3ZsaHFIWHh5M2c0Y0tMSjI4YklRVmc1cW9PUk5fTGQyZFdlYVNSdTQ"
+    }
+  },
+  {
+    "id": "2026-10-23-us-curb-china-russia-tech-investment",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-23T09:15:00.000Z",
+    "headline": "US announces restrictions on high-tech investments in China and Russia",
+    "plain_english": "US government is introducing new constraints on US venture and private-equity capital flowing into advanced technology sectors in China and Russia. Affects chip, AI, and defense tech; likely includes BFSI-adjacent fintech and trading infrastructure.",
+    "why_it_matters": "Tightens capital flows away from geopolitical competitors; forces US fintech and AI investors to restructure emerging-market bets and may trigger re-domiciling of AI infrastructure.",
+    "source": {
+      "name": "朝日新聞 · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NWURXcjJZZnlFTXRkQTdKaXR0M3VEMGZEVE9LV3BBaWNscnJxeDF4V1VVQ2M0dGxleWhpMnoyQjd2WTJ6RkU1d2lBamVONlNoaVlWcnhB"
+    }
+  },
+  {
+    "id": "2026-10-22-regulation-uk-eu-google-cloud-outage",
+    "category": "regulation",
+    "jurisdiction": "EU|UK",
+    "severity": "high",
+    "published_at": "2026-10-22T21:18:00Z",
+    "headline": "UK and EU regulators demand answers from Google after cloud outage hit bank websites",
+    "plain_english": "The European Banking Authority and UK Financial Conduct Authority contacted Google following a major cloud outage that disrupted multiple bank websites this week. Regulators are investigating operational resilience and third-party infrastructure risk.",
+    "why_it_matters": "Expect tighter cloud vendor oversight in EU and UK regulatory guidance. Banks will face new requirements to test failover scenarios and reduce single-vendor concentration in critical systems.",
+    "jargon": [
+      {
+        "term": "Operational Resilience",
+        "def": "A bank's ability to continue essential services during disruptions—now a regulatory expectation in EU and UK frameworks."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-10-22",
+      "url": "https://www.finextra.com/newsarticle/48637/uk-and-eu-financial-regulators-seek-answers-from-google-over-cloud-outage"
+    }
+  },
+  {
+    "id": "2026-10-23-hkex-ai-semiconductor-indexes",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-23T10:06:04.000Z",
+    "headline": "HKEX launches AI and semiconductor indexes; licenses AI index in China",
+    "plain_english": "Hong Kong Exchanges launched dedicated AI and semiconductor indexes, plus licensed an AI index for mainland China trading. Signals major Asian exchange operators building infrastructure to track and enable AI-sector capital flows.",
+    "why_it_matters": "Creates benchmarks and liquidity pools for APAC AI investments; regulatory licensing of China index suggests government coordination on domestic AI capital markets.",
+    "source": {
+      "name": "The Economic Times · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSkxsYVJrZEU2d1gyaEVrWGxTNDFJRGNXUXoxUGcyaE9STHRGS3hfOHVLNUo3bzJ0Ri1fQ1lWb3lFUGpSM1ZfRlFvV0pqMTVXOV9KRDV0bVlrc0pFWjBRaHB6N1FxMFhDMGxGdjkycE9DakZzSVBxaGdfSDZPQjFpTTlTc096aXlhM01FRm9rUi1qM3FzMHZ0M1ZxUHh4Mmo2OG5SRnJQQTVEbFJoQjRISlFDd05uNFd4enI4YUNRSU9vaktGX211SC1DQThPbVdlV1c0WE9RaVNaNFM1bXFDaU1ueFBRQkXSAewBQVVfeXFMTWVCZC1SSnJOVXJsVmRXVTZQSlJBTVdXcnhESzRxd0RUaWxndFFuYXgxQzBoR1Uwem9JZjNheVpFdzJ5T3VxMHl4WjFtTl9JbFMwMm9GWWVsUWt1OFdhakw2ZU5oSmJqS18tWUpIYzZ1WGExX1l1N05OOExRWXl2MzdJaEN3dlpPUHROYmRnUUpVYU8zMkhlRXpyUkdXdm1UVmhNbGtieUJTdlEzd2s0TGc2dGJ5Um83MzAtM1NicktLUnBGdl9lWFY1SThzRjFtOGRncTAxRG5mRXgtb05MbzJOdmNWenNWcVBjMG8"
+    }
+  },
+  {
+    "id": "2026-10-22-deployment-us-banks-block-ai-agents",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-22T21:17:12Z",
+    "headline": "US banks blocking third-party AI agents from accessing customer accounts",
+    "plain_english": "Major US banks are restricting external AI agents' access to customer accounts. Industry sources indicate banks are concerned about unauthorized data exposure, prompt injection, and liability if third-party agents act without explicit customer consent.",
+    "why_it_matters": "This blocks fintech and enterprise AI vendors from automating customer workflows (e.g., bill pay, transfers via AI assistants). Banks are choosing security and liability over UX integration—expect regulatory guidance soon on permissible agent architectures.",
+    "jargon": [
+      {
+        "term": "AI Agent",
+        "def": "Autonomous software that accesses systems and performs actions (e.g., moving money, fetching data) based on user instructions without real-time human intervention."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcEFxNjAweHdoQ0ZaOWpUTGdVNWRkTXJ2Z08zeG1wOG03ZklKSW9WbTFBbGJWUVZVb211eFN4UFpjTG83aHBtMTViQ21fQmxBd2U0b2JTLXNHcjBReXRpMDl3am82SUVqVU1ndmRxejczTVZaWFlCMVZQSGNwWEQ0NXcyLWt0dlduZ2VUbjNyTUdyRUVndWEzV041cVQ1Mk1uV21vNGZBTUpaQ0tkVk1sOElNZW5NQThVZm9SemdUbXY"
+    }
+  },
+  {
+    "id": "2026-10-20-mynt-philippines-ipo",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-20T11:27:00Z",
+    "headline": "Mynt IPO raises $967M in Philippines' largest ever public offering",
+    "plain_english": "Philippines-based fintech Mynt went public in the country's biggest-ever IPO, raising $967M. The mega-IPO signals strong institutional appetite for APAC fintech scale platforms despite global fintech funding headwinds.",
+    "why_it_matters": "Demonstrates regional institutional capital is flowing into fintech despite Q3 2026 global funding decline; validates APAC as primary growth market for digital financial services.",
+    "source": {
+      "name": "Finextra · 2026-10-20",
+      "url": "https://www.finextra.com/newsarticle/48613/mynt-ipo-breaks-records-in-philippines?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "amount": "$967M",
+    "round": "IPO"
+  },
+  {
+    "id": "2026-10-20-vendor-stifel-meow",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-20T00:01:00Z",
+    "headline": "Stifel leads $31.6M Series B for Meow, plans white-label treasury platform",
+    "plain_english": "Stifel Financial invested $31.6M in business banking fintech Meow Technologies and will offer Meow's treasury management platform to its own commercial banking clients via white-label resale—a shift from pure venture play to embedded banking service.",
+    "why_it_matters": "Traditional brokers and banks are co-investing in fintech then embedding it into client-facing products. This pattern (invest + white-label) signals how legacy BFSI will capture fintech innovation without building in-house.",
+    "amount": "$31.6M",
+    "round": "Series B",
+    "source": {
+      "name": "Finextra · 2026-10-20",
+      "url": "https://www.finextra.com/newsarticle/48609/stifel-invests-in-meow-preps-white-label-treasury-platform"
+    }
+  },
+  {
+    "id": "2026-10-20-salesforce-braze",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-20T20:10:30.000Z",
+    "headline": "Salesforce acquires Braze for $5.66 billion to consolidate customer engagement stack",
+    "plain_english": "Salesforce announced acquisition of Braze, a customer engagement and marketing automation platform, for $5.66 billion (closing FY2028). Braze shareholders receive $47.50 per share in cash.",
+    "why_it_matters": "Demonstrates continued consolidation of customer-data and engagement layers into CRM platforms; signals that Salesforce sees AI-driven marketing personalization as core to future revenue, not ancillary.",
+    "source": {
+      "name": "CNBC · 2026-10-20",
+      "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html"
+    },
+    "amount": "$5.66 billion"
+  },
+  {
+    "id": "2026-10-21-meta-muse-10m-users-shopping",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-21T21:14:19.000Z",
+    "headline": "Meta Muse AI app reaches 10M users; shopping is top activity, outpacing productivity",
+    "plain_english": "Meta disclosed that its AI application Muse has surpassed 10 million users, with shopping and commerce as the primary use case, ahead of personal productivity tools. Suggests consumer LLM adoption is commerce-driven, not primarily office automation.",
+    "why_it_matters": "BFSI digital wallet and buy-now-pay-later platforms should study Meta Muse's commerce-first UX patterns; consumer AI adoption follows retail/impulse-buying workflows, not enterprise process automation. Signals opportunity in AI-assisted financial decisioning (budgeting, savings, investments) tied to real spending.",
+    "stat_value": "10M",
+    "stat_label": "Meta Muse users",
+    "source": {
+      "name": "TechCrunch · 2026-10-21",
+      "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/"
+    }
+  },
+  {
+    "id": "2026-10-21-insight-bank-llm-pilots-stalling",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-21T11:30:00Z",
+    "headline": "73% of bank LLM pilots fail to scale past proof-of-concept phase",
+    "plain_english": "Industry observational data: roughly 3 in 4 bank LLM projects remain trapped in pilots. Root causes: data quality, domain-specific fine-tuning complexity, lack of clear compliance pathway, and competing vendor lock-in fears.",
+    "why_it_matters": "Exposes gap between board hype and engineering reality. Banks need to shift from vendor magic-bullet thinking to disciplined data engineering, model selection, and governance work before deployment can succeed.",
+    "stat_value": "73%",
+    "stat_label": "of bank LLM pilots stall before production rollout",
+    "source": {
+      "name": "Finextra · 2026-10-21",
+      "url": "https://www.finextra.com/newsarticle/48626/bank-bosses-under-pressure-to-implement-ai-ahead-of-time"
+    }
+  },
+  {
+    "id": "2026-10-21-frontier-openai-brain-implant-cancer-detection",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-21T10:30:00Z",
+    "headline": "OpenAI invests in brain-implant startup using AI for cancer detection",
+    "plain_english": "OpenAI backs early-stage neurotechnology startup using brain-signal implants paired with AI models to detect cancer biomarkers. Part of broader trend of AI labs diversifying into biotech and medical sensing.",
+    "why_it_matters": "OpenAI's bet on brain-data AI signals confidence in multimodal model applications beyond text/vision. No direct BFSI relevance, but demonstrates frontier labs' capital discipline shifting toward medical/hard-science ROI.",
+    "source": {
+      "name": "Wired · 2026-10-21",
+      "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/"
+    }
+  },
+  {
+    "id": "2026-10-13-llm-fine-tuning-learner",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-13T00:00:00Z",
+    "headline": "What is fine-tuning, and why do banks use it instead of training from scratch?",
+    "plain_english": "Fine-tuning means taking a pre-trained model (e.g., GPT-4) and retraining it on a smaller, domain-specific dataset (e.g., bank compliance documents) to specialize its behavior without retraining from scratch. Banks use it to adapt general AI to internal jargon, workflows, and risk rules in weeks instead of months, and at 1/100th the compute cost.",
+    "why_it_matters": "Explains why risk, compliance, and ops teams can build production AI fast: you don't need to build a model from scratch; you customize an existing one. Key to why AI is accelerating across BFSI.",
+    "source": {
+      "name": "AITechHive · 2026-10-13",
+      "url": "https://aitechhive.com"
     }
   },
   {
@@ -5559,20 +5755,6 @@
     }
   },
   {
-    "id": "2026-09-26-trending-us-china-ai-safety-channel",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-26T11:35:37.000Z",
-    "headline": "US and China establish dedicated AI safety dialogue channel",
-    "plain_english": "The US and China have agreed to create a formal AI safety communication channel during recent diplomatic talks, signaling both powers recognize need for AI risk coordination despite broader geopolitical tensions.",
-    "why_it_matters": "First structured AI safety protocol between superpowers reduces unilateral escalation risk and sets precedent for responsible frontier AI governance amid Cold War-style competition.",
-    "source": {
-      "name": "Reuters · 2026-09-26",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUT2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB"
-    }
-  },
-  {
     "id": "2026-10-07-regulation-occ-crypto-charter-lawsuit",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7829,20 +8011,6 @@
     "source": {
       "name": "Sifted · 2026-09-26",
       "url": "https://sifted.eu/articles/monzo-nubank-sale/"
-    }
-  },
-  {
-    "id": "2026-09-26-frontier-meta-muse-ai-device",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-26T10:30:00.000Z",
-    "headline": "Meta releases Muse, AI companion device marketed for adults",
-    "plain_english": "Meta launched Muse, a consumer AI device with a cute mascot interface designed for adults, blending Tamagotchi-style interaction with large language models to drive engagement.",
-    "why_it_matters": "Signals major tech firms betting on always-on, personalized AI companions as next platform; BFSI incumbents should monitor consumer trust/data-privacy backlash if financial services integrate similar chat-based agents.",
-    "source": {
-      "name": "Wired · 2026-09-26",
-      "url": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/"
     }
   }
 ]
