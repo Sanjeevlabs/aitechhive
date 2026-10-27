@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-27-bofa-ai-agent-warning",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-27T21:44:34Z",
+    "headline": "Bank of America warns customers against sharing banking passwords with AI agents",
+    "plain_english": "Bank of America issued public guidance that customers remain liable for unauthorized activity if they grant AI assistants access to their accounts via credentials. Signals emerging regulatory and liability gap around autonomous agent permissions.",
+    "why_it_matters": "First major US bank public advisory on AI agent security; implies liability framework shift to consumer-responsible model for third-party AI access. Compliance and risk teams must map exposure if customers delegate account access to untrusted LLM agents.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous software that performs tasks on user's behalf (e.g., transfer funds, check balance) without manual approval per transaction."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-10-27",
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/"
+    }
+  },
+  {
+    "id": "2026-10-27-revolut-boe-scrutiny",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-10-27T22:38:01Z",
+    "headline": "Bank of England scrutinizes Revolut's product approval processes amid ongoing regulatory review",
+    "plain_english": "Revolut faces Bank of England scrutiny over internal product approval workflows, per Sifted reporting. Adds pressure on fintech regulatory compliance as PRA tightens governance expectations for fast-scaling digital banks.",
+    "why_it_matters": "UK regulator signal: speed-to-market product launches now subject to governance-heavy review; PRA likely to require similar rigor from AI-driven product rollouts. BFSI ops must expect longer approval cycles and tighter sign-off chains for algorithmic products.",
+    "source": {
+      "name": "Sifted · 2026-10-27",
+      "url": "https://sifted.eu/articles/revolut-faces-bank-of-england-scrutiny-over-product-approval-process-reports-say/"
+    }
+  },
+  {
     "id": "2026-10-27-ecb-bank-credit-tightening-regulation",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -118,31 +152,39 @@
     }
   },
   {
-    "id": "2026-10-25-rba-rate-path-inflation",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-25T10:28:29.000Z",
-    "headline": "RBA signals rate hiking cycle not complete; inflation fight continues in Australia",
-    "plain_english": "Reserve Bank of Australia's Philip Hunter states official rate 'not quite yet' at terminal level. RBA maintaining restrictive policy into 2026 to combat persistent inflation.",
-    "why_it_matters": "Divergent central bank policy timelines (RBA tighter, ECB looser) create currency and funding mismatches for multinational BFSI firms; affects AUD/EUR hedging and cross-border lending spreads.",
+    "id": "2026-10-27-broadcom-chip-financing",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-27T21:17:50Z",
+    "headline": "Banks arranging $21 billion bond financing for Broadcom AI chip deal",
+    "plain_english": "Major US banks (via Bloomberg report) are underwriting $21 billion in bonds to finance Broadcom's chip expansion for AI infrastructure. Signals credit market confidence in AI capex cycle sustainability despite recent stock volatility.",
+    "why_it_matters": "Bond market appetite for AI chip financing shows enterprise spending is concrete, not speculative; BFSI lending desk risk exposure grows as semiconductor debt accelerates—affects bank capital ratios and counterparty concentration.",
+    "scale": {
+      "metric": "amount",
+      "value": "$21B"
+    },
     "source": {
-      "name": "Bloomberg · 2026-10-25",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTFlTcUlTeWlQYjFDaGxjNkFGamVSTWxkOFN0Zk50RXN4eWc5UjJIbEcyeXU4N3dGRHFyUkU1WkhsRG5Aaaw1b1lGUVEtaEhRTmUyMjJHVnkycXkzWDI3amhPVVkwRFY1a2x2YVEycVhfOWNwcGhCUWZGNHlmNXhqM3VqMUdsNHVuTlEtMFM5TnJJTGNSMWwya0s1MUo5YmdJdlUtRWhnSGQzVkpaU0ZJOGJSZVpNbllvY2FHOHJkZzJQVW9RZjRyWFo1TFgtZEhIdj9oc3QtWXQxbEp5c0VPYmFXQWpoQmhCa0t3"
+      "name": "Bloomberg · 2026-10-27",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObENDd2ZaNmE1VUlBR0d6Q1YydGNyX1dNZUV1YVVoTlpfb1hJckdOV1VKTDJqLXZhbzNWdnpUOWNwc2huLVBXWUF5ZFZzUU1meXhPTzlGMmc4cUt5VzBCeEJwb0NLQ3p3d2xhc0NVb0tuOFRHS3JmbjRHMXp4UDd5WEZiUUJKbHBrTFNJLVVMSnFLZmU1ZHRhMzVVZnBFS2xjY05LQzdDSTFPSGMxVzVQNkFocw"
     }
   },
   {
-    "id": "2026-10-24-israeli-central-bank-crypto-sanctions",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-24T19:19:48.000Z",
-    "headline": "Bank of Israel rejects government plan to use crypto to circumvent sanctions",
-    "plain_english": "Israel's central bank formally rejected a Netanyahu administration proposal to use cryptocurrencies to evade international sanctions. Signals regulatory hardline on illicit finance despite political pressure.",
-    "why_it_matters": "Central banks worldwide now proactively block crypto-as-sanctions-evasion schemes; any fintech or bank facilitating such transfers faces enforcement risk from multiple jurisdictions simultaneously.",
+    "id": "2026-10-27-walmart-ai-training",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-27T21:15:35Z",
+    "headline": "Walmart trains 2.1 million associates on AI tools via OpenAI and Google partnerships",
+    "plain_english": "Walmart deployed AI training programs from OpenAI and Google to 2.1 million employees, reporting increased confidence and digital tool adoption. Largest enterprise workforce upskilling in generative AI to date.",
+    "why_it_matters": "HR and ops leaders at BFSI now have Fortune-500 benchmark for AI workforce enablement; shows ROI case for internal LLM training—relevant to bank decision-making on own employee reskilling and vendor partnerships.",
+    "scale": {
+      "metric": "employees",
+      "value": "2.1M"
+    },
     "source": {
-      "name": "Financial Times · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOUo3Rnllc2dMYUJwa2U1anpZUEVrbTZzNy1vWU5mZ001ZVJtUGJ3Rzl6Y1NodkZhNGNmYUxEQ3g1dU10WTJZNVVOOWRuU0gySlIxVm9qQ1pYZ2RfMEt0WHRIbnR6NWhrVENjRlhvRjlzZkxLQUoyOFVpRzFXcTItdmNtNWQ"
+      "name": "CNBC · 2026-10-27",
+      "url": "https://www.cnbc.com/2026/10/27/walmart-ai-training-workers.html"
     }
   },
   {
@@ -277,38 +319,6 @@
     "source": {
       "name": "WSJ · 2026-10-24",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYVNQU2d4cHp6SHgxZ0dTMFpoWXM5N25QUnFMVFliOEJ4RlZfMHAxR0VyQ1FFcjE0NE1Ja3BuLUVyWGVZMk9PTDhLSkk3RXJ4YVh4MURKYktCb1o4WW8xOEVmdWltUXRZVUZtYUhtZ0pFc0RnSWEtMWxNelpZVWxtQ0ZFTVdWMi1iemJadlAyRFN0WGo3WHpucGtRRGVQYUQwQVhITlRPX1hRcVkwczBSbFpkWTdSM0pzcUlr"
-    }
-  },
-  {
-    "id": "2026-10-24-kotak-bank-q2-earnings",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "low",
-    "published_at": "2026-10-24T09:19:43.000Z",
-    "headline": "Kotak Bank profit jumps 29% on back of digital banking and AI-driven lending",
-    "plain_english": "India's Kotak Bank reported Q2 profit growth of 29%, beating analyst estimates. Growth driven by digital banking adoption and AI-enabled credit decisioning in the Indian market, where digital penetration is accelerating.",
-    "why_it_matters": "Emerging market banks deploying AI for credit scoring and risk assessment are seeing tangible margin expansion; sets a template for BFSI AI ROI in developing economies with sparse credit histories.",
-    "source": {
-      "name": "Reuters · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX0plbzI1SGJsanpnTUpVU2lBUHBLczJtTXFFQnI4aGhVR3Z0aXhReXlpWGtIWFBMV3BSWUpkOW9FWGltNXBOdVA2Mi1CUHdNLVNheTJDdXMta2p4WWY2bXo5clRja2JwSjQ0cndEOFhEem5Fb3NUVjE5emVkRHZ6QTdxNDVabWhmTlhpZjdpSENVS3RqNW8zeGVRUE9LUFZsUWc"
-    }
-  },
-  {
-    "id": "2026-10-23-citi-commerce-media-70m-customers",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-23T19:09:03Z",
-    "headline": "Citigroup launches commerce media platform leveraging 70 million customer records",
-    "plain_english": "Citigroup has built a commerce media offering that uses data from 70 million customers to target ads and offers across its ecosystem. The move monetizes customer data and competes with fintech ad platforms.",
-    "why_it_matters": "BFSI data-monetization strategies are accelerating. This signals a shift toward AI-driven customer targeting and alternative revenue streams—competitors will need similar capabilities or risk margin compression.",
-    "scale": {
-      "metric": "customers",
-      "value": "70M"
-    },
-    "source": {
-      "name": "Simply Wall Street · 2026-10-23",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUNrREw5UjNDRUlQYTVoNlVrMTF0WVJBeXlIWnJrajEwNGtsNy13bHBqM1pQREV2bmxhNnNfZWNVeC1xOExKSUV4QVk4XzVHQ3FyUDZKQU4yTWhpM01EbnBCTUZPcEQwWlI3OWxxMUVYRnFjVlUyYTFTbXhMWXJwb19nVG03T1JienRJNjRPcDB5bkR1eEZLNU95NmpMdHRsaGN3Z29DX25OVTFPWnpPR0FBeENYaUFoTHRqStIBwgFBVV95cUxQWU9UWEhHMWlUQUJTeUxWUG9nWHd1dTNHUl9JcVVoZzlaSk1VUGlZWlptblVXMVF3SXV5dEdtc2VyVC1Xd1g1ak9GdUlIUzd0cjdSWnNvSWsxRXFzMFlOX0dsQW5oREE1c1I2aThKNTY4NV8yckk3aUFCV25XVlJ2X0pPelZ2SEpmWE95OEhaVkxHeGk0YXo5V1g0U1NxbFZ6RFFoOUE4WU9iVXFTV2MtSjB0cWpRN2J6UkQwaFQwN0drQQ?oc=5"
     }
   },
   {
@@ -684,20 +694,6 @@
     }
   },
   {
-    "id": "2026-09-27-tool-climate-ai-infrastructure",
-    "category": "tool",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-27T22:02:50Z",
-    "headline": "Climate tech VCs pivot to AI power infrastructure; energy-intensive compute now core FinTech requirement",
-    "plain_english": "Venture capital climate tech funds are shifting focus from decarbonization to building power and cooling systems for AI data centers. Implies that energy constraints, not regulatory policy, will be the binding constraint on AI deployment in BFSI.",
-    "why_it_matters": "Banks scaling LLM inference face real power bottlenecks. On-premises AI deployment will be limited to tier-1 metro areas with surplus capacity. Expect renewed cloud dependency and vendor lock-in tied to power availability, not just pricing.",
-    "source": {
-      "name": "WSJ · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2VjVE1WTlJTbjc3MG5xU0lJRDdTWmhGcGN3ZWo0Q0pGbDNucUZvanFhblFSX281cFVnZXZSNE9WaXFrQXJVTG5TcDhiUHgxM3FaSk5IaGNTMnRZdmpTcWJ6NVBXSERnV1pRa0R5Y3FvTV96R1JkU0pvSlN1VmstMlZKbW5PbjQ1SjZwTVlGWWs0ZDNVeTBCTjdNbnNCdzJMeVVaNVRBckFCaXZtLXg1Q3F1dllDNHJzMWxGTk1oV0d4QQ"
-    }
-  },
-  {
     "id": "2026-10-27-google-deepmind-frontier-research",
     "category": "research",
     "jurisdiction": "Global",
@@ -876,6 +872,48 @@
     }
   },
   {
+    "id": "2026-10-27-anthropic-governance",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-27T21:38:28Z",
+    "headline": "Anthropic's IPO structure preserves founder control via multi-class shares and board seats",
+    "plain_english": "Anthropic maintains complex governance post-IPO: founder-led board with veto rights, multi-class share structure limiting voting power of public investors. Key risk for stakeholders evaluating AI licensing partnerships with the firm.",
+    "why_it_matters": "Banks and insurers negotiating long-term AI deals need clarity on decision-making authority; founder control post-IPO affects product roadmap, pricing, and merger risk—critical for enterprise AI contracts.",
+    "source": {
+      "name": "TechCrunch · 2026-10-27",
+      "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/"
+    }
+  },
+  {
+    "id": "2026-10-27-ecb-lending-survey",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-27T21:00:38Z",
+    "headline": "ECB Q3 2026 lending survey shows credit conditions tightening across eurozone banks",
+    "plain_english": "European Central Bank's Q3 lending survey reveals eurozone banks tightened credit standards and repriced risk; signals broader macro headwinds affecting bank profitability and capital allocation to tech/AI investment.",
+    "why_it_matters": "When credit conditions tighten, EU banks cut discretionary R&D spend first. Implies slower AI vendor wins and longer sales cycles in eurozone; risk officers should model reduced internal budgets for gen-AI infrastructure projects through 2027.",
+    "source": {
+      "name": "European Central Bank · 2026-10-27",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa2NiNGpLNER5ZndJZGJqcF9oS18wUm84RkZNT2U0U0RXQ0VTUnVSU3hhOEVNbk5zUVp0UldRUkpjaEdkWG4xbERRREtpZzRoWk1ia0NOMjJMY09rR251eTRXVi0wNVA0YUxYWjRObFotc01qLUNtWjhrT3lsQ3dOQVNwUTNKdy1UeEcwZmc3WEZSNFhxSjhBS0pnUnBsNFpaak9CQThBa0FWTnc"
+    }
+  },
+  {
+    "id": "2026-10-27-robinhood-q3-earnings",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-27T21:07:51Z",
+    "headline": "Robinhood Q3 revenue flat as crypto slump offsets expansion into options and prediction markets",
+    "plain_english": "Robinhood reported Q3 2026 revenue met expectations despite crypto weakness, with growth from options trading and new prediction market offerings. Shows consumer fintech diversification strategy amid crypto cycle headwinds.",
+    "why_it_matters": "Signals retail fintech margin pressure: core crypto/trading revenue vulnerable to market cycles; vendors to retail platforms should expect slower spending. Enterprise BFSI clients seeking consumer fintech partnerships should stress-test revenue stability.",
+    "source": {
+      "name": "CNBC · 2026-10-27",
+      "url": "https://www.cnbc.com/2026/10/27/robinhood-hood-q3-2026-earnings.html"
+    }
+  },
+  {
     "id": "2026-10-27-ai-volatility-market-insight",
     "category": "insight",
     "jurisdiction": "US",
@@ -984,49 +1022,23 @@
     }
   },
   {
-    "id": "2026-10-26-western-digital-ai-storage-demand",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-26T11:23:51Z",
-    "headline": "Western Digital profit climbs on surging AI-driven data storage demand and pricing power",
-    "plain_english": "Storage giant Western Digital reported profit growth driven by rising demand for AI compute infrastructure and high-capacity drives, plus ability to maintain premium pricing.",
-    "why_it_matters": "Signals sustained capital velocity toward AI infrastructure; component-level margin expansion suggests long lead times and supply constraints in AI build-out.",
-    "source": {
-      "name": "WSJ · 2026-10-26",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSzhOYUpZbGl3TkN6ME14eUk1NklhX0dxSk90UkhtSzY2N0NFR2llaW9NSHlMWkpaZ1E3MlFadzIxRl9EbGJzQnZXbnd2NmdXQkZval9uMXBUSlBSLWZTTDk2SXBKRGJETTNBSGhtS2NiX2w1U1NTazNldXZNU2xKczZnc0JwbkdMbTR6bG1fUmdtQm1UZkR3WlZJbkwzWm8"
-    }
-  },
-  {
-    "id": "2026-10-25-blackrock-bond-hedge-warning",
-    "category": "insight",
-    "jurisdiction": "Global",
+    "id": "2026-10-27-anthropic-ipo-filing",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-10-25T21:06:10Z",
-    "headline": "BlackRock warns traditional bond hedge mechanism is deteriorating",
-    "plain_english": "BlackRock flagged that the historical inverse correlation between stocks and bonds—long relied on by asset allocators—is breaking down in current market conditions. This threatens portfolio construction models and forces active managers to rethink diversification logic.",
-    "why_it_matters": "Risk officers and portfolio managers depend on bond-equity hedges for regulatory capital optimization; breakdown forces recalibration of VaR models, stress-test assumptions, and liquidity buffers.",
-    "stat_value": "Bond-equity correlation shift",
-    "stat_label": "undermines traditional 60/40 hedge logic",
+    "published_at": "2026-10-27T21:22:40Z",
+    "headline": "Anthropic files for IPO with $131.7B cash pile, largest AI company capital raise",
+    "plain_english": "Anthropic, maker of Claude AI, filed for IPO with $131.7 billion in cash—more than every non-bank US company except Berkshire Hathaway and Alphabet. SEC filing dedicates 90 pages to risks including compute dependency and talent retention.",
+    "why_it_matters": "Signals frontier AI labs moving from private to public markets; sets valuation benchmark for AI infrastructure and model licensing business models that banks will reference in licensing negotiations.",
+    "jargon": [
+      {
+        "term": "SEC S-1 filing",
+        "def": "Regulatory document required for US company IPO; discloses business, financials, and material risks to investors."
+      }
+    ],
     "source": {
-      "name": "Money Marketing · 2026-10-25",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZlhjSXpHX0h5dV9BYWMzWVdMXzJTa05MeXd3YmtRRXV2R1dXLUxhSmZFaFhpeU9Sb05PWS1KS3ZWU1g2d3RyRmgxVVNicWU4NDhhSUtWS2oxZVI3WDhlWnhfbjJWeWRGSE40QjlvbVlhUDJTTzlDS2VPOEh3U25EWG8wMGpzN1RuaVBDWVRHaEFtRWNZSlBuSjJR?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-25-apollo-slok-ai-payoff-zero",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-25T09:28:36.000Z",
-    "headline": "Apollo economist: AI ROI remains zero outside technology sector",
-    "plain_english": "Torsten Slok, Apollo's chief economist, stated publicly that AI has generated measurable returns only in tech companies; finance, manufacturing, and other sectors show no material payoff yet despite heavy spending.",
-    "why_it_matters": "Challenges industry narrative of imminent AI-driven productivity gains; suggests BFSI AI investments may not yet justify capex or regulatory compliance costs.",
-    "stat_value": "Zero",
-    "stat_label": "Measured AI payoff outside tech (Apollo)",
-    "source": {
-      "name": "Bloomberg · 2026-10-25",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR1FnYXFIOUpyU1VUdzNDazE4cFE2VDFyNU5DS3h0R0VSR2xHa0k0V2dHZ0hKbTZ6dFo3X1hUSW96S2dRRE5GODJUSUlCQ0dHUTVpSUJ0ZExNM1FBMVFld0JmSTBDMkpfSG5IOXVlS0hPX1h6OHpRT0xhbzNweEVxVDBLZGRreHVCc0VPZjVEQjN5dEIxQ2x4TGhfN2o3UHA3dVZrTXhRNVhsV216MGxNSnZWUGdNU1JiQjMxbQ"
+      "name": "CNBC · 2026-10-27",
+      "url": "https://www.cnbc.com/2026/10/27/anthropic-five-surprising-risks-s1.html"
     }
   },
   {
@@ -1162,21 +1174,6 @@
       "name": "Forbes · 2026-10-23",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2ZnT0JQaEZ2alZMTnFJYVVNa0M3Z210T1ZSbFdKWi0wa25majdtYjVsR1RPVlIzc3ZZUDVPTmZxN0FpRnBhTE92S24tUzhkaVhMb2ZKNUg0VDhMMHhaX2wxcDRHbDZDU0pWZ3RWTFRFMlZCVDRzdWZPUlB5T2gwRk5VQUVRT0pDMEJaQ1pscTQ3S29yXzR5b1hBc2xKQmwzRFB2R2VwLTZRcFY5cHNQUDVBQnZtVk0wb3pQRk9qMEY"
     }
-  },
-  {
-    "id": "2026-10-22-frontier-openai-30b-1.25t",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-22T20:41:37Z",
-    "headline": "OpenAI nears $30B funding round at $1.25T valuation ahead of 2027 IPO",
-    "plain_english": "OpenAI is finalizing up to $30B in new funding led by UAE investors at a $1.25 trillion valuation. The round is designed as a bridge to an expected 2027 public offering. If completed, it would make OpenAI the most valuable private company ever.",
-    "why_it_matters": "A $1.25T OpenAI valuation signals investor conviction that frontier AI will drive enterprise productivity for years. Banks using OpenAI APIs face concentration risk if OpenAI's financial stability or data-use terms change post-IPO.",
-    "source": {
-      "name": "CNBC · 2026-10-22",
-      "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html"
-    },
-    "amount": "$30B"
   },
   {
     "id": "2026-10-27-rag-explainer-learner",
@@ -1565,6 +1562,127 @@
       "name": "Reuters · 2026-10-19",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSUVKUWRvY0tQeUZscHhGcDBLYjI5VVZaYXRFRklFbmEzX29RaVFuMmt6cDlpMURENUtWRFpBQVBnNngwcWJla3NJZllZVDFBb2NKU21YUnBkMTNKb1NEM3BNLXk2OXpVbVpyZXM3NHVaOUNrWGZzRWhGQlRFSDhPa0E4TVdCTnBuZjNBS2R2UU9ySzV1c2hCbUVycmFHUTNpVk1vX0kxSEEyMUllRlpsakRfNEdZUlJUWVBVRTFqYkZiYm5jR1E"
     }
+  },
+  {
+    "id": "2026-10-25-rba-rate-path-inflation",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-25T10:28:29.000Z",
+    "headline": "RBA signals rate hiking cycle not complete; inflation fight continues in Australia",
+    "plain_english": "Reserve Bank of Australia's Philip Hunter states official rate 'not quite yet' at terminal level. RBA maintaining restrictive policy into 2026 to combat persistent inflation.",
+    "why_it_matters": "Divergent central bank policy timelines (RBA tighter, ECB looser) create currency and funding mismatches for multinational BFSI firms; affects AUD/EUR hedging and cross-border lending spreads.",
+    "source": {
+      "name": "Bloomberg · 2026-10-25",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTFlTcUlTeWlQYjFDaGxjNkFGamVSTWxkOFN0Zk50RXN4eWc5UjJIbEcyeXU4N3dGRHFyUkU1WkhsRG5Aaaw1b1lGUVEtaEhRTmUyMjJHVnkycXkzWDI3amhPVVkwRFY1a2x2YVEycVhfOWNwcGhCUWZGNHlmNXhqM3VqMUdsNHVuTlEtMFM5TnJJTGNSMWwya0s1MUo5YmdJdlUtRWhnSGQzVkpaU0ZJOGJSZVpNbllvY2FHOHJkZzJQVW9RZjRyWFo1TFgtZEhIdj9oc3QtWXQxbEp5c0VPYmFXQWpoQmhCa0t3"
+    }
+  },
+  {
+    "id": "2026-10-24-israeli-central-bank-crypto-sanctions",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-24T19:19:48.000Z",
+    "headline": "Bank of Israel rejects government plan to use crypto to circumvent sanctions",
+    "plain_english": "Israel's central bank formally rejected a Netanyahu administration proposal to use cryptocurrencies to evade international sanctions. Signals regulatory hardline on illicit finance despite political pressure.",
+    "why_it_matters": "Central banks worldwide now proactively block crypto-as-sanctions-evasion schemes; any fintech or bank facilitating such transfers faces enforcement risk from multiple jurisdictions simultaneously.",
+    "source": {
+      "name": "Financial Times · 2026-10-24",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOUo3Rnllc2dMYUJwa2U1anpZUEVrbTZzNy1vWU5mZ001ZVJtUGJ3Rzl6Y1NodkZhNGNmYUxEQ3g1dU10WTJZNVVOOWRuU0gySlIxVm9qQ1pYZ2RfMEt0WHRIbnR6NWhrVENjRlhvRjlzZkxLQUoyOFVpRzFXcTItdmNtNWQ"
+    }
+  },
+  {
+    "id": "2026-10-24-kotak-bank-q2-earnings",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-10-24T09:19:43.000Z",
+    "headline": "Kotak Bank profit jumps 29% on back of digital banking and AI-driven lending",
+    "plain_english": "India's Kotak Bank reported Q2 profit growth of 29%, beating analyst estimates. Growth driven by digital banking adoption and AI-enabled credit decisioning in the Indian market, where digital penetration is accelerating.",
+    "why_it_matters": "Emerging market banks deploying AI for credit scoring and risk assessment are seeing tangible margin expansion; sets a template for BFSI AI ROI in developing economies with sparse credit histories.",
+    "source": {
+      "name": "Reuters · 2026-10-24",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX0plbzI1SGJsanpnTUpVU2lBUHBLczJtTXFFQnI4aGhVR3Z0aXhReXlpWGtIWFBMV3BSWUpkOW9FWGltNXBOdVA2Mi1CUHdNLVNheTJDdXMta2p4WWY2bXo5clRja2JwSjQ0cndEOFhEem5Fb3NUVjE5emVkRHZ6QTdxNDVabWhmTlhpZjdpSENVS3RqNW8zeGVRUE9LUFZsUWc"
+    }
+  },
+  {
+    "id": "2026-10-23-citi-commerce-media-70m-customers",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T19:09:03Z",
+    "headline": "Citigroup launches commerce media platform leveraging 70 million customer records",
+    "plain_english": "Citigroup has built a commerce media offering that uses data from 70 million customers to target ads and offers across its ecosystem. The move monetizes customer data and competes with fintech ad platforms.",
+    "why_it_matters": "BFSI data-monetization strategies are accelerating. This signals a shift toward AI-driven customer targeting and alternative revenue streams—competitors will need similar capabilities or risk margin compression.",
+    "scale": {
+      "metric": "customers",
+      "value": "70M"
+    },
+    "source": {
+      "name": "Simply Wall Street · 2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUNrREw5UjNDRUlQYTVoNlVrMTF0WVJBeXlIWnJrajEwNGtsNy13bHBqM1pQREV2bmxhNnNfZWNVeC1xOExKSUV4QVk4XzVHQ3FyUDZKQU4yTWhpM01EbnBCTUZPcEQwWlI3OWxxMUVYRnFjVlUyYTFTbXhMWXJwb19nVG03T1JienRJNjRPcDB5bkR1eEZLNU95NmpMdHRsaGN3Z29DX25OVTFPWnpPR0FBeENYaUFoTHRqStIBwgFBVV95cUxQWU9UWEhHMWlUQUJTeUxWUG9nWHd1dTNHUl9JcVVoZzlaSk1VUGlZWlptblVXMVF3SXV5dEdtc2VyVC1Xd1g1ak9GdUlIUzd0cjdSWnNvSWsxRXFzMFlOX0dsQW5oREE1c1I2aThKNTY4NV8yckk3aUFCV25XVlJ2X0pPelZ2SEpmWE95OEhaVkxHeGk0YXo5V1g0U1NxbFZ6RFFoOUE4WU9iVXFTV2MtSjB0cWpRN2J6UkQwaFQwN0drQQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-26-western-digital-ai-storage-demand",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-26T11:23:51Z",
+    "headline": "Western Digital profit climbs on surging AI-driven data storage demand and pricing power",
+    "plain_english": "Storage giant Western Digital reported profit growth driven by rising demand for AI compute infrastructure and high-capacity drives, plus ability to maintain premium pricing.",
+    "why_it_matters": "Signals sustained capital velocity toward AI infrastructure; component-level margin expansion suggests long lead times and supply constraints in AI build-out.",
+    "source": {
+      "name": "WSJ · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSzhOYUpZbGl3TkN6ME14eUk1NklhX0dxSk90UkhtSzY2N0NFR2llaW9NSHlMWkpaZ1E3MlFadzIxRl9EbGJzQnZXbnd2NmdXQkZval9uMXBUSlBSLWZTTDk2SXBKRGJETTNBSGhtS2NiX2w1U1NTazNldXZNU2xKczZnc0JwbkdMbTR6bG1fUmdtQm1UZkR3WlZJbkwzWm8"
+    }
+  },
+  {
+    "id": "2026-10-25-blackrock-bond-hedge-warning",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-25T21:06:10Z",
+    "headline": "BlackRock warns traditional bond hedge mechanism is deteriorating",
+    "plain_english": "BlackRock flagged that the historical inverse correlation between stocks and bonds—long relied on by asset allocators—is breaking down in current market conditions. This threatens portfolio construction models and forces active managers to rethink diversification logic.",
+    "why_it_matters": "Risk officers and portfolio managers depend on bond-equity hedges for regulatory capital optimization; breakdown forces recalibration of VaR models, stress-test assumptions, and liquidity buffers.",
+    "stat_value": "Bond-equity correlation shift",
+    "stat_label": "undermines traditional 60/40 hedge logic",
+    "source": {
+      "name": "Money Marketing · 2026-10-25",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZlhjSXpHX0h5dV9BYWMzWVdMXzJTa05MeXd3YmtRRXV2R1dXLUxhSmZFaFhpeU9Sb05PWS1KS3ZWU1g2d3RyRmgxVVNicWU4NDhhSUtWS2oxZVI3WDhlWnhfbjJWeWRGSE40QjlvbVlhUDJTTzlDS2VPOEh3U25EWG8wMGpzN1RuaVBDWVRHaEFtRWNZSlBuSjJR?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-25-apollo-slok-ai-payoff-zero",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-25T09:28:36.000Z",
+    "headline": "Apollo economist: AI ROI remains zero outside technology sector",
+    "plain_english": "Torsten Slok, Apollo's chief economist, stated publicly that AI has generated measurable returns only in tech companies; finance, manufacturing, and other sectors show no material payoff yet despite heavy spending.",
+    "why_it_matters": "Challenges industry narrative of imminent AI-driven productivity gains; suggests BFSI AI investments may not yet justify capex or regulatory compliance costs.",
+    "stat_value": "Zero",
+    "stat_label": "Measured AI payoff outside tech (Apollo)",
+    "source": {
+      "name": "Bloomberg · 2026-10-25",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR1FnYXFIOUpyU1VUdzNDazE4cFE2VDFyNU5DS3h0R0VSR2xHa0k0V2dHZ0hKbTZ6dFo3X1hUSW96S2dRRE5GODJUSUlCQ0dHUTVpSUJ0ZExNM1FBMVFld0JmSTBDMkpfSG5IOXVlS0hPX1h6OHpRT0xhbzNweEVxVDBLZGRreHVCc0VPZjVEQjN5dEIxQ2x4TGhfN2o3UHA3dVZrTXhRNVhsV216MGxNSnZWUGdNU1JiQjMxbQ"
+    }
+  },
+  {
+    "id": "2026-10-22-frontier-openai-30b-1.25t",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-22T20:41:37Z",
+    "headline": "OpenAI nears $30B funding round at $1.25T valuation ahead of 2027 IPO",
+    "plain_english": "OpenAI is finalizing up to $30B in new funding led by UAE investors at a $1.25 trillion valuation. The round is designed as a bridge to an expected 2027 public offering. If completed, it would make OpenAI the most valuable private company ever.",
+    "why_it_matters": "A $1.25T OpenAI valuation signals investor conviction that frontier AI will drive enterprise productivity for years. Banks using OpenAI APIs face concentration risk if OpenAI's financial stability or data-use terms change post-IPO.",
+    "source": {
+      "name": "CNBC · 2026-10-22",
+      "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html"
+    },
+    "amount": "$30B"
   },
   {
     "id": "2026-10-23-bank-italy-digital-assets",
@@ -5894,20 +6012,6 @@
     }
   },
   {
-    "id": "2026-09-27-ai-sentiment-whiplash-equities",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-27T13:00:07.000Z",
-    "headline": "Stock market sentiment on AI swings rapidly between existential risk and profit euphoria",
-    "plain_english": "Equity markets are experiencing sharp reversals in AI-related sentiment, oscillating between fears of AI risk and enthusiasm for AI-driven earnings growth. Tech stocks linked to AI infrastructure and adoption are seeing heightened volatility.",
-    "why_it_matters": "BFSI asset managers and prop desks are navigating elevated AI volatility and rotation. Portfolio hedging, sector allocation, and client communication strategies must account for AI sentiment whiplash as a structural market feature.",
-    "source": {
-      "name": "Bloomberg · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcjhKd2FaWmFDNGx6VVBvd1AxMkp4MmQwek85Nzl4bWlrOEFaWmo4U190dW5zb0dOQnVXakYtWi1CTHJyZWo4T3lqRnYwVGszOEJ3M3NHMFlMU3pxSkM5WkljTkxLVU5VakNUTkhhZUFBMzQ4bHVBQldaV3k0T1JsMER3X3hzZkhvZmkzR05rSXJGWXBtdWo2OG9oN3hzVHdqU2hyQ3lvZ25BSUtuaE9qaVJhSnA1QQ"
-    }
-  },
-  {
     "id": "2026-10-07-regulation-california-robo-bosses",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7711,22 +7815,6 @@
     }
   },
   {
-    "id": "2026-09-28-insight-ai-data-center-backlash",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-27T23:09:33Z",
-    "headline": "Pro-data center lobbying campaigns exposed as astroturf, funded by Thiel and Koch networks",
-    "plain_english": "Viral pro-AI data-center advocacy groups traced back to Peter Thiel, Koch Institute, and other venture-backed AI backers. Grassroots framing masks coordinated lobby effort. Signal: AI infrastructure politics is now captured by a narrow set of wealthy stakeholders with direct BFSI ties.",
-    "why_it_matters": "BFSI boards should assume AI infrastructure policy is no longer neutral. Regulatory decisions on power, land-use, and grid access will reflect venture lobby interests, not broad financial-system resilience. Expect surprise policy reversals.",
-    "stat_value": "Astroturf campaign",
-    "stat_label": "AI infrastructure advocacy now clearly coordinated by venture capital and wealthy individuals",
-    "source": {
-      "name": "Gizmodo · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUFlWeTRDNWFoRXZ5M21LdkRnTF9XVGtXOWw1QU4xcHhRbzA4X2c1bm5IS0c5c2lIYlh4R3MzTDc4S1FWV2N5S1l1SkdoX2RIWGVGWXFoSkFKU1RQVmlHWTZ2aG90QldKZXBLWDJWUVB6UVVtVDdrN3llTy1rZDV0NUh2M3lVOFpOSFNnOEJ3R1p3SlpBVXVwYUl0QTRNQkhxSGpwZWd1RHpxNFUxVklvWGNubGhyWm01b2NodTljeGtHWTVpQ3NRMUxneUF6YnNRanc"
-    }
-  },
-  {
     "id": "2026-10-01-openai-model-extraction",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -7952,40 +8040,6 @@
     }
   },
   {
-    "id": "2026-09-27-shift-anthropic-trump-whitehouse",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-27T22:58:37Z",
-    "headline": "Anthropic CEO dines at Trump White House; AI regulation discourse enters political mainstream",
-    "plain_english": "Anthropic CEO Dario Amodei met with Trump at the White House. Trump dismissed AI safety fears as overblown. Meeting signals direct lobbying by frontier AI labs into executive branch on regulatory policy, sidelining established BFSI governance channels.",
-    "why_it_matters": "AI policy is now executive political theater, not technocratic rulemaking. BFSI institutions expecting coherent AI regulation may face policy whiplash tied to election cycles. Compliance teams should hedge strategy assumptions.",
-    "jargon": [
-      {
-        "term": "frontier AI lab",
-        "def": "Company training large-scale foundation models (Anthropic, OpenAI, Google DeepMind). Direct political engagement bypasses BFSI industry bodies."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQmNRNTdyaGdENWhHUlEzVFpTVnRndmtXcDBfZlVmTVZpWWF2SEF6M1FwXzBtbFZRdWJWOGNKc2JfYll1aEZxamJYYTJwZ2pXMUZ0NW1wWjEyQXRObnRJa29BbzhrLWxXOTFmSVZlRlkyS1Z3endodzAyYm9Sc0NOYlE5REhwbnZQbERfdWc2Mi1LbWVyaGpiOGtjZ1dVWGQ2cTJib1FVM1ZJYkVZbmRJWA"
-    }
-  },
-  {
-    "id": "2026-09-27-kpmg-pulse-fintech-h1-2026",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-27T13:42:23.000Z",
-    "headline": "KPMG Pulse of Fintech H1 2026 report released with global funding and M&A trends",
-    "plain_english": "KPMG published its mid-year fintech report covering global funding, M&A activity, and sector trends through June 2026. The report provides benchmarking data on fintech investment appetite across regions and subsectors.",
-    "why_it_matters": "Mid-market fintech valuations and capital availability shape the ecosystem BFSI competes in for talent and partnership opportunities. Report data informs strategic investment and build-vs.-buy decisions.",
-    "source": {
-      "name": "KPMG · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5td1B4SHpxN2ZaV1d1T3g4YkkyUm1KWDBHQ1FKVW9BaGlSVzJPMWo4WUFSTkM2b253Q3dCTU13OHpWOWhobnpBT0tmM3RFMUhBeUt4U0ZHX2JJdmx3X09SSEJ5Z1pySTZJUEYtaUVvWWJKRmJGalhDbw"
-    }
-  },
-  {
     "id": "2026-09-28-frontier-nvidia-agent-safety",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8003,20 +8057,6 @@
     "source": {
       "name": "TechCrunch · 2026-09-28",
       "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/"
-    }
-  },
-  {
-    "id": "2026-09-27-frontier-anthropic-ai-breaches",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-27T23:27:32Z",
-    "headline": "AI model breaches compound safety concerns amid Trump-Anthropic meeting",
-    "plain_english": "Recent breaches of frontier AI models (details sparse in source) have amplified existing AI safety discourse. Timing coincides with Anthropic CEO's White House meeting, raising questions about whether security posture matches public assurances on AI safety.",
-    "why_it_matters": "BFSI teams deploying closed-source LLM APIs must pressure vendors for transparent breach disclosure, incident response playbooks, and third-party security audits. Regulatory appetite for AI security is rising even as vendors lobby for light-touch rules.",
-    "source": {
-      "name": "Bloomberg · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2JXcVRMWWc5ajJLNTNIdzdYeTNPellCdm5Pd3FKTjhUdTRGcmRMY1ZlOUZGM3RrcUxJdEFKeFRiaWRSYnVPWVVBbmdOY0U5OVdXNHppMEZ2QkY0T0ZhX3dBOUxyMnp0R0Y0VmZJVkNCTHQtd1lNRUJ1MUpITkVHUkVfUXEwbUEzSmJMVk96bkVSNnJ4djRCNTdvRTFTcW90VkI3bjd2X2otdTM3WTFMaWxiNA"
     }
   },
   {
@@ -8091,74 +8131,6 @@
     "source": {
       "name": "Finextra · 2026-09-28",
       "url": "https://www.finextra.com/newsarticle/48479/revolut-gets-green-light-to-buy-argentinian-bank"
-    }
-  },
-  {
-    "id": "2026-09-27-meta-muse-subscription-economy",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-27T14:33:22.000Z",
-    "headline": "Meta's Muse agent targets subscription spending patterns as AI enters household finance",
-    "plain_english": "Meta released Muse, an AI personal agent designed to monitor and optimize credit card spending, focusing on the subscription economy—a sector worth hundreds of billions annually. The move signals AI assistants are moving beyond search into active financial decision-making for consumers.",
-    "why_it_matters": "Banks and fintech rely on subscription revenue and customer spending inertia. AI agents optimizing these away could shift $100B+ in recurring revenue; financial institutions must anticipate agent-native commerce friction.",
-    "jargon": [
-      {
-        "term": "Personal agent",
-        "def": "An AI that autonomously acts on behalf of a user (e.g., cancelling unused services) without explicit per-action approval."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-27",
-      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html"
-    }
-  },
-  {
-    "id": "2026-09-27-ai-subscription-credential-theft",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-27T12:03:37.000Z",
-    "headline": "Credential theft of AI service subscriptions enables unauthorized model access at scale",
-    "plain_english": "Attackers are compromising login credentials for paid AI service subscriptions (ChatGPT Plus, Claude Pro, etc.) and reselling access. This allows free/low-cost model usage and creates account-takeover risk for financial services employees.",
-    "why_it_matters": "Banks deploying enterprise LLM access must enforce MFA, monitor anomalous API usage, and audit model interactions for sensitive data leakage. Compromised subscriptions can bypass approval workflows and expose proprietary data.",
-    "jargon": [
-      {
-        "term": "Credential stuffing",
-        "def": "Automated injection of leaked username-password pairs into login forms to gain unauthorized account access."
-      }
-    ],
-    "source": {
-      "name": "NewsBytes · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNjBTNXd4RDNDMkozVEVFM05JOXpsUHpnSVRYUHVnOXhNbk1sSWpkeDZadUlQSUFUUG5HNW1QdXZqVFpsU1NKdHRkZ291R1JuZ2p3TDgwSnc3SGNnQTJ2UkRsdEwtRkNQWVZkU21IS0ZTdElTT3hjeWFENkNKTGdZZU1GeENjbEY0RzhELWR2Yk10TkJEUDR6dlhsc1BrazlTY2FMbDFqQnczX2hHOGZraGwxbjlwbGZhc2dMSTFBenc"
-    }
-  },
-  {
-    "id": "2026-09-27-ai-infrastructure-bond-yields",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-27T15:35:34.000Z",
-    "headline": "Rising Treasury yields increase cost of AI infrastructure buildout despite unabated capex demand",
-    "plain_english": "AI data center operators face higher debt servicing costs as US Treasury yields spike. Although capex spending continues, the financing environment has become materially more expensive for the compute infrastructure underpinning frontier AI development.",
-    "why_it_matters": "BFSI relies on rented GPU clusters for model training and inference. If capex economics worsen, cloud-provider margins compress, potentially raising AI-as-a-service costs for banks deploying LLMs or proprietary models.",
-    "source": {
-      "name": "CNBC · 2026-09-27",
-      "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html"
-    }
-  },
-  {
-    "id": "2026-09-27-bill-gates-ai-safeguards",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-27T13:00:00.000Z",
-    "headline": "Bill Gates criticizes resistance to AI safety regulatory frameworks",
-    "plain_english": "Bill Gates publicly stated that opposing AI safeguards is incorrect policy, amid wider debate over governance approaches. The statement underscores ongoing tension between AI industry self-regulation and formal regulatory oversight.",
-    "why_it_matters": "BFSI compliance and risk teams track regulatory trajectory. If safety frameworks harden—either via executive action or Congress—institutions will face new guardrail requirements for LLM deployments, similar to algorithmic risk rules.",
-    "source": {
-      "name": "Bloomberg · 2026-09-27",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2JTZmRZXy1VcHl1NEtvYzhHRDhWd3RyNmo2UFlmVGZ1SnFSZEJ0dDRaLVZZcmNhTk4zQ2RGUnJqUFQzM3BMTGh1SF9Pd3FiVGFLbTVTeS1uZlRFMm0wWE1rS291RkwyOXNZLTJwVzhHM3d2R3Q1dHVvdnFJM0EyVENmVjNSMkp5amtKMkRrckZNVHhWV09UMG4yVm03bHRkZDI3b2ZJYVB1c2FMbG1rYUJ6MUZCQQ"
     }
   }
 ]
