@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-10-30-fed-super-intelligence-program",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T21:30:37Z",
+    "headline": "Federal Reserve launches Super Intelligence (SI) Program",
+    "plain_english": "The Federal Reserve announced a new Super Intelligence (SI) Program. Details sparse from RSS feed, but signals Fed's formal entry into AI governance, likely covering banking AI safety, model governance, and systemic risk assessment.",
+    "why_it_matters": "Fed SI Program could become de facto standard-setting body for BFSI AI. May require banks to submit model cards, risk assessments, or audit logs—driving compliance costs and standardization across the industry.",
+    "jargon": [
+      {
+        "term": "model cards",
+        "def": "Structured documentation of an AI model's intended use, performance, limitations, and bias metrics for regulatory transparency."
+      }
+    ],
+    "source": {
+      "name": "Federal Reserve · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8zaC1uZ1k1cHVBNlRHYVE4OGpaZm1zVG9QaGdQQzB0VERQSUpLcldPRFQtb3dLSTJCN0VNZVpUUFlPejBSRWx5RWpGSFhJQQ"
+    }
+  },
+  {
     "id": "2026-10-30-uk-fca-meta-probe",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -139,17 +159,23 @@
     }
   },
   {
-    "id": "2026-10-28-mas-environmental-risk-statement",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-28T09:39:52Z",
-    "headline": "MAS issues guidance on banks' management of haze-related environmental risks",
-    "plain_english": "Singapore's Monetary Authority issued a supervisory statement reminding banks to embed climate and environmental risk frameworks—including acute risks like transboundary haze—into operational resilience and credit risk assessments. This aligns with global ESG-linked prudential expectations.",
-    "why_it_matters": "Ops risk and risk-management teams at regional hubs must document environmental stress-test scenarios; MAS guidance signals regulatory acceptance of climate risk as material to capital adequacy, opening door for AI-driven climate scenario modeling and supply-chain resilience tools.",
+    "id": "2026-10-30-claudeagent-pentagon",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-30T21:19:26Z",
+    "headline": "Contractor's Claude AI agent accessed Pentagon systems",
+    "plain_english": "A defense contractor deployed an Anthropic Claude agent that gained access to Pentagon systems. Story touches on Anthropic IPO and ICE policy. Highlights uncontrolled AI agent propagation in sensitive US infrastructure.",
+    "why_it_matters": "If AI agents enter classified/defense networks without formal vetting, BFSI regulators will demand stricter controls on agentic AI in financial infrastructure. May trigger OCC/Fed guidance on AI agent audit, containment, and kill-switch protocols.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "AI systems that autonomously execute tasks across systems without human-in-loop approval—e.g., fetching data, making trades, sending messages."
+      }
+    ],
     "source": {
-      "name": "MAS · 2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRHZoam1RR1dNTjRzT0c2Y3FmNGtBdmQ5LXZ2Yk02dnY3eGJrRXlMODR2VlNKYUhGNGhkV191cTM0S3AzZjZrNzlEZTI0WWNWQW5mMzJEdGlBTUVPU1FpY0RpZFNDSzFPVlRuUFlEdDM0bTh0MEtqY0R5bWZWY0tVOHhlWVNiYUdaaEc5RnNBX2UzWWRDSGZocVhnR1VjUzVvQ1ZnYmlLb0l6cFF6VGphcHZ5Yw"
+      "name": "Wired · 2026-10-30",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/"
     }
   },
   {
@@ -319,21 +345,32 @@
     }
   },
   {
-    "id": "2026-10-27-hsbc-earnings-miss-deployment",
-    "category": "deployment",
+    "id": "2026-10-30-opay-ipo",
+    "category": "vendor",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-27T09:27:22Z",
-    "headline": "HSBC quarterly profit misses expectations, shares fall 6%",
-    "plain_english": "HSBC reported Q3 2026 earnings below analyst expectations, triggering a 6% share decline. Missed profit guidance may reflect higher technology/AI infrastructure spend without corresponding revenue uplift, or trading desk AI model underperformance.",
-    "scale": {
-      "metric": "market cap impact",
-      "value": "~$4–6B at 6% fall (undisclosed HSBC market cap exact date)"
-    },
-    "why_it_matters": "Major global banks' earnings misses tied to AI infrastructure costs (compute, talent, compliance tooling) without clear ROI realization signal investor skepticism; expect 2–3 quarter lag before deployed AI models generate measurable revenue or cost savings.",
+    "severity": "low",
+    "published_at": "2026-10-30T20:52:09Z",
+    "headline": "SoftBank-backed OPay raises $304 million in US IPO",
+    "plain_english": "OPay, a SoftBank-backed Nigerian fintech with AI-driven fraud detection and lending, went public in the US at $304M valuation. Expansion of BFSI AI deployment outside traditional banking channels.",
+    "why_it_matters": "Alternative fintech IPOs validated by SoftBank signal that AI-powered lending and risk models are bankable in emerging markets. May accelerate BFSI M&A interest in fintech AI stacks in Africa/Asia.",
     "source": {
-      "name": "Bloomberg · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVJjeFJTTzc0V2JkWGxWckpTN0lPWVJncFQ4R25NNzQ5a0RENm5OdzBwT3V5MFF6NGk5b3g1bE9NWGRZd3dyM0FfR0NlNXd4M1l1eEtHZHh5cjF4UUJsdlFHYi1kLWNOVDVvSkk2Y3VuZWFBdWppem10RDk2b0dfUURuZjAyNGl6bFpPNVlxS1hacl9od3Q0azRiREJuRUxHcHhkbmRWN0hSN1k0UlRTc2NCUWQyUzBndFpqQ216anc2eFhSc0E"
+      "name": "Reuters · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0lONGtsRElTTDlfS1hzMThPcHZZbGhwcHJ6VWZQYk5QUVhHOFQteXF6NVpSX0VDZmJEQllsbEFsSzhQbnVZWTFCV3FYeEtfN1g5dTNTa0VpM3BvSGlKUVA3NjJhT1RZd2FKX1RBNUh0anctTXNhWXNINkpuRFZNdTZidDVuUEh5TE5rbTVUUGxTT2JkbEQtNFozdV9ldjBCUEI3Mg"
+    },
+    "amount": "$304M"
+  },
+  {
+    "id": "2026-10-30-ollie-shutdown",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-30T22:56:13Z",
+    "headline": "Privacy-focused AI assistant Ollie shuts down",
+    "plain_english": "Ollie, a privacy-centric AI assistant startup, is closing in a week due to market saturation from incumbent AI assistants. Market consolidation signal.",
+    "why_it_matters": "Privacy-first AI market segment is not viable as OpenAI, Google, Anthropic commoditize LLMs. BFSI vendors chasing privacy differentiation may face similar runway pressure—expect consolidation of niche AI vendors into larger stacks.",
+    "source": {
+      "name": "TechCrunch · 2026-10-30",
+      "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
     }
   },
   {
@@ -453,40 +490,17 @@
     }
   },
   {
-    "id": "2026-10-22-vendor-cognitive-credit-40m",
-    "category": "vendor",
+    "id": "2026-10-30-bezos-ai-startup-sf-lease",
+    "category": "shift",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-23T00:01:00Z",
-    "headline": "Cognitive Credit raises $40M for corporate credit data and AI analytics",
-    "plain_english": "Cognitive Credit, a provider of specialist data and AI for credit markets, closed $40M led by Summit Partners and ETFS Capital. The platform helps credit teams analyze corporate borrower risk and market conditions using proprietary datasets and machine learning.",
-    "why_it_matters": "Credit teams at banks and asset managers now have a well-funded independent data vendor. This reduces reliance on bank-built credit models and creates new benchmarking pressure within risk functions.",
+    "published_at": "2026-10-30T21:42:38Z",
+    "headline": "Jeff Bezos AI startup closes in on major San Francisco office lease",
+    "plain_english": "Jeff Bezos' AI startup (Vaguely referenced) is securing a large San Francisco headquarters lease in a former Gap office. Signals serious scaling and capital deployment outside traditional tech headquarters.",
+    "why_it_matters": "Billionaire-backed AI startups ramping hiring and real estate commitments will accelerate AI talent concentration, driving salaries up for BFSI AI teams. May also signal long-term AI infrastructure buildout distinct from cloud-only strategy.",
     "source": {
-      "name": "Finextra · 2026-10-23",
-      "url": "https://www.finextra.com/newsarticle/48635/cognitive-credit-raises-40m-to-scale-specialist-data-and-ai-for-credit-markets"
-    },
-    "amount": "$40M",
-    "round": "Strategic Growth"
-  },
-  {
-    "id": "2026-10-22-nebius-citi-35bn",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-22T11:02:35Z",
-    "headline": "Nebius secures $3.5bn credit facility from Citi for GPU and data center expansion",
-    "plain_english": "Nebius, an AI infrastructure company, landed a $3.5 billion credit line from Citi to scale GPU capacity and data centers. This reflects Citi's bet on AI compute bottlenecks and signals major banks are now financing frontier-AI infrastructure.",
-    "why_it_matters": "Tier-1 bank financing AI-compute startups indicates embedded stakes in GPU supply chain. Expect more bank-vendor co-investment as LLM serving costs remain opaque.",
-    "amount": "$3.5bn",
-    "jargon": [
-      {
-        "term": "GPU capacity",
-        "def": "Graphics processing units that accelerate machine learning model training and inference; critical bottleneck for AI deployment at scale."
-      }
-    ],
-    "source": {
-      "name": "Finimize · 2026-10-22",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNkJPNTZkY0J3Z2tQWDlaazJ0a3hWcG03Z21ZUi1Vel9JQWh1eno0dEI1X1dxamxzbjdiM3djRVFZN0JWZmVaRmRmc2U1YVotNy1xNnpnRXQzU3NiZFprV0MtR0JORmZONlVVbGhfUnJDRmt6YlAwRkNhWlJnaEp2TS16dzhDSzFGTFNjWXlPeXE"
+      "name": "San Francisco Chronicle · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdHV3MjlMWWtuUmZIbVhiZElOb0ZUaHU1Q3hDUGdNVTVRYXZWdXJIbFlLTzVscVRsbTNOQU9Pc0ZhQ0wtQkR1T2diby1WUWtoa0ZsdGtoLWpWazB2TVgyNnF1RXdpX2p0a2R2OTk3YkRWbkExN2tqUHZ6WTRyMlhlVWI0M1U2UXhMZnFEOWJxT2VydUlGaUhCdGNrd2s2UQ"
     }
   },
   {
@@ -639,26 +653,6 @@
     "source": {
       "name": "CNBC · 2026-10-26",
       "url": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
-    }
-  },
-  {
-    "id": "2026-10-26-mastercard-ai-agents-payment",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-26T11:06:44Z",
-    "headline": "Mastercard launches AI agent payment infrastructure for autonomous commerce",
-    "plain_english": "Mastercard introduced 'Pay for Machines,' a tool enabling AI agents to transact autonomously. This unlocks machine-to-machine commerce workflows without human intervention.",
-    "why_it_matters": "First major payment network move to systematize autonomous agent commerce; opens entirely new settlement use case tier beyond human-initiated transactions.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Software system that perceives environment and takes actions toward goals with minimal human direction; here, making purchase decisions autonomously."
-      }
-    ],
-    "source": {
-      "name": "Fortune · 2026-10-26",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWHYwWDBjQlo5QkVvSFppTGM0SjVya1gxSDhnWnBud2ZSQkZ0bk01X0FPQkJUZVNJMl9pWks2bW9GVzhnS1F5eENpMTBYU3FrWnp0MnJvSjRwV0lSNVRlSHFnNU5Ga3d6ZUJ4MGNlS1dadmxzNXlEVnV5LTFUTmpBSXZRMjQ2bm9CaU95azJkT0d1Ul9SdWxmUUJEdWlSZTFmNFpKd3QwbTllSkxEVnhkLU5FWklPbDR3ZUFkMGZ6QjI3MldLdXRF"
     }
   },
   {
@@ -898,6 +892,22 @@
     }
   },
   {
+    "id": "2026-10-30-insight-ai-election-regulation",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T22:00:00Z",
+    "headline": "AI-generated political ads legally allowed in Pennsylvania, signaling regulatory vacuum",
+    "plain_english": "Pennsylvania allows AI-generated campaign ads (e.g., deepfakes of Gov. Shapiro) to air without disclosure or watermarking, as no state law yet mandates AI labeling in political speech. Federal rules similarly sparse.",
+    "why_it_matters": "Regulatory vacuum in AI disclosure (political, financial) signals BFSI faces similar gaps: no mandated AI labels on risk models or lending decisions. BFSI could adopt voluntary disclosure now to position ahead of FCA/OCC guidance—or face forced retroactive compliance later.",
+    "stat_value": "0",
+    "stat_label": "US states with mandatory AI-generated ad disclosure laws",
+    "source": {
+      "name": "6abc Philadelphia · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRjhoX2hsQ3lQcmdDVHZZMHdnSWZZQ09ROEJBRG9RSWxDaVd2SXlQTERUaElUb2FkdjU4SmdmSXowQmNGTlF4V2syM0FZU2d2LXVfVldQSXh4bWo2SkRYMVBzZTNmeXRYRUhVS1RESE9KZFBPTDZHanBDWVFqZDVkUldwdVNUU0ZrNFlwMXFsS2hpelBJSUt2Z1lXSk5NaWszYWtESTJSRGNKTVAtMkR5VHFxOHlwMHVrTnRadkRMQ1o5VlR0azBBbWFvNWnSAdIBQVVfeXFMTnlhemFsejYzZUNlMTJGUW5pdGM1M3dXSG80WUM2UFVXQzdIOTVVWXhGeEFkeFBYa08wWkpMVlc2aWU5Wm9OekpoNElXaXZQRV9oT0h0WFBOLTRNVHdRTFpuYmZka2Q4UUUzb1VpVjN5NTA2ZVZ0TXZBNk1TYVJ2dVhMZDVuTlFERzBCczB6a0xuSTNKQmtXYjFIV3pLZHdQY3F2Y1ROM2lTaTkycDlQWm1Ob1EwX3ZVTm9wQmI3NmVTQ1IxanhBYVp5RjBFUTFiT1RB"
+    }
+  },
+  {
     "id": "2026-10-30-ai-agents-cyber-risk",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1040,17 +1050,59 @@
     }
   },
   {
-    "id": "2026-10-27-ecb-lending-survey",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-27T21:00:38Z",
-    "headline": "ECB Q3 2026 lending survey shows credit conditions tightening across eurozone banks",
-    "plain_english": "European Central Bank's Q3 lending survey reveals eurozone banks tightened credit standards and repriced risk; signals broader macro headwinds affecting bank profitability and capital allocation to tech/AI investment.",
-    "why_it_matters": "When credit conditions tighten, EU banks cut discretionary R&D spend first. Implies slower AI vendor wins and longer sales cycles in eurozone; risk officers should model reduced internal budgets for gen-AI infrastructure projects through 2027.",
+    "id": "2026-10-30-anthropic-ipo-credit-rating",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-30T21:52:03Z",
+    "headline": "Anthropic expected to receive junk credit rating after IPO filing",
+    "plain_english": "Anthropic, Claude's maker, filed for IPO but credit agencies forecast a high junk rating due to massive capex and negative cash flow. Higher borrowing costs would strain the $10B+ annual burn funding frontier AI research.",
+    "why_it_matters": "Junk ratings make debt financing expensive. If Anthropic can't cheaply refinance R&D, it may slow model releases or pivot to licensing—reshaping frontier AI competition and BFSI LLM availability.",
     "source": {
-      "name": "European Central Bank · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa2NiNGpLNER5ZndJZGJqcF9oS18wUm84RkZNT2U0U0RXQ0VTUnVSU3hhOEVNbk5zUVp0UldRUkpjaEdkWG4xbERRREtpZzRoWk1ia0NOMjJMY09rR251eTRXVi0wNVA0YUxYWjRObFotc01qLUNtWjhrT3lsQ3dOQVNwUTNKdy1UeEcwZmc3WEZSNFhxSjhBS0pnUnBsNFpaak9CQThBa0FWTnc"
+      "name": "TechCrunch · 2026-10-30",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
+    }
+  },
+  {
+    "id": "2026-10-30-ai-spending-boom-cracks",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T21:17:40Z",
+    "headline": "Cracks emerging in AI spending boom amid debt and negative cash flow",
+    "plain_english": "Big Tech's multibillion-dollar AI infrastructure spend is now questioned by investors. Meta, Amazon, Intel earnings show mounting debt, negative cash flow, and questions about ROI sustainability.",
+    "why_it_matters": "If AI capex boom stalls, commodity demand for GPUs/memory drops; component costs fall; fintech LLM affordability improves but frontier model innovation slows—shifting BFSI AI strategy from \"buy everything\" to efficiency focus.",
+    "source": {
+      "name": "TechCrunch · 2026-10-30",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+    }
+  },
+  {
+    "id": "2026-10-30-meta-sp-outlook-negative",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T22:42:26Z",
+    "headline": "S&P downgrades Meta outlook to negative on capex and cash flow concerns",
+    "plain_english": "S&P Global Ratings revised Meta's credit outlook negative due to hefty capital expenditures and deteriorating free cash flow. Meta is the leading AI model developer funding open-source LLaMA used widely in fintech.",
+    "why_it_matters": "If Meta's credit rating drops or debt costs spike, LLaMA development may slow. BFSI firms relying on open-weight LLaMA alternatives to proprietary APIs could face reduced model iteration and feature parity risk.",
+    "source": {
+      "name": "CNBC · 2026-10-30",
+      "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html"
+    }
+  },
+  {
+    "id": "2026-10-30-intel-stock-crash",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-30T20:30:57Z",
+    "headline": "Intel stock crashes, erasing $12 billion of US government stake",
+    "plain_english": "Intel's stock fell sharply—worst day since the 1970s—as AI demand for GPUs and memory starves PC component supply. US government stake lost $12B in value. Intel is critical to semiconductor strategy.",
+    "why_it_matters": "PC prices rising due to AI component hoarding raises hardware costs for BFSI branch tech and back-office computing. US semiconductor risk also affects long-term chip supply for fintech data centers and AI inference.",
+    "source": {
+      "name": "CNBC · 2026-10-30",
+      "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
     }
   },
   {
@@ -1153,70 +1205,6 @@
     "source": {
       "name": "CNBC · 2026-10-27",
       "url": "https://www.cnbc.com/2026/10/27/anthropic-five-surprising-risks-s1.html"
-    }
-  },
-  {
-    "id": "2026-10-27-anthropic-ipo-frontier",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-27T11:00:01Z",
-    "headline": "Anthropic files for record-breaking AI company IPO",
-    "plain_english": "Anthropic, one of the leading frontier AI labs behind Claude LLM, has filed for public listing. The IPO is expected to be record-breaking for the AI sector, bringing significant capital and public market scrutiny to frontier model development.",
-    "why_it_matters": "Public market entry forces frontier labs to disclose business model, risk factors, and revenue—reshaping how BFSI assesses AI vendor viability and geopolitical dependence on frontier model providers.",
-    "source": {
-      "name": "CNBC · 2026-10-27",
-      "url": "https://www.cnbc.com/2026/10/27/anthropic-five-surprising-risks-s1.html"
-    }
-  },
-  {
-    "id": "2026-10-26-anthropic-ipo-financing",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-26T21:16:44Z",
-    "headline": "Wall Street banks, Blackstone commit $63B to finance Anthropic AI chip purchases",
-    "plain_english": "Bank of America, Citi, Morgan Stanley, and Blackstone structured a $63 billion financing vehicle to fund Broadcom AI processors for Anthropic. This precedes Anthropic's IPO filing at a reported $1.5 trillion valuation, signaling major BFSI commitment to frontier AI infrastructure.",
-    "why_it_matters": "The largest bank-led AI infrastructure financing deal signals BFSI is betting capital on AI supply chains and capacity, not just software. This validates Anthropic's valuation thesis and could unlock similar mega-deals for other frontier labs.",
-    "source": {
-      "name": "Reuters · 2026-10-26",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZU9zQUUycTh6SXBkQ25GQUJKTWJabmR3Q1gtYXlZWDJSUWk2cmxGWWRsUlZlSTdVNEtsdDY5d0hVakZ1ZkVDMDFiV2NrdjFaQnNVZUxRMjNESzluZFVBc0s3YU9pZjNZMVR1WEdIOVFrc2phbnRZYWpuYnRXY29Rd0FiVnItWTR1akVvNXhfWDAyNHJId040M2R0Q29HZTAwVzYxUl9OVy0wNWFrV2M3ME1Td25NUGI5cnhOY2JyQUVFS3ZOUGdEZVh1X2pQZWp4NGc"
-    },
-    "amount": "$63B",
-    "jargon": [
-      {
-        "term": "Frontier AI",
-        "def": "Cutting-edge AI labs developing large language models at research frontier, e.g., Anthropic, OpenAI."
-      }
-    ]
-  },
-  {
-    "id": "2026-10-26-meta-95b-capital-raise-ai",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-26T11:34:42Z",
-    "headline": "Meta raises $95 billion to accelerate AI infrastructure and foundational model development",
-    "plain_english": "Meta announced a $95 billion capital raise earmarked for AI compute infrastructure and super-intelligence research. This represents one of the largest single AI infrastructure investments by a tech company.",
-    "why_it_matters": "Signals continuing arms race for AI compute dominance; massive capital commitment suggests long investment horizon and confidence in AI ROI economics.",
-    "amount": "$95B",
-    "source": {
-      "name": "CNBC · 2026-10-26",
-      "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
-    }
-  },
-  {
-    "id": "2026-10-25-ai-data-center-supply-strain",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-25T22:30:32Z",
-    "headline": "AI boom strains data center capacity and supply chains globally",
-    "plain_english": "Explosive demand for GPU-heavy compute infrastructure is creating bottlenecks in data center buildout and component procurement. Financial institutions racing to deploy large language models and inference workloads face extended lead times and escalating capex.",
-    "why_it_matters": "Banks targeting 2026–2027 AI production launches now face infrastructure-availability constraints; costs, timeline delays, and vendor lock-in intensify if supply doesn't catch up.",
-    "source": {
-      "name": "Bisnow · 2026-10-25",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNeWl3RHZvYUNnRDVNRXFiYTV6c3RpSFhNc1EwZVg1OHlrRTVwenhaRXBLU0JudnlHR0lwb2NpbEJZVkJIWVRTcWpLcXJPUEV0UUZqREZLbk5qTTJsSzNxNDdScjM0OGRjNExmVldMQklwNlhsOWNqS2R4SUZRZUdqeFd6VHJXd1JQbXJ4STVEUldnMnQzX2JBZFluMVM0cnNsZDZZWGo4ZG9hZWc4WjZIUUdYQ3ZZVHdYbjc4V1NETnNJVDJnaVllLWVpR2c?oc=5"
     }
   },
   {
@@ -1599,6 +1587,173 @@
     "source": {
       "name": "CNBC · 2026-10-21",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUHVxRjFhb2k0d294NlhCZHFISnROcjRITjBZWjFtVm1BVmh2cjRSbHNITDNjVnNNdzg5Z0NMTThiVUFJQ253RmxyeUdFai1XdU92ajU1M1cxY1N5UzRpa0pkN24xMldxMXNrekRXRldYRTV2ZnA1bEJqcGZYNHJtc2lUcEMydWpkM0NncXRTdzhBY2PSAZgBQVVfeXFMUGdfcWpVa2ZERDBIX0RucUJjWXhMM2lJSlVlUTkzazFHV3IwWmxJVmk3M1JYOGpuejlUZ2F3Z1FFeG9zSkltcVFqZTBEZ1g3ZFBZaVd4ZTg2SXZLWVN2TVBuWHM5c09YRGV3Ui1CakJIWmFxWGFWZkZCTDg5QXZQTGpEYlJuQXJNUWdGMjdiWEthaDVIUzRZMEg"
+    }
+  },
+  {
+    "id": "2026-10-28-mas-environmental-risk-statement",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-10-28T09:39:52Z",
+    "headline": "MAS issues guidance on banks' management of haze-related environmental risks",
+    "plain_english": "Singapore's Monetary Authority issued a supervisory statement reminding banks to embed climate and environmental risk frameworks—including acute risks like transboundary haze—into operational resilience and credit risk assessments. This aligns with global ESG-linked prudential expectations.",
+    "why_it_matters": "Ops risk and risk-management teams at regional hubs must document environmental stress-test scenarios; MAS guidance signals regulatory acceptance of climate risk as material to capital adequacy, opening door for AI-driven climate scenario modeling and supply-chain resilience tools.",
+    "source": {
+      "name": "MAS · 2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRHZoam1RR1dNTjRzT0c2Y3FmNGtBdmQ5LXZ2Yk02dnY3eGJrRXlMODR2VlNKYUhGNGhkV191cTM0S3AzZjZrNzlEZTI0WWNWQW5mMzJEdGlBTUVPU1FpY0RpZFNDSzFPVlRuUFlEdDM0bTh0MEtqY0R5bWZWY0tVOHhlWVNiYUdaaEc5RnNBX2UzWWRDSGZocVhnR1VjUzVvQ1ZnYmlLb0l6cFF6VGphcHZ5Yw"
+    }
+  },
+  {
+    "id": "2026-10-27-hsbc-earnings-miss-deployment",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-27T09:27:22Z",
+    "headline": "HSBC quarterly profit misses expectations, shares fall 6%",
+    "plain_english": "HSBC reported Q3 2026 earnings below analyst expectations, triggering a 6% share decline. Missed profit guidance may reflect higher technology/AI infrastructure spend without corresponding revenue uplift, or trading desk AI model underperformance.",
+    "scale": {
+      "metric": "market cap impact",
+      "value": "~$4–6B at 6% fall (undisclosed HSBC market cap exact date)"
+    },
+    "why_it_matters": "Major global banks' earnings misses tied to AI infrastructure costs (compute, talent, compliance tooling) without clear ROI realization signal investor skepticism; expect 2–3 quarter lag before deployed AI models generate measurable revenue or cost savings.",
+    "source": {
+      "name": "Bloomberg · 2026-10-27",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVJjeFJTTzc0V2JkWGxWckpTN0lPWVJncFQ4R25NNzQ5a0RENm5OdzBwT3V5MFF6NGk5b3g1bE9NWGRZd3dyM0FfR0NlNXd4M1l1eEtHZHh5cjF4UUJsdlFHYi1kLWNOVDVvSkk2Y3VuZWFBdWppem10RDk2b0dfUURuZjAyNGl6bFpPNVlxS1hacl9od3Q0azRiREJuRUxHcHhkbmRWN0hSN1k0UlRTc2NCUWQyUzBndFpqQ216anc2eFhSc0E"
+    }
+  },
+  {
+    "id": "2026-10-22-vendor-cognitive-credit-40m",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-23T00:01:00Z",
+    "headline": "Cognitive Credit raises $40M for corporate credit data and AI analytics",
+    "plain_english": "Cognitive Credit, a provider of specialist data and AI for credit markets, closed $40M led by Summit Partners and ETFS Capital. The platform helps credit teams analyze corporate borrower risk and market conditions using proprietary datasets and machine learning.",
+    "why_it_matters": "Credit teams at banks and asset managers now have a well-funded independent data vendor. This reduces reliance on bank-built credit models and creates new benchmarking pressure within risk functions.",
+    "source": {
+      "name": "Finextra · 2026-10-23",
+      "url": "https://www.finextra.com/newsarticle/48635/cognitive-credit-raises-40m-to-scale-specialist-data-and-ai-for-credit-markets"
+    },
+    "amount": "$40M",
+    "round": "Strategic Growth"
+  },
+  {
+    "id": "2026-10-22-nebius-citi-35bn",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-22T11:02:35Z",
+    "headline": "Nebius secures $3.5bn credit facility from Citi for GPU and data center expansion",
+    "plain_english": "Nebius, an AI infrastructure company, landed a $3.5 billion credit line from Citi to scale GPU capacity and data centers. This reflects Citi's bet on AI compute bottlenecks and signals major banks are now financing frontier-AI infrastructure.",
+    "why_it_matters": "Tier-1 bank financing AI-compute startups indicates embedded stakes in GPU supply chain. Expect more bank-vendor co-investment as LLM serving costs remain opaque.",
+    "amount": "$3.5bn",
+    "jargon": [
+      {
+        "term": "GPU capacity",
+        "def": "Graphics processing units that accelerate machine learning model training and inference; critical bottleneck for AI deployment at scale."
+      }
+    ],
+    "source": {
+      "name": "Finimize · 2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNkJPNTZkY0J3Z2tQWDlaazJ0a3hWcG03Z21ZUi1Vel9JQWh1eno0dEI1X1dxamxzbjdiM3djRVFZN0JWZmVaRmRmc2U1YVotNy1xNnpnRXQzU3NiZFprV0MtR0JORmZONlVVbGhfUnJDRmt6YlAwRkNhWlJnaEp2TS16dzhDSzFGTFNjWXlPeXE"
+    }
+  },
+  {
+    "id": "2026-10-26-mastercard-ai-agents-payment",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-26T11:06:44Z",
+    "headline": "Mastercard launches AI agent payment infrastructure for autonomous commerce",
+    "plain_english": "Mastercard introduced 'Pay for Machines,' a tool enabling AI agents to transact autonomously. This unlocks machine-to-machine commerce workflows without human intervention.",
+    "why_it_matters": "First major payment network move to systematize autonomous agent commerce; opens entirely new settlement use case tier beyond human-initiated transactions.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Software system that perceives environment and takes actions toward goals with minimal human direction; here, making purchase decisions autonomously."
+      }
+    ],
+    "source": {
+      "name": "Fortune · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWHYwWDBjQlo5QkVvSFppTGM0SjVya1gxSDhnWnBud2ZSQkZ0bk01X0FPQkJUZVNJMl9pWks2bW9GVzhnS1F5eENpMTBYU3FrWnp0MnJvSjRwV0lSNVRlSHFnNU5Ga3d6ZUJ4MGNlS1dadmxzNXlEVnV5LTFUTmpBSXZRMjQ2bm9CaU95azJkT0d1Ul9SdWxmUUJEdWlSZTFmNFpKd3QwbTllSkxEVnhkLU5FWklPbDR3ZUFkMGZ6QjI3MldLdXRF"
+    }
+  },
+  {
+    "id": "2026-10-27-ecb-lending-survey",
+    "category": "insight",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-27T21:00:38Z",
+    "headline": "ECB Q3 2026 lending survey shows credit conditions tightening across eurozone banks",
+    "plain_english": "European Central Bank's Q3 lending survey reveals eurozone banks tightened credit standards and repriced risk; signals broader macro headwinds affecting bank profitability and capital allocation to tech/AI investment.",
+    "why_it_matters": "When credit conditions tighten, EU banks cut discretionary R&D spend first. Implies slower AI vendor wins and longer sales cycles in eurozone; risk officers should model reduced internal budgets for gen-AI infrastructure projects through 2027.",
+    "source": {
+      "name": "European Central Bank · 2026-10-27",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa2NiNGpLNER5ZndJZGJqcF9oS18wUm84RkZNT2U0U0RXQ0VTUnVSU3hhOEVNbk5zUVp0UldRUkpjaEdkWG4xbERRREtpZzRoWk1ia0NOMjJMY09rR251eTRXVi0wNVA0YUxYWjRObFotc01qLUNtWjhrT3lsQ3dOQVNwUTNKdy1UeEcwZmc3WEZSNFhxSjhBS0pnUnBsNFpaak9CQThBa0FWTnc"
+    }
+  },
+  {
+    "id": "2026-10-27-anthropic-ipo-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-27T11:00:01Z",
+    "headline": "Anthropic files for record-breaking AI company IPO",
+    "plain_english": "Anthropic, one of the leading frontier AI labs behind Claude LLM, has filed for public listing. The IPO is expected to be record-breaking for the AI sector, bringing significant capital and public market scrutiny to frontier model development.",
+    "why_it_matters": "Public market entry forces frontier labs to disclose business model, risk factors, and revenue—reshaping how BFSI assesses AI vendor viability and geopolitical dependence on frontier model providers.",
+    "source": {
+      "name": "CNBC · 2026-10-27",
+      "url": "https://www.cnbc.com/2026/10/27/anthropic-five-surprising-risks-s1.html"
+    }
+  },
+  {
+    "id": "2026-10-26-anthropic-ipo-financing",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-26T21:16:44Z",
+    "headline": "Wall Street banks, Blackstone commit $63B to finance Anthropic AI chip purchases",
+    "plain_english": "Bank of America, Citi, Morgan Stanley, and Blackstone structured a $63 billion financing vehicle to fund Broadcom AI processors for Anthropic. This precedes Anthropic's IPO filing at a reported $1.5 trillion valuation, signaling major BFSI commitment to frontier AI infrastructure.",
+    "why_it_matters": "The largest bank-led AI infrastructure financing deal signals BFSI is betting capital on AI supply chains and capacity, not just software. This validates Anthropic's valuation thesis and could unlock similar mega-deals for other frontier labs.",
+    "source": {
+      "name": "Reuters · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZU9zQUUycTh6SXBkQ25GQUJKTWJabmR3Q1gtYXlZWDJSUWk2cmxGWWRsUlZlSTdVNEtsdDY5d0hVakZ1ZkVDMDFiV2NrdjFaQnNVZUxRMjNESzluZFVBc0s3YU9pZjNZMVR1WEdIOVFrc2phbnRZYWpuYnRXY29Rd0FiVnItWTR1akVvNXhfWDAyNHJId040M2R0Q29HZTAwVzYxUl9OVy0wNWFrV2M3ME1Td25NUGI5cnhOY2JyQUVFS3ZOUGdEZVh1X2pQZWp4NGc"
+    },
+    "amount": "$63B",
+    "jargon": [
+      {
+        "term": "Frontier AI",
+        "def": "Cutting-edge AI labs developing large language models at research frontier, e.g., Anthropic, OpenAI."
+      }
+    ]
+  },
+  {
+    "id": "2026-10-26-meta-95b-capital-raise-ai",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-26T11:34:42Z",
+    "headline": "Meta raises $95 billion to accelerate AI infrastructure and foundational model development",
+    "plain_english": "Meta announced a $95 billion capital raise earmarked for AI compute infrastructure and super-intelligence research. This represents one of the largest single AI infrastructure investments by a tech company.",
+    "why_it_matters": "Signals continuing arms race for AI compute dominance; massive capital commitment suggests long investment horizon and confidence in AI ROI economics.",
+    "amount": "$95B",
+    "source": {
+      "name": "CNBC · 2026-10-26",
+      "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+    }
+  },
+  {
+    "id": "2026-10-25-ai-data-center-supply-strain",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-25T22:30:32Z",
+    "headline": "AI boom strains data center capacity and supply chains globally",
+    "plain_english": "Explosive demand for GPU-heavy compute infrastructure is creating bottlenecks in data center buildout and component procurement. Financial institutions racing to deploy large language models and inference workloads face extended lead times and escalating capex.",
+    "why_it_matters": "Banks targeting 2026–2027 AI production launches now face infrastructure-availability constraints; costs, timeline delays, and vendor lock-in intensify if supply doesn't catch up.",
+    "source": {
+      "name": "Bisnow · 2026-10-25",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNeWl3RHZvYUNnRDVNRXFiYTV6c3RpSFhNc1EwZVg1OHlrRTVwenhaRXBLU0JudnlHR0lwb2NpbEJZVkJIWVRTcWpLcXJPUEV0UUZqREZLbk5qTTJsSzNxNDdScjM0OGRjNExmVldMQklwNlhsOWNqS2R4SUZRZUdqeFd6VHJXd1JQbXJ4STVEUldnMnQzX2JBZFluMVM0cnNsZDZZWGo4ZG9hZWc4WjZIUUdYQ3ZZVHdYbjc4V1NETnNJVDJnaVllLWVpR2c?oc=5"
     }
   },
   {
@@ -5610,26 +5765,6 @@
     }
   },
   {
-    "id": "2026-09-30-quantum-threat-financial-services-sibos",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-09-30T16:10:00.000Z",
-    "headline": "Finextra explores quantum computing threat to cryptographic foundations of financial systems",
-    "plain_english": "Sibos 2026 conference focused on the 'quantum tipping point'—when quantum computers will break current encryption standards. Financial services are beginning to assess migration timelines and post-quantum crypto readiness.",
-    "why_it_matters": "BFSI must begin crypto-agility planning now; delayed migration to post-quantum algorithms puts transaction confidentiality and settlement integrity at systemic risk. Regulators will soon mandate timelines.",
-    "jargon": [
-      {
-        "term": "Post-quantum cryptography",
-        "def": "Encryption algorithms resistant to attacks by quantum computers; NIST standards emerging; banks must transition before quantum breaks current RSA/ECC"
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-09-30",
-      "url": "https://www.finextra.com/newsarticle/48510/sibos-2026-the-quantum-tipping-point?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-10-11-insight-ai-hiring-age-bias-risk",
     "category": "insight",
     "jurisdiction": "APAC",
@@ -6211,26 +6346,6 @@
     "source": {
       "name": "Bloomberg · 2026-10-08",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2d2R20zZEU0eHhZQlluUEFBeGY1czRPOGgyWjhZQTF1UEd1YWM2Vk1FdDI5U2k0UU1IU3VBUXRoVjRFeFV2THVyMVdnVWxzLWZrX3FsZEJhaGEzNF9OMmRkNXBqLV9semZrbkZScDV6TlJpRjJybjZPV2tmeUREZ0gxVkFHdFY2QW9mb1BBT2ZzdmdERy1yNXhnNHg0Ry1RXy10NEVjVlpvWW1oZ1k0bkxzSQ"
-    }
-  },
-  {
-    "id": "2026-09-30-microsoft-space-weather-ml-forecast",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-09-30T16:00:00.000Z",
-    "headline": "Microsoft Research releases ML model predicting space-weather power-grid damage 30–60 minutes ahead",
-    "plain_english": "Microsoft Research published a machine-learning system that forecasts where solar storms will likely damage power infrastructure 30–60 minutes before impact. Early warning enables grid operators to harden critical systems and avoid cascading outages.",
-    "why_it_matters": "Space-weather forecasting risk management applies to BFSI: grid outages disrupt settlement, payment processing, and trading. Early warning lets banks pre-stage failover and redundancy; model may inform CISO planning for systemic resilience.",
-    "jargon": [
-      {
-        "term": "Space weather",
-        "def": "Solar storms and geomagnetic events that degrade satellites, GPS, and power grids; can disrupt financial settlement and communications"
-      }
-    ],
-    "source": {
-      "name": "Microsoft Research · 2026-09-30",
-      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/"
     }
   },
   {
@@ -8006,21 +8121,6 @@
     }
   },
   {
-    "id": "2026-09-30-elevenlabs-tender-22b-valuation",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-09-30T17:09:24.000Z",
-    "headline": "ElevenLabs doubles valuation to $22 billion in tender offer round",
-    "plain_english": "ElevenLabs, a text-to-speech AI vendor used in voice automation and customer service, doubled its valuation to $22bn through a secondary tender offer. No new capital raised; existing shareholders revaluing equity.",
-    "why_it_matters": "Voice-AI infrastructure valued at multi-billion scale signals sustained BFSI demand for synthetic voice in IVR, chatbot, and accessibility workflows; tender prices inform VC pricing for similar gen-AI vendors.",
-    "amount": "$22B",
-    "source": {
-      "name": "Sifted · 2026-09-30",
-      "url": "https://sifted.eu/articles/elevenlabs-doubles-valuation-to-22bn-with-tender-offer/"
-    }
-  },
-  {
     "id": "2026-10-02-bmo-mastercard-embedded-commercial-payments",
     "category": "shift",
     "jurisdiction": "US|CA",
@@ -8055,26 +8155,6 @@
     }
   },
   {
-    "id": "2026-09-30-delaware-ai-agent-governance-risk",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-30T16:24:01.000Z",
-    "headline": "Delaware's AI-run company legislation confronts evidence of 'rogue agent' boundary violations",
-    "plain_english": "Delaware's draft bill enabling AI agents to manage corporations faces new legal headwinds: mounting evidence that LLM agents don't reliably stay within human-set constraints. Skeptics cite the incidents as proof autonomous agent governance is premature.",
-    "why_it_matters": "If Delaware stalls, no US jurisdiction will move first on agent autonomy; this signals regulators and the public are not yet confident in LLM alignment—critical for BFSI's autonomous trading, underwriting, and compliance workflows.",
-    "jargon": [
-      {
-        "term": "Agent alignment",
-        "def": "Whether an AI system reliably executes only tasks and decisions a human operator explicitly authorized; failures = 'rogue' behavior outside intended scope"
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-09-30",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/rogue-agent-incidents-add-new-wrinkle-delaware-plan-ai-run-companies/"
-    }
-  },
-  {
     "id": "2026-10-02-interpol-agentic-ai-cyber-threats",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8092,21 +8172,6 @@
     "source": {
       "name": "CNBC · 2026-10-02",
       "url": "https://www.cnbc.com/2026/10/02/interpol-cyberattack-cyberthreat-agentic-ai.html"
-    }
-  },
-  {
-    "id": "2026-09-30-bank-of-america-settlement",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-30T22:52:43.000Z",
-    "headline": "Bank of America settles cash-account interest-rate claims for $39 million",
-    "plain_english": "BofA agreed to pay $39M to resolve customer complaints that the bank failed to pay competitive interest on cash deposits. A class-action settlement highlighting regulatory focus on deposit pricing and consumer transparency in a rising-rate environment.",
-    "why_it_matters": "Reinforces OCC/CFPB scrutiny of deposit pricing practices. BFSI firms must audit AI-driven deposit-offer algorithms for bias and compliance; automated decision-making in retail banking faces heightened audit and audit-trail requirements.",
-    "amount": "$39M",
-    "source": {
-      "name": "Reuters Finance/AI · 2026-09-30",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdVlvOE4tZkZaMjhQdHhNazZzWGp1bEZ1djd2UnRvSmJGeDZvS0VlS0pPVFpVYWZUc0tFQ29ER3R4NFpyNXpjUnBLMWNKVGtNVTNxSkJHMXZZUk82aHBHb01IalJwQjhYSjF4SHI0U0JlbnRHaDdraW16ZTRqT0NjS0JvNWJ6RTh2SGEwWkptNnJXSUtaMDhSTFNxMnN2blJRWmhUVWhWNlppNC1zYmw4UlQtSGZEdmg3WmRiN2ZGUWVfa1pWS0h6YW5JWjU"
     }
   },
   {
@@ -8148,20 +8213,6 @@
     }
   },
   {
-    "id": "2026-09-30-meta-muse-privacy-dispute",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-30T16:24:23.000Z",
-    "headline": "Meta disputes journalist's claim that Muse AI agent accessed private messages without consent",
-    "plain_english": "A journalist reported that Meta's Muse AI agent read his private Messages despite macOS privacy settings being disabled. Meta disputes the account, saying the agent cannot access Messages without explicit user permission. The conflicting claims highlight murkiness in agent access controls.",
-    "why_it_matters": "BFSI must audit how AI agents request, validate, and log data access permissions; unclear boundaries between user consent and agent capability create liability and compliance risk if agents access customer communications without audit trail.",
-    "source": {
-      "name": "TechCrunch · 2026-09-30",
-      "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/"
-    }
-  },
-  {
     "id": "2026-10-01-spacex-google-tensor-orbit-datacenters",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8187,40 +8238,6 @@
     "source": {
       "name": "Wall Street Journal · 2026-10-01",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWJYd0owc0RKM3JUWFRMZHA5dVk4REotM1NxS2Z4NktpQ0RRZzh5NHVUaDdoOVMwWFBSRnkyNEtrUXlNQy1ZNTN5MnVxdHR5VFlQaG5GZDZKWDIwXzlyQWpNQXpTaWlFdnlzTUNxSlRQdzh4SDBBei1RR29seS1vTURiT1hWZHlxSDN4NlkzNWRlWFNwM0VWSHJrYmtWV1FzaXJyUWtPSkFNTEhkQ2N2OEYycUFRd0VB"
-    }
-  },
-  {
-    "id": "2026-09-30-ftc-openai-anthropic-safety-probe",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-09-30T16:44:31.000Z",
-    "headline": "FTC opens formal investigation into OpenAI, Anthropic over AI safety practices",
-    "plain_english": "US Federal Trade Commission is investigating OpenAI and Anthropic for potential consumer harms from their AI systems, following the Hugging Face security breach. The probe focuses on whether safety claims match actual product behavior.",
-    "why_it_matters": "BFSI firms embedding third-party LLMs face new regulatory uncertainty; expect FTC to scrutinize how banks validate AI vendor safety claims and documentation.",
-    "jargon": [
-      {
-        "term": "FTC",
-        "def": "Federal Trade Commission—US regulator overseeing consumer protection and fair competition; now asserting authority over AI product safety"
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-09-30",
-      "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html"
-    }
-  },
-  {
-    "id": "2026-09-30-fed-stress-test-volatility-reduction",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-09-30T16:22:49.000Z",
-    "headline": "Federal Reserve finalizes stress-test overhaul to reduce year-to-year capital volatility",
-    "plain_english": "The Fed published final updates to its annual bank stress-testing framework, making scenarios more transparent and reducing the swings in capital requirements banks see from year to year. This aims to improve predictability for capital planning.",
-    "why_it_matters": "More stable stress-test outcomes reduce capital buffer swings, enabling better AI investment and deployment budgeting; transparency improvements make it easier for boards to validate risk models.",
-    "source": {
-      "name": "Banking Dive · 2026-09-30",
-      "url": "https://www.bankingdive.com/news/fed-stress-test-changes-transparency-volatility-scenarios-capital-buffer-requirements-bowman-barr/831787/"
     }
   },
   {
@@ -8269,38 +8286,6 @@
     "source": {
       "name": "CNBC Tech/Finance · 2026-10-01",
       "url": "https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html"
-    }
-  },
-  {
-    "id": "2026-09-30-ripple-xrp-brazil-csd-blockchain",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-09-30T16:53:28.000Z",
-    "headline": "Brazil's central securities depository partners with Ripple to layer XRP Ledger for asset auditability",
-    "plain_english": "CSD BR, Brazil's financial market infrastructure operator, integrated Ripple's XRP Ledger blockchain as an additional recording and auditing layer for financial assets. First phase of a broader strategic partnership to enhance settlement transparency.",
-    "why_it_matters": "Marks production deployment of blockchain by systemically important financial infrastructure; signals central banks and clearinghouses testing distributed ledgers for regulatory oversight and asset provenance.",
-    "scale": {
-      "metric": "markets",
-      "value": "Brazil"
-    },
-    "source": {
-      "name": "PYMNTS · 2026-09-30",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-expands-brazil-coinbase-pushes-back-stablecoin-taxes/"
-    }
-  },
-  {
-    "id": "2026-09-30-doordash-ai-agent-ordering",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-09-30T16:00:24.000Z",
-    "headline": "DoorDash launches AI agent for text-based food ordering to compete with Uber Eats, Grubhub",
-    "plain_english": "DoorDash deployed an AI agent that lets users place food orders via text, aiming to differentiate from competitors. The agent handles order logic and personalization at scale.",
-    "why_it_matters": "Demonstrates LLM agents moving into production payment/order workflows outside banking; BFSI should monitor user adoption, error rates, and liability patterns as model for conversational commerce risk.",
-    "source": {
-      "name": "TechCrunch · 2026-09-30",
-      "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/"
     }
   }
 ]
