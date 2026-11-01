@@ -2,7 +2,7 @@
 
 > Six refreshes a day. Live. No inbox required.
 
-The live web alternative to AI/BFSI email newsletters. Swipeable Tinder-format deck. 7 categories. Refreshed every 4 hours by an autonomous Claude pipeline.
+An editorial daily brief for AI and banking technology. Scan the lead story and five essentials, search the full archive, and open any story in a focused reading panel. The existing automated pipeline refreshes content every four hours.
 
 **Live:** [aitechhive.com](https://aitechhive.com) · **Weekly deep-dive:** [newsletter.aitechhive.com](https://newsletter.aitechhive.com)
 
@@ -37,7 +37,7 @@ data/cards.json       Auto-committed (newest first, capped at 500)
     ↓
 Cloudflare Pages      Auto-deploys static site
     ↓
-aitechhive.com        Swipeable feed: 7 categories, mobile-first, glass chrome
+aitechhive.com        Editorial brief, searchable feed, focused reading panel
 ```
 
 ---
@@ -72,18 +72,24 @@ Done. Next cron run uses the new provider. See `.env.local.example` for defaults
 
 ---
 
-## Swipe actions
+## Reading experience
 
-| Direction | Action |
-|---|---|
-| Right → / `→` | Save (syncs across devices) |
-| Left ← / `←` | Next (stays in archive forever) |
-| Up ↑ / `↑` | Share (generates 1080×1080 PNG with branding) |
-| Down ↓ / `↓` | Decode (expand jargon inline) |
+- Lead story and five essentials, with a different topic prioritized for each essential.
+- Search headlines, summaries, implications, source names and jurisdictions. All words in a query must match.
+- Topic filters, newest/oldest sorting and incremental loading across the full archive.
+- Reading panel with editorial implications, expandable jargon, related stories and original sources.
+- Guest bookmarks stay on the current device. Signing in switches to existing Supabase account bookmarks; signing out restores the guest collection. Guest bookmarks are not uploaded automatically.
+- Native sharing where available, with clipboard link sharing as fallback.
+- Keyboard: `/` focuses search, `Escape` closes a dialog, and dialogs keep keyboard focus inside.
+- Edition timestamps reflect the newest story in the dataset, not an unverified pipeline success time. Older editions are labelled as latest available stories.
+- Fonts are bundled through Fontsource, avoiding build-time Google Fonts requests.
 
-All also accessible via keyboard or the bottom action bar.
+### Validation
 
----
+```sh
+node --test tests/brief-utils.test.mjs
+npm run build
+```
 
 ## Repo layout
 
@@ -91,7 +97,7 @@ All also accessible via keyboard or the bottom action bar.
 app/
 ├── layout.jsx              # Fonts, metadata, Plausible
 ├── page.jsx                # Server entry (reads cards.json)
-├── page-client.jsx         # Deck UI (use client)
+├── page-client.jsx         # Daily Brief UI (use client)
 ├── globals.css
 ├── privacy/page.jsx
 ├── terms/page.jsx
