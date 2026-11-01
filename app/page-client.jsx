@@ -15,6 +15,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import {
+  selectEdition,
   TOPICS,
   prepareCards,
   filterCards,
@@ -313,8 +314,64 @@ function SignIn({ supabase, onClose, initialError }) {
   );
 }
 
-export default function PageClient({ initialCards }) {
-  const cards = useMemo(() => prepareCards(initialCards), [initialCards]);
+export default function PageClient({ initialCards, edition }) {
+  const archive = useMemo(() => prepareCards(initialCards), [initialCards]);
+  const cards = useMemo(
+    () =>
+      edition?.ids?.length
+        ? edition.ids
+            .map((id) => archive.find((c) => c.id === id))
+            .filter(Boolean)
+            .slice(0, 12)
+        : selectEdition(archive),
+    [archive, edition],
+  );
+  const [archiveOpen, setArchiveOpen] = useState(false);
+  const [read, setRead] = useState(new Set());
+  const [unreadOnly, setUnreadOnly] = useState(false);
+  useEffect(() => {
+    try {
+      const ids = JSON.parse(localStorage.getItem("ath-read-v1") || "[]");
+      if (Array.isArray(ids)) setRead(new Set(ids));
+    } catch {}
+  }, []);
+  function openStory(card) {
+    setActive(card);
+    markRead(card);
+  }
+  function markRead(card) {
+    setRead((previous) => {
+      const next = new Set(previous);
+      next.add(card.id);
+      try {
+        localStorage.setItem(
+          "ath-read-v1",
+          JSON.stringify([...next].slice(-1200)),
+        );
+      } catch {}
+      return next;
+    });
+  }
+  const readCount = cards.filter((c) => read.has(c.id)).length;
+  const remaining = cards.length - readCount;
+  const editionDate = edition?.published_at || cards[0]?.published_at;
+  const editionText = `AITechHive — ${editionDate ? new Date(editionDate).toLocaleDateString("en-GB", { timeZone: "Asia/Kolkata" }) : "Daily brief"}\n${cards.length} stories. Two editions a day.\n\n${cards.map((c, i) => `${i + 1}. ${c.headline}\nhttps://aitechhive.com/c/${encodeURIComponent(c.id)}`).join("\n\n")}`;
+  async function shareEdition() {
+    try {
+      if (navigator.share)
+        await navigator.share({
+          title: "AITechHive daily brief",
+          text: editionText,
+        });
+      else {
+        await navigator.clipboard.writeText(editionText);
+        setNotice("Edition copied — paste into WhatsApp, LinkedIn or email.");
+      }
+    } catch (e) {
+      if (e.name !== "AbortError")
+        setNotice("Could not copy. Use the WhatsApp sharing button.");
+    }
+  }
   const [topic, setTopic] = useState("all");
   const [query, setQuery] = useState("");
   const [savedOnly, setSavedOnly] = useState(false);
@@ -484,9 +541,25 @@ export default function PageClient({ initialCards }) {
     }
   }
   const filtered = useMemo(() => {
-    const list = filterCards(cards, { topic, query, savedOnly, saved });
+    const list = filterCards(savedOnly || archiveOpen ? archive : cards, {
+      topic,
+      query,
+      savedOnly,
+      saved,
+    }).filter((c) => !unreadOnly || !read.has(c.id));
     return sort === "oldest" ? [...list].reverse() : list;
-  }, [cards, topic, query, savedOnly, saved, sort]);
+  }, [
+    cards,
+    archive,
+    archiveOpen,
+    topic,
+    query,
+    savedOnly,
+    saved,
+    sort,
+    unreadOnly,
+    read,
+  ]);
   const editionCutoff = timestamp(cards[0] || {}) - 24 * 3600 * 1000;
   const lead =
     cards.find(
@@ -507,8 +580,13 @@ export default function PageClient({ initialCards }) {
     if (c.id !== lead?.id && !essential.some((e) => e.id === c.id))
       essential.push(c);
   }
-  const overview = topic === "all" && !query.trim() && !savedOnly;
-  const latest = cards[0];
+  const overview =
+    topic === "all" &&
+    !query.trim() &&
+    !savedOnly &&
+    !archiveOpen &&
+    !unreadOnly;
+  const latest = editionDate ? { published_at: editionDate } : cards[0];
   const stale =
     now !== null && latest && now - timestamp(latest) > 24 * 3600 * 1000;
   const available = TOPIC_ORDER.filter((t) =>
@@ -543,6 +621,8 @@ export default function PageClient({ initialCards }) {
               className={!savedOnly ? "nav-active" : ""}
               onClick={() => {
                 setSavedOnly(false);
+                setArchiveOpen(false);
+                setUnreadOnly(false);
                 setTopic("all");
                 setQuery("");
               }}
@@ -619,9 +699,54 @@ export default function PageClient({ initialCards }) {
             <span className={stale ? "stale" : ""}>
               <span className={`status-dot ${stale ? "status-stale" : ""}`} />
               {latest
-                ? `${stale ? "Latest available stories" : "Latest story"} · ${new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kolkata" }).format(timestamp(latest))} IST`
+                ? `${stale ? "Latest available stories" : "Published"} · ${new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kolkata" }).format(timestamp(latest))} IST`
                 : "Waiting for the first briefing"}
             </span>
+          </div>
+        </section>
+        <section
+          className="edition-progress"
+          aria-label="Edition reading progress"
+        >
+          <div>
+            <p className="eyebrow">TWO EDITIONS. THEN YOU’RE DONE.</p>
+            <h2>
+              {remaining
+                ? `${remaining} stories left to read`
+                : "You’re all caught up."}
+            </h2>
+            <p>
+              {cards.length} stories in this edition (12 at most) · Scheduled
+              for 8 a.m. &amp; 8 p.m. IST. No endless feed.
+            </p>
+          </div>
+          <div className="progress-actions">
+            <span aria-live="polite">
+              {readCount} of {cards.length} read <small>on this device</small>
+            </span>
+            <progress
+              max={Math.max(1, cards.length)}
+              value={readCount}
+              aria-label={`${readCount} of ${cards.length} stories read`}
+            />
+            <button
+              className="button"
+              aria-pressed={unreadOnly}
+              onClick={() => setUnreadOnly((v) => !v)}
+            >
+              {unreadOnly ? "Show all" : "Unread only"}
+            </button>
+            <button className="button dark" onClick={shareEdition}>
+              <Share2 size={17} /> Share edition
+            </button>
+            <a
+              className="button"
+              href={`https://wa.me/?text=${encodeURIComponent(editionText)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp <ArrowUpRight size={16} />
+            </a>
           </div>
         </section>
         <div className="discovery-bar">
@@ -672,7 +797,7 @@ export default function PageClient({ initialCards }) {
               <Meta card={lead} />
               <button
                 className="headline-button"
-                onClick={() => setActive(lead)}
+                onClick={() => openStory(lead)}
               >
                 <h2>{lead.headline}</h2>
               </button>
@@ -684,7 +809,7 @@ export default function PageClient({ initialCards }) {
                 </div>
               )}
               <div className="lead-bottom">
-                <button className="text-link" onClick={() => setActive(lead)}>
+                <button className="text-link" onClick={() => openStory(lead)}>
                   Read the briefing <ArrowUpRight size={18} />
                 </button>
                 <SaveButton card={lead} saved={saved} onSave={toggleSave} />
@@ -706,7 +831,7 @@ export default function PageClient({ initialCards }) {
                     </p>
                     <button
                       className="headline-button"
-                      onClick={() => setActive(c)}
+                      onClick={() => openStory(c)}
                     >
                       <h3>{c.headline}</h3>
                     </button>
@@ -726,7 +851,7 @@ export default function PageClient({ initialCards }) {
                   ? "YOUR COLLECTION"
                   : query.trim()
                     ? "SEARCH RESULTS"
-                    : "THE CONTINUOUS FEED"}
+                    : "THIS EDITION"}
               </p>
               <h2>
                 {savedOnly
@@ -734,7 +859,9 @@ export default function PageClient({ initialCards }) {
                   : query.trim()
                     ? `Results for “${query.trim()}”`
                     : topic === "all"
-                      ? "The latest, in perspective."
+                      ? archiveOpen
+                        ? "Older stories — optional reading"
+                        : "Your finite daily brief."
                       : TOPICS[topic]}
               </h2>
             </div>
@@ -767,16 +894,39 @@ export default function PageClient({ initialCards }) {
                     <Meta card={c} />
                     <button
                       className="headline-button"
-                      onClick={() => setActive(c)}
+                      onClick={() => openStory(c)}
                     >
                       <h3>{c.headline}</h3>
                     </button>
                     <p>{c.plain_english}</p>
-                    <button className="read-link" onClick={() => setActive(c)}>
+                    <button className="read-link" onClick={() => openStory(c)}>
                       Read briefing <ArrowUpRight size={14} />
                     </button>
                   </div>
                   <div className="row-actions">
+                    <button
+                      className="icon-button read-toggle"
+                      aria-pressed={read.has(c.id)}
+                      aria-label={`Mark ${read.has(c.id) ? "unread" : "read"}: ${c.headline}`}
+                      onClick={() => {
+                        if (!read.has(c.id)) markRead(c);
+                        else
+                          setRead((previous) => {
+                            const next = new Set(previous);
+                            next.delete(c.id);
+                            try {
+                              localStorage.setItem(
+                                "ath-read-v1",
+                                JSON.stringify([...next]),
+                              );
+                            } catch {}
+                            return next;
+                          });
+                      }}
+                    >
+                      <Check size={17} />
+                      {read.has(c.id) ? "Read" : "Mark read"}
+                    </button>
                     <SaveButton card={c} saved={saved} onSave={toggleSave} />
                     <button
                       className="icon-button"
@@ -812,6 +962,38 @@ export default function PageClient({ initialCards }) {
                     Explore all stories <ArrowRight size={16} />
                   </button>
                 </div>
+              )}
+              {!archiveOpen && !savedOnly && !query && topic === "all" && (
+                <div className="edition-end">
+                  <Check size={26} />
+                  <h3>
+                    {remaining
+                      ? "That’s the whole edition."
+                      : "You’re all caught up."}
+                  </h3>
+                  <p>
+                    {remaining
+                      ? `${remaining} unread stories above. Open a briefing or mark it read when you’re finished.`
+                      : "Close the tab with a clear head. We’ll bring the next edition at the scheduled update."}
+                  </p>
+                  <button
+                    className="button"
+                    onClick={() => {
+                      setArchiveOpen(true);
+                      setUnreadOnly(false);
+                    }}
+                  >
+                    Browse older stories (optional)
+                  </button>
+                </div>
+              )}
+              {archiveOpen && (
+                <button
+                  className="button"
+                  onClick={() => setArchiveOpen(false)}
+                >
+                  Back to this edition
+                </button>
               )}
               {filtered.length > limit && (
                 <button
@@ -894,7 +1076,7 @@ export default function PageClient({ initialCards }) {
           related={cards
             .filter((c) => c.category === active.category && c.id !== active.id)
             .slice(0, 2)}
-          onRead={setActive}
+          onRead={openStory}
         />
       )}
       {signIn && supabase && (

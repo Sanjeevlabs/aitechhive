@@ -68,3 +68,25 @@ test("invalid dates do not corrupt sorting", () => {
   assert.equal(timestamp({ published_at: "bad" }), 0);
   assert.equal(timestamp({}), 0);
 });
+
+test("editions are bounded, diverse and exclude old archive content", async () => {
+  const { selectEdition } = await import("../app/brief-utils.mjs");
+  const rows = Array.from({ length: 30 }, (_, i) => ({
+    id: String(i),
+    headline: `Story ${i}`,
+    category: i < 20 ? "tool" : "research",
+    published_at: new Date(Date.UTC(2026, 10, 2, 12) - i * 60000).toISOString(),
+  }));
+  rows.push({
+    id: "stale",
+    headline: "Old",
+    category: "regulation",
+    published_at: "2020-01-01",
+  });
+  const edition = selectEdition(rows);
+  assert.equal(edition.length, 12);
+  assert.equal(new Set(edition.map((c) => c.id)).size, 12);
+  assert.ok(edition.some((c) => c.category === "research"));
+  assert.ok(!edition.some((c) => c.id === "stale"));
+  assert.deepEqual(selectEdition([]), []);
+});
