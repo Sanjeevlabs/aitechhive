@@ -84,3 +84,25 @@ export function readingTime(card) {
     ),
   );
 }
+
+// A finite edition favors topic diversity, then fills from the newest stories.
+export function selectEdition(cards, maximum = 12) {
+  const sorted = prepareCards(cards);
+  const recent = sorted.filter(
+    (c) => timestamp(c) >= timestamp(sorted[0] || {}) - 24 * 3600 * 1000,
+  );
+  const selected = [],
+    categories = new Set();
+  for (const c of recent) {
+    if (!categories.has(c.category)) {
+      selected.push(c);
+      categories.add(c.category);
+    }
+    if (selected.length >= maximum) return selected;
+  }
+  for (const c of recent) {
+    if (!selected.some((s) => s.id === c.id)) selected.push(c);
+    if (selected.length >= maximum) break;
+  }
+  return selected;
+}

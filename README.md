@@ -1,8 +1,8 @@
 # AITechHive
 
-> Six refreshes a day. Live. No inbox required.
+> Two finite editions a day. No inbox required.
 
-An editorial daily brief for AI and banking technology. Scan the lead story and five essentials, search the full archive, and open any story in a focused reading panel. The existing automated pipeline refreshes content every four hours.
+An editorial daily brief for AI and banking technology. Scan the lead story and five essentials, search the full archive, and open any story in a focused reading panel. The existing automated pipeline refreshes content at 8 a.m. and 8 p.m. IST.
 
 **Live:** [aitechhive.com](https://aitechhive.com) · **Weekly deep-dive:** [newsletter.aitechhive.com](https://newsletter.aitechhive.com)
 
@@ -26,7 +26,7 @@ An editorial daily brief for AI and banking technology. Scan the lead story and 
 ## How it works
 
 ```
-GitHub Actions cron (6×/day, every 4h)
+GitHub Actions cron (2×/day, 08:00 and 20:00 IST)
     ↓
 fetch-feeds.mjs       Pulls 16 RSS sources + HuggingFace papers + ATS job feeds
     ↓
@@ -130,3 +130,9 @@ See `BUILD.md` for the complete Claude Code rebuild prompt and the 5 manual step
 ## Acknowledgments
 
 Built fast. WSJ for the editorial discipline, Spotify for the card stack mechanics, Apple for the system-style sheets. All summaries are editorial — always read the original source for binding details.
+
+## Finite editions
+
+`data/edition.json` freezes at most 12 story IDs per edition. Newest stories within a 24-hour window are chosen with topic diversity; the archive remains opt-in. Read progress is device-local and retained between editions for repeated stories. Opening a briefing marks it read; readers can also mark stories read/unread explicitly.
+
+The refresh workflow runs at 02:30 and 14:30 UTC (08:00 and 20:00 IST). GitHub may delay scheduled runs. Code pushes do not publish extra editions; manual dispatch remains available. `scripts/publish-edition.mjs` preserves publication time when the selected IDs have not changed.

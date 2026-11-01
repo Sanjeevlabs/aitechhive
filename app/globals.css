@@ -1390,3 +1390,320 @@ h1 em {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Reader-first edition: high contrast, newspaper white, comfortable type. */
+:root {
+  --bg: #fff;
+  --text-primary: #151719;
+  --text-secondary: #4b5056;
+  --text-tertiary: #626971;
+  --brand: #165b96;
+  --separator: #d9dde1;
+}
+body {
+  font-size: 17px;
+}
+.shell {
+  width: min(1320px, calc(100% - 72px));
+}
+.intro-description {
+  font-size: 18px;
+  max-width: 650px;
+}
+h1 em {
+  color: #165b96;
+}
+.brand svg,
+.brand-dot {
+  color: #165b96;
+}
+.eyebrow,
+.edition-title,
+.edition-label {
+  font-size: 12px;
+}
+.header-nav,
+.account-button,
+.topic-nav button {
+  font-size: 15px;
+}
+.search-box {
+  width: 250px;
+}
+.search-box input {
+  font-size: 16px;
+}
+.edition strong {
+  font-size: 19px;
+}
+.edition > span:last-child {
+  font-size: 12px;
+}
+.story-meta {
+  font-size: 13px;
+}
+.story-meta > span:first-child,
+.essential .eyebrow {
+  color: #165b96;
+}
+.lead-story {
+  background: #f4f7fa;
+}
+.lead-story:before {
+  display: none;
+}
+.lead-label .eyebrow,
+.lead-context .eyebrow {
+  color: #165b96;
+}
+.lead-story h2 {
+  font-size: 42px;
+}
+.lead-summary {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.lead-context p {
+  font-size: 16px;
+}
+.lead-context .eyebrow,
+.essential .eyebrow,
+.sidebar .eyebrow,
+.feed-heading .eyebrow {
+  font-size: 11px;
+}
+.essential h3 {
+  font-size: 19px;
+}
+.essential-source,
+.essential-number,
+.section-heading > span {
+  font-size: 13px;
+}
+.story-row h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.story-content > p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.text-link,
+.read-link,
+.icon-button,
+.sort-control,
+.sort-control select,
+.button,
+.load-more {
+  font-size: 14px;
+}
+.row-actions {
+  flex-direction: column;
+}
+.read-toggle {
+  white-space: nowrap;
+}
+.read-toggle[aria-pressed="true"] {
+  color: #165b96;
+  background: #edf4fa;
+}
+.sidebar p {
+  font-size: 16px;
+}
+.sidebar p.sidebar-small,
+.weekly-card p {
+  font-size: 14px;
+}
+.weekly-card {
+  background: #152a3d;
+}
+.weekly-card .text-link {
+  font-size: 14px;
+}
+.footer > p,
+.footer nav,
+.collection-note {
+  font-size: 13px;
+}
+.reader-summary {
+  font-size: 20px;
+}
+.implication > p:last-child {
+  font-size: 18px;
+}
+.glossary details,
+.glossary details p {
+  font-size: 17px;
+}
+.reader-tools,
+.source-box > span,
+.permalink {
+  font-size: 14px;
+}
+.edition-progress {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #151719;
+  padding: 25px 0;
+  margin-top: 5px;
+}
+.edition-progress h2 {
+  font-size: 27px;
+  font-weight: 600;
+  margin: 7px 0;
+  letter-spacing: -0.5px;
+}
+.edition-progress p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 550px;
+}
+.progress-actions {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 470px;
+}
+.progress-actions > span {
+  font-weight: 600;
+  font-size: 17px;
+  width: 100%;
+  text-align: right;
+}
+.progress-actions small {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+.progress-actions progress {
+  width: 100%;
+  height: 7px;
+  accent-color: #165b96;
+  margin: 0 0 10px;
+}
+.edition-end {
+  text-align: center;
+  padding: 38px 22px;
+  margin-top: 30px;
+  border: 1px solid var(--separator);
+  background: #f7f9fb;
+}
+.edition-end > svg {
+  margin: auto;
+  color: #165b96;
+}
+.edition-end h3 {
+  font-size: 27px;
+  margin: 12px 0;
+  font-family: var(--font-editorial);
+  font-weight: 400;
+}
+.edition-end p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 10px auto 22px;
+  max-width: 500px;
+}
+@media (max-width: 1000px) {
+  .edition-progress {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .progress-actions {
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .progress-actions > span {
+    text-align: left;
+  }
+  .front-page {
+    grid-template-columns: 1fr;
+  }
+  .lead-story h2 {
+    font-size: 38px;
+  }
+  .essential h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .shell {
+    width: calc(100% - 36px);
+  }
+  .header-nav,
+  .account-button {
+    font-size: 12px;
+  }
+  .intro-description {
+    font-size: 17px;
+  }
+  .edition > span:last-child {
+    font-size: 11px;
+  }
+  .edition strong {
+    font-size: 16px;
+  }
+  .edition-title,
+  .edition-label {
+    font-size: 10px;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .topic-nav button {
+    font-size: 15px;
+  }
+  .lead-story {
+    padding: 23px;
+  }
+  .lead-story h2 {
+    font-size: 34px;
+  }
+  .lead-summary {
+    font-size: 17px;
+  }
+  .story-row h3 {
+    font-size: 23px;
+  }
+  .story-meta {
+    font-size: 12px;
+  }
+  .story-content > p {
+    font-size: 17px;
+  }
+  .story-row {
+    flex-wrap: wrap;
+  }
+  .row-actions {
+    flex-direction: row;
+    margin-top: 0;
+    width: 100%;
+    gap: 10px;
+  }
+  .row-actions .read-toggle {
+    margin-right: auto;
+  }
+  .reader-summary {
+    font-size: 19px;
+  }
+  .implication > p:last-child {
+    font-size: 17px;
+  }
+  .intro .eyebrow {
+    font-size: 10px;
+  }
+  .footer > p {
+    font-size: 11px;
+  }
+  .footer nav {
+    font-size: 12px;
+  }
+}
