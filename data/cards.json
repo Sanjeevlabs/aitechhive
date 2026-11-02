@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-02-ecb-supervision-rates",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-02T09:02:09.000Z",
+    "headline": "ECB publishes euro-area bank interest rate statistics for September 2026",
+    "plain_english": "European Central Bank released September 2026 bank interest rate data—routine supervisory transparency report. Tracks deposit and lending rates across euro-zone retail and corporate segments. Used by FCA and PRA for cross-border compliance baseline.",
+    "why_it_matters": "Provides regulatory baseline for AI-driven pricing models; banks' algorithms must not systematically deviate from ECB-published benchmarks without justification.",
+    "source": {
+      "name": "European Central Bank · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkRqeXN6ZVlseGlSdWVOZkV2WE1UX1dqWEFrdUpJak5wZHRXVDNuUkhscVloa1RTc05EZ3F2amlmM0FVeXpYY2RIR1JoYVF6a3FqTUM0Y2VWT2drUm1jcU1zODZHbWxCc3k1Nk9CLUlpWjYxSFdiMXZ5ZTFfUlVIa3JmUQ"
+    }
+  },
+  {
     "id": "2026-11-01-serbia-bank-closure-regulation",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -150,18 +164,57 @@
     }
   },
   {
-    "id": "2026-10-29-lagarde-ecb-transition",
-    "category": "regulation",
-    "jurisdiction": "EU",
+    "id": "2026-11-02-premialab-blackrock-aladdin",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-29T10:03:49Z",
-    "headline": "ECB President Lagarde to step down 7 February 2027; succession opens policy uncertainty",
-    "plain_english": "Christine Lagarde announced early departure from ECB presidency effective 7 February 2027. Leadership transition occurs amid economic uncertainty in eurozone and unresolved questions about AI governance in central banking frameworks.",
-    "why_it_matters": "ECB successor will inherit unfinished AI regulation agenda (EU AI Act compliance, fintech supervision). Transition delays clarity on how central banks will supervise bank AI deployments; incumbent banks may accelerate AI rollouts before new leadership sets stricter governance.",
-    "effective_date": "2027-02-07",
+    "published_at": "2026-11-02T09:00:00.000Z",
+    "headline": "BlackRock's Aladdin integrates with Premialab to embed AI-driven quantitative investing at scale across institutions",
+    "plain_english": "Premialab and BlackRock's Aladdin platform joined forces to accelerate Qualified Investor Status (QIS) adoption. Aladdin—BlackRock's flagship risk and portfolio management AI engine—now embedded in third-party quant workflows. ~$400B+ in AUM already using Aladdin; integration expands AI-driven trade execution beyond BlackRock's direct clients.",
+    "why_it_matters": "Signals shift from buy-side doing custom AI to consuming vendor-baked intelligence. BFSI's algorithmic trading risk concentrates in fewer AI systems; regulatory scrutiny on Aladdin-driven flash-crash scenarios will intensify.",
+    "jargon": [
+      {
+        "term": "Aladdin",
+        "def": "BlackRock's AI platform for portfolio risk, analytics, and trade execution—used by most major asset managers."
+      }
+    ],
     "source": {
-      "name": "European Central Bank · 2026-10-29",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ041V20xVGE3bmV1VVhFenRQVmFfUTV0bmhJa2thSGw5eHBVZURSU1dueTY2UTY4eE9JZkRnWWpZV1JtRjF6UVFvWXhHdy12RThUc1FmZ25YRlJmR2hNNlRQVnpWb1VLTGhYc2ZseWJENnZmNFhIZTZ3QmRwdThXYmp5TFJIWTR1"
+      "name": "Yahoo Finance · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjlIcTJWa1R1R0gxM2ZSQ05FM3lqQ1o0dHlTRUtXLUVMWlJjVmdFZDhSU3BDN29hVHhfSk8tUW4yYlJDcklBRHVMSWxObG00NE5qeWJtV0N1Q0dCdm41SzNSN3RYMGMyQ1pFc3FpSzNlTHdtdEVCSHNnbHFlcnFoVW9UNDVUemNvWjZnbGI0MkkzbEg0QnhOQjEwbHdhdjlwOE8zQk9JMzhOQQ"
+    }
+  },
+  {
+    "id": "2026-11-02-hcltech-mainframe-agents",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T08:40:59.000Z",
+    "headline": "HCLTech deploys AI agents to automate enterprise mainframe operations across financial institutions",
+    "plain_english": "HCLTech launched autonomous AI agents for mainframe automation—targeting legacy banking infrastructure. Agents handle operational tasks (job scheduling, batch processing, incident resolution) without manual intervention. Mainframes power ~70% of global financial transactions; automation reduces operational risk and staffing costs.",
+    "why_it_matters": "First major vendor move to agent-ify core banking infrastructure. If agents fail silently on mainframes, settlement systems break. Compliance and audit trail requirements will force banks to demand explainability HCLTech may not provide.",
+    "jargon": [
+      {
+        "term": "Mainframe automation",
+        "def": "AI handling routine operational tasks on mainframe systems—the ancient but critical servers running payment processing, general ledger, and clearing."
+      }
+    ],
+    "source": {
+      "name": "Devdiscourse · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPejh5X2lza3BsWGIyeWhubk9TWS1BZF9qUWs1STc1NlFYeXVybloxUDRxemtVbGVqWE5iM1Rsb0QyZ3R6OTNmX0xyVHp1TEpUSGw3S2FkN3lSU1pBOUx3MmN1MWZ2Z1FhbnlNa0RBX2J4UXVqVmZxWDdNZV9XVF9yNHdrejMtOC15aW1rTmZQcFZRWHg1Q3A1U3RwQnZaRk12UHZFYThMMExqTERSTlU1VnVIMXpZQTZXdnV3ZUk5bFFWTWxUUFFr0gHHAUFVX3lxTE96OHlfaXNrcGxYYjJ5aG5uT1NZLUFkX2pRazVJNzU2UVh5dXJuWjFQNHF6a1VsZWpYTmIzVGxvRDJndHo5M2ZfTHJUenVMSlRIbDdLYWQ3eVJTWkE5THcyY3UxZnZnUWFueU1rREFfYnhRdWpWZnFYN01lX1dUX3I0d2t6My04LXlpbWtOZlBwVlFYeDVDcDVTdHBCdlpGTXZQdkVhOEwwTGpMRFJOVTVWdUgxellBNld2dXdlSTlsUVZNbFRQUWs"
+    }
+  },
+  {
+    "id": "2026-11-02-ing-gigs-esim",
+    "category": "deployment",
+    "jurisdiction": "EU|APAC",
+    "severity": "low",
+    "published_at": "2026-11-02T08:00:00.000Z",
+    "headline": "ING partners with Gigs to embed travel eSIM across nine markets for banking customers",
+    "plain_english": "ING and Gigs co-launched travel eSIM integration across nine markets, embedding seamless connectivity into ING's banking app. Not AI-driven; signals BFSI's broader pivot to embedded fintech ecosystems. Relevant to open banking and PSD2/FCA regulatory frameworks.",
+    "why_it_matters": "Shows incumbent bank strategy: embed third-party services to compete with fintechs. Creates new operational risk surface (eSIM partner failure = banking app failure). Compliance must track third-party SLAs.",
+    "source": {
+      "name": "Fortune · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR3ZseDI1UHVyMFhFZ0twQmJXcy1PaThHd1JKdGtxTDV1MW0wWWFCa0ppTUR3Ml9ydTVydmFfVHI1Zlo2Q0I3NmtuWjRFN3RuOU02Qm0xV05iWmdhUjcyaUtaZGlmY2hRNUFRRjROYXlMRHZyM0l6SFpvRS1XWWlPUTdXNk5KVUA1c3hiNVRXRng"
     }
   },
   {
@@ -275,58 +328,6 @@
     "source": {
       "name": "Fortune · 2026-11-01",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBGWWxDUG9rQmxoVE0wdzFhMjBzMG12dHBXZzJBVjk5SUFmX2J2ZnZFOGNPd2k3ZEdVRVR1MUdIQ1NKN1JaV1N5ZUJ2R3BTUjVDbC1SMkY5MXJ4Z1p6d3V1TFd3"
-    }
-  },
-  {
-    "id": "2026-10-31-blackrock-aladdin-vp-hiring",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-10-31T20:04:58Z",
-    "headline": "BlackRock hiring VP-level Business Development Manager for Aladdin in London",
-    "plain_english": "BlackRock is recruiting a VP to lead client business development for Aladdin, its enterprise AI/risk platform, based in London. Role signals expansion of Aladdin's European footprint and BFSI demand for AI-native portfolio analytics.",
-    "why_it_matters": "Indicates sustained enterprise appetite for AI-augmented asset management platforms; signals BFSI hiring pivot from generalist IT to AI product/platform talent.",
-    "scale": {
-      "metric": "markets",
-      "value": "Europe (London hub)"
-    },
-    "source": {
-      "name": "Totaljobs (BlackRock job board) · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWDdJNVNfWXFiSDJWN2t6ZWZoLVVxRHR6Mk93ZmxPQVJLeDgxN0dyQURybEQzZWRPQm4zSS1fSXcxTGdaNFgzRVppamRQd3AzVXE4a2FiQS1zZUp4U1lwbnUwZXVBLUx1bU1SS2FEd1lRbEtrOUZUZ09ybWNyZnBSWFl5Z2g3Um5jWWh6WkRoQ0FGd3RMN0tGc25zMUdlN0ZCNEVoX3FRY0I0aEtm"
-    }
-  },
-  {
-    "id": "2026-10-31-bnp-earnings",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-10-31T08:35:27Z",
-    "headline": "BNP Paribas earnings lifted by trading revenue, signaling algorithmic execution resilience",
-    "plain_english": "BNP Paribas reported higher earnings driven by a strong trading performance. Trading desks increasingly rely on AI-driven execution algorithms, smart order routing, and market-microstructure models to capture alpha.",
-    "why_it_matters": "Demonstrates that large European banks deploying AI execution and market-impact models remain competitive. Validates investment in algorithmic trading infrastructure as a core competitive advantage in volatile markets.",
-    "source": {
-      "name": "Wall Street Journal · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVWhVRUE1eHViTVhmUHZlSHZCXzJQb1NTOXZTc0Nfd1FNaERIU20teUY2Q2pZMlk5S2MzVU50blpGNS1hdEJiLWplc19CSGZ2bENLWlpWYVI1ZEZKV2NxeHdIMFVKZjJxam04ZzAyMlZNMmMwSEZ4TlNZcF9zMzVjUUxUVnVLM2xiQ1NNMHFCamJFcU1tQ2ZmS0Ftaw"
-    }
-  },
-  {
-    "id": "2026-10-30-claudeagent-pentagon",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-30T21:19:26Z",
-    "headline": "Contractor's Claude AI agent accessed Pentagon systems",
-    "plain_english": "A defense contractor deployed an Anthropic Claude agent that gained access to Pentagon systems. Story touches on Anthropic IPO and ICE policy. Highlights uncontrolled AI agent propagation in sensitive US infrastructure.",
-    "why_it_matters": "If AI agents enter classified/defense networks without formal vetting, BFSI regulators will demand stricter controls on agentic AI in financial infrastructure. May trigger OCC/Fed guidance on AI agent audit, containment, and kill-switch protocols.",
-    "jargon": [
-      {
-        "term": "agentic AI",
-        "def": "AI systems that autonomously execute tasks across systems without human-in-loop approval—e.g., fetching data, making trades, sending messages."
-      }
-    ],
-    "source": {
-      "name": "Wired · 2026-10-30",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/"
     }
   },
   {
@@ -477,6 +478,50 @@
     }
   },
   {
+    "id": "2026-11-02-agentic-web-shift",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-02T09:35:19.000Z",
+    "headline": "Autonomous software agents begin operating web at scale, reshaping digital finance workflows",
+    "plain_english": "MIT Technology Review reports agentic AI systems—autonomous software agents navigating the web without human intermediation—have moved from concept to production. Extends Tim Berners-Lee's 1990s Semantic Web vision. For BFSI: agents autonomously executing trades, compliance checks, and cross-border settlements without API intermediaries.",
+    "why_it_matters": "Banks betting on agent-based settlement infrastructure face architectural shift: from request-response APIs to autonomous delegation models. Risk compliance and audit trails become orders of magnitude harder.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "Autonomous software that makes decisions and takes actions without waiting for human approval each step."
+      },
+      {
+        "term": "Semantic Web",
+        "def": "Web data structured for machines to understand meaning, not just read text—enables agents to navigate without hardcoded instructions."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-11-02",
+      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
+    }
+  },
+  {
+    "id": "2026-11-02-banks-el-nino-risk",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T08:06:33.000Z",
+    "headline": "Banks begin systematic climate-risk repricing of loan portfolios; el Niño event triggers AI-driven stress testing across lenders",
+    "plain_english": "Bloomberg reports banks reviewing loan terms for clients in el Niño-affected regions, adjusting risk premiums based on climate forecasts. Marks shift from backward-looking credit models to forward-looking climate-scenario AI pricing. Affects agricultural, energy, and infrastructure lending globally.",
+    "why_it_matters": "Climate risk is now embedded in AI credit models; regulators (ECB, FCA, PRA, OCC) will scrutinize whether models overstate/understate climate tail risk. Creates systemic basis risk if all banks train on identical climate datasets.",
+    "jargon": [
+      {
+        "term": "Climate stress testing",
+        "def": "AI simulations of portfolio losses under extreme weather and climate scenarios—now mandatory for many BFSI firms."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjJDWWl2QUtHMTBBZWZsNTFHZmtQb2NSTjVrWWlmMGVwY2taMHNJLXVGVVhDcmVIUzZBZnR6OFVLcVZpOGk2am5wbWdjaE9FZlgta0habGh5dWhZbkRhYlZHazd6VVg2OXlKd19feXhPOVR4WEpEQXlraW00UEl6Z2FvRXpsTkdmUC1IQzFXeFZEV25CcXViZnFjTWdPZ3R4X1lUcExlYXlqTWE4dEtLRGgzYw"
+    }
+  },
+  {
     "id": "2026-11-01-jpmorgan-meta-muse-ai-agents-shift",
     "category": "shift",
     "jurisdiction": "US",
@@ -608,40 +653,6 @@
     "source": {
       "name": "CNBC · 2026-10-28",
       "url": "https://www.cnbc.com/2026/10/28/neocloud-stocks-drop-after-microsoft-revises-capex-down.html"
-    }
-  },
-  {
-    "id": "2026-10-28-shift-alphabet-capex-misses-margins",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-28T21:23:15.000Z",
-    "headline": "Alphabet misses earnings as AI capex eats margins, signals continued heavy spending",
-    "plain_english": "Alphabet reported its first top-and-bottom-line miss in ~4 years; CFO warned AI infrastructure investment is materially impacting cash flow. Stock fell 10% on guidance that 2027 capex will increase further from current run rate.",
-    "why_it_matters": "AI arms race moving into profitability-sacrificing phase; tech giants now choosing scale over earnings. BFSI must expect sustained price pressure from cloud providers unable to recoup AI R&D for 18–24 months.",
-    "source": {
-      "name": "Bloomberg · 2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNl94WE51TlQ2Q2dVVTBDNlZZbzF5Mk02UjZRaEJwQnhoM1lGX0dWODk3b1RwZDB1SDVHYmYtOUQzaWJyTEc0ZXlTNmpyQU50WVhaQUpJX3dyMkVFbmgyVXJFVy1fb21TQUxEOXFIWmtzdFEyYVk5SkU3ZGF4LTdnN0EyTlo1NklicFg4TzlpSHYwRE9VYzdUUTZ4N0ZLaG9XWUs1Nm5vM3FfSktn"
-    }
-  },
-  {
-    "id": "2026-10-28-google-tpu-distribution",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-28T11:00:01Z",
-    "headline": "Google opens TPU chip sales beyond cloud platform, enlisting partners to scale AI infrastructure",
-    "plain_english": "Google is shifting its AI chip strategy by licensing TPU (Tensor Processing Unit) designs to external partners instead of reserving them for its own cloud services. This move signals a broader pivot toward monetizing custom silicon as a standalone business as competition in AI infrastructure intensifies.",
-    "why_it_matters": "BFSI firms building AI pipelines will face new sourcing options for custom chips, reducing lock-in to hyperscaler clouds and lowering procurement costs—but fragmenting supply chains and creating new compliance/security vetting workflows.",
-    "jargon": [
-      {
-        "term": "TPU (Tensor Processing Unit)",
-        "def": "Google's custom silicon optimized for AI training and inference; faster and cheaper than general-purpose processors for neural networks."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-10-28",
-      "url": "https://www.cnbc.com/2026/10/28/google-alters-cloud-playbook-turning-to-partners-to-sell-more-ai-chips.html"
     }
   },
   {
@@ -875,6 +886,58 @@
     }
   },
   {
+    "id": "2026-11-02-gmo-cyberattack-response",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-02T09:27:00.000Z",
+    "headline": "GMO chief takes pay cut following high-profile cyberattack; signals executive accountability for security failures",
+    "plain_english": "GMO Internet Group's CEO cut salary in response to cyberattack disclosed publicly. First major APAC fintech exec to personally accept accountability for breach. Signals cultural shift: security incidents now tied to board compensation and public reputation.",
+    "why_it_matters": "Precedent for regulators globally (RBI, MAS, FCA) to demand board-level accountability post-breach. Risk officers now face personal liability if AI systems enable security gaps.",
+    "stat_value": "CEO pay cut",
+    "stat_label": "following disclosed cyberattack",
+    "source": {
+      "name": "朝日新聞 · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQQ0E0ek44anlpcmRpc2xZRndXWVY4aVBKd3dWMTdlZ1RLQ3l1amJOalpDQlBmREtUci1rcS1CbFJDQWwzM05HaktDNG81S1Z5Vi0yaHp3"
+    }
+  },
+  {
+    "id": "2026-11-02-chainalysis-ai-attack",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-02T09:00:00.000Z",
+    "headline": "Chainalysis discloses security incident using AI-driven attack techniques; marks first known AI-assisted financial cybercrime at scale",
+    "plain_english": "Blockchain forensics firm Chainalysis reported security breach involving AI-powered attack methods—likely ML-optimized credential enumeration or adversarial payload generation. First public disclosure of generative AI weaponization against BFSI vendor. Precedent for AI-accelerated supply-chain threats.",
+    "why_it_matters": "Banks relying on Chainalysis for AML/sanctions screening now face unknown data exposure. If threat actors trained models on Chainalysis patterns, evasion of AML systems becomes more efficient. Regulatory scrutiny on vendor resilience.",
+    "jargon": [
+      {
+        "term": "AI-driven attack",
+        "def": "Cyber intrusion using machine learning to automate reconnaissance, social engineering, or payload crafting—speeds up attack by orders of magnitude."
+      }
+    ],
+    "source": {
+      "name": "Security Affairs · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZXF0ckNjSjNNallHYjRqVFRYVmlCaFJOTlh1cXVvWW1RZTVQTTVxcm5KY3pqUkFWc0tfWjNsbUxLR3dMd25kZUhxNzlnX3lMYUhzak9seVd0U1Z0eHRMLTM3N2ZfTW1CVWYwQl9wTmVSVU0zT1dyaVg1SUhZOUhjOTh5clJWUkh2Vk1hNjNFNHU4MXlVZ0dtbE92THJtTGNKRDBVUmZMRGFGTWlmWno5T1J0c1dlbDZlSXRWZjFmX1fSAcYBQVVfeXFMTVcwcGM2SHl5b29XVVdzOTFRUXd0SU5zeHQ2ZTRkTFA2Zzl0MDVnR2tXZldXVWZFV3RCcVhMUURYb1dlWnpWNXJwR3cwbzFVNnBxTVlaSV9VdGdTdkhXVUVTMmxTNjRSekdXUjBPZVk1aklDZzBRZm1jdGpPRzFvRUtwUjhuaTNnU3ZPaG0weldTUVlpRW9BWjJSSHZ1RGF3OUphS3J5azNNZE1xc19zQ2MxU21uN1N1UzNhQURiaFBpTklzN2N3"
+    }
+  },
+  {
+    "id": "2026-11-02-deutsche-bank-tech-upgrade",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T08:10:32.000Z",
+    "headline": "Deutsche Bank upgrades US tech sector; signals end of AI correction and renewed investor confidence in financial AI",
+    "plain_english": "Deutsche Bank research team raised US tech to buy after selloff, arguing valuation reset has been overdone. Implicit green light to banks holding AI-vendor equity (OpenAI stakes, Anthropic exposure, Meta AI). Marks turning point in post-correction sentiment.",
+    "why_it_matters": "Banks' own holdings in frontier AI labs will now show mark-to-market gains on spreadsheets. Tempts CFOs to overestimate AI ROI; balance-sheet risk if correction resumes.",
+    "stat_value": "Tech selloff \"has gone too far\"",
+    "stat_label": "per Deutsche Bank analysis",
+    "source": {
+      "name": "Reuters · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2ZNT2NYWHNiSmctYV9fcEw0SUNJbFhvUHVWTlB2cGJud0tiLVduamJyNlFUbE9FZzJQbWpYSDlxT0NjdElIclI0QmJ2MlBDTGl6NGFHY2tOdi1OV1BxRFhaTGNPZENUSC1SM25jdGpaTi1YN1hPYWxIcmQ0RzhFRFl1VVVTbmNBMTM5ajl4ZFRNT29aTXR3QWcwbHAzbEdrTUxsek9nUUQ4NFE4RVhLX09kMzY1cHc"
+    }
+  },
+  {
     "id": "2026-11-01-citi-board-appointment-insight",
     "category": "insight",
     "jurisdiction": "US",
@@ -989,51 +1052,17 @@
     }
   },
   {
-    "id": "2026-10-28-insight-microsoft-revenue-streak",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-28T21:25:30.000Z",
-    "headline": "Microsoft achieves 10 consecutive quarters of record revenue",
-    "plain_english": "Microsoft posted its 10th consecutive all-time high quarterly revenue ($92.3B, +19% YoY). Reflects enterprise AI spending acceleration and Azure's ability to capture incremental cloud workloads as organizations expand AI pilots into production.",
-    "why_it_matters": "Sustained revenue beat signals enterprise AI capex is not abating; Microsoft's installed base and ecosystem lock-in give it structural advantage as BFSI firms scale AI—worth modeling into tech vendor negotiations.",
-    "stat_value": "10",
-    "stat_label": "consecutive record revenue quarters",
-    "source": {
-      "name": "TechCrunch · 2026-10-28",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/"
-    }
-  },
-  {
-    "id": "2026-10-28-insight-alphabet-cash-flow-warning",
-    "category": "insight",
-    "jurisdiction": "Global",
+    "id": "2026-11-02-anthropic-ipo-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-28T23:18:43.000Z",
-    "headline": "Alphabet warns AI capex is materially battering cash flow despite $127B+ revenue",
-    "plain_english": "Alphabet CFO disclosed that AI infrastructure spending is creating visible cash flow headwind even as quarterly revenue hit $127.6B (+25% YoY). First explicit public warning of how scale of AI buildout is straining profitability.",
-    "why_it_matters": "Tech giants now openly acknowledging AI ROI uncertainty. BFSI can expect cloud pricing pressure to ease as vendors shift cost burden to themselves; also suggests AI commoditization timelines may compress faster than expected.",
-    "stat_value": "$127.6B",
-    "stat_label": "Alphabet Q3 2026 revenue, +25% YoY",
+    "published_at": "2026-11-02T09:29:18.000Z",
+    "headline": "Anthropic prepares megadeals IPO; market signals frontier AI companies entering late-stage capital phase",
+    "plain_english": "NDTV reports Anthropic positioned for one of world's largest public offerings, ranking among biggest listings globally. Reflects investor appetite for frontier AI labs beyond pure research. Signals consolidation of AI governance and compute concentration into publicly listed entities with BFSI tie-ins (financial compliance APIs, fraud detection licensing).",
+    "why_it_matters": "IPO valuation will anchor AI risk-pricing for banks. Once public, Anthropic's safety/audit commitments become binding to institutional customers—regulatory pressure on upstream AI vendors increases.",
     "source": {
-      "name": "New York Post · 2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUndwbXJyOEpyM0lSNlZFTXNiTk9KalZQb2VmVEdzSXZKNVhrZGRmSWZBYzJWM25qUWQ5ampha0RlWTQ5Zll1LVNjQk1TY0FQaEp5UmhRUnJZY1IxN3FUeFpBRkJIRW9MaVZGbDgzUVI4WHd3bHNTbEtUVXotaTNRMnZweWxTaGtMSm96MmxsQVRzWFdCZlVubGtiYQ"
-    }
-  },
-  {
-    "id": "2026-10-28-ubs-earnings-ai-context",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-28T09:59:43Z",
-    "headline": "UBS profit meets estimates amid strong inflows in Americas and Asia; AI efficiency gains likely embedded in results",
-    "plain_english": "UBS reported Q3 2026 net income in line with consensus, with Americas and Asia wealth management driving deposit inflows. While AI cost-reduction initiatives were not explicitly detailed in headline, the bank's operational leverage suggests efficiency gains from automation are flowing through—particularly in back-office and trade execution.",
-    "why_it_matters": "BFSI CFOs and COOs tracking AI ROI: UBS's flat/positive head-count trends despite rising volumes hints that AI-driven automation is sustainably offsetting revenue pressure, validating the mid-2026 thesis that deployments are entering mature phase.",
-    "stat_value": "Meets estimates",
-    "stat_label": "UBS Q3 2026 profit vs. consensus",
-    "source": {
-      "name": "Bloomberg · 2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTFl0LVN6Z1dHVEtnMFpaYkUwMS04N3dRaUd5bGUwaHFtYXo5VnFrUDBqRXlVVUYybVJRemQ0c2d6XzRjVlNXeWhaYzFJYXdSY3NISkpBSnJ6XzlOaWJUejd3TUVNNmVxeGh2a0FESl9udzBlZ1o0bWVkUFRlR1dqMnhqempRVlhPelpOZzdSOHdNQXNGWnRtdGtvSnM1dWljUURET3pGcVJUYlRz"
+      "name": "NDTV · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s3SnRKcEZUTVBVMk9JdkEtem5Ec1VWb1NWUmtkS01UR0VIdjVJeGdGRENkRmVveHNpV01uTEFFODF3WEdacHQxTk80eTNBMlBYWDUzWVdfcFRSTzluVDJ2NjlNNWc4M29UT1pGWktmVmJhQVB3NEhmWS1zakhpaEViRU1zaDV4ZmZ3RXJkYjlueVh0ZXB5amFZRnZaMWvSAacBQVVfeXFMUEttZlY1eTRmQ1FqMlRNVmdDY3pzakpvMTdZeHpSTy14Rl9BVVNKdzROVjVDU3MxaEZIblFpRW1FLVR0VGZxbEJaVWlzYlZqTVl0aWYzdjFNQmprZzhQOXFkei11NTMzWks0UWF3b0J2Z0ZlQzFiTmNxdzhyMUh3ZHNDNFB6d2F1LUN0cTRxT1dNNmRBQjRpeFo4cFNuT1VyQlpwTnB3U1k"
     }
   },
   {
@@ -1173,20 +1202,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-30",
       "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
-    }
-  },
-  {
-    "id": "2026-10-30-ai-spending-boom-cracks",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-30T21:17:40Z",
-    "headline": "Cracks emerging in AI spending boom amid debt and negative cash flow",
-    "plain_english": "Big Tech's multibillion-dollar AI infrastructure spend is now questioned by investors. Meta, Amazon, Intel earnings show mounting debt, negative cash flow, and questions about ROI sustainability.",
-    "why_it_matters": "If AI capex boom stalls, commodity demand for GPUs/memory drops; component costs fall; fintech LLM affordability improves but frontier model innovation slows—shifting BFSI AI strategy from \"buy everything\" to efficiency focus.",
-    "source": {
-      "name": "TechCrunch · 2026-10-30",
-      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
     }
   },
   {
@@ -1567,6 +1582,169 @@
     "source": {
       "name": "Wall Street Journal · 2026-10-23",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1HNFhFTFhpTzRXbFdHSzNMY3RaWHFIVllmc0VsdGdrUEYxTzdwNGRqb2Y4b3ZhUUt1RUJnZTN2QlpKdW8xQVRjYTIwQktIOGVyaHhINjJPVjFVTFN1NFEwYUd3?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-29-lagarde-ecb-transition",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-10-29T10:03:49Z",
+    "headline": "ECB President Lagarde to step down 7 February 2027; succession opens policy uncertainty",
+    "plain_english": "Christine Lagarde announced early departure from ECB presidency effective 7 February 2027. Leadership transition occurs amid economic uncertainty in eurozone and unresolved questions about AI governance in central banking frameworks.",
+    "why_it_matters": "ECB successor will inherit unfinished AI regulation agenda (EU AI Act compliance, fintech supervision). Transition delays clarity on how central banks will supervise bank AI deployments; incumbent banks may accelerate AI rollouts before new leadership sets stricter governance.",
+    "effective_date": "2027-02-07",
+    "source": {
+      "name": "European Central Bank · 2026-10-29",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ041V20xVGE3bmV1VVhFenRQVmFfUTV0bmhJa2thSGw5eHBVZURSU1dueTY2UTY4eE9JZkRnWWpZV1JtRjF6UVFvWXhHdy12RThUc1FmZ25YRlJmR2hNNlRQVnpWb1VLTGhYc2ZseWJENnZmNFhIZTZ3QmRwdThXYmp5TFJIWTR1"
+    }
+  },
+  {
+    "id": "2026-10-31-blackrock-aladdin-vp-hiring",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-10-31T20:04:58Z",
+    "headline": "BlackRock hiring VP-level Business Development Manager for Aladdin in London",
+    "plain_english": "BlackRock is recruiting a VP to lead client business development for Aladdin, its enterprise AI/risk platform, based in London. Role signals expansion of Aladdin's European footprint and BFSI demand for AI-native portfolio analytics.",
+    "why_it_matters": "Indicates sustained enterprise appetite for AI-augmented asset management platforms; signals BFSI hiring pivot from generalist IT to AI product/platform talent.",
+    "scale": {
+      "metric": "markets",
+      "value": "Europe (London hub)"
+    },
+    "source": {
+      "name": "Totaljobs (BlackRock job board) · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWDdJNVNfWXFiSDJWN2t6ZWZoLVVxRHR6Mk93ZmxPQVJLeDgxN0dyQURybEQzZWRPQm4zSS1fSXcxTGdaNFgzRVppamRQd3AzVXE4a2FiQS1zZUp4U1lwbnUwZXVBLUx1bU1SS2FEd1lRbEtrOUZUZ09ybWNyZnBSWFl5Z2g3Um5jWWh6WkRoQ0FGd3RMN0tGc25zMUdlN0ZCNEVoX3FRY0I0aEtm"
+    }
+  },
+  {
+    "id": "2026-10-31-bnp-earnings",
+    "category": "deployment",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-10-31T08:35:27Z",
+    "headline": "BNP Paribas earnings lifted by trading revenue, signaling algorithmic execution resilience",
+    "plain_english": "BNP Paribas reported higher earnings driven by a strong trading performance. Trading desks increasingly rely on AI-driven execution algorithms, smart order routing, and market-microstructure models to capture alpha.",
+    "why_it_matters": "Demonstrates that large European banks deploying AI execution and market-impact models remain competitive. Validates investment in algorithmic trading infrastructure as a core competitive advantage in volatile markets.",
+    "source": {
+      "name": "Wall Street Journal · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVWhVRUE1eHViTVhmUHZlSHZCXzJQb1NTOXZTc0Nfd1FNaERIU20teUY2Q2pZMlk5S2MzVU50blpGNS1hdEJiLWplc19CSGZ2bENLWlpWYVI1ZEZKV2NxeHdIMFVKZjJxam04ZzAyMlZNMmMwSEZ4TlNZcF9zMzVjUUxUVnVLM2xiQ1NNMHFCamJFcU1tQ2ZmS0Ftaw"
+    }
+  },
+  {
+    "id": "2026-10-30-claudeagent-pentagon",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-30T21:19:26Z",
+    "headline": "Contractor's Claude AI agent accessed Pentagon systems",
+    "plain_english": "A defense contractor deployed an Anthropic Claude agent that gained access to Pentagon systems. Story touches on Anthropic IPO and ICE policy. Highlights uncontrolled AI agent propagation in sensitive US infrastructure.",
+    "why_it_matters": "If AI agents enter classified/defense networks without formal vetting, BFSI regulators will demand stricter controls on agentic AI in financial infrastructure. May trigger OCC/Fed guidance on AI agent audit, containment, and kill-switch protocols.",
+    "jargon": [
+      {
+        "term": "agentic AI",
+        "def": "AI systems that autonomously execute tasks across systems without human-in-loop approval—e.g., fetching data, making trades, sending messages."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-10-30",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/"
+    }
+  },
+  {
+    "id": "2026-10-28-shift-alphabet-capex-misses-margins",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-28T21:23:15.000Z",
+    "headline": "Alphabet misses earnings as AI capex eats margins, signals continued heavy spending",
+    "plain_english": "Alphabet reported its first top-and-bottom-line miss in ~4 years; CFO warned AI infrastructure investment is materially impacting cash flow. Stock fell 10% on guidance that 2027 capex will increase further from current run rate.",
+    "why_it_matters": "AI arms race moving into profitability-sacrificing phase; tech giants now choosing scale over earnings. BFSI must expect sustained price pressure from cloud providers unable to recoup AI R&D for 18–24 months.",
+    "source": {
+      "name": "Bloomberg · 2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNl94WE51TlQ2Q2dVVTBDNlZZbzF5Mk02UjZRaEJwQnhoM1lGX0dWODk3b1RwZDB1SDVHYmYtOUQzaWJyTEc0ZXlTNmpyQU50WVhaQUpJX3dyMkVFbmgyVXJFVy1fb21TQUxEOXFIWmtzdFEyYVk5SkU3ZGF4LTdnN0EyTlo1NklicFg4TzlpSHYwRE9VYzdUUTZ4N0ZLaG9XWUs1Nm5vM3FfSktn"
+    }
+  },
+  {
+    "id": "2026-10-28-google-tpu-distribution",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-28T11:00:01Z",
+    "headline": "Google opens TPU chip sales beyond cloud platform, enlisting partners to scale AI infrastructure",
+    "plain_english": "Google is shifting its AI chip strategy by licensing TPU (Tensor Processing Unit) designs to external partners instead of reserving them for its own cloud services. This move signals a broader pivot toward monetizing custom silicon as a standalone business as competition in AI infrastructure intensifies.",
+    "why_it_matters": "BFSI firms building AI pipelines will face new sourcing options for custom chips, reducing lock-in to hyperscaler clouds and lowering procurement costs—but fragmenting supply chains and creating new compliance/security vetting workflows.",
+    "jargon": [
+      {
+        "term": "TPU (Tensor Processing Unit)",
+        "def": "Google's custom silicon optimized for AI training and inference; faster and cheaper than general-purpose processors for neural networks."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-10-28",
+      "url": "https://www.cnbc.com/2026/10/28/google-alters-cloud-playbook-turning-to-partners-to-sell-more-ai-chips.html"
+    }
+  },
+  {
+    "id": "2026-10-28-insight-microsoft-revenue-streak",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-28T21:25:30.000Z",
+    "headline": "Microsoft achieves 10 consecutive quarters of record revenue",
+    "plain_english": "Microsoft posted its 10th consecutive all-time high quarterly revenue ($92.3B, +19% YoY). Reflects enterprise AI spending acceleration and Azure's ability to capture incremental cloud workloads as organizations expand AI pilots into production.",
+    "why_it_matters": "Sustained revenue beat signals enterprise AI capex is not abating; Microsoft's installed base and ecosystem lock-in give it structural advantage as BFSI firms scale AI—worth modeling into tech vendor negotiations.",
+    "stat_value": "10",
+    "stat_label": "consecutive record revenue quarters",
+    "source": {
+      "name": "TechCrunch · 2026-10-28",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/"
+    }
+  },
+  {
+    "id": "2026-10-28-insight-alphabet-cash-flow-warning",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-28T23:18:43.000Z",
+    "headline": "Alphabet warns AI capex is materially battering cash flow despite $127B+ revenue",
+    "plain_english": "Alphabet CFO disclosed that AI infrastructure spending is creating visible cash flow headwind even as quarterly revenue hit $127.6B (+25% YoY). First explicit public warning of how scale of AI buildout is straining profitability.",
+    "why_it_matters": "Tech giants now openly acknowledging AI ROI uncertainty. BFSI can expect cloud pricing pressure to ease as vendors shift cost burden to themselves; also suggests AI commoditization timelines may compress faster than expected.",
+    "stat_value": "$127.6B",
+    "stat_label": "Alphabet Q3 2026 revenue, +25% YoY",
+    "source": {
+      "name": "New York Post · 2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUndwbXJyOEpyM0lSNlZFTXNiTk9KalZQb2VmVEdzSXZKNVhrZGRmSWZBYzJWM25qUWQ5ampha0RlWTQ5Zll1LVNjQk1TY0FQaEp5UmhRUnJZY1IxN3FUeFpBRkJIRW9MaVZGbDgzUVI4WHd3bHNTbEtUVXotaTNRMnZweWxTaGtMSm96MmxsQVRzWFdCZlVubGtiYQ"
+    }
+  },
+  {
+    "id": "2026-10-28-ubs-earnings-ai-context",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-28T09:59:43Z",
+    "headline": "UBS profit meets estimates amid strong inflows in Americas and Asia; AI efficiency gains likely embedded in results",
+    "plain_english": "UBS reported Q3 2026 net income in line with consensus, with Americas and Asia wealth management driving deposit inflows. While AI cost-reduction initiatives were not explicitly detailed in headline, the bank's operational leverage suggests efficiency gains from automation are flowing through—particularly in back-office and trade execution.",
+    "why_it_matters": "BFSI CFOs and COOs tracking AI ROI: UBS's flat/positive head-count trends despite rising volumes hints that AI-driven automation is sustainably offsetting revenue pressure, validating the mid-2026 thesis that deployments are entering mature phase.",
+    "stat_value": "Meets estimates",
+    "stat_label": "UBS Q3 2026 profit vs. consensus",
+    "source": {
+      "name": "Bloomberg · 2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTFl0LVN6Z1dHVEtnMFpaYkUwMS04N3dRaUd5bGUwaHFtYXo5VnFrUDBqRXlVVUYybVJRemQ0c2d6XzRjVlNXeWhaYzFJYXdSY3NISkpBSnJ6XzlOaWJUejd3TUVNNmVxeGh2a0FESl9udzBlZ1o0bWVkUFRlR1dqMnhqempRVlhPelpOZzdSOHdNQXNGWnRtdGtvSnM1dWljUURET3pGcVJUYlRz"
+    }
+  },
+  {
+    "id": "2026-10-30-ai-spending-boom-cracks",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T21:17:40Z",
+    "headline": "Cracks emerging in AI spending boom amid debt and negative cash flow",
+    "plain_english": "Big Tech's multibillion-dollar AI infrastructure spend is now questioned by investors. Meta, Amazon, Intel earnings show mounting debt, negative cash flow, and questions about ROI sustainability.",
+    "why_it_matters": "If AI capex boom stalls, commodity demand for GPUs/memory drops; component costs fall; fintech LLM affordability improves but frontier model innovation slows—shifting BFSI AI strategy from \"buy everything\" to efficiency focus.",
+    "source": {
+      "name": "TechCrunch · 2026-10-30",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
     }
   },
   {
@@ -8112,38 +8290,6 @@
     }
   },
   {
-    "id": "2026-10-02-liberate-insurance-ai-agents",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-02T23:18:32.000Z",
-    "headline": "Liberate deploys AI agents handling insurance night-shift customer calls end-to-end",
-    "plain_english": "Liberate's AI agents are answering policyholder calls, retrieving account balances, and logging interactions into insurer core systems with zero human intervention. Insurance agencies and carriers have reclaimed over 100 million minutes of staff time since deployment.",
-    "why_it_matters": "Demonstrates production-scale agentic automation in a regulated vertical; if call-center deflection at this scale holds, carrier operating costs drop materially and talent redeploys to complex claims and underwriting.",
-    "scale": {
-      "metric": "minutes",
-      "value": "100M+"
-    },
-    "source": {
-      "name": "PYMNTS · 2026-10-02",
-      "url": "https://www.pymnts.com/insurance/2026/liberates-ai-agents-take-over-the-insurance-night-shift/"
-    }
-  },
-  {
-    "id": "2026-10-02-paynearme-ai-collections",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-02T22:10:24.000Z",
-    "headline": "PayNearMe launches AI servicing and collections agent for lenders",
-    "plain_english": "PayNearMe, a payment and lending platform, has released an AI agent that handles customer servicing inquiries and collections workflows in-house, integrating with lender systems for real-time account data and decision-making.",
-    "why_it_matters": "Collections and servicing are high-friction, compliance-heavy workflows; automating them with AI reduces cost-per-contact and shrinks regulatory risk if audit trails and dispute handling are embedded in the agent design.",
-    "source": {
-      "name": "Finovate · 2026-10-02",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVk8xTXlyLXFUSzB4STNMbzlmUktmcGJCZDlJQlJGakprOVRvS3hWUDJlVV9FUkZvenVwclM3QW1nd1hHNHp1LU1YbjZVeDl4NHdnTlV3T09nWVVCQTZQYTUxREFSSk84Ri1HX2xLNTJ6RmQzOVZaN1dLalVpc0xqcA"
-    }
-  },
-  {
     "id": "2026-10-03-ai-agents-sms-layer",
     "category": "vendor",
     "jurisdiction": "US",
@@ -8155,30 +8301,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-03",
       "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/"
-    }
-  },
-  {
-    "id": "2026-10-02-emvco-agentic-payments",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-02T21:42:14.000Z",
-    "headline": "EMVCo builds framework to encode AI agent intent into card transactions",
-    "plain_english": "EMVCo, the payments standards body, is developing technical specifications to embed consumer authorization data into card payments routed through AI agents. Merchants, issuers, and networks will see what the agent was authorized to do and whether a transaction stays within bounds.",
-    "why_it_matters": "Agentic payments (where AI autonomously executes transactions on behalf of users) will scale faster if liability and fraud rules are clear; EMVCo standardization de-risks issuer adoption and reduces regulatory friction across markets.",
-    "jargon": [
-      {
-        "term": "agentic payments",
-        "def": "Transactions initiated and executed by AI agents acting under consumer authorization, not direct cardholder action."
-      },
-      {
-        "term": "EMVCo",
-        "def": "Industry body that sets global standards for secure payment transactions and chip card technology."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-10-02",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/emvco-framework-targets-consumer-intent-agentic-payments/"
     }
   },
   {
@@ -8196,35 +8318,6 @@
     }
   },
   {
-    "id": "2026-10-02-openai-white-house-cyber",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-02T21:56:38.000Z",
-    "headline": "OpenAI hires former White House AI policy chief as regulators scrutinize AI risks",
-    "plain_english": "Thomas Lind, the former head of AI policy at the White House's National Cyber Director office, joined OpenAI this week to lead cyber and strategic risk initiatives. Move signals OpenAI's intent to embed government relations and compliance expertise as regulators probe AI safety and misuse.",
-    "why_it_matters": "Hiring of government insiders accelerates frontier labs' regulatory defense posture; similar moves by competitors will shape how AI policies are drafted, signaling that labs are playing a long-term regulatory game rather than resisting oversight.",
-    "source": {
-      "name": "PYMNTS · 2026-10-02",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-hires-former-white-house-cyber-official-regulators-probe-ai-dangers/"
-    }
-  },
-  {
-    "id": "2026-10-02-anthropic-100m-engineer-training",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-02T21:03:06.000Z",
-    "headline": "Anthropic commits $100M to train 10,000 AI engineers via consulting partnerships",
-    "plain_english": "Anthropic is investing $100 million in talent development programs in partnership with consulting firms to train nearly 10,000 AI engineers, addressing a critical shortage of practitioners who can deploy and maintain AI systems.",
-    "why_it_matters": "Talent bottleneck is the binding constraint on AI adoption in BFSI; Anthropic's bet on supply-side training signals that frontier labs view skilled labor, not just models, as the bottleneck to scaling production deployments.",
-    "amount": "$100M",
-    "source": {
-      "name": "CNBC · 2026-10-02",
-      "url": "https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html"
-    }
-  },
-  {
     "id": "2026-10-03-us-china-ai-incident-channel",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -8236,68 +8329,6 @@
     "source": {
       "name": "Breaking the News · 2026-10-03",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU3FUZFZydFpsR0lRUldoU0ZEVU9Db0QxNlNScVRWOUhVLWRTWHdTUVdNZkhoRG5UbDE2aDlJOXZPanE3R3JVRTh4Zm9YbGdRWXdWV09XTklGaVpEcWRPa2JwTC12dWZ1emVQUzN5WFZxT3pYdWVZM3cxWWEtTlRMOUJZX0pzTFRTUERwb3M0UFptcmNpeG90V1FVZkVFcWc"
-    }
-  },
-  {
-    "id": "2026-10-02-cerebras-ipo-decline",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-02T22:38:49.000Z",
-    "headline": "Cerebras shares hit post-IPO low on Nvidia competitive pressure and lockup expiration",
-    "plain_english": "Cerebras, a specialized AI chip maker, fell 20% in one week, hitting its lowest post-IPO price, as Nvidia competition intensified and insider lockup restrictions expired, triggering broader equity sell-off.",
-    "why_it_matters": "Signals investor skepticism about AI chip unicorns facing Nvidia's entrenched dominance; BFSI procurement teams should monitor: if Cerebras or similar challengers can't sustain valuations, diversified AI infrastructure procurement remains risky.",
-    "source": {
-      "name": "CNBC · 2026-10-02",
-      "url": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html"
-    }
-  },
-  {
-    "id": "2026-10-02-stability-ai-music",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-02T21:09:14.000Z",
-    "headline": "Sean Parker-backed Stability AI pivots to generative music with label backing",
-    "plain_english": "Sean Parker is restructuring Stability AI around music generation, with support and funding from major record labels. Move represents strategic pivot away from image generation toward audio, positioning with regulatory support from rights holders.",
-    "why_it_matters": "Demonstrates that generative AI vendors are retreating from commoditized image space and seeking defensible niches; for BFSI, audio synthesis (customer service, trading comms) may become next-gen differentiation point if Stability succeeds.",
-    "source": {
-      "name": "TechCrunch · 2026-10-02",
-      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/"
-    }
-  },
-  {
-    "id": "2026-10-02-bny-payward-crypto-partnership",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-02T23:42:09.000Z",
-    "headline": "BNY Mellon in talks with Kraken parent Payward on digital asset and custody infrastructure",
-    "plain_english": "BNY Mellon and Payward (Kraken's parent company) are negotiating a partnership spanning crypto products, custody, wealth management, trading, payments, and financial infrastructure. Deal would integrate traditional custody with native crypto services.",
-    "why_it_matters": "If completed, signals major custodian legitimizing crypto as core banking asset class, not peripheral fintech; institutional adoption accelerates when Tier-1 custody providers integrate crypto natively into client workflows.",
-    "source": {
-      "name": "PYMNTS · 2026-10-02",
-      "url": "https://www.pymnts.com/partnerships/2026/bny-and-kraken-parent-payward-eye-global-financial-infrastructure-partnership/"
-    }
-  },
-  {
-    "id": "2026-10-02-icba-occ-crypto-charters",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-03T00:05:22.000Z",
-    "headline": "Community bankers sue OCC alleging fast-track crypto firm charters bypass scrutiny",
-    "plain_english": "The Independent Community Bankers of America filed suit against the Office of the Comptroller of the Currency, claiming the regulator granted cryptocurrency firms banking licenses without imposing the same compliance and capital standards applied to traditional community banks.",
-    "why_it_matters": "Outcome will reshape crypto-bank competitive dynamics and set precedent for regulatory consistency; if plaintiffs win, crypto banking faces higher barriers; if OCC prevails, incumbent banks face new crypto competition with lighter oversight.",
-    "jargon": [
-      {
-        "term": "OCC",
-        "def": "Office of the Comptroller of the Currency; U.S. regulator that charters and supervises national banks."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-10-02",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/icba-sues-occ-to-stop-alleged-fast-track-of-crypto-bank-charters/"
     }
   }
 ]
