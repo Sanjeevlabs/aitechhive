@@ -90,3 +90,33 @@ test("editions are bounded, diverse and exclude old archive content", async () =
   assert.ok(!edition.some((c) => c.id === "stale"));
   assert.deepEqual(selectEdition([]), []);
 });
+
+test("newsletter host rewrites preserve existing article URLs and main site routing", async () => {
+  const { newsletterRoute } = await import("../lib/newsletter-routing.mjs");
+  assert.equal(newsletterRoute("aitechhive.com", "/"), null);
+  assert.equal(newsletterRoute("preview.vercel.app", "/journal"), null);
+  assert.deepEqual(newsletterRoute("newsletter.aitechhive.com", "/"), {
+    kind: "rewrite",
+    path: "/journal",
+  });
+  assert.deepEqual(
+    newsletterRoute("newsletter.aitechhive.com", "/p/old-slug"),
+    { kind: "rewrite", path: "/journal/p/old-slug" },
+  );
+  assert.deepEqual(
+    newsletterRoute("newsletter.aitechhive.com", "/journal/p/old-slug"),
+    { kind: "redirect", path: "/p/old-slug" },
+  );
+  assert.equal(
+    newsletterRoute("newsletter.aitechhive.com", "/journal-assets/image.avif"),
+    null,
+  );
+  assert.equal(
+    newsletterRoute("newsletter.aitechhive.com", "/api/newsletter/subscribe"),
+    null,
+  );
+  assert.deepEqual(
+    newsletterRoute("newsletter.aitechhive.com", "/robots.txt"),
+    { kind: "rewrite", path: "/journal/robots.txt" },
+  );
+});

@@ -1,7 +1,25 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse } from "next/server";
+import { newsletterRoute } from "./lib/newsletter-routing.mjs";
 
 export async function middleware(request) {
+  const route = newsletterRoute(
+    request.headers.get("host"),
+    request.nextUrl.pathname,
+  );
+  if (route) {
+    const target = request.nextUrl.clone();
+    target.pathname = route.path;
+    return route.kind === "redirect"
+      ? NextResponse.redirect(target, 307)
+      : NextResponse.rewrite(target);
+  }
+  if (
+    request.nextUrl.pathname.startsWith("/journal") ||
+    request.nextUrl.pathname.startsWith("/api/newsletter/")
+  )
+    return NextResponse.next({ request });
+
   // Must pass the full `request` object (not just headers) so that mutated cookies
   // are forwarded correctly to server components on the next render.
   let supabaseResponse = NextResponse.next({ request });
@@ -16,28 +34,24 @@ export async function middleware(request) {
     return supabaseResponse;
   }
 
-  const supabase = createServerClient(
-    supabaseUrl,
-    supabaseKey,
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll();
-        },
-        setAll(cookiesToSet) {
-          // Write cookies into the (mutable) request so downstream server components see them.
-          cookiesToSet.forEach(({ name, value, options }) =>
-            request.cookies.set(name, value, options)
-          );
-          // Rebuild the response so the Set-Cookie headers reach the browser.
-          supabaseResponse = NextResponse.next({ request });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
-          );
-        },
+  const supabase = createServerClient(supabaseUrl, supabaseKey, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
       },
-    }
-  );
+      setAll(cookiesToSet) {
+        // Write cookies into the (mutable) request so downstream server components see them.
+        cookiesToSet.forEach(({ name, value, options }) =>
+          request.cookies.set(name, value, options),
+        );
+        // Rebuild the response so the Set-Cookie headers reach the browser.
+        supabaseResponse = NextResponse.next({ request });
+        cookiesToSet.forEach(({ name, value, options }) =>
+          supabaseResponse.cookies.set(name, value, options),
+        );
+      },
+    },
+  });
 
   // IMPORTANT: Do not add any logic between createServerClient and getUser().
   // getUser() is the only safe way to validate the session server-side and
@@ -51,6 +65,6 @@ export async function middleware(request) {
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|avif|pdf)$).*)",
   ],
 };

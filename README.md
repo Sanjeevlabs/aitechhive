@@ -136,3 +136,21 @@ Built fast. WSJ for the editorial discipline, Spotify for the card stack mechani
 `data/edition.json` freezes at most 12 story IDs per edition. Newest stories within a 24-hour window are chosen with topic diversity; the archive remains opt-in. Read progress is device-local and retained between editions for repeated stories. Opening a briefing marks it read; readers can also mark stories read/unread explicitly.
 
 The refresh workflow runs at 02:30 and 14:30 UTC (08:00 and 20:00 IST). GitHub may delay scheduled runs. Code pushes do not publish extra editions; manual dispatch remains available. `scripts/publish-edition.mjs` preserves publication time when the selected IDs have not changed.
+
+## Newsletter on the same Vercel project
+
+The independent working-note archive lives at `/journal` within this repository. `middleware.js` routes `newsletter.aitechhive.com` to that section while preserving public `/p/<slug>` article URLs. The main `aitechhive.com` daily brief is unchanged. All 46 original public articles, 146 inline images and the publication's PDF are included in the repository. Article assets use `/journal-assets/` on both hosts. No ChatGPT Sites or Cloudflare D1 dependency is required by the newsletter.
+
+### Subscriber setup
+
+Use the existing Supabase project:
+
+1. Apply `scripts/newsletter-schema.sql` in its SQL editor. This adds separate newsletter tables and a transaction-safe signup function; it does not change existing profiles or saves.
+2. Add `SUPABASE_SERVICE_ROLE_KEY` as a server-only Vercel environment variable. The existing `NEXT_PUBLIC_SUPABASE_URL` is reused (or set server-only `SUPABASE_URL`). Never prefix the service key with `NEXT_PUBLIC_`.
+3. Redeploy after environment changes. Missing configuration or schema returns an explicit temporary-unavailability response; the UI never claims a signup was stored when it was not.
+
+Signup writes are server-only, record explicit consent, preserve suppression status on duplicates, and limit repeated signup requests. Only hashes of cancellation tokens and daily IP-based rate buckets are stored. Email delivery and importing the existing Beehiiv subscriber list remain separate tasks; there is no automatic sending in this release.
+
+### Domain cutover
+
+Add `newsletter.aitechhive.com` to the existing Vercel `aitechhive` project's Domains settings. Inspect that project's exact recommended DNS records before changing the current Beehiiv CNAME. Do not use the earlier ChatGPT custom-domain targets. Keep email-related MX/SPF/DKIM/DMARC records unchanged. Verify HTTPS, `/p/<slug>`, `/archive`, `/feed.xml`, `/robots.txt` and subscriber capture before retiring the old publication.

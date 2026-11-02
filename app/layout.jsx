@@ -125,7 +125,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href={APP_URL} />
         <Script
           id="ld-json"
           type="application/ld+json"
