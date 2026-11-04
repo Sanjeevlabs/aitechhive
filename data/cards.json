@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-04-epc-vop-matching",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-04T09:00:00Z",
+    "headline": "European Payments Council updates Verification of Payee matching rules",
+    "plain_english": "The EPC published updated guidance for VOP (Verification Of Payee) schemes, clarifying how banks should match beneficiary names and handle character variations before payment processing. Tightens fraud prevention for cross-border transfers.",
+    "why_it_matters": "VOP mismatch handling directly reduces authorized push-payment fraud. Banks must update name-matching logic in payment systems; affects compliance timelines and ops friction.",
+    "jargon": [
+      {
+        "term": "Verification of Payee (VOP)",
+        "def": "Real-time check that the recipient account name matches the payee name entered by the payer, blocking mismatched payments."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-11-04",
+      "url": "https://www.finextra.com/newsarticle/48697/epc-publishes-new-verification-of-payee-matching-recommendations"
+    }
+  },
+  {
+    "id": "2026-11-04-democrats-data-centers",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-04T06:40:48Z",
+    "headline": "Newly elected Democratic governors vow to restrict data centre expansion",
+    "plain_english": "Democratic candidates won several gubernatorial races on platforms opposing large data-centre buildouts. Cites energy, water, and environmental concerns. Threatens AI infrastructure expansion in swing states.",
+    "why_it_matters": "State-level data-centre bans or caps choke AI training/inference capacity buildout. Cloud and BFSI firms relying on US compute will face routing delays, higher costs, and regulatory friction in key markets.",
+    "source": {
+      "name": "Financial Times · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbmlzb0xfYnNERlRJblUwS2tLS1JZdUM0X1RXS0c1S3Z3NlBQTXRONlpzYm4tZS1RaXNfdXpBbUl1Y3N1Zndaczg5S2E5VktrekVDbFFSdVlrekMyVmdITUJrLXk2bXhOQ2I1Q2oxdTdMUjJ5SEpieUJNakpfc3F5ZUx5bDg"
+    }
+  },
+  {
     "id": "2026-11-03-ai-slopaganda-political-ads",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,37 +158,31 @@
     }
   },
   {
-    "id": "2026-10-31-quad-supply-chain-export",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-31T18:41:19Z",
-    "headline": "Quad (US, Japan, India, Australia) ministers align on supply-chain resilience, criticize export restrictions",
-    "plain_english": "Indo-Pacific Quad nations issued joint statement on semiconductor and tech supply-chain security, explicitly opposing 'arbitrary' export controls (indirect critique of US/China chip restrictions). Signals geopolitical pressure on AI infrastructure sourcing.",
-    "why_it_matters": "Foreshadows potential trade bloc fragmentation in AI chip supply; BFSI firms must diversify compute sourcing and hedge against US-China tech decoupling; affects capex for AI model training.",
-    "jargon": [
-      {
-        "term": "Export restrictions",
-        "def": "Government controls limiting sale or transfer of sensitive goods (semiconductors, AI tools) to specified countries or entities"
-      }
-    ],
+    "id": "2026-11-04-nivo-ai-brokers",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-04T08:24:50Z",
+    "headline": "Nivo launches AI collective programme for insurance brokers",
+    "plain_english": "Nivo rolled out a new AI-powered collective initiative targeting insurance brokers. Details sparse, but signals broker-facing AI tooling to streamline underwriting or claims workflows.",
+    "why_it_matters": "AI adoption in broker networks expands insurer reach into SME underwriting and claims triage, lowering manual workload and accelerating cycle times.",
     "source": {
-      "name": "Reuters · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcjhmcnV5dnZWRFFnSkw0WUF5b3hld3Q2RmhYWjAzYVM4STJWUno1b1ZMMmpzMUZseDltNkgxZWdlbWdJQTVjZ2FoMVptRkZfdUlxcnZZMlpORXRoQTFCM1pBRjhrdU05Q1dQbU54WE5wejBhQnpmdjh4SF85RkVQMnViNTE4eWpyeU9FVF9feGpNTEpvQmpjbXhGSHZwMFlycmdTT1ZTQ0hWQQ"
+      "name": "The Intermediary · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMzVNbnZyX0Q2SUtVczg5Vjdrdm52c1Y5LXNubjRHMTh1d3BRU2RlSlRpSVg5VVdXX3dyT2c5U3o5TGRIMTg3dS1Xc2hKUE50V1hiSmozdU1tV2ZyMzlMRHdfMmNFMHlqR0syYnJuc3JSdnVKbXpZM3dLMFRGdFYtTVFOMVZ1SXl6RHdWanRSTmtvZw"
     }
   },
   {
-    "id": "2026-10-31-boe-mortgage-limit",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-31T09:38:17Z",
-    "headline": "Bank of England explores relaxing mortgage lending caps amid housing pressure",
-    "plain_english": "The Bank of England is considering easing restrictions on high-risk mortgage lending. Historically, such policy shifts often trigger downstream changes to model risk governance and capital allocation frameworks.",
-    "why_it_matters": "Loosening lending caps forces banks to recalibrate credit models and stress-test frameworks. Risk teams must prepare for higher portfolio volatility and recalibrate defaults—AI-driven credit models need retraining.",
+    "id": "2026-11-04-toss-securities-ai-inspection",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-04T07:18:44Z",
+    "headline": "Toss Securities deploys AI post-inspection system",
+    "plain_english": "South Korean fintech Toss Securities introduced an AI-powered post-inspection (likely compliance or surveillance review) system. No scale data disclosed; signals move to automate compliance workflows.",
+    "why_it_matters": "Compliance automation in retail brokerages reduces manual audit costs and accelerates post-trade surveillance, improving detection of irregular patterns.",
     "source": {
-      "name": "Financial Times · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdHNnNGFiMkJrS2dTaV9VY2czb3RQSUtCYm94YnQ0NmpfcVZQNzJwbkhlNTVxMVdXUUN5ZEh5ZjlJZk1OSllkTy1zYmhIR0ZvWEVoTUFwV1pmdDJjM3ZwM052THlNZFVvMkw1RUIzUi1zYmxTNW13dXpZLWFnbHFJTUljOXY"
+      "name": "매일경제 · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5WMG1Ub21vUWpNSlJFWkRQR1BjOHJKbGpid3Y2Zm5hNU1GdDgtZ0xtY280RTMxZzVkM09OZFNhQ2xpZ0FGVzd0RmJveTlsV2M"
     }
   },
   {
@@ -293,45 +321,6 @@
     "source": {
       "name": "Wall Street Journal · 2026-11-01",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkhWeHRfTkFrdEUyRlhZLTlRUnE3MXE3RlRweTgyQnpVb3hrdEJqYnRkTjVFdWUzNzMwRkE3a0NsbkpsZElsZXo5RGlZRDJFMklUeFhZa0xBVEZXYXEzaHliSHZaWm5UZ09YdFQtZ3QzU1ViYllkZE5hTldzdHcyZGpJVW84ckItUFZSUUVMQzRfX3pTcnVUa3JZN0gwUUwxMFRUMDY5NWRlbnJa"
-    }
-  },
-  {
-    "id": "2026-11-01-nebius-citi-credit-facility",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-01T10:40:26Z",
-    "headline": "Nebius secures $3.5bn credit facility from Citi for AI infrastructure expansion",
-    "plain_english": "Nebius, a cloud infrastructure provider focused on AI workloads, has obtained a $3.5 billion credit line from Citibank. The facility supports Nebius's rapid scaling of GPU compute capacity and data centers serving financial and enterprise AI deployments globally.",
-    "why_it_matters": "Major banks are now structuring dedicated credit facilities for AI infrastructure vendors serving BFSI. This signals confidence in AI capex durability and creates new underwriting playbooks for fintech infrastructure lending.",
-    "source": {
-      "name": "ad-hoc-news.de · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeVlUY1VSX0plekc3NnZOWmtQcWxwVE5jNzllTS1yczZwU0xRTXZlX0dvaU1DWHlCaXJTdGZYUHQ5UGtNM1VfbUVLNnpBLXNadlJsVWJla0RsNkpfMUdyeTZlWkVZMXBJYVN3aHlYeXBnc3lZSGVmcy1zcHdJalZZbnlaVExhTjBUeUNadUhtQ25pN2puZmVDeU5lQVN4UzM4REtfOVN0cndTRHY5RkQ0UHM1YURic1NSUnNMU2lpQkVEREV4TlVUT2g5NjhDVXNzRnJWLUxMZ05BeUV4TVlRX1JwWFV6eTExR3VxT0pjaEdXYmlnWUlN"
-    },
-    "amount": "$3.5B",
-    "jargon": [
-      {
-        "term": "GPU compute",
-        "def": "Graphics processors rented on-demand for parallel AI model training and inference; foundational to LLM and diffusion model workloads."
-      }
-    ]
-  },
-  {
-    "id": "2026-11-01-jpm-q1-2026-earnings-ai",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-01T10:04:29Z",
-    "headline": "JPMorgan Chase Q1 2026 earnings: AI operational gains detailed on call",
-    "plain_english": "JPMorgan's Q1 2026 earnings call included discussion of AI investments in risk, trading, and operations. The bank has deployed language models for contract review, regulatory document parsing, and customer service automation across its 300K+ employee base.",
-    "why_it_matters": "Mega-cap bank earnings calls now routinely disclose AI productivity metrics. These calls signal which AI use cases (RPA, NLP-driven compliance, customer segmentation) are delivering measurable ROI and thus attracting additional BFSI capex.",
-    "source": {
-      "name": "Fortune · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XTUpobXp3b2QyTkxiY0w2TzBpbWhTbDBkejB1Um8wVC1wS2FuT1dWSWVSbHVobnJtVDRjcG1LMjN5SFNINVI0dGRpOVJ0YjctWnNLTk1uQ2o5VWQ4ZjZGUmVZR0JaRF9XRlQ3dw"
-    },
-    "scale": {
-      "metric": "employees",
-      "value": "300000"
     }
   },
   {
@@ -1070,6 +1059,40 @@
     }
   },
   {
+    "id": "2026-11-04-apple-ai-china-delay",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-04T06:28:04Z",
+    "headline": "Apple AI tools finally launch in China after two-year regulatory freeze",
+    "plain_english": "Apple's on-device AI (Intelligence) features cleared Chinese regulators and became available in mainland China. Two-year delay reflected Beijing's requirement for local model serving and data residency compliance.",
+    "why_it_matters": "China's approval sets precedent: Western AI vendors must localize models and infrastructure; BFSI vendors eyeing Chinese markets face similar gatekeeping. Reshapes global AI supply chains.",
+    "jargon": [
+      {
+        "term": "On-device AI",
+        "def": "Machine learning inference runs locally on user device, not cloud servers, keeping personal data local and reducing latency."
+      }
+    ],
+    "source": {
+      "name": "News.com.au · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSmJZOW9taUhzajM2Z1lTeUgwWk5YVDdYUUFReVFMLVBBWXM4R040aExVWjREcEgzbjNHcEJveU9nMWtrRnJKMVVnenNiUjNRZUdFXy1XT0hEZlRQaUd3ZFJKOEYyS2FOYVVxY1NhTFJ0UGJZTy1SakluZUNCMVdFVXJscDNoZzlyckF2QWRBaTJmbEozanhhMzVxbDJTd1F3WmhEenhldWs2bXQxQjVXbVBTQVFtWXMzel9TcEpENUJxc2RBTk5zWnN3T3RxUlk"
+    }
+  },
+  {
+    "id": "2026-11-04-ai-leaders-constitution",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-04T06:47:03Z",
+    "headline": "Major AI company leaders sign self-regulation framework",
+    "plain_english": "Major AI industry leaders signed a 'constitution' or voluntary governance framework to self-police AI safety and responsible deployment. No enforcement mechanism announced; reflects industry preemption of potential regulation.",
+    "why_it_matters": "Signals AI industry betting on soft governance over hard regulation. BFSI risk teams should monitor this as a hedge against incoming AI Act enforcement in EU and potential US rulemaking.",
+    "source": {
+      "name": "ABC News · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOanlhb3luTWNPUUpYbzhHV2tQdUF1dEVhN3d5VDJZdGwzRU1fT1Nsb2ZrNjRNeHNiem1HNTZaSzdQcU80MTVwSE44a0pvR1J3eTZIRG0yRjhnSWdVVjJuek1qTDVIOVAwTDZRRXlPR25xUU83NWkyd2swVWFsbE5ELVYyNzFCU1RETWY2S21pVlNBYVEw0gGaAUFVX3lxTE5qYlFleHFIUHFxbnkxTDVvZmx5RmI5SHRCY1Bnc0wxejY5emRkd2RsWDA4WUNndklFbG1qVzBBRkdreUtGZ0VLc3hlNWVHc3d1NHdiUzRKZkhNczhTZTBBSXdzZlZGM2ZTbndUaFlob0R4Q2pQT0t0aXlUTnhfYnJPQkRNWlVGOG80U240NHR1U3hnSVpCN0Y4QVE"
+    }
+  },
+  {
     "id": "2026-11-03-apple-ai-agent-risk-warning",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -1195,43 +1218,27 @@
     }
   },
   {
-    "id": "2026-10-31-anthropic-claude-reverse-engineering",
-    "category": "frontier",
+    "id": "2026-11-04-learner-rag",
+    "category": "learner",
     "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-31T20:05:28Z",
-    "headline": "Anthropic blocks Claude from reverse-engineering video games",
-    "plain_english": "Anthropic has implemented safeguards to prevent Claude AI from reverse-engineering video games. The measure reflects broader efforts to constrain model capabilities in specialized domains.",
-    "why_it_matters": "Demonstrates frontier lab willingness to gate model behaviors; signals template for BFSI guardrails (preventing code generation for fraud schemes, unauthorized trading strategies).",
+    "severity": "low",
+    "published_at": "2026-11-04T00:00:00Z",
+    "headline": "What is Retrieval-Augmented Generation (RAG)?",
+    "plain_english": "RAG is a technique that feeds an LLM external documents (e.g. compliance rules, customer data, market reports) *at query time* instead of baking them into training. LLM retrieves relevant chunks, then generates answers citing fresh sources. Reduces hallucination.",
+    "why_it_matters": "RAG powers production AI in banking: it keeps compliance chatbots up-to-date with new regulations, lets risk systems cite source documents, and avoids costly model retraining. Essential for regulated BFSI.",
     "jargon": [
       {
-        "term": "Reverse-engineering",
-        "def": "Extracting rules and logic from compiled software by analyzing outputs and inputs"
+        "term": "Hallucination",
+        "def": "LLM confidently generates false or fabricated information not present in training data or provided context. Dangerous in compliance and risk."
+      },
+      {
+        "term": "LLM (Large Language Model)",
+        "def": "Neural network trained on billions of text tokens to predict and generate human language; examples: GPT, Claude, Llama."
       }
     ],
     "source": {
-      "name": "Mashable · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly"
-    }
-  },
-  {
-    "id": "2026-10-31-xai-naacp-pollution-lawsuit",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-31T20:12:37Z",
-    "headline": "Judge allows NAACP suit against xAI data center to proceed under Clean Air Act",
-    "plain_english": "A federal judge has rejected xAI's motion to dismiss an NAACP lawsuit alleging Clean Air Act violations from the Colossus data center under construction in Southaven, Mississippi. The case can now move toward discovery.",
-    "why_it_matters": "Sets regulatory precedent for AI infrastructure liability; signals ESG/environmental enforcement risk for BFSI firms hosting LLM workloads or funding AI capex in regulated air-quality zones.",
-    "jargon": [
-      {
-        "term": "Clean Air Act",
-        "def": "US federal law setting air quality standards; violations trigger civil penalties and injunctions against industrial operations"
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-10-31",
-      "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html"
+      "name": "Compiled from BFSI deployment patterns · 2026-11-04",
+      "url": "https://www.example.com"
     }
   },
   {
@@ -1435,27 +1442,23 @@
     }
   },
   {
-    "id": "2026-10-24-ai-in-bfsi-explained",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-24T00:00:00.000Z",
-    "headline": "What is RAG (Retrieval-Augmented Generation) and why BFSI cares",
-    "plain_english": "RAG is a technique where an AI model retrieves specific documents or data (e.g., regulatory text, historical transactions) *before* generating a response, instead of relying solely on knowledge baked into training. In banking, this keeps compliance answers current and auditable—the model cites its sources.",
-    "why_it_matters": "RAG solves the 'hallucination' problem: instead of LLMs inventing plausible-sounding rules, RAG grounds answers in real policy. Mastercard and others now deploying RAG-based compliance chatbots and risk workflows.",
+    "id": "2026-11-04-wall-street-ai-election",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-04T06:11:00Z",
+    "headline": "Wall Street reckons with Democratic sweep; AI sector faces policy headwinds",
+    "plain_english": "Democrats won control of the U.S. House and Senate in midterm elections Nov 4. Stock futures fell as investors priced in policy shifts: energy regulation, data-centre restrictions, and tougher AI oversight. Tech and AI boom in doubt.",
+    "why_it_matters": "Regulatory and energy-cost uncertainty will slow AI capex cycles at major banks. Expect tighter scrutiny of algorithmic trading, model bias, and compliance automation. BFSI AI roadmaps may compress or pause.",
     "jargon": [
       {
-        "term": "Hallucination",
-        "def": "When an LLM confidently outputs false or nonsensical information because it has no grounding in fact-checked data."
-      },
-      {
-        "term": "Embeddings",
-        "def": "Numerical representations of text that capture semantic meaning; allow fast similarity matching of documents to user queries."
+        "term": "Blue tsunami",
+        "def": "Colloquial term for large Democratic electoral gains; used by markets to signal policy uncertainty for tech/AI sectors."
       }
     ],
     "source": {
-      "name": "AITechHive Learning · 2026-10-24",
-      "url": "https://aitechhive.com"
+      "name": "NBC News · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3ZnZlRJQm9TTnFUd19yM3hZeDFieUkwLW1lVHpSV1R4MW8zbmlTcEQyODA4bzZVS2o5bjFIdGVJNDZjZ2h4S0RiaTgtSHBEX216Y0czWGtfeERWY2REODZNUEhyclhqc1pCUTNfeUkweVAxdVNteXZmVTBNc2x0ZEcxZjBFSTl5VmdrVjNzVQ"
     }
   },
   {
@@ -1596,6 +1599,143 @@
     "source": {
       "name": "CNBC · 2026-10-24",
       "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html"
+    }
+  },
+  {
+    "id": "2026-10-31-quad-supply-chain-export",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-10-31T18:41:19Z",
+    "headline": "Quad (US, Japan, India, Australia) ministers align on supply-chain resilience, criticize export restrictions",
+    "plain_english": "Indo-Pacific Quad nations issued joint statement on semiconductor and tech supply-chain security, explicitly opposing 'arbitrary' export controls (indirect critique of US/China chip restrictions). Signals geopolitical pressure on AI infrastructure sourcing.",
+    "why_it_matters": "Foreshadows potential trade bloc fragmentation in AI chip supply; BFSI firms must diversify compute sourcing and hedge against US-China tech decoupling; affects capex for AI model training.",
+    "jargon": [
+      {
+        "term": "Export restrictions",
+        "def": "Government controls limiting sale or transfer of sensitive goods (semiconductors, AI tools) to specified countries or entities"
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcjhmcnV5dnZWRFFnSkw0WUF5b3hld3Q2RmhYWjAzYVM4STJWUno1b1ZMMmpzMUZseDltNkgxZWdlbWdJQTVjZ2FoMVptRkZfdUlxcnZZMlpORXRoQTFCM1pBRjhrdU05Q1dQbU54WE5wejBhQnpmdjh4SF85RkVQMnViNTE4eWpyeU9FVF9feGpNTEpvQmpjbXhGSHZwMFlycmdTT1ZTQ0hWQQ"
+    }
+  },
+  {
+    "id": "2026-10-31-boe-mortgage-limit",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-10-31T09:38:17Z",
+    "headline": "Bank of England explores relaxing mortgage lending caps amid housing pressure",
+    "plain_english": "The Bank of England is considering easing restrictions on high-risk mortgage lending. Historically, such policy shifts often trigger downstream changes to model risk governance and capital allocation frameworks.",
+    "why_it_matters": "Loosening lending caps forces banks to recalibrate credit models and stress-test frameworks. Risk teams must prepare for higher portfolio volatility and recalibrate defaults—AI-driven credit models need retraining.",
+    "source": {
+      "name": "Financial Times · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdHNnNGFiMkJrS2dTaV9VY2czb3RQSUtCYm94YnQ0NmpfcVZQNzJwbkhlNTVxMVdXUUN5ZEh5ZjlJZk1OSllkTy1zYmhIR0ZvWEVoTUFwV1pmdDJjM3ZwM052THlNZFVvMkw1RUIzUi1zYmxTNW13dXpZLWFnbHFJTUljOXY"
+    }
+  },
+  {
+    "id": "2026-11-01-nebius-citi-credit-facility",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-01T10:40:26Z",
+    "headline": "Nebius secures $3.5bn credit facility from Citi for AI infrastructure expansion",
+    "plain_english": "Nebius, a cloud infrastructure provider focused on AI workloads, has obtained a $3.5 billion credit line from Citibank. The facility supports Nebius's rapid scaling of GPU compute capacity and data centers serving financial and enterprise AI deployments globally.",
+    "why_it_matters": "Major banks are now structuring dedicated credit facilities for AI infrastructure vendors serving BFSI. This signals confidence in AI capex durability and creates new underwriting playbooks for fintech infrastructure lending.",
+    "source": {
+      "name": "ad-hoc-news.de · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeVlUY1VSX0plekc3NnZOWmtQcWxwVE5jNzllTS1yczZwU0xRTXZlX0dvaU1DWHlCaXJTdGZYUHQ5UGtNM1VfbUVLNnpBLXNadlJsVWJla0RsNkpfMUdyeTZlWkVZMXBJYVN3aHlYeXBnc3lZSGVmcy1zcHdJalZZbnlaVExhTjBUeUNadUhtQ25pN2puZmVDeU5lQVN4UzM4REtfOVN0cndTRHY5RkQ0UHM1YURic1NSUnNMU2lpQkVEREV4TlVUT2g5NjhDVXNzRnJWLUxMZ05BeUV4TVlRX1JwWFV6eTExR3VxT0pjaEdXYmlnWUlN"
+    },
+    "amount": "$3.5B",
+    "jargon": [
+      {
+        "term": "GPU compute",
+        "def": "Graphics processors rented on-demand for parallel AI model training and inference; foundational to LLM and diffusion model workloads."
+      }
+    ]
+  },
+  {
+    "id": "2026-11-01-jpm-q1-2026-earnings-ai",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-01T10:04:29Z",
+    "headline": "JPMorgan Chase Q1 2026 earnings: AI operational gains detailed on call",
+    "plain_english": "JPMorgan's Q1 2026 earnings call included discussion of AI investments in risk, trading, and operations. The bank has deployed language models for contract review, regulatory document parsing, and customer service automation across its 300K+ employee base.",
+    "why_it_matters": "Mega-cap bank earnings calls now routinely disclose AI productivity metrics. These calls signal which AI use cases (RPA, NLP-driven compliance, customer segmentation) are delivering measurable ROI and thus attracting additional BFSI capex.",
+    "source": {
+      "name": "Fortune · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XTUpobXp3b2QyTkxiY0w2TzBpbWhTbDBkejB1Um8wVC1wS2FuT1dWSWVSbHVobnJtVDRjcG1LMjN5SFNINVI0dGRpOVJ0YjctWnNLTk1uQ2o5VWQ4ZjZGUmVZR0JaRF9XRlQ3dw"
+    },
+    "scale": {
+      "metric": "employees",
+      "value": "300000"
+    }
+  },
+  {
+    "id": "2026-10-31-anthropic-claude-reverse-engineering",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-31T20:05:28Z",
+    "headline": "Anthropic blocks Claude from reverse-engineering video games",
+    "plain_english": "Anthropic has implemented safeguards to prevent Claude AI from reverse-engineering video games. The measure reflects broader efforts to constrain model capabilities in specialized domains.",
+    "why_it_matters": "Demonstrates frontier lab willingness to gate model behaviors; signals template for BFSI guardrails (preventing code generation for fraud schemes, unauthorized trading strategies).",
+    "jargon": [
+      {
+        "term": "Reverse-engineering",
+        "def": "Extracting rules and logic from compiled software by analyzing outputs and inputs"
+      }
+    ],
+    "source": {
+      "name": "Mashable · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0V2cUVWOVl0eFNNN0tEVjluRlliOHR0MkVQbXdWaERXUzhTSFZfend2OTVmZldaT3k0b3pINTlacGEtdmNXV243bnZUbXFqVW1sZ3ZnT2t2REdyaENNOEJuS3ZlV3VwbGhxZEZnYTJKa2NlOHRTd1RubTZuVlA2bElhQ24yS2VvLWV6MlBMU0RnOU9nSGRjaXhQNG9DVmly"
+    }
+  },
+  {
+    "id": "2026-10-31-xai-naacp-pollution-lawsuit",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-31T20:12:37Z",
+    "headline": "Judge allows NAACP suit against xAI data center to proceed under Clean Air Act",
+    "plain_english": "A federal judge has rejected xAI's motion to dismiss an NAACP lawsuit alleging Clean Air Act violations from the Colossus data center under construction in Southaven, Mississippi. The case can now move toward discovery.",
+    "why_it_matters": "Sets regulatory precedent for AI infrastructure liability; signals ESG/environmental enforcement risk for BFSI firms hosting LLM workloads or funding AI capex in regulated air-quality zones.",
+    "jargon": [
+      {
+        "term": "Clean Air Act",
+        "def": "US federal law setting air quality standards; violations trigger civil penalties and injunctions against industrial operations"
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-10-31",
+      "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html"
+    }
+  },
+  {
+    "id": "2026-10-24-ai-in-bfsi-explained",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-24T00:00:00.000Z",
+    "headline": "What is RAG (Retrieval-Augmented Generation) and why BFSI cares",
+    "plain_english": "RAG is a technique where an AI model retrieves specific documents or data (e.g., regulatory text, historical transactions) *before* generating a response, instead of relying solely on knowledge baked into training. In banking, this keeps compliance answers current and auditable—the model cites its sources.",
+    "why_it_matters": "RAG solves the 'hallucination' problem: instead of LLMs inventing plausible-sounding rules, RAG grounds answers in real policy. Mastercard and others now deploying RAG-based compliance chatbots and risk workflows.",
+    "jargon": [
+      {
+        "term": "Hallucination",
+        "def": "When an LLM confidently outputs false or nonsensical information because it has no grounding in fact-checked data."
+      },
+      {
+        "term": "Embeddings",
+        "def": "Numerical representations of text that capture semantic meaning; allow fast similarity matching of documents to user queries."
+      }
+    ],
+    "source": {
+      "name": "AITechHive Learning · 2026-10-24",
+      "url": "https://aitechhive.com"
     }
   },
   {
