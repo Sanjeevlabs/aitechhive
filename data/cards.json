@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-11-04-texas-data-centers-ballot-defeat",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-04T18:50:55Z",
+    "headline": "Texas voters reject AI data center expansion in midterm ballot measures",
+    "plain_english": "Voters in Texas—the epicenter of US AI data center buildout—defeated nearly all ballot measures supporting new data center projects. Democratic gains in state elections also signal tighter future permitting and environmental scrutiny on hyperscaler infrastructure.",
+    "why_it_matters": "Texas's rejection threatens hyperscaler capex timelines and forces a re-evaluation of regional AI infrastructure strategy. State-level opposition to data centers will embolden other jurisdictions (Arizona, Ohio) to impose stricter environmental and grid-load review, raising total cost of compute buildout.",
+    "jargon": [
+      {
+        "term": "hyperscaler",
+        "def": "Large cloud provider (AWS, Azure, Google Cloud) operating massive global data center networks to serve enterprise AI workloads."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-11-04",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+    }
+  },
+  {
     "id": "2026-11-04-epc-vop-matching",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -144,17 +164,21 @@
     }
   },
   {
-    "id": "2026-11-01-mas-singapore-bonds-regulation",
-    "category": "regulation",
-    "jurisdiction": "APAC",
+    "id": "2026-11-04-proaxis-ai-lead-exchange",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "low",
-    "published_at": "2026-11-01T15:11:20Z",
-    "headline": "Monetary Authority of Singapore issues Singapore Savings Bonds",
-    "plain_english": "MAS issued Singapore Savings Bonds, a routine government debt instrument. May reflect central bank liquidity management and bond-market signaling ahead of broader financial stability measures.",
-    "why_it_matters": "Ongoing bond issuances signal steady-state monetary policy. BFSI treasury and ALM teams should monitor MAS liquidity stance for clues on regional interest-rate and credit-market direction affecting APAC trading desks.",
+    "published_at": "2026-11-04T19:35:14Z",
+    "headline": "ProAxis.AI launches AI-powered B2B lead exchange and pay-per-call platform",
+    "plain_english": "ProAxis.AI, a fintech/B2B sales infrastructure vendor, went live with a lead-matching and caller-routing system that uses AI to score and route inbound calls to sales teams. Targets SMB and mid-market financial services firms (brokers, insurance, lending platforms).",
+    "why_it_matters": "Signals adoption of AI in sales operations and customer acquisition for non-tier-1 BFSI. Pay-per-call models reduce customer acquisition cost (CAC) variability; vendors targeting regional banks and credit unions now have AI-optimized alternatives to traditional lead brokers.",
+    "scale": {
+      "metric": "customers",
+      "value": "unknown"
+    },
     "source": {
-      "name": "Monetary Authority of Singapore · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQY3dGS1dkSThubnRVemo4dFU0bDhaOUdQY2t4SHpVX1NORm84UDJ1d0RCX0hDcmFYVXl5TVdTZVJibUYyY2pLQWk5cTBsOWp6ZkNiM2NCWWx5d1lQM1l6WFNSb3ByYWJtMUtTSUVZMG05X1QtNzEzUm9YQlhqdDQ3dzk3MWFvVDdjUHFkSW53NDJUMjRYOHR0YnVRbmM1aURRdDZHc2dCYjRBUW9xNTAzamtkb1hZWUtVSHh1VFVRb2ExVHZnZVRrVlJnWmFkeXpydnVBVDRWaE5mN2s"
+      "name": "Detroit Free Press · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFlkSDVfRDNvSmpYV1gybGFEeWpCdU5udVVSejB6V2FWV3pLUmN6eFd4aEVmckprNU4tNUlIdGJhV3E3UGtZLXdUbHhETWFBaFlQU2tsXzhFVUdXaV96OFk3WXp2ZXRLc3ltMFV0MDkyQndCYkVEWHRuWUE4VF9uRldZUEZ5ZTFsYjEzOGVqSnUzOXA0Yy1pYjBlMHJnUWFXYnRpdWZzZy1FUFIzV1ZyVDVFbGRuWUJ0NG5PMg"
     }
   },
   {
@@ -303,24 +327,6 @@
     "source": {
       "name": "Fortune · 2026-11-02",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR3ZseDI1UHVyMFhFZ0twQmJXcy1PaThHd1JKdGtxTDV1MW0wWWFCa0ppTUR3Ml9ydTVydmFfVHI1Zlo2Q0I3NmtuWjRFN3RuOU02Qm0xV05iWmdhUjcyaUtaZGlmY2hRNUFRRjROYXlMRHZyM0l6SFpvRS1XWWlPUTdXNk5KVUA1c3hiNVRXRng"
-    }
-  },
-  {
-    "id": "2026-11-01-seagate-data-storage-deployment",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-01T16:10:30Z",
-    "headline": "Seagate posts soaring profit on sustained data-storage demand",
-    "plain_english": "Seagate reported strong earnings driven by continued surge in data-storage demand, a direct proxy for AI infrastructure investment and model training workloads across enterprise and cloud.",
-    "why_it_matters": "Sustained HDD/SSD demand signals that AI training and inference infrastructure is being rapidly deployed at scale. BFSI must prepare for sustained capex pressure on cloud and on-prem AI platforms.",
-    "scale": {
-      "metric": "revenue growth driver",
-      "value": "AI infrastructure capex"
-    },
-    "source": {
-      "name": "Wall Street Journal · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkhWeHRfTkFrdEUyRlhZLTlRUnE3MXE3RlRweTgyQnpVb3hrdEJqYnRkTjVFdWUzNzMwRkE3a0NsbkpsZElsZXo5RGlZRDJFMklUeFhZa0xBVEZXYXEzaHliSHZaWm5UZ09YdFQtZ3QzU1ViYllkZE5hTldzdHcyZGpJVW84ckItUFZSUUVMQzRfX3pTcnVUa3JZN0gwUUwxMFRUMDY5NWRlbnJa"
     }
   },
   {
@@ -477,6 +483,34 @@
     }
   },
   {
+    "id": "2026-11-04-revolut-115b-valuation",
+    "category": "shift",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-11-04T18:45:26Z",
+    "headline": "Revolut reaches $115 billion valuation, challenging incumbent European banks",
+    "plain_english": "London-based fintech Revolut has hit a $115 billion private valuation, positioning itself as a direct challenger to traditional European retail and commercial banking. This marks a watershed moment for non-bank fintech entry into core banking infrastructure.",
+    "why_it_matters": "At this scale, Revolut's deposit-taking and lending capabilities now compete toe-to-toe with legacy banks. FCA and ECB supervision will intensify; incumbent banks face margin pressure and customer migration if Revolut achieves full banking license parity.",
+    "source": {
+      "name": "Reuters · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVFk4NXFxVmF1SEdEazBzWmRUM2VHTjdjNEdaejAzRWRRb1A5RTlYWjh0QW5wNmljSTFfcWxaeVowNHN2V2JqdzJyM0pUdVBycW5haTJ0T2pGYkRDWFZZRVBrbE0xd0Y0T09WdEw4a1BlcDJaOEVCVGNGM3lwcEFFN1hrYjcwcDMxbFoxQzI5d2dJYms0VEEwbS0zYndIZUNjZW15VzY4VUVmbWlP"
+    }
+  },
+  {
+    "id": "2026-11-04-duckduckgo-schools-anti-ai",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-04T19:29:52Z",
+    "headline": "DuckDuckGo pitches AI-free search to schools resisting Google's default generative model",
+    "plain_english": "DuckDuckGo is marketing itself to K-12 and university educators as an alternative to Google Search, emphasizing user control over AI features and no algorithmic manipulation. Capitalizes on backlash against Google's mandatory AI Overviews.",
+    "why_it_matters": "Signals emerging market for 'AI transparency controls' in enterprise and institutional search/research. Corporate legal, compliance, and risk teams may demand similar controls on internal search tools—preferring explainable results over opaque generative summaries.",
+    "source": {
+      "name": "TechCrunch · 2026-11-04",
+      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/"
+    }
+  },
+  {
     "id": "2026-11-03-binance-6b3-breach-custody",
     "category": "shift",
     "jurisdiction": "Global",
@@ -629,37 +663,17 @@
     }
   },
   {
-    "id": "2026-10-31-carlyle-kkr-distressed-loans",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-31T19:00:00Z",
-    "headline": "Carlyle, KKR position to acquire distressed loans amid credit market stress",
-    "plain_english": "Carlyle and KKR are preparing to deploy capital into discounted loan portfolios, signaling expectation of credit deterioration. This reflects macro headwinds and opportunity for alternative asset managers.",
-    "why_it_matters": "Signals heightened credit risk in BFSI loan books; compliance/risk teams should stress-test LLM-driven credit models for recession scenarios and prepare for asset quality downgrades in 2027.",
-    "source": {
-      "name": "Bloomberg · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUXZsR0NQUWhPNGYyRE5lYkx4MmVsTGxIR1pJcGxVYzJONWVja1VBZGxDcDlJcFVINHZNVDZEVmRsdXc3dkwxSHJib3hXcU1qc2taZEE5M0JqSlpMZFphRWhTMnM2SDBITGQtT1A0ZTdVVlduem4xbGMtRy1NejEzNGJZbktuR0NvV1IxcUZ2ZWJ2VGx2QUV6cTk3cnlXdGp4aFpuMHMwSHhQQklJUW5TYWNHYw"
-    }
-  },
-  {
-    "id": "2026-10-31-meta-muse-agents",
-    "category": "shift",
+    "id": "2026-11-04-open-source-ai-enterprise-value",
+    "category": "tool",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-31T10:30:00Z",
-    "headline": "Meta's Muse AI agents signal broader industry pivot to autonomous reasoning, not just chat",
-    "plain_english": "Meta's Muse agents and competing autonomous AI systems represent a shift from chatbot interfaces toward AI that independently plans, executes tasks, and iterates. Banks and enterprises are positioning these as opportunity rather than threat.",
-    "why_it_matters": "Autonomous agents will reshape how BFSI automates compliance, trading, and customer workflows. Traditional API-first integrations yield to agent orchestration frameworks—requiring new operational and risk models.",
-    "jargon": [
-      {
-        "term": "Agent",
-        "def": "AI system that autonomously selects actions and tools to reach a goal, without waiting for human instruction per step."
-      }
-    ],
+    "published_at": "2026-11-04T18:44:57Z",
+    "headline": "Hugging Face policy chief unpacks compliance and commercial trade-offs in open-source AI adoption",
+    "plain_english": "Hugging Face's policy team outlined the cost-benefit calculus for enterprises building on open-source AI: lower licensing costs and deployment control balanced against training cost, governance overhead, and security audit liability. Chinese open models are gaining traction in non-US jurisdictions.",
+    "why_it_matters": "For BFSI, this highlights a strategic fork: proprietary SaaS (OpenAI, Anthropic) vs. self-hosted open models (Meta Llama, Mistral). Open-source route reduces vendor lock-in but increases internal compliance and security burden—critical for regulated firms managing PII, trade secrets, and audit trails.",
     "source": {
-      "name": "Wired · 2026-10-31",
-      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/"
+      "name": "TechCrunch · 2026-11-04",
+      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/"
     }
   },
   {
@@ -708,6 +722,26 @@
     "source": {
       "name": "Recorded Future · 2026-10-09",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE12RE85N01nT0ctWGZvQlprNVpIYlRXcF9oM1JnTU9CUVJvTDRJQ2RFRjVOUkJ1UlNqb2k1N0tfMHkxY04wTXQwUW82S1pnakxyTlczRXkzLTNPa2NwLXI1NmN6cHV6dkkxUFpPQUxrUHY5M1gtOVBDM3hJSS0"
+    }
+  },
+  {
+    "id": "2026-11-04-open-source-ai-valuation-model",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-04T19:30:04Z",
+    "headline": "Hugging Face details value capture model for open-source AI as enterprise adoption accelerates",
+    "plain_english": "Hugging Face CEO and policy leadership are clarifying how open-source AI vendors monetize when models are free. Enterprise demand for control, deployment flexibility, and lower inference costs is driving adoption; the business model centers on managed hosting, finetuning services, and enterprise support—not licensing.",
+    "why_it_matters": "Open-source LLMs now threaten proprietary vendor SaaS moats. BFSI adopters (banks, insurers) evaluating RAG and fine-tuning for compliance/fraud detection can deploy open models at a fraction of closed-API costs, reducing vendor lock-in and shifting competition from model capability to implementation expertise.",
+    "jargon": [
+      {
+        "term": "RAG",
+        "def": "Retrieval-Augmented Generation: augmenting LLM responses with real-time domain data (e.g., customer records, regulatory docs) to improve accuracy and reduce hallucination."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-04",
+      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/"
     }
   },
   {
@@ -873,23 +907,17 @@
     }
   },
   {
-    "id": "2026-10-16-ai-drug-discovery-virology-benchmark",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-11-04-cio-ai-outcomes-focus",
+    "category": "insight",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-16T20:21:54Z",
-    "headline": "AI drug-discovery benchmarks fail on respiratory virus targets; gaps exposed",
-    "plain_english": "Standard AI drug-discovery models underperform on polymerase targets for respiratory viruses, revealing benchmark limitations. Signals narrow AI benchmarks can mask real-world capability gaps, a risk for BFSI funding biotech or healthcare AI vendors.",
-    "why_it_matters": "Investment and credit committees rely on vendor performance claims tied to published benchmarks; audit teams need to stress-test AI vendor claims against domain-specific failure modes and demand out-of-distribution testing.",
-    "jargon": [
-      {
-        "term": "Benchmark drift",
-        "def": "AI models scoring well on published test sets but failing on similar real-world tasks not in training data."
-      }
-    ],
+    "published_at": "2026-11-04T20:05:10Z",
+    "headline": "CIOs shift AI strategy from experimentation to measurable business outcomes",
+    "plain_english": "Enterprise CIOs are tightening governance around AI pilots, demanding explicit ROI and KPI targets instead of open-ended exploration. Spend on 'nice-to-have' LLM experiments is contracting; investment flows to projects tied to revenue, cost reduction, or risk mitigation.",
+    "why_it_matters": "This marks the end of the AI 'playground' era for large financial institutions. BFSI CIOs will de-prioritize chatbots and experimentation; survival budgets now favor decisioning engines (credit, AML), synthetic data generation, and process automation with clear audit trails and compliance alignment.",
     "source": {
-      "name": "Bioengineer.org · 2026-10-16",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaTB1TUtVcGtFUjV0cnJJVHdDSHBLbXNCM3hVSHcxU1RsaWZESkxjY2dOS1Q3QVZOdmtIUTF1SnJlaFdPNUhWWksxXzBEbGp6ZmxUaEExMVM0Z3RsRy13TnhxTDVkZGo1Rnd3UXhrcnJDYVk1cFRPUFF1cjdqOGx0S2lfQjg1RG9tQ2FZbFNyeFItS0xfaU1vNDByLXVuNHJhWXVIUDBNZ193bm9JQWV1d0JvTExmSk43UW5N"
+      "name": "WSJ · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVQtTzAwb1p2aEd4STFlUkdMNmh2SFZMVFR2T0xGMl8tcVhhU1czRUpqNFBBU0lnVXRZOFAxWk5kTUUyWUM0ZnFGVGdLam8wNlpZVElmQldwV0pDZTY2elhrZ0V6ZEZpT0xLNGhUNnF5MS1VUEFEaUZyenVaV0dHOERDZTBpRi1rRV9vNW9aeFFPQQ"
     }
   },
   {
@@ -1039,23 +1067,17 @@
     }
   },
   {
-    "id": "2026-10-30-ai-agents-cyber-risk",
-    "category": "insight",
+    "id": "2026-11-04-hugging-face-open-source-safety",
+    "category": "frontier",
     "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-30T10:45:43.000Z",
-    "headline": "Venture investors flag autonomous AI agents as emergent cyber threat vector",
-    "plain_english": "Ex-EQT investor Doreen Huber joining Interface Capital to fund cyber/security startups, citing AI agent autonomy as \"extremely scary\" risk. Signals market recognition that self-directed AI systems (agents that can execute decisions without human approval) create novel attack surfaces.",
-    "why_it_matters": "BFSI regulators will soon mandate agent governance frameworks (approval gates, audit trails, rollback). Early banks that architect agent-audit controls avoid future compliance fire-drills. Late movers face operational and reputation risk.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Autonomous system that perceives environment, makes decisions, and executes actions (API calls, transactions) without real-time human intervention."
-      }
-    ],
+    "severity": "med",
+    "published_at": "2026-11-04T19:16:25Z",
+    "headline": "Hugging Face CEO argues open-source AI reduces systemic risk vs. closed-model concentration",
+    "plain_english": "Hugging Face leadership contends that decentralized, open-source model development distributes AI risk and mitigates single-point-of-failure scenarios created by closed, proprietary foundation model builders. Clément Delangue stated his 'P(Doom)' on AI risk is 'close to zero' in an open-source model world.",
+    "why_it_matters": "This framing challenges the regulatory consensus that demands oversight of frontier model training. If taken seriously by policymakers, it could reshape EU AI Act and UK AI Bill compliance paths, favoring open fine-tuned models over proprietary APIs—potentially lowering compliance burden for BFSI adopters.",
     "source": {
-      "name": "Sifted · 2026-10-30",
-      "url": "https://sifted.eu/articles/eqt-doreen-huber-interface-capital-cyber-startups-scary-ai-agents/"
+      "name": "Wired · 2026-11-04",
+      "url": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/"
     }
   },
   {
@@ -1204,17 +1226,23 @@
     }
   },
   {
-    "id": "2026-11-01-frontier-ai-global-race",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-01T09:05:39Z",
-    "headline": "Global race to develop frontier AI delivering major geopolitical and economic shifts",
-    "plain_english": "Multiple countries are intensifying investments in AI research, computing infrastructure, and talent acquisition. The competitive landscape between U.S., China, EU, and emerging powers is reshaping capital allocation, chip supply chains, and regulatory frameworks worldwide.",
-    "why_it_matters": "Geopolitical AI competition is now a top-line risk factor for BFSI. Sanctions, talent drain, chip embargoes, and divergent AI governance standards will fragment global financial infrastructure and force dual-stack compliance strategies.",
+    "id": "2026-11-04-google-ai-overviews-schools",
+    "category": "learner",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-04T20:06:21Z",
+    "headline": "Google AI Overviews in schools: when generative summaries replace information-seeking",
+    "plain_english": "Google Search now integrates AI-generated summaries (AI Overviews) into all results, including school searches. Critics worry students bypass primary sources, reducing critical thinking. DuckDuckGo is positioning itself as a privacy-first, AI-free search alternative for educators.",
+    "why_it_matters": "Illustrates the broader challenge: generative AI tools can erode due diligence and deep analysis—habits essential for compliance, risk assessment, and regulatory work. BFSI teams must build guardrails against over-reliance on LLM summaries in legal review, audit, and trading research.",
+    "jargon": [
+      {
+        "term": "AI Overviews",
+        "def": "Google's AI-generated summary snippet (using LLM) placed at the top of search results to answer queries directly without clicking through to source pages."
+      }
+    ],
     "source": {
-      "name": "News of Bahrain · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNM3gwbEI0YXBRWEl1bXNpazI1V3VwS1VVNnJid3hobXNrMHVfZGRud3k1TW01bUk0eWVFRUN1NjlmeE9PMUM5U0hMNnQ2MXRnbDZILWxlRUk2WVMydzBUNFBCOWVESWJVRW1HekJrTGxPSXplOW82WEp6SThOcndfeUJCVmFBVVdMRzJzeHh0QUM1Tll6Tmc"
+      "name": "Wired · 2026-11-04",
+      "url": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/"
     }
   },
   {
@@ -1418,27 +1446,17 @@
     }
   },
   {
-    "id": "2026-10-25-learner-rag-retrieval",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-25T10:00:00.000Z",
-    "headline": "What is RAG? Retrieval-augmented generation explained for finance professionals",
-    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI model queries a database or document store to fetch relevant facts before generating an answer. Instead of relying only on weights learned during training, RAG pulls fresh, verified data—critical for compliance and accuracy in finance.",
-    "why_it_matters": "RAG is the primary production pattern for bank AI: it prevents hallucination, grounds LLM outputs in audit trails, and enables real-time regulatory data integration without retraining models.",
-    "jargon": [
-      {
-        "term": "Hallucination",
-        "def": "When an AI generates plausible-sounding but false information because it was not trained on correct data or lacks access to current facts."
-      },
-      {
-        "term": "Weights",
-        "def": "Parameters learned by a neural network during training; frozen after training unless explicitly fine-tuned."
-      }
-    ],
+    "id": "2026-11-04-hyperscaler-stock-rally",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-04T19:37:43Z",
+    "headline": "Apple, Microsoft, Google, Meta stocks surge post-election as investor uncertainty clears",
+    "plain_english": "Hyperscaler equities (Apple, Amazon, Google, Meta, Microsoft) rallied following the 2026 midterm elections, while data-center and infrastructure stocks fell. Market interpreted Democrat gains as a proxy for clearer regulatory posture on tech, reducing policy risk premium for mega-cap AI investors.",
+    "why_it_matters": "Stock moves signal that investor appetite for hyperscaler AI capex and foundation model development remains strong despite political uncertainty. For BFSI, continued mega-cap funding of cloud/AI infrastructure means stable long-term API availability and service SLAs—critical for banks' cloud migration timelines.",
     "source": {
-      "name": "AITechHive Editorial · 2026-10-25",
-      "url": "https://aitechhive.com"
+      "name": "CNBC · 2026-11-04",
+      "url": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html"
     }
   },
   {
@@ -1585,6 +1603,150 @@
     "source": {
       "name": "Israel Defense · 2026-10-25",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VcWFtVVplY2dlQlFRbXFyYVRZQmpvX2NxVE5zYXFlSXlJYXFzYmctMTdubFhqbEgzcWtkaHVQNUpWaVJnTFk0ekNTNVk1STU0bkN6Wk91SmI"
+    }
+  },
+  {
+    "id": "2026-11-01-mas-singapore-bonds-regulation",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-01T15:11:20Z",
+    "headline": "Monetary Authority of Singapore issues Singapore Savings Bonds",
+    "plain_english": "MAS issued Singapore Savings Bonds, a routine government debt instrument. May reflect central bank liquidity management and bond-market signaling ahead of broader financial stability measures.",
+    "why_it_matters": "Ongoing bond issuances signal steady-state monetary policy. BFSI treasury and ALM teams should monitor MAS liquidity stance for clues on regional interest-rate and credit-market direction affecting APAC trading desks.",
+    "source": {
+      "name": "Monetary Authority of Singapore · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQY3dGS1dkSThubnRVemo4dFU0bDhaOUdQY2t4SHpVX1NORm84UDJ1d0RCX0hDcmFYVXl5TVdTZVJibUYyY2pLQWk5cTBsOWp6ZkNiM2NCWWx5d1lQM1l6WFNSb3ByYWJtMUtTSUVZMG05X1QtNzEzUm9YQlhqdDQ3dzk3MWFvVDdjUHFkSW53NDJUMjRYOHR0YnVRbmM1aURRdDZHc2dCYjRBUW9xNTAzamtkb1hZWUtVSHh1VFVRb2ExVHZnZVRrVlJnWmFkeXpydnVBVDRWaE5mN2s"
+    }
+  },
+  {
+    "id": "2026-11-01-seagate-data-storage-deployment",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-01T16:10:30Z",
+    "headline": "Seagate posts soaring profit on sustained data-storage demand",
+    "plain_english": "Seagate reported strong earnings driven by continued surge in data-storage demand, a direct proxy for AI infrastructure investment and model training workloads across enterprise and cloud.",
+    "why_it_matters": "Sustained HDD/SSD demand signals that AI training and inference infrastructure is being rapidly deployed at scale. BFSI must prepare for sustained capex pressure on cloud and on-prem AI platforms.",
+    "scale": {
+      "metric": "revenue growth driver",
+      "value": "AI infrastructure capex"
+    },
+    "source": {
+      "name": "Wall Street Journal · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkhWeHRfTkFrdEUyRlhZLTlRUnE3MXE3RlRweTgyQnpVb3hrdEJqYnRkTjVFdWUzNzMwRkE3a0NsbkpsZElsZXo5RGlZRDJFMklUeFhZa0xBVEZXYXEzaHliSHZaWm5UZ09YdFQtZ3QzU1ViYllkZE5hTldzdHcyZGpJVW84ckItUFZSUUVMQzRfX3pTcnVUa3JZN0gwUUwxMFRUMDY5NWRlbnJa"
+    }
+  },
+  {
+    "id": "2026-10-31-carlyle-kkr-distressed-loans",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-31T19:00:00Z",
+    "headline": "Carlyle, KKR position to acquire distressed loans amid credit market stress",
+    "plain_english": "Carlyle and KKR are preparing to deploy capital into discounted loan portfolios, signaling expectation of credit deterioration. This reflects macro headwinds and opportunity for alternative asset managers.",
+    "why_it_matters": "Signals heightened credit risk in BFSI loan books; compliance/risk teams should stress-test LLM-driven credit models for recession scenarios and prepare for asset quality downgrades in 2027.",
+    "source": {
+      "name": "Bloomberg · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUXZsR0NQUWhPNGYyRE5lYkx4MmVsTGxIR1pJcGxVYzJONWVja1VBZGxDcDlJcFVINHZNVDZEVmRsdXc3dkwxSHJib3hXcU1qc2taZEE5M0JqSlpMZFphRWhTMnM2SDBITGQtT1A0ZTdVVlduem4xbGMtRy1NejEzNGJZbktuR0NvV1IxcUZ2ZWJ2VGx2QUV6cTk3cnlXdGp4aFpuMHMwSHhQQklJUW5TYWNHYw"
+    }
+  },
+  {
+    "id": "2026-10-31-meta-muse-agents",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-31T10:30:00Z",
+    "headline": "Meta's Muse AI agents signal broader industry pivot to autonomous reasoning, not just chat",
+    "plain_english": "Meta's Muse agents and competing autonomous AI systems represent a shift from chatbot interfaces toward AI that independently plans, executes tasks, and iterates. Banks and enterprises are positioning these as opportunity rather than threat.",
+    "why_it_matters": "Autonomous agents will reshape how BFSI automates compliance, trading, and customer workflows. Traditional API-first integrations yield to agent orchestration frameworks—requiring new operational and risk models.",
+    "jargon": [
+      {
+        "term": "Agent",
+        "def": "AI system that autonomously selects actions and tools to reach a goal, without waiting for human instruction per step."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-10-31",
+      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/"
+    }
+  },
+  {
+    "id": "2026-10-16-ai-drug-discovery-virology-benchmark",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-16T20:21:54Z",
+    "headline": "AI drug-discovery benchmarks fail on respiratory virus targets; gaps exposed",
+    "plain_english": "Standard AI drug-discovery models underperform on polymerase targets for respiratory viruses, revealing benchmark limitations. Signals narrow AI benchmarks can mask real-world capability gaps, a risk for BFSI funding biotech or healthcare AI vendors.",
+    "why_it_matters": "Investment and credit committees rely on vendor performance claims tied to published benchmarks; audit teams need to stress-test AI vendor claims against domain-specific failure modes and demand out-of-distribution testing.",
+    "jargon": [
+      {
+        "term": "Benchmark drift",
+        "def": "AI models scoring well on published test sets but failing on similar real-world tasks not in training data."
+      }
+    ],
+    "source": {
+      "name": "Bioengineer.org · 2026-10-16",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaTB1TUtVcGtFUjV0cnJJVHdDSHBLbXNCM3hVSHcxU1RsaWZESkxjY2dOS1Q3QVZOdmtIUTF1SnJlaFdPNUhWWksxXzBEbGp6ZmxUaEExMVM0Z3RsRy13TnhxTDVkZGo1Rnd3UXhrcnJDYVk1cFRPUFF1cjdqOGx0S2lfQjg1RG9tQ2FZbFNyeFItS0xfaU1vNDByLXVuNHJhWXVIUDBNZ193bm9JQWV1d0JvTExmSk43UW5N"
+    }
+  },
+  {
+    "id": "2026-10-30-ai-agents-cyber-risk",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-30T10:45:43.000Z",
+    "headline": "Venture investors flag autonomous AI agents as emergent cyber threat vector",
+    "plain_english": "Ex-EQT investor Doreen Huber joining Interface Capital to fund cyber/security startups, citing AI agent autonomy as \"extremely scary\" risk. Signals market recognition that self-directed AI systems (agents that can execute decisions without human approval) create novel attack surfaces.",
+    "why_it_matters": "BFSI regulators will soon mandate agent governance frameworks (approval gates, audit trails, rollback). Early banks that architect agent-audit controls avoid future compliance fire-drills. Late movers face operational and reputation risk.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous system that perceives environment, makes decisions, and executes actions (API calls, transactions) without real-time human intervention."
+      }
+    ],
+    "source": {
+      "name": "Sifted · 2026-10-30",
+      "url": "https://sifted.eu/articles/eqt-doreen-huber-interface-capital-cyber-startups-scary-ai-agents/"
+    }
+  },
+  {
+    "id": "2026-11-01-frontier-ai-global-race",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-01T09:05:39Z",
+    "headline": "Global race to develop frontier AI delivering major geopolitical and economic shifts",
+    "plain_english": "Multiple countries are intensifying investments in AI research, computing infrastructure, and talent acquisition. The competitive landscape between U.S., China, EU, and emerging powers is reshaping capital allocation, chip supply chains, and regulatory frameworks worldwide.",
+    "why_it_matters": "Geopolitical AI competition is now a top-line risk factor for BFSI. Sanctions, talent drain, chip embargoes, and divergent AI governance standards will fragment global financial infrastructure and force dual-stack compliance strategies.",
+    "source": {
+      "name": "News of Bahrain · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNM3gwbEI0YXBRWEl1bXNpazI1V3VwS1VVNnJid3hobXNrMHVfZGRud3k1TW01bUk0eWVFRUN1NjlmeE9PMUM5U0hMNnQ2MXRnbDZILWxlRUk2WVMydzBUNFBCOWVESWJVRW1HekJrTGxPSXplOW82WEp6SThOcndfeUJCVmFBVVdMRzJzeHh0QUM1Tll6Tmc"
+    }
+  },
+  {
+    "id": "2026-10-25-learner-rag-retrieval",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-25T10:00:00.000Z",
+    "headline": "What is RAG? Retrieval-augmented generation explained for finance professionals",
+    "plain_english": "RAG (Retrieval-Augmented Generation) is a technique where an AI model queries a database or document store to fetch relevant facts before generating an answer. Instead of relying only on weights learned during training, RAG pulls fresh, verified data—critical for compliance and accuracy in finance.",
+    "why_it_matters": "RAG is the primary production pattern for bank AI: it prevents hallucination, grounds LLM outputs in audit trails, and enables real-time regulatory data integration without retraining models.",
+    "jargon": [
+      {
+        "term": "Hallucination",
+        "def": "When an AI generates plausible-sounding but false information because it was not trained on correct data or lacks access to current facts."
+      },
+      {
+        "term": "Weights",
+        "def": "Parameters learned by a neural network during training; frozen after training unless explicitly fine-tuned."
+      }
+    ],
+    "source": {
+      "name": "AITechHive Editorial · 2026-10-25",
+      "url": "https://aitechhive.com"
     }
   },
   {
