@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-11-05-regulation-finra-webull-aml-4.2m",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-05T20:18:00Z",
+    "headline": "FINRA fines Webull $4.2M for deficient AML controls and best-execution failures",
+    "plain_english": "US regulator FINRA penalized digital brokerage Webull $4.2 million for inadequate anti-money laundering programs, identity-theft prevention, and failure to execute client orders at best available prices. Enforcement signal on low-cost retail fintech platforms' compliance gaps.",
+    "why_it_matters": "Reaffirms FINRA's focus on AML/KYC controls at high-velocity retail platforms; signals regulators expect same rigor from neobrokers as legacy institutions—matters for fintech compliance budgets and raises bar for AI-powered transaction monitoring.",
+    "source": {
+      "name": "Finextra · 2026-11-05",
+      "url": "https://www.finextra.com/newsarticle/48713/finra-fines-webull-42m-for-aml-and-best-execution-failures?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "jargon": [
+      {
+        "term": "AML (Anti-Money Laundering)",
+        "def": "Regulatory compliance program to detect and prevent funds derived from illegal activity from entering financial systems."
+      }
+    ]
+  },
+  {
     "id": "2026-11-05-google-school-ai-policy",
     "category": "regulation",
     "jurisdiction": "US",
@@ -150,18 +170,28 @@
     }
   },
   {
-    "id": "2026-11-02-ecb-supervision-rates",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-11-02T09:02:09.000Z",
-    "headline": "ECB publishes euro-area bank interest rate statistics for September 2026",
-    "plain_english": "European Central Bank released September 2026 bank interest rate data—routine supervisory transparency report. Tracks deposit and lending rates across euro-zone retail and corporate segments. Used by FCA and PRA for cross-border compliance baseline.",
-    "why_it_matters": "Provides regulatory baseline for AI-driven pricing models; banks' algorithms must not systematically deviate from ECB-published benchmarks without justification.",
+    "id": "2026-11-05-deployment-nab-ruby-anthropic",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-05T19:51:00Z",
+    "headline": "NAB deploys internal AI assistant 'Ruby' built on Anthropic foundation",
+    "plain_english": "National Australia Bank has shipped Ruby, an AI assistant for internal staff operations, built on Anthropic's large language model. This marks a major Australian bank putting frontier AI into production for employee-facing workflows at scale.",
+    "why_it_matters": "Signals enterprise adoption of specialized frontier models (Anthropic) for internal efficiency; NAB's scale (~60K staff) sets precedent for APAC banking ops transformation and raises questions about model governance and employee data handling.",
+    "scale": {
+      "metric": "employees",
+      "value": "60000"
+    },
     "source": {
-      "name": "European Central Bank · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkRqeXN6ZVlseGlSdWVOZkV2WE1UX1dqWEFrdUpJak5wZHRXVDNuUkhscVloa1RTc05EZ3F2amlmM0FVeXpYY2RIR1JoYVF6a3FqTUM0Y2VWT2drUm1jcU1zODZHbWxCc3k1Nk9CLUlpWjYxSFdiMXZ5ZTFfUlVIa3JmUQ"
-    }
+      "name": "iTnews · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORW84NGZpMmI3R2VaaGo2VTR6T19OYlExcXkzaHVMODVBWkZIZERCSkp3N0szUU9JR3hUZnN2YlZBellmZ0dSSk1HWDg1T1RULVh6VmFTX2RRa0czMnpQQUNEbnBCcHZ4SGczVWd1dDAxRHFBcXRCMXVraVVRR1FFbVNwUzVqOGhwWWZKTGY5N01oQUtMS3ZvTkxnLXd3RFl3ZnEw?oc=5"
+    },
+    "jargon": [
+      {
+        "term": "Large language model (LLM)",
+        "def": "AI system trained on vast text data; generates human-like responses to queries and instructions."
+      }
+    ]
   },
   {
     "id": "2026-11-05-zetrix-identity-deployment",
@@ -311,26 +341,6 @@
     "source": {
       "name": "Yahoo Finance · 2026-11-02",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjlIcTJWa1R1R0gxM2ZSQ05FM3lqQ1o0dHlTRUtXLUVMWlJjVmdFZDhSU3BDN29hVHhfSk8tUW4yYlJDcklBRHVMSWxObG00NE5qeWJtV0N1Q0dCdm41SzNSN3RYMGMyQ1pFc3FpSzNlTHdtdEVCSHNnbHFlcnFoVW9UNDVUemNvWjZnbGI0MkkzbEg0QnhOQjEwbHdhdjlwOE8zQk9JMzhOQQ"
-    }
-  },
-  {
-    "id": "2026-11-02-hcltech-mainframe-agents",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-02T08:40:59.000Z",
-    "headline": "HCLTech deploys AI agents to automate enterprise mainframe operations across financial institutions",
-    "plain_english": "HCLTech launched autonomous AI agents for mainframe automation—targeting legacy banking infrastructure. Agents handle operational tasks (job scheduling, batch processing, incident resolution) without manual intervention. Mainframes power ~70% of global financial transactions; automation reduces operational risk and staffing costs.",
-    "why_it_matters": "First major vendor move to agent-ify core banking infrastructure. If agents fail silently on mainframes, settlement systems break. Compliance and audit trail requirements will force banks to demand explainability HCLTech may not provide.",
-    "jargon": [
-      {
-        "term": "Mainframe automation",
-        "def": "AI handling routine operational tasks on mainframe systems—the ancient but critical servers running payment processing, general ledger, and clearing."
-      }
-    ],
-    "source": {
-      "name": "Devdiscourse · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPejh5X2lza3BsWGIyeWhubk9TWS1BZF9qUWs1STc1NlFYeXVybloxUDRxemtVbGVqWE5iM1Rsb0QyZ3R6OTNmX0xyVHp1TEpUSGw3S2FkN3lSU1pBOUx3MmN1MWZ2Z1FhbnlNa0RBX2J4UXVqVmZxWDdNZV9XVF9yNHdrejMtOC15aW1rTmZQcFZRWHg1Q3A1U3RwQnZaRk12UHZFYThMMExqTERSTlU1VnVIMXpZQTZXdnV3ZUk5bFFWTWxUUFFr0gHHAUFVX3lxTE96OHlfaXNrcGxYYjJ5aG5uT1NZLUFkX2pRazVJNzU2UVh5dXJuWjFQNHF6a1VsZWpYTmIzVGxvRDJndHo5M2ZfTHJUenVMSlRIbDdLYWQ3eVJTWkE5THcyY3UxZnZnUWFueU1rREFfYnhRdWpWZnFYN01lX1dUX3I0d2t6My04LXlpbWtOZlBwVlFYeDVDcDVTdHBCdlpGTXZQdkVhOEwwTGpMRFJOVTVWdUgxellBNld2dXdlSTlsUVZNbFRQUWs"
     }
   },
   {
@@ -488,6 +498,20 @@
     }
   },
   {
+    "id": "2026-11-05-shift-jpmorgan-anthropic-partnership",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-05T18:31:12Z",
+    "headline": "JPMorgan announces strategic partnership with Anthropic for enterprise AI deployment",
+    "plain_english": "JPMorgan Chase and Anthropic have announced a strategic partnership to explore advanced AI applications across JPMorgan's enterprise: engineering tools, security defense, and customer-facing services. This is a major tier-1 bank co-investing in and operationalizing a frontier AI lab's capabilities.",
+    "why_it_matters": "First-of-kind deep integration between a systemically important bank and a cutting-edge AI lab signals industry-wide shift toward direct partnerships with frontier models rather than API consumption. Sets template other banks will follow; implies governance, compliance co-design.",
+    "source": {
+      "name": "Anthropic (via social) · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10Y09mTVlTODZNQ3JqbFdLUU02Y3BMT3pXbmt1ZmF5NmNLbGRjaWdkSy1qMHdRd09WbW41MVZWTGwzNmlBaHpzOTRIcXRLdklSQVBfQVJjWQ?oc=5"
+    }
+  },
+  {
     "id": "2026-11-05-ubs-credit-suisse-london-cuts",
     "category": "shift",
     "jurisdiction": "UK",
@@ -633,30 +657,6 @@
     "source": {
       "name": "Business Chief · 2026-11-02",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV3hVWkJydmRiVHM2bGpxQWFoY0xiQndjV242a0Q0WlV1MG5ucTlweC0zcENyMkF2YkpNSFpUdjQtMFc3aXNOemQzOHo1U3VHR0ZpTUR1VDA5MXdOZ01CaGd6WG1YU2lKckJ2ZC02RkZMaEZoTE5mYkRLUXg0TEZPZmJrM2F1emdkVjdzdVhzM3BiOUk"
-    }
-  },
-  {
-    "id": "2026-11-02-agentic-web-shift",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-02T09:35:19.000Z",
-    "headline": "Autonomous software agents begin operating web at scale, reshaping digital finance workflows",
-    "plain_english": "MIT Technology Review reports agentic AI systems—autonomous software agents navigating the web without human intermediation—have moved from concept to production. Extends Tim Berners-Lee's 1990s Semantic Web vision. For BFSI: agents autonomously executing trades, compliance checks, and cross-border settlements without API intermediaries.",
-    "why_it_matters": "Banks betting on agent-based settlement infrastructure face architectural shift: from request-response APIs to autonomous delegation models. Risk compliance and audit trails become orders of magnitude harder.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "Autonomous software that makes decisions and takes actions without waiting for human approval each step."
-      },
-      {
-        "term": "Semantic Web",
-        "def": "Web data structured for machines to understand meaning, not just read text—enables agents to navigate without hardcoded instructions."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-11-02",
-      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
     }
   },
   {
@@ -904,6 +904,38 @@
     }
   },
   {
+    "id": "2026-11-05-insight-goldman-engineers-partner-elevation",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-05T18:57:46Z",
+    "headline": "Goldman Sachs elevates record cohort of engineers to partner rank",
+    "plain_english": "Goldman Sachs promoted an unusually large group of engineers to the firm's coveted partner rank. Signals a strategic bet on technical talent and software engineering as core to future competitive advantage—not just client-facing advisory roles.",
+    "why_it_matters": "Demonstrates top-tier BFSI recognizes engineering and AI/ML capability as partnership-level value creation. Trickle-down: pressure on peer banks to retain and promote technologists; signals shift in career paths for technologists in finance.",
+    "stat_value": "Record cohort",
+    "stat_label": "of engineers promoted to partnership",
+    "source": {
+      "name": "Financial Times · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN0EzRk1ZeUxUcFpWLXBoNWdDc0FlUWRUVF96bkdRczV2OGUtbF9jc2p2dnc2WTA5d2d6dW16M0w0ZWtZREt5azdIUFJNMWJ5bHZ3d3dUWWQzR3p4TTRRa1FwUE9nLUVEdWdIZzBuSVRhX3hCZS00OXVSR0FTY200TGZYMVQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-05-insight-ai-vuln-disclosure-gap",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-05T18:24:27Z",
+    "headline": "AI-powered vulnerability detection now outpaces human patching capacity industry-wide",
+    "plain_english": "Security researchers report that AI systems are discovering software flaws and vulnerabilities faster than teams worldwide can develop and deploy patches. Creates a growing 'disclosure gap' where exploitable weaknesses accumulate.",
+    "why_it_matters": "Critical for BFSI: vulnerability backlogs will grow faster, increasing attack surface window. Firms must shift from reactive patching to AI-assisted threat prediction and hardening. Budget and ops model implications are massive—this is not a marketing claim, it's a structural risk.",
+    "stat_value": "Outpacing",
+    "stat_label": "human-led patching capacity",
+    "source": {
+      "name": "NDTV · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYVhoV0F2MVI4LXVGeDlZOE5nVUtLd0xGOVdRd3BrWmFQRlNESmQ5UVhDSlpKemU2MFV1THAxODZlU1VRVkJsbUtqOUt4YVRvWEFuV2JxVTM4UFlIcVJIMko2NlVVeUNCV1p6WUtPZmRjcUpuU1gySmRaZHhsYTlZai1QaDlyaWIwdFpNTHFzbTFkVXlIYWg1dmhVUWJNcEg0a0o2a2tEMmNxWjB2TlF2TzlOQmlUUXE10gHAAUFVX3lxTE52RGpyRzZvdEFlRHQyOEZuNDNIS05faVFqZ1Zqb1NJMlF2eXBmYmtlVDN0SlJzczBjVDd0eV9OdVNGMFJBbnZ1MzctYjlPTVBxd3lIS0JuNThkeEpjRWV5c3VQQlR4bGFBTlFUYlRzdzBKQ0VEZEwwMVdVdndSUm1oQ0FfcXNKNVNvcEhQRnJ3VkVBLUFWTmN3Ym1qbEp2OTRCd1ZPN0RLTzk1UDJpOXJDTzdGVFJsNkxHbVRmTl9qZQ?oc=5"
+    }
+  },
+  {
     "id": "2026-11-05-citi-ai-hyperscaler-trade",
     "category": "insight",
     "jurisdiction": "US",
@@ -1032,35 +1064,17 @@
     }
   },
   {
-    "id": "2026-10-31-binance-hack-coverage-90pct",
-    "category": "insight",
+    "id": "2026-11-05-frontier-openai-cybersecurity-model",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-31T22:27:56Z",
-    "headline": "Binance says 90% of $6.3 billion hack losses now covered; plans withdrawal resumption",
-    "plain_english": "Binance has restored backing for 90% of assets affected by a $6.3 billion hack and plans to resume customer withdrawals Sunday, subject to security checks. Full recovery timeline remains unclear.",
-    "why_it_matters": "Demonstrates custodial risk in retail-facing crypto infrastructure; BFSI firms eyeing crypto custody or exchange partnerships must stress-test similar reserve-fund mechanics.",
-    "stat_value": "90%",
-    "stat_label": "of hack losses covered by Binance",
+    "published_at": "2026-11-05T19:06:12Z",
+    "headline": "OpenAI releases specialized cybersecurity model amid lab scrutiny on digital defense",
+    "plain_english": "OpenAI has released a new AI model optimized for cybersecurity tasks, as frontier AI labs face growing policy pressure to demonstrate commitment to protecting critical digital infrastructure.",
+    "why_it_matters": "Signals commercial AI labs pivoting to specialized defensive applications (cyber, compliance, fraud) in response to regulatory and political scrutiny. BFSI will see this as both opportunity (better threat detection) and risk (reliance on external lab for critical security).",
     "source": {
-      "name": "CNBC · 2026-10-31",
-      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
-    }
-  },
-  {
-    "id": "2026-10-31-ai-token-theft",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-31T06:33:45Z",
-    "headline": "AI model tokens emerging as high-value theft targets for cybercriminals",
-    "plain_english": "Attackers are now systematically targeting API keys and authentication tokens used to call AI models. Stolen tokens grant access to expensive inference, training data, and proprietary model weights—creating new insider-threat surfaces.",
-    "why_it_matters": "Banks deploying frontier models via cloud APIs (OpenAI, Anthropic, etc.) face token exfiltration risks. A compromised API key can drain budgets, leak proprietary data, and enable model extraction. Credential rotation and least-privilege access are now critical controls.",
-    "stat_value": "Emerging vector",
-    "stat_label": "AI token theft",
-    "source": {
-      "name": "Varindia · 2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3RjN5dmUwR2ZPVTJya24zdUplSVBPbnNxUkpYT2FrYkliemNjc0dqMEh5SVo0bzNxREJnOTl4Y0ZqU1lIbDdfTXRyTE1uZVNPeDVIUDdzX280SVd2SUVkX0Ywa3hVUjY4U2xlVE4ySG1jWFR3aTQ5UUtkS3BDQQ"
+      "name": "TechCrunch · 2026-11-05",
+      "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
     }
   },
   {
@@ -1206,20 +1220,6 @@
     "source": {
       "name": "Wall Street Journal · 2026-11-01",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb0JSYUVTbWFDbVNEek5LbEFJckNNWEQ5THF0R1VVbnk3RHU5Q3RUeV9LT19Bdm9QZXBBMkR2cUNoVHhuN1dUcGFabnZoVmd0eUl6dHhrbGdYNHJRUnBGZF9QRTZZTFZXNGg1NlZRTmoxS1NsRVRWVzU2UmRyeFhReE13UnZBRE95UVVEN2pkaVZ6aWVic3dmVDBrQWFuZ1Q2QXkzdjRwUzJIVzJJVVBqMm1qTDFLZ1llbXdtcjdn"
-    }
-  },
-  {
-    "id": "2026-11-01-china-chip-cxmt-frontier",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-01T15:30:48Z",
-    "headline": "Memory crunch cements CXMT as China's chip champion",
-    "plain_english": "Semiconductor shortages have solidified CXMT's position as China's leading chipmaker, accelerating domestic AI chip supply chains and reducing reliance on US exports.",
-    "why_it_matters": "BFSI in Asia-Pacific and China face a new calculus: domestic banks may prioritize CXMT chips for on-prem AI workloads, reducing dependency on Nvidia/Intel. Geopolitical fragmentation of AI compute infrastructure will reshape deployment strategies.",
-    "source": {
-      "name": "Wall Street Journal · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaFk1YklyYnNaSW56ZzNzS2kySTBMeklaTzAxQ1UtQ1dQSUJEeTRzZ0t1d0VrR29Xb181blpCX3JrOHFOazFLX3pTcG9tQWdHVXZmekdJeDdaWWcySE9ja0I3dUdxYkV3S1JoY1d3cEx4VGhrLURHOWpDQlhZTXZVZ09YLWNDVnZOQVN2UWw0ZExuNU1vN0tqaE9oelFxZw"
     }
   },
   {
@@ -1443,6 +1443,20 @@
     }
   },
   {
+    "id": "2026-11-05-trending-ai-market-correction-nov5",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-05T20:08:49Z",
+    "headline": "AI and semiconductor stocks tumble to worst day in 18 months on slowdown concerns",
+    "plain_english": "AI-linked equity markets (chip makers, cloud/data-center operators) fell sharply November 5, with Nasdaq entering correction territory. Market participants cite post-election political backlash against data center infrastructure and concerns over AI investment ROI deceleration.",
+    "why_it_matters": "Directly impacts BFSI capital allocation and vendor valuations. AI spending slowdown (real or perceived) ripples through fintech valuations, bank M&A multiples, and internal budget justification for AI projects. VC/PE dry-up likely in coming quarters.",
+    "source": {
+      "name": "CNBC · 2026-11-05",
+      "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html"
+    }
+  },
+  {
     "id": "2026-11-05-trending-ai-trade-shift",
     "category": "trending",
     "jurisdiction": "US",
@@ -1586,6 +1600,110 @@
     "source": {
       "name": "Wired · 2026-10-27",
       "url": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/"
+    }
+  },
+  {
+    "id": "2026-11-02-ecb-supervision-rates",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-02T09:02:09.000Z",
+    "headline": "ECB publishes euro-area bank interest rate statistics for September 2026",
+    "plain_english": "European Central Bank released September 2026 bank interest rate data—routine supervisory transparency report. Tracks deposit and lending rates across euro-zone retail and corporate segments. Used by FCA and PRA for cross-border compliance baseline.",
+    "why_it_matters": "Provides regulatory baseline for AI-driven pricing models; banks' algorithms must not systematically deviate from ECB-published benchmarks without justification.",
+    "source": {
+      "name": "European Central Bank · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkRqeXN6ZVlseGlSdWVOZkV2WE1UX1dqWEFrdUpJak5wZHRXVDNuUkhscVloa1RTc05EZ3F2amlmM0FVeXpYY2RIR1JoYVF6a3FqTUM0Y2VWT2drUm1jcU1zODZHbWxCc3k1Nk9CLUlpWjYxSFdiMXZ5ZTFfUlVIa3JmUQ"
+    }
+  },
+  {
+    "id": "2026-11-02-hcltech-mainframe-agents",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T08:40:59.000Z",
+    "headline": "HCLTech deploys AI agents to automate enterprise mainframe operations across financial institutions",
+    "plain_english": "HCLTech launched autonomous AI agents for mainframe automation—targeting legacy banking infrastructure. Agents handle operational tasks (job scheduling, batch processing, incident resolution) without manual intervention. Mainframes power ~70% of global financial transactions; automation reduces operational risk and staffing costs.",
+    "why_it_matters": "First major vendor move to agent-ify core banking infrastructure. If agents fail silently on mainframes, settlement systems break. Compliance and audit trail requirements will force banks to demand explainability HCLTech may not provide.",
+    "jargon": [
+      {
+        "term": "Mainframe automation",
+        "def": "AI handling routine operational tasks on mainframe systems—the ancient but critical servers running payment processing, general ledger, and clearing."
+      }
+    ],
+    "source": {
+      "name": "Devdiscourse · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPejh5X2lza3BsWGIyeWhubk9TWS1BZF9qUWs1STc1NlFYeXVybloxUDRxemtVbGVqWE5iM1Rsb0QyZ3R6OTNmX0xyVHp1TEpUSGw3S2FkN3lSU1pBOUx3MmN1MWZ2Z1FhbnlNa0RBX2J4UXVqVmZxWDdNZV9XVF9yNHdrejMtOC15aW1rTmZQcFZRWHg1Q3A1U3RwQnZaRk12UHZFYThMMExqTERSTlU1VnVIMXpZQTZXdnV3ZUk5bFFWTWxUUFFr0gHHAUFVX3lxTE96OHlfaXNrcGxYYjJ5aG5uT1NZLUFkX2pRazVJNzU2UVh5dXJuWjFQNHF6a1VsZWpYTmIzVGxvRDJndHo5M2ZfTHJUenVMSlRIbDdLYWQ3eVJTWkE5THcyY3UxZnZnUWFueU1rREFfYnhRdWpWZnFYN01lX1dUX3I0d2t6My04LXlpbWtOZlBwVlFYeDVDcDVTdHBCdlpGTXZQdkVhOEwwTGpMRFJOVTVWdUgxellBNld2dXdlSTlsUVZNbFRQUWs"
+    }
+  },
+  {
+    "id": "2026-11-02-agentic-web-shift",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-02T09:35:19.000Z",
+    "headline": "Autonomous software agents begin operating web at scale, reshaping digital finance workflows",
+    "plain_english": "MIT Technology Review reports agentic AI systems—autonomous software agents navigating the web without human intermediation—have moved from concept to production. Extends Tim Berners-Lee's 1990s Semantic Web vision. For BFSI: agents autonomously executing trades, compliance checks, and cross-border settlements without API intermediaries.",
+    "why_it_matters": "Banks betting on agent-based settlement infrastructure face architectural shift: from request-response APIs to autonomous delegation models. Risk compliance and audit trails become orders of magnitude harder.",
+    "jargon": [
+      {
+        "term": "Agentic AI",
+        "def": "Autonomous software that makes decisions and takes actions without waiting for human approval each step."
+      },
+      {
+        "term": "Semantic Web",
+        "def": "Web data structured for machines to understand meaning, not just read text—enables agents to navigate without hardcoded instructions."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-11-02",
+      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
+    }
+  },
+  {
+    "id": "2026-10-31-binance-hack-coverage-90pct",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-31T22:27:56Z",
+    "headline": "Binance says 90% of $6.3 billion hack losses now covered; plans withdrawal resumption",
+    "plain_english": "Binance has restored backing for 90% of assets affected by a $6.3 billion hack and plans to resume customer withdrawals Sunday, subject to security checks. Full recovery timeline remains unclear.",
+    "why_it_matters": "Demonstrates custodial risk in retail-facing crypto infrastructure; BFSI firms eyeing crypto custody or exchange partnerships must stress-test similar reserve-fund mechanics.",
+    "stat_value": "90%",
+    "stat_label": "of hack losses covered by Binance",
+    "source": {
+      "name": "CNBC · 2026-10-31",
+      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
+    }
+  },
+  {
+    "id": "2026-10-31-ai-token-theft",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-31T06:33:45Z",
+    "headline": "AI model tokens emerging as high-value theft targets for cybercriminals",
+    "plain_english": "Attackers are now systematically targeting API keys and authentication tokens used to call AI models. Stolen tokens grant access to expensive inference, training data, and proprietary model weights—creating new insider-threat surfaces.",
+    "why_it_matters": "Banks deploying frontier models via cloud APIs (OpenAI, Anthropic, etc.) face token exfiltration risks. A compromised API key can drain budgets, leak proprietary data, and enable model extraction. Credential rotation and least-privilege access are now critical controls.",
+    "stat_value": "Emerging vector",
+    "stat_label": "AI token theft",
+    "source": {
+      "name": "Varindia · 2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3RjN5dmUwR2ZPVTJya24zdUplSVBPbnNxUkpYT2FrYkliemNjc0dqMEh5SVo0bzNxREJnOTl4Y0ZqU1lIbDdfTXRyTE1uZVNPeDVIUDdzX280SVd2SUVkX0Ywa3hVUjY4U2xlVE4ySG1jWFR3aTQ5UUtkS3BDQQ"
+    }
+  },
+  {
+    "id": "2026-11-01-china-chip-cxmt-frontier",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-01T15:30:48Z",
+    "headline": "Memory crunch cements CXMT as China's chip champion",
+    "plain_english": "Semiconductor shortages have solidified CXMT's position as China's leading chipmaker, accelerating domestic AI chip supply chains and reducing reliance on US exports.",
+    "why_it_matters": "BFSI in Asia-Pacific and China face a new calculus: domestic banks may prioritize CXMT chips for on-prem AI workloads, reducing dependency on Nvidia/Intel. Geopolitical fragmentation of AI compute infrastructure will reshape deployment strategies.",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaFk1YklyYnNaSW56ZzNzS2kySTBMeklaTzAxQ1UtQ1dQSUJEeTRzZ0t1d0VrR29Xb181blpCX3JrOHFOazFLX3pTcG9tQWdHVXZmekdJeDdaWWcySE9ja0I3dUdxYkV3S1JoY1d3cEx4VGhrLURHOWpDQlhZTXZVZ09YLWNDVnZOQVN2UWw0ZExuNU1vN0tqaE9oelFxZw"
     }
   },
   {
@@ -6524,26 +6642,6 @@
     }
   },
   {
-    "id": "2026-10-06-meta-muse-personal-agents",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-06T16:15:07.000Z",
-    "headline": "Meta Muse gains traction as personal AI agent, sparking semiconductor rally",
-    "plain_english": "Meta's Muse personal AI agent is driving adoption momentum, lifting AMD and Intel stock prices as enterprise and consumer adoption of autonomous agents accelerates. Citi research estimates Muse could reach $27B revenue by 2030.",
-    "why_it_matters": "Shift from single-turn chatbots to persistent, autonomous agents fundamentally changes BFSI workflows: advisory, compliance monitoring, and customer service move from human-gated to agent-native execution—massive operational restructuring ahead.",
-    "jargon": [
-      {
-        "term": "Personal AI agent",
-        "def": "Autonomous system that performs multi-step tasks over time without human prompting; remembers context and goals across sessions."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-10-06",
-      "url": "https://www.cnbc.com/2026/10/06/meta-muse-gives-amd-a-boost-as-ai-momentum-shifts-to-personal-agents-.html"
-    }
-  },
-  {
     "id": "2026-10-15-natwest-nvidia-speech-recognition",
     "category": "deployment",
     "jurisdiction": "UK",
@@ -8039,26 +8137,6 @@
     }
   },
   {
-    "id": "2026-10-06-anthropic-startup-program-expansion",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-06T16:19:16.000Z",
-    "headline": "Anthropic expands Claude Startups program with free credits and compute for founders",
-    "plain_english": "Anthropic unveiled expanded Claude Startups program offering free Claude Team tier for one year plus $1,000 in token credits to early-stage founders. Move deepens Anthropic's reach into developer and fintech ecosystems before enterprise maturation.",
-    "why_it_matters": "Subsidized adoption of Claude in startup BFSI builds switching costs; future enterprise customers embed Claude APIs early, raising platform switching friction.",
-    "jargon": [
-      {
-        "term": "Claude Team",
-        "def": "Anthropic's multi-seat, API-first tier for teams building on Claude; higher rate limits and priority support vs. free tier."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-10-06",
-      "url": "https://www.cnbc.com/2026/10/06/anthropic-claude-startups-program.html"
-    }
-  },
-  {
     "id": "2026-10-07-jpmorgan-ai-index-lead",
     "category": "shift",
     "jurisdiction": "US",
@@ -8123,20 +8201,6 @@
     }
   },
   {
-    "id": "2026-10-06-libreoffice-ai-opt-out",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-06T15:25:00.000Z",
-    "headline": "LibreOffice commits to 'no AI' default config, prioritizing user privacy over feature velocity",
-    "plain_english": "Open-source document editor LibreOffice announced it will *not* integrate AI into its default configuration, citing user privacy concerns. Move reflects growing developer and end-user pushback against mandatory cloud AI in productivity tools.",
-    "why_it_matters": "Signals emerging market for privacy-preserving, locally-hosted AI; BFSI users (banks, insurers handling sensitive data) may prefer LibreOffice-style tools over cloud-centric alternatives—creates opportunity for privacy-first vendors.",
-    "source": {
-      "name": "TechCrunch · 2026-10-06",
-      "url": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/"
-    }
-  },
-  {
     "id": "2026-10-07-insight-boomer-wealth-concentration",
     "category": "insight",
     "jurisdiction": "US",
@@ -8182,22 +8246,6 @@
     "source": {
       "name": "PR Newswire UK · 2026-10-07",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObFZqem1jS1BzQzRRekdaS0kwajJ6LXJPZW1KTDNYc2V4ampqYk5ES2xxU0FpVXhiazJDci1BWndDUjF2VWxYOXFva3JuOE4wandhWDh4VE9wY3pmSHVGX3FieXQ0c2Y3Yk40cUhlTHk5aExZRVZGaEx2Q3h6elpqejhXWFptVUVMZVVKTmd2akxocHNIMldsdTA4Q3p6aVJkUEhLdkdDTG1IYnNvajJzZmtzQkVjc3lTY1puc0VOREg?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-06-spiko-series-b-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-10-06T16:28:02.000Z",
-    "headline": "Spiko raises $90M Series B backed by Index Ventures and Speedinvest",
-    "plain_english": "European fintech Spiko closed $90M Series B round led by Index Ventures and Speedinvest. Company serves payment infrastructure and embedded finance in EU markets; round supports cross-border expansion.",
-    "why_it_matters": "Consolidation of European fintech infrastructure players; Spiko's capital velocity signals investor confidence in embedded payments as a core BFSI trend.",
-    "amount": "$90M",
-    "round": "Series B",
-    "source": {
-      "name": "Sifted · 2026-10-06",
-      "url": "https://sifted.eu/articles/spiko-series-b-fundraise-index-speedinvest/"
     }
   },
   {
@@ -8300,34 +8348,6 @@
     }
   },
   {
-    "id": "2026-10-06-openai-atlassian-partnership",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-06T16:00:00.000Z",
-    "headline": "OpenAI and Atlassian expand partnership to embed frontier models in enterprise work tools",
-    "plain_english": "OpenAI and Atlassian deepened integration, embedding frontier models into Atlassian's suite (Jira, Confluence, etc.) to turn enterprise knowledge into automated planning, building, and delivery. Targets mid-market and Fortune-1000 ops teams.",
-    "why_it_matters": "Embedding production LLMs in core enterprise workflow tools (vs. standalone chatbots) creates sticky, high-frequency touchpoints; accelerates AI-as-utility adoption in financial ops, compliance, and project management.",
-    "source": {
-      "name": "OpenAI · 2026-10-06",
-      "url": "https://openai.com/index/atlassian-partnership"
-    }
-  },
-  {
-    "id": "2026-10-06-sap-techwolf-acquisition",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-06T15:23:05.000Z",
-    "headline": "SAP acquires AI startup TechWolf to strengthen enterprise automation",
-    "plain_english": "Enterprise software giant SAP acquired AI startup TechWolf. TechWolf specializes in workforce automation and process intelligence; acquisition bolsters SAP's AI-powered automation capabilities for finance and operations teams.",
-    "why_it_matters": "Large software vendors acquiring applied AI startups signals consolidation of AI-as-feature into core suites; banks and insurers relying on SAP for finance ops will inherit AI automation without integrating third-party vendors.",
-    "source": {
-      "name": "Sifted · 2026-10-06",
-      "url": "https://sifted.eu/articles/sap-techwolf-acquisition-deal/"
-    }
-  },
-  {
     "id": "2026-10-06-cramer-ai-blue-chip",
     "category": "insight",
     "jurisdiction": "US",
@@ -8404,80 +8424,6 @@
     }
   },
   {
-    "id": "2026-10-06-rain-modern-treasury-occ-trust-charter",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-06T15:34:37.000Z",
-    "headline": "Rain, Modern Treasury file for OCC trust charters in fintech regulatory push",
-    "plain_english": "Fintech firms Rain and Modern Treasury filed applications for federally-chartered OCC trust charters, joining growing queue of digital-native financial firms seeking explicit regulatory infrastructure. Move follows ongoing litigation over OCC's trust charter standards.",
-    "why_it_matters": "OCC trust charters grant payment and custody rights without bank merger; if approved, enables fintech firms to compete directly with incumbent custodians and payment processors—reshaping BFSI ecosystem structure.",
-    "jargon": [
-      {
-        "term": "OCC trust charter",
-        "def": "Federal charter from Office of the Comptroller of the Currency allowing non-bank firms to hold customer assets and offer fiduciary services without full bank license."
-      }
-    ],
-    "source": {
-      "name": "Banking Dive · 2026-10-06",
-      "url": "https://www.bankingdive.com/news/rain-modern-treasury-seek-occ-trust-charters/832257/"
-    }
-  },
-  {
-    "id": "2026-10-06-uk-digital-gilt-pilot-banks",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-06T14:58:00.000Z",
-    "headline": "UK government selects six banks as lead managers for Digital Gilt Instrument pilot",
-    "plain_english": "UK government named six major banks as joint lead managers for Digital Gilt Instrument (Digit) pilot, a blockchain-based government bond issuance. Marks official sandbox for distributed ledger settlement in UK public debt markets.",
-    "why_it_matters": "Central bank-led DLT pilot signals regulatory acceptance of blockchain settlement for fixed-income; if successful, pressures all custodians and settlement firms to adopt tokenized asset infrastructure.",
-    "jargon": [
-      {
-        "term": "Digital Gilt Instrument (Digit)",
-        "def": "UK government bond issued on distributed ledger; pilot tests blockchain-based issuance, settlement, and custody to replace legacy systems."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-06",
-      "url": "https://www.finextra.com/newsarticle/48541/uk-picks-banks-as-lead-managers-for-digital-gilt-pilot"
-    }
-  },
-  {
-    "id": "2026-10-06-mynt-ipo-philippines",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-06T14:03:52.000Z",
-    "headline": "Ant-backed Mynt valued at $7B in Philippine IPO, signals fintech consolidation in SE Asia",
-    "plain_english": "Mynt, Ant Group-backed Philippine digital bank, priced IPO at ~$7B valuation. IPO marks Ant's regional expansion and consolidation of SE Asian fintech; Mynt serves underbanked and digital-native customer segments.",
-    "why_it_matters": "Ant-backed fintech going public in key APAC market signals shift of lending and payments infrastructure to non-traditional players; legacy banks must compete on digital ops and KYC/AML efficiency.",
-    "scale": {
-      "metric": "markets",
-      "value": "Philippines, SE Asia"
-    },
-    "source": {
-      "name": "WSJ · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOHBHVk9VMXBlcEZGOGV1eE1SRVNtYTNuelFJcGFNLW1EWWdrOFZ4ZGRsemZTVDJ5UV80TUtQSk9QZ3hSRjVVdmdsTXpOZUJxa1podlE1VUNiRmthX3RNZnlwRDJrdy1xOHNweWdXSW93M1RHaFdERGJaX3VVRnZrMWRTUU1OOHpkWTJVUkRMRENwUHRqU3oyVmZfTTk0UDh2Z2JxWTU4bGVKRV90cTUtakNnYTdXbm8"
-    }
-  },
-  {
-    "id": "2026-10-06-ai-agent-enterprise-readiness",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-06T14:50:26.000Z",
-    "headline": "OpenAI's new agent sparks enterprise reality check: hallucination and control gaps remain",
-    "plain_english": "OpenAI released enterprise agent tooling; early feedback from operators flags persistent issues: hallucinations in critical workflows, difficulty constraining behavior within guardrails, and cost volatility. Wall Street Journal reports reality gap between hype and production reliability.",
-    "why_it_matters": "Enterprise agents face hard guardrails in BFSI: trading, settlement, custody cannot tolerate hallucination or drift. Until cost, latency, and verifiability stabilize, most BFSI deployments remain advisory-only, not autonomous.",
-    "stat_value": "Feedback signals control + cost volatility as blockers",
-    "stat_label": "Enterprise agent adoption",
-    "source": {
-      "name": "WSJ / BCG · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVTVDNzlOYU5icXYzZnlCck1RdC15cW9pT2VoRkNuR0g2dlIxX1NzS3RoVHAzY1J5N21URHRfTzF1dXJrLTZNSE8wd3lKdDdXb3JwSVF4MXhLRmRlM2NldzZhcGtKOGp2ZE8xYTV5dFZPbDQ1d0hhUVBhZUtGeGgzQTdDdXlaMGc5Q3hnYURQOGx5dVlocXJvRXVVZ25PRG5SSnNsbQ"
-    }
-  },
-  {
     "id": "2026-10-07-frontier-spacex-nvidia-gpu-financing",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8518,20 +8464,6 @@
     "source": {
       "name": "매일경제 · 2026-10-07",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBR0dWbm93X2hJQ1k3d3dIbUJSQmdhX3ltOFlJdndCMXBHUC1WU2dlaE5lNS11MktaV2RobU1JU3ZpNUFISWZfaTQ3OVotUUU?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-06-mistral-large-4-frontier",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-06T14:33:16.000Z",
-    "headline": "Mistral AI releases Large 4, claiming multimodal edge over US and Chinese rivals",
-    "plain_english": "French lab Mistral AI unveiled Mistral Large 4, a new flagship multimodal model targeting competitive parity with OpenAI, Google, and Chinese counterparts. The 1-trillion-parameter model aims to narrow gaps in reasoning, vision, and cross-modal tasks.",
-    "why_it_matters": "Open-source frontier models at this scale compress cost and latency for enterprise adoption; banks and insurers can benchmark against proprietary alternatives without vendor lock-in.",
-    "source": {
-      "name": "TechCrunch · 2026-10-06",
-      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
     }
   }
 ]
