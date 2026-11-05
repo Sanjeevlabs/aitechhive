@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-11-05-google-school-ai-policy",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-05T06:36:00Z",
+    "headline": "Google offers schools AI opt-out but ties it to broader Search discontinuation",
+    "plain_english": "Google announced that schools can disable AI features in student accounts, but doing so requires turning off Google Search integration entirely—creating a policy dilemma for IT departments weighing AI risk vs. core utility.",
+    "why_it_matters": "Precedent for BFSI: bundled AI opt-out language may become standard in enterprise agreements, forcing ops teams to choose between AI access and full tool deprecation rather than granular control.",
+    "jargon": [
+      {
+        "term": "AI opt-out",
+        "def": "User or org-level ability to disable generative AI features while retaining other services"
+      }
+    ],
+    "source": {
+      "name": "Google / KSBW · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOemNvQnZWMGN0ekx3dG1FeVlhTndSSFZLdFR1Wjh5LU9IXzUzdkdhblpYX1VSZEloZmFvVFJBNFBVSmZLajVEeXBpbXE4ZUF3b2lzeWpibVQ4UlowNWgyNUhsV0Z1RmFFeHdpWGFjcDVlT1JyMlhXYnJJUkJ6SklZZGpHZTJ4dDVUamZLczZZZHU"
+    }
+  },
+  {
     "id": "2026-11-04-texas-data-centers-ballot-defeat",
     "category": "regulation",
     "jurisdiction": "US",
@@ -144,23 +164,21 @@
     }
   },
   {
-    "id": "2026-11-01-serbia-bank-closure-regulation",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-11-01T17:02:03Z",
-    "headline": "Serbia shuts down bank favored by Russians",
-    "plain_english": "Serbian authorities closed a bank with ties to Russian clients, reflecting tightening sanctions enforcement and AML/CFT oversight in Eastern Europe. Signals broader regulatory crackdown on cross-border financial flows.",
-    "why_it_matters": "EU and Balkans regulators are hardening enforcement against banks facilitating sanctioned-party transactions. BFSI compliance teams need AI-powered transaction screening to flag high-risk correspondent relationships earlier.",
-    "jargon": [
-      {
-        "term": "AML/CFT",
-        "def": "Anti-money laundering and counter-financing of terrorism: regulatory requirements to detect and prevent illicit financial flows."
-      }
-    ],
+    "id": "2026-11-05-zetrix-identity-deployment",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-05T07:18:26Z",
+    "headline": "Zetrix AI launches identity verification service after RM3.7 billion spend",
+    "plain_english": "Malaysia-based Zetrix AI has deployed an AI-powered identity and KYC agent service after investing RM3.7 billion (~$780M USD) in development. Targets regional financial institutions and regulated sectors.",
+    "why_it_matters": "Massive domestic AI investment signals Malaysia's fintech ambitions; identity automation critical for regional BFSI to scale compliance and onboarding at lower cost.",
+    "scale": {
+      "metric": "development investment",
+      "value": "RM3.7B"
+    },
     "source": {
-      "name": "Financial Times · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcGhlU19qTFIzTHZVMHF3ZWVLcUlraXBocGQxS2FWeU1QVm1qaWpoUlphVE9PQTFVOTUyZFBHdUlzZGVrYldXaVFkVkQwS01zUkd5LXFablB3Z05tNEJ3XzNHdEFLNDRWTk5tTmZhaENYV29EWm5TSWx5R2syNjRjTElXRUw"
+      "name": "The Edge Malaysia · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85cDFSZUxWQ05wT1VzTVFQWEpObVlRWFpxR2xHdHJGbS1aZUZfQTEyTzQ5a0didVZaZ3REUUViRFFDVEZ0bkNNT3pNOE5wNTdD"
     }
   },
   {
@@ -316,17 +334,47 @@
     }
   },
   {
-    "id": "2026-11-02-ing-gigs-esim",
-    "category": "deployment",
-    "jurisdiction": "EU|APAC",
-    "severity": "low",
-    "published_at": "2026-11-02T08:00:00.000Z",
-    "headline": "ING partners with Gigs to embed travel eSIM across nine markets for banking customers",
-    "plain_english": "ING and Gigs co-launched travel eSIM integration across nine markets, embedding seamless connectivity into ING's banking app. Not AI-driven; signals BFSI's broader pivot to embedded fintech ecosystems. Relevant to open banking and PSD2/FCA regulatory frameworks.",
-    "why_it_matters": "Shows incumbent bank strategy: embed third-party services to compete with fintechs. Creates new operational risk surface (eSIM partner failure = banking app failure). Compliance must track third-party SLAs.",
+    "id": "2026-11-05-haido-revolut-wealthtech",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-05T09:08:50Z",
+    "headline": "Early Revolut employees launch AI wealthtech Haido from stealth",
+    "plain_english": "Former Revolut staff have founded Haido, an AI-powered wealth management platform, emerging publicly after development phase. Targets affluent retail investors with automated portfolio and tax optimization.",
+    "why_it_matters": "Signals talent exodus from established fintech to AI-native ventures; validates market appetite for AI wealth advisors as alternative to robo-advisors and human wealth managers.",
     "source": {
-      "name": "Fortune · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR3ZseDI1UHVyMFhFZ0twQmJXcy1PaThHd1JKdGtxTDV1MW0wWWFCa0ppTUR3Ml9ydTVydmFfVHI1Zlo2Q0I3NmtuWjRFN3RuOU02Qm0xV05iWmdhUjcyaUtaZGlmY2hRNUFRRjROYXlMRHZyM0l6SFpvRS1XWWlPUTdXNk5KVUA1c3hiNVRXRng"
+      "name": "Sifted · 2026-11-05",
+      "url": "https://sifted.eu/articles/haido-emerges-from-stealth/"
+    }
+  },
+  {
+    "id": "2026-11-05-kabilio-accounting-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-05T09:00:00Z",
+    "headline": "AI accounting platform Kabilio raises €10 million",
+    "plain_english": "Barcelona-based Kabilio, which automates accounting workflows for SMBs and their advisors, closed €10M Series A led by Picus Capital and Visionaries. Targets mid-market accounting firms.",
+    "why_it_matters": "Demonstrates sustained fintech funding despite macro headwinds; AI accounting gaining parity with bookkeeping automation as must-have for professional services.",
+    "amount": "€10M",
+    "round": "Series A",
+    "source": {
+      "name": "Finextra · 2026-11-05",
+      "url": "https://www.finextra.com/newsarticle/48704/ai-accounting-platform-kabilio-raises-10m"
+    }
+  },
+  {
+    "id": "2026-11-05-microsoft-nscale-decline",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-05T05:46:00Z",
+    "headline": "Microsoft declines to expand Nscale AI partnership",
+    "plain_english": "Microsoft has opted not to expand its existing AI deal with Nscale, a financial AI vendor. Signals potential reassessment of partnership scope or strategy in the financial-AI space.",
+    "why_it_matters": "Reflects selective approach by major cloud players to fintech AI partnerships; suggests Microsoft prioritizing first-party models over third-party integrations for financial-services workloads.",
+    "source": {
+      "name": "Breakingthenews.net · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLUpQMXZZRHBnSzhtZmdqYjBMejNoZVJKRElQOUp4TElsVzFPbG5HRVhVUkFnY1NBcGFiQzdCV1NtZmMxaWNTSWxYUDJDNTdPd0Z0VTVoZjcxUGpnREVqWXJxWFEzUlZSTmd4dzJnMDVzdkljNnBvbnlfbWowbUhRVi1kenUtZ3l3UXpaVGdzWWRDYnhRV3hLUTVGdnU4TG8"
     }
   },
   {
@@ -440,46 +488,35 @@
     }
   },
   {
-    "id": "2026-10-29-vendor-aws-cloud-growth",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-29T21:59:31Z",
-    "headline": "Amazon AWS posts 39% revenue growth on OpenAI, Meta cloud deals",
-    "plain_english": "AWS cloud division accelerates revenue growth to 39% year-over-year, powered by new enterprise AI partnerships with Meta and OpenAI for training and inference workloads.",
-    "why_it_matters": "AWS dominance in enterprise AI cloud infrastructure creates vendor lock-in for BFSI; banks racing to adopt GenAI must commit capex to AWS or negotiate multi-cloud parity.",
-    "source": {
-      "name": "CNBC Tech/Finance · 2026-10-29",
-      "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html"
-    }
-  },
-  {
-    "id": "2026-10-29-vendor-canada-cohere-stake",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-29T20:58:00Z",
-    "headline": "Canada takes equity stake in AI firm Cohere, backing domestic large language model",
-    "plain_english": "Canadian government acquires equity position in Cohere, Toronto-based LLM startup, to strengthen domestic AI sovereignty and compete with U.S. and Chinese frontier labs in enterprise AI.",
-    "why_it_matters": "Government backing of regional LLM champions may fragment AI supplier landscape for BFSI; banks may face pressure to adopt local models for regulatory or geopolitical reasons, fragmenting tooling.",
-    "source": {
-      "name": "WSJ Finance/AI · 2026-10-29",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbEVSWHVMeWdhSEpveGFxMzh1Q0FFUTNpaGRUTWgxbGlBOHlOTkQyZTA3QjVCUXJJY3kwaFRFN3ViQTlXalowMVBKLV9Mci1nWXRoOEhjT053SHdnNklfcDBoWVp0LWgzLVFZeE5EcjlCOUZTak1DRHl0ckd3SGt4Y3dpRTZPVXhMV0VvdXRvSm1DT21CVjNNS1h3?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-28-vendor-microsoft-azure-33b",
-    "category": "vendor",
-    "jurisdiction": "Global",
+    "id": "2026-11-05-ubs-credit-suisse-london-cuts",
+    "category": "shift",
+    "jurisdiction": "UK",
     "severity": "high",
-    "published_at": "2026-10-28T21:58:32.000Z",
-    "headline": "Microsoft discloses Azure revenue of $33.2 billion, first dollar figure published",
-    "plain_english": "Microsoft publicly reported Azure cloud revenue for the first time: $33.2B quarterly, representing 48% YoY growth. Underscores AI infrastructure demand driving cloud margins and revenue acceleration.",
-    "why_it_matters": "Azure now nearly competitive with AWS in absolute scale; public disclosure signals Microsoft confidence and intensifies pricing pressure on AWS. BFSI cloud budgets will consolidate around Azure+OpenAI or AWS+competing models.",
-    "amount": "$33.2B",
+    "published_at": "2026-11-05T06:13:00Z",
+    "headline": "UBS cuts 200 London jobs as Credit Suisse integration nears completion",
+    "plain_english": "UBS is eliminating ~200 roles in London as the Credit Suisse acquisition consolidation approaches its final phase. Reflects broader post-merger redundancy in investment banking and shared services.",
+    "why_it_matters": "Signals acceleration of AI-driven cost consolidation in BFSI M&A playbooks; jobs elimination at pace suggests UBS deploying automation in middle/back office faster than traditional retraining.",
+    "scale": {
+      "metric": "employees",
+      "value": "200"
+    },
     "source": {
-      "name": "TechCrunch · 2026-10-28",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+      "name": "Bloomberg · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTGFDYXU0eDljMjBpMGUyTmhWdlhvUHVEM19ub2kwTUhzdmxhYTUyRXhJU2kteG9EYkRENmY1WWY4dEJwb0Mxc2ppd1F1cXZ5NFJCQUR2c3pkdER4dnJSeGRiaUhyb2xSWUlNbm5NRFF2RnEwZjFlOUc2TVozUVF0MEtqbXhYRTh3ZEVuU1BhV3ZhU2E2WUlnTmpiT3BqalRLWFNmRHlueWpkY1R3LS1wT3B3bWJvUQ"
+    }
+  },
+  {
+    "id": "2026-11-05-nextdc-infrastructure-rally",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-05T07:15:43Z",
+    "headline": "NextDC shares surge 51% on strategic stake bids by Goodman, Digital Realty",
+    "plain_english": "Australian data center operator NextDC soared after Goodman Group and Digital Realty (US hyperscaler infrastructure investor) sought up to 9.9% stakes each, signaling major capital backing for AI-grade compute capacity in APAC.",
+    "why_it_matters": "US hyperscale investors betting big on Asia-Pacific data center scarcity; suggests BFSI and fintech AI workloads facing infrastructure constraints in region, driving valuations higher.",
+    "source": {
+      "name": "CNBC · 2026-11-05",
+      "url": "https://www.cnbc.com/2026/11/05/nextdc-goodman-group-digital-realty-data-centers-.html"
     }
   },
   {
@@ -620,46 +657,6 @@
     "source": {
       "name": "MIT Technology Review · 2026-11-02",
       "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-    }
-  },
-  {
-    "id": "2026-11-02-banks-el-nino-risk",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-02T08:06:33.000Z",
-    "headline": "Banks begin systematic climate-risk repricing of loan portfolios; el Niño event triggers AI-driven stress testing across lenders",
-    "plain_english": "Bloomberg reports banks reviewing loan terms for clients in el Niño-affected regions, adjusting risk premiums based on climate forecasts. Marks shift from backward-looking credit models to forward-looking climate-scenario AI pricing. Affects agricultural, energy, and infrastructure lending globally.",
-    "why_it_matters": "Climate risk is now embedded in AI credit models; regulators (ECB, FCA, PRA, OCC) will scrutinize whether models overstate/understate climate tail risk. Creates systemic basis risk if all banks train on identical climate datasets.",
-    "jargon": [
-      {
-        "term": "Climate stress testing",
-        "def": "AI simulations of portfolio losses under extreme weather and climate scenarios—now mandatory for many BFSI firms."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjJDWWl2QUtHMTBBZWZsNTFHZmtQb2NSTjVrWWlmMGVwY2taMHNJLXVGVVhDcmVIUzZBZnR6OFVLcVZpOGk2am5wbWdjaE9FZlgta0habGh5dWhZbkRhYlZHazd6VVg2OXlKd19feXhPOVR4WEpEQXlraW00UEl6Z2FvRXpsTkdmUC1IQzFXeFZEV25CcXViZnFjTWdPZ3R4X1lUcExlYXlqTWE4dEtLRGgzYw"
-    }
-  },
-  {
-    "id": "2026-11-01-jpmorgan-meta-muse-ai-agents-shift",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-01T16:34:43Z",
-    "headline": "JPMorgan, Amazon block Meta Muse AI agents; experts warn friction removal typically wins",
-    "plain_english": "Major firms including JPMorgan and Amazon are blocking deployment of Meta's Muse personal AI agents, but retail and fintech experts warn that customer-facing AI that removes friction historically prevails in competition.",
-    "why_it_matters": "Banks blocking autonomous AI agents over control fears may cede customer experience advantage to fintech competitors who embrace frictionless AI. This signals a strategic divide in how incumbent BFSI adopts AI-driven UX.",
-    "jargon": [
-      {
-        "term": "autonomous agent",
-        "def": "AI system that acts independently on user behalf without human approval for each step; learns from feedback to improve future decisions."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-11-01",
-      "url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html"
     }
   },
   {
@@ -907,6 +904,22 @@
     }
   },
   {
+    "id": "2026-11-05-citi-ai-hyperscaler-trade",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-05T05:36:37Z",
+    "headline": "US midterm results trigger AI trade rotation from chips to hyperscalers",
+    "plain_english": "Citi Research reports post-election market shift favoring cloud hyperscalers (AWS, Azure, GCP) over semiconductor plays, driven by expectations of pro-tech policy and AI infrastructure spend.",
+    "why_it_matters": "Fintech and BFSI investors now pricing hyperscaler capex as primary AI upside; implies expectations of sustained cloud spending regardless of interest-rate path, reshaping fintech cost models.",
+    "stat_value": "Sector rotation",
+    "stat_label": "Semiconductors → hyperscalers",
+    "source": {
+      "name": "Citi Research / CNBC TV18 · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTzE1VnVyRTJjZWFKQnl1VUVNT0F0TWVnV3lnZzcyanVZM2I5UVpGWk9SQmlYa1k1UWZPLTBlZVk4aDFpaFZYYWF5cU9aMkdycVgtUjZJekkxc0wtVlBHYUplVU1HTThBelU0dllRTWMtUElwLXp2M1cyZ1RaLWhhemxuQnF6VmdNZUdYMzRWaldrdDF6LVh5Q1NRajFrRmRmbHFnN1FjMjhVT2hFQzVxbElJTXBnOWg3RzN0R0lLMmwwcEZHV1pGTTFPNjh6bW1JNDIxNWh1MUnSAd4BQVVfeXFMTm1FMW14TmxsemRNUlZsRVQxMUFueEhQUHp0eW95Y3F3QjlwbkRndHFmY21Wa3lYa215aS12bGpIbXRqZVNJUV9Cc1Y5dzV4WGQwakNrVkU0OWdGTm1TQjdPdzctTmw3SS1SWVA0clQteGcyTmlNN1hraDF1dlBjZkF2ZzdHdklIY0ZCYV9vSlA3Z1pMc2lnX1o0ZmRTQ05vZVVsZjRsQVVJekNYX0ljeGpaNjVydTRXSzhVaU1pQ1VGSkZ4VTFEMmFhYkJvLWxkN2VnVkJzR3gzV18wU3dn"
+    }
+  },
+  {
     "id": "2026-11-04-cio-ai-outcomes-focus",
     "category": "insight",
     "jurisdiction": "US",
@@ -1048,22 +1061,6 @@
     "source": {
       "name": "Varindia · 2026-10-31",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3RjN5dmUwR2ZPVTJya24zdUplSVBPbnNxUkpYT2FrYkliemNjc0dqMEh5SVo0bzNxREJnOTl4Y0ZqU1lIbDdfTXRyTE1uZVNPeDVIUDdzX280SVd2SUVkX0Ywa3hVUjY4U2xlVE4ySG1jWFR3aTQ5UUtkS3BDQQ"
-    }
-  },
-  {
-    "id": "2026-10-30-insight-ai-election-regulation",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-30T22:00:00Z",
-    "headline": "AI-generated political ads legally allowed in Pennsylvania, signaling regulatory vacuum",
-    "plain_english": "Pennsylvania allows AI-generated campaign ads (e.g., deepfakes of Gov. Shapiro) to air without disclosure or watermarking, as no state law yet mandates AI labeling in political speech. Federal rules similarly sparse.",
-    "why_it_matters": "Regulatory vacuum in AI disclosure (political, financial) signals BFSI faces similar gaps: no mandated AI labels on risk models or lending decisions. BFSI could adopt voluntary disclosure now to position ahead of FCA/OCC guidance—or face forced retroactive compliance later.",
-    "stat_value": "0",
-    "stat_label": "US states with mandatory AI-generated ad disclosure laws",
-    "source": {
-      "name": "6abc Philadelphia · 2026-10-30",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRjhoX2hsQ3lQcmdDVHZZMHdnSWZZQ09ROEJBRG9RSWxDaVd2SXlQTERUaElUb2FkdjU4SmdmSXowQmNGTlF4V2syM0FZU2d2LXVfVldQSXh4bWo2SkRYMVBzZTNmeXRYRUhVS1RESE9KZFBPTDZHanBDWVFqZDVkUldwdVNUU0ZrNFlwMXFsS2hpelBJSUt2Z1lXSk5NaWszYWtESTJSRGNKTVAtMkR5VHFxOHlwMHVrTnRadkRMQ1o5VlR0azBBbWFvNWnSAdIBQVVfeXFMTnlhemFsejYzZUNlMTJGUW5pdGM1M3dXSG80WUM2UFVXQzdIOTVVWXhGeEFkeFBYa08wWkpMVlc2aWU5Wm9OekpoNElXaXZQRV9oT0h0WFBOLTRNVHdRTFpuYmZka2Q4UUUzb1VpVjN5NTA2ZVZ0TXZBNk1TYVJ2dVhMZDVuTlFERzBCczB6a0xuSTNKQmtXYjFIV3pLZHdQY3F2Y1ROM2lTaTkycDlQWm1Ob1EwX3ZVTm9wQmI3NmVTQ1IxanhBYVp5RjBFUTFiT1RB"
     }
   },
   {
@@ -1446,6 +1443,20 @@
     }
   },
   {
+    "id": "2026-11-05-trending-ai-trade-shift",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-05T05:36:37Z",
+    "headline": "Post-election AI pivot: markets rotate from chips to hyperscaler infrastructure",
+    "plain_english": "Following US midterm results, institutional investors are shifting capital from semiconductor stocks to cloud hyperscalers (AWS, Azure, GCP), betting on sustained AI infrastructure spending regardless of policy. Citi, CNBC, and major financial press flagging the rotation as the single highest-signal trade.",
+    "why_it_matters": "Direct implication for BFSI: hyperscaler pricing power may rise, pushing fintech cloud costs higher; banks betting on AI ROI now face longer payback periods and higher opex lock-in.",
+    "source": {
+      "name": "Citi Research / CNBC / Financial Press · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTzE1VnVyRTJjZWFKQnl1VUVNT0F0TWVnV3lnZzcyanVZM2I5UVpGWk9SQmlYa1k1UWZPLTBlZVk4aDFpaFZYYWF5cU9aMkdycVgtUjZJekkxc0wtVlBHYUplVU1HTThBelU0dllRTWMtUElwLXp2M1cyZ1RaLWhhemxuQnF6VmdNZUdYMzRWaldrdDF6LVh5Q1NRajFrRmRmbHFnN1FjMjhVT2hFQzVxbElJTXBnOWg3RzN0R0lLMmwwcEZHV1pGTTFPNjh6bW1JNDIxNWh1MUnSAd4BQVVfeXFMTm1FMW14TmxsemRNUlZsRVQxMUFueEhQUHp0eW95Y3F3QjlwbkRndHFmY21Wa3lYa215aS12bGpIbXRqZVNJUV9Cc1Y5dzV4WGQwakNrVkU0OWdGTm1TQjdPdzctTmw3SS1SWUA0clQteGcyTmlNN1hraDF1dlBjZkF2ZzdHdklIY0ZCYV9vSlA3Z1pMc2lnX1o0ZmRTQ05vZVVsZjRsQVVJekNYX0ljeGpaNjVydTRXSzhVaU1pQ1VGSkZ4VTFEMmFhYkJvLWxkN2VnVkJzR3gzV18wU3dn"
+    }
+  },
+  {
     "id": "2026-11-04-hyperscaler-stock-rally",
     "category": "trending",
     "jurisdiction": "US",
@@ -1589,6 +1600,139 @@
     "source": {
       "name": "CNBC · 2026-10-26",
       "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html"
+    }
+  },
+  {
+    "id": "2026-11-01-serbia-bank-closure-regulation",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-11-01T17:02:03Z",
+    "headline": "Serbia shuts down bank favored by Russians",
+    "plain_english": "Serbian authorities closed a bank with ties to Russian clients, reflecting tightening sanctions enforcement and AML/CFT oversight in Eastern Europe. Signals broader regulatory crackdown on cross-border financial flows.",
+    "why_it_matters": "EU and Balkans regulators are hardening enforcement against banks facilitating sanctioned-party transactions. BFSI compliance teams need AI-powered transaction screening to flag high-risk correspondent relationships earlier.",
+    "jargon": [
+      {
+        "term": "AML/CFT",
+        "def": "Anti-money laundering and counter-financing of terrorism: regulatory requirements to detect and prevent illicit financial flows."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcGhlU19qTFIzTHZVMHF3ZWVLcUlraXBocGQxS2FWeU1QVm1qaWpoUlphVE9PQTFVOTUyZFBHdUlzZGVrYldXaVFkVkQwS01zUkd5LXFablB3Z05tNEJ3XzNHdEFLNDRWTk5tTmZhaENYV29EWm5TSWx5R2syNjRjTElXRUw"
+    }
+  },
+  {
+    "id": "2026-11-02-ing-gigs-esim",
+    "category": "deployment",
+    "jurisdiction": "EU|APAC",
+    "severity": "low",
+    "published_at": "2026-11-02T08:00:00.000Z",
+    "headline": "ING partners with Gigs to embed travel eSIM across nine markets for banking customers",
+    "plain_english": "ING and Gigs co-launched travel eSIM integration across nine markets, embedding seamless connectivity into ING's banking app. Not AI-driven; signals BFSI's broader pivot to embedded fintech ecosystems. Relevant to open banking and PSD2/FCA regulatory frameworks.",
+    "why_it_matters": "Shows incumbent bank strategy: embed third-party services to compete with fintechs. Creates new operational risk surface (eSIM partner failure = banking app failure). Compliance must track third-party SLAs.",
+    "source": {
+      "name": "Fortune · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR3ZseDI1UHVyMFhFZ0twQmJXcy1PaThHd1JKdGtxTDV1MW0wWWFCa0ppTUR3Ml9ydTVydmFfVHI1Zlo2Q0I3NmtuWjRFN3RuOU02Qm0xV05iWmdhUjcyaUtaZGlmY2hRNUFRRjROYXlMRHZyM0l6SFpvRS1XWWlPUTdXNk5KVUA1c3hiNVRXRng"
+    }
+  },
+  {
+    "id": "2026-10-29-vendor-aws-cloud-growth",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-29T21:59:31Z",
+    "headline": "Amazon AWS posts 39% revenue growth on OpenAI, Meta cloud deals",
+    "plain_english": "AWS cloud division accelerates revenue growth to 39% year-over-year, powered by new enterprise AI partnerships with Meta and OpenAI for training and inference workloads.",
+    "why_it_matters": "AWS dominance in enterprise AI cloud infrastructure creates vendor lock-in for BFSI; banks racing to adopt GenAI must commit capex to AWS or negotiate multi-cloud parity.",
+    "source": {
+      "name": "CNBC Tech/Finance · 2026-10-29",
+      "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html"
+    }
+  },
+  {
+    "id": "2026-10-29-vendor-canada-cohere-stake",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-29T20:58:00Z",
+    "headline": "Canada takes equity stake in AI firm Cohere, backing domestic large language model",
+    "plain_english": "Canadian government acquires equity position in Cohere, Toronto-based LLM startup, to strengthen domestic AI sovereignty and compete with U.S. and Chinese frontier labs in enterprise AI.",
+    "why_it_matters": "Government backing of regional LLM champions may fragment AI supplier landscape for BFSI; banks may face pressure to adopt local models for regulatory or geopolitical reasons, fragmenting tooling.",
+    "source": {
+      "name": "WSJ Finance/AI · 2026-10-29",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbEVSWHVMeWdhSEpveGFxMzh1Q0FFUTNpaGRUTWgxbGlBOHlOTkQyZTA3QjVCUXJJY3kwaFRFN3ViQTlXalowMVBKLV9Mci1nWXRoOEhjT053SHdnNklfcDBoWVp0LWgzLVFZeE5EcjlCOUZTak1DRHl0ckd3SGt4Y3dpRTZPVXhMV0VvdXRvSm1DT21CVjNNS1h3?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-28-vendor-microsoft-azure-33b",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-10-28T21:58:32.000Z",
+    "headline": "Microsoft discloses Azure revenue of $33.2 billion, first dollar figure published",
+    "plain_english": "Microsoft publicly reported Azure cloud revenue for the first time: $33.2B quarterly, representing 48% YoY growth. Underscores AI infrastructure demand driving cloud margins and revenue acceleration.",
+    "why_it_matters": "Azure now nearly competitive with AWS in absolute scale; public disclosure signals Microsoft confidence and intensifies pricing pressure on AWS. BFSI cloud budgets will consolidate around Azure+OpenAI or AWS+competing models.",
+    "amount": "$33.2B",
+    "source": {
+      "name": "TechCrunch · 2026-10-28",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+    }
+  },
+  {
+    "id": "2026-11-02-banks-el-nino-risk",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T08:06:33.000Z",
+    "headline": "Banks begin systematic climate-risk repricing of loan portfolios; el Niño event triggers AI-driven stress testing across lenders",
+    "plain_english": "Bloomberg reports banks reviewing loan terms for clients in el Niño-affected regions, adjusting risk premiums based on climate forecasts. Marks shift from backward-looking credit models to forward-looking climate-scenario AI pricing. Affects agricultural, energy, and infrastructure lending globally.",
+    "why_it_matters": "Climate risk is now embedded in AI credit models; regulators (ECB, FCA, PRA, OCC) will scrutinize whether models overstate/understate climate tail risk. Creates systemic basis risk if all banks train on identical climate datasets.",
+    "jargon": [
+      {
+        "term": "Climate stress testing",
+        "def": "AI simulations of portfolio losses under extreme weather and climate scenarios—now mandatory for many BFSI firms."
+      }
+    ],
+    "source": {
+      "name": "Bloomberg · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjJDWWl2QUtHMTBBZWZsNTFHZmtQb2NSTjVrWWlmMGVwY2taMHNJLXVGVVhDcmVIUzZBZnR6OFVLcVZpOGk2am5wbWdjaE9FZlgta0habGh5dWhZbkRhYlZHazd6VVg2OXlKd19feXhPOVR4WEpEQXlraW00UEl6Z2FvRXpsTkdmUC1IQzFXeFZEV25CcXViZnFjTWdPZ3R4X1lUcExlYXlqTWE4dEtLRGgzYw"
+    }
+  },
+  {
+    "id": "2026-11-01-jpmorgan-meta-muse-ai-agents-shift",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-01T16:34:43Z",
+    "headline": "JPMorgan, Amazon block Meta Muse AI agents; experts warn friction removal typically wins",
+    "plain_english": "Major firms including JPMorgan and Amazon are blocking deployment of Meta's Muse personal AI agents, but retail and fintech experts warn that customer-facing AI that removes friction historically prevails in competition.",
+    "why_it_matters": "Banks blocking autonomous AI agents over control fears may cede customer experience advantage to fintech competitors who embrace frictionless AI. This signals a strategic divide in how incumbent BFSI adopts AI-driven UX.",
+    "jargon": [
+      {
+        "term": "autonomous agent",
+        "def": "AI system that acts independently on user behalf without human approval for each step; learns from feedback to improve future decisions."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-01",
+      "url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html"
+    }
+  },
+  {
+    "id": "2026-10-30-insight-ai-election-regulation",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-30T22:00:00Z",
+    "headline": "AI-generated political ads legally allowed in Pennsylvania, signaling regulatory vacuum",
+    "plain_english": "Pennsylvania allows AI-generated campaign ads (e.g., deepfakes of Gov. Shapiro) to air without disclosure or watermarking, as no state law yet mandates AI labeling in political speech. Federal rules similarly sparse.",
+    "why_it_matters": "Regulatory vacuum in AI disclosure (political, financial) signals BFSI faces similar gaps: no mandated AI labels on risk models or lending decisions. BFSI could adopt voluntary disclosure now to position ahead of FCA/OCC guidance—or face forced retroactive compliance later.",
+    "stat_value": "0",
+    "stat_label": "US states with mandatory AI-generated ad disclosure laws",
+    "source": {
+      "name": "6abc Philadelphia · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRjhoX2hsQ3lQcmdDVHZZMHdnSWZZQ09ROEJBRG9RSWxDaVd2SXlQTERUaElUb2FkdjU4SmdmSXowQmNGTlF4V2syM0FZU2d2LXVfVldQSXh4bWo2SkRYMVBzZTNmeXRYRUhVS1RESE9KZFBPTDZHanBDWVFqZDVkUldwdVNUU0ZrNFlwMXFsS2hpelBJSUt2Z1lXSk5NaWszYWtESTJSRGNKTVAtMkR5VHFxOHlwMHVrTnRadkRMQ1o5VlR0azBBbWFvNWnSAdIBQVVfeXFMTnlhemFsejYzZUNlMTJGUW5pdGM1M3dXSG80WUM2UFVXQzdIOTVVWXhGeEFkeFBYa08wWkpMVlc2aWU5Wm9OekpoNElXaXZQRV9oT0h0WFBOLTRNVHdRTFpuYmZka2Q4UUUzb1VpVjN5NTA2ZVZ0TXZBNk1TYVJ2dVhMZDVuTlFERzBCczB6a0xuSTNKQmtXYjFIV3pLZHdQY3F2Y1ROM2lTaTkycDlQWm1Ob1EwX3ZVTm9wQmI3NmVTQ1IxanhBYVp5RjBFUTFiT1RB"
     }
   },
   {
@@ -8092,40 +8236,6 @@
     "effective_date": "2026-10-07"
   },
   {
-    "id": "2026-10-06-hong-kong-hsbc-singapore-ai-hub",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-06T01:48:07Z",
-    "headline": "Hong Kong regulators scrutinize HSBC's decision to move AI hub to Singapore",
-    "plain_english": "Hong Kong authorities are questioning HSBC's strategic move to establish its AI hub in Singapore rather than Hong Kong, signaling regulatory friction over bank AI consolidation and geopolitical preferences for tech infrastructure placement.",
-    "why_it_matters": "Regulators now view bank AI hub location as a strategic asset question, not just a business optimization. Cross-border AI talent and IP concentration will face new approval friction, complicating APAC bank AI roadmaps.",
-    "source": {
-      "name": "Financial Times · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcHZlVUF4bHhWb1U4M19DRXF6V2NkRGNhMHZUTGNiRkxxM3Bza0U5ck9ReHhuTHdMU2NlaThyNjNFY29kc1dZdmlSVEtycUJSLWtCSUxjU3RVRGxOTU9pRUZQUUFxUXBYNS04TVZVTV9nUWh6N2J5a1VBMGVYMUNOeWpxRnY"
-    }
-  },
-  {
-    "id": "2026-10-05-anchorage-standard-chartered-digital-asset-custody",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-06T00:01:00Z",
-    "headline": "Anchorage Digital and Standard Chartered expand institutional digital asset custody globally",
-    "plain_english": "Anchorage Digital, a digital asset custody platform, has formed a partnership with Standard Chartered to offer USD accounts, Swift wire access, and third-party transfer capabilities to non-US institutional clients, broadening crypto-asset banking infrastructure.",
-    "why_it_matters": "Tier-1 bank partnership legitimizes institutional crypto custody and stablecoin settlement; BFSI orgs can now route digital-asset clients through regulated correspondent networks, accelerating tokenised-payment adoption.",
-    "jargon": [
-      {
-        "term": "Custody",
-        "def": "Third-party safekeeping and settlement service for financial assets, typically with regulatory segregation and insurance."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-06",
-      "url": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-10-07-arthur-hayes-ai-waste",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8215,26 +8325,6 @@
     "source": {
       "name": "Sifted · 2026-10-06",
       "url": "https://sifted.eu/articles/sap-techwolf-acquisition-deal/"
-    }
-  },
-  {
-    "id": "2026-10-05-retail-ai-agents-commerce-agentic",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:03:25Z",
-    "headline": "Retailers draw different lines on agentic AI commerce as Amazon, Walmart, QVC compete on integration",
-    "plain_english": "Major retailers are adopting divergent strategies for third-party AI shopping agents: Amazon blocks external agents and builds proprietary alternatives; Walmart pairs Google's Gemini with its own Sparky assistant; QVC allows agents to complete purchases directly.",
-    "why_it_matters": "Fragmented AI-agent access policies across retail create checkout integration complexity for BFSI payment processors and fintech; standardization pressures will emerge within 12–18 months as conversion data clarifies which model wins.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that autonomously plans and executes multi-step tasks (search, add-to-cart, checkout) with minimal human intervention."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-10-05",
-      "url": "https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/"
     }
   },
   {
@@ -8431,58 +8521,6 @@
     }
   },
   {
-    "id": "2026-10-05-nyc-ai-safety-rules-openai-anthropic",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:34:23Z",
-    "headline": "New York City Council advances local AI safety rules, grills OpenAI and Anthropic executives",
-    "plain_english": "NYC lawmakers held a hearing on AI safety, questioning leaders from OpenAI, Anthropic, Meta, and Google. The city is moving toward establishing its own AI governance framework independent of federal rules, focusing on model safety and operational transparency.",
-    "why_it_matters": "City-level AI regulation bypasses federal gridlock and creates compliance fragmentation; BFSI firms using frontier models must now track NYC disclosure/safety rules separately, increasing deployment friction and legal cost.",
-    "source": {
-      "name": "PYMNTS · 2026-10-05",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nyc-lawmakers-aim-to-lead-nation-in-establishing-ai-safety-rules/"
-    }
-  },
-  {
-    "id": "2026-10-06-anz-tokenised-deposit-swift-ledger",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-06T00:01:00Z",
-    "headline": "ANZ completes live cross-border transaction using tokenised deposits on Swift's blockchain ledger",
-    "plain_english": "Australia and New Zealand Banking Group has executed a production corporate treasury payment using tokenised deposits on Swift's blockchain infrastructure, marking the first live proof of DLT-based settlement for institutional payments at major bank scale.",
-    "why_it_matters": "Live tokenised-deposit settlement removes a key blocker for BFSI DLT adoption; Swift's entry validates the infrastructure path, forcing other correspondent banks to adopt or risk client migration to parallel rails.",
-    "jargon": [
-      {
-        "term": "Tokenised deposits",
-        "def": "Digital representations of bank-issued deposits on blockchain ledgers, enabling programmable settlement and atomic clearing."
-      },
-      {
-        "term": "DLT (Distributed Ledger Technology)",
-        "def": "Blockchain or similar decentralized database that multiple institutions maintain copies of without central authority."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-06",
-      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-06-anthropic-ai-academy-enterprise",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-06T01:30:00Z",
-    "headline": "Anthropic launches AI academy for enterprise engineers",
-    "plain_english": "Anthropic has launched a training academy aimed at enterprise engineers, signaling investment in developer enablement as frontier labs compete to shape downstream adoption of LLMs in production BFSI and enterprise systems.",
-    "why_it_matters": "Frontier labs' direct academy investments signal market consolidation around developer lock-in; BFSI orgs will face pressure to standardize on vendors' preferred frameworks and APIs or face skill gaps.",
-    "source": {
-      "name": "CFOtech Asia · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNXzU5a3RwUlVUanBWMmtKS2VndEtxcHhCdEMzdWRKVEVJbHJiNHhTSkNlRWlNTGpXQmZHdW9DclhpZzdhTjFtbm00ZlBSYkJTRFZiNXlkTTVqT2JSUmRpa0VmRlNkS1J6VE02WTYzTTNXY3Z3Z0tOUDFJanN3bzBNYXdIZXJJbUh6"
-    }
-  },
-  {
     "id": "2026-10-06-mistral-large-4-frontier",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8494,92 +8532,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-06",
       "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
-    }
-  },
-  {
-    "id": "2026-10-05-white-house-ai-czar-task-force",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:53:39Z",
-    "headline": "White House names new AI czar and unveils task force goals for national AI strategy",
-    "plain_english": "The White House has appointed a lead AI policy official and announced a dedicated task force with explicit policy goals, signaling formalized federal AI governance and potential regulatory action in coming quarters.",
-    "why_it_matters": "Federal AI czar appointment indicates shift from ad-hoc policy to institutionalized strategy; BFSI compliance teams should expect formal guidance on AI use cases, model procurement, and national-security vetting within 6-12 months.",
-    "source": {
-      "name": "Wall Street Journal · 2026-10-05",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzllZ3FlUmNzR3pPMkNlbDRWSU5yT2lZLXA0bnpMZjI5VmxNTG5KZFBfZEp3elVXSG1XOU5jckVlRVA1M05oRHNtMDdhVDQyY0pLdXlScG54OXJpZlZJSTFtZkMxVVBHOWlaM2hKVmpuaFpwR3c3c05ITDU1N19IcnhENHQwdTAxeGtmRnVpNDdSc0IwWFowTmlxREVocURBVFppVFRoaVdLYXpsbXBmSUxqUTZ6MG1GSjE3RHRmVQ"
-    }
-  },
-  {
-    "id": "2026-10-05-anthropic-openai-safety-hearing-cnbc",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-05T23:28:31Z",
-    "headline": "AI researcher warns labs are racing to build their own adversary as safety scrutiny intensifies",
-    "plain_english": "A researcher testified to NYC Council that frontier AI labs are prioritizing speed-to-deployment over safety controls, creating systemic risk. OpenAI, Anthropic, and other labs face formal questioning on security and governance practices.",
-    "why_it_matters": "Explicit safety criticism at official hearing signals regulator readiness to impose AI-specific controls on model access and audit. BFSI orgs must prepare for mandatory safety certifications and third-party audit requirements for vendor AI use.",
-    "source": {
-      "name": "CNBC · 2026-10-05",
-      "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html"
-    }
-  },
-  {
-    "id": "2026-10-05-federal-reserve-bank-merger-approval",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-06T00:08:35Z",
-    "headline": "Federal Reserve approves bank holding company acquisition and merger with branch expansion",
-    "plain_english": "The Federal Reserve has issued an order approving a bank holding company acquisition and related merger, with permission to establish new branches, reflecting ongoing consolidation in the US banking sector.",
-    "why_it_matters": "Routine M&A approvals indicate Fed willingness to permit further consolidation; merged banks typically rationalize AI infrastructure post-close, creating procurement windows for enterprise AI vendors and integration risk for fintech partners.",
-    "source": {
-      "name": "Federal Reserve · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWUJQNkFnekhKZWZycnVzYWp0bFZlYjBTOGxnQzF4bE9xZFFWVndLSEVMTTlDRnc4ZWs4b0p0YzBKZ29sUXdLY3ZzeU55Z2VJVW5mLVZWU1dtdWlsZVdMVUVaODFibVFsLTYwRzNMM09JSGlsLW1BbTBXUkx2bTREZEt1d1ppcnlaSGc"
-    }
-  },
-  {
-    "id": "2026-10-05-cowbell-ai-risk-advisor-policyholders",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-10-05T23:01:00Z",
-    "headline": "Cowbell launches AI risk advisor for insurance policyholders",
-    "plain_english": "Cowbell, a cyber-risk specialist insurer, has deployed an AI-powered risk assessment tool for policyholders, enabling proactive threat identification and personalized mitigation recommendations within policy portals.",
-    "why_it_matters": "AI-powered risk advisors shift insurance from claims-reactive to prevention-proactive; insurers embedding LLM-driven risk coaching gain retention edge and reduced loss ratios, but face model liability if advice fails.",
-    "source": {
-      "name": "IT Brief UK · 2026-10-05",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWk5rSzY5azFFX0wydjNrWXBiMUdPNnByVk93d192aGpCcDdOUVVnVTFjdDlWTDdmeUR4N0pkWFVMdjZfZ0k3LUNBV28xcEt4WS1ZRVA5THhYYnRURzRUbWsxT1JucHJnWDNKcDhZcGxoS1NjLWMtNXFaNFZyXzMyTndSbHg"
-    }
-  },
-  {
-    "id": "2026-10-05-monarch-mbi-banking-infrastructure-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-05T23:22:35Z",
-    "headline": "Personal finance app Monarch acquires banking infrastructure provider MBI",
-    "plain_english": "Monarch Money, a personal financial-management app, has acquired MBI, a banking infrastructure vendor, to vertically integrate core banking capabilities and expand its BFSI product offering.",
-    "why_it_matters": "Fintech consolidation via infrastructure acquisition signals shift toward full-stack BFSI platforms; traditional core-banking vendors face competitive pressure from lighter, AI-native alternative stacks.",
-    "source": {
-      "name": "FinTech Futures · 2026-10-05",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMWM3bkFkMnZtZndJeHpuR2FETGYxWVNERWNLeTIzM25pNnVaUWpYTXVSeHZ3NnM5VDl6NVRCQURtdDZSU2ZnQUVySVozRlEycENJRDltbGs2eEYyVnprbWQxcDlSTUtWQV9MWmdGRkp4LWl0QXJhMnBGM0lDQmdqVS02LV9vOXBmVTFZ"
-    }
-  },
-  {
-    "id": "2026-10-06-banks-asia-chip-loans-ai-buildout",
-    "category": "insight",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-06T00:00:00Z",
-    "headline": "Banks chase high-risk chip loans as Asia's $8.2 trillion AI infrastructure buildout accelerates",
-    "plain_english": "BFSI lenders across Asia are aggressively deploying capital into semiconductor financing for AI hardware buildout, taking on concentration risk and collateral volatility amid rapid tech commodity cycles.",
-    "why_it_matters": "Bank credit concentration in AI chip loans mirrors 2008 real-estate exposure risk; if GPU/chip valuations collapse or demand softens, major APAC and global banks face sudden mark-to-market losses and capital adequacy stress.",
-    "stat_value": "$8.2T",
-    "stat_label": "Asia AI infrastructure market driving chip loan demand",
-    "source": {
-      "name": "Bloomberg · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdnRTMGN4WmF5S0w3U1VQMDY0NEhhSHhWTWhnYWE1VXU0TWRwV1BMdFowSEZMa2x2ZTdDR0NaYlhHelV1TGNMQ1kzc0NURkxPTHpVR1dHbWxKZzMtMl9aT1Q2Mkhnb2N4a1pveTZVcXk3NHVjc3RoWnBRaXZFbkVmamRZTFJvM2Q2c3F4SVBEM0tuY3RudTZLRXdsZnpYMU9UOUlkMHZ5RVl6aE1PS3AtdXZORWk"
     }
   }
 ]
