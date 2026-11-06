@@ -636,14 +636,7 @@ export default function PageClient({ initialCards, edition }) {
               <Bookmark size={15} /> Saved{" "}
               <span className="count">{saved.size}</span>
             </button>
-            <a
-              href="https://newsletter.aitechhive.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="newsletter-link"
-            >
-              The weekly edition <ArrowUpRight size={14} />
-            </a>
+
           </nav>
           {supabase &&
             (user ? (
@@ -1024,24 +1017,13 @@ export default function PageClient({ initialCards, edition }) {
                   analysis, not verified predictions.
                 </p>
               </div>
-              <a
-                className="weekly-card"
-                href="https://newsletter.aitechhive.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Mail size={22} />
-                <span className="eyebrow">THE WEEKLY EDITION</span>
-                <h3>
-                  Step back.
-                  <br />
-                  See the bigger picture.
-                </h3>
-                <p>Go deeper with the AITechHive newsletter.</p>
-                <span className="text-link">
-                  Explore the newsletter <ArrowUpRight size={16} />
-                </span>
-              </a>
+              <section className="weekly-card">
+                <Share2 size={22} />
+                <span className="eyebrow">GOOD SIGNAL TRAVELS</span>
+                <h3>Worth reading.<br />Worth sharing.</h3>
+                <p>Send this finite edition to a friend or colleague. No sign-in needed.</p>
+                <button className="text-link" onClick={shareEdition}>Share this edition <ArrowUpRight size={16} /></button>
+              </section>
             </aside>
           </div>
         </section>
