@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-06-regulation-ecb-banking-data",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-06T09:03:30.000Z",
+    "headline": "ECB publishes consolidated banking data for end-June 2026",
+    "plain_english": "European Central Bank released aggregated financial data for eurozone banks as of June 2026. Routine quarterly supervisory reporting; baseline for ECB's monitoring of balance-sheet AI exposure, concentration risk in model risk capital, and digital operational resilience.",
+    "why_it_matters": "ECB data now includes AI-related risk metrics (LLM provisioning, third-party model audit costs); banks must map AI capex and risk-weighted asset impact to this dataset for supervisory reporting.",
+    "source": {
+      "name": "European Central Bank · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOFBJUnRjWm9QTkNJcnZzOUxpOHlyWkJJaG9uWmxGdUpMUks2RXZVWVlVYUROVVRlVmVVNHpxRlpva0lHYVpTYXowN0RxNHJFY0FFQTg3OU9jNFFnOFhiaHJwYlhtNnpIbGczRWJ5azcwRXJicW5hNElRZnVYR2xjaFVkNmVreGdh?oc=5"
+    }
+  },
+  {
     "id": "2026-11-05-regulation-finra-webull-aml-4.2m",
     "category": "regulation",
     "jurisdiction": "US",
@@ -156,17 +170,27 @@
     }
   },
   {
-    "id": "2026-11-03-boe-rate-decision",
-    "category": "regulation",
-    "jurisdiction": "UK",
+    "id": "2026-11-06-deployment-cashfree-ai-agent",
+    "category": "deployment",
+    "jurisdiction": "IN",
     "severity": "med",
-    "published_at": "2026-11-03T08:59:47Z",
-    "headline": "Bank of England expected to raise key interest rate in line with global central bank cycle",
-    "plain_english": "The Bank of England is anticipated to raise its base rate as part of a synchronized global tightening cycle. Rate hikes increase funding costs for banks and widen net interest margins, shifting investment priority toward AI-driven cost reduction and customer retention tools.",
-    "why_it_matters": "Higher rates compress bank profitability; competitive pressure accelerates AI adoption in back-office automation, underwriting, and customer service to protect margins and market share.",
+    "published_at": "2026-11-06T06:45:30.000Z",
+    "headline": "Cashfree launches AI agent for payments in India",
+    "plain_english": "Fintech Cashfree deployed an AI agent capability into production for payment processing in India. Agents are AI systems that can take autonomous actions — make decisions, call APIs, retry failed tasks — without human intervention per step.",
+    "why_it_matters": "First-mover advantage in autonomous payment agents for Indian BFSI; signals shift from manual payment reconciliation toward fully agentic workflows in emerging markets.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous software that perceives its environment, makes decisions, and takes actions (API calls, retries, escalations) without waiting for human approval per step."
+      }
+    ],
     "source": {
-      "name": "Wall Street Journal · 2026-11-03",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSUhEZEpVdlkxUG5nVXB4SGZYRlFWMV9SZkVUNFdzM25uRk43UUY5NEVLWlJyUlZKOVdHYmNIVk5zcmZHY2tYNDJtaGtUREFSeEVxRmxoTDdhMVlDOGh0eGtiekpLY1phLWl3M0JRZHFYbGpNRFR1R2hMYnk2bEF4bHJsY1lVMlYxNFV5ZnNDSG1hUm43cU5xZzBoT0lia0o4"
+      "name": "Urban Acres · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQzByZlR5WEZTYWtwYkU0bTNzN29iOHFkc2o2NTB1Y3gwMnJ5djF2bGN0NHBGXzktM1NYQ2JZLW4tVUVkMkdpLVczSWYwWUlNWGJjWGFWUENFdnFPb2dFOWJkeVJZdTE4WjU2UEFGUHRpdkxZQm5BbGVLWG0yWkFkVWZQRQ"
+    },
+    "scale": {
+      "metric": "markets",
+      "value": "India"
     }
   },
   {
@@ -324,24 +348,26 @@
     }
   },
   {
-    "id": "2026-11-02-premialab-blackrock-aladdin",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-02T09:00:00.000Z",
-    "headline": "BlackRock's Aladdin integrates with Premialab to embed AI-driven quantitative investing at scale across institutions",
-    "plain_english": "Premialab and BlackRock's Aladdin platform joined forces to accelerate Qualified Investor Status (QIS) adoption. Aladdin—BlackRock's flagship risk and portfolio management AI engine—now embedded in third-party quant workflows. ~$400B+ in AUM already using Aladdin; integration expands AI-driven trade execution beyond BlackRock's direct clients.",
-    "why_it_matters": "Signals shift from buy-side doing custom AI to consuming vendor-baked intelligence. BFSI's algorithmic trading risk concentrates in fewer AI systems; regulatory scrutiny on Aladdin-driven flash-crash scenarios will intensify.",
+    "id": "2026-11-06-vendor-palo-alto-clutch-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-06T06:28:32.000Z",
+    "headline": "Palo Alto Networks in talks to acquire AI agent security startup Clutch for $500M",
+    "plain_english": "Palo Alto Networks is negotiating to buy Clutch, a startup that secures AI agents (autonomous software systems). Clutch was last valued at $85M; this 5.9x jump signals intense M&A pressure to add agentic-AI security to legacy cybersecurity portfolios.",
+    "why_it_matters": "BFSI cybersecurity vendors racing to bolt agent-security onto platforms; Palo Alto's move sets pricing expectations for AI-agent defense, a must-have for regulated financial workflows.",
     "jargon": [
       {
-        "term": "Aladdin",
-        "def": "BlackRock's AI platform for portfolio risk, analytics, and trade execution—used by most major asset managers."
+        "term": "AI agent security",
+        "def": "Controls to monitor and constrain autonomous AI systems' actions, prevent unauthorized API calls, detect prompt injection, audit decision logs."
       }
     ],
     "source": {
-      "name": "Yahoo Finance · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjlIcTJWa1R1R0gxM2ZSQ05FM3lqQ1o0dHlTRUtXLUVMWlJjVmdFZDhSU3BDN29hVHhfSk8tUW4yYlJDcklBRHVMSWxObG00NE5qeWJtV0N1Q0dCdm41SzNSN3RYMGMyQ1pFc3FpSzNlTHdtdEVCSHNnbHFlcnFoVW9UNDVUemNvWjZnbGI0MkkzbEg0QnhOQjEwbHdhdjlwOE8zQk9JMzhOQQ"
-    }
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
+    },
+    "amount": "$500M",
+    "round": "Acquisition (in talks)"
   },
   {
     "id": "2026-11-05-haido-revolut-wealthtech",
@@ -484,17 +510,17 @@
     "amount": "$304M"
   },
   {
-    "id": "2026-10-30-ollie-shutdown",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-30T22:56:13Z",
-    "headline": "Privacy-focused AI assistant Ollie shuts down",
-    "plain_english": "Ollie, a privacy-centric AI assistant startup, is closing in a week due to market saturation from incumbent AI assistants. Market consolidation signal.",
-    "why_it_matters": "Privacy-first AI market segment is not viable as OpenAI, Google, Anthropic commoditize LLMs. BFSI vendors chasing privacy differentiation may face similar runway pressure—expect consolidation of niche AI vendors into larger stacks.",
+    "id": "2026-11-06-shift-emirates-nbd-blackrock-funds",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-06T06:00:20.000Z",
+    "headline": "Emirates NBD and BlackRock launch two funds at partnership anniversary",
+    "plain_english": "Emirates NBD and BlackRock announced two new funds at their partnership milestone. Signals deepening alliance between major Middle Eastern bank and leading asset manager in digital investment products, likely incorporating AI-driven portfolio optimization and risk models.",
+    "why_it_matters": "Tier-1 global asset manager embedding AI workflows into regional BFSI infrastructure; model replicable across GCC and Asia-Pacific, accelerating AI adoption at institutional scale.",
     "source": {
-      "name": "TechCrunch · 2026-10-30",
-      "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+      "name": "The Fintech Times · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPblBISVdKT2NoVVVYN25vX1R1eU4zMEJ0bVZ1YTNDNWw2S1EwUjB5NklPaHBLV1NCUlNVdVkyOTJ4eHJodFF3RnBjWVJmU3lRNVdtdVhTVVRnV1B6bE1OU2ZWeXZzWUhkcVkyYXdzdFdnZ2tXMW93MkdHWTZUaWpyWHZYQlJqQWp4MGZfdl9lV25pcEdPRFUwcW1NVHI3NGxv"
     }
   },
   {
@@ -642,21 +668,6 @@
     "source": {
       "name": "CNBC · 2026-11-02",
       "url": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html"
-    }
-  },
-  {
-    "id": "2026-11-02-blackstone-wall-street-ai-chip-deal",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-02T21:27:46Z",
-    "headline": "Blackstone and Wall Street banks back $63 billion AI chip infrastructure deal",
-    "plain_english": "Blackstone and major Wall Street banks are co-investing in a $63B AI chip and infrastructure deal, pooling capital to secure strategic AI compute capacity. Reflects institutional shift toward direct infrastructure ownership over pure vendor relationships.",
-    "why_it_matters": "Major financial institutions are bypassing traditional vendor lock-in by acquiring infrastructure stakes; signals emergence of BFSI-led consortiums for AI compute—may reshape cloud vendor economics and regulatory scrutiny of concentrated AI access.",
-    "amount": "$63B",
-    "source": {
-      "name": "Business Chief · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV3hVWkJydmRiVHM2bGpxQWFoY0xiQndjV242a0Q0WlV1MG5ucTlweC0zcENyMkF2YkpNSFpUdjQtMFc3aXNOemQzOHo1U3VHR0ZpTUR1VDA5MXdOZ01CaGd6WG1YU2lKckJ2ZC02RkZMaEZoTE5mYkRLUXg0TEZPZmJrM2F1emdkVjdzdVhzM3BiOUk"
     }
   },
   {
@@ -904,6 +915,28 @@
     }
   },
   {
+    "id": "2026-11-06-insight-fatf-scam-disruption",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-06T09:00:00.000Z",
+    "headline": "FATF identifies practical approaches to disrupt international scam compounds",
+    "plain_english": "Financial Action Task Force (FATF) published guidance on disrupting organized scam operations across borders. Fraud rates have accelerated due to digital adoption and pandemic-era online exposure; FATF now maps tactical interventions for banks and law enforcement.",
+    "why_it_matters": "Regulatory signal that banks must integrate real-time scam-network detection into transaction monitoring; AI-powered graph analytics now table-stakes for AML/CFT compliance across G20 and beyond.",
+    "jargon": [
+      {
+        "term": "FATF",
+        "def": "Financial Action Task Force — intergovernmental body setting AML/CFT (anti-money-laundering / counter-terrorist-financing) standards binding ~200 jurisdictions."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-11-06",
+      "url": "https://www.finextra.com/newsarticle/48714/fatf-report-identifies-practical-approaches-for-disrupting-scam-compounds?utm_medium=rssfinextra&utm_source=finextrafeed"
+    },
+    "stat_value": "Accelerating",
+    "stat_label": "Rate of fraud growth in recent years"
+  },
+  {
     "id": "2026-11-05-insight-goldman-engineers-partner-elevation",
     "category": "insight",
     "jurisdiction": "US",
@@ -1048,19 +1081,23 @@
     }
   },
   {
-    "id": "2026-11-01-binance-6.3bn-hack-withdrawals",
-    "category": "insight",
+    "id": "2026-11-06-frontier-ai-security-deepfakes",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-11-01T09:03:47Z",
-    "headline": "Binance restores withdrawals after $6.3bn hack; covers 90 percent of stolen assets",
-    "plain_english": "Binance resumed phased customer withdrawals after a $6.3 billion security breach. The exchange has backed 90% of affected user assets, likely through insurance, reserves, and corporate guarantees. This is the largest crypto exchange hack on record.",
-    "why_it_matters": "Sets precedent for enterprise fintech custody liability and asset-coverage disclosure post-breach. BFSI risk officers now have a real case study on reputational recovery timelines and insurance adequacy thresholds for crypto-adjacent operations.",
-    "stat_value": "$6.3B",
-    "stat_label": "total assets compromised in Binance hack",
+    "published_at": "2026-11-06T05:48:10.000Z",
+    "headline": "Google, OpenAI, NVIDIA, and FaceOff battle for deepfake detection and digital trust",
+    "plain_english": "Major AI labs and startups are racing to control deepfake detection standards and verification infrastructure. Google, OpenAI, NVIDIA, and a startup called FaceOff are competing to set the market for AI-generated-content authentication and provenance tracking.",
+    "why_it_matters": "BFSI must adopt verified deepfake-detection models for KYC/AML (know-your-customer video verification). Winner of this race will define compliance cost and false-positive rates for banks globally.",
+    "jargon": [
+      {
+        "term": "Deepfake detection",
+        "def": "AI models that classify whether video/audio is artificially generated; critical for KYC video verification to prevent synthetic identity fraud."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-11-01",
-      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
+      "name": "varindia · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdGRVVHJnMU9ZV1Rwc1l3YzBSVFZsbUlwME1ubk5HU0xKRXNJa0FpMXo4T2hJX2JlNUltcHd2ODRYOU1DdU1WMHFjWTREOTRPWVBzaDlVbzRfUFFTQmJlVm5Sczk3SXpQSmItN2tTM3ZpOVZVVDRwMl8xTkJIb01HT0I4ak9RdzJqSjdERXQxNEZ0M2htTjJNcUZkSVZRUTZUT1FWSU9PSQ"
     }
   },
   {
@@ -1207,20 +1244,6 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw"
     },
     "amount": "<$15B"
-  },
-  {
-    "id": "2026-11-01-ai-investor-insurance-market-bet-frontier",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-01T15:23:00Z",
-    "headline": "AI investors racing to buy insurance on largest market bet in history",
-    "plain_english": "Investors are scrambling to hedge exposure to massive AI infrastructure and model bets via insurance products, suggesting widespread concern about the sustainability of the current AI investment bubble.",
-    "why_it_matters": "If AI investment bets are being hedged this aggressively, downside risk is priced into market. BFSI risk officers should expect volatility in AI vendor equity values and potential sudden pivot in availability/pricing of AI services.",
-    "source": {
-      "name": "Wall Street Journal · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb0JSYUVTbWFDbVNEek5LbEFJckNNWEQ5THF0R1VVbnk3RHU5Q3RUeV9LT19Bdm9QZXBBMkR2cUNoVHhuN1dUcGFabnZoVmd0eUl6dHhrbGdYNHJRUnBGZF9QRTZZTFZXNGg1NlZRTmoxS1NsRVRWVzU2UmRyeFhReE13UnZBRE95UVVEN2pkaVZ6aWVic3dmVDBrQWFuZ1Q2QXkzdjRwUzJIVzJJVVBqMm1qTDFLZ1llbXdtcjdn"
-    }
   },
   {
     "id": "2026-11-04-google-ai-overviews-schools",
@@ -1443,6 +1466,20 @@
     }
   },
   {
+    "id": "2026-11-06-trending-ai-market-sell-off",
+    "category": "trending",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-06T06:47:27.000Z",
+    "headline": "Japan Nikkei breaks below 60,000 amid global AI investment pullback fears",
+    "plain_english": "Markets in Japan and Asia fell sharply on concerns that AI investment may be cooling or consolidating. The Nikkei index slid below the 60,000 threshold — a key technical level — as traders reassess valuations of AI-chip makers, data-center operators, and AI-focused tech stocks globally. Democratic electoral gains in the US also fueled investor repositioning.",
+    "why_it_matters": "BFSI AI budgets may face scrutiny if venture and public-market appetite cools; banks holding or planning large AI infrastructure capex should stress-test ROI assumptions. Signals potential slowdown in frontier-model licensing demand.",
+    "source": {
+      "name": "Bloomberg · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVW5hQzNwU0VSZVBHUnhVeTZ3RjVZUk1Xd0JsUnN2aG5FVlY3UkZ0emEtT0p5dkVYUXlmUmpOYXZ5YkRpdGhfdGJ0MjVNdmVYYUx4S3JPQ0tIUU1WUjlmdUNFVTdBVXMzT0R5ekY4TlRCdDFKZkpXS2lvYXozZ0lKeEZMMnVoU0dMTEZkN1VqLUhLYWtLeGJNeDJmZkl3ZFQxVm04MllrMW5UbENIMkE"
+    }
+  },
+  {
     "id": "2026-11-05-trending-ai-market-correction-nov5",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1580,6 +1617,99 @@
     "source": {
       "name": "CNBC · 2026-10-28",
       "url": "https://www.cnbc.com/2026/10/28/investors-brace-for-a-hawkish-hold-and-tech-on-tap.html"
+    }
+  },
+  {
+    "id": "2026-11-03-boe-rate-decision",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-03T08:59:47Z",
+    "headline": "Bank of England expected to raise key interest rate in line with global central bank cycle",
+    "plain_english": "The Bank of England is anticipated to raise its base rate as part of a synchronized global tightening cycle. Rate hikes increase funding costs for banks and widen net interest margins, shifting investment priority toward AI-driven cost reduction and customer retention tools.",
+    "why_it_matters": "Higher rates compress bank profitability; competitive pressure accelerates AI adoption in back-office automation, underwriting, and customer service to protect margins and market share.",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-03",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSUhEZEpVdlkxUG5nVXB4SGZYRlFWMV9SZkVUNFdzM25uRk43UUY5NEVLWlJyUlZKOVdHYmNIVk5zcmZHY2tYNDJtaGtUREFSeEVxRmxoTDdhMVlDOGh0eGtiekpLY1phLWl3M0JRZHFYbGpNRFR1R2hMYnk2bEF4bHJsY1lVMlYxNFV5ZnNDSG1hUm43cU5xZzBoT0lia0o4"
+    }
+  },
+  {
+    "id": "2026-11-02-premialab-blackrock-aladdin",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-02T09:00:00.000Z",
+    "headline": "BlackRock's Aladdin integrates with Premialab to embed AI-driven quantitative investing at scale across institutions",
+    "plain_english": "Premialab and BlackRock's Aladdin platform joined forces to accelerate Qualified Investor Status (QIS) adoption. Aladdin—BlackRock's flagship risk and portfolio management AI engine—now embedded in third-party quant workflows. ~$400B+ in AUM already using Aladdin; integration expands AI-driven trade execution beyond BlackRock's direct clients.",
+    "why_it_matters": "Signals shift from buy-side doing custom AI to consuming vendor-baked intelligence. BFSI's algorithmic trading risk concentrates in fewer AI systems; regulatory scrutiny on Aladdin-driven flash-crash scenarios will intensify.",
+    "jargon": [
+      {
+        "term": "Aladdin",
+        "def": "BlackRock's AI platform for portfolio risk, analytics, and trade execution—used by most major asset managers."
+      }
+    ],
+    "source": {
+      "name": "Yahoo Finance · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjlIcTJWa1R1R0gxM2ZSQ05FM3lqQ1o0dHlTRUtXLUVMWlJjVmdFZDhSU3BDN29hVHhfSk8tUW4yYlJDcklBRHVMSWxObG00NE5qeWJtV0N1Q0dCdm41SzNSN3RYMGMyQ1pFc3FpSzNlTHdtdEVCSHNnbHFlcnFoVW9UNDVUemNvWjZnbGI0MkkzbEg0QnhOQjEwbHdhdjlwOE8zQk9JMzhOQQ"
+    }
+  },
+  {
+    "id": "2026-10-30-ollie-shutdown",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-10-30T22:56:13Z",
+    "headline": "Privacy-focused AI assistant Ollie shuts down",
+    "plain_english": "Ollie, a privacy-centric AI assistant startup, is closing in a week due to market saturation from incumbent AI assistants. Market consolidation signal.",
+    "why_it_matters": "Privacy-first AI market segment is not viable as OpenAI, Google, Anthropic commoditize LLMs. BFSI vendors chasing privacy differentiation may face similar runway pressure—expect consolidation of niche AI vendors into larger stacks.",
+    "source": {
+      "name": "TechCrunch · 2026-10-30",
+      "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+    }
+  },
+  {
+    "id": "2026-11-02-blackstone-wall-street-ai-chip-deal",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-02T21:27:46Z",
+    "headline": "Blackstone and Wall Street banks back $63 billion AI chip infrastructure deal",
+    "plain_english": "Blackstone and major Wall Street banks are co-investing in a $63B AI chip and infrastructure deal, pooling capital to secure strategic AI compute capacity. Reflects institutional shift toward direct infrastructure ownership over pure vendor relationships.",
+    "why_it_matters": "Major financial institutions are bypassing traditional vendor lock-in by acquiring infrastructure stakes; signals emergence of BFSI-led consortiums for AI compute—may reshape cloud vendor economics and regulatory scrutiny of concentrated AI access.",
+    "amount": "$63B",
+    "source": {
+      "name": "Business Chief · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV3hVWkJydmRiVHM2bGpxQWFoY0xiQndjV242a0Q0WlV1MG5ucTlweC0zcENyMkF2YkpNSFpUdjQtMFc3aXNOemQzOHo1U3VHR0ZpTUR1VDA5MXdOZ01CaGd6WG1YU2lKckJ2ZC02RkZMaEZoTE5mYkRLUXg0TEZPZmJrM2F1emdkVjdzdVhzM3BiOUk"
+    }
+  },
+  {
+    "id": "2026-11-01-binance-6.3bn-hack-withdrawals",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-01T09:03:47Z",
+    "headline": "Binance restores withdrawals after $6.3bn hack; covers 90 percent of stolen assets",
+    "plain_english": "Binance resumed phased customer withdrawals after a $6.3 billion security breach. The exchange has backed 90% of affected user assets, likely through insurance, reserves, and corporate guarantees. This is the largest crypto exchange hack on record.",
+    "why_it_matters": "Sets precedent for enterprise fintech custody liability and asset-coverage disclosure post-breach. BFSI risk officers now have a real case study on reputational recovery timelines and insurance adequacy thresholds for crypto-adjacent operations.",
+    "stat_value": "$6.3B",
+    "stat_label": "total assets compromised in Binance hack",
+    "source": {
+      "name": "CNBC · 2026-11-01",
+      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html"
+    }
+  },
+  {
+    "id": "2026-11-01-ai-investor-insurance-market-bet-frontier",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-01T15:23:00Z",
+    "headline": "AI investors racing to buy insurance on largest market bet in history",
+    "plain_english": "Investors are scrambling to hedge exposure to massive AI infrastructure and model bets via insurance products, suggesting widespread concern about the sustainability of the current AI investment bubble.",
+    "why_it_matters": "If AI investment bets are being hedged this aggressively, downside risk is priced into market. BFSI risk officers should expect volatility in AI vendor equity values and potential sudden pivot in availability/pricing of AI services.",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb0JSYUVTbWFDbVNEek5LbEFJckNNWEQ5THF0R1VVbnk3RHU5Q3RUeV9LT19Bdm9QZXBBMkR2cUNoVHhuN1dUcGFabnZoVmd0eUl6dHhrbGdYNHJRUnBGZF9QRTZZTFZXNGg1NlZRTmoxS1NsRVRWVzU2UmRyeFhReE13UnZBRE95UVVEN2pkaVZ6aWVic3dmVDBrQWFuZ1Q2QXkzdjRwUzJIVzJJVVBqMm1qTDFLZ1llbXdtcjdn"
     }
   },
   {
@@ -5171,26 +5301,6 @@
     }
   },
   {
-    "id": "2026-10-07-learner-rag-retrieval",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-07T00:00:00.000Z",
-    "headline": "RAG: how banks ground AI models in proprietary data without retraining",
-    "plain_english": "Retrieval-Augmented Generation (RAG) lets AI models fetch relevant data from your bank's private databases at query time, then answer using that live info—without retraining the model. Think: LLM + search engine for compliance docs.",
-    "why_it_matters": "RAG is why JPMorgan and other banks can deploy ChatGPT-like tools on confidential data safely. It's the practical bridge between off-the-shelf foundation models and locked-down enterprise knowledge—critical for risk, compliance, and anti-money-laundering workflows.",
-    "jargon": [
-      {
-        "term": "RAG (Retrieval-Augmented Generation)",
-        "def": "Technique that lets an AI model fetch and reference real-time data from your systems before answering—makes responses accurate and up-to-date without model retraining."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Learner · 2026-10-07",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-10-21-ibm-super-intelligence-client-traction",
     "category": "deployment",
     "jurisdiction": "US",
@@ -6481,21 +6591,6 @@
     }
   },
   {
-    "id": "2026-10-07-spacex-apollo-nvidia-chips",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-06T22:37:00.000Z",
-    "headline": "SpaceX seeks $40 billion to fund Nvidia chip purchases, led by Apollo",
-    "plain_english": "SpaceX is raising $40 billion in financing led by Apollo to acquire Nvidia GPUs for AI/compute infrastructure. The round signals extreme capital intensity of frontier AI model training and deployment at scale.",
-    "why_it_matters": "Underscores chip-supply crunch and cost spiral: even well-capitalized private companies burning billions on GPU acquisition. Constrains banking/fintech AI budgets indirectly—raises cost-of-capital for compute.",
-    "amount": "$40B",
-    "source": {
-      "name": "Financial Times · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdThuRWl1b3NtaUE5aFhSeXVUY0xfYjhBZXJJaG1VWUR0QXBSQ2txLTBrbTlKNm9KQmtqcG95Y3BLNlRQZF96a000TS1xaGlyQUVUaEdqNXZOTzZwdC1IU001ZmM5a191dGNRYjNCWXkwcEk0cjVhams2WUc5aGMxek13b1U?oc=5"
-    }
-  },
-  {
     "id": "2026-10-14-regulation-occ-debanking-report",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7717,22 +7812,6 @@
     }
   },
   {
-    "id": "2026-10-07-comparables-ai-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-10-07T00:01:00.000Z",
-    "headline": "M&A intelligence startup Comparables.ai raises $6M seed",
-    "plain_english": "Finnish fintech Comparables.ai secured $6 million seed funding to scale its mergers-and-acquisitions intelligence platform. The platform uses data analytics to support deal sourcing and valuation for investment banks and PE firms.",
-    "why_it_matters": "Signals growing appetite for AI-driven M&A tooling; reduces friction in deal discovery, enabling smaller investment teams to compete on speed and data depth—structural shift in competitive dynamics.",
-    "amount": "$6M",
-    "round": "Seed",
-    "source": {
-      "name": "Finextra · 2026-10-07",
-      "url": "https://www.finextra.com/newsarticle/48544/ma-intelligence-platform-comparablesai-raises-6m?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-10-09-spacex-starlink-telecom-disruption",
     "category": "shift",
     "jurisdiction": "US",
@@ -7837,22 +7916,6 @@
     "source": {
       "name": "Finextra · 2026-10-08",
       "url": "https://www.finextra.com/newsarticle/48555/standard-chartered-extends-digital-asset-custody-to-singapore"
-    }
-  },
-  {
-    "id": "2026-10-07-melius-fintech-20m",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-06T22:34:03.000Z",
-    "headline": "Ex-Ramp engineers raise $20M for marketing automation platform Melius",
-    "plain_english": "Engineers from fintech Ramp launched Melius and raised $20 million to build AI-driven tools for generating marketing creative and campaigns. The startup pivoted from ad-spend optimization to focus on creative asset generation.",
-    "why_it_matters": "Illustrates how AI tooling is fragmenting marketing/sales workflows—native generative AI for creative reduces reliance on external agencies, compresses labor costs in martech, relevant to bank/insurer customer acquisition.",
-    "amount": "$20M",
-    "round": "Series A/Growth",
-    "source": {
-      "name": "TechCrunch · 2026-10-06",
-      "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/"
     }
   },
   {
@@ -8137,20 +8200,6 @@
     }
   },
   {
-    "id": "2026-10-07-jpmorgan-ai-index-lead",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-07T00:01:00.000Z",
-    "headline": "JPMorgan Chase extends lead as world's most AI-advanced bank",
-    "plain_english": "JPMorgan Chase topped the Evident AI Index again, reinforcing its position as the global banking leader in AI adoption and deployment. The index measures institutional AI maturity across major lenders.",
-    "why_it_matters": "Signals that mega-bank AI advantage is widening, not converging—competitors face structural catch-up costs in talent, infrastructure, and governance. Sets expectation-bar higher for peer disclosure.",
-    "source": {
-      "name": "Finextra · 2026-10-07",
-      "url": "https://www.finextra.com/newsarticle/48542/jpmorgan-chase-extends-lead-as-worlds-most-ai-advanced-bank?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-10-07-insight-voter-sentiment-ai-risk",
     "category": "insight",
     "jurisdiction": "US",
@@ -8231,24 +8280,6 @@
     }
   },
   {
-    "id": "2026-10-07-bdo-unibank-finastra-payments",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-07T01:00:00.000Z",
-    "headline": "BDO Unibank deploys Finastra platform for next-generation payments",
-    "plain_english": "Philippines-based BDO Unibank integrated Finastra's payments platform to modernize transaction processing. Finastra is a leading core banking software vendor for enterprise financial institutions.",
-    "why_it_matters": "Demonstrates regional bank appetite for vendor-led AI-enriched payments stacks; validates Finastra's market position in APAC, a growth region for digital banking infrastructure.",
-    "scale": {
-      "metric": "customers",
-      "value": "14M+"
-    },
-    "source": {
-      "name": "PR Newswire UK · 2026-10-07",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObFZqem1jS1BzQzRRekdaS0kwajJ6LXJPZW1KTDNYc2V4ampqYk5ES2xxU0FpVXhiazJDci1BWndDUjF2VWxYOXFva3JuOE4wandhWDh4VE9wY3pmSHVGX3FieXQ0c2Y3Yk40cUhlTHk5aExZRVZGaEx2Q3h6elpqejhXWFptVUVMZVVKTmd2akxocHNIMldsdTA4Q3p6aVJkUEhLdkdDTG1IYnNvajJzZmtzQkVjc3lTY1puc0VOREg?oc=5"
-    }
-  },
-  {
     "id": "2026-10-08-openai-safety-researchers-letter",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8282,22 +8313,6 @@
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-cant-fire-you-in-california-without-a-human/"
     },
     "effective_date": "2026-10-07"
-  },
-  {
-    "id": "2026-10-07-arthur-hayes-ai-waste",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-07T00:49:34.000Z",
-    "headline": "Ex-BitMEX CEO Hayes warns trillions wasted on AI infrastructure overbuildup",
-    "plain_english": "Arthur Hayes argues the AI boom is creating excess compute capacity and overspending on infrastructure; he's betting on a market crash and subsequent liquidity rescue, favoring crypto assets post-bailout.",
-    "why_it_matters": "Reflects growing skepticism within finance on AI ROI and capex sustainability. If correction occurs, fintech/banking AI budgets will contract sharply—hiring freezes, vendor consolidation, repricing of legacy deals.",
-    "stat_value": "Trillions",
-    "stat_label": "estimated wasted on AI boom infrastructure",
-    "source": {
-      "name": "CNBC · 2026-10-07",
-      "url": "https://www.cnbc.com/2026/10/07/flop-ai-boom-arthur-hayes-bitcoin-bitmex-coinferencex-.html"
-    }
   },
   {
     "id": "2026-10-08-crypto-quantum-threat-ai",
@@ -8345,20 +8360,6 @@
     "source": {
       "name": "CNBC Tech/Finance · 2026-10-07",
       "url": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html"
-    }
-  },
-  {
-    "id": "2026-10-06-cramer-ai-blue-chip",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-06T22:13:04.000Z",
-    "headline": "Cramer identifies blue-chip tech stocks as prime AI boom beneficiaries",
-    "plain_english": "CNBC's Jim Cramer highlighted established tech giants with diversified revenue streams as safer AI-boom plays than pure-play startups. Banks and investors watching for validated business models over hype.",
-    "why_it_matters": "Reflects maturation narrative: mega-cap tech (Microsoft, Google, Meta) accumulate AI moat faster than challengers. For BFSI buyers: validates picking established vendors over early-stage AI startups—reduces adoption risk.",
-    "source": {
-      "name": "CNBC · 2026-10-06",
-      "url": "https://www.cnbc.com/2026/10/06/jim-cramer-ai-stocks.html"
     }
   },
   {
@@ -8410,20 +8411,6 @@
     }
   },
   {
-    "id": "2026-10-06-qilin-ransomware-arrest",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-06T23:16:50.000Z",
-    "headline": "Japan arrests suspected member of Qilin ransomware-as-a-service syndicate",
-    "plain_english": "Japanese law enforcement apprehended a fugitive suspect linked to the Qilin ransomware gang, a prolific RaaS outfit that has targeted banks, insurers, and fintech firms globally. Qilin is one of the most active extortion groups.",
-    "why_it_matters": "Signals law enforcement coordination on ransomware. For BFSI: underscores operational risk from RaaS targeting. Raises pressure on boards to invest in detection, response, and cyber-insurance—budgets diverted from AI transformation.",
-    "source": {
-      "name": "朝日新聞 · 2026-10-06",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ubXB5R1NjQm5xWHI2MmlnNG94X3dUa0lkTktkZTNHWGw1WkRsX1ROblJydnIzcjZoMFY0UTBOSzZMUUdVbjdab3VkSGQ2RHBWUFdsWXUyXzdTYktFLXc?oc=5"
-    }
-  },
-  {
     "id": "2026-10-07-frontier-spacex-nvidia-gpu-financing",
     "category": "frontier",
     "jurisdiction": "US",
@@ -8450,20 +8437,6 @@
     "source": {
       "name": "CNBC · 2026-10-07",
       "url": "https://www.cnbc.com/2026/10/07/google-finland-data-center-halt.html"
-    }
-  },
-  {
-    "id": "2026-10-07-nvidia-ath",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-07T00:17:32.000Z",
-    "headline": "Nvidia hits all-time high on AI semiconductor leadership",
-    "plain_english": "Nvidia's stock reached a new peak, cementing its dominance in AI chip supply. The company controls >90% of the high-end GPU market for model training and enterprise inference—a structural moat.",
-    "why_it_matters": "Every major bank's AI capex flows through Nvidia. Stock strength signals market confidence in sustained AI infrastructure spending; also indicates vendor lock-in risk—switching costs for alternative chips remain prohibitive.",
-    "source": {
-      "name": "매일경제 · 2026-10-07",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBR0dWbm93X2hJQ1k3d3dIbUJSQmdhX3ltOFlJdndCMXBHUC1WU2dlaE5lNS11MktaV2RobU1JU3ZpNUFISWZfaTQ3OVotUUU?oc=5"
     }
   }
 ]
