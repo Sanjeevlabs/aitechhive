@@ -1,5 +1,40 @@
 [
   {
+    "id": "2026-11-06-regulation-us-ai-bills-democrats",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-06T19:20:55Z",
+    "headline": "Democrats plan sweeping AI regulatory push as they gain control of Congress",
+    "plain_english": "Democrats, gaining significant seats in midterm elections, are preparing a flood of AI bills focusing on data center restrictions, algorithmic transparency, and worker protections. Ballot measures show 40 of 41 data center development votes favored stricter limits.",
+    "why_it_matters": "BFSI firms will face tighter compliance on data center sprawl and AI model governance starting 2027. Expect mandatory audits, geographic constraints, and potential caps on computing resource allocation.",
+    "source": {
+      "name": "Reuters · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW1qclJEWjVTQTNNU0hWWndTVFlOWFpNY1RqQ1I5Z0F2anRxTE5IQnlTTDhjeU9uUGV2anlLaVBfMFdPc0k5eDJVTVk4VTlVbnVZX0VwVnBEMnhHX19fTGRvX2NrQnNJeGN5MzBBaXBLb3d3Y25JdHpjSXFQMENoa01vNk0yLXVLRVBGZjlHLVFuUmI0QWp5aFBBRzRUSDdNMkpCQ1lJVExIei0zVFFiY0x2eVBPcFJ3d2NCeGN6REF0dw"
+    },
+    "effective_date": "2027-01-15"
+  },
+  {
+    "id": "2026-11-06-regulation-data-center-limits-ballot",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-06T18:00:00Z",
+    "headline": "US voters reject data center expansion in 40 of 41 ballot measures",
+    "plain_english": "On November 5, 2026, voters across US states approved restrictions on new data center development in 40 ballot measures, with only one failing. Measures target energy use, water consumption, and infrastructure strain tied to AI compute buildout.",
+    "why_it_matters": "BFSI cloud infrastructure costs will rise and deployment timelines lengthen. Banks planning AI data center co-location or hybrid setups must budget for permitting delays, environmental review layers, and potential relocation costs.",
+    "jargon": [
+      {
+        "term": "Data center sprawl",
+        "def": "Rapid, distributed buildout of compute facilities; voters now favor localized limits on new sites."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/"
+    }
+  },
+  {
     "id": "2026-11-06-regulation-ecb-banking-data",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -136,37 +171,37 @@
     }
   },
   {
-    "id": "2026-11-03-mas-future-finance-ai",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-11-03T09:46:01Z",
-    "headline": "MAS launches Future of Finance Institute to guide AI in banking and capital markets",
-    "plain_english": "Singapore's Monetary Authority established a new research institute focused on AI adoption in finance. The institute will set policy frameworks and best practices for responsible AI deployment across banking, insurance, and markets—signaling regional leadership on AI governance.",
-    "why_it_matters": "APAC banks will face harmonized AI compliance expectations; early adoption of MAS frameworks could become de facto standard for Southeast Asia, Asia-Pacific operations.",
+    "id": "2026-11-06-deployment-microsoft-neocloud-consolidation",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-06T18:40:58Z",
+    "headline": "Microsoft consolidates AI infrastructure, reducing neocloud partnerships and favoring in-house data centers",
+    "plain_english": "Microsoft is winding down relationships with multiple neocloud partners, narrowing its supplier base and shifting focus to company-operated data centers. Move signals strain in outsourced AI infrastructure and strategic retrenchment.",
+    "why_it_matters": "BFSI firms relying on Microsoft's outsourced neocloud partners for AI workloads face potential service migration pressure. Expect consolidation costs, SLA renegotiation, and potential capex reallocation to Azure native offerings.",
     "jargon": [
       {
-        "term": "AI governance framework",
-        "def": "Regulatory rules defining how financial firms test, deploy, and monitor AI systems to prevent bias, data breaches, and model failure."
+        "term": "Neocloud",
+        "def": "Third-party data center operator partnered with hyperscalers to run distributed AI compute; Microsoft now favors owned infrastructure."
       }
     ],
     "source": {
-      "name": "Monetary Authority of Singapore · 2026-11-03",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeFJ4SXl0QldubkQ3bHZrdTRtUkY3UFoyRkhIY0VuSFdWU2piaHJ3M210UVFnNlkwczdPX28yZUtwSnUwQ3B5ZnlQTlc3elZyMkZzbmowampxY2p2QmRCZHY4THpDS0dmMmdQUlR2RzduS01ZcktOckRrUlVwa2hid0VDVXJCcGY3RFBjS0Z3b29La0FNS053TEhpNkpLWXlWbGduZFA1U3NpVDJOY0JDYzg4Q21ORlJfdDFaRkx2cnNSdw"
+      "name": "CNBC · 2026-11-06",
+      "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
     }
   },
   {
-    "id": "2026-11-03-fca-car-finance-settlement",
-    "category": "regulation",
-    "jurisdiction": "UK",
+    "id": "2026-11-06-deployment-openai-data-center-commitment",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-11-03T09:00:59Z",
-    "headline": "FCA sets settlement framework and expectations for car finance firms",
-    "plain_english": "UK's Financial Conduct Authority released guidance on how firms must structure settlement offers to customers harmed by past unfair lending practices. The framework sets uniform compensation methodologies and audit requirements to prevent variation and disputes.",
-    "why_it_matters": "Establishes template for mass-remedy execution; firms deploying AI to accelerate settlement processing (claim intake, calculation, payout automation) can reduce legal and operational drag.",
+    "published_at": "2026-11-06T17:24:48Z",
+    "headline": "OpenAI CFO reaffirms data center investment despite midterm data center restrictions",
+    "plain_english": "OpenAI's CFO told CNBC the firm will continue aggressive data center expansion despite voter backlash. Statement signals commitment to frontier model training even as states impose new limits on facility permitting.",
+    "why_it_matters": "OpenAI's defiance of regulation tightening suggests capital pressure to keep training compute online. BFSI vendors relying on OpenAI API will face potential cost spikes and latency if OpenAI prioritizes chip scarcity over enterprise service tier SLAs.",
     "source": {
-      "name": "Financial Conduct Authority · 2026-11-03",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZl84c2tvUjBFUU5nSmwxbTlCTjBTd2pXOVp6RlB2ZGFPNDNfV1k0bzBZR05ib1gyMlNiSWM0SW1qdV9JWnNydHR2amhLdTRBbnA1dG1vSUhScEY2T2k2eEVnN2YxY21kV2daQnJfTXJIbHJ2NmJ1aXZoY3hmVlZ0UnlMdTVBVGJTV29keTNDQkZ0aUlySHdPWE1yS1N4WXNsb0Z0MmpyT1hCc2s"
+      "name": "CNBC · 2026-11-06",
+      "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html"
     }
   },
   {
@@ -320,31 +355,37 @@
     }
   },
   {
-    "id": "2026-11-02-goldman-sachs-ai-coding-tools-ban",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-02T20:20:16Z",
-    "headline": "Goldman Sachs restricts traders and bankers from using AI coding tools",
-    "plain_english": "Goldman Sachs has banned or restricted use of AI coding assistants by trading and banking staff, citing security and compliance concerns. The move reflects institutional risk management around LLM-generated code in regulated environments.",
-    "why_it_matters": "First-mover guardrail by a major BFSI player; signals emerging internal controls over generative AI tooling that other banks will likely emulate or exceed to manage model risk and code auditability.",
+    "id": "2026-11-06-vendor-artex-ai-security-exposure",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-06T18:44:38Z",
+    "headline": "Hundreds of Artex AI penetration-testing servers exposed online",
+    "plain_english": "Security researchers discovered hundreds of publicly exposed servers hosting Artex AI, a hacking and penetration-testing tool. Anyone with internet access could leverage the tool to scan networks and simulate attacks.",
+    "why_it_matters": "BFSI security teams must audit whether Artex AI was used internally or by third-party pentesters. Uncontrolled exposure of attack simulation tools raises risk of adversary reconnaissance on bank infrastructure and client data.",
+    "jargon": [
+      {
+        "term": "Penetration testing",
+        "def": "Authorized simulated cyberattack to identify vulnerabilities; Artex automates this but exposure means unauthorized actors gained access."
+      }
+    ],
     "source": {
-      "name": "Quartz · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNzhCaEQtT1hWTWg2Sm1BbE02TTVKaHNYZHFncTJCMjFZbU1wWGJiQjlTQ09FemxKQVJvcnQ0Vzk2NENZMk1zTkdqNzNBOHltRHA0WWVpdGprRWMyOGlnRTI1WWJxTFZHQXc2cmNQYUJLbGR0RGZGeWV6LWU3bjFRckM3aw"
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
     }
   },
   {
-    "id": "2026-11-02-blackrock-aladdin-quantitative-analytics",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-02T20:14:58Z",
-    "headline": "BlackRock embeds quantitative strategy analytics into Aladdin platform",
-    "plain_english": "BlackRock has integrated quantitative strategy analytics directly into Aladdin, its enterprise AI OS used by thousands of asset managers and institutional clients. Enhances decision support for portfolio managers at scale.",
-    "why_it_matters": "Deepens Aladdin's role as a mission-critical AI layer for asset management workflows; pushes quant analytics from specialist tool to mainstream BFSI infrastructure, influencing vendor consolidation and workflow standardization.",
+    "id": "2026-11-06-vendor-meta-muse-spaces-collaboration",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-06T18:44:20Z",
+    "headline": "Meta launches Spaces for agent-based collaboration within Muse AI assistant",
+    "plain_english": "Meta introduced Spaces, a new collaborative feature for its Muse AI agent platform. Users can now create shared workspaces to interact with AI helpers, expanding use cases beyond single-user chat.",
+    "why_it_matters": "BFSI firms piloting Muse for customer service or internal workflows gain team coordination capability. Potential for multi-agent, cross-department AI workflows in compliance review, trade reconciliation, or client advisory roles.",
     "source": {
-      "name": "Yahoo Finance · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa0R6b2hvN000Tk1ZUC1nSkdUb1dSQkdfamh6cmVCOXRNRko4Qkw2elpyeUU4djBiUFEwbUJaQkdZTG81N0tOVE1fNm5aNDJKdUtlMUdOV2kwZ29ROE1RanB0Y2dxWWJLd29oU25QWjdEa3BnaEpaUVlJQllKWVdUeGVPbVNORkQ5YlFUQ0RKaXBZa2gtM25hZHl2Q0JFclo5VnpvREQ3S2xyMk0"
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
     }
   },
   {
@@ -477,37 +518,6 @@
       "name": "WSJ · 2026-11-02",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTDhmTmZkVWhzazBUYVdXNUx1OTRkRDFidXNnblM1R0lFNVQ2OS1zRFV2aTFtS2drOEhOVEVSSjZzZDN0Z053X3NrMnJEVTRGQm1EOHh6aDJYWC16bTVPdlpxVk10Vkh0ZkNrdkx1YzFodGc1WVQ4NkpPanN3TnZPZjcxYmcwS0xaSk1DelBQUzM4RFpNNVdubXR5WlRZZXA2b3paamIwdkcwVEpUTWFNSDBuWGQ"
     }
-  },
-  {
-    "id": "2026-10-31-openai-fundraising-20b",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-31T19:56:23Z",
-    "headline": "OpenAI pares fundraising goal to $20 billion in latest capital round",
-    "plain_english": "OpenAI has reduced its fundraising target to up to $20 billion in an ongoing round. The company's valuation cap remains in flux as the deal has not yet closed.",
-    "why_it_matters": "Downward revision signals investor caution on AI capex ROI; affects LLM funding appetite across fintech stack and may tighten enterprise AI deployment budgets in 2027.",
-    "source": {
-      "name": "CNBC · 2026-10-31",
-      "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html"
-    },
-    "amount": "$20B",
-    "round": "Series (ongoing)"
-  },
-  {
-    "id": "2026-10-30-opay-ipo",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-30T20:52:09Z",
-    "headline": "SoftBank-backed OPay raises $304 million in US IPO",
-    "plain_english": "OPay, a SoftBank-backed Nigerian fintech with AI-driven fraud detection and lending, went public in the US at $304M valuation. Expansion of BFSI AI deployment outside traditional banking channels.",
-    "why_it_matters": "Alternative fintech IPOs validated by SoftBank signal that AI-powered lending and risk models are bankable in emerging markets. May accelerate BFSI M&A interest in fintech AI stacks in Africa/Asia.",
-    "source": {
-      "name": "Reuters · 2026-10-30",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0lONGtsRElTTDlfS1hzMThPcHZZbGhwcHJ6VWZQYk5QUVhHOFQteXF6NVpSX0VDZmJEQllsbEFsSzhQbnVZWTFCV3FYeEtfN1g5dTNTa0VpM3BvSGlKUVA3NjJhT1RZd2FKX1RBNUh0anctTXNhWXNINkpuRFZNdTZidDVuUEh5TE5rbTVUUGxTT2JkbEQtNFozdV9ldjBCUEI3Mg"
-    },
-    "amount": "$304M"
   },
   {
     "id": "2026-11-06-shift-emirates-nbd-blackrock-funds",
@@ -733,6 +743,40 @@
     }
   },
   {
+    "id": "2026-11-06-research-deepseek-glm-hacking-capability",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-06T18:43:43Z",
+    "headline": "DeepSeek and GLM open-source models match OpenAI's unpublished cyber-attack capabilities",
+    "plain_english": "Researchers tested DeepSeek and GLM models (free, open-source Chinese AI) against OpenAI's advanced cyber model in a network penetration simulation. DeepSeek and GLM performed nearly as well at generating attack tactics despite being publicly available.",
+    "why_it_matters": "BFSI security depends on AI defensive tools ahead of attackers. Free, capable open-source attack models now in adversary hands globally. Banks must assume attackers have access to equivalent hacking AI and prioritize AI-native threat detection.",
+    "jargon": [
+      {
+        "term": "Network penetration simulation",
+        "def": "Controlled test where AI attempts to break into a simulated network; scoring measures hacking capability."
+      }
+    ],
+    "source": {
+      "name": "Wired · 2026-11-06",
+      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/"
+    }
+  },
+  {
+    "id": "2026-11-06-research-citi-ai-trade-pressure",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-06T17:32:58Z",
+    "headline": "Citi analysis: AI equity valuations face structural headwinds from regulation and power constraints",
+    "plain_english": "Citi Research issued analysis explaining why the AI sector trade may remain under pressure, citing regulatory tightening (especially around data centers), power grid limitations, and margin compression from capex overinvestment.",
+    "why_it_matters": "BFSI treasurers and CFOs tracking AI vendor valuations should expect lower multiples and slower revenue growth for AI infrastructure plays. Budget revisions for AI-as-a-service contracts may be necessary if vendor profitability deteriorates.",
+    "source": {
+      "name": "Citi / Investing.com · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNblJpenRwNjhIemtVa1hZYU1tcktjN3lkRzNGVUt1bFFSY1laekM1bXA5N0R5bEhmUllsS2hsbGxldjZZTUg5ZXFMQVhOME1SZi1yajBCa1RSSmNWR1laeGpVMmFDZEhBOGRTTzc1cFZxNzVzS1QzdUxVelN3Q2Vtb3NXY3JrQlI0enZ3S2JoazIzTVZlVi0zWnc0T3lFSjNRUlhfRjdlQnFEMjRDYlZMNS11aw"
+    }
+  },
+  {
     "id": "2026-11-04-open-source-ai-valuation-model",
     "category": "research",
     "jurisdiction": "Global",
@@ -881,37 +925,19 @@
     }
   },
   {
-    "id": "2026-10-17-research-wired-ai-genomics-limits",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-17T09:00:00.000Z",
-    "headline": "AI models lack sufficient data to decode human genome complexity, Wired reports",
-    "plain_english": "Researchers find current LLMs and ML models insufficient for genomic analysis because DNA isn't just sequential code—it's dynamic and context-dependent. Data scarcity and interpretability remain hard barriers.",
-    "why_it_matters": "Signals frontier AI's limitation in life sciences; relevant to biobanks, insurance underwriters, and healthcare AI vendors: genomic AI ROI is further out than hype suggests.",
-    "source": {
-      "name": "Wired · 2026-10-17",
-      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/"
-    }
-  },
-  {
-    "id": "2026-10-16-anthropic-metr-securebio-evals",
-    "category": "research",
-    "jurisdiction": "Global",
+    "id": "2026-11-06-insight-citi-coherent-optics-rebound",
+    "category": "insight",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-16T22:26:38Z",
-    "headline": "Anthropic enlists METR and SecureBio for AI safety assessment framework",
-    "plain_english": "Anthropic is formalizing third-party safety evaluations with nonprofits METR and SecureBio, plus early talks with Hugging Face. Outsourced risk assessment is becoming table-stakes for frontier model deployment.",
-    "why_it_matters": "BFSI regulators are asking whether AI vendors have independent safety audits; Anthropic's multi-vendor evaluation approach sets a precedent that compliance teams can reference when vetting LLM providers.",
-    "jargon": [
-      {
-        "term": "Safety evaluation",
-        "def": "Third-party testing of AI model behavior for harmful outputs, adversarial robustness, and alignment with human intent."
-      }
-    ],
+    "published_at": "2026-11-06T18:59:24Z",
+    "headline": "Citi upgrades Coherent to $440 target amid AI optics rebound",
+    "plain_english": "Citi lifted its price target for semiconductor optics firm Coherent to $440, citing renewed demand for AI networking infrastructure. Stock rebounded 13% as analysts reassess chip supply constraints easing.",
+    "stat_value": "$440",
+    "stat_label": "new Citi price target for Coherent (13% rally)",
+    "why_it_matters": "Analyst upgrade signals chip shortage bottleneck may be easing by Q1 2027. BFSI IT buyers planning GPU/networking orders can expect more reliable delivery timelines and potentially lower spot prices.",
     "source": {
-      "name": "CNBC · 2026-10-16",
-      "url": "https://www.cnbc.com/2026/10/15/anthropic-metr-securebio-ai-safety-evaluators.html"
+      "name": "Citi / TIKR.com · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWTlpV0I5VmdNanFYTENPaGZaWDdSeW5pNXFMelRva3g3eDUyUVJBejRrYUI1QW5ES0dvaEVCWkxvZnBIZDdMN0U0QnNZSjdCdTdzaDg1ZnN4cUhFdVl4NmRTbVBPZ2FvVU45MHVNeUlEU0RETHRuOUdSVWppS3dXSmxhUWRVdWFKRW1WZUdGYl9ERHNmdFVNTWFVNXNQRVRHWjdhaTRYM2xMdVE"
     }
   },
   {
@@ -1067,17 +1093,17 @@
     }
   },
   {
-    "id": "2026-11-01-citi-board-appointment-insight",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-01T18:09:59Z",
-    "headline": "Citigroup adds James Flanagan to board and audit committee",
-    "plain_english": "Citigroup appointed James Flanagan to its board and audit committee, a routine governance move signaling board refresh and potential shifts in risk/compliance oversight as the bank navigates AI adoption and regulatory pressure.",
-    "why_it_matters": "Board-level appointments often precede strategic pivots. Audit committee additions may indicate stepped-up oversight on emerging-risk domains (AI, cybersecurity, operational resilience) where Citi is scaling deployment.",
+    "id": "2026-11-06-frontier-microsoft-datacenter-activism-europe",
+    "category": "frontier",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-06T17:28:19Z",
+    "headline": "Climate activists breach Microsoft data center construction site in Europe",
+    "plain_english": "Activists occupied a Microsoft data center construction site in Europe as part of broader campaign against AI infrastructure buildout. Breaches and protests are spreading across multiple EU countries.",
+    "why_it_matters": "BFSI cloud resilience plans assuming stable EU data center access face political risk. Expect protest-driven work stoppages, security incidents, and potential delays for pan-Europe cloud deployments through 2027.",
     "source": {
-      "name": "Yahoo Finance · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaktROTlDWnhJT1FmSm9mdTdkamlqUWEwZ25nVTN0cWhqdVdXVjIyM3ZpdEhUZldrbjgxdEhIZkozUUhqYm9Fb2tfNmpVWUV4YXd3UUoxRVRZWUlpdlVYTFdmTEVfc216cFhHLWVZVmI3RDNfVzdGbUFZa19VejhMWjNaMkZsMWl0d0ZqVUJ5ZVBzVFU5ZzJvYm05WDQ"
+      "name": "Reuters · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWlBqNDNLWm53eHI0c0JoT0pQRWhQTFZ0LU12MEFzNmV2YVNqaEdkbWNPOGl0MG93VFlfUUluLXVoV1JFMnk4OFA0dVdoNm9hU044UjNyTnBfMDdHZmlCbC1QeGZqNFk1VF9ZQ2dLRW9keVNLWl9QX0NrZE55cFU4MXJZaDRZLWJjMFI4QVoxekwybVlydDcwc01UaFJuY1RQLXNienI3eFlPSXpVZHBJX09sMnZRRktxQ2hWNFk2UmtDaGRQbndF"
     }
   },
   {
@@ -1229,21 +1255,6 @@
       "name": "NDTV · 2026-11-02",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s3SnRKcEZUTVBVMk9JdkEtem5Ec1VWb1NWUmtkS01UR0VIdjVJeGdGRENkRmVveHNpV01uTEFFODF3WEdacHQxTk80eTNBMlBYWDUzWVdfcFRSTzluVDJ2NjlNNWc4M29UT1pGWktmVmJhQVB3NEhmWS1zakhpaEViRU1zaDV4ZmZ3RXJkYjlueVh0ZXB5amFZRnZaMWvSAacBQVVfeXFMUEttZlY1eTRmQ1FqMlRNVmdDY3pzakpvMTdZeHpSTy14Rl9BVVNKdzROVjVDU3MxaEZIblFpRW1FLVR0VGZxbEJaVWlzYlZqTVl0aWYzdjFNQmprZzhQOXFkei11NTMzWks0UWF3b0J2Z0ZlQzFiTmNxdzhyMUh3ZHNDNFB6d2F1LUN0cTRxT1dNNmRBQjRpeFo4cFNuT1VyQlpwTnB3U1k"
     }
-  },
-  {
-    "id": "2026-11-01-openai-fundraise-frontier",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-01T15:26:57Z",
-    "headline": "OpenAI raises less than half of $30 billion target in latest funding round",
-    "plain_english": "OpenAI secured funding well below its $30B goal in its latest capital round, signaling investor caution on AI spending ROI despite frontier model advances. Market appetite for mega-rounds may be cooling.",
-    "why_it_matters": "Softening appetite for AI infrastructure bets will ripple through BFSI: banks and insurers betting on high-touch LLM deployments may face tighter vendor R&D budgets, delayed product launches, and pressure on pricing.",
-    "source": {
-      "name": "Wall Street Journal · 2026-11-01",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw"
-    },
-    "amount": "<$15B"
   },
   {
     "id": "2026-11-04-google-ai-overviews-schools",
@@ -1618,6 +1629,162 @@
       "name": "CNBC · 2026-10-28",
       "url": "https://www.cnbc.com/2026/10/28/investors-brace-for-a-hawkish-hold-and-tech-on-tap.html"
     }
+  },
+  {
+    "id": "2026-11-03-mas-future-finance-ai",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-03T09:46:01Z",
+    "headline": "MAS launches Future of Finance Institute to guide AI in banking and capital markets",
+    "plain_english": "Singapore's Monetary Authority established a new research institute focused on AI adoption in finance. The institute will set policy frameworks and best practices for responsible AI deployment across banking, insurance, and markets—signaling regional leadership on AI governance.",
+    "why_it_matters": "APAC banks will face harmonized AI compliance expectations; early adoption of MAS frameworks could become de facto standard for Southeast Asia, Asia-Pacific operations.",
+    "jargon": [
+      {
+        "term": "AI governance framework",
+        "def": "Regulatory rules defining how financial firms test, deploy, and monitor AI systems to prevent bias, data breaches, and model failure."
+      }
+    ],
+    "source": {
+      "name": "Monetary Authority of Singapore · 2026-11-03",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeFJ4SXl0QldubkQ3bHZrdTRtUkY3UFoyRkhIY0VuSFdWU2piaHJ3M210UVFnNlkwczdPX28yZUtwSnUwQ3B5ZnlQTlc3elZyMkZzbmowampxY2p2QmRCZHY4THpDS0dmMmdQUlR2RzduS01ZcktOckRrUlVwa2hid0VDVXJCcGY3RFBjS0Z3b29La0FNS053TEhpNkpLWXlWbGduZFA1U3NpVDJOY0JDYzg4Q21ORlJfdDFaRkx2cnNSdw"
+    }
+  },
+  {
+    "id": "2026-11-03-fca-car-finance-settlement",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-03T09:00:59Z",
+    "headline": "FCA sets settlement framework and expectations for car finance firms",
+    "plain_english": "UK's Financial Conduct Authority released guidance on how firms must structure settlement offers to customers harmed by past unfair lending practices. The framework sets uniform compensation methodologies and audit requirements to prevent variation and disputes.",
+    "why_it_matters": "Establishes template for mass-remedy execution; firms deploying AI to accelerate settlement processing (claim intake, calculation, payout automation) can reduce legal and operational drag.",
+    "source": {
+      "name": "Financial Conduct Authority · 2026-11-03",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZl84c2tvUjBFUU5nSmwxbTlCTjBTd2pXOVp6RlB2ZGFPNDNfV1k0bzBZR05ib1gyMlNiSWM0SW1qdV9JWnNydHR2amhLdTRBbnA1dG1vSUhScEY2T2k2eEVnN2YxY21kV2daQnJfTXJIbHJ2NmJ1aXZoY3hmVlZ0UnlMdTVBVGJTV29keTNDQkZ0aUlySHdPWE1yS1N4WXNsb0Z0MmpyT1hCc2s"
+    }
+  },
+  {
+    "id": "2026-11-02-goldman-sachs-ai-coding-tools-ban",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-02T20:20:16Z",
+    "headline": "Goldman Sachs restricts traders and bankers from using AI coding tools",
+    "plain_english": "Goldman Sachs has banned or restricted use of AI coding assistants by trading and banking staff, citing security and compliance concerns. The move reflects institutional risk management around LLM-generated code in regulated environments.",
+    "why_it_matters": "First-mover guardrail by a major BFSI player; signals emerging internal controls over generative AI tooling that other banks will likely emulate or exceed to manage model risk and code auditability.",
+    "source": {
+      "name": "Quartz · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNzhCaEQtT1hWTWg2Sm1BbE02TTVKaHNYZHFncTJCMjFZbU1wWGJiQjlTQ09FemxKQVJvcnQ0Vzk2NENZMk1zTkdqNzNBOHltRHA0WWVpdGprRWMyOGlnRTI1WWJxTFZHQXc2cmNQYUJLbGR0RGZGeWV6LWU3bjFRckM3aw"
+    }
+  },
+  {
+    "id": "2026-11-02-blackrock-aladdin-quantitative-analytics",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-02T20:14:58Z",
+    "headline": "BlackRock embeds quantitative strategy analytics into Aladdin platform",
+    "plain_english": "BlackRock has integrated quantitative strategy analytics directly into Aladdin, its enterprise AI OS used by thousands of asset managers and institutional clients. Enhances decision support for portfolio managers at scale.",
+    "why_it_matters": "Deepens Aladdin's role as a mission-critical AI layer for asset management workflows; pushes quant analytics from specialist tool to mainstream BFSI infrastructure, influencing vendor consolidation and workflow standardization.",
+    "source": {
+      "name": "Yahoo Finance · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa0R6b2hvN000Tk1ZUC1nSkdUb1dSQkdfamh6cmVCOXRNRko4Qkw2elpyeUU4djBiUFEwbUJaQkdZTG81N0tOVE1fNm5aNDJKdUtlMUdOV2kwZ29ROE1RanB0Y2dxWWJLd29oU25QWjdEa3BnaEpaUVlJQllKWVdUeGVPbVNORkQ5YlFUQ0RKaXBZa2gtM25hZHl2Q0JFclo5VnpvREQ3S2xyMk0"
+    }
+  },
+  {
+    "id": "2026-10-31-openai-fundraising-20b",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-10-31T19:56:23Z",
+    "headline": "OpenAI pares fundraising goal to $20 billion in latest capital round",
+    "plain_english": "OpenAI has reduced its fundraising target to up to $20 billion in an ongoing round. The company's valuation cap remains in flux as the deal has not yet closed.",
+    "why_it_matters": "Downward revision signals investor caution on AI capex ROI; affects LLM funding appetite across fintech stack and may tighten enterprise AI deployment budgets in 2027.",
+    "source": {
+      "name": "CNBC · 2026-10-31",
+      "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html"
+    },
+    "amount": "$20B",
+    "round": "Series (ongoing)"
+  },
+  {
+    "id": "2026-10-30-opay-ipo",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-30T20:52:09Z",
+    "headline": "SoftBank-backed OPay raises $304 million in US IPO",
+    "plain_english": "OPay, a SoftBank-backed Nigerian fintech with AI-driven fraud detection and lending, went public in the US at $304M valuation. Expansion of BFSI AI deployment outside traditional banking channels.",
+    "why_it_matters": "Alternative fintech IPOs validated by SoftBank signal that AI-powered lending and risk models are bankable in emerging markets. May accelerate BFSI M&A interest in fintech AI stacks in Africa/Asia.",
+    "source": {
+      "name": "Reuters · 2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0lONGtsRElTTDlfS1hzMThPcHZZbGhwcHJ6VWZQYk5QUVhHOFQteXF6NVpSX0VDZmJEQllsbEFsSzhQbnVZWTFCV3FYeEtfN1g5dTNTa0VpM3BvSGlKUVA3NjJhT1RZd2FKX1RBNUh0anctTXNhWXNINkpuRFZNdTZidDVuUEh5TE5rbTVUUGxTT2JkbEQtNFozdV9ldjBCUEI3Mg"
+    },
+    "amount": "$304M"
+  },
+  {
+    "id": "2026-10-17-research-wired-ai-genomics-limits",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-10-17T09:00:00.000Z",
+    "headline": "AI models lack sufficient data to decode human genome complexity, Wired reports",
+    "plain_english": "Researchers find current LLMs and ML models insufficient for genomic analysis because DNA isn't just sequential code—it's dynamic and context-dependent. Data scarcity and interpretability remain hard barriers.",
+    "why_it_matters": "Signals frontier AI's limitation in life sciences; relevant to biobanks, insurance underwriters, and healthcare AI vendors: genomic AI ROI is further out than hype suggests.",
+    "source": {
+      "name": "Wired · 2026-10-17",
+      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/"
+    }
+  },
+  {
+    "id": "2026-10-16-anthropic-metr-securebio-evals",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-16T22:26:38Z",
+    "headline": "Anthropic enlists METR and SecureBio for AI safety assessment framework",
+    "plain_english": "Anthropic is formalizing third-party safety evaluations with nonprofits METR and SecureBio, plus early talks with Hugging Face. Outsourced risk assessment is becoming table-stakes for frontier model deployment.",
+    "why_it_matters": "BFSI regulators are asking whether AI vendors have independent safety audits; Anthropic's multi-vendor evaluation approach sets a precedent that compliance teams can reference when vetting LLM providers.",
+    "jargon": [
+      {
+        "term": "Safety evaluation",
+        "def": "Third-party testing of AI model behavior for harmful outputs, adversarial robustness, and alignment with human intent."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-10-16",
+      "url": "https://www.cnbc.com/2026/10/15/anthropic-metr-securebio-ai-safety-evaluators.html"
+    }
+  },
+  {
+    "id": "2026-11-01-citi-board-appointment-insight",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-01T18:09:59Z",
+    "headline": "Citigroup adds James Flanagan to board and audit committee",
+    "plain_english": "Citigroup appointed James Flanagan to its board and audit committee, a routine governance move signaling board refresh and potential shifts in risk/compliance oversight as the bank navigates AI adoption and regulatory pressure.",
+    "why_it_matters": "Board-level appointments often precede strategic pivots. Audit committee additions may indicate stepped-up oversight on emerging-risk domains (AI, cybersecurity, operational resilience) where Citi is scaling deployment.",
+    "source": {
+      "name": "Yahoo Finance · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaktROTlDWnhJT1FmSm9mdTdkamlqUWEwZ25nVTN0cWhqdVdXVjIyM3ZpdEhUZldrbjgxdEhIZkozUUhqYm9Fb2tfNmpVWUV4YXd3UUoxRVRZWUlpdlVYTFdmTEVfc216cFhHLWVZVmI3RDNfVzdGbUFZa19VejhMWjNaMkZsMWl0d0ZqVUJ5ZVBzVFU5ZzJvYm05WDQ"
+    }
+  },
+  {
+    "id": "2026-11-01-openai-fundraise-frontier",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-01T15:26:57Z",
+    "headline": "OpenAI raises less than half of $30 billion target in latest funding round",
+    "plain_english": "OpenAI secured funding well below its $30B goal in its latest capital round, signaling investor caution on AI spending ROI despite frontier model advances. Market appetite for mega-rounds may be cooling.",
+    "why_it_matters": "Softening appetite for AI infrastructure bets will ripple through BFSI: banks and insurers betting on high-touch LLM deployments may face tighter vendor R&D budgets, delayed product launches, and pressure on pricing.",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-01",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw"
+    },
+    "amount": "<$15B"
   },
   {
     "id": "2026-11-03-boe-rate-decision",
@@ -3965,20 +4132,6 @@
     }
   },
   {
-    "id": "2026-10-07-google-research-worker-productivity",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-07T20:19:57Z",
-    "headline": "Google Research publishes study on AI impact on work quality vs. worker performance",
-    "plain_english": "Google Research released a study questioning whether improved work output from AI-assisted tasks translates to better overall worker performance, examining trade-offs in automation and skill development.",
-    "why_it_matters": "BFSI managers need empirical frameworks to assess AI productivity claims; Google's research may show hidden costs (deskilling, audit risk, judgment atrophy) that offset efficiency gains in regulated roles.",
-    "source": {
-      "name": "Google Research · 2026-10-07",
-      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/"
-    }
-  },
-  {
     "id": "2026-10-24-nvidia-ai-financing-risk",
     "category": "frontier",
     "jurisdiction": "US",
@@ -4537,26 +4690,6 @@
     "source": {
       "name": "Finextra · 2026-10-21",
       "url": "https://www.finextra.com/newsarticle/48626/bank-bosses-under-pressure-to-implement-ai-ahead-of-time?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-07-research-microsoft-agent-lightning",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-07T16:00:00.000Z",
-    "headline": "Microsoft releases Agent Lightning, lightweight framework for reinforcement-learning agent training",
-    "plain_english": "Microsoft Research published Agent Lightning v1.0—a 3,500-line reinforcement-learning framework—enabling faster training and deployment of AI agents that interact with real tools and harnesses without requiring full framework rebuilds.",
-    "why_it_matters": "Lowers barrier to deploying autonomous financial agents; risk and compliance teams need new testing/validation workflows. Accelerates adoption of agentic workflows in BFSI.",
-    "jargon": [
-      {
-        "term": "Reinforcement learning",
-        "def": "ML technique where agents learn by trial-and-error interaction with an environment, receiving rewards or penalties for actions."
-      }
-    ],
-    "source": {
-      "name": "Microsoft Research · 2026-10-07",
-      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/"
     }
   },
   {
@@ -5703,20 +5836,6 @@
     "source": {
       "name": "Tearsheet · 2026-10-19",
       "url": "https://tearsheet.co/10-q/jane-fraser-sees-a-future-in-tokenized-deposits-coinbase-shows-why-citi-needs-stablecoins-too/"
-    }
-  },
-  {
-    "id": "2026-10-07-research-meta-csam-detection",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-07T16:53:46.000Z",
-    "headline": "Meta deploys AI tools to detect ads masking child sexual abuse material links",
-    "plain_english": "Meta rolled out new AI detection systems to identify advertisements that appear innocuous but secretly redirect users to child sexual abuse material (CSAM) hosted off-platform.",
-    "why_it_matters": "Raises bar for fintech/banking ad compliance; regulators will expect similar detection for financial fraud ads. Sets precedent for proactive, AI-driven harmful-content identification.",
-    "source": {
-      "name": "TechCrunch · 2026-10-07",
-      "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/"
     }
   },
   {
@@ -7797,21 +7916,6 @@
     }
   },
   {
-    "id": "2026-10-07-vendor-melius-ai-creative",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-07T16:00:44.000Z",
-    "headline": "AI creative platform Melius raises $25M from Ramp veterans",
-    "plain_english": "Melius, a startup offering AI agents for image, video, and ad-campaign creation, raised $25M led by Ramp founders and team. Capital funds platform expansion.",
-    "why_it_matters": "Growth-stage generative AI platforms now attract fintech-native investors; signals spillover of fintech venture capital into adjacent AI SaaS verticals.",
-    "amount": "$25M",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ramp-veterans-raise-25-million-for-ai-creative-platform-melius/"
-    }
-  },
-  {
     "id": "2026-10-09-spacex-starlink-telecom-disruption",
     "category": "shift",
     "jurisdiction": "US",
@@ -8034,20 +8138,6 @@
     }
   },
   {
-    "id": "2026-10-07-deployment-us-bank-project-360",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-07T16:59:56.000Z",
-    "headline": "U.S. Bank launches Project 360 identity threat monitoring service",
-    "plain_english": "U.S. Bank introduced Project 360, a service enabling customers to monitor credit activity, detect privacy threats, and respond to personal information exposure in real time.",
-    "why_it_matters": "Major bank invests in proactive fraud detection; reflects shift from reactive dispute resolution to predictive threat scoring. Likely sparks competitive roll-outs.",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/us-bank-debuts-service-help-clients-spot-identity-threats/"
-    }
-  },
-  {
     "id": "2026-10-08-citi-ai-capex-runway",
     "category": "shift",
     "jurisdiction": "US",
@@ -8104,66 +8194,6 @@
     }
   },
   {
-    "id": "2026-10-07-deployment-chase-payroll-expansion",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-07T17:27:57.000Z",
-    "headline": "Chase expands payroll services within business banking platform",
-    "plain_english": "Chase added payroll management to its integrated business banking offering, targeting small-business cash flow pressure. Service rolls into existing Chase banking and payment workflows.",
-    "why_it_matters": "Consolidates small-business financial ops; increases customer stickiness and cross-sell. Signals accelerating vertical integration by mega-banks into SMB operations.",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/chase-adds-payroll-to-larger-business-banking-offering/"
-    }
-  },
-  {
-    "id": "2026-10-07-microsoft-windows-ai-agents",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-07T20:06:19Z",
-    "headline": "Microsoft positions Windows PCs as command centers for autonomous AI agents",
-    "plain_english": "Microsoft announced new Windows tools and hardware (Copilot runtime) to enable AI agents to run natively on PCs, positioning personal devices as orchestration hubs for business automation rather than user terminals.",
-    "why_it_matters": "Moves agent computing to endpoint, forcing BFSI to rethink data governance, authentication, and audit trails for distributed AI workflows; raises new compliance and model-safety questions.",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-turns-windows-pcs-into-command-centers-for-ai-agents/"
-    }
-  },
-  {
-    "id": "2026-10-07-shift-neobank-fraud-spiral",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-07T16:06:18.000Z",
-    "headline": "Neobank fraud prevention spending surges 357% as losses climb",
-    "plain_english": "Fraud prevention spending among neobanks, digital-only banks, and fintech firms jumped 357% year-over-year—from $1.8M to $8M per institution—yet fraud losses continue to rise, per PYMNTS Intelligence.",
-    "why_it_matters": "Reveals fundamental unit-economics crisis: neobanks cannot buy their way out of fraud with automation. Margins compress; consolidation and strategic exits likely accelerate.",
-    "stat_value": "357%",
-    "stat_label": "YoY fraud prevention spend increase",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/fraud-becomes-a-bigger-cost-of-running-a-neobank/"
-    }
-  },
-  {
-    "id": "2026-10-07-revolut-data-breach-id-replacement",
-    "category": "insight",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-07T19:14:53Z",
-    "headline": "Revolut commits to covering identity document replacement costs post-breach",
-    "plain_english": "Revolut's CEO announced the fintech will pay for new identity documents (passports, etc.) for customers affected by its September 2026 data breach, signaling heightened liability expectations post-incident.",
-    "why_it_matters": "Sets precedent for BFSI liability beyond regulatory fines: customer remediation costs (documents, credit monitoring, fraud recovery) now expected as part of breach response, raising post-incident financial exposure.",
-    "stat_label": "Regulatory liability shift",
-    "stat_value": "ID document replacement now vendor responsibility",
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/cybersecurity/2026/revolut-pays-for-new-customer-ids-after-september-data-breach/"
-    }
-  },
-  {
     "id": "2026-10-07-consumer-credit-slowdown",
     "category": "insight",
     "jurisdiction": "US",
@@ -8177,42 +8207,6 @@
     "source": {
       "name": "PYMNTS · 2026-10-07",
       "url": "https://www.pymnts.com/consumer-finance/2026/consumers-get-choosier-about-credit/"
-    }
-  },
-  {
-    "id": "2026-10-07-deployment-incognia-ai-agent-detection",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-07T15:52:47.000Z",
-    "headline": "Incognia launches AI agent detection for autonomous financial transactions",
-    "plain_english": "Fintech fraud firm Incognia rolled out AI Agent Detection to identify and block fraud by automated agents operating autonomous financial transactions (payments, transfers, trades).",
-    "why_it_matters": "Signals emergence of new fraud vector: AI-driven account takeover and autonomous theft. Risk officers now must model bot-to-bot fraud, not just human-to-bot.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Autonomous software that makes financial decisions or executes transactions on behalf of a user without real-time human approval."
-      }
-    ],
-    "source": {
-      "name": "FF News · 2026-10-07",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaXZncU9nbmx2OGlvRkoyMnNWRl83US1GaVFSeUpKUGxmUm51X0ZEa283SVpFemJxLU1TZk4xTlVHS2RCeTd6RjdlbGdjSTk2cTExU01DVUwtMkhIc2NBMGk5eDBhSFo3OHZZdHplemJBa2xSRHlJU0dQc3VDWUtXNzZjV2l2a0ZYSzYxNE1QSlNfT21iN1VlOEQ2dUU"
-    }
-  },
-  {
-    "id": "2026-10-07-insight-voter-sentiment-ai-risk",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-07T16:18:47.000Z",
-    "headline": "Most U.S. voters say Trump, Congress underestimate AI risks: Reuters/Ipsos poll",
-    "plain_english": "Reuters/Ipsos poll finds a majority of U.S. voters believe the Trump administration and Congress are not taking AI risks seriously. No specific policy outcome yet, but sentiment is shifting toward tighter oversight.",
-    "why_it_matters": "Political risk for BFSI: populist pressure for AI regulation may accelerate mid-2026–2027. Compliance teams should stress-test scenario models for stricter guardrails on autonomous trading, credit, lending.",
-    "stat_value": "Majority",
-    "stat_label": "of U.S. voters say Trump, Congress underestimate AI risk",
-    "source": {
-      "name": "Reuters · 2026-10-07",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN2p1M1ZHTVBGQXhwSXJMYWp2SXBVWGZzVnV1V3JaWjJWTjI0RnVKS2t2OGdRc1VCYVBwTTljSk9EQ2xINUtZbl9IMDZDZTZWc3hodFYzckxmaldPNC1taDFwcTJxcTJFdjk1eTl0LVpoYlBEREJnX2U0ajB0V0FXRXE2QWlvTllvWVRFaU43SlJRQlhiVVNhVDR4WkdGMi1mSnAtUXprYmZHV1ZfT3RMdTc1emNYVEtCZkNSeFdXZw"
     }
   },
   {
@@ -8250,22 +8244,6 @@
     }
   },
   {
-    "id": "2026-10-07-insight-boomer-wealth-concentration",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-07T16:12:00.000Z",
-    "headline": "Americans 55+ hold $140 trillion—roughly three-quarters of total net worth",
-    "plain_english": "Americans aged 55 and older control approximately $140 trillion in net worth, representing ~75% of total U.S. household wealth. Wealth transfer and succession planning become massive BFSI opportunity.",
-    "why_it_matters": "Wealth management, trust, and estate tech vendors see decade-long tailwind. Banks investing in senior-focused AI (robo-advisors, document automation) will capture disproportionate AUM growth.",
-    "stat_value": "$140T",
-    "stat_label": "net worth held by Americans 55+",
-    "source": {
-      "name": "Fortune · 2026-10-07",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNWZPQmxmczVFc3VxUDhHQTB1VnYxQ2lTT2d6Z1JUVzJreUcwRzlyRDM4QjdCN1VyTkp4S0Z2MmhxZzBKVjlTZk4yZWY0SDRQQXU5d2t6cm00VHA2ZGR4X3RIY1FKV2p2c3NqSF9fNTNGM2pmenpVcHE5YTRVS3J4VGtRSTdWWFRuVGRuMmNUSzQzV3E2MFpvN2xnZ2ZyZw"
-    }
-  },
-  {
     "id": "2026-10-08-openai-50b-revenue",
     "category": "frontier",
     "jurisdiction": "Global",
@@ -8292,27 +8270,6 @@
       "name": "TechCrunch · 2026-10-08",
       "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
     }
-  },
-  {
-    "id": "2026-10-07-regulation-california-robo-bosses",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-07T17:12:02.000Z",
-    "headline": "California bans AI-driven employment termination without human review",
-    "plain_english": "California's SB 947 ('No Robo Bosses Act'), signed by Gov. Newsom on Sept. 30, requires employers to have a person review and approve any AI-driven decision to fire or discipline a worker. Compliance obligations begin soon.",
-    "why_it_matters": "HR tech vendors and large employers must redesign AI disciplinary workflows; adds friction to cost-reduction automation. Sets precedent other states will likely copy.",
-    "jargon": [
-      {
-        "term": "Robo Bosses Act",
-        "def": "Law requiring human oversight of AI employment decisions, particularly termination and discipline."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-cant-fire-you-in-california-without-a-human/"
-    },
-    "effective_date": "2026-10-07"
   },
   {
     "id": "2026-10-08-crypto-quantum-threat-ai",
@@ -8349,20 +8306,6 @@
     }
   },
   {
-    "id": "2026-10-07-microsoft-surface-laptop-ultra",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-07T20:26:13Z",
-    "headline": "Microsoft launches Surface Laptop Ultra with Nvidia AI accelerator at $2,599",
-    "plain_english": "Microsoft began preorders for Surface Laptop Ultra, a $2,599 device running Nvidia's AI chips and revamped Windows 11 designed to run local AI models and agents on consumer/enterprise endpoints.",
-    "why_it_matters": "Consumer and enterprise PC refresh cycle with local AI inference capability signals shift from cloud-only LLM deployments; BFSI must evaluate on-device inference risks and governance implications.",
-    "source": {
-      "name": "CNBC Tech/Finance · 2026-10-07",
-      "url": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html"
-    }
-  },
-  {
     "id": "2026-10-08-samsung-q3-ai-chip-boom",
     "category": "frontier",
     "jurisdiction": "APAC",
@@ -8388,55 +8331,6 @@
     "source": {
       "name": "CNBC Tech/Finance · 2026-10-07",
       "url": "https://www.cnbc.com/2026/10/07/spacex-nvidia-chips-apollo-financing.html"
-    }
-  },
-  {
-    "id": "2026-10-07-regulation-occ-crypto-charter-lawsuit",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-07T16:54:22.000Z",
-    "headline": "Community bankers sue OCC over special-purpose crypto bank charters",
-    "plain_english": "The Independent Community Bankers of America filed a federal lawsuit Oct. 2 challenging the OCC's authority to grant crypto-focused special-purpose bank charters. ICBA argues OCC lacks statutory basis for these charters.",
-    "why_it_matters": "Outcome reshapes crypto's entry into banking infrastructure. Favors either traditional banks (if ICBA wins) or crypto natives; regulatory uncertainty deepens for both.",
-    "jargon": [
-      {
-        "term": "Special-purpose bank charter",
-        "def": "OCC license permitting institutions to operate as banks without full FDIC insurance, targeting specific sectors like crypto."
-      }
-    ],
-    "source": {
-      "name": "PYMNTS · 2026-10-07",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/community-banks-sue-occ-over-crypto-trust-bank-charters/"
-    }
-  },
-  {
-    "id": "2026-10-07-frontier-spacex-nvidia-gpu-financing",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-07T16:32:30.000Z",
-    "headline": "SpaceX seeks $40B financing for Nvidia GPU purchase through Apollo",
-    "plain_english": "SpaceX is in talks with Apollo and other banks to finance a reported $40 billion purchase of Nvidia GPUs. Deal structure reflects broader AI infrastructure financing trend as compute demand for large language models and autonomous systems skyrockets.",
-    "why_it_matters": "Signals sustained mega-scale AI capex; implies multi-year LLM and agent training cycles at frontier. Fintech and banking infrastructure vendors must prepare for continued compute scarcity and cost inflation.",
-    "amount": "$40B",
-    "source": {
-      "name": "CNBC · 2026-10-07",
-      "url": "https://www.cnbc.com/2026/10/07/spacex-nvidia-chips-apollo-financing.html"
-    }
-  },
-  {
-    "id": "2026-10-07-frontier-google-finland-datacenter-halt",
-    "category": "frontier",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-07T17:16:28.000Z",
-    "headline": "Finland orders halt to Google data center projects amid AI infrastructure surge",
-    "plain_english": "Finland's government blocked Google's planned data center expansions, citing environmental and energy concerns. Finland has emerged as a key AI hub due to cheap Nordic power and cool climate.",
-    "why_it_matters": "Regulatory friction now constrains AI infrastructure globally. BFSI teams relying on cloud-AI for fraud detection, trading, or customer analytics face supply-chain uncertainty and cost pressures.",
-    "source": {
-      "name": "CNBC · 2026-10-07",
-      "url": "https://www.cnbc.com/2026/10/07/google-finland-data-center-halt.html"
     }
   }
 ]
