@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-07-paraguay-bank-scandal",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-07T20:57:55.000Z",
+    "headline": "Paraguay removes president over bank scandal, reshaping regional financial oversight",
+    "plain_english": "Paraguay's Senate removed President Peña from office following a banking scandal. This represents major political upheaval tied to financial malfeasance, signaling fragility of regional compliance frameworks and heightening AML/KYC risk for cross-border BFSI operations in Latin America.",
+    "why_it_matters": "Political instability tied to banking crimes forces BFSI to re-evaluate counterparty risk in Mercosur region. Compliance teams must audit correspondent banking relationships and sovereign risk exposures ahead of potential regime changes in financial regulation.",
+    "source": {
+      "name": "Bloomberg · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYnpPXzlpblJxdENKZlBLWTV2ODhCbE4xYzg5eFN4VWJJQXZyLVNMbHhPOHMxdmF6em9ET2xXY1FOOUxXZzBacUYzeVdTQW9oYXA5UzhXS21SR2ltdmRXYVNWS1FoYm5QbTU0RnRYeG5ERkxaMG8waE12VnBSLWYwdDBEeVB2RFR4N3puRTZoYVNic28zYTd4UFAwRFNTUkVGMFRiS0Uyb1Ntdm94dzhwVw"
+    }
+  },
+  {
     "id": "2026-11-07-china-blocks-abb-softbank-deal",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -157,26 +171,6 @@
     "source": {
       "name": "Google / KSBW · 2026-11-05",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOemNvQnZWMGN0ekx3dG1FeVlhTndSSFZLdFR1Wjh5LU9IXzUzdkdhblpYX1VSZEloZmFvVFJBNFBVSmZLajVEeXBpbXE4ZUF3b2lzeWpibVQ4UlowNWgyNUhsV0Z1RmFFeHdpWGFjcDVlT1JyMlhXYnJJUkJ6SklZZGpHZTJ4dDVUamZLczZZZHU"
-    }
-  },
-  {
-    "id": "2026-11-04-texas-data-centers-ballot-defeat",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-04T18:50:55Z",
-    "headline": "Texas voters reject AI data center expansion in midterm ballot measures",
-    "plain_english": "Voters in Texas—the epicenter of US AI data center buildout—defeated nearly all ballot measures supporting new data center projects. Democratic gains in state elections also signal tighter future permitting and environmental scrutiny on hyperscaler infrastructure.",
-    "why_it_matters": "Texas's rejection threatens hyperscaler capex timelines and forces a re-evaluation of regional AI infrastructure strategy. State-level opposition to data centers will embolden other jurisdictions (Arizona, Ohio) to impose stricter environmental and grid-load review, raising total cost of compute buildout.",
-    "jargon": [
-      {
-        "term": "hyperscaler",
-        "def": "Large cloud provider (AWS, Azure, Google Cloud) operating massive global data center networks to serve enterprise AI workloads."
-      }
-    ],
-    "source": {
-      "name": "MIT Technology Review · 2026-11-04",
-      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
     }
   },
   {
@@ -523,6 +517,41 @@
     }
   },
   {
+    "id": "2026-11-07-meta-fireworks-wehner",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-07T22:01:17.000Z",
+    "headline": "Meta strategy chief Wehner joins Fireworks as CFO, signaling shift in AI infrastructure strategy",
+    "plain_english": "Dave Wehner, Meta's chief strategy officer, is leaving to become CFO of Fireworks AI, a $17.5B infrastructure startup. This reflects a broader exodus of Big Tech executives to specialized AI infrastructure firms—a sign the industry sees infrastructure as the core battleground, not consumer applications.",
+    "why_it_matters": "C-suite departures to specialized vendors signal where capital and talent expect AI value to accrue. Fireworks' valuation and Wehner's seniority suggest AI infrastructure may outpace model-as-a-product in near term, reshaping how financial institutions will procure compute.",
+    "source": {
+      "name": "CNBC · 2026-11-07",
+      "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html"
+    },
+    "amount": "$17.5B"
+  },
+  {
+    "id": "2026-11-08-ai-data-centers-hostile",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-08T01:43:57.000Z",
+    "headline": "AI data center expansion faces regulatory and political headwinds globally",
+    "plain_english": "Frontier AI firms are encountering stiff resistance from governments over data center development—driven by energy concerns, national security fears, and local opposition. Post-midterm political shifts are intensifying zoning and environmental barriers to compute buildout.",
+    "why_it_matters": "Constrained data center capacity will limit AI model scaling and raise compute costs for financial institutions. BFSI must account for infrastructure bottlenecks in AI deployment timelines and factor geopolitical fragmentation into vendor selection and cloud strategy.",
+    "jargon": [
+      {
+        "term": "compute bottleneck",
+        "def": "Scarcity of GPU/processor capacity limiting how fast AI models can be trained or deployed at scale."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcG1MOENXS0g3UE1idXoxamJmd2FjV3g4UWoxVXp6YUwzR0hxeXFLLW5kdGF1YTJhSXNITVpQUG92cWlOdFQwRUI3cm1heS1xRFlRYURwdWt3R3VnS2pqenhpSFd6N0N4U2NuZGV5VzgwT0ZjeTdtcGRRVU9EbFFRUkFWc2xLdUpncG9HbWY3anFiTzJRWWttd016YjlyUDdZMmJoVg"
+    }
+  },
+  {
     "id": "2026-11-07-meta-wehner-fireworks-cfo",
     "category": "shift",
     "jurisdiction": "US",
@@ -642,40 +671,6 @@
     "source": {
       "name": "TechCrunch · 2026-11-04",
       "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/"
-    }
-  },
-  {
-    "id": "2026-11-03-binance-6b3-breach-custody",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-03T18:40:37.000Z",
-    "headline": "Binance $6.3B breach exposes AI-abetted social engineering; custody standards reshape crypto infrastructure",
-    "plain_english": "Binance disclosed a $6.3B theft via fake job interviews, malicious downloads, and compromised AI tooling. Hackers used AI to craft convincing fakes. The breach and Binance's 98% replenishment sets new custody and access-control benchmarks for crypto and fintech.",
-    "why_it_matters": "Proves AI-amplified social engineering defeats human-centric onboarding. Will force BFSI institutions to harden hiring, vendor screening, and employee AI-tool access; likely triggers MFA and zero-trust mandates in banking.",
-    "jargon": [
-      {
-        "term": "zero-trust architecture",
-        "def": "Security model that never trusts any user or system by default; every access request requires verification."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-11-03",
-      "url": "https://www.finextra.com/newsarticle/48694/binance-says-hackers-used-fake-job-interviews-and-ai-tools-in-63bn-hack?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-11-03-meta-25b-debt-ai-capex",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-03T18:33:49.000Z",
-    "headline": "Meta raises $20–25B in debt to fund AI infrastructure and model development",
-    "plain_english": "Meta announced a bond sale targeting $20–25B to finance AI models, services, and infrastructure. Signals sustained capex surge on AI as core business transformation, not tactical experiment.",
-    "why_it_matters": "Tech giant's balance-sheet commitment to AI infrastructure normalizes 10%+ capex-to-revenue ratios. BFSI CFOs will face board pressure to match AI infrastructure spending; talent and GPU scarcity will intensify.",
-    "source": {
-      "name": "CNBC · 2026-11-03",
-      "url": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html"
     }
   },
   {
@@ -923,6 +918,44 @@
     }
   },
   {
+    "id": "2026-11-07-berkshire-buybacks",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-07T21:04:44.000Z",
+    "headline": "Berkshire Hathaway accelerates buybacks as profit declines, signal of cash deployment shift",
+    "plain_english": "Berkshire Hathaway is buying back more stock despite falling earnings. This contrarian move suggests management sees undervaluation and prefers capital return over M&A—a shift in deployment strategy at a megacap that influences market confidence and BFSI asset-allocation models.",
+    "why_it_matters": "Megacap cash deployment patterns influence equity risk premia and liquidity forecasts. BFSI traders and portfolio managers monitor Berkshire buyback patterns as a leading indicator of institutional conviction on market valuations.",
+    "stat_value": "Accelerated buyback rate",
+    "stat_label": "Despite profit decline",
+    "source": {
+      "name": "Reuters · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa29SbTRWcFpWdFpiekRVRjRvNmZjM1BnNzhOeVY3ajB5S25PaGgxVFAyTTItcjRDZkRmcHROSkJIZ3lNdXZkaGp0R2hOZE51eHBzR1U3MXlFRXhGOUhzV1pJR0I2RWtUZnRrQU1MVXZaSm1haDUtTHo3NEJvNGJhLU1rM2N4a200NWp2VFh5Vkd5LW1DOTd6emN0S1QyengzS1ZjdE04LVluRGppX19oSkxtVktEcDdoWXVIVk93"
+    }
+  },
+  {
+    "id": "2026-11-07-us-inflation-outlook",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-07T21:00:00.000Z",
+    "headline": "US inflation expected to moderate after recent spike, shaping Fed rate path",
+    "plain_english": "Inflation is forecast to simmer down after recent pickup. This moderate outlook influences Fed hawkishness and Treasury yield curves—critical inputs to BFSI cost-of-capital models, loan pricing, and derivative hedging strategies for the next 12 months.",
+    "why_it_matters": "Inflation forecasts directly drive Fed policy expectations and drive funding cost curves. BFSI must recalibrate NIM (net interest margin) models and rate-risk hedges based on disinflation timeline.",
+    "jargon": [
+      {
+        "term": "NIM",
+        "def": "Net interest margin: the difference between interest earned on assets and interest paid on liabilities; a key bank profitability metric."
+      }
+    ],
+    "stat_value": "Moderation expected",
+    "stat_label": "After recent inflation pickup",
+    "source": {
+      "name": "Bloomberg · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMHB3c0hUZDUwNkFjQmh3VW9PTGA3dmpzRkUwRWI2d25MZWhOcmRPOHhmaVdBNGp0YTF3WU9IaVQ0NVNtVG1nZDZTbXlYRVNWdmdpcUJ3cVdVcE5mMUltMWdwZE10Q3lmcFdHR2RINEtlcW54RW56ZkY1MnNsell5b3VLanVoTnh1Y0FKUVhZampkZ2xWUHJPOWxhSWVxa0VFRWhPbzdITTdjRzA"
+    }
+  },
+  {
     "id": "2026-11-07-berkshire-ai-rout-haven",
     "category": "insight",
     "jurisdiction": "US",
@@ -1057,33 +1090,31 @@
     }
   },
   {
-    "id": "2026-11-04-cio-ai-outcomes-focus",
-    "category": "insight",
-    "jurisdiction": "US",
+    "id": "2026-11-07-anthropic-disease-cure",
+    "category": "frontier",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-11-04T20:05:10Z",
-    "headline": "CIOs shift AI strategy from experimentation to measurable business outcomes",
-    "plain_english": "Enterprise CIOs are tightening governance around AI pilots, demanding explicit ROI and KPI targets instead of open-ended exploration. Spend on 'nice-to-have' LLM experiments is contracting; investment flows to projects tied to revenue, cost reduction, or risk mitigation.",
-    "why_it_matters": "This marks the end of the AI 'playground' era for large financial institutions. BFSI CIOs will de-prioritize chatbots and experimentation; survival budgets now favor decisioning engines (credit, AML), synthetic data generation, and process automation with clear audit trails and compliance alignment.",
+    "published_at": "2026-11-08T00:01:25.000Z",
+    "headline": "Anthropic expands into disease research, signaling AI lab pivot beyond language models",
+    "plain_english": "Anthropic is moving into disease research and therapeutic discovery. This represents a frontier AI lab applying LLMs to biotech—a pattern now repeated across Anthropic, DeepMind, and OpenAI. BFSI relevance: signals where VC and strategic capital expect AI value in life sciences, affecting biotech equity research and pharma M&A models.",
+    "why_it_matters": "Frontier labs' domain expansion into biotech validates AI-driven drug discovery as investable. This reshapes how BFSI asset managers price biotech risk and how banks structure healthcare tech financing.",
     "source": {
-      "name": "WSJ · 2026-11-04",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVQtTzAwb1p2aEd4STFlUkdMNmh2SFZMVFR2T0xGMl8tcVhhU1czRUpqNFBBU0lnVXRZOFAxWk5kTUUyWUM0ZnFGVGdLam8wNlpZVElmQldwV0pDZTY2elhrZ0V6ZEZpT0xLNGhUNnF5MS1VUEFEaUZyenVaV0dHOERDZTBpRi1rRV9vNW9aeFFPQQ"
+      "name": "WSJ · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU1drZ3NwOE9Ra3A3eXVQaUNSVlp2b3pjS3BzMHVQX0ZjWU90MkN2NE1hTUgxbnJMVjlhUllQV3E2ZmVMUWRHYmhBNlBNd0szT3o2LTI5XzNQQW9xbkNGVHE5d19wQ1pMMFFNVUtUX082TFZVdC1LLVdjWnRDbDNUVml0VmFaTkNLZTh0MGtB"
     }
   },
   {
-    "id": "2026-11-02-ny-fed-remote-work-isolation",
-    "category": "insight",
+    "id": "2026-11-07-nvidia-china-spy",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-02T22:34:07Z",
-    "headline": "NY Fed study: half of in-office workers describe jobs as remote despite physical presence",
-    "plain_english": "NY Federal Reserve research found that 50% of employees working in physical offices describe their roles as remote, attributing the disconnect to failed company efforts to enable collaboration. Signals broader hybrid-work fatigue.",
-    "why_it_matters": "Highlights organizational dysfunction in post-pandemic BFSI ops; may explain talent retention challenges and uneven AI adoption across distributed teams—especially relevant for large banks with hybrid-first cultures.",
-    "stat_value": "50%",
-    "stat_label": "of in-office workers describe roles as remote",
+    "severity": "high",
+    "published_at": "2026-11-07T21:17:08.000Z",
+    "headline": "US intelligence memo alleges Chinese spy recruitment targeting Nvidia CEO",
+    "plain_english": "A US intelligence memo reportedly claims China's Ministry of State Security recruited a tech executive to spy on Nvidia's CEO. This escalates geopolitical tensions around AI chip export controls and semiconductor supply-chain security—core to BFSI risk models for tech infrastructure bets.",
+    "why_it_matters": "Espionage allegations against Nvidia executives intensify regulatory scrutiny of AI chip exports and foreign investment in semiconductor firms. BFSI must reassess counterparty risk for AI infrastructure vendors and tech financing amid sanctions regime uncertainty.",
     "source": {
-      "name": "CNBC · 2026-11-02",
-      "url": "https://www.cnbc.com/2026/11/02/remote-work-in-office-mandate-new-york-fed.html"
+      "name": "TechCrunch · 2026-11-07",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
     }
   },
   {
@@ -1214,40 +1245,6 @@
     "source": {
       "name": "TechCrunch · 2026-11-03",
       "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/"
-    }
-  },
-  {
-    "id": "2026-11-02-anthropic-rsi-warning",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-02T22:14:50Z",
-    "headline": "Anthropic warns AI is approaching recursive self-improvement capability",
-    "plain_english": "Anthropic published guidance that frontier AI systems are nearing recursive self-improvement (RSI)—the stage where AI can autonomously improve its own training, triggering rapid capability acceleration. Framed as both opportunity and existential risk.",
-    "why_it_matters": "Moves AI safety and capability limits from academic debate into near-term regulatory and institutional risk planning; will catalyze BFSI board-level AI governance frameworks and risk appetite reassessment over next 12–24 months.",
-    "jargon": [
-      {
-        "term": "RSI (Recursive Self-Improvement)",
-        "def": "The capability threshold where AI systems autonomously enhance their own training, leading to compounding capability gains independent of human oversight."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-02",
-      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
-    }
-  },
-  {
-    "id": "2026-11-02-anthropic-ipo-frontier",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-02T09:29:18.000Z",
-    "headline": "Anthropic prepares megadeals IPO; market signals frontier AI companies entering late-stage capital phase",
-    "plain_english": "NDTV reports Anthropic positioned for one of world's largest public offerings, ranking among biggest listings globally. Reflects investor appetite for frontier AI labs beyond pure research. Signals consolidation of AI governance and compute concentration into publicly listed entities with BFSI tie-ins (financial compliance APIs, fraud detection licensing).",
-    "why_it_matters": "IPO valuation will anchor AI risk-pricing for banks. Once public, Anthropic's safety/audit commitments become binding to institutional customers—regulatory pressure on upstream AI vendors increases.",
-    "source": {
-      "name": "NDTV · 2026-11-02",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s3SnRKcEZUTVBVMk9JdkEtem5Ec1VWb1NWUmtkS01UR0VIdjVJeGdGRENkRmVveHNpV01uTEFFODF3WEdacHQxTk80eTNBMlBYWDUzWVdfcFRSTzluVDJ2NjlNNWc4M29UT1pGWktmVmJhQVB3NEhmWS1zakhpaEViRU1zaDV4ZmZ3RXJkYjlueVh0ZXB5amFZRnZaMWvSAacBQVVfeXFMUEttZlY1eTRmQ1FqMlRNVmdDY3pzakpvMTdZeHpSTy14Rl9BVVNKdzROVjVDU3MxaEZIblFpRW1FLVR0VGZxbEJaVWlzYlZqTVl0aWYzdjFNQmprZzhQOXFkei11NTMzWks0UWF3b0J2Z0ZlQzFiTmNxdzhyMUh3ZHNDNFB6d2F1LUN0cTRxT1dNNmRBQjRpeFo4cFNuT1VyQlpwTnB3U1k"
     }
   },
   {
@@ -1612,6 +1609,124 @@
     "source": {
       "name": "NBC News · 2026-10-29",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMndTLS04T1FTZGdERGZVOVpOcThYTkNlT0FHUnp4TF9lVU52SDlfYlY3VzZubGxkcDdwWDQxbUlpcDUzUjN1RF9qRXBfbzlTaEsydXlNMnpIRjJldVpOdWdVdVBUZ2c5aVRZS094c01NZk9aZGVUcl9WZlhzdG4yNHRCVEpfajlTX3NYVmlpdzRPQQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-04-texas-data-centers-ballot-defeat",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-04T18:50:55Z",
+    "headline": "Texas voters reject AI data center expansion in midterm ballot measures",
+    "plain_english": "Voters in Texas—the epicenter of US AI data center buildout—defeated nearly all ballot measures supporting new data center projects. Democratic gains in state elections also signal tighter future permitting and environmental scrutiny on hyperscaler infrastructure.",
+    "why_it_matters": "Texas's rejection threatens hyperscaler capex timelines and forces a re-evaluation of regional AI infrastructure strategy. State-level opposition to data centers will embolden other jurisdictions (Arizona, Ohio) to impose stricter environmental and grid-load review, raising total cost of compute buildout.",
+    "jargon": [
+      {
+        "term": "hyperscaler",
+        "def": "Large cloud provider (AWS, Azure, Google Cloud) operating massive global data center networks to serve enterprise AI workloads."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-11-04",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+    }
+  },
+  {
+    "id": "2026-11-03-binance-6b3-breach-custody",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-03T18:40:37.000Z",
+    "headline": "Binance $6.3B breach exposes AI-abetted social engineering; custody standards reshape crypto infrastructure",
+    "plain_english": "Binance disclosed a $6.3B theft via fake job interviews, malicious downloads, and compromised AI tooling. Hackers used AI to craft convincing fakes. The breach and Binance's 98% replenishment sets new custody and access-control benchmarks for crypto and fintech.",
+    "why_it_matters": "Proves AI-amplified social engineering defeats human-centric onboarding. Will force BFSI institutions to harden hiring, vendor screening, and employee AI-tool access; likely triggers MFA and zero-trust mandates in banking.",
+    "jargon": [
+      {
+        "term": "zero-trust architecture",
+        "def": "Security model that never trusts any user or system by default; every access request requires verification."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-11-03",
+      "url": "https://www.finextra.com/newsarticle/48694/binance-says-hackers-used-fake-job-interviews-and-ai-tools-in-63bn-hack?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-11-03-meta-25b-debt-ai-capex",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-03T18:33:49.000Z",
+    "headline": "Meta raises $20–25B in debt to fund AI infrastructure and model development",
+    "plain_english": "Meta announced a bond sale targeting $20–25B to finance AI models, services, and infrastructure. Signals sustained capex surge on AI as core business transformation, not tactical experiment.",
+    "why_it_matters": "Tech giant's balance-sheet commitment to AI infrastructure normalizes 10%+ capex-to-revenue ratios. BFSI CFOs will face board pressure to match AI infrastructure spending; talent and GPU scarcity will intensify.",
+    "source": {
+      "name": "CNBC · 2026-11-03",
+      "url": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html"
+    }
+  },
+  {
+    "id": "2026-11-04-cio-ai-outcomes-focus",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-04T20:05:10Z",
+    "headline": "CIOs shift AI strategy from experimentation to measurable business outcomes",
+    "plain_english": "Enterprise CIOs are tightening governance around AI pilots, demanding explicit ROI and KPI targets instead of open-ended exploration. Spend on 'nice-to-have' LLM experiments is contracting; investment flows to projects tied to revenue, cost reduction, or risk mitigation.",
+    "why_it_matters": "This marks the end of the AI 'playground' era for large financial institutions. BFSI CIOs will de-prioritize chatbots and experimentation; survival budgets now favor decisioning engines (credit, AML), synthetic data generation, and process automation with clear audit trails and compliance alignment.",
+    "source": {
+      "name": "WSJ · 2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVQtTzAwb1p2aEd4STFlUkdMNmh2SFZMVFR2T0xGMl8tcVhhU1czRUpqNFBBU0lnVXRZOFAxWk5kTUUyWUM0ZnFGVGdLam8wNlpZVElmQldwV0pDZTY2elhrZ0V6ZEZpT0xLNGhUNnF5MS1VUEFEaUZyenVaV0dHOERDZTBpRi1rRV9vNW9aeFFPQQ"
+    }
+  },
+  {
+    "id": "2026-11-02-ny-fed-remote-work-isolation",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-02T22:34:07Z",
+    "headline": "NY Fed study: half of in-office workers describe jobs as remote despite physical presence",
+    "plain_english": "NY Federal Reserve research found that 50% of employees working in physical offices describe their roles as remote, attributing the disconnect to failed company efforts to enable collaboration. Signals broader hybrid-work fatigue.",
+    "why_it_matters": "Highlights organizational dysfunction in post-pandemic BFSI ops; may explain talent retention challenges and uneven AI adoption across distributed teams—especially relevant for large banks with hybrid-first cultures.",
+    "stat_value": "50%",
+    "stat_label": "of in-office workers describe roles as remote",
+    "source": {
+      "name": "CNBC · 2026-11-02",
+      "url": "https://www.cnbc.com/2026/11/02/remote-work-in-office-mandate-new-york-fed.html"
+    }
+  },
+  {
+    "id": "2026-11-02-anthropic-rsi-warning",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-02T22:14:50Z",
+    "headline": "Anthropic warns AI is approaching recursive self-improvement capability",
+    "plain_english": "Anthropic published guidance that frontier AI systems are nearing recursive self-improvement (RSI)—the stage where AI can autonomously improve its own training, triggering rapid capability acceleration. Framed as both opportunity and existential risk.",
+    "why_it_matters": "Moves AI safety and capability limits from academic debate into near-term regulatory and institutional risk planning; will catalyze BFSI board-level AI governance frameworks and risk appetite reassessment over next 12–24 months.",
+    "jargon": [
+      {
+        "term": "RSI (Recursive Self-Improvement)",
+        "def": "The capability threshold where AI systems autonomously enhance their own training, leading to compounding capability gains independent of human oversight."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-02",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+    }
+  },
+  {
+    "id": "2026-11-02-anthropic-ipo-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-02T09:29:18.000Z",
+    "headline": "Anthropic prepares megadeals IPO; market signals frontier AI companies entering late-stage capital phase",
+    "plain_english": "NDTV reports Anthropic positioned for one of world's largest public offerings, ranking among biggest listings globally. Reflects investor appetite for frontier AI labs beyond pure research. Signals consolidation of AI governance and compute concentration into publicly listed entities with BFSI tie-ins (financial compliance APIs, fraud detection licensing).",
+    "why_it_matters": "IPO valuation will anchor AI risk-pricing for banks. Once public, Anthropic's safety/audit commitments become binding to institutional customers—regulatory pressure on upstream AI vendors increases.",
+    "source": {
+      "name": "NDTV · 2026-11-02",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s3SnRKcEZUTVBVMk9JdkEtem5Ec1VWb1NWUmtkS01UR0VIdjVJeGdGRENkRmVveHNpV01uTEFFODF3WEdacHQxTk80eTNBMlBYWDUzWVdfcFRSTzluVDJ2NjlNNWc4M29UT1pGWktmVmJhQVB3NEhmWS1zakhpaEViRU1zaDV4ZmZ3RXJkYjlueVh0ZXB5amFZRnZaMWvSAacBQVVfeXFMUEttZlY1eTRmQ1FqMlRNVmdDY3pzakpvMTdZeHpSTy14Rl9BVVNKdzROVjVDU3MxaEZIblFpRW1FLVR0VGZxbEJaVWlzYlZqTVl0aWYzdjFNQmprZzhQOXFkei11NTMzWks0UWF3b0J2Z0ZlQzFiTmNxdzhyMUh3ZHNDNFB6d2F1LUN0cTRxT1dNNmRBQjRpeFo4cFNuT1VyQlpwTnB3U1k"
     }
   },
   {
@@ -6318,20 +6433,6 @@
     }
   },
   {
-    "id": "2026-10-08-ai-profit-doubts-tech",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-08T20:42:00.000Z",
-    "headline": "U.S. tech stocks decline as investor doubts grow over AI profitability models",
-    "plain_english": "Major tech sell-off driven by market skepticism on AI unit economics and return-on-investment timelines; Nvidia, Oracle, CoreWeave shares sank amid revenue growth but margin-compression signals.",
-    "why_it_matters": "AI infrastructure funding cycle faces headwinds; fintech and banking tech budgets may face pressure as investor scrutiny sharpens on AI capex ROI.",
-    "source": {
-      "name": "Wall Street Journal · 2026-10-08",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcmRmSzBtSkZNNUdzbkJoOThxUHFJNlhXVDQ3aUhtQklNTTlCN2lyckhrSGxJY2d2OGV3QnFlYzdXYTltUmdvb01Kd3Uwa0ZGYnJ3VnE2OFkxUzRpSWpLUURoX2hkcVVhc056UXAxTEdrR0k3S3A1U3RUOUhjMlVjNk5WM1JXazV6VFpBY2lZeUpPa0E4YVBmZEFQVzhuWUZCNWc"
-    }
-  },
-  {
     "id": "2026-10-17-trump-anthropic-order",
     "category": "regulation",
     "jurisdiction": "US",
@@ -7386,20 +7487,6 @@
     }
   },
   {
-    "id": "2026-10-08-anyflo-stablecoin-stealth",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-09T00:01:00.000Z",
-    "headline": "Anyflo emerges from stealth with stablecoin payments orchestration for enterprises",
-    "plain_english": "Fintech Anyflo launched publicly with acquisition of bitcoin lending platform Native, positioning itself as orchestration layer for stablecoin-based enterprise payments.",
-    "why_it_matters": "Signals fresh venture capital focus on enterprise stablecoin rails; payment teams should monitor whether stablecoin infrastructure stabilizes around orchestration versus direct chain-settlement models.",
-    "source": {
-      "name": "Finextra · 2026-10-09",
-      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises"
-    }
-  },
-  {
     "id": "2026-10-14-shift-spanish-fraud-surge",
     "category": "shift",
     "jurisdiction": "EU",
@@ -8033,20 +8120,6 @@
     "effective_date": "2026-10-09"
   },
   {
-    "id": "2026-10-08-shory-uae-ai-insurance",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-08T20:06:34.000Z",
-    "headline": "Insurtech Shory launches AI insurance agent for car insurance in UAE",
-    "plain_english": "UAE-based insurtech Shory deployed AI agent for car insurance sales and service, automating customer interactions in regional market.",
-    "why_it_matters": "Demonstrates early production AI agent adoption in emerging BFSI markets; regional insurers face competitive pressure to automate front-end customer service.",
-    "source": {
-      "name": "Beinsure · 2026-10-08",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVzlDXzM5WFFMZlJBVGJER2hJbm5hMENoRmsxOHhMdWZVc19TYUIzSjNCdlFTR1pGZ2FjVDFFU0tMSnlKdWdObVlrcy0waUc2MV9sb3hDT1lNV2hLeWVxajZGUHZJSnBiNnlnc1dXVFBNR3N3Q0JnRVhLYldfaU9zZE1XbTBfX0t5eVE"
-    }
-  },
-  {
     "id": "2026-10-09-spacex-starlink-telecom-disruption",
     "category": "shift",
     "jurisdiction": "US",
@@ -8151,55 +8224,6 @@
     "source": {
       "name": "Financial Times · 2026-10-09",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVmE0bnR5cTRWZTA4RkplZGM2YWFrcnlMNElGM3FJQll4VWtKTU05VG9fLTJaRzd1ZUVwZlBtOTNMeU1xSV8ybVV1NHA0cmlITlV2WjRvM1BUU1YxalZzMUpzSUo4cG40dHdaUTc4a2pES09Nd2lPeXk0SEExMko4TEw2WU8"
-    }
-  },
-  {
-    "id": "2026-10-08-amex-aml-penalty",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-08T20:59:44.000Z",
-    "headline": "American Express fined $350M for anti-money laundering program failures",
-    "plain_english": "Federal Reserve and OCC penalized Amex $350M for significant deficiencies in its enterprise-wide anti-money laundering implementation, particularly at the firm's subsidiary national bank.",
-    "why_it_matters": "Signals OCC/Fed enforcement focus on AML controls at large payment processors; compliance teams must audit end-to-end program ownership, especially at bank subsidiaries.",
-    "jargon": [
-      {
-        "term": "Anti-Money Laundering (AML)",
-        "def": "Regulatory programs detecting and preventing illicit financial flows; includes customer verification, transaction monitoring, and suspicious activity reporting."
-      }
-    ],
-    "source": {
-      "name": "Office of the Comptroller of the Currency · 2026-10-08",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBjelNId0JIUVB4dEpXSVhxRFpYTHZpcWpqcHR1MzdwUGlYLTlMQUlvRXk0ZF9pd2ZoX3dMY0gtenFiX29fMVV2ZmNKN09YYUZBY3MxdHByQzBiaUl1WExubmRSanZEUWtldVdCLVBWanhseUpUV2liVU1xMTFnZw"
-    },
-    "effective_date": "2026-10-08"
-  },
-  {
-    "id": "2026-10-08-openai-50b-revenue",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-08T21:19:14.000Z",
-    "headline": "OpenAI reaches $50 billion annualized revenue, sparks AI stock volatility",
-    "plain_english": "OpenAI disclosed roughly $50B annualized revenue run rate as of end September 2026, triggering sharp sell-off in AI hardware and infrastructure stocks including Nvidia, Oracle, and CoreWeave on profit-margin concerns.",
-    "why_it_matters": "Validates frontier AI model monetization at scale; BFSI investors must reassess whether AI infrastructure capex demands justify valuations amid margin pressure.",
-    "source": {
-      "name": "CNBC · 2026-10-08",
-      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
-    }
-  },
-  {
-    "id": "2026-10-08-openai-safety-researchers-letter",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-08T20:04:26.000Z",
-    "headline": "Fired OpenAI safety researchers dispute misconduct allegations, warn of chilling effect",
-    "plain_english": "Three OpenAI safety researchers disputed dismissal claims and released open letter asserting their exits create a chilling effect on the company's internal AI safety culture and governance.",
-    "why_it_matters": "Highlights governance and culture tensions inside frontier AI labs; BFSI risk/compliance teams deploying OpenAI models should track OpenAI's internal safety oversight credibility.",
-    "source": {
-      "name": "TechCrunch · 2026-10-08",
-      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
     }
   }
 ]
