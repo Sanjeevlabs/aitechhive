@@ -4,7 +4,7 @@
 
 An editorial daily brief for AI and banking technology. Scan the lead story and five essentials, search the full archive, and open any story in a focused reading panel. The existing automated pipeline refreshes content at 8 a.m. and 8 p.m. IST.
 
-**Live:** [aitechhive.com](https://aitechhive.com) · **Weekly deep-dive:** [newsletter.aitechhive.com](https://newsletter.aitechhive.com)
+**Live:** [aitechhive.com](https://aitechhive.com)
 
 ---
 
