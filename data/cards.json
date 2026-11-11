@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-11-regulation-boe-labour-market-speech",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-11-11T00:31:03.000Z",
+    "headline": "Bank of England deputy governor signals labour market remains subdued despite recent employment gains",
+    "plain_english": "Clare Lombardelli, BoE Deputy Governor, has delivered a speech on the low-gear labour market, suggesting persistent slack in UK employment despite recent rises. Relevant to BFSI as rate-path guidance can influence bank funding costs and AI investment timelines.",
+    "why_it_matters": "BoE labour-market framing informs expectations for interest-rate holds or cuts. Lower-for-longer rates reduce urgency for BFSI to aggressively automate via AI (lower labour cost pressure), which may slow some deployments but extend timelines for careful risk-mitigation implementation.",
+    "source": {
+      "name": "Bank of England · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVWhCQkJyNVFtc0NSeGxqakVESUltMWlPQXFydTFiVmdtclcwWkNJRW9fQ1Y3VTZlam9qeGhubnNzQ0duS01uOWgwVzJjQnpCRXBuZVp6SFZtdVRQWUxGZE5CRHVfbWpYLUxoNmdEZFJsUmVHWi1HT2Rrc3NFaDU4UFdZWTNFUVd4S01wVkV5Z2VrWjdTY3ZJXzV2QWstUXMxaTFNSGRGMnVtalBxQ0E"
+    }
+  },
+  {
     "id": "2026-11-10-ecb-digital-euro-policy",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -161,23 +175,21 @@
     "effective_date": "2027-01-15"
   },
   {
-    "id": "2026-11-06-regulation-data-center-limits-ballot",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-11-11-deployment-deutsche-bank-ai-academy",
+    "category": "deployment",
+    "jurisdiction": "EU",
     "severity": "med",
-    "published_at": "2026-11-06T18:00:00Z",
-    "headline": "US voters reject data center expansion in 40 of 41 ballot measures",
-    "plain_english": "On November 5, 2026, voters across US states approved restrictions on new data center development in 40 ballot measures, with only one failing. Measures target energy use, water consumption, and infrastructure strain tied to AI compute buildout.",
-    "why_it_matters": "BFSI cloud infrastructure costs will rise and deployment timelines lengthen. Banks planning AI data center co-location or hybrid setups must budget for permitting delays, environmental review layers, and potential relocation costs.",
-    "jargon": [
-      {
-        "term": "Data center sprawl",
-        "def": "Rapid, distributed buildout of compute facilities; voters now favor localized limits on new sites."
-      }
-    ],
+    "published_at": "2026-11-10T22:22:47.000Z",
+    "headline": "Deutsche Bank Private Bank launches AI Academy for 20,000+ employees",
+    "plain_english": "Deutsche Bank's Private Banking division is rolling out a company-wide AI Academy to upskill over 20,000 staff. This signals a major commitment to embedding AI literacy across a major European BFSI operator, moving beyond pilots to systemic workforce transformation.",
+    "why_it_matters": "Large-scale AI reskilling at a systemically important bank suggests internal productivity gains are moving from experimental to operational. This model will likely be copied by competitors and regulators will watch adoption metrics as a proxy for genuine AI maturity.",
+    "scale": {
+      "metric": "employees",
+      "value": "20000"
+    },
     "source": {
-      "name": "TechCrunch · 2026-11-06",
-      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/"
+      "name": "Hubbis · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNkR2bU1EU3BjdTZTLWVQTmstZ2ZUajZHUUtzZUZPakJKdHgwMFlaU3BwZmczRTNxSEZES3lUc2FoNTFRNE96ZVVsamNYT3V5MmVzeUJ5Sk5sS0NKdlNkWVlWbHotTmxLSG9LaGtaMDBFLTgwV0ljRXdNUXd0bmcxZWlzbEJ6RVVJQ1pCVzdaQjFJQzZiNGFSb2dLV2I"
     }
   },
   {
@@ -319,17 +331,37 @@
     }
   },
   {
-    "id": "2026-11-07-paramount-trial-ai-plaque-care",
-    "category": "deployment",
+    "id": "2026-11-11-vendor-coreweave-chip-backed-debt",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-07T15:45:45Z",
-    "headline": "PARAMOUNT Trial: First Randomized Study Validates AI-Enabled Plaque-Based Care Protocol",
-    "plain_english": "PARAMOUNT, a randomized controlled trial, met its primary endpoint for AI-guided plaque detection and interventional care at AHA 2026. First large RCT validating AI decision support in cardiology procedural workflow.",
-    "why_it_matters": "RCT validation of AI in clinical workflows sets precedent for BFSI-adjacent insurance and healthcare finance; insurers can now cite peer-reviewed evidence for AI-driven underwriting and claims decisions.",
+    "severity": "high",
+    "published_at": "2026-11-11T00:01:29.000Z",
+    "headline": "CoreWeave plans multibillion-dollar chip-backed debt financing",
+    "plain_english": "CoreWeave, an AI infrastructure provider serving BFSI and tech, is raising multibillion-dollar debt backed by GPU and chip collateral. This innovative financing model unlocks capital for AI compute providers without traditional equity dilution, enabling rapid scaling of capacity for enterprise AI demand.",
+    "why_it_matters": "Chip-backed securitization removes a critical bottleneck in AI infrastructure financing. If successful, this model signals that AI compute scarcity (and pricing power) is now asset-class grade, attracting institutional debt capital and reshaping vendor economics.",
+    "jargon": [
+      {
+        "term": "asset-backed securitization",
+        "def": "Issuing debt secured by physical or revenue-generating assets (here: GPUs). Reduces borrower risk, lowers rates, and frees balance-sheet capital for growth."
+      }
+    ],
     "source": {
-      "name": "News-Press NOW · 2026-11-07",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNeXcxZlA4aTRxdEdMN2JLWGp5b3B5cEhsblEyVHlJamlqc3RuYnU5eUxXVFJ2SGg0UVIyQlplZTZsUXBXN3hPcmpDZnp0cHE4TEgwTnNnd0lRaWNCX2JqcExFYjZGdHhHMGwxLTJQcVBnRG9OVFR0MVR1VGVhUEhBdDNBbVBFelZRc0R6OUd3ZWNCSmxOTTlUOVZTc2lmZkg3MFdBMFU0ZjlGVmJfODJhNWhDV0dWTGNfNnZvTHhNZUUyYXVQN1BHRkZQcS0wT3lnNnh0aWhBNHlNWlNnajE0cVJGeUxsY3UyM09sSDFTeWRuaU5hMWVQY3JPamxVY2d6U3I2MVN1MHBzS2FCN3hyLUtXWQ"
+      "name": "Financial Times · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeUtFVXNORGFmX1lybml6VWc5Si04NlVaWUNaRDJWUXFTRk9VbW9CYmZEVGtNc3VEVFVZLXNZYU92LWpIbmphV3RkeWE5aTQzUGd4UXdQOUVSMW9oTzJyZ1plaDRvOUtFVVQ1LUFqLVhLV3RmTnBBMTFBRXpDZktDSzZOVmw"
+    }
+  },
+  {
+    "id": "2026-11-11-vendor-anthropic-ipo-cramer-growth",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-10T23:46:35.000Z",
+    "headline": "Anthropic IPO could justify record valuation on explosive revenue growth, says Cramer",
+    "plain_english": "CNBC's Jim Cramer argues Anthropic's revenue trajectory justifies an exceptionally high IPO valuation. Reflects broader market enthusiasm for frontier AI labs entering public markets and validates AI-as-platform business model.",
+    "why_it_matters": "If Anthropic achieves record-high BFSI-sector software multiples at IPO, it signals investor conviction that frontier AI vendors will be to banking what cloud platforms became post-2010. This attracts mega-cap entry (Microsoft, Google, Amazon) and shapes how banks value LLM dependencies.",
+    "source": {
+      "name": "CNBC · 2026-11-10",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html"
     }
   },
   {
@@ -463,33 +495,17 @@
     }
   },
   {
-    "id": "2026-11-05-kabilio-accounting-funding",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "low",
-    "published_at": "2026-11-05T09:00:00Z",
-    "headline": "AI accounting platform Kabilio raises €10 million",
-    "plain_english": "Barcelona-based Kabilio, which automates accounting workflows for SMBs and their advisors, closed €10M Series A led by Picus Capital and Visionaries. Targets mid-market accounting firms.",
-    "why_it_matters": "Demonstrates sustained fintech funding despite macro headwinds; AI accounting gaining parity with bookkeeping automation as must-have for professional services.",
-    "amount": "€10M",
-    "round": "Series A",
+    "id": "2026-11-11-shift-gilbert-tobin-ai-legal-business-model",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "headline": "Gilbert + Tobin rethinks law firm business model with AI; CEO discusses transformation",
+    "plain_english": "Gilbert + Tobin, a top-tier law firm advising BFSI on regulation and M&A, is overhauling its service delivery using AI. CEO Sam Nickless discussed how the firm is repositioning its core business around AI-augmented expertise rather than traditional billable hours.",
+    "why_it_matters": "Legal-services transformation signals a paradigm shift: advisors to BFSI are themselves adopting AI, which reshapes how they price regulatory advice, due-diligence support, and transaction counsel. Banks will begin demanding AI-native pricing models from law firms, setting a template for professional-services automation across the industry.",
     "source": {
-      "name": "Finextra · 2026-11-05",
-      "url": "https://www.finextra.com/newsarticle/48704/ai-accounting-platform-kabilio-raises-10m"
-    }
-  },
-  {
-    "id": "2026-11-05-microsoft-nscale-decline",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-05T05:46:00Z",
-    "headline": "Microsoft declines to expand Nscale AI partnership",
-    "plain_english": "Microsoft has opted not to expand its existing AI deal with Nscale, a financial AI vendor. Signals potential reassessment of partnership scope or strategy in the financial-AI space.",
-    "why_it_matters": "Reflects selective approach by major cloud players to fintech AI partnerships; suggests Microsoft prioritizing first-party models over third-party integrations for financial-services workloads.",
-    "source": {
-      "name": "Breakingthenews.net · 2026-11-05",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLUpQMXZZRHBnSzhtZmdqYjBMejNoZVJKRElQOUp4TElsVzFPbG5HRVhVUkFnY1NBcGFiQzdCV1NtZmMxaWNTSWxYUDJDNTdPd0Z0VTVoZjcxUGpnREVqWXJxWFEzUlZSTmd4dzJnMDVzdkljNnBvbnlfbWowbUhRVi1kenUtZ3l3UXpaVGdzWWRDYnhRV3hLUTVGdnU4TG8"
+      "name": "OpenAI · 2026-11-12",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
     }
   },
   {
@@ -629,20 +645,6 @@
     "source": {
       "name": "The Fintech Times · 2026-11-06",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPblBISVdKT2NoVVVYN25vX1R1eU4zMEJ0bVZ1YTNDNWw2S1EwUjB5NklPaHBLV1NCUlNVdVkyOTJ4eHJodFF3RnBjWVJmU3lRNVdtdVhTVVRnV1B6bE1OU2ZWeXZzWUhkcVkyYXdzdFdnZ2tXMW93MkdHWTZUaWpyWHZYQlJqQWp4MGZfdl9lV25pcEdPRFUwcW1NVHI3NGxv"
-    }
-  },
-  {
-    "id": "2026-11-05-shift-jpmorgan-anthropic-partnership",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-05T18:31:12Z",
-    "headline": "JPMorgan announces strategic partnership with Anthropic for enterprise AI deployment",
-    "plain_english": "JPMorgan Chase and Anthropic have announced a strategic partnership to explore advanced AI applications across JPMorgan's enterprise: engineering tools, security defense, and customer-facing services. This is a major tier-1 bank co-investing in and operationalizing a frontier AI lab's capabilities.",
-    "why_it_matters": "First-of-kind deep integration between a systemically important bank and a cutting-edge AI lab signals industry-wide shift toward direct partnerships with frontier models rather than API consumption. Sets template other banks will follow; implies governance, compliance co-design.",
-    "source": {
-      "name": "Anthropic (via social) · 2026-11-05",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10Y09mTVlTODZNQ3JqbFdLUU02Y3BMT3pXbmt1ZmF5NmNLbGRjaWdkSy1qMHdRd09WbW41MVZWTGwzNmlBaHpzOTRIcXRLdklSQVBfQVJjWQ?oc=5"
     }
   },
   {
@@ -900,6 +902,22 @@
     }
   },
   {
+    "id": "2026-11-11-insight-mckinsey-banking-ai-cost-reduction",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-11T00:01:00.000Z",
+    "headline": "McKinsey: AI could cut banking cost base 20%, but current deployments show negligible impact",
+    "plain_english": "McKinsey research finds AI has potential to reduce banking's operating costs by 20% or more, yet most banks today have only deployed AI to boost individual employee productivity with minimal bottom-line effect. Suggests execution gap between capability and transformational impact.",
+    "why_it_matters": "This gap reveals that enterprise AI in BFSI remains micro-level (better per-employee output) rather than macro (reduced headcount, eliminated processes). Competitors will soon shift from productivity pilots to structural cost-cutting, creating pressure on peers.",
+    "stat_value": "20%",
+    "stat_label": "potential banking cost base reduction via AI",
+    "source": {
+      "name": "Finextra · 2026-11-11",
+      "url": "https://www.finextra.com/newsarticle/48739/ai-could-cut-banking-industrys-cost-base-by-20---mckinseys?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
     "id": "2026-11-10-banks-rein-ai-agent-costs",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1054,20 +1072,18 @@
     "stat_label": "AI mega-cap to low-AI safe havens"
   },
   {
-    "id": "2026-11-07-small-biz-ai-hiring",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-07T14:45:01Z",
-    "headline": "New Solo-Founder Businesses Accelerate in AI Era Without Traditional Hires",
-    "plain_english": "Solo founder small-business formation rising; LLMs and AI tools filling finance, marketing, design roles that traditionally required employees. No-employee but revenue-generating firms normalizing.",
-    "why_it_matters": "BFSI must rethink SME credit, KYC, and compliance playbooks; solo-AI-augmented businesses may behave differently in lending cycles and fraud patterns than team-led startups.",
+    "id": "2026-11-11-frontier-anthropic-australian-ipo-retail",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-11T01:52:56.000Z",
+    "headline": "Anthropic opens retail IPO offering in Australia as AI scrutiny intensifies",
+    "plain_english": "Anthropic, a leading frontier AI lab, has opened its planned initial public offering to individual Australian investors ahead of a full listing. The timing coincides with rising regulatory scrutiny of AI safety and business practices globally.",
+    "why_it_matters": "A major frontier AI lab going public signals investor confidence and reduces dependency on mega-cap funding. Regulatory scrutiny during IPO roadshow will test whether AI governance narratives satisfy institutional investors and regulators in BFSI-critical markets.",
     "source": {
-      "name": "CNBC · 2026-11-07",
-      "url": "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html"
-    },
-    "stat_value": "Rising",
-    "stat_label": "New no-employee business formations"
+      "name": "CNBC · 2026-11-11",
+      "url": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html"
+    }
   },
   {
     "id": "2026-11-10-anthropic-ipo-valuation",
@@ -1217,20 +1233,6 @@
     "source": {
       "name": "CNBC · 2026-11-08",
       "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html"
-    }
-  },
-  {
-    "id": "2026-11-07-anthropic-disease-cure",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-08T00:01:25.000Z",
-    "headline": "Anthropic expands into disease research, signaling AI lab pivot beyond language models",
-    "plain_english": "Anthropic is moving into disease research and therapeutic discovery. This represents a frontier AI lab applying LLMs to biotech—a pattern now repeated across Anthropic, DeepMind, and OpenAI. BFSI relevance: signals where VC and strategic capital expect AI value in life sciences, affecting biotech equity research and pharma M&A models.",
-    "why_it_matters": "Frontier labs' domain expansion into biotech validates AI-driven drug discovery as investable. This reshapes how BFSI asset managers price biotech risk and how banks structure healthcare tech financing.",
-    "source": {
-      "name": "WSJ · 2026-11-08",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU1drZ3NwOE9Ra3A3eXVQaUNSVlp2b3pjS3BzMHVQX0ZjWU90MkN2NE1hTUgxbnJMVjlhUllQV3E2ZmVMUWRHYmhBNlBNd0szT3o2LTI5XzNQQW9xbkNGVHE5d19wQ1pMMFFNVUtUX082TFZVdC1LLVdjWnRDbDNUVml0VmFaTkNLZTh0MGtB"
     }
   },
   {
@@ -1585,6 +1587,114 @@
     "source": {
       "name": "varindia · 2026-11-01",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5MQzJfZkNxY0x6RV9qa1YzekJNb2FhcjA5T1FfbXU2aGVxdXhDUEpaU1Vvd1gyMm83QlNoTkRpb29uYjdLbENTQzJjQnlPUGdsTC1fODBTUnhlRGpjZkNfX2JacFdScU5VWDBkSl9tVGk"
+    }
+  },
+  {
+    "id": "2026-11-06-regulation-data-center-limits-ballot",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-06T18:00:00Z",
+    "headline": "US voters reject data center expansion in 40 of 41 ballot measures",
+    "plain_english": "On November 5, 2026, voters across US states approved restrictions on new data center development in 40 ballot measures, with only one failing. Measures target energy use, water consumption, and infrastructure strain tied to AI compute buildout.",
+    "why_it_matters": "BFSI cloud infrastructure costs will rise and deployment timelines lengthen. Banks planning AI data center co-location or hybrid setups must budget for permitting delays, environmental review layers, and potential relocation costs.",
+    "jargon": [
+      {
+        "term": "Data center sprawl",
+        "def": "Rapid, distributed buildout of compute facilities; voters now favor localized limits on new sites."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/"
+    }
+  },
+  {
+    "id": "2026-11-07-paramount-trial-ai-plaque-care",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-07T15:45:45Z",
+    "headline": "PARAMOUNT Trial: First Randomized Study Validates AI-Enabled Plaque-Based Care Protocol",
+    "plain_english": "PARAMOUNT, a randomized controlled trial, met its primary endpoint for AI-guided plaque detection and interventional care at AHA 2026. First large RCT validating AI decision support in cardiology procedural workflow.",
+    "why_it_matters": "RCT validation of AI in clinical workflows sets precedent for BFSI-adjacent insurance and healthcare finance; insurers can now cite peer-reviewed evidence for AI-driven underwriting and claims decisions.",
+    "source": {
+      "name": "News-Press NOW · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNeXcxZlA4aTRxdEdMN2JLWGp5b3B5cEhsblEyVHlJamlqc3RuYnU5eUxXVFJ2SGg0UVIyQlplZTZsUXBXN3hPcmpDZnp0cHE4TEgwTnNnd0lRaWNCX2JqcExFYjZGdHhHMGwxLTJQcVBnRG9OVFR0MVR1VGVhUEhBdDNBbVBFelZRc0R6OUd3ZWNCSmxOTTlUOVZTc2lmZkg3MFdBMFU0ZjlGVmJfODJhNWhDV0dWTGNfNnZvTHhNZUUyYXVQN1BHRkZQcS0wT3lnNnh0aWhBNHlNWlNnajE0cVJGeUxsY3UyM09sSDFTeWRuaU5hMWVQY3JPamxVY2d6U3I2MVN1MHBzS2FCN3hyLUtXWQ"
+    }
+  },
+  {
+    "id": "2026-11-05-kabilio-accounting-funding",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-05T09:00:00Z",
+    "headline": "AI accounting platform Kabilio raises €10 million",
+    "plain_english": "Barcelona-based Kabilio, which automates accounting workflows for SMBs and their advisors, closed €10M Series A led by Picus Capital and Visionaries. Targets mid-market accounting firms.",
+    "why_it_matters": "Demonstrates sustained fintech funding despite macro headwinds; AI accounting gaining parity with bookkeeping automation as must-have for professional services.",
+    "amount": "€10M",
+    "round": "Series A",
+    "source": {
+      "name": "Finextra · 2026-11-05",
+      "url": "https://www.finextra.com/newsarticle/48704/ai-accounting-platform-kabilio-raises-10m"
+    }
+  },
+  {
+    "id": "2026-11-05-microsoft-nscale-decline",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-05T05:46:00Z",
+    "headline": "Microsoft declines to expand Nscale AI partnership",
+    "plain_english": "Microsoft has opted not to expand its existing AI deal with Nscale, a financial AI vendor. Signals potential reassessment of partnership scope or strategy in the financial-AI space.",
+    "why_it_matters": "Reflects selective approach by major cloud players to fintech AI partnerships; suggests Microsoft prioritizing first-party models over third-party integrations for financial-services workloads.",
+    "source": {
+      "name": "Breakingthenews.net · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLUpQMXZZRHBnSzhtZmdqYjBMejNoZVJKRElQOUp4TElsVzFPbG5HRVhVUkFnY1NBcGFiQzdCV1NtZmMxaWNTSWxYUDJDNTdPd0Z0VTVoZjcxUGpnREVqWXJxWFEzUlZSTmd4dzJnMDVzdkljNnBvbnlfbWowbUhRVi1kenUtZ3l3UXpaVGdzWWRDYnhRV3hLUTVGdnU4TG8"
+    }
+  },
+  {
+    "id": "2026-11-05-shift-jpmorgan-anthropic-partnership",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-05T18:31:12Z",
+    "headline": "JPMorgan announces strategic partnership with Anthropic for enterprise AI deployment",
+    "plain_english": "JPMorgan Chase and Anthropic have announced a strategic partnership to explore advanced AI applications across JPMorgan's enterprise: engineering tools, security defense, and customer-facing services. This is a major tier-1 bank co-investing in and operationalizing a frontier AI lab's capabilities.",
+    "why_it_matters": "First-of-kind deep integration between a systemically important bank and a cutting-edge AI lab signals industry-wide shift toward direct partnerships with frontier models rather than API consumption. Sets template other banks will follow; implies governance, compliance co-design.",
+    "source": {
+      "name": "Anthropic (via social) · 2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10Y09mTVlTODZNQ3JqbFdLUU02Y3BMT3pXbmt1ZmF5NmNLbGRjaWdkSy1qMHdRd09WbW41MVZWTGwzNmlBaHpzOTRIcXRLdklSQVBfQVJjWQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-07-small-biz-ai-hiring",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-07T14:45:01Z",
+    "headline": "New Solo-Founder Businesses Accelerate in AI Era Without Traditional Hires",
+    "plain_english": "Solo founder small-business formation rising; LLMs and AI tools filling finance, marketing, design roles that traditionally required employees. No-employee but revenue-generating firms normalizing.",
+    "why_it_matters": "BFSI must rethink SME credit, KYC, and compliance playbooks; solo-AI-augmented businesses may behave differently in lending cycles and fraud patterns than team-led startups.",
+    "source": {
+      "name": "CNBC · 2026-11-07",
+      "url": "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html"
+    },
+    "stat_value": "Rising",
+    "stat_label": "New no-employee business formations"
+  },
+  {
+    "id": "2026-11-07-anthropic-disease-cure",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-08T00:01:25.000Z",
+    "headline": "Anthropic expands into disease research, signaling AI lab pivot beyond language models",
+    "plain_english": "Anthropic is moving into disease research and therapeutic discovery. This represents a frontier AI lab applying LLMs to biotech—a pattern now repeated across Anthropic, DeepMind, and OpenAI. BFSI relevance: signals where VC and strategic capital expect AI value in life sciences, affecting biotech equity research and pharma M&A models.",
+    "why_it_matters": "Frontier labs' domain expansion into biotech validates AI-driven drug discovery as investable. This reshapes how BFSI asset managers price biotech risk and how banks structure healthcare tech financing.",
+    "source": {
+      "name": "WSJ · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU1drZ3NwOE9Ra3A3eXVQaUNSVlp2b3pjS3BzMHVQX0ZjWU90MkN2NE1hTUgxbnJMVjlhUllQV3E2ZmVMUWRHYmhBNlBNd0szT3o2LTI5XzNQQW9xbkNGVHE5d19wQ1pMMFFNVUtUX082TFZVdC1LLVdjWnRDbDNUVml0VmFaTkNLZTh0MGtB"
     }
   },
   {
@@ -7786,21 +7896,6 @@
     }
   },
   {
-    "id": "2026-10-11-amazon-decart-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-11T20:46:52.000Z",
-    "headline": "Amazon in talks to acquire AI startup Decart for $7 billion",
-    "plain_english": "Amazon is negotiating to buy Decart, an AI company, for approximately $7 billion according to Wall Street Journal. Deal reflects tech giant's accelerating push into frontier AI capabilities alongside AWS financial services push.",
-    "why_it_matters": "Decart acquisition signals Amazon's strategy to own core AI IP rather than depend on third-party models. Enables AWS to compete directly with Azure OpenAI for enterprise AI workloads, including banking risk/compliance use cases.",
-    "amount": "$7B",
-    "source": {
-      "name": "Bloomberg · 2026-10-11",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlp0dEhQeUJEblZQcDdEQmMyOGVkSFFlbzRVaXhuT0xFUFpNc21laThfRWNnVmpRMHdiVG1BbzJiTjliOFNCR0xDWEl3X0hES3FXWlZ5LUNjZnFFRkdwWTRoVC11VHllTkM3bS1sVi04cG1EVjlBbGw5R2tNRUxmWlp2QlFrZk1uemJBMUt1QjlLRnFtdDhyVWY1UTVHZE1HTmR4NjRmSDlvQQ"
-    }
-  },
-  {
     "id": "2026-10-15-coinbase-payments-stablecoin-banking",
     "category": "shift",
     "jurisdiction": "US",
@@ -8088,22 +8183,6 @@
     }
   },
   {
-    "id": "2026-10-11-ai-productivity-paradox",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-11T22:00:00.000Z",
-    "headline": "AI innovation speed paradox: rapid tech breakthroughs correlate with slower economic growth",
-    "plain_english": "Fortune analysis surfaces empirical tension: as AI development accelerates (model releases, capability gains), economy-wide productivity and GDP growth rates have not matched. Suggests gap between lab progress and real-world enterprise adoption or ROI realization.",
-    "why_it_matters": "For BFSI investors: implies AI spend may not translate to near-term earnings accretion. Banks investing heavily in LLM pilots/deployments may face pressure to justify capex if macro productivity gains lag 12–18 months.",
-    "stat_value": "Inverse correlation observed",
-    "stat_label": "AI innovation velocity vs. GDP growth rate",
-    "source": {
-      "name": "Fortune · 2026-10-11",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zZ05CTGdTMW83M3FGTlY3UU1pU1JQWEFsQzNqaV81T1N6OXJIb2ZvM3RzMEpJRWtqcDZvam9Vb2NMNFdhYVVOT29KNXo3Wm5RbUJrOVRfT2V2NG85YnBhMWNkVDBTYXYwVGJjZnZvVzN3d2tTVWFpR0Vib0Y2QQ"
-    }
-  },
-  {
     "id": "2026-10-12-regulation-publishers-ai-copyright",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -8245,24 +8324,6 @@
     "effective_date": null
   },
   {
-    "id": "2026-10-11-nubank-ai-compliance-expansion",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-11T20:38:42.000Z",
-    "headline": "Nubank deploys AI compliance tools in US expansion, rules out Monzo merger",
-    "plain_english": "Latin American fintech Nubank is expanding into the US market and simultaneously deploying AI-powered compliance tools to automate regulatory workflow. Also terminated merger talks with UK fintech Monzo, signaling focus on organic AI-driven growth.",
-    "why_it_matters": "Emerging market fintech using AI compliance to leapfrog legacy infrastructure costs in developed markets. Model is replicable for other Latin American and Asian fintechs entering US/EU.",
-    "scale": {
-      "metric": "markets",
-      "value": "5+ countries"
-    },
-    "source": {
-      "name": "Crowdfund Insider · 2026-10-11",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPck9RV1BqWkhERDlqRG5QYzFQMGVRc1dETzVfMjl6bHRwVE1PRzFWaUFuTmdhYjZzLUxLNldZMkdWbVAxaVhhZ2ZUaHpkTmk5RGM0NzU1aElEd2haR29jenZjdnlrVzNlbUh3LWV6bXVxemtvV3J4WUZFbjAzUnk1R29jTmQ4dG1CMmVtYlFNVGtzTjVzdVBQVm1CN0JwTU5tM2hWZ2xWc0lSN1FMY25hN2lyZk1KMHJLTkN5OHpYSFIwNGg3"
-    }
-  },
-  {
     "id": "2026-10-12-shift-blackrock-short-duration-bonds-portfolio-rebalance",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8322,26 +8383,6 @@
     "source": {
       "name": "Finextra · 2026-10-12",
       "url": "https://www.finextra.com/newsarticle/48570/bahrain-central-bank-to-treble-tech-budget?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-12-sbi-mesh-digital-asset-jv",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-12T00:01:00.000Z",
-    "headline": "SBI Group launches digital asset JV with Mesh Connect and Money Forward",
-    "plain_english": "Japan's State Bank of India subsidiary is forming a joint venture with crypto infrastructure provider Mesh Connect and fintech Money Forward to develop digital asset services. Signals major Japanese bank entry into regulated crypto/tokenization space.",
-    "why_it_matters": "SBI's scale (60K+ employees, largest bank in India) legitimizes institutional digital asset infrastructure. Precedent for other mega-banks considering tokenization as core business line, not fringe experiment.",
-    "jargon": [
-      {
-        "term": "Digital asset infrastructure",
-        "def": "Technical backbone enabling banks to issue, custody, and trade tokenized securities and cryptocurrencies at scale."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-12",
-      "url": "https://www.finextra.com/newsarticle/48567/sbi-group-and-mesh-prep-digital-asset-jv"
     }
   }
 ]
