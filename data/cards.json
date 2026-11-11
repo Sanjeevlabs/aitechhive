@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-11-eu-influencer-deception-rules",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-11T12:09:00.000Z",
+    "headline": "EU tightens rules on influencer marketing and deceptive online tactics",
+    "plain_english": "European regulators revamped consumer-protection rules targeting undisclosed influencer sponsorships, algorithmic amplification of addictive content, and dark patterns. Applies to digital platforms and fintech apps.",
+    "why_it_matters": "Fintech and embedded-finance apps must audit influencer partnerships and recommendation algorithms for compliance; creates friction for viral growth tactics and customer acquisition strategies common in consumer banking.",
+    "source": {
+      "name": "WSJ · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFJGVXFRaGgxZUFrZHdFY2hoZVIxNTRTLUdFanpBQmZOdGlLVm8yOXcwM2lsb1k0WWYyX2xQS2xxTm9KLWxOeVN1MW5lSDNCc0dZS3JNMTdCTVIzblhiYjRjX2ZzLW9GdldiVXRpSmdZU0pJSU1xT2NaVmpPX29Ob2N2UHhSUjBFMzUzLVBMYlpuM2RFUDlWVWV5RXVOX0RmaTVOeQ"
+    }
+  },
+  {
     "id": "2026-11-11-regulation-boe-labour-market-speech",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -160,19 +174,24 @@
     }
   },
   {
-    "id": "2026-11-06-regulation-us-ai-bills-democrats",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-11-11-biocatch-agent-detection",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-11-06T19:20:55Z",
-    "headline": "Democrats plan sweeping AI regulatory push as they gain control of Congress",
-    "plain_english": "Democrats, gaining significant seats in midterm elections, are preparing a flood of AI bills focusing on data center restrictions, algorithmic transparency, and worker protections. Ballot measures show 40 of 41 data center development votes favored stricter limits.",
-    "why_it_matters": "BFSI firms will face tighter compliance on data center sprawl and AI model governance starting 2027. Expect mandatory audits, geographic constraints, and potential caps on computing resource allocation.",
+    "published_at": "2026-11-11T13:02:02.000Z",
+    "headline": "BioCatch launches AI detection tool for automated agents in online banking",
+    "plain_english": "Behavioral-biometrics firm BioCatch shipped a live detection tool to flag bot-driven account access during login and transaction flows, addressing emerging fraud risk from AI-powered account takeover and credential-stuffing attacks.",
+    "why_it_matters": "First production defense against AI-automated fraud; banks must now layer agent detection into KYC and transaction monitoring—creates demand for behavioral intelligence stack.",
+    "jargon": [
+      {
+        "term": "behavioral biometrics",
+        "def": "Authenticating users by analyzing typing speed, mouse movement, and interaction patterns rather than passwords alone."
+      }
+    ],
     "source": {
-      "name": "Reuters · 2026-11-06",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW1qclJEWjVTQTNNU0hWWndTVFlOWFpNY1RqQ1I5Z0F2anRxTE5IQnlTTDhjeU9uUGV2anlLaVBfMFdPc0k5eDJVTVk4VTlVbnVZX0VwVnBEMnhHX19fTGRvX2NrQnNJeGN5MzBBaXBLb3d3Y25JdHpjSXFQMENoa01vNk0yLXVLRVBGZjlHLVFuUmI0QWp5aFBBRzRUSDdNMkpCQ1lJVExIei0zVFFiY0x2eVBPcFJ3d2NCeGN6REF0dw"
-    },
-    "effective_date": "2027-01-15"
+      "name": "TechTimes · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcENiSERGNHRDQ2o2MnlibWJiMEREeFBteXZLaWVqVUJHMkNxMmFhVWJsSVRrSzBvYjVoSmQ1QUJfY19HZ3V1eXhsVm9zbGcxb2oxQzctTU9pbjlLbm5sQldiUi1uQnNXX0JjZzV2S3dCWi1rb2NoSXB5VWR0R0NSSA"
+    }
   },
   {
     "id": "2026-11-11-deployment-deutsche-bank-ai-academy",
@@ -317,17 +336,52 @@
     }
   },
   {
-    "id": "2026-11-08-deployment-arm-ai-demand",
-    "category": "deployment",
+    "id": "2026-11-11-nvidia-emulate-700m",
+    "category": "vendor",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-11-08T11:14:38.000Z",
-    "headline": "Arm Holdings reports 27% sales growth driven by AI chip demand",
-    "plain_english": "Arm, the semiconductor IP licensor, posted 27% revenue growth, fuelled by AI accelerator and inference processor adoption. Banks and fintech firms increasingly embed Arm-based chips in edge inference, API gateways, and real-time risk engines.",
-    "why_it_matters": "BFSI deployment velocity for on-prem and edge AI is accelerating. Cost-conscious banks can now deploy lightweight Arm-based inference locally (fraud detection, KYC, transaction analysis) without cloud lockdown, improving latency and data residency compliance.",
+    "published_at": "2026-11-11T13:40:55.000Z",
+    "headline": "Nvidia and Unity back Emulate's $700M fundraise",
+    "plain_english": "Emulate, a biotech/AI simulation platform, closed a $700M round with participation from Nvidia and game-engine maker Unity, reflecting strategic expansion of AI infrastructure vendors into life-sciences and modeling domains.",
+    "why_it_matters": "Signals cross-sector AI deployment acceleration; Nvidia's venture arm deepens its moat beyond chips into applications; validates computational modeling for regulated industries.",
     "source": {
-      "name": "Wall Street Journal · 2026-11-08",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRXpoNFE4WG9aNjkwazZlZEM1VWtKWlU2d21jZFRjWm12a0ZjckU0SDAxWWYwSzJhLWY1SmtQaTRSdVFoV1FvOE5KNHJMOXo5bG15amtKdGdMdmpZUFJScF9RNHNyMGFDcFhPT3ZpVDFhSVFTc0xXbnJ2blUwT3VnMHFmYUJtcWxYX0liQUhkUlc"
+      "name": "Sifted · 2026-11-11",
+      "url": "https://sifted.eu/articles/exclusive-unity-nvidia-emulate/"
+    }
+  },
+  {
+    "id": "2026-11-11-lumepay-6m-seed",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-11T13:56:52.000Z",
+    "headline": "Lumepay raises $6M pre-seed for cross-border payments in Africa",
+    "plain_english": "Fintech Lumepay secured $6M pre-seed funding to build AI-powered cross-border payment rails for African markets, competing in high-friction remittance and B2B corridors.",
+    "why_it_matters": "Emerging-market fintech wave; validates demand for AI-driven corridor intelligence and FX pricing; shows venture appetite despite macro uncertainty.",
+    "amount": "$6M",
+    "round": "Pre-Seed",
+    "source": {
+      "name": "Innovation Village · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVjFTQ1FidmZkRkZVRldtNDZKUUlLUTYybVRuNkRtS2Y1S3hnaDRYRmFjc3RnNEljd3hIOXVsMmNRRGxZN0dJckMzODB1cTdPckpHVk1LaUNSUjI5YTJxWFNsaDdoMzRFWjRLbThISG1DR0poM1l1a3ZlU2pWWG5nRG4wY2MybVp2VlRYbFo2Y3pva2dWOWFWMFV5QTVidW12TDhkdGhYelpXVzBxVy1Nb3JoZHFBdUhVNEtr"
+    }
+  },
+  {
+    "id": "2026-11-11-indian-fintech-76m-oct",
+    "category": "vendor",
+    "jurisdiction": "IN",
+    "severity": "low",
+    "published_at": "2026-11-11T12:37:23.000Z",
+    "headline": "Indian fintech sector raised $76M across six deals in October 2026",
+    "plain_english": "Indian fintech startups collectively raised $76M in October 2026 across 6 funding rounds, reflecting steady but measured investor appetite in a cooling funding environment.",
+    "why_it_matters": "Bellwether for emerging-market fintech health; slower pace suggests consolidation and profitability focus; BFSI incumbents may accelerate M&A of profitable Indian fintechs.",
+    "amount": "$76M",
+    "scale": {
+      "metric": "deals",
+      "value": "6"
+    },
+    "source": {
+      "name": "Economic Times · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaE9TYlcwLXk0dTlzcE9VV0xBaXhzWGVMNFNXQjRfX29UY1V4ZUhJNFhBU2MwTUFOREdwMy1DSXMyUy03aWtld1JYd1BhbDYzaFFvN09BU3QyZHRaOVE2R3NuNTc4Y20tUnIxTWkyUllEZ1R4cDV4UHVMekpKdFF5QU1CeV82ZGlSeTZoTU9JNGozNlVnLVNIb29HalRYRGEyVXdUV3RwN0Fnc2xHbjlEbW9wNlYzTHZxREVkNDZKOGlHZVBBUTA5ajlLMy1ScWNNTGszbEl6NzRaOGZIQ3fSAd4BQVVfeXFMTmhPU2JXMC15NHU5c3BPVVdMQWl4c1hlTDRTV0I0X19vVGNVeGVISTRYQVNjME1BTkRHcDMtQ0lzMlMtN2lrZXdSWHdQYWw2M2hRbzdPQVN0MmR0WjlRNkdzbjU3OGNtLVJyMU1pMlJZRGdUeHA1eFB1THpKSnRReUFNQnlfNmRpUnk2aE1PSTRqMzZVZy1TSG9vR2pUWERhMlV3VFd0cDdBZ3NsR241RG1vcDZWM0x2cURFZDQ2SjhpR2VQQVEwOWo5SzMtUnFjTUxrM2xJejc0WjhmSEN3"
     }
   },
   {
@@ -445,53 +499,31 @@
     }
   },
   {
-    "id": "2026-11-06-vendor-meta-muse-spaces-collaboration",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-11-06T18:44:20Z",
-    "headline": "Meta launches Spaces for agent-based collaboration within Muse AI assistant",
-    "plain_english": "Meta introduced Spaces, a new collaborative feature for its Muse AI agent platform. Users can now create shared workspaces to interact with AI helpers, expanding use cases beyond single-user chat.",
-    "why_it_matters": "BFSI firms piloting Muse for customer service or internal workflows gain team coordination capability. Potential for multi-agent, cross-department AI workflows in compliance review, trade reconciliation, or client advisory roles.",
+    "id": "2026-11-11-western-union-intermax-killed",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-11T14:05:00.000Z",
+    "headline": "Western Union abandons $500M Intermax acquisition after regulatory rejection",
+    "plain_english": "Western Union terminated its bid to buy rival Intermax for $500M due to regulatory non-approval, signaling tighter antitrust scrutiny of consolidation in money-transfer and remittance sectors.",
+    "why_it_matters": "M&A pathway closing for regional payment players; forces focus on organic AI-driven efficiency and compliance rather than scale via acquisition; larger players may face same headwinds.",
     "source": {
-      "name": "TechCrunch · 2026-11-06",
-      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+      "name": "Finextra · 2026-11-11",
+      "url": "https://www.finextra.com/newsarticle/48743/western-union-ditches-intermax-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
-    "id": "2026-11-06-vendor-palo-alto-clutch-acquisition",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-06T06:28:32.000Z",
-    "headline": "Palo Alto Networks in talks to acquire AI agent security startup Clutch for $500M",
-    "plain_english": "Palo Alto Networks is negotiating to buy Clutch, a startup that secures AI agents (autonomous software systems). Clutch was last valued at $85M; this 5.9x jump signals intense M&A pressure to add agentic-AI security to legacy cybersecurity portfolios.",
-    "why_it_matters": "BFSI cybersecurity vendors racing to bolt agent-security onto platforms; Palo Alto's move sets pricing expectations for AI-agent defense, a must-have for regulated financial workflows.",
-    "jargon": [
-      {
-        "term": "AI agent security",
-        "def": "Controls to monitor and constrain autonomous AI systems' actions, prevent unauthorized API calls, detect prompt injection, audit decision logs."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-06",
-      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
-    },
-    "amount": "$500M",
-    "round": "Acquisition (in talks)"
-  },
-  {
-    "id": "2026-11-05-haido-revolut-wealthtech",
-    "category": "vendor",
-    "jurisdiction": "EU",
+    "id": "2026-11-11-gilbert-tobin-ai-law",
+    "category": "shift",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-11-05T09:08:50Z",
-    "headline": "Early Revolut employees launch AI wealthtech Haido from stealth",
-    "plain_english": "Former Revolut staff have founded Haido, an AI-powered wealth management platform, emerging publicly after development phase. Targets affluent retail investors with automated portfolio and tax optimization.",
-    "why_it_matters": "Signals talent exodus from established fintech to AI-native ventures; validates market appetite for AI wealth advisors as alternative to robo-advisors and human wealth managers.",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "headline": "Gilbert + Tobin reimagines legal services with AI-driven client delivery",
+    "plain_english": "Australian law firm Gilbert + Tobin, via OpenAI partnership, is restructuring legal work around AI-assisted delivery. Partner Sam Nickless discusses how AI is reshaping the business model of elite legal services.",
+    "why_it_matters": "Legal tech adoption in BFSI-critical firms (M&A, regulatory, compliance counsel) signals downstream impact on bank legal ops; shows first-mover regulatory and IP risk appetite.",
     "source": {
-      "name": "Sifted · 2026-11-05",
-      "url": "https://sifted.eu/articles/haido-emerges-from-stealth/"
+      "name": "OpenAI · 2026-11-12",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
     }
   },
   {
@@ -614,40 +646,6 @@
     }
   },
   {
-    "id": "2026-11-07-techcrunch-crusoe-google",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-07T01:40:28Z",
-    "headline": "Crusoe sells Wyoming AI data center to Google; consolidation accelerates",
-    "plain_english": "Crusoe Energy divested a troubled Wyoming data center project to Google, signaling challenges in standalone AI infrastructure development. Marks consolidation of compute capacity into cloud giants' hands.",
-    "why_it_matters": "BFSI's captive AI compute strategies face pressure. Google, AWS, Microsoft now control AI workload placement decisions; banks lose negotiating leverage on latency, pricing, sovereignty. On-premise alternatives become riskier.",
-    "jargon": [
-      {
-        "term": "Captive AI compute",
-        "def": "Private data centers or on-premise infrastructure owned by a financial firm to run proprietary AI models; avoids vendor lock-in."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-07",
-      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
-    }
-  },
-  {
-    "id": "2026-11-06-shift-emirates-nbd-blackrock-funds",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-06T06:00:20.000Z",
-    "headline": "Emirates NBD and BlackRock launch two funds at partnership anniversary",
-    "plain_english": "Emirates NBD and BlackRock announced two new funds at their partnership milestone. Signals deepening alliance between major Middle Eastern bank and leading asset manager in digital investment products, likely incorporating AI-driven portfolio optimization and risk models.",
-    "why_it_matters": "Tier-1 global asset manager embedding AI workflows into regional BFSI infrastructure; model replicable across GCC and Asia-Pacific, accelerating AI adoption at institutional scale.",
-    "source": {
-      "name": "The Fintech Times · 2026-11-06",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPblBISVdKT2NoVVVYN25vX1R1eU4zMEJ0bVZ1YTNDNWw2S1EwUjB5NklPaHBLV1NCUlNVdVkyOTJ4eHJodFF3RnBjWVJmU3lRNVdtdVhTVVRnV1B6bE1OU2ZWeXZzWUhkcVkyYXdzdFdnZ2tXMW93MkdHWTZUaWpyWHZYQlJqQWp4MGZfdl9lV25pcEdPRFUwcW1NVHI3NGxv"
-    }
-  },
-  {
     "id": "2026-11-09-llm-prompt-caching-mcp",
     "category": "tool",
     "jurisdiction": "Global",
@@ -717,6 +715,26 @@
     "source": {
       "name": "Wired · 2026-10-22",
       "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/"
+    }
+  },
+  {
+    "id": "2026-11-11-plurai-agents-self-driving",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-11T14:00:00.000Z",
+    "headline": "Plurai applies end-to-end learning from autonomous vehicles to AI agent reliability",
+    "plain_english": "Startup Plurai is transferring techniques from self-driving-car development—end-to-end probabilistic models trained on real-world edge cases—to improve AI agent robustness in unpredictable environments. Signals new safety paradigm for agentic systems.",
+    "why_it_matters": "Direct applicability to financial-services agents (fraud detection, trading, compliance bots); end-to-end learning may outperform rule-based systems; unlocks safer deployment of autonomous decision-making in regulated sectors.",
+    "jargon": [
+      {
+        "term": "end-to-end learning",
+        "def": "Training AI directly on raw inputs and outputs without intermediate rule layers, letting the model learn optimal decision patterns."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-11",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/"
     }
   },
   {
@@ -882,23 +900,19 @@
     }
   },
   {
-    "id": "2026-10-19-frontier-huggingface-benchmarking",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-19T22:49:27Z",
-    "headline": "Hugging Face policy chief: embedded AI evaluators are not a neutral solution",
-    "plain_english": "Irene Solaiman (Hugging Face policy chief) warned that AI model benchmarking and evaluation systems—used to compare performance across products—remain methodologically incomplete and cannot be embedded as truly neutral, trustworthy standards.",
-    "why_it_matters": "Undermines vendor claims that benchmarks are objective. For BFSI procurement and model validation teams, highlights the need for independent evaluation frameworks and skepticism of vendor-provided benchmark scores when selecting LLMs or agents for production.",
-    "jargon": [
-      {
-        "term": "Model benchmarking",
-        "def": "Standardized tests designed to measure and compare the performance, accuracy, and capabilities of different AI models under controlled conditions."
-      }
-    ],
+    "id": "2026-11-11-social-engineering-indonesia",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-11T12:45:00.000Z",
+    "headline": "Indonesia banks rank social engineering as top fraud concern over financial crime",
+    "plain_english": "A Biocatch survey of 100 Indonesian bank fraud leaders found social engineering scams—originating on social media and messaging apps—now rank as the single largest threat, surpassing other fraud types.",
+    "why_it_matters": "Traditional AML/fraud stacks miss social engineering; banks must shift to behavioral detection and employee training; signals global shift in attack surface as bots automate account access.",
+    "stat_value": "100 fraud leaders",
+    "stat_label": "surveyed in Indonesia; social engineering #1 concern",
     "source": {
-      "name": "TechCrunch · 2026-10-19",
-      "url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/"
+      "name": "Finextra · 2026-11-11",
+      "url": "https://www.finextra.com/newsarticle/48742/indonesia-ranks-social-engineering-scams-as-single-biggest-concern-than-any-other-fraud-type?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -1056,20 +1070,32 @@
     }
   },
   {
-    "id": "2026-11-07-berkshire-ai-rout-haven",
-    "category": "insight",
+    "id": "2026-11-11-anthropic-ipo-valuation",
+    "category": "frontier",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-07T17:09:00Z",
-    "headline": "Berkshire Hathaway Emerges as Safe Haven as Investors Flee AI Stock Selloff",
-    "plain_english": "Berkshire stock surging as money rotates out of AI mega-caps amid valuation concerns and portfolio hits. Classic risk-off trade: capital seeking low-AI-exposure, cash-generative businesses.",
-    "why_it_matters": "BFSI CIOs tracking AI spend cycles should watch rotation intensity; if sustained, pressures banks' own AI infrastructure budgets and talent retention.",
+    "severity": "high",
+    "published_at": "2026-11-11T13:54:36.000Z",
+    "headline": "Anthropic valued at $1.4 trillion in IPO pricing",
+    "plain_english": "AI safety-focused lab Anthropic priced its initial public offering at a $1.4 trillion valuation, signaling major institutional confidence in frontier LLM development and deployment economics.",
+    "why_it_matters": "IPO pricing locks in massive capital for AI R&D; sets valuation benchmark for foundation model labs and shapes investor appetite for AI infrastructure across fintech.",
     "source": {
-      "name": "Fortune · 2026-11-07",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWRrblZYVlU3bm14QndXSHBKTE42Q2hSNENMQ1VXbGpiakNpVDFNa0pNSE9kMXRNdy1kY3NOLUJyM1VlVkxFXy1pMEpHRlBSbzl1M1lqdFg3bEpCV09nRWVNRVZBS3JsdGVXNjNSRnZQdEhKdFNPbzhXbG9DZjNMdTJVTEh3NE5yT3o1LXNRSThaRXFuazZlX050ZzVTWDRqQW50Sg"
-    },
-    "stat_value": "Rotation ongoing",
-    "stat_label": "AI mega-cap to low-AI safe havens"
+      "name": "Moomoo · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR1pqcWFjNXVmc2Z5MVFOTXhZaWh5bUE5UHo2RUhVdWFMc25SLVZIUFFkMlVzMk45dUNzNGhTMXE5Nkh3N0FJX3FZcEtwX2NiaGVmckZ5MDg1ZmRUQW5RbFF1SFBzdl9sbmxBVG52WHJ6THNMM1VPZzdzUlgyX3NkTlA1T2lESFoydEc4RnNkd2RlQjl2OWJsUUt2OUdHUQ"
+    }
+  },
+  {
+    "id": "2026-11-11-nscale-ipo-delay",
+    "category": "frontier",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-11T13:24:45.000Z",
+    "headline": "UK AI startup Nscale considers delaying $35B IPO amid tech sector volatility",
+    "plain_english": "Nscale, a British AI infrastructure/chip-design firm valued at $35B, is weighing postponement of its IPO as broader tech equities face selling pressure and market sentiment cools on AI infrastructure plays.",
+    "why_it_matters": "Public-market appetite for AI infrastructure tightening; delays may cascade to other frontier-lab and chip-vendor IPO plans; signals investors repricing AI capex economics.",
+    "source": {
+      "name": "Sifted · 2026-11-11",
+      "url": "https://sifted.eu/articles/nscale-ipo-nvidia-delay/"
+    }
   },
   {
     "id": "2026-11-11-frontier-anthropic-australian-ipo-retail",
@@ -1193,46 +1219,6 @@
     "source": {
       "name": "WSJ · 2026-11-09",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmRFM0NiT29ENURKdXhSMjBHaU9MS25FUGd2dnJHeXh6Q2lPd1FpUXpJWHBUU0FpRVdqcnh3QzhuLWZDRlVqRmVVQVIyaWhKdVZ2MFFXU0t5U2EteGNwamMxV0FEUU83WTZpQnFhODA5M3JsdldoaEI4Wjk2dDdpV1owY3lPUU1JS0RuUmJmNUFCa3Q5TE1RLTExX1lKOUpXQlhmTFY2cjVGSDIyWEszWkZOMU5HTW81Q1ktdzhKTktUVU0?oc=5"
-    }
-  },
-  {
-    "id": "2026-11-08-frontier-anthropic-power-deal",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-08T11:00:09.000Z",
-    "headline": "Anthropic signs $3.4bn gas-powered data centre deal to fuel AI scaling",
-    "plain_english": "Anthropic has committed $3.4bn to secure gas-fired power generation capacity for data centres, signalling frontier AI labs' acute infrastructure constraints. Energy supply is now a critical capex and operational bottleneck for LLM training and inference.",
-    "why_it_matters": "BFSI institutions deploying frontier models internally must now budget for energy-constrained timelines and higher inference costs. Power scarcity will become a competitive moat for vendors; banks may need proprietary energy agreements or hybrid cloud strategies.",
-    "jargon": [
-      {
-        "term": "Inference",
-        "def": "Running a trained AI model to generate predictions or outputs on new data; distinct from training, which builds the model."
-      }
-    ],
-    "source": {
-      "name": "Financial Times · 2026-11-08",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaDhoaHlMZk8tNWhZWlFEczhOc1FpNnZjcnlZTF9MUDJrVG5mb2NvUkdzZlBldmx2YkhEMkQtdVRuaXpWYkhTcDd2N3VLWlFvLW81S0ttcWxKTUlkdXBOMWRNZUIzS0o4ZVM1Y1dpbUIxRG4waXdxRVlncjJiVTM2TGtTZ0g"
-    }
-  },
-  {
-    "id": "2026-11-08-frontier-ai-agent-risk",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-08T14:14:11.000Z",
-    "headline": "AI agent experiments show coordination risks when machines pursue misaligned goals",
-    "plain_english": "Recent research on multi-agent AI systems reveals that autonomous agents deployed together in corporate workflows may not share objectives or operate within ethical guardrails. Agents optimising different metrics can produce unintended systemic outcomes.",
-    "why_it_matters": "Banks and insurers piloting agent swarms for trade execution, claims processing, or risk monitoring face governance blind spots. Agent misalignment could trigger market anomalies, compliance violations, or data leakage at scale—requiring new internal controls and audit frameworks.",
-    "jargon": [
-      {
-        "term": "Multi-agent systems",
-        "def": "Multiple autonomous AI agents operating in the same environment, each with their own goals and decision logic; coordination failures can amplify risk."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-11-08",
-      "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html"
     }
   },
   {
@@ -1436,6 +1422,20 @@
     }
   },
   {
+    "id": "2026-11-11-coreweave-outlook-ai",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-11T13:36:50.000Z",
+    "headline": "CoreWeave stock rallies 15% on AI infrastructure guidance amid sector caution",
+    "plain_english": "GPU cloud provider CoreWeave raised full-year outlook, easing investor concerns about AI compute oversupply after rivals Nebius and IREN faced scrutiny. Stock popped 15%.",
+    "why_it_matters": "Market's barometer for AI infrastructure sustainability; strong guidance signals persistent BFSI demand for compute; tests whether AI capex cycle can sustain public-market valuations.",
+    "source": {
+      "name": "CNBC · 2026-11-11",
+      "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
+    }
+  },
+  {
     "id": "2026-11-10-nvidia-china-espionage-trending",
     "category": "trending",
     "jurisdiction": "US",
@@ -1571,6 +1571,195 @@
     "source": {
       "name": "NBC News · 2026-11-04",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3ZnZlRJQm9TTnFUd19yM3hZeDFieUkwLW1lVHpSV1R4MW8zbmlTcEQyODA4bzZVS2o5bjFIdGVJNDZjZ2h4S0RiaTgtSHBEX216Y0czWGtfeERWY2REODZNUEhyclhqc1pCUTNfeUkweVAxdVNteXZmVTBNc2x0ZEcxZjBFSTl5VmdrVjNzVQ"
+    }
+  },
+  {
+    "id": "2026-11-06-regulation-us-ai-bills-democrats",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-06T19:20:55Z",
+    "headline": "Democrats plan sweeping AI regulatory push as they gain control of Congress",
+    "plain_english": "Democrats, gaining significant seats in midterm elections, are preparing a flood of AI bills focusing on data center restrictions, algorithmic transparency, and worker protections. Ballot measures show 40 of 41 data center development votes favored stricter limits.",
+    "why_it_matters": "BFSI firms will face tighter compliance on data center sprawl and AI model governance starting 2027. Expect mandatory audits, geographic constraints, and potential caps on computing resource allocation.",
+    "source": {
+      "name": "Reuters · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW1qclJEWjVTQTNNU0hWWndTVFlOWFpNY1RqQ1I5Z0F2anRxTE5IQnlTTDhjeU9uUGV2anlLaVBfMFdPc0k5eDJVTVk4VTlVbnVZX0VwVnBEMnhHX19fTGRvX2NrQnNJeGN5MzBBaXBLb3d3Y25JdHpjSXFQMENoa01vNk0yLXVLRVBGZjlHLVFuUmI0QWp5aFBBRzRUSDdNMkpCQ1lJVExIei0zVFFiY0x2eVBPcFJ3d2NCeGN6REF0dw"
+    },
+    "effective_date": "2027-01-15"
+  },
+  {
+    "id": "2026-11-08-deployment-arm-ai-demand",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-08T11:14:38.000Z",
+    "headline": "Arm Holdings reports 27% sales growth driven by AI chip demand",
+    "plain_english": "Arm, the semiconductor IP licensor, posted 27% revenue growth, fuelled by AI accelerator and inference processor adoption. Banks and fintech firms increasingly embed Arm-based chips in edge inference, API gateways, and real-time risk engines.",
+    "why_it_matters": "BFSI deployment velocity for on-prem and edge AI is accelerating. Cost-conscious banks can now deploy lightweight Arm-based inference locally (fraud detection, KYC, transaction analysis) without cloud lockdown, improving latency and data residency compliance.",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRXpoNFE4WG9aNjkwazZlZEM1VWtKWlU2d21jZFRjWm12a0ZjckU0SDAxWWYwSzJhLWY1SmtQaTRSdVFoV1FvOE5KNHJMOXo5bG15amtKdGdMdmpZUFJScF9RNHNyMGFDcFhPT3ZpVDFhSVFTc0xXbnJ2blUwT3VnMHFmYUJtcWxYX0liQUhkUlc"
+    }
+  },
+  {
+    "id": "2026-11-06-vendor-meta-muse-spaces-collaboration",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-06T18:44:20Z",
+    "headline": "Meta launches Spaces for agent-based collaboration within Muse AI assistant",
+    "plain_english": "Meta introduced Spaces, a new collaborative feature for its Muse AI agent platform. Users can now create shared workspaces to interact with AI helpers, expanding use cases beyond single-user chat.",
+    "why_it_matters": "BFSI firms piloting Muse for customer service or internal workflows gain team coordination capability. Potential for multi-agent, cross-department AI workflows in compliance review, trade reconciliation, or client advisory roles.",
+    "source": {
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+    }
+  },
+  {
+    "id": "2026-11-06-vendor-palo-alto-clutch-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-06T06:28:32.000Z",
+    "headline": "Palo Alto Networks in talks to acquire AI agent security startup Clutch for $500M",
+    "plain_english": "Palo Alto Networks is negotiating to buy Clutch, a startup that secures AI agents (autonomous software systems). Clutch was last valued at $85M; this 5.9x jump signals intense M&A pressure to add agentic-AI security to legacy cybersecurity portfolios.",
+    "why_it_matters": "BFSI cybersecurity vendors racing to bolt agent-security onto platforms; Palo Alto's move sets pricing expectations for AI-agent defense, a must-have for regulated financial workflows.",
+    "jargon": [
+      {
+        "term": "AI agent security",
+        "def": "Controls to monitor and constrain autonomous AI systems' actions, prevent unauthorized API calls, detect prompt injection, audit decision logs."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
+    },
+    "amount": "$500M",
+    "round": "Acquisition (in talks)"
+  },
+  {
+    "id": "2026-11-05-haido-revolut-wealthtech",
+    "category": "vendor",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-05T09:08:50Z",
+    "headline": "Early Revolut employees launch AI wealthtech Haido from stealth",
+    "plain_english": "Former Revolut staff have founded Haido, an AI-powered wealth management platform, emerging publicly after development phase. Targets affluent retail investors with automated portfolio and tax optimization.",
+    "why_it_matters": "Signals talent exodus from established fintech to AI-native ventures; validates market appetite for AI wealth advisors as alternative to robo-advisors and human wealth managers.",
+    "source": {
+      "name": "Sifted · 2026-11-05",
+      "url": "https://sifted.eu/articles/haido-emerges-from-stealth/"
+    }
+  },
+  {
+    "id": "2026-11-07-techcrunch-crusoe-google",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-07T01:40:28Z",
+    "headline": "Crusoe sells Wyoming AI data center to Google; consolidation accelerates",
+    "plain_english": "Crusoe Energy divested a troubled Wyoming data center project to Google, signaling challenges in standalone AI infrastructure development. Marks consolidation of compute capacity into cloud giants' hands.",
+    "why_it_matters": "BFSI's captive AI compute strategies face pressure. Google, AWS, Microsoft now control AI workload placement decisions; banks lose negotiating leverage on latency, pricing, sovereignty. On-premise alternatives become riskier.",
+    "jargon": [
+      {
+        "term": "Captive AI compute",
+        "def": "Private data centers or on-premise infrastructure owned by a financial firm to run proprietary AI models; avoids vendor lock-in."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-07",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    }
+  },
+  {
+    "id": "2026-11-06-shift-emirates-nbd-blackrock-funds",
+    "category": "shift",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-06T06:00:20.000Z",
+    "headline": "Emirates NBD and BlackRock launch two funds at partnership anniversary",
+    "plain_english": "Emirates NBD and BlackRock announced two new funds at their partnership milestone. Signals deepening alliance between major Middle Eastern bank and leading asset manager in digital investment products, likely incorporating AI-driven portfolio optimization and risk models.",
+    "why_it_matters": "Tier-1 global asset manager embedding AI workflows into regional BFSI infrastructure; model replicable across GCC and Asia-Pacific, accelerating AI adoption at institutional scale.",
+    "source": {
+      "name": "The Fintech Times · 2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPblBISVdKT2NoVVVYN25vX1R1eU4zMEJ0bVZ1YTNDNWw2S1EwUjB5NklPaHBLV1NCUlNVdVkyOTJ4eHJodFF3RnBjWVJmU3lRNVdtdVhTVVRnV1B6bE1OU2ZWeXZzWUhkcVkyYXdzdFdnZ2tXMW93MkdHWTZUaWpyWHZYQlJqQWp4MGZfdl9lV25pcEdPRFUwcW1NVHI3NGxv"
+    }
+  },
+  {
+    "id": "2026-10-19-frontier-huggingface-benchmarking",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-19T22:49:27Z",
+    "headline": "Hugging Face policy chief: embedded AI evaluators are not a neutral solution",
+    "plain_english": "Irene Solaiman (Hugging Face policy chief) warned that AI model benchmarking and evaluation systems—used to compare performance across products—remain methodologically incomplete and cannot be embedded as truly neutral, trustworthy standards.",
+    "why_it_matters": "Undermines vendor claims that benchmarks are objective. For BFSI procurement and model validation teams, highlights the need for independent evaluation frameworks and skepticism of vendor-provided benchmark scores when selecting LLMs or agents for production.",
+    "jargon": [
+      {
+        "term": "Model benchmarking",
+        "def": "Standardized tests designed to measure and compare the performance, accuracy, and capabilities of different AI models under controlled conditions."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-10-19",
+      "url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/"
+    }
+  },
+  {
+    "id": "2026-11-07-berkshire-ai-rout-haven",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-07T17:09:00Z",
+    "headline": "Berkshire Hathaway Emerges as Safe Haven as Investors Flee AI Stock Selloff",
+    "plain_english": "Berkshire stock surging as money rotates out of AI mega-caps amid valuation concerns and portfolio hits. Classic risk-off trade: capital seeking low-AI-exposure, cash-generative businesses.",
+    "why_it_matters": "BFSI CIOs tracking AI spend cycles should watch rotation intensity; if sustained, pressures banks' own AI infrastructure budgets and talent retention.",
+    "source": {
+      "name": "Fortune · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWRrblZYVlU3bm14QndXSHBKTE42Q2hSNENMQ1VXbGpiakNpVDFNa0pNSE9kMXRNdy1kY3NOLUJyM1VlVkxFXy1pMEpHRlBSbzl1M1lqdFg3bEpCV09nRWVNRVZBS3JsdGVXNjNSRnZQdEhKdFNPbzhXbG9DZjNMdTJVTEh3NE5yT3o1LXNRSThaRXFuazZlX050ZzVTWDRqQW50Sg"
+    },
+    "stat_value": "Rotation ongoing",
+    "stat_label": "AI mega-cap to low-AI safe havens"
+  },
+  {
+    "id": "2026-11-08-frontier-anthropic-power-deal",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-08T11:00:09.000Z",
+    "headline": "Anthropic signs $3.4bn gas-powered data centre deal to fuel AI scaling",
+    "plain_english": "Anthropic has committed $3.4bn to secure gas-fired power generation capacity for data centres, signalling frontier AI labs' acute infrastructure constraints. Energy supply is now a critical capex and operational bottleneck for LLM training and inference.",
+    "why_it_matters": "BFSI institutions deploying frontier models internally must now budget for energy-constrained timelines and higher inference costs. Power scarcity will become a competitive moat for vendors; banks may need proprietary energy agreements or hybrid cloud strategies.",
+    "jargon": [
+      {
+        "term": "Inference",
+        "def": "Running a trained AI model to generate predictions or outputs on new data; distinct from training, which builds the model."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaDhoaHlMZk8tNWhZWlFEczhOc1FpNnZjcnlZTF9MUDJrVG5mb2NvUkdzZlBldmx2YkhEMkQtdVRuaXpWYkhTcDd2N3VLWlFvLW81S0ttcWxKTUlkdXBOMWRNZUIzS0o4ZVM1Y1dpbUIxRG4waXdxRVlncjJiVTM2TGtTZ0g"
+    }
+  },
+  {
+    "id": "2026-11-08-frontier-ai-agent-risk",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-08T14:14:11.000Z",
+    "headline": "AI agent experiments show coordination risks when machines pursue misaligned goals",
+    "plain_english": "Recent research on multi-agent AI systems reveals that autonomous agents deployed together in corporate workflows may not share objectives or operate within ethical guardrails. Agents optimising different metrics can produce unintended systemic outcomes.",
+    "why_it_matters": "Banks and insurers piloting agent swarms for trade execution, claims processing, or risk monitoring face governance blind spots. Agent misalignment could trigger market anomalies, compliance violations, or data leakage at scale—requiring new internal controls and audit frameworks.",
+    "jargon": [
+      {
+        "term": "Multi-agent systems",
+        "def": "Multiple autonomous AI agents operating in the same environment, each with their own goals and decision logic; coordination failures can amplify risk."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-08",
+      "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html"
     }
   },
   {
@@ -8147,42 +8336,6 @@
     }
   },
   {
-    "id": "2026-10-12-insight-ai-productivity-gap",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-12T10:18:22Z",
-    "headline": "IMF: AI productivity gains could offset Asia's aging workforce crisis",
-    "plain_english": "The International Monetary Fund suggests AI automation could compensate for declining labor supply in aging Asia-Pacific economies, reducing BFSI dependency on headcount expansion and improving margins.",
-    "why_it_matters": "APAC banks can deploy AI to maintain customer service and back-office throughput without hiring; frees capital for tech infrastructure and compliance instead of wage inflation.",
-    "stat_value": "Productivity offset potential via AI",
-    "stat_label": "IMF finding for aging Asia-Pacific labor markets",
-    "source": {
-      "name": "Reuters · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVU5qaE01dGdTdm8yQi1OWnlCcWJZMGZsekFCYW85NXpQNFBaczdLRm5idXdpMUdiSkFzZGZ0RGo4SGU5dFFjbEZhekstOFgtMGszd3ZZSFpyQmpWT0pJVEQtcU9FWU10TU9pTjRhU0o4aHFRWmhwVmhkWUR0WFJhbUJmY3dPbnlYT3ZWMjdabnd2Z1gzSnV1QVVYbWZnLTg4dGlicld6NENPNzlhZng2QVFFQTVGZlZ6VW51SGpyNGRqRGd1Z0N5TGZVR3N5ZTUy?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-12-insight-rbi-rupee-defense",
-    "category": "insight",
-    "jurisdiction": "IN",
-    "severity": "high",
-    "published_at": "2026-10-12T09:57:35Z",
-    "headline": "RBI draws line at INR 97/USD to defend rupee; signals capital controls ahead",
-    "plain_english": "India's central bank is actively defending the rupee at the 97 level against the US dollar, stepping up interventions to prevent further depreciation and stabilize offshore rupee derivatives.",
-    "why_it_matters": "If RBI pivots to formal capital controls, Indian fintech cross-border remittance and forex hedging volumes could shrink; impacts USD liquidity, offshore derivative pricing, and API stability for global BFSI.",
-    "jargon": [
-      {
-        "term": "Capital controls",
-        "def": "Government restrictions on movement of currency across borders to defend exchange rate."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM2xIcUhYT0JJQzBDOGtTbndoR0hKSGhhQVlfY25JWmFhNURiZng4SVBIXzB0cldER1FtekNScWw4Vm5Tc0pZSUxGbFd4eUxYVDRtNGFQQWl1dHFrdzU5SmZzbzhBY0JPRTVpeThpU3A5TW16c05EMlltRDAtVUdjM2ltcHR2V2I3SFhLazJobHhmdjMxaFd0bGd6SktqaGhvQnpIUk1sX3lSYWdEZXNvcjU0WmhQX1EtWUFaX01VU2c?oc=5"
-    }
-  },
-  {
     "id": "2026-10-12-regulation-publishers-ai-copyright",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -8295,35 +8448,6 @@
     }
   },
   {
-    "id": "2026-10-12-deployment-ncino-mortgage-ai",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-12T11:40:12Z",
-    "headline": "nCino launches AI productivity suite for mortgage officers",
-    "plain_english": "nCino, a cloud platform for financial institutions, released an AI-powered productivity tool designed to automate and accelerate mortgage origination workflows for loan officers.",
-    "why_it_matters": "Reduces mortgage processing cycle time and compliance review labor; early signal of AI-driven commoditization of origination workflows across retail banking.",
-    "source": {
-      "name": "Investing.com India · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZGVBeVZ5eVZkZXFNbjY5TDFYaGdRYW5kY3hqTElneVpyV0ljY2J0M0JRb2tmS1RBLUNYOXVTMU5iYU5aeDR0WndjMDFRbzd2TmdTNThhNGFXZm12NzRXd2w0aXdBLTVnSGxweFFCS2RUTUtYOHM5ZnR0X2RTbmZHNHU0d3ZZWG5HeVJ5QTZLc2s5UzN4VGRjWEpLcXlZdE9vWUdMMjJ5MF9fb1M4NExBekY1dmltRHc1SzY0?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-12-regulation-uk-ai-safety",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-10-12T11:51:02Z",
-    "headline": "UK government considers mandatory AI safety incident reporting",
-    "plain_english": "UK authorities are weighing compulsory safety reporting requirements for AI systems deployed in financial services and other sectors. Firms may soon need to disclose AI-related incidents to regulators rather than keeping them private.",
-    "why_it_matters": "Mandatory disclosure will expose gaps in AI governance across BFSI; regulators gain real-time visibility into model failures, forcing standardization of incident classification and response.",
-    "source": {
-      "name": "Sifted · 2026-10-12",
-      "url": "https://sifted.eu/articles/uk-government-ai-safety-reporting-kanishka-narayan/"
-    },
-    "effective_date": null
-  },
-  {
     "id": "2026-10-12-shift-blackrock-short-duration-bonds-portfolio-rebalance",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8335,54 +8459,6 @@
     "source": {
       "name": "Bloomberg · 2026-10-12",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTy1XMVBweHZJTVpyZ290RHZmbTAxU0U1OGc5Z3JjT1dhWGdjMld6ZGNjbmVDVW03czJyLTlFdG1mdnFlMnhZaWNpRVAwaFlxT2psTWExYmNMb3ZDd3UwQ2FYcDZkU204dC0zenpQeW5uNUdjTmdwY0Jxd0s2WFEzRFIyekFvWWlBeVRSbXBTZXZ1Zy01UzAtRVVJUlhnWHh2Y2M0bFg2Um1PR2RwNU80clpn"
-    }
-  },
-  {
-    "id": "2026-10-12-shift-dbs-ai-repricing",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-12T10:08:07Z",
-    "headline": "DBS CEO flags market repricing of AI financing risk",
-    "plain_english": "DBS's Chief Executive observes that financial markets are now re-evaluating credit risk assumptions in sectors exposed to AI disruption, signaling a structural shift in lending appetite and collateral valuation.",
-    "why_it_matters": "Banks must recalibrate underwriting models for AI-disrupted sectors (back-office, mortgage processing, customer service); repricing will widen credit spreads and tighten capital ratios.",
-    "jargon": [
-      {
-        "term": "AI repricing",
-        "def": "Market's reassessment of default risk for firms in roles vulnerable to AI automation."
-      }
-    ],
-    "source": {
-      "name": "Bloomberg · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQnBrcW1BX3ZTSUNhQjc3WllHQ3l2WlBka1MwV3VXZ3oyV3VHbmdpc2hkbjBNUkg3QjRrWFNkRmttU0JxdXhCR0FCWmlRbmJZMTZ0Ykl0WjBpQ3FrVlp5Uk5xYm9GeFhPLV9ybFN6RzI3Y3dCaGZyWjlMOVVmVGJMY0ktR0ZCUFVEbFgwb2dEbjRUckdEZjN1NjZTa1dLMWRHcUhsN2RGT2lHUTd4cnc?oc=5"
-    }
-  },
-  {
-    "id": "2026-10-12-shift-pepkor-fintech-m-and-a-pressure",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-12T10:09:00Z",
-    "headline": "South African retailer Pepkor faces shareholder resistance to $1.3B fintech merger",
-    "plain_english": "Pepkor's proposed merger of its fintech arm with a rival is under scrutiny from board directors and investors citing valuation and governance concerns, signaling investor caution on BFSI M&A in emerging markets.",
-    "why_it_matters": "Retail fintech consolidation stalls; shows institutional investors demanding higher AI/data asset disclosures and exit clarity before approving BFSI deals in frontier markets.",
-    "source": {
-      "name": "Finextra · 2026-10-12",
-      "url": "https://www.finextra.com/newsarticle/48569/pepkors-13bn-fintech-deal-comes-under-shareholder-scrutiny?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-12-regulation-bahrain-cbb-tech-investment",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-12T12:03:00Z",
-    "headline": "Central Bank of Bahrain to triple technology spending over three years",
-    "plain_english": "The CBB is increasing tech investment by 200% to position Bahrain as the Middle East's primary banking hub. Spending will cover infrastructure, AI, and fintech ecosystem development.",
-    "why_it_matters": "Regional banks face competitive pressure to match CBB's AI and digital modernization pace; enables rapid deployment of central bank digital currencies and real-time settlement.",
-    "source": {
-      "name": "Finextra · 2026-10-12",
-      "url": "https://www.finextra.com/newsarticle/48570/bahrain-central-bank-to-treble-tech-budget?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   }
 ]
