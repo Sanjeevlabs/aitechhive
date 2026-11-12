@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-11-12-regulation-boe-agents-speech",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-11-11T23:31:35.000Z",
+    "headline": "Bank of England signals regulation of AI agents via 'principals and agents' framework",
+    "plain_english": "Bank of England Deputy Governor Jonathan Hall delivered a speech on 'Principals and Agents,' signaling regulatory intent to establish governance frameworks for autonomous financial AI systems. The framing echoes banking law agency doctrine, suggesting BoE plans statutory guardrails for agent-based decision-making.",
+    "why_it_matters": "UK regulator moving ahead of EU and US on agent AI governance; banks operating UK operations must anticipate new principal-agent liability rules for autonomous systems by 2027.",
+    "jargon": [
+      {
+        "term": "Principal-Agent Framework",
+        "def": "Legal doctrine defining liability and control when one party (agent) acts on behalf of another (principal); BoE extending this to AI systems."
+      }
+    ],
+    "source": {
+      "name": "Bank of England · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVHAza0dlNFk3MzA0OXZkNkgwZS1QMzBBZzZuNWRtcmVhMnVqNC1OWlFTWGNRd25kbnQ1STN3a1lSTFZJMjhsM0xPeHFjUjhMWGZUeVNiX1F3a0ZNbVVGY0x3VU1hNVZudlBfSjRIN2ZLbWE2c2p6NWRCcV9Jbml0NWZ2WWc4bXFoVjZVTGVSN1lpamNMVG5R"
+    }
+  },
+  {
     "id": "2026-11-11-eu-influencer-deception-rules",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -154,23 +174,35 @@
     }
   },
   {
-    "id": "2026-11-07-ft-uk-ai-policy",
-    "category": "regulation",
-    "jurisdiction": "UK",
+    "id": "2026-11-12-deployment-bmo-ai-agent",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-11-07T05:08:32Z",
-    "headline": "UK commits to AI acceleration despite US regulatory slowdown",
-    "plain_english": "UK growth minister signals London will maintain pro-AI stance and not follow US regulatory tightening. Positions UK as alternative AI hub amid diverging transatlantic policy.",
-    "why_it_matters": "BFSI firms operating in both markets must now navigate dual regulatory regimes. UK's lighter-touch approach may attract fintech AI migration; compliance architecture must fork accordingly.",
-    "jargon": [
-      {
-        "term": "Pro-AI stance",
-        "def": "Regulatory approach that enables AI deployment with lighter restrictions than peers; favors innovation velocity over precaution."
-      }
-    ],
+    "published_at": "2026-11-11T23:47:19.000Z",
+    "headline": "Bank of Montreal deploys AI Agent Assist for customer interactions",
+    "plain_english": "Bank of Montreal has rolled out AI Agent Assist, an AI-powered agent system designed to automate and assist customer service interactions. The deployment represents one of the first major Canadian bank implementations of autonomous AI agents in production.",
+    "why_it_matters": "Sets template for how North American retail banks will delegate routine customer workflows to AI agents; creates competitive pressure on peer banks to follow or risk operational friction.",
+    "scale": {
+      "metric": "customers",
+      "value": "millions"
+    },
     "source": {
-      "name": "Financial Times · 2026-11-07",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbFVxOFdpMVVDc0szS1Q3ckVMVVBxSjJPX3lJR2hJdTNaUXozR05KNW41N05oVEpvQmtCZWg5eE1Jd1laWjltZ2RqUDZ2cTdOWGhwTnJINWJZNmpjdTJuOXMxdUU0WEJzZWU0Zmg4V1B6RkgzaUhVQTNrQm84emlMWFVjWkY"
+      "name": "Simply Wall St · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUUNVR2tkRDhEcXBmaEI5YzZ6VEdWcEFjOVZLYmkxVFJVeXZyMGFZWFhqeDVuVERULUwzREpuRjRkMHduUFM0NDMwTVZXSk5yQi1TeURWM2txbk9qUkRtMHVIamlxb0VxUHlvRkdlUTlTNjdNa2U1RnBhUFFYQjJUZi0yM1c4alBwcU9pbl9xZVc5dmtsZmJlU3ZWa1U0VGUxNlFHMlRzNmUtcjMyT2JJenNucGIxQ2V5ci1ZQWl6M2hwdWh6VVZ0NVowd1pNVWNR0gHWAUFVX3lxTFBqRlNWYVYzOXRFRXFZVi1aYngwUkd5UXo1TTlrU3J1U2NILXhFRnZERE5tMm5RbXZKbjhJS0lpTVJUQlNfMzAxYWtvMEFTVFQ4dEJTbDVOTGtWRjUzWndfem1jZW4xNVJ5b0V2Q3FqUnRsbmVIdnJLRkNSRl9pU3Z0elRyLS1xbWRXay1yM1hzMGlFejI1MV9RMnh4Q0VDZnFJeUNCQWdEZ3JEcmNWSVZOQWRDWUotME9ZMFNCRjVNLVJqM3BKd24walNqMHFhdVVRYVZ1aWc"
+    }
+  },
+  {
+    "id": "2026-11-12-deployment-aton-agentsign",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-12T01:35:00.000Z",
+    "headline": "Aton launches AgentSign to certify and govern financial AI agents",
+    "plain_english": "Aton has launched AI AgentSign, a governance and certification framework for financial AI agents. The platform provides control, audit, and compliance validation for autonomous financial agents operating in production, addressing regulatory and operational risk concerns.",
+    "why_it_matters": "First-mover governance layer for agent AI in finance; signals market demand for explainability and auditability as banks scale autonomous systems, likely to become table stakes for fintech AI infrastructure.",
+    "source": {
+      "name": "Chosunbiz · 2026-11-12",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XS1lsbXU2NDhMVlJHVmc1ZmlWUTdsRkF6SjJPT3B2b1drTFczYlBTRzlsM0h4VFFVbzBrSy05QmpXNjdaYXlxUVNVYU1hZUNtSUcwak5PeXhKQ01wSzczb2RXTkFSU0NnZHptdjlLOHdnajU5Z0thWFJn0gGOAUFVX3lxTE9LMzh2M1dxelgzVlBMNWNYY0R0T3dMSEtJNi1yRDFXUlI5QTIteDZNblNYUG00dEVHRDU1cEROendfM0FvTFExZWpCYVBEZkZtcWM4cEdVWkZ0RUVCQ2lBSk9Gd01fd284NDd3RWdHVGZ2TTQwbGhlVm1acV82N0xpMG1UNjZUYkkwb2dGcnR3"
     }
   },
   {
@@ -308,31 +340,17 @@
     }
   },
   {
-    "id": "2026-11-09-alrayan-bank-monument-core-migration",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-11-09T13:13:46.000Z",
-    "headline": "AlRayan Bank completes UK core banking system migration to Monument Technology platform",
-    "plain_english": "Islamic bank AlRayan moved its UK operations to Monument's cloud-native core banking engine, replacing legacy monolith. Monument handles deposits, lending, payments—modernizing compliance and operational efficiency for Sharia-compliant retail/commercial banking.",
-    "why_it_matters": "Testament to Monument's traction in mid-tier UK BFSI; signals acceleration of cloud core adoption as legacy vendors lose share to API-first platforms that speed regulatory reporting and AI-ready data pipelines.",
-    "source": {
-      "name": "FinTech Futures · 2026-11-09",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZm1QdFQ1akpFZENUODd2NjRxXzZSVzBlSFFsaHUxOVZKTmlQQUxlR0JwWldFNUUzbzRjZ2NGeW9vLXdTd3AteW1WcDNYMWoyb25BY3dNa1hkSm11c3RKazhsN240SWRrZHhGVFdqTG5UbkxxeUduenU4NmtZNkltS2dfYk5EdjZiNzVwTEJPUElsS0ZWdTkxY09ZSkFKQzRHeklDa1VRaWE"
-    }
-  },
-  {
-    "id": "2026-11-09-npci-ai-blockchain-subsidiary",
-    "category": "deployment",
-    "jurisdiction": "IN",
+    "id": "2026-11-12-vendor-coreweave-infrastructure",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-11-09T02:30:31Z",
-    "headline": "NPCI launches AI and blockchain subsidiary to build financial infrastructure",
-    "plain_english": "India's National Payments Corporation (NPCI), which operates the UPI payment rails, has launched TNGlobal as a dedicated subsidiary focused on AI and blockchain technology development. This signals strategic pivot toward next-gen payment and settlement infrastructure.",
-    "why_it_matters": "NPCI's digital payments infrastructure touches 500M+ Indians; a dedicated AI/blockchain unit suggests major investment in real-time settlement, fraud detection, and cross-border rails—capabilities other central banks are racing to build.",
+    "published_at": "2026-11-11T23:41:46.000Z",
+    "headline": "CoreWeave reports strong earnings as demand for dedicated AI compute infrastructure accelerates",
+    "plain_english": "CoreWeave, a provider of GPU and AI compute infrastructure as a service, reported earnings that exceeded expectations and won investor confidence from prominent analysts. The company serves as a secondary source of AI training and inference compute for enterprises and researchers.",
+    "why_it_matters": "Signals sustained CAPEX demand beyond Nvidia's direct sales; validates multi-vendor strategy for BFSI AI teams concerned about GPU supply concentration and pricing power.",
     "source": {
-      "name": "TNGlobal · 2026-11-09",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbG5VWHFLN2VnY1M5a1U4ZEg1cWVHWDZjNlpOMVBxaTdad3B1ZC1feUF1NGlTVWtxb3o2VjQySEFGZy1MZzd4aVVhRUg1Yk9Nb0JpT0NLSHhUYVZlLVE1X0FiTHFjVEZxdmQ0VTJsejFfOS0xZ1pSR1RwSFJHWXBwdA?oc=5"
+      "name": "CNBC · 2026-11-11",
+      "url": "https://www.cnbc.com/2026/11/11/jim-cramer-coreweave-earnings-ceo-interview.html"
     }
   },
   {
@@ -476,26 +494,6 @@
     "source": {
       "name": "PYMNTS · 2026-11-09",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-valuation-hits-1-25-trillion-in-new-funding-round/"
-    }
-  },
-  {
-    "id": "2026-11-06-vendor-artex-ai-security-exposure",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-06T18:44:38Z",
-    "headline": "Hundreds of Artex AI penetration-testing servers exposed online",
-    "plain_english": "Security researchers discovered hundreds of publicly exposed servers hosting Artex AI, a hacking and penetration-testing tool. Anyone with internet access could leverage the tool to scan networks and simulate attacks.",
-    "why_it_matters": "BFSI security teams must audit whether Artex AI was used internally or by third-party pentesters. Uncontrolled exposure of attack simulation tools raises risk of adversary reconnaissance on bank infrastructure and client data.",
-    "jargon": [
-      {
-        "term": "Penetration testing",
-        "def": "Authorized simulated cyberattack to identify vulnerabilities; Artex automates this but exposure means unauthorized actors gained access."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-06",
-      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
     }
   },
   {
@@ -718,6 +716,26 @@
     }
   },
   {
+    "id": "2026-11-12-research-anthropic-claude-infrastructure",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-11T23:30:48.000Z",
+    "headline": "Anthropic IPO reflects extraordinary compute commitments required for frontier AI",
+    "plain_english": "Analyst Jim Cramer flagged Anthropic's IPO as a bet on sustained hypergrowth to justify mounting infrastructure costs. Anthropic must sustain exceptional revenue growth to justify GPU and compute capex required to remain competitive in frontier LLM development.",
+    "why_it_matters": "Reveals unsustainable unit economics for frontier AI labs: Anthropic's cost structure means profitability requires AI revenue to grow faster than Moore's Law declines, creating structural margin pressure on entire AI stack.",
+    "jargon": [
+      {
+        "term": "Frontier LLM",
+        "def": "State-of-the-art large language model; requires massive compute to train and requires continuous capex to maintain competitive edge."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-11",
+      "url": "https://www.cnbc.com/2026/11/11/anthropic-ipo-profit-computing-commitments.html"
+    }
+  },
+  {
     "id": "2026-11-11-plurai-agents-self-driving",
     "category": "research",
     "jurisdiction": "US",
@@ -886,17 +904,19 @@
     }
   },
   {
-    "id": "2026-10-21-recursive-flint-ai-coded-model",
-    "category": "research",
+    "id": "2026-11-12-insight-agent-adoption-friction",
+    "category": "insight",
     "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-10-21T20:27:41.000Z",
-    "headline": "Recursive releases Flint, a laptop-scale coding model largely built by its own AI system",
-    "plain_english": "Startup Recursive published Flint, a free, compact coding model created mostly by Recursive's own AI research system—a working example of AI-assisted AI development and an early test of self-improving AI systems.",
-    "why_it_matters": "Demonstrates AI-assisted model development is moving from theory to shipped product; BFSI engineering teams should monitor whether this pattern accelerates time-to-production for domain-specific models (fraud, AML, compliance scoring).",
+    "published_at": "2026-11-11T23:15:31.000Z",
+    "headline": "United Airlines blocks autonomous AI agents from booking flights on customer behalf",
+    "plain_english": "United Airlines explicitly blocked AI agent systems from autonomously booking flights for end customers, citing customer control and liability concerns. The move reflects growing friction between frontier AI capabilities and consumer protection rules.",
+    "why_it_matters": "Early signal that autonomous agents will face legal and reputational friction unless explicitly opt-in; BFSI must anticipate similar restrictions on agent-led financial transactions without real-time human consent.",
+    "stat_label": "AI agent booking bans",
+    "stat_value": "1+ major airline",
     "source": {
-      "name": "TechCrunch · 2026-10-21",
-      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+      "name": "The New York Times · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbTVycnZoZS1nNU50eTQ2MGY3RUdNOXpTbi1vRGlWT2VsUTZ0QW1sYnY0amNTdjFDcW9zZ0NuVU5ua0dvS2VFUURrb3IxVGZBVk1lbjJUOExtQWl2a28teDB5RDkzdUJ1RFhwNkJqSTdEZTJTR3Q1X3plUnpSbndiTG9WV0pMMEx0UzRUMmpZcFZpSnJn"
     }
   },
   {
@@ -1048,25 +1068,17 @@
     }
   },
   {
-    "id": "2026-11-07-us-inflation-outlook",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-07T21:00:00.000Z",
-    "headline": "US inflation expected to moderate after recent spike, shaping Fed rate path",
-    "plain_english": "Inflation is forecast to simmer down after recent pickup. This moderate outlook influences Fed hawkishness and Treasury yield curves—critical inputs to BFSI cost-of-capital models, loan pricing, and derivative hedging strategies for the next 12 months.",
-    "why_it_matters": "Inflation forecasts directly drive Fed policy expectations and drive funding cost curves. BFSI must recalibrate NIM (net interest margin) models and rate-risk hedges based on disinflation timeline.",
-    "jargon": [
-      {
-        "term": "NIM",
-        "def": "Net interest margin: the difference between interest earned on assets and interest paid on liabilities; a key bank profitability metric."
-      }
-    ],
-    "stat_value": "Moderation expected",
-    "stat_label": "After recent inflation pickup",
+    "id": "2026-11-12-frontier-openai-caselaw",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "headline": "OpenAI profiles Gilbert + Tobin law firm's AI-driven business transformation",
+    "plain_english": "OpenAI published a case study of Gilbert + Tobin, an Australian law firm using AI to rethink its service delivery model. The profile highlights how frontier generative AI is being integrated into professional services workflows at scale.",
+    "why_it_matters": "Shows downstream adoption of frontier models in high-stakes professional services; validates GPT-based knowledge work automation that BFSI legal and compliance teams now pilot.",
     "source": {
-      "name": "Bloomberg · 2026-11-07",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMHB3c0hUZDUwNkFjQmh3VW9PTGA3dmpzRkUwRWI2d25MZWhOcmRPOHhmaVdBNGp0YTF3WU9IaVQ0NVNtVG1nZDZTbXlYRVNWdmdpcUJ3cVdVcE5mMUltMWdwZE10Q3lmcFdHR2RINEtlcW54RW56ZkY1MnNsell5b3VLanVoTnh1Y0FKUVhZampkZ2xWUHJPOWxhSWVxa0VFRWhPbzdITTdjRzA"
+      "name": "OpenAI · 2026-11-12",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
     }
   },
   {
@@ -1208,17 +1220,27 @@
     }
   },
   {
-    "id": "2026-11-09-openai-cybersecurity-hire-driscoll",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-09T02:18:17Z",
-    "headline": "OpenAI appoints former U.S. Army Secretary Dan Driscoll to lead cybersecurity",
-    "plain_english": "OpenAI has hired Dan Driscoll, former U.S. Secretary of the Army, to a senior cybersecurity role. The move signals increased focus on securing frontier AI systems and government stakeholder confidence.",
-    "why_it_matters": "Hiring ex-military/government security officials reflects AI labs' urgency to build institutional credibility on dual-use risk; BFSI regulators will scrutinize whether frontier labs have adequate governance and insider-threat controls.",
+    "id": "2026-11-12-learner-what-is-agentic-ai",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "headline": "What is agentic AI? Why banks and airlines care right now.",
+    "plain_english": "Agentic AI refers to autonomous software systems that can perceive their environment, make decisions, and take actions—including interacting with external systems and data—without direct human instruction for each step. Unlike chatbots that respond to queries, agents proactively plan and execute multi-step workflows. Example: A bank AI agent might autonomously review a customer's account, identify eligible loan products, gather documentation, run credit checks, and present options—all without a human clicking each button.",
+    "why_it_matters": "Agencies are entering production at scale (Bank of Montreal, Aton), but early feedback (United Airlines block) shows legal and trust friction; understanding the architecture helps BFSI teams anticipate governance and liability challenges.",
+    "jargon": [
+      {
+        "term": "Agent",
+        "def": "AI system that perceives context, reasons about goals, plans actions, and executes decisions independently; operates across multiple tools and data sources."
+      },
+      {
+        "term": "Agentic Loop",
+        "def": "Iterative cycle where an agent observes state, decides next action, executes it, and observes outcome—repeating until goal is achieved or resources exhausted."
+      }
+    ],
     "source": {
-      "name": "WSJ · 2026-11-09",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmRFM0NiT29ENURKdXhSMjBHaU9MS25FUGd2dnJHeXh6Q2lPd1FpUXpJWHBUU0FpRVdqcnh3QzhuLWZDRlVqRmVVQVIyaWhKdVZ2MFFXU0t5U2EteGNwamMxV0FEUU83WTZpQnFhODA5M3JsdldoaEI4Wjk2dDdpV1owY3lPUU1JS0RuUmJmNUFCa3Q5TE1RLTExX1lKOUpXQlhmTFY2cjVGSDIyWEszWkZOMU5HTW81Q1ktdzhKTktUVU0?oc=5"
+      "name": "AITechHive synthesis · 2026-11-12",
+      "url": "https://www.aitechhive.com"
     }
   },
   {
@@ -1402,23 +1424,17 @@
     }
   },
   {
-    "id": "2026-10-26-data-quality-ai-bias",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-26T21:11:15Z",
-    "headline": "Data gaps in global health records distort AI model training, raising fairness risks",
-    "plain_english": "Bioengineer.org reports that incomplete or biased health datasets (e.g., Zambian HIV records) used to train AI models can perpetuate or amplify systematic errors. AI learns patterns from the data it sees; if data is missing or skewed by region, gender, or demographics, the model's predictions become unreliable for underrepresented groups.",
-    "why_it_matters": "BFSI models trained on incomplete customer or economic data (e.g., credit scoring, fraud detection) risk legal and reputational harm if predictions discriminate against protected classes. Banks must audit training data provenance and perform fairness testing before deploying AI in lending, underwriting, or risk decisions.",
-    "jargon": [
-      {
-        "term": "Data bias",
-        "def": "Systematic skew in training data (missing categories, oversampling some groups) causing AI predictions to err for underrepresented populations."
-      }
-    ],
+    "id": "2026-11-12-trending-nvidia-ceo-governance",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-12T00:21:27.000Z",
+    "headline": "Nvidia board prepares to remove CEO Jensen Huang amid security and conduct concerns",
+    "plain_english": "Nvidia's board is reportedly preparing to oust founder and 33-year CEO Jensen Huang following revelations of multiple extramarital affairs, including one with a woman suspected by U.S. intelligence of being a Chinese intelligence agent. Huang's departure would trigger major leadership change at the chipmaker central to global AI infrastructure.",
+    "why_it_matters": "Immediate impact: GPU/AI compute supply chain uncertainty; secondary effect: raises questions about governance at AI infrastructure leaders and espionage risk in AI arms race between US and China.",
     "source": {
-      "name": "Bioengineer.org · 2026-10-26",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMzhkY2lzQ1dvNFFmU2N0ZGJGS1VYS2lENjFfdS15bXdlTkJ6bkZyWjdrMUhoR1FXLVQ0S19iaEhDQmk3bGtoVGVtTjZxYUtvTlVnREo5ZjNPV0hVdE1ZLWpuWEV1REpGX0o3N1ZZQS1Za0lhQ3FYRjUtMnAtSDVuRnp6eTlOVTd3"
+      "name": "CNBC · 2026-11-12",
+      "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
     }
   },
   {
@@ -1551,6 +1567,144 @@
     "source": {
       "name": "CNBC · 2026-11-04",
       "url": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html"
+    }
+  },
+  {
+    "id": "2026-11-07-ft-uk-ai-policy",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-07T05:08:32Z",
+    "headline": "UK commits to AI acceleration despite US regulatory slowdown",
+    "plain_english": "UK growth minister signals London will maintain pro-AI stance and not follow US regulatory tightening. Positions UK as alternative AI hub amid diverging transatlantic policy.",
+    "why_it_matters": "BFSI firms operating in both markets must now navigate dual regulatory regimes. UK's lighter-touch approach may attract fintech AI migration; compliance architecture must fork accordingly.",
+    "jargon": [
+      {
+        "term": "Pro-AI stance",
+        "def": "Regulatory approach that enables AI deployment with lighter restrictions than peers; favors innovation velocity over precaution."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbFVxOFdpMVVDc0szS1Q3ckVMVVBxSjJPX3lJR2hJdTNaUXozR05KNW41N05oVEpvQmtCZWg5eE1Jd1laWjltZ2RqUDZ2cTdOWGhwTnJINWJZNmpjdTJuOXMxdUU0WEJzZWU0Zmg4V1B6RkgzaUhVQTNrQm84emlMWFVjWkY"
+    }
+  },
+  {
+    "id": "2026-11-09-alrayan-bank-monument-core-migration",
+    "category": "deployment",
+    "jurisdiction": "UK",
+    "severity": "low",
+    "published_at": "2026-11-09T13:13:46.000Z",
+    "headline": "AlRayan Bank completes UK core banking system migration to Monument Technology platform",
+    "plain_english": "Islamic bank AlRayan moved its UK operations to Monument's cloud-native core banking engine, replacing legacy monolith. Monument handles deposits, lending, payments—modernizing compliance and operational efficiency for Sharia-compliant retail/commercial banking.",
+    "why_it_matters": "Testament to Monument's traction in mid-tier UK BFSI; signals acceleration of cloud core adoption as legacy vendors lose share to API-first platforms that speed regulatory reporting and AI-ready data pipelines.",
+    "source": {
+      "name": "FinTech Futures · 2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZm1QdFQ1akpFZENUODd2NjRxXzZSVzBlSFFsaHUxOVZKTmlQQUxlR0JwWldFNUUzbzRjZ2NGeW9vLXdTd3AteW1WcDNYMWoyb25BY3dNa1hkSm11c3RKazhsN240SWRrZHhGVFdqTG5UbkxxeUduenU4NmtZNkltS2dfYk5EdjZiNzVwTEJPUElsS0ZWdTkxY09ZSkFKQzRHeklDa1VRaWE"
+    }
+  },
+  {
+    "id": "2026-11-09-npci-ai-blockchain-subsidiary",
+    "category": "deployment",
+    "jurisdiction": "IN",
+    "severity": "med",
+    "published_at": "2026-11-09T02:30:31Z",
+    "headline": "NPCI launches AI and blockchain subsidiary to build financial infrastructure",
+    "plain_english": "India's National Payments Corporation (NPCI), which operates the UPI payment rails, has launched TNGlobal as a dedicated subsidiary focused on AI and blockchain technology development. This signals strategic pivot toward next-gen payment and settlement infrastructure.",
+    "why_it_matters": "NPCI's digital payments infrastructure touches 500M+ Indians; a dedicated AI/blockchain unit suggests major investment in real-time settlement, fraud detection, and cross-border rails—capabilities other central banks are racing to build.",
+    "source": {
+      "name": "TNGlobal · 2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbG5VWHFLN2VnY1M5a1U4ZEg1cWVHWDZjNlpOMVBxaTdad3B1ZC1feUF1NGlTVWtxb3o2VjQySEFGZy1MZzd4aVVhRUg1Yk9Nb0JpT0NLSHhUYVZlLVE1X0FiTHFjVEZxdmQ0VTJsejFfOS0xZ1pSR1RwSFJHWXBwdA?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-06-vendor-artex-ai-security-exposure",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-06T18:44:38Z",
+    "headline": "Hundreds of Artex AI penetration-testing servers exposed online",
+    "plain_english": "Security researchers discovered hundreds of publicly exposed servers hosting Artex AI, a hacking and penetration-testing tool. Anyone with internet access could leverage the tool to scan networks and simulate attacks.",
+    "why_it_matters": "BFSI security teams must audit whether Artex AI was used internally or by third-party pentesters. Uncontrolled exposure of attack simulation tools raises risk of adversary reconnaissance on bank infrastructure and client data.",
+    "jargon": [
+      {
+        "term": "Penetration testing",
+        "def": "Authorized simulated cyberattack to identify vulnerabilities; Artex automates this but exposure means unauthorized actors gained access."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-06",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+    }
+  },
+  {
+    "id": "2026-10-21-recursive-flint-ai-coded-model",
+    "category": "research",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-10-21T20:27:41.000Z",
+    "headline": "Recursive releases Flint, a laptop-scale coding model largely built by its own AI system",
+    "plain_english": "Startup Recursive published Flint, a free, compact coding model created mostly by Recursive's own AI research system—a working example of AI-assisted AI development and an early test of self-improving AI systems.",
+    "why_it_matters": "Demonstrates AI-assisted model development is moving from theory to shipped product; BFSI engineering teams should monitor whether this pattern accelerates time-to-production for domain-specific models (fraud, AML, compliance scoring).",
+    "source": {
+      "name": "TechCrunch · 2026-10-21",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+    }
+  },
+  {
+    "id": "2026-11-07-us-inflation-outlook",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-07T21:00:00.000Z",
+    "headline": "US inflation expected to moderate after recent spike, shaping Fed rate path",
+    "plain_english": "Inflation is forecast to simmer down after recent pickup. This moderate outlook influences Fed hawkishness and Treasury yield curves—critical inputs to BFSI cost-of-capital models, loan pricing, and derivative hedging strategies for the next 12 months.",
+    "why_it_matters": "Inflation forecasts directly drive Fed policy expectations and drive funding cost curves. BFSI must recalibrate NIM (net interest margin) models and rate-risk hedges based on disinflation timeline.",
+    "jargon": [
+      {
+        "term": "NIM",
+        "def": "Net interest margin: the difference between interest earned on assets and interest paid on liabilities; a key bank profitability metric."
+      }
+    ],
+    "stat_value": "Moderation expected",
+    "stat_label": "After recent inflation pickup",
+    "source": {
+      "name": "Bloomberg · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMHB3c0hUZDUwNkFjQmh3VW9PTGA3dmpzRkUwRWI2d25MZWhOcmRPOHhmaVdBNGp0YTF3WU9IaVQ0NVNtVG1nZDZTbXlYRVNWdmdpcUJ3cVdVcE5mMUltMWdwZE10Q3lmcFdHR2RINEtlcW54RW56ZkY1MnNsell5b3VLanVoTnh1Y0FKUVhZampkZ2xWUHJPOWxhSWVxa0VFRWhPbzdITTdjRzA"
+    }
+  },
+  {
+    "id": "2026-11-09-openai-cybersecurity-hire-driscoll",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-09T02:18:17Z",
+    "headline": "OpenAI appoints former U.S. Army Secretary Dan Driscoll to lead cybersecurity",
+    "plain_english": "OpenAI has hired Dan Driscoll, former U.S. Secretary of the Army, to a senior cybersecurity role. The move signals increased focus on securing frontier AI systems and government stakeholder confidence.",
+    "why_it_matters": "Hiring ex-military/government security officials reflects AI labs' urgency to build institutional credibility on dual-use risk; BFSI regulators will scrutinize whether frontier labs have adequate governance and insider-threat controls.",
+    "source": {
+      "name": "WSJ · 2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmRFM0NiT29ENURKdXhSMjBHaU9MS25FUGd2dnJHeXh6Q2lPd1FpUXpJWHBUU0FpRVdqcnh3QzhuLWZDRlVqRmVVQVIyaWhKdVZ2MFFXU0t5U2EteGNwamMxV0FEUU83WTZpQnFhODA5M3JsdldoaEI4Wjk2dDdpV1owY3lPUU1JS0RuUmJmNUFCa3Q5TE1RLTExX1lKOUpXQlhmTFY2cjVGSDIyWEszWkZOMU5HTW81Q1ktdzhKTktUVU0?oc=5"
+    }
+  },
+  {
+    "id": "2026-10-26-data-quality-ai-bias",
+    "category": "learner",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-26T21:11:15Z",
+    "headline": "Data gaps in global health records distort AI model training, raising fairness risks",
+    "plain_english": "Bioengineer.org reports that incomplete or biased health datasets (e.g., Zambian HIV records) used to train AI models can perpetuate or amplify systematic errors. AI learns patterns from the data it sees; if data is missing or skewed by region, gender, or demographics, the model's predictions become unreliable for underrepresented groups.",
+    "why_it_matters": "BFSI models trained on incomplete customer or economic data (e.g., credit scoring, fraud detection) risk legal and reputational harm if predictions discriminate against protected classes. Banks must audit training data provenance and perform fairness testing before deploying AI in lending, underwriting, or risk decisions.",
+    "jargon": [
+      {
+        "term": "Data bias",
+        "def": "Systematic skew in training data (missing categories, oversampling some groups) causing AI predictions to err for underrepresented populations."
+      }
+    ],
+    "source": {
+      "name": "Bioengineer.org · 2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMzhkY2lzQ1dvNFFmU2N0ZGJGS1VYS2lENjFfdS15bXdlTkJ6bkZyWjdrMUhoR1FXLVQ0S19iaEhDQmk3bGtoVGVtTjZxYUtvTlVnREo5ZjNPV0hVdE1ZLWpuWEV1REpGX0o3N1ZZQS1Za0lhQ3FYRjUtMnAtSDVuRnp6eTlOVTd3"
     }
   },
   {
@@ -6382,20 +6536,6 @@
     }
   },
   {
-    "id": "2026-10-13-llm-fine-tuning-learner",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-13T00:00:00Z",
-    "headline": "What is fine-tuning, and why do banks use it instead of training from scratch?",
-    "plain_english": "Fine-tuning means taking a pre-trained model (e.g., GPT-4) and retraining it on a smaller, domain-specific dataset (e.g., bank compliance documents) to specialize its behavior without retraining from scratch. Banks use it to adapt general AI to internal jargon, workflows, and risk rules in weeks instead of months, and at 1/100th the compute cost.",
-    "why_it_matters": "Explains why risk, compliance, and ops teams can build production AI fast: you don't need to build a model from scratch; you customize an existing one. Key to why AI is accelerating across BFSI.",
-    "source": {
-      "name": "AITechHive · 2026-10-13",
-      "url": "https://aitechhive.com"
-    }
-  },
-  {
     "id": "2026-10-22-regulation-bank-of-england-smcr-phase2",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8269,26 +8409,6 @@
     }
   },
   {
-    "id": "2026-10-12-insight-ai-jailbreak-ps5-security-vector",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-12T20:59:46Z",
-    "headline": "AI suspected as accelerant in PlayStation 5 security exploits and jailbreak campaigns",
-    "plain_english": "Security researchers trace recent surge in PS5 console jailbreaks to AI-generated or AI-assisted exploit code—suggesting LLMs are lowering barrier to entry for unauthorized system access. Same vector applies to embedded devices and financial infrastructure.",
-    "why_it_matters": "AI-assisted jailbreaking is emerging attack surface for BFSI. If LLMs can reverse-engineer gaming console security, they can probe ATM firmware, payment switches, and trading system APIs. Shift from human-centric security research to LLM-powered fuzzing means adversary asymmetry is narrowing; detection and response playbooks must adapt.",
-    "jargon": [
-      {
-        "term": "fuzzing",
-        "def": "Automated technique sending random/malformed inputs to software to find crashes or vulnerabilities"
-      }
-    ],
-    "source": {
-      "name": "Mashable · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CMVEweWlXV01jb2lDZXZFUktyb2NjWjVCUXNxcGRmb2pSRkkzc1VnQVNXMVN2b195S3Z6MVVxTnRNUjc1N281czduMjhQWjkzRFl1UUxyX1BTYjFGYmQxQ1R4Sy1yU3dnTDNTOEhvdTRCU1E"
-    }
-  },
-  {
     "id": "2026-10-13-eu-ai-act-market-data-impact",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -8336,20 +8456,6 @@
     }
   },
   {
-    "id": "2026-10-12-regulation-publishers-ai-copyright",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-12T23:23:51Z",
-    "headline": "Over 40 publishers, including New York Times and The Economist, join copyright suit against AI firms",
-    "plain_english": "Major news outlets—New York Times, Agence France-Presse, The Economist, and 40+ others—are pursuing legal action against AI companies over unlicensed use of their content in model training. Signals coordinated enforcement of publisher IP rights globally.",
-    "why_it_matters": "Sets precedent for AI liability on content licensing. BFSI data-heavy workflows (news feeds, market analysis, compliance docs) will face licensing friction if copyright claims escalate—raising operational cost and legal exposure.",
-    "source": {
-      "name": "Economic Times · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOQUhmZEh2d28yNGxrVGkzcXpuSVN0VjExVVBfRzdJZHdTaE9scnEzdXRtOUs0RFh3dThyS1lFOVo0bXVCelR5bkNPZWJCaVR1Z1BweExEMU1fOVRBaDFBcGRCdmhZTU5jU2t1dzc5UEw5TTEzVU1YSGVtWjU0bW9GRENPbmd5aTFPU0M5VGtMZUw0d04tc3MwbmxwN0FNRURMek5iUGxCaE05SDFwaFluVTN0RTJsa18teEI3aGtxZWxLSkI4bmx1c2xQbVU1N3dvT1RxZ0pSdEU1NzN2UnRSNm4yTnRSR0Nibmd5STVrRVNuN0xzWUJUV05KTmdTQjRoUGRqYXhSd3k5ZWxfbmtlNXFIcVJJY3VJSExidGU4WjBSNHdnMEtiRmd5cjNyRUlnXzFHMk5ULUVxRDRrNGZETmU3SlFOdWZ1d1dTLdIB0gJBVV95cUxPcU5CZmhSY2ptczJmOTZKTHNMQTdfYWJQYUYzQkxEMWlqSU16ZHZMUU1jRThCWkN3SlBmdGhvcmFSZUVPdGE4MjZBQ1ZNcmNZR2tZOHZnV05DYUYtYVU4TXR0c19iWlBXTVNveFc4ME5KeWNsdW90NUo2Z2t4MVMzTHZVLWo2Z0xfTXJrNEd6NTBJWEsyaUtHaDdUSGVVMUd6S0JyVVJLRUw4QU04RzhPS0JfODEtbXFwT09uN24tNEpyS1JXNVFaRUlrSVBQeWNyWHpoZGxTcFhkV1RKMzFKWm1ycEFiUDEwUWYwOUZYcUJGYzU2QjJ0a19saGotX2xEb3BvQ1hhbnhQRFFxdm9wOHdkNkY0WThZOFJMeGtHM05VYzJZTGt0bklTNGpzZzlqVjdHc1JUVFhYV0dRckhnQWg1NHBJR0NnRHk0WHJXeG5XZw"
-    }
-  },
-  {
     "id": "2026-10-13-ncino-mortgage-origination-ai",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8378,48 +8484,6 @@
     }
   },
   {
-    "id": "2026-10-12-regulation-citi-us-regulatory-resolution",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-12T21:29:31Z",
-    "headline": "Citi seeks rapid resolution of U.S. regulatory burdens, signals progress on compliance agenda",
-    "plain_english": "Citigroup is pursuing accelerated resolution of multiple U.S. regulatory constraints—a shift from its prolonged consent order and remediation cycles. Suggests internal restructuring on risk and compliance is nearing milestones the Fed and OCC will scrutinize.",
-    "why_it_matters": "Citi's regulatory status is a bellwether for BFSI AI governance. Faster resolution means relief from consent order restrictions that have constrained its market share and tech investments—signaling that large-bank compliance models, once tightened, can unwind at scale if risk culture holds.",
-    "source": {
-      "name": "Reuters · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSkg3cE00UzlJcm1KaFJvNlUtS1BMWUZSanJwNWhtTkE0aF9xSmlzbWdtd19BRGdJbl9LUWxsWGdwS2dwUFhkZ05jQlE5NUkwMzZ0b2g0Z1dNOXdxdnZGTFBEazhOUEVSMjRfQ2lSX0JGOC1Hc3BxMDgwM2czdGd5T0xMV3VkaVZlNG1ZU0NiSEtpUjR3OXZqX0xUMEJZV1ZlYW1YSmRrWXBtak9oZWc"
-    }
-  },
-  {
-    "id": "2026-10-12-deployment-applied-materials-ai-efficiency",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-12T21:07:24Z",
-    "headline": "Applied Materials to double sales without proportional headcount growth via AI-driven efficiency",
-    "plain_english": "Applied Materials is using AI to scale revenue sharply while holding headcount flat—a signal that enterprise AI is delivering measurable productivity gains at Fortune-500 scale. Chip equipment maker expects double sales from same workforce, driven by AI optimization of design and manufacturing workflows.",
-    "why_it_matters": "Validates the productivity narrative for BFSI. If semiconductor manufacturing (capital-intensive, high-complexity) can double output per employee via AI, banks and asset managers may credibly expect similar leverage on middle-office (risk, compliance, analytics) and back-office (settlement, reconciliation) labor. Pressures wage expectations and headcount budgets.",
-    "source": {
-      "name": "Bloomberg · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMWVfZ0R3VHd6TlFhU2xFWFREbnNVVDc5M3pHbXF6ZjNPNDl1NDR5bTBPN0ZNRHlfZEhUX3VleDl4X1l6dTNnejZaQTBhczN2dlJENWdnWkIzUHo1bmVTYzg2OVlOckpGdXlxQ281NU5uZ19uUnMyTXJhODNKdnBuQXFrdUZGeFFyZ2NvQWp3UU1GUGRxOWpTXzRoWFNXRGxKTkZ3UVRZTkgxNWh0Y2FpQ203QQ"
-    }
-  },
-  {
-    "id": "2026-10-12-deployment-jpmorgan-goldman-earnings-ai-impact",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-12T20:25:00Z",
-    "headline": "JPMorgan, Goldman Sachs report earnings amid shifting bank outlook; AI productivity in focus",
-    "plain_english": "Two largest U.S. investment banks report earnings as market reassesses BFSI profitability drivers. Investors watching for color on AI capital spend, compliance automation, and trading desk efficiency in a tightening rate environment.",
-    "why_it_matters": "Earnings call guidance on AI ROI and headcount plans will set tone for mid-market bank investment cycles. JPMorgan and Goldman are largest AI spenders; if they signal pullback or longer payoff horizons, tier-2 and tier-3 banks will defer AI hiring and licensing deals.",
-    "source": {
-      "name": "Investor's Business Daily · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNazZUY180am9JSHVjall1S3FPZEp1bTBRUmN5c2V0aHZxeFgzamEyTE5RYnFnR3IzZF9hajIyMElyT2tmb3RXT282NHFpek1nN2FENFhXcnhCaDlITXNwMUZrZWhsb0VVb0RkcnFYdDdUbE0yQ3gzQTV5MDBsN2JQQkNKMGFxc2xraFBrUnBzYUI2TmNDWGc"
-    }
-  },
-  {
     "id": "2026-10-13-valley-national-bluevine-acquisition",
     "category": "shift",
     "jurisdiction": "US",
@@ -8445,20 +8509,6 @@
     "source": {
       "name": "Finextra · 2026-10-13",
       "url": "https://www.finextra.com/newsarticle/48572/latvia-enters-eu-fintech-race"
-    }
-  },
-  {
-    "id": "2026-10-12-shift-blackrock-short-duration-bonds-portfolio-rebalance",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-12T21:26:32Z",
-    "headline": "BlackRock shifts bullish on short-term bonds, downgrades equities; signals macro rotation",
-    "plain_english": "BlackRock's asset management division is rotating exposure from equities into short-duration fixed income—a directional call that rate cycles are peaking and near-term bond yields are attractive. Reflects changing view on growth and inflation dynamics.",
-    "why_it_matters": "BlackRock's tactical moves influence $10T+ in AUM and drive crowded trades. A bond-bullish tilt will ripple through BFSI risk models, ALM, and trading desks. Banks relying on equity-heavy positioning or duration extension strategies face re-hedging pressure and mark-to-market losses if cohort follows BlackRock.",
-    "source": {
-      "name": "Bloomberg · 2026-10-12",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTy1XMVBweHZJTVpyZ290RHZmbTAxU0U1OGc5Z3JjT1dhWGdjMld6ZGNjbmVDVW03czJyLTlFdG1mdnFlMnhZaWNpRVAwaFlxT2psTWExYmNMb3ZDd3UwQ2FYcDZkU204dC0zenpQeW5uNUdjTmdwY0Jxd0s2WFEzRFIyekFvWWlBeVRSbXBTZXZ1Zy01UzAtRVVJUlhnWHh2Y2M0bFg2Um1PR2RwNU80clpn"
     }
   }
 ]
