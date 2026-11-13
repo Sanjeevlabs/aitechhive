@@ -7,6 +7,9 @@ on:
     - cron: '30 2,14 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: refresh-${{ github.ref }}
   cancel-in-progress: false
@@ -21,9 +24,9 @@ jobs:
     # the runner instead of burning CI minutes.
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           # Pinned to 20 LTS. Node 22.23.x (current latest 22.x on
           # the runner) regressed undici's long fetch streams — both
@@ -34,7 +37,7 @@ jobs:
 
       - name: Cache node_modules
         id: cache-npm
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: node_modules
           key: pipeline-deps-v3-${{ hashFiles('package-lock.json') }}
