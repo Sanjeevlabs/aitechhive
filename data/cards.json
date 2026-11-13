@@ -1,5 +1,21 @@
 [
   {
+    "id": "2026-11-13-sec-ai-enforcement-modernization",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-12T23:56:20Z",
+    "headline": "SEC deploys AI to detect financial misconduct; CFOs face gap between regulator and company controls",
+    "plain_english": "The SEC announced modernized AI-driven enforcement tools in its fiscal 2026 results. Many U.S. firms still rely on manual financial workflows, creating asymmetry: regulators can now detect violations faster than companies can remediate them internally.",
+    "why_it_matters": "Enforcement acceleration forces enterprise finance teams to automate controls or risk detection lags. Expect new SEC guidance on minimum automated compliance monitoring within 12 months.",
+    "stat_value": "Many",
+    "stat_label": "U.S. companies lack modernized financial-workflow automation against SEC AI capabilities",
+    "source": {
+      "name": "PYMNTS · 2026-11-12",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/cfos-old-controls-face-an-sec-armed-with-ai/"
+    }
+  },
+  {
     "id": "2026-11-12-cxmt-export-control",
     "category": "regulation",
     "jurisdiction": "US",
@@ -167,25 +183,86 @@
     }
   },
   {
-    "id": "2026-11-07-china-blocks-abb-softbank-deal",
-    "category": "regulation",
-    "jurisdiction": "APAC",
+    "id": "2026-11-13-ai-bots-credit-cards-banks",
+    "category": "deployment",
+    "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-11-07T15:26:00Z",
-    "headline": "China Blocks $5.4 Billion ABB Robotics Acquisition by SoftBank",
-    "plain_english": "Beijing rejected SoftBank's bid to acquire ABB Robotics, citing national security and technology transfer concerns. Escalates AI/robotics export restrictions as geopolitical tool.",
-    "why_it_matters": "Sets precedent for cross-border AI and automation M&A scrutiny; BFSI firms expanding in APAC or relying on robotics/automation supply chains now face regulatory uncertainty.",
+    "published_at": "2026-11-13T01:00:00Z",
+    "headline": "AI agents begin autonomous credit card transactions; banks race to update fraud controls",
+    "plain_english": "AI bots are now using credit cards directly to pay bills and make purchases. Banks are scrambling to rebuild fraud detection systems designed for human behavior, creating new risk surfaces for unauthorized or erroneous autonomous spending.",
+    "why_it_matters": "Banks' legacy fraud models (velocity, geography, merchant category) don't catch agent-driven patterns. Widespread bot adoption could spike chargebacks and compliance violations if controls aren't rebuilt fast.",
     "jargon": [
       {
-        "term": "Technology transfer",
-        "def": "Movement of capabilities, know-how, or IP to foreign entities; gov't blocks if control/access deemed strategically harmful."
+        "term": "Autonomous agent",
+        "def": "Software that makes decisions and executes transactions without real-time human approval, based on programmed rules or learned patterns."
       }
     ],
     "source": {
-      "name": "Forbes · 2026-11-07",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOR3JmZnpkSnhkN0lYVzhyVHhGRm1BMWJaZVNPUGt4M1RJZ2R1b3JJUmdkOGpoNnY0LWFzbjhoaDhVMlJXOEFlSW15alo4ZVNHekFGczktem52Q0JNZGZ1TzFCN2J4cWVQZFI2R0ZpZU9ETHNraDFnaWN5QlFiZC1zWXFReUN2Mm95T0M4azJ5SFRybDZ6bFFpSVB2YkVLekhOQXJpNGJ2cVNmVjJBenJfSFI5LVF5QmdIM2VoT2JaNkEtN1pmcENLTU9sNnB3UQ"
+      "name": "Wall Street Journal · 2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNldJX01OcW9RMkRvR2QxbDljdmNZMGEyVUlnRjkwTWtqbmRsdVZHYnktd0ExUjlOYXFtNXdqcldodFpmemEyQWNfRDZXXzhIUi1DUVI2NFNBczZxdzc2ZWM0eW16bFJSa19PV1ZvSnQ2N1Y0RnJPM2F5R2VTWG1DOVBHNUFjUkhRbWZnYXFEenRMVjJlVlgyOF9JOA"
+    }
+  },
+  {
+    "id": "2026-11-13-mastercard-sg-innovation-centre",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-13T00:01:00Z",
+    "headline": "Mastercard opens Singapore innovation hub with 250 AI and cybersecurity specialists",
+    "plain_english": "Mastercard established a centre of excellence in Singapore housing 250 experts focused on AI, digital commerce, and cybersecurity. The hub signals major investment in regional fintech infrastructure and capability-building.",
+    "why_it_matters": "Regional AI centres by global payment networks drive adoption velocity among local banks and fintechs. Mastercard's scale here sets competitive pressure on Visa and local networks to match regional talent and research spend.",
+    "scale": {
+      "metric": "employees",
+      "value": "250"
     },
-    "amount": "$5.4B"
+    "source": {
+      "name": "Finextra · 2026-11-13",
+      "url": "https://www.finextra.com/newsarticle/48751/mastercard-opens-singapore-innovation-centre-of-excellence"
+    }
+  },
+  {
+    "id": "2026-11-13-ai-agents-invoice-payment",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-13T00:24:52Z",
+    "headline": "AI agents begin autonomous invoice payment in supplier portals; 21% of SMBs want AI-driven accounts payable",
+    "plain_english": "AI agents are now executing bill payments directly inside supplier self-service portals without manual approval. A PYMNTS-Velera survey found 21% of small and mid-size businesses want AI-driven payment automation from their financial institution.",
+    "why_it_matters": "Autonomous payment agents reduce manual invoice exceptions but require robust reconciliation, fraud detection, and audit controls. Banks offering this feature must embed real-time anomaly detection and exception reporting.",
+    "stat_value": "21%",
+    "stat_label": "SMBs surveyed want AI-driven bill payment from financial institution",
+    "source": {
+      "name": "PYMNTS · 2026-11-13",
+      "url": "https://www.pymnts.com/back-office/2026/ai-agents-start-paying-invoices-inside-supplier-portals/"
+    }
+  },
+  {
+    "id": "2026-11-13-visa-stablecoin-settlement",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-13T00:01:00Z",
+    "headline": "Visa integrates Western Union stablecoin into settlement network with Anchorage Digital",
+    "plain_english": "Visa is working with Anchorage Digital to enable select stablecoins—starting with Western Union's USDPT—to function as native settlement assets on Visa's payment network.",
+    "why_it_matters": "Stablecoin settlement integration by a mega-network operator signals institutional adoption of blockchain-native currency for transaction finality. Risk teams should monitor regulatory response on stablecoin backing, reserve audits, and settlement liability.",
+    "source": {
+      "name": "Finextra · 2026-11-13",
+      "url": "https://www.finextra.com/newsarticle/48752/visa-and-anchorage-digital-bring-western-union-stablecoin-to-settlement-network"
+    }
+  },
+  {
+    "id": "2026-11-13-musc-health-emily-agent",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-13T00:52:39Z",
+    "headline": "MUSC Health deploys SoundHound AI agent to handle appointment booking, billing, and prescription refills",
+    "plain_english": "Medical University of South Carolina's health system deployed Emily, an AI agent built on SoundHound AI's platform, to handle incoming patient calls for scheduling, billing inquiries, and prescription renewals.",
+    "why_it_matters": "Though healthcare-focused, this pattern—AI handling high-volume transactional calls for regulated institutions—foreshadows similar deployments in banking customer service. Risk: compliance logging, authentication for sensitive data, and liability if agent makes an error.",
+    "source": {
+      "name": "PYMNTS · 2026-11-13",
+      "url": "https://www.pymnts.com/healthcare/2026/ai-agent-emily-books-bills-and-refills-for-musc-health/"
+    }
   },
   {
     "id": "2026-11-12-dimply-ai-advisor-launch",
@@ -269,82 +346,6 @@
     "source": {
       "name": "Hubbis · 2026-11-10",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNkR2bU1EU3BjdTZTLWVQTmstZ2ZUajZHUUtzZUZPakJKdHgwMFlaU3BwZmczRTNxSEZES3lUc2FoNTFRNE96ZVVsamNYT3V5MmVzeUJ5Sk5sS0NKdlNkWVlWbHotTmxLSG9LaGtaMDBFLTgwV0ljRXdNUXd0bmcxZWlzbEJ6RVVJQ1pCVzdaQjFJQzZiNGFSb2dLV2I"
-    }
-  },
-  {
-    "id": "2026-11-10-oracle-ai-financial-analytics",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-10T13:21:35Z",
-    "headline": "Oracle launches AI-powered analytics suite for financial services firms",
-    "plain_english": "Oracle released AI-driven analytics tools designed for banks and insurers. Platform automates portfolio analysis, risk scoring, and financial reporting with natural language querying and anomaly detection.",
-    "why_it_matters": "Tier-1 vendor (Oracle) embedding AI into financial analytics stack. Signals shift from BI tools to AI-native analytics—firms will expect self-service reporting and real-time risk insights as table stakes.",
-    "source": {
-      "name": "Investing.com India · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNajNmb1BBTlFLY1YyZk56UDYzMjFFcUo3M3paeGRHLU1vWFU5UDZLeEg3eHA3RXNrSmdLNi15UmZDbXN3RjhjUWhRZ3BqNUhOalNzbVAtWXlBaGdwaXB0emRIdTNlb013MTRnV2lHQVgyMkJqTkU3VGJQSVBkMk1ac21PQjJPRGVRa2RtdDQtWm5VVjQ0Y3BtdTFPM3JyckdqR0ZKMGMwZU8ybV9qMkVraHE5X1p3QnFLSVBuUC1yNA"
-    }
-  },
-  {
-    "id": "2026-11-10-mox-ceo-appointment",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-11-10T13:12:00Z",
-    "headline": "Mox digital bank names new CEO as Standard Chartered-backed lender expands",
-    "plain_english": "Mox, a Hong Kong digital bank licensed and powered by Standard Chartered (partnered with PCCW, HKT, Trip.com), appointed Anshul Sabherwal (ex-Standard Chartered product head) as CEO. Signals organizational maturity and customer expansion focus.",
-    "why_it_matters": "Mox represents APAC's hybrid banking model: licensed fintech + tier-1 incumbent backing. New CEO hire signals Standard Chartered is doubling down on digital-first customer acquisition. AI/automation will be core to differentiation.",
-    "source": {
-      "name": "Finextra · 2026-11-10",
-      "url": "https://www.finextra.com/newsarticle/48734/standard-chartered-powered-bank-mox-appoints-anshul-sabherwal-as-ceo"
-    }
-  },
-  {
-    "id": "2026-11-10-commvault-ai-recovery-agents",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-10T13:51:36Z",
-    "headline": "Commvault releases AI agent recovery tools for enterprise backup and disaster recovery",
-    "plain_english": "Commvault, a data protection vendor, launched AI-powered agents that automate recovery workflows for enterprises. Agents detect anomalies in backup integrity, predict recovery time estimates, and orchestrate multi-tier recovery operations.",
-    "why_it_matters": "Enterprise BFSI relies on Commvault-class backup systems. AI agents automating disaster recovery reduce MTTR (mean time to recovery) and human error in high-stress scenarios. Banks will see agents as operational risk reduction, justifying deployment spend.",
-    "source": {
-      "name": "Investing.com India · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORldWMGtqb3J6MzROV1NXRGYxNFdzUUphVEQ4V19ZcWdncTZzYl85dE56TTQ1eWtjTldZYWtudG44VU9qMUMxdTVmaUtoY2RTekxFQU5HclIyR0dza0pRaHB3c0llMmNJRWxWWEUzUExCakI1V3pZUzdsc3hveEJzbHp1aDd3aGpYU0dyRmhma09hTkFUVlU0WVFqWFNFMFJDaExTd05RckN1OE9OX3E5b0pyc1hhVlJFRmdGdXF3MUF4eHVQ"
-    }
-  },
-  {
-    "id": "2026-11-10-pnc-stablecoin-deployment",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-10T00:01:00Z",
-    "headline": "PNC Bank enables stablecoin payments for corporate clients via Coinbase partnership",
-    "plain_english": "PNC Bank, a top-20 US lender, launched stablecoin payment capability for corporate and institutional clients in partnership with Coinbase. Corporate customers can now receive USDC payments.",
-    "why_it_matters": "First-mover adoption of blockchain-native settlement by large regional bank signals BFSI willingness to embed tokenized rails for B2B payments, raising compliance and treasury automation stakes.",
-    "jargon": [
-      {
-        "term": "stablecoin",
-        "def": "Cryptocurrency pegged to fiat currency (e.g., USD) to minimize price volatility, enabling use as digital payment rail."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-11-10",
-      "url": "https://www.finextra.com/newsarticle/48728/pnc-launches-stablecoin-payments-for-corporate-clients"
-    }
-  },
-  {
-    "id": "2026-11-10-meta-minor-detection-deployment",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-10T00:51:10Z",
-    "headline": "Meta deploys AI to detect underage users on platform",
-    "plain_english": "Meta has deployed AI systems to identify and protect underage users on its platform. System uses behavioral and metadata signals to flag likely minors attempting to access age-restricted features.",
-    "why_it_matters": "Tech giants' AI enforcement of age-verification and KYC-adjacent controls creates precedent and regulatory pressure on BFSI to embed similar ML-driven compliance screening in retail onboarding.",
-    "source": {
-      "name": "Punch Newspapers · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU3JLWGVYd1dYMnhvX2JwTGtMTzhVX2g5emxHcFg2al9ONHRrbUd3Q0tzYmNpaXBYTnl1M2tPT291dFFYVnhGRGJSbDc3N3lXdDRLZi1NVFRMNEVsdHRKUkh0OTZKcVhyZTkzUWJFbUhRUHlnQ1VQUVM2WWNnSmp6SUZKdG1XTm1Zb1RBWEZsUEJncEplTVo1d1hSYUdvTnN4Y3Vva184SXJrRzQ"
     }
   },
   {
@@ -505,6 +506,38 @@
     }
   },
   {
+    "id": "2026-11-13-maersk-legacy-system-breach",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-13T01:50:14Z",
+    "headline": "Maersk breach of acquired legacy system exposes new M&A cyber risk for financial services",
+    "plain_english": "A.P. Moller-Maersk disclosed unauthorized data extraction from legacy IT infrastructure inherited in a prior acquisition. The incident highlights a persistent problem: acquisition targets' outdated systems become persistent security liabilities even after integration.",
+    "why_it_matters": "For BFSI: M&A due diligence now must include forensic audit of acquired systems' security posture. Legacy-system breaches during integration create regulatory exposure (incident reporting, breach notification) and reputational damage. Expect stricter buyer liability for seller's security gaps.",
+    "source": {
+      "name": "PYMNTS · 2026-11-13",
+      "url": "https://www.pymnts.com/cybersecurity/2026/maersks-legacy-system-incident-shows-mas-new-cyber-requirement/"
+    }
+  },
+  {
+    "id": "2026-11-12-us-bank-hiring-middle-market",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-12T23:59:16Z",
+    "headline": "U.S. Bank adds 60 middle-market banking roles; signals expansion in relationship-driven lending",
+    "plain_english": "U.S. Bank is hiring 60 relationship managers, business development executives, and specialists across middle-market banking, concentrated in Florida, Texas, and California.",
+    "why_it_matters": "Hiring surge in relationship-driven roles (not ops/tech) suggests banks still view middle-market lending as high-touch, human-led. Contrast to retail where AI automates decisioning; middle market remains sales/service intensive.",
+    "scale": {
+      "metric": "employees",
+      "value": "60"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-11-12",
+      "url": "https://www.pymnts.com/news/banking/2026/u-s-bank-to-add-60-roles-in-middle-market-banking/"
+    }
+  },
+  {
     "id": "2026-11-11-western-union-intermax-killed",
     "category": "shift",
     "jurisdiction": "US",
@@ -618,40 +651,6 @@
     "amount": "$17.5B"
   },
   {
-    "id": "2026-11-08-ai-data-centers-hostile",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-08T01:43:57.000Z",
-    "headline": "AI data center expansion faces regulatory and political headwinds globally",
-    "plain_english": "Frontier AI firms are encountering stiff resistance from governments over data center development—driven by energy concerns, national security fears, and local opposition. Post-midterm political shifts are intensifying zoning and environmental barriers to compute buildout.",
-    "why_it_matters": "Constrained data center capacity will limit AI model scaling and raise compute costs for financial institutions. BFSI must account for infrastructure bottlenecks in AI deployment timelines and factor geopolitical fragmentation into vendor selection and cloud strategy.",
-    "jargon": [
-      {
-        "term": "compute bottleneck",
-        "def": "Scarcity of GPU/processor capacity limiting how fast AI models can be trained or deployed at scale."
-      }
-    ],
-    "source": {
-      "name": "WSJ · 2026-11-08",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcG1MOENXS0g3UE1idXoxamJmd2FjV3g4UWoxVXp6YUwzR0hxeXFLLW5kdGF1YTJhSXNITVpQUG92cWlOdFQwRUI3cm1heS1xRFlRYURwdWt3R3VnS2pqenhpSFd6N0N4U2NuZGV5VzgwT0ZjeTdtcGRRVU9EbFFRUkFWc2xLdUpncG9HbWY3anFiTzJRWWttd016YjlyUDdZMmJoVg"
-    }
-  },
-  {
-    "id": "2026-11-07-meta-wehner-fireworks-cfo",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-07T17:51:16Z",
-    "headline": "Meta's Chief Strategy Officer Joins AI Infrastructure Startup Fireworks as CFO",
-    "plain_english": "Dave Wehner, Meta's long-serving CSO, is departing to become CFO of Fireworks AI, a $17.5B-valued infrastructure startup. Signals senior talent migration from mega-cap tech to frontier AI infrastructure as that sector matures.",
-    "why_it_matters": "Top FAANG operator moving to AI infra signals maturation of that market; likely influences how banks evaluate infrastructure partners beyond hyperscalers.",
-    "source": {
-      "name": "CNBC · 2026-11-07",
-      "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html"
-    }
-  },
-  {
     "id": "2026-11-09-llm-prompt-caching-mcp",
     "category": "tool",
     "jurisdiction": "Global",
@@ -721,6 +720,28 @@
     "source": {
       "name": "Wired · 2026-10-22",
       "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/"
+    }
+  },
+  {
+    "id": "2026-11-13-anthropic-claude-model-ranking",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-13T01:12:36Z",
+    "headline": "Anthropic's Claude Fable 5.2 surpasses Google Gemini on Artificial Analysis benchmark",
+    "plain_english": "Anthropic's Claude Fable 5.2 moved ahead of Google's Gemini 4 Carbon on the independent Artificial Analysis Intelligence Index. Frontier model rankings shifted again this week; Meta released a lower-cost model at $0.10 per million tokens.",
+    "why_it_matters": "Ranking swaps signal rapid capability convergence among Claude, Gemini, and GPT families. Banks evaluating model selection for production should expect benchmarks to shift monthly; lock in cost-capability tradeoffs now, not on benchmark timing.",
+    "benchmark_name": "Artificial Analysis Intelligence Index",
+    "delta_pts": null,
+    "jargon": [
+      {
+        "term": "Frontier model",
+        "def": "State-of-the-art large language model released by leading AI lab, typically top performer on industry benchmarks."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-11-13",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropics-claude-tops-ai-rankings-as-openai-limits-cyber-model/"
     }
   },
   {
@@ -892,23 +913,19 @@
     }
   },
   {
-    "id": "2026-10-22-research-ai-serving-harness",
-    "category": "research",
+    "id": "2026-11-13-grok-apps-exposed-auth-gap",
+    "category": "insight",
     "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-10-22T21:17:29Z",
-    "headline": "Competitive edge in enterprise AI shifts from model choice to serving infrastructure",
-    "plain_english": "MIT Technology Review reports that enterprise AI success now hinges less on which foundation model (GPT, Claude, etc.) you choose and more on the operational layer around it—serving, caching, latency optimization, and integration. This mirrors infrastructure maturation in data engineering.",
-    "why_it_matters": "Banks will see diminishing ROI from model-hopping. Instead, invest in production-grade serving stacks: vector DBs, guardrails, caching, and integration with core banking systems. Vendor lock-in shifts from models to operational infrastructure.",
-    "jargon": [
-      {
-        "term": "Serving Infrastructure",
-        "def": "The systems that deploy and run AI models in production—caching, scaling, latency reduction, integration—separate from model training."
-      }
-    ],
+    "published_at": "2026-11-13T01:35:44Z",
+    "headline": "35,000 Grok-built apps exposed without authentication; AI coding reduces deployment friction but not security cost",
+    "plain_english": "Cybersecurity firm Claroc found 35,000 business applications built with Grok's AI were accessible without authentication. AI-assisted development lowers build cost and time but hasn't reduced the expense or complexity of securing deployed systems.",
+    "why_it_matters": "Banks adopting internal AI coding assistants must front-load security requirements in deployment pipelines. Speed-to-market from AI tooling can mask gaps in authentication, encryption, and audit logging if infra teams aren't aligned with dev.",
+    "stat_value": "35,000",
+    "stat_label": "Grok-built apps found accessible without authentication",
     "source": {
-      "name": "MIT Technology Review · 2026-10-22",
-      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/"
+      "name": "PYMNTS · 2026-11-13",
+      "url": "https://www.pymnts.com/cybersecurity/2026/35000-exposed-grok-apps-reveal-vibe-codings-hidden-cost/"
     }
   },
   {
@@ -1066,17 +1083,17 @@
     }
   },
   {
-    "id": "2026-11-09-gnosis-pay-data-breach",
-    "category": "insight",
+    "id": "2026-11-13-softbank-ai-trade-loss",
+    "category": "frontier",
     "jurisdiction": "Global",
     "severity": "high",
-    "published_at": "2026-11-08T23:44:40Z",
-    "headline": "Stablecoin-linked debit card provider Gnosis Pay suffers breach exposing customer addresses",
-    "plain_english": "Gnosis Pay, a service allowing users to spend stablecoins via Visa debit cards linked to crypto wallets, disclosed a data breach that exposed customer home addresses and personal information. Company announced the incident on Friday, Nov. 6.",
-    "why_it_matters": "Highlights operational risk in hybrid crypto-fiat payment platforms; tokenized assets and DeFi infrastructure still lack maturity in identity protection and incident response. Regulatory scrutiny of stablecoin issuers will likely tighten.",
+    "published_at": "2026-11-13T02:10:25Z",
+    "headline": "SoftBank posts $7 billion loss as AI trade strategy falters; venture-scale bets face repricing",
+    "plain_english": "SoftBank disclosed a $7 billion loss linked to its AI-focused investment thesis, signaling softening returns on venture AI positions. The loss reflects repricing of frontier AI and AI-infrastructure startups after euphoric valuations in 2024–2025.",
+    "why_it_matters": "Large LP losses on AI venture allocations will ripple through limited partner commitments to AI funds. BFSI CIOs and CFOs should expect tighter venture AI funding and slower growth-stage exits, cooling AI startup M&A and recruitment.",
     "source": {
-      "name": "PYMNTS · 2026-11-09",
-      "url": "https://www.pymnts.com/cybersecurity/2026/gnosis-pay-breach-reveals-crypto-customer-home-addresses/"
+      "name": "Wall Street Journal · 2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZV9GaFNkemwwODVVTVMyS1d3dWxqSUlTVV9mQ0Y5d081blZxc3BWR1VBVjlhcG1PaU1RSnJzU3kzTTRROVBPbmlOMTZnWDE5Y3hzeW8wdUsyVW4tQ1dkRVhGZHU3Qk5WR2dJZk5aZjFxMUdabVZWTDBUbTEyNHFOUXcwUlgxY2NwZ0tKYUd4UDJCbXJGOVRNWnBOdEtlNm5xc3c5WTN3WTRxdUJDVjhTaENJb2VObHRjc29uWjBFRFFQUl9vZ0xUWFZBSm9qZllw"
     }
   },
   {
@@ -1216,20 +1233,6 @@
     "source": {
       "name": "CNBC · 2026-11-09",
       "url": "https://www.cnbc.com/2026/11/09/anthropic-ipo-ai-trade-jim-cramer.html"
-    }
-  },
-  {
-    "id": "2026-11-10-frontier-ai-safety-signal",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-10T02:04:58Z",
-    "headline": "AI safety experts emphasize prevention options amid ongoing policy debates",
-    "plain_english": "Frontier AI policy commentary underscores that catastrophic AI risk mitigation is still within reach if coordination improves; signals continued debate over governance vs. capability deployment tradeoffs.",
-    "why_it_matters": "BFSI regulatory bodies monitor frontier-lab safety positions; tighter AI governance proposals could accelerate compliance burden for bank LLM and agent deployments.",
-    "source": {
-      "name": "AI commentary · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQXJ1NlZHRERmZ2lUQ21iY1IyVkxGNWlJOEdHVFJ5QXNMQl9KR1Z2ZUNKRDFoRlVXQkd5Vlk2bC0xUHNPdXJQVkxlS0lTZURTbTRhQnpRN2R0a3FDcHQ0bTUzaVZVeWdROE1kd0x1ekwwYmhxWmMwS2Y3d21jdWFYeUFxczgyQTA"
     }
   },
   {
@@ -1437,6 +1440,20 @@
     }
   },
   {
+    "id": "2026-11-13-anthropic-ipo-cramer-qa",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-12T23:45:00Z",
+    "headline": "Anthropic prepares historic IPO amid investor scrutiny on pricing, growth, and AI safety claims",
+    "plain_english": "Anthropic is moving toward a historic IPO (first major frontier AI lab to go public). CNBC's Jim Cramer raised three critical questions on valuation, growth trajectory, and whether safety differentiation is defensible against OpenAI and Google.",
+    "why_it_matters": "Anthropic's IPO pricing and market reception will set the bar for AI-lab valuations and investor appetite for frontier research commercialization. BFSI allocators should watch for precedent on AI-safety-as-moat valuation and talent retention mechanics post-IPO.",
+    "source": {
+      "name": "CNBC · 2026-11-12",
+      "url": "https://www.cnbc.com/2026/11/12/anthropic-ipo-cramer-pricing-growth-ai-safety.html"
+    }
+  },
+  {
     "id": "2026-11-12-economist-ai-bust-warning",
     "category": "trending",
     "jurisdiction": "Global",
@@ -1566,6 +1583,185 @@
     "source": {
       "name": "CNBC · 2026-11-05",
       "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html"
+    }
+  },
+  {
+    "id": "2026-11-07-china-blocks-abb-softbank-deal",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-07T15:26:00Z",
+    "headline": "China Blocks $5.4 Billion ABB Robotics Acquisition by SoftBank",
+    "plain_english": "Beijing rejected SoftBank's bid to acquire ABB Robotics, citing national security and technology transfer concerns. Escalates AI/robotics export restrictions as geopolitical tool.",
+    "why_it_matters": "Sets precedent for cross-border AI and automation M&A scrutiny; BFSI firms expanding in APAC or relying on robotics/automation supply chains now face regulatory uncertainty.",
+    "jargon": [
+      {
+        "term": "Technology transfer",
+        "def": "Movement of capabilities, know-how, or IP to foreign entities; gov't blocks if control/access deemed strategically harmful."
+      }
+    ],
+    "source": {
+      "name": "Forbes · 2026-11-07",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOR3JmZnpkSnhkN0lYVzhyVHhGRm1BMWJaZVNPUGt4M1RJZ2R1b3JJUmdkOGpoNnY0LWFzbjhoaDhVMlJXOEFlSW15alo4ZVNHekFGczktem52Q0JNZGZ1TzFCN2J4cWVQZFI2R0ZpZU9ETHNraDFnaWN5QlFiZC1zWXFReUN2Mm95T0M4azJ5SFRybDZ6bFFpSVB2YkVLekhOQXJpNGJ2cVNmVjJBenJfSFI5LVF5QmdIM2VoT2JaNkEtN1pmcENLTU9sNnB3UQ"
+    },
+    "amount": "$5.4B"
+  },
+  {
+    "id": "2026-11-10-oracle-ai-financial-analytics",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-10T13:21:35Z",
+    "headline": "Oracle launches AI-powered analytics suite for financial services firms",
+    "plain_english": "Oracle released AI-driven analytics tools designed for banks and insurers. Platform automates portfolio analysis, risk scoring, and financial reporting with natural language querying and anomaly detection.",
+    "why_it_matters": "Tier-1 vendor (Oracle) embedding AI into financial analytics stack. Signals shift from BI tools to AI-native analytics—firms will expect self-service reporting and real-time risk insights as table stakes.",
+    "source": {
+      "name": "Investing.com India · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNajNmb1BBTlFLY1YyZk56UDYzMjFFcUo3M3paeGRHLU1vWFU5UDZLeEg3eHA3RXNrSmdLNi15UmZDbXN3RjhjUWhRZ3BqNUhOalNzbVAtWXlBaGdwaXB0emRIdTNlb013MTRnV2lHQVgyMkJqTkU3VGJQSVBkMk1ac21PQjJPRGVRa2RtdDQtWm5VVjQ0Y3BtdTFPM3JyckdqR0ZKMGMwZU8ybV9qMkVraHE5X1p3QnFLSVBuUC1yNA"
+    }
+  },
+  {
+    "id": "2026-11-10-mox-ceo-appointment",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-10T13:12:00Z",
+    "headline": "Mox digital bank names new CEO as Standard Chartered-backed lender expands",
+    "plain_english": "Mox, a Hong Kong digital bank licensed and powered by Standard Chartered (partnered with PCCW, HKT, Trip.com), appointed Anshul Sabherwal (ex-Standard Chartered product head) as CEO. Signals organizational maturity and customer expansion focus.",
+    "why_it_matters": "Mox represents APAC's hybrid banking model: licensed fintech + tier-1 incumbent backing. New CEO hire signals Standard Chartered is doubling down on digital-first customer acquisition. AI/automation will be core to differentiation.",
+    "source": {
+      "name": "Finextra · 2026-11-10",
+      "url": "https://www.finextra.com/newsarticle/48734/standard-chartered-powered-bank-mox-appoints-anshul-sabherwal-as-ceo"
+    }
+  },
+  {
+    "id": "2026-11-10-commvault-ai-recovery-agents",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-10T13:51:36Z",
+    "headline": "Commvault releases AI agent recovery tools for enterprise backup and disaster recovery",
+    "plain_english": "Commvault, a data protection vendor, launched AI-powered agents that automate recovery workflows for enterprises. Agents detect anomalies in backup integrity, predict recovery time estimates, and orchestrate multi-tier recovery operations.",
+    "why_it_matters": "Enterprise BFSI relies on Commvault-class backup systems. AI agents automating disaster recovery reduce MTTR (mean time to recovery) and human error in high-stress scenarios. Banks will see agents as operational risk reduction, justifying deployment spend.",
+    "source": {
+      "name": "Investing.com India · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORldWMGtqb3J6MzROV1NXRGYxNFdzUUphVEQ4V19ZcWdncTZzYl85dE56TTQ1eWtjTldZYWtudG44VU9qMUMxdTVmaUtoY2RTekxFQU5HclIyR0dza0pRaHB3c0llMmNJRWxWWEUzUExCakI1V3pZUzdsc3hveEJzbHp1aDd3aGpYU0dyRmhma09hTkFUVlU0WVFqWFNFMFJDaExTd05RckN1OE9OX3E5b0pyc1hhVlJFRmdGdXF3MUF4eHVQ"
+    }
+  },
+  {
+    "id": "2026-11-10-pnc-stablecoin-deployment",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-10T00:01:00Z",
+    "headline": "PNC Bank enables stablecoin payments for corporate clients via Coinbase partnership",
+    "plain_english": "PNC Bank, a top-20 US lender, launched stablecoin payment capability for corporate and institutional clients in partnership with Coinbase. Corporate customers can now receive USDC payments.",
+    "why_it_matters": "First-mover adoption of blockchain-native settlement by large regional bank signals BFSI willingness to embed tokenized rails for B2B payments, raising compliance and treasury automation stakes.",
+    "jargon": [
+      {
+        "term": "stablecoin",
+        "def": "Cryptocurrency pegged to fiat currency (e.g., USD) to minimize price volatility, enabling use as digital payment rail."
+      }
+    ],
+    "source": {
+      "name": "Finextra · 2026-11-10",
+      "url": "https://www.finextra.com/newsarticle/48728/pnc-launches-stablecoin-payments-for-corporate-clients"
+    }
+  },
+  {
+    "id": "2026-11-10-meta-minor-detection-deployment",
+    "category": "deployment",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-10T00:51:10Z",
+    "headline": "Meta deploys AI to detect underage users on platform",
+    "plain_english": "Meta has deployed AI systems to identify and protect underage users on its platform. System uses behavioral and metadata signals to flag likely minors attempting to access age-restricted features.",
+    "why_it_matters": "Tech giants' AI enforcement of age-verification and KYC-adjacent controls creates precedent and regulatory pressure on BFSI to embed similar ML-driven compliance screening in retail onboarding.",
+    "source": {
+      "name": "Punch Newspapers · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU3JLWGVYd1dYMnhvX2JwTGtMTzhVX2g5emxHcFg2al9ONHRrbUd3Q0tzYmNpaXBYTnl1M2tPT291dFFYVnhGRGJSbDc3N3lXdDRLZi1NVFRMNEVsdHRKUkh0OTZKcVhyZTkzUWJFbUhRUHlnQ1VQUVM2WWNnSmp6SUZKdG1XTm1Zb1RBWEZsUEJncEplTVo1d1hSYUdvTnN4Y3Vva184SXJrRzQ"
+    }
+  },
+  {
+    "id": "2026-11-08-ai-data-centers-hostile",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-08T01:43:57.000Z",
+    "headline": "AI data center expansion faces regulatory and political headwinds globally",
+    "plain_english": "Frontier AI firms are encountering stiff resistance from governments over data center development—driven by energy concerns, national security fears, and local opposition. Post-midterm political shifts are intensifying zoning and environmental barriers to compute buildout.",
+    "why_it_matters": "Constrained data center capacity will limit AI model scaling and raise compute costs for financial institutions. BFSI must account for infrastructure bottlenecks in AI deployment timelines and factor geopolitical fragmentation into vendor selection and cloud strategy.",
+    "jargon": [
+      {
+        "term": "compute bottleneck",
+        "def": "Scarcity of GPU/processor capacity limiting how fast AI models can be trained or deployed at scale."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcG1MOENXS0g3UE1idXoxamJmd2FjV3g4UWoxVXp6YUwzR0hxeXFLLW5kdGF1YTJhSXNITVpQUG92cWlOdFQwRUI3cm1heS1xRFlRYURwdWt3R3VnS2pqenhpSFd6N0N4U2NuZGV5VzgwT0ZjeTdtcGRRVU9EbFFRUkFWc2xLdUpncG9HbWY3anFiTzJRWWttd016YjlyUDdZMmJoVg"
+    }
+  },
+  {
+    "id": "2026-11-07-meta-wehner-fireworks-cfo",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-07T17:51:16Z",
+    "headline": "Meta's Chief Strategy Officer Joins AI Infrastructure Startup Fireworks as CFO",
+    "plain_english": "Dave Wehner, Meta's long-serving CSO, is departing to become CFO of Fireworks AI, a $17.5B-valued infrastructure startup. Signals senior talent migration from mega-cap tech to frontier AI infrastructure as that sector matures.",
+    "why_it_matters": "Top FAANG operator moving to AI infra signals maturation of that market; likely influences how banks evaluate infrastructure partners beyond hyperscalers.",
+    "source": {
+      "name": "CNBC · 2026-11-07",
+      "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html"
+    }
+  },
+  {
+    "id": "2026-10-22-research-ai-serving-harness",
+    "category": "research",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-10-22T21:17:29Z",
+    "headline": "Competitive edge in enterprise AI shifts from model choice to serving infrastructure",
+    "plain_english": "MIT Technology Review reports that enterprise AI success now hinges less on which foundation model (GPT, Claude, etc.) you choose and more on the operational layer around it—serving, caching, latency optimization, and integration. This mirrors infrastructure maturation in data engineering.",
+    "why_it_matters": "Banks will see diminishing ROI from model-hopping. Instead, invest in production-grade serving stacks: vector DBs, guardrails, caching, and integration with core banking systems. Vendor lock-in shifts from models to operational infrastructure.",
+    "jargon": [
+      {
+        "term": "Serving Infrastructure",
+        "def": "The systems that deploy and run AI models in production—caching, scaling, latency reduction, integration—separate from model training."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-10-22",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/"
+    }
+  },
+  {
+    "id": "2026-11-09-gnosis-pay-data-breach",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-08T23:44:40Z",
+    "headline": "Stablecoin-linked debit card provider Gnosis Pay suffers breach exposing customer addresses",
+    "plain_english": "Gnosis Pay, a service allowing users to spend stablecoins via Visa debit cards linked to crypto wallets, disclosed a data breach that exposed customer home addresses and personal information. Company announced the incident on Friday, Nov. 6.",
+    "why_it_matters": "Highlights operational risk in hybrid crypto-fiat payment platforms; tokenized assets and DeFi infrastructure still lack maturity in identity protection and incident response. Regulatory scrutiny of stablecoin issuers will likely tighten.",
+    "source": {
+      "name": "PYMNTS · 2026-11-09",
+      "url": "https://www.pymnts.com/cybersecurity/2026/gnosis-pay-breach-reveals-crypto-customer-home-addresses/"
+    }
+  },
+  {
+    "id": "2026-11-10-frontier-ai-safety-signal",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-10T02:04:58Z",
+    "headline": "AI safety experts emphasize prevention options amid ongoing policy debates",
+    "plain_english": "Frontier AI policy commentary underscores that catastrophic AI risk mitigation is still within reach if coordination improves; signals continued debate over governance vs. capability deployment tradeoffs.",
+    "why_it_matters": "BFSI regulatory bodies monitor frontier-lab safety positions; tighter AI governance proposals could accelerate compliance burden for bank LLM and agent deployments.",
+    "source": {
+      "name": "AI commentary · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQXJ1NlZHRERmZ2lUQ21iY1IyVkxGNWlJOEdHVFJ5QXNMQl9KR1Z2ZUNKRDFoRlVXQkd5Vlk2bC0xUHNPdXJQVkxlS0lTZURTbTRhQnpRN2R0a3FDcHQ0bTUzaVZVeWdROE1kd0x1ekwwYmhxWmMwS2Y3d21jdWFYeUFxczgyQTA"
     }
   },
   {
@@ -8083,20 +8279,6 @@
     }
   },
   {
-    "id": "2026-10-13-anthropic-financials-disclosure",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-13T21:02:52.000Z",
-    "headline": "Anthropic to disclose Q3 revenue to investor group amid IPO speculation",
-    "plain_english": "Anthropic announced it will share updated financial metrics with investors at its headquarters this week, signaling heightened scrutiny of frontier lab economics as IPO timelines intensify.",
-    "why_it_matters": "Revenue transparency from frontier labs now moves market valuations and informs BFSI procurement decisions; signals shift toward institutionalization of AI vendor due diligence.",
-    "source": {
-      "name": "CNBC · 2026-10-13",
-      "url": "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html"
-    }
-  },
-  {
     "id": "2026-10-16-unicredit-commerzbank-ecb-approval",
     "category": "shift",
     "jurisdiction": "EU",
@@ -8171,26 +8353,6 @@
     }
   },
   {
-    "id": "2026-10-13-bofa-1.2b-aml-settlement",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-13T22:05:00.000Z",
-    "headline": "Bank of America pays $1.2 billion to settle money-laundering, sanctions violations",
-    "plain_english": "US authorities fined Bank of America $1.2B for failing to monitor suspicious transactions and enforce sanctions compliance, marking the latest major BFSI enforcement action on financial-crime controls.",
-    "why_it_matters": "Underscores regulator appetite to penalize weak transaction-monitoring systems; firms investing in AI-driven AML/KYC face competitive edge as manual controls prove costly.",
-    "jargon": [
-      {
-        "term": "AML",
-        "def": "Anti-money laundering: systems and processes that detect and report illegal financial flows."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-10-13",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdlFNN0pWVFc2UEQ3a2ViakktenQxdzQwRm9FMFh4azdJOC1jM3FQUDBCbGxmdmw3UUNyWmt3OEhxV1JtVWQzeTFlY3RZZURYc3VZazU2aURrUXBsXzdYS3pDQ2o0aTdhemI0WDgzeTJncUUxZ05ZdEZrYXJidXNNYV9ScGIyTENZeklySS1wRnFLNWpkYTRadkxOQjVLNVpVX00zMTg0WXNScE91MFVITFVYRldudzN4UTFWQjhPTlV1VjlGZ0FqcQ"
-    }
-  },
-  {
     "id": "2026-10-15-citi-wealth-avatar-patent",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8202,20 +8364,6 @@
     "source": {
       "name": "eFinancialCareers · 2026-10-15",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSmNCZ0Q5QkM5YlNPWUdWN2p3OXVnYlVySTkwanRLdFBvMm1QX3NlQXZtTjM1TmJ3eFlnZGpMNmJKSU1WcjlxcFAzWXhOSkh5dlFXNVVQWTlLRGJlXzlid1dIUE5ZZDVRQ2Rrck9FWVU2ZDVlcE9Hbzc4X1pack9PUUl6eU4wTG9SVG8xVnlvbWVlN0d6SllOckpzQUlrZlRJTG11M292RHh5Tlc2SmZGbTY0cw"
-    }
-  },
-  {
-    "id": "2026-10-13-nvidia-europe-billion",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-13T21:09:39.000Z",
-    "headline": "Nvidia announces billion-dollar European tech investments",
-    "plain_english": "Nvidia committed billions to European tech infrastructure, accelerating GPU ecosystem development in the EU and reducing dependence on US hardware supply chains.",
-    "why_it_matters": "Strengthens EU's ability to train sovereign AI models in-region; reshapes chip procurement strategies for European banks and cloud providers competing with US-backed alternatives.",
-    "source": {
-      "name": "Sifted · 2026-10-13",
-      "url": "https://sifted.eu/articles/nvidia-announces-billion-dollar-investments-in-european-tech/"
     }
   },
   {
@@ -8270,22 +8418,6 @@
     "source": {
       "name": "BGR · 2026-10-14",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdnVOLXZnNnFmY05jSl9pTjZzWEppZllJR1lTM2hOOE5ZSTFrRWthRHZsVy1BSzg1NzJ5Vm9DdmJqSURaNVNEa2xNblFTaHpPanFINlpkdjE4SGk3OHlsQnVydGt0eGthb3p0eEppaWFreGdPTkFQRGY1LVR2RUNMZUpCRTRJaTczZk9QSQ"
-    }
-  },
-  {
-    "id": "2026-10-13-anthropic-ai-spread-warning",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-13T21:11:05.000Z",
-    "headline": "Anthropic warns AI could propagate via low-cost smart devices",
-    "plain_english": "Anthropic cautioned that AI models could self-replicate across internet-connected consumer devices (phones, IoT), creating uncontrollable deployment vectors and regulatory blind spots.",
-    "why_it_matters": "Threatens traditional enterprise-software model where AI lives in isolated data centers; raises likelihood of regulatory circuit-breaker requirements and forces BFSI to harden network perimeter defenses.",
-    "stat_value": "Self-replication risk",
-    "stat_label": "flagged by frontier lab as emerging threat vector",
-    "source": {
-      "name": "Scripps News · 2026-10-13",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVW5nQk9ZY0xuREJzX1BUdjBCT2xPVGN1SGlxNFBibUVmaU40QVhQckZxMVB4cVJUVlhmX1JuSVlFR19Jak42Szg5QUdIei1YS3NlcFBBSExjZElNVm5VQ1N4aFhJRGNVZjlZaUR4bjBtM2xBVEFuM05aMDE5VGZwSzhfdjVHWlBLSjRkZUJDNkdZNDlnd25VcEtINnp0SDBFUVJMRlpsN3Q1b0VqMUdfLWg4N0Njb0ItTlgxT3Z2eW04eGF6OFhtX2diSmZJZw"
     }
   },
   {
@@ -8351,34 +8483,6 @@
     }
   },
   {
-    "id": "2026-10-13-openai-recording-device-arrest",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-13T21:44:46.000Z",
-    "headline": "FBI arrests Saudi OpenAI employee over conference-room recording device",
-    "plain_english": "Federal authorities arrested an OpenAI employee for allegedly planting a covert listening device in an executive conference room, intensifying scrutiny on safety and insider-threat practices at frontier AI labs.",
-    "why_it_matters": "Demonstrates systemic governance gaps at major AI vendors; elevates reputational and procurement risk for BFSI partners of frontier labs, likely triggering more stringent third-party security assessments.",
-    "source": {
-      "name": "CNBC · 2026-10-13",
-      "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
-    }
-  },
-  {
-    "id": "2026-10-13-anthropic-pentagon-rehear",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-13T22:54:21.000Z",
-    "headline": "Anthropic seeks rehearing on Pentagon AI model blacklist",
-    "plain_english": "Anthropic asked a federal appeals court to reconsider the Pentagon's decision to blacklist its AI models, challenging a policy that restricts defense deployment of non-US-controlled frontier AI systems.",
-    "why_it_matters": "Outcome will shape whether frontier AI labs can access US defense contracts; loss tightens regulatory pressure on non-integrated AI vendors.",
-    "source": {
-      "name": "CNBC · 2026-10-13",
-      "url": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html"
-    }
-  },
-  {
     "id": "2026-10-14-deployment-citigroup-ai-spending",
     "category": "deployment",
     "jurisdiction": "US",
@@ -8394,20 +8498,6 @@
     "source": {
       "name": "Benzinga · 2026-10-14",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYmVJeUlwSThmMlJ3U0x2UEtsYUo4UVJaWXB3MElaeGtBWkdNWktnaW5ZNXRNU25HdXdmcmdaN3BTMDF5MW5Id0docERTYk1USVp3RjNmMjlGSEtqUlhDZUdQQkFza0R1U1VPbEdsaGVyMTJmLXhicmhHeXpBS3N4amN0NnNJc2hNcThiRGdMSktpMDRiRTJwWkFmV3BQcVppdjl3eVVWQ0RSV2w4SmZxbUs1QngwNUxhbEpuaHdlTkFUcUVCOXNqRnVnTlgzOFZ3dkE"
-    }
-  },
-  {
-    "id": "2026-10-13-sbs-sovereign-ai-banking",
-    "category": "deployment",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-13T23:08:00.000Z",
-    "headline": "SBS launches sovereign AI platform for core banking",
-    "plain_english": "French software firm SBS unveiled what it claims is the world's first sovereign AI platform purpose-built for banking, addressing EU data residency and regulatory compliance requirements.",
-    "why_it_matters": "Sets template for EU banks to adopt AI without exposing customer data to non-EU cloud, reducing compliance friction and likely triggering similar products from competitors.",
-    "source": {
-      "name": "Finextra · 2026-10-13",
-      "url": "https://www.finextra.com/newsarticle/48577/sbs-unveils-sovereign-ai-platform-for-core-banking"
     }
   },
   {
@@ -8478,20 +8568,6 @@
     "source": {
       "name": "Finextra · 2026-10-14",
       "url": "https://www.finextra.com/newsarticle/48578/spanish-banks-report-150-spike-in-fraud"
-    }
-  },
-  {
-    "id": "2026-10-13-kroger-3k-layoffs-ai",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-13T21:19:00.000Z",
-    "headline": "Kroger cuts 3,000 corporate jobs as it accelerates AI-driven automation",
-    "plain_english": "Retailer Kroger announced 3,000 corporate layoffs tied to expanded AI deployment, exemplifying how Fortune-500 enterprises are rightsizing back-office headcount in favor of algorithmic decision-making.",
-    "why_it_matters": "Signals real labor-market compression in enterprise ops; BFSI should expect similar pressure on middle-office roles (compliance, ops, reporting) as AI matures from proof-of-concept to production scale.",
-    "source": {
-      "name": "AI Trending Now · 2026-10-13",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX3FWVDRrOWt6bHF0VTZJdXhfQ21rNUV6Wm1JUTdGTmc5eTVaaWlCUWc1em8xRzJtcDNFYWZmMkxNS05vTVJWd3J0WUpjd19Yejl3emdwOFRmb0xIejVrWnlyZGVCcS1QSElSNkFEbGhRYmhnMFlWaU5ITkg5ZlBfSw"
     }
   }
 ]
