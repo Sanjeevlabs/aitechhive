@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-11-14-regulation-fed-jefferson-ai-productivity",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-14T00:00:00.000Z",
+    "headline": "Federal Reserve Vice Chair Jefferson examines AI productivity paradox and macroeconomic impact",
+    "plain_english": "Fed Vice Chair Phillip Jefferson delivered remarks on how new AI technologies are raising old questions about productivity gains, economic output, and systemic resilience—signaling central bank intent to stress-test AI assumptions in financial forecasting.",
+    "why_it_matters": "Fed is building intellectual case for tighter AI risk frameworks in banking capital models. Banks should prepare LLM impact scenarios for stress tests by Q1 2027.",
+    "source": {
+      "name": "Federal Reserve · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeTJBM0ozNEphZWUwUWZPWkg4UmJmbERLdHgtSm05YVlyeld4amNYYjBBazBGaEFicUJ1RTRvU1BueUxSOHJOQ1F6UVlYQk1fS3FXSERrV2NENWoxRGR6bFVKdEtLR0x2ZlA0bWh6NFo0TnJrUVFpSEY4U3hCcFlYZmVFWQ?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-14-regulation-white-house-ai-disclosure-liability",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-14T00:34:00.000Z",
+    "headline": "White House calls for easing AI liability to encourage security breach disclosure",
+    "plain_english": "White House policy team is urging Congress to reduce liability exposure for companies that voluntarily disclose AI-related vulnerabilities and breaches, arguing strict liability chills incident reporting.",
+    "why_it_matters": "If adopted, eased liability would reshape BFSI incident response playbooks—firms may gain safe harbor for AI errors if disclosed quickly. Watch for OCC/Fed guidance harmonization.",
+    "source": {
+      "name": "Bloomberg · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRnR2MHh2N1dqYVljRm44MklWcFJ1QXppTERpYnpCSUdDc2hIdTRUSTJuUTNVZTJSTmMxemUxdjlWQVp1OU4weHpwc2lveS1sbi1DazdUZUpSVGFMMUFBdGMwVnNYNV84aXdGVmdneFJlQlNaNmtnWWN0aGpVdkdaMXVMVlJsWXdfWU5kRHVsMGhBRGhoTEo5dUJEU2xuMy1GaFgtb01BZktjR2szUlZONjBR?oc=5"
+    }
+  },
+  {
     "id": "2026-11-13-regulation-cftc-crypto-rules",
     "category": "regulation",
     "jurisdiction": "US",
@@ -142,43 +170,23 @@
     }
   },
   {
-    "id": "2026-11-10-ecb-digital-euro-policy",
-    "category": "regulation",
-    "jurisdiction": "EU",
+    "id": "2026-11-13-deployment-openai-chatgpt-wallet-agents",
+    "category": "deployment",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-11-10T14:04:52Z",
-    "headline": "ECB reaffirms digital euro strategy as complement to cash, not replacement",
-    "plain_english": "ECB published a position paper on the digital euro's role alongside physical cash. Emphasizes coexistence model: digital euro for programmable payments and real-time settlement; cash for financial inclusion and privacy.",
-    "why_it_matters": "ECB's dual-track stance shapes BFSI tech roadmaps. Banks must build for both channel—cash legacy systems and new CBDCs. Programmable money (if deployed) will force new AML/KYC workflows and contract-law frameworks.",
+    "published_at": "2026-11-13T22:32:00.000Z",
+    "headline": "OpenAI launches ChatGPT Wallet to enable AI agent payments",
+    "plain_english": "OpenAI has released ChatGPT Wallet, allowing AI agents (called 'Dots') to initiate and manage payments autonomously. Early version supports basic transaction flows; implications for enterprise API governance and spend control unclear.",
+    "why_it_matters": "First mainstream move toward autonomous AI agent commerce. Banks and fintechs must urgently clarify KYC, AML, and approval workflows for bot-initiated payments before adoption spreads.",
     "jargon": [
       {
-        "term": "CBDC (Central Bank Digital Currency)",
-        "def": "Digital money issued directly by central bank. Enables real-time settlement and programmability; raises privacy and financial stability questions."
+        "term": "AI agent",
+        "def": "Autonomous software that perceives goals, takes actions, and learns—no human approval per action. Dots are OpenAI's branded agents."
       }
     ],
     "source": {
-      "name": "European Central Bank · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeUp2QzBvcVFJTmNDM29MSXIzU1ZiZnpNS3lRZjNoWUtocURKTzVBRmFtaFV1cnRIdDc5UEozUnowX3A4cVdWWU1MZDVicVZlZkFoZmd3SkdXYzRSN2wwSDNZcWU2UmxnLXZfeC1Wa2NZeXJJVkFKanVYcTFwY1BiN2UzS3ptb01mVVE"
-    }
-  },
-  {
-    "id": "2026-11-09-apra-ai-pricing-insurance-pools",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-09T14:00:43.000Z",
-    "headline": "APRA warns AI-driven pricing could exclude high-risk customers from insurance pools",
-    "plain_english": "Australia's prudential regulator (APRA) flagged that algorithmic pricing by insurers using AI may inadvertently push riskier segments out of the market entirely, reducing competition and access. The concern: adverse selection spirals if AI automates exclusion at scale.",
-    "why_it_matters": "Signals emerging regulatory scrutiny of AI's role in systemic insurance market fragmentation; expect similar guidance from FCA, BaFin, and US state regulators within 6 months.",
-    "jargon": [
-      {
-        "term": "Adverse selection",
-        "def": "When high-risk customers exit a market because premiums rise, leaving only low-risk pools—reducing an insurer's diversification and profit margin."
-      }
-    ],
-    "source": {
-      "name": "Insurance Business · 2026-11-09",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUWRhNEZCd3ZzNnRVQ1pva3FBN3QtVW4xTWtld1NXVk1ZNDF0cDN0WnV6SC1HdnhGVTFmcy1hMlphUXQtX2xTYXB4dzIxTW11X2UwR0xnRVdXcUNIWlN3Qk53 Nl9WSWdxVDM3blBYWFZackJUOG1UNDFqLVBLRzJhemc1WDktNHh4Q2FxSVlMQ25uVmhBbUg1WFVSQl9iZHpIQWdib3NxRXV3ZllkVmJnN1hOeVBKdEJudjdqdTZFS29UeXBpMHNaQ2ItVkw1ek5UVFVv"
+      "name": "Cryptonews · 2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93NnNYMkxVZTR4MWdkWkJXUTNVTG5qNXhfODlma1BhMDRza0tYQXMwSXp2Vmdrd2YyRlRMQy1PM2Ridi13OHlxMFRibVJwWjhUbE51MldCSQ?oc=5"
     }
   },
   {
@@ -321,20 +329,6 @@
     "source": {
       "name": "Simply Wall St · 2026-11-11",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUUNVR2tkRDhEcXBmaEI5YzZ6VEdWcEFjOVZLYmkxVFJVeXZyMGFZWFhqeDVuVERULUwzREpuRjRkMHduUFM0NDMwTVZXSk5yQi1TeURWM2txbk9qUkRtMHVIamlxb0VxUHlvRkdlUTlTNjdNa2U1RnBhUFFYQjJUZi0yM1c4alBwcU9pbl9xZVc5dmtsZmJlU3ZWa1U0VGUxNlFHMlRzNmUtcjMyT2JJenNucGIxQ2V5ci1ZQWl6M2hwdWh6VVZ0NVowd1pNVWNR0gHWAUFVX3lxTFBqRlNWYVYzOXRFRXFZVi1aYngwUkd5UXo1TTlrU3J1U2NILXhFRnZERE5tMm5RbXZKbjhJS0lpTVJUQlNfMzAxYWtvMEFTVFQ4dEJTbDVOTGtWRjUzWndfem1jZW4xNVJ5b0V2Q3FqUnRsbmVIdnJLRkNSRl9pU3Z0elRyLS1xbWRXay1yM1hzMGlFejI1MV9RMnh4Q0VDZnFJeUNCQWdEZ3JEcmNWSVZOQWRDWUotME9ZMFNCRjVNLVJqM3BKd24walNqMHFhdVVRYVZ1aWc"
-    }
-  },
-  {
-    "id": "2026-11-12-deployment-aton-agentsign",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-11-12T01:35:00.000Z",
-    "headline": "Aton launches AgentSign to certify and govern financial AI agents",
-    "plain_english": "Aton has launched AI AgentSign, a governance and certification framework for financial AI agents. The platform provides control, audit, and compliance validation for autonomous financial agents operating in production, addressing regulatory and operational risk concerns.",
-    "why_it_matters": "First-mover governance layer for agent AI in finance; signals market demand for explainability and auditability as banks scale autonomous systems, likely to become table stakes for fintech AI infrastructure.",
-    "source": {
-      "name": "Chosunbiz · 2026-11-12",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XS1lsbXU2NDhMVlJHVmc1ZmlWUTdsRkF6SjJPT3B2b1drTFczYlBTRzlsM0h4VFFVbzBrSy05QmpXNjdaYXlxUVNVYU1hZUNtSUcwak5PeXhKQ01wSzczb2RXTkFSU0NnZHptdjlLOHdnajU5Z0thWFJn0gGOAUFVX3lxTE9LMzh2M1dxelgzVlBMNWNYY0R0T3dMSEtJNi1yRDFXUlI5QTIteDZNblNYUG00dEVHRDU1cEROendfM0FvTFExZWpCYVBEZkZtcWM4cEdVWkZ0RUVCQ2lBSk9Gd01fd284NDd3RWdHVGZ2TTQwbGhlVm1acV82N0xpMG1UNjZUYkkwb2dGcnR3"
     }
   },
   {
@@ -905,6 +899,36 @@
     }
   },
   {
+    "id": "2026-11-14-insight-faa-outage-ai-involvement",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-14T00:32:16.000Z",
+    "headline": "FAA investigating whether AI systems contributed to nationwide air-traffic ground stop",
+    "plain_english": "Federal Aviation Administration is probing whether recently deployed AI technology in air-traffic control communications played a role in a nationwide flight halt. Initial reports suggest network/software failure; AI angle under review.",
+    "why_it_matters": "If AI involvement confirmed, it signals systemic risk in critical infrastructure AI—regulators will tighten pre-deployment certification for all safety-critical AI, including banking settlement and market-surveillance systems.",
+    "stat_value": "thousands",
+    "stat_label": "of flights grounded across US",
+    "source": {
+      "name": "News4JAX · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNkJEVTBNRmc4TkFaTXJDemRaS1hDZWJoOTkwT1dONmZDa2h4Mk1XeEk5V0xHaGh4RWp5MW1QVjNBU1NlZGkwSGVnWEZGLTlRSGxxUlhCS0JUalZnNmdtTWdrY3dHQXJfRHViaEtjcVA0QVdMM1lNOXRIRTFyNmx1dWlMX3RMNWZLei1Idm5iTEE2anBVQkk0RTAzYzlnQllXWXZRYURKQ2ZWVUJGTk9FMWpIQTZNYWNXWWpCOHh1cVk?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-13-insight-faa-outage-system-resilience",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-14T00:43:54.000Z",
+    "headline": "FAA outage exposes fragility of legacy air-traffic control systems under AI integration",
+    "plain_english": "The nationwide flight ground stop underscores how decades-old infrastructure—air-traffic control, financial clearing houses, power grids—struggle with rapid AI injection. Single points of failure are multiplying.",
+    "why_it_matters": "Applies directly to banking settlement networks and market-surveillance AI. Regulators will demand dual-run periods and automated rollback for new AI in critical paths; expect deployment timelines to lengthen 30–50%.",
+    "source": {
+      "name": "Forbes · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNzJpMGc2elZIb2dyZTV2UjFCZnAycHRTRzBwbG9HeUZUYXRlaDZlWC1Db2NZOHh6Nlhyd1lGTFNnZGpka2ZDb2dXNXBNY09JUmFMN3ZjT3ZKZmZPOV9Qcllza1Q4MGNxaEtranI2aUFfSUtra1BmU3lmVFBydDk3MkpITFdiUE5fd2NiWUNTTnVwbTZfVjBxMno5dTd5U0VkVVZIelE0b1RHNnlI?oc=5"
+    }
+  },
+  {
     "id": "2026-11-13-insight-founder-ceo-risk",
     "category": "insight",
     "jurisdiction": "US",
@@ -1041,35 +1065,59 @@
     "stat_label": "token increase: agent vs. chatbot per query"
   },
   {
-    "id": "2026-11-10-bcg-ai-proficiency-insight",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-11-10T01:25:28Z",
-    "headline": "Two-thirds of organizations now report AI proficiency, BCG survey finds",
-    "plain_english": "BCG survey indicates 67% of surveyed organizations claim proficiency with AI tools and workflows. Reflects shift from skepticism to adoption across enterprise and public sectors.",
-    "why_it_matters": "Widening AI adoption baseline means BFSI peers are already running pilots; laggards face talent drain and efficiency gap. Proficiency claims often overstate production deployment—verify with peer audits.",
-    "stat_value": "67%",
-    "stat_label": "of orgs now report AI proficiency",
+    "id": "2026-11-14-frontier-fed-ai-concerns",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-13T22:26:58.000Z",
+    "headline": "AI tops financial-system risk list in Federal Reserve survey",
+    "plain_english": "In the latest Fed survey, artificial intelligence has jumped to the primary concern among financial-system risks, surpassing traditional worries like credit cycles and market volatility. Banks flag AI deployment speed, model reliability, and governance gaps.",
+    "why_it_matters": "Regulators are signaling imminent tightening of AI governance rules for banks. Expect OCC/Fed guidance on model risk management and third-party vendor oversight within 6 months.",
     "source": {
-      "name": "BCG via GovMedia · 2026-11-10",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xOV8tR0hFdElVa29nMDJORGtQY1ZWZ2RkNURfOW85elJRT0xfRDNEcWUtNGhZNkstbXVaOHl3U1J4MGU4TGlDZGtrdjBmS0V3SVUzZGQwcUR4Y1lNakNxdlVFZkQ2bnNUWkR3b3R3"
+      "name": "Reuters · 2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNa05md1laYmE4WGRIS2pmdGhmS3ZkQUhQdnFNUHNpTURuUmNXc3A1OUNvQkQxamNhUmROd3o4a09ENzhkamVvSlJMUDcyR1FYVW5MOXhid3RjNEtLLVY0NDVTMWlxdGZxYWJ3YVVuRmhRSEQzbDJvSk9VakI2d3lORXZZbFdkdlJHcEpPdmpxOWh5Z1J1UjJQbG96S016ck1MSk1VVzJ4SFliWkhUMng3NEJuYVpEWjQ?oc=5"
     }
   },
   {
-    "id": "2026-11-09-jpm-alums-ai-hedge-fund-test",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-09T13:30:42.000Z",
-    "headline": "JPMorgan alumni-led hedge fund's concentrated AI stock bet faces volatility as mega-cap tech corrections loom",
-    "plain_english": "Former JPMorgan technologists running a hedge fund made oversized bets on AI-adjacent mega-cap stocks (Nvidia, etc.). Recent market swings and the Nvidia CEO scandal expose concentration risk. Pattern mirrors 2021 SPAC frenzy: founder pedigree ≠ market timing or risk management.",
-    "why_it_matters": "Real-time lesson for BFSI: recruitment of top AI talent into hedge funds and fintechs is accelerating, but turnover risk and execution risk remain high. Signals broader flight of quants/engineers from traditional banks to AI-native shops—hollowing bank tech teams.",
-    "stat_value": "Nvidia down ~5%",
-    "stat_label": "on foreign intelligence investigation news",
+    "id": "2026-11-13-frontier-jensen-huang-nvidia-resignation",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-13T23:54:36.000Z",
+    "headline": "Jensen Huang steps down as Nvidia CEO amid Washington scrutiny",
+    "plain_english": "Nvidia founder and long-time CEO Jensen Huang has resigned, triggering Congressional calls for testimony and raising questions about the chipmaker's governance and AI industry influence at the highest levels.",
+    "why_it_matters": "Nvidia controls 80%+ of AI chip supply for financial institutions. Leadership change signals potential shift in chip allocation, pricing, or export-compliance priorities that could ripple through banking AI roadmaps.",
     "source": {
-      "name": "Wall Street Journal · 2026-11-09",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRzhlalhpa09sQ25wWmlUb3BNMnFIM1ZKT3JuVU16Y1N5Skk4T3lrT0xCLU5UanBLN0VpUFJ5YkN5SjJGM2xUNzVtYUFqeUZoaldlWFZrRTZOZWo4WVhpeVVZendRUjNOMFlycl9WYWtCV2dtOG1wdXdhNkRxZV94aDZQZ2pDYldlRnhhRjBKNmlNamtLaGZUczItcG16LXU1eGxoOEhKTFVwck1NU2VPT29HUjRYbE5r"
+      "name": "CNBC · 2026-11-13",
+      "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html"
+    }
+  },
+  {
+    "id": "2026-11-13-frontier-anthropic-ipo-megadeals",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-14T01:09:26.000Z",
+    "headline": "Anthropic IPO positioned to cap record year of AI equity megadeals",
+    "plain_english": "Anthropic, one of the three largest frontier AI labs (alongside OpenAI and Google DeepMind), is preparing for public listing, which would mark a symbolic capstone to unprecedented AI venture and growth-equity funding cycles.",
+    "why_it_matters": "Public markets are validating AI lab valuations and technology. BFSI enterprise customers can expect rapid Anthropic model updates post-IPO and potential product bundling with cloud providers.",
+    "source": {
+      "name": "The Edge Malaysia · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sRGpEOGFwUl8za0lJbDNRUUVfdVp3UVZZVm14NGJwa3YteDJuaHFHd1d4QVllWDNaOUtrbmROOGt6NElzOXFKSy1NNU5tRHRH?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-13-frontier-nvda-startup-funding-impact",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-13T22:43:00.000Z",
+    "headline": "Huang's exit from Nvidia threatens AI startup funding and valuation momentum",
+    "plain_english": "Nvidia under Huang poured tens of billions into AI startups and growth rounds. Founders and VCs now brace for smaller checks, lower valuations, and potential retrenchment as new Nvidia leadership reassesses venture strategy.",
+    "why_it_matters": "BFSI AI vendors—LLM providers, risk platforms, fraud detection startups—may face funding drying up. Banks should accelerate internal AI hiring and reduce vendor lock-in on unproven startups.",
+    "source": {
+      "name": "TechCrunch · 2026-11-13",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
     }
   },
   {
@@ -1155,74 +1203,6 @@
     "source": {
       "name": "Moomoo · 2026-11-11",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR1pqcWFjNXVmc2Z5MVFOTXhZaWh5bUE5UHo2RUhVdWFMc25SLVZIUFFkMlVzMk45dUNzNGhTMXE5Nkh3N0FJX3FZcEtwX2NiaGVmckZ5MDg1ZmRUQW5RbFF1SFBzdl9sbmxBVG52WHJ6THNMM1VPZzdzUlgyX3NkTlA1T2lESFoydEc4RnNkd2RlQjl2OWJsUUt2OUdHUQ"
-    }
-  },
-  {
-    "id": "2026-11-11-nscale-ipo-delay",
-    "category": "frontier",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-11-11T13:24:45.000Z",
-    "headline": "UK AI startup Nscale considers delaying $35B IPO amid tech sector volatility",
-    "plain_english": "Nscale, a British AI infrastructure/chip-design firm valued at $35B, is weighing postponement of its IPO as broader tech equities face selling pressure and market sentiment cools on AI infrastructure plays.",
-    "why_it_matters": "Public-market appetite for AI infrastructure tightening; delays may cascade to other frontier-lab and chip-vendor IPO plans; signals investors repricing AI capex economics.",
-    "source": {
-      "name": "Sifted · 2026-11-11",
-      "url": "https://sifted.eu/articles/nscale-ipo-nvidia-delay/"
-    }
-  },
-  {
-    "id": "2026-11-11-frontier-anthropic-australian-ipo-retail",
-    "category": "frontier",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-11T01:52:56.000Z",
-    "headline": "Anthropic opens retail IPO offering in Australia as AI scrutiny intensifies",
-    "plain_english": "Anthropic, a leading frontier AI lab, has opened its planned initial public offering to individual Australian investors ahead of a full listing. The timing coincides with rising regulatory scrutiny of AI safety and business practices globally.",
-    "why_it_matters": "A major frontier AI lab going public signals investor confidence and reduces dependency on mega-cap funding. Regulatory scrutiny during IPO roadshow will test whether AI governance narratives satisfy institutional investors and regulators in BFSI-critical markets.",
-    "source": {
-      "name": "CNBC · 2026-11-11",
-      "url": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html"
-    }
-  },
-  {
-    "id": "2026-11-10-anthropic-ipo-valuation",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-10T14:01:39Z",
-    "headline": "Anthropic sets IPO price range at $70–$78 per share, targeting $1.4 trillion valuation",
-    "plain_english": "Anthropic, a frontier AI lab backed by major financial institutions, announced its IPO price band today. At the top end, the valuation reaches $1.4 trillion (fully diluted), marking one of the largest AI company debuts. Signals consolidation of AI dominance by a small group of well-capitalized labs.",
-    "why_it_matters": "Anthropic's scale and financial backers (Google, Salesforce, others) now have direct market validation. Valuation sets precedent for AI investment thesis: BFSI firms betting on frontier model licensing as core AI supply chain.",
-    "jargon": [
-      {
-        "term": "fully diluted valuation",
-        "def": "Company worth including all convertible securities (options, warrants). Shows true economic ownership spread."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-10",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
-    }
-  },
-  {
-    "id": "2026-11-10-adobe-mcp-agents-creative",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-10T14:05:10Z",
-    "headline": "Adobe launches AI agents and Model Context Protocol integration in Photoshop, Premiere",
-    "plain_english": "Adobe released agentic AI features in its creative suite (Photoshop, Premiere Pro, Firefly). Agents can autonomously perform multi-step tasks (e.g., layer composition, color grading). Uses Model Context Protocol (MCP) to integrate third-party tools and models.",
-    "why_it_matters": "Frontier AI models (agents + MCP) are moving out of chat and into vertical workflows. BFSI firms will face similar pressure: customers expect AI to work within their native tools (Excel, Salesforce, core banking platforms), not as bolt-on chatbots.",
-    "jargon": [
-      {
-        "term": "Model Context Protocol (MCP)",
-        "def": "Open standard for AI agents to interact with external tools, APIs, and data sources. Enables agents to query databases, trigger workflows, or call third-party services without re-engineering."
-      }
-    ],
-    "source": {
-      "name": "TechCrunch · 2026-11-10",
-      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
     }
   },
   {
@@ -1573,6 +1553,160 @@
     "source": {
       "name": "Bloomberg · 2026-11-06",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVW5hQzNwU0VSZVBHUnhVeTZ3RjVZUk1Xd0JsUnN2aG5FVlY3UkZ0emEtT0p5dkVYUXlmUmpOYXZ5YkRpdGhfdGJ0MjVNdmVYYUx4S3JPQ0tIUU1WUjlmdUNFVTdBVXMzT0R5ekY4TlRCdDFKZkpXS2lvYXozZ0lKeEZMMnVoU0dMTEZkN1VqLUhLYWtLeGJNeDJmZkl3ZFQxVm04MllrMW5UbENIMkE"
+    }
+  },
+  {
+    "id": "2026-11-10-ecb-digital-euro-policy",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-10T14:04:52Z",
+    "headline": "ECB reaffirms digital euro strategy as complement to cash, not replacement",
+    "plain_english": "ECB published a position paper on the digital euro's role alongside physical cash. Emphasizes coexistence model: digital euro for programmable payments and real-time settlement; cash for financial inclusion and privacy.",
+    "why_it_matters": "ECB's dual-track stance shapes BFSI tech roadmaps. Banks must build for both channel—cash legacy systems and new CBDCs. Programmable money (if deployed) will force new AML/KYC workflows and contract-law frameworks.",
+    "jargon": [
+      {
+        "term": "CBDC (Central Bank Digital Currency)",
+        "def": "Digital money issued directly by central bank. Enables real-time settlement and programmability; raises privacy and financial stability questions."
+      }
+    ],
+    "source": {
+      "name": "European Central Bank · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeUp2QzBvcVFJTmNDM29MSXIzU1ZiZnpNS3lRZjNoWUtocURKTzVBRmFtaFV1cnRIdDc5UEozUnowX3A4cVdWWU1MZDVicVZlZkFoZmd3SkdXYzRSN2wwSDNZcWU2UmxnLXZfeC1Wa2NZeXJJVkFKanVYcTFwY1BiN2UzS3ptb01mVVE"
+    }
+  },
+  {
+    "id": "2026-11-09-apra-ai-pricing-insurance-pools",
+    "category": "regulation",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-09T14:00:43.000Z",
+    "headline": "APRA warns AI-driven pricing could exclude high-risk customers from insurance pools",
+    "plain_english": "Australia's prudential regulator (APRA) flagged that algorithmic pricing by insurers using AI may inadvertently push riskier segments out of the market entirely, reducing competition and access. The concern: adverse selection spirals if AI automates exclusion at scale.",
+    "why_it_matters": "Signals emerging regulatory scrutiny of AI's role in systemic insurance market fragmentation; expect similar guidance from FCA, BaFin, and US state regulators within 6 months.",
+    "jargon": [
+      {
+        "term": "Adverse selection",
+        "def": "When high-risk customers exit a market because premiums rise, leaving only low-risk pools—reducing an insurer's diversification and profit margin."
+      }
+    ],
+    "source": {
+      "name": "Insurance Business · 2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUWRhNEZCd3ZzNnRVQ1pva3FBN3QtVW4xTWtld1NXVk1ZNDF0cDN0WnV6SC1HdnhGVTFmcy1hMlphUXQtX2xTYXB4dzIxTW11X2UwR0xnRVdXcUNIWlN3Qk53 Nl9WSWdxVDM3blBYWFZackJUOG1UNDFqLVBLRzJhemc1WDktNHh4Q2FxSVlMQ25uVmhBbUg1WFVSQl9iZHpIQWdib3NxRXV3ZllkVmJnN1hOeVBKdEJudjdqdTZFS29UeXBpMHNaQ2ItVkw1ek5UVFVv"
+    }
+  },
+  {
+    "id": "2026-11-12-deployment-aton-agentsign",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "high",
+    "published_at": "2026-11-12T01:35:00.000Z",
+    "headline": "Aton launches AgentSign to certify and govern financial AI agents",
+    "plain_english": "Aton has launched AI AgentSign, a governance and certification framework for financial AI agents. The platform provides control, audit, and compliance validation for autonomous financial agents operating in production, addressing regulatory and operational risk concerns.",
+    "why_it_matters": "First-mover governance layer for agent AI in finance; signals market demand for explainability and auditability as banks scale autonomous systems, likely to become table stakes for fintech AI infrastructure.",
+    "source": {
+      "name": "Chosunbiz · 2026-11-12",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XS1lsbXU2NDhMVlJHVmc1ZmlWUTdsRkF6SjJPT3B2b1drTFczYlBTRzlsM0h4VFFVbzBrSy05QmpXNjdaYXlxUVNVYU1hZUNtSUcwak5PeXhKQ01wSzczb2RXTkFSU0NnZHptdjlLOHdnajU5Z0thWFJn0gGOAUFVX3lxTE9LMzh2M1dxelgzVlBMNWNYY0R0T3dMSEtJNi1yRDFXUlI5QTIteDZNblNYUG00dEVHRDU1cEROendfM0FvTFExZWpCYVBEZkZtcWM4cEdVWkZ0RUVCQ2lBSk9Gd01fd284NDd3RWdHVGZ2TTQwbGhlVm1acV82N0xpMG1UNjZUYkkwb2dGcnR3"
+    }
+  },
+  {
+    "id": "2026-11-10-bcg-ai-proficiency-insight",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-10T01:25:28Z",
+    "headline": "Two-thirds of organizations now report AI proficiency, BCG survey finds",
+    "plain_english": "BCG survey indicates 67% of surveyed organizations claim proficiency with AI tools and workflows. Reflects shift from skepticism to adoption across enterprise and public sectors.",
+    "why_it_matters": "Widening AI adoption baseline means BFSI peers are already running pilots; laggards face talent drain and efficiency gap. Proficiency claims often overstate production deployment—verify with peer audits.",
+    "stat_value": "67%",
+    "stat_label": "of orgs now report AI proficiency",
+    "source": {
+      "name": "BCG via GovMedia · 2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xOV8tR0hFdElVa29nMDJORGtQY1ZWZ2RkNURfOW85elJRT0xfRDNEcWUtNGhZNkstbXVaOHl3U1J4MGU4TGlDZGtrdjBmS0V3SVUzZGQwcUR4Y1lNakNxdlVFZkQ2bnNUWkR3b3R3"
+    }
+  },
+  {
+    "id": "2026-11-09-jpm-alums-ai-hedge-fund-test",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-09T13:30:42.000Z",
+    "headline": "JPMorgan alumni-led hedge fund's concentrated AI stock bet faces volatility as mega-cap tech corrections loom",
+    "plain_english": "Former JPMorgan technologists running a hedge fund made oversized bets on AI-adjacent mega-cap stocks (Nvidia, etc.). Recent market swings and the Nvidia CEO scandal expose concentration risk. Pattern mirrors 2021 SPAC frenzy: founder pedigree ≠ market timing or risk management.",
+    "why_it_matters": "Real-time lesson for BFSI: recruitment of top AI talent into hedge funds and fintechs is accelerating, but turnover risk and execution risk remain high. Signals broader flight of quants/engineers from traditional banks to AI-native shops—hollowing bank tech teams.",
+    "stat_value": "Nvidia down ~5%",
+    "stat_label": "on foreign intelligence investigation news",
+    "source": {
+      "name": "Wall Street Journal · 2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRzhlalhpa09sQ25wWmlUb3BNMnFIM1ZKT3JuVU16Y1N5Skk4T3lrT0xCLU5UanBLN0VpUFJ5YkN5SjJGM2xUNzVtYUFqeUZoaldlWFZrRTZOZWo4WVhpeVVZendRUjNOMFlycl9WYWtCV2dtOG1wdXdhNkRxZV94aDZQZ2pDYldlRnhhRjBKNmlNamtLaGZUczItcG16LXU1eGxoOEhKTFVwck1NU2VPT29HUjRYbE5r"
+    }
+  },
+  {
+    "id": "2026-11-11-nscale-ipo-delay",
+    "category": "frontier",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-11T13:24:45.000Z",
+    "headline": "UK AI startup Nscale considers delaying $35B IPO amid tech sector volatility",
+    "plain_english": "Nscale, a British AI infrastructure/chip-design firm valued at $35B, is weighing postponement of its IPO as broader tech equities face selling pressure and market sentiment cools on AI infrastructure plays.",
+    "why_it_matters": "Public-market appetite for AI infrastructure tightening; delays may cascade to other frontier-lab and chip-vendor IPO plans; signals investors repricing AI capex economics.",
+    "source": {
+      "name": "Sifted · 2026-11-11",
+      "url": "https://sifted.eu/articles/nscale-ipo-nvidia-delay/"
+    }
+  },
+  {
+    "id": "2026-11-11-frontier-anthropic-australian-ipo-retail",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-11T01:52:56.000Z",
+    "headline": "Anthropic opens retail IPO offering in Australia as AI scrutiny intensifies",
+    "plain_english": "Anthropic, a leading frontier AI lab, has opened its planned initial public offering to individual Australian investors ahead of a full listing. The timing coincides with rising regulatory scrutiny of AI safety and business practices globally.",
+    "why_it_matters": "A major frontier AI lab going public signals investor confidence and reduces dependency on mega-cap funding. Regulatory scrutiny during IPO roadshow will test whether AI governance narratives satisfy institutional investors and regulators in BFSI-critical markets.",
+    "source": {
+      "name": "CNBC · 2026-11-11",
+      "url": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html"
+    }
+  },
+  {
+    "id": "2026-11-10-anthropic-ipo-valuation",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-10T14:01:39Z",
+    "headline": "Anthropic sets IPO price range at $70–$78 per share, targeting $1.4 trillion valuation",
+    "plain_english": "Anthropic, a frontier AI lab backed by major financial institutions, announced its IPO price band today. At the top end, the valuation reaches $1.4 trillion (fully diluted), marking one of the largest AI company debuts. Signals consolidation of AI dominance by a small group of well-capitalized labs.",
+    "why_it_matters": "Anthropic's scale and financial backers (Google, Salesforce, others) now have direct market validation. Valuation sets precedent for AI investment thesis: BFSI firms betting on frontier model licensing as core AI supply chain.",
+    "jargon": [
+      {
+        "term": "fully diluted valuation",
+        "def": "Company worth including all convertible securities (options, warrants). Shows true economic ownership spread."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-10",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    }
+  },
+  {
+    "id": "2026-11-10-adobe-mcp-agents-creative",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-10T14:05:10Z",
+    "headline": "Adobe launches AI agents and Model Context Protocol integration in Photoshop, Premiere",
+    "plain_english": "Adobe released agentic AI features in its creative suite (Photoshop, Premiere Pro, Firefly). Agents can autonomously perform multi-step tasks (e.g., layer composition, color grading). Uses Model Context Protocol (MCP) to integrate third-party tools and models.",
+    "why_it_matters": "Frontier AI models (agents + MCP) are moving out of chat and into vertical workflows. BFSI firms will face similar pressure: customers expect AI to work within their native tools (Excel, Salesforce, core banking platforms), not as bolt-on chatbots.",
+    "jargon": [
+      {
+        "term": "Model Context Protocol (MCP)",
+        "def": "Open standard for AI agents to interact with external tools, APIs, and data sources. Enables agents to query databases, trigger workflows, or call third-party services without re-engineering."
+      }
+    ],
+    "source": {
+      "name": "TechCrunch · 2026-11-10",
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
     }
   },
   {
@@ -6834,30 +6968,6 @@
     }
   },
   {
-    "id": "2026-10-15-rag-primer",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-15T00:00:00Z",
-    "headline": "What is RAG? A practical AI pattern for BFSI document-heavy workflows",
-    "plain_english": "Retrieval-Augmented Generation (RAG) lets an AI model look up relevant documents—say, loan agreements or compliance filings—before answering. It grounds answers in your data instead of hallucinating. Banks use RAG for document review, KYC, and regulatory Q&A.",
-    "why_it_matters": "RAG is a production standard for enterprise AI in BFSI; reduces hallucination risk and ensures audit trails. Understanding RAG internals (retrieval quality, embedding drift, chunk size) is table-stakes for engineering teams shipping LLM pilots.",
-    "jargon": [
-      {
-        "term": "Retrieval-Augmented Generation (RAG)",
-        "def": "AI pattern: query a document database, inject matching context into an LLM prompt, then generate grounded answers tied to source docs."
-      },
-      {
-        "term": "Hallucination",
-        "def": "LLM-generated falsehoods presented with confidence; RAG reduces this by anchoring to real data."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Primer · 2026-10-15",
-      "url": "#"
-    }
-  },
-  {
     "id": "2026-10-17-trending-anthropic-clark-ai-action",
     "category": "trending",
     "jurisdiction": "US",
@@ -8285,20 +8395,6 @@
     }
   },
   {
-    "id": "2026-10-14-openai-8-states-lawsuit",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-14T21:09:20Z",
-    "headline": "Eight U.S. states sue OpenAI over ChatGPT safety and child protection practices",
-    "plain_english": "Eight U.S. states filed lawsuits against OpenAI alleging inadequate safety safeguards and insufficient protections for children using ChatGPT. The action reflects growing state-level scrutiny of generative AI companies' duty of care.",
-    "why_it_matters": "Signals multi-state enforcement trend; states moving faster than federal regulators. Expect discovery to expose training data practices, guardrail efficacy, and documented risks—setting precedent for liability in financial AI deployments.",
-    "source": {
-      "name": "CNBC · 2026-10-14",
-      "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html"
-    }
-  },
-  {
     "id": "2026-10-15-insitro-astrazeneca",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8559,30 +8655,6 @@
     }
   },
   {
-    "id": "2026-10-15-natwest-nvidia-speech-recognition",
-    "category": "deployment",
-    "jurisdiction": "UK",
-    "severity": "low",
-    "published_at": "2026-10-15T00:01:00Z",
-    "headline": "NatWest partners Nvidia for accent-aware speech AI in spending tool",
-    "plain_english": "NatWest deployed Nvidia's speech recognition technology in its audio-visual spending insights tool to improve understanding of regional accents and pronunciations. The tool helps customers analyze spending patterns via voice.",
-    "why_it_matters": "Demonstrates tactical use of specialized AI models for inclusive UX; validates speech-based banking interfaces beyond generic chatbots, though accent bias remains a quality gate before wider rollout.",
-    "jargon": [
-      {
-        "term": "Speech recognition",
-        "def": "AI model that converts spoken words into text; accuracy varies by accent, dialect, and background noise."
-      }
-    ],
-    "scale": {
-      "metric": "customers",
-      "value": "NatWest retail base (millions)"
-    },
-    "source": {
-      "name": "Finextra · 2026-10-15",
-      "url": "https://www.finextra.com/newsarticle/48586/natwest-enlists-nvidia-to-help-its-ai-spending-tool-understand-regional-accents"
-    }
-  },
-  {
     "id": "2026-10-15-coinbase-payments-stablecoin-banking",
     "category": "shift",
     "jurisdiction": "US",
@@ -8618,34 +8690,6 @@
     "source": {
       "name": "Finextra · 2026-10-15",
       "url": "https://www.finextra.com/newsarticle/48588/wise-appoints-chairman-designate?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-15-jpm-ai-agent-access-block",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-15T00:01:00Z",
-    "headline": "JPMorgan Chase blocks third-party AI agents from direct account access",
-    "plain_english": "JPMorgan Chase will not allow outside AI assistants (like Meta's Muse) to directly access retail customer accounts. CEO Jamie Dimon signaled the bank is tightening controls around external AI integration to protect customer data and account security.",
-    "why_it_matters": "Sets precedent for banking industry: expect other major banks to adopt similar guardrails, slowing AI automation in retail banking and forcing fintechs to redesign agent architectures for read-only or sandboxed access.",
-    "source": {
-      "name": "Finextra · 2026-10-15",
-      "url": "https://www.finextra.com/newsarticle/48585/jpmorgan-chase-blocks-outside-ai-agents-from-directly-accessing-customer-accounts"
-    }
-  },
-  {
-    "id": "2026-10-14-freshfields-lab-spinoff",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-14T21:33:29Z",
-    "headline": "Global law firm Freshfields explores billion-dollar spinoff of in-house AI lab",
-    "plain_english": "Freshfields Bruckhaus Deringer senior partners are considering spinning off Freshfields Lab—its legal-tech and AI development unit—into a standalone company open to external investment. The lab builds AI tools for contract review and legal research.",
-    "why_it_matters": "Signals commoditization of legal AI; established firms can no longer absorb dev costs internally. This model (legal-AI spinoff) will likely be copied by other BigLaw firms, creating standalone LegalTech unicorns and fragmenting the market.",
-    "source": {
-      "name": "PYMNTS · 2026-10-14",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/law-firm-freshfields-weighs-billion-dollar-spinoff-ai-unit/"
     }
   }
 ]
