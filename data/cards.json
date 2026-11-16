@@ -1,5 +1,25 @@
 [
   {
+    "id": "2026-11-16-regulation-ecb-smart-supervision-small-banks",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "low",
+    "published_at": "2026-11-16T13:03:48Z",
+    "headline": "European Central Bank launches smart supervision framework targeting smaller banks",
+    "plain_english": "The ECB published guidance on proportionate, technology-enabled supervision for smaller financial institutions, aiming to reduce compliance burden while maintaining prudential oversight—likely leveraging AI-driven analytics for risk monitoring.",
+    "why_it_matters": "If ECB endorses AI-powered reporting and monitoring for smaller banks, it sets a precedent for other jurisdictions to follow; regional BFSI compliance teams will expect lighter-touch oversight in exchange for data transparency and automated risk signaling.",
+    "jargon": [
+      {
+        "term": "ECB",
+        "def": "European Central Bank, supervisor of eurozone banks and financial stability authority for the EU."
+      }
+    ],
+    "source": {
+      "name": "European Central Bank · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeklPZFlqWjZscFJtcGVKZE1MYk9TblEtVnFQeW53RVRXN3Jidy00LUtCcWhaOUdyQV82VWhoazRkNHo0TGJBT0dXWlBleHI4S0tSYU9fVkpMU0h4MnE0RGxZM21kbGFQNFhLSVpEbjY0WmM5cHpVM0xNZk9hNFNqLUI2WjhlNUNEeExXcWM1bw"
+    }
+  },
+  {
     "id": "2026-11-16-autonomous-weapons-talks",
     "category": "regulation",
     "jurisdiction": "Global",
@@ -154,17 +174,27 @@
     }
   },
   {
-    "id": "2026-11-13-regulation-cftc-crypto-rules",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-11-16-deployment-hkma-swift-tokenized-deposits",
+    "category": "deployment",
+    "jurisdiction": "APAC",
     "severity": "med",
-    "published_at": "2026-11-13T13:15:35.000Z",
-    "headline": "CFTC asserts crypto jurisdiction as industry opts into proposed rule framework",
-    "plain_english": "U.S. Commodities Futures Trading Commission Chair Selig told CNBC that crypto firms are voluntarily adopting the agency's proposed rules to regulate digital assets, even as Congressional crypto legislation stalls.",
-    "why_it_matters": "Industry self-regulation via CFTC rules preempts legislative action and creates de facto baseline compliance, reducing regulatory uncertainty for BFSI firms building crypto trading infrastructure.",
+    "published_at": "2026-11-16T12:54:51Z",
+    "headline": "Hong Kong Monetary Authority and Swift pilot tokenized deposits for cross-border bank payments",
+    "plain_english": "HKMA and Swift are collaborating on a proof-of-concept for tokenized bank deposits to settle international payments, using blockchain or distributed ledger rails to reduce latency and settlement risk on high-value transfers between financial institutions.",
+    "why_it_matters": "If tokenized deposits gain central bank blessing in Asia-Pacific, BFSI treasury and correspondent banking teams will need to integrate digital asset settlement into their nostro/vostro operations; this accelerates industry move away from SWIFT-only rails.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Digital representation of bank funds on a distributed ledger, enabling real-time settlement without traditional intermediaries."
+      },
+      {
+        "term": "HKMA",
+        "def": "Hong Kong Monetary Authority, the region's central bank and banking regulator."
+      }
+    ],
     "source": {
-      "name": "CNBC · 2026-11-13",
-      "url": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html"
+      "name": "TradingView · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbF9fYVNJb1J2M1FYbDJ5bkYybFpCZ1Njd0FzVF9FeXZUNGF6ZGlsbnQ2Zzh3Rmwta05BNkdia1NZS2dVcTlLZkVENUY3ejZROWk0Y0loMnp0OXVfckZLaTVzZmdsNVJhbjJlaV9nczNvalJaTG05N2hPQTlKak10MjZIRzRXdUduYkpXZHhTX0N1VUUzenRzNzZGNDFVU3d5di12TTJQU2o3VklwRTh5VS1YQnUxXzdIYmV5SFNaSEJCU2FidkltX2J2ME0"
     }
   },
   {
@@ -313,23 +343,17 @@
     }
   },
   {
-    "id": "2026-11-13-ai-bots-credit-cards-banks",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-13T01:00:00Z",
-    "headline": "AI agents begin autonomous credit card transactions; banks race to update fraud controls",
-    "plain_english": "AI bots are now using credit cards directly to pay bills and make purchases. Banks are scrambling to rebuild fraud detection systems designed for human behavior, creating new risk surfaces for unauthorized or erroneous autonomous spending.",
-    "why_it_matters": "Banks' legacy fraud models (velocity, geography, merchant category) don't catch agent-driven patterns. Widespread bot adoption could spike chargebacks and compliance violations if controls aren't rebuilt fast.",
-    "jargon": [
-      {
-        "term": "Autonomous agent",
-        "def": "Software that makes decisions and executes transactions without real-time human approval, based on programmed rules or learned patterns."
-      }
-    ],
+    "id": "2026-11-16-vendor-databricks-hiring-ai-engineers",
+    "category": "vendor",
+    "jurisdiction": "Global",
+    "severity": "low",
+    "published_at": "2026-11-16T09:15:59Z",
+    "headline": "Databricks expands Forward Deployed Engineer team across US, APAC to support enterprise AI deployments",
+    "plain_english": "Databricks posted multiple AI Engineer and Forward Deployed Engineer (FDE) roles in US, South Korea, and Costa Rica, signaling aggressive hiring to scale field support for enterprise customers building AI workflows on its data and AI platform.",
+    "why_it_matters": "FDE hiring spree suggests Databricks expects sharp uptick in complex customer deployments; BFSI shops building data lakes and AI pipelines on Databricks should anticipate stronger vendor support but also pressure to accelerate go-lives and production commitments.",
     "source": {
-      "name": "Wall Street Journal · 2026-11-13",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNldJX01OcW9RMkRvR2QxbDljdmNZMGEyVUlnRjkwTWtqbmRsdVZHYnktd0ExUjlOYXFtNXdqcldodFpmemEyQWNfRDZXXzhIUi1DUVI2NFNBczZxdzc2ZWM0eW16bFJSa19PV1ZvSnQ2N1Y0RnJPM2F5R2VTWG1DOVBHNUFjUkhRbWZnYXFEenRMVjJlVlgyOF9JOA"
+      "name": "Databricks careers · 2026-11-16",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8829033002"
     }
   },
   {
@@ -478,19 +502,37 @@
     }
   },
   {
-    "id": "2026-11-11-lumepay-6m-seed",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-11-11T13:56:52.000Z",
-    "headline": "Lumepay raises $6M pre-seed for cross-border payments in Africa",
-    "plain_english": "Fintech Lumepay secured $6M pre-seed funding to build AI-powered cross-border payment rails for African markets, competing in high-friction remittance and B2B corridors.",
-    "why_it_matters": "Emerging-market fintech wave; validates demand for AI-driven corridor intelligence and FX pricing; shows venture appetite despite macro uncertainty.",
-    "amount": "$6M",
-    "round": "Pre-Seed",
+    "id": "2026-11-16-shift-blackrock-ai-model-rebalance",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-16T13:55:59Z",
+    "headline": "BlackRock shifts AI portfolio strategy, tilts toward equity risk in model overhaul",
+    "plain_english": "BlackRock is recalibrating its AI-driven investment models to increase exposure to equity risk, signaling a strategic pivot in how the firm deploys machine learning across its asset management operations and suggesting confidence in market conditions despite broader AI buildout concerns.",
+    "why_it_matters": "Major asset managers' AI model shifts ripple into institutional trading patterns; BlackRock's move signals either AI-driven conviction in equities or hedging against slowdown risk—both reshape how BFSI quant teams calibrate their own models.",
     "source": {
-      "name": "Innovation Village · 2026-11-11",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVjFTQ1FidmZkRkZVRldtNDZKUUlLUTYybVRuNkRtS2Y1S3hnaDRYRmFjc3RnNEljd3hIOXVsMmNRRGxZN0dJckMzODB1cTdPckpHVk1LaUNSUjI5YTJxWFNsaDdoMzRFWjRLbThISG1DR0poM1l1a3ZlU2pWWG5nRG4wY2MybVp2VlRYbFo2Y3pva2dWOWFWMFV5QTVidW12TDhkdGhYelpXVzBxVy1Nb3JoZHFBdUhVNEtr"
+      "name": "Bloomberg · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONGZ4V3B6NFVBWmRlYXl1Q0pUc2IySFdrb1hIcUxGcnNvZHVndW0tZEJUQXVKNEdvWTJwaUctNThfUFBxbzNjUEptRHVZeGVLWXVMTDc1TUNua1BwWjJTaWYwbW5rN1hOU09LY1FsRmhrb3ROdUJQSnZMelh2ZUcyel9ZZ1pCazlxaW9sbWdjVjZLcmRwUUdKZHNrbjVKRDRHem9rU0hCV1B1b0hvaVRfWFllUQ"
+    }
+  },
+  {
+    "id": "2026-11-16-shift-enterprise-ai-agents-workflows",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-16T13:00:00Z",
+    "headline": "Enterprise AI is pivoting from isolated pilots to integrated autonomous agents in core workflows",
+    "plain_english": "Organizations are moving beyond proof-of-concept AI experiments toward deploying AI agents and autonomous systems directly into mission-critical business processes—requiring a rethink of governance, data architecture, and risk management across the enterprise.",
+    "why_it_matters": "BFSI firms deploying AI agents in trading, credit decisioning, or compliance workflows must rebuild governance frameworks and monitoring for systems that make decisions at scale; this shift from experiments to production automation forces investment in explainability, audit trails, and circuit breakers.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous software systems that perceive their environment and take actions to achieve specified goals, often iterating without human intervention."
+      }
+    ],
+    "source": {
+      "name": "MIT Technology Review · 2026-11-16",
+      "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/"
     }
   },
   {
@@ -609,38 +651,6 @@
     "source": {
       "name": "PYMNTS · 2026-11-13",
       "url": "https://www.pymnts.com/cybersecurity/2026/maersks-legacy-system-incident-shows-mas-new-cyber-requirement/"
-    }
-  },
-  {
-    "id": "2026-11-12-us-bank-hiring-middle-market",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-12T23:59:16Z",
-    "headline": "U.S. Bank adds 60 middle-market banking roles; signals expansion in relationship-driven lending",
-    "plain_english": "U.S. Bank is hiring 60 relationship managers, business development executives, and specialists across middle-market banking, concentrated in Florida, Texas, and California.",
-    "why_it_matters": "Hiring surge in relationship-driven roles (not ops/tech) suggests banks still view middle-market lending as high-touch, human-led. Contrast to retail where AI automates decisioning; middle market remains sales/service intensive.",
-    "scale": {
-      "metric": "employees",
-      "value": "60"
-    },
-    "source": {
-      "name": "PYMNTS · 2026-11-12",
-      "url": "https://www.pymnts.com/news/banking/2026/u-s-bank-to-add-60-roles-in-middle-market-banking/"
-    }
-  },
-  {
-    "id": "2026-11-11-western-union-intermax-killed",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-11T14:05:00.000Z",
-    "headline": "Western Union abandons $500M Intermax acquisition after regulatory rejection",
-    "plain_english": "Western Union terminated its bid to buy rival Intermax for $500M due to regulatory non-approval, signaling tighter antitrust scrutiny of consolidation in money-transfer and remittance sectors.",
-    "why_it_matters": "M&A pathway closing for regional payment players; forces focus on organic AI-driven efficiency and compliance rather than scale via acquisition; larger players may face same headwinds.",
-    "source": {
-      "name": "Finextra · 2026-11-11",
-      "url": "https://www.finextra.com/newsarticle/48743/western-union-ditches-intermax-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -922,6 +932,22 @@
     }
   },
   {
+    "id": "2026-11-16-insight-ai-buildout-slowdown-risk",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-16T13:36:49Z",
+    "headline": "BlackRock warns AI infrastructure buildout slowdown could dampen US economic growth",
+    "plain_english": "BlackRock's investment team flagged risk that the deceleration of AI chip and data center spending could crimp overall US GDP, a signal that financial firms are now pricing AI capex constraints as a macro headwind rather than a perpetual tailwind.",
+    "why_it_matters": "If major asset managers cut growth forecasts due to AI buildout stalls, they'll reduce equity allocations and credit risk premiums, forcing BFSI treasurers to recalibrate hedges and liquidity buffers; this reverses the 2024–2026 AI boom mentality.",
+    "stat_value": "AI buildout slowdown",
+    "stat_label": "flagged as macro risk to US growth",
+    "source": {
+      "name": "Moomoo · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUGxFTURtU01xNjRSWGR6cTVoVGVYa0JGZThST1J4X09IWnRzb2ktdTB6MXVzTjJtSlJsS3QzQmxRSlVjajFaaEdaSUFObllnUVVkUFg5WS10WUN3aElkM1Bvend5VlVCYlo4Z2JQLTdSWXFnbUU3Sm5aajRBdnlzRkNuSUdjYmRRV3pDUlBhR1R4UWs2YUozS25pTTNVZDFwbC1fUEtYaGhrbDRM"
+    }
+  },
+  {
     "id": "2026-11-16-japan-gdp-contraction",
     "category": "insight",
     "jurisdiction": "APAC",
@@ -1082,17 +1108,17 @@
     }
   },
   {
-    "id": "2026-11-13-insight-faa-outage-system-resilience",
-    "category": "insight",
+    "id": "2026-11-16-frontier-nvidia-ceo-leadership-transition",
+    "category": "frontier",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-11-14T00:43:54.000Z",
-    "headline": "FAA outage exposes fragility of legacy air-traffic control systems under AI integration",
-    "plain_english": "The nationwide flight ground stop underscores how decades-old infrastructure—air-traffic control, financial clearing houses, power grids—struggle with rapid AI injection. Single points of failure are multiplying.",
-    "why_it_matters": "Applies directly to banking settlement networks and market-surveillance AI. Regulators will demand dual-run periods and automated rollback for new AI in critical paths; expect deployment timelines to lengthen 30–50%.",
+    "published_at": "2026-11-16T13:50:48Z",
+    "headline": "Nvidia CEO Jensen Huang resigns; interim leadership and market volatility shake confidence in AI chip strategy",
+    "plain_english": "Jensen Huang unexpectedly stepped down as Nvidia CEO; Colette Kress took interim control ahead of earnings. Market reaction was sharp; investor calls for Huang's return and concerns about the firm's AI financing and risk appetite escalated within days.",
+    "why_it_matters": "Nvidia is the linchpin of AI infrastructure spending for BFSI; leadership vacuum and board instability raise questions about capex commitments, product roadmaps, and long-term reliability of GPU supply—forcing CIOs and AI infrastructure teams to hedge vendor concentration risk.",
     "source": {
-      "name": "Forbes · 2026-11-14",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNzJpMGc2elZIb2dyZTV2UjFCZnAycHRTRzBwbG9HeUZUYXRlaDZlWC1Db2NZOHh6Nlhyd1lGTFNnZGpka2ZDb2dXNXBNY09JUmFMN3ZjT3ZKZmZPOV9Qcllza1Q4MGNxaEtranI2aUFfSUtra1BmU3lmVFBydDk3MkpITFdiUE5fd2NiWUNTTnVwbTZfVjBxMno5dTd5U0VkVVZIelE0b1RHNnlI?oc=5"
+      "name": "Reuters · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd2JkdDdXVFVDWWplOU5DRUtSZ0tQS25DanRfRl92ZUU5WVNDQnBwUUhhM3RRdDRSdEdISTNwa002U05EdkRlSlFXNE1PZ1RSVElZUjU5ZnRvT2RqQjZjaVRidXJRQ2dtb3FuRG9GQ0hrMm1ialRwSkN3U0VLTkZoNUhpUTYwakJUUUlOR0FMWWVMdUI0MUlkdVdYdUZOYzc5YVNtYk5wMjlHYlRKaG1RUWNOMGtnM1dCZEJpUEw4cThSc1Js"
     }
   },
   {
@@ -1219,20 +1245,6 @@
     "source": {
       "name": "CNBC · 2026-11-13",
       "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html"
-    }
-  },
-  {
-    "id": "2026-11-13-frontier-anthropic-ipo-megadeals",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-14T01:09:26.000Z",
-    "headline": "Anthropic IPO positioned to cap record year of AI equity megadeals",
-    "plain_english": "Anthropic, one of the three largest frontier AI labs (alongside OpenAI and Google DeepMind), is preparing for public listing, which would mark a symbolic capstone to unprecedented AI venture and growth-equity funding cycles.",
-    "why_it_matters": "Public markets are validating AI lab valuations and technology. BFSI enterprise customers can expect rapid Anthropic model updates post-IPO and potential product bundling with cloud providers.",
-    "source": {
-      "name": "The Edge Malaysia · 2026-11-14",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sRGpEOGFwUl8za0lJbDNRUUVfdVp3UVZZVm14NGJwa3YteDJuaHFHd1d4QVllWDNaOUtrbmROOGt6NElzOXFKSy1NNU5tRHRH?oc=5"
     }
   },
   {
@@ -1579,6 +1591,116 @@
     "source": {
       "name": "CNBC · 2026-11-09",
       "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-china-spy-trump-lobbying.html"
+    }
+  },
+  {
+    "id": "2026-11-13-regulation-cftc-crypto-rules",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-13T13:15:35.000Z",
+    "headline": "CFTC asserts crypto jurisdiction as industry opts into proposed rule framework",
+    "plain_english": "U.S. Commodities Futures Trading Commission Chair Selig told CNBC that crypto firms are voluntarily adopting the agency's proposed rules to regulate digital assets, even as Congressional crypto legislation stalls.",
+    "why_it_matters": "Industry self-regulation via CFTC rules preempts legislative action and creates de facto baseline compliance, reducing regulatory uncertainty for BFSI firms building crypto trading infrastructure.",
+    "source": {
+      "name": "CNBC · 2026-11-13",
+      "url": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html"
+    }
+  },
+  {
+    "id": "2026-11-13-ai-bots-credit-cards-banks",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-13T01:00:00Z",
+    "headline": "AI agents begin autonomous credit card transactions; banks race to update fraud controls",
+    "plain_english": "AI bots are now using credit cards directly to pay bills and make purchases. Banks are scrambling to rebuild fraud detection systems designed for human behavior, creating new risk surfaces for unauthorized or erroneous autonomous spending.",
+    "why_it_matters": "Banks' legacy fraud models (velocity, geography, merchant category) don't catch agent-driven patterns. Widespread bot adoption could spike chargebacks and compliance violations if controls aren't rebuilt fast.",
+    "jargon": [
+      {
+        "term": "Autonomous agent",
+        "def": "Software that makes decisions and executes transactions without real-time human approval, based on programmed rules or learned patterns."
+      }
+    ],
+    "source": {
+      "name": "Wall Street Journal · 2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNldJX01OcW9RMkRvR2QxbDljdmNZMGEyVUlnRjkwTWtqbmRsdVZHYnktd0ExUjlOYXFtNXdqcldodFpmemEyQWNfRDZXXzhIUi1DUVI2NFNBczZxdzc2ZWM0eW16bFJSa19PV1ZvSnQ2N1Y0RnJPM2F5R2VTWG1DOVBHNUFjUkhRbWZnYXFEenRMVjJlVlgyOF9JOA"
+    }
+  },
+  {
+    "id": "2026-11-11-lumepay-6m-seed",
+    "category": "vendor",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-11T13:56:52.000Z",
+    "headline": "Lumepay raises $6M pre-seed for cross-border payments in Africa",
+    "plain_english": "Fintech Lumepay secured $6M pre-seed funding to build AI-powered cross-border payment rails for African markets, competing in high-friction remittance and B2B corridors.",
+    "why_it_matters": "Emerging-market fintech wave; validates demand for AI-driven corridor intelligence and FX pricing; shows venture appetite despite macro uncertainty.",
+    "amount": "$6M",
+    "round": "Pre-Seed",
+    "source": {
+      "name": "Innovation Village · 2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVjFTQ1FidmZkRkZVRldtNDZKUUlLUTYybVRuNkRtS2Y1S3hnaDRYRmFjc3RnNEljd3hIOXVsMmNRRGxZN0dJckMzODB1cTdPckpHVk1LaUNSUjI5YTJxWFNsaDdoMzRFWjRLbThISG1DR0poM1l1a3ZlU2pWWG5nRG4wY2MybVp2VlRYbFo2Y3pva2dWOWFWMFV5QTVidW12TDhkdGhYelpXVzBxVy1Nb3JoZHFBdUhVNEtr"
+    }
+  },
+  {
+    "id": "2026-11-12-us-bank-hiring-middle-market",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-12T23:59:16Z",
+    "headline": "U.S. Bank adds 60 middle-market banking roles; signals expansion in relationship-driven lending",
+    "plain_english": "U.S. Bank is hiring 60 relationship managers, business development executives, and specialists across middle-market banking, concentrated in Florida, Texas, and California.",
+    "why_it_matters": "Hiring surge in relationship-driven roles (not ops/tech) suggests banks still view middle-market lending as high-touch, human-led. Contrast to retail where AI automates decisioning; middle market remains sales/service intensive.",
+    "scale": {
+      "metric": "employees",
+      "value": "60"
+    },
+    "source": {
+      "name": "PYMNTS · 2026-11-12",
+      "url": "https://www.pymnts.com/news/banking/2026/u-s-bank-to-add-60-roles-in-middle-market-banking/"
+    }
+  },
+  {
+    "id": "2026-11-11-western-union-intermax-killed",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-11T14:05:00.000Z",
+    "headline": "Western Union abandons $500M Intermax acquisition after regulatory rejection",
+    "plain_english": "Western Union terminated its bid to buy rival Intermax for $500M due to regulatory non-approval, signaling tighter antitrust scrutiny of consolidation in money-transfer and remittance sectors.",
+    "why_it_matters": "M&A pathway closing for regional payment players; forces focus on organic AI-driven efficiency and compliance rather than scale via acquisition; larger players may face same headwinds.",
+    "source": {
+      "name": "Finextra · 2026-11-11",
+      "url": "https://www.finextra.com/newsarticle/48743/western-union-ditches-intermax-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-11-13-insight-faa-outage-system-resilience",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-14T00:43:54.000Z",
+    "headline": "FAA outage exposes fragility of legacy air-traffic control systems under AI integration",
+    "plain_english": "The nationwide flight ground stop underscores how decades-old infrastructure—air-traffic control, financial clearing houses, power grids—struggle with rapid AI injection. Single points of failure are multiplying.",
+    "why_it_matters": "Applies directly to banking settlement networks and market-surveillance AI. Regulators will demand dual-run periods and automated rollback for new AI in critical paths; expect deployment timelines to lengthen 30–50%.",
+    "source": {
+      "name": "Forbes · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNzJpMGc2elZIb2dyZTV2UjFCZnAycHRTRzBwbG9HeUZUYXRlaDZlWC1Db2NZOHh6Nlhyd1lGTFNnZGpka2ZDb2dXNXBNY09JUmFMN3ZjT3ZKZmZPOV9Qcllza1Q4MGNxaEtranI2aUFfSUtra1BmU3lmVFBydDk3MkpITFdiUE5fd2NiWUNTTnVwbTZfVjBxMno5dTd5U0VkVVZIelE0b1RHNnlI?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-13-frontier-anthropic-ipo-megadeals",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-14T01:09:26.000Z",
+    "headline": "Anthropic IPO positioned to cap record year of AI equity megadeals",
+    "plain_english": "Anthropic, one of the three largest frontier AI labs (alongside OpenAI and Google DeepMind), is preparing for public listing, which would mark a symbolic capstone to unprecedented AI venture and growth-equity funding cycles.",
+    "why_it_matters": "Public markets are validating AI lab valuations and technology. BFSI enterprise customers can expect rapid Anthropic model updates post-IPO and potential product bundling with cloud providers.",
+    "source": {
+      "name": "The Edge Malaysia · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sRGpEOGFwUl8za0lJbDNRUUVfdVp3UVZZVm14NGJwa3YteDJuaHFHd1d4QVllWDNaOUtrbmROOGt6NElzOXFKSy1NNU5tRHRH?oc=5"
     }
   },
   {
@@ -4575,20 +4697,6 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0lONGtsRElTTDlfS1hzMThPcHZZbGhwcHJ6VWZQYk5QUVhHOFQteXF6NVpSX0VDZmJEQllsbEFsSzhQbnVZWTFCV3FYeEtfN1g5dTNTa0VpM3BvSGlKUVA3NjJhT1RZd2FKX1RBNUh0anctTXNhWXNINkpuRFZNdTZidDVuUEh5TE5rbTVUUGxTT2JkbEQtNFozdV9ldjBCUEI3Mg"
     },
     "amount": "$304M"
-  },
-  {
-    "id": "2026-10-17-research-wired-ai-genomics-limits",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-17T09:00:00.000Z",
-    "headline": "AI models lack sufficient data to decode human genome complexity, Wired reports",
-    "plain_english": "Researchers find current LLMs and ML models insufficient for genomic analysis because DNA isn't just sequential code—it's dynamic and context-dependent. Data scarcity and interpretability remain hard barriers.",
-    "why_it_matters": "Signals frontier AI's limitation in life sciences; relevant to biobanks, insurance underwriters, and healthcare AI vendors: genomic AI ROI is further out than hype suggests.",
-    "source": {
-      "name": "Wired · 2026-10-17",
-      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/"
-    }
   },
   {
     "id": "2026-11-01-citi-board-appointment-insight",
@@ -7666,26 +7774,6 @@
     }
   },
   {
-    "id": "2026-10-17-trending-anthropic-clark-ai-action",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-17T10:30:00.000Z",
-    "headline": "Anthropic's Clark warns AI governance window is rapidly shrinking",
-    "plain_english": "Dario Amodei told US policymakers the opportunity to shape AI's societal impact through regulation and governance is narrowing fast as capabilities advance. Implied: governments must act now or lose control.",
-    "why_it_matters": "Frontier lab CEO's public pressure on regulators; echoed by JPMorgan CEO and BoE Governor in same cycle. Signals industry consensus that AI's regulatory moment is NOW—compliance and risk teams should expect major guidance within months.",
-    "jargon": [
-      {
-        "term": "AI governance window",
-        "def": "The period before AI systems become too powerful or integrated to regulate effectively; closing as models scale."
-      }
-    ],
-    "source": {
-      "name": "Breakingthenews.net · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOS1BHME9lWkplZUc0LVFaVDRtQnhrc01TeXUwT2Mtc2VhUmVxcnZDOUNuSlVZLVBwa0Rjakpfay1HSkthQ3NwOXdQX2pwbEYwVXlvMkptMTZ3X29lVXF2eUkzTjl4LUZuTmpMQXplYlFwLU53RXBsM3ZsaHFIWHh5M2c0Y0tMSjI4YklRVmc1cW9PUk5fTGQyZFdlYVNSdTQ"
-    }
-  },
-  {
     "id": "2026-10-23-us-curb-china-russia-tech-investment",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8664,20 +8752,6 @@
     }
   },
   {
-    "id": "2026-10-17-deployment-jpmorgan-dimon-ai-impact",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-17T08:38:22.000Z",
-    "headline": "JPMorgan CEO predicts AI will enable shorter workweeks and income gains for employees",
-    "plain_english": "Jamie Dimon stated AI's productivity gains could reshape labor economics: shorter work weeks and higher earnings for knowledge workers. Reflects JPMorgan's internal deployment roadmap and board-level conviction on AI ROI timelines.",
-    "why_it_matters": "CEO-level public forecast signals institutional confidence in AI productivity; implies massive internal transformation already underway. Attracts talent but sets market expectations for labor arbitrage and operational margin expansion.",
-    "source": {
-      "name": "Reuters · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeGttLS1NRjNReF9QaEJucVBOSnJmUzhvdVRiMmZmaUVUU3BGRDB6ZDdUeV9BUEtESVhpMUlLZ0FqOFZjWmJjaHJTakFTb3VURGN2NU5HeVpmOTZXeEp0ZXdCcllxVFV2SHhmdE5LamZ5clJDVXJVaVRpMGdvQ0ZPVnhmZjVaMXppSzROVy1tQS1KWU5ZT182TjNoVVBIcXVLdTNtUF8tcXRsWExCaDZlUm1KSm5FZkFxeEpmV0ZiUnVNY25telhEdXFyT0R2ZzJ5WkowYlMxQnNHd2F2Z1YyMmp6TXIxSzg"
-    }
-  },
-  {
     "id": "2026-10-19-acorns-frich",
     "category": "vendor",
     "jurisdiction": "US",
@@ -8756,20 +8830,6 @@
     }
   },
   {
-    "id": "2026-10-17-frontier-anthropic-clark-gdp",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-17T09:15:20.000Z",
-    "headline": "Anthropic CEO Clark forecasts AI could vastly boost US GDP and economic productivity",
-    "plain_english": "Dario Amodei, Anthropic CEO, told policymakers AI's productivity impact is accelerating rapidly and could deliver significant GDP gains. Implied warning: the regulatory window to shape AI's economic outcome is narrowing.",
-    "why_it_matters": "Frontier lab CEO signaling to US government that AI's macroeconomic footprint is imminent and irreversible; presages lobbying for light-touch regulation and early-stage research funding.",
-    "source": {
-      "name": "Reuters · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9CdFVPN2k3VV9iLUx0SGxFc184WkJQSDVpNGhBTkxVUElnNmFvRk5YeHJNVjloYlFXZWY1MC1TQjBaT3RMSmJXQjl4YUU4X0ZDVllhRGR5T09ncE1vRTVhZVBqZGZYeE1kRG9jRVFram83dWZSd3N1eU9jeWpPckdNTTFyYV9jN1kxTHBWR3YycW1DRlVMU095QzMxVnVNb1RULVZPaXYtVlRaMlF4TEFEd1U4aFpySG83R3BMaDNXYlpPclE"
-    }
-  },
-  {
     "id": "2026-10-17-trump-anthropic-order",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8784,21 +8844,6 @@
     }
   },
   {
-    "id": "2026-10-17-regulation-mas-stablecoins",
-    "category": "regulation",
-    "jurisdiction": "APAC",
-    "severity": "high",
-    "published_at": "2026-10-17T08:13:43.000Z",
-    "headline": "Singapore proposes stablecoin regulation amendments to Payment Services Act",
-    "plain_english": "MAS opened consultation on updates to PSA 2019 to formally regulate stablecoins. This clarifies supervisory framework for digital currency issuers and custodians across APAC's major fintech hub.",
-    "why_it_matters": "First formal stablecoin ruleset in a top Asian financial center signals regional regulatory convergence; compliance cost and AML obligations will reshape fintech funding and product architecture.",
-    "source": {
-      "name": "Monetary Authority of Singapore · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTUpxSVN5bmNrV0FnSktKZHF1UlVRWHRCMld4Zk81Z0hiTEVNVmU2YkQwX09ITDVOeEdIbzJKOVE5dlVuaDBuZHdlcWJnNktQQlZ6SVU1eHFuQ0x3T0VrYXIxTWcwcUhaYXJRdlU3SUdQVEVBcXZGcC16a3ZiQllkemNZbWxWRWc5ZEh0TG1OLVU2cnJWbWEyVTlvbklWMG1aeHlWeUMxN0YyWk1aMk1WZElLc01ITUkxdHlmRktwWnBacTFHbWFwU0dPV2Eyam9kVlM3U2F0V0JGSmQxSFRzQVFDNGwyNXdfcTlUSUppNVk"
-    },
-    "effective_date": "2026-10-17"
-  },
-  {
     "id": "2026-10-17-southeast-asia-fintech-funding",
     "category": "vendor",
     "jurisdiction": "APAC",
@@ -8810,21 +8855,6 @@
     "source": {
       "name": "Crowdfund Insider · 2026-10-17",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbVZnXzJibHotT3otVnVYT1FxZndGbWxrd201azd3NWZCVElMOUx2aU9SWDJ0VGNtU2ZiOEVLbTdIUVhILTlzWkFUSHlGX0NBWlZRZ05WendGQ0d2amYyRldqMlhQemFlS0tnTWdnT254cDVXRjBEenpmYUhrMjZUSGs5R01QZDBWNzVvOVZfdmdKb09rQk50OFBLaXhaVnRUaHl0M3pRVHJsWldKQWM0NEN5alQ3U0xCRlR0OQ"
-    }
-  },
-  {
-    "id": "2026-10-17-vendor-astrazeneca-insitro-deal",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-17T08:08:39.000Z",
-    "headline": "AstraZeneca commits up to $1.5B to Insitro for AI-driven drug discovery platform",
-    "plain_english": "Pharma giant AstraZeneca signed deal with AI drug-discovery startup Insitro for up to $1.5B (upfront + milestones). Insitro uses machine learning to accelerate preclinical and clinical research pipelines.",
-    "why_it_matters": "Largest biotech AI partnership to date validates commercial model for foundation models in drug discovery. Signals pharma R&D budget shift from headcount to AI platforms; creates new data-moat competition.",
-    "amount": "$1.5B",
-    "source": {
-      "name": "WSJ · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYzJ4ZVJOeGdjS0xITnEyMmNUQnhJc2dwZ0V1ZG13VXJzclZrVUF0SXJOREVuVzhqU2ducUVhZ0JidE1HOXNrQURWWElEMGFZeklvOFI1N0pRY3cwWnZpcWRwakM0R1hIb29veGtvN2s1WHFkd3d4YlBOdlN6YTRoaUtTR3BkbkdrUmRKalVjZWN1WjkzcktOai11RTJOd1RpNE5jVjBtTEVKcG4xSzA0a05NX3dQQQ"
     }
   },
   {
@@ -8859,20 +8889,6 @@
     }
   },
   {
-    "id": "2026-10-17-frontier-china-industrial-ai-race",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-17T10:00:24.000Z",
-    "headline": "Europe accelerates industrial AI strategy to compete with China on manufacturing automation",
-    "plain_english": "Bloomberg reports European governments and tech firms ramping investment in AI for manufacturing, supply chains, and industrial IoT—framing it as strategic competition against China's AI-driven factory automation.",
-    "why_it_matters": "Geopolitical AI arms race now explicitly linked to industrial policy; affects BFSI funding and M&A: European asset managers face pressure to back domestic industrial AI; regulatory barriers may favor EU-based vendors.",
-    "source": {
-      "name": "Bloomberg · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYVJfcW9ENU5TNkNEZTlJcEdjZnpIVUV4WkU4YjNjQVFpVUc2SDdBS1NzLUwwQnBSeFNEOEcxYUJDODByUlM0MF9tRHphYU81U3RCWndSNHRyRG40NmhDd0s2YTRNdU16VmFQRjJLbzJRc28yc29wV3N0Sm9hUDdfcXFoMVd6ZC10YlBkX1ZUcnpXR0hHTXJyU21EUjhpZXVHb2VkSGxyY3ZvZw"
-    }
-  },
-  {
     "id": "2026-10-18-at-t-mexico-sale",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8898,73 +8914,6 @@
     "source": {
       "name": "TechCrunch · 2026-10-17",
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
-    }
-  },
-  {
-    "id": "2026-10-17-shift-citi-bofaml-jpmorgan-ai-deposit-defense",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-17T08:28:51.000Z",
-    "headline": "Citi, Bank of America, JPMorgan establish defenses against AI deposit-optimization agents",
-    "plain_english": "Three major banks are jointly implementing controls to block AI agents that help retail depositors arbitrage higher yields across institutions. Reflects industry anxiety over automated funds flow and margin compression from algorithmic customer behavior.",
-    "why_it_matters": "First coordinated industry response to AI-driven retail financial optimization; signals systemic risk to deposit stickiness. Implies new regulatory scrutiny on anti-competitive conduct and may trigger guidance from Federal Reserve on fair AI use.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Autonomous software that takes actions (moving money, comparing rates) without per-action human approval."
-      }
-    ],
-    "source": {
-      "name": "Citi AI Moves · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMWhOS0FkYWVGbW52dFRSNnlxdFcwV3BGMXlHU1gxNjdXdjE4UmVxLW5vVXVXaHRxYUMxSDNWb3pOUXhSLWVjZWlrSmdhdGgtUk5GTFIwSzktb2NMaDJ5bFdRS3c0dnN1R0R0UVFCLWhvbEhGODUwYW5mSDFqYTdmZmJiNFZPdUhWcXk0cUwyVnNaTjQ4LVZrNUtfeG94VzBZ"
-    }
-  },
-  {
-    "id": "2026-10-17-insight-bank-of-england-bailey-ai-monetary-policy",
-    "category": "insight",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-17T08:32:00.000Z",
-    "headline": "Bank of England Governor Bailey: AI and robotics could reshape monetary policy transmission",
-    "plain_english": "Andrew Bailey stated AI and automation may fundamentally alter how central bank policy (rates, QE) transmits to real economy. Signals BoE is modeling AI as a structural economic variable, not just efficiency gain.",
-    "why_it_matters": "Central bank acknowledges AI could break historical econometric relationships; forces rethink of inflation/employment models. Early hint of upcoming BoE guidance on AI's inflation and labor-market effects.",
-    "stat_label": "First major central banker to name AI as monetary transmission risk",
-    "source": {
-      "name": "Breakingthenews.net · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdUpxTlFnUzh4ZTUtQ1gzTzhQVEdVcWlhWXRhb3NaZXFOWl9NTlJPWTVTUm9GWUZJQVhJMmJsUHc1TkZXVkpDTG05eDhrNG9aaTRtQnRWRGp3andBVW4wdTNzVHNLbl9TRzd1RllLMWd4ZGZsVXdXbXI0bEVrY1doUm9zT2ZzR3JGbm9EUnJycjJuYm43cXVrZDVR"
-    }
-  },
-  {
-    "id": "2026-10-17-insight-hdfc-axis-bank-treasury-income",
-    "category": "insight",
-    "jurisdiction": "IN",
-    "severity": "med",
-    "published_at": "2026-10-17T08:55:53.000Z",
-    "headline": "HDFC and Axis Bank miss Q3 estimates as treasury income collapses; AI-driven rate compression visible",
-    "plain_english": "India's two largest banks (HDFC +4.7%, Axis +37.6%) beat loan growth but fell short on profit forecasts due to treasury revenue slump. Signals rising competition (fintech, automated yield-chasing) eroding traditional NIM-arbitrage model.",
-    "why_it_matters": "First hard earnings evidence that AI-assisted deposit competition and algorithmic loan pricing are pressuring bank profitability in key emerging market. Early warning for Tier-1 BFSI on margin resilience.",
-    "stat_value": "HDFC missed; Axis treasury income compressed",
-    "stat_label": "Bank profit margins under AI-driven competitive pressure",
-    "source": {
-      "name": "Reuters · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNjB0SmpGMldtSUxlMXY3eWtUX0pBeTluNVRXUVRmVjJqOUxMUG9QcDBsZFBLcU1aRzRLaEh5N2VOTkRJZDh0RENUMFZqd1JITGFpOWo0UWtQejJkQ2RKMS10S1N5X09jZVNzX0c4dkMzVDlONDJHMlREZXBTNGtDVXFQM2NHNElrLWlnNUEtN2c4RHJuUHJjWEUwaGVBQ0NqYURxVHBrbzhhaDV6WjBxeEZqcEhEbFc3UVc5SmtDdU5mOGM"
-    }
-  },
-  {
-    "id": "2026-10-17-insight-china-ai-chipmaker-ipos-resilience",
-    "category": "insight",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-17T08:43:47.000Z",
-    "headline": "Hong Kong AI chip IPOs holding firm despite US equity selloff and valuation pressure",
-    "plain_english": "Citi analysis shows Chinese AI semiconductor companies listing on Hong Kong exchange maintaining valuations even as US tech stocks retreat. Indicates strong Asian demand and decoupling from US-listed peers.",
-    "why_it_matters": "Capital flow signal: Asia-based BFSI and corporates are prioritizing domestic AI chip supply chains. Fintech and banking infrastructure investment will increasingly favor APAC vendors; geopolitical hedging by multinationals.",
-    "stat_value": "Hong Kong AI chip IPOs resilient vs. US pullback",
-    "stat_label": "Regional capital rotation",
-    "source": {
-      "name": "Citi AI Moves · 2026-10-17",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTTQwNmk2WERPY1hWWWdrY281ZjJiX1h2bTVneVZsNFplWGVackJBWURNVlZPeTNOUkppWXRGaTZ6bnl2QkVlWTB0VDQ4OGxhY0lsdnh5WGJJekxDMXJZbDh0RWY5Q28za3k0Nm16OGNWdDAVeGhQYlluUkpwR3d5NHkxbjNwaE45cmVPUXpUN1o2S1ctY2pNb1ln"
     }
   }
 ]
