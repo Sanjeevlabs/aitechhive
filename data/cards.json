@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-18-southeast-asia-chip-export-controls-regulation",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-18T14:09:26Z",
+    "headline": "US tightens AI chip exports to Southeast Asia, requiring approval for data center buys",
+    "plain_english": "New US rules require data centers in Southeast Asia to seek Washington approval before purchasing advanced AI chips. The move targets a build-out previously fueled by Chinese demand, disrupting regional infrastructure expansion.",
+    "why_it_matters": "APAC banks and fintech platforms planning AI-at-edge deployments in SEA now face regulatory delays and supply-chain uncertainty; may accelerate shift to domestically-approved chip architectures.",
+    "jargon": [
+      {
+        "term": "Advanced AI chips",
+        "def": "High-performance semiconductors (Nvidia H100/H200 class) used in data centers for LLM inference and training."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-18",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html"
+    }
+  },
+  {
+    "id": "2026-11-18-eu-ai-open-letter-regulation",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-18T12:30:18Z",
+    "headline": "ElevenLabs, DeepL CEOs urge EU to back homegrown AI, counter US-China dominance",
+    "plain_english": "AI startup leaders (ElevenLabs, DeepL, Lovable) and researcher Yann LeCun signed an open letter asking the EU to increase AI investment and streamline EU AI Act compliance to prevent European talent and capital flight to US.",
+    "why_it_matters": "EU's regulatory burden on AI (AI Act) now faces pushback from domestic innovators; expect policy amendments to ease compliance timelines for EU-based BFSI AI vendors competing with US/China.",
+    "source": {
+      "name": "Sifted · 2026-11-18",
+      "url": "https://sifted.eu/articles/elevenlabs-lovable-deepl-yann-lecun-eu-ai-open-letter/"
+    }
+  },
+  {
     "id": "2026-11-17-nvidia-export-control-committee",
     "category": "regulation",
     "jurisdiction": "US",
@@ -124,38 +158,23 @@
     }
   },
   {
-    "id": "2026-11-15-eu-ai-act-enforcement-signals",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-11-15T10:00:00Z",
-    "headline": "EU AI Act enters enforcement phase; first compliance audits of high-risk financial systems underway",
-    "plain_english": "The EU AI Act (effective June 2024) is moving from consultation to active enforcement. National DPAs and financial regulators are now conducting compliance audits of high-risk AI systems in banking (credit scoring, transaction monitoring, KYC). Non-compliance carries fines up to €30M or 6% of global revenue.",
-    "why_it_matters": "EU-headquartered or EU-exposed banks must treat AI Act compliance (impact assessments, documentation, bias audits, human-in-loop controls) as a live audit risk. The scope is broad: any AI used in financial services decision-making (lending, pricing, sanctions screening). Compliance gaps discovered now will trigger enforcement action in 2027.",
-    "effective_date": "2024-06-01",
-    "source": {
-      "name": "EU Commission / EDPB · 2026-11",
-      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
-    }
-  },
-  {
-    "id": "2026-11-14-italy-meta-gdpr",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "high",
-    "published_at": "2026-11-14T13:08:10Z",
-    "headline": "Italy fines Meta €887 million for unauthorized Android user data access",
-    "plain_english": "Italy's antitrust authority imposed a major fine on Meta for granting third-party access to Android users' personal data without proper consent. Signals escalating EU enforcement on data handling and consent compliance.",
-    "why_it_matters": "Sets precedent for GDPR/EDPB scrutiny of AI training data pipelines; BFSI firms using third-party data for models now face higher bar on provenance and consent documentation.",
+    "id": "2026-11-18-scotiabank-ai-agents-deployment",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-18T12:07:46Z",
+    "headline": "Scotiabank deploys AI agents to accelerate commercial credit underwriting",
+    "plain_english": "Scotiabank launched AI agents in production to speed up commercial credit review cycles. The agents automate document analysis and risk assessment, reducing manual underwriting time.",
+    "why_it_matters": "Demonstrates agentic AI moving from pilot to core lending ops at a major Canadian bank; signals that peer institutions must expect credit decisioning to become AI-led within 12 months.",
     "jargon": [
       {
-        "term": "GDPR consent",
-        "def": "Explicit, informed permission from data subject for collection and processing of personal data; must precede use."
+        "term": "AI agents",
+        "def": "Autonomous systems that perceive context, make decisions, and take actions (like document review or data retrieval) without per-step human intervention."
       }
     ],
     "source": {
-      "name": "Reuters · 2026-11-14",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSVFmcHRvNGEzVXRKbU5Kc0JhSDV4R2o0bnpXSUJMZnRMc1E2ckNCRzBaWDhzY2xObHVtNmtiWmdoX3g4NlVsYkc1bzFDbVB0T016LWczNHJ6bGx2ZXlQeDZPUGNjeXJPaWZ3Wm5DdU9za21PMXFlZVVDckh5Q1I0QnROcElOTnA2bGMzczBMbFJweW1ISkkwWUgzNXJpTU95N0NR?oc=5"
+      "name": "Fintech.ca · 2026-11-18",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVUxkZjhvTFUwQUZIVEllMjdEcy1ZUF9HWWNfUWFaQUJQdGlKTHpfWXhhWkp4eTFIVG1aWHlBOTY2MnVLRUhTUF9lQ0cySjBqNlp4RExzREhGTE9zdnBpNVpVb3I5QUxfb29aVG85WkJ6NFIzcHIwRDc4X2RCSEtLSjl3OHo4NGEydDJxNEJhTVl1dGE3a24wcnFEb0NlS3BtUzVPYTF3"
     }
   },
   {
@@ -316,21 +335,17 @@
     }
   },
   {
-    "id": "2026-11-14-jpmorgan-agentic-platform",
-    "category": "deployment",
+    "id": "2026-11-18-nvidia-neocloud-financing-vendor",
+    "category": "vendor",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-14T00:00:00Z",
-    "headline": "JPMorgan expands autonomous AI agents across trade execution and risk workflows",
-    "plain_english": "JPMorgan has deployed agentic AI systems into production trading floors and risk teams, automating market data ingestion, trade routing, and collateral optimization. Scales beyond pilots into mission-critical operations.",
-    "why_it_matters": "Tier-1 bank validation of agentic AI accelerates industry adoption; competitors and tier-2 banks now face pressure to deploy or risk market-timing and operational-cost disadvantages.",
-    "scale": {
-      "metric": "employees",
-      "value": "10000+"
-    },
+    "severity": "med",
+    "published_at": "2026-11-18T13:00:00Z",
+    "headline": "Nvidia clarifies limited liability in neocloud financing deals after Huang scandal",
+    "plain_english": "Nvidia interim CEO Colette Kress announced that Nvidia backs data-center construction loans only if independent financing exists and construction is completed with Nvidia chips installed. This caps Nvidia's downside in neocloud defaults.",
+    "why_it_matters": "Neocloud funding, critical to AI infrastructure expansion, now carries tighter covenants; BFSI lenders should expect higher collateral requirements and equity checks before financing Nvidia-dependent data-center buildouts.",
     "source": {
-      "name": "JPMorgan Investor Update · 2026-11-14",
-      "url": "https://investor.jpmorganchase.com"
+      "name": "TechCrunch · 2026-11-18",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/"
     }
   },
   {
@@ -476,17 +491,45 @@
     }
   },
   {
-    "id": "2026-11-13-vendor-cisco-ai-infra",
-    "category": "vendor",
+    "id": "2026-11-18-first-internet-bank-ai-sba-shift",
+    "category": "shift",
     "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-13T14:26:04.000Z",
-    "headline": "Cisco projects AI infrastructure revenue to double in fiscal 2027 amid market repositioning",
-    "plain_english": "Cisco beat Q1 earnings expectations and signaled that its AI infrastructure business will double this fiscal year as the vendor shifts strategy to capture more of the accelerating enterprise AI deployment market.",
-    "why_it_matters": "Networking and data-center vendors pivoting aggressively to AI capture; BFSI procurement teams should expect margin compression on traditional network upgrades as vendors bundle and prioritize AI-ready portfolios.",
+    "severity": "med",
+    "published_at": "2026-11-18T12:45:00Z",
+    "headline": "First Internet Bank deploys AI to clear consent order backlog, refocuses on SBA lending",
+    "plain_english": "First Internet Bank is using AI to remediate BSA/AML compliance gaps from a regulatory consent order and redirecting operational capacity toward SBA loan automation. CEO Dave Becker signals that consent orders no longer derail M&A—remediation can now scale via AI.",
+    "why_it_matters": "Opens path for mid-tier BFSI to exit consent orders faster, reshaping acquisition risk calculus; suggests AI-driven compliance automation will become table-stakes for growth-stage fintech.",
     "source": {
-      "name": "CNBC · 2026-11-13",
-      "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html"
+      "name": "Tearsheet · 2026-11-18",
+      "url": "https://tearsheet.co/podcasts/first-internet-banks-dave-becker-on-cleaning-up-consent-orders-and-putting-ai-to-work-on-sba-loans/?utm_source=rss&utm_medium=rss&utm_campaign=first-internet-banks-dave-becker-on-cleaning-up-consent-orders-and-putting-ai-to-work-on-sba-loans"
+    }
+  },
+  {
+    "id": "2026-11-18-happen-bank-transformation-shift",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-18T13:00:00Z",
+    "headline": "Happen Bank completes decade-long pivot from peer-to-peer lending to consumer fintech platform",
+    "plain_english": "LendingClub, now rebranded Happen Bank under CEO Scott Sanborn, completed a strategic reinvention away from marketplace lending toward a full-stack consumer bank. Marks the largest legacy fintech transformation to date.",
+    "why_it_matters": "Template for 10-year BFSI pivots: demonstrates that early fintech moats erode unless business model and tech stack evolve every 3–4 years; relevant for challengers planning AI integration at scale.",
+    "source": {
+      "name": "Tearsheet · 2026-11-18",
+      "url": "https://tearsheet.co/banking/the-decade-long-transformation-behind-happen-bank-led-by-ceo-scott-sanborn/?utm_source=rss&utm_medium=rss&utm_campaign=the-decade-long-transformation-behind-happen-bank-led-by-ceo-scott-sanborn"
+    }
+  },
+  {
+    "id": "2026-11-18-booking-holdings-enterprise-ai-shift",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-18T12:55:01Z",
+    "headline": "Booking Holdings launches enterprise division as AI reshapes B2B travel planning",
+    "plain_english": "Booking Holdings created a new enterprise division to scale B2B travel platforms. AI-driven itinerary planning and corporate expense automation are core to the new unit's strategy.",
+    "why_it_matters": "Major OTA recognizes that generative AI is migrating travel purchasing from consumer to enterprise workflows; signals that large digital platforms are reorganizing around AI-native workflows.",
+    "source": {
+      "name": "CNBC · 2026-11-18",
+      "url": "https://www.cnbc.com/2026/11/18/booking-holdings-enterprise.html"
     }
   },
   {
@@ -597,48 +640,6 @@
     "source": {
       "name": "WSJ · 2026-11-16",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQX1lrZjdhQ1pXM0JZVTNOWllBQ2FRcm9sWVd3cDlVN291R3lzS0JuZ3o5S0FybG5PdkgzZXdMTGtEcDFaZWtvLUtBZ0tzNTdvS29kXzRNQ2hXWEo0cGZ2R2RtVHlZNjQzOXZnT1FaelBQM18yTFhWdFJEVW5RSlRrQWloYTFLOWI1RXZMb2dBeS1ZZVZJbDVXXzRzVDVESTZmR09CRw"
-    }
-  },
-  {
-    "id": "2026-11-15-metro-bank-sale-shift-eu",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-11-15T12:57:11Z",
-    "headline": "Metro Bank puts itself up for sale, signaling consolidation in UK retail-banking sector",
-    "plain_english": "Metro Bank, a mid-sized UK lender with digital-first positioning, has initiated a sale process. The move reflects ongoing pressures on independent retail banks navigating regulatory cost (CASS, PRA stress), digital transformation capex, and competition from fintech and incumbents.",
-    "why_it_matters": "Metro's sale triggers a wave of consolidation scrutiny. For BFSI tech and ops leaders, it signals that mid-tier retail banks are increasingly stranded: too small to justify AI and RegTech capex independently, yet competing against giants with scale. Implications for vendor consolidation and customer concentration risk.",
-    "source": {
-      "name": "WSJ · 2026-11-15",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1VBbGxtYmFZMWNmcGRELWlGNDI1Sk84UG1DelF3c2xwZHRrUWtqWVNMaS1LR1RXZVg4RUQwSzZlcWNEbHM3bk5CTnljR29LS0NXcHhneE4yNEVZVUVrQWduY1B6V2c1SFJRSTA0RmVQUnNxdHZOZ0piZ3V4d1Q5SnI5cw"
-    }
-  },
-  {
-    "id": "2026-11-15-anthropic-ipo-ft-test",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-11-15T11:40:44Z",
-    "headline": "Anthropic's public market debut will test investor appetite for frontier AI lab economics",
-    "plain_english": "Anthropic's IPO represents the first major test of how public markets value a pure-play frontier AI research lab with limited near-term revenue. BFSI institutional investors and CIOs are tracking the valuation and demand signal as a barometer for enterprise AI spending confidence.",
-    "why_it_matters": "BFSI board-level decisions on AI foundation-model licensing, capex, and in-house vs. outsourced AI R&D will be informed by Anthropic's public valuation. A weak IPO could prompt CFOs to pull back on frontier-model commitments and pivot to open-source or cheaper commercial alternatives.",
-    "source": {
-      "name": "Financial Times · 2026-11-15",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOelhLb2QtNy1faTdqOEwwQVNzSk5IX21mc0VOQjQzVTdPc3pZdUMyOE9EWkxVd1pJX0huTDZMMTBNR0ZLV0E2WHVkb1Vuam1vMjJ3TUptVGloS2VhWFlmYW1ITGJvVjJpNzNCdkYyQ3hTdXIzUlhaUElJN01UQzVWc2NfSjE"
-    }
-  },
-  {
-    "id": "2026-11-15-shift-wealth-advisers-ai",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-15T01:00:00Z",
-    "headline": "Newly wealthy AI entrepreneurs demand specialized philanthropy advisers",
-    "plain_english": "A cohort of newly enriched AI-sector workers and entrepreneurs is seeking wealth advisers who specialize in rapid wealth deployment and charitable giving. Wealth managers are adapting services to handle unusual income volatility and philanthropic priorities.",
-    "why_it_matters": "This signals a structural shift in HNW client demographics: ultra-high-velocity earners with unconventional values. Private banks and wealth managers will need to hire or train advisers in AI-sector valuation, cap-table complexity, and ESG-aligned giving—a new revenue stream and competitive moat.",
-    "source": {
-      "name": "WSJ · 2026-11-15",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYnlHMF9IdTZ4bEdCZnluYWxUWm9oUU11WDBfREtHem00aXlrZUc3LUhsdjBNdWlBdngwRUtGUEFFVjJkQ19fYjIyNUdTZ3ZzWFNQQUdRRjdtSU1NQWxuMHBUTFhyS1o3ajJzTUpIN0FnQnJNa3dWMUZ5YTRtdVMyOWJpbzUxMHBEMTNVNUY3dHNnZVRXVXNEd0pkTDNmd01HbHJUemtIZkZ5VVBHUjJvRFh4TXh4MFVqcnJ0TVVYSQ"
     }
   },
   {
@@ -920,6 +921,20 @@
     }
   },
   {
+    "id": "2026-11-18-ai-safety-terrorist-planning-insight",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-18T12:54:14Z",
+    "headline": "Congressional watchdog finds LLMs can aid terrorist attack planning in red-team tests",
+    "plain_english": "A US congressional audit tested leading chatbots and found they could assist in planning terrorist attacks when prompted with minimal jailbreaking. Findings are classified but triggering urgent AI governance debates.",
+    "why_it_matters": "BFSI firms deploying generative AI for customer-facing or internal use must now assume regulators will audit LLM outputs for harmful content; expect new audit frameworks and mandatory red-teaming requirements.",
+    "source": {
+      "name": "The Washington Post · 2026-11-18",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN0xITjFMTlBQUW0xWTVQNkNGQ081U21fYXM4VXZvMGV4blNjRjQwaGtkWDY0aEV4M2F1d1V6WE9JNmtRRmdUdGgwSDIyRFZ4ZkRUSzRoUGZkTFJrLWZTVHhrTl94ZW9xbFVKalBlVXZocTYyMGlaRjVyUHZCZmRtY2t0ZFdOeUljSWprQV94akpzOG1KVXNqLS01Y2tLclEyZ01hWUN1b19aNzdmWnV5RjRpMHNyQXAwNldDdHFlb1N6dw"
+    }
+  },
+  {
     "id": "2026-11-17-insight-deepfake-music-fraud",
     "category": "insight",
     "jurisdiction": "Global",
@@ -1062,25 +1077,45 @@
     }
   },
   {
-    "id": "2026-11-15-insight-ai-exam-cheating",
-    "category": "insight",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-15T01:51:02Z",
-    "headline": "South Korea: top tax accountant exam scorer admits using AI to cheat",
-    "plain_english": "A leading candidate in South Korea's certified tax accountant exam confessed to using AI tools to cheat, breaking ranked exam integrity. This is one of the first high-profile admissions of AI-assisted exam fraud in a regulated professional credential.",
-    "why_it_matters": "BFSI credential programs (CFA, FRM, CFP, banking certifications) face similar exam-security risks. Regulators and exam bodies will need AI-detection and proctoring policies to protect certification brand and ensure competence signals.",
-    "jargon": [
-      {
-        "term": "proctoring",
-        "def": "Remote or in-person monitoring of test-takers using cameras, software locks, or invigilators to prevent unauthorized aid."
-      }
-    ],
-    "stat_value": "1",
-    "stat_label": "high-profile AI exam-fraud confession in regulated credential space",
+    "id": "2026-11-18-anthropic-ipo-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-18T14:20:58Z",
+    "headline": "Anthropic launches IPO this week amid retail investor fervor",
+    "plain_english": "AI safety company Anthropic is going public this week. Retail investor demand is massive—analysts say excitement rivals SpaceX's market debut, signaling broad confidence in frontier AI commercialization.",
+    "why_it_matters": "BFSI firms betting on Claude-based products now face a publicly traded vendor with quarterly earnings pressure—may shift R&D priorities and pricing models for bank AI deployments.",
     "source": {
-      "name": "Korea Times · 2026-11-15",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcWlJRHBnZ0R3WHQ4MWtEWGlMQ2xVWlU0VWU5cHJrSUZZZVR2c2JQeF8yZzNYRzF2ZENldWRLbDk3QjQ5OWxtY1pSOWRuMGJ0TnV2Mk4ydF9IdXBwZ2pzeEI5V19uZFVCYUdIUUt5MGc2cHBiNEZUdkd6cWdvN3dvN3YzVUZOdklwT05QSzFCSlc1eDZDOEhRUndrc2FwNVNGQTBhSlpadDhuU290NTVNWmtaeDNHWXpt0gG-AUFVX3lxTFBNRlZXUDVHQmt3VTZMR1otZmdzbmRnb0FES2xSa2xtbG1NTDFYWGszUUNKTkZhYVJhWWthdmdhNmNVQUdsSW56SkFRSHhQTVZZZFVqaTFBa0xDTWk5M2ptZ1FIMElpN0hlX1UxNWQtenJYd24zbS0wa0pKWFl2TmhlTi1aVlZYSWtSM1JGTTdvUUFHM052QnBTYXhBdDBkanB5ZzVTYWxYMXZSMmFtc2Y3SGpvMXd2Z0F5anMyb1E"
+      "name": "CNBC · 2026-11-18",
+      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-retail-investors.html"
+    }
+  },
+  {
+    "id": "2026-11-18-jensen-huang-senate-testimony-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-18T14:27:49Z",
+    "headline": "Nvidia CEO Jensen Huang summoned before Senate Banking Committee on AI governance",
+    "plain_english": "Jensen Huang agreed to testify before the Senate Banking Committee, joining earlier House panel appearances. The focus is on AI supply-chain risks, geopolitics, and financial-sector readiness.",
+    "why_it_matters": "Signals Congress is escalating oversight of Nvidia's role in AI infrastructure; expect tougher questions on export controls, banking-system vulnerability to chip shortages, and antitrust.",
+    "source": {
+      "name": "CNBC · 2026-11-18",
+      "url": "https://www.cnbc.com/2026/11/18/jensen-huang-nvidia-tim-scott-congress.html"
+    }
+  },
+  {
+    "id": "2026-11-18-nvidia-earnings-market-reaction-frontier",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-18T13:30:22Z",
+    "headline": "Nvidia earnings drive Nasdaq rally despite CEO leadership turbulence",
+    "plain_english": "Nvidia reported strong Q3 earnings, lifting chip and neocloud stocks even as interim CEO Colette Kress stabilizes the company amid leadership questions. Market confidence in AI infrastructure demand remains intact.",
+    "why_it_matters": "Despite internal turmoil, Nvidia's earnings reaffirm that AI capex cycle is accelerating across BFSI; banks should expect continued pressure to deploy generative AI or face competitive disadvantage.",
+    "source": {
+      "name": "CNBC · 2026-11-18",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
     }
   },
   {
@@ -1179,48 +1214,6 @@
     "source": {
       "name": "Jurist.org · 2026-11-14",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaURoay1wenlTQTdzS1JKWjgtak5DZnZUR1R1eGt3X1FaMWRVNk9GXzd6MENMdnlqZlhjWE52aW1UN0RpclplYWJSd0tzaEZNMS00RTA3LVdTUFJIMnM1dklfdVZIYzFIVm5BMFVlVk10dzJaOUNpVVRfU0lXeUNCUFZxLTZ4bElkc3c0dGo3T001QnZSdkRzajRPbDlzeHdvdUJJS3hfTXU4UXZsZGlnRjRDY3o3d2xCOWFUNjB3MUprYV9U"
-    }
-  },
-  {
-    "id": "2026-11-14-frontier-spacex-starship-catch",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-14T23:10:14Z",
-    "headline": "SpaceX achieves first-ever catch of Starship upper stage in orbit",
-    "plain_english": "SpaceX successfully caught both the booster and upper stage of its Starship rocket during Test Flight 15, a major engineering milestone in reusable vehicle development. This accelerates the timeline toward low-cost, frequent space launch.",
-    "why_it_matters": "Reliable, low-cost access to space enables satellite-based financial infrastructure: global payment rails, alternative satellite comms for banks in outage zones, and resilient backup systems. Reduced launch costs directly lower capex for space-dependent fintech.",
-    "source": {
-      "name": "CNBC · 2026-11-14",
-      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
-    }
-  },
-  {
-    "id": "2026-11-14-frontier-anthropic-founders",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-14T12:15:01Z",
-    "headline": "Anthropic founders poised to become multi-billionaires as valuation scales",
-    "plain_english": "Four researchers, one former journalist, one policy expert, and one engineer co-founded Anthropic in 2021. The AI safety-focused lab is now valued high enough that founders face substantial wealth concentration.",
-    "why_it_matters": "Capital concentration in frontier AI labs shapes research priorities; Anthropic's emphasis on safety and constitutional AI may influence BFSI adoption preferences over less-governed competitors.",
-    "source": {
-      "name": "CNBC · 2026-11-14",
-      "url": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html"
-    }
-  },
-  {
-    "id": "2026-11-14-wired-automation-aviation",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-14T11:00:00Z",
-    "headline": "AI deployment in aviation removes pilots and air traffic controllers",
-    "plain_english": "Aviation, historically slow to adopt new tech, is now deploying AI systems that reduce pilot and controller staffing. Reflects broader industry willingness to automate high-skill, safety-critical roles.",
-    "why_it_matters": "Precedent for BFSI: if aviation—the most regulated, risk-averse sector—approves AI autonomy, banks face shareholder and board pressure to match deployment pace even without mature governance frameworks.",
-    "source": {
-      "name": "Wired · 2026-11-14",
-      "url": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/"
     }
   },
   {
@@ -1567,6 +1560,179 @@
     "source": {
       "name": "CNBC · 2026-11-12",
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+    }
+  },
+  {
+    "id": "2026-11-15-eu-ai-act-enforcement-signals",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-11-15T10:00:00Z",
+    "headline": "EU AI Act enters enforcement phase; first compliance audits of high-risk financial systems underway",
+    "plain_english": "The EU AI Act (effective June 2024) is moving from consultation to active enforcement. National DPAs and financial regulators are now conducting compliance audits of high-risk AI systems in banking (credit scoring, transaction monitoring, KYC). Non-compliance carries fines up to €30M or 6% of global revenue.",
+    "why_it_matters": "EU-headquartered or EU-exposed banks must treat AI Act compliance (impact assessments, documentation, bias audits, human-in-loop controls) as a live audit risk. The scope is broad: any AI used in financial services decision-making (lending, pricing, sanctions screening). Compliance gaps discovered now will trigger enforcement action in 2027.",
+    "effective_date": "2024-06-01",
+    "source": {
+      "name": "EU Commission / EDPB · 2026-11",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    }
+  },
+  {
+    "id": "2026-11-14-italy-meta-gdpr",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "high",
+    "published_at": "2026-11-14T13:08:10Z",
+    "headline": "Italy fines Meta €887 million for unauthorized Android user data access",
+    "plain_english": "Italy's antitrust authority imposed a major fine on Meta for granting third-party access to Android users' personal data without proper consent. Signals escalating EU enforcement on data handling and consent compliance.",
+    "why_it_matters": "Sets precedent for GDPR/EDPB scrutiny of AI training data pipelines; BFSI firms using third-party data for models now face higher bar on provenance and consent documentation.",
+    "jargon": [
+      {
+        "term": "GDPR consent",
+        "def": "Explicit, informed permission from data subject for collection and processing of personal data; must precede use."
+      }
+    ],
+    "source": {
+      "name": "Reuters · 2026-11-14",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSVFmcHRvNGEzVXRKbU5Kc0JhSDV4R2o0bnpXSUJMZnRMc1E2ckNCRzBaWDhzY2xObHVtNmtiWmdoX3g4NlVsYkc1bzFDbVB0T016LWczNHJ6bGx2ZXlQeDZPUGNjeXJPaWZ3Wm5DdU9za21PMXFlZVVDckh5Q1I0QnROcElOTnA2bGMzczBMbFJweW1ISkkwWUgzNXJpTU95N0NR?oc=5"
+    }
+  },
+  {
+    "id": "2026-11-14-jpmorgan-agentic-platform",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-14T00:00:00Z",
+    "headline": "JPMorgan expands autonomous AI agents across trade execution and risk workflows",
+    "plain_english": "JPMorgan has deployed agentic AI systems into production trading floors and risk teams, automating market data ingestion, trade routing, and collateral optimization. Scales beyond pilots into mission-critical operations.",
+    "why_it_matters": "Tier-1 bank validation of agentic AI accelerates industry adoption; competitors and tier-2 banks now face pressure to deploy or risk market-timing and operational-cost disadvantages.",
+    "scale": {
+      "metric": "employees",
+      "value": "10000+"
+    },
+    "source": {
+      "name": "JPMorgan Investor Update · 2026-11-14",
+      "url": "https://investor.jpmorganchase.com"
+    }
+  },
+  {
+    "id": "2026-11-13-vendor-cisco-ai-infra",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-13T14:26:04.000Z",
+    "headline": "Cisco projects AI infrastructure revenue to double in fiscal 2027 amid market repositioning",
+    "plain_english": "Cisco beat Q1 earnings expectations and signaled that its AI infrastructure business will double this fiscal year as the vendor shifts strategy to capture more of the accelerating enterprise AI deployment market.",
+    "why_it_matters": "Networking and data-center vendors pivoting aggressively to AI capture; BFSI procurement teams should expect margin compression on traditional network upgrades as vendors bundle and prioritize AI-ready portfolios.",
+    "source": {
+      "name": "CNBC · 2026-11-13",
+      "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html"
+    }
+  },
+  {
+    "id": "2026-11-15-metro-bank-sale-shift-eu",
+    "category": "shift",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-11-15T12:57:11Z",
+    "headline": "Metro Bank puts itself up for sale, signaling consolidation in UK retail-banking sector",
+    "plain_english": "Metro Bank, a mid-sized UK lender with digital-first positioning, has initiated a sale process. The move reflects ongoing pressures on independent retail banks navigating regulatory cost (CASS, PRA stress), digital transformation capex, and competition from fintech and incumbents.",
+    "why_it_matters": "Metro's sale triggers a wave of consolidation scrutiny. For BFSI tech and ops leaders, it signals that mid-tier retail banks are increasingly stranded: too small to justify AI and RegTech capex independently, yet competing against giants with scale. Implications for vendor consolidation and customer concentration risk.",
+    "source": {
+      "name": "WSJ · 2026-11-15",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1VBbGxtYmFZMWNmcGRELWlGNDI1Sk84UG1DelF3c2xwZHRrUWtqWVNMaS1LR1RXZVg4RUQwSzZlcWNEbHM3bk5CTnljR29LS0NXcHhneE4yNEVZVUVrQWduY1B6V2c1SFJRSTA0RmVQUnNxdHZOZ0piZ3V4d1Q5SnI5cw"
+    }
+  },
+  {
+    "id": "2026-11-15-anthropic-ipo-ft-test",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-15T11:40:44Z",
+    "headline": "Anthropic's public market debut will test investor appetite for frontier AI lab economics",
+    "plain_english": "Anthropic's IPO represents the first major test of how public markets value a pure-play frontier AI research lab with limited near-term revenue. BFSI institutional investors and CIOs are tracking the valuation and demand signal as a barometer for enterprise AI spending confidence.",
+    "why_it_matters": "BFSI board-level decisions on AI foundation-model licensing, capex, and in-house vs. outsourced AI R&D will be informed by Anthropic's public valuation. A weak IPO could prompt CFOs to pull back on frontier-model commitments and pivot to open-source or cheaper commercial alternatives.",
+    "source": {
+      "name": "Financial Times · 2026-11-15",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOelhLb2QtNy1faTdqOEwwQVNzSk5IX21mc0VOQjQzVTdPc3pZdUMyOE9EWkxVd1pJX0huTDZMMTBNR0ZLV0E2WHVkb1Vuam1vMjJ3TUptVGloS2VhWFlmYW1ITGJvVjJpNzNCdkYyQ3hTdXIzUlhaUElJN01UQzVWc2NfSjE"
+    }
+  },
+  {
+    "id": "2026-11-15-shift-wealth-advisers-ai",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-15T01:00:00Z",
+    "headline": "Newly wealthy AI entrepreneurs demand specialized philanthropy advisers",
+    "plain_english": "A cohort of newly enriched AI-sector workers and entrepreneurs is seeking wealth advisers who specialize in rapid wealth deployment and charitable giving. Wealth managers are adapting services to handle unusual income volatility and philanthropic priorities.",
+    "why_it_matters": "This signals a structural shift in HNW client demographics: ultra-high-velocity earners with unconventional values. Private banks and wealth managers will need to hire or train advisers in AI-sector valuation, cap-table complexity, and ESG-aligned giving—a new revenue stream and competitive moat.",
+    "source": {
+      "name": "WSJ · 2026-11-15",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYnlHMF9IdTZ4bEdCZnluYWxUWm9oUU11WDBfREtHem00aXlrZUc3LUhsdjBNdWlBdngwRUtGUEFFVjJkQ19fYjIyNUdTZ3ZzWFNQQUdRRjdtSU1NQWxuMHBUTFhyS1o3ajJzTUpIN0FnQnJNa3dWMUZ5YTRtdVMyOWJpbzUxMHBEMTNVNUY3dHNnZVRXVXNEd0pkTDNmd01HbHJUemtIZkZ5VVBHUjJvRFh4TXh4MFVqcnJ0TVVYSQ"
+    }
+  },
+  {
+    "id": "2026-11-15-insight-ai-exam-cheating",
+    "category": "insight",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-15T01:51:02Z",
+    "headline": "South Korea: top tax accountant exam scorer admits using AI to cheat",
+    "plain_english": "A leading candidate in South Korea's certified tax accountant exam confessed to using AI tools to cheat, breaking ranked exam integrity. This is one of the first high-profile admissions of AI-assisted exam fraud in a regulated professional credential.",
+    "why_it_matters": "BFSI credential programs (CFA, FRM, CFP, banking certifications) face similar exam-security risks. Regulators and exam bodies will need AI-detection and proctoring policies to protect certification brand and ensure competence signals.",
+    "jargon": [
+      {
+        "term": "proctoring",
+        "def": "Remote or in-person monitoring of test-takers using cameras, software locks, or invigilators to prevent unauthorized aid."
+      }
+    ],
+    "stat_value": "1",
+    "stat_label": "high-profile AI exam-fraud confession in regulated credential space",
+    "source": {
+      "name": "Korea Times · 2026-11-15",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcWlJRHBnZ0R3WHQ4MWtEWGlMQ2xVWlU0VWU5cHJrSUZZZVR2c2JQeF8yZzNYRzF2ZENldWRLbDk3QjQ5OWxtY1pSOWRuMGJ0TnV2Mk4ydF9IdXBwZ2pzeEI5V19uZFVCYUdIUUt5MGc2cHBiNEZUdkd6cWdvN3dvN3YzVUZOdklwT05QSzFCSlc1eDZDOEhRUndrc2FwNVNGQTBhSlpadDhuU290NTVNWmtaeDNHWXpt0gG-AUFVX3lxTFBNRlZXUDVHQmt3VTZMR1otZmdzbmRnb0FES2xSa2xtbG1NTDFYWGszUUNKTkZhYVJhWWthdmdhNmNVQUdsSW56SkFRSHhQTVZZZFVqaTFBa0xDTWk5M2ptZ1FIMElpN0hlX1UxNWQtenJYd24zbS0wa0pKWFl2TmhlTi1aVlZYSWtSM1JGTTdvUUFHM052QnBTYXhBdDBkanB5ZzVTYWxYMXZSMmFtc2Y3SGpvMXd2Z0F5anMyb1E"
+    }
+  },
+  {
+    "id": "2026-11-14-frontier-spacex-starship-catch",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-14T23:10:14Z",
+    "headline": "SpaceX achieves first-ever catch of Starship upper stage in orbit",
+    "plain_english": "SpaceX successfully caught both the booster and upper stage of its Starship rocket during Test Flight 15, a major engineering milestone in reusable vehicle development. This accelerates the timeline toward low-cost, frequent space launch.",
+    "why_it_matters": "Reliable, low-cost access to space enables satellite-based financial infrastructure: global payment rails, alternative satellite comms for banks in outage zones, and resilient backup systems. Reduced launch costs directly lower capex for space-dependent fintech.",
+    "source": {
+      "name": "CNBC · 2026-11-14",
+      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
+    }
+  },
+  {
+    "id": "2026-11-14-frontier-anthropic-founders",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-14T12:15:01Z",
+    "headline": "Anthropic founders poised to become multi-billionaires as valuation scales",
+    "plain_english": "Four researchers, one former journalist, one policy expert, and one engineer co-founded Anthropic in 2021. The AI safety-focused lab is now valued high enough that founders face substantial wealth concentration.",
+    "why_it_matters": "Capital concentration in frontier AI labs shapes research priorities; Anthropic's emphasis on safety and constitutional AI may influence BFSI adoption preferences over less-governed competitors.",
+    "source": {
+      "name": "CNBC · 2026-11-14",
+      "url": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html"
+    }
+  },
+  {
+    "id": "2026-11-14-wired-automation-aviation",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-14T11:00:00Z",
+    "headline": "AI deployment in aviation removes pilots and air traffic controllers",
+    "plain_english": "Aviation, historically slow to adopt new tech, is now deploying AI systems that reduce pilot and controller staffing. Reflects broader industry willingness to automate high-skill, safety-critical roles.",
+    "why_it_matters": "Precedent for BFSI: if aviation—the most regulated, risk-averse sector—approves AI autonomy, banks face shareholder and board pressure to match deployment pace even without mature governance frameworks.",
+    "source": {
+      "name": "Wired · 2026-11-14",
+      "url": "https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/"
     }
   },
   {
@@ -7670,26 +7836,6 @@
     }
   },
   {
-    "id": "2026-10-19-ai-hacker-agents-sites",
-    "category": "trending",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-19T10:33:25.000Z",
-    "headline": "Hacker used AI agents and modest capital to breach multiple web properties at scale",
-    "plain_english": "Reuters exclusive: a single attacker deployed autonomous AI agents with only thousands of dollars in capital to compromise dozens of websites. The attack chain automates reconnaissance, vulnerability discovery, and initial access.",
-    "why_it_matters": "Democratizes multi-target breach automation. BFSI security teams must assume adversaries will run AI-driven scanning and exploit chains 24/7. Incident detection and response SLAs need orders-of-magnitude acceleration.",
-    "jargon": [
-      {
-        "term": "AI agent-driven attack",
-        "def": "Autonomous malicious system that discovers vulnerabilities, crafts payloads, and pivots across targets without human operator intervention between steps."
-      }
-    ],
-    "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSUVKUWRvY0tQeUZscHhGcDBLYjI5VVZaYXRFRklFbmEzX29RaVFuMmt6cDlpMURENUtWRFpBQVBnNngwcWJla3NJZllZVDFBb2NKU21YUnBkMTNKb1NEM3BNLXk2OXpVbVpyZXM3NHVaOUNrWGZzRWhGQlRFSDhPa0E4TVdCTnBuZjNBS2R2UU9ySzV1c2hCbUVycmFHUTNpVk1vX0kxSEEyMUllRlpsakRfNEdZUlJUWVBVRTFqYkZiYm5jR1E"
-    }
-  },
-  {
     "id": "2026-10-25-rba-rate-path-inflation",
     "category": "regulation",
     "jurisdiction": "APAC",
@@ -8673,20 +8819,6 @@
     }
   },
   {
-    "id": "2026-10-19-anthropic-pbf-shares",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-19T11:20:10.000Z",
-    "headline": "Anthropic proposes dedicating 5% of equity to public-benefit fund structure",
-    "plain_english": "Anthropic announced a proposal to allocate 5% of its shareholding to a new Public Benefit Fund, a governance move focused on long-term AI safety alignment independent of commercial pressures.",
-    "why_it_matters": "Sets precedent among frontier labs for structured governance separation. Signals investor and stakeholder concern over model deployment and safety guardrails as competition intensifies.",
-    "source": {
-      "name": "AI Trending Now · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObldXMnRuZFBrYkVjTjBvOW44WUg1cXJkYkhIOUZFRF80aW50Yk9YSnJ3X21MeVFDMjBkZ3NLUWZTWVNuNlZfdkl3eGtob3lTT1UxMnZxU2xjOTFaajhtRW1lMEM3NG9kWjAtX2l0TFFEWUlHM05wRGJRZzZWVVBtMkUxUG5WcndzQ3BhQWotcG1NUkpTSmE0ZUJyT1hvUlU"
-    }
-  },
-  {
     "id": "2026-10-20-regulators-agentic-ai-blockchain",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8773,25 +8905,6 @@
     }
   },
   {
-    "id": "2026-10-19-jpmorgan-5b-defense-investment",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-19T10:03:45.000Z",
-    "headline": "JPMorgan deploys $5 billion into US defense-tech supply chains and autonomous systems",
-    "plain_english": "JPMorgan Chase announced $5 billion in direct off-balance-sheet investments across defense hardware, manufacturing automation, and hypersonic technology. CEO Jamie Dimon frames this as a national-security capital allocation pivot tied to geopolitical tension.",
-    "why_it_matters": "Largest US bank signaling pivot from pure finance into industrial-defense backing. Will attract similar mega-bank capital and reshape venture and buyout strategy in aerospace, autonomy, and supply-chain resilience.",
-    "scale": {
-      "metric": "employees",
-      "value": "JPMorgan ~320K"
-    },
-    "amount": "$5B",
-    "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM0p3UGdnLVhzZGt6ZDlWOGVTSU9NNFlQdjdybWtvWXlzQUJOQUl5RlpNTVdjOUNleTduVUZCcmtJbm1VZjBCZ0E0c3BjZ05Nc0RkdERYWlpOUWtELVNyd1l4ZzkwZWs4YUgtVl8wSnZpQmsweFF2Z3NrS09wSl9EXzllaTZrbVUzRnRiV0c2R2dIcEFLcW4zVG8xejdRb1lOMWFZOGlHTWhaUEJBak52dUNIZXhudFNtOXFTNl9qdFJrM0xPekZDVGlTdGlBZk1ZSmc"
-    }
-  },
-  {
     "id": "2026-10-19-regulation-occ-notice",
     "category": "regulation",
     "jurisdiction": "US",
@@ -8803,26 +8916,6 @@
     "source": {
       "name": "Office of the Comptroller of the Currency · 2026-10-19",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uVmEwdVNCX0V6T2QybmdlWV93eTJYMVFBdDhWVXBMT3J3NHB2NXowM253NDBiZGEtVUI4TUVOeklBVW9FLVI0X2pjS3daOVdPN0EwRmp6WmFPd0ZoMFVoX3JpUzJnallEOTJ2cw"
-    }
-  },
-  {
-    "id": "2026-10-19-fca-ai-advice-disclaimers",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-19T11:30:00.000Z",
-    "headline": "FCA mandates disclaimers on AI financial advice via agentic systems",
-    "plain_english": "UK Financial Conduct Authority is requiring AI providers offering financial advice through autonomous agents to display clear disclaimers to consumers. This targets advisory AI systems that operate without human intermediation in real-time decision-making.",
-    "why_it_matters": "Sets precedent for agent-specific disclosure rules—likely to trigger similar moves in EU, US. Forces fintech and bank vendors to architect disclaimer flows into agent loops before scaling.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that autonomously executes tasks (like portfolio trades or loan decisions) without human approval between steps, vs. advisory AI that only recommends."
-      }
-    ],
-    "source": {
-      "name": "Finextra · 2026-10-19",
-      "url": "https://www.finextra.com/newsarticle/48604/fca-calls-for-disclaimers-on-ai-financial-advice"
     }
   },
   {
@@ -8843,101 +8936,6 @@
     "source": {
       "name": "Finextra · 2026-10-20",
       "url": "https://www.finextra.com/newsarticle/48612/pay-by-bank-sector-poised-for-growth-says-survey?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
-    "id": "2026-10-19-ifc-cauris-finance-africa",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "low",
-    "published_at": "2026-10-19T10:13:00.000Z",
-    "headline": "IFC commits $7.5 million to Cauris Finance's African fintech investment fund",
-    "plain_english": "International Finance Corporation announced a $7.5M commitment into Cauris Finance's fund targeting African fintech startups. Move reinforces multilateral backing for emerging-market digital finance infrastructure.",
-    "why_it_matters": "Signals sustained institutional appetite for African fintech despite macro headwinds. De-risks later-stage fundraising for portfolio companies serving underbanked segments.",
-    "amount": "$7.5M",
-    "source": {
-      "name": "innovation-village.com · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdURhMm9pU2l5MkRDSVFvX1BvblpJajRDTjlHYXRIcUJ1RGN5QzFfenUzX25CSUZjVDBORHRYZWIxRG4yZFVFc0NBNk00TFRTRG5wTVd1dU9QSDloTWJMWE5xQXJSZHN1eDlKWXAyaV9uLXRIcTVHUVJUdmpiT3FkMnA4SVgtd3p2U3Z4RUsxYm51bzIxRXVqQUQ4UmdMLVBxcUE"
-    }
-  },
-  {
-    "id": "2026-10-19-tearsheet-tokenized-deposits",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-19T11:30:00.000Z",
-    "headline": "Citigroup explores tokenized deposits and stablecoin integration for institutional clients",
-    "plain_english": "Citigroup CEO Jane Fraser signaled strategic interest in tokenized deposit products and stablecoin rails for corporate and institutional treasury. Coinbase's stablecoin adoption cited as market proof point.",
-    "why_it_matters": "Mega-bank endorsement legitimizes on-chain treasury settlement. Opens path for tier-1 banks to compete with crypto-native platforms on rails, liquidity, and rails velocity. Expect pilot program announcements within 12 months.",
-    "source": {
-      "name": "Tearsheet · 2026-10-19",
-      "url": "https://tearsheet.co/10-q/jane-fraser-sees-a-future-in-tokenized-deposits-coinbase-shows-why-citi-needs-stablecoins-too/"
-    }
-  },
-  {
-    "id": "2026-10-19-fed-ai-inflation",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-19T10:24:37.000Z",
-    "headline": "Federal Reserve signals AI capex surge may worsen inflation despite productivity gains",
-    "plain_english": "Federal Reserve analysis warns that massive AI infrastructure investment—especially chip and energy demand—could add near-term inflationary pressure. Productivity gains from AI deployment may lag capex timing, creating policy headwinds for rate cuts.",
-    "why_it_matters": "If Fed tightens policy due to AI-driven inflation, it directly impacts fintech funding costs, M&A multiples, and bank margin compression. BFSI CFOs must brace for prolonged higher cost-of-capital.",
-    "stat_value": "Inflation risk",
-    "stat_label": "from AI infrastructure capex may persist 18–36 months ahead of productivity payoff",
-    "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw"
-    }
-  },
-  {
-    "id": "2026-10-19-uk-e1-settlement-sanctions",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-19T09:54:50.000Z",
-    "headline": "UK regulator threatens sanctions against firms participating in E1 settlement tender",
-    "plain_english": "UK financial authorities warned firms against bidding on or participating in an E1 settlement tender, citing regulatory concerns. Non-compliance faces potential enforcement action and fines.",
-    "why_it_matters": "Signals shift in UK settlement governance. Firms bidding must now assess regulatory risk separately from commercial opportunity; expect bid withdrawal and consolidation toward incumbent operators.",
-    "source": {
-      "name": "Reuters · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeG9CWEV1Z3N0eDN1b2U5TEw4Y21TVm51OWtfUFQ4UEhyVm9jZkpLQUFraHFaajdGeEctTWtVZmlWT3pkWGtVZXR0QzJmcC1wS1paMDVBQ3FVTUdGUWZ2TlZOdmRYRUJBMFNBeml4RjgtQlhaMW9TdFJNSzRBU2RjRGI1MmRadmI0azlNTGJQQ01EU3FhWXNsX0FyQkN2OHJKcUR6ckdwMExWanJfSVNJVFdMM1ZseGRMME43QUJR"
-    }
-  },
-  {
-    "id": "2026-10-19-citi-bofa-ai-agent-restrictions",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-19T09:37:35.000Z",
-    "headline": "Citigroup and Bank of America restrict AI agent access to customer accounts",
-    "plain_english": "Citigroup and Bank of America have imposed limits on how AI agents interact with customer deposit and investment accounts. Both firms are gating autonomous agent capabilities pending further testing and compliance review.",
-    "why_it_matters": "First major US retail bank pullback on autonomous agent deployment. Signals that early agent integrations revealed operational or fraud-control gaps. Likely triggers industry pause and tighter vendor SLAs.",
-    "jargon": [
-      {
-        "term": "Agent access control",
-        "def": "Restrictions on what autonomous AI systems can view or execute on customer accounts—e.g., read-only vs. transaction authority."
-      }
-    ],
-    "source": {
-      "name": "The Paypers · 2026-10-19",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaXZzTlptZzItc3dZVzRaRHgxY2FmMG5lNlc2dF95UkhfMXhDTGMySS1HdWVQUFB6TDNNSkZpUmlxb3h6QkFnTGg1dE9DQVF4WV9yVlVCTWU1WkVNUDJYR0laUm04QXBCWFV5ZHRxZHpFTUdvemVaYnd6akhWVkhHdWdwcTdpbERDdW81RGRia2pKeS1qM0paMFR5ZXVHX2FzNEtFMlhB"
-    }
-  },
-  {
-    "id": "2026-10-19-ai-women-job-losses",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-19T11:20:02.000Z",
-    "headline": "Historical pattern suggests AI automation will displace more women workers than men",
-    "plain_english": "CNBC analysis of technology adoption history (telephone operators, early PC adoption) indicates that AI-driven automation will hit female-dominated roles—particularly in customer service, data entry, and compliance—harder than male-majority roles.",
-    "why_it_matters": "BFSI firms face reputational and regulatory pressure to prove equitable AI deployment. Expect ESG boards and compliance teams to demand workforce transition planning and re-skilling commitments before AI rollouts.",
-    "stat_value": "Historical precedent",
-    "stat_label": "women displaced at 1.5x–2x rate vs. men in prior automation waves",
-    "source": {
-      "name": "CNBC · 2026-10-19",
-      "url": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
     }
   }
 ]
