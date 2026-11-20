@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-20-regulation-eu-chip-funding",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-20T12:52:15.000Z",
+    "headline": "ECB chief Lagarde: EU public funds should absorb first losses on chip, data-center infrastructure",
+    "plain_english": "European Central Bank President Christine Lagarde called for EU-backed funds to take initial losses on major AI infrastructure projects (chip plants, data centers) to de-risk private investment and boost European AI independence.",
+    "why_it_matters": "ECB endorsement of risk-sharing model signals EU willingness to co-invest in critical AI infrastructure; enables BFSI firms to partner in EU-backed compute capacity, reducing US dependency.",
+    "source": {
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html"
+    }
+  },
+  {
     "id": "2026-11-20-regulation-fca-ai-observatory",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -144,17 +158,17 @@
     }
   },
   {
-    "id": "2026-11-17-regulation-california-openai-lawsuit",
-    "category": "regulation",
+    "id": "2026-11-20-deployment-oaknorth-us-charter",
+    "category": "deployment",
     "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-17T00:18:40.000Z",
-    "headline": "California sues OpenAI over AI safety lapses and inadequate safeguards",
-    "plain_english": "California's Attorney General filed suit alleging OpenAI knowingly developed and tested advanced models without adequate safety monitoring or public protections, citing a July incident as trigger for enforcement action.",
-    "why_it_matters": "First major state AG lawsuit targeting AI safety practices; signals regulators will treat model deployment without safeguards as consumer protection violation, raising compliance bar for BFSI AI vendors.",
+    "severity": "med",
+    "published_at": "2026-11-20T14:07:00.000Z",
+    "headline": "UK SME lender OakNorth secures US national banking charter",
+    "plain_english": "OakNorth, a UK digital bank for small businesses, obtained a US national banking charter, enabling expansion into deposit-taking and broader financial services in the US market.",
+    "why_it_matters": "UK fintech crosses critical regulatory milestone; charter enables OakNorth to compete with US SME lenders at scale and deploy its credit-risk AI models across US customer base.",
     "source": {
-      "name": "PYMNTS · 2026-11-17",
-      "url": "https://www.pymnts.com/legal/2026/california-attorney-general-sues-openai-over-alleged-ai-safety-failures/"
+      "name": "Finextra · 2026-11-20",
+      "url": "https://www.finextra.com/newsarticle/48790/uk-sme-lender-oaknorth-secures-us-banking-licence?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -324,28 +338,41 @@
     }
   },
   {
-    "id": "2026-11-16-deployment-hkma-swift-tokenized-deposits",
-    "category": "deployment",
-    "jurisdiction": "APAC",
+    "id": "2026-11-20-vendor-hoplite-ai-agents",
+    "category": "vendor",
+    "jurisdiction": "US",
     "severity": "med",
-    "published_at": "2026-11-16T12:54:51Z",
-    "headline": "Hong Kong Monetary Authority and Swift pilot tokenized deposits for cross-border bank payments",
-    "plain_english": "HKMA and Swift are collaborating on a proof-of-concept for tokenized bank deposits to settle international payments, using blockchain or distributed ledger rails to reduce latency and settlement risk on high-value transfers between financial institutions.",
-    "why_it_matters": "If tokenized deposits gain central bank blessing in Asia-Pacific, BFSI treasury and correspondent banking teams will need to integrate digital asset settlement into their nostro/vostro operations; this accelerates industry move away from SWIFT-only rails.",
+    "published_at": "2026-11-20T13:00:51.000Z",
+    "headline": "Stripe founders and Paul Graham back AI agent swarm startup Hoplite with $5.5M",
+    "plain_english": "Hoplite, an AI agent swarm startup, raised $5.5M in seed funding backed by Stripe co-founders and venture icon Paul Graham, per Sifted exclusive.",
+    "why_it_matters": "Demonstrates strong investor appetite for multi-agent AI orchestration; Stripe founder backing suggests financial services applications for autonomous agent swarms.",
     "jargon": [
       {
-        "term": "Tokenized deposits",
-        "def": "Digital representation of bank funds on a distributed ledger, enabling real-time settlement without traditional intermediaries."
-      },
-      {
-        "term": "HKMA",
-        "def": "Hong Kong Monetary Authority, the region's central bank and banking regulator."
+        "term": "agent swarm",
+        "def": "Multiple autonomous AI agents coordinating to solve complex tasks in parallel, pooling reasoning across specialized roles."
       }
     ],
     "source": {
-      "name": "TradingView · 2026-11-16",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbF9fYVNJb1J2M1FYbDJ5bkYybFpCZ1Njd0FzVF9FeXZUNGF6ZGlsbnQ2Zzh3Rmwta05BNkdia1NZS2dVcTlLZkVENUY3ejZROWk0Y0loMnp0OXVfckZLaTVzZmdsNVJhbjJlaV9nczNvalJaTG05N2hPQTlKak10MjZIRzRXdUduYkpXZHhTX0N1VUUzenRzNzZGNDFVU3d5di12TTJQU2o3VklwRTh5VS1YQnUxXzdIYmV5SFNaSEJCU2FidkltX2J2ME0"
-    }
+      "name": "Sifted · 2026-11-20",
+      "url": "https://sifted.eu/articles/hoplite-raise-stripe-founders/"
+    },
+    "amount": "$5.5M",
+    "round": "Seed"
+  },
+  {
+    "id": "2026-11-20-vendor-tpg-corpay-bill-acquisition",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-20T11:56:12.000Z",
+    "headline": "TPG and Corpay agree to acquire BILL in $6B deal; fintech goes private",
+    "plain_english": "Private equity firm TPG and software-payments company Corpay agreed to acquire BILL, a financial operations platform, for $6B. It is the second joint acquisition by TPG and Corpay in 18 months.",
+    "why_it_matters": "Major fintech consolidation; BILL's AI-driven bill and payment automation capabilities absorb into larger PE-backed payments ecosystem; signals PE appetite for mature fintech automation platforms.",
+    "source": {
+      "name": "PYMNTS · 2026-11-20",
+      "url": "https://www.pymnts.com/news/acquiring/2026/tpg-and-corpay-agree-to-buy-bill-in-6-billion-deal/"
+    },
+    "amount": "$6B"
   },
   {
     "id": "2026-11-20-vendor-nvidia-inception-acquisition",
@@ -464,34 +491,23 @@
     }
   },
   {
-    "id": "2026-11-16-startup-1b-ai-efficiency",
-    "category": "vendor",
-    "jurisdiction": "US",
+    "id": "2026-11-20-shift-stellar-tokenized-asset-utility",
+    "category": "shift",
+    "jurisdiction": "Global",
     "severity": "med",
-    "published_at": "2026-11-16T00:13:08.000Z",
-    "headline": "Startup raises $1 billion to accelerate AI development with fewer humans",
-    "plain_english": "An unnamed startup closed a $1 billion round focused on automating AI model training and inference with minimal human oversight, suggesting a shift toward AI-native development stacks.",
-    "why_it_matters": "Automation of AI ops reduces time-to-production for in-house BFSI models; this compounds pressure on third-party model providers and raises adoption velocity for internally-deployed LLMs in risk and compliance.",
-    "amount": "$1B",
-    "round": "Growth",
+    "published_at": "2026-11-20T13:00:00.000Z",
+    "headline": "Stellar moves tokenized assets beyond storage: $5B RWA pushing toward active yield generation",
+    "plain_english": "Stellar Development Foundation CEO Denelle Dixon outlined a three-stage progression for real-world assets on Stellar blockchain: from static holdings ($5B currently) toward yield-generating utility. Focus shifting from asset custody to productive deployment.",
+    "why_it_matters": "Tokenization narrative evolving from blockchain novelty to yield optimization; BFSI players exploring Stellar or similar rails can now structure RWA-backed products with active cash-flow mechanics, not just digital ledger entries.",
+    "jargon": [
+      {
+        "term": "RWA (real-world assets)",
+        "def": "Physical or financial assets (bonds, real estate, commodities) tokenized on blockchain, enabling fractional ownership and transparent settlement."
+      }
+    ],
     "source": {
-      "name": "WSJ · 2026-11-16",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObkxPOGVxOXJ1ZHo1Wjh4YjRHamNPWFZUUXhWMG1FSU5EUmZRcHZ2QXRyWk5Va1hiRFEyOHdlZGZkNTkwYjJkVUh6Y3l4TVhuTnFiSDRfa2M4amV6ODc5MnFSVi0xd3ZsTzVEZ2lEdlNfVE1OX2ZKSkJDZDlaUHNFV3JsVHhMX3ZEOGlrdEpRMEtTMGxyck1kbVlPSWhnSmZuelVZRnRNcUR2M0dULWJpd3phaGRoOXc5WXVz"
-    }
-  },
-  {
-    "id": "2026-11-16-ls-electric-data-center",
-    "category": "vendor",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-16T01:45:00.000Z",
-    "headline": "LS Electric secures $93.8 million US order for AI data-center equipment",
-    "plain_english": "South Korea's LS Electric won a $93.8 million order to supply power and cooling systems for a US AI data center, indicating strong demand for specialized infrastructure components.",
-    "why_it_matters": "Specialized equipment orders precede major capacity expansion; this signals a new data-center facility coming online within 12–18 months, likely cloud-adjacent, affecting BFSI workload placement strategies.",
-    "amount": "$93.8M",
-    "source": {
-      "name": "Breakingthenews.net · 2026-11-16",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZmxvZ3diQlJ5Z1FweG5sdTBkT3Vvazc3dTQwNEdxdkhxU1kzSE9Pc0JYdHJvckJfRTM1VmFpOFI5anhGaHp3dFZHTzlYa2RuM2MwcWJzOHQ5RWRwdlprcmtsVWNBb2V6ZXFpMUJOVURTUlViT1lCejl6WWdrU3pYX0J2ajd5MzFqal9XWDBoZXR3QU5BajFUeERFUk9aY2dnVW9ENjNUOGd6d0hObDFJaUxR"
+      "name": "Tearsheet · 2026-11-20",
+      "url": "https://tearsheet.co/podcasts/stellar-ceo-dixon-wants-tokenized-assets-to-do-more-than-sit-on-a-blockchain/?utm_source=rss&utm_medium=rss&utm_campaign=stellar-ceo-dixon-wants-tokenized-assets-to-do-more-than-sit-on-a-blockchain"
     }
   },
   {
@@ -622,20 +638,6 @@
     "source": {
       "name": "Tearsheet · 2026-11-17",
       "url": "https://tearsheet.co/member-exclusive/the-big-five-banks-are-putting-ai-agents-to-work-mostly-out-of-customers-sight/?utm_source=rss&utm_medium=rss&utm_campaign=the-big-five-banks-are-putting-ai-agents-to-work-mostly-out-of-customers-sight"
-    }
-  },
-  {
-    "id": "2026-11-17-shift-kalshi-stock-trading",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-17T01:43:23.000Z",
-    "headline": "Prediction-markets platform Kalshi pivots to mainstream stock and ETF trading",
-    "plain_english": "Kalshi, known for event prediction markets, quietly acquired New York broker FB Securities in July and plans to launch stock, ETF, and equity-derivative trading within two months, signaling shift from niche forecasting into regulated retail broking.",
-    "why_it_matters": "First major prediction-market operator to integrate regulated stock trading; erodes traditional retail broker moats and presages consolidation of prediction, derivatives, and cash-equity under single fintech roof.",
-    "source": {
-      "name": "PYMNTS · 2026-11-17",
-      "url": "https://www.pymnts.com/economy/markets/2026/kalshi-readies-stock-trading-launch-after-quietly-buying-broker-in-july/"
     }
   },
   {
@@ -917,6 +919,40 @@
     }
   },
   {
+    "id": "2026-11-20-insight-anthropic-compute-risk",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-20T12:00:02.000Z",
+    "headline": "Anthropic faces critical dependency on compute access post-IPO",
+    "plain_english": "Despite $93.5B IPO success, Anthropic's ability to secure vast compute capacity for training and deploying large language models remains a major business uncertainty, per CNBC analysis.",
+    "why_it_matters": "Capital alone insufficient; Anthropic's competitive moat depends on physical GPU/TPU availability, which is globally constrained. Supply-chain or pricing shock could limit model iteration speed vs. OpenAI/Meta.",
+    "jargon": [
+      {
+        "term": "compute access",
+        "def": "Availability and cost of GPU/TPU clusters required to train and run large AI models; global bottleneck limiting AI lab growth."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html"
+    }
+  },
+  {
+    "id": "2026-11-20-insight-ai-stock-selloff",
+    "category": "insight",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-20T12:32:00.000Z",
+    "headline": "AI stocks tumble globally amid slowdown fears; Anthropic IPO opens amid broader market weakness",
+    "plain_english": "AI-focused equities declined sharply across markets on concerns over AI deployment slowdown, valuation reset, and macro headwinds, even as Anthropic completed record IPO, suggesting sector-wide repricing.",
+    "why_it_matters": "Sentiment shift from hype to execution scrutiny; BFSI firms reviewing AI ROI expectations and may delay pilot expansion; cheaper valuations could benefit acquirers of AI vendors.",
+    "source": {
+      "name": "WSJ · 2026-11-20",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSnNEc3dZb2JfSWJYeFFoREFsNXdMS2RyNklRUU9rRUJmajZscVdUTWc5dENvODEwWUQwdHNFcGpPazhndE1MSFJaYnV1Vmota2R5N0YtRVhZS2ZtZmxTZUtnOVgzaXp3X0g5N1hxMExRbFRKWVF4VWJ3OWhqcFVBZlBzWFo0WlVyUTZfZDZSME5WZUsxcEFMbk9ubVlFbWc"
+    }
+  },
+  {
     "id": "2026-11-20-insight-meta-muse-safety-failures",
     "category": "insight",
     "jurisdiction": "US",
@@ -1047,50 +1083,39 @@
     }
   },
   {
-    "id": "2026-11-17-insight-fed-interest-rate-path",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-11-17T00:13:00.000Z",
-    "headline": "Federal Reserve official signals preference for gradual rate adjustments",
-    "plain_english": "Fed official Hammack publicly endorsed small, incremental interest-rate moves over larger jumps, reinforcing central bank's shift toward data-dependent gradualism and signaling lower likelihood of sharp moves.",
-    "why_it_matters": "Gradual rate path reduces tail-risk volatility in fixed-income and FX markets; BFSI treasury and ALM teams should model extended low-volatility scenario vs. historical shock pricing.",
-    "source": {
-      "name": "Bloomberg · 2026-11-17",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa3MwUUp3QjVuS0NGTWhLN0hYZldpQkJHUUZKRDZSRlhvdXJ1d2VXTVk1UkVzZ2swX1N1OWdQM1g1cC10cnMwaTRCRzEtVWNfWHBLdjdYY19wUEpZZERkQl9zVzNsbjVuZ25zQUFsaXFBMnBVX1I1X1pPU01SdEpPZzA1clBJZkx5TjYwV29QUmxHRmxfYW8wdWFLazlLbXVBRk9nUm01aVppdHRtS2RjRHlJeW0"
-    }
-  },
-  {
-    "id": "2026-11-16-insight-ai-buildout-slowdown-risk",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-16T13:36:49Z",
-    "headline": "BlackRock warns AI infrastructure buildout slowdown could dampen US economic growth",
-    "plain_english": "BlackRock's investment team flagged risk that the deceleration of AI chip and data center spending could crimp overall US GDP, a signal that financial firms are now pricing AI capex constraints as a macro headwind rather than a perpetual tailwind.",
-    "why_it_matters": "If major asset managers cut growth forecasts due to AI buildout stalls, they'll reduce equity allocations and credit risk premiums, forcing BFSI treasurers to recalibrate hedges and liquidity buffers; this reverses the 2024–2026 AI boom mentality.",
-    "stat_value": "AI buildout slowdown",
-    "stat_label": "flagged as macro risk to US growth",
-    "source": {
-      "name": "Moomoo · 2026-11-16",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUGxFTURtU01xNjRSWGR6cTVoVGVYa0JGZThST1J4X09IWnRzb2ktdTB6MXVzTjJtSlJsS3QzQmxRSlVjajFaaEdaSUFObllnUVVkUFg5WS10WUN3aElkM1Bvend5VlVCYlo4Z2JQLTdSWXFnbUU3Sm5aajRBdnlzRkNuSUdjYmRRV3pDUlBhR1R4UWs2YUozS25pTTNVZDFwbC1fUEtYaGhrbDRM"
-    }
-  },
-  {
     "id": "2026-11-20-frontier-anthropic-ipo",
     "category": "frontier",
     "jurisdiction": "US",
     "severity": "high",
-    "published_at": "2026-11-20T00:43:50.000Z",
-    "headline": "Anthropic completes record $105B IPO at $83/share; founders pocket $2B",
-    "plain_english": "Anthropic went public at $83/share, raising ~$105B in the largest IPO on record. Seven founders each cashed out ~$280M. Market cap reached $2T on debut, signaling massive investor conviction in frontier AI despite broader macro jitters.",
-    "why_it_matters": "Largest AI-first company IPO validates late-stage AI lab funding model; sets valuation anchor for OpenAI, xAI, and other frontier labs shopping for capital or IPO windows; signals investor appetite for pure-play AI despite near-term LLM deployment headwinds.",
+    "published_at": "2026-11-20T13:56:23.000Z",
+    "headline": "Anthropic raises $93.5B in record IPO; stock opens 17% above $83 offer price",
+    "plain_english": "AI safety company Anthropic completed the largest IPO on record, selling 1.127B shares at $83 each despite market sell-off, anti-AI sentiment, and Nvidia crisis. Stock opened at $111.50, closed day one at $97.17.",
+    "why_it_matters": "Largest AI-company capital raise signals institutional confidence in frontier AI despite macro headwinds; sets valuation bar ($93.5B) for private AI labs seeking public markets.",
     "source": {
-      "name": "TechCrunch · 2026-11-20",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/"
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html"
     },
-    "amount": "$105B",
-    "effective_date": "2026-11-20"
+    "amount": "$93.5B"
+  },
+  {
+    "id": "2026-11-20-frontier-cursor-chinese-ai-phaseout",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-20T14:07:24.000Z",
+    "headline": "SpaceX's Cursor considers phasing out Chinese open-weight AI models over geopolitics",
+    "plain_english": "Cursor, a SpaceX subsidiary, told US lawmakers it is considering phasing out Chinese-developed open-weight AI models due to geopolitical risk, per a House report reviewed by CNBC.",
+    "why_it_matters": "Signals growing US policy pressure on dependence on Chinese AI infrastructure; potential precedent for other US tech firms to restrict foreign AI model weights for national-security reasons.",
+    "jargon": [
+      {
+        "term": "open-weight AI models",
+        "def": "Machine learning models released with publicly available trained weights, allowing anyone to run them locally without relying on a vendor's API."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html"
+    }
   },
   {
     "id": "2026-11-19-anthropic-ipo-record",
@@ -1206,20 +1231,6 @@
     "source": {
       "name": "CNBC · 2026-11-17",
       "url": "https://www.cnbc.com/2026/11/17/isomorphic-labs-series-c-ai-drug-discovery-.html"
-    }
-  },
-  {
-    "id": "2026-11-16-frontier-nvidia-ceo-leadership-transition",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-16T13:50:48Z",
-    "headline": "Nvidia CEO Jensen Huang resigns; interim leadership and market volatility shake confidence in AI chip strategy",
-    "plain_english": "Jensen Huang unexpectedly stepped down as Nvidia CEO; Colette Kress took interim control ahead of earnings. Market reaction was sharp; investor calls for Huang's return and concerns about the firm's AI financing and risk appetite escalated within days.",
-    "why_it_matters": "Nvidia is the linchpin of AI infrastructure spending for BFSI; leadership vacuum and board instability raise questions about capex commitments, product roadmaps, and long-term reliability of GPU supply—forcing CIOs and AI infrastructure teams to hedge vendor concentration risk.",
-    "source": {
-      "name": "Reuters · 2026-11-16",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd2JkdDdXVFVDWWplOU5DRUtSZ0tQS25DanRfRl92ZUU5WVNDQnBwUUhhM3RRdDRSdEdISTNwa002U05EdkRlSlFXNE1PZ1RSVElZUjU5ZnRvT2RqQjZjaVRidXJRQ2dtb3FuRG9GQ0hrMm1ialRwSkN3U0VLTkZoNUhpUTYwakJUUUlOR0FMWWVMdUI0MUlkdVdYdUZOYzc5YVNtYk5wMjlHYlRKaG1RUWNOMGtnM1dCZEJpUEw4cThSc1Js"
     }
   },
   {
@@ -1423,6 +1434,20 @@
     }
   },
   {
+    "id": "2026-11-20-trending-anthropic-ipo-market",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-20T13:25:56.000Z",
+    "headline": "Anthropic defies market turbulence to hold record AI IPO despite slowdown fears",
+    "plain_english": "Anthropic proceeded with its record $93.5B IPO despite a concurrent market sell-off, anti-AI sentiment, and a crisis at Nvidia. The deal closed and stock began trading on Nasdaq, though opened with 17% gains then retreated to 17% above offer by close of first full trading day.",
+    "why_it_matters": "Demonstrates institutional appetite for frontier AI despite cyclical AI stock weakness; validates Anthropic's $93.5B valuation in real market conditions, anchoring future AI-company IPO expectations.",
+    "source": {
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-defies-odds-holding-ipo-despite-massively-disruptive-market.html"
+    }
+  },
+  {
     "id": "2026-11-20-trending-anthropic-asia-fallout",
     "category": "trending",
     "jurisdiction": "APAC",
@@ -1553,6 +1578,133 @@
     "source": {
       "name": "CNBC · 2026-11-13",
       "url": "https://www.cnbc.com/2026/11/13/tech-download-jensen-huang-nvidia-departure-jensenmania.html"
+    }
+  },
+  {
+    "id": "2026-11-17-regulation-california-openai-lawsuit",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-17T00:18:40.000Z",
+    "headline": "California sues OpenAI over AI safety lapses and inadequate safeguards",
+    "plain_english": "California's Attorney General filed suit alleging OpenAI knowingly developed and tested advanced models without adequate safety monitoring or public protections, citing a July incident as trigger for enforcement action.",
+    "why_it_matters": "First major state AG lawsuit targeting AI safety practices; signals regulators will treat model deployment without safeguards as consumer protection violation, raising compliance bar for BFSI AI vendors.",
+    "source": {
+      "name": "PYMNTS · 2026-11-17",
+      "url": "https://www.pymnts.com/legal/2026/california-attorney-general-sues-openai-over-alleged-ai-safety-failures/"
+    }
+  },
+  {
+    "id": "2026-11-16-deployment-hkma-swift-tokenized-deposits",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-16T12:54:51Z",
+    "headline": "Hong Kong Monetary Authority and Swift pilot tokenized deposits for cross-border bank payments",
+    "plain_english": "HKMA and Swift are collaborating on a proof-of-concept for tokenized bank deposits to settle international payments, using blockchain or distributed ledger rails to reduce latency and settlement risk on high-value transfers between financial institutions.",
+    "why_it_matters": "If tokenized deposits gain central bank blessing in Asia-Pacific, BFSI treasury and correspondent banking teams will need to integrate digital asset settlement into their nostro/vostro operations; this accelerates industry move away from SWIFT-only rails.",
+    "jargon": [
+      {
+        "term": "Tokenized deposits",
+        "def": "Digital representation of bank funds on a distributed ledger, enabling real-time settlement without traditional intermediaries."
+      },
+      {
+        "term": "HKMA",
+        "def": "Hong Kong Monetary Authority, the region's central bank and banking regulator."
+      }
+    ],
+    "source": {
+      "name": "TradingView · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbF9fYVNJb1J2M1FYbDJ5bkYybFpCZ1Njd0FzVF9FeXZUNGF6ZGlsbnQ2Zzh3Rmwta05BNkdia1NZS2dVcTlLZkVENUY3ejZROWk0Y0loMnp0OXVfckZLaTVzZmdsNVJhbjJlaV9nczNvalJaTG05N2hPQTlKak10MjZIRzRXdUduYkpXZHhTX0N1VUUzenRzNzZGNDFVU3d5di12TTJQU2o3VklwRTh5VS1YQnUxXzdIYmV5SFNaSEJCU2FidkltX2J2ME0"
+    }
+  },
+  {
+    "id": "2026-11-16-startup-1b-ai-efficiency",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-16T00:13:08.000Z",
+    "headline": "Startup raises $1 billion to accelerate AI development with fewer humans",
+    "plain_english": "An unnamed startup closed a $1 billion round focused on automating AI model training and inference with minimal human oversight, suggesting a shift toward AI-native development stacks.",
+    "why_it_matters": "Automation of AI ops reduces time-to-production for in-house BFSI models; this compounds pressure on third-party model providers and raises adoption velocity for internally-deployed LLMs in risk and compliance.",
+    "amount": "$1B",
+    "round": "Growth",
+    "source": {
+      "name": "WSJ · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObkxPOGVxOXJ1ZHo1Wjh4YjRHamNPWFZUUXhWMG1FSU5EUmZRcHZ2QXRyWk5Va1hiRFEyOHdlZGZkNTkwYjJkVUh6Y3l4TVhuTnFiSDRfa2M4amV6ODc5MnFSVi0xd3ZsTzVEZ2lEdlNfVE1OX2ZKSkJDZDlaUHNFV3JsVHhMX3ZEOGlrdEpRMEtTMGxyck1kbVlPSWhnSmZuelVZRnRNcUR2M0dULWJpd3phaGRoOXc5WXVz"
+    }
+  },
+  {
+    "id": "2026-11-16-ls-electric-data-center",
+    "category": "vendor",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-16T01:45:00.000Z",
+    "headline": "LS Electric secures $93.8 million US order for AI data-center equipment",
+    "plain_english": "South Korea's LS Electric won a $93.8 million order to supply power and cooling systems for a US AI data center, indicating strong demand for specialized infrastructure components.",
+    "why_it_matters": "Specialized equipment orders precede major capacity expansion; this signals a new data-center facility coming online within 12–18 months, likely cloud-adjacent, affecting BFSI workload placement strategies.",
+    "amount": "$93.8M",
+    "source": {
+      "name": "Breakingthenews.net · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZmxvZ3diQlJ5Z1FweG5sdTBkT3Vvazc3dTQwNEdxdkhxU1kzSE9Pc0JYdHJvckJfRTM1VmFpOFI5anhGaHp3dFZHTzlYa2RuM2MwcWJzOHQ5RWRwdlprcmtsVWNBb2V6ZXFpMUJOVURTUlViT1lCejl6WWdrU3pYX0J2ajd5MzFqal9XWDBoZXR3QU5BajFUeERFUk9aY2dnVW9ENjNUOGd6d0hObDFJaUxR"
+    }
+  },
+  {
+    "id": "2026-11-17-shift-kalshi-stock-trading",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-17T01:43:23.000Z",
+    "headline": "Prediction-markets platform Kalshi pivots to mainstream stock and ETF trading",
+    "plain_english": "Kalshi, known for event prediction markets, quietly acquired New York broker FB Securities in July and plans to launch stock, ETF, and equity-derivative trading within two months, signaling shift from niche forecasting into regulated retail broking.",
+    "why_it_matters": "First major prediction-market operator to integrate regulated stock trading; erodes traditional retail broker moats and presages consolidation of prediction, derivatives, and cash-equity under single fintech roof.",
+    "source": {
+      "name": "PYMNTS · 2026-11-17",
+      "url": "https://www.pymnts.com/economy/markets/2026/kalshi-readies-stock-trading-launch-after-quietly-buying-broker-in-july/"
+    }
+  },
+  {
+    "id": "2026-11-17-insight-fed-interest-rate-path",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "low",
+    "published_at": "2026-11-17T00:13:00.000Z",
+    "headline": "Federal Reserve official signals preference for gradual rate adjustments",
+    "plain_english": "Fed official Hammack publicly endorsed small, incremental interest-rate moves over larger jumps, reinforcing central bank's shift toward data-dependent gradualism and signaling lower likelihood of sharp moves.",
+    "why_it_matters": "Gradual rate path reduces tail-risk volatility in fixed-income and FX markets; BFSI treasury and ALM teams should model extended low-volatility scenario vs. historical shock pricing.",
+    "source": {
+      "name": "Bloomberg · 2026-11-17",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa3MwUUp3QjVuS0NGTWhLN0hYZldpQkJHUUZKRDZSRlhvdXJ1d2VXTVk1UkVzZ2swX1N1OWdQM1g1cC10cnMwaTRCRzEtVWNfWHBLdjdYY19wUEpZZERkQl9zVzNsbjVuZ25zQUFsaXFBMnBVX1I1X1pPU01SdEpPZzA1clBJZkx5TjYwV29QUmxHRmxfYW8wdWFLazlLbXVBRk9nUm01aVppdHRtS2RjRHlJeW0"
+    }
+  },
+  {
+    "id": "2026-11-16-insight-ai-buildout-slowdown-risk",
+    "category": "insight",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-16T13:36:49Z",
+    "headline": "BlackRock warns AI infrastructure buildout slowdown could dampen US economic growth",
+    "plain_english": "BlackRock's investment team flagged risk that the deceleration of AI chip and data center spending could crimp overall US GDP, a signal that financial firms are now pricing AI capex constraints as a macro headwind rather than a perpetual tailwind.",
+    "why_it_matters": "If major asset managers cut growth forecasts due to AI buildout stalls, they'll reduce equity allocations and credit risk premiums, forcing BFSI treasurers to recalibrate hedges and liquidity buffers; this reverses the 2024–2026 AI boom mentality.",
+    "stat_value": "AI buildout slowdown",
+    "stat_label": "flagged as macro risk to US growth",
+    "source": {
+      "name": "Moomoo · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUGxFTURtU01xNjRSWGR6cTVoVGVYa0JGZThST1J4X09IWnRzb2ktdTB6MXVzTjJtSlJsS3QzQmxRSlVjajFaaEdaSUFObllnUVVkUFg5WS10WUN3aElkM1Bvend5VlVCYlo4Z2JQLTdSWXFnbUU3Sm5aajRBdnlzRkNuSUdjYmRRV3pDUlBhR1R4UWs2YUozS25pTTNVZDFwbC1fUEtYaGhrbDRM"
+    }
+  },
+  {
+    "id": "2026-11-16-frontier-nvidia-ceo-leadership-transition",
+    "category": "frontier",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-16T13:50:48Z",
+    "headline": "Nvidia CEO Jensen Huang resigns; interim leadership and market volatility shake confidence in AI chip strategy",
+    "plain_english": "Jensen Huang unexpectedly stepped down as Nvidia CEO; Colette Kress took interim control ahead of earnings. Market reaction was sharp; investor calls for Huang's return and concerns about the firm's AI financing and risk appetite escalated within days.",
+    "why_it_matters": "Nvidia is the linchpin of AI infrastructure spending for BFSI; leadership vacuum and board instability raise questions about capex commitments, product roadmaps, and long-term reliability of GPU supply—forcing CIOs and AI infrastructure teams to hedge vendor concentration risk.",
+    "source": {
+      "name": "Reuters · 2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd2JkdDdXVFVDWWplOU5DRUtSZ0tQS25DanRfRl92ZUU5WVNDQnBwUUhhM3RRdDRSdEdISTNwa002U05EdkRlSlFXNE1PZ1RSVElZUjU5ZnRvT2RqQjZjaVRidXJRQ2dtb3FuRG9GQ0hrMm1ialRwSkN3U0VLTkZoNUhpUTYwakJUUUlOR0FMWWVMdUI0MUlkdVdYdUZOYzc5YVNtYk5wMjlHYlRKaG1RUWNOMGtnM1dCZEJpUEw4cThSc1Js"
     }
   },
   {
@@ -7699,20 +7851,6 @@
     }
   },
   {
-    "id": "2026-10-21-trending-nvidia-europe-data-centers",
-    "category": "trending",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-21T10:02:00Z",
-    "headline": "NVIDIA accelerates AI data center buildout across Europe amid geopolitical chip shifts",
-    "plain_english": "NVIDIA announced faster expansion of AI data center footprint in Europe, responding to EU AI Act compliance demand and US export controls redirecting chip flows away from China. Banks and cloud providers pre-committing to EMEA capacity.",
-    "why_it_matters": "Signals NVIDIA confidence in EU regulatory TAM despite AI Act friction. European banks now have nearer, compliant alternative to US/Asia infra, reducing latency and easing data residency concerns—major unlock for regulated finance workloads.",
-    "source": {
-      "name": "Breakingthenews.net · 2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR0RycWQ3aXFjT2hNUnItSE9qV1ZncEgwaHBadEhjY05BVHdCRVlfUS1YcnZMb3ZMY0pQa0ktWll0SXZrSzl0d3J5dVVNby1HaTN0RXdlQ0R5cFJ6TzV1RF90ZmFSVjNJZXlubmZPM2cxRUFESUNNSl9Lay1kbHdtRnVJUnNIYm9oc05WdGtJYkFOcUlyVzVNYVFYOA"
-    }
-  },
-  {
     "id": "2026-10-27-revolut-boe-scrutiny",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -7985,36 +8123,6 @@
     "source": {
       "name": "Capital Newspaper · 2026-10-24",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRzJIa0R1bU1ncnIwNmlBOXZpQXFGSzJnWVRsZ3Zxb3VwM0pjRjNwZ0hUVWJ1azN4Vi1Icnp1TkFFZHFCTXB6aUx5T2U3TG9GdDJWd20wbXFlTFV1Y3N0Ynl2UlBWLTR5eV9QeUJNOHRMcUx5VldPUTJaR09Zb1F4c3lYR1RWdHQ3MjViWV9CYnNwNHp3NEtiWGVTQnFRWjdoejlXNFhiWUpBRnhYMUgyVUg1bw"
-    }
-  },
-  {
-    "id": "2026-10-21-vendor-pigment-series-e-250m",
-    "category": "vendor",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-21T10:27:37Z",
-    "headline": "Pigment raises $250M Series E backed by Scaleup Europe Fund and NVIDIA",
-    "plain_english": "Enterprise AI planning software vendor Pigment closed Series E funding at $250M valuation, led by European VC Scaleup Europe Fund with participation from NVIDIA. Platform serves finance and planning teams at Fortune 500 firms.",
-    "why_it_matters": "NVIDIA's backing of planning/FP&A AI signals NVIDIA's conviction in enterprise finance automation beyond LLMs. Pigment now competes with Anaplan, Prophix, and OneStream in AI-native financial planning.",
-    "amount": "$250M",
-    "round": "Series E",
-    "source": {
-      "name": "Sifted · 2026-10-21",
-      "url": "https://sifted.eu/articles/pigment-series-e-nvidia-scaleup-europe-fund/"
-    }
-  },
-  {
-    "id": "2026-10-21-vendor-sea-monee-ipo-singapore",
-    "category": "vendor",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-21T10:40:00Z",
-    "headline": "Sea Group plans IPO for fintech arm Monee on Singapore exchange",
-    "plain_english": "Southeast Asian conglomerate Sea Limited planning to float Monee, its fintech subsidiary, on Singapore Stock Exchange (SGX). Monee offers digital banking and payments in e-wallet and lending verticals across region.",
-    "why_it_matters": "Signals IPO market reopening for fintech in APAC. First major Southeast Asian fintech IPO post-2024 would validate investor demand and accelerate other regional fintech exits.",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48624/singapores-sea-plans-ipo-for-fintech-arm-monee?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   },
   {
@@ -8415,20 +8523,6 @@
     }
   },
   {
-    "id": "2026-10-21-shift-bank-ai-implementation-pressure",
-    "category": "shift",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-10-21T11:48:00Z",
-    "headline": "UK and Ireland bank boards report pressure to accelerate AI deployments beyond comfort",
-    "plain_english": "Majority of bank CEOs and board members in UK and Ireland report regulatory, competitive, and investor pressure to roll out AI faster than risk appetite permits. Signals mismatch between market urgency and governance readiness.",
-    "why_it_matters": "Indicates systemic risk: banks deploying untested AI to keep pace with competitors, raising operational and conduct risk. FCA and PRA likely to respond with supervisory letters on governance and testing mandates.",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48626/bank-bosses-under-pressure-to-implement-ai-ahead-of-time?utm_medium=rssfinextra&utm_source=finextrafeed"
-    }
-  },
-  {
     "id": "2026-10-24-techcrunch-ai-graveyard",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8663,36 +8757,6 @@
     }
   },
   {
-    "id": "2026-10-21-insight-bank-llm-pilots-stalling",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-21T11:30:00Z",
-    "headline": "73% of bank LLM pilots fail to scale past proof-of-concept phase",
-    "plain_english": "Industry observational data: roughly 3 in 4 bank LLM projects remain trapped in pilots. Root causes: data quality, domain-specific fine-tuning complexity, lack of clear compliance pathway, and competing vendor lock-in fears.",
-    "why_it_matters": "Exposes gap between board hype and engineering reality. Banks need to shift from vendor magic-bullet thinking to disciplined data engineering, model selection, and governance work before deployment can succeed.",
-    "stat_value": "73%",
-    "stat_label": "of bank LLM pilots stall before production rollout",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48626/bank-bosses-under-pressure-to-implement-ai-ahead-of-time"
-    }
-  },
-  {
-    "id": "2026-10-21-frontier-openai-brain-implant-cancer-detection",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "low",
-    "published_at": "2026-10-21T10:30:00Z",
-    "headline": "OpenAI invests in brain-implant startup using AI for cancer detection",
-    "plain_english": "OpenAI backs early-stage neurotechnology startup using brain-signal implants paired with AI models to detect cancer biomarkers. Part of broader trend of AI labs diversifying into biotech and medical sensing.",
-    "why_it_matters": "OpenAI's bet on brain-data AI signals confidence in multimodal model applications beyond text/vision. No direct BFSI relevance, but demonstrates frontier labs' capital discipline shifting toward medical/hard-science ROI.",
-    "source": {
-      "name": "Wired · 2026-10-21",
-      "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/"
-    }
-  },
-  {
     "id": "2026-10-22-regulation-bank-of-england-smcr-phase2",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8741,27 +8805,6 @@
     }
   },
   {
-    "id": "2026-10-21-regulation-occ-genius-act-stablecoin",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-21T11:08:54Z",
-    "headline": "OCC finalizes GENIUS Act rules for payment stablecoin issuers",
-    "plain_english": "US banking regulator OCC published final rule implementing GENIUS Act, establishing framework for national banks and federal thrifts to issue payment stablecoins. Includes revised reporting forms and application guidance for eligible issuers.",
-    "why_it_matters": "Clarifies regulatory pathway for banks entering stablecoin issuance; removes ambiguity that has blocked institutional participation. Accelerates tokenization adoption in payments infrastructure.",
-    "jargon": [
-      {
-        "term": "GENIUS Act",
-        "def": "US law (2024) authorizing national banks to issue payment stablecoins under OCC supervision, bypassing state money transmitter licensing."
-      }
-    ],
-    "source": {
-      "name": "Office of the Comptroller of the Currency · 2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tX29MZE9KbFBMLVZyS0dnZlNkWGk3YThldVRWcHJ0aWJ0LTFwX1FjWDNtU0tfWVItSjhaek5JZndXbElTZGtBVTRpMXpZVEhNSlBMWmVkM1E2UWxUT0xhaVZEaE1UazVJWElWYVFodzVxOXhCb3c"
-    },
-    "effective_date": "2026-10-21"
-  },
-  {
     "id": "2026-10-22-lseg-octus-35bn",
     "category": "deployment",
     "jurisdiction": "Global",
@@ -8791,20 +8834,6 @@
     "source": {
       "name": "SeeNews · 2026-10-22",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxUTmNWRDNNOExCWTl4Nm8xb0g3bnQwWExXVHdEeWhSUFR2cVVqSmJGWlBmRURCNTBrSDFBRTlZT3NKRk1kLTB4ZzItZVdELWdfc2J2VExnaTRVR2ZEb0FOX1JYdHV0ZlFZVEdRcmNZUG9wWUw"
-    }
-  },
-  {
-    "id": "2026-10-21-regulation-fca-defi-cryptoasset-guidance",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "med",
-    "published_at": "2026-10-21T11:05:39Z",
-    "headline": "FCA releases decentralized finance and cryptoasset perimeter guidance",
-    "plain_english": "UK Financial Conduct Authority published two consultation papers clarifying regulatory scope for decentralized finance (DeFi) and cryptoasset activities. Guidance defines which DeFi services require authorization and which fall outside FCA perimeter.",
-    "why_it_matters": "Reduces legal ambiguity for UK fintechs and banks exploring DeFi or crypto services. Expected to influence EU and APAC regulators, given FCA's precedent-setting role.",
-    "source": {
-      "name": "Financial Conduct Authority · 2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdGlONmhxWEZkalU5bm5sZHRXR05nN21qYnI4VkVaYVp0WkdzazdGTFBhVTRFM3Raa1IzckZNaFlQWXhqRVRTaHpkWmpodlVQNXFEREwxMjJsWWFJVGtma19jSk5jYmxiU21zSks4NXZDSUl4SkpUN1RtUFRjdHQ5YUpEaUh4c0N3Sy1reGlpdGpzdTM4WWlmdlBIT3A"
     }
   },
   {
@@ -8847,34 +8876,6 @@
     "source": {
       "name": "ColoradoBiz · 2026-10-21",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeXdVdkZSMmdsbjRrN1d2dlVyaEpPd1NlZVNrN0xZR01IMk1fY3hWOGo1Z3VnRFhaZUc5d0x5YzRfQTVScjlPdDM2WHZfVThBdS1IOUw5QmllVmZMSklkTWhVdEVsdThpY0JKQ2NEQmF0MVZOQlFSam5KWnhNdG1TQ19Qa1NOZFoyazVadGRoaw"
-    }
-  },
-  {
-    "id": "2026-10-21-deployment-visa-commercial-payments-ai",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-21T11:08:52Z",
-    "headline": "Visa launches AI-powered tools for commercial payments",
-    "plain_english": "Visa deployed AI-driven capabilities to enhance commercial (B2B) payments workflows, addressing dispute resolution, fraud detection, and transaction optimization for enterprise clients.",
-    "why_it_matters": "Major payment network AI rollout signals shift from consumer to enterprise automation. Visa's scale means this reaches millions of merchants; sets competitive bar for Mastercard, American Express.",
-    "source": {
-      "name": "Investing.com · 2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUVlEcUJ6aXQzWW9NNDhaa2wwZVB5UHFqWnJneFgySDJjU2lvMERRMXBGczR4cjkyQkpMckdBOVl0a1FBczRxN193TlNWRUdCMF9CYW1VMFcyT0tQOVhPT2RENzc0NG0xTXJ6ZFRtanM0cXIwVlJ6a1ZNMTVGR1pSSlkydFRZSV8xQ2FkaGxNTkdGd200Y1huaHQwbWtRa25rN2JYSElpU2VUTlJwWjBPX2ZEMXA"
-    }
-  },
-  {
-    "id": "2026-10-21-deployment-state-bank-india-cyberattack",
-    "category": "deployment",
-    "jurisdiction": "IN",
-    "severity": "high",
-    "published_at": "2026-10-21T11:04:00Z",
-    "headline": "State Bank of India launches investigation after cyberattack exposes customer data",
-    "plain_english": "SBI, India's largest bank by assets, discovered unauthorized access and personal data breach affecting customers. Internal investigation underway; no immediate statement on scope or remediation timeline.",
-    "why_it_matters": "SBI breach signals vulnerability in largest systemically important bank in Asia's third-largest economy. Will likely trigger RBI scrutiny of legacy security infrastructure and accelerate mandatory AI-driven anomaly detection mandates.",
-    "source": {
-      "name": "Finextra · 2026-10-21",
-      "url": "https://www.finextra.com/newsarticle/48625/indias-largest-bank-hit-by-cyberattack?utm_medium=rssfinextra&utm_source=finextrafeed"
     }
   }
 ]
