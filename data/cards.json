@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-24-megaspeed-trade-blacklist",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-24T01:56:28Z",
+    "headline": "U.S. adds Megaspeed and six companies to export-control blacklist over chip diversion concerns",
+    "plain_english": "Commerce Department blacklisted Megaspeed and six other firms citing risks of advanced computing products being diverted to restricted end-users. Enforcement tightens compliance for vendors serving financial AI infrastructure.",
+    "why_it_matters": "BFSI vendors and cloud providers must audit supply chains and third-party compute access. Accelerates shift toward domestic/Allied chip sourcing for sensitive workloads.",
+    "source": {
+      "name": "CNBC · 2026-11-24",
+      "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+    }
+  },
+  {
     "id": "2026-11-23-governors-ai-regulation-states",
     "category": "regulation",
     "jurisdiction": "US",
@@ -126,17 +140,41 @@
     }
   },
   {
-    "id": "2026-11-20-regulation-eu-chip-funding",
-    "category": "regulation",
-    "jurisdiction": "EU",
+    "id": "2026-11-24-lloyds-ai-scaling-guide",
+    "category": "deployment",
+    "jurisdiction": "UK",
     "severity": "med",
-    "published_at": "2026-11-20T12:52:15.000Z",
-    "headline": "ECB chief Lagarde: EU public funds should absorb first losses on chip, data-center infrastructure",
-    "plain_english": "European Central Bank President Christine Lagarde called for EU-backed funds to take initial losses on major AI infrastructure projects (chip plants, data centers) to de-risk private investment and boost European AI independence.",
-    "why_it_matters": "ECB endorsement of risk-sharing model signals EU willingness to co-invest in critical AI infrastructure; enables BFSI firms to partner in EU-backed compute capacity, reducing US dependency.",
+    "published_at": "2026-11-24T00:01:00Z",
+    "headline": "Lloyds publishes practical guide for scaling AI responsibly across operations",
+    "plain_english": "Lloyds Banking Group released a guide documenting lessons learned from deploying AI at scale, focusing on responsible rollout practices and governance frameworks for financial institutions.",
+    "why_it_matters": "Sets precedent for how tier-1 banks operationalize AI governance; likely to become reference standard for UK/EU peers navigating FCA AI expectations.",
     "source": {
-      "name": "CNBC · 2026-11-20",
-      "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html"
+      "name": "Finextra · 2026-11-24",
+      "url": "https://www.finextra.com/newsarticle/48800/lloyds-publishes-guide-on-scaling-ai-responsibly?utm_medium=rssfinextra&utm_source=finextrafeed"
+    }
+  },
+  {
+    "id": "2026-11-24-anthropic-efs-public-beta",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-24T00:20:37Z",
+    "headline": "Anthropic opens Enterprise Frontier Safeguards to public beta with zero-data-retention option",
+    "plain_english": "Anthropic expanded public beta access to EFS, a monitoring system that detects AI misuse while respecting zero-data-retention (ZDR) requirements—critical for regulated financial firms managing data residency rules.",
+    "why_it_matters": "Solves BFSI's core tension: AI safety monitoring without data leaving premises. Removes compliance friction for banks deploying frontier models in restricted jurisdictions.",
+    "jargon": [
+      {
+        "term": "Zero-data-retention",
+        "def": "Logs and telemetry never leave client infrastructure; monitoring happens in-silo."
+      },
+      {
+        "term": "Enterprise Frontier Safeguards",
+        "def": "Anthropic system that flags harmful/misuse patterns in Claude usage without storing user queries."
+      }
+    ],
+    "source": {
+      "name": "PYMNTS · 2026-11-24",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-expands-availability-of-ai-safety-monitoring-with-zero-data-retention/"
     }
   },
   {
@@ -279,46 +317,6 @@
     "source": {
       "name": "CNBC · 2026-11-19",
       "url": "https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html"
-    }
-  },
-  {
-    "id": "2026-11-18-scotiabank-ai-agents-deployment",
-    "category": "deployment",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-11-18T12:07:46Z",
-    "headline": "Scotiabank deploys AI agents to accelerate commercial credit underwriting",
-    "plain_english": "Scotiabank launched AI agents in production to speed up commercial credit review cycles. The agents automate document analysis and risk assessment, reducing manual underwriting time.",
-    "why_it_matters": "Demonstrates agentic AI moving from pilot to core lending ops at a major Canadian bank; signals that peer institutions must expect credit decisioning to become AI-led within 12 months.",
-    "jargon": [
-      {
-        "term": "AI agents",
-        "def": "Autonomous systems that perceive context, make decisions, and take actions (like document review or data retrieval) without per-step human intervention."
-      }
-    ],
-    "source": {
-      "name": "Fintech.ca · 2026-11-18",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVUxkZjhvTFUwQUZIVEllMjdEcy1ZUF9HWWNfUWFaQUJQdGlKTHpfWXhhWkp4eTFIVG1aWHlBOTY2MnVLRUhTUF9lQ0cySjBqNlp4RExzREhGTE9zdnBpNVpVb3I5QUxfb29aVG85WkJ6NFIzcHIwRDc4X2RCSEtLSjl3OHo4NGEydDJxNEJhTVl1dGE3a24wcnFEb0NlS3BtUzVPYTF3"
-    }
-  },
-  {
-    "id": "2026-11-18-jpmorgan-ai-agents-transactions",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-17T23:30:13Z",
-    "headline": "JPMorgan builds AI agents to execute financial transactions without human review",
-    "plain_english": "JPMorgan and Hyundai Card are developing autonomous AI agents that can initiate and complete financial transactions independently, moving beyond human-in-the-loop workflows. This marks an escalation from monitoring/advisory roles to full transaction authority.",
-    "why_it_matters": "Fully autonomous transaction execution exposes BFSI to new operational risk vectors: model drift affecting millions of daily decisions, regulatory gaps on AI agent liability, and potential systemic cascades if agents misinterpret market signals or fraud patterns.",
-    "jargon": [
-      {
-        "term": "AI agent",
-        "def": "Autonomous software that perceives state, makes decisions, and takes actions (here: initiate payments/trades) without waiting for human approval at each step."
-      }
-    ],
-    "source": {
-      "name": "CNBC · 2026-11-17",
-      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html"
     }
   },
   {
@@ -1062,6 +1060,20 @@
     }
   },
   {
+    "id": "2026-11-24-singapore-ai-gdp-boost",
+    "category": "frontier",
+    "jurisdiction": "APAC",
+    "severity": "low",
+    "published_at": "2026-11-24T00:37:00Z",
+    "headline": "Singapore raises GDP growth outlook to 6% on AI-driven expansion and infrastructure investment",
+    "plain_english": "Singapore's government lifted 2026 growth forecasts to ~6% citing AI sector momentum, data-center expansion, and regional hub positioning. Signals sustained APAC capital into AI infrastructure and fintech ecosystems.",
+    "why_it_matters": "BFSI players hedging Asia exposure should monitor Singapore's AI policy trajectory and enterprise talent migration. Regional fintech licensing and R&D incentives remain competitive.",
+    "source": {
+      "name": "Bloomberg · 2026-11-24",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaFpBRDNkTk81ZHpHaWxhQTJPb0Q2dEVONl9USmxFbl9uaDBsVEtrdkg1RFVUcTNSbWpuR3hSZVhKWHRDdzdaR09uYlN6djQ5SWh4OW1NRTNaZ25QS25IRHVGaWZXUzhSeS04SXlmbW1iNUVBakpsa0xIbnlhRGlPLWdMVEg0cWZFUG9JUFRNSUFQRVRkM0N1NXZ4LUtWRUM2cXNUTk1hVThCNTVSc2c"
+    }
+  },
+  {
     "id": "2026-11-23-research-frontier-models",
     "category": "frontier",
     "jurisdiction": "US",
@@ -1191,20 +1203,6 @@
     "source": {
       "name": "Wired · 2026-11-21",
       "url": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/"
-    }
-  },
-  {
-    "id": "2026-11-21-ai-deepfake-geopolitical",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-21T10:16:44Z",
-    "headline": "AI-generated deepfakes enter diplomatic theater; Putin-Xi handshake video exposed as synthetic",
-    "plain_english": "A widely circulated video purporting to show Vladimir Putin being snubbed by Xi Jinping was verified as AI-generated. The incident signals that deepfake detection is now a geopolitical forensics requirement, with implications for media verification in finance.",
-    "why_it_matters": "BFSI compliance and legal teams must now assume all video evidence (CEO calls, board approvals, custody proofs) requires synthetic-media verification. Audit trails and digital signatures become non-negotiable; impacts KYC, transaction dispute resolution, and regulatory reporting.",
-    "source": {
-      "name": "France 24 · 2026-11-21",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0hteWRlZzU5dkhTZXhoX3lpNXJ3bWpxQUZLRFpCdzVoaFFPeHpJWXVFTkhWWkllTmtYcnhlRGRQLTNQVW0wZ1FLTjJLT3BVeThlWXZhQ3VWdnJBZUpFZ3V3RU1hbzdNR1Rkc2N1aW1JaEJzVUZoNXJfMGxIU19yTnI2cHhiTkZmNFlmTlZtNmNtVUhRaERhQ0h6bG9oSWR3ZXhrRlk0RlVvWjJpNzZaLWFyS0htMjB6dEJoNlhsdnkzUVZmZlA1d1VKajdoUQ"
     }
   },
   {
@@ -1412,6 +1410,20 @@
     }
   },
   {
+    "id": "2026-11-24-nvidia-huang-reinstatement",
+    "category": "trending",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-24T02:20:44Z",
+    "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO after two-week absence",
+    "plain_english": "Nvidia's board recalled Huang as CEO and chairman just 12 days after his resignation over personal conduct, citing board consensus as in company's best interest. Market rallied sharply; Asian chip stocks hit price limits.",
+    "why_it_matters": "Leadership stability matters for BFSI AI roadmaps tied to Nvidia infrastructure. Signals founder authority can override board process; may reshape corporate governance expectations for chip/AI vendors.",
+    "source": {
+      "name": "CNBC · 2026-11-24",
+      "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html"
+    }
+  },
+  {
     "id": "2026-11-23-nvidia-huang-reinstatement",
     "category": "trending",
     "jurisdiction": "US",
@@ -1548,6 +1560,74 @@
     "source": {
       "name": "Reuters · 2026-11-16",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa3g3MVMxZ2lSN1ZpTmpaWkdYR25ZdDZ4M3BELXQ3ZC1PZDhtNTVjYmpQdHlJZUFtLWxiUkFLbXhUVHM0OHNScEUyTWFHUU5MMmZYb0EyVW51dXd1OWJFak1NbVFwazhlVzBIcHB3TENzRG1IZ2FvVFlpS0xubFBadXlPYw"
+    }
+  },
+  {
+    "id": "2026-11-20-regulation-eu-chip-funding",
+    "category": "regulation",
+    "jurisdiction": "EU",
+    "severity": "med",
+    "published_at": "2026-11-20T12:52:15.000Z",
+    "headline": "ECB chief Lagarde: EU public funds should absorb first losses on chip, data-center infrastructure",
+    "plain_english": "European Central Bank President Christine Lagarde called for EU-backed funds to take initial losses on major AI infrastructure projects (chip plants, data centers) to de-risk private investment and boost European AI independence.",
+    "why_it_matters": "ECB endorsement of risk-sharing model signals EU willingness to co-invest in critical AI infrastructure; enables BFSI firms to partner in EU-backed compute capacity, reducing US dependency.",
+    "source": {
+      "name": "CNBC · 2026-11-20",
+      "url": "https://www.cnbc.com/2026/11/20/lagarde-eu-data-center-funding.html"
+    }
+  },
+  {
+    "id": "2026-11-18-scotiabank-ai-agents-deployment",
+    "category": "deployment",
+    "jurisdiction": "APAC",
+    "severity": "med",
+    "published_at": "2026-11-18T12:07:46Z",
+    "headline": "Scotiabank deploys AI agents to accelerate commercial credit underwriting",
+    "plain_english": "Scotiabank launched AI agents in production to speed up commercial credit review cycles. The agents automate document analysis and risk assessment, reducing manual underwriting time.",
+    "why_it_matters": "Demonstrates agentic AI moving from pilot to core lending ops at a major Canadian bank; signals that peer institutions must expect credit decisioning to become AI-led within 12 months.",
+    "jargon": [
+      {
+        "term": "AI agents",
+        "def": "Autonomous systems that perceive context, make decisions, and take actions (like document review or data retrieval) without per-step human intervention."
+      }
+    ],
+    "source": {
+      "name": "Fintech.ca · 2026-11-18",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVUxkZjhvTFUwQUZIVEllMjdEcy1ZUF9HWWNfUWFaQUJQdGlKTHpfWXhhWkp4eTFIVG1aWHlBOTY2MnVLRUhTUF9lQ0cySjBqNlp4RExzREhGTE9zdnBpNVpVb3I5QUxfb29aVG85WkJ6NFIzcHIwRDc4X2RCSEtLSjl3OHo4NGEydDJxNEJhTVl1dGE3a24wcnFEb0NlS3BtUzVPYTF3"
+    }
+  },
+  {
+    "id": "2026-11-18-jpmorgan-ai-agents-transactions",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-17T23:30:13Z",
+    "headline": "JPMorgan builds AI agents to execute financial transactions without human review",
+    "plain_english": "JPMorgan and Hyundai Card are developing autonomous AI agents that can initiate and complete financial transactions independently, moving beyond human-in-the-loop workflows. This marks an escalation from monitoring/advisory roles to full transaction authority.",
+    "why_it_matters": "Fully autonomous transaction execution exposes BFSI to new operational risk vectors: model drift affecting millions of daily decisions, regulatory gaps on AI agent liability, and potential systemic cascades if agents misinterpret market signals or fraud patterns.",
+    "jargon": [
+      {
+        "term": "AI agent",
+        "def": "Autonomous software that perceives state, makes decisions, and takes actions (here: initiate payments/trades) without waiting for human approval at each step."
+      }
+    ],
+    "source": {
+      "name": "CNBC · 2026-11-17",
+      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html"
+    }
+  },
+  {
+    "id": "2026-11-21-ai-deepfake-geopolitical",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-21T10:16:44Z",
+    "headline": "AI-generated deepfakes enter diplomatic theater; Putin-Xi handshake video exposed as synthetic",
+    "plain_english": "A widely circulated video purporting to show Vladimir Putin being snubbed by Xi Jinping was verified as AI-generated. The incident signals that deepfake detection is now a geopolitical forensics requirement, with implications for media verification in finance.",
+    "why_it_matters": "BFSI compliance and legal teams must now assume all video evidence (CEO calls, board approvals, custody proofs) requires synthetic-media verification. Audit trails and digital signatures become non-negotiable; impacts KYC, transaction dispute resolution, and regulatory reporting.",
+    "source": {
+      "name": "France 24 · 2026-11-21",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0hteWRlZzU5dkhTZXhoX3lpNXJ3bWpxQUZLRFpCdzVoaFFPeHpJWXVFTkhWWkllTmtYcnhlRGRQLTNQVW0wZ1FLTjJLT3BVeThlWXZhQ3VWdnJBZUpFZ3V3RU1hbzdNR1Rkc2N1aW1JaEJzVUZoNXJfMGxIU19yTnI2cHhiTkZmNFlmTlZtNmNtVUhRaERhQ0h6bG9oSWR3ZXhrRlk0RlVvWjJpNzZaLWFyS0htMjB6dEJoNlhsdnkzUVZmZlA1d1VKajdoUQ"
     }
   },
   {
@@ -8322,20 +8402,6 @@
     }
   },
   {
-    "id": "2026-10-24-ai-foundation-breakthroughs",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-24T17:43:39.000Z",
-    "headline": "Frontier AI labs advance reasoning and multimodal capabilities; cost and latency still under pressure",
-    "plain_english": "Latest announcements from major AI research groups show incremental gains in reasoning depth and cross-modal understanding, but inference costs and real-time constraints remain bottlenecks for production finance workflows.",
-    "why_it_matters": "Cost-per-inference plateau may freeze AI adoption in margin-sensitive BFSI use cases (e.g., high-volume compliance screening); only narrow, high-value workflows justify current economics.",
-    "source": {
-      "name": "The Economist · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcUt4SXY4ckZtcDFWNEdIX1NiNWtyOEhLbURsazFQaEphcU55YlNaMWFQb2dpb2xFTklwY1d3TDlWSXpOWU90N2QtaHQ5RHB5UGVXTVY5S21RcFE1TzNHVjhZSGFCa0FJdDMyOEtBTXlmQ0ZjZzhFdms1aHJfb2NTa2pfaGFJT0Y5M0M1OFhOd1RRMnNVVmc0SGZYdFhIMldn"
-    }
-  },
-  {
     "id": "2026-10-27-ecb-bank-credit-tightening-regulation",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -8412,20 +8478,6 @@
     }
   },
   {
-    "id": "2026-10-24-citi-philippine-ai-talent",
-    "category": "shift",
-    "jurisdiction": "APAC",
-    "severity": "med",
-    "published_at": "2026-10-24T18:00:00.000Z",
-    "headline": "Citi expands AI talent pipeline in Philippines as cost and skill arbitrage accelerates",
-    "plain_english": "Citigroup is investing in Philippine-based talent for AI and data engineering roles, signaling a broader megabank strategy to build offshore AI centers. This moves core AI/ML work outside traditional financial hubs.",
-    "why_it_matters": "When tier-1 banks move AI engineering offshore, wage compression and talent competition intensify; startups and mid-market firms will follow, reshaping global fintech labor markets.",
-    "source": {
-      "name": "Inquirer.net · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONGRNd21MWU5BOWxvblpycnIybm8wdWhwSmxsOExMRUt1SHZYdi1NNDZUOUZzRG9BRUtJR1hfZ0lYd3NUcXpWbjAxSFZkT0xOQW9wc2RmVnFiaVNuTkxxbVQ2ZWczV1FJU3pLYWgyQ3o4V0lXcEF1RkJVUU9UUkFETEFRbFZyT0xtVTltUEk5VC1UUHhQYVlVRkxR"
-    }
-  },
-  {
     "id": "2026-10-26-fca-defense-sme-banking-access",
     "category": "regulation",
     "jurisdiction": "UK",
@@ -8465,34 +8517,6 @@
     "source": {
       "name": "بوابة التكنولوجيا المالية · 2026-10-25",
       "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9pM3o1MmxOLUZ5M1lCaGkzYl80NC05ZjVmSWJfak4wSnN6aUpQeGh4Ymx6RU96OGtMRkp6N1BuYjQ1RTc0"
-    }
-  },
-  {
-    "id": "2026-10-24-mastercard-ai-tokenization",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-24T22:00:00.000Z",
-    "headline": "Mastercard deploys AI and tokenization to strengthen digital payment security",
-    "plain_english": "Mastercard has rolled out AI-powered fraud detection and tokenization (replacing sensitive card data with secure tokens) to reduce payment fraud and enhance digital transaction safety across its network.",
-    "why_it_matters": "Tokenization + AI detection sets new baseline for card-network security posture; competitors will face pressure to match capability to retain enterprise customers and reduce breach liability.",
-    "jargon": [
-      {
-        "term": "Tokenization",
-        "def": "Replacing sensitive payment card data with unique placeholder tokens; card details never exposed in transaction, reducing fraud surface."
-      },
-      {
-        "term": "AI fraud detection",
-        "def": "Machine-learning models that flag anomalous transaction patterns in real-time; learns from historical fraud to improve accuracy."
-      }
-    ],
-    "scale": {
-      "metric": "customers",
-      "value": "Millions (global merchant network)"
-    },
-    "source": {
-      "name": "Capital Newspaper · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRzJIa0R1bU1ncnIwNmlBOXZpQXFGSzJnWVRsZ3Zxb3VwM0pjRjNwZ0hUVWJ1azN4Vi1Icnp1TkFFZHFCTXB6aUx5T2U3TG9GdDJWd20wbXFlTFV1Y3N0Ynl2UlBWLTR5eV9QeUJNOHRMcUx5VldPUTJaR09Zb1F4c3lYR1RWdHQ3MjViWV9CYnNwNHp3NEtiWGVTQnFRWjdoejlXNFhiWUpBRnhYMUgyVUg1bw"
     }
   },
   {
@@ -8630,20 +8654,6 @@
     }
   },
   {
-    "id": "2026-10-24-israeli-central-bank-crypto-sanctions",
-    "category": "regulation",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-24T19:19:48.000Z",
-    "headline": "Bank of Israel rejects government plan to use crypto to circumvent sanctions",
-    "plain_english": "Israel's central bank formally rejected a Netanyahu administration proposal to use cryptocurrencies to evade international sanctions. Signals regulatory hardline on illicit finance despite political pressure.",
-    "why_it_matters": "Central banks worldwide now proactively block crypto-as-sanctions-evasion schemes; any fintech or bank facilitating such transfers faces enforcement risk from multiple jurisdictions simultaneously.",
-    "source": {
-      "name": "Financial Times · 2026-10-24",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOUo3Rnllc2dMYUJwa2U1anpZUEVrbTZzNy1vWU5mZ001ZVJtUGJ3Rzl6Y1NodkZhNGNmYUxEQ3g1dU10WTJZNVVOOWRuU0gySlIxVm9qQ1pYZ2RfMEt0WHRIbnR6NWhrVENjRlhvRjlzZkxLQUoyOFVpRzFXcTItdmNtNWQ"
-    }
-  },
-  {
     "id": "2026-10-26-western-digital-ai-storage-demand",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8687,20 +8697,6 @@
     "source": {
       "name": "Bloomberg · 2026-10-25",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR1FnYXFIOUpyU1VUdzNDazE4cFE2VDFyNU5DS3h0R0VSR2xHa0k0V2dHZ0hKbTZ6dFo3X1hUSW96S2dRRE5GODJUSUlCQ0dHUTVpSUJ0ZExNM1FBMVFld0JmSTBDMkpfSG5IOXVlS0hPX1h6OHpRT0xhbzNweEVxVDBLZGRreHVCc0VPZjVEQjN5dEIxQ2x4TGhfN2o3UHA3dVZrTXhRNVhsV216MGxNSnZWUGdNU1JiQjMxbQ"
-    }
-  },
-  {
-    "id": "2026-10-24-techcrunch-ai-graveyard",
-    "category": "insight",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-24T19:00:00.000Z",
-    "headline": "AI product graveyard grows: Siri, OpenAI super app among high-profile shutdowns",
-    "plain_english": "TechCrunch documents failed AI projects from Apple (Siri overhaul), OpenAI (super app pivot), and others—a pattern emerging as generalist AI hype gives way to execution reality and capital constraints.",
-    "why_it_matters": "Consolidation signal: startups and experiments in foundation-model applications are failing; survivors will be those with named enterprise customers and clear unit economics, not VC-fueled feature labs.",
-    "source": {
-      "name": "TechCrunch · 2026-10-24",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
     }
   }
 ]
