@@ -1,5 +1,62 @@
 [
   {
+    "id": "2026-11-26-boe-ai-financing-stability",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "high",
+    "published_at": "2026-11-26T11:37:00Z",
+    "headline": "Bank of England warns AI financing scale poses financial stability risk",
+    "plain_english": "The BoE flagged that the rapid expansion of AI infrastructure lending—covering data centers, chips, compute—has grown large and varied enough to threaten systemic stability. Banks face new stress-test and disclosure requirements around AI-dependent counterparties.",
+    "why_it_matters": "BFSI risk teams must now model AI lending concentration risk alongside traditional sector exposures; loan books tied to GPU supply chains, cloud capex, and GPU scarcity are now supervisory watch-items.",
+    "jargon": [
+      {
+        "term": "Systemic risk",
+        "def": "Risk that failure of one institution or asset class cascades across the financial system, triggering wider crisis."
+      }
+    ],
+    "source": {
+      "name": "WSJ · 2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOHotR2FRM0dVS0xOVjFsRDRqMWE2SVdPaTEyRkFEWmlIaG0zZ21HZ2hKS1JPUU1uWDE3SUlmSjE4LThhbEU1dDk4X2dqUDJMTElpakdmVnZZSUlWRlJjdVVYQXM2bUJrdm54S3o1ZnBqSnVNWXp2aXBvLXhuWWJfQ1JoZzhnNjZJSkhRdS0tWHR0a1E4V1pZOEY5VFVGaFBiTkhZQzJIZ2lCTk1XWDRzYzU3cXBnc3Z0"
+    },
+    "effective_date": "2026-11-26"
+  },
+  {
+    "id": "2026-11-26-boe-capital-cut-uk-lenders",
+    "category": "regulation",
+    "jurisdiction": "UK",
+    "severity": "med",
+    "published_at": "2026-11-26T11:09:58Z",
+    "headline": "Bank of England cuts capital requirements for UK-focused lenders by 30 basis points",
+    "plain_english": "The BoE reduced the countercyclical capital buffer for domestic UK banks by 0.30%, easing balance-sheet constraints on mortgage and SME lending. The move aims to unlock capital for real economy while monitoring AI lending tail risks.",
+    "why_it_matters": "UK retail and commercial banks gain ~£2–5bn in lending capacity; competitive pressure on deposit rates and mortgage pricing likely to intensify; risk officers should stress-test for lower NIMs.",
+    "jargon": [
+      {
+        "term": "Countercyclical capital buffer",
+        "def": "Extra capital banks must hold during credit booms to build a reserve for downturns; regulators raise/lower it to dampen lending cycles."
+      }
+    ],
+    "source": {
+      "name": "Financial Times · 2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcDJkbmhUX0JFZ1F3TTYtR2VqanBRckRPRzNsaFgtOEhTVDdDblJoRnNlSW5wSkwzREFvU0FwMkIyd3JObThLYlh2bmdZNUo2X1VnTUFIWUZsSllPWEs2ZUQ5bmxmZzM0OXpYT21vZHV5UmkxeWpkUG9jdTEtWFo5c081cnU"
+    },
+    "effective_date": "2026-11-26"
+  },
+  {
+    "id": "2026-11-26-zodia-custody-breach",
+    "category": "regulation",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-26T11:55:00Z",
+    "headline": "Standard Chartered's Zodia Custody hit by cyber attack; customer and employee data compromised",
+    "plain_english": "Zodia Custody, the crypto custody arm of Standard Chartered, suffered a data breach exposing customer and employee personal and financial information. The incident is under investigation; details on scope and customer notification timeline remain limited.",
+    "why_it_matters": "BFSI custody operators and crypto-asset service providers face heightened regulatory scrutiny on third-party cyber controls; expect FCA/OCC requests for SOC 2 Type II audits and incident-response playbook reviews.",
+    "source": {
+      "name": "Reuters (via Finextra) · 2026-11-26",
+      "url": "https://www.finextra.com/newsarticle/48820/client-data-leaked-in-zodia-custody-security-breach---reuters"
+    },
+    "effective_date": "2026-11-26"
+  },
+  {
     "id": "2026-11-26-regulation-occ-bsa-disruption",
     "category": "regulation",
     "jurisdiction": "US",
@@ -111,45 +168,17 @@
     }
   },
   {
-    "id": "2026-11-24-megaspeed-trade-blacklist",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-24T01:56:28Z",
-    "headline": "U.S. adds Megaspeed and six companies to export-control blacklist over chip diversion concerns",
-    "plain_english": "Commerce Department blacklisted Megaspeed and six other firms citing risks of advanced computing products being diverted to restricted end-users. Enforcement tightens compliance for vendors serving financial AI infrastructure.",
-    "why_it_matters": "BFSI vendors and cloud providers must audit supply chains and third-party compute access. Accelerates shift toward domestic/Allied chip sourcing for sensitive workloads.",
-    "source": {
-      "name": "CNBC · 2026-11-24",
-      "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
-    }
-  },
-  {
-    "id": "2026-11-23-governors-ai-regulation-states",
-    "category": "regulation",
-    "jurisdiction": "US",
+    "id": "2026-11-26-chariot-indiaai-models",
+    "category": "deployment",
+    "jurisdiction": "IN",
     "severity": "med",
-    "published_at": "2026-11-23T01:15:51Z",
-    "headline": "US governors seek federal-state framework for AI regulation",
-    "plain_english": "The National Governors Association unveiled principles to ensure states maintain a voice in AI regulation as Congress prepares new federal rules, aiming for coordinated rather than fragmented oversight.",
-    "why_it_matters": "Patchwork state-level AI rules could fragment compliance for national BFSI firms; federal-state coordination may reduce dual-mandate burden and accelerate rule clarity.",
+    "published_at": "2026-11-26T12:59:41Z",
+    "headline": "Chariot launches IndiaAI-backed language and speech models for Indian market",
+    "plain_english": "Chariot AI released open-source language and speech models optimized for Indian languages, backed by India's government AI initiative. Models target regional fintech, government, and telecom use-cases where English-only models underperform.",
+    "why_it_matters": "Indian BFSI (banks, insurers, NBFCs) can now deploy local-language customer service, KYC, and transaction-risk models without cloud-API dependency; reduces latency and regulatory friction for RBI-licensed entities.",
     "source": {
-      "name": "PYMNTS · 2026-11-23",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governors-want-states-to-have-a-voice-in-regulating-ai/"
-    }
-  },
-  {
-    "id": "2026-11-23-outage-warning-dnc",
-    "category": "regulation",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-23T00:24:51Z",
-    "headline": "US intelligence director warns of continued infrastructure outages amid system updates",
-    "plain_english": "Director of National Intelligence Jay Clayton warned on CNN that more outages like recent Microsoft and aviation incidents are likely as companies and government patch systems, signaling ongoing resilience risks.",
-    "why_it_matters": "BFSI resilience and business-continuity plans must assume higher outage frequency; federal and enterprise patch cycles create cascading risk windows that regulators will scrutinize more closely.",
-    "source": {
-      "name": "PYMNTS · 2026-11-23",
-      "url": "https://www.pymnts.com/cybersecurity/2026/intelligence-director-warns-us-of-more-outages/"
+      "name": "varindia (via AI Trending Now) · 2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSEZqMkhxYWdxR1JuZU1oM0x1Z29LdGZYazAzWnNuY2VPZ0NXRDNCc1J4TUY4bWdYN2xVQ1VoM3I1bTBGbVFLRk04dlRYTHdHSzFrMXZ5OG5rQ0J4djVUTWpaTWpWQ1VhdzlYNzVETl9XQmYtVTJnNXRpZ215M0Y2M1lVY1cyaXBPQ1psVzh2Yk5rUQ"
     }
   },
   {
@@ -302,20 +331,6 @@
     "source": {
       "name": "The Federal · 2026-11-23",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNN1AxanpDWHNadVJPdlFuTGFCY0tXajB5S2RzUXYwU0UyR1VnTzcyUGQ1OEJjdm5WSnlYVFk4al84ZEstZDVhbHRGZURkNVVQZW5zVWtNWWFHLWJUdWR0Q21YdG9fcUNWWHlkeTRmRnlyTHBoa0I5QndrRUpEX21wclZnNlJ6Y2wzRkhuOWpzUXNNc3VTOHA2UnptOVE5bmcyaTBoY3J4SmdUS3hiS0MtREV5Y21ESTNR"
-    }
-  },
-  {
-    "id": "2026-11-22-wells-fargo-ai-agents-risk",
-    "category": "deployment",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-11-22T13:45:02.000Z",
-    "headline": "Wells Fargo restricts third-party AI agents, warns customers of liability",
-    "plain_english": "Wells Fargo has told customers that AI agents from outside vendors operate \"at your own risk,\" joining other major U.S. banks in closing doors to unsanctioned bot integrations. Major banks are tightening guardrails on external AI use.",
-    "why_it_matters": "Banks are retreating from open AI-agent ecosystems due to compliance, operational risk, and liability concerns. This signals a shift toward in-house, vetted AI only—fragmenting the third-party fintech agent market.",
-    "source": {
-      "name": "MLQ.ai · 2026-11-22",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQam5ucVF1THlnT044QldFQmhiOVlhdkdDc1pDMEE4RHFXLUNjUG9uZG1uM2lWdHhDb01rZDl1b1JnZGVmVnBQVTMtamhwVkozMVY2VEZXUEdDa2pNczlKZDNTN0dRMUcyQ1NSQU55M0lKMUNPSTltTUF3X05fQUlobTh6R0Z6WDdfYXIxeFhUVzBhTFQzZmlmLWZiaXJCOEJtY180T3dmbkd3VjlGX0VYazRXQ2hzQ19UOVlfaXNvM2tCdFlRcGMzMHkzZw"
     }
   },
   {
@@ -481,6 +496,20 @@
     }
   },
   {
+    "id": "2026-11-26-1password-breach",
+    "category": "shift",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-26T11:52:18Z",
+    "headline": "1Password confirms breach; enterprise password-manager trust erosion accelerates",
+    "plain_english": "1Password disclosed a security incident affecting vault data. The breach underscores ongoing risk in centralized credential management and forces BFSI and fintech firms to re-evaluate key-management architecture, potentially shifting toward hardware security modules and decentralized auth.",
+    "why_it_matters": "Banks and payment processors using 1Password for API secrets, OAuth tokens, or admin access must audit vault logs and rotate credentials; this event may catalyze adoption of privileged-access workstations and passkey-based auth in banking.",
+    "source": {
+      "name": "Forbes · 2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdHhXaWpteUE2MXBQN2Zhb2lGLUcyMDB0NnFYZWJYNnpDVEpyR24zcDY4VThMNW5STDJTNzZUYkZ0Qk9GeXYwVzFSbXljRGU2eTJtZVFjV3NXTnhkMkM2el9vUF9Bd3pOVWpZMm9ZMmxhTFVmMkZkUl9sMUdkT1VZeERaOXF3bkxfREl4MU1PcFgzVF9HRDVBclBYZk9aX2Znam9LeTRnc3Fsanc"
+    }
+  },
+  {
     "id": "2026-11-26-shift-uk-ai-champions-starling-lloyds",
     "category": "shift",
     "jurisdiction": "UK",
@@ -632,20 +661,6 @@
     "source": {
       "name": "WSJ · 2026-11-22",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXJCQzRCQ1FLaXI2THdlRktBd2owbk9uZFNEc3RRWXdzQURnbTNqTjZfd2l5bExBT1FsWURWS2pSYS11ZS1EUm5hNXhnSkFEeEh2cHFBSTZPWnNSTzJDX1Z3aE5LTVFtUzFjZ2Q2QV9PanE1VVQtcjlxbHVQQjdQNzczRENYUlRGaVVvTXpELXp2TWhaVXVSajVSamtCZGJsUnA0TjVB"
-    }
-  },
-  {
-    "id": "2026-11-22-us-port-cyber-attacks",
-    "category": "shift",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-11-22T12:00:06.000Z",
-    "headline": "U.S. ports face widespread cyber attacks targeting critical trade infrastructure",
-    "plain_english": "Hackers are launching a coordinated onslaught on U.S. port systems, compromising vital logistics and trade route operations. Port authorities are struggling to defend against sustained, sophisticated cyber incursions.",
-    "why_it_matters": "Port cyberattacks disrupt trade finance workflows (letters of credit, shipment data, payment settlement). Banks and financial institutions must harden supply-chain data interfaces and contingency clearing protocols.",
-    "source": {
-      "name": "Financial Times · 2026-11-22",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU"
     }
   },
   {
@@ -1073,6 +1088,20 @@
     }
   },
   {
+    "id": "2026-11-26-openai-reasoning-models",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "high",
+    "published_at": "2026-11-26T12:45:29Z",
+    "headline": "AI-video generation and reasoning models signal shift to practical multimodal reasoning at scale",
+    "plain_english": "Recent benchmarks (AMD llamacpp, deepfake video synthesis) show frontier models handling complex visual reasoning and temporal coherence at speed; practical applications moving beyond static text to video-grounded inference and seismic-event mapping.",
+    "why_it_matters": "BFSI automation use-cases expand: compliance video review, synthetic KYC document flagging, and anomaly detection in transaction feeds now architecturally feasible at sub-second latency.",
+    "source": {
+      "name": "Howl.Link · 2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9nbks1TE9HTHdSUWxzb3hjaXpIa0xyTGVqdkVlYUxqTktpWU5vdWxNbkVGVjJsZENPQlZJ"
+    }
+  },
+  {
     "id": "2026-11-26-frontier-nvidia-sp-credit-watch",
     "category": "frontier",
     "jurisdiction": "US",
@@ -1196,20 +1225,6 @@
     "source": {
       "name": "WSJ · 2026-11-22",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbjl2b0tzT1ROT2plV1p5RHhQd3hXOEJKRFhOZ1ItZExOQV9oVGkzTU9tdEEyTXhjNHRKQVExRTNRdEtlY24zUFhmS0h0c21FUVVrVVh0NGF2SXFmdm1wcmVRLUlCcG5CMGRIZklSdVBkVElkS3lwRF9LaGg4YzU5b0dsZXlveWxSNzhGYzJlZmRSRkhvUWZRTHB3"
-    }
-  },
-  {
-    "id": "2026-11-21-signal-ai-screenshot-defense",
-    "category": "frontier",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-11-21T21:37:10Z",
-    "headline": "Signal restricts mobile screenshots to counter AI surveillance threat",
-    "plain_english": "Encrypted messaging app Signal disabled screenshot capability on Android and iOS, citing AI-powered surveillance as an existential risk. Move signals privacy-first stance against machine-learning-enabled content extraction.",
-    "why_it_matters": "BFSI sector increasingly uses encrypted comms (Signal, Wire) for sensitive trading and risk management. Unilateral app restrictions affect secure workflows; raises questions about balancing security UX with operational needs.",
-    "source": {
-      "name": "TechCrunch · 2026-11-21",
-      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
     }
   },
   {
@@ -1567,6 +1582,90 @@
     "source": {
       "name": "Fortune · 2026-11-18",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTFhsM1pGRkh5SnVVaXRnVDVvNV83bTFrVXFHVlpFR2VRcV9nT0ZfNXhEQ1dFblE0UFpGNTI5NVgxWTRMNVlWUlRpenRmNEZzTFFTcTZNNjRZWFlYN0xheXZEVk1NT09oMDNSRTZ1TGF5TkhNLWEwMERQVzZJUVFOc0lONVNpUDQ4V2NOQVhQeXFmRzBSM1BjaUlCRnRZbjVGeHdBdjhWYWVDSHppc2x0Tk1qVUFJUjVYX0E"
+    }
+  },
+  {
+    "id": "2026-11-24-megaspeed-trade-blacklist",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-24T01:56:28Z",
+    "headline": "U.S. adds Megaspeed and six companies to export-control blacklist over chip diversion concerns",
+    "plain_english": "Commerce Department blacklisted Megaspeed and six other firms citing risks of advanced computing products being diverted to restricted end-users. Enforcement tightens compliance for vendors serving financial AI infrastructure.",
+    "why_it_matters": "BFSI vendors and cloud providers must audit supply chains and third-party compute access. Accelerates shift toward domestic/Allied chip sourcing for sensitive workloads.",
+    "source": {
+      "name": "CNBC · 2026-11-24",
+      "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+    }
+  },
+  {
+    "id": "2026-11-23-governors-ai-regulation-states",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-23T01:15:51Z",
+    "headline": "US governors seek federal-state framework for AI regulation",
+    "plain_english": "The National Governors Association unveiled principles to ensure states maintain a voice in AI regulation as Congress prepares new federal rules, aiming for coordinated rather than fragmented oversight.",
+    "why_it_matters": "Patchwork state-level AI rules could fragment compliance for national BFSI firms; federal-state coordination may reduce dual-mandate burden and accelerate rule clarity.",
+    "source": {
+      "name": "PYMNTS · 2026-11-23",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governors-want-states-to-have-a-voice-in-regulating-ai/"
+    }
+  },
+  {
+    "id": "2026-11-23-outage-warning-dnc",
+    "category": "regulation",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-23T00:24:51Z",
+    "headline": "US intelligence director warns of continued infrastructure outages amid system updates",
+    "plain_english": "Director of National Intelligence Jay Clayton warned on CNN that more outages like recent Microsoft and aviation incidents are likely as companies and government patch systems, signaling ongoing resilience risks.",
+    "why_it_matters": "BFSI resilience and business-continuity plans must assume higher outage frequency; federal and enterprise patch cycles create cascading risk windows that regulators will scrutinize more closely.",
+    "source": {
+      "name": "PYMNTS · 2026-11-23",
+      "url": "https://www.pymnts.com/cybersecurity/2026/intelligence-director-warns-us-of-more-outages/"
+    }
+  },
+  {
+    "id": "2026-11-22-wells-fargo-ai-agents-risk",
+    "category": "deployment",
+    "jurisdiction": "US",
+    "severity": "med",
+    "published_at": "2026-11-22T13:45:02.000Z",
+    "headline": "Wells Fargo restricts third-party AI agents, warns customers of liability",
+    "plain_english": "Wells Fargo has told customers that AI agents from outside vendors operate \"at your own risk,\" joining other major U.S. banks in closing doors to unsanctioned bot integrations. Major banks are tightening guardrails on external AI use.",
+    "why_it_matters": "Banks are retreating from open AI-agent ecosystems due to compliance, operational risk, and liability concerns. This signals a shift toward in-house, vetted AI only—fragmenting the third-party fintech agent market.",
+    "source": {
+      "name": "MLQ.ai · 2026-11-22",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQam5ucVF1THlnT044QldFQmhiOVlhdkdDc1pDMEE4RHFXLUNjUG9uZG1uM2lWdHhDb01rZDl1b1JnZGVmVnBQVTMtamhwVkozMVY2VEZXUEdDa2pNczlKZDNTN0dRMUcyQ1NSQU55M0lKMUNPSTltTUF3X05fQUlobTh6R0Z6WDdfYXIxeFhUVzBhTFQzZmlmLWZiaXJCOEJtY180T3dmbkd3VjlGX0VYazRXQ2hzQ19UOVlfaXNvM2tCdFlRcGMzMHkzZw"
+    }
+  },
+  {
+    "id": "2026-11-22-us-port-cyber-attacks",
+    "category": "shift",
+    "jurisdiction": "US",
+    "severity": "high",
+    "published_at": "2026-11-22T12:00:06.000Z",
+    "headline": "U.S. ports face widespread cyber attacks targeting critical trade infrastructure",
+    "plain_english": "Hackers are launching a coordinated onslaught on U.S. port systems, compromising vital logistics and trade route operations. Port authorities are struggling to defend against sustained, sophisticated cyber incursions.",
+    "why_it_matters": "Port cyberattacks disrupt trade finance workflows (letters of credit, shipment data, payment settlement). Banks and financial institutions must harden supply-chain data interfaces and contingency clearing protocols.",
+    "source": {
+      "name": "Financial Times · 2026-11-22",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU"
+    }
+  },
+  {
+    "id": "2026-11-21-signal-ai-screenshot-defense",
+    "category": "frontier",
+    "jurisdiction": "Global",
+    "severity": "med",
+    "published_at": "2026-11-21T21:37:10Z",
+    "headline": "Signal restricts mobile screenshots to counter AI surveillance threat",
+    "plain_english": "Encrypted messaging app Signal disabled screenshot capability on Android and iOS, citing AI-powered surveillance as an existential risk. Move signals privacy-first stance against machine-learning-enabled content extraction.",
+    "why_it_matters": "BFSI sector increasingly uses encrypted comms (Signal, Wire) for sensitive trading and risk management. Unilateral app restrictions affect secure workflows; raises questions about balancing security UX with operational needs.",
+    "source": {
+      "name": "TechCrunch · 2026-11-21",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
     }
   },
   {
@@ -4704,22 +4803,6 @@
     }
   },
   {
-    "id": "2026-10-27-google-deepmind-frontier-research",
-    "category": "research",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-27T11:00:00Z",
-    "headline": "Frontier labs accelerate multimodal reasoning benchmarks for finance-grade AI",
-    "plain_english": "Leading frontier AI labs (Google DeepMind, Anthropic, OpenAI) are publishing multimodal reasoning benchmarks that test LLMs on financial documents, charts, and structured data simultaneously. Latest evals show 15–25% accuracy gains on FINBENCH-style tasks, narrowing gap to human analyst performance.",
-    "benchmark_name": "FINBENCH (estimated)",
-    "delta_pts": 18,
-    "why_it_matters": "BFSI can now use published benchmarks to measure LLM fitness for analyst workflows (equity research, credit analysis, risk reporting); narrowing accuracy gaps mean production deployments for junior analyst automation are 6–12 months closer.",
-    "source": {
-      "name": "Frontier AI Labs · 2026-10-27",
-      "url": "https://deepmind.google.com"
-    }
-  },
-  {
     "id": "2026-11-10-banks-rein-ai-agent-costs",
     "category": "insight",
     "jurisdiction": "Global",
@@ -5121,30 +5204,6 @@
     "source": {
       "name": "CNBC · 2026-11-09",
       "url": "https://www.cnbc.com/2026/11/09/anthropic-ipo-ai-trade-jim-cramer.html"
-    }
-  },
-  {
-    "id": "2026-10-27-rag-explainer-learner",
-    "category": "learner",
-    "jurisdiction": "Global",
-    "severity": "low",
-    "published_at": "2026-10-27T11:00:00Z",
-    "headline": "What is Retrieval-Augmented Generation (RAG)? Why it matters for BFSI compliance.",
-    "plain_english": "RAG is a technique that feeds an LLM external documents (e.g., regulatory filings, trading records, customer policies) before answering a question. Instead of relying solely on training data, the model retrieves relevant facts first, then synthesizes an answer. This reduces hallucinations and ensures answers cite live, auditable sources—critical for compliance and audit trails.",
-    "why_it_matters": "BFSI compliance teams can deploy RAG to automate policy interpretation, customer inquiry resolution, and regulatory response without risking hallucinated advice; RAG is the difference between 'black box LLM' and 'auditable AI system'.",
-    "jargon": [
-      {
-        "term": "Retrieval-Augmented Generation",
-        "def": "LLM technique that fetches relevant documents/data before answering, grounding responses in factual sources rather than learned patterns alone."
-      },
-      {
-        "term": "Hallucination",
-        "def": "LLM fabricating plausible-sounding but false information when it lacks training data or retrievals to answer accurately."
-      }
-    ],
-    "source": {
-      "name": "AITechHive Editorial · 2026-10-27",
-      "url": "https://aitechhive.com"
     }
   },
   {
@@ -7051,26 +7110,6 @@
     }
   },
   {
-    "id": "2026-10-27-ai-agents-mainstream-trending",
-    "category": "trending",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-27T09:30:00Z",
-    "headline": "AI agents move mainstream; early benchmarks show Claude Duet leading task completion",
-    "plain_english": "Wired tested six major AI agents (including Meta Muse and Anthropic Claude Duet) on real-world task execution. Claude Duet ranked highest, signaling that agent reliability benchmarking is now production-critical for enterprise BFSI use cases like document review, KYC, and trade settlement.",
-    "why_it_matters": "Multi-agent orchestration and inter-agent communication now measurable and comparable; BFSI can begin evaluating agent suites for mission-critical back-office automation, but vendor lock-in risk and cross-agent hallucination remain unresolved.",
-    "jargon": [
-      {
-        "term": "AI Agent",
-        "def": "LLM-powered system that perceives, plans, and executes multi-step tasks autonomously, often with access to tools (APIs, databases, search)."
-      }
-    ],
-    "source": {
-      "name": "Wired · 2026-10-27",
-      "url": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/"
-    }
-  },
-  {
     "id": "2026-11-02-ecb-supervision-rates",
     "category": "regulation",
     "jurisdiction": "EU",
@@ -7688,21 +7727,6 @@
     }
   },
   {
-    "id": "2026-10-27-nvidia-simplismart-inference-vendor",
-    "category": "vendor",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-27T11:00:00Z",
-    "headline": "Nvidia backs Indian startup optimizing AI model inference on fewer GPUs",
-    "plain_english": "Simplismart, backed by Nvidia, helps enterprises run large language models with reduced GPU footprint. The startup claims 14x annualized revenue growth in six months, with US revenue exceeding 50%, signaling strong enterprise demand for inference cost optimization.",
-    "why_it_matters": "As BFSI deploys LLMs at scale, inference cost (not training) dominates operating spend; vendors reducing GPU per inference by 30–50% unlock profitability for compliance, fraud, and trading use cases in cost-sensitive verticals.",
-    "amount": "Undisclosed",
-    "source": {
-      "name": "TechCrunch · 2026-10-27",
-      "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
-    }
-  },
-  {
     "id": "2026-10-29-shift-tokenized-assets-stella",
     "category": "shift",
     "jurisdiction": "Global",
@@ -8032,26 +8056,6 @@
     }
   },
   {
-    "id": "2026-10-27-agentic-ai-payments-shift",
-    "category": "shift",
-    "jurisdiction": "Global",
-    "severity": "high",
-    "published_at": "2026-10-27T11:30:00Z",
-    "headline": "Agentic AI in payments hits permission wall at Money20/20",
-    "plain_english": "Money20/20 USA revealed that while AI agents can autonomously execute purchase decisions, the industry still lacks clear consent models and regulatory permission frameworks for agent-initiated transactions. This is blocking scale deployment beyond demos.",
-    "why_it_matters": "BFSI and fintech must design consent-as-a-first-class infrastructure component before agentic workflows go live; regulatory ambiguity on agent liability and customer authorization will delay real-world payment automation by 12–24 months.",
-    "jargon": [
-      {
-        "term": "Agentic AI",
-        "def": "AI system that perceives environment, makes decisions autonomously, and takes actions without human-in-loop approval on each step."
-      }
-    ],
-    "source": {
-      "name": "Tearsheet · 2026-10-27",
-      "url": "https://tearsheet.co/funding/money20-20-and-the-unfinished-business-of-payments-innovation/"
-    }
-  },
-  {
     "id": "2026-10-28-blackrock-insurance-ai-private-markets",
     "category": "insight",
     "jurisdiction": "Global",
@@ -8292,20 +8296,6 @@
     }
   },
   {
-    "id": "2026-10-27-fintech-founders-ai-restart-shift",
-    "category": "shift",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-27T11:00:12Z",
-    "headline": "European fintech repeat founders restart careers with AI-native strategies",
-    "plain_english": "Sifted reports that experienced fintech entrepreneurs across Europe are launching new ventures with AI at the core, rather than bolting AI onto legacy payment/lending models. This signals a strategic reset: old fintech playbooks (frictionless UX, open banking rails) are now table-stakes, not differentiation.",
-    "why_it_matters": "Next wave of fintech disruption will be AI-native from day one; incumbent BFSI must radically restructure product and risk teams or cede SME lending, trade finance, and personalized wealth segments to AI-first startups.",
-    "source": {
-      "name": "Sifted · 2026-10-27",
-      "url": "https://sifted.eu/articles/repeat-fintech-founders-face-ai/"
-    }
-  },
-  {
     "id": "2026-10-28-sifted-human-context-ai-models",
     "category": "insight",
     "jurisdiction": "EU",
@@ -8488,24 +8478,6 @@
     }
   },
   {
-    "id": "2026-10-27-hsbc-earnings-miss-deployment",
-    "category": "deployment",
-    "jurisdiction": "Global",
-    "severity": "med",
-    "published_at": "2026-10-27T09:27:22Z",
-    "headline": "HSBC quarterly profit misses expectations, shares fall 6%",
-    "plain_english": "HSBC reported Q3 2026 earnings below analyst expectations, triggering a 6% share decline. Missed profit guidance may reflect higher technology/AI infrastructure spend without corresponding revenue uplift, or trading desk AI model underperformance.",
-    "scale": {
-      "metric": "market cap impact",
-      "value": "~$4–6B at 6% fall (undisclosed HSBC market cap exact date)"
-    },
-    "why_it_matters": "Major global banks' earnings misses tied to AI infrastructure costs (compute, talent, compliance tooling) without clear ROI realization signal investor skepticism; expect 2–3 quarter lag before deployed AI models generate measurable revenue or cost savings.",
-    "source": {
-      "name": "Bloomberg · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVJjeFJTTzc0V2JkWGxWckpTN0lPWVJncFQ4R25NNzQ5a0RENm5OdzBwT3V5MFF6NGk5b3g1bE9NWGRZd3dyM0FfR0NlNXd4M1l1eEtHZHh5cjF4UUJsdlFHYi1kLWNOVDVvSkk2Y3VuZWFBdWppem10RDk2b0dfUURuZjAyNGl6bFpPNVlxS1hacl9od3Q0azRiREJuRUxHcHhkbmRWN0hSN1k0UlRTc2NCUWQyUzBndFpqQ216anc2eFhSc0E"
-    }
-  },
-  {
     "id": "2026-10-27-ecb-lending-survey",
     "category": "insight",
     "jurisdiction": "EU",
@@ -8517,20 +8489,6 @@
     "source": {
       "name": "European Central Bank · 2026-10-27",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa2NiNGpLNER5ZndJZGJqcF9oS18wUm84RkZNT2U0U0RXQ0VTUnVSU3hhOEVNbk5zUVp0UldRUkpjaEdkWG4xbERRREtpZzRoWk1ia0NOMjJMY09rR251eTRXVi0wNVA0YUxYWjRObFotc01qLUNtWjhrT3lsQ3dOQVNwUTNKdy1UeEcwZmc3WEZSNFhxSjhBS0pnUnBsNFpaak9CQThBa0FWTnc"
-    }
-  },
-  {
-    "id": "2026-10-27-anthropic-ipo-frontier",
-    "category": "frontier",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-27T11:00:01Z",
-    "headline": "Anthropic files for record-breaking AI company IPO",
-    "plain_english": "Anthropic, one of the leading frontier AI labs behind Claude LLM, has filed for public listing. The IPO is expected to be record-breaking for the AI sector, bringing significant capital and public market scrutiny to frontier model development.",
-    "why_it_matters": "Public market entry forces frontier labs to disclose business model, risk factors, and revenue—reshaping how BFSI assesses AI vendor viability and geopolitical dependence on frontier model providers.",
-    "source": {
-      "name": "CNBC · 2026-10-27",
-      "url": "https://www.cnbc.com/2026/10/27/anthropic-five-surprising-risks-s1.html"
     }
   },
   {
@@ -8579,66 +8537,6 @@
     "source": {
       "name": "Sifted · 2026-10-27",
       "url": "https://sifted.eu/articles/revolut-faces-bank-of-england-scrutiny-over-product-approval-process-reports-say/"
-    }
-  },
-  {
-    "id": "2026-10-27-ai-volatility-market-insight",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "high",
-    "published_at": "2026-10-27T11:00:42Z",
-    "headline": "AI volatility tremor exposes market structure and risk concentration fault lines",
-    "plain_english": "Reuters market commentary flags that recent AI-driven trading events (likely algorithmic cascades or LLM-based hedge fund model disagreement) exposed structural fragility in equities and fixed-income markets. Flash volatility spikes are harder to contain than legacy flash crashes.",
-    "stat_value": "Unknown exact magnitude",
-    "stat_label": "AI-driven volatility events triggered structural breaks",
-    "why_it_matters": "Central banks and regulators now must design circuit-breakers and liquidity buffers specific to AI-generated order flow; BFSI trading desks unprepared for autonomous AI systems generating correlated signals face tail risk and regulatory sanction.",
-    "source": {
-      "name": "Reuters · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTmR2T3EtUl9KU2hocWJmbVpmU09FaFZJVWNENkpjcGhuRUQ3NHpuX0d4MlR5aV9MYWJRZlU5dG1TamZvOUN1MjVXYnBaTURWN2dQSng1ZV9zUmxoY0dTTWdSOGhoeDBveWh2TjVQNVc5SFBSbE1BT25fbG5qNHpPV3JLY3A1NlJXR254M0JDLVQ0bUN1QUpjRUh3THVHS0t2OGxxSGVVY2NMaWRqNFBfRHB0N3I3UUdK"
-    }
-  },
-  {
-    "id": "2026-10-27-ecb-bank-credit-tightening-regulation",
-    "category": "regulation",
-    "jurisdiction": "EU",
-    "severity": "med",
-    "published_at": "2026-10-27T09:52:21Z",
-    "headline": "ECB survey shows euro-area banks tightening credit, demand falling",
-    "plain_english": "European Central Bank's Q3 2026 bank lending survey reports banks are tightening credit conditions and loan demand is declining across the euro area. This reflects both supply-side (regulatory capital buffers, risk aversion post-AI volatility) and demand-side pressures.",
-    "why_it_matters": "Tightening credit cycles constrain BFSI funding for AI infrastructure buildout; expect 6-12 month delays in AI model deployment for regional and mid-market banks relying on ECB-supervised funding.",
-    "source": {
-      "name": "European Central Bank · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUlZsNzhfRWh1TjAxZWpyaHJCYUNPZXRSSzJaZWstWUFTS2pscFNIYTRjSENETU00TndNM2dYcGUwNlo2X3k4V2lzSTRSTE9SM3A1MXduSDdQQ2FXS2FHMWVjckdLZWFDY1otWWt2Wjg0RXNWY2thMjZ5eFFqZjJfamNLWVBZeGFtZDRxZVFsZkx1SHlpdDFJMmlnNS1oX082bmdhTmg5b3ptQ0NCZFNCaVZB"
-    }
-  },
-  {
-    "id": "2026-10-27-fca-fraud-alert-regulation",
-    "category": "regulation",
-    "jurisdiction": "UK",
-    "severity": "high",
-    "published_at": "2026-10-27T10:00:17Z",
-    "headline": "FCA alerts on fraudulent Bondsterling clone impersonating authorized firm",
-    "plain_english": "UK Financial Conduct Authority has issued a warning on Bondsterling Savings Ltd, a clone website impersonating an FCA-authorized entity to solicit deposits. This exemplifies rising AI-enabled fraud tactics targeting retail depositors and institutional risk systems.",
-    "why_it_matters": "Scam sophistication (deepfakes, cloned domain registration, AI-generated compliance docs) is outpacing traditional KYC/AML detection; BFSI must integrate AI-powered authentication and behavior analytics to defend against synthetic fraud at deposit intake.",
-    "source": {
-      "name": "Financial Conduct Authority · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeVc2ZnV2ZXFfMWhlWm91TTRqVWVVODVBOWVFaFlLc1k3Sm1JX1BjcmRRVXRIZ3pvMGpacERNbmtVZ0R6TXk5aGEyLVRFM2t2ZkRSVDkxT0tHaHhlcGdKZVNvZVh1ZjRJUHNuSklHeWdYQUxHT2lhd2VKOWVXU1l6a0dFQWZqamw2UGpqVndla04"
-    }
-  },
-  {
-    "id": "2026-10-27-ceo-ai-rollout-perception-gap-insight",
-    "category": "insight",
-    "jurisdiction": "US",
-    "severity": "med",
-    "published_at": "2026-10-27T10:06:09Z",
-    "headline": "CEOs report smooth AI rollout; employees report disruption, reskilling gaps",
-    "plain_english": "New York Times and BCG research show a stark disconnect: C-suite perceives AI deployment as on-track, while employee surveys reveal anxiety over job security, insufficient retraining, and poor change management. This perception gap is widest at large enterprises.",
-    "stat_value": "Exact % not disclosed in headline",
-    "stat_label": "CEO optimism vs. employee concern gap",
-    "why_it_matters": "BFSI HR and change-management teams underestimating employee backlash to AI-driven automation risk talent attrition, union pushback, and regulatory scrutiny on fair labor practices; proactive reskilling and transparent communication now mandatory.",
-    "source": {
-      "name": "The New York Times · 2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWWdVcmp6Vm8xaTlHbXhmRUp2bnU1Q2hlMUY1eG05ekVJSWFPRjRZWGcyODNDeUV4dW5IUndhM2NtWlJDSE1QSmhlekNNVUotb2NHRjBwRTc4dkR0Y3RNeUIwWlZNUk1hOTc2dEJYTEVUUlVhSXFmeUx1RlZWNjJ0ZmhINTRHcXZac0NtOUd2RE9oTUU1Rk9TLWJmSlpFTWxfaVlSdUhkZ2p3ZVB3LXhWSVZSS004ZkNzRlFWUzVjVQ"
     }
   }
 ]
